@@ -1,0 +1,31 @@
+<script type="text/javascript" src="lib/jquery.js"></script>
+<script type="text/javascript" src="js/parser.js"></script>
+<script type="text/javascript" src="js/utils.js"></script>
+<script type="text/javascript" src="js/utils-ui.js"></script>
+<script type="text/javascript" src="js/utils-list.js"></script>
+{{#each scriptsUtilsAdditional}}<script type="text/javascript" src="js/{{this}}"></script>
+{{/each}}
+<script type="text/javascript" src="lib/localforage.js"></script>
+<script type="text/javascript" src="js/omnidexer.js"></script>
+<script type="text/javascript" src="js/omnisearch.js"></script>
+<script type="text/javascript" src="js/filter.js"></script>
+<script type="text/javascript" src="js/utils-dataloader.js"></script>
+<script type="text/javascript" src="js/utils-brew.js"></script>
+<script type="text/javascript" src="js/render.js"></script>
+<script type="text/javascript" src="js/render-dice.js"></script>
+<script type="text/javascript" src="js/render-markdown.js"></script>
+<script type="text/javascript" src="js/render-{{scriptIdentList}}.js"></script>
+<script type="text/javascript" src="js/scalecreature.js"></script>
+<script type="text/javascript" src="js/hist.js"></script>
+<script type="text/javascript" src="js/listpage.js"></script>
+{{#if isMultisource}}<script type="text/javascript" src="js/multisource.js"></script>
+{{/if}}
+<script type="text/javascript" src="js/filter-common.js"></script>
+<script type="text/javascript" src="js/filter-{{scriptIdentList}}.js"></script>
+{{#each scriptsPrePageAdditional}}<script type="text/javascript" src="js/{{this}}"></script>
+{{/each}}
+{{#if isModule}}<script type="module" src="js/{{scriptIdentList}}.js"></script>
+{{else}}<script type="text/javascript" src="js/{{scriptIdentList}}.js"></script>
+{{/if}}
+<script type="text/javascript" src="js/list2.js"></script>
+<script type="text/javascript" src="lib/elasticlunr.js"></script>

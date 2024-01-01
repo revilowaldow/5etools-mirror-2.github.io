@@ -1,0 +1,26 @@
+@import "vars";
+
+@include is-print {
+	.no-print {
+		display: none !important;
+	}
+
+	.print__ {
+		&ve-block {
+			display: block !important;
+		}
+
+		&h-initial {
+			height: initial !important;
+		}
+
+		&overflow-visible {
+			overflow: visible !important;
+		}
+
+		&my-2 {
+			margin-top: ($spacer * 0.5) !important;
+			margin-bottom: ($spacer * 0.5) !important;
+		}
+	}
+}

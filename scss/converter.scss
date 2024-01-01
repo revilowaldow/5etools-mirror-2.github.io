@@ -1,0 +1,52 @@
+.inputArea,
+.outputArea {
+	width: 100%;
+	height: 100%;
+}
+
+.select-inline {
+	display: inline-block;
+	width: initial;
+}
+
+#lastWarnings {
+	color: #df00ff;
+}
+
+#lastError {
+	color: red;
+}
+
+#lastWarnings,
+#lastError {
+	margin-top: 5px;
+	margin-bottom: 10px;
+	display: none;
+	flex-shrink: 0;
+	padding: 9px;
+	font-size: 13px;
+	line-height: 1.4;
+	background-color: whitesmoke;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.night-mode #lastError {
+	border-color: #555;
+}
+
+.conv__head {
+	margin-top: 0;
+	margin-bottom: 2px;
+}
+
+.conv__out_control__wrp {
+	padding: 0 3rem 0 0;
+	flex-shrink: 0;
+}
+
+@media (max-width: 991px) {
+	.view-col-wrapper {
+		height: 40vh;
+	}
+}

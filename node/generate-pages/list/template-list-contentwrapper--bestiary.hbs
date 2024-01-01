@@ -1,0 +1,27 @@
+<div id="contentwrapper" class="view-col{{#if styleContentWrapperAdditional}} {{styleContentWrapperAdditional}}{{/if}}">
+	<div class="best-ecgen__visible mb-3" id="wrp-encounterbuild-random-and-adjust"></div>
+
+	<div class="best-ecgen__visible mb-4" id="best-ecgen__wrp-save-controls"></div>
+
+	{{> "listSublistContainerBestiary" }}
+
+	{{> "listStatsTabs" }}
+
+	{{> "listRhsWrpToken" }}
+
+	{{> "listWrpPagecontent" }}
+
+	<div class="ve-text-center mt-2 no-print best-ecgen__hidden">
+		<button class="btn btn-success btn-xs" id="btn-encounterbuild">Encounter Builder</button>
+		<div id="wrp-profbonusdice" class="ve-inline-block">
+			<button class="btn btn-default btn-xs" id="profbonusdice"
+					title="See the Dungeon Master&apos;s Guide, p263.">Use Proficiency Dice
+			</button>
+		</div>
+		<button class="btn btn-default btn-xs" id="btn-book">Printer View</button>
+		<button class="btn btn-default btn-xs" id="btn-show-table" title="View and Download Creatures in Tabular Format">Table View</button>
+		<button class="btn btn-xs btn-info" id="manage-brew">Manage Homebrew</button>
+	</div>
+
+	<div class="best-ecgen__visible--flex-col best-ecgen__wrp pb-1 px-2" id="wrp-encounterbuild-group-and-difficulty"></div>
+</div>

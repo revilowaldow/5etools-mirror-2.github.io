@@ -1,0 +1,20 @@
+@import "vars";
+
+// region Expose variables for homebrew
+:root {
+	--rgb-font: #{$rgb-font};
+	--rgb-font--muted: #{$rgb-font--muted};
+	--rgb-name: #{$rgb-name-red};
+	--rgb-bg: #{$rgb-bg};
+	--rgb-bg--alt: #{$rgb-bg--alt};
+	--rgb-border--statblock: #{$rgb-border-yellow--statblock};
+}
+
+:root.night-mode {
+	--rgb-font: #{$rgb-font--night};
+	--rgb-name: #{$rgb-name-red--night};
+	--rgb-bg: #{$rgb-bg--night};
+	--rgb-bg--alt: #{$rgb-bg--alt-night};
+	--rgb-border--statblock: #{$rgb-border-grey--statblock-night};
+}
+// endregion

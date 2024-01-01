@@ -1,0 +1,25 @@
+@import "vars";
+
+.night-mode .source {
+	$rgb-source-PHB: $rgb-subclass--night;
+	$rgb-source-SADS: #4f63f5;
+	$rgb-source-PSA: #eec276;
+
+	&PHB {
+		color: $rgb-source-PHB !important;
+		border-color: $rgb-source-PHB !important;
+		text-decoration-color: $rgb-source-PHB !important;
+	}
+
+	&SADS {
+		color: $rgb-source-SADS !important;
+		border-color: $rgb-source-SADS !important;
+		text-decoration-color: $rgb-source-SADS !important;
+	}
+
+	&PSA {
+		color: $rgb-source-PSA !important;
+		border-color: $rgb-source-PSA !important;
+		text-decoration-color: $rgb-source-PSA !important;
+	}
+}

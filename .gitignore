@@ -24,3 +24,9 @@ sw-injector.js
 
 # Log files
 *.log
+
+
+
+# Local Symlinks
+homebrew
+prerelease

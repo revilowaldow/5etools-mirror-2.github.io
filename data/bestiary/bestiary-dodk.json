@@ -233,6 +233,7 @@
 			"savingThrowForcedSpell": [
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -347,6 +348,7 @@
 				"constitution",
 				"strength"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -381,6 +383,7 @@
 					"ability": "cha"
 				}
 			],
+			"tokenCredit": "Jeff Balch",
 			"damageTagsSpell": [
 				"L",
 				"O"
@@ -392,6 +395,7 @@
 				"dexterity",
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -486,6 +490,7 @@
 			"savingThrowForced": [
 				"dexterity"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -633,6 +638,7 @@
 			"savingThrowForcedSpell": [
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -785,6 +791,7 @@
 				"dexterity",
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -825,6 +832,7 @@
 					]
 				}
 			},
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -965,6 +973,7 @@
 				"constitution",
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -1276,6 +1285,7 @@
 				"RW",
 				"THW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true,
 			"_versions": [
@@ -1780,6 +1790,7 @@
 				"dexterity",
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -1897,6 +1908,7 @@
 				"MW",
 				"RW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -2117,6 +2129,7 @@
 				"strength",
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -2277,6 +2290,7 @@
 			"savingThrowForced": [
 				"constitution"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -2296,6 +2310,8 @@
 				}
 			},
 			"type": "monstrosity",
+			"tokenCredit": "Powerscorerpg",
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -2452,6 +2468,7 @@
 				"name": "Gravekeeper",
 				"source": "DoDk"
 			},
+			"tokenCredit": "Louis Wood",
 			"traitTags": [
 				"Legendary Resistances"
 			],
@@ -2479,6 +2496,7 @@
 				"blinded",
 				"prone"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -2517,6 +2535,8 @@
 					]
 				}
 			],
+			"tokenCredit": "Erebus88",
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -2654,6 +2674,7 @@
 			"miscTags": [
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true,
 			"_versions": [
@@ -2737,6 +2758,8 @@
 					]
 				}
 			],
+			"tokenCredit": "Joshua Culp",
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -2772,6 +2795,8 @@
 					}
 				}
 			},
+			"tokenCredit": "Igor Krstic",
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -2969,6 +2994,7 @@
 				"constitution",
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -3161,6 +3187,7 @@
 				"dexterity",
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -3274,6 +3301,7 @@
 			"savingThrowForced": [
 				"constitution"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -3389,6 +3417,7 @@
 			"savingThrowForced": [
 				"constitution"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -3603,6 +3632,7 @@
 				"MW",
 				"RW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -3774,6 +3804,7 @@
 				"dexterity",
 				"strength"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -4037,6 +4068,7 @@
 				"dexterity",
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -4299,6 +4331,7 @@
 				"strength",
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -4459,6 +4492,7 @@
 				"dexterity",
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -4707,6 +4741,7 @@
 				"intelligence",
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -4817,6 +4852,7 @@
 			"savingThrowForced": [
 				"constitution"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -5101,6 +5137,7 @@
 				"intelligence",
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -5232,6 +5269,7 @@
 			"savingThrowForced": [
 				"constitution"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -5340,6 +5378,7 @@
 				"MW",
 				"RW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -5474,6 +5513,7 @@
 					]
 				}
 			],
+			"tokenCredit": "Andrew Sonea",
 			"traitTags": [
 				"Incorporeal Movement",
 				"Sunlight Sensitivity"
@@ -5514,6 +5554,7 @@
 				"dexterity",
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -5650,6 +5691,7 @@
 			"savingThrowForcedSpell": [
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -5764,6 +5806,7 @@
 				"dexterity",
 				"strength"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -5878,6 +5921,7 @@
 				"MW",
 				"RW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -5971,6 +6015,7 @@
 					]
 				}
 			],
+			"tokenCredit": "Anna Yaroslavova",
 			"traitTags": [
 				"Death Burst"
 			],
@@ -5993,6 +6038,7 @@
 			"savingThrowForced": [
 				"constitution"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -6038,6 +6084,7 @@
 				"darkvision 60 ft.",
 				"truesight 120 ft."
 			],
+			"tokenCredit": "Karolina Łyżwa",
 			"traitTags": [
 				"False Appearance",
 				"Keen Senses",
@@ -6058,6 +6105,7 @@
 			"miscTags": [
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -6154,6 +6202,7 @@
 					]
 				}
 			],
+			"tokenCredit": "Tygodym",
 			"traitTags": [
 				"Keen Senses"
 			],
@@ -6183,6 +6232,7 @@
 			"savingThrowForcedSpell": [
 				"dexterity"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -6218,6 +6268,8 @@
 					}
 				}
 			},
+			"tokenCredit": "Sidharth Chaturvedi",
+			"hasToken": true,
 			"hasFluff": true
 		}
 	]

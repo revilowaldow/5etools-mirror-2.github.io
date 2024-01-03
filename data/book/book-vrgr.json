@@ -5007,7 +5007,7 @@
 											"title": "Map 3.1: Barovia",
 											"width": 3000,
 											"height": 1926,
-											"id": "031",
+											"id": "04a",
 											"credit": "Mike Schley"
 										},
 										{
@@ -5027,7 +5027,7 @@
 											"width": 3000,
 											"height": 1926,
 											"mapParent": {
-												"id": "031"
+												"id": "04a"
 											},
 											"credit": "Mike Schley"
 										}
@@ -6032,7 +6032,7 @@
 											"title": "Map 3.2: Borca",
 											"width": 3000,
 											"height": 2073,
-											"id": "037",
+											"id": "04b",
 											"credit": "Francesca Baerald"
 										},
 										{
@@ -6052,7 +6052,7 @@
 											"width": 3000,
 											"height": 2073,
 											"mapParent": {
-												"id": "037"
+												"id": "04b"
 											},
 											"credit": "Francesca Baerald"
 										}

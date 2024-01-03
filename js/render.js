@@ -11919,7 +11919,7 @@ Renderer.hover = {
 
 	_getShowWindow_doZIndexToFront ({$hov, hoverWindow, hoverId}) {
 		const nxtZIndex = Renderer.hover._getNextZIndex(hoverId);
-		Renderer.hover._getNextZIndex({$hov, hoverWindow}, nxtZIndex);
+		Renderer.hover._getShowWindow_setZIndex({$hov, hoverWindow}, nxtZIndex);
 	},
 
 	/**

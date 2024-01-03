@@ -625,6 +625,48 @@
 			}
 		},
 		{
+			"name": "Favored Enemy",
+			"source": "PHB",
+			"className": "Ranger",
+			"classSource": "PHB",
+			"level": 1,
+			"entryData": {
+				"languageProficiencies": [
+					{
+						"any": 1
+					}
+				]
+			}
+		},
+		{
+			"name": "Favored Enemy and Natural Explorer improvements",
+			"source": "PHB",
+			"className": "Ranger",
+			"classSource": "PHB",
+			"level": 6,
+			"entryData": {
+				"languageProficiencies": [
+					{
+						"any": 1
+					}
+				]
+			}
+		},
+		{
+			"name": "Favored Enemy improvement",
+			"source": "PHB",
+			"className": "Ranger",
+			"classSource": "PHB",
+			"level": 14,
+			"entryData": {
+				"languageProficiencies": [
+					{
+						"any": 1
+					}
+				]
+			}
+		},
+		{
 			"name": "Fighting Style",
 			"source": "PHB",
 			"className": "Ranger",

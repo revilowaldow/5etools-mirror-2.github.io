@@ -2613,5 +2613,10 @@
 		"ver": "1.197.1",
 		"date": "2023-12-30",
 		"txt": "- Added Dynamic Map Viewer support to Grim Hollow: Lairs of Etharis maps\n- Fixed filters failing to include loaded homebrew by default\n- Fixed the Objects page failing to render an object's senses (if it has any)\n- (Brew) Fixed `@chance` tag success/failure text failing to render `@tag`s \n- (Brew) The image size tagging script may now use a local copy of the homebrew repo as a proxy for URLs against that repo (thanks @ Lyra)\n- (Fixed typos/added tags)"
+	},
+	{
+		"ver": "1.197.2",
+		"date": "2024-01-03",
+		"txt": "- Added Dungeons of Drakkenheim tokens\n- Fixed crash when attempting to load some books (FTD, SatO, VRGR)\n- Fixed crash when clicking an already-open area in the Dynamic Map Viewer\n- Fixed Search page crash when attempting to load images for pages\n- (Fixed typos/added tags)"
 	}
 ]

@@ -684,7 +684,7 @@ class AreaCheck extends DataTesterBase {
 	}
 }
 AreaCheck.errorSet = new Set();
-AreaCheck.fileMatcher = /\/(adventure-).*\.json/;
+AreaCheck.fileMatcher = /\/(adventure-|book-).*\.json/;
 
 class LootDataCheck extends GenericDataCheck {
 	static pRun () {

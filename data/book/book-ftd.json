@@ -5043,7 +5043,7 @@
 											"title": "Map 5.1: amethyst dragon lair",
 											"width": 4800,
 											"height": 6000,
-											"id": "012",
+											"id": "021",
 											"credit": "Dyson Logos"
 										},
 										{
@@ -5061,7 +5061,7 @@
 											"width": 4800,
 											"height": 6000,
 											"mapParent": {
-												"id": "012"
+												"id": "021"
 											},
 											"credit": "Dyson Logos"
 										}
@@ -5547,7 +5547,7 @@
 											"title": "Map 5.2: black dragon lair",
 											"width": 4800,
 											"height": 6000,
-											"id": "013",
+											"id": "022",
 											"credit": "Dyson Logos"
 										},
 										{
@@ -5566,7 +5566,7 @@
 											"width": 4800,
 											"height": 6000,
 											"mapParent": {
-												"id": "013"
+												"id": "022"
 											},
 											"credit": "Dyson Logos"
 										}

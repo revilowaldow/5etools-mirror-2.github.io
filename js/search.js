@@ -228,6 +228,11 @@ class SearchPage {
 						{
 							onObserve: () => {
 								const page = UrlUtil.categoryToHoverPage(category);
+								if (!page) {
+									$dispImage.addClass(`mobile__hidden`);
+									return;
+								}
+
 								DataLoader.pCacheAndGet(
 									page,
 									source,

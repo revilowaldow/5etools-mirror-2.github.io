@@ -2054,7 +2054,7 @@
 												"type": "internal",
 												"path": "book/SatO/thumbnail/026-map-2.01-elloweth-theater.webp"
 											},
-											"id": "00b"
+											"id": "010"
 										},
 										"Creativity blossoms in the Civic Festhall, the headquarters of the Society of Sensation. Sensates spared no expense constructing this majestic building, which reaches nearly one thousand feet in height. Visitors find all manner of sensory delights within: gastronomic masterpieces served by innovative chefs; halls lined with fragrant, scratch-and-sniff statuaries; and pitch-black deprivation chambers bathed in supernatural silence.",
 										{
@@ -2443,7 +2443,7 @@
 												"type": "internal",
 												"path": "book/SatO/thumbnail/031-map-2.02-hall-of-vigils.webp"
 											},
-											"id": "00c"
+											"id": "011"
 										},
 										"The Heralds of Dust look after Sigil's dead in the Mortuary, the city's morgue. Situated between Blackshade Lane and Ragpicker's Square, the menacing stone structure rises above the Hive like a corpse from the grave. The Mortuary's towers bear low, gloomy domes with buttresses bristling with blades and windowless vaults clustered around the structure's base. Its dark, mournful halls reek of embalming fluids, their sterile tang sparing nostrils from viler odors trapped within the musty tombs.",
 										{
@@ -6579,7 +6579,7 @@
 							"width": 4096,
 							"height": 2867,
 							"imageType": "map",
-							"id": "00b",
+							"id": "012",
 							"grid": {
 								"type": "none"
 							}
@@ -6595,7 +6595,7 @@
 							"height": 2867,
 							"imageType": "mapPlayer",
 							"mapParent": {
-								"id": "00b"
+								"id": "012"
 							},
 							"grid": {
 								"type": "none"
@@ -6616,7 +6616,7 @@
 							"width": 4096,
 							"height": 2867,
 							"imageType": "map",
-							"id": "00c",
+							"id": "013",
 							"grid": {
 								"type": "none"
 							}
@@ -6632,7 +6632,7 @@
 							"height": 2867,
 							"imageType": "mapPlayer",
 							"mapParent": {
-								"id": "00c"
+								"id": "013"
 							},
 							"grid": {
 								"type": "none"

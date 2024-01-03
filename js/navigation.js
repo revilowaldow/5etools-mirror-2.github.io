@@ -169,7 +169,7 @@ class NavBar {
 		this._addElement_button(
 			NavBar._CAT_CACHE,
 			{
-				html: "Preload Adventure Text <small>(25MB+)</small>",
+				html: "Preload Adventure Text <small>(50MB+)</small>",
 				click: (evt) => NavBar.InteractionManager._pOnClick_button_preloadOffline(evt, /data\/adventure/),
 				title: "Preload adventure text for offline use.",
 			},

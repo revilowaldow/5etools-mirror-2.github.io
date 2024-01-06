@@ -24,7 +24,7 @@ class PageFilterBackgrounds extends PageFilter {
 		});
 		this._asiFilter = new AbilityScoreFilter({header: "Ability Scores"});
 		this._otherBenefitsFilter = new Filter({header: "Other Benefits"});
-		this._miscFilter = new Filter({header: "Miscellaneous", items: ["Has Info", "Has Images", "SRD", "Basic Rules"], isMiscFilter: true});
+		this._miscFilter = new Filter({header: "Miscellaneous", items: ["Has Info", "Has Images", "SRD", "Basic Rules", "Legacy"], isMiscFilter: true});
 	}
 
 	static mutateForFilters (bg) {
@@ -54,6 +54,7 @@ class PageFilterBackgrounds extends PageFilter {
 		bg._fMisc = [];
 		if (bg.srd) bg._fMisc.push("SRD");
 		if (bg.basicRules) bg._fMisc.push("Basic Rules");
+		if (SourceUtil.isLegacySourceWotc(bg.source)) bg._fMisc.push("Legacy");
 		if (bg.hasFluff || bg.fluff?.entries) bg._fMisc.push("Has Info");
 		if (bg.hasFluffImages || bg.fluff?.images) bg._fMisc.push("Has Images");
 		bg._fOtherBenifits = [];
@@ -152,7 +153,7 @@ class ModalFilterBackgrounds extends ModalFilter {
 
 			<div class="col-4 ${bg._versionBase_isVersion ? "italic" : ""} ${this._getNameStyle()}">${bg._versionBase_isVersion ? `<span class="px-3"></span>` : ""}${bg.name}</div>
 			<div class="col-6">${bg._skillDisplay}</div>
-			<div class="col-1 pr-0 ve-text-center ${Parser.sourceJsonToColor(bg.source)}" title="${Parser.sourceJsonToFull(bg.source)}" ${Parser.sourceJsonToStyle(bg.source)}>${source}</div>
+			<div class="col-1 pr-0 ve-flex-h-center ${Parser.sourceJsonToColor(bg.source)}" title="${Parser.sourceJsonToFull(bg.source)}" ${Parser.sourceJsonToStyle(bg.source)}>${source}${Parser.sourceJsonToMarkerHtml(bg.source)}</div>
 		</div>`;
 
 		const btnShowHidePreview = eleRow.firstElementChild.children[1].firstElementChild;

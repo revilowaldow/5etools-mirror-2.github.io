@@ -159,7 +159,7 @@ class ListPageMultiSource extends ListPage {
 		}
 
 		Object.keys(this._loadedSources)
-			.map(src => new FilterItem({item: src, pFnChange: this._pLoadSource.bind(this)}))
+			.map(src => new SourceFilterItem({item: src, pFnChange: this._pLoadSource.bind(this)}))
 			.forEach(fi => this._pageFilter.sourceFilter.addItem(fi));
 
 		const prerelease = await (this._prereleaseDataSource ? this._prereleaseDataSource() : PrereleaseUtil.pGetBrewProcessed());

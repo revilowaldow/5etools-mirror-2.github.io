@@ -649,3 +649,29 @@
 		}
 	}
 }
+
+.ve-source-marker {
+	position: relative;
+	font-size: 80%;
+	display: inline-block;
+	margin-left: 1px;
+	align-self: start;
+
+	&--list {
+		left: 1px;
+		margin-top: 1px;
+		margin-left: -20px;
+		padding-left: 20px;
+		line-height: 8px;
+		height: 8px;
+		width: 8px;
+	}
+
+	&--partnered {
+		color: #00c797;
+	}
+
+	&--legacy {
+		color: $rgb-font--muted;
+	}
+}

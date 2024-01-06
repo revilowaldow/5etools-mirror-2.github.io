@@ -433,17 +433,20 @@ class Omnisearch {
 				? `<a href="${adventureBookSourceHref}">${ptPageInner}</a>`
 				: ptPageInner;
 
-			const ptSourceInner = source ? `<span class="${Parser.sourceJsonToColor(source)}" ${Parser.sourceJsonToStyle(source)} title="${Parser.sourceJsonToFull(source)}">${Parser.sourceJsonToAbv(source)}</span>` : `<span></span>`;
+			const ptSourceInner = source
+				? `<span class="${Parser.sourceJsonToColor(source)}" ${Parser.sourceJsonToStyle(source)} title="${Parser.sourceJsonToFull(source)}">${Parser.sourceJsonToAbv(source)}</span>`
+				: `<span></span>`;
 			const ptSource = ptPage || !adventureBookSourceHref
 				? ptSourceInner
 				: `<a href="${adventureBookSourceHref}">${ptSourceInner}</a>`;
 
 			$$`<div class="omni__row-result split-v-center stripe-odd">
 				${$link}
-				<div class="inline-block">
+				<div class="ve-flex-v-center">
 					${ptSource}
 					${isSrd ? `<span class="ve-muted omni__disp-srd help-subtle relative" title="Available in the Systems Reference Document">[SRD]</span>` : ""}
-					${ptPage}
+					${Parser.sourceJsonToMarkerHtml(source, {isList: false, additionalStyles: "omni__disp-source-marker"})}
+					${ptPage ? `<span class="omni__wrp-page small-caps">${ptPage}</span>` : ""}
 				</div>
 			</div>`.appendTo(this._dispSearchOutput);
 		}

@@ -26,7 +26,7 @@ class PageFilterTrapsHazards extends PageFilter {
 			displayFn: Parser.trapHazTypeToFull,
 			itemSortFn: PageFilterTrapsHazards.sortFilterType.bind(PageFilterTrapsHazards),
 		});
-		this._miscFilter = new Filter({header: "Miscellaneous", items: ["SRD", "Basic Rules", "Has Images", "Has Info"], isMiscFilter: true});
+		this._miscFilter = new Filter({header: "Miscellaneous", items: ["SRD", "Basic Rules", "Legacy", "Has Images", "Has Info"], isMiscFilter: true});
 	}
 
 	static mutateForFilters (it) {
@@ -35,6 +35,7 @@ class PageFilterTrapsHazards extends PageFilter {
 		it._fMisc = [];
 		if (it.srd) it._fMisc.push("SRD");
 		if (it.basicRules) it._fMisc.push("Basic Rules");
+		if (SourceUtil.isLegacySourceWotc(it.source)) it._fMisc.push("Legacy");
 		if (it.hasFluff || it.fluff?.entries) it._fMisc.push("Has Info");
 		if (it.hasFluffImages || it.fluff?.images) it._fMisc.push("Has Images");
 	}

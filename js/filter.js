@@ -1722,11 +1722,11 @@ class Filter extends FilterBase {
 	}
 
 	_defaultItemState (item, {isForce = false} = {}) {
-		// Avoid setting state for new items if the user already has filter state. This prevents the case where e.g.:
+		// Avoid setting state for new items if the user already has active filter state. This prevents the case where e.g.:
 		//   - The user has cleared their source filter;
 		//   - A new source is added to the site;
 		//   - The new source becomes the *only* selected item in their filter.
-		if (!isForce && this._hasUserSavedState) return this._state[item.item] = 0;
+		if (!isForce && this._hasUserSavedState && !Object.values(this.__state).some(Boolean)) return this._state[item.item] = 0;
 
 		// if both a selFn and a deselFn are specified, we default to deselecting
 		this._state[item.item] = this._getDefaultState(item.item);
@@ -2275,6 +2275,10 @@ class Filter extends FilterBase {
 		this._doToggleDisplay();
 	}
 
+	_getFilterItem (item) {
+		return item instanceof FilterItem ? item : new FilterItem({item});
+	}
+
 	addItem (item) {
 		if (item == null) return;
 
@@ -2285,30 +2289,13 @@ class Filter extends FilterBase {
 		}
 
 		if (!this.__itemsSet.has(item.item || item)) {
-			item = item instanceof FilterItem ? item : new FilterItem({item});
+			item = this._getFilterItem(item);
 			Filter._validateItemNest(item, this._nests);
 
 			this._isItemsDirty = true;
 			this._items.push(item);
 			this.__itemsSet.add(item.item);
 			if (this._state[item.item] == null) this._defaultItemState(item);
-		}
-	}
-
-	static _isItemsEqual (item1, item2) {
-		return (item1 instanceof FilterItem ? item1.item : item1) === (item2 instanceof FilterItem ? item2.item : item2);
-	}
-
-	removeItem (item) {
-		const ixItem = this._items.findIndex(it => Filter._isItemsEqual(it, item));
-		if (~ixItem) {
-			const item = this._items[ixItem];
-
-			// FIXME this doesn't remove any associated hooks, and is therefore a minor memory leak
-			this._isItemsDirty = true;
-			item.rendered.detach();
-			item.btnMini.detach();
-			this._items.splice(ixItem, 1);
 		}
 	}
 
@@ -2839,16 +2826,26 @@ class SourceFilter extends Filter {
 
 	doSetPillsClear () { return this._doSetPillsClear(); }
 
+	_getFilterItem (item) {
+		return item instanceof FilterItem ? item : new SourceFilterItem({item});
+	}
+
 	addItem (item) {
 		const out = super.addItem(item);
 		this._tmpState.ixAdded++;
 		return out;
 	}
 
-	removeItem (item) {
-		const out = super.removeItem(item);
-		this._tmpState.ixAdded--;
-		return out;
+	trimState_ () {
+		if (!this._items?.length) return;
+
+		const sourcesLoaded = new Set(this._items.map(itm => itm.item));
+		const nxtState = MiscUtil.copyFast(this.__state);
+		Object.keys(nxtState)
+			.filter(k => !sourcesLoaded.has(k))
+			.forEach(k => delete nxtState[k]);
+
+		this._proxyAssignSimple("state", nxtState, true);
 	}
 
 	_getHeaderControls_addExtraStateBtns (opts, wrpStateBtnsOuter) {
@@ -3066,7 +3063,9 @@ class SourceFilter extends Filter {
 	static getCompleteFilterSources (ent) {
 		if (!ent.otherSources) return ent.source;
 
-		const otherSourcesFilt = ent.otherSources.filter(src => !ExcludeUtil.isExcluded("*", "*", src.source, {isNoCount: true}));
+		const otherSourcesFilt = ent.otherSources
+			// Avoid `otherSources` from e.g. homebrews which are not loaded, and so lack their metadata
+			.filter(src => !ExcludeUtil.isExcluded("*", "*", src.source, {isNoCount: true}) && SourceUtil.isKnownSource(src.source));
 		if (!otherSourcesFilt.length) return ent.source;
 
 		return [ent.source].concat(otherSourcesFilt.map(src => new SourceFilterItem({item: src.source, isIgnoreRed: true, isOtherSource: true})));

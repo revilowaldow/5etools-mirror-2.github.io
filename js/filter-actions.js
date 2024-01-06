@@ -13,7 +13,7 @@ class PageFilterActions extends PageFilter {
 			displayFn: StrUtil.uppercaseFirst,
 			itemSortFn: SortUtil.ascSortLower,
 		});
-		this._miscFilter = new Filter({header: "Miscellaneous", items: ["Optional/Variant Action", "SRD", "Basic Rules"], isMiscFilter: true});
+		this._miscFilter = new Filter({header: "Miscellaneous", items: ["Optional/Variant Action", "SRD", "Basic Rules", "Legacy"], isMiscFilter: true});
 	}
 
 	static mutateForFilters (it) {
@@ -21,6 +21,7 @@ class PageFilterActions extends PageFilter {
 		it._fMisc = [];
 		if (it.srd) it._fMisc.push("SRD");
 		if (it.basicRules) it._fMisc.push("Basic Rules");
+		if (SourceUtil.isLegacySourceWotc(it.source)) it._fMisc.push("Legacy");
 		if (it.fromVariant) it._fMisc.push("Optional/Variant Action");
 	}
 

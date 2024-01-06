@@ -469,10 +469,21 @@ input[type=checkbox].sidemenu__row__label__cb {
 
 	&disp-srd {
 		font-size: 8.5px;
-		vertical-align: super;
+		align-self: start;
 		top: 2px;
 		margin-right: 1px;
-		margin-left: -2px;
+		margin-left: 2px;
+	}
+
+	&disp-source-marker {
+		margin-left: 2px;
+	}
+
+	&wrp-page {
+		margin-left: 4px;
+		font-family: "Convergence", Arial, sans-serif;
+		font-weight: 100;
+		font-size: 94%;
 	}
 
 	// region Clear button
@@ -1765,7 +1776,7 @@ tr.regionaleffect {
 	line-height: 2.3em;
 
 	&--large {
-		font-size: 5vmin;
+		font-size: 4vmin;
 		color: initial;
 	}
 }
@@ -3006,7 +3017,7 @@ th.border {
 
 	.stripe-odd-table > tbody > tr:nth-child(odd),
 	.stripe-even-table > tbody > tr:nth-child(even) {
-		background-color: #4e4e4e80; // pre-blend (50% opacity): 38 38 38
+		background-color: $rgb-stripe-grey--night;
 	}
 
 	#please-select-message.showing > td {

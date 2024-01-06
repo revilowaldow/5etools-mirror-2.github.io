@@ -23,3 +23,9 @@
 		text-decoration-color: $rgb-source-PSA !important;
 	}
 }
+
+.night-mode .ve-source-marker {
+	&--partnered {
+		color: #27ac8c;
+	}
+}

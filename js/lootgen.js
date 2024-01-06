@@ -29,6 +29,9 @@ class LootGenPage {
 		this._lootGenUi.addHookAll("state", () => savedStateDebounced());
 		this._lootGenUi.addHookAll("meta", () => savedStateDebounced());
 
+		$(`#wrp-loading`).remove();
+		$(`#wrp-content`).showVe();
+
 		window.dispatchEvent(new Event("toolsLoaded"));
 	}
 

@@ -55,7 +55,7 @@ class PageFilterFeats extends PageFilter {
 		this._immuneFilter = FilterCommon.getDamageImmuneFilter();
 		this._defenceFilter = new MultiFilter({header: "Damage", filters: [this._vulnerableFilter, this._resistFilter, this._immuneFilter]});
 		this._conditionImmuneFilter = FilterCommon.getConditionImmuneFilter();
-		this._miscFilter = new Filter({header: "Miscellaneous", items: ["Has Info", "Has Images", "SRD", "Basic Rules"], isMiscFilter: true});
+		this._miscFilter = new Filter({header: "Miscellaneous", items: ["Has Info", "Has Images", "SRD", "Basic Rules", "Legacy"], isMiscFilter: true});
 	}
 
 	static mutateForFilters (feat) {
@@ -85,6 +85,7 @@ class PageFilterFeats extends PageFilter {
 		}
 		feat._fMisc = feat.srd ? ["SRD"] : [];
 		if (feat.basicRules) feat._fMisc.push("Basic Rules");
+		if (SourceUtil.isLegacySourceWotc(feat.source)) feat._fMisc.push("Legacy");
 		if (feat.hasFluff || feat.fluff?.entries) feat._fMisc.push("Has Info");
 		if (feat.hasFluffImages || feat.fluff?.images) feat._fMisc.push("Has Images");
 		if (feat.repeatable != null) feat._fMisc.push(feat.repeatable ? "Repeatable" : "Not Repeatable");
@@ -198,7 +199,7 @@ class ModalFilterFeats extends ModalFilter {
 			<div class="col-4 ${feat._versionBase_isVersion ? "italic" : ""} ${this._getNameStyle()}">${feat._versionBase_isVersion ? `<span class="px-3"></span>` : ""}${feat.name}</div>
 			<span class="col-3 ${feat._slAbility === VeCt.STR_NONE ? "italic" : ""}">${feat._slAbility}</span>
 				<span class="col-3 ${feat._slPrereq === VeCt.STR_NONE ? "italic" : ""}">${feat._slPrereq}</span>
-			<div class="col-1 pr-0 ve-text-center ${Parser.sourceJsonToColor(feat.source)}" title="${Parser.sourceJsonToFull(feat.source)}" ${Parser.sourceJsonToStyle(feat.source)}>${source}</div>
+			<div class="col-1 pr-0 ve-flex-h-center ${Parser.sourceJsonToColor(feat.source)}" title="${Parser.sourceJsonToFull(feat.source)}" ${Parser.sourceJsonToStyle(feat.source)}>${source}${Parser.sourceJsonToMarkerHtml(feat.source)}</div>
 		</div>`;
 
 		const btnShowHidePreview = eleRow.firstElementChild.children[1].firstElementChild;

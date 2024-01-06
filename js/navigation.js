@@ -174,7 +174,7 @@ class NavBar {
 			NavBar._CAT_CACHE,
 			{
 				html: "Preload Adventure Text <small>(50MB+)</small>",
-				click: (evt) => NavBar.InteractionManager._pOnClick_button_preloadOffline(evt, /data\/adventure/),
+				click: (evt) => NavBar.InteractionManager._pOnClick_button_preloadOffline(evt, {route: /data\/adventure/}),
 				title: "Preload adventure text for offline use.",
 			},
 		);
@@ -182,7 +182,7 @@ class NavBar {
 			NavBar._CAT_CACHE,
 			{
 				html: "Preload Book Images <small>(1GB+)</small>",
-				click: (evt) => NavBar.InteractionManager._pOnClick_button_preloadOffline(evt, /img\/book/),
+				click: (evt) => NavBar.InteractionManager._pOnClick_button_preloadOffline(evt, {route: /img\/book/, isRequireImages: true}),
 				title: "Preload book images offline use. Note that book text is preloaded automatically.",
 			},
 		);
@@ -190,7 +190,7 @@ class NavBar {
 			NavBar._CAT_CACHE,
 			{
 				html: "Preload Adventure Text and Images <small>(2GB+)</small>",
-				click: (evt) => NavBar.InteractionManager._pOnClick_button_preloadOffline(evt, /(?:data|img)\/adventure/),
+				click: (evt) => NavBar.InteractionManager._pOnClick_button_preloadOffline(evt, {route: /(?:data|img)\/adventure/, isRequireImages: true}),
 				title: "Preload adventure text and images for offline use.",
 			},
 		);
@@ -198,7 +198,7 @@ class NavBar {
 			NavBar._CAT_CACHE,
 			{
 				html: "Preload All Images <small>(4GB+)</small>",
-				click: (evt) => NavBar.InteractionManager._pOnClick_button_preloadOffline(evt, /img/),
+				click: (evt) => NavBar.InteractionManager._pOnClick_button_preloadOffline(evt, {route: /img/, isRequireImages: true}),
 				title: "Preload all images for offline use.",
 			},
 		);
@@ -206,7 +206,7 @@ class NavBar {
 			NavBar._CAT_CACHE,
 			{
 				html: "Preload All <small>(5GB+)</small>",
-				click: (evt) => NavBar.InteractionManager._pOnClick_button_preloadOffline(evt, /./),
+				click: (evt) => NavBar.InteractionManager._pOnClick_button_preloadOffline(evt, {route: /./, isRequireImages: true}),
 				title: "Preload everything for offline use.",
 			},
 		);
@@ -815,11 +815,19 @@ NavBar.InteractionManager = class {
 		}
 	}
 
-	static async _pOnClick_button_preloadOffline (evt, route) {
+	static async _pOnClick_button_preloadOffline (evt, {route, isRequireImages = false}) {
 		evt.preventDefault();
 
 		if (globalThis.swCacheRoutes === undefined) {
 			JqueryUtil.doToast(`The loader was not yet available! Reload the page and try again. If this problem persists, your browser may not support preloading.`);
+			return;
+		}
+
+		if (isRequireImages && globalThis.DEPLOYED_IMG_ROOT) {
+			JqueryUtil.doToast({
+				type: "danger",
+				content: `The "${evt.currentTarget.innerText.split("(")[0].trim()}" option is not currently supported on this site version. Try again some other time!`,
+			});
 			return;
 		}
 

@@ -59,7 +59,7 @@ class PageFilterOptionalFeatures extends PageFilter {
 				this._featureFilter,
 			],
 		});
-		this._miscFilter = new Filter({header: "Miscellaneous", items: ["SRD", "Grants Additional Spells"], isMiscFilter: true});
+		this._miscFilter = new Filter({header: "Miscellaneous", items: ["SRD", "Legacy", "Grants Additional Spells"], isMiscFilter: true});
 	}
 
 	static mutateForFilters (it) {
@@ -123,6 +123,7 @@ class PageFilterOptionalFeatures extends PageFilter {
 		it.featureType.sort((a, b) => SortUtil.ascSortLower(Parser.optFeatureTypeToFull(a), Parser.optFeatureTypeToFull(b)));
 
 		it._fMisc = it.srd ? ["SRD"] : [];
+		if (SourceUtil.isLegacySourceWotc(it.source)) it._fMisc.push("Legacy");
 		if (it.additionalSpells) it._fMisc.push("Grants Additional Spells");
 	}
 
@@ -225,7 +226,7 @@ class ModalFilterOptionalFeatures extends ModalFilter {
 			<span class="col-2 ve-text-center" title="${optfeat._dFeatureType}">${optfeat._lFeatureType}</span>
 			<span class="col-4 ve-text-center">${prerequisite}</span>
 			<span class="col-1 ve-text-center">${level}</span>
-			<div class="col-1 pr-0 ve-text-center ${Parser.sourceJsonToColor(optfeat.source)}" title="${Parser.sourceJsonToFull(optfeat.source)}" ${Parser.sourceJsonToStyle(optfeat.source)}>${source}</div>
+			<div class="col-1 pr-0 ve-flex-h-center ${Parser.sourceJsonToColor(optfeat.source)}" title="${Parser.sourceJsonToFull(optfeat.source)}" ${Parser.sourceJsonToStyle(optfeat.source)}>${source}${Parser.sourceJsonToMarkerHtml(optfeat.source)}</div>
 		</div>`;
 
 		const btnShowHidePreview = eleRow.firstElementChild.children[1].firstElementChild;

@@ -2,7 +2,7 @@
 
 class PageFilterEquipment extends PageFilter {
 	static _MISC_FILTER_ITEMS = [
-		"Item Group", "Bundle", "SRD", "Basic Rules", "Has Images", "Has Info", "Reprinted",
+		"Item Group", "Bundle", "SRD", "Basic Rules", "Legacy", "Has Images", "Has Info", "Reprinted",
 	];
 
 	static _RE_FOUNDRY_ATTR = /(?:[-+*/]\s*)?@[a-z0-9.]+/gi;
@@ -86,6 +86,7 @@ class PageFilterEquipment extends PageFilter {
 		if (item.packContents) item._fMisc.push("Bundle");
 		if (item.srd) item._fMisc.push("SRD");
 		if (item.basicRules) item._fMisc.push("Basic Rules");
+		if (SourceUtil.isLegacySourceWotc(item.source)) item._fMisc.push("Legacy");
 		if (item.hasFluff || item.fluff?.entries) item._fMisc.push("Has Info");
 		if (item.hasFluffImages || item.fluff?.images) item._fMisc.push("Has Images");
 		if (item.miscTags) item._fMisc.push(...item.miscTags.map(Parser.itemMiscTagToFull));
@@ -482,7 +483,7 @@ class ModalFilterItems extends ModalFilter {
 
 			<div class="col-5 ${item._versionBase_isVersion ? "italic" : ""} ${this._getNameStyle()}">${item._versionBase_isVersion ? `<span class="px-3"></span>` : ""}${item.name}</div>
 			<div class="col-5">${type.uppercaseFirst()}</div>
-			<div class="col-1 ve-text-center ${Parser.sourceJsonToColor(item.source)} pr-0" title="${Parser.sourceJsonToFull(item.source)}" ${Parser.sourceJsonToStyle(item.source)}>${source}</div>
+			<div class="col-1 ve-flex-h-center ${Parser.sourceJsonToColor(item.source)} pr-0" title="${Parser.sourceJsonToFull(item.source)}" ${Parser.sourceJsonToStyle(item.source)}>${source}${Parser.sourceJsonToMarkerHtml(item.source)}</div>
 		</div>`;
 
 		const btnShowHidePreview = eleRow.firstElementChild.children[1].firstElementChild;

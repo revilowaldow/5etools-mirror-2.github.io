@@ -22,7 +22,7 @@ class PageFilterVehicles extends PageFilter {
 		this._hpFilter = new RangeFilter({header: "Hit Points"});
 		this._hpFilter = new RangeFilter({header: "Hit Points"});
 		this._creatureCapacityFilter = new RangeFilter({header: "Creature Capacity"});
-		this._miscFilter = new Filter({header: "Miscellaneous", items: ["SRD", "Has Images", "Has Info", "Has Token"], isMiscFilter: true});
+		this._miscFilter = new Filter({header: "Miscellaneous", items: ["SRD", "Legacy", "Has Images", "Has Info", "Has Token"], isMiscFilter: true});
 	}
 
 	static mutateForFilters (it) {
@@ -59,6 +59,7 @@ class PageFilterVehicles extends PageFilter {
 		it._fCreatureCapacity = (it.capCrew || 0) + (it.capPassenger || 0) + (it.capCreature || 0);
 
 		it._fMisc = it.srd ? ["SRD"] : [];
+		if (SourceUtil.isLegacySourceWotc(it.source)) it._fMisc.push("Legacy");
 		if (it.tokenUrl || it.hasToken) it._fMisc.push("Has Token");
 		if (it.hasFluff || it.fluff?.entries) it._fMisc.push("Has Info");
 		if (it.hasFluffImages || it.fluff?.images) it._fMisc.push("Has Images");

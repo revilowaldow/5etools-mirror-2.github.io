@@ -2,7 +2,7 @@
 
 // in deployment, `IS_DEPLOYED = "<version number>";` should be set below.
 globalThis.IS_DEPLOYED = undefined;
-globalThis.VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"1.197.2"/* 5ETOOLS_VERSION__CLOSE */;
+globalThis.VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"1.197.3"/* 5ETOOLS_VERSION__CLOSE */;
 globalThis.DEPLOYED_IMG_ROOT = undefined;
 // for the roll20 script to set
 globalThis.IS_VTT = false;
@@ -447,8 +447,8 @@ CleanUtil._ELLIPSIS_COLLAPSE_REGEX = /\s*(\.\s*\.\s*\.)/g;
 CleanUtil._DASH_COLLAPSE_REGEX = /[ ]*([\u2014\u2013])[ ]*/g;
 
 // SOURCES =============================================================================================================
-globalThis.SourceUtil = {
-	ADV_BOOK_GROUPS: [
+globalThis.SourceUtil = class {
+	static ADV_BOOK_GROUPS = [
 		{group: "core", displayName: "Core"},
 		{group: "supplement", displayName: "Supplements"},
 		{group: "setting", displayName: "Settings"},
@@ -459,68 +459,79 @@ globalThis.SourceUtil = {
 		{group: "screen", displayName: "Screens"},
 		{group: "recipe", displayName: "Recipes"},
 		{group: "other", displayName: "Miscellaneous"},
-	],
+	];
 
-	_subclassReprintLookup: {},
-	async pInitSubclassReprintLookup () {
+	static _subclassReprintLookup = {};
+	static async pInitSubclassReprintLookup () {
 		SourceUtil._subclassReprintLookup = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/generated/gendata-subclass-lookup.json`);
-	},
+	}
 
-	isSubclassReprinted (className, classSource, subclassShortName, subclassSource) {
+	static isSubclassReprinted (className, classSource, subclassShortName, subclassSource) {
 		const fromLookup = MiscUtil.get(SourceUtil._subclassReprintLookup, classSource, className, subclassSource, subclassShortName);
 		return fromLookup ? fromLookup.isReprinted : false;
-	},
+	}
+
+	static isKnownSource (source) {
+		return SourceUtil.isSiteSource(source)
+			|| (typeof PrereleaseUtil !== "undefined" && PrereleaseUtil.hasSourceJson(source))
+			|| (typeof BrewUtil2 !== "undefined" && BrewUtil2.hasSourceJson(source));
+	}
 
 	/** I.e., not homebrew. */
-	isSiteSource (source) { return !!Parser.SOURCE_JSON_TO_FULL[source]; },
+	static isSiteSource (source) { return !!Parser.SOURCE_JSON_TO_FULL[source]; }
 
-	isAdventure (source) {
+	static isAdventure (source) {
 		if (source instanceof FilterItem) source = source.item;
 		return Parser.SOURCES_ADVENTURES.has(source);
-	},
+	}
 
-	isCoreOrSupplement (source) {
+	static isCoreOrSupplement (source) {
 		if (source instanceof FilterItem) source = source.item;
 		return Parser.SOURCES_CORE_SUPPLEMENTS.has(source);
-	},
+	}
 
-	isNonstandardSource (source) {
+	static isNonstandardSource (source) {
 		if (source == null) return false;
 		return (
 			(typeof BrewUtil2 === "undefined" || !BrewUtil2.hasSourceJson(source))
 				&& SourceUtil.isNonstandardSourceWotc(source)
 		)
 			|| SourceUtil.isPrereleaseSource(source);
-	},
+	}
 
-	isPartneredSourceWotc (source) {
+	static isPartneredSourceWotc (source) {
 		if (source == null) return false;
 		return Parser.SOURCES_PARTNERED_WOTC.has(source);
-	},
+	}
+
+	static isLegacySourceWotc (source) {
+		if (source == null) return false;
+		return source === Parser.SRC_VGM || source === Parser.SRC_MTF;
+	}
 
 	// TODO(Future) remove this in favor of simply checking existence in `PrereleaseUtil`
 	// TODO(Future) cleanup uses of `PrereleaseUtil.hasSourceJson` to match
-	isPrereleaseSource (source) {
+	static isPrereleaseSource (source) {
 		if (source == null) return false;
 		if (typeof PrereleaseUtil !== "undefined" && PrereleaseUtil.hasSourceJson(source)) return true;
 		return source.startsWith(Parser.SRC_UA_PREFIX)
 			|| source.startsWith(Parser.SRC_UA_ONE_PREFIX);
-	},
+	}
 
-	isNonstandardSourceWotc (source) {
+	static isNonstandardSourceWotc (source) {
 		return SourceUtil.isPrereleaseSource(source)
 			|| source.startsWith(Parser.SRC_PS_PREFIX)
 			|| source.startsWith(Parser.SRC_AL_PREFIX)
 			|| source.startsWith(Parser.SRC_MCVX_PREFIX)
 			|| Parser.SOURCES_NON_STANDARD_WOTC.has(source);
-	},
+	}
 
-	FILTER_GROUP_STANDARD: 0,
-	FILTER_GROUP_PARTNERED: 1,
-	FILTER_GROUP_NON_STANDARD: 2,
-	FILTER_GROUP_HOMEBREW: 3,
+	static FILTER_GROUP_STANDARD = 0;
+	static FILTER_GROUP_PARTNERED = 1;
+	static FILTER_GROUP_NON_STANDARD = 2;
+	static FILTER_GROUP_HOMEBREW = 3;
 
-	getFilterGroup (source) {
+	static getFilterGroup (source) {
 		if (source instanceof FilterItem) source = source.item;
 		if (
 			(typeof PrereleaseUtil !== "undefined" && PrereleaseUtil.hasSourceJson(source))
@@ -529,9 +540,9 @@ globalThis.SourceUtil = {
 		if (typeof BrewUtil2 !== "undefined" && BrewUtil2.hasSourceJson(source)) return SourceUtil.FILTER_GROUP_HOMEBREW;
 		if (SourceUtil.isPartneredSourceWotc(source)) return SourceUtil.FILTER_GROUP_PARTNERED;
 		return SourceUtil.FILTER_GROUP_STANDARD;
-	},
+	}
 
-	getAdventureBookSourceHref (source, page) {
+	static getAdventureBookSourceHref (source, page) {
 		if (!source) return null;
 		source = source.toLowerCase();
 
@@ -549,9 +560,9 @@ globalThis.SourceUtil = {
 		mappedSource = mappedSource.toLowerCase();
 
 		return `${docPage}#${[mappedSource, page ? `page:${page}` : null].filter(Boolean).join(HASH_PART_SEP)}`;
-	},
+	}
 
-	getEntitySource (it) { return it.source || it.inherits?.source; },
+	static getEntitySource (it) { return it.source || it.inherits?.source; }
 };
 
 // CURRENCY ============================================================================================================
@@ -3095,6 +3106,17 @@ if (!IS_DEPLOYED && !IS_VTT && typeof window !== "undefined") {
 				const spl = window.location.href.split("/");
 				window.prompt("Copy to clipboard: Ctrl+C, Enter", `https://5etools-mirror-2.github.io/${spl[spl.length - 1]}`);
 			}
+		}
+	});
+
+	// TODO(img) remove this in future
+	window.addEventListener("load", () => {
+		if (window.location?.host === "5etools-mirror-1.github.io") {
+			JqueryUtil.doToast({
+				type: "warning",
+				isAutoHide: false,
+				content: $(`<div>This mirror is no longer being updated/maintained, and will be shut down on March 1st 2024.<br>Please use <a href="https://5etools-mirror-2.github.io/" rel="noopener noreferrer">5etools-mirror-2.github.io</a> instead, and <a href="https://gist.github.com/5etools-mirror-2/40d6d80f40205882d3fa5006fae963a4" rel="noopener noreferrer">migrate your data</a>.</div>`),
+			});
 		}
 	});
 }

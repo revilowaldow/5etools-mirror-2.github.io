@@ -37,7 +37,7 @@ class PageFilterRecipes extends PageFilter {
 		});
 		this._miscFilter = new Filter({
 			header: "Miscellaneous",
-			items: ["SRD"],
+			items: ["SRD", "Legacy"],
 			isMiscFilter: true,
 			displayFn: PageFilterRecipes._miscTagToFull,
 		});
@@ -45,6 +45,7 @@ class PageFilterRecipes extends PageFilter {
 
 	static mutateForFilters (it) {
 		it._fMisc = it.srd ? ["SRD"] : [];
+		if (SourceUtil.isLegacySourceWotc(it.source)) it._fMisc.push("Legacy");
 		if (it.miscTags) it._fMisc.push(...it.miscTags);
 		it._fServes = (it.serves?.min != null && it.serves?.max != null) ? [it.serves.min, it.serves.max] : (it.serves?.exact ?? null);
 		it._fDiet = it.diet ? PageFilterRecipes._DIET_TO_FULL[it.diet] || it.diet : null;

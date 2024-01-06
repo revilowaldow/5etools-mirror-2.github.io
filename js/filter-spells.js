@@ -159,6 +159,7 @@ class PageFilterSpells extends PageFilter {
 		if ((!s.miscTags || (s.miscTags && !s.miscTags.includes("SCL"))) && s.entriesHigherLevel) out.push("SCL");
 		if (s.srd) out.push("SRD");
 		if (s.basicRules) out.push("Basic Rules");
+		if (SourceUtil.isLegacySourceWotc(s.source)) s._fMisc.push("Legacy");
 		if (s.hasFluff || s.fluff?.entries) out.push("Has Info");
 		if (s.hasFluffImages || s.fluff?.images) out.push("Has Images");
 		return out;
@@ -358,7 +359,7 @@ class PageFilterSpells extends PageFilter {
 		this._optionalfeaturesFilter = new SearchableFilter({header: "Other Option/Feature"});
 		this._metaFilter = new Filter({
 			header: "Components & Miscellaneous",
-			items: [...PageFilterSpells._META_FILTER_BASE_ITEMS, "Ritual", "SRD", "Basic Rules", "Has Images", "Has Token"],
+			items: [...PageFilterSpells._META_FILTER_BASE_ITEMS, "Ritual", "SRD", "Basic Rules", "Legacy", "Has Images", "Has Token"],
 			itemSortFn: PageFilterSpells.sortMetaFilter,
 			isMiscFilter: true,
 			displayFn: it => Parser.spMiscTagToFull(it),
@@ -676,7 +677,7 @@ class ModalFilterSpells extends ModalFilter {
 			<div class="col-1 sp__school-${spell.school} ve-text-center" title="${Parser.spSchoolAndSubschoolsAbvsToFull(spell.school, spell.subschools)}" ${Parser.spSchoolAbvToStyle(spell.school)}>${school}</div>
 			<div class="col-0-5 ve-text-center" title="Concentration">${concentration}</div>
 			<div class="col-2 text-right">${range}</div>
-			<div class="col-1 pr-0 ve-text-center ${Parser.sourceJsonToColor(spell.source)}" title="${Parser.sourceJsonToFull(spell.source)}" ${Parser.sourceJsonToStyle(spell.source)}>${source}</div>
+			<div class="col-1 pr-0 ve-flex-h-center ${Parser.sourceJsonToColor(spell.source)}" title="${Parser.sourceJsonToFull(spell.source)}" ${Parser.sourceJsonToStyle(spell.source)}>${source}${Parser.sourceJsonToMarkerHtml(spell.source)}</div>
 		</div>`;
 
 		const btnShowHidePreview = eleRow.firstElementChild.children[1].firstElementChild;

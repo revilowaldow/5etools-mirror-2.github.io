@@ -2618,5 +2618,16 @@
 		"ver": "1.197.2",
 		"date": "2024-01-03",
 		"txt": "- Added Dungeons of Drakkenheim tokens\n- Fixed crash when attempting to load some books (FTD, SatO, VRGR)\n- Fixed crash when clicking an already-open area in the Dynamic Map Viewer\n- Fixed Search page crash when attempting to load images for pages\n- (Fixed typos/added tags)"
+	},
+	{
+		"ver": "1.197.3",
+		"date": "2024-01-06",
+		"txt": "- Added Dynamic Map Viewer support to Dungeons of Drakkenheim\n- Added \"Legacy\" Miscellaneous filter to various list pages\n- Added \"Legacy\" marker to Omnisearch results\n- (Fixed typos/added tags)"
+	},
+	{
+		"ver": "1.198.0",
+		"date": "2024-01-06",
+		"title": "The Saturday Mirror",
+		"txt": "- Converted remaining images to `.webp`\n- (Brew) Moved Bestiary tokens into a more sensible directory structure; tokens may now be found under `bestiary/token` (similar to the existing setup for `objects`/`vehicles`)\n- (Fixed typos/added tags)"
 	}
 ]

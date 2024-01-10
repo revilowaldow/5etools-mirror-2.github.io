@@ -2197,46 +2197,6 @@ th.border {
 	border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
-.homebrew-section {
-	background-color: $rgb-bg-homebrew;
-
-	.homebrew-float {
-		float: right;
-		border: 1px dotted;
-		margin-bottom: 5px;
-		margin-left: 5px;
-		padding-right: 2px;
-		padding-left: 2px;
-		text-indent: 0;
-	}
-
-	.homebrew-old-content {
-		color: #a00;
-		margin-left: 5px;
-	}
-
-	.homebrew-notice {
-		&::before {
-			content: "Homebrew";
-		}
-	}
-}
-
-.homebrew-inline {
-	background-color: $rgb-bg-homebrew;
-	text-decoration: underline dotted;
-}
-
-.stats tr.homebrew-hover {
-	> td {
-		padding: 5px 0.3em;
-
-		> div > *:last-child {
-			margin-bottom: 0;
-		}
-	}
-}
-
 .toast {
 	@include shadow-1();
 
@@ -3136,18 +3096,6 @@ th.border {
 
 	.content-tab-bar {
 		background: $rgb-bg--night;
-	}
-
-	.homebrew-section {
-		background-color: $rgb-bg-homebrew--night;
-
-		.homebrew-old-content {
-			color: #f99;
-		}
-	}
-
-	.homebrew-inline {
-		background-color: $rgb-bg-homebrew--night;
 	}
 
 	.highlight {

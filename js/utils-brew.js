@@ -274,6 +274,7 @@ class _BrewUtil2Base {
 	DISPLAY_NAME_PLURAL;
 	DEFAULT_AUTHOR;
 	STYLE_BTN;
+	IS_PREFER_DATE_ADDED;
 
 	_LOCK = new VeLock({name: this.constructor.name});
 
@@ -289,6 +290,15 @@ class _BrewUtil2Base {
 	_addLazy_brewsTemp = [];
 
 	_storage = StorageUtil;
+
+	_parent = null;
+
+	/**
+	 * @param {?_BrewUtil2Base} parent
+	 */
+	constructor ({parent = null} = {}) {
+		this._parent = parent;
+	}
 
 	/* -------------------------------------------- */
 
@@ -572,7 +582,11 @@ class _BrewUtil2Base {
 		};
 	}
 
+	/* -------------------------------------------- */
+
 	getCacheIteration () { return this._cache_iteration; }
+
+	/* -------------------------------------------- */
 
 	async pSetBrew (val, {lockToken} = {}) {
 		try {
@@ -602,6 +616,8 @@ class _BrewUtil2Base {
 		this._setBrewMetas(val.map(brew => this._getBrewDocReduced(brew)));
 	}
 
+	/* -------------------------------------------- */
+
 	_getBrewId (brew) {
 		if (brew.head.url) return brew.head.url;
 		if (brew.body._meta?.sources?.length) return brew.body._meta.sources.map(src => (src.json || "").toLowerCase()).sort(SortUtil.ascSortLower).join(" :: ");
@@ -618,6 +634,24 @@ class _BrewUtil2Base {
 		return [...brews, ...brewsToAdd];
 	}
 
+	/* -------------------------------------------- */
+
+	async _pLoadParentDependencies ({unavailableSources}) {
+		if (!unavailableSources?.length) return false;
+		if (!this._parent) return false;
+
+		await Promise.allSettled(unavailableSources.map(async source => {
+			const url = await this._parent.pGetSourceUrl(source);
+			if (!url) return;
+			await this._parent.pAddBrewFromUrl(url, {isLazy: true});
+		}));
+		await this._parent.pAddBrewsLazyFinalize();
+
+		return false;
+	}
+
+	/* -------------------------------------------- */
+
 	async _pGetBrewDependencies ({brewDocs, brewsRaw = null, brewsRawLocal = null, lockToken}) {
 		try {
 			lockToken = await this._LOCK.pLock({token: lockToken});
@@ -629,11 +663,13 @@ class _BrewUtil2Base {
 
 	async _pGetBrewDependencies_ ({brewDocs, brewsRaw = null, brewsRawLocal = null, lockToken}) {
 		const urlRoot = await this.pGetCustomUrl();
-		const brewIndex = await this._pGetSourceIndex(urlRoot);
+		const brewIndex = await this.pGetSourceIndex(urlRoot);
 
 		const toLoadSources = [];
 		const loadedSources = new Set();
-		const out = [];
+
+		const unavailableSources = new Set();
+		const brewDocsDependencies = [];
 
 		brewsRaw = brewsRaw || await this._pGetBrewRaw({lockToken});
 		brewsRawLocal = brewsRawLocal || await this._pGetBrew_pGetLocalBrew({lockToken});
@@ -644,7 +680,11 @@ class _BrewUtil2Base {
 		brewsRaw.forEach(brew => trackLoaded(brew));
 		brewsRawLocal.forEach(brew => trackLoaded(brew));
 
-		brewDocs.forEach(brewDoc => toLoadSources.push(...this._getBrewDependencySources({brewDoc, brewIndex})));
+		brewDocs.forEach(brewDoc => {
+			const {available, unavailable} = this._getBrewDependencySources({brewDoc, brewIndex});
+			toLoadSources.push(...available);
+			unavailable.forEach(src => unavailableSources.add(src));
+		});
 
 		while (toLoadSources.length) {
 			const src = toLoadSources.pop();
@@ -653,18 +693,23 @@ class _BrewUtil2Base {
 
 			const url = this.getFileUrl(brewIndex[src], urlRoot);
 			const brewDocDep = await this._pGetBrewDocFromUrl({url});
-			out.push(brewDocDep);
+			brewDocsDependencies.push(brewDocDep);
 			trackLoaded(brewDocDep);
 
-			toLoadSources.push(...this._getBrewDependencySources({brewDoc: brewDocDep, brewIndex}));
+			const {available, unavailable} = this._getBrewDependencySources({brewDoc: brewDocDep, brewIndex});
+			toLoadSources.push(...available);
+			unavailable.forEach(src => unavailableSources.add(src));
 		}
 
-		return out;
+		return {
+			brewDocsDependencies,
+			unavailableSources: [...unavailableSources].sort(SortUtil.ascSortLower),
+		};
 	}
 
 	async pGetSourceUrl (source) {
 		const urlRoot = await this.pGetCustomUrl();
-		const brewIndex = await this._pGetSourceIndex(urlRoot);
+		const brewIndex = await this.pGetSourceIndex(urlRoot);
 
 		if (brewIndex[source]) return this.getFileUrl(brewIndex[source], urlRoot);
 
@@ -677,7 +722,7 @@ class _BrewUtil2Base {
 	}
 
 	/** @abstract */
-	async _pGetSourceIndex (urlRoot) { throw new Error("Unimplemented!"); }
+	async pGetSourceIndex (urlRoot) { throw new Error("Unimplemented!"); }
 	/** @abstract */
 	getFileUrl (path, urlRoot) { throw new Error("Unimplemented!"); }
 	/** @abstract */
@@ -691,15 +736,14 @@ class _BrewUtil2Base {
 	_PROPS_DEPS_DEEP = ["otherSources"];
 
 	_getBrewDependencySources ({brewDoc, brewIndex}) {
-		const out = new Set();
+		const sources = new Set();
 
 		this._PROPS_DEPS.forEach(prop => {
 			const obj = brewDoc.body._meta?.[prop];
 			if (!obj || !Object.keys(obj).length) return;
 			Object.values(obj)
 				.flat()
-				.filter(src => brewIndex[src])
-				.forEach(src => out.add(src));
+				.forEach(src => sources.add(src));
 		});
 
 		this._PROPS_DEPS_DEEP.forEach(prop => {
@@ -708,21 +752,28 @@ class _BrewUtil2Base {
 			return Object.values(obj)
 				.map(objSub => Object.keys(objSub))
 				.flat()
-				.filter(src => brewIndex[src])
-				.forEach(src => out.add(src));
+				.forEach(src => sources.add(src));
 		});
 
-		return out;
+		const [available, unavailable] = [...sources]
+			.segregate(src => brewIndex[src]);
+
+		return {available, unavailable};
 	}
 
-	async pAddBrewFromUrl (url, {lockToken, isLazy} = {}) {
+	async pAddBrewFromUrl (url, {isLazy} = {}) {
+		let brewDocs = []; let unavailableSources = [];
+
 		try {
-			return (await this._pAddBrewFromUrl({url, lockToken, isLazy}));
+			({brewDocs, unavailableSources} = await this._pAddBrewFromUrl({url, isLazy}));
 		} catch (e) {
 			JqueryUtil.doToast({type: "danger", content: `Failed to load ${this.DISPLAY_NAME} from URL "${url}"! ${VeCt.STR_SEE_CONSOLE}`});
 			setTimeout(() => { throw e; });
+			return [];
 		}
-		return [];
+
+		await this._pLoadParentDependencies({unavailableSources});
+		return brewDocs;
 	}
 
 	async _pGetBrewDocFromUrl ({url}) {
@@ -741,16 +792,17 @@ class _BrewUtil2Base {
 				this._LOCK.unlock();
 			}
 
-			return [brewDoc];
+			return {brewDocs: [brewDoc], unavailableSources: []};
 		}
 
-		const brewDocs = [brewDoc];
+		const brewDocs = [brewDoc]; const unavailableSources = [];
 		try {
 			lockToken = await this._LOCK.pLock({token: lockToken});
 			const brews = MiscUtil.copyFast(await this._pGetBrewRaw({lockToken}));
 
-			const brewDocsDependencies = await this._pGetBrewDependencies({brewDocs, brewsRaw: brews, lockToken});
+			const {brewDocsDependencies, unavailableSources: unavailableSources_} = await this._pGetBrewDependencies({brewDocs, brewsRaw: brews, lockToken});
 			brewDocs.push(...brewDocsDependencies);
+			unavailableSources.push(...unavailableSources_);
 
 			const brewsNxt = this._getNextBrews(brews, brewDocs);
 			await this.pSetBrew(brewsNxt, {lockToken});
@@ -758,20 +810,25 @@ class _BrewUtil2Base {
 			this._LOCK.unlock();
 		}
 
-		return brewDocs;
+		return {brewDocs, unavailableSources};
 	}
 
 	async pAddBrewsFromFiles (files) {
+		let brewDocs = []; let unavailableSources = [];
+
 		try {
 			const lockToken = await this._LOCK.pLock();
-			return (await this._pAddBrewsFromFiles({files, lockToken}));
+			({brewDocs, unavailableSources} = await this._pAddBrewsFromFiles({files, lockToken}));
 		} catch (e) {
 			JqueryUtil.doToast({type: "danger", content: `Failed to load ${this.DISPLAY_NAME} from file(s)! ${VeCt.STR_SEE_CONSOLE}`});
 			setTimeout(() => { throw e; });
+			return [];
 		} finally {
 			this._LOCK.unlock();
 		}
-		return [];
+
+		await this._pLoadParentDependencies({unavailableSources});
+		return brewDocs;
 	}
 
 	async _pAddBrewsFromFiles ({files, lockToken}) {
@@ -779,32 +836,41 @@ class _BrewUtil2Base {
 
 		const brews = MiscUtil.copyFast(await this._pGetBrewRaw({lockToken}));
 
-		const brewDocsDependencies = await this._pGetBrewDependencies({brewDocs, brewsRaw: brews, lockToken});
+		const {brewDocsDependencies, unavailableSources} = await this._pGetBrewDependencies({brewDocs, brewsRaw: brews, lockToken});
 		brewDocs.push(...brewDocsDependencies);
 
 		const brewsNxt = this._getNextBrews(brews, brewDocs);
 		await this.pSetBrew(brewsNxt, {lockToken});
 
-		return brewDocs;
+		return {brewDocs, unavailableSources};
 	}
 
-	async pAddBrewsLazyFinalize ({lockToken} = {}) {
+	async pAddBrewsLazyFinalize () {
+		let brewDocs = []; let unavailableSources = [];
+
 		try {
-			lockToken = await this._LOCK.pLock({token: lockToken});
-			return (await this._pAddBrewsLazyFinalize_({lockToken}));
+			const lockToken = await this._LOCK.pLock();
+			({brewDocs, unavailableSources} = await this._pAddBrewsLazyFinalize_({lockToken}));
+		} catch (e) {
+			JqueryUtil.doToast({type: "danger", content: `Failed to finalize ${this.DISPLAY_NAME_PLURAL}! ${VeCt.STR_SEE_CONSOLE}`});
+			setTimeout(() => { throw e; });
+			return [];
 		} finally {
 			this._LOCK.unlock();
 		}
+
+		await this._pLoadParentDependencies({unavailableSources});
+		return brewDocs;
 	}
 
 	async _pAddBrewsLazyFinalize_ ({lockToken}) {
 		const brewsRaw = await this._pGetBrewRaw({lockToken});
-		const brewDeps = await this._pGetBrewDependencies({brewDocs: this._addLazy_brewsTemp, brewsRaw, lockToken});
-		const out = MiscUtil.copyFast(brewDeps);
-		const brewsNxt = this._getNextBrews(MiscUtil.copyFast(brewsRaw), [...this._addLazy_brewsTemp, ...brewDeps]);
+		const {brewDocsDependencies, unavailableSources} = await this._pGetBrewDependencies({brewDocs: this._addLazy_brewsTemp, brewsRaw, lockToken});
+		const brewDocs = MiscUtil.copyFast(brewDocsDependencies);
+		const brewsNxt = this._getNextBrews(MiscUtil.copyFast(brewsRaw), [...this._addLazy_brewsTemp, ...brewDocsDependencies]);
 		await this.pSetBrew(brewsNxt, {lockToken});
 		this._addLazy_brewsTemp = [];
-		return out;
+		return {brewDocs, unavailableSources};
 	}
 
 	async pPullAllBrews ({brews} = {}) {
@@ -1268,6 +1334,66 @@ class _BrewUtil2Base {
 	// endregion
 }
 
+class _PrereleaseUtil extends _BrewUtil2Base {
+	_STORAGE_KEY_LEGACY = null;
+	_STORAGE_KEY_LEGACY_META = null;
+
+	_STORAGE_KEY = "PRERELEASE_STORAGE";
+	_STORAGE_KEY_META = "PRERELEASE_META_STORAGE";
+
+	_STORAGE_KEY_CUSTOM_URL = "PRERELEASE_CUSTOM_REPO_URL";
+	_STORAGE_KEY_MIGRATION_VERSION = "PRERELEASE_STORAGE_MIGRATION";
+
+	_PATH_LOCAL_DIR = "prerelease";
+	_PATH_LOCAL_INDEX = VeCt.JSON_PRERELEASE_INDEX;
+
+	_VERSION = 1;
+
+	IS_EDITABLE = false;
+	PAGE_MANAGE = UrlUtil.PG_MANAGE_PRERELEASE;
+	URL_REPO_DEFAULT = VeCt.URL_PRERELEASE;
+	DISPLAY_NAME = "prerelease content";
+	DISPLAY_NAME_PLURAL = "prereleases";
+	DEFAULT_AUTHOR = "Wizards of the Coast";
+	STYLE_BTN = "btn-primary";
+	IS_PREFER_DATE_ADDED = false;
+
+	/* -------------------------------------------- */
+
+	_pInit_doBindDragDrop () { /* No-op */ }
+
+	/* -------------------------------------------- */
+
+	async pGetSourceIndex (urlRoot) { return DataUtil.prerelease.pLoadSourceIndex(urlRoot); }
+
+	getFileUrl (path, urlRoot) { return DataUtil.prerelease.getFileUrl(path, urlRoot); }
+
+	pLoadTimestamps (brewIndex, src, urlRoot) { return DataUtil.prerelease.pLoadTimestamps(urlRoot); }
+
+	pLoadPropIndex (brewIndex, src, urlRoot) { return DataUtil.prerelease.pLoadPropIndex(urlRoot); }
+
+	pLoadMetaIndex (brewIndex, src, urlRoot) { return DataUtil.prerelease.pLoadMetaIndex(urlRoot); }
+
+	/* -------------------------------------------- */
+
+	// region Editable
+
+	pGetEditableBrewDoc (brew) { return super.pGetEditableBrewDoc(brew); }
+	pGetOrCreateEditableBrewDoc () { return super.pGetOrCreateEditableBrewDoc(); }
+	pSetEditableBrewDoc () { return super.pSetEditableBrewDoc(); }
+	pGetEditableBrewEntity (prop, uniqueId, {isDuplicate = false} = {}) { return super.pGetEditableBrewEntity(prop, uniqueId, {isDuplicate}); }
+	pPersistEditableBrewEntity (prop, ent) { return super.pPersistEditableBrewEntity(prop, ent); }
+	pRemoveEditableBrewEntity (prop, uniqueId) { return super.pRemoveEditableBrewEntity(prop, uniqueId); }
+	pAddSource (sourceObj) { return super.pAddSource(sourceObj); }
+	pEditSource (sourceObj) { return super.pEditSource(sourceObj); }
+	pIsEditableSourceJson (sourceJson) { return super.pIsEditableSourceJson(sourceJson); }
+	pMoveOrCopyToEditableBySourceJson (sourceJson) { return super.pMoveOrCopyToEditableBySourceJson(sourceJson); }
+	pMoveToEditable ({brews}) { return super.pMoveToEditable({brews}); }
+	pCopyToEditable ({brews}) { return super.pCopyToEditable({brews}); }
+
+	// endregion
+}
+
 class _BrewUtil2 extends _BrewUtil2Base {
 	_STORAGE_KEY_LEGACY = "HOMEBREW_STORAGE";
 	_STORAGE_KEY_LEGACY_META = "HOMEBREW_META_STORAGE";
@@ -1291,6 +1417,7 @@ class _BrewUtil2 extends _BrewUtil2Base {
 	DISPLAY_NAME_PLURAL = "homebrews";
 	DEFAULT_AUTHOR = "";
 	STYLE_BTN = "btn-info";
+	IS_PREFER_DATE_ADDED = true;
 
 	/* -------------------------------------------- */
 
@@ -1344,7 +1471,7 @@ class _BrewUtil2 extends _BrewUtil2Base {
 
 	/* -------------------------------------------- */
 
-	async _pGetSourceIndex (urlRoot) { return DataUtil.brew.pLoadSourceIndex(urlRoot); }
+	async pGetSourceIndex (urlRoot) { return DataUtil.brew.pLoadSourceIndex(urlRoot); }
 
 	getFileUrl (path, urlRoot) { return DataUtil.brew.getFileUrl(path, urlRoot); }
 
@@ -1518,67 +1645,8 @@ class _BrewUtil2 extends _BrewUtil2Base {
 	// endregion
 }
 
-class _PrereleaseUtil extends _BrewUtil2Base {
-	_STORAGE_KEY_LEGACY = null;
-	_STORAGE_KEY_LEGACY_META = null;
-
-	_STORAGE_KEY = "PRERELEASE_STORAGE";
-	_STORAGE_KEY_META = "PRERELEASE_META_STORAGE";
-
-	_STORAGE_KEY_CUSTOM_URL = "PRERELEASE_CUSTOM_REPO_URL";
-	_STORAGE_KEY_MIGRATION_VERSION = "PRERELEASE_STORAGE_MIGRATION";
-
-	_PATH_LOCAL_DIR = "prerelease";
-	_PATH_LOCAL_INDEX = VeCt.JSON_PRERELEASE_INDEX;
-
-	_VERSION = 1;
-
-	IS_EDITABLE = false;
-	PAGE_MANAGE = UrlUtil.PG_MANAGE_PRERELEASE;
-	URL_REPO_DEFAULT = VeCt.URL_PRERELEASE;
-	DISPLAY_NAME = "prerelease content";
-	DISPLAY_NAME_PLURAL = "prereleases";
-	DEFAULT_AUTHOR = "Wizards of the Coast";
-	STYLE_BTN = "btn-primary";
-
-	/* -------------------------------------------- */
-
-	_pInit_doBindDragDrop () { /* No-op */ }
-
-	/* -------------------------------------------- */
-
-	async _pGetSourceIndex (urlRoot) { return DataUtil.prerelease.pLoadSourceIndex(urlRoot); }
-
-	getFileUrl (path, urlRoot) { return DataUtil.prerelease.getFileUrl(path, urlRoot); }
-
-	pLoadTimestamps (brewIndex, src, urlRoot) { return DataUtil.prerelease.pLoadTimestamps(urlRoot); }
-
-	pLoadPropIndex (brewIndex, src, urlRoot) { return DataUtil.prerelease.pLoadPropIndex(urlRoot); }
-
-	pLoadMetaIndex (brewIndex, src, urlRoot) { return DataUtil.prerelease.pLoadMetaIndex(urlRoot); }
-
-	/* -------------------------------------------- */
-
-	// region Editable
-
-	pGetEditableBrewDoc (brew) { return super.pGetEditableBrewDoc(brew); }
-	pGetOrCreateEditableBrewDoc () { return super.pGetOrCreateEditableBrewDoc(); }
-	pSetEditableBrewDoc () { return super.pSetEditableBrewDoc(); }
-	pGetEditableBrewEntity (prop, uniqueId, {isDuplicate = false} = {}) { return super.pGetEditableBrewEntity(prop, uniqueId, {isDuplicate}); }
-	pPersistEditableBrewEntity (prop, ent) { return super.pPersistEditableBrewEntity(prop, ent); }
-	pRemoveEditableBrewEntity (prop, uniqueId) { return super.pRemoveEditableBrewEntity(prop, uniqueId); }
-	pAddSource (sourceObj) { return super.pAddSource(sourceObj); }
-	pEditSource (sourceObj) { return super.pEditSource(sourceObj); }
-	pIsEditableSourceJson (sourceJson) { return super.pIsEditableSourceJson(sourceJson); }
-	pMoveOrCopyToEditableBySourceJson (sourceJson) { return super.pMoveOrCopyToEditableBySourceJson(sourceJson); }
-	pMoveToEditable ({brews}) { return super.pMoveToEditable({brews}); }
-	pCopyToEditable ({brews}) { return super.pCopyToEditable({brews}); }
-
-	// endregion
-}
-
-globalThis.BrewUtil2 = new _BrewUtil2();
 globalThis.PrereleaseUtil = new _PrereleaseUtil();
+globalThis.BrewUtil2 = new _BrewUtil2({parent: globalThis.PrereleaseUtil}); // Homebrew can depend on prerelease, but not the other way around
 
 class ManageBrewUi {
 	static _RenderState = class {
@@ -2496,13 +2564,16 @@ class GetBrewUi {
 		}
 
 		static mutateForFilters (brewInfo) {
-			if (brewInfo._brewAuthor && brewInfo._brewAuthor.toLowerCase().startsWith("sample -")) brewInfo._fMisc = ["Sample"];
+			brewInfo._fMisc = [];
+			if (brewInfo._brewAuthor && brewInfo._brewAuthor.toLowerCase().startsWith("sample -")) brewInfo._fMisc.push("Sample");
+			if (brewInfo.sources?.some(ab => ab.startsWith(Parser.SRC_UA_ONE_PREFIX))) brewInfo._fMisc.push("One D&D");
 		}
 
 		addToFilters (it, isExcluded) {
 			if (isExcluded) return;
 
 			this._typeFilter.addItem(it.props);
+			this._miscFilter.addItem(it._fMisc);
 		}
 
 		async _pPopulateBoxOptions (opts) {
@@ -2555,6 +2626,7 @@ class GetBrewUi {
 			case "category": return this.constructor._sortUrlList_orFallback(a, b, SortUtil.ascSortLower, "_brewPropDisplayName");
 			case "added": return this.constructor._sortUrlList_orFallback(a, b, SortUtil.ascSort, "_brewAdded");
 			case "modified": return this.constructor._sortUrlList_orFallback(a, b, SortUtil.ascSort, "_brewModified");
+			case "published": return this.constructor._sortUrlList_orFallback(a, b, SortUtil.ascSort, "_brewPublished");
 			default: throw new Error(`No sort order defined for property "${o.sortBy}"`);
 		}
 	}
@@ -2573,10 +2645,11 @@ class GetBrewUi {
 
 	async pInit () {
 		const urlRoot = await this._brewUtil.pGetCustomUrl();
-		const [timestamps, propIndex, metaIndex] = await Promise.all([
+		const [timestamps, propIndex, metaIndex, sourceIndex] = await Promise.all([
 			this._brewUtil.pLoadTimestamps(urlRoot),
 			this._brewUtil.pLoadPropIndex(urlRoot),
 			this._brewUtil.pLoadMetaIndex(urlRoot),
+			this._brewUtil.pGetSourceIndex(urlRoot),
 		]);
 
 		const pathToMeta = {};
@@ -2589,6 +2662,12 @@ class GetBrewUi {
 					});
 			});
 
+		Object.entries(sourceIndex)
+			.forEach(([src, path]) => {
+				if (!pathToMeta[path]) return;
+				(pathToMeta[path].sources ||= []).push(src);
+			});
+
 		this._dataList = Object.entries(pathToMeta)
 			.map(([path, meta]) => {
 				const out = {
@@ -2597,6 +2676,7 @@ class GetBrewUi {
 					name: UrlUtil.getFilename(path),
 					dirProp: this._brewUtil.getDirProp(meta.dir),
 					props: meta.props,
+					sources: meta.sources,
 				};
 
 				const spl = out.name.trim().replace(/\.json$/, "").split(";").map(it => it.trim());
@@ -2610,6 +2690,7 @@ class GetBrewUi {
 
 				out._brewAdded = timestamps[out.path]?.a ?? 0;
 				out._brewModified = timestamps[out.path]?.m ?? 0;
+				out._brewPublished = timestamps[out.path]?.p ?? 0;
 				out._brewInternalSources = metaIndex[out.name]?.n || [];
 				out._brewStatus = metaIndex[out.name]?.s || "ready";
 				out._brewPropDisplayName = this._brewUtil.getPropDisplayName(out.dirProp);
@@ -2662,13 +2743,17 @@ class GetBrewUi {
 
 		const $wrpMiniPills = $(`<div class="fltr__mini-view btn-group"></div>`);
 
+		const btnSortAddedPublished = this._brewUtil.IS_PREFER_DATE_ADDED
+			? `<button class="col-1-4 sort btn btn-default btn-xs" data-sort="added">Added</button>`
+			: `<button class="col-1-4 sort btn btn-default btn-xs" data-sort="published">Published</button>`;
+
 		const $wrpSort = $$`<div class="filtertools manbrew__filtertools btn-group input-group input-group--bottom ve-flex no-shrink">
 			<label class="col-0-5 pr-0 btn btn-default btn-xs ve-flex-vh-center">${rdState.cbAll}</label>
 			<button class="col-3-5 sort btn btn-default btn-xs" data-sort="name">Name</button>
 			<button class="col-3 sort btn btn-default btn-xs" data-sort="author">Author</button>
 			<button class="col-1-2 sort btn btn-default btn-xs" data-sort="category">Category</button>
 			<button class="col-1-4 sort btn btn-default btn-xs" data-sort="modified">Modified</button>
-			<button class="col-1-4 sort btn btn-default btn-xs" data-sort="added">Added</button>
+			${btnSortAddedPublished}
 			<button class="sort btn btn-default btn-xs ve-grow" disabled>Source</button>
 		</div>`;
 
@@ -2747,8 +2832,9 @@ class GetBrewUi {
 	}
 
 	_pRender_getUrlRowMeta (rdState, brewInfo, ix) {
-		const timestampAdded = brewInfo._brewAdded
-			? DatetimeUtil.getDateStr({date: new Date(brewInfo._brewAdded * 1000), isShort: true, isPad: true})
+		const epochAddedPublished = this._brewUtil.IS_PREFER_DATE_ADDED ? brewInfo._brewAdded : brewInfo._brewPublished;
+		const timestampAddedPublished = epochAddedPublished
+			? DatetimeUtil.getDateStr({date: new Date(epochAddedPublished * 1000), isShort: true, isPad: true})
 			: "";
 		const timestampModified = brewInfo._brewModified
 			? DatetimeUtil.getDateStr({date: new Date(brewInfo._brewModified * 1000), isShort: true, isPad: true})
@@ -2784,7 +2870,7 @@ class GetBrewUi {
 						e_({tag: "span", clazz: "col-3", text: brewInfo._brewAuthor}),
 						e_({tag: "span", clazz: "col-1-2 ve-text-center mobile__text-clip-ellipsis", text: brewInfo._brewPropDisplayName, title: brewInfo._brewPropDisplayName}),
 						e_({tag: "span", clazz: "col-1-4 ve-text-center code", text: timestampModified}),
-						e_({tag: "span", clazz: "col-1-4 ve-text-center code", text: timestampAdded}),
+						e_({tag: "span", clazz: "col-1-4 ve-text-center code", text: timestampAddedPublished}),
 						e_({
 							tag: "span",
 							clazz: "col-1 manbrew__source ve-text-center pr-0",

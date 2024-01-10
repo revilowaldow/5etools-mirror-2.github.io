@@ -2625,6 +2625,11 @@
 		"txt": "- Added Dynamic Map Viewer support to Dungeons of Drakkenheim\n- Added \"Legacy\" Miscellaneous filter to various list pages\n- Added \"Legacy\" marker to Omnisearch results\n- (Fixed typos/added tags)"
 	},
 	{
+		"ver": "1.197.4",
+		"date": "2024-01-10",
+		"txt": "- Added \"One D&D\" filter to Prerelease Content Manager \"Get Prerelease Content\" view\n- Switched \"Added [date]\" column to \"Published [date]\" in Prerelease Content Manager \"Get Prerelease Content\" view\n- Added tokens for Chains of Asmodeus NPCs/other creatures\n- (Brew) Added \"Preview\" button to text converter output\n- (Brew) Added support for \"month\" spell durations\n- (Brew) Fixed homebrew content which depends on prerelease content failing to load that prerelease content\n- (Fixed typos/added tags)"
+	},
+	{
 		"ver": "1.198.0",
 		"date": "2024-01-06",
 		"title": "The Saturday Mirror",

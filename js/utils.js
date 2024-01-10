@@ -2,7 +2,7 @@
 
 // in deployment, `IS_DEPLOYED = "<version number>";` should be set below.
 globalThis.IS_DEPLOYED = undefined;
-globalThis.VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"1.197.3"/* 5ETOOLS_VERSION__CLOSE */;
+globalThis.VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"1.197.4"/* 5ETOOLS_VERSION__CLOSE */;
 globalThis.DEPLOYED_IMG_ROOT = undefined;
 // for the roll20 script to set
 globalThis.IS_VTT = false;
@@ -3108,17 +3108,6 @@ if (!IS_DEPLOYED && !IS_VTT && typeof window !== "undefined") {
 			}
 		}
 	});
-
-	// TODO(img) remove this in future
-	window.addEventListener("load", () => {
-		if (window.location?.host === "5etools-mirror-1.github.io") {
-			JqueryUtil.doToast({
-				type: "warning",
-				isAutoHide: false,
-				content: $(`<div>This mirror is no longer being updated/maintained, and will be shut down on March 1st 2024.<br>Please use <a href="https://5etools-mirror-2.github.io/" rel="noopener noreferrer">5etools-mirror-2.github.io</a> instead, and <a href="https://gist.github.com/5etools-mirror-2/40d6d80f40205882d3fa5006fae963a4" rel="noopener noreferrer">migrate your data</a>.</div>`),
-			});
-		}
-	});
 }
 
 // SORTING =============================================================================================================
@@ -4359,7 +4348,7 @@ globalThis.DataUtil = {
 					modInfo[prop].forEach(sp => (spellcasting[prop] = spellcasting[prop] || []).push(sp));
 				});
 
-				["recharge", "charges", "rest", "daily", "weekly", "yearly"].forEach(prop => {
+				["recharge", "charges", "rest", "daily", "weekly", "monthly", "yearly"].forEach(prop => {
 					if (!modInfo[prop]) return;
 
 					for (let i = 1; i <= 9; ++i) {
@@ -4442,7 +4431,7 @@ globalThis.DataUtil = {
 					spellcasting[prop].filter(it => !modInfo[prop].includes(it));
 				});
 
-				["recharge", "charges", "rest", "daily", "weekly", "yearly"].forEach(prop => {
+				["recharge", "charges", "rest", "daily", "weekly", "monthly", "yearly"].forEach(prop => {
 					if (!modInfo[prop]) return;
 
 					for (let i = 1; i <= 9; ++i) {
@@ -7567,4 +7556,15 @@ if (!IS_VTT && typeof window !== "undefined") {
 	// 	$(`.cancer__sidebar-rhs-inner--top`).append(`<div class="TEST_RHS_TOP"></div>`)
 	// 	$(`.cancer__sidebar-rhs-inner--bottom`).append(`<div class="TEST_RHS_BOTTOM"></div>`)
 	// });
+
+	// TODO(img) remove this in future
+	window.addEventListener("load", () => {
+		if (window.location?.host !== "5etools-mirror-1.github.io") return;
+
+		JqueryUtil.doToast({
+			type: "warning",
+			isAutoHide: false,
+			content: $(`<div>This mirror is no longer being updated/maintained, and will be shut down on March 1st 2024.<br>Please use <a href="https://5etools-mirror-2.github.io/" rel="noopener noreferrer">5etools-mirror-2.github.io</a> instead, and <a href="https://gist.github.com/5etools-mirror-2/40d6d80f40205882d3fa5006fae963a4" rel="noopener noreferrer">migrate your data</a>.</div>`),
+		});
+	});
 }

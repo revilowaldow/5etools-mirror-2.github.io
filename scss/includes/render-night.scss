@@ -81,4 +81,18 @@
 			}
 		}
 	}
+
+	&-homebrew__ {
+		&b {
+			background-color: $rgb-bg-homebrew--night;
+		}
+
+		&disp-old-content {
+			color: #f99;
+		}
+
+		&disp-inline {
+			background-color: $rgb-bg-homebrew--night;
+		}
+	}
 }

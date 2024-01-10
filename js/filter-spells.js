@@ -191,8 +191,9 @@ class PageFilterSpells extends PageFilter {
 						return "24+ Hours";
 					}
 
-					case "week":
 					case "day":
+					case "week":
+					case "month":
 					case "year": return "24+ Hours";
 					default: return "Special";
 				}

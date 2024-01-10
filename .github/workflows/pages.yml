@@ -32,16 +32,17 @@ jobs:
          -  name: Checkout
             uses: actions/checkout@master
 
-         -  name: Set Deployed Flag
+         -  name: Set Deployed Flag and Image Root
             run: |
                bash ./.github/set-deployed-flag.sh ${{ github.ref_name }}
+               bash ./.github/set-img-root.sh
 
          # Notably: remove anything which should not be added to the service worker manifest:
          #  - `homebrew`
          #  - `prerelease`
          -  name: Cleanup
             run: |
-               rm -rf .gitmodules *.md *.zip scss spellcheck homebrew prerelease
+               rm -rf *.md *.zip scss spellcheck homebrew prerelease
                ls -lah
 
          # Remove entries from the `.gitignore` so the gh-pages action can correctly add+commit them to the pages branch

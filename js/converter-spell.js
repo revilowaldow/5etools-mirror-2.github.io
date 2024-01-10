@@ -337,6 +337,8 @@ class SpellParser extends BaseParser {
 		unit = unit.toLowerCase().trim();
 		switch (unit) {
 			case "days":
+			case "weeks":
+			case "months":
 			case "years":
 			case "hours":
 			case "minutes":
@@ -344,6 +346,8 @@ class SpellParser extends BaseParser {
 			case "rounds": return unit.slice(0, -1);
 
 			case "day":
+			case "week":
+			case "month":
 			case "year":
 			case "hour":
 			case "minute":
@@ -441,7 +445,7 @@ class SpellParser extends BaseParser {
 		if (dur.toLowerCase() === "special") return stats.duration = [{type: "special"}];
 		if (dur.toLowerCase() === "permanent") return stats.duration = [{type: "permanent"}];
 
-		const mConcOrUpTo = /^(concentration, )?up to (\d+|an?) (hour|minute|turn|round|week|day|year)(?:s)?$/i.exec(dur);
+		const mConcOrUpTo = /^(concentration, )?up to (\d+|an?) (hour|minute|turn|round|week|month|day|year)(?:s)?$/i.exec(dur);
 		if (mConcOrUpTo) {
 			const amount = mConcOrUpTo[2].toLowerCase().startsWith("a") ? 1 : Number(mConcOrUpTo[2]);
 			const out = {type: "timed", duration: {type: this._getCleanTimeUnit(mConcOrUpTo[3], true, options), amount}, concentration: true};
@@ -450,7 +454,7 @@ class SpellParser extends BaseParser {
 			return stats.duration = [out];
 		}
 
-		const mTimed = /^(\d+) (hour|minute|turn|round|week|day|year)(?:s)?$/i.exec(dur);
+		const mTimed = /^(\d+) (hour|minute|turn|round|week|month|day|year)(?:s)?$/i.exec(dur);
 		if (mTimed) return stats.duration = [{type: "timed", duration: {type: this._getCleanTimeUnit(mTimed[2], true, options), amount: Number(mTimed[1])}}];
 
 		const mDispelledTriggered = /^until dispelled( or triggered)?$/i.exec(dur);

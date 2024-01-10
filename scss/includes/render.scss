@@ -630,6 +630,39 @@ $rgb-inset-border: #656565;
 			}
 		}
 	}
+
+	&-homebrew__ {
+		&b {
+			background-color: $rgb-bg-homebrew;
+			clear: both;
+		}
+
+		&wrp-notice {
+			float: right;
+			border: 1px dotted;
+			margin-bottom: 5px;
+			margin-left: 5px;
+			padding-right: 2px;
+			padding-left: 2px;
+			text-indent: 0;
+		}
+
+		&disp-notice {
+			&::before {
+				content: "Homebrew";
+			}
+		}
+
+		&disp-old-content {
+			color: #a00;
+			margin-left: 5px;
+		}
+
+		&disp-inline {
+			background-color: $rgb-bg-homebrew;
+			text-decoration: underline dotted;
+		}
+	}
 }
 
 // Entries embedded in tables

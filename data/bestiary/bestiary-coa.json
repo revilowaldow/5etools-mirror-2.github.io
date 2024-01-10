@@ -748,7 +748,9 @@
 					"note": "from nonmagical attacks that aren't adamantine",
 					"cond": true
 				}
-			]
+			],
+			"tokenCredit": "Jeferson Cordeiro",
+			"hasToken": true
 		},
 		{
 			"name": "Asmodeus",
@@ -3136,7 +3138,9 @@
 				"fire",
 				"lightning",
 				"slashing"
-			]
+			],
+			"tokenCredit": "Unknown",
+			"hasToken": true
 		},
 		{
 			"name": "Devorastus",
@@ -4493,7 +4497,9 @@
 					"note": "from nonmagical attacks that aren't adamantine",
 					"cond": true
 				}
-			]
+			],
+			"tokenCredit": "Artguyonthefly",
+			"hasToken": true
 		},
 		{
 			"name": "Glasya",
@@ -4908,7 +4914,9 @@
 			"speed": {
 				"walk": 0
 			},
-			"spellcasting": null
+			"spellcasting": null,
+			"tokenCredit": "Irene Meniconi",
+			"hasToken": true
 		},
 		{
 			"name": "Halog",
@@ -5171,7 +5179,9 @@
 			},
 			"immune": [
 				"cold"
-			]
+			],
+			"tokenCredit": "Caverns of the Snow Witch",
+			"hasToken": true
 		},
 		{
 			"name": "Jenevere",
@@ -5495,12 +5505,14 @@
 					]
 				}
 			},
+			"tokenCredit": "CrazyMind351",
 			"damageTags": [
 				"B",
 				"L",
 				"P",
 				"R"
-			]
+			],
+			"hasToken": true
 		},
 		{
 			"name": "Lesser Tyrant Shadow",
@@ -7131,7 +7143,9 @@
 			],
 			"int": 16,
 			"wis": 16,
-			"cha": 16
+			"cha": 16,
+			"tokenCredit": "Konstantin Vavilov",
+			"hasToken": true
 		},
 		{
 			"name": "Rimmon",

@@ -177,6 +177,7 @@ PropOrder._MONSTER = [
 			"rest",
 			"daily",
 			"weekly",
+			"monthly",
 			"yearly",
 			"recharge",
 			"charges",

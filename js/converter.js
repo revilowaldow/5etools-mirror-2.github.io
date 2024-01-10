@@ -801,7 +801,7 @@ class BackgroundConverter extends BaseConverter {
 	}
 }
 // region sample
-BackgroundConverter._SAMPLE_TEXT = `Giant Foundling 
+BackgroundConverter._SAMPLE_TEXT = `Giant Foundling
 Skill Proficiencies: Intimidation, Survival
 Languages: Giant and one other language of your choice
 Equipment: A backpack, a set of traveler’s clothes, a small stone or sprig that reminds you of home, and a pouch containing 10 gp
@@ -996,117 +996,139 @@ class ConverterUi extends BaseComponent {
 			JqueryUtil.doToast({type: "warning", content: "Enabled editing. Note that edits will be overwritten as you parse new stat blocks."});
 		});
 
-		const $btnSaveLocal = $(`#save_local`).click(async () => {
-			const output = this._outText;
+		$(`#preview`)
+			.on("click", async evt => {
+				const metaCurr = this._getCurrentEntities();
 
-			if (!(output || "").trim()) {
+				if (!metaCurr?.entities?.length) return JqueryUtil.doToast({content: "Nothing to preview!", type: "warning"});
+				if (metaCurr.error) return JqueryUtil.doToast({content: `Current output was not valid JSON!`, type: "danger"});
+
+				const entries = !this.activeConverter.prop
+					? metaCurr.entities.flat()
+					: metaCurr.entities
+						.map(ent => {
+							// Handle nameless/sourceless entities (e.g. tables)
+							if (!ent.name) ent.name = "(Unnamed)";
+							if (!ent.source) ent.source = VeCt.STR_GENERIC;
+
+							return {
+								type: "statblockInline",
+								dataType: this.activeConverter.prop,
+								data: ent,
+							};
+						});
+
+				Renderer.hover.getShowWindow(
+					Renderer.hover.$getHoverContent_generic({
+						type: "entries",
+						entries,
+					}),
+					Renderer.hover.getWindowPositionFromEvent(evt),
+					{
+						title: "Preview",
+						isPermanent: true,
+					},
+				);
+			});
+
+		const $btnSaveLocal = $(`#save_local`).click(async () => {
+			const metaCurr = this._getCurrentEntities();
+
+			if (!metaCurr?.entities?.length) return JqueryUtil.doToast({content: "Nothing to save!", type: "warning"});
+			if (metaCurr.error) return JqueryUtil.doToast({content: `Current output was not valid JSON!`, type: "danger"});
+
+			const prop = this.activeConverter.prop;
+
+			const invalidSources = metaCurr.entities.map(it => !it.source || !BrewUtil2.hasSourceJson(it.source) ? (it.name || it.caption || "(Unnamed)").trim() : false).filter(Boolean);
+			if (invalidSources.length) {
+				JqueryUtil.doToast({
+					content: `One or more entries have missing or unknown sources: ${invalidSources.join(", ")}`,
+					type: "danger",
+				});
+				return;
+			}
+
+			const brewDocEditable = await BrewUtil2.pGetEditableBrewDoc();
+			const uneditableSources = metaCurr.entities
+				.filter(ent => !(brewDocEditable?.body?._meta?.sources || []).some(src => src.json === ent.source))
+				.map(ent => ent.source);
+			if (uneditableSources.length) {
+				JqueryUtil.doToast({
+					content: `One or more entries have sources which belong to non-editable homebrew: ${uneditableSources.join(", ")}`,
+					type: "danger",
+				});
+				return;
+			}
+
+			// ignore duplicates
+			const _dupes = {};
+			const dupes = [];
+			const dedupedEntries = metaCurr.entities
+				.map(it => {
+					const lSource = it.source.toLowerCase();
+					const lName = it.name.toLowerCase();
+					_dupes[lSource] = _dupes[lSource] || {};
+					if (_dupes[lSource][lName]) {
+						dupes.push(it.name);
+						return null;
+					} else {
+						_dupes[lSource][lName] = true;
+						return it;
+					}
+				})
+				.filter(Boolean);
+
+			if (dupes.length) {
+				JqueryUtil.doToast({
+					type: "warning",
+					content: `Ignored ${dupes.length} duplicate entr${dupes.length === 1 ? "y" : "ies"}`,
+				});
+			}
+
+			if (!dedupedEntries.length) {
 				return JqueryUtil.doToast({
 					content: "Nothing to save!",
 					type: "warning",
 				});
 			}
 
-			try {
-				const prop = this.activeConverter.prop;
-				const entries = JSON.parse(`[${output}]`);
+			// handle overwrites
+			const brewDoc = await BrewUtil2.pGetOrCreateEditableBrewDoc();
+			const overwriteMeta = dedupedEntries
+				.map(it => {
+					if (!brewDoc?.body?.[prop]) return {entry: it, isOverwrite: false};
 
-				const invalidSources = entries.map(it => !it.source || !BrewUtil2.hasSourceJson(it.source) ? (it.name || it.caption || "(Unnamed)").trim() : false).filter(Boolean);
-				if (invalidSources.length) {
-					JqueryUtil.doToast({
-						content: `One or more entries have missing or unknown sources: ${invalidSources.join(", ")}`,
-						type: "danger",
-					});
-					return;
-				}
+					const ix = brewDoc.body[prop].findIndex(bru => bru.name.toLowerCase() === it.name.toLowerCase() && bru.source.toLowerCase() === it.source.toLowerCase());
+					if (!~ix) return {entry: it, isOverwrite: false};
 
-				const brewDocEditable = await BrewUtil2.pGetEditableBrewDoc();
-				const uneditableSources = entries
-					.filter(ent => !(brewDocEditable?.body?._meta?.sources || []).some(src => src.json === ent.source))
-					.map(ent => ent.source);
-				if (uneditableSources.length) {
-					JqueryUtil.doToast({
-						content: `One or more entries have sources which belong to non-editable homebrew: ${uneditableSources.join(", ")}`,
-						type: "danger",
-					});
-					return;
-				}
+					return {
+						isOverwrite: true,
+						ix,
+						entry: it,
+					};
+				})
+				.filter(Boolean);
 
-				// ignore duplicates
-				const _dupes = {};
-				const dupes = [];
-				const dedupedEntries = entries
-					.map(it => {
-						const lSource = it.source.toLowerCase();
-						const lName = it.name.toLowerCase();
-						_dupes[lSource] = _dupes[lSource] || {};
-						if (_dupes[lSource][lName]) {
-							dupes.push(it.name);
-							return null;
-						} else {
-							_dupes[lSource][lName] = true;
-							return it;
-						}
-					})
-					.filter(Boolean);
-
-				if (dupes.length) {
-					JqueryUtil.doToast({
-						type: "warning",
-						content: `Ignored ${dupes.length} duplicate entr${dupes.length === 1 ? "y" : "ies"}`,
-					});
-				}
-
-				if (!dedupedEntries.length) {
-					return JqueryUtil.doToast({
-						content: "Nothing to save!",
-						type: "warning",
-					});
-				}
-
-				// handle overwrites
-				const brewDoc = await BrewUtil2.pGetOrCreateEditableBrewDoc();
-				const overwriteMeta = dedupedEntries
-					.map(it => {
-						if (!brewDoc?.body?.[prop]) return {entry: it, isOverwrite: false};
-
-						const ix = brewDoc.body[prop].findIndex(bru => bru.name.toLowerCase() === it.name.toLowerCase() && bru.source.toLowerCase() === it.source.toLowerCase());
-						if (!~ix) return {entry: it, isOverwrite: false};
-
-						return {
-							isOverwrite: true,
-							ix,
-							entry: it,
-						};
-					})
-					.filter(Boolean);
-
-				const willOverwrite = overwriteMeta.map(it => it.isOverwrite).filter(Boolean);
-				if (
-					willOverwrite.length
-					&& !await InputUiUtil.pGetUserBoolean({title: "Overwrite Entries", htmlDescription: `This will overwrite ${willOverwrite.length} entr${willOverwrite.length === 1 ? "y" : "ies"}. Are you sure?`, textYes: "Yes", textNo: "Cancel"})
-				) {
-					return;
-				}
-
-				const cpyBrewDoc = MiscUtil.copy(brewDoc);
-				overwriteMeta.forEach(meta => {
-					if (meta.isOverwrite) return cpyBrewDoc.body[prop][meta.ix] = MiscUtil.copy(meta.entry);
-					(cpyBrewDoc.body[prop] = cpyBrewDoc.body[prop] || []).push(MiscUtil.copy(meta.entry));
-				});
-
-				await BrewUtil2.pSetEditableBrewDoc(cpyBrewDoc);
-
-				JqueryUtil.doToast({
-					type: "success",
-					content: `Saved!`,
-				});
-			} catch (e) {
-				JqueryUtil.doToast({
-					content: `Current output was not valid JSON!`,
-					type: "danger",
-				});
-				setTimeout(() => { throw e; });
+			const willOverwrite = overwriteMeta.map(it => it.isOverwrite).filter(Boolean);
+			if (
+				willOverwrite.length
+				&& !await InputUiUtil.pGetUserBoolean({title: "Overwrite Entries", htmlDescription: `This will overwrite ${willOverwrite.length} entr${willOverwrite.length === 1 ? "y" : "ies"}. Are you sure?`, textYes: "Yes", textNo: "Cancel"})
+			) {
+				return;
 			}
+
+			const cpyBrewDoc = MiscUtil.copy(brewDoc);
+			overwriteMeta.forEach(meta => {
+				if (meta.isOverwrite) return cpyBrewDoc.body[prop][meta.ix] = MiscUtil.copy(meta.entry);
+				(cpyBrewDoc.body[prop] = cpyBrewDoc.body[prop] || []).push(MiscUtil.copy(meta.entry));
+			});
+
+			await BrewUtil2.pSetEditableBrewDoc(cpyBrewDoc);
+
+			JqueryUtil.doToast({
+				type: "success",
+				content: `Saved!`,
+			});
 		});
 		const hkConverter = () => {
 			$btnSaveLocal.toggleClass("hidden", !this.activeConverter.canSaveLocal);
@@ -1115,26 +1137,20 @@ class ConverterUi extends BaseComponent {
 		hkConverter();
 
 		$(`#btn-output-download`).click(() => {
-			const output = this._outText;
-			if (!output || !output.trim()) {
-				return JqueryUtil.doToast({
-					content: "Nothing to download!",
-					type: "danger",
-				});
-			}
+			const metaCurr = this._getCurrentEntities();
 
-			try {
-				const prop = this.activeConverter.prop;
-				const out = {[prop]: JSON.parse(`[${output}]`)};
-				DataUtil.userDownload(`converter-output`, out);
-			} catch (e) {
+			if (!metaCurr?.entities?.length) return JqueryUtil.doToast({content: "Nothing to download!", type: "warning"});
+			if (metaCurr.error) {
 				JqueryUtil.doToast({
 					content: `Current output was not valid JSON. Downloading as <span class="code">.txt</span> instead.`,
 					type: "warning",
 				});
-				DataUtil.userDownloadText(`converter-output.txt`, output);
-				setTimeout(() => { throw e; });
+				DataUtil.userDownloadText(`converter-output.txt`, metaCurr.text);
+				return;
 			}
+
+			const out = {[this.activeConverter.prop]: metaCurr.entities};
+			DataUtil.userDownload(`converter-output`, out);
 		});
 
 		$(`#btn-output-copy`).click(async evt => {
@@ -1204,6 +1220,18 @@ class ConverterUi extends BaseComponent {
 		window.dispatchEvent(new Event("toolsLoaded"));
 	}
 
+	_getCurrentEntities () {
+		const output = this._outText;
+
+		if (!(output || "").trim()) return null;
+
+		try {
+			return {entities: JSON.parse(`[${output}]`)};
+		} catch (e) {
+			return {error: e.message, text: output.trim()};
+		}
+	}
+
 	initSideMenu () {
 		const $mnu = $(`.sidemenu`);
 
@@ -1267,7 +1295,7 @@ class ConverterUi extends BaseComponent {
 		if (append) {
 			const strs = [asCleanString, this._outText];
 			if (this._state.appendPrependMode === "prepend") strs.reverse();
-			this._outText = strs.join(",\n");
+			this._outText = strs.map(it => it.trimEnd()).join(",\n");
 			this._state.hasAppended = true;
 		} else {
 			this._outText = asCleanString;

@@ -118,7 +118,9 @@
 						"_": [
 							"Leather armor|phb",
 							"explorer's pack|phb",
-							"druidic focus|phb"
+							{
+								"equipmentType": "focusSpellcastingDruidic"
+							}
 						]
 					}
 				]

@@ -115,7 +115,9 @@
 					{
 						"_": [
 							"shield|phb",
-							"holy symbol|phb"
+							{
+								"equipmentType": "focusSpellcastingHoly"
+							}
 						]
 					}
 				]

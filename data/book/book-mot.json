@@ -12156,6 +12156,192 @@
 					]
 				}
 			]
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "book/MOT/credits.webp"
+					},
+					"credit": "Andrea Radeck",
+					"maxWidth": 500,
+					"width": 850,
+					"height": 756
+				},
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 1,
+					"items": [
+						{
+							"type": "item",
+							"name": "Lead Designers:",
+							"entry": "F. Wesley Schneider, James Wyatt"
+						},
+						{
+							"type": "item",
+							"name": "Designers:",
+							"entry": "Ari Levitch, Jeremy Crawford, Kate Baker, Bill Benham, Orion D. Black, John Compton, Kelly Digges, James Introcaso, Adam Lee, Ben Petrisor, Jessica Price, Morrigan Robbins, Amber Scott, Greg A. Vaughn"
+						},
+						{
+							"type": "item",
+							"name": "Rules Developers:",
+							"entry": "Jeremy Crawford, Dan Dillon, Christopher Perkins, Ben Petrisor"
+						},
+						{
+							"type": "item",
+							"name": "Editors:",
+							"entry": "Misty Bourne, Kim Mohan, Hannah Rose, Jessica Ross"
+						},
+						{
+							"type": "item",
+							"name": "Cultural Consultant:",
+							"entry": "Demitrios Feredinos"
+						},
+						{
+							"type": "item",
+							"name": "Lead Consultant:",
+							"entry": "Jay Annelli"
+						},
+						{
+							"type": "item",
+							"name": "Art Director:",
+							"entry": "Kate Irwin"
+						},
+						{
+							"type": "item",
+							"name": "Senior Graphic Designer:",
+							"entry": "Trish Yochum"
+						},
+						{
+							"type": "item",
+							"name": "Graphic Designer:",
+							"entry": "Trystan Falcone"
+						},
+						{
+							"type": "item",
+							"name": "Additional Art Direction:",
+							"entry": "Matt Adelsperger, Jeremy Jarvis, Kelly Digges, Dawn Murin, Andrew Vallas"
+						},
+						{
+							"type": "item",
+							"name": "Cover Illustrators:",
+							"entry": "Jason Rainville, Kevin Tong"
+						},
+						{
+							"type": "item",
+							"name": "Interior Illustrators:",
+							"entry": "Steve Argyle, Volkan Baga, Ryan Barger, Steven Belledin, Noah Bradley, Christopher Burdett, Sam Burley, Jason Chan, Yongjae Choi, Daarken, Jonas De Ro, Bastien L. Deharme, Eric Deschamps, Jesper Ejsing, Emrah Elmasli, Jason Felix, Evyn Fong, Lucas Graciano, Lars Grant-West, Nils Hamm, Yeong-Hao Han, Alex Horley-Orlandelli, Ralph Horsley, Tyler Jacobson, Jaime Jones, Igor Kieryluk, Mathias Kollros, Karl Kopinski, Yigit Koroglu, Ryan Alexander Lee, Daniel Ljunggren, Chuck Lukacs, Titus Lunter, Howard Lyon, Slawomir Maniak, Dimitar Marinski, Seb McKinnon, Victor Adame Minguez, Peter Mohrbacher, Willian Murai, Terese Nielsen, James Paick, David Palumbo, Ryan Pancoast, Adam Paquette, Jung Park, Claudio Pozas, Steve Prescott, Vincent Proce, Andrea Radeck, Chris Rahn, Chris Rallis, Brad Rigney, Sam Rowan, James Ryman, Jasper Sandner, Dan Scott, Cynthia Sheppard, John Stanko, Zack Stella, Matt Stewart, Chase Stone, Raymond Swanland, Wisnu Tan, John Thacker, Cory Trego-Erdner, Brian Valeza, Cyril Van Der Haegen, Svetlin Velinov, Magali Villeneuve, Raoul Vitale, Johannes Voss, Kev Walker, Jack Wang, Kieran Yanner, Ryan Yee, Min Yum, James Zapata"
+						},
+						{
+							"type": "item",
+							"name": "Cartographers:",
+							"entry": "Jonas De Ro, Dyson Logos"
+						},
+						{
+							"type": "item",
+							"name": "Theros World Designers:",
+							"entry": "Brady Dommermuth, Doug Beyer, Kelly Digges, Ethan Fleischer, Jenna Helland, Taylor Ingvarsson, Jeremy Jarvis, Adam Lee, Alison Lührs, Dawn Murin, Cynthia Sheppard, Andrew Vallas, Richard Whitters, James Wyatt"
+						},
+						{
+							"type": "item",
+							"name": "Senior Producer:",
+							"entry": "Dan Tovar"
+						},
+						{
+							"type": "item",
+							"name": "Producers:",
+							"entry": "Bill Benham, Robert Hawkey, Lea Heleotis"
+						},
+						{
+							"type": "item",
+							"name": "Product Engineer:",
+							"entry": "Cynda Callaway"
+						},
+						{
+							"type": "item",
+							"name": "Imaging Technicians:",
+							"entry": "Sven Bolen, Carmen Cheung, Kevin Yee"
+						},
+						{
+							"type": "item",
+							"name": "Art Administration:",
+							"entry": "David Gershman"
+						},
+						{
+							"type": "item",
+							"name": "Prepress Specialist:",
+							"entry": "Jefferson Dunlap"
+						},
+						{
+							"type": "item",
+							"name": "Franchise & Global Brand Strategy:",
+							"entry": "Nathan Stewart"
+						},
+						{
+							"type": "item",
+							"name": "Executive Producer:",
+							"entry": "Ray Winninger"
+						},
+						{
+							"type": "item",
+							"name": "Director Licensing & Publishing:",
+							"entry": "Liz Schuh"
+						},
+						{
+							"type": "item",
+							"name": "Licensing Manager:",
+							"entry": "Hilary Ross"
+						},
+						{
+							"type": "item",
+							"name": "Marketing and Communications:",
+							"entry": "Bart Carroll, Pelham Greene, Chris Lindsay, Shauna Narciso, Lysa Penrose, Emi Tanji, Greg Tito, Anna Vo"
+						},
+						{
+							"type": "item",
+							"name": "D&D IP Development:",
+							"entry": "Mike Mearls, Richard Whitters, Shawn Wood"
+						},
+						{
+							"type": "item",
+							"name": "Brand Manager:",
+							"entry": "Shelly Mazzanoble"
+						},
+						"Many thanks to the hundreds of playtesters whose efforts made this a better book. We couldn't have created this without you!"
+					]
+				},
+				{
+					"type": "gallery",
+					"images": [
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/MOT/credits2.webp"
+							},
+							"title": "On the Cover: The invulnerable hero, Haktos the Unscarred, leaps into battle with a Nyxborn hydra, taking part in the most recent telling of a myth repeated through the ages. Jason Rainville brings this legend to life.",
+							"width": 1110,
+							"height": 721
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/MOT/credits3.webp"
+							},
+							"title": "On the Alt-Cover: While the gods look on, the immortal struggle between Haktos and the hydra plays out in the stars of Nyx, a glimpse of eternity captured by Kevin Tong.",
+							"width": 1110,
+							"height": 721
+						}
+					]
+				}
+			],
+			"id": "002"
 		}
 	]
 }

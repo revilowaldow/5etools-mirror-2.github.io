@@ -2,6 +2,8 @@ import {InitiativeTrackerStatColumnFactory} from "./dmscreen-initiativetracker-s
 
 class _ConvertedEncounter {
 	constructor () {
+		this.isOverwriteStatsCols = false;
+
 		this.isStatsAddColumns = false;
 
 		this.statsCols = [];
@@ -52,7 +54,10 @@ export class InitiativeTrackerEncounterConverter {
 
 		const colNameIndex = {};
 		encounterInfo.colsExtraAdvanced = encounterInfo.colsExtraAdvanced || [];
-		if (encounterInfo.colsExtraAdvanced.length) out.isStatsAddColumns = true;
+		if (encounterInfo.colsExtraAdvanced.length) {
+			out.isOverwriteStatsCols = true;
+			out.isStatsAddColumns = true;
+		}
 
 		encounterInfo.colsExtraAdvanced.forEach((col, i) => colNameIndex[i] = (col?.name || "").toLowerCase());
 

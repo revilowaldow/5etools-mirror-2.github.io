@@ -1998,7 +1998,7 @@ class DataLoader {
 
 		static _isPossibleSource ({parent, sourceClean}) { return parent._isPrereleaseSource({sourceClean}) && !Parser.SOURCE_JSON_TO_FULL[Parser.sourceJsonToJson(sourceClean)]; }
 		static _getBrewUtil () { return typeof PrereleaseUtil !== "undefined" ? PrereleaseUtil : null; }
-		static _pGetSourceIndex () { return DataUtil.prerelease.pLoadSourceIndex(); }
+		static _pGetSourceIndex () { return DataUtil.prerelease.pLoadSourceIndex(PrereleaseUtil.pGetCustomUrl()); }
 	};
 
 	static _BrewPreloader = class extends this._PrereleaseBrewPreloader {
@@ -2009,7 +2009,7 @@ class DataLoader {
 
 		static _isPossibleSource ({parent, sourceClean}) { return !parent._isSiteSource({sourceClean}) && !parent._isPrereleaseSource({sourceClean}); }
 		static _getBrewUtil () { return typeof BrewUtil2 !== "undefined" ? BrewUtil2 : null; }
-		static _pGetSourceIndex () { return DataUtil.brew.pLoadSourceIndex(); }
+		static _pGetSourceIndex () { return DataUtil.brew.pLoadSourceIndex(BrewUtil2.pGetCustomUrl()); }
 	};
 
 	static async _pCacheAndGet_getCacheMeta ({pageClean, sourceClean, dataLoader}) {

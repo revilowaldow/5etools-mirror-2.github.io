@@ -5,7 +5,10 @@
 			"id": "PHB",
 			"source": "PHB",
 			"group": "core",
-			"coverUrl": "img/covers/PHB.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/PHB.webp"
+			},
 			"published": "2014-08-19",
 			"author": "Wizards RPG Team",
 			"contents": [
@@ -188,6 +191,9 @@
 						"type": "appendix",
 						"identifier": "C"
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -196,7 +202,10 @@
 			"id": "MM",
 			"source": "MM",
 			"group": "core",
-			"coverUrl": "img/covers/MM.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/MM.webp"
+			},
 			"published": "2014-09-30",
 			"author": "Wizards RPG Team",
 			"contents": [
@@ -229,6 +238,9 @@
 						"type": "appendix",
 						"identifier": "B"
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -237,7 +249,10 @@
 			"id": "DMG",
 			"source": "DMG",
 			"group": "core",
-			"coverUrl": "img/covers/DMG.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/DMG.webp"
+			},
 			"published": "2014-12-09",
 			"author": "Wizards RPG Team",
 			"contents": [
@@ -445,6 +460,9 @@
 						"type": "appendix",
 						"identifier": "D"
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -453,7 +471,10 @@
 			"id": "Screen",
 			"source": "Screen",
 			"group": "screen",
-			"coverUrl": "img/covers/Screen.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/Screen.webp"
+			},
 			"published": "2015-01-20",
 			"contents": [
 				{
@@ -466,7 +487,10 @@
 			"id": "SCAG",
 			"source": "SCAG",
 			"group": "setting",
-			"coverUrl": "img/covers/SCAG.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/SCAG.webp"
+			},
 			"published": "2015-11-03",
 			"author": "Wizards RPG Team",
 			"contents": [
@@ -566,6 +590,9 @@
 						"type": "chapter",
 						"identifier": 5
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -574,7 +601,10 @@
 			"id": "PS-Z",
 			"source": "PSZ",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/PSZ.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/PSZ.webp"
+			},
 			"published": "2016-04-27",
 			"author": "Wizards RPG Team",
 			"contents": [
@@ -597,7 +627,10 @@
 			"id": "PS-I",
 			"source": "PSI",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/PSI.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/PSI.webp"
+			},
 			"published": "2016-07-12",
 			"author": "Wizards RPG Team",
 			"contents": [
@@ -651,7 +684,10 @@
 			"id": "AL",
 			"source": "AL",
 			"group": "other",
-			"coverUrl": "img/covers/AL.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/AL.webp"
+			},
 			"published": "2016-08-26",
 			"contents": [
 				{
@@ -676,7 +712,10 @@
 			"id": "VGM",
 			"source": "VGM",
 			"group": "supplement",
-			"coverUrl": "img/covers/VGM.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/VGM.webp"
+			},
 			"published": "2016-11-15",
 			"author": "Wizards RPG Team",
 			"contents": [
@@ -728,6 +767,9 @@
 						"type": "appendix",
 						"identifier": "B"
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -736,7 +778,10 @@
 			"id": "PS-K",
 			"source": "PSK",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/PSK.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/PSK.webp"
+			},
 			"published": "2017-02-16",
 			"author": "Wizards RPG Team",
 			"contents": [
@@ -765,7 +810,10 @@
 			"id": "PS-A",
 			"source": "PSA",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/PSA.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/PSA.webp"
+			},
 			"published": "2017-07-06",
 			"author": "Wizards RPG Team",
 			"contents": [
@@ -800,7 +848,10 @@
 			"id": "OGA",
 			"source": "OGA",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/OGA.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/OGA.webp"
+			},
 			"published": "2017-10-11",
 			"author": "Extra Life",
 			"contents": [
@@ -814,7 +865,10 @@
 			"id": "XGE",
 			"source": "XGE",
 			"group": "supplement",
-			"coverUrl": "img/covers/XGE.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/XGE.webp"
+			},
 			"published": "2017-11-21",
 			"author": "Wizards RPG Team",
 			"contents": [
@@ -883,6 +937,9 @@
 						"type": "appendix",
 						"identifier": "B"
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -891,7 +948,10 @@
 			"id": "PS-X",
 			"source": "PSX",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/PSX.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/PSX.webp"
+			},
 			"published": "2018-01-09",
 			"author": "Wizards RPG Team",
 			"contents": [
@@ -934,7 +994,10 @@
 			"id": "MTF",
 			"source": "MTF",
 			"group": "supplement",
-			"coverUrl": "img/covers/MTF.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/MTF.webp"
+			},
 			"published": "2018-05-29",
 			"author": "Wizards RPG Team",
 			"contents": [
@@ -1027,6 +1090,9 @@
 						"type": "chapter",
 						"identifier": 6
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -1035,7 +1101,10 @@
 			"id": "PS-D",
 			"source": "PSD",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/PSD.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/PSD.webp"
+			},
 			"published": "2018-07-31",
 			"author": "Wizards RPG Team",
 			"contents": [
@@ -1073,7 +1142,10 @@
 			"id": "GGR",
 			"source": "GGR",
 			"group": "setting",
-			"coverUrl": "img/covers/GGR.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/GGR.webp"
+			},
 			"published": "2018-11-20",
 			"contents": [
 				{
@@ -1194,6 +1266,9 @@
 						"Selesnya NPCs",
 						"Simic NPCs"
 					]
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -1202,7 +1277,10 @@
 			"id": "SAC",
 			"source": "SAC",
 			"group": "other",
-			"coverUrl": "img/covers/SAC.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/SAC.webp"
+			},
 			"published": "2019-01-31",
 			"contents": [
 				{
@@ -1233,7 +1311,10 @@
 			"id": "AI",
 			"source": "AI",
 			"group": "supplement",
-			"coverUrl": "img/covers/AI.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/AI.webp"
+			},
 			"published": "2019-06-18",
 			"contents": [
 				{
@@ -1361,6 +1442,9 @@
 						"type": "appendix",
 						"identifier": "E"
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -1369,7 +1453,10 @@
 			"id": "RMR",
 			"source": "RMR",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/RMR.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/RMR.webp"
+			},
 			"published": "2019-11-19",
 			"contents": [
 				{
@@ -1472,7 +1559,10 @@
 			"id": "ERLW",
 			"source": "ERLW",
 			"group": "setting",
-			"coverUrl": "img/covers/ERLW.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/ERLW.webp"
+			},
 			"published": "2019-11-19",
 			"contents": [
 				{
@@ -1722,6 +1812,9 @@
 						"Daelkyr",
 						"Living Spells"
 					]
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -1730,7 +1823,10 @@
 			"id": "EGW",
 			"source": "EGW",
 			"group": "setting",
-			"coverUrl": "img/covers/EGW.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/EGW.webp"
+			},
 			"published": "2020-03-17",
 			"contents": [
 				{
@@ -2029,7 +2125,10 @@
 			"id": "MOT",
 			"source": "MOT",
 			"group": "setting",
-			"coverUrl": "img/covers/MOT.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/MOT.webp"
+			},
 			"published": "2020-06-02",
 			"contents": [
 				{
@@ -2143,6 +2242,9 @@
 						"type": "chapter",
 						"identifier": 6
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -2151,7 +2253,10 @@
 			"id": "ScreenDungeonKit",
 			"source": "ScreenDungeonKit",
 			"group": "screen",
-			"coverUrl": "img/covers/ScreenDungeonKit.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/ScreenDungeonKit.webp"
+			},
 			"published": "2020-09-21",
 			"contents": [
 				{
@@ -2183,7 +2288,10 @@
 			"id": "HF",
 			"source": "HF",
 			"group": "recipe",
-			"coverUrl": "img/covers/HF.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/HF.webp"
+			},
 			"published": "2020-10-27",
 			"author": "Kyle Newman",
 			"contents": [
@@ -2342,7 +2450,10 @@
 			"id": "ScreenWildernessKit",
 			"source": "ScreenWildernessKit",
 			"group": "screen",
-			"coverUrl": "img/covers/ScreenWildernessKit.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/ScreenWildernessKit.webp"
+			},
 			"published": "2020-11-17",
 			"contents": [
 				{
@@ -2358,7 +2469,10 @@
 			"id": "TCE",
 			"source": "TCE",
 			"group": "supplement",
-			"coverUrl": "img/covers/TCE.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/TCE.webp"
+			},
 			"published": "2020-11-17",
 			"author": "Wizards RPG Team",
 			"contents": [
@@ -2503,6 +2617,9 @@
 						"type": "chapter",
 						"identifier": 4
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -2511,7 +2628,10 @@
 			"id": "VRGR",
 			"source": "VRGR",
 			"group": "setting",
-			"coverUrl": "img/covers/VRGR.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/VRGR.webp"
+			},
 			"published": "2021-05-18",
 			"contents": [
 				{
@@ -3141,6 +3261,9 @@
 					"ordinal": {
 						"type": "appendix"
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -3149,7 +3272,10 @@
 			"id": "DoD",
 			"source": "DoD",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/DoD.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/DoD.webp"
+			},
 			"published": "2021-09-21",
 			"contents": [
 				{
@@ -3292,6 +3418,9 @@
 						"type": "appendix",
 						"identifier": "A"
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -3300,7 +3429,10 @@
 			"id": "MaBJoV",
 			"source": "MaBJoV",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/MaBJoV.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/MaBJoV.webp"
+			},
 			"published": "2021-10-05",
 			"author": "Wizards RPG Team",
 			"contents": [
@@ -3375,7 +3507,10 @@
 			"id": "FTD",
 			"source": "FTD",
 			"group": "supplement",
-			"coverUrl": "img/covers/FTD.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/FTD.webp"
+			},
 			"published": "2021-10-26",
 			"author": "Wizards RPG Team",
 			"contents": [
@@ -3481,6 +3616,9 @@
 						"Challenge Ratings",
 						"Creature Types"
 					]
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -3489,7 +3627,10 @@
 			"id": "SCC",
 			"source": "SCC",
 			"group": "setting",
-			"coverUrl": "img/covers/SCC.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/SCC.webp"
+			},
 			"published": "2021-12-07",
 			"author": "Wizards RPG Team",
 			"contents": [
@@ -3594,6 +3735,9 @@
 					"ordinal": {
 						"type": "appendix"
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -3602,7 +3746,10 @@
 			"id": "TDCSR",
 			"source": "TDCSR",
 			"group": "setting",
-			"coverUrl": "img/covers/TDCSR.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/TDCSR.webp"
+			},
 			"published": "2022-01-18",
 			"author": "Darrington Press",
 			"contents": [
@@ -3950,7 +4097,10 @@
 			"id": "MPMM",
 			"source": "MPMM",
 			"group": "supplement",
-			"coverUrl": "img/covers/MPMM.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/MPMM.webp"
+			},
 			"published": "2022-01-25",
 			"author": "Wizards RPG Team",
 			"contents": [
@@ -3968,6 +4118,9 @@
 					"ordinal": {
 						"type": "appendix"
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -3979,7 +4132,10 @@
 			"id": "AAG",
 			"source": "AAG",
 			"group": "supplement",
-			"coverUrl": "img/covers/SAiS.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/SAiS.webp"
+			},
 			"published": "2022-08-16",
 			"contents": [
 				{
@@ -4040,6 +4196,9 @@
 				},
 				{
 					"name": "Poster Map"
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -4051,7 +4210,10 @@
 			"id": "BAM",
 			"source": "BAM",
 			"group": "supplement",
-			"coverUrl": "img/covers/SAiS.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/SAiS.webp"
+			},
 			"published": "2022-08-16",
 			"contents": [
 				{
@@ -4062,6 +4224,9 @@
 						"Astral Encounters",
 						"Bestiary"
 					]
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -4070,7 +4235,10 @@
 			"id": "ScreenSpelljammer",
 			"source": "ScreenSpelljammer",
 			"group": "screen",
-			"coverUrl": "img/covers/ScreenSpelljammer.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/ScreenSpelljammer.webp"
+			},
 			"published": "2022-08-16",
 			"contents": [
 				{
@@ -4083,12 +4251,18 @@
 			"id": "HAT-TG",
 			"source": "HAT-TG",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/TG.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/TG.webp"
+			},
 			"published": "2023-03-06",
 			"author": "Wizards RPG Team",
 			"contents": [
 				{
 					"name": "Thieves' Gallery"
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -4097,7 +4271,10 @@
 			"id": "BGG",
 			"source": "BGG",
 			"group": "supplement",
-			"coverUrl": "img/covers/BGG.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/BGG.webp"
+			},
 			"published": "2023-08-15",
 			"author": "Wizards RPG Team",
 			"contents": [
@@ -4211,6 +4388,9 @@
 						"type": "appendix",
 						"identifier": "B"
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -4219,7 +4399,10 @@
 			"id": "MCV4EC",
 			"source": "MCV4EC",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/MCV4EC.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/MCV4EC.webp"
+			},
 			"published": "2023-09-21",
 			"contents": [
 				{
@@ -4227,6 +4410,9 @@
 					"headers": [
 						"About Eldraine"
 					]
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -4238,7 +4424,10 @@
 			"id": "MPP",
 			"source": "MPP",
 			"group": "supplement",
-			"coverUrl": "img/covers/PAitM.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/PAitM.webp"
+			},
 			"published": "2023-10-07",
 			"contents": [
 				{
@@ -4290,7 +4479,10 @@
 			"id": "SatO",
 			"source": "SatO",
 			"group": "supplement",
-			"coverUrl": "img/covers/PAitM.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/PAitM.webp"
+			},
 			"published": "2023-10-07",
 			"contents": [
 				{
@@ -4355,7 +4547,10 @@
 			"id": "AATM",
 			"source": "AATM",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/AATM.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/AATM.webp"
+			},
 			"published": "2023-10-17",
 			"contents": [
 				{
@@ -4366,6 +4561,9 @@
 						"The Mortuary",
 						"Appendix: Mortuary Creatures"
 					]
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -4374,7 +4572,10 @@
 			"id": "HFFotM",
 			"source": "HFFotM",
 			"group": "recipe",
-			"coverUrl": "img/covers/HFFotM.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/HFFotM.webp"
+			},
 			"published": "2023-11-07",
 			"author": "Kyle Newman",
 			"contents": [
@@ -4507,7 +4708,10 @@
 			"id": "BMT",
 			"source": "BMT",
 			"group": "supplement",
-			"coverUrl": "img/covers/BMT.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/BMT.webp"
+			},
 			"published": "2023-11-14",
 			"contents": [
 				{
@@ -5188,7 +5392,7 @@
 					]
 				},
 				{
-					"name": "Cover"
+					"name": "Credits"
 				}
 			]
 		}

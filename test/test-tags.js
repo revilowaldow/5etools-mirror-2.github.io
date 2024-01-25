@@ -589,7 +589,7 @@ class TableDiceTest extends DataTesterBase {
 		let cleanHeader = toRenderLabel
 			.trim()
 			.replace(/^{@dice ([^}]+)}/g, (...m) => {
-				tmpParts.push(m[1]);
+				tmpParts.push(m[1].split("|")[0]);
 				return `__TMP_DICE__${tmpParts.length - 1}__`;
 			});
 		cleanHeader = Renderer.stripTags(cleanHeader).replace(/__TMP_DICE__(\d+)__/g, (...m) => tmpParts[Number(m[1])]);

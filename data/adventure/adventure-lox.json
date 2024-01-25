@@ -7187,6 +7187,346 @@
 					]
 				}
 			]
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"columns": 2,
+							"items": [
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"type": "item",
+											"name": "Project Lead",
+											"entries": [
+												"Christopher Perkins"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Writers",
+											"entries": [
+												"Justice Ramin Arman, Sadie Lowry, Jeffrey Ludwig"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Art Director",
+											"entries": [
+												"Kate Irwin"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Adventure Developers",
+											"entries": [
+												"Dan Dillon, Christopher Perkins"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Rules Developer",
+											"entries": [
+												"Jeremy Crawford"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Editors",
+											"entries": [
+												"Judy Bauer, Kim Mohan"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Senior Graphic Designer",
+											"entries": [
+												"Trish Yochum"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Graphic Designers",
+											"entries": [
+												"Matt Cole, Trystan Falcone"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Cover Illustrators",
+											"entries": [
+												"Ekaterina Burmak, Hydro74"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Interior Illustrators",
+											"entries": [
+												"Tom Babbey, Mark Behm, Olivier Bernard, Zoltan Boros, Bruce Brenneise, Sidharth Chaturvedi, Nikki Dawes, Simon Dominic, Olga Drebas, Merlin G.G., Suzanne Helmigh, Ralph Horsley, Katerina Ladon, Olly Lawson, Andrew Mar, Robson Michel, Irina Nordsol, Ned Rogers, Craig J Spearing, Cory Trego-Erdner, Randy Vargas, Campbell White, Shawn Wood, Zuzanna Wuzyk"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Cartographers",
+											"entries": [
+												"CoupleofKooks, Dyson Logos"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Concept Illustrators",
+											"entries": [
+												"Titus Lunter, Shawn Wood"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Stat Block Analysts",
+											"entries": [
+												"Makenzie De Armas, Taymoor Rehman"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Project Engineer",
+											"entries": [
+												"Cynda Callaway"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Imaging Technicians",
+											"entries": [
+												"Daniel Corona, Kevin Yee"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Prepress Specialist",
+											"entries": [
+												"Jefferson Dunlap"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "D&D Studio",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Executive Producer",
+													"entries": [
+														"Ray Winninger"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Director of Studio Operations",
+													"entries": [
+														"Kyle Brink"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Game Architects",
+													"entries": [
+														"Jeremy Crawford, Christopher Perkins"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Design Manager",
+													"entries": [
+														"Steve Scott"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Design Department",
+													"entries": [
+														"Sydney Adams, Judy Bauer, Makenzie De Armas, Dan Dillon, Amanda Hamon, Ben Petrisor, Taymoor Rehman, F. Wesley Schneider, James Wyatt"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Art Department",
+													"entries": [
+														"Matt Cole, Trystan Falcone, Bree Heiss, Kate Irwin, Bob Jordan, Emi Tanji, Trish Yochum"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Senior Producers",
+													"entries": [
+														"Lisa Ohanian, Dan Tovar"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Producers",
+													"entries": [
+														"Bill Benham, Robert Hawkey, Lea Heleotis"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Director of Product Management",
+													"entries": [
+														"Liz Schuh"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Product Managers",
+													"entries": [
+														"Natalie Egan, Chris Lindsay, Hilary Ross, Chris Tulach"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Consultants",
+													"entries": [
+														"Basheer Ghouse, James Mendez Hodes, Sara Thompson"
+													]
+												}
+											]
+										}
+									],
+									"id": "17f"
+								},
+								{
+									"type": "entries",
+									"name": "Marketing",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Director of Global Brand Marketing",
+													"entries": [
+														"Brian Perry"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Senior Global Brand Manager",
+													"entries": [
+														"Shelly Mazzanoble"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Associate Global Brand Manager",
+													"entries": [
+														"Sara Chan"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Senior Marketing Communications Manager",
+													"entries": [
+														"Greg Tito"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Community Manager",
+													"entries": [
+														"Brandy Camel"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Social Media Marketing Managers",
+													"entries": [
+														"Nicole Olson, Joshua Morris"
+													]
+												}
+											]
+										}
+									],
+									"id": "180"
+								},
+								{
+									"type": "entries",
+									"name": "D&D Beyond",
+									"entries": [
+										{
+											"type": "item",
+											"name": "Senior Producer",
+											"entries": [
+												"Faith Elisabeth Lilley"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Digital Design Team",
+											"entries": [
+												"Jay Jani, Adam Walton, Joseph Keen"
+											]
+										}
+									],
+									"id": "181"
+								}
+							]
+						}
+					],
+					"id": "17e"
+				},
+				"{@b This adventure is dedicated to Alex Raymond and Lorenzo Elliott Semple Jr.}",
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "adventure/LoX/credits.webp"
+					},
+					"maxWidth": 400,
+					"width": 824,
+					"height": 850
+				},
+				{
+					"type": "gallery",
+					"images": [
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "adventure/LoX/credits1.webp"
+							},
+							"title": "On the Cover: Prince Xeleth, who is determined to become the next leader of the Xaryxian Empire, poses with his solar dragon in Ekaterina Burmak's stunning cover illustration.",
+							"width": 1200,
+							"height": 780
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "adventure/LoX/credits2.webp"
+							},
+							"title": "On the Alt-Cover: Princess Xedalli, illustrated beautifully by Hydro74, aims to keep her evil brother from inheriting their father's throne. The symbol of the Xaryxian Empire graces the back cover.",
+							"width": 1200,
+							"height": 780
+						}
+					]
+				}
+			],
+			"id": "165"
 		}
 	]
 }

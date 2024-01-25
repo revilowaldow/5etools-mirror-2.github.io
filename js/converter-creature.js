@@ -1635,7 +1635,7 @@ class CreatureParser extends BaseParser {
 		spl.forEach(it => {
 			const m = /^(?<abil>\w+)\s*(?<sign>[-+])\s*(?<save>\d+)(?<plusPb>(?:\s+plus\s+|\s*\+\s*)PB)?$/i.exec(it);
 			if (m) {
-				out[m.groups.abil] = `${m.groups.sign}${m.groups.save}${m.groups.plusPb ? m.groups.plusPb.replace(/\bpb\b/gi, "PB") : ""}`;
+				out[m.groups.abil.slice(0, 3)] = `${m.groups.sign}${m.groups.save}${m.groups.plusPb ? m.groups.plusPb.replace(/\bpb\b/gi, "PB") : ""}`;
 				return;
 			}
 

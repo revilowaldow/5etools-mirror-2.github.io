@@ -220,6 +220,8 @@ PropOrder._MONSTER = [
 	"dragonAge",
 
 	"tokenUrl",
+	"token",
+	"tokenHref",
 	"tokenCredit",
 	"soundClip",
 	"foundryImg",
@@ -515,6 +517,7 @@ PropOrder._ADVENTURE = [
 
 	"group",
 
+	"cover",
 	"coverUrl",
 	"published",
 	"publishedOrder",
@@ -544,6 +547,7 @@ PropOrder._BOOK = [
 
 	"group",
 
+	"cover",
 	"coverUrl",
 	"published",
 	"author",
@@ -1197,6 +1201,8 @@ PropOrder._VEHICLE = [
 	"reaction",
 
 	"tokenUrl",
+	"token",
+	"tokenHref",
 	"tokenCredit",
 
 	"hasToken",
@@ -1484,6 +1490,8 @@ PropOrder._OBJECT = [
 	"actionEntries",
 
 	"tokenUrl",
+	"token",
+	"tokenHref",
 	"tokenCredit",
 	"hasToken",
 	"hasFluff",

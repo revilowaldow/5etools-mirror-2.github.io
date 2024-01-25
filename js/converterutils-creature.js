@@ -1697,7 +1697,24 @@ globalThis.SpeedConvert = SpeedConvert;
 
 class DetectNamedCreature {
 	static tryRun (mon) {
+		if (this._tryRun_nickname(mon)) return;
+		this._tryRun_heuristic(mon);
+	}
+
+	static _tryRun_nickname (mon) {
+		if (
+			/^[^"]+ "[^"]+" [^"]+/.test(mon.name)
+			|| /^[^']+ '[^']+' [^']+/.test(mon.name)
+		) {
+			mon.isNamedCreature = true;
+			return true;
+		}
+		return false;
+	}
+
+	static _tryRun_heuristic (mon) {
 		const totals = {yes: 0, no: 0};
+
 		this._doCheckProp(mon, totals, "trait");
 		this._doCheckProp(mon, totals, "spellcasting");
 		this._doCheckProp(mon, totals, "action");
@@ -1707,6 +1724,8 @@ class DetectNamedCreature {
 		this._doCheckProp(mon, totals, "mythic");
 
 		if (totals.yes && totals.yes > totals.no) mon.isNamedCreature = true;
+
+		return true;
 	}
 
 	static _doCheckProp (mon, totals, prop) {

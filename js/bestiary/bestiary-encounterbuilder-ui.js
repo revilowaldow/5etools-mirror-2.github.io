@@ -205,8 +205,7 @@ export class EncounterBuilderUiBestiary extends EncounterBuilderUi {
 	}
 
 	static getTokenHoverMeta (mon) {
-		const hasToken = mon.tokenUrl || mon.hasToken;
-		if (!hasToken) return null;
+		if (!Renderer.monster.hasToken(mon)) return null;
 
 		return Renderer.hover.getMakePredefinedHover(
 			{

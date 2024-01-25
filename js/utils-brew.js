@@ -270,6 +270,7 @@ class _BrewUtil2Base {
 	IS_EDITABLE;
 	PAGE_MANAGE;
 	URL_REPO_DEFAULT;
+	URL_REPO_ROOT_DEFAULT;
 	DISPLAY_NAME;
 	DISPLAY_NAME_PLURAL;
 	DEFAULT_AUTHOR;
@@ -351,9 +352,11 @@ class _BrewUtil2Base {
 	async pGetCustomUrl () { return this._storage.pGet(this._STORAGE_KEY_CUSTOM_URL); }
 
 	async pSetCustomUrl (val) {
-		return !val
+		await (!val
 			? this._storage.pRemove(this._STORAGE_KEY_CUSTOM_URL)
-			: this._storage.pSet(this._STORAGE_KEY_CUSTOM_URL, val);
+			: this._storage.pSet(this._STORAGE_KEY_CUSTOM_URL, val));
+
+		location.reload();
 	}
 
 	/* -------------------------------------------- */
@@ -1352,6 +1355,7 @@ class _PrereleaseUtil extends _BrewUtil2Base {
 	IS_EDITABLE = false;
 	PAGE_MANAGE = UrlUtil.PG_MANAGE_PRERELEASE;
 	URL_REPO_DEFAULT = VeCt.URL_PRERELEASE;
+	URL_REPO_ROOT_DEFAULT = VeCt.URL_ROOT_PRERELEASE;
 	DISPLAY_NAME = "prerelease content";
 	DISPLAY_NAME_PLURAL = "prereleases";
 	DEFAULT_AUTHOR = "Wizards of the Coast";
@@ -1368,11 +1372,11 @@ class _PrereleaseUtil extends _BrewUtil2Base {
 
 	getFileUrl (path, urlRoot) { return DataUtil.prerelease.getFileUrl(path, urlRoot); }
 
-	pLoadTimestamps (brewIndex, src, urlRoot) { return DataUtil.prerelease.pLoadTimestamps(urlRoot); }
+	pLoadTimestamps (urlRoot) { return DataUtil.prerelease.pLoadTimestamps(urlRoot); }
 
-	pLoadPropIndex (brewIndex, src, urlRoot) { return DataUtil.prerelease.pLoadPropIndex(urlRoot); }
+	pLoadPropIndex (urlRoot) { return DataUtil.prerelease.pLoadPropIndex(urlRoot); }
 
-	pLoadMetaIndex (brewIndex, src, urlRoot) { return DataUtil.prerelease.pLoadMetaIndex(urlRoot); }
+	pLoadMetaIndex (urlRoot) { return DataUtil.prerelease.pLoadMetaIndex(urlRoot); }
 
 	/* -------------------------------------------- */
 
@@ -1413,6 +1417,7 @@ class _BrewUtil2 extends _BrewUtil2Base {
 	IS_EDITABLE = true;
 	PAGE_MANAGE = UrlUtil.PG_MANAGE_BREW;
 	URL_REPO_DEFAULT = VeCt.URL_BREW;
+	URL_REPO_ROOT_DEFAULT = VeCt.URL_ROOT_BREW;
 	DISPLAY_NAME = "homebrew";
 	DISPLAY_NAME_PLURAL = "homebrews";
 	DEFAULT_AUTHOR = "";
@@ -1475,11 +1480,11 @@ class _BrewUtil2 extends _BrewUtil2Base {
 
 	getFileUrl (path, urlRoot) { return DataUtil.brew.getFileUrl(path, urlRoot); }
 
-	pLoadTimestamps (brewIndex, src, urlRoot) { return DataUtil.brew.pLoadTimestamps(urlRoot); }
+	pLoadTimestamps (urlRoot) { return DataUtil.brew.pLoadTimestamps(urlRoot); }
 
-	pLoadPropIndex (brewIndex, src, urlRoot) { return DataUtil.brew.pLoadPropIndex(urlRoot); }
+	pLoadPropIndex (urlRoot) { return DataUtil.brew.pLoadPropIndex(urlRoot); }
 
-	pLoadMetaIndex (brewIndex, src, urlRoot) { return DataUtil.brew.pLoadMetaIndex(urlRoot); }
+	pLoadMetaIndex (urlRoot) { return DataUtil.brew.pLoadMetaIndex(urlRoot); }
 
 	/* -------------------------------------------- */
 
@@ -1862,7 +1867,7 @@ class ManageBrewUi {
 			title: `${this._brewUtil.DISPLAY_NAME.toTitleCase()} Repository URL`,
 			$elePre: $(`<div>
 				<p>Leave blank to use the <a href="${this._brewUtil.URL_REPO_DEFAULT}" rel="noopener noreferrer" target="_blank">default ${this._brewUtil.DISPLAY_NAME} repo</a>.</p>
-				<div>Note that for GitHub URLs, the <code>raw.</code> URL must be used. For example, <code>${this._brewUtil.URL_REPO_DEFAULT.replace(/TheGiddyLimit/g, "YourUsernameHere")}</code></div>
+				<div>Note that for GitHub URLs, the <code>raw.</code> URL must be used. For example, <code>${this._brewUtil.URL_REPO_ROOT_DEFAULT.replace(/TheGiddyLimit/g, "YourUsernameHere")}</code></div>
 				<hr class="hr-3">
 			</div>`),
 			default: customBrewUtl,

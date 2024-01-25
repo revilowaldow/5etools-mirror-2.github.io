@@ -136,7 +136,15 @@ class DmMapperRoot extends BaseComponent {
 
 		$parent.append(`<div class="ve-flex-vh-center w-100 h-100"><i class="dnd-font ve-muted">Loading...</i></div>`);
 
-		RenderMap.$pGetRendered(this._state)
+		RenderMap.$pGetRendered(
+			this._state,
+			{
+				fnGetContainerDimensions: () => {
+					const bcr = $parent[0].getBoundingClientRect();
+					return {w: bcr.width, h: bcr.height};
+				},
+			},
+		)
 			.then($ele => $parent.empty().append($ele));
 	}
 }

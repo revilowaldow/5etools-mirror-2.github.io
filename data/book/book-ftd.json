@@ -15863,6 +15863,297 @@
 					]
 				}
 			]
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"columns": 2,
+							"items": [
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"type": "item",
+											"name": "Lead Designer",
+											"entries": [
+												"James Wyatt"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Art Director",
+											"entries": [
+												"Kate Irwin"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Designers",
+											"entries": [
+												"Ben Petrisor, Sydney Adams, Bill Benham, Jeremy Crawford, Makenzie De Armas, Dan Dillon, Steve Kenson, Cassandra Khaw, Renee Knipe, Adam Lee, Ari Levitch, Jeffrey Ludwig, Jessica Price, Taymoor Rehman, James L. Sutter, Eugenio Vargas, Amy Vorpahl"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Rules Developers",
+											"entries": [
+												"Jeremy Crawford, Ben Petrisor"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Editors",
+											"entries": [
+												"Judy Bauer, Scott Fitzgerald Gray, Christopher Perkins, F. Wesley Schneider"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Graphic Designer",
+											"entries": [
+												"Trish Yochum"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Cover Illustrators",
+											"entries": [
+												"Anato Finnstark, Chris Rahn"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Additional Art Directors",
+											"entries": [
+												"Zack Stella, Cynthia Sheppard, Andrew Vallas"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Interior Illustrators",
+											"entries": [
+												"Mark Behm, Olivier Bernard, Zoltan Boros, Ekaterina Burmak, Dawn Carlos, Kai Carpenter, Clint Cearley, Sidharth Chaturvedi, Billy Christian, Iris Compiet, Conceptopolis, Daarken, Nikki Dawes, Simon Dominic, Olga Drebas, Ilse Gort, Lucas Graciano, Lars Grant-West, Tyler Jacobson, Sam Keiser, Julian Kok, Andrey Kuzinskiy, Katerina Ladon, Antonio José Manzanedo, Andrew Mar, Oriana Menendez, Brynn Metheney, Scott Murphy, David Auden Nash, Irina Nordsol, Anna Pavleeva, Livia Prima, April Prime, Chris Rahn, Chris Rallis, Dan Scott, David Sladek, Rudy Siswanto, Alex Stone, Crystal Sully, Brian Valeza, Randy Vargas, Svetlin Velinov, Johannes Voss, Campbell White, Richard Whitters, Shawn Wood, Zuzanna Wuzyk, Kieran Yanner, Mark Zug"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Cartographer",
+											"entries": [
+												"Dyson Logos"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Concept Illustrators",
+											"entries": [
+												"Shawn Wood, April Prime"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Project Engineer",
+											"entries": [
+												"Cynda Callaway"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Imaging Technician",
+											"entries": [
+												"Kevin Yee"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Prepress Specialist",
+											"entries": [
+												"Jefferson Dunlap"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "D&D Studio",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Executive Producer",
+													"entries": [
+														"Ray Winninger"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Game Design Architects",
+													"entries": [
+														"Jeremy Crawford, Christopher Perkins"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Design Manager",
+													"entries": [
+														"Steve Scott"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Design Department",
+													"entries": [
+														"Sydney Adams, Judy Bauer, Makenzie De Armas, Dan Dillon, Amanda Hamon, Ari Levitch, Ben Petrisor, Taymoor Rehman, F. Wesley Schneider, James Wyatt"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Art Team Manager",
+													"entries": [
+														"Richard Whitters"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Principal Art Director",
+													"entries": [
+														"Kate Irwin"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Art Department",
+													"entries": [
+														"Trystan Falcone, Emi Tanji, Shawn Wood, Trish Yochum"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Senior Producer",
+													"entries": [
+														"Dan Tovar"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Producers",
+													"entries": [
+														"Bill Benham, Robert Hawkey, Lea Heliotis"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Director of Product Management",
+													"entries": [
+														"Liz Schuh"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Product Managers",
+													"entries": [
+														"Natalie Egan, Chris Lindsay, Hilary Ross, Chris Tulach"
+													]
+												}
+											]
+										}
+									],
+									"id": "025"
+								},
+								{
+									"type": "entries",
+									"name": "Marketing",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Director of Global Brand Marketing",
+													"entries": [
+														"Brian Perry"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Global Brand Manager",
+													"entries": [
+														"Shelly Mazzanoble"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Senior Marketing Communications Manager",
+													"entries": [
+														"Greg Tito"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Community Management",
+													"entries": [
+														"Brandy Camel"
+													]
+												}
+											]
+										}
+									],
+									"id": "026"
+								},
+								"Special thanks to our hundreds of playtesters!"
+							]
+						}
+					],
+					"id": "024"
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "book/FTD/credits.webp"
+					},
+					"maxWidth": 350,
+					"width": 850,
+					"height": 1067
+				},
+				{
+					"type": "gallery",
+					"images": [
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/FTD/credits2.webp"
+							},
+							"title": "On the Cover: Fizban the Fabulous protects a group of innocents as a crystal dragon and a red dragon clash in the sky, in this painting by Chris Rahn.",
+							"width": 1200,
+							"height": 780
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/FTD/credits3.webp"
+							},
+							"title": "On the Alt-Cover: Battling crystal and red dragons from Fizban's tales come to vivid life, revealing the underlying conflicts of the cosmos in this painting by Anato Finnstark.",
+							"width": 1200,
+							"height": 780
+						}
+					]
+				}
+			],
+			"id": "023"
 		}
 	]
 }

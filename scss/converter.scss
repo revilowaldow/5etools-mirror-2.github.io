@@ -1,3 +1,5 @@
+@import "includes/vars";
+
 .inputArea,
 .outputArea {
 	width: 100%;
@@ -9,40 +11,42 @@
 	width: initial;
 }
 
-#lastWarnings {
-	color: #df00ff;
+.conv__ {
+	&head {
+		margin-top: 0;
+		margin-bottom: 2px;
+	}
+
+	&out_control__wrp {
+		padding: 0 3rem 0 0;
+		flex-shrink: 0;
+	}
+
+	&disp-message {
+		flex-shrink: 0;
+		font-size: 13px;
+		background-color: $rgb-bg--alt;
+		border: 1px solid $rgb-border-grey;
+		border-radius: 4px;
+		margin-right: 3rem;
+
+		&--warning {
+			color: #df00ff;
+		}
+
+		&--error {
+			color: red;
+		}
+	}
 }
 
-#lastError {
-	color: red;
-}
-
-#lastWarnings,
-#lastError {
-	margin-top: 5px;
-	margin-bottom: 10px;
-	display: none;
-	flex-shrink: 0;
-	padding: 9px;
-	font-size: 13px;
-	line-height: 1.4;
-	background-color: whitesmoke;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-}
-
-.night-mode #lastError {
-	border-color: #555;
-}
-
-.conv__head {
-	margin-top: 0;
-	margin-bottom: 2px;
-}
-
-.conv__out_control__wrp {
-	padding: 0 3rem 0 0;
-	flex-shrink: 0;
+.night-mode {
+	.conv__ {
+		&disp-message {
+			background-color: $rgb-bg--alt-night;
+			border-color: $rgb-border-grey--night;
+		}
+	}
 }
 
 @media (max-width: 991px) {

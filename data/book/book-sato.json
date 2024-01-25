@@ -6649,26 +6649,31 @@
 			"id": "180",
 			"entries": [
 				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/SatO/066-04001.cover.webp"
-					},
-					"title": "On the Cover: Sigil's enigmatic ruler, the Lady of Pain, looms before the planar metropolis and its curving skyline in this painting by Tyler Jacobson.",
-					"credit": "Tyler Jacobson",
-					"width": 850,
-					"height": 582
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/SatO/067-04002.alt.webp"
-					},
-					"title": "On the Alt-Cover: On this cover, Tony DiTerlizzi depicts the Lady of Pain in her iconic bladed headdress. The expressionless Lady's inner machinations are unknowable.",
-					"credit": "Tony DiTerlizzi",
-					"width": 850,
-					"height": 569
+					"type": "gallery",
+					"images": [
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/SatO/066-04001.cover.webp"
+							},
+							"title": "On the Cover: Sigil's enigmatic ruler, the Lady of Pain, looms before the planar metropolis and its curving skyline in this painting by Tyler Jacobson.",
+							"credit": "Tyler Jacobson",
+							"width": 850,
+							"height": 582
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/SatO/067-04002.alt.webp"
+							},
+							"title": "On the Alt-Cover: On this cover, Tony DiTerlizzi depicts the Lady of Pain in her iconic bladed headdress. The expressionless Lady's inner machinations are unknowable.",
+							"credit": "Tony DiTerlizzi",
+							"width": 850,
+							"height": 569
+						}
+					]
 				}
 			]
 		}

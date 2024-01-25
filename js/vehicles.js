@@ -118,8 +118,7 @@ class VehiclesPage extends ListPage {
 		(this._$dispToken = this._$dispToken || $(`#float-token`)).empty();
 
 		if (ent.vehicleType) {
-			const hasToken = ent.tokenUrl || ent.hasToken;
-			if (hasToken) {
+			if (Renderer.vehicle.hasToken(ent)) {
 				const imgLink = Renderer.vehicle.getTokenUrl(ent);
 				this._$dispToken.append(`<a href="${imgLink}" target="_blank" rel="noopener noreferrer"><img src="${imgLink}" id="token_image" class="token" alt="Token Image: ${(ent.name || "").qq()}" ${ent.tokenCredit ? `title="Credit: ${ent.tokenCredit.qq()}"` : ""} loading="lazy"></a>`);
 			}

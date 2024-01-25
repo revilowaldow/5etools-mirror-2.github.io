@@ -8666,7 +8666,7 @@
 					"entries": [
 						"The quest in Easthaven begins at the same time as the burning of the Red Wizard, Dzaan, who is described in the \"Arcane Brotherhood\" section of {@area appendix C|6fe|x}. Whether the characters are starting the adventure in Easthaven or have just arrived, they are present during Dzaan's fiery execution. They're too late to save Dzaan, but they might encounter a magical copy of him again in chapter 2 (see \"{@area Lost Spire of Netheril|3a8|x}\").",
 						"The captain of Easthaven's militia, Imdra Arlaggath, takes notice of the characters during the burning and offers them a quest. Some fishers have gone missing on Lac Dinneshere, and she wants the characters to take a boat and search for them. She knows where the fishers like to fish and urges the characters to search that part of the lake first. If they heed Imdra's advice, they find the fishers' boats pulled up on the ice within short walking distance from a frozen cave previously hidden under snow and ice. This cave, the characters soon discover, is the lair of a hag named Maud Chiselbone.",
-						"Characters who explore the cave complex find the bodies of the fishers, as well as Maud's {@item cauldron of plenty|IDRotF} (see {@adventure appendix D|IDRotF|22|{@item Cauldron of Plenty|IDRotF}}). The cauldron is a stunning discovery and a welcome one for the people of Ten-Towns, if the characters choose to part with it. If news of the cauldron spreads, the characters will quickly find themselves the center of attention as various towns strive to obtain it. With no end to winter in sight, the cauldron might be the last thing standing between one town's survival and another's extinction.",
+						"Characters who explore the cave complex find the bodies of the fishers, as well as Maud's {@item cauldron of plenty|IDRotF} (see {@adventure appendix D|IDRotF|22}). The cauldron is a stunning discovery and a welcome one for the people of Ten-Towns, if the characters choose to part with it. If news of the cauldron spreads, the characters will quickly find themselves the center of attention as various towns strive to obtain it. With no end to winter in sight, the cauldron might be the last thing standing between one town's survival and another's extinction.",
 						{
 							"type": "image",
 							"href": {
@@ -11928,7 +11928,7 @@
 									"page": 66,
 									"id": "183",
 									"entries": [
-										"The lake hag, Maud Chiselbone (use the {@creature sea hag} stat block), and her {@creature will-o'-wisp} companion await characters in the middle of this cave. Maud stands between her {@item cauldron of plenty|IDRotF} (see {@adventure appendix D|IDRotF|22|{@item Cauldron of Plenty|IDRotF}}) and a stone block atop which she butchers whatever meat is destined for her stew. Heaped around this block are rusty hatchets and the flayed corpses of the four fishers from Easthaven. The will-o'-wisp is normally {@condition invisible} when its light is extinguished, but it brightens when it wants intruders to behold Maud's true, hideous form.",
+										"The lake hag, Maud Chiselbone (use the {@creature sea hag} stat block), and her {@creature will-o'-wisp} companion await characters in the middle of this cave. Maud stands between her {@item cauldron of plenty|IDRotF} (see {@adventure appendix D|IDRotF|22}) and a stone block atop which she butchers whatever meat is destined for her stew. Heaped around this block are rusty hatchets and the flayed corpses of the four fishers from Easthaven. The will-o'-wisp is normally {@condition invisible} when its light is extinguished, but it brightens when it wants intruders to behold Maud's true, hideous form.",
 										"Maud disguises herself as a decrepit old woman. In this form, she wears tattered furs to stave off the cold. In her natural form, Maud has sickly grayish-purple flesh, bulging eyes that seldom blink, and stringy black hair interwoven with fingerbones. If her disguise is pierced or the characters threaten her, Maud summons the frost giant skeleton in area U9 to fight on her behalf, but it takes two rounds to arrive. If the skeleton is destroyed, Maud assumes her true form and takes on the characters herself. She won't give up her lair or the magic cauldron without a fight.",
 										"If she is reduced to 9 hit points or fewer, Maud tries to make a deal. She agrees to surrender the cauldron and promises to deliver a chest filled with gold coins that lies in the muck at the bottom of Lac Dinneshere. If the deal is struck and the characters release her as promised, Maud returns to the lake to make good on her end of the bargain. As she departs, she tells the characters to wait in the caves until midnight, then head north along the shore for a mile. If they follow her instructions, they find a waterlogged wooden chest on the icy shore, its lock broken off. See \"Treasure\" below for information on the chest's contents.",
 										{
@@ -22749,7 +22749,7 @@
 											"page": 99,
 											"id": "277",
 											"entries": [
-												"The crystal shard lodged inside the fossilized mind flayer skull is a {@item psi crystal|IDRotF} (see {@adventure appendix D|IDRotF|22|{@item Psi Crystal|IDRotF}}). The psychic trauma that the mind flayer endured when it died caused the crystal to form in its mind. A character can use a miner's pick to pry loose the psi crystal.",
+												"The crystal shard lodged inside the fossilized mind flayer skull is a {@item psi crystal|IDRotF} (see {@adventure appendix D|IDRotF|22}). The psychic trauma that the mind flayer endured when it died caused the crystal to form in its mind. A character can use a miner's pick to pry loose the psi crystal.",
 												"A character who attunes to this {@i psi crystal} gains a form of indefinite madness (see the {@table indefinite madness|| Indefinite Madness table} in the {@book Dungeon Master's Guide|DMG}). Determine the result secretly, then convey this information only to the character's player. The madness does not end until the character is no longer attuned to the {@i psi crystal}. While the madness lasts, the character can hear a repeating telepathic distress signal put out by an illithid ship that crashed in the mountains and track the signal to its source (see \"{@area Id Ascendant|346|x}\"). The only way to block the signal is by ending the character's attunement to the {@i psi crystal}."
 											]
 										}
@@ -24803,7 +24803,7 @@
 									"id": "2ca",
 									"entries": [
 										"The Black Cabin was built by a ranger of the Far North long before the founding of Ten-Towns. When he moved on, the lodge became a refuge for others seeking sanctuary from the wind sweeping down from the Reghed Glacier.",
-										"Six months ago, Macreadus, a sage and devout follower of Lathander (god of the dawn and rebirth), formed a plan to end Auril's everlasting winter. He holed up in the Black Cabin, where he spent all his time assembling a weather-controlling magical device called the {@i Summer Star}, using knowledge he gleaned from a book about Netherese artifacts. Macreadus's device was similar in design to a {@i mythallar} (see {@adventure appendix D|IDRotF|22|{@item Ythryn Mythallar|IDRotF}}), but much smaller. Unfortunately for him, it had a serious design flaw. When Macreadus tried to use it three days ago, it malfunctioned, incinerating both him and his book. Characters who search the cabin can find the sage's charred skeleton and his deadly creation.",
+										"Six months ago, Macreadus, a sage and devout follower of Lathander (god of the dawn and rebirth), formed a plan to end Auril's everlasting winter. He holed up in the Black Cabin, where he spent all his time assembling a weather-controlling magical device called the {@i Summer Star}, using knowledge he gleaned from a book about Netherese artifacts. Macreadus's device was similar in design to a {@i mythallar} (see {@adventure appendix D|IDRotF|22}), but much smaller. Unfortunately for him, it had a serious design flaw. When Macreadus tried to use it three days ago, it malfunctioned, incinerating both him and his book. Characters who search the cabin can find the sage's charred skeleton and his deadly creation.",
 										"Since the mishap, Macreadus's restless spirit has lingered in the Border Ethereal, unwilling to depart until its work is complete. (For more information on the Border Ethereal, see the \"{@book Ethereal Plane|DMG|2|Ethereal Plane}\" section in the {@book Dungeon Master's Guide|DMG}.)",
 										{
 											"type": "entries",
@@ -30516,7 +30516,7 @@
 									"id": "347",
 									"entries": [
 										"Seven days ago, spacefaring mind flayers hoping to capture some interesting species for study crashed their ship\u2014a nautiloid called the {@i Id Ascendant}\u2014while trying to fly it through a blizzard. The ship's cocaptains, Vorryn Q'uuol and Dredavex Sinfiz, are chaotic neutral gnome ceremorphs, which are smaller-than-normal mind flayers spawned from gnome hosts. Their crew consists of three gnome squidlings named Rin, Rix, and Zglarrd. See the \"Mind Flayers\" entry in {@adventure appendix C|IDRotF|21} for more information about gnome ceremorphs and squidlings.",
-										"The illithids are stuck unless they can find a {@item psi crystal|IDRotF} (see {@adventure appendix D|IDRotF|22|{@item Psi Crystal|IDRotF}}) to jump-start the ship's propulsion system. Vorryn and Dredavex are expending considerable effort to keep their ship functional and thus cannot conduct the search themselves. They also can't trust the moronic squidlings to accomplish such a delicate task. For these reasons, the gnome ceremorphs need help. They have built a device that can detect the presence of {@item Psi Crystal|IDRotF|psi crystals} in a 5-mile radius but haven't found any. The characters might have harvested a {@item psi crystal|IDRotF} from the gem mine near Termalaine (see \"{@area A Beautiful Mine|24d|x}\"), in which case the gnome ceremorphs would be very interested in acquiring it.",
+										"The illithids are stuck unless they can find a {@item psi crystal|IDRotF} (see {@adventure appendix D|IDRotF|22}) to jump-start the ship's propulsion system. Vorryn and Dredavex are expending considerable effort to keep their ship functional and thus cannot conduct the search themselves. They also can't trust the moronic squidlings to accomplish such a delicate task. For these reasons, the gnome ceremorphs need help. They have built a device that can detect the presence of {@item Psi Crystal|IDRotF|psi crystals} in a 5-mile radius but haven't found any. The characters might have harvested a {@item psi crystal|IDRotF} from the gem mine near Termalaine (see \"{@area A Beautiful Mine|24d|x}\"), in which case the gnome ceremorphs would be very interested in acquiring it.",
 										"Complicating matters is the damage done by the crash to the nautiloid's life support system, for once this system shuts down, the illithids are at risk of freezing to death. If the shutdown occurs before they acquire a {@item psi crystal|IDRotF}, the gnome ceremorphs' back-up plan is to activate the nautiloid's self-destruct system (see {@area area N7|363|x}) before abandoning ship and making their way toward Ten-Towns with the gnome squidlings in tow.",
 										{
 											"type": "entries",
@@ -43283,7 +43283,7 @@
 								"\"Using divination magic, the Arcane Brotherhood has learned that the city is buried deep inside the Reghed Glacier. But the glacier can be cracked open at a place where a waterfall once flowed down its side but has since frozen. We have already found the waterfall. All we need now is the magic to break open the glacier.\""
 							]
 						},
-						"Vellynne learned a few things from her {@item professor orb|WDMM} (see {@adventure appendix D|IDRotF|22|{@item Professor Orb|WDMM}}) before it was stolen from her. She shares the following information with characters who want to know more about Netheril:",
+						"Vellynne learned a few things from her {@item professor orb|WDMM} (see {@adventure appendix D|IDRotF|22}) before it was stolen from her. She shares the following information with characters who want to know more about Netheril:",
 						{
 							"type": "list",
 							"items": [
@@ -43340,7 +43340,7 @@
 												"\"The orb is a family heirloom that was stolen from me by a former colleague named Nass Lantomir. The orb has the personality of a scholar and is named Professor Skant. Its knowledge will help us once we descend into Ythryn. Nass is after {@i The Codicil of White}. Find Nass, and we find Professor Skant.\""
 											]
 										},
-										"Vellynne describes the {@i professor orb}'s properties (see {@adventure appendix D|IDRotF|22|{@item Professor Orb|WDMM}}) if the characters want to know more about it."
+										"Vellynne describes the {@i professor orb}'s properties (see {@adventure appendix D|IDRotF|22}) if the characters want to know more about it."
 									]
 								}
 							]
@@ -47631,7 +47631,7 @@
 											"page": 212,
 											"id": "592",
 											"entries": [
-												"The book on the lectern is {@item The Codicil of White|IDRotF} (see {@adventure appendix D|IDRotF|22|{@item The Codicil of White|IDRotF}}). No wards or creatures are guarding it. If she's still with the party, {@creature Vellynne Harpell|IDRotF} is eager to claim the book, if only to add the {@spell frost fingers|IDRotF} spell (see {@adventure appendix D|IDRotF|22|{@spell Frost Fingers|IDRotF}}) to her spellbook. If it's present in a host body, {@creature Nass Lantomir's ghost|IDRotF} is laid to rest as soon as its host picks up or grasps the book.",
+												"The book on the lectern is {@item The Codicil of White|IDRotF} (see {@adventure appendix D|IDRotF|22}). No wards or creatures are guarding it. If she's still with the party, {@creature Vellynne Harpell|IDRotF} is eager to claim the book, if only to add the {@spell frost fingers|IDRotF} spell (see {@adventure appendix D|IDRotF|22|{@spell Frost Fingers|IDRotF}}) to her spellbook. If it's present in a host body, {@creature Nass Lantomir's ghost|IDRotF} is laid to rest as soon as its host picks up or grasps the book.",
 												"A character who spends at least 10 minutes poring over {@item The Codicil of White|IDRotF} learns that the poem in its pages, \"Rime of the Frostmaiden\" (see {@adventure appendix E|IDRotF|23}), is an incantation that can be used to unlock Auril's secrets, including ones buried deep under the glacial ice. This, Vellynne says, is exactly what the characters need to reach the lost city of Ythryn under the Reghed Glacier. Once the characters have the poem or a transcription of it, they don't need the rest of the book.",
 												{
 													"type": "image",
@@ -53335,7 +53335,7 @@
 											"page": 226,
 											"id": "600",
 											"entries": [
-												"The source of the room's heat is a {@item thermal cube|IDRotF} (see {@adventure appendix D|IDRotF|22|{@item Thermal Cube|IDRotF}}) that Yilsebek found during his last foray into Ythryn.",
+												"The source of the room's heat is a {@item thermal cube|IDRotF} (see {@adventure appendix D|IDRotF|22}) that Yilsebek found during his last foray into Ythryn.",
 												"Yilsebek carries a spider silk satchel that contains his spellbook (described below), a spider-shaped brooch made of obsidian and engraved with the symbol of House Dalambra (25 gp), and a half-empty bottle of Elverquisst (a rare, ruby-colored elven liquor distilled from sunshine and rare summer fruits). {@item Professor Skant|IDRotF} recognizes Elverquisst on sight, since he is an expert on the making of it. Elf characters would also recognize it.",
 												"Yilsebek's spellbook has black leather covers and pages made from sheets of trillimac (an Underdark fungus). The book contains the following spells: {@spell alter self}, {@spell cloudkill}, {@spell comprehend languages}, {@spell detect magic}, {@spell Evard's black tentacles}, {@spell fabricate}, {@spell fly}, {@spell greater invisibility}, {@spell lightning bolt}, {@spell mage armor}, {@spell magic missile}, {@spell misty step}, {@spell sending}, {@spell shield}, {@spell suggestion}, {@spell web}, and {@spell witch bolt}."
 											]
@@ -53754,7 +53754,7 @@
 							"page": 231,
 							"id": "624",
 							"entries": [
-								"After using the {@item Ythryn mythallar|IDRotF} (see {@adventure appendix D|IDRotF|22|{@item Ythryn Mythallar|IDRotF}}) to lift the enclave of Ythryn into the sky, Iriolarthas and his apprentices traveled to the frozen north in search of relics of Ostoria, a bygone empire of magic-wielding giants that waged war against the dragons forty thousand years earlier. After many fruitless excavations, they found a large stone spindle bearing strange sigils at the bottom of the Sea of Moving Ice and brought it back to Ythryn for study in the fall of \u2212343 DR, the Year of Chilled Marrow. During one of their experiments, something went wrong\u2014a flash of power from the spindle caused the {@i Ythryn} {@i mythallar} to shut down, which in turn caused the city to fall out of the sky and crash into the ice below.",
+								"After using the {@item Ythryn mythallar|IDRotF} (see {@adventure appendix D|IDRotF|22}) to lift the enclave of Ythryn into the sky, Iriolarthas and his apprentices traveled to the frozen north in search of relics of Ostoria, a bygone empire of magic-wielding giants that waged war against the dragons forty thousand years earlier. After many fruitless excavations, they found a large stone spindle bearing strange sigils at the bottom of the Sea of Moving Ice and brought it back to Ythryn for study in the fall of \u2212343 DR, the Year of Chilled Marrow. During one of their experiments, something went wrong\u2014a flash of power from the spindle caused the {@i Ythryn} {@i mythallar} to shut down, which in turn caused the city to fall out of the sky and crash into the ice below.",
 								"The inhabitants of Ythryn had only a few moments to react as the city fell. Iriolarthas conjured a doorway to a magical demiplane and stepped through it just in time. As Ythryn settled into its icy grave, all magic in the city became undone for a brief time, as though something was trying to siphon it all away. The demiplane expelled Iriolarthas in that instant, trapping the lich in Ythryn, and became a living demiplane (see {@adventure appendix C|IDRotF|21}). Iriolarthas searched the ruins of the city for his spellbook and his phylactery, recovering only the former. He also found several magical servants in stasis that had survived the devastation, as well as a handful of apprentices who had used their spells in ingenious ways to escape death.",
 								"Some of those inside tried to flee Ythryn, but glacial ice blocked all conventional routes of escape, and attempts to leave by magic were thwarted by a troublesome intercessor: the mysterious spindle in Iriolarthas's citadel was still putting out magical pulses of energy to hinder spellcasting. By the time this disruption stopped some fifty years later, fear and madness had warped the minds of the apprentice mages, transforming them into nothics. Meanwhile, Iriolarthas grew increasingly feeble until, finally, the lich's skeletal body turned to dust.",
 								{
@@ -56794,7 +56794,7 @@
 											"page": 249,
 											"id": "68d",
 											"entries": [
-												"The chest is an {@item abracadabrus|IDRotF} (see {@adventure appendix D|IDRotF|22|{@item Abracadabrus|IDRotF}}) that Iriolarthas and his guests used to produce food and drink."
+												"The chest is an {@item abracadabrus|IDRotF} (see {@adventure appendix D|IDRotF|22}) that Iriolarthas and his guests used to produce food and drink."
 											]
 										}
 									]
@@ -57068,7 +57068,7 @@
 											"page": 252,
 											"id": "6a7",
 											"entries": [
-												"Lying among the ruined documents are two useful items: a {@item scroll of the comet|IDRotF} (see {@adventure appendix D|IDRotF|22|{@item Scroll of the Comet|IDRotF}}) and an adamantine key. The key is nonmagical and unlocks the double door to the balcony (area Y19p).",
+												"Lying among the ruined documents are two useful items: a {@item scroll of the comet|IDRotF} (see {@adventure appendix D|IDRotF|22}) and an adamantine key. The key is nonmagical and unlocks the double door to the balcony (area Y19p).",
 												{
 													"type": "image",
 													"href": {

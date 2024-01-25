@@ -821,8 +821,7 @@ class BestiaryPage extends ListPageMultiSource {
 
 		const $floatToken = this._$dispToken.empty();
 
-		const hasToken = mon.tokenUrl || mon.hasToken;
-		if (!hasToken) return;
+		if (!Renderer.monster.hasToken(mon)) return;
 
 		const imgLink = Renderer.monster.getTokenUrl(mon);
 		const $img = $(`<img src="${imgLink}" class="mon__token" alt="Token Image: ${(mon.name || "").qq()}" ${mon.tokenCredit ? `title="Credit: ${mon.tokenCredit.qq()}"` : ""} loading="lazy">`);
@@ -844,8 +843,9 @@ class BestiaryPage extends ListPageMultiSource {
 
 			const buildEle = (meta) => {
 				if (!meta.$ele) {
-					const imgLink = Renderer.monster.getTokenUrl({name: meta.name, source: meta.source, tokenUrl: meta.tokenUrl});
-					const $img = $(`<img src="${imgLink}" class="mon__token" alt="Token Image: ${(meta.displayName || meta.name || "").qq()}" ${meta.tokenCredit ? `title="Credit: ${meta.tokenCredit.qq()}"` : ""} loading="lazy">`)
+					const imgLink = Renderer.monster.getTokenUrl(meta);
+					const displayName = Renderer.monster.getAltArtDisplayName(meta);
+					const $img = $(`<img src="${imgLink}" class="mon__token" alt="Token Image${displayName ? `: ${displayName.qq()}` : ""}}" ${meta.tokenCredit ? `title="Credit: ${meta.tokenCredit.qq()}"` : ""} loading="lazy">`)
 						.on("error", () => {
 							$img.attr(
 								"src",
@@ -897,8 +897,7 @@ class BestiaryPage extends ListPageMultiSource {
 				meta.$ele.show();
 				setTimeout(() => meta.$ele.css("max-width", ""), 10); // hack to clear the earlier 100% width
 
-				if (meta.name && meta.source) $footer.html(Renderer.monster.getRenderedAltArtEntry(meta));
-				else $footer.html("");
+				$footer.html(Renderer.monster.getRenderedAltArtEntry(meta));
 
 				$wrpFooter.detach().appendTo(meta.$ele);
 				$btnLeft.detach().appendTo(meta.$ele);

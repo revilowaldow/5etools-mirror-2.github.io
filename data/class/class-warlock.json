@@ -162,7 +162,9 @@
 							"component pouch|phb"
 						],
 						"b": [
-							"arcane focus|phb"
+							{
+								"equipmentType": "focusSpellcastingArcane"
+							}
 						]
 					},
 					{

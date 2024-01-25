@@ -2213,26 +2213,31 @@
 			"id": "0a4",
 			"entries": [
 				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/MPP/058-02003.cover.webp"
-					},
-					"title": "On the Cover: the skull-like planar traveler Morte explores the multiverse, but he doesn't exactly make friends wherever he goes.",
-					"credit": "Dmitry Burmak",
-					"width": 850,
-					"height": 570
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/MPP/059-02002.alt.cover.webp"
-					},
-					"title": "On the Alt-Cover: a githyanki warrior, the most recent in a long tradition of gith to explore the planes and model for the covers of hardback bestiaries.",
-					"credit": "Tony DiTerlizzi",
-					"width": 850,
-					"height": 579
+					"type": "gallery",
+					"images": [
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/MPP/058-02003.cover.webp"
+							},
+							"title": "On the Cover: the skull-like planar traveler Morte explores the multiverse, but he doesn't exactly make friends wherever he goes.",
+							"credit": "Dmitry Burmak",
+							"width": 850,
+							"height": 570
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/MPP/059-02002.alt.cover.webp"
+							},
+							"title": "On the Alt-Cover: a githyanki warrior, the most recent in a long tradition of gith to explore the planes and model for the covers of hardback bestiaries.",
+							"credit": "Tony DiTerlizzi",
+							"width": 850,
+							"height": 579
+						}
+					]
 				}
 			]
 		}

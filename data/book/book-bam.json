@@ -1011,6 +1011,345 @@
 					]
 				}
 			]
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"columns": 2,
+							"items": [
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"type": "item",
+											"name": "Project Lead & Writer",
+											"entries": [
+												"Christopher Perkins"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Art Director",
+											"entries": [
+												"Kate Irwin"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Rules Developer",
+											"entries": [
+												"Jeremy Crawford"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Editors",
+											"entries": [
+												"Judy Bauer, Kim Mohan"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Senior Graphic Designer",
+											"entries": [
+												"Trish Yochum"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Graphic Designers",
+											"entries": [
+												"Matt Cole, Trystan Falcone"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Cover Illustrators",
+											"entries": [
+												"Justin Gerard, Hydro74"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Interior Illustrators",
+											"entries": [
+												"Zoltan Boros, Christopher Burdett, Kai Carpenter, Alayna Danner, Nikki Dawes, Simon Dominic, Olga Drebas, Merlin G.G., Lars Grant-West, Ralph Horsley, Titus Lunter, Warren Mahy, Andrew Mar, Brynn Metheney, Robson Michel, Scott Murphy, Marta Nael, David Auden Nash, Jessica Nguyen, Irina Nordsol, Claudio Pozas, April Prime, Julio Reyna, Craig J Spearing, Matt Stewart, Cory Trego-Erdner, Brian Valeza, Randy Vargas, Svetlin Velinov, Shawn Wood, Zuzanna Wuzyk"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Concept Illustrator",
+											"entries": [
+												"Shawn Wood"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Stat Block Analysts",
+											"entries": [
+												"Makenzie De Armas, Taymoor Rehman"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Project Engineer",
+											"entries": [
+												"Cynda Callaway"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Imaging Technicians",
+											"entries": [
+												"Daniel Corona, Kevin Yee"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Prepress Specialist",
+											"entries": [
+												"Jefferson Dunlap"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "D&D Studio",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Executive Producer",
+													"entries": [
+														"Ray Winninger"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Director of Studio Operations",
+													"entries": [
+														"Kyle Brink"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Game Architects",
+													"entries": [
+														"Jeremy Crawford, Christopher Perkins"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Art Department",
+													"entries": [
+														"Matt Cole, Trystan Falcone, Bree Heiss, Kate Irwin, Bob Jordan, Emi Tanji, Trish Yochum"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Design Manager",
+													"entries": [
+														"Steve Scott"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Design Department",
+													"entries": [
+														"Sydney Adams, Judy Bauer, Makenzie De Armas, Dan Dillon, Amanda Hamon, Ben Petrisor, Taymoor Rehman, F. Wesley Schneider, James Wyatt"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Senior Producers",
+													"entries": [
+														"Lisa Ohanian, Dan Tovar"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Producers",
+													"entries": [
+														"Bill Benham, Robert Hawkey, Lea Heleotis"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Director of Product Management",
+													"entries": [
+														"Liz Schuh"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Product Managers",
+													"entries": [
+														"Natalie Egan, Chris Lindsay, Hilary Ross, Chris Tulach"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Consultants",
+													"entries": [
+														"Basheer Ghouse, James Mendez Hodes, Sara Thompson"
+													]
+												}
+											]
+										}
+									],
+									"id": "00f"
+								},
+								{
+									"type": "entries",
+									"name": "Marketing",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Director of Global Brand Marketing",
+													"entries": [
+														"Brian Perry"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Senior Global Brand Manager",
+													"entries": [
+														"Shelly Mazzanoble"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Associate Global Brand Manager",
+													"entries": [
+														"Sara Chan"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Senior Marketing Communications Manager",
+													"entries": [
+														"Greg Tito"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Community Manager",
+													"entries": [
+														"Brandy Camel"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Social Media Marketing Managers",
+													"entries": [
+														"Nicole Olson, Joshua Morris"
+													]
+												}
+											]
+										}
+									],
+									"id": "010"
+								},
+								{
+									"type": "entries",
+									"name": "D&D Beyond",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Senior Producer",
+													"entries": [
+														"Faith Elisabeth Lilley"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Digital Design Team",
+													"entries": [
+														"Jay Jani, Adam Walton, Joseph Keen"
+													]
+												}
+											]
+										}
+									],
+									"id": "011"
+								}
+							]
+						}
+					],
+					"id": "002"
+				},
+				{
+					"type": "inset",
+					"name": "The following products provided information and inspiration:",
+					"entries": [
+						"Crawford, Jeremy. {@book Monsters of the Multiverse|MPMM}. 2022.",
+						"Grubb, Jeff. Spelljammer: Lorebook of the Void. 1989.",
+						"Schick, Lawrence and David Cook. Star Frontiers: Alpha Dawn. 1982.",
+						"TSR, Inc. Dark Sun Monstrous Compendium Appendix. 1992.",
+						"\u2014\u2014\u2014. Dark Sun Monstrous Compendium Appendix II: Terrors Beyond Tyr. 1993.",
+						"\u2014\u2014\u2014. Mystara Monstrous Compendium Appendix. 1994.",
+						"\u2014\u2014\u2014. Spelljammer Monstrous Compendium Appendix. 1990.",
+						"\u2014\u2014\u2014. Spelljammer Monstrous Compendium Appendix II. 1991."
+					],
+					"id": "012"
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "book/BAM/credits.webp"
+					},
+					"maxWidth": 400,
+					"width": 850,
+					"height": 688
+				},
+				{
+					"type": "gallery",
+					"images": [
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/BAM/credits1.webp"
+							},
+							"title": "On the Cover: Illustrator Justin Gerard shows Minsc the ranger and his stalwart companion, Boo the space hamster, flying through Wildspace on the back of a solar dragon.",
+							"width": 1131,
+							"height": 754
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/BAM/credits2.webp"
+							},
+							"title": "On the Alt-Cover: Hydro74 captures the fierce, no-nonsense glare of Boo, the multiverse's most famous space hamster. A cosmic horror graces the back cover.",
+							"width": 1131,
+							"height": 758
+						}
+					]
+				}
+			],
+			"id": "001"
 		}
 	]
 }

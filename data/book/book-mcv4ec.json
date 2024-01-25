@@ -214,6 +214,172 @@
 					]
 				}
 			]
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"columns": 2,
+							"items": [
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"type": "item",
+											"name": "Project Lead",
+											"entries": [
+												"James Wyatt"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Art Director",
+											"entries": [
+												"Fury Galluzzi"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Writers",
+											"entries": [
+												"Makenzie De Armas, Carl Sibley"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Rules Developers",
+											"entries": [
+												"Jeremy Crawford, Ron Lundeen, Ben Petrisor"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Editors",
+											"entries": [
+												"Eytan Bernstein, Janica Carter, Rich Lescouflair"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Lead Graphic Designer",
+											"entries": [
+												"Matt Cole"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Additional Art Directors",
+											"entries": [
+												"Deborah Garcia, Dawn Murin, Sam Padilla, Cynthia Sheppard, Zack Stella, Andrew Vallas"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Cover Illustrator",
+											"entries": [
+												"Joshua Raphael"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Interior Illustrators",
+											"entries": [
+												"Leanna Crossan, Eric Deschamps, Aldo Domínguez, Jesper Ejsing, Donato Giancola, Nicholas Gregory, Igor Krstic, Slawomir Maniak, Jodie Muir, Marta Nael, Nereida, Néstor Ossandón Leal, Anastasia Ovchinnikova, Anna Pavleeva, Vincent Proce, Chris Rahn, Jason Rainville, Joshua Raphael, Jeff Simpson, John Stanko, Raoul Vitale"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Game Architects",
+											"entries": [
+												"Jeremy Crawford, Christopher Perkins"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Studio Art Director",
+											"entries": [
+												"Josh Herman"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Managing Editor",
+											"entries": [
+												"Judy Bauer"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Imaging Technicians",
+											"entries": [
+												"Robert Cornelius, Silvia Cortese, Karina Delgado, J Lonnee, Wilder McCullough, Marsha Rivera, Brian Williams, Kevin Yee"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Senior Producer",
+											"entries": [
+												"Dan Tovar"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Producers",
+											"entries": [
+												"Siera Bruggeman, Andy Smith"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Product Manager",
+											"entries": [
+												"Natalie Egan"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "D&D Beyond",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Product Manager",
+													"entries": [
+														"Jeff Turriff"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Digital Design Team",
+													"entries": [
+														"Jay Jani, Adam Walton, Sean Stoves"
+													]
+												}
+											]
+										}
+									],
+									"id": "005"
+								},
+								"Based on the work of the worldbuilding teams for Throne of Eldraine and Wilds of Eldraine: Fox Allison, Doug Beyer, Lauren Bond, Sam Burley, Ovidio Cartagena, Orrin Chaplin, Christine Choi, Jehan Choo, Crystal Chang, Kelly Digges, Grace Fong, Deborah Garcia, Roy Graham, Jenna Helland, Gray Highsmith, Daniel Holt, Taylor Ingvarsson, Tom Jenkot, Jackie Jones, Jess Lanzillo, Peter Lee, Miguel Lopez, Alison Lührs, Emily Mei, Leah Miller, Chris Mooney, Meris Mullaley, Dawn Murin, Rebecca On, Cynthia Sheppard, Nick Southam, Zack Stella, Emily Teng, Gerritt Turner, Andrew Vallas, José Vega, Sarah Wassell, James Wyatt, Ari Zirulnik."
+							]
+						}
+					],
+					"id": "004"
+				}
+			],
+			"id": "000"
 		}
 	]
 }

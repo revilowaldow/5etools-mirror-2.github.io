@@ -224,7 +224,7 @@
 				{
 					"type": "table",
 					"colLabels": [
-						"{@dice 1d33|Playing Card}",
+						"{@dice 1d34|Playing Card}",
 						"Illusion"
 					],
 					"colStyles": [

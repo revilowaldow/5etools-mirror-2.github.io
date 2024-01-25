@@ -102,7 +102,9 @@
 					{
 						"_": [
 							"Chain mail|phb",
-							"holy symbol|phb"
+							{
+								"equipmentType": "focusSpellcastingHoly"
+							}
 						]
 					}
 				]

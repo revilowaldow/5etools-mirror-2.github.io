@@ -9355,6 +9355,310 @@
 					]
 				}
 			]
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"columns": 2,
+							"items": [
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"type": "item",
+											"name": "Project Lead",
+											"entries": [
+												"James Wyatt"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Art Director",
+											"entries": [
+												"Emi Tanji"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Writers",
+											"entries": [
+												"Makenzie De Armas, Dan Dillon, Ben Petrisor, Jason Tondro"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Rules Developers",
+											"entries": [
+												"Jeremy Crawford, Ben Petrisor"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Lead Editor",
+											"entries": [
+												"Janica Carter"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Editors",
+											"entries": [
+												"Judy Bauer, Eytan Bernstein, Adrian Ng"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Lead Graphic Designer",
+											"entries": [
+												"Trish Yochum"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Additional Graphic Designers",
+											"entries": [
+												"Matt Cole, Bob Jordan"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Additional Art Directors",
+											"entries": [
+												"Kate Irwin, Dawn Murin, Zack Stella"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Cover Illustrators",
+											"entries": [
+												"Cynthia Sheppard, Olena Richards"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Cartographer",
+											"entries": [
+												"Dyson Logos"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Interior Illustrators",
+											"entries": [
+												"Carlo Arellano, Francesca Baerald, Eric Belisle, Olivier Bernard, Christopher Burdett, Dmitry Burmak, Daarken, Josiah Cameron, Dawn Carlos, Kai Carpenter, Manuel Castañón, Bud Cook, Kent Davis, Nikki Dawes, Olga Drebas, Sarah Finnigan, Evyn Fong, Jessica Fong, Tony Foti, Isabel Gibney, Michele Giorgi, Quintin Gleim, Suzanne Helmigh, Alexandre Honoré, Julian Kok, Katerina Ladon, Linda Lithen, Adrián Ibarra Lugo, Warren Mahy, Andrew Mar, Brynn Metheney, Robson Michel, Riccardo Moscatello, Irina Nordsol, Hinchel Or, Vicki Pangestu, Claudio Pozas, Arash Radkia, Chris Rahn, Julio Reyna, Matias Tapia, Brian Valeza, Jabari Weathers, Daneen Wilkerson"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Concept Artists",
+											"entries": [
+												"Daarken, John Grello, April Prime, Shawn Wood"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Consultants",
+											"entries": [
+												"Siena East, Winona Nelson, John Tomhave"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Project Engineer",
+											"entries": [
+												"Cynda Callaway"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Imaging Technicians",
+											"entries": [
+												"Daniel Corona, Kevin Yee"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Prepress Specialist",
+											"entries": [
+												"Jefferson Dunlap"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "D&D Studio",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Executive Producer",
+													"entries": [
+														"Kyle Brink"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Game Architects",
+													"entries": [
+														"Jeremy Crawford, Christopher Perkins"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Studio Art Director",
+													"entries": [
+														"Josh Herman"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Art Manager",
+													"entries": [
+														"Rob Sather"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Art Department",
+													"entries": [
+														"Matt Cole, Trystan Falcone, Bree Heiss, Kate Irwin, Bob Jordan, Noor Rahman, Emi Tanji, Trish Yochum"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Design Department",
+													"entries": [
+														"Justice Ramin Arman, Makenzie De Armas, Dan Dillon, Amanda Hamon, Ron Lundeen, Ben Petrisor, Patrick Renie, F. Wesley Schneider, Carl Sibley, Jason Tondro, James Wyatt"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Managing Editor",
+													"entries": [
+														"Judy Bauer"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Editorial Department",
+													"entries": [
+														"Eytan Bernstein, Janica Carter, Adrian Ng"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Senior Producer",
+													"entries": [
+														"Dan Tovar"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Producers",
+													"entries": [
+														"Bill Benham, Siera Bruggeman, Robert Hawkey, Andy Smith, Gabriel Waluconis"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Director of Product Management",
+													"entries": [
+														"Liz Schuh"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Product Managers",
+													"entries": [
+														"Natalie Egan, Chris Lindsay, Hilary Ross, Chris Tulach"
+													]
+												}
+											]
+										}
+									],
+									"id": "021"
+								},
+								{
+									"type": "entries",
+									"name": "D&D Beyond",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Product Manager",
+													"entries": [
+														"Patrick Backmann"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Digital Design Team",
+													"entries": [
+														"Jay Jani, Adam Walton, Cameron Powell, Joseph Keen"
+													]
+												}
+											]
+										}
+									],
+									"id": "022"
+								}
+							]
+						}
+					],
+					"id": "020"
+				},
+				"Kim Mohan edited more D&D books and mentored more D&D writers than anyone in memory. His kindness and wit are woven into decades of the game, and he will influence its writers and editors for decades to come. This book is dedicated to his beloved memory.",
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "book/BGG/credits.webp"
+					},
+					"width": 850,
+					"height": 1192
+				},
+				{
+					"type": "gallery",
+					"images": [
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/BGG/credits2.webp"
+							},
+							"title": "On the Cover: Bigby's grasping hand steals a giant goose's golden egg from its cloud giant keepers in this painting by Cynthia Sheppard.",
+							"width": 1200,
+							"height": 780
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/BGG/credits3.webp"
+							},
+							"title": "On the Alt-Cover: Bigby plays chess\u2014a game whose Giant name translates to \"war of the stone kings\"\u2014with a stone giant in this cover by Olena Richards.",
+							"width": 1200,
+							"height": 780
+						}
+					]
+				}
+			],
+			"id": "01f"
 		}
 	]
 }

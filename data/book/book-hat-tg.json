@@ -54,6 +54,111 @@
 				}
 			],
 			"id": "000"
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						{
+							"type": "item",
+							"name": "Project Leads",
+							"entries": [
+								"Jeremy Jarvis, Christopher Perkins"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Designers",
+							"entries": [
+								"Ashley Alexander, Dan Dillon, Ron Lundeen, Sarra Scherb"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Rules Developer",
+							"entries": [
+								"Jeremy Crawford"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Art Directors",
+							"entries": [
+								"Kate Irwin, Kara Kenna, Gibbs Rainock, Tom Song, Kendall Vollucci"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Editors",
+							"entries": [
+								"Judy Bauer, Adrian Ng"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Graphic Designer",
+							"entries": [
+								"Trish Yochum"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Imaging Technician",
+							"entries": [
+								"Kevin Yee"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Illustrators",
+							"entries": [
+								"Shuangcheng Leng, Jason Li, Yang Luo, Tatiana Vetrova, Wenfei Ye, Liangliang Zhang, Qiya Zhang"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Senior Producer",
+							"entries": [
+								"Dan Tovar"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Producer",
+							"entries": [
+								"Gabriel Waluconis"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Product Manager",
+							"entries": [
+								"Chris Lindsay"
+							]
+						},
+						{
+							"type": "item",
+							"name": "D&D Beyond Product Manager",
+							"entries": [
+								"Patrick Backmann"
+							]
+						},
+						{
+							"type": "item",
+							"name": "D&D Beyond Digital Design Team",
+							"entries": [
+								"Jay Jani, Adam Walton, Joseph Keen, Cameron Powell"
+							]
+						}
+					]
+				}
+			],
+			"id": "003"
 		}
 	]
 }

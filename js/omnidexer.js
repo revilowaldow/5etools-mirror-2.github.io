@@ -246,7 +246,7 @@ class IndexableDirectoryBestiary extends IndexableDirectory {
 			baseUrl: "bestiary.html",
 			isHover: true,
 			fnGetToken: (ent) => {
-				if (!ent.tokenUrl && !ent.hasToken) return null;
+				if (!Renderer.monster.hasToken(ent)) return null;
 				return Renderer.monster.getTokenUrl(ent);
 			},
 		});
@@ -977,7 +977,7 @@ class IndexableFileObjects extends IndexableFile {
 			baseUrl: "objects.html",
 			isHover: true,
 			fnGetToken: (ent) => {
-				if (!ent.tokenUrl && !ent.hasToken) return null;
+				if (!Renderer.object.hasToken(ent)) return null;
 				return Renderer.object.getTokenUrl(ent);
 			},
 		});
@@ -1080,7 +1080,7 @@ class IndexableFileVehicles extends IndexableFile {
 			baseUrl: "vehicles.html",
 			isHover: true,
 			fnGetToken: (ent) => {
-				if (!ent.tokenUrl && !ent.hasToken) return null;
+				if (!Renderer.vehicle.hasToken(ent)) return null;
 				return Renderer.vehicle.getTokenUrl(ent);
 			},
 		});

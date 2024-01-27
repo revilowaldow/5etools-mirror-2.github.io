@@ -1658,6 +1658,356 @@
 				}
 			],
 			"id": "006"
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"columns": 2,
+							"items": [
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"type": "item",
+											"name": "Project Lead",
+											"entries": [
+												"Christopher Perkins"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Writers",
+											"entries": [
+												"Christopher Perkins, Jeremy Crawford, Ari Levitch"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Art Directors",
+											"entries": [
+												"Kate Irwin, Richard Whitters"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Rules Developers",
+											"entries": [
+												"Jeremy Crawford, Dan Dillon"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Editors",
+											"entries": [
+												"Judy Bauer, Kim Mohan"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Senior Graphic Designer",
+											"entries": [
+												"Trish Yochum"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Graphic Designers",
+											"entries": [
+												"Matt Cole, Trystan Falcone"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Cover Illustrators",
+											"entries": [
+												"Bruce Brenneise, Hydro74"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Interior Illustrators",
+											"entries": [
+												"Alfven Ato, Olivier Bernard, Bruce Brenneise, David René Christensen, Billy Christian, Kent Davis, Nikki Dawes, Olga Drebas, Justin Gerard, Suzanne Helmigh, Ralph Horsley, Katerina Ladon, Olly Lawson, Robson Michel, Scott Murphy, David Auden Nash, Irina Nordsol, Jessica Nguyen, Robin Olausson, Claudio Pozas, Ned Rogers, Campbell White, Zuzanna Wuzyk, Kieran Yanner"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Interior Cartographers",
+											"entries": [
+												"CoupleofKooks, Dyson Logos"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Rock of Bral Poster Map Cartographer",
+											"entries": [
+												"Marco Bernardini"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Concept Illustrators",
+											"entries": [
+												"Titus Lunter, Shawn Wood"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Project Engineer",
+											"entries": [
+												"Cynda Callaway"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Imaging Technicians",
+											"entries": [
+												"Daniel Corona, Kevin Yee"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Prepress Specialist",
+											"entries": [
+												"Jefferson Dunlap"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "D&D Studio",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Executive Producer",
+													"entries": [
+														"Ray Winninger"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Director of Studio Operations",
+													"entries": [
+														"Kyle Brink"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Game Architects",
+													"entries": [
+														"Jeremy Crawford, Christopher Perkins"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Design Manager",
+													"entries": [
+														"Steve Scott"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Design Department",
+													"entries": [
+														"Sydney Adams, Judy Bauer, Makenzie De Armas, Dan Dillon, Amanda Hamon, Ben Petrisor, Taymoor Rehman, F. Wesley Schneider, James Wyatt"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Art Department",
+													"entries": [
+														"Matt Cole, Trystan Falcone, Bree Heiss, Kate Irwin, Bob Jordan, Emi Tanji, Trish Yochum"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Senior Producers",
+													"entries": [
+														"Lisa Ohanian, Dan Tovar"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Producers",
+													"entries": [
+														"Bill Benham, Robert Hawkey, Lea Heleotis"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Director of Product Management",
+													"entries": [
+														"Liz Schuh"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Product Managers",
+													"entries": [
+														"Natalie Egan, Chris Lindsay, Hilary Ross, Chris Tulach"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Consultants",
+													"entries": [
+														"Basheer Ghouse, James Mendez Hodes, Sara Thompson"
+													]
+												}
+											]
+										}
+									],
+									"id": "016"
+								},
+								{
+									"type": "entries",
+									"name": "Marketing",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Director of Global Brand Marketing",
+													"entries": [
+														"Brian Perry"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Senior Global Brand Manager",
+													"entries": [
+														"Shelly Mazzanoble"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Associate Global Brand Manager",
+													"entries": [
+														"Sara Chan"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Senior Marketing Communications Manager",
+													"entries": [
+														"Greg Tito"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Community Manager",
+													"entries": [
+														"Brandy Camel"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Social Media Marketing Managers",
+													"entries": [
+														"Nicole Olson, Joshua Morris"
+													]
+												}
+											]
+										}
+									],
+									"id": "017"
+								},
+								{
+									"type": "entries",
+									"name": "D&D Beyond",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Senior Producer",
+													"entries": [
+														"Faith Elisabeth Lilley"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Digital Design Team",
+													"entries": [
+														"Jay Jani, Adam Walton, Joseph Keen"
+													]
+												}
+											]
+										}
+									],
+									"id": "018"
+								}
+							]
+						}
+					],
+					"id": "015"
+				},
+				{
+					"type": "inset",
+					"name": "The following products provided information and inspiration:",
+					"entries": [
+						"Baker III, L. Richard. Rock of Bral. 1992.",
+						"Crawford, Jeremy. {@book Monsters of the Multiverse|MPMM}. 2022.",
+						"Greenwood, Ed. Lost Ships. 1990.",
+						"Grubb, Jeff. Spelljammer: The Concordance of Arcane Space. 1989.",
+						"Schick, Lawrence and David Cook. Star Frontiers: Alpha Dawn. 1982."
+					],
+					"id": "019"
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "book/AAG/credits.webp"
+					},
+					"maxWidth": 500,
+					"width": 850,
+					"height": 967
+				},
+				{
+					"type": "gallery",
+					"images": [
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/AAG/credits2.webp"
+							},
+							"title": "On the Cover: Illustrator Bruce Brenneise depicts a nautiloid traveling through Wildspace, undoubtedly transporting mind flayers to an unsuspecting world.",
+							"width": 1200,
+							"height": 780
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/AAG/credits3.webp"
+							},
+							"title": "On the Alt-Cover: The distinguished visage of a giff graces Hydro74's cover, which has crossed flintlock pistols\u2014weapons no giff adventurer should be without\u2014on the back.",
+							"width": 1200,
+							"height": 799
+						}
+					]
+				}
+			],
+			"id": "014"
 		}
 	]
 }

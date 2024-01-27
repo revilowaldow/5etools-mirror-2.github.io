@@ -938,6 +938,9 @@ class ConverterUi extends BaseComponent {
 		this.saveSettingsDebounced = MiscUtil.debounce(() => StorageUtil.pSetForPage(ConverterUi.STORAGE_STATE, this.getBaseSaveableState()), 50);
 
 		this._addHookAll("state", () => this.saveSettingsDebounced());
+
+		this.__meta = this._getDefaultMetaState();
+		this._meta = this._getProxy("meta", this.__meta);
 	}
 
 	set converters (converters) { this._converters = converters; }
@@ -996,6 +999,7 @@ class ConverterUi extends BaseComponent {
 			JqueryUtil.doToast({type: "warning", content: "Enabled editing. Note that edits will be overwritten as you parse new stat blocks."});
 		});
 
+		let hovWindowPreview = null;
 		$(`#preview`)
 			.on("click", async evt => {
 				const metaCurr = this._getCurrentEntities();
@@ -1018,15 +1022,25 @@ class ConverterUi extends BaseComponent {
 							};
 						});
 
-				Renderer.hover.getShowWindow(
-					Renderer.hover.$getHoverContent_generic({
-						type: "entries",
-						entries,
-					}),
+				const $content = Renderer.hover.$getHoverContent_generic({
+					type: "entries",
+					entries,
+				});
+
+				if (hovWindowPreview) {
+					hovWindowPreview.$setContent($content);
+					return;
+				}
+
+				hovWindowPreview = Renderer.hover.getShowWindow(
+					$content,
 					Renderer.hover.getWindowPositionFromEvent(evt),
 					{
 						title: "Preview",
 						isPermanent: true,
+						cbClose: () => {
+							hovWindowPreview = null;
+						},
 					},
 				);
 			});
@@ -1172,16 +1186,12 @@ class ConverterUi extends BaseComponent {
 		 */
 		const catchErrors = async (pToRun) => {
 			try {
-				$(`#lastWarnings`).hide().html("");
-				$(`#lastError`).hide().html("");
-				this._editorOut.resize();
+				this._proxyAssignSimple("meta", this._getDefaultMetaState());
 				await pToRun();
 			} catch (x) {
 				const splitStack = x.stack.split("\n");
 				const atPos = splitStack.length > 1 ? splitStack[1].trim() : "(Unknown location)";
-				const message = `[Error] ${x.message} ${atPos}`;
-				$(`#lastError`).show().html(message);
-				this._editorOut.resize();
+				this._meta.errors = [...this._meta.errors, `${x.message} ${atPos}`];
 				setTimeout(() => { throw x; });
 			}
 		};
@@ -1197,7 +1207,10 @@ class ConverterUi extends BaseComponent {
 				const chunks = (this._state.inputSeparator
 					? this.inText.split(this._state.inputSeparator)
 					: [this.inText]).map(it => it.trim()).filter(Boolean);
-				if (!chunks.length) return this.showWarning("No input!");
+				if (!chunks.length) {
+					this._meta.warnings = [...this._meta.warnings, "No input!"];
+					return;
+				}
 
 				chunks
 					.reverse() // reverse as the append is actually a prepend
@@ -1205,7 +1218,7 @@ class ConverterUi extends BaseComponent {
 						this.activeConverter.handleParse(
 							chunk,
 							this.doCleanAndOutput.bind(this),
-							this.showWarning.bind(this),
+							(warning) => this._meta.warnings = [...this._meta.warnings, warning],
 							isAppend || i !== 0, // always clear the output for the first non-append chunk, then append
 						);
 					});
@@ -1217,7 +1230,58 @@ class ConverterUi extends BaseComponent {
 
 		this.initSideMenu();
 
+		this._pInit_dispErrorsWarnings();
+
 		window.dispatchEvent(new Event("toolsLoaded"));
+	}
+
+	_pInit_dispErrorsWarnings () {
+		const $stgErrors = $(`#lastError`);
+		const $stgWarnings = $(`#lastWarnings`);
+
+		const getRow = ({prefix, text, prop}) => {
+			const $btnClose = $(`<button class="btn btn-danger btn-xs w-24p" title="Dismiss ${prefix} (SHIFT to Dismiss All)">×</button>`)
+				.on("click", evt => {
+					if (evt.shiftKey) {
+						this._meta[prop] = [];
+						return;
+					}
+
+					const ix = this._meta[prop].indexOf(text);
+					if (!~ix) return;
+					this._meta[prop].splice(ix, 1);
+					this._meta[prop] = [...this._meta[prop]];
+				});
+
+			return $$`<div class="split-v-center py-1">
+				<div>[${prefix}] ${text}</div>
+				${$btnClose}
+			</div>`;
+		};
+
+		this._addHook("meta", "errors", () => {
+			$stgErrors.toggleVe(this._meta.errors.length);
+			$stgErrors.empty();
+			this._meta.errors
+				.forEach(it => {
+					getRow({prefix: "Error", text: it, prop: "errors"})
+						.appendTo($stgErrors);
+				});
+		})();
+
+		this._addHook("meta", "warnings", () => {
+			$stgWarnings.toggleVe(this._meta.warnings.length);
+			$stgWarnings.empty();
+			this._meta.warnings
+				.forEach(it => {
+					getRow({prefix: "Warning", text: it, prop: "warnings"})
+						.appendTo($stgWarnings);
+				});
+		})();
+
+		const hkResize = () => this._editorOut.resize();
+		this._addHook("meta", "errors", hkResize);
+		this._addHook("meta", "warnings", hkResize);
 	}
 
 	_getCurrentEntities () {
@@ -1285,11 +1349,6 @@ class ConverterUi extends BaseComponent {
 		hkMode();
 	}
 
-	showWarning (text) {
-		$(`#lastWarnings`).show().append(`<div>[Warning] ${text}</div>`);
-		this._editorOut.resize();
-	}
-
 	doCleanAndOutput (obj, append) {
 		const asCleanString = CleanUtil.getCleanJson(obj, {isFast: false});
 		if (append) {
@@ -1312,6 +1371,13 @@ class ConverterUi extends BaseComponent {
 	set inText (text) { this._editorIn.setValue(text, -1); }
 
 	_getDefaultState () { return MiscUtil.copy(ConverterUi._DEFAULT_STATE); }
+
+	_getDefaultMetaState () {
+		return {
+			errors: [],
+			warnings: [],
+		};
+	}
 }
 ConverterUi.STORAGE_INPUT = "converterInput";
 ConverterUi.STORAGE_STATE = "converterState";

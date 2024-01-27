@@ -628,7 +628,7 @@
 												"This card tells of a powerful force for good and protection, a holy symbol of great hope."
 											]
 										},
-										"This card determines the location of the {@item Holy Symbol of Ravenkind|CoS} (described in {@adventure appendix C|CoS|20|{@item Holy Symbol of Ravenkind|CoS}}). Read the boxed text for the appropriate card, as given in the \"{@area Treasure Locations|02c|x}\" section that follows."
+										"This card determines the location of the {@item Holy Symbol of Ravenkind|CoS} (described in {@adventure appendix C|CoS|20}). Read the boxed text for the appropriate card, as given in the \"{@area Treasure Locations|02c|x}\" section that follows."
 									]
 								},
 								{
@@ -645,7 +645,7 @@
 												"This is a card of power and strength. It tells of a weapon of vengeance: a sword of sunlight."
 											]
 										},
-										"This card determines the location of the {@item Sunsword|CoS} (described in {@adventure appendix C|CoS|20|{@item Sunsword|CoS}}). Read the boxed text for the appropriate card, as given in the \"{@area Treasure Locations|02c|x}\" section that follows."
+										"This card determines the location of the {@item Sunsword|CoS} (described in {@adventure appendix C|CoS|20}). Read the boxed text for the appropriate card, as given in the \"{@area Treasure Locations|02c|x}\" section that follows."
 									]
 								},
 								{
@@ -7671,7 +7671,7 @@
 									"page": 57,
 									"id": "1c7",
 									"entries": [
-										"The statuette on the altar is an artifact called the {@item Icon of Ravenloft|CoS} (see {@adventure appendix C|CoS|20|{@item Icon of Ravenloft|CoS}}). Any evil creature that touches the statuette must make a DC 17 Constitution saving throw, taking 88 ({@dice 16d10}) radiant damage on a failed save, or half as much damage on a successful one. The statuette is safe for all creatures to handle once it is no longer in contact with the altar.",
+										"The statuette on the altar is an artifact called the {@item Icon of Ravenloft|CoS} (see {@adventure appendix C|CoS|20}). Any evil creature that touches the statuette must make a DC 17 Constitution saving throw, taking 88 ({@dice 16d10}) radiant damage on a failed save, or half as much damage on a successful one. The statuette is safe for all creatures to handle once it is no longer in contact with the altar.",
 										"Gustav's corpse wears a handsome, fur-lined black cloak embroidered with golden thread (worth 250 gp) and a suit of {@item chain mail|PHB}, both nonmagical. Gustav's black mace is a {@item mace of terror}."
 									]
 								},
@@ -15446,7 +15446,7 @@
 											"page": 86,
 											"id": "2bb",
 											"entries": [
-												"A {@spell detect magic} spell reveals that the thighbone radiates an aura of evocation magic. See {@adventure appendix C|CoS|20|{@item Saint Markovia's Thighbone|CoS}} for more information on {@item Saint Markovia's thighbone|CoS}."
+												"A {@spell detect magic} spell reveals that the thighbone radiates an aura of evocation magic. See {@adventure appendix C|CoS|20} for more information on {@item Saint Markovia's thighbone|CoS}."
 											]
 										}
 									]
@@ -29334,7 +29334,7 @@
 								]
 							]
 						},
-						"The druid lurking in {@area area W16|5bb|x} carries a {@item Gulthias staff|CoS} (see {@adventure appendix C|CoS|20|{@item Gulthias Staff|CoS}}). If the staff is destroyed, all blights within 300 feet of it instantly wither and die."
+						"The druid lurking in {@area area W16|5bb|x} carries a {@item Gulthias staff|CoS} (see {@adventure appendix C|CoS|20}). If the staff is destroyed, all blights within 300 feet of it instantly wither and die."
 					]
 				},
 				{
@@ -30285,7 +30285,7 @@
 									"page": 178,
 									"id": "5bd",
 									"entries": [
-										"The druid wields a {@item Gulthias staff|CoS} (see {@adventure appendix C|CoS|20|{@item Gulthias Staff|CoS}}), which can be used to destroy the blights in the winery."
+										"The druid wields a {@item Gulthias staff|CoS} (see {@adventure appendix C|CoS|20}), which can be used to destroy the blights in the winery."
 									]
 								}
 							]
@@ -34656,7 +34656,7 @@
 									"page": 200,
 									"id": "68a",
 									"entries": [
-										"The rocks of the cairn are heavy but can be rolled aside, revealing a {@item blood spear|CoS} (see {@adventure appendix C|CoS|20|{@item Blood Spear|CoS}}) lying amid Kavan's moldy bones. Any creature can wield the spear, but only the character chosen by Kavan to wield it gains a +2 bonus to attack and damage rolls made with this magic weapon."
+										"The rocks of the cairn are heavy but can be rolled aside, revealing a {@item blood spear|CoS} (see {@adventure appendix C|CoS|20}) lying amid Kavan's moldy bones. Any creature can wield the spear, but only the character chosen by Kavan to wield it gains a +2 bonus to attack and damage rolls made with this magic weapon."
 									]
 								}
 							]

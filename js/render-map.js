@@ -1,9 +1,16 @@
 "use strict";
 
 class RenderMap {
-	static _getZoom (mapData) {
-		return this._ZOOM_LEVELS[mapData.ixZoom];
+	static _ZOOM_LEVELS = [0.05, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.25, 1.5, 1.75, 2.0, 2.5, 3.0, 4.0, 5.0];
+	static _AREA_CACHE = {};
+
+	/* -------------------------------------------- */
+
+	static _getZoom (mapData, {ixZoom} = {}) {
+		return this._ZOOM_LEVELS[ixZoom ?? mapData.ixZoom];
 	}
+
+	/* -------------------------------------------- */
 
 	static async pShowViewer (evt, ele) {
 		const mapData = JSON.parse(ele.dataset.rdPackedMap);
@@ -16,10 +23,10 @@ class RenderMap {
 
 		if (!mapData.loadedImage) return;
 
-		const $content = this._$getWindowContent(mapData);
+		const {$wrp, setZoom} = this._$getWindowContent(mapData);
 
-		Renderer.hover.getShowWindow(
-			$content,
+		const hoverWindow = Renderer.hover.getShowWindow(
+			$wrp,
 			// Open in the top-right corner of the screen
 			Renderer.hover.getWindowPositionExact(document.body.clientWidth, 7, evt),
 			{
@@ -28,7 +35,7 @@ class RenderMap {
 				isBookContent: true,
 				width: Math.min(Math.floor(document.body.clientWidth / 2), mapData.width),
 				height: mapData.height + 32,
-				$pFnGetPopoutContent: this._$getWindowContent.bind(this, mapData),
+				$pFnGetPopoutContent: () => this._$getWindowContent(mapData).$wrp,
 				fnGetPopoutSize: () => {
 					return {
 						width: Math.min(window.innerWidth, Math.round(this._getZoom(mapData) * mapData.width)),
@@ -38,23 +45,67 @@ class RenderMap {
 				isPopout: !!evt.shiftKey,
 			},
 		);
+
+		this._mutInitialZoom({
+			fnGetContainerDimensions: () => {
+				const {wWrpContent, hWrapContent} = hoverWindow.getPosition();
+				return {
+					w: wWrpContent,
+					h: hWrapContent,
+				};
+			},
+			mapData,
+			setZoom,
+		});
 	}
 
-	static async $pGetRendered (mapData) {
+	/* -------------------------------------------- */
+
+	static async $pGetRendered (mapData, {fnGetContainerDimensions = null} = {}) {
 		await RenderMap._pMutMapData(mapData);
 		if (!mapData.loadedImage) return;
-		return this._$getWindowContent(mapData);
+		const {$wrp, setZoom} = this._$getWindowContent(mapData);
+		this._mutInitialZoom({
+			fnGetContainerDimensions,
+			mapData,
+			setZoom,
+		});
+		return $wrp;
 	}
+
+	/* -------------------------------------------- */
+
+	/** Treat container as slightly larger than it actually is, as many maps have borders/"dead" regions around the edges */
+	static _INITIAL_ZOOM_PAD_MULTIPLIER = 1.1;
+
+	static _mutInitialZoom ({fnGetContainerDimensions, mapData, setZoom}) {
+		if (!fnGetContainerDimensions) return;
+
+		const {w, h} = fnGetContainerDimensions();
+
+		// Attempt to zoom out until one full edge of the image is in-view
+		let ixZoomDesired = this._ZOOM_LEVELS.length - 1;
+		while (ixZoomDesired > 0) {
+			const isInW = Math.round(this._getZoom(mapData, {ixZoom: ixZoomDesired}) * mapData.width) <= (w * this._INITIAL_ZOOM_PAD_MULTIPLIER);
+			const isInH = Math.round(this._getZoom(mapData, {ixZoom: ixZoomDesired}) * mapData.height) <= (h * this._INITIAL_ZOOM_PAD_MULTIPLIER);
+			if (isInW || isInH) break;
+			ixZoomDesired--;
+		}
+		if (ixZoomDesired !== mapData.ixZoom) setZoom(ixZoomDesired);
+	}
+
+	/* -------------------------------------------- */
 
 	static async _pMutMapData (mapData) {
 		// Store some additional data on this mapData state object
 		mapData.ixZoom = RenderMap._ZOOM_LEVELS.indexOf(1.0);
 		mapData.activeWindows = {};
 		mapData.loadedImage = await RenderMap._pLoadImage(mapData);
-		if (mapData.loadedImage) {
-			mapData.width = mapData.width || mapData.loadedImage.naturalWidth;
-			mapData.height = mapData.height || mapData.loadedImage.naturalHeight;
-		}
+
+		if (!mapData.loadedImage) return;
+
+		mapData.width = mapData.width || mapData.loadedImage.naturalWidth;
+		mapData.height = mapData.height || mapData.loadedImage.naturalHeight;
 	}
 
 	static async _pLoadImage (mapData) {
@@ -74,6 +125,8 @@ class RenderMap {
 		}
 		return out;
 	}
+
+	/* -------------------------------------------- */
 
 	static _$getWindowContent (mapData) {
 		const X = 0;
@@ -101,6 +154,10 @@ class RenderMap {
 				if (lastIxZoom === mapData.ixZoom) return;
 			}
 
+			onZoomChange();
+		};
+
+		const onZoomChange = () => {
 			const zoom = this._getZoom(mapData);
 
 			const nxtWidth = Math.round(mapData.width * zoom);
@@ -346,7 +403,17 @@ class RenderMap {
 
 		zoomChange();
 
-		return $out;
+		return {
+			$wrp: $out,
+			setZoom: ixZoom => {
+				if (mapData.ixZoom === ixZoom) return;
+				if (!Array.from({length: this._ZOOM_LEVELS.length}, (_, i) => i).includes(ixZoom)) throw new Error(`Unhandled zoom index "${ixZoom}"`);
+
+				mapData.ixZoom = ixZoom;
+
+				onZoomChange();
+			},
+		};
 	}
 
 	static async _pGetArea (areaId, mapData) {
@@ -403,5 +470,3 @@ class RenderMap {
 		}
 	}
 }
-RenderMap._ZOOM_LEVELS = [0.05, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.25, 1.5, 1.75, 2.0, 2.5, 3.0, 4.0, 5.0];
-RenderMap._AREA_CACHE = {};

@@ -14159,6 +14159,115 @@
 				}
 			],
 			"id": "1d5"
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 1,
+					"items": [
+						{
+							"type": "item",
+							"name": "Lead Designers:",
+							"entry": "Jeremy Crawford, Mike Mearls"
+						},
+						{
+							"type": "item",
+							"name": "Designers:",
+							"entry": "Ari Levitch, Ben Petrisor, Mike Mearls, Robert J. Schwalb, Chris Tulach"
+						},
+						{
+							"type": "item",
+							"name": "Managing Editor:",
+							"entry": "Jeremy Crawford"
+						},
+						{
+							"type": "item",
+							"name": "Editors:",
+							"entry": "Christopher Perkins, Kim Mohan, Michele Carter, Phil Athans, Kate Welch"
+						},
+						{
+							"type": "item",
+							"name": "Art Direction:",
+							"entry": "Shauna Narciso, Ari Levitch"
+						},
+						{
+							"type": "item",
+							"name": "Graphic Designer:",
+							"entry": "Trish Yochum"
+						},
+						{
+							"type": "item",
+							"name": "Additional Graphic Design:",
+							"entry": "Emi Tanji"
+						},
+						{
+							"type": "item",
+							"name": "Additional Art Direction:",
+							"entry": "Jeremy Jarvis, Jeremy Cranford, Pamela Ansman-Wolfe, Taylor Ingvarsson, Dawn Murin, Cynthia Sheppard, Andrew Vallas, Mark Winters"
+						},
+						{
+							"type": "item",
+							"name": "Cover Illustrator:",
+							"entry": "Magali Villeneuve"
+						},
+						{
+							"type": "item",
+							"name": "Interior Illustrators:",
+							"entry": "Deruchenko Alexander, Even Amundsen, Steve Argyle, Volkan Baga, Ryan Barger, Steven Belledin, Mike Bierek, Johann Bodin, Zoltan Boros, Noah Bradley, John Severin Brassell, Filip Burburan, Dmitry Burmak, Wesley Burt, Clint Cearley, Milivoj Ceran, Jason Chan, Sidharth Chaturvedi, Zezhou Chen, Jedd Chevrier, Chippy, Cliff Childs, Sung Choi, Yongjae Choi, Jehan Choo, Daarken, Florian De Gesincourt, Eric Deschamps, Simon Dominic, Scott M. Fischer, Randy Gallegos, Lars Grant-West, Yeong-Hao Han, Josh Hass, Michael C. Hayes, Izzy, Tomasz Jedruszek, Jaime Jones, Igor Kieryluk, Mathias Kollros, Alex Konstad, Karl Kopinski, Lius Lasahido, Daniel Ljunggren, Todd Lockwood, Titus Lunter, Howard Lyon, Slawomir Maniak, Seb McKinnon, Aaron Miller, Victor Adame Minguez, Peter Mohrbacher, Willian Murai, Scott Murphy, Winona Nelson, Terese Nielsen, Karla Ortiz, James Paick, David Palumbo, Ryan Pancoast, Adam Paquette, Jung Park, Martina Pilcerova, rk post, Livia Prima, Chris Rahn, Jason Rainville, Chris Rallis, David Rapoza, Jenn Ravenna, Wayne Reynolds, Grzegorz Rutkowski, James Ryman, Dan Scott, Bram Sels, Craig J Spearing, Anna Steinbauer, Zack Stella, Matt Stewart, Chase Stone, Raymond Swanland, Wisnu Tan, Viktor Titov, Randy Vargas, Svetlin Velinov, Magali Villeneuve, Johannes Voss, Kev Walker, Tyler Walpole, Jack Wang, Mark Winters, Richard Wright, Darek Zabrocki, Eytan Zana, Kirsten Zirngibl, Mark Zug"
+						},
+						{
+							"type": "item",
+							"name": "Cartographers:",
+							"entry": "Jonas De Ro, Dyson Logos"
+						},
+						{
+							"type": "item",
+							"name": "Ravnica World Design:",
+							"entry": "Doug Beyer, Sam Burley, Jeremy Cranford, Kelly Digges, Brady Dommermuth, Jenna Helland, Cory H. Herndon, Jeremy Jarvis, Kimberly Kreines, Chris L'etoile, Adam Lee, Ari Levitch, Alison Lührs, Shawn Main, Dawn Murin, Richard Whitters, Mark Winters, James Wyatt"
+						},
+						{
+							"type": "item",
+							"name": "Producer:",
+							"entry": "Dan Tovar"
+						},
+						{
+							"type": "item",
+							"name": "Project Management:",
+							"entry": "Matt Warren"
+						},
+						{
+							"type": "item",
+							"name": "Product Engineer:",
+							"entry": "Cynda Callaway"
+						},
+						{
+							"type": "item",
+							"name": "Imaging Technicians:",
+							"entry": "Kevin Yee"
+						},
+						{
+							"type": "item",
+							"name": "Art Administration:",
+							"entry": "David Gershman"
+						},
+						{
+							"type": "item",
+							"name": "Prepress Specialist:",
+							"entry": "Jefferson Dunlap"
+						},
+						{
+							"type": "item",
+							"name": "Other D&D Team Members:",
+							"entry": "Bart Carroll, Kate Irwin, Christopher Lindsay, Shelly Mazzanoble, Hilary Ross, Liz Schuh, Nathan Stewart, Greg Tito"
+						}
+					]
+				}
+			],
+			"id": "220"
 		}
 	]
 }

@@ -7580,6 +7580,126 @@
 				"See the items page for the full list of {@item Trinket|AI|trinkets}."
 			],
 			"id": "1b0"
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 1,
+					"items": [
+						"This book was a collaboration between Wizards of the Coast and Penny Arcade. Members of the Wizards of the Coast team are marked with an asterisk.",
+						{
+							"type": "item",
+							"name": "Creative Directors:",
+							"entry": "Jerry Holkins, Elyssa Grant, Scott Fitzgerald Gray"
+						},
+						{
+							"type": "item",
+							"name": "Designers:",
+							"entry": "Shawn Merwin, Teos Abadía, Jerry Holkins, Scott Fitzgerald Gray"
+						},
+						{
+							"type": "item",
+							"name": "Producers:",
+							"entry": "Elyssa Grant, Dan Tovar*"
+						},
+						{
+							"type": "item",
+							"name": "Associate Producer:",
+							"entry": "Bill Benham*"
+						},
+						{
+							"type": "item",
+							"name": "Development:",
+							"entry": "Shawn Merwin, Teos Abadía, Scott Fitzgerald Gray, Chris S. Sims, Ben Petrisor*, Jeremy Crawford*"
+						},
+						{
+							"type": "item",
+							"name": "Lead Editor:",
+							"entry": "Scott Fitzgerald Gray"
+						},
+						{
+							"type": "item",
+							"name": "Editors:",
+							"entry": "Michele Carter, Chris S. Sims, Scott Fitzgerald Gray, F. Wesley Schneider*"
+						},
+						{
+							"type": "item",
+							"name": "Indexing:",
+							"entry": "Lyz Liddell"
+						},
+						{
+							"type": "item",
+							"name": "Art Directors:",
+							"entry": "Mike Krahulik, Francisco Villaseñor, Shauna Narciso,* Kate Irwin*"
+						},
+						{
+							"type": "item",
+							"name": "Additional Art Direction:",
+							"entry": "Jerry Holkins, Elyssa Grant, Scott Fitzgerald Gray"
+						},
+						{
+							"type": "item",
+							"name": "Graphic Designers:",
+							"entry": "Amy T. Falcone, Emi Tanji,* Trish Yochum*"
+						},
+						{
+							"type": "item",
+							"name": "Cover Illustrator:",
+							"entry": "Mike Krahulik"
+						},
+						{
+							"type": "item",
+							"name": "Interior Illustrators:",
+							"entry": "Dabe Alan, Joy Ang, Darren M. A. Calvert, Daarken, Michele Giorgi, Gavin Greco, Leesha Hannigan, Tyler Jacobson, Nicholas Kay, Julian Kok, Dora Litterell, Nurse Normal, Aviv Or, Klaus Pillon, Carmen Sinek, Kris Straub, Kim Van Deun, Francisco Villaseñor, Chris Walton"
+						},
+						{
+							"type": "item",
+							"name": "Cartographers:",
+							"entry": "Jared Blando, Jason Engle, Robert Lazzaretti, Ben Reece, Mike Schley"
+						},
+						{
+							"type": "item",
+							"name": "Additional Design:",
+							"entry": "Luke Lancaster, Zac Naoum"
+						},
+						{
+							"type": "item",
+							"name": "Additional Flavor Text Writers:",
+							"entry": "Jerry Holkins, Mike Krahulik, Patrick Rothfuss, Morgan Webb, Amy T. Falcone, Kate Welch, Ryan Hartman, Kris Straub, Luke Lancaster"
+						},
+						{
+							"type": "item",
+							"name": "Production Services:",
+							"entry": "Cynda Callaway,* Jefferson Dunlap,* David Gershman*"
+						},
+						{
+							"type": "item",
+							"name": "Brand and Marketing:",
+							"entry": "Ryan Hartman, Elyssa Grant, Greg Tito,* Cate Olsen, Anna Vo,* Stride PR, 360 PR*"
+						},
+						{
+							"type": "item",
+							"name": "Additional Penny Arcade Team Members:",
+							"entry": "Mike Buland, David Coffman, Beth Damis, Patrick Groome, Jeff Kalles, Lidija Piper, Joshua Price, Laura Stringer"
+						},
+						{
+							"type": "item",
+							"name": "*Additional D&D Team Members:",
+							"entry": "Bart Carroll, Pelham Greene, Adam Lee, Ari Levitch, Christopher Lindsay, Shelly Mazzanoble, Mike Mearls, Christopher Perkins, Satine Phoenix, Hilary Ross, Liz Schuh, Nathan Stewart, Greg Tito, Kate Welch, Richard Whitters, Shawn Wood"
+						},
+						{
+							"type": "item",
+							"name": "Full Acquisitions Incorporated Cast:",
+							"entry": "Jerry Holkins as Ominifis Hereward \"Omin\" Dran, Mike Krahulik as James Winifred \"Jim\" Darkmagic III, Patrick Rothfuss as Viari, Morgan Webb as Môrgæn, WWE Superstar Xavier Woods as Bobby Zimeruski, Wil Wheaton as Aeofel Elhromane, Amy T. Falcone as Walnut Dankgrass, Ryan Hartman as Donaar Blit'zen, Kate Welch as Rosie Beestinger, Kris Straub as K'thriss Drow'b, Scott Kurtz as Binwin Bronzebottom, Holly Conrad as Strix Beestinger, Anna Prosser as Evelyn Marthain; with Dungeon Masters Jeremy Crawford and Christopher Perkins"
+						}
+					]
+				}
+			],
+			"id": "0ad"
 		}
 	]
 }

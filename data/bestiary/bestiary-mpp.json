@@ -5911,6 +5911,9 @@
 					]
 				}
 			],
+			"reactionHeader": [
+				"The incarnate can take up to three reactions per round but only one per turn."
+			],
 			"reaction": [
 				{
 					"name": "Searing Gaze",

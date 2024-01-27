@@ -9506,6 +9506,221 @@
 					]
 				}
 			]
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"columns": 2,
+							"items": [
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"type": "item",
+											"name": "Lead Designer:",
+											"entry": "Jeremy Crawford"
+										},
+										{
+											"type": "item",
+											"name": "Art Director:",
+											"entry": "Kate Irwin"
+										},
+										{
+											"type": "item",
+											"name": "Design:",
+											"entry": "Dan Dillon, Ben Petrisor, F. Wesley Schneider, Elisa Teague"
+										},
+										{
+											"type": "item",
+											"name": "Additional Design:",
+											"entry": "Bill Benham, Adam Lee, Ari Levitch, Christopher Perkins, Taymoor Rehman, Kate Welch, Ray Winninger"
+										},
+										{
+											"type": "item",
+											"name": "Rules Development:",
+											"entry": "Jeremy Crawford, Dan Dillon, Ben Petrisor, Taymoor Rehman"
+										},
+										{
+											"type": "item",
+											"name": "Editing:",
+											"entry": "Michele Carter, Christopher Perkins, Jessica Ross, F. Wesley Schneider, James Wyatt"
+										},
+										{
+											"type": "item",
+											"name": "Lead Graphic Designer:",
+											"entry": "Trish Yochum"
+										},
+										{
+											"type": "item",
+											"name": "Graphic Designers:",
+											"entry": "Trystan Falcone, Emi Tanji"
+										},
+										{
+											"type": "item",
+											"name": "Cover Illustrators:",
+											"entry": "Wylie Beckert, Magali Villeneuve"
+										},
+										{
+											"type": "item",
+											"name": "Interior Illustrators:",
+											"entry": "Mark Behm, Eric Belisle, Zoltan Boros, Christopher Burdett, Sidharth Chaturvedi, David René Christensen, Nikki Dawes, Olga Drebas, Caroline Gariba, Sam Keiser, Julian Kok, Titus Lunter, Andrew Mar, Marcela Medeiros, Brynn Metheney, Robson Michel, Scott Murphy, Irina Nordsol, Robin Olausson, Claudio Pozas, Livia Prima, April Prime, David Sladek, Crystal Sully, Brian Valeza, Svetlin Velinov, Anna Veltkamp, Shawn Wood, Zuzanna Wuzyk, Kieran Yanner"
+										},
+										{
+											"type": "item",
+											"name": "Concept Illustrator:",
+											"entry": "Shawn Wood"
+										},
+										{
+											"type": "item",
+											"name": "Project Engineer:",
+											"entry": "Cynda Callaway"
+										},
+										{
+											"type": "item",
+											"name": "Imaging Technicians:",
+											"entry": "Kevin Yee"
+										},
+										{
+											"type": "item",
+											"name": "Prepress Specialist:",
+											"entry": "Jefferson Dunlap"
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "D&D Studio",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Executive Producer:",
+													"entry": "Ray Winninger"
+												},
+												{
+													"type": "item",
+													"name": "Principal Designers:",
+													"entry": "Jeremy Crawford, Christopher Perkins"
+												},
+												{
+													"type": "item",
+													"name": "Design Manager:",
+													"entry": "Steve Scott"
+												},
+												{
+													"type": "item",
+													"name": "Design Department:",
+													"entry": "F. Wesley Schneider, Dan Dillon, Adam Lee, Ari Levitch, Ben Petrisor"
+												},
+												{
+													"type": "item",
+													"name": "Senior Art Director:",
+													"entry": "Richard Whitters"
+												},
+												{
+													"type": "item",
+													"name": "Art Department:",
+													"entry": "Kate Irwin, Emi Tanji, Trish Yochum, Shawn Wood"
+												},
+												{
+													"type": "item",
+													"name": "Senior Producer:",
+													"entry": "Dan Tovar"
+												},
+												{
+													"type": "item",
+													"name": "Producers:",
+													"entry": "Bill Benham, Lea Heleotis"
+												},
+												{
+													"type": "item",
+													"name": "Director of Product Management:",
+													"entry": "Liz Schuh"
+												},
+												{
+													"type": "item",
+													"name": "Licensing Manager:",
+													"entry": "Hilary Ross"
+												},
+												{
+													"type": "item",
+													"name": "Product Managers:",
+													"entry": "Natalie Egan, Chris Lindsay, Hilary Ross"
+												},
+												{
+													"type": "item",
+													"name": "Brand Manager:",
+													"entry": "Shelly Mazzanoble"
+												},
+												{
+													"type": "item",
+													"name": "Publicity:",
+													"entry": "Greg Tito"
+												},
+												{
+													"type": "item",
+													"name": "Community Management",
+													"entry": "Brandy Camel"
+												}
+											]
+										}
+									],
+									"id": "01d"
+								}
+							]
+						}
+					],
+					"id": "016"
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "book/TCE/credits.webp"
+					},
+					"maxWidth": 400,
+					"width": 1200,
+					"height": 700
+				},
+				"This book contains some content that originally appeared in {@book Sword Coast Adventurer's Guide|SCAG} (2015), {@book Guildmasters' Guide to Ravnica|GGR} (2018), {@book Eberron: Rising from the Last War|ERLW} (2019), and {@book Mythic Odysseys of Theros|MOT} (2020).",
+				{
+					"type": "gallery",
+					"images": [
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/TCE/credits2.webp"
+							},
+							"title": "On the Cover: Spellbook in hand, the wizard Tasha casts a spell on a brew bubbling in her magic cauldron, in this painting by Magali Villeneuve.",
+							"width": 1200,
+							"height": 780
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/TCE/credits3.webp"
+							},
+							"title": "On the Alt-Cover: Artist Wylie Beckert shows Tasha conjuring images of her past and future, wielding an incantation taught by her mother, Baba Yaga, while the abyssal lord Graz'zt looks on.",
+							"width": 1200,
+							"height": 780
+						}
+					]
+				}
+			],
+			"id": "015"
 		}
 	]
 }

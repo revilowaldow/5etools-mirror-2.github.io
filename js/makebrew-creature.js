@@ -58,24 +58,13 @@ class CreatureBuilder extends Builder {
 	async pHandleSidebarLoadExistingData (creature, opts) {
 		opts = opts || [];
 
-		function pFetchToken (mon) {
-			return new Promise(resolve => {
-				const img = new Image();
-				const url = Renderer.monster.getTokenUrl(mon);
-				img.onload = resolve(url);
-				img.onerror = resolve(null);
-				img.src = url;
-			});
-		}
-
 		const cleanOrigin = window.location.origin.replace(/\/+$/, "");
 
-		// Get the token based on the original source
-		if (creature.tokenUrl || creature.hasToken) {
-			const rawTokenUrl = await pFetchToken(creature);
-			if (rawTokenUrl) {
-				creature.tokenUrl = /^[a-zA-Z\d]+:\/\//.test(rawTokenUrl) ? rawTokenUrl : `${cleanOrigin}/${rawTokenUrl}`;
-			}
+		if (creature.hasToken) {
+			creature.token = {
+				name: creature.name,
+				source: creature.source,
+			};
 		}
 
 		// Get the fluff based on the original source
@@ -3224,23 +3213,51 @@ class CreatureBuilder extends Builder {
 	}
 
 	__$getTokenInput (cb) {
-		const [$row, $rowInner] = BuilderUi.getLabelledRowTuple("Token Image URL");
+		const [$row, $rowInner] = BuilderUi.getLabelledRowTuple("Token Image");
 
-		const $iptUrl = $(`<input class="form-control form-control--minimal input-xs mr-2">`)
-			.change(() => doUpdateState())
-			.val(this._state.tokenUrl || "");
+		const doUpdateState = () => {
+			delete this._state.token;
+			delete this._state.tokenUrl;
+			delete this._state.tokenHref;
 
-		const $btnPreview = $(`<button class="btn btn-xs btn-default mr-2" title="Preview Token"><span class="glyphicon glyphicon-fullscreen"/></button>`)
+			switch ($selMode.val()) {
+				case "0": {
+					this._state.token = {name: $iptExistingName.val().trim(), source: $iptExistingSource.val().trim()};
+					break;
+				}
+
+				case "1": {
+					this._state.tokenHref = {
+						type: "external",
+						url: $iptExternalUrl.val(),
+					};
+					break;
+				}
+
+				case "2": {
+					this._state.tokenHref = {
+						type: "internal",
+						path: $iptInternalPath.val(),
+					};
+					break;
+				}
+
+				default: throw new Error("Unimplemented!");
+			}
+
+			cb();
+		};
+
+		const $btnPreview = $(`<button class="btn btn-xs btn-default" title="Preview Token"><span class="glyphicon glyphicon-fullscreen"></span></button>`)
 			.click((evt) => {
-				const val = $iptUrl.val().trim();
-				if (!val) return JqueryUtil.doToast({content: "Please enter an image URL", type: "warning"});
+				if (!Renderer.monster.hasToken(this._state)) return JqueryUtil.doToast({content: "Please set a token first!", type: "warning"});
 
 				const $content = Renderer.hover.$getHoverContent_generic(
 					{
 						type: "image",
 						href: {
 							type: "external",
-							url: val,
+							url: Renderer.monster.getTokenUrl(this._state),
 						},
 					},
 					{isBookContent: true},
@@ -3256,15 +3273,81 @@ class CreatureBuilder extends Builder {
 				);
 			});
 
-		const doUpdateState = () => {
-			const val = $iptUrl.val().trim();
-			if (val) this._state.tokenUrl = val;
-			else delete this._state.tokenUrl;
+		const initialMode = this._state.token ? "0" : this._state.tokenHref?.type === "internal" ? "2" : "1";
 
-			cb();
-		};
+		const $selMode = $(`<select class="form-control input-xs mr-2">
+			<option value="0">Existing Creature</option>
+			<option value="1">External URL</option>
+			<option value="2">Internal URL</option>
+		</select>`)
+			.val(initialMode)
+			.change(() => {
+				switch ($selMode.val()) {
+					case "0": {
+						$stgExistingCreature.showVe(); $stgExternalUrl.hideVe(); $stgInternalUrl.hideVe();
+						doUpdateState();
+						break;
+					}
+					case "1": {
+						$stgExistingCreature.hideVe(); $stgExternalUrl.showVe(); $stgInternalUrl.hideVe();
+						doUpdateState();
+						break;
+					}
+					case "2": {
+						$stgExistingCreature.hideVe(); $stgExternalUrl.hideVe(); $stgInternalUrl.showVe();
+						doUpdateState();
+						break;
+					}
+				}
+			});
 
-		$$`<div class="ve-flex">${$iptUrl}${$btnPreview}</div>`.appendTo($rowInner);
+		// region Existing creature
+		const $iptExistingName = $(`<input class="form-control input-xs form-control--minimal">`)
+			.val(this._state.token?.name || "")
+			.on("change", () => doUpdateState());
+		const $iptExistingSource = $(`<input class="form-control input-xs form-control--minimal">`)
+			.val(this._state.token?.source || "")
+			.on("change", () => doUpdateState());
+
+		const $stgExistingCreature = $$`<div class="ve-flex-col mb-2">
+			<div class="ve-flex-v-center mb-2"><span class="mr-2 mkbru__sub-name--25">Name</span>${$iptExistingName}</div>
+			<div class="ve-flex-v-center"><span class="mr-2 mkbru__sub-name--25">Source</span>${$iptExistingSource}</div>
+		</div>`
+			.toggleVe(initialMode === "0");
+		// endregion
+
+		// region External URL
+		const $iptExternalUrl = $(`<input class="form-control form-control--minimal input-xs code">`)
+			.change(() => doUpdateState())
+			.val(
+				this._state.tokenHref?.url
+				|| this._state.tokenUrl // TODO(Future) legacy; remove
+				|| "",
+			);
+
+		const $stgExternalUrl = $$`<div class="ve-flex-col mb-2">
+			<div class="ve-flex-v-center"><span class="mr-2 mkbru__sub-name--25">URL</span>${$iptExternalUrl}</div>
+		</div>`
+			.toggleVe(initialMode === "1");
+		// endregion
+
+		// region Internal URL
+		const $iptInternalPath = $(`<input class="form-control form-control--minimal input-xs code">`)
+			.change(() => doUpdateState())
+			.val(this._state.tokenHref?.path || "");
+
+		const $stgInternalUrl = $$`<div class="ve-flex-col mb-2">
+			<div class="ve-flex-v-center"><span class="mr-2 mkbru__sub-name--25">Path</span>${$iptInternalPath}</div>
+		</div>`
+			.toggleVe(initialMode === "2");
+		// endregion
+
+		$$`<div class="ve-flex-col">
+			<div class="ve-flex mb-2">${$selMode}${$btnPreview}</div>
+			${$stgExistingCreature}
+			${$stgExternalUrl}
+			${$stgInternalUrl}
+		</div>`.appendTo($rowInner);
 
 		return $row;
 	}

@@ -2817,6 +2817,160 @@
 					]
 				}
 			]
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						{
+							"type": "item",
+							"name": "Designer",
+							"entries": [
+								"Justice Ramin Arman"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Rules Developers",
+							"entries": [
+								"Makenzie De Armas, Carl Sibley"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Art Director",
+							"entries": [
+								"Fury Galluzzi"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Concept Artist",
+							"entries": [
+								"Noor Rahman"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Editor",
+							"entries": [
+								"Adrian Ng"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Graphic Designer",
+							"entries": [
+								"Matt Cole"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Cover Illustrator",
+							"entries": [
+								"Hinchel Or"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Interior Illustrators",
+							"entries": [
+								"Alix Branwyn, David Melvin, Robson Michel, Calder Moore, Martin Mottet, Hinchel Or, Andrea Piparo"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Cartographers",
+							"entries": [
+								"Marco Bernardini, Jared Blando"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Game Architects",
+							"entries": [
+								"Jeremy Crawford, Christopher Perkins"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Studio Art Director",
+							"entries": [
+								"Josh Herman"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Managing Editor",
+							"entries": [
+								"Judy Bauer"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Imaging Technician",
+							"entries": [
+								"Kevin Yee"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Inclusion Reviewer",
+							"entries": [
+								"James Mendez"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Senior Producer",
+							"entries": [
+								"Dan Tovar"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Producer",
+							"entries": [
+								"Andy Smith"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Product Manager",
+							"entries": [
+								"Chris Lindsay"
+							]
+						},
+						{
+							"type": "item",
+							"name": "D&D Beyond",
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "item",
+							"name": "Product Managers",
+							"entries": [
+								"Patrick Backmann, Jeff Turriff"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Digital Design Team",
+							"entries": [
+								"Jay Jani, Adam Walton, Sean Stoves"
+							]
+						}
+					]
+				}
+			],
+			"id": "036"
 		}
 	]
 }

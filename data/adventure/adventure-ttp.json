@@ -3091,6 +3091,51 @@
 		},
 		{
 			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 1,
+					"items": [
+						{
+							"type": "item",
+							"name": "Designer:",
+							"entry": "Christopher Perkins"
+						},
+						{
+							"type": "item",
+							"name": "Developer and Managing Editor:",
+							"entry": "Jeremy Crawford"
+						},
+						{
+							"type": "item",
+							"name": "Editor:",
+							"entry": "Kim Mohan"
+						},
+						{
+							"type": "item",
+							"name": "Illustrators:",
+							"entry": "Richard Whitters, Shawn Wood"
+						},
+						{
+							"type": "item",
+							"name": "Graphic Designer:",
+							"entry": "Emi Tanji"
+						},
+						{
+							"type": "item",
+							"name": "Cartographer:",
+							"entry": "Will Doyle"
+						},
+						"{@i Creature Catalog}, a D&D game accessory published in 1986 by TSR, Inc., provided inspiration and text for this supplement."
+					]
+				}
+			],
+			"id": "08d"
+		},
+		{
+			"type": "section",
 			"name": "Handouts",
 			"id": "067",
 			"entries": [

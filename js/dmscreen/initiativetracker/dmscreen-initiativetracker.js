@@ -56,7 +56,8 @@ export class InitiativeTracker extends BaseComponent {
 
 		this._render_bindSortDirHooks();
 
-		const $wrpTracker = $(`<div class="dm-init dm__panel-bg dm__data-anchor"></div>`);
+		const $wrpTracker = $(`<div class="dm-init dm__panel-bg dm__data-anchor"></div>`)
+			.on("drop", evt => this._pDoHandleImportDrop(evt.originalEvent));
 
 		const sendStateToClientsDebounced = MiscUtil.debounce(
 			() => {
@@ -450,12 +451,6 @@ export class InitiativeTracker extends BaseComponent {
 			.filter(({id}) => !idsDefaultParty.has(id));
 
 		const stateNxt = {
-			// region TODO(DMS) not ideal--merge columns instead? Note that this also clobbers default party info
-			isStatsAddColumns: nxtState.isStatsAddColumns,
-			statsCols: nxtState.statsCols
-				.map(it => it.getAsStateData()),
-			// endregion
-
 			rows: this._state.importIsAppend
 				? [
 					...rowsPrevNonDefaultParty,
@@ -468,6 +463,54 @@ export class InitiativeTracker extends BaseComponent {
 				],
 		};
 
+		if (nxtState.isOverwriteStatsCols) {
+			const userVal = await InputUiUtil.pGetUserGenericButton({
+				title: "Overwrite Additional Columns",
+				buttons: [
+					new InputUiUtil.GenericButtonInfo({
+						text: "Yes",
+						clazzIcon: "glyphicon glyphicon-ok",
+						value: "yes",
+					}),
+					new InputUiUtil.GenericButtonInfo({
+						text: "No",
+						clazzIcon: "glyphicon glyphicon-remove",
+						isPrimary: true,
+						value: "no",
+					}),
+					new InputUiUtil.GenericButtonInfo({
+						text: "Cancel",
+						clazzIcon: "glyphicon glyphicon-stop",
+						isSmall: true,
+						value: "cancel",
+					}),
+				],
+				htmlDescription: `<p>The encounter you are trying to load contains additional column data from the Encounter Builder's "Advanced" mode.<br>Do you want to overwrite your existing additional columns with columns from the encounter?</p>`,
+			});
+
+			switch (userVal) {
+				case null:
+				case "cancel": {
+					this._state.rows = rowsPrev;
+					return;
+				}
+
+				case "yes": {
+					stateNxt.isStatsAddColumns = nxtState.isStatsAddColumns;
+					stateNxt.statsCols = nxtState.statsCols
+						.map(it => it.getAsStateData());
+					break;
+				}
+
+				case "no": {
+					// No-op
+					break;
+				}
+
+				default: throw new Error(`Unexpected value "${userVal}"`);
+			}
+		}
+
 		if (!this._state.importIsAppend) {
 			const defaultState = this._getDefaultState();
 			["round", "sort", "dir"]
@@ -475,6 +518,34 @@ export class InitiativeTracker extends BaseComponent {
 		}
 
 		this._proxyAssignSimple("state", stateNxt);
+	}
+
+	/* -------------------------------------------- */
+
+	async _pDoHandleImportDrop (evt) {
+		const data = EventUtil.getDropJson(evt);
+		if (!data) return;
+
+		if (data.type !== VeCt.DRAG_TYPE_IMPORT) return;
+
+		evt.stopPropagation();
+		evt.preventDefault();
+
+		const {page, source, hash} = data;
+		if (page !== UrlUtil.PG_BESTIARY) return;
+
+		const ent = await DataLoader.pCacheAndGet(page, source, hash, {isRequired: true});
+
+		const rowsNxt = [...this._state.rows];
+		const rowToAdd = await this._rowStateBuilderActive.pGetNewRowState({
+			name: ent.name,
+			source: ent.source,
+			initiative: null,
+			rows: rowsNxt,
+		});
+		if (!rowToAdd) return;
+		rowsNxt.push(rowToAdd);
+		this._state.rows = rowsNxt;
 	}
 
 	/* -------------------------------------------- */

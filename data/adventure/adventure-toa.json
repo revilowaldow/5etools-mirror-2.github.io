@@ -28,7 +28,7 @@
 					"page": 5,
 					"id": "002",
 					"entries": [
-						"To run this adventure, you need the D&D fifth edition core rulebooks ({@book Player's Handbook|PHB}, {@book Dungeon Master's Guide|DMG}, and {@book Monste|MM}{@book r Manual|MM}).",
+						"To run this adventure, you need the D&D fifth edition core rulebooks ({@book Player's Handbook|PHB}, {@book Dungeon Master's Guide|DMG}, and {@book Monster Manual|MM}).",
 						{
 							"type": "insetReadaloud",
 							"id": "003",
@@ -30265,7 +30265,7 @@
 											]
 										},
 										"When the masks deliver their curses (see area 12B), any character who has looked through a mask in the last hour must succeed on a DC 15 Constitution saving throw or transform into the creature depicted on the last mask they looked through. This curse functions as a {@spell polymorph} spell and ends after 24 hours.",
-										"A {@creature zebra|ToA} has the same statistics as a {@creature riding horse}. Statistics for the {@creature boar}, {@creature lion}, and {@creature vulture} also appear in the {@book Monst|MM}{@book er Manual|MM}."
+										"A {@creature zebra|ToA} has the same statistics as a {@creature riding horse}. Statistics for the {@creature boar}, {@creature lion}, and {@creature vulture} also appear in the {@book Monster Manual|MM}."
 									]
 								}
 							]
@@ -30861,7 +30861,7 @@
 					"page": 111,
 					"id": "299",
 					"entries": [
-						"Before running this chapter, review the information on yuan-ti in the Monster Manual. Additional information appears in {@book Volo's Guide to|VGM}{@book Monsters|VGM}.",
+						"Before running this chapter, review the information on yuan-ti in the Monster Manual. Additional information appears in {@book Volo's Guide to Monsters|VGM}.",
 						{
 							"type": "entries",
 							"name": "Ras Nsi",

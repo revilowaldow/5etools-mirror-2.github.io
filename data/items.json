@@ -2630,6 +2630,11 @@
 				}
 			},
 			"rarity": "legendary",
+			"modifySpeed": {
+				"equal": {
+					"fly": "walk"
+				}
+			},
 			"entries": [
 				"This ornament can be jewelry, a cloak, or another wearable accessory. It appears to be fashioned from a dragon's scale, tooth, or claw, or it incorporates images in those shapes.",
 				"You gain a +1 bonus to AC, and you can't be {@condition charmed} or {@condition frightened}. Moreover, each creature of your choice within 30 feet of you has advantage on saving throws it makes to avoid being {@condition charmed} or {@condition frightened} or to end those conditions on itself.",
@@ -10403,7 +10408,7 @@
 				{
 					"type": "table",
 					"colLabels": [
-						"{@dice 1d33|Playing Card}",
+						"{@dice 1d34|Playing Card}",
 						"Illusion"
 					],
 					"colStyles": [
@@ -33075,7 +33080,7 @@
 			"dmgType": "P",
 			"entries": [
 				"Forged by Red Wizards using a secret process known only to them, this grim steel dagger draws its power from the Negative Plane. When you hit a creature with a melee attack using this magic dagger, the target takes an extra {@damage 3d12} necrotic damage.",
-				"A creature reduced to 0 hit points by this weapon dies and can't be raised from the dead except by a deity or by a creature using a tablet of reawakening to cast the {@spell true resurrection} spell."
+				"A creature reduced to 0 hit points by this weapon dies and can't be raised from the dead except by a deity or by a creature using a {@item tablet of reawakening|HAT-LMI} to cast the {@spell true resurrection} spell."
 			],
 			"attachedSpells": [
 				"true resurrection"
@@ -37951,11 +37956,6 @@
 			"rarity": "uncommon",
 			"reqAttune": true,
 			"wondrous": true,
-			"modifySpeed": {
-				"equal": {
-					"fly": "walk"
-				}
-			},
 			"entries": [
 				"This ornament can be jewelry, a cloak, or another wearable accessory. It appears to be fashioned from a dragon's scale, tooth, or claw, or it incorporates images in those shapes.",
 				"You have advantage on saving throws you make to avoid being {@condition charmed} or {@condition frightened} or to end those conditions on you."
@@ -51518,11 +51518,6 @@
 			"reqAttune": true,
 			"wondrous": true,
 			"bonusAc": "+1",
-			"modifySpeed": {
-				"equal": {
-					"fly": "walk"
-				}
-			},
 			"entries": [
 				"This ornament can be jewelry, a cloak, or another wearable accessory. It appears to be fashioned from a dragon's scale, tooth, or claw, or it incorporates images in those shapes."
 			],

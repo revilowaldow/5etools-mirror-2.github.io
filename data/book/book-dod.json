@@ -2005,6 +2005,267 @@
 				}
 			],
 			"id": "038"
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"columns": 2,
+							"items": [
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"type": "item",
+											"name": "Writer",
+											"entries": [
+												"Adam Lee"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Art Director",
+											"entries": [
+												"Kate Irwin"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Developers",
+											"entries": [
+												"Jeremy Crawford, Ben Petrisor, Christopher Perkins"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Editors",
+											"entries": [
+												"Judy Bauer, Jeremy Crawford, Christopher Perkins"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Proofreader",
+											"entries": [
+												"Ari Levitch"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Graphic Designer",
+											"entries": [
+												"Trish Yochum"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Consultants",
+											"entries": [
+												"Shiaw-Ling Lai, Omar Ramadan-Santiago"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Interior Illustrators",
+											"entries": [
+												"Helder Almeida, Mark Behm, Zoltan Boros, Alayna Danner, Toma Feizo Gas, Lars Grant-West, Sam Keiser, Livia Prima, Ned Rogers, Magali Villeneuve"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Concept Art Director",
+											"entries": [
+												"Shawn Wood"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Concept Illustrators",
+											"entries": [
+												"Jedd Chevier, Daarken, Toma Feizo Gas, Titus Lunter, April Prime, Ilya Shkipin, Cory Trego-Erdner, Shawn Wood, Kieran Yanner"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Imaging Technician",
+											"entries": [
+												"Kevin Yee"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "D&D Studio",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Executive Producer",
+													"entries": [
+														"Ray Winninger"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Game Design Architects",
+													"entries": [
+														"Jeremy Crawford, Christopher Perkins"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Design Manager",
+													"entries": [
+														"Steve Scott"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Design Department",
+													"entries": [
+														"Sydney Adams, Judy Bauer, Makenzie De Armas, Dan Dillon, Amanda Hamon, Ari Levitch, Ben Petrisor, Taymoor Rehman, F. Wesley Schneider, James Wyatt"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Art Department Manager",
+													"entries": [
+														"Richard Whitters"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Principal Art Director",
+													"entries": [
+														"Kate Irwin"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Art Department",
+													"entries": [
+														"Trystan Falcone, Emi Tanji, Shawn Wood, Trish Yochum"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Senior Producer",
+													"entries": [
+														"Dan Tovar"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Producers",
+													"entries": [
+														"Bill Benham, Robert Hawkey, Lea Heleotis"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Director of Product Management",
+													"entries": [
+														"Liz Schuh"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Product Managers",
+													"entries": [
+														"Natalie Egan, Chris Lindsay, Hilary Ross, Chris Tulach"
+													]
+												}
+											]
+										}
+									],
+									"id": "03b"
+								},
+								{
+									"type": "entries",
+									"name": "Marketing",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Director of Global Brand Marketing",
+													"entries": [
+														"Brian Perry"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Global Brand Manager",
+													"entries": [
+														"Shelly Mazzanoble"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Senior Marketing Communications Manager",
+													"entries": [
+														"Greg Tito"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Community Manager",
+													"entries": [
+														"Brandy Camel"
+													]
+												}
+											]
+										}
+									],
+									"id": "03c"
+								},
+								{
+									"type": "entries",
+									"name": "D&D Beyond",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "D&D Beyond Product Manager",
+													"entries": [
+														"Patrick Backmann"
+													]
+												},
+												{
+													"type": "item",
+													"name": "D&D Beyond Digital Design Team",
+													"entries": [
+														"Jay Jani, Adam Walton, Cameron Powell, Joseph Keen"
+													]
+												}
+											]
+										}
+									],
+									"id": "03d"
+								}
+							]
+						}
+					],
+					"id": "03a"
+				}
+			],
+			"id": "039"
 		}
 	]
 }

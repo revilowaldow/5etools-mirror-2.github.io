@@ -21,10 +21,6 @@ class PlutoniumPage {
 		{path: "plutonium/compact-chat.webp", id: "wrp-img-compact-chat"},
 	];
 
-	static _VIDEOS = [
-		{path: "plutonium/artbrowser.webm", id: "video-artbrowser"},
-	];
-
 	static _pOnLoad_initElements () {
 		this._IMAGES
 			.forEach(({path, id}) => {
@@ -33,14 +29,6 @@ class PlutoniumPage {
 				$(`#${id}`)
 					.html(`<img class="big-help-gif" src="${url}" loading="lazy">`)
 					.attr("href", url);
-			});
-
-		this._VIDEOS
-			.forEach(({path, id}) => {
-				const url = Renderer.get().getMediaUrl("img", path);
-
-				$(`#${id}`)
-					.html(`<source src="${url}" type="video/webm">`);
 			});
 	}
 

@@ -13199,6 +13199,116 @@
 				}
 			],
 			"id": "205"
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						{
+							"type": "item",
+							"name": "D&D Lead Designers:",
+							"entry": "Mike Mearls, Jeremy Crawford"
+						},
+						{
+							"type": "item",
+							"name": "Player's Handbook Lead:",
+							"entry": "Jeremy Crawford"
+						},
+						{
+							"type": "item",
+							"name": "Rules Development:",
+							"entry": "Rodney Thompson, Peter Lee"
+						},
+						{
+							"type": "item",
+							"name": "Writing:",
+							"entry": "James Wyatt, Robert J. Schwalb, Bruce R. Cordell"
+						},
+						{
+							"type": "item",
+							"name": "Editing:",
+							"entry": "Michele Carter, Chris Sims, Scott Fitzgerald Gray, Christopher Perkins"
+						},
+						{
+							"type": "item",
+							"name": "Producer:",
+							"entry": "Greg Bilsland"
+						},
+						{
+							"type": "item",
+							"name": "Art Directors:",
+							"entry": "Kate Irwin, Dan Gelon, Jon Schindehette, Mari Kolkowsky, Melissa Rapier, Shauna Narciso"
+						},
+						{
+							"type": "item",
+							"name": "Graphic Designers:",
+							"entry": "Bree Heiss, Emi Tanji, Barry Craig"
+						},
+						{
+							"type": "item",
+							"name": "Cover Illustrator:",
+							"entry": "Tyler Jacobson"
+						},
+						{
+							"type": "item",
+							"name": "Interior Illustrators:",
+							"entry": "Steve Argyle, Tom Babbey, Daren Bader, Drew Baker, Mark Behm, Eric Belisle, Christopher Bradley, Noah Bradley, Sam Burley, Clint Cearley, Milivoj ´Ceran, Sidharth Chaturvedi, Jedd Chevrier, jD, Allen Douglas, Jesper Ejsing, Craig Elliott, Wayne England, Scott M. Fischer, Randy Gallegos, Justin Gerard, Florian De Gesincourt, Lars Grant-West, Jon Hodgson, Ralph Horsley, Lake Hurwitz, Tyler Jacobson, Kekai Kotaki, Olly Lawson, Raphael Lübke, Titus Lunter, Slawomir Maniak, Brynn Metheney, Aaron Miller, Christopher Moeller, Mark Molnar, Scott Murphy, William O'Connor, Hector Ortiz, David Palumbo, Alessandra Pisano, Claudio Pozas, Rob Rey, Wayne Reynolds, Aaron J. Riley, Chris Seaman, Cynthia Sheppard, Craig J Spearing, John Stanko, Matt Stawicki, Alex Stone, Thom Tenery, Cory Trego-Erdner, Beth Trott, Autumn Rain Turkel, Jose Vega, Tyler Walpole, Julian Kok Joon Wen, Richard Whitters, Eva Widermann, Ben Wootten, Kieran Yanner"
+						},
+						{
+							"type": "item",
+							"name": "Additional Contributors:",
+							"entry": "Kim Mohan, Matt Sernett, Chris Dupuis, Tom LaPille, Richard Baker, Miranda Horner, Jennifer Clarke Wilkes, Steve Winter, Nina Hess, Steve Townshend, Chris Youngs, Ben Petrisor, Tom Olsen"
+						},
+						{
+							"type": "item",
+							"name": "Project Management:",
+							"entry": "Neil Shinkle, Kim Graham, John Hay"
+						},
+						{
+							"type": "item",
+							"name": "Production Services:",
+							"entry": "Cynda Callaway, Brian Dumas, Jefferson Dunlap, David Gershman, Anita Williams"
+						},
+						{
+							"type": "item",
+							"name": "Brand and Marketing:",
+							"entry": "Nathan Stewart, Liz Schuh, Chris Lindsay, Shelly Mazzanoble, Hilary Ross, Laura Tommervik, Kim Lundstrom, Trevor Kidd"
+						},
+						{
+							"type": "item",
+							"name": "Based on the original game created by:",
+							"entry": "E. Gary Gygax and Dave Arneson, with Brian Blume, Rob Kuntz, James Ward, and Don Kaye"
+						},
+						{
+							"type": "item",
+							"name": "Drawing from further development by:",
+							"entry": "J. Eric Holmes, Tom Moldvay, Frank Mentzer, Aaron Allston, Harold Johnson, Roger E. Moore, David \"Zeb\" Cook, Ed Greenwood, Tracy Hickman, Margaret Weis, Douglas Niles, Jeff Grubb, Jonathan Tweet, Monte Cook, Skip Williams, Richard Baker, Peter Adkison, Keith Baker, Bill Slavicsek, Andy Collins, and Rob Heinsoo"
+						},
+						{
+							"type": "item",
+							"name": "Playtesting provided by:",
+							"entry": "over 175,000 fans of D&D. Thank you!"
+						}
+					]
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "book/PHB/phbcover.webp"
+					},
+					"title": "On the Cover: In this fiery scene illustrated by Tyler Jacobson, the fire giant King Snurre, suffering no fools to live, calls his hell hounds to join him in confronting unwelcome guests in his home.",
+					"maxWidth": 400,
+					"width": 1329,
+					"height": 930
+				}
+			],
+			"id": "219"
 		}
 	]
 }

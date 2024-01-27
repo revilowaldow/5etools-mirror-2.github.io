@@ -22500,9 +22500,287 @@
 		},
 		{
 			"type": "section",
-			"name": "Cover",
-			"id": "33b",
+			"name": "Credits",
 			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"columns": 2,
+							"items": [
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"type": "item",
+											"name": "Project Lead",
+											"entries": [
+												"Jason Tondro"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Art Director",
+											"entries": [
+												"Bree Heiss"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Writers",
+											"entries": [
+												"Makenzie De Armas, Dan Dillon, Patrick Renie, Carl Sibley, Jason Tondro, James Wyatt"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Rules Developers",
+											"entries": [
+												"Jeremy Crawford, Ben Petrisor"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Lead Editor",
+											"entries": [
+												"Judy Bauer"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Editors",
+											"entries": [
+												"Eytan Bernstein, Janica Carter, Marissa Kinzel, Gregg Luben, Adrian Ng, Christopher Perkins"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Graphic Designers",
+											"entries": [
+												"Trystan Falcone, Bob Jordan, Trish Yochum"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Cover Illustrators",
+											"entries": [
+												"Ekaterina Burmak, CoupleofKooks"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Cartographers",
+											"entries": [
+												"Francesca Baerald, Mike Schley"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Interior Illustrators",
+											"entries": [
+												"Wade Acuff, Joanna Barnum, Olivier Bernard, Bruce Brenneise, Christopher Burdett, Kai Carpenter, Chris Casciano, Domenico Cava, Sidharth Chaturvedi, Yongjae Choi, Harry Conway, Bud Cook, Nikki Dawes, Axel Defois, Alex Diaz, Julie Dillon, Vallez Gax, Michele Giorgi, Suzanne Helmigh, Alexandre Honoré, Katerina Ladon, Abigail Larson, Tinnel Lovitt, Robson Michel, Hinchel Or, Alessandra Pisano, Claudio Pozas, Francesca Resta, Olena Richards, Hex Sharpe, Andrea Sipl, Craig J Spearing, Brian Valeza, Zuzanna Wuzyk, Jim Zaccaria"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Concept Art Director",
+											"entries": [
+												"Bree Heiss"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Concept Artist",
+											"entries": [
+												"Claudio Pozas"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Consultants",
+											"entries": [
+												"Nivair Gabriel, Basheer Ghouse, Jonathan Tomhave"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Project Engineer",
+											"entries": [
+												"Cynda Callaway"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Imaging Technicians",
+											"entries": [
+												"Daniel Corona, Kevin Yee"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Prepress Specialist",
+											"entries": [
+												"Jefferson Dunlap"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Senior Packaging Engineer",
+											"entries": [
+												"Jenn Bahrs"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Quality Engineer",
+											"entries": [
+												"Scott West"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "D&D Studio",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Executive Producer",
+													"entries": [
+														"Kyle Brink"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Game Architects",
+													"entries": [
+														"Jeremy Crawford, Christopher Perkins"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Studio Art Director",
+													"entries": [
+														"Josh Herman"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Art Manager",
+													"entries": [
+														"Rob Sather"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Art Department",
+													"entries": [
+														"Matt Cole, Trystan Falcone, Bree Heiss, Kate Irwin, Bob Jordan, Noor Rahman, Emi Tanji, Trish Yochum"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Design Department",
+													"entries": [
+														"Justice Ramin Arman, Makenzie De Armas, Dan Dillon, Amanda Hamon, Ron Lundeen, Ben Petrisor, Patrick Renie, F. Wesley Schneider, Carl Sibley, Jason Tondro, James Wyatt"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Managing Editor",
+													"entries": [
+														"Judy Bauer"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Editorial Department",
+													"entries": [
+														"Eytan Bernstein, Janica Carter, Adrian Ng"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Senior Producer",
+													"entries": [
+														"Dan Tovar"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Producers",
+													"entries": [
+														"Bill Benham, Siera Bruggeman, Robert Hawkey, Andy Smith, Gabriel Waluconis"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Director of Product Management",
+													"entries": [
+														"Liz Schuh"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Product Managers",
+													"entries": [
+														"Natalie Egan, Chris Lindsay, Hilary Ross, Chris Tulach"
+													]
+												}
+											]
+										}
+									],
+									"id": "080"
+								},
+								{
+									"type": "entries",
+									"name": "D&D Beyond",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Product Managers",
+													"entries": [
+														"Patrick Backmann, Jeff Turriff"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Digital Design Team",
+													"entries": [
+														"Jay Jani, Sean Stoves, Adam Walton, Joseph Keen, Cameron Powell"
+													]
+												}
+											]
+										}
+									],
+									"id": "081"
+								}
+							]
+						}
+					],
+					"id": "07f"
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "book/BMT/credits.webp"
+					},
+					"credit": "Craig J Spearing",
+					"width": 1700,
+					"height": 1324
+				},
 				{
 					"type": "gallery",
 					"images": [
@@ -22510,9 +22788,9 @@
 							"type": "image",
 							"href": {
 								"type": "internal",
-								"path": "book/BMT/142-22-002.cover.webp"
+								"path": "book/BMT/credits2.webp"
 							},
-							"title": "On the Cover: Asteria ponders the magic, mystery, and mayhem of the {@item Deck of Many Things} in this menagerie of moments by Ekaterina Burmak.",
+							"title": "On the Cover: Asteria ponders the magic, mystery, and mayhem of the Deck of Many Things in this menagerie of moments by Ekaterina Burmak.",
 							"width": 1700,
 							"height": 1208
 						},
@@ -22520,7 +22798,7 @@
 							"type": "image",
 							"href": {
 								"type": "internal",
-								"path": "book/BMT/143-22-001.altcover.webp"
+								"path": "book/BMT/credits3.webp"
 							},
 							"title": "On the Alt-Cover: Asteria wields the cards that rewrote her fate in this art nouveau\u2013inspired illustration by CoupleofKooks.",
 							"width": 1700,
@@ -22528,7 +22806,8 @@
 						}
 					]
 				}
-			]
+			],
+			"id": "07e"
 		}
 	]
 }

@@ -472,7 +472,7 @@
 									"id": "01e",
 									"entries": [
 										"This drow elite warrior has assumed the role of Ilvara's lieutenant and lover after the injuries suffered by his predecessor, Jorlan Duskryn. Shoor is relatively young and quite arrogant for a drow male, proud of his abilities and accomplishments. He is still flush with his success in winning the favor of Ilvara and advancing his position Twithin the outpost, which shows in his swagger and the way he lords it over every other male in Velkynvelve, particularly Jorlan. Still insecure in his position, Shoor feels the need to demonstrate his skill and effectiveness to his mistress and to find ways to please her.",
-										"As Ilvara's lieutenant, Shoor carries a {@item wand of viscid globs|OotA} (see {@adventure appendix B|OotA|18|{@item Wand of Viscid Globs|OotA}}), which once belonged to Jorlan and is used to capture and restrain prisoners."
+										"As Ilvara's lieutenant, Shoor carries a {@item wand of viscid globs|OotA} (see {@adventure appendix B|OotA|18}), which once belonged to Jorlan and is used to capture and restrain prisoners."
 									]
 								},
 								{
@@ -22129,7 +22129,7 @@
 									"page": 103,
 									"id": "2a4",
 									"entries": [
-										"Once destroyed, the hostile cubes spill their contents on the ground: 12 gp and a {@item +1 shortsword} of drow manufacture (see the \"{@adventure Drowcraft Items|OotA|18|{@item Piwafwi (Cloak of Elvenkind)|OotA}}\" sidebar in appendix B)."
+										"Once destroyed, the hostile cubes spill their contents on the ground: 12 gp and a {@item +1 shortsword} of drow manufacture (see the \"{@adventure Drowcraft Items|OotA|18}\" sidebar in appendix B)."
 									]
 								}
 							]
@@ -24351,7 +24351,7 @@
 									"page": 119,
 									"id": "31a",
 									"entries": [
-										"The characters can claim any equipment and treasure carried by the drow, although drowcraft items don't survive exposure to sunlight (see the \"{@adventure Drowcraft Items|OotA|18|{@item Piwafwi (Cloak of Elvenkind)|OotA}}\" sidebar in appendix B). In addition, if the characters fled Velkynvelve without retrieving specific magic items or valuables, Ilvara can be carrying those items, allowing the adventurers to finally reclaim their property."
+										"The characters can claim any equipment and treasure carried by the drow, although drowcraft items don't survive exposure to sunlight (see the \"{@adventure Drowcraft Items|OotA|18}\" sidebar in appendix B). In addition, if the characters fled Velkynvelve without retrieving specific magic items or valuables, Ilvara can be carrying those items, allowing the adventurers to finally reclaim their property."
 									]
 								},
 								{
@@ -33759,7 +33759,7 @@
 									"page": 169,
 									"id": "44b",
 									"entries": [
-										"S'slaar's {@item +2 longsword} is of drow manufacture (see the \"{@adventure Drowcraft Items|OotA|18|{@item Piwafwi (Cloak of Elvenkind)|OotA}}\" sidebar in appendix B). It has a cross guard shaped like a stylized spider with tiny gems for eyes. Etched into its blade are the words {@i Oloth tlu malla}, which is a drow expression meaning \"Darkness be praised.\""
+										"S'slaar's {@item +2 longsword} is of drow manufacture (see the \"{@adventure Drowcraft Items|OotA|18}\" sidebar in appendix B). It has a cross guard shaped like a stylized spider with tiny gems for eyes. Etched into its blade are the words {@i Oloth tlu malla}, which is a drow expression meaning \"Darkness be praised.\""
 									]
 								}
 							]
@@ -33779,7 +33779,7 @@
 									"page": 170,
 									"id": "44d",
 									"entries": [
-										"Within the cave, four zurkhwood boxes hold a 50-foot length of spider-silk rope, four flasks of oil, twenty pounds of rancid food, a pile of moldy blankets, six maces and sixteen javelins (all battered but usable), four casks of unspoiled wine worth 10 gp each, and a locked tribute chest. It takes a successful DC 15 Dexterity check using thieves' tools to open the chest, which contains 180 gp (minted in Menzoberranzan and Gracklstugh), three gems each worth 50 gp each, a {@item potion of gaseous form}, and a {@item +1 dagger} with silvery, weblike filigree worked into the hilt. The dagger is of drow manufacture (see the \"{@adventure Drowcraft Items|OotA|18|{@item Piwafwi (Cloak of Elvenkind)|OotA}}\" sidebar in appendix B). The crude litters that the troglodytes use to bear these goods are propped up against the cave wall."
+										"Within the cave, four zurkhwood boxes hold a 50-foot length of spider-silk rope, four flasks of oil, twenty pounds of rancid food, a pile of moldy blankets, six maces and sixteen javelins (all battered but usable), four casks of unspoiled wine worth 10 gp each, and a locked tribute chest. It takes a successful DC 15 Dexterity check using thieves' tools to open the chest, which contains 180 gp (minted in Menzoberranzan and Gracklstugh), three gems each worth 50 gp each, a {@item potion of gaseous form}, and a {@item +1 dagger} with silvery, weblike filigree worked into the hilt. The dagger is of drow manufacture (see the \"{@adventure Drowcraft Items|OotA|18}\" sidebar in appendix B). The crude litters that the troglodytes use to bear these goods are propped up against the cave wall."
 									]
 								}
 							]

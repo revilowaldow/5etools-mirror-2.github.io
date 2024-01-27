@@ -5,7 +5,10 @@
 			"id": "LMoP",
 			"source": "LMoP",
 			"group": "supplement",
-			"coverUrl": "img/covers/LMoP.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/LMoP.webp"
+			},
 			"published": "2014-07-15",
 			"storyline": "Starter Set",
 			"level": {
@@ -94,6 +97,9 @@
 						"type": "appendix",
 						"identifier": "B"
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -102,7 +108,10 @@
 			"id": "HotDQ",
 			"source": "HotDQ",
 			"group": "supplement",
-			"coverUrl": "img/covers/HotDQ.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/HotDQ.webp"
+			},
 			"published": "2014-08-19",
 			"storyline": "Tyranny of Dragons",
 			"level": {
@@ -865,7 +874,10 @@
 			"id": "RoT",
 			"source": "RoT",
 			"group": "supplement",
-			"coverUrl": "img/covers/RoT.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/RoT.webp"
+			},
 			"published": "2014-11-04",
 			"storyline": "Tyranny of Dragons",
 			"level": {
@@ -1422,7 +1434,10 @@
 			"id": "PotA",
 			"source": "PotA",
 			"group": "supplement",
-			"coverUrl": "img/covers/PotA.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/PotA.webp"
+			},
 			"published": "2015-04-07",
 			"storyline": "Elemental Evil",
 			"level": {
@@ -2858,6 +2873,9 @@
 				},
 				{
 					"name": "Afterword"
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -2866,7 +2884,10 @@
 			"id": "OotA",
 			"source": "OotA",
 			"group": "supplement",
-			"coverUrl": "img/covers/OotA.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/OotA.webp"
+			},
 			"published": "2015-09-15",
 			"storyline": "Rage of Demons",
 			"level": {
@@ -3612,7 +3633,10 @@
 			"id": "CoS",
 			"source": "CoS",
 			"group": "supplement",
-			"coverUrl": "img/covers/CoS.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/CoS.webp"
+			},
 			"published": "2016-03-15",
 			"storyline": "Ravenloft",
 			"level": {
@@ -5228,7 +5252,10 @@
 			"id": "SKT",
 			"source": "SKT",
 			"group": "supplement",
-			"coverUrl": "img/covers/SKT.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/SKT.webp"
+			},
 			"published": "2016-09-06",
 			"storyline": "Storm King's Thunder",
 			"level": {
@@ -7092,7 +7119,10 @@
 			"source": "TftYP-TSC",
 			"parentSource": "TftYP",
 			"group": "supplement",
-			"coverUrl": "img/covers/TftYP.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/TftYP.webp"
+			},
 			"published": "2017-03-24",
 			"publishedOrder": 0,
 			"storyline": "Tales from the Yawning Portal",
@@ -7382,7 +7412,10 @@
 			"source": "TftYP-TFoF",
 			"parentSource": "TftYP",
 			"group": "supplement",
-			"coverUrl": "img/covers/TftYP.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/TftYP.webp"
+			},
 			"published": "2017-03-24",
 			"publishedOrder": 1,
 			"storyline": "Tales from the Yawning Portal",
@@ -7656,7 +7689,10 @@
 			"source": "TftYP-THSoT",
 			"parentSource": "TftYP",
 			"group": "supplement",
-			"coverUrl": "img/covers/TftYP.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/TftYP.webp"
+			},
 			"published": "2017-03-24",
 			"publishedOrder": 2,
 			"storyline": "Tales from the Yawning Portal",
@@ -7934,7 +7970,10 @@
 			"source": "TftYP-WPM",
 			"parentSource": "TftYP",
 			"group": "supplement",
-			"coverUrl": "img/covers/TftYP.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/TftYP.webp"
+			},
 			"published": "2017-03-24",
 			"publishedOrder": 3,
 			"storyline": "Tales from the Yawning Portal",
@@ -8088,7 +8127,10 @@
 			"source": "TftYP-DiT",
 			"parentSource": "TftYP",
 			"group": "supplement",
-			"coverUrl": "img/covers/TftYP.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/TftYP.webp"
+			},
 			"published": "2017-03-24",
 			"publishedOrder": 4,
 			"storyline": "Tales from the Yawning Portal",
@@ -8573,7 +8615,10 @@
 			"source": "TftYP-AtG",
 			"parentSource": "TftYP",
 			"group": "supplement",
-			"coverUrl": "img/covers/TftYP.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/TftYP.webp"
+			},
 			"published": "2017-03-24",
 			"publishedOrder": 5,
 			"storyline": "Tales from the Yawning Portal",
@@ -9371,7 +9416,10 @@
 			"source": "TftYP-ToH",
 			"parentSource": "TftYP",
 			"group": "supplement",
-			"coverUrl": "img/covers/TftYP.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/TftYP.webp"
+			},
 			"published": "2017-03-24",
 			"publishedOrder": 6,
 			"storyline": "Tales from the Yawning Portal",
@@ -9560,7 +9608,10 @@
 			"id": "ToA",
 			"source": "ToA",
 			"group": "supplement",
-			"coverUrl": "img/covers/ToA.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/ToA.webp"
+			},
 			"published": "2017-09-19",
 			"storyline": "Tomb of Annihilation",
 			"level": {
@@ -11127,7 +11178,10 @@
 			"id": "TTP",
 			"source": "TTP",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/TTP.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/TTP.webp"
+			},
 			"published": "2017-11-03",
 			"storyline": "Tomb of Annihilation",
 			"level": {
@@ -11196,6 +11250,9 @@
 					"name": "New Monsters"
 				},
 				{
+					"name": "Credits"
+				},
+				{
 					"name": "Handouts"
 				}
 			]
@@ -11205,7 +11262,10 @@
 			"id": "TLK",
 			"source": "TLK",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/TLK.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/TLK.webp"
+			},
 			"published": "2017-11-28",
 			"storyline": "Extra Life",
 			"level": {
@@ -11223,7 +11283,10 @@
 			"id": "XMtS",
 			"source": "XMtS",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/XMtS.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/XMtS.webp"
+			},
 			"published": "2017-12-11",
 			"storyline": "Ixalan",
 			"level": {
@@ -11300,7 +11363,10 @@
 			"id": "WDH",
 			"source": "WDH",
 			"group": "supplement",
-			"coverUrl": "img/covers/WDH.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/WDH.webp"
+			},
 			"published": "2018-09-18",
 			"storyline": "Waterdeep",
 			"level": {
@@ -11550,7 +11616,10 @@
 			"id": "LLK",
 			"source": "LLK",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/LLK.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/LLK.webp"
+			},
 			"published": "2018-11-10",
 			"storyline": "Extra Life",
 			"level": {
@@ -11671,7 +11740,10 @@
 			"id": "WDMM",
 			"source": "WDMM",
 			"group": "supplement",
-			"coverUrl": "img/covers/WDMM.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/WDMM.webp"
+			},
 			"published": "2018-11-13",
 			"storyline": "Waterdeep",
 			"level": {
@@ -14925,7 +14997,10 @@
 			"id": "KKW",
 			"source": "KKW",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/GGR.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/GGR.webp"
+			},
 			"published": "2018-11-20",
 			"storyline": "Ravnica",
 			"level": {
@@ -14954,7 +15029,10 @@
 			"id": "AZfyT",
 			"source": "AZfyT",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/AZfyT.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/AZfyT.webp"
+			},
 			"published": "2019-03-05",
 			"storyline": "Ravnica",
 			"level": {
@@ -14987,7 +15065,10 @@
 			"id": "GoS",
 			"source": "GoS",
 			"group": "supplement",
-			"coverUrl": "img/covers/GoS.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/GoS.webp"
+			},
 			"published": "2019-05-21",
 			"storyline": "Ghosts of Saltmarsh",
 			"level": {
@@ -16154,7 +16235,10 @@
 			"id": "HftT",
 			"source": "HftT",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/HftT.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/HftT.webp"
+			},
 			"published": "2019-05-21",
 			"storyline": "Stranger Things",
 			"level": {
@@ -16183,7 +16267,10 @@
 			"id": "OoW",
 			"source": "OoW",
 			"group": "supplement",
-			"coverUrl": "img/covers/AI.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/AI.webp"
+			},
 			"published": "2019-06-18",
 			"storyline": "Acquisitions Incorporated",
 			"level": {
@@ -16506,7 +16593,10 @@
 			"source": "DIP",
 			"parentSource": "ESK",
 			"group": "supplement",
-			"coverUrl": "img/covers/ESK.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/ESK.webp"
+			},
 			"published": "2019-06-24",
 			"publishedOrder": 0,
 			"storyline": "Essentials Kit",
@@ -16661,7 +16751,10 @@
 			"source": "SLW",
 			"parentSource": "ESK",
 			"group": "supplement",
-			"coverUrl": "img/covers/ESK.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/ESK.webp"
+			},
 			"published": "2019-09-03",
 			"publishedOrder": 1,
 			"storyline": "Essentials Kit",
@@ -17461,7 +17554,10 @@
 			"source": "SDW",
 			"parentSource": "ESK",
 			"group": "supplement",
-			"coverUrl": "img/covers/ESK.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/ESK.webp"
+			},
 			"published": "2019-09-03",
 			"publishedOrder": 2,
 			"storyline": "Essentials Kit",
@@ -18190,7 +18286,10 @@
 			"source": "DC",
 			"parentSource": "ESK",
 			"group": "supplement",
-			"coverUrl": "img/covers/ESK.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/ESK.webp"
+			},
 			"published": "2019-09-03",
 			"publishedOrder": 3,
 			"storyline": "Essentials Kit",
@@ -19202,7 +19301,10 @@
 			"id": "BGDIA",
 			"source": "BGDIA",
 			"group": "supplement",
-			"coverUrl": "img/covers/BGDIA.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/BGDIA.webp"
+			},
 			"published": "2019-09-18",
 			"storyline": "Baldur's Gate",
 			"level": {
@@ -20090,7 +20192,10 @@
 			"id": "LR",
 			"source": "LR",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/LR.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/LR.webp"
+			},
 			"published": "2019-09-19",
 			"storyline": "Extra Life",
 			"level": {
@@ -20186,7 +20291,10 @@
 			"id": "IMR",
 			"source": "IMR",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/IMR.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/IMR.webp"
+			},
 			"published": "2019-11-12",
 			"storyline": "Extra Life",
 			"level": {
@@ -20560,7 +20668,10 @@
 			"id": "EFR",
 			"source": "EFR",
 			"group": "supplement",
-			"coverUrl": "img/covers/ERLW.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/ERLW.webp"
+			},
 			"published": "2019-11-19",
 			"storyline": "Eberron",
 			"level": {
@@ -20648,7 +20759,10 @@
 			"id": "RMBRE",
 			"source": "RMBRE",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/RMR.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/RMR.webp"
+			},
 			"published": "2019-11-19",
 			"storyline": "Rick and Morty",
 			"level": {
@@ -20863,7 +20977,10 @@
 			"source": "ToR",
 			"parentSource": "EGW",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/EGW.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/EGW.webp"
+			},
 			"published": "2020-03-17",
 			"publishedOrder": 0,
 			"storyline": "Wildemount",
@@ -20934,7 +21051,10 @@
 			"source": "DD",
 			"parentSource": "EGW",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/EGW.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/EGW.webp"
+			},
 			"published": "2020-03-17",
 			"publishedOrder": 1,
 			"storyline": "Wildemount",
@@ -21072,7 +21192,10 @@
 			"source": "FS",
 			"parentSource": "EGW",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/EGW.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/EGW.webp"
+			},
 			"published": "2020-03-17",
 			"publishedOrder": 2,
 			"storyline": "Wildemount",
@@ -21201,7 +21324,10 @@
 			"source": "US",
 			"parentSource": "EGW",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/EGW.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/EGW.webp"
+			},
 			"published": "2020-03-17",
 			"publishedOrder": 3,
 			"storyline": "Wildemount",
@@ -21311,7 +21437,10 @@
 			"id": "MOT-NSS",
 			"source": "MOT",
 			"group": "supplement",
-			"coverUrl": "img/covers/MOT.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/MOT.webp"
+			},
 			"published": "2020-06-02",
 			"storyline": "Mythic Odysseys of Theros",
 			"level": {
@@ -21371,7 +21500,10 @@
 			"id": "IDRotF",
 			"source": "IDRotF",
 			"group": "supplement",
-			"coverUrl": "img/covers/IDRotF.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/IDRotF.webp"
+			},
 			"published": "2020-09-15",
 			"storyline": "Icewind Dale",
 			"level": {
@@ -23111,7 +23243,10 @@
 			"id": "CM",
 			"source": "CM",
 			"group": "supplement",
-			"coverUrl": "img/covers/CM.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/CM.webp"
+			},
 			"published": "2021-03-16",
 			"storyline": "Candlekeep Mysteries",
 			"level": {
@@ -24148,7 +24283,10 @@
 			"id": "HoL",
 			"source": "HoL",
 			"group": "supplement",
-			"coverUrl": "img/covers/VRGR.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/VRGR.webp"
+			},
 			"published": "2021-05-18",
 			"storyline": "Ravenloft",
 			"level": {
@@ -24308,7 +24446,10 @@
 			"id": "RtG",
 			"source": "RtG",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/RtG.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/RtG.webp"
+			},
 			"published": "2021-05-21",
 			"storyline": "Extra Life",
 			"level": {
@@ -24356,7 +24497,10 @@
 			"source": "AitFR-ISF",
 			"parentSource": "AitFR",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/AitFR-ISF.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/AitFR-ISF.webp"
+			},
 			"published": "2021-06-30",
 			"storyline": "Adventures in the Forgotten Realms",
 			"level": {
@@ -24457,7 +24601,10 @@
 			"source": "AitFR-THP",
 			"parentSource": "AitFR",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/AitFR-THP.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/AitFR-THP.webp"
+			},
 			"published": "2021-07-07",
 			"storyline": "Adventures in the Forgotten Realms",
 			"level": {
@@ -24551,7 +24698,10 @@
 			"source": "AitFR-AVT",
 			"parentSource": "AitFR",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/AitFR-AVT.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/AitFR-AVT.webp"
+			},
 			"published": "2021-07-14",
 			"storyline": "Adventures in the Forgotten Realms",
 			"level": {
@@ -24641,7 +24791,10 @@
 			"source": "AitFR-DN",
 			"parentSource": "AitFR",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/AitFR-DN.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/AitFR-DN.webp"
+			},
 			"published": "2021-07-21",
 			"storyline": "Adventures in the Forgotten Realms",
 			"level": {
@@ -24744,7 +24897,10 @@
 			"source": "AitFR-FCD",
 			"parentSource": "AitFR",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/AitFR-FCD.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/AitFR-FCD.webp"
+			},
 			"published": "2021-07-28",
 			"storyline": "Adventures in the Forgotten Realms",
 			"level": {
@@ -24841,7 +24997,10 @@
 			"source": "NRH-TCMC",
 			"parentSource": "NRH",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/NRH-TCMC.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/NRH-TCMC.webp"
+			},
 			"published": "2021-09-01",
 			"publishedOrder": 0,
 			"storyline": "NERDS Restoring Harmony",
@@ -24914,7 +25073,10 @@
 			"source": "NRH-AVitW",
 			"parentSource": "NRH",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/NRH-AVitW.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/NRH-AVitW.webp"
+			},
 			"published": "2021-09-01",
 			"publishedOrder": 1,
 			"storyline": "NERDS Restoring Harmony",
@@ -24952,7 +25114,10 @@
 			"source": "NRH-ASS",
 			"parentSource": "NRH",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/NRH-ASS.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/NRH-ASS.webp"
+			},
 			"published": "2021-09-01",
 			"publishedOrder": 2,
 			"storyline": "NERDS Restoring Harmony",
@@ -24986,7 +25151,10 @@
 			"source": "NRH-CoI",
 			"parentSource": "NRH",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/NRH-CoI.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/NRH-CoI.webp"
+			},
 			"published": "2021-09-01",
 			"publishedOrder": 3,
 			"storyline": "NERDS Restoring Harmony",
@@ -25043,7 +25211,10 @@
 			"source": "NRH-TLT",
 			"parentSource": "NRH",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/NRH-TLT.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/NRH-TLT.webp"
+			},
 			"published": "2021-09-01",
 			"publishedOrder": 4,
 			"storyline": "NERDS Restoring Harmony",
@@ -25085,7 +25256,10 @@
 			"source": "NRH-AWoL",
 			"parentSource": "NRH",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/NRH-AWoL.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/NRH-AWoL.webp"
+			},
 			"published": "2021-09-01",
 			"publishedOrder": 5,
 			"storyline": "NERDS Restoring Harmony",
@@ -25123,7 +25297,10 @@
 			"source": "NRH-AT",
 			"parentSource": "NRH",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/NRH-AT.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/NRH-AT.webp"
+			},
 			"published": "2021-09-01",
 			"publishedOrder": 6,
 			"storyline": "NERDS Restoring Harmony",
@@ -25172,7 +25349,10 @@
 			"id": "WBtW",
 			"source": "WBtW",
 			"group": "supplement",
-			"coverUrl": "img/covers/WBtW.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/WBtW.webp"
+			},
 			"published": "2021-09-21",
 			"storyline": "The Wild Beyond the Witchlight",
 			"level": {
@@ -25848,7 +26028,10 @@
 			"source": "SCC-CK",
 			"parentSource": "SCC",
 			"group": "supplement",
-			"coverUrl": "img/covers/SCC.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/SCC.webp"
+			},
 			"published": "2021-12-07",
 			"publishedOrder": 0,
 			"storyline": "Strixhaven",
@@ -26150,7 +26333,10 @@
 			"source": "SCC-HfMT",
 			"parentSource": "SCC",
 			"group": "supplement",
-			"coverUrl": "img/covers/SCC.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/SCC.webp"
+			},
 			"published": "2021-12-07",
 			"publishedOrder": 1,
 			"storyline": "Strixhaven",
@@ -26277,7 +26463,10 @@
 			"source": "SCC-TMM",
 			"parentSource": "SCC",
 			"group": "supplement",
-			"coverUrl": "img/covers/SCC.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/SCC.webp"
+			},
 			"published": "2021-12-07",
 			"publishedOrder": 2,
 			"storyline": "Strixhaven",
@@ -26389,7 +26578,10 @@
 			"source": "SCC-ARiR",
 			"parentSource": "SCC",
 			"group": "supplement",
-			"coverUrl": "img/covers/SCC.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/SCC.webp"
+			},
 			"published": "2021-12-07",
 			"publishedOrder": 3,
 			"storyline": "Strixhaven",
@@ -26546,7 +26738,10 @@
 			"id": "CRCotN",
 			"source": "CRCotN",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/CRCotN.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/CRCotN.webp"
+			},
 			"published": "2022-03-15",
 			"storyline": "Critical Role",
 			"level": {
@@ -27111,7 +27306,10 @@
 			"id": "JttRC",
 			"source": "JttRC",
 			"group": "supplement",
-			"coverUrl": "img/covers/JttRC.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/JttRC.webp"
+			},
 			"published": "2022-07-19",
 			"storyline": "Journeys through the Radiant Citadel",
 			"level": {
@@ -27586,7 +27784,10 @@
 			"id": "DoSI",
 			"source": "DoSI",
 			"group": "supplement",
-			"coverUrl": "img/covers/DoSI.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/DoSI.webp"
+			},
 			"published": "2022-07-31",
 			"storyline": "Starter Set",
 			"level": {
@@ -27803,7 +28004,10 @@
 			"id": "SjA",
 			"source": "SjA",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/SjA.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/SjA.webp"
+			},
 			"published": "2022-08-01",
 			"storyline": "Spelljammer",
 			"level": {
@@ -27883,7 +28087,10 @@
 			"id": "LoX",
 			"source": "LoX",
 			"group": "supplement",
-			"coverUrl": "img/covers/SAiS.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/SAiS.webp"
+			},
 			"published": "2022-08-16",
 			"storyline": "Spelljammer",
 			"level": {
@@ -28017,6 +28224,9 @@
 						"Conclusion",
 						"Further Adventures"
 					]
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -28025,7 +28235,10 @@
 			"id": "DSotDQ",
 			"source": "DSotDQ",
 			"group": "supplement",
-			"coverUrl": "img/covers/DSotDQ.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/DSotDQ.webp"
+			},
 			"published": "2022-11-22",
 			"storyline": "Dragonlance",
 			"level": {
@@ -28631,7 +28844,10 @@
 			"id": "KftGV",
 			"source": "KftGV",
 			"group": "supplement",
-			"coverUrl": "img/covers/KftGV.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/KftGV.webp"
+			},
 			"published": "2023-02-21",
 			"storyline": "Keys from the Golden Vault",
 			"level": {
@@ -29859,7 +30075,10 @@
 			"id": "GotSF",
 			"source": "GotSF",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/GotSF.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/GotSF.webp"
+			},
 			"published": "2023-08-01",
 			"storyline": "Giants of the Star Forge",
 			"level": {
@@ -29910,7 +30129,10 @@
 			"id": "PaBTSO",
 			"source": "PaBTSO",
 			"group": "supplement",
-			"coverUrl": "img/covers/PaBTSO.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/PaBTSO.webp"
+			},
 			"published": "2023-09-19",
 			"storyline": "Starter Set",
 			"level": {
@@ -30997,7 +31219,10 @@
 			"id": "LK",
 			"source": "LK",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/LK.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/LK.webp"
+			},
 			"published": "2023-09-26",
 			"storyline": "Minecraft",
 			"level": {
@@ -31106,7 +31331,10 @@
 			"id": "ToFW",
 			"source": "ToFW",
 			"group": "supplement",
-			"coverUrl": "img/covers/PAitM.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/PAitM.webp"
+			},
 			"published": "2023-10-17",
 			"storyline": "Planescape",
 			"level": {
@@ -31347,7 +31575,10 @@
 			"id": "CoA",
 			"source": "CoA",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/CoA.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/CoA.webp"
+			},
 			"published": "2023-10-30",
 			"storyline": "Extra Life",
 			"level": {
@@ -31961,7 +32192,10 @@
 			"id": "PiP",
 			"source": "PiP",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/PiP.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/PiP.webp"
+			},
 			"published": "2023-11-20",
 			"storyline": "Family Friendly",
 			"level": {
@@ -31990,7 +32224,10 @@
 			"id": "HFStCM",
 			"source": "HFStCM",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/HFStCM.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/HFStCM.webp"
+			},
 			"published": "2023-11-21",
 			"storyline": "Heroes' Feast",
 			"level": {
@@ -32050,7 +32287,10 @@
 			"id": "GHLoE",
 			"source": "GHLoE",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/GHLoE.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/GHLoE.webp"
+			},
 			"published": "2023-11-30",
 			"storyline": "Grim Hollow",
 			"level": {
@@ -32847,7 +33087,10 @@
 			"id": "DoDk",
 			"source": "DoDk",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/DoDk.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/DoDk.webp"
+			},
 			"published": "2023-12-21",
 			"storyline": "Drakkenheim",
 			"level": {

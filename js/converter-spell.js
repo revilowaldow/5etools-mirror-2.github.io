@@ -6,6 +6,15 @@ class SpellParser extends BaseParser {
 	static _RE_START_DURATION = "Duration";
 	static _RE_START_CLASS = "Class(?:es)?";
 
+	static _REQUIRED_PROPS = [
+		"level",
+		"school",
+		"time",
+		"range",
+		"duration",
+		"entries",
+	];
+
 	/**
 	 * Parses spells from raw text pastes
 	 * @param inText Input text.
@@ -116,6 +125,9 @@ class SpellParser extends BaseParser {
 		if (!spell.entriesHigherLevel || !spell.entriesHigherLevel.length) delete spell.entriesHigherLevel;
 
 		const statsOut = this._getFinalState(spell, options);
+
+		const missingProps = this._REQUIRED_PROPS.filter(prop => !statsOut[prop]);
+		if (missingProps.length) options.cbWarning(`${statsOut.name ? `(${statsOut.name}) ` : ""}Missing properties: ${missingProps.join(", ")}`);
 
 		options.cbOutput(statsOut, options.isAppend);
 	}
@@ -445,12 +457,12 @@ class SpellParser extends BaseParser {
 		if (dur.toLowerCase() === "special") return stats.duration = [{type: "special"}];
 		if (dur.toLowerCase() === "permanent") return stats.duration = [{type: "permanent"}];
 
-		const mConcOrUpTo = /^(concentration, )?up to (\d+|an?) (hour|minute|turn|round|week|month|day|year)(?:s)?$/i.exec(dur);
+		const mConcOrUpTo = /^(?<conc>concentration, )?up to (?<amount>\d+|an?) (?<unit>hour|minute|turn|round|week|month|day|year)(?:s)?$/i.exec(dur);
 		if (mConcOrUpTo) {
-			const amount = mConcOrUpTo[2].toLowerCase().startsWith("a") ? 1 : Number(mConcOrUpTo[2]);
-			const out = {type: "timed", duration: {type: this._getCleanTimeUnit(mConcOrUpTo[3], true, options), amount}, concentration: true};
-			if (mConcOrUpTo[1]) out.concentration = true;
-			else out.upTo = true;
+			const amount = mConcOrUpTo.groups.amount.toLowerCase().startsWith("a") ? 1 : Number(mConcOrUpTo.groups.amount);
+			const out = {type: "timed", duration: {type: this._getCleanTimeUnit(mConcOrUpTo.groups.unit, true, options), amount}};
+			if (mConcOrUpTo.groups.conc) out.concentration = true;
+			else out.duration.upTo = true;
 			return stats.duration = [out];
 		}
 

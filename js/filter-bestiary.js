@@ -274,19 +274,11 @@ class PageFilterBestiary extends PageFilter {
 	static mutateForFilters (mon) {
 		Renderer.monster.initParsed(mon);
 
-		if (typeof mon.speed === "number" && mon.speed > 0) {
-			mon._fSpeedType = ["walk"];
-			mon._fSpeed = mon.speed;
-		} else {
-			mon._fSpeedType = Object.keys(mon.speed).filter(k => mon.speed[k]);
-			if (mon._fSpeedType.length) mon._fSpeed = mon._fSpeedType.map(k => mon.speed[k].number || mon.speed[k]).filter(it => !isNaN(it)).sort((a, b) => SortUtil.ascSort(b, a))[0];
-			else mon._fSpeed = 0;
-			if (mon.speed.canHover) mon._fSpeedType.push("hover");
-		}
+		this._mutateForFilters_speed(mon);
 
-		mon._fAc = mon.ac.map(it => it.special ? null : (it.ac || it)).filter(it => it !== null);
+		mon._fAc = (mon.ac || []).map(it => it.special ? null : (it.ac || it)).filter(it => it !== null);
 		if (!mon._fAc.length) mon._fAc = null;
-		mon._fHp = mon.hp.average;
+		mon._fHp = mon.hp?.average ?? null;
 		if (mon.alignment) {
 			const tempAlign = typeof mon.alignment[0] === "object"
 				? Array.prototype.concat.apply([], mon.alignment.map(a => a.alignment))
@@ -348,7 +340,7 @@ class PageFilterBestiary extends PageFilter {
 		if (mon.srd) mon._fMisc.push("SRD");
 		if (mon.basicRules) mon._fMisc.push("Basic Rules");
 		if (SourceUtil.isLegacySourceWotc(mon.source)) mon._fMisc.push("Legacy");
-		if (mon.tokenUrl || mon.hasToken) mon._fMisc.push("Has Token");
+		if (Renderer.monster.hasToken(mon)) mon._fMisc.push("Has Token");
 		if (mon.mythic) mon._fMisc.push("Mythic");
 		if (mon.hasFluff || mon.fluff?.entries) mon._fMisc.push("Has Info");
 		if (mon.hasFluffImages || mon.fluff?.images) mon._fMisc.push("Has Images");
@@ -368,6 +360,25 @@ class PageFilterBestiary extends PageFilter {
 		else mon._fLanguageTags = ["None"];
 
 		mon._fEquipment = this._getEquipmentList(mon);
+	}
+
+	static _mutateForFilters_speed (mon) {
+		if (mon.speed == null) {
+			mon._fSpeedType = [];
+			mon._fSpeed = null;
+			return;
+		}
+
+		if (typeof mon.speed === "number" && mon.speed > 0) {
+			mon._fSpeedType = ["walk"];
+			mon._fSpeed = mon.speed;
+			return;
+		}
+
+		mon._fSpeedType = Object.keys(mon.speed).filter(k => mon.speed[k]);
+		if (mon._fSpeedType.length) mon._fSpeed = mon._fSpeedType.map(k => mon.speed[k].number || mon.speed[k]).filter(it => !isNaN(it)).sort((a, b) => SortUtil.ascSort(b, a))[0];
+		else mon._fSpeed = 0;
+		if (mon.speed.canHover) mon._fSpeedType.push("hover");
 	}
 
 	/* -------------------------------------------- */
@@ -473,8 +484,8 @@ class PageFilterBestiary extends PageFilter {
 		this._wisdomFilter.addItem(mon._fWis);
 		this._charismaFilter.addItem(mon._fCha);
 		this._speedFilter.addItem(mon._fSpeed);
-		mon.ac.forEach(it => this._acFilter.addItem(it.ac || it));
-		if (mon.hp.average) this._averageHpFilter.addItem(mon.hp.average);
+		(mon.ac || []).forEach(it => this._acFilter.addItem(it.ac || it));
+		if (mon.hp?.average) this._averageHpFilter.addItem(mon.hp.average);
 		this._tagFilter.addItem(mon._pTypes.tags);
 		this._sidekickTypeFilter.addItem(mon._pTypes.typeSidekick);
 		this._sidekickTagFilter.addItem(mon._pTypes.tagsSidekick);

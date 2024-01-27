@@ -866,7 +866,7 @@ RendererMarkdown.utils = class {
 		static getRenderedAbilityScores (ent, {prefix = ""} = "") {
 			return `${prefix}|${Parser.ABIL_ABVS.map(it => `${it.toUpperCase()}|`).join("")}
 ${prefix}|:---:|:---:|:---:|:---:|:---:|:---:|
-${prefix}|${Parser.ABIL_ABVS.map(ab => `${ent[ab]} (${Parser.getAbilityModifier(ent[ab])})|`).join("")}`;
+${prefix}|${Parser.ABIL_ABVS.map(ab => ent[ab] == null ? `\u2014|` : `${ent[ab]} (${Parser.getAbilityModifier(ent[ab])})|`).join("")}`;
 		}
 	};
 
@@ -899,7 +899,7 @@ RendererMarkdown.monster = class {
 
 		const monTypes = Parser.monTypeToFullObj(mon.type);
 		RendererMarkdown.get().isSkipStylingItemLinks = true;
-		const acPart = Parser.acToFull(mon.ac, RendererMarkdown.get());
+		const acPart = mon.ac == null ? "\u2014" : Parser.acToFull(mon.ac, RendererMarkdown.get());
 		RendererMarkdown.get().isSkipStylingItemLinks = false;
 		const resourcePart = mon.resource?.length
 			? mon.resource
@@ -947,7 +947,7 @@ RendererMarkdown.monster = class {
 >*${mon.level ? `${Parser.getOrdinalForm(mon.level)}-level ` : ""}${Renderer.utils.getRenderedSize(mon.size)} ${monTypes.asText}${mon.alignment ? `, ${mon.alignmentPrefix ? RendererMarkdown.get().render(mon.alignmentPrefix) : ""}${Parser.alignmentListToFull(mon.alignment)}` : ""}*
 >___
 >- **Armor Class** ${acPart}
->- **Hit Points** ${Renderer.monster.getRenderedHp(mon.hp, true)}${resourcePart}
+>- **Hit Points** ${mon.hp == null ? "\u2014" : Renderer.monster.getRenderedHp(mon.hp, true)}${resourcePart}
 >- **Speed** ${Parser.getSpeedString(mon)}
 >___
 ${abilityScorePart}

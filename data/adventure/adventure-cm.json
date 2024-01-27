@@ -22345,7 +22345,7 @@
 										"\"My apologies, seekers, but {@i The Book of Inner Alchemy} has been vandalized. This manual is said to grant untold power over life and death to anyone who can master its secrets... and last night, someone had the audacity to come into this sacred place and desecrate it!\""
 									]
 								},
-								"Though they might not understand the intricacies of the concepts in the book, the Avowed know that the stolen pages contain instructions for creating {@item gloves of soul catching|CM} (see the item's description {@adventure at the end of the adventure|CM|14|{@item Gloves of Soul Catching|CM}}). They want the characters to retrieve the stolen pages so that, in addition to restoring the tome to its original state, a magic item of such power will never be created.",
+								"Though they might not understand the intricacies of the concepts in the book, the Avowed know that the stolen pages contain instructions for creating {@item gloves of soul catching|CM} (see the item's description {@adventure at the end of the adventure|CM|14}). They want the characters to retrieve the stolen pages so that, in addition to restoring the tome to its original state, a magic item of such power will never be created.",
 								"The Avowed acolyte accompanies the characters to the Great Library to view where the attack and subsequent theft took place:",
 								{
 									"type": "insetReadaloud",

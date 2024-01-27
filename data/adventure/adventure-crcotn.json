@@ -32,7 +32,7 @@
 							"id": "003",
 							"entries": [
 								"A cataclysmic war among gods and mortals occurred on Exandria centuries ago. This war, known as the Calamity, ended when the Prime Deities locked their evil brethren\u2014and themselves\u2014behind a Divine Gate that prevents the gods from directly interfering with the affairs of mortals. The gods can still bestow power upon their faithful and send powerful supernatural beings to help enact their will, but they can't directly touch the mortal works of Exandria.",
-								"Certain events of the Calamity are of paramount importance in this adventure, particularly the story of one forgotten hero who was favored by three of the Prime Deities and stood against the evil Betrayer Gods. As with other {@i Critical Role} stories, this tale involves a Vestige of Divergence, a magic item born out of the Calamity that grows in power alongside its bearer. This Vestige, the {@item Jewel of Three Prayers|CRCotN}, is described in the \"{@area Story Overview|00b|x}\" section, and its magical properties are detailed in {@adventure appendix B|CRCotN|9|{@item Jewel of Three Prayers|CRCotN}}."
+								"Certain events of the Calamity are of paramount importance in this adventure, particularly the story of one forgotten hero who was favored by three of the Prime Deities and stood against the evil Betrayer Gods. As with other {@i Critical Role} stories, this tale involves a Vestige of Divergence, a magic item born out of the Calamity that grows in power alongside its bearer. This Vestige, the {@item Jewel of Three Prayers|CRCotN}, is described in the \"{@area Story Overview|00b|x}\" section, and its magical properties are detailed in {@adventure appendix B|CRCotN|9}."
 							]
 						},
 						{
@@ -1850,7 +1850,7 @@
 											"page": 22,
 											"id": "04b",
 											"entries": [
-												"Each winner of this contest receives a tin {@item medal of the meat pie|CRCotN} (see {@adventure appendix B|CRCotN|9|{@item Medal of the Meat Pie|CRCotN}}) shaped like\u2014you guessed it\u2014a meat pie.",
+												"Each winner of this contest receives a tin {@item medal of the meat pie|CRCotN} (see {@adventure appendix B|CRCotN|9}) shaped like\u2014you guessed it\u2014a meat pie.",
 												"Win or lose, a character can't compete in this contest again until they complete a long rest.",
 												{
 													"type": "image",
@@ -1947,7 +1947,7 @@
 											"page": 23,
 											"id": "053",
 											"entries": [
-												"Characters who complete the maze are awarded a {@item medal of the maze|CRCotN} (see {@adventure appendix B|CRCotN|9|{@item Medal of the Maze|CRCotN}}) made of smooth driftwood, hung on a piece of rough twine. A labyrinthine pattern has been carved into the front of the medal."
+												"Characters who complete the maze are awarded a {@item medal of the maze|CRCotN} (see {@adventure appendix B|CRCotN|9}) made of smooth driftwood, hung on a piece of rough twine. A labyrinthine pattern has been carved into the front of the medal."
 											]
 										}
 									]
@@ -2051,7 +2051,7 @@
 											"page": 24,
 											"id": "05b",
 											"entries": [
-												"Omo awards the winner a {@item medal of the conch|CRCotN} (see {@adventure appendix B|CRCotN|9|{@item Medal of the Conch|CRCotN}}) made of sea glass that has been magically crafted into the shape of a conch shell."
+												"Omo awards the winner a {@item medal of the conch|CRCotN} (see {@adventure appendix B|CRCotN|9}) made of sea glass that has been magically crafted into the shape of a conch shell."
 											]
 										}
 									]
@@ -2120,7 +2120,7 @@
 											"page": 25,
 											"id": "060",
 											"entries": [
-												"Vars hands anyone who bests Maryl and Maggie a {@item medal of muscle|CRCotN} (see {@adventure appendix B|CRCotN|9|{@item Medal of Muscle|CRCotN}}) made of ebony and shaped like a flexing arm. If one stares at it for long enough, the muscles appear to bulge."
+												"Vars hands anyone who bests Maryl and Maggie a {@item medal of muscle|CRCotN} (see {@adventure appendix B|CRCotN|9}) made of ebony and shaped like a flexing arm. If one stares at it for long enough, the muscles appear to bulge."
 											]
 										}
 									]
@@ -2177,7 +2177,7 @@
 											"page": 26,
 											"id": "066",
 											"entries": [
-												"Beetle and Zag award each member of the winning team a copper {@item medal of the wetlands|CRCotN} (see {@adventure appendix B|CRCotN|9|{@item Medal of the Wetlands|CRCotN}}) engraved with a sheaf of rice, hung on a necklace woven of reeds."
+												"Beetle and Zag award each member of the winning team a copper {@item medal of the wetlands|CRCotN} (see {@adventure appendix B|CRCotN|9}) engraved with a sheaf of rice, hung on a necklace woven of reeds."
 											]
 										}
 									]
@@ -2227,7 +2227,7 @@
 											"page": 26,
 											"id": "06a",
 											"entries": [
-												"Once a tortoise reaches its destination, Adan awards its rider a {@item medal of the horizonback|CRCotN} (see {@adventure appendix B|CRCotN|9|{@item Medal of the Horizonback|CRCotN}}).",
+												"Once a tortoise reaches its destination, Adan awards its rider a {@item medal of the horizonback|CRCotN} (see {@adventure appendix B|CRCotN|9}).",
 												"No two medals awarded from this contest look the same. Each one appears to be made from some different part of a tortoise: a piece of shell, a claw, or a tooth. Adan assures the characters that these medals were made from tortoises that died naturally."
 											]
 										}
@@ -2380,7 +2380,7 @@
 											"page": 28,
 											"id": "075",
 											"entries": [
-												"If a character answers at least two of the riddles correctly, Elder Colbu Kaz awards that character a {@item medal of wit|CRCotN} (see {@adventure appendix B|CRCotN|9|{@item Medal of Wit|CRCotN}}), which is sculpted and painted to look like the head of a fox."
+												"If a character answers at least two of the riddles correctly, Elder Colbu Kaz awards that character a {@item medal of wit|CRCotN} (see {@adventure appendix B|CRCotN|9}), which is sculpted and painted to look like the head of a fox."
 											]
 										}
 									]
@@ -4264,7 +4264,7 @@
 												"In the middle of the cavern is a sphere of pale light surrounding a crystal pedestal, upon which rests a golden pendant attached to a fine golden chain."
 											]
 										},
-										"The object on the crystal pedestal glitters like the sunrise. This is the {@item Jewel of Three Prayers|CRCotN}, a Vestige of Divergence that will drive the course of the adventure from now on. The {@item Jewel of Three Prayers (Dormant)|CRCotN|Jewel of Three Prayers} is currently in its Dormant State (see {@adventure appendix B|CRCotN|9|{@item Jewel of Three Prayers|CRCotN}} for the description of this magic item).",
+										"The object on the crystal pedestal glitters like the sunrise. This is the {@item Jewel of Three Prayers|CRCotN}, a Vestige of Divergence that will drive the course of the adventure from now on. The {@item Jewel of Three Prayers (Dormant)|CRCotN|Jewel of Three Prayers} is currently in its Dormant State (see {@adventure appendix B|CRCotN|9} for the description of this magic item).",
 										"If the rivals are present, they are hesitant to touch the jewel, giving the characters the first opportunity to do so. If the characters are also hesitant, Ayo Jabe steels herself and strides forward to claim it (see \"Disputing Destiny\" below). Otherwise, as soon as one of the characters touches the jewel, the entire party experiences the following vision:",
 										{
 											"type": "insetReadaloud",
@@ -8295,7 +8295,7 @@
 													]
 												},
 												"Alyxian answers other questions as well as he can, drawing from information in the \"{@area Story Overview|00b|x}\" section of the {@adventure introduction|CRCotN|0}. He portrays himself as sympathetic and helpless.",
-												"The next time the characters look at the {@item Jewel of Three Prayers|CRCotN}, they find it has transformed into its {@item Jewel of Three Prayers (Awakened)|CRCotN|Awakened State} (as described in {@adventure appendix B|CRCotN|9|{@item Jewel of Three Prayers|CRCotN}}). The transformed jewel can be removed from the altar safely."
+												"The next time the characters look at the {@item Jewel of Three Prayers|CRCotN}, they find it has transformed into its {@item Jewel of Three Prayers (Awakened)|CRCotN|Awakened State} (as described in {@adventure appendix B|CRCotN|9}). The transformed jewel can be removed from the altar safely."
 											]
 										}
 									]
@@ -8347,7 +8347,7 @@
 									"page": 74,
 									"id": "16e",
 									"entries": [
-										"Aloysia carries a satchel that holds three {@item Teleportation Tablet|CRCotN|teleportation tablets} (see {@adventure appendix B|CRCotN|9|{@item Teleportation Tablet|CRCotN}}), all connected to the same teleportation circle in Ank'Harel (see {@area chapter 4|184|x}). Her next actions are determined by who winds up with the {@item Jewel of Three Prayers|CRCotN}.",
+										"Aloysia carries a satchel that holds three {@item Teleportation Tablet|CRCotN|teleportation tablets} (see {@adventure appendix B|CRCotN|9}), all connected to the same teleportation circle in Ank'Harel (see {@area chapter 4|184|x}). Her next actions are determined by who winds up with the {@item Jewel of Three Prayers|CRCotN}.",
 										{
 											"type": "entries",
 											"name": "Aloysia Gets the Jewel",
@@ -8381,7 +8381,7 @@
 					"id": "171",
 					"entries": [
 						"The characters' choices at the end of this chapter determine which allies and enemies await their arrival in Ank'Harel.",
-						"If the rivals took the {@item Jewel of Three Prayers|CRCotN}, or if Aloysia fled to Ank'Harel on her own, the characters can use Aloysia's {@item Teleportation Tablet|CRCotN|teleportation tablets} (see {@adventure appendix B|CRCotN|9|{@item Teleportation Tablet|CRCotN}}) to travel to Ank'Harel directly, without backtracking or spending more time in Bazzoxan. Otherwise, they can find their way out of the Betrayers' Rise, return to Bazzoxan, and plan their next move with or without the help of the following nonplayer characters:",
+						"If the rivals took the {@item Jewel of Three Prayers|CRCotN}, or if Aloysia fled to Ank'Harel on her own, the characters can use Aloysia's {@item Teleportation Tablet|CRCotN|teleportation tablets} (see {@adventure appendix B|CRCotN|9}) to travel to Ank'Harel directly, without backtracking or spending more time in Bazzoxan. Otherwise, they can find their way out of the Betrayers' Rise, return to Bazzoxan, and plan their next move with or without the help of the following nonplayer characters:",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
@@ -8509,7 +8509,7 @@
 					"page": 77,
 					"id": "17b",
 					"entries": [
-						"The following descriptions of the rivals' actions during this chapter assume that the rivals came to Ank'Harel by means of a {@item teleportation tablet|CRCotN} (see {@adventure appendix B|CRCotN|9|{@item Teleportation Tablet|CRCotN}}):",
+						"The following descriptions of the rivals' actions during this chapter assume that the rivals came to Ank'Harel by means of a {@item teleportation tablet|CRCotN} (see {@adventure appendix B|CRCotN|9}):",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
@@ -9578,7 +9578,7 @@
 										{
 											"type": "item",
 											"name": "S2: Teleportation Atrium.",
-											"entry": "A permanent teleportation circle stands in the center of this austere, domed building. Most {@item Teleportation Tablet|CRCotN|teleportation tablets} (see {@adventure appendix B|CRCotN|9|{@item Teleportation Tablet|CRCotN}}) made by the Allegiance of Allsight are keyed to this circle."
+											"entry": "A permanent teleportation circle stands in the center of this austere, domed building. Most {@item Teleportation Tablet|CRCotN|teleportation tablets} (see {@adventure appendix B|CRCotN|9}) made by the Allegiance of Allsight are keyed to this circle."
 										},
 										{
 											"type": "item",
@@ -10252,7 +10252,7 @@
 							"id": "1e6",
 							"entries": [
 								"Months ago, Watcher Lymmle Wist of the Sentinels of Memory infiltrated the Allegiance of Allsight. She has since advanced through the ranks and become one of the individuals responsible for assigning missions to Allegiance agents. During this time, she has also been feeding information about Allegiance operations to the Sentinels of Memory and the Consortium of the Vermilion Dream.",
-								"Lymmle previously owned a {@item ring of red fury|CRCotN} (see {@adventure appendix B|CRCotN|9|{@item Ring of Red Fury|CRCotN}}), which was given to her by the Consortium as a reward for her services. She has decided to use the ring as part of a grander scheme. Recently, with the Allegiance of Allsight on high alert after the attack at the Life Dome, Lymmle planted the ring on {@creature Prolix Yusaf|CRCotN} and plans to falsely accuse the tiefling of being a traitor. Her contact with the ruidium in the ring has left its mark on her skin.",
+								"Lymmle previously owned a {@item ring of red fury|CRCotN} (see {@adventure appendix B|CRCotN|9}), which was given to her by the Consortium as a reward for her services. She has decided to use the ring as part of a grander scheme. Recently, with the Allegiance of Allsight on high alert after the attack at the Life Dome, Lymmle planted the ring on {@creature Prolix Yusaf|CRCotN} and plans to falsely accuse the tiefling of being a traitor. Her contact with the ruidium in the ring has left its mark on her skin.",
 								{
 									"type": "entries",
 									"name": "Getting the Mission",
@@ -10345,7 +10345,7 @@
 									"id": "1ec",
 									"entries": [
 										"After Lymmle is exposed as a traitor, Headmaster Alakritos gives the characters a pouch containing a reward of 50 pp. He also hands them a satchel and asks them to return it to Prolix\u2014minus the Life Dome schematics and other incriminating paperwork planted in it by Lymmle.",
-										"In gratitude, Prolix lets the characters keep the {@item ring of red fury|CRCotN} (see {@adventure appendix B|CRCotN|9|{@item Ring of Red Fury|CRCotN}}) as long as they promise to share anything they learn about the ring's properties."
+										"In gratitude, Prolix lets the characters keep the {@item ring of red fury|CRCotN} (see {@adventure appendix B|CRCotN|9}) as long as they promise to share anything they learn about the ring's properties."
 									]
 								}
 							]
@@ -10795,7 +10795,7 @@
 												"The coin vault is sealed with a magic lock. Narrow chutes, each 6 inches in diameter, extend from the inside of the vault to dispensers on the lower floors. Only casino employees can access these dispensers, which they must do before doling out winnings to the casino's patrons."
 											]
 										},
-										"Nedosi wants two characters to station themselves right outside the coin vault while the rest patrol the casino's ground floor with her. If the characters don't have the ability to communicate with each other from a distance, she gives each of them a fully charged {@item earring of message|CRCotN} (see {@adventure appendix B|CRCotN|9|{@item Earring of Message|CRCotN}}) to use for the night before ordering them to their posts. She demands that the characters use force only if necessary, and only of the nonlethal variety.",
+										"Nedosi wants two characters to station themselves right outside the coin vault while the rest patrol the casino's ground floor with her. If the characters don't have the ability to communicate with each other from a distance, she gives each of them a fully charged {@item earring of message|CRCotN} (see {@adventure appendix B|CRCotN|9}) to use for the night before ordering them to their posts. She demands that the characters use force only if necessary, and only of the nonlethal variety.",
 										{
 											"type": "entries",
 											"name": "Casino Floor",
@@ -11261,7 +11261,7 @@
 								{
 									"type": "list",
 									"items": [
-										"To open Cael Morrow's rift to the Netherdeep, one needs a {@item ruidium weapon|CRCotN} (see {@adventure appendix B|CRCotN|9|{@item Ruidium Weapon|CRCotN}}). The Consortium has determined that any such weapon functions as a Key to the Netherdeep.",
+										"To open Cael Morrow's rift to the Netherdeep, one needs a {@item ruidium weapon|CRCotN} (see {@adventure appendix B|CRCotN|9}). The Consortium has determined that any such weapon functions as a Key to the Netherdeep.",
 										"The Allegiance of Allsight has sent agents into the rift. Their motives are unknown."
 									]
 								},
@@ -11767,7 +11767,7 @@
 												"The exterior door on the west wall is locked. The lock can be picked by a character who makes a successful DC 15 Dexterity check using {@item thieves' tools|PHB}. The door can be broken down by a character who succeeds on a DC 11 Strength ({@skill Athletics}) check, but the noise alerts anyone in the building.",
 												"This room smells of decay, and iron manacles are bolted to the wall. There are stains of various sorts on the floor. The room contains jugs of water, loose pieces of jewelry, and crates that hold low-value stolen goods.",
 												"A character who makes a successful DC 15 Intelligence ({@skill Investigation}) check locates a metal lockbox stowed underneath an upside-down crate in a corner of the room. The lockbox can be opened by a character who makes a successful DC 21 Dexterity check using {@item thieves' tools|PHB}. It can also be pried open with a successful DC 16 Strength ({@skill Athletics}) check. If the box is forced open, poison gas sprays outward, and the character who opened it must succeed on a DC 15 Constitution saving throw or take 22 ({@dice 4d10}) poison damage and be {@condition poisoned} for 1 hour.",
-												"The lockbox holds the {@item ruidium shortsword|CRCotN} that Kruuk plans to sell (see \"A Deal Goes Down\" below). If the characters have gained Kruuk's trust, he opens the lockbox to show them the sword, then explains its magical properties (see {@adventure appendix B|CRCotN|9|{@item Ruidium Weapon|CRCotN}})."
+												"The lockbox holds the {@item ruidium shortsword|CRCotN} that Kruuk plans to sell (see \"A Deal Goes Down\" below). If the characters have gained Kruuk's trust, he opens the lockbox to show them the sword, then explains its magical properties (see {@adventure appendix B|CRCotN|9})."
 											]
 										}
 									]
@@ -13965,7 +13965,7 @@
 														{
 															"type": "item",
 															"name": "Third Floor.",
-															"entry": "Allegiance members come up here to rest. Large holes in the roof are covered by magical barriers of blue force, thanks to a keystone hidden on this floor (see \"Keystone\" below). This former attic holds six small crates of preserved food, a dozen casks of fresh water, six cots with soft pillows and blankets, and an unlocked wooden case containing two {@item Breathing Bubble|EGW|breathing bubbles} (see {@adventure appendix B|CRCotN|9|{@item Breathing Bubble|EGW}}) with full air supplies and three {@item Potion of Water Breathing||potions of water breathing}. {@creature Insight Acuere|CRCotN|Insight} and her companions won't permit the theft of these items, but {@creature Insight Acuere|CRCotN|Insight} is willing to share them with the characters if they request her aid and their goals align with hers."
+															"entry": "Allegiance members come up here to rest. Large holes in the roof are covered by magical barriers of blue force, thanks to a keystone hidden on this floor (see \"Keystone\" below). This former attic holds six small crates of preserved food, a dozen casks of fresh water, six cots with soft pillows and blankets, and an unlocked wooden case containing two {@item Breathing Bubble|EGW|breathing bubbles} (see {@adventure appendix B|CRCotN|9}) with full air supplies and three {@item Potion of Water Breathing||potions of water breathing}. {@creature Insight Acuere|CRCotN|Insight} and her companions won't permit the theft of these items, but {@creature Insight Acuere|CRCotN|Insight} is willing to share them with the characters if they request her aid and their goals align with hers."
 														}
 													]
 												}
@@ -14206,7 +14206,7 @@
 											"page": 130,
 											"id": "2a5",
 											"entries": [
-												"Lying on the floor in the middle of the room is a {@item teleportation tablet|CRCotN} (see {@adventure appendix B|CRCotN|9|{@item Teleportation Tablet|CRCotN}}) that was left behind by a member of the Consortium of the Vermilion Dream. This individual was searching the area for relics when a giant shark entered through a hole in the roof. The agent panicked and fled, dropping the tablet on their way back to area M7a. {@creature Galeokaerda|CRCotN} wants to acquire the tablet, which connects to a teleportation circle on the roof of First Eclipse in Ank'Harel's Suncut Bazaar (see {@area chapter 4|1c4|x})."
+												"Lying on the floor in the middle of the room is a {@item teleportation tablet|CRCotN} (see {@adventure appendix B|CRCotN|9}) that was left behind by a member of the Consortium of the Vermilion Dream. This individual was searching the area for relics when a giant shark entered through a hole in the roof. The agent panicked and fled, dropping the tablet on their way back to area M7a. {@creature Galeokaerda|CRCotN} wants to acquire the tablet, which connects to a teleportation circle on the roof of First Eclipse in Ank'Harel's Suncut Bazaar (see {@area chapter 4|1c4|x})."
 											]
 										}
 									]
@@ -14355,7 +14355,7 @@
 												},
 												"The vision ends, and the red crystal lets out a loud hiss just before it cracks and explodes. Creatures in the temple who did not experience the second vision see the red crystal flare with light as it shatters. For a moment, a translucent image of Alyxian, his face stern and impatient, appears in the center of the temple. It then disappears, and all is quiet once more.",
 												"When the crystal shatters, the character who touched it must make a DC 16 Charisma saving throw. On a failed save, the character takes 33 ({@dice 6d10}) psychic damage and gains 1 level of {@condition exhaustion}. If the character isn't already suffering from ruidium corruption, the character becomes corrupted when they fail the save. On a successful save, the character takes half as much damage and suffers no other effects.",
-												"When a character experiences the second vision, the Alyxian Aboleth loses its ability to poison the emotions of nearby creatures, and the {@item Jewel of Three Prayers|CRCotN} (see {@adventure appendix B|CRCotN|9|{@item Jewel of Three Prayers|CRCotN}}) transforms into its {@item Jewel of Three Prayers (Exalted)|CRCotN|Exalted State}\u2014both consequences of gaining the blessing of Corellon the Arch Heart."
+												"When a character experiences the second vision, the Alyxian Aboleth loses its ability to poison the emotions of nearby creatures, and the {@item Jewel of Three Prayers|CRCotN} (see {@adventure appendix B|CRCotN|9}) transforms into its {@item Jewel of Three Prayers (Exalted)|CRCotN|Exalted State}\u2014both consequences of gaining the blessing of Corellon the Arch Heart."
 											]
 										}
 									]
@@ -14428,7 +14428,7 @@
 											"page": 134,
 											"id": "2bb",
 											"entries": [
-												"Any character who spends at least 5 minutes searching the kelp forest can make a DC 15 Intelligence ({@skill Investigation}) check, finding the aboleth's accumulated treasure on a success. This hoard consists of a pouch that holds 156 gp, a {@item ruidium shield|CRCotN} (see {@adventure appendix B|CRCotN|9|{@item Ruidium Shield|CRCotN}}), a {@item ruidium shortsword|CRCotN} (see {@adventure appendix B|CRCotN|9|{@item Ruidium Weapon|CRCotN}}), and a {@item brooch of shielding} still pinned to the garments of a water-bloated human corpse (the remains of an Allegiance of Allsight explorer).",
+												"Any character who spends at least 5 minutes searching the kelp forest can make a DC 15 Intelligence ({@skill Investigation}) check, finding the aboleth's accumulated treasure on a success. This hoard consists of a pouch that holds 156 gp, a {@item ruidium shield|CRCotN} (see {@adventure appendix B|CRCotN|9}), a {@item ruidium shortsword|CRCotN} (see {@adventure appendix B|CRCotN|9}), and a {@item brooch of shielding} still pinned to the garments of a water-bloated human corpse (the remains of an Allegiance of Allsight explorer).",
 												{
 													"type": "image",
 													"href": {
@@ -14488,7 +14488,7 @@
 											"page": 136,
 											"id": "2c1",
 											"entries": [
-												"Embedded in the {@creature death embrace|CRCotN}'s bell is a {@item ruidium greataxe|CRCotN} (see {@adventure appendix B|CRCotN|9|{@item Ruidium Weapon|CRCotN}}), the so-called Key to the Netherdeep that the Allegiance of Allsight and the Consortium of the Vermilion Dream are after (see {@adventure chapter 4|CRCotN|4}). The axe can be removed from the {@creature death embrace|CRCotN} only after the creature is dead.",
+												"Embedded in the {@creature death embrace|CRCotN}'s bell is a {@item ruidium greataxe|CRCotN} (see {@adventure appendix B|CRCotN|9}), the so-called Key to the Netherdeep that the Allegiance of Allsight and the Consortium of the Vermilion Dream are after (see {@adventure chapter 4|CRCotN|4}). The axe can be removed from the {@creature death embrace|CRCotN} only after the creature is dead.",
 												"A character who spends 10 minutes searching the villa and succeeds on a DC 15 Intelligence ({@skill Investigation}) check finds a locked jewelry box. The jewelry box can be opened by a character who makes either a successful DC 15 Dexterity check using {@item thieves' tools|PHB} or a successful DC 15 Strength ({@skill Athletics}) check. Inside are two emerald rings (1,500 gp each), a string of pearls (750 gp), and a {@item ring of shooting stars}."
 											]
 										}

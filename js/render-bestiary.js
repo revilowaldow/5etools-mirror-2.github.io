@@ -34,7 +34,7 @@ class RenderBestiary {
 
 		const htmlSourceAndEnvironment = this._$getRenderedCreature_getHtmlSourceAndEnvironment(mon, legGroup);
 
-		const hasToken = mon.tokenUrl || mon.hasToken;
+		const hasToken = Renderer.monster.hasToken(mon);
 		const extraThClasses = hasToken ? ["mon__name--token"] : null;
 
 		const ptsResource = mon.resource?.length
@@ -51,8 +51,8 @@ class RenderBestiary {
 		</td></tr>
 		<tr><td class="divider" colspan="6"><div></div></td></tr>
 
-		<tr><td colspan="6"><div ${hasToken ? `class="mon__wrp-avoid-token"` : ""}><strong>Armor Class</strong> ${Parser.acToFull(mon.ac)}</div></td></tr>
-		<tr><td colspan="6"><div ${hasToken ? `class="mon__wrp-avoid-token"` : ""}><strong>Hit Points</strong> ${Renderer.monster.getRenderedHp(mon.hp)}</div></td></tr>
+		<tr><td colspan="6"><div ${hasToken ? `class="mon__wrp-avoid-token"` : ""}><strong>Armor Class</strong> ${mon.ac == null ? "\u2014" : Parser.acToFull(mon.ac)}</div></td></tr>
+		<tr><td colspan="6"><div ${hasToken ? `class="mon__wrp-avoid-token"` : ""}><strong>Hit Points</strong> ${mon.hp == null ? "\u2014" : Renderer.monster.getRenderedHp(mon.hp)}</div></td></tr>
 		${ptsResource.join("")}
 		<tr><td colspan="6"><strong>Speed</strong> ${Parser.getSpeedString(mon)}</td></tr>
 		<tr><td class="divider" colspan="6"><div></div></td></tr>

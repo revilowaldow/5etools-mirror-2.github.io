@@ -51368,6 +51368,192 @@
 					"page": 256
 				}
 			]
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"columns": 2,
+							"items": [
+								{
+									"type": "item",
+									"name": "Designers",
+									"entries": [
+										"Christopher Perkins, Will Doyle, Steve Winter"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Additional Design",
+									"entries": [
+										"Adam Lee"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Story Consultants",
+									"entries": [
+										"Pendleton Ward, James Lowder"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Story Creators",
+									"entries": [
+										"Christopher Perkins, Adam Lee, Richard Whitters"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Lead Rules Developer",
+									"entries": [
+										"Jeremy Crawford"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Managing Editors",
+									"entries": [
+										"Jeremy Crawford, Christopher Perkins"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Editors",
+									"entries": [
+										"Michele Carter, Scott Fitzgerald Gray"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Editorial Assistance",
+									"entries": [
+										"Matt Sernett"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Art Director",
+									"entries": [
+										"Kate Irwin"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Additional Art Direction",
+									"entries": [
+										"Shauna Narciso, Richard Whitters"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Graphic Designer",
+									"entries": [
+										"Emi Tanji"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Cover Illustrator",
+									"entries": [
+										"Ben Oliver"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Interior Illustrators",
+									"entries": [
+										"Mark Behm, Eric Belisle, Zoltan Boros, Christopher Bradley, Jedd Chevrier, Daarken, Chris Dien, Olga Drebas, Leesha Hannigan, Victor Maury, Chris Seaman, Cory Trego-Erdner, Richard Whitters, Eva Widerman, Shawn Wood"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Cartographer",
+									"entries": [
+										"Mike Schley"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Producer",
+									"entries": [
+										"Stan!"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Project Manager",
+									"entries": [
+										"Heather Fleming"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Product Engineer",
+									"entries": [
+										"Cynda Callaway"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Imaging Technician",
+									"entries": [
+										"Carmen Cheung"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Art Administration",
+									"entries": [
+										"David Gershman"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Prepress Specialist",
+									"entries": [
+										"Jefferson Dunlap"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Other D&D Team Members",
+									"entries": [
+										"Bart Carroll, Trevor Kidd, Christopher Lindsay, Shelly Mazzanoble, Mike Mearls, Ben Petrisor, Hilary Ross, Liz Schuh, Nathan Stewart, Greg Tito"
+									]
+								},
+								{
+									"type": "item",
+									"name": "The following D&D books provided material and inspiration:",
+									"entries": [
+										"",
+										"Cook, David. {@i Dwellers of the Forbidden City}. 1981.",
+										"Gygax, Gary. {@i Monster Manual II}. 1983.",
+										"Gygax, Gary. {@i Tomb of Horrors}. 1978.",
+										"Lowder, James. {@i The Ring of Winter}. 2012.",
+										"Lowder, James and Jean Rabe. {@i The Jungles of Chult}. 1993.",
+										"Novak, Kate and Jeff Grubb. {@i Azure Bonds}. 1988.",
+										"TSR, Inc. {@i Fiend Folio}. 1981"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Playtesters",
+					"entries": [
+						"Damião Abreu, Emmanuel Acosta, Manny Acosta, Robert Alaniz, Stacey Allan, Jay Anderson, Paul Aparicio, Luke Austin-Smith, Matt Austin, Andrew Bahls, Chris Balboni, Melissa Bassett, Simon Batchelor, Jason Baxter, Lawrence Beals, Scott Beck, André Bégin, Jerry Behrendt, Charles Benscoter, Jacob Benscoter, Shawn Bergseng, Stacy Bermes, Jim Berrier, Giles Bicknell, Lauren Bilanko, Joseph Boerjes, Miranda Faye Bowen, Matt Boyd, Scott Brand, Zachary Brand, Jordan Brass, Garrett Bray, Ken Breese, Chris Breunig, Travis Brock, Bobby Brown, Matthew Buddhe, Charles Burbridge, Willi Burger, Matt Burton, Bradley Butts, Mik Calow, Zane Cannon, Jay Carey, Anthony Caroselli, John Cassel, Kyle Castilaw, Richard Chamberlain, Wayne Chang, Paul Charvet, Pantelis Chatzinikolis, Lemuel Cheung, Emre Cihangir, Jeffery Clark, Heather Coleman, Garrett Colón, Ivan Cortez, Mélanie Coté, James Cottrell, Mark Coulter, Drew Crevello, Manon Crevier, Alexander Crouzen, Max Cushner, Simon Cwilich, Brian Dahl, Alex D'Amico, Ben Danderson, Soren Danielson, Waylon Darosh, Derek DaSilva, Phil Davidson, Cait Davis, Marcello De Velazquez, Yourik de Voogd, Mark Denholm, Krupal Desai, Scott Deschler, Yorcho Diaz, Dan Dodson, Adam Dowdy, Alexander Dugmore, Shawn Durr, Norm Eadie, João Eduardo, Andrew Eggleston, Jay Elmore, Clayton Embrey, James Endicott, Eric Engbloom, Andrew Epps, Kevin Erhler, Thelem Eyseir, Justin Faris, Ian Fay, Jared Fegan, Frank Fergusson, Grant Fisk, Star Fitzgerald, Shannon Flowers, Alex Forsyth, Mike Fowler, Daniel Franco, Jason Fransella, Sean Freeland, Max Frutig, Travis Fuller, Dominique Gaddis, Jeremiah Gaddis, Cassie Garrett, Ben Garton, Kellie Getty, Stephen \"Guppy\" Getty, Luke Gianella, Bryan Gillispie, Gundula Gonzalez, Maxwell Gord, Curt Gould, Nick Graves, Jeremy Green, Michael Greene, Mark Greenberg, Kevin Grigsby, Nicci Grigsby, Jim Hackbarth, Jeff Hagen, Sarah Hager, Rob Hall, Steph Hall, Matt Hammond, Michael Harman, Lonny Harper, Bryan Harris, Gregory L. Harris, Dan Harsh, Frederick Harvey, Nick Hawks, Ian Hawthorne, James Hazel, Steve Heitke, Mary Hershey, Sterling Hershey, Jason Hesse, Michael Hesprich, Will Hines, Andrew Hitchcock, Jeremy Hochhalter, Mackenzie Hoffman, William Hoffman, Jeffrey Hofmann, Bradyn Holaus, Josh Hoyt, Howard \"Poly\" Hubble, Paul Hughes, Angela Imrie, Jeff Imrie, Jacob Ingalls, Kelly Ingalls, Dave Jackson, Chris Jernigan, Emily Johnson, Paul Kalupnieks, Alex Kammer, Joseph Kauffman IV, Matthew Keeney, Robert Kennedy, Bill Kerney, Allen King, James Kirtley, Matt Klassen, Dan Klinestiver, Kirk Klopfenstein, Mark Knapik, William Knight, Mark Knobbe, Gabe Knouf, Jason Knutson, Todd Krieg, Jeff Kubiak, Tim Kubik, Nicole Kuprienko, Yan Lacharité, Bruce LaClair, Brian Lakeman, Elisa Laudato, Martyn Lawrence, Shane Leahy, Francois P. Lefebvre Sr., Eric Leroux, Damon Liddell, Michael Liebhart, Gray Lihou, Cindy Liu, Jessie Livingston, Matt Livingston, Tom Lommel, Michael Long, Jonathan Longstaff, Jason Lopez, Ginny Loveday, Keith Loveday, Helano B. Luciano, Kevin Luebke, Gabriel S. Machado, Joe Manganiello, Nick Manganiello, Matt Maranda, Johnathan Marquis, Joel Marsh, Shelby Marsh, Richard Martin, Genesis Martinez, Ron Mathews, Effie Matteson, Joemar McDonnell, Chris McGovern, Stacy McGovern, Billy Meinhardt, William Meinhardt, Paul Melamed, Hugo Mendieta, Jonathan Mendoza, Angel Michelli, Janaina Michelli, Justin Michelli, Lou Michelli, Luciano Michelli, Jason Middelton, Shawn Middelton, Alexander Mihilas, Mike Mihalas, Nicholas Mihalas, Zoe Mihalas, Jonathan Miles, Connor Miller, Glen Miller, Sarah Minkiewicz, Daren Mitchell, Cindy Moore, Scott Moore, Ben Morrier, David Morris, Blake Morrison, John Morton, Christopher Moss, Tim Mottishaw, Jawsh Murdock, William Myers, Jeremy Nagorny, Walter Nau, Yosefat Nava, Daniel Norton, Richard Nunn, John Oehlberg, Daniel Oliveira, Jesus Ortiz, Kelsey Ortiz, Matthew Ouimet, Rob Parker, John-Alan Pascoe, Cat Pauley, Russ Paulsen, Chris Payne, Matthew Pennington, Satine Phoenix, Zachary Pickett, Cheryl Pierce, Victor B. Pimentel, Vanessa F. Pinheiro, Joyce Pinnow, Scott Pinnow, Jeremy Plesco, Tony Porteous, Dan Pratt, Mark Price, Nel Pulanco, Branden Purdham, Jennifer Puttress, Robert Quillen II, Ryan Quint, Ben Rabin, Kevin Raliegh, Karl Resch, Mathew Reuther, Keith Richmond, Bob Riepshuff, Brittany Riles, Jason L. Riley, Sean Riley, Wyndll Robertson, Jesse Robinson, Evan Rodarte, Matthew Roderick, Eduardo Rodriquez, Daulton Rokes, Darik Rosser, Dave Rosser Jr., David Russell, Ruty Rutenberg, Gus Ryer, Mike Salopek, James Sanford, Treouis Sankey, Aruther Saucier, Will Saucier, Connor Schenck, Joseph Schenck, Joseph Schenck III, James Schweiss, Christopher Scoggin, Jonathan Connor Self, Nick Sementelli, Sara Servin, Damian Sharp, Justin Sharp, Ken Schuer, Mike Shea, Armand Shelley, Randall Shepherd, Joseph Simpson, Pieter Sleijpen, Rhaya Small, Serena Small, Troy Small, Christopher Sniezak, Amber Spiva, Jim Spiva, Keaton Stamps, Cait Stevenson, Katie Stewart, Erik Strong, Miguel \"Sully\" Sullivan, Jordan Swim, Matthew Talley, Shane Taylor, Royce Thigpen, Casey Thomas, Katie Jensen Thomas, Kirsten Thomas, Kyle Thomas, James A. Thompson, TJ Thorp, JJ Tin, Jordan Trais, Sixto Trejo, Kyle Turner, Mackenzie Upchurch, Christina Usher, Renout van Rijn, William Vaughan, Kyle Ver Steeg, Alex Vine, Kurt Waldkirch, Chenoa Walker, Frank Walton, Gerald Wan, Eric Weberg, Sean Werner, Colin Wheeler, Seth Wheeler, David Williamson, Ben Wilson, Shannon Wilson, James Wodka, Benjamin Wolf, Stephanie Wosnitza, Chris Wood, Rich Wood, Charles Wulff, Dave Zajac, Andrew Zambrzycki, Ali Zeren, Gabrielle Zulaski"
+					]
+				}
+			]
 		}
 	]
 }

@@ -1433,6 +1433,8 @@ PropOrder._MAGICVARIANT = [
 	"requires",
 	"excludes",
 
+	"rarity",
+
 	"ammo",
 
 	"entries",

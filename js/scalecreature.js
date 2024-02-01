@@ -350,6 +350,7 @@ globalThis.ScaleCreatureDamageExpression = class {
 					ScaleCreatureUtils.getDiceExpressionAverage(
 						state.getDiceExpression({
 							numDice: numDiceTemp,
+							diceFaces: diceFacesTemp,
 						}),
 					),
 				)
@@ -435,7 +436,7 @@ globalThis.ScaleCreatureDamageExpression = class {
 		});
 
 		const avgDamOut = Math.floor(ScaleCreatureUtils.getDiceExpressionAverage(diceExpOut));
-		if (avgDamOut <= 0 || diceExpOut === "1") return `1 ${suffix.replace(/^\W+/, " ").replace(/ +/, " ")}`;
+		if (avgDamOut <= 0 || diceExpOut === "1") return `1 ${state.suffix.replace(/^\W+/, " ").replace(/ +/, " ")}`;
 
 		const expression = [
 			Math.floor(ScaleCreatureUtils.getDiceExpressionAverage(diceExpOut)),

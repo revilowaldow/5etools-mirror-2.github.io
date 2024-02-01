@@ -1314,7 +1314,6 @@
 						"The following entry describes a generalized version of the planar key found in this adventure. Each planar key is unique.",
 						{
 							"type": "list",
-							"columns": 1,
 							"items": [
 								"{@item Planar Key|AitFR-THP}"
 							]

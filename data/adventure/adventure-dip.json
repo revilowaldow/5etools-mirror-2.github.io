@@ -25979,6 +25979,229 @@
 					]
 				}
 			]
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						{
+							"type": "item",
+							"name": "Rulebook Designer",
+							"entries": [
+								"Jeremy Crawford"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Adventure Designer",
+							"entries": [
+								"Christopher Perkins"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Additional Adventure Design",
+							"entries": [
+								"Richard Baker"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Adventure Development",
+							"entries": [
+								"Ben Petrisor"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Adventure Editing",
+							"entries": [
+								"Scott Fitzgerald Gray"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Playtest Coordinator",
+							"entries": [
+								"Christopher Lindsay"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Art Directors",
+							"entries": [
+								"Kate Irwin, Shauna Narciso"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Graphic Designer",
+							"entries": [
+								"Trish Yochum"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Cover Illustrator",
+							"entries": [
+								"Grzegorz Rutkowski"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Illustrators",
+							"entries": [
+								"Mark Behm, Eric Belisle, Christopher Burdett, Wesley Burt, Conceptopolis, Olga Drebas, Jesper Ejsing, Craig Elliot, Tomás Giorello, Lars Grant-West, Suzanne Helmigh, Brynn Metheney, Claudio Pozas, Craig J Spearing, Zack Stella, Richard Whitters, Shawn Wood"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Cartographers",
+							"entries": [
+								"Jason A. Engle, Mike Schley"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Original 5th Edition Design",
+							"entries": [
+								"Jeremy Crawford, Mike Mearls, Christopher Perkins, James Wyatt, Rodney Thompson, Robert J. Schwalb, Peter Lee, Steve Townshend, Bruce R. Cordell"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Original 5th Edition Editing",
+							"entries": [
+								"Chris Sims, Michele Carter, Scott Fitzgerald Gray, Kim Mohan"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Based on the original D&D game by",
+							"entries": [
+								"E. Gary Gygax and Dave Arneson"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Producer",
+							"entries": [
+								"Dan Tovar"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Product Concept",
+							"entries": [
+								"Mark Price"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Production Services",
+							"entries": [
+								"Cynda Callaway, Kevin Yee, David Gershman, Jefferson Dunlap"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Senior Director Global Brand Strategy",
+							"entries": [
+								"Nathan Stewart"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Director Licensing & Publishing",
+							"entries": [
+								"Liz Schuh"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Licensing Manager",
+							"entries": [
+								"Hilary Ross"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Digital Marketing Manager",
+							"entries": [
+								"Bart Carroll"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Senior Communications Manager",
+							"entries": [
+								"Greg Tito"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Manager Global Brand Marketing",
+							"entries": [
+								"Anna Vo"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Brand Manager",
+							"entries": [
+								"Shelly Mazzanoble"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Associate Brand Manager",
+							"entries": [
+								"Pelham Greene"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Narrative Designers",
+							"entries": [
+								"Adam Lee, Ari Levitch"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Game Designer",
+							"entries": [
+								"Kate Welch"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Graphic Designer",
+							"entries": [
+								"Emi Tanji"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Project Manager",
+							"entries": [
+								"Bill Benham"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Editor",
+							"entries": [
+								"F. Wesley Schneider"
+							]
+						}
+					]
+				}
+			]
 		}
 	]
 }

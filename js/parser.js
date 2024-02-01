@@ -1062,7 +1062,7 @@ Parser.getTimeToFull = function (time) {
 	return `${time.number ? `${time.number} ` : ""}${time.unit === "bonus" ? "bonus action" : time.unit}${time.number > 1 ? "s" : ""}`;
 };
 
-Parser.getMinutesToFull = function (mins) {
+Parser.getMinutesToFull = function (mins, {isShort = false} = {}) {
 	const days = Math.floor(mins / (24 * 60));
 	mins = mins % (24 * 60);
 
@@ -1070,9 +1070,9 @@ Parser.getMinutesToFull = function (mins) {
 	mins = mins % 60;
 
 	return [
-		days ? `${days} day${days > 1 ? "s" : ""}` : null,
-		hours ? `${hours} hour${hours > 1 ? "s" : ""}` : null,
-		mins ? `${mins} minute${mins > 1 ? "s" : ""}` : null,
+		days ? `${days} ${isShort ? `d` : `day${days > 1 ? "s" : ""}`}` : null,
+		hours ? `${hours} ${isShort ? `h` : `hour${hours > 1 ? "s" : ""}`}` : null,
+		mins ? `${mins} ${isShort ? `m` : `minute${mins > 1 ? "s" : ""}`}` : null,
 	].filter(Boolean)
 		.join(" ");
 };
@@ -1480,6 +1480,7 @@ Parser.monTypeToFullObj = function (type) {
 		tagsSidekick: [],
 		asTextSidekick: null,
 	};
+	if (type == null) return out;
 
 	// handles e.g. "fey"
 	if (typeof type === "string") {
@@ -1896,7 +1897,7 @@ Parser.weightToFull = function (lbs, isSmallUnit) {
 };
 
 Parser.RARITIES = ["common", "uncommon", "rare", "very rare", "legendary", "artifact"];
-Parser.ITEM_RARITIES = ["none", ...Parser.RARITIES, "unknown", "unknown (magic)", "other"];
+Parser.ITEM_RARITIES = ["none", ...Parser.RARITIES, "varies", "unknown", "unknown (magic)", "other"];
 
 Parser.CAT_ID_CREATURE = 1;
 Parser.CAT_ID_SPELL = 2;

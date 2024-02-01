@@ -7588,7 +7588,6 @@
 				{
 					"type": "list",
 					"style": "list-hang-notitle",
-					"columns": 1,
 					"items": [
 						"This book was a collaboration between Wizards of the Coast and Penny Arcade. Members of the Wizards of the Coast team are marked with an asterisk.",
 						{

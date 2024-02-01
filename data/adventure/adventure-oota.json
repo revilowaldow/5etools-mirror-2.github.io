@@ -42867,6 +42867,145 @@
 					]
 				}
 			]
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				"{@b This book was a collaboration between Wizards of the Coast and Green Ronin Publishing. Members of the Green Ronin creative team are marked with an asterisk.}",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Story Creators",
+							"entries": [
+								"Christopher Perkins, Adam Lee, Richard Whitters"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Story Consultants",
+							"entries": [
+								"R.A. Salvatore, Troy Denning"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Lead Adventure Designer",
+							"entries": [
+								"Steve Kenson*"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Designers",
+							"entries": [
+								"Cam Banks,* Walter Ciechanowski,* Alex Melchor,* Christopher Perkins, Chris Pramas,* Robert J. Schwalb,* Matt Sernett, Rodney Thompson, Ray Winninger*"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Managing Editor",
+							"entries": [
+								"Jeremy Crawford"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Editors",
+							"entries": [
+								"Scott Fitzgerald Gray, Christopher Perkins, Tom Cadorette*"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Additional Proofreading",
+							"entries": [
+								"Peter Lee, Sean K Reynolds"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Producer",
+							"entries": [
+								"Greg Bilsland"
+							]
+						},
+						{
+							"type": "item",
+							"name": "D&D Lead Designers",
+							"entries": [
+								"Mike Mearls, Jeremy Crawford"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Art Directors",
+							"entries": [
+								"Hal Mangold,* Kate Irwin, Shauna Narciso"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Cover Illustrator",
+							"entries": [
+								"Tyler Jacobson"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Interior Illustrators",
+							"entries": [
+								"Empty Room Studios, Sam Burley, Olga Drebas, Wayne England, Ilich Henriquez, David Hueso, William O'Connor, Claudio Pozas, Jasper Sandner, Craig Spearing, Bryan Syme, Carlos Nuñez de Castro Torres, Francis Tsai, Anthony Waters, Richard Whitters, Ben Wootten, Kieran Yanner"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Cartographers",
+							"entries": [
+								"Jared Blando, Mike Schley"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Graphic Designer",
+							"entries": [
+								"Emi Tanji"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Project Management",
+							"entries": [
+								"Neil Shinkle, John Hay"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Production Services",
+							"entries": [
+								"Cynda Callaway, Jefferson Dunlap, David Gershman"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Brand and Marketing",
+							"entries": [
+								"Nathan Stewart, Liz Schuh, Chris Lindsay, Shelly Mazzanoble, Hilary Ross, John Feil, Laura Tommervik, Greg Tito, Kim Lundstrom, Trevor Kidd"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Playtesters",
+							"entries": [
+								"Robert Alaniz, Jay Anderson, Bill Benham, Stacy Bermes, Anthony Caroselli, Krupal Desai, Frank Foulis, Jason Fuller, Gregory L. Harris, Justin Hicks, Yan Lacharité, Jonathan Longstaff, Matt Maranda, Shawn Merwin, Lou Michelli, Mike Mihalas, Karl Resch, Kyle Turner, Arthur Wright, Keoki Young"
+							]
+						}
+					]
+				}
+			]
 		}
 	]
 }

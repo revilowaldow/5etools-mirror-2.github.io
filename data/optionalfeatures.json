@@ -46,7 +46,8 @@
 					"level": {
 						"level": 14,
 						"class": {
-							"name": "Artificer"
+							"name": "Artificer",
+							"source": "TCE"
 						}
 					},
 					"item": [
@@ -418,7 +419,8 @@
 					"level": {
 						"level": 6,
 						"class": {
-							"name": "Artificer"
+							"name": "Artificer",
+							"source": "TCE"
 						}
 					},
 					"item": [
@@ -1530,7 +1532,8 @@
 					"level": {
 						"level": 10,
 						"class": {
-							"name": "Artificer"
+							"name": "Artificer",
+							"source": "TCE"
 						}
 					},
 					"item": [
@@ -1557,7 +1560,8 @@
 							"name": "Fighter"
 						},
 						"subclass": {
-							"name": "Rune Knight"
+							"name": "Rune Knight",
+							"source": "TCE"
 						}
 					}
 				}
@@ -2239,7 +2243,8 @@
 					"level": {
 						"level": 6,
 						"class": {
-							"name": "Artificer"
+							"name": "Artificer",
+							"source": "TCE"
 						}
 					},
 					"item": [
@@ -2647,7 +2652,8 @@
 					"level": {
 						"level": 6,
 						"class": {
-							"name": "Artificer"
+							"name": "Artificer",
+							"source": "TCE"
 						}
 					},
 					"item": [
@@ -2678,7 +2684,8 @@
 					"level": {
 						"level": 6,
 						"class": {
-							"name": "Artificer"
+							"name": "Artificer",
+							"source": "TCE"
 						}
 					},
 					"item": [
@@ -3002,7 +3009,8 @@
 					"level": {
 						"level": 6,
 						"class": {
-							"name": "Artificer"
+							"name": "Artificer",
+							"source": "TCE"
 						}
 					},
 					"item": [
@@ -3046,7 +3054,8 @@
 							"name": "Fighter"
 						},
 						"subclass": {
-							"name": "Rune Knight"
+							"name": "Rune Knight",
+							"source": "TCE"
 						}
 					}
 				}

@@ -23874,6 +23874,228 @@
 					"height": 1806
 				}
 			]
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Story Creators",
+							"entries": [
+								"Adam Lee (lead), James Introcaso, Ari Levitch, Mike Mearls, Lysa Penrose, Christopher Perkins, Ben Petrisor, Matthew Sernett, Kate Welch, Richard Whitters, Shawn Wood"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Story Consultants",
+							"entries": [
+								"Joe Manganiello, Jim Zub"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Writers",
+							"entries": [
+								"Bill Benham, M.T. Black, Dan Dillon, Justin Donie, James J. Haeck, James Introcaso, Adam Lee, Chris Lindsay, Liane Mersiel, Shawn Merwin, Lysa Penrose, Christopher Perkins, F. Wesley Schneider, Amber Scott, James Sutter"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Developers",
+							"entries": [
+								"Jeremy Crawford, Dan Dillon, Ben Petrisor, Kate Welch"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Editors",
+							"entries": [
+								"Michele Carter, Scott Fitzgerald Gray, Hannah Rose, F. Wesley Schneider"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Managing Editor",
+							"entries": [
+								"Christopher Perkins"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Art Director",
+							"entries": [
+								"Kate Irwin"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Graphic Designers",
+							"entries": [
+								"Emi Tanji, Trish Yochum"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Concept Art Director",
+							"entries": [
+								"Richard Whitters"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Creative Art Director",
+							"entries": [
+								"Shauna Narciso"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Cover Illustrators",
+							"entries": [
+								"Tyler Jacobson, Hydro74"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Interior Illustrators",
+							"entries": [
+								"Victor Adame Minguez, Even Amundsen, Alexey Aparin, Mark Behm, Michael Berube, Zoltan Boros, Aleksi Briclot, Christopher Burdett, Sam Burley, Wesley Burt, Clint Cearley, Sidharth Chaturvedi, Daarken, Olga Drebas, Steve Ellis, Nils Hamm, Leesha Hannigan, Ralph Horsley, Lake Hurwitz, Tyler Jacobson, Sam Keiser, Julian Kok, Daniel Landerman, Larian Studios, Titus Lunter, Brynn Metheney, Scott Murphy, Claudio Pozas, Vincent Proce, Chris Rallis, Mike Schley, Ilya Shkipin, David Sladek, Zack Stella, Matt Stewart, Cory Trego-Erdner, Beth Trott, Unit Image, Richard Whitters, Shawn Wood, Ben Wootten"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Concept Illustrators",
+							"entries": [
+								"Aleksi Briclot, Daarken, Max Dunbar, Titus Lunter, Vince Proce, Richard Whitters, Shawn Wood"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Infernal Font Designer",
+							"entries": [
+								"Daniel Reeve"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Interior Cartographers",
+							"entries": [
+								"Dyson Logos, Mike Schley"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Poster Map Cartographer",
+							"entries": [
+								"Jared Blando"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Producers",
+							"entries": [
+								"Dan Tovar,Bill Benham"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Product Engineer",
+							"entries": [
+								"Cynda Callaway"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Imaging Technicians",
+							"entries": [
+								"Sven Bolen, Carmen Cheung, Kevin Yee"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Art Administration",
+							"entries": [
+								"David Gershman"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Prepress Specialist",
+							"entries": [
+								"Jefferson Dunlap"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Franchise & Global Brand Strategy",
+							"entries": [
+								"Nathan Stewart"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Director Licensing & Publishing",
+							"entries": [
+								"Liz Schuh"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Licensing Manager",
+							"entries": [
+								"Hilary Ross"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Marketing and Communications",
+							"entries": [
+								"Bart Carroll, Pelham Greene,Greg Tito, Anna Vo"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Brand Manager",
+							"entries": [
+								"Shelly Mazzanoble"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Playtest Coordinator",
+							"entries": [
+								"Bill Benham"
+							]
+						},
+						{
+							"type": "item",
+							"name": "The following D&D books provided material and inspiration",
+							"entries": [
+								"Greenwood, Ed, Matt Sernett, Alexander Winter, and Steve Winter. Murder in Baldur's Gate. 2013. Greenwood, Ed, and others. Lords of Darkness. 1988. Kenson, Steve, and others. Sword Coast Adventurer's Guide. 2015. Mearls, Mike, Jeremy Crawford, and others. Mordenkainen's Tome of Foes. 2018. Volo's Guide to Monsters. 2016. Perkins, Christopher, Will Doyle, and Steve Winter. Tomb of Annihilation. 2017."
+							]
+						},
+						{
+							"type": "item",
+							"name": "",
+							"entries": [
+								"Vanthampur Villa was inspired by a building design by Dean Turner"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Thanks to Our Playtesters",
+							"entries": [
+								"Trisha Arozqueta, Cory Bennett, Khrys Bennett, Cody Bowen, Jean-Luc Caron, Trevor Clare, Drake Delgado, Mikayla \"Irish\" Ebel, Christian \"Shiny\" Eckert, Zach \"Static\" Eckert, Andrew Evans, Nathan Fisher, Jesse Foltz, Thomas Freed, David Hanson, Maris Hanson, Brenna Holkins, Jerry Holkins, Danny Hyun, Joshua Kiper, Shayne Li, Jonathan Christopher Marquiss, Zack Merritt, Emmanuel John Mitsinikos, Blake Morrison, David Park, Nancy Rexford, Leonardo Rivera, Luke Sargent, Brandon Smith, Rob Spieldenner, Rebecca Stein, Nevin Vorfeld, Andrew White"
+							]
+						}
+					]
+				}
+			]
 		}
 	]
 }

@@ -12175,7 +12175,6 @@
 				{
 					"type": "list",
 					"style": "list-hang-notitle",
-					"columns": 1,
 					"items": [
 						{
 							"type": "item",

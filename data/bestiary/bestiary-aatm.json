@@ -419,8 +419,12 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The exorcist casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability (spell save {@dc 14}, {@hit 6} to hit with spell attacks):",
-						"At-will: detect evil and good, mage armor (self only), mage hand"
+						"The exorcist casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability (spell save {@dc 14}, {@hit 6} to hit with spell attacks):"
+					],
+					"will": [
+						"{@spell detect evil and good}",
+						"{@spell mage armor} (self only)",
+						"{@spell mage hand}"
 					],
 					"daily": {
 						"2e": [

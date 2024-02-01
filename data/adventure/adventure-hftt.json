@@ -4026,6 +4026,67 @@
 					]
 				}
 			]
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Adventure",
+							"entries": [
+								"Stan!, Ben Petrisor"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Cartography",
+							"entries": [
+								"Stan!"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Rulebook",
+							"entries": [
+								"Jeremy Crawford"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Editing",
+							"entries": [
+								"Christopher Perkins, Chris Sims, Michele Carter, Scott Fitzgerald Gray, Kim Mohan, Philip Athans, Kate Welch"
+							]
+						},
+						{
+							"type": "item",
+							"name": "D&D Lead Designers",
+							"entries": [
+								"Jeremy Crawford, Mike Mearls"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Fifth Edition D&D Design Team",
+							"entries": [
+								"Christopher Perkins, James Wyatt, Rodney Thompson, Robert J. Schwalb, Peter Lee, Steve Townshend, Bruce R. Cordell"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Additional Contributors",
+							"entries": [
+								"Greg Bilsland, Matt Sernett, Chris Dupuis, Tom LaPille, Richard Baker, Miranda Horner, Jennifer Clarke Wilkes, Steve Winter, Nina Hess"
+							]
+						}
+					]
+				}
+			]
 		}
 	]
 }

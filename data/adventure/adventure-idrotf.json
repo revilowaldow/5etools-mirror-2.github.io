@@ -58562,6 +58562,261 @@
 		},
 		{
 			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Story Creator & Lead Writer",
+									"entries": [
+										"Christopher Perkins"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Writing Team",
+									"entries": [
+										"Stacey Allan, Bill Benham, H.H. Carlan, Celeste Conowitch, Dan Dillon, Will Doyle, Mikayla Ebel, Anne Gregersen, Chad Quandt, Morrigan Robbins, Ashley Warren"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Rules Development",
+									"entries": [
+										"Jeremy Crawford, Dan Dillon, Ben Petrisor, Taymoor Rehman"
+									]
+								},
+								{
+									"type": "item",
+									"name": "World Building",
+									"entries": [
+										"John Francis Daley, Crystal Frasier, Jonathan Goldstein, Ed Greenwood, Amanda Hamon, Adam Lee, Ari Levitch, Mike Mearls, Christopher Perkins, Jessica Price, R.A. Salvatore, Kate Welch, Shawn Wood"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Editor",
+									"entries": [
+										"Kim Mohan"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Art Director",
+									"entries": [
+										"Kate Irwin"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Senior Graphic Designer",
+									"entries": [
+										"Trish Yochum"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Graphic Designer",
+									"entries": [
+										"Trystan Falcone"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Cover Illustrators",
+									"entries": [
+										"Hydro74, Tyler Jacobson"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Interior Illustrators",
+									"entries": [
+										"Mark Behm, Eric Belisle, Zoltan Boros, Christopher Burdett, Paul Scott Canavan, Sidharth Chaturvedi, Jedd Chevrier, David René Christensen, CoupleOfKooks, Nikki Dawes, Axel Defois, Olga Drebas, Jesper Ejsing, Jason A. Engle, Caroline Gariba, Lars Grant- West, Leesha Hannigan, Sam Keiser, Julian Kok, Olly Lawson, Titus Lunter, Andrew Mar, Marcela Medeiros, Robson Michel, Scott Murphy, Irina Nordsol, Stephen Oakley, Robin Olausson, Claudio Pozas, Livia Prima, April Prime, David Sladek, Craig J Spearing, Brian Valeza, Svetlin Velinov, Richard Whitters, Shawn Wood, Zuzanna Wuzyk"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Cartographers",
+									"entries": [
+										"Stacey Allan, Will Doyle, Mike Schley"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Concept Art Director",
+									"entries": [
+										"Shawn Wood"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Concept Illustrators",
+									"entries": [
+										"Olga Drebas, Titus Lunter, April Prime, Chris Rahn, Jenn Ravenna, Richard Whitters, Shawn Wood, Kieran Yanner"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Senior Producer",
+									"entries": [
+										"Dan Tovar"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Producers",
+									"entries": [
+										"Bill Benham, Robert Hawkey, Lea Heleotis"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Project Engineer",
+									"entries": [
+										"Cynda Callaway"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Imaging Technicians",
+									"entries": [
+										"Sven Bolen, Carmen Cheung, Kevin Yee"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Art Administrator",
+									"entries": [
+										"David Gershman"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Prepress Specialist",
+									"entries": [
+										"Jefferson Dunlap"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Franchise & Global Brand Strategy",
+									"entries": [
+										"Nathan Stewart"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Executive Producer",
+									"entries": [
+										"Ray Winninger"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Director of Licensing & Publishing",
+									"entries": [
+										"Liz Schuh"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Licensing Manager",
+									"entries": [
+										"Hilary Ross"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Marketing & Communications",
+									"entries": [
+										"Bart Carroll, Pelham Greene, Shauna Narciso, Emi Tanji, Greg Tito, Anna Vo"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Product Marketing Manager",
+									"entries": [
+										"Chris Lindsay"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Brand Manager",
+									"entries": [
+										"Shelly Mazzanoble"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Editorial Assistance",
+									"entries": [
+										"Orion D. Black"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Special Thanks",
+									"entries": [
+										"Holly Barbacovi, Jason Barbacovi, Bianca Bickford, Cassidy Borger, Chris Cocks, Tony Craven, Jonathan Cruz, Soren Danielson, Jonathan Doran, Eugene Evans, Jay Gellerman, Chad Gokey, Andrew Harasymiw, Emily Johnson, Omega \"Critical Bard\" Jones, Ty Koebernick, Erin Kramer, Dan LaValby, Randy Lenius, Joshua Mendenhall, Connor Miller, Glen Miller, Nick Mitchell, Tim O'Hara, Michele Picard, Bob Pursley, Jeff Rebbeck, Bill Rose, David Schwartz, Rebecca A. Smith, Jayson Thiry, and the hundreds of play- testers who helped make this adventure more fun"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "gallery",
+					"images": [
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "adventure/IDRotF/credits.webp"
+							},
+							"title": "On the Cover: Auril the Frostmaiden claims her latest victim in Tyler Jacobson's chillingly macabre cover illustration. On the back, an elemental spirit called a chwinga comes out to play."
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "adventure/IDRotF/credits2.webp"
+							},
+							"title": "On the Alt-Cover: Hydro74 shows the doom of Ten-Towns: Auril the Frostmaiden, the god of winter's wrath. Adorning the back cover is the Frostmaiden's holy symbol."
+						}
+					]
+				},
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "The following D&D books provided text and inspiration:",
+							"entries": [
+								"",
+								"Carroll, Bart and others. {@adventure Lost Laboratory of Kwalish|LLK}. 2018.",
+								"Greenwood, Ed and Tim Beach. {@i Pages from the Mages}. 1995.",
+								"James, Brian R. and Ed Greenwood. {@i The Grand History of the Realms}. 2007.",
+								"Perkins, Christopher. {@adventure Storm King's Thunder|SKT}. 2016.",
+								"Perkins, Christopher, Will Doyle, and Steve Winter. {@adventure Tomb of Annihilation|ToA}. 2017.",
+								"Perkins, Christopher and others. {@adventure Waterdeep: Dungeon of the Mad Mage|WDMM}. 2018.",
+								"Salvatore, R.A., Jeffrey Ludwig, James Wyatt, and Matthew Sernett. {@i Legacy of the Crystal Shard.} 2013.",
+								"slade with Jim Butler. {@i Netheril: Empire of Magic}. 1996."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "section",
 			"name": "Maps",
 			"page": 319,
 			"entries": [

@@ -8160,8 +8160,15 @@ Renderer.item = class {
 
 		// armor
 		if (item.ac != null) {
+			const itemType = item.bardingType || item.type;
+			const dexterityMax = (itemType === "MA" && item.dexterityMax == null)
+				? 2
+				: item.dexterityMax;
+			const isAddDex = item.dexterityMax != null || itemType !== "HA";
+
 			const prefix = item.type === "S" ? "+" : "";
-			const suffix = (item.type === "LA" || item.bardingType === "LA") || ((item.type === "MA" || item.bardingType === "MA") && item.dexterityMax === null) ? " + Dex" : (item.type === "MA" || item.bardingType === "MA") ? ` + Dex (max ${item.dexterityMax ?? 2})` : "";
+			const suffix = isAddDex ? ` + Dex${dexterityMax ? ` (max ${dexterityMax})` : ""}` : "";
+
 			damageParts.push(`AC ${prefix}${item.ac}${suffix}`);
 		}
 		if (item.acSpecial != null) damageParts.push(item.ac != null ? item.acSpecial : `AC ${item.acSpecial}`);
@@ -9083,7 +9090,7 @@ Renderer.item = class {
 		}
 
 		// handle item groups
-		if (item._isItemGroup) {
+		if (item._isItemGroup && item.items?.length) {
 			Renderer.item._initFullEntries(item);
 			item._fullEntries.push({type: "wrapper", wrapped: "Multiple variations of this item exist, as listed below:", data: {[VeCt.ENTDATA_ITEM_MERGED_ENTRY_TAG]: "magicvariant"}});
 			item._fullEntries.push({
@@ -10570,12 +10577,22 @@ Renderer.recipe = class {
 };
 
 Renderer.card = class {
-	static getFullEntries (ent) {
+	static getFullEntries (ent, {backCredit = null} = {}) {
 		const entries = [...ent.entries || []];
 		if (ent.suit && (ent.valueName || ent.value)) {
 			const suitAndValue = `${((ent.valueName || "") || Parser.numberToText(ent.value)).toTitleCase()} of ${ent.suit.toTitleCase()}`;
 			if (suitAndValue.toLowerCase() !== ent.name.toLowerCase()) entries.unshift(`{@i ${suitAndValue}}`);
 		}
+
+		const ptCredits = [
+			ent.face?.credit ? `art credit: ${ent.face?.credit}` : null,
+			(backCredit || ent.back?.credit) ? `art credit (reverse): ${backCredit || ent.back?.credit}` : null,
+		]
+			.filter(Boolean)
+			.join(", ")
+			.uppercaseFirst();
+		if (ptCredits) entries.push(`{@note {@style ${ptCredits}|small}}`);
+
 		return entries;
 	}
 

@@ -2408,7 +2408,7 @@ class InputUiUtil {
 		get isPrimary () { return !!this._isPrimary; }
 
 		$getBtn ({doClose, fnRemember, isGlobal, storageKey}) {
-			if (this._isRemember && !storageKey) throw new Error(`No "storageKey" provided for button with saveable value!`);
+			if (this._isRemember && !storageKey && !fnRemember) throw new Error(`No "storageKey" or "fnRemember" provided for button with saveable value!`);
 
 			return $(`<button class="btn ${this._isPrimary ? "btn-primary" : "btn-default"} ${this._isSmall ? "btn-sm" : ""} ve-flex-v-center mr-3">
 				<span class="${this._clazzIcon} mr-2"></span><span>${this._text}</span>

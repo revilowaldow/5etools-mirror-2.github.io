@@ -13015,6 +13015,88 @@
 				"{@i [A note in the margin, written in a different hand]}",
 				"{@b Roadhouse? Could bard win him over}?"
 			]
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Story Creators",
+							"entries": [
+								"Bill Benham, Christopher Lindsay"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Story Consultant",
+							"entries": [
+								"Christopher Perkins"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Lead Designer",
+							"entries": [
+								"James Introcaso"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Developers",
+							"entries": [
+								"Will Doyle, Shawn Merwin"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Editors",
+							"entries": [
+								"Hannah Rose"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Managing Editor",
+							"entries": [
+								"Christopher Lindsay"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Graphic Designer",
+							"entries": [
+								"Rich Lescouflair"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Illustrators",
+							"entries": [
+								"Eric Belisle, Olga Drebas, Claudio Pozas, Ned Rogers, Cory Trego-Erdner"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Cartographers",
+							"entries": [
+								"Stacey Allen, Will Doyle"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Playtest Coordinator",
+							"entries": [
+								"Bill Benham"
+							]
+						}
+					]
+				}
+			]
 		}
 	]
 }

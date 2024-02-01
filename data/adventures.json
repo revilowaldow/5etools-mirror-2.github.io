@@ -3625,6 +3625,9 @@
 				},
 				{
 					"name": "Afterword"
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -5241,6 +5244,9 @@
 						"Kolyan Indirovich's Letter (version 2)",
 						"Journal of Argynvost"
 					]
+				},
+				{
+					"name": "Credits"
 				},
 				{
 					"name": "Poster Map"
@@ -7110,6 +7116,9 @@
 						"type": "appendix",
 						"identifier": "D"
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -7403,6 +7412,9 @@
 						"type": "appendix",
 						"identifier": "B"
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -7680,6 +7692,9 @@
 						"type": "appendix",
 						"identifier": "B"
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -7961,6 +7976,9 @@
 						"type": "appendix",
 						"identifier": "B"
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -8118,6 +8136,9 @@
 						"type": "appendix",
 						"identifier": "B"
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -8606,6 +8627,9 @@
 						"type": "appendix",
 						"identifier": "B"
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -9407,6 +9431,9 @@
 						"type": "appendix",
 						"identifier": "B"
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -9600,6 +9627,9 @@
 						"type": "appendix",
 						"identifier": "B"
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -11170,6 +11200,9 @@
 						"type": "appendix",
 						"identifier": "F"
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -11608,6 +11641,9 @@
 				},
 				{
 					"name": "Poster Map"
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -11732,6 +11768,9 @@
 				},
 				{
 					"name": "Daoine Gloine Map"
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -14989,6 +15028,9 @@
 						"type": "appendix",
 						"identifier": "D"
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -16227,6 +16269,9 @@
 						"type": "appendix",
 						"identifier": "C"
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -16259,6 +16304,9 @@
 						"Lair of the Thessalhydra",
 						"Conclusion"
 					]
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -16742,6 +16790,9 @@
 				},
 				{
 					"name": "Printable Assets"
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -17545,6 +17596,9 @@
 							"header": "Warriors Beyond 11th Level"
 						}
 					]
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -18277,6 +18331,9 @@
 						"type": "appendix",
 						"identifier": "C"
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -19293,6 +19350,9 @@
 							"header": "Warriors Beyond 11th Level"
 						}
 					]
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -20184,6 +20244,9 @@
 						"type": "appendix",
 						"identifier": "G"
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -20283,6 +20346,9 @@
 						"type": "appendix",
 						"identifier": "B"
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -20660,6 +20726,9 @@
 						"Walk-Through Map",
 						"Piece of the Infernal Machine of Lum the Mad"
 					]
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -23232,6 +23301,9 @@
 						"type": "appendix",
 						"identifier": "E"
 					}
+				},
+				{
+					"name": "Credits"
 				},
 				{
 					"name": "Maps"

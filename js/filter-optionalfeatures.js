@@ -14,6 +14,23 @@ class PageFilterOptionalFeatures extends PageFilter {
 		}
 		return SortUtil.listSort(itemA, itemB, options);
 	}
+
+	static getLevelFilterItem (prereq) {
+		const lvlMeta = prereq.level;
+
+		if (typeof lvlMeta === "number") {
+			return new FilterItem({
+				item: `Level ${lvlMeta}`,
+				nest: `(No Class)`,
+			});
+		}
+
+		const className = lvlMeta.class ? lvlMeta.class.name : `(No Class)`;
+		return new FilterItem({
+			item: `${lvlMeta.class ? className : ""}${lvlMeta.subclass ? ` (${lvlMeta.subclass.name})` : ""} Level ${lvlMeta.level}`,
+			nest: className,
+		});
+	}
 	// endregion
 
 	constructor () {
@@ -95,27 +112,7 @@ class PageFilterOptionalFeatures extends PageFilter {
 						});
 				});
 			it._fprereqFeature = it.prerequisite.filter(it => it.feature).map(it => it.feature);
-			it._fPrereqLevel = it.prerequisite.filter(it => it.level).map(it => {
-				const lvlMeta = it.level;
-
-				let item;
-				let className;
-				if (typeof lvlMeta === "number") {
-					className = `(No Class)`;
-					item = new FilterItem({
-						item: `Level ${lvlMeta}`,
-						nest: className,
-					});
-				} else {
-					className = lvlMeta.class ? lvlMeta.class.name : `(No Class)`;
-					item = new FilterItem({
-						item: `${lvlMeta.class ? className : ""}${lvlMeta.subclass ? ` (${lvlMeta.subclass.name})` : ""} Level ${lvlMeta.level}`,
-						nest: className,
-					});
-				}
-
-				return item;
-			});
+			it._fPrereqLevel = it.prerequisite.filter(it => it.level).map(PageFilterOptionalFeatures.getLevelFilterItem.bind(PageFilterOptionalFeatures));
 		}
 
 		it._dFeatureType = it.featureType.map(ft => Parser.optFeatureTypeToFull(ft));

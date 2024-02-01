@@ -49751,6 +49751,210 @@
 					]
 				}
 			]
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						{
+							"type": "item",
+							"name": "Lead Designer",
+							"entries": [
+								"Christopher Perkins"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Story Design",
+							"entries": [
+								"Jenna Helland, Adam Lee, Christopher Perkins, Richard Whitters"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Additional Design",
+							"entries": [
+								"Mike Mearls"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Managing Editor",
+							"entries": [
+								"Jeremy Crawford"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Editors",
+							"entries": [
+								"Kim Mohan, Michele Carter"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Editorial Assistance",
+							"entries": [
+								"Matt Sernett, Chris Dupuis, Ben Petrisor, Sean K Reynolds, Stan!"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Story Consultant",
+							"entries": [
+								"R.A. Salvatore"
+							]
+						},
+						{
+							"type": "item",
+							"name": "D&D Lead Designers",
+							"entries": [
+								"Mike Mearls, Jeremy Crawford"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Art Director",
+							"entries": [
+								"Kate Irwin"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Additional Art Direction",
+							"entries": [
+								"Shauna Narciso, Richard Whitters"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Graphic Designer",
+							"entries": [
+								"Emi Tanji"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Cover Illustrator",
+							"entries": [
+								"Tyler Jacobson"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Interior Illustrators",
+							"entries": [
+								"John-Paul Balmet, Beet, Mark Behm, Eric Belisle, Jedd Chevrier, Olga Drebas, Michael Dutton, Wayne England, Lars Grant-West, Lake Hurwitz, Tyler Jacobson, Julian Kok, Olly Lawson, Christopher Moeller, Scott Murphy, Chris Rahn, Ned Rogers, Chris Seaman, Richard Whitters"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Cartographers",
+							"entries": [
+								"Jared Blando, Will Doyle, Jason A. Engle, Lee Moyer, Christopher Perkins, Mike Schley"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Project Manager",
+							"entries": [
+								"Heather Fleming"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Product Engineer",
+							"entries": [
+								"Cynda Callaway"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Imaging Technicians",
+							"entries": [
+								"Sven Bolen, Carmen Cheung, Kevin Yee"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Art Administration",
+							"entries": [
+								"David Gershman"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Prepress Specialist",
+							"entries": [
+								"Jefferson Dunlap"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Other D&D Team Members",
+							"entries": [
+								"Greg Bilsland, John Feil, Trevor Kidd, Christopher Lindsay, Shelly Mazzanoble, Hilary Ross, Liz Schuh, Nathan Stewart, Greg Tito, Shawn Wood"
+							]
+						}
+					]
+				},
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Playtesters",
+							"entries": [
+								"Teos Abadia, Robert Alaniz, Jay Anderson, Christopher Arroyo, Paul Baalham, Henry Bangsberg, Dave Bendit, Stacy Bermes, Brian Boring, Mik Calow, Joseph Chora, Mitch Clark, Justin Clift, Jacob Ela, Jason Fransella, Gregory L. Harris, Adam Hennebeck, Mary Hershey, Sterling Hershey, Justin Hicks, Bruce Higa, Chris Hodge, Eric Hufstetler, Joe Hughes, Paul Hughes, Donald Jacobs, Chris Jacobsen, Evan Jorstad, James Jorstad, Alex Kammer, Steven C. Knight, Yan Lacharité, Jon Lamkin, Majorie Lamkin, Randy Lenius, Mike Liebhart, Tom Lommel, Michael Long, Jonathan Longstaff, Keith Loveday, Joyce McCosco, Paul Melamed, Mark Meredith, Lou Michelli, Mike Mihalas, Daren Mitchell, Albert Paoletti, Clint Pushee, Rob Quillen II, Karl Resch, Sam Robertson, Steve Roe, Jeremy Schaefer, Robert Schwartz, Arthur Severance, Ray Slover Jr., Caoimhe Snow, Keaton Stamps, David \"Oak\" Stark, David Steele, Kyle Turner, Angel Uribe, Will Vaughan, Shane Walker, Morgan Wessler, Keoki Young"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Bibliography",
+					"entries": [
+						"The following D&D books provided material and inspiration:",
+						{
+							"type": "list",
+							"style": "list-no-bullets",
+							"columns": 2,
+							"items": [
+								"Baker, Richard, Christopher Perkins, and others. {@adventure Princes of the Apocalypse|PotA}. 2015.",
+								"Baur, Wolfgang, Steve Winter, and others. Hoard of the Dragon Queen. 2014.",
+								"Bonny, Ed, Jeff Grubb, Rich Redman, Skip Williams, and Steve Winter. Monster Manual II. 2002.",
+								"Boyd, Eric L. City of Splendors: Waterdeep. 2005.",
+								"Cordell, Bruce R., Ed Greenwood, and Chris Sims. Forgotten Realms Campaign Guide. 2008.",
+								"Doyle, Will. \"King of the Wolves.\" Dungeon 220. 2013.",
+								"Greenwood, Ed. Volo's Guide to the North. 1993.",
+								"Greenwood, Ed, and Jason Carl. Silver Marches. 2002.",
+								"Greenwood, Ed, with Sean K Reynolds. \"Wyrms of the North: Iymrith.\" Dragon 242. 1997.",
+								"Greenwood, Ed, Sean K Reynolds, Skip Williams, and Rob Heinsoo. Forgotten Realms Campaign Setting. 2001.",
+								"Jaquays, Jennell, writing as Paul Jaquays. The Savage Frontier. 1988.",
+								"Kenson, Steve, and others. {@book Sword Coast Adventurer's Guide|SCAG}. 2015.",
+								"Salvatore, R.A., James Wyatt, and Jeffrey Ludwig. Legacy of the Crystal Shard. 2013.",
+								"Schend, Steven E., and Thomas M. Reid. Wyrmskull Throne. 1999.",
+								"Selinker, Michael. \"Lear the Giant King.\" Dungeon 78. 2000.",
+								"Winninger, Ray. Giantcraft. 1995."
+							]
+						}
+					]
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "adventure/SKT/credits.webp"
+					},
+					"title": "On the cover: Heir to the Wyrmskull Throne, and indeed all giant-kind, the storm giant Serissa stands amidst the clouds, in the shadow of her mighty father, King Hekaton. Her contentious elder siblings, Mirran and Nym, occupy the forefront of this tempestuous illustration by the esteemed Tyler Jacobson."
+				}
+			]
 		}
 	]
 }

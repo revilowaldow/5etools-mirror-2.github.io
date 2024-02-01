@@ -33391,6 +33391,160 @@
 				}
 			],
 			"id": "4e7"
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Lead Designer",
+							"entries": [
+								"Christopher Perkins"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Designers",
+							"entries": [
+								"James J. Haeck, James Introcaso, Adam Lee, Matt Sernett"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Rules Development",
+							"entries": [
+								"Jeremy Crawford, Ben Petrisor, Kate Welch"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Story Consultants",
+							"entries": [
+								"Matthew Mercer, Charles Sanders"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Managing Editor",
+							"entries": [
+								"Jeremy Crawford"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Lead Editor",
+							"entries": [
+								"Christopher Perkins"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Editors",
+							"entries": [
+								"Michele Carter, Scott Fitzgerald Gray, Kim Mohan"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Art Director",
+							"entries": [
+								"Kate Irwin"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Additional Art Direction",
+							"entries": [
+								"Shauna Narciso, Richard Whitters"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Graphic Designer",
+							"entries": [
+								"Emi Tanji"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Cover Illustrator",
+							"entries": [
+								"Tyler Jacobson"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Interior Illustrators",
+							"entries": [
+								"Mark Behm, Eric Belisle, Zoltan Boros, Clint Cearley, Sidharth Chaturvedi, Daarken, Eric Deschamps, Olga Drebas, Leesha Hannigan, Ralph Horsley, Tyler Jacobson, Sam Keiser, Julian Kok, Alayna Lemmer, Christopher Moeller, Scott Murphy, Jim Pavelec, Claudio Pozas, Vincent Proce, Ned Rogers, Craig J Spearing, Jason Thompson, Cory Trego-Erdner, Richard Whitters, Mark Winters, Shawn Wood, Bayard Wu, Kieran Yanner"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Interior Cartographer",
+							"entries": [
+								"Dyson Logos"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Poster Map",
+							"entries": [
+								"Jason Engle"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Producers",
+							"entries": [
+								"Daniel Tovar, Matt Warren, Stan!"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Product Engineer",
+							"entries": [
+								"Cynda Callaway"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Imaging Technicians",
+							"entries": [
+								"Carmen Cheung, Kevin Yee"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Art Administration",
+							"entries": [
+								"David Gershman"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Prepress Specialist",
+							"entries": [
+								"Jefferson Dunlap"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Other D&D Team Members",
+							"entries": [
+								"Bart Carroll, Pelham Greene, Ari Levitch, Chris Lindsay, Jeremy Martin, Shelly Mazzanoble, Mike Mearls, Hilary Ross, Liz Schuh, Nathan Stewart, Greg Tito, Trish Yochum"
+							]
+						},
+						"Gratitude to Elliott Zastrow for his extensive research.",
+						"Special thanks to the hundreds of playtesters whose feedback made this adventure more fun at every turn."
+					]
+				}
+			]
 		}
 	]
 }

@@ -41367,6 +41367,203 @@
 		},
 		{
 			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						{
+							"type": "item",
+							"name": "Lead Designer",
+							"entries": [
+								"Christopher Perkins"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Creative Consultants",
+							"entries": [
+								"Tracy and Laura Hickman"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Designers",
+							"entries": [
+								"Adam Lee, Richard Whitters, Jeremy Crawford"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Managing Editor",
+							"entries": [
+								"Jeremy Crawford"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Editor",
+							"entries": [
+								"Kim Mohan"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Editorial Assistance",
+							"entries": [
+								"Scott Fitzgerald Gray"
+							]
+						},
+						{
+							"type": "item",
+							"name": "D&D Lead Designers",
+							"entries": [
+								"Mike Mearls, Jeremy Crawford"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Art Director",
+							"entries": [
+								"Kate Irwin"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Additional Art Direction",
+							"entries": [
+								"Shauna Narciso, Richard Whitters"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Graphic Designer",
+							"entries": [
+								"Emi Tanji"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Cover Illustrator",
+							"entries": [
+								"Ben Oliver"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Interior Illustrators",
+							"entries": [
+								"Dave Allsop, François Beauregard, Mark Behm, Eric Belisle, Zoltan Boros, Jedd Chevrier, Daarken, Lake Hurwitz, Chuck Lukacs, Howard Lyon, Ben Oliver, Adam Paquette, Rob Rey, Chris Seaman, Richard Whitters, Kieran Yanner"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Cartographers",
+							"entries": [
+								"François Beauregard, Mike Schley, Ben Wootten"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Project Managers",
+							"entries": [
+								"Neil Shinkle, Heather Fleming"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Product Engineer",
+							"entries": [
+								"Cynda Callaway"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Prepress Specialist",
+							"entries": [
+								"Jefferson Dunlap"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Other D&D Team Members",
+							"entries": [
+								"Greg Bilsland, Chris Dupuis, David Gershman, John Feil, Trevor Kidd, Christopher Lindsay, Shelly Mazzanoble, Ben Petrisor, Hilary Ross, Liz Schuh, Matt Sernett, Nathan Stewart, Greg Tito"
+							]
+						},
+						"This book is based on the 32-page D&D adventure Ravenloft published in 1983 by TSR, Inc. Here are that book's credits:",
+						{
+							"type": "item",
+							"name": "Designers",
+							"entries": [
+								"Tracy and Laura Hickman"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Editor",
+							"entries": [
+								"Curtis Smith"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Graphic Designer",
+							"entries": [
+								"Debra Stubbe"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Illustrator",
+							"entries": [
+								"Clyde Caldwell"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Cartographer",
+							"entries": [
+								"David C. Sutherland III"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Playtesters",
+							"entries": [
+								"Robert Alaniz,* Mal A'menz,* Glen Ausse, Jerry Behrendt, Teddy Benson, Anthony Caroselli,* Christopher D'Andrea,* Jason Fransella,* Jeff Galper, Elyssa Grant, Steve Heitke, Mary Hershey, Sterling Hershey, Justin Hicks, Shaun Horner, Donald Jacobs, James Krot, Yan Lacharité,* Jonathan Longstaff,* Michael LeClair, Ray Lillard, Eric Lopez, J.M., Matt Maranda,* Cris McDaniel, Randy Merkel, Lou Michelli,* Mike Mihalas,* Daniel Norton,* Lucas Pierce, Claudio Pozas,* John Proudfoot,* Rob Quillen II, Karl Resch,* Jason Riley, Sarah Riley, Arthur Severance,* Sam Sherry,* Zach Sielaff, David \"Oak\" Stark,* Jayson Thiry, Steve Townshend,* Kyle Turner,* Will Vaughn, Peter Youngs"
+							]
+						},
+						"{@i *This playtester provided feedback for a group.}"
+					]
+				},
+				{
+					"type": "inset",
+					"entries": [
+						"The following D&D books also provided material and inspiration:",
+						"Cordell, Bruce R. and James Wyatt. {@i Expedition to Castle Ravenloft}. 2006.",
+						"Elrod, P.N. I, Strahd: {@i The Memoirs of a Vampire}. 1993.",
+						"Hickman, Tracy and Laura. {@i Rahasia}. 1984.",
+						"Nesmith, Bruce with Andria Hayday. {@i Realm of Terror}. 1990.",
+						"Pozas, Claudio. \"Fair Barovia.\" {@i Dungeon 207}. 2012.",
+						"TSR, Inc. {@i Van Richten's Monster Hunter's Compendium, Volume One}. 1999.",
+						"\u2014\u2014\u2014. {@i Van Richten's Monster Hunter's Compendium, Volume Three}. 2000."
+					]
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "adventure/CoS/credits.webp"
+					},
+					"title": "On the cover: the master of Ravenloft is having guests for dinner, and you are invited. Ben Oliver sheds light on the vampire Strahd von Zarovich, whose dark past is a tale to be told, and whose evil knows no bounds."
+				}
+			]
+		},
+		{
+			"type": "section",
 			"name": "Poster Map",
 			"page": 257,
 			"entries": [
@@ -41375,18 +41572,14 @@
 					"href": {
 						"type": "internal",
 						"path": "adventure/CoS/218-poster-barovia.webp"
-					},
-					"width": 5355,
-					"height": 3775
+					}
 				},
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "adventure/CoS/219-poster-castle-ravenloft.webp"
-					},
-					"width": 7000,
-					"height": 4948
+					}
 				}
 			],
 			"id": "0a1"

@@ -114,7 +114,10 @@
 				"thieves' cant",
 				"plus any one language"
 			],
-			"cr": "5",
+			"cr": {
+				"cr": "5",
+				"lair": "6"
+			},
 			"trait": [
 				{
 					"name": "Legendary Resistance (2/Day)",
@@ -592,7 +595,10 @@
 				"Abyssal",
 				"telepathy 120 ft."
 			],
-			"cr": "22",
+			"cr": {
+				"cr": "22",
+				"lair": "23"
+			},
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
@@ -1523,7 +1529,10 @@
 				"thieves' cant",
 				"plus any one language"
 			],
-			"cr": "11",
+			"cr": {
+				"cr": "11",
+				"lair": "12"
+			},
 			"trait": [
 				{
 					"name": "Legendary Resistance (3/Day)",
@@ -4505,7 +4514,10 @@
 				"telepathy 120 ft.",
 				"Thieves' cant"
 			],
-			"cr": "17",
+			"cr": {
+				"cr": "17",
+				"lair": "18"
+			},
 			"trait": [
 				{
 					"name": "Alien Mind",
@@ -5619,7 +5631,10 @@
 			"languages": [
 				"all"
 			],
-			"cr": "21",
+			"cr": {
+				"cr": "21",
+				"lair": "22"
+			},
 			"trait": [
 				{
 					"name": "Inviolate Presence",

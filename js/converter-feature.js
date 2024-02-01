@@ -52,6 +52,8 @@ class BaseParserFeature extends BaseParser {
 			parts.forEach(pt => {
 				pt = pt.trim();
 
+				if (/^the ability to cast at least one spell$/i.test(pt)) return pre.spellcasting = true;
+
 				if (/^spellcasting$/i.test(pt)) return pre.spellcasting2020 = true;
 				if (/^pact magic feature$/i.test(pt)) return pre.spellcasting2020 = true;
 

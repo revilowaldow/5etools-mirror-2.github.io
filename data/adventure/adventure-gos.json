@@ -35273,6 +35273,256 @@
 					]
 				}
 			]
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						{
+							"type": "item",
+							"name": "Lead Designers",
+							"entries": [
+								"Mike Mearls, Kate Welch"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Designers",
+							"entries": [
+								"Wolfgang Baur, James Introcaso, Joseph A. McCullough, Jon Sawatsky, Steve Winter"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Design Consultants",
+							"entries": [
+								"Will Ansell, Myke Cole"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Developers",
+							"entries": [
+								"Jeremy Crawford, Ben Petrisor, F. Wesley Schneider"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Playtest Coordinators",
+							"entries": [
+								"Bill Benham, Christopher Lindsay"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Playtest Analyst",
+							"entries": [
+								"Ben Petrisor"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Lead Editor",
+							"entries": [
+								"Kim Mohan"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Editors",
+							"entries": [
+								"Michele Carter, Scott Fitzgerald Gray, F. Wesley Schneider"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Art Director",
+							"entries": [
+								"Kate Irwin"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Graphic Design",
+							"entries": [
+								"Emi Tanji, Trish Yochum"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Concept Artist",
+							"entries": [
+								"Shawn Wood"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Senior Art Director",
+							"entries": [
+								"Richard Whitters"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Senior Creative Art Director",
+							"entries": [
+								"Shauna Narciso"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Cover Illustrator",
+							"entries": [
+								"Grzegorz Rutkowski"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Cartographers",
+							"entries": [
+								"Dyson Logos, Mike Schley"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Producer",
+							"entries": [
+								"Dan Tovar"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Project Managers",
+							"entries": [
+								"Bill Benham, Stan!, Matt Warren"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Product Engineer",
+							"entries": [
+								"Cynda Callaway"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Interior Illustrators",
+							"entries": [
+								"Even Amundsen, Joachim Barrum, Mark Behm, Eric Belisle, Zoltan Boros, Sam Burley, Sidharth Chaurvedi, Conceptopolis, Olga Drebas, Wayne England, Justin Gerard, Leesha Hannigan, Lake Hurwitz, Tyler Jacobson, Sam Keiser, Julian Kok, Michael Komarck, Slawomir Maniak, Brynn Metheney, Christopher Moeller, Scott Murphy, Jim Nelson, Vincent Proce, Chris Rallis, Chris Seaman, Rudy Siswanto, David Sladek, Francis Tsai, Franz Vohwinkel, Richard Whitters, Shawn Wood, Mark Zug"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Imaging Technician",
+							"entries": [
+								"Kevin Yee"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Art Administration",
+							"entries": [
+								"David Gershman"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Prepress Specialist",
+							"entries": [
+								"Jefferson Dunlap"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Senior Director Global Brand Strategy",
+							"entries": [
+								"Nathan Stewart"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Director Licensing & Publishing",
+							"entries": [
+								"Liz Schuh"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Licensing Manager",
+							"entries": [
+								"Hilary Ross"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Digital Marketing Manager",
+							"entries": [
+								"Bart Carroll"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Senior Communications Manager",
+							"entries": [
+								"Greg Tito"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Manager Global Brand Marketing",
+							"entries": [
+								"Anna Vo"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Brand Manager",
+							"entries": [
+								"Shelly Mazzanoble"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Associate Brand Manager",
+							"entries": [
+								"Pelham Greene"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Principal Game Designer",
+							"entries": [
+								"Chris Perkins"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Narrative Designers",
+							"entries": [
+								"Adam Lee, Ari Levitch"
+							]
+						}
+					]
+				},
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Playtesters",
+							"entries": [
+								"Adam Howard, Adrian Farmer, Alan Drake, Alex D'Amico, Alex Forsyth, Alex Kammer, Alex McClead, Alex Wilson, Alexander Kretov, Alicia Cisneros, Alicia Graham, Amanda Stone, Amber Spiva, Andre Battrick, Andrew Cornejo, Andrew Epps, Andrew Kujawa, Andy Baker, Anthony Vicini, Ari Gonzalez, Ariel Harsh, Arthur Wright, Ashleigh Bishop, Austin Fields, Austin Haffke, Austin Sanders, Beau Coker, Benjamin Shindewolfe, Beverly Stauffer, Bill Kerney, Boyd Bennett, Brenda Hopper, Brendan Barr, Broderick Jones, Bruce LaClair, Cait Davis, Cameron Scruggs, Cassidy Schenley, Charles Wright, Chase Louviere, Cherie Bruce, Cheryl Pierce, Chloe Mirzayi, Chris Davis, Chris Kensta, Chris McGovern, Chris Wood, Christian Franz, Christian Hancock, Christian Zoltar Bellomo, Christine Weidenbach, Christopher Hackler, Christopher Scoggin, Christopher Wood, Chuck Benscoter, Cindy Moore, Clayton Embrey, Cliff Hanger, Cody Helms, Collin Wheeler, Connor Schenck, Connor Self, Craig Domres, Dace McFadden, Dan Beam, Dan DeHaan, Dan Harsh, Dan Harsh, Dan Klinestiver, Daniel E. Chapman II, Daniel 'KBlin' Oliveira, Daniel Klinestiver, Daniel Tye, Dario Berto, Dave Backer, Dave Knighton, David \"Cameron\" Gidcumb, David Morris, David Schnoll, David Woods, Derek Gray, Derek Myers, Devon Argo, Doug Davis, Dylan Cole, Ed Kraft, Emre Cihangir, Eric Kooistra, Erik Grenter, Evan Jackson, Evan Rodarte, Evan Schulz, Flo Velasquez, Gabriel Soares Machado, Gabrielle Zulaski, Génesis Martínez, Greg Lyman, Greg Smith, Grigory Parovichnikov, Gus Reyer, Haig Morrison, Heather Coleman, Héctor Ramírez, Howard Hubbard, Hugo Mendieta, Ian Hawthorne, Ian Kimmel, Ian Rick, Jackson Thomas, Jacob Benscoter, Jacob Dalton, Jacob DelMauro, Jamal Ali, James Armstead, James Endicott, James Hazel, James Holland, James Kirtley, James Schweiss, Jamie Shepperson, Jared Fegan, Jason Conwell, Jason Jarosz, Jason Lopez, Jason Matteson, Jason Thomas, Jawsh Murdock, Jay Africa, Jay Elmore, Jay Jani, Jeanette Wiley, Jeffery \"JJ\" Zielinski, Jeffery Barnes, Jennifer Couture-Swarner, Jeramie Cooper, Jeremiah Gaddis, Jeremiah Popa, Jerrin Chambers, Jesse Smith, Jessica Goff, Jia Jian Tin, Jim Berrier, Jim Quirk, João Eduardo Dantas, JoDee Murch, Joe Boergjes, Joe Grover, Joe Maranda, Joel González, Joel Thompson, John Amann, John Fulmer, John Horan, John Mangrum, John Stickles, John W Mangrum, Jon Lamkin, Jonathan Connor Self, Jonathan Longstaff, Jordan Brass, Jorge Sepúlveda, Joseph Kauffman III, Joseph Schenck III, Joseph Simpson Ph.D, Joshua Fredrickson, Joshua Hart, Joshua Levin, Julie Wright, Julius Smith, Justin Faris, Kalani Jasmine Vernon, Kalani Vernon, Karl Rader, Karl Resch, Kate Tollefson, Katelyn Popa, Kathy Dunn, Kelly Lewis, Ken Beckman, Ken Breese, Kenneth Mahan, Kirsten Thomas, Krupal Desai, Kurt Waldkirch, Kyle Jackson, Lance Schantz, Laura Wiley, Logan Ruggaber, Logan Thomas Ruggaber, Lou Michelli, Luca Andreolli, Lucas Thode, Luke Absolum Reid, Lyza Bryandinskaya, Mackenzie hoffman, Magnus Morgan, Marc Soucy, Marcello De Velazquez, Mark Detwiler, Martin Lennartz, Mary Hershey, Matt Burton, Matt Maranda, Matt Warwick, Matteo La Rosa, Matthew Austin, Matthew Roderick, Matthew Stanford, Matthew Talley, Matthew Warwick, Max Leu, Melissa Bassett, Michael Anderson, Michael Campfield, Michael Dunn, Michael Obermeier, Michael Patrick Campfield, Mike Kelly, Mike Olson, Mike Thomas, Miranda McFadden, Natalie Tabor, Nathaniel L. Arons, Neil Hamamoto, Nic Tollefson, Nick LaClair, Nina Wong, Olga Shvedova, Patrick Ian Rick, Paul Aparicio, Paul Thomas, Philip Koop, Rachel Aubrecht, Ralph Bohn Jr, Ramiel Louie, Randall Harris, Richard Nunn, Rob Parker, Robert Ditsch, Robert Quillen II, Robert Scott, Rod Ehrman, Roy Adam Lentz, Russ Paulsen, Ryan Hagan, Samuel Brett, Scott Moore, Sean Freeland, Sean Payne, Sergey Gvildis, Shani Knighton, Stacy McGovern, Stephen Milton, Sterling Hershey, Steve Townshend, Tabitha Samuel, Tashfeen Bhimdi, Thelem Eysier, Thomas Kocanjer, Thomas Whitney, Tim Langen, Tom Blackmon, Tom Duchaine, Tony Lovett, Tony Stremanos, Tony Vicini, Tori Backer, Travis Fuller, Tristan Andrews, Tristan Hendrix, Troy Sandlin, Tyler Urbanski, Vanessa Fernandes Pinheiro, Victor Barros Pimentel, Wayne Chang, Wayne Fuller, Will Hoffman, Will Vaughn, Willi Burger, Xavier Stepniak, Zachary Pickett"
+							]
+						}
+					]
+				}
+			]
 		}
 	]
 }

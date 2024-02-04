@@ -341,6 +341,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The lich casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 17}):"
 					],

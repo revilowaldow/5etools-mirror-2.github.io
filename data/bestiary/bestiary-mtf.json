@@ -279,6 +279,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The oblex's innate spellcasting ability is Intelligence (spell save {@dc 15}). It can innately cast the following spells, requiring no components:"
 					],
@@ -941,6 +942,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The amnizu's innate spellcasting ability is Intelligence (spell save {@dc 19}, {@hit 11} to hit with spell attacks). The amnizu can innately cast the following spells, requiring no material components:"
 					],
@@ -1499,6 +1501,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The eladrin's innate spellcasting ability is Charisma (spell save {@dc 16}). It can innately cast the following spells, requiring no material components:"
 					],
@@ -1702,6 +1705,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Bael's innate spellcasting ability is Charisma (spell save {@dc 21}, {@hit 13} to hit with spell attacks). He can innately cast the following spells, requiring no material components:"
 					],
@@ -2124,6 +2128,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Baphomet's spellcasting ability is Charisma (spell save {@dc 18}). He can innately cast the following spells, requiring no material components:"
 					],
@@ -2344,6 +2349,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The berbalang's innate spellcasting ability is Intelligence (spell save {@dc 13}). The berbalang can innately cast the following spells, requiring no material components:"
 					],
@@ -2673,6 +2679,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The abishai is a 13th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 20}, {@hit 12} to hit with spell attacks). The abishai has the following wizard spells prepared:"
 					],
@@ -3894,6 +3901,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The deathlock's innate spellcasting ability is Charisma (spell save {@dc 13}). It can innately cast the following spells, requiring no material components:"
 					],
@@ -3906,6 +3914,7 @@
 				},
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The deathlock is a 5th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 13}, {@hit 5} to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells:"
 					],
@@ -4207,6 +4216,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The deathlock's innate spellcasting ability is Charisma (spell save {@dc 14}). It can innately cast the following spells, requiring no material components:"
 					],
@@ -4219,6 +4229,7 @@
 				},
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The deathlock is a 10th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 14}, {@hit 6} to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells:"
 					],
@@ -4555,6 +4566,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The wight's innate spellcasting ability is Charisma (spell save {@dc 13}). It can innately cast the following spells, requiring no verbal or material components:"
 					],
@@ -4738,6 +4750,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Demogorgon's spellcasting ability is Charisma (spell save {@dc 23}). Demogorgon can innately cast the following spells, requiring no material components:"
 					],
@@ -5059,6 +5072,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The derro savant is a 5th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 12}, {@hit 4} to hit with spell attacks). The derro knows the following sorcerer spells:"
 					],
@@ -5244,6 +5258,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The dhergoloth's innate spellcasting ability is Charisma (spell save {@dc 10}). It can innately cast the following spells, requiring no material components:"
 					],
@@ -5558,6 +5573,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The drow's innate spellcasting ability is Charisma (spell save {@dc 16}). It can innately cast the following spells, requiring no material components:"
 					],
@@ -5575,6 +5591,7 @@
 				},
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The drow is a 16th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 16}, {@hit 8} to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells:"
 					],
@@ -5808,6 +5825,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The drow's innate spellcasting ability is Charisma (spell save {@dc 18}). It can innately cast the following spells, requiring no material components:"
 					],
@@ -5825,6 +5843,7 @@
 				},
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The drow is a 11th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 18}, {@hit 10} to hit with spell attacks). It has the following wizard spells prepared:"
 					],
@@ -6056,6 +6075,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The drow's innate spellcasting ability is Charisma (spell save {@dc 13}). He can innately cast the following spells, requiring no material components:"
 					],
@@ -6249,6 +6269,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The drow's innate spellcasting ability is Charisma (spell save {@dc 18}). She can innately cast the following spells, requiring no material components:"
 					],
@@ -6271,6 +6292,7 @@
 				},
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The drow is a 12th-level spellcaster. Her spellcasting ability is Wisdom (spell save {@dc 18}, {@hit 10} to hit with spell attacks). She has the following cleric spells prepared:"
 					],
@@ -6522,6 +6544,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The drow's innate spellcasting ability is Charisma (spell save {@dc 20}). She can innately cast the following spells, requiring no material components:"
 					],
@@ -6544,6 +6567,7 @@
 				},
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The drow is a 20th-level spellcaster. Her spellcasting ability is Wisdom (spell save {@dc 19}, {@hit 11} to hit with spell attacks). The drow has the following cleric spells prepared:"
 					],
@@ -6833,6 +6857,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The drow's innate spellcasting ability is Charisma (spell save {@dc 13}). It can innately cast the following spells, requiring no material components:"
 					],
@@ -7029,6 +7054,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting (Psionics)",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The duergar despot's innate spellcasting ability is Intelligence (spell save {@dc 12}). It can cast the following spells, requiring no components:"
 					],
@@ -7745,6 +7771,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting (Psionics)",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The duergar's innate spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). It can innately cast the following spells, requiring no components:"
 					],
@@ -8358,6 +8385,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The dybbuk's innate spellcasting ability is Charisma (spell save {@dc 12}). It can innately cast the following spells, requiring no material components:"
 					],
@@ -8810,6 +8838,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The oblex's innate spellcasting ability is Intelligence (spell save {@dc 18}). It can innately cast the following spells, requiring no material components:"
 					],
@@ -9465,6 +9494,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Fraz-Urb'luu's spellcasting ability is Charisma (spell save {@dc 23}). Fraz-Urb'luu can innately cast the following spells, requiring no material components:"
 					],
@@ -9828,6 +9858,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Geryon's innate spellcasting ability is Charisma (spell save {@dc 21}). He can innately cast the following spells, requiring no material components:"
 					],
@@ -10220,6 +10251,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting (Psionics)",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The githyanki's innate spellcasting ability is Intelligence (spell save {@dc 15}, {@hit 7} to hit with spell attacks). It can innately cast the following spells, requiring no components:"
 					],
@@ -10241,6 +10273,7 @@
 				},
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The githyanki is an 8th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 15}, {@hit 7} to hit with spell attacks). The githyanki has the following wizard spells prepared:"
 					],
@@ -10413,6 +10446,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting (Psionics)",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The githyanki's innate spellcasting ability is Intelligence (spell save {@dc 15}, {@hit 7} to hit with spell attacks). It can innately cast the following spells, requiring no components:"
 					],
@@ -10564,6 +10598,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting (Psionics)",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The githyanki's innate spellcasting ability is Intelligence (spell save {@dc 16}, {@hit 8} to hit with spell attacks). It can innately cast the following spells, requiring no components:"
 					],
@@ -10731,6 +10766,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting (Psionics)",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The anarch's innate spellcasting ability is Wisdom (spell save {@dc 18}, {@hit 10} to hit with spell attacks). It can innately cast the following spells, requiring no components:"
 					],
@@ -10890,6 +10926,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting (Psionics)",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The githzerai's innate spellcasting ability is Wisdom (spell save {@dc 16}, {@hit 8} to hit with spell attacks). It can innately cast the following spells, requiring no components:"
 					],
@@ -11041,6 +11078,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The gloom weaver's innate spellcasting ability is Charisma (spell save {@dc 16}, {@hit 8} to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
 					],
@@ -11062,6 +11100,7 @@
 				},
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The gloom weaver is a 12th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 16}, {@hit 8} to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells:"
 					],
@@ -11394,6 +11433,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Graz'zt's spellcasting ability is Charisma (spell save {@dc 23}). He can innately cast the following spells, requiring no material components:"
 					],
@@ -11628,6 +11668,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The abishai's innate spellcasting ability is Charisma (spell save {@dc 17}). It can innately cast the following spells, requiring no material components:"
 					],
@@ -12132,6 +12173,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Hutijin's innate spellcasting ability is Charisma (spell save {@dc 22}). He can innately cast the following spells, requiring no material components:"
 					],
@@ -12409,6 +12451,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The hydroloth's innate spellcasting ability is Intelligence (spell save {@dc 16}). It can innately cast the following spells, requiring no material components:"
 					],
@@ -12768,6 +12811,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Juiblex's spellcasting ability is Charisma (spell save {@dc 18}, {@hit 10} to hit with spell attacks). Juiblex can innately cast the following spells, requiring no material components:"
 					],
@@ -13426,6 +13470,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The marut's innate spellcasting ability is Intelligence (spell save {@dc 20}). The marut can innately cast the following spell, requiring no material components."
 					],
@@ -14034,6 +14079,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The merrenoloth's innate spellcasting ability is Intelligence (spell save {@dc 13}). It can innately cast the following spells, requiring no material components:"
 					],
@@ -14244,6 +14290,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Moloch's innate spellcasting ability is Charisma (spell save {@dc 21}). He can innately cast the following spells, requiring no material components:"
 					],
@@ -14511,6 +14558,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The molydeus's innate spellcasting ability is Charisma (spell save {@dc 22}). It can innately cast the following spells, requiring no material components:"
 					],
@@ -14894,6 +14942,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The nagpa is a 15th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 20}, {@hit 12} to hit with spell attacks). A nagpa has the following wizard spells prepared:"
 					],
@@ -16193,6 +16242,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The oinoloth's innate spellcasting ability is Charisma (spell save {@dc 16}). It can innately cast the following spells, requiring no material components:"
 					],
@@ -16428,6 +16478,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Orcus's spellcasting ability is Charisma (spell save {@dc 23}, {@hit 15} to hit with spell attacks). He can innately cast the following spells, requiring no material components:"
 					],
@@ -17233,6 +17284,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The retriever's innate spellcasting ability is Wisdom (spell save {@dc 13}). The retriever can innately cast the following spells, requiring no material components."
 					],
@@ -17944,6 +17996,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The sibriex's innate spellcasting ability is Charisma (spell save {@dc 21}). It can innately cast the following spells, requiring no material components:"
 					],
@@ -18391,6 +18444,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The skull lord is a 13th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 18}, {@hit 10} to hit with spell attacks). The skull lord knows the following sorcerer spells:"
 					],
@@ -18636,6 +18690,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The soul monger's innate spellcasting ability is Intelligence (spell save {@dc 16}, {@hit 8} to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
 					],
@@ -18979,6 +19034,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The eladrin's innate spellcasting ability is Charisma (spell save {@dc 16}). It can innately cast the following spells, requiring no material components:"
 					],
@@ -19392,6 +19448,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The larva mage's innate spellcasting ability is Charisma (spell save {@dc 16}, {@hit 8} to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
 					],
@@ -19875,6 +19932,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The steel predator's innate spellcasting ability is Wisdom. The steel predator can innately cast the following spells, requiring no components:"
 					],
@@ -21328,6 +21386,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Titivilus's innate spellcasting ability is Charisma (spell save {@dc 21}). He can innately cast the following spells, requiring no material components:"
 					],
@@ -21691,6 +21750,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The tortle is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). It has the following druid spells prepared:"
 					],
@@ -22643,6 +22703,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The eladrin's innate spellcasting ability is Intelligence (spell save {@dc 16}). It can innately cast the following spells, requiring no material components:"
 					],
@@ -22847,6 +22908,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The yagnoloth's innate spellcasting ability is Charisma (spell save {@dc 16}). It can innately cast the following spells, requiring no material components:"
 					],
@@ -23069,6 +23131,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Yeenoghu's spellcasting ability is Charisma (spell save {@dc 17}, {@hit 9} to hit with spell attacks). He can innately cast the following spells, requiring no material components:"
 					],
@@ -23632,6 +23695,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Zariel's innate spellcasting ability is Charisma (spell save {@dc 26}). She can innately cast the following spells, requiring no material components:"
 					],
@@ -23900,6 +23964,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Zuggtmoy's spellcasting ability is Charisma (spell save {@dc 22}). She can innately cast the following spells, requiring no material components:"
 					],

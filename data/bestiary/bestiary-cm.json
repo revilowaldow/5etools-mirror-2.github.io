@@ -263,6 +263,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Quill casts one of the following spells using Charisma as the spellcasting ability (save {@dc 17}):"
 					],
@@ -721,6 +722,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The ghost casts one of the following spells, using Charisma as the spellcasting ability and requiring no material components:"
 					],
@@ -1210,6 +1212,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The fungal servant is a 10th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 17}, {@hit 9} to hit with spell attacks). The fungal servant has the following cleric spells prepared:"
 					],
@@ -1968,6 +1971,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"K'Tulah is a 4th-level spellcaster. K'Tulah's spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). K'Tulah has the following druid spells prepared:"
 					],
@@ -2226,6 +2230,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The lich casts one of the following spells using Wisdom as the spellcasting ability (save {@dc 19}):"
 					],
@@ -2536,6 +2541,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The sage casts one of the following spells, using Intelligence as the spellcasting ability (save {@dc 14}, {@hit 6} to hit with spell attacks):"
 					],
@@ -2722,6 +2728,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Miirym casts one of the following spells, using Charisma as the spellcasting ability (save {@dc 21}) and requiring no material components:"
 					],
@@ -3060,6 +3067,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Nintra casts one of the following spells, using Charisma as the spellcasting ability (save {@dc 20}) and requiring no material components:"
 					],
@@ -3351,6 +3359,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Ram Sugar is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 11}, {@hit 3} to hit with spell attacks). Ram Sugar has the following cleric spells prepared:"
 					],
@@ -3498,6 +3507,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The sage casts one of the following spells, using Intelligence as the spellcasting ability (save {@dc 14}, {@hit 6} to hit with spell attacks):"
 					],
@@ -4370,6 +4380,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Valin Sarnaster is a 10th-level spellcaster. Her spellcasting ability is Wisdom (spell save {@dc 17}, {@hit 9} to hit with spell attacks). Valin has the following cleric spells prepared:"
 					],

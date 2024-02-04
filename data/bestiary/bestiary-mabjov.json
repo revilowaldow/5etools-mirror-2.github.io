@@ -184,6 +184,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Aribeth is a 11th-level spellcaster. Her spellcasting ability is Charisma (spell save {@dc 15}, {@hit 7} to hit with spell attacks). Aribeth has the following paladin spells prepared:"
 					],
@@ -414,6 +415,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Baalzebul's innate spellcasting ability is Charisma (spell save {@dc 24}, {@hit 16} to hit with spell attacks). He can innately cast the following spells, requiring no material components:"
 					],
@@ -685,6 +687,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The bebilith can innately cast the following spell, requiring no material components:"
 					],
@@ -1444,6 +1447,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Borivik is a 11th-level spellcaster. His spellcasting ability is Wisdom (spell save {@dc 15}, {@hit 7} to hit with spell attacks). Borivik has the following ranger spells prepared:"
 					],
@@ -1619,6 +1623,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Cornelius Watson is an 18th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 17}, {@hit 9} to hit with spell attacks). Cornelius Watson has the following wizard spells prepared:"
 					],
@@ -1848,6 +1853,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Cryonax's innate spellcasting ability is Charisma (spell save 21, {@hit 13} to hit with spell attacks). Cryonax can innately cast the following spells, requiring no material components:"
 					],
@@ -2075,6 +2081,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Dagryn's innate spellcasting ability is Charisma (spell save {@dc 13}). Dagryn can innately cast the following spells, requiring no material components:"
 					],
@@ -2088,6 +2095,7 @@
 				},
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Dagryn is a 11th-level spellcaster. His spellcasting ability is Charisma (save {@dc 13}, {@hit 5} to hit with spell attacks). He regains his expended spell slots when he finishes a short or long rest. He knows the following warlock spells:"
 					],
@@ -2263,6 +2271,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Darien's innate spellcasting ability is Charisma. She can innately cast the following spells (spell save {@dc 16}, {@hit 8} to hit with spell attacks), requiring no material components:"
 					],
@@ -2285,6 +2294,7 @@
 				},
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Darien is a 15th-level spellcaster. Her spellcasting ability is Charisma (save {@dc 16}, {@hit 8} to hit with spell attacks). She regains her expended spell slots when she finishes a short or long rest. She knows the following warlock spells:"
 					],
@@ -2794,6 +2804,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The kelubar's innate spellcasting ability is Charisma (spell save {@dc 16}, {@hit 8} to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
 					],
@@ -3028,6 +3039,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The shator's innate spellcasting ability is Charisma (spell save {@dc 18}, {@hit 10} to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
 					],
@@ -3213,6 +3225,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The dread doppelganger's spellcasting ability is Intelligence (spell save {@dc 14}). It can innately cast the following spells, requiring no components:"
 					],
@@ -3359,6 +3372,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Edwin is an 18th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 18}, {@hit 12} to hit with spell attacks). Edwin has the following wizard spells prepared:"
 					],
@@ -3589,6 +3603,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Eo Ashmajiir is an 18th-level spellcaster. Her spellcasting ability is Charisma (spell save {@dc 17}, {@hit 9} to hit with spell attacks). Eo can cast the following spells:"
 					],
@@ -3803,6 +3818,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Faldorn is a 18th-level spellcaster. Her spellcasting ability is Wisdom (spell save {@dc 18}, {@hit 12} to hit with spell attacks). She has the following druid spells prepared:"
 					],
@@ -4019,6 +4035,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Flimp is a 14th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 16}, {@hit 8} to hit with spell attacks). Flimp has the following artificer spells prepared:"
 					],
@@ -4294,6 +4311,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The hamadryad's spellcasting ability is Charisma (spell save {@dc 12}). It can innately cast the following spells, requiring no components:"
 					],
@@ -4577,6 +4595,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Jaheira is a 15th-level spellcaster. Her spellcasting ability is Wisdom (spell save {@dc 18}, {@hit 10} to hit with spell attacks). She has the following druid spells prepared:"
 					],
@@ -4815,6 +4834,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Jon Irenicus is an 20th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 21}, {@hit 13} to hit with spell attacks). Jon Irenicus has the following wizard spells prepared:"
 					],
@@ -5352,6 +5372,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Lothar's innate spellcasting ability is Charisma (spell save {@dc 12}). Lothar can innately cast the following spells, requiring no material components:"
 					],
@@ -5364,6 +5385,7 @@
 				},
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Lothar is a 5th-level spellcaster. His spellcasting ability is Charisma (save {@dc 12}, {@hit 4} to hit with spell attacks). He regains his expended spell slots when he finishes a short or long rest. He knows the following warlock spells:"
 					],
@@ -5562,6 +5584,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Mephistopheles's innate spellcasting ability is Charisma (spell save {@dc 24}, {@hit 16} to hit with spell attacks). He can innately cast the following spells, requiring no material components:"
 					],
@@ -5597,6 +5620,7 @@
 				},
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Mephistopheles is a 15th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 26}, {@hit 18} to hit with spell attacks). Mephistopheles has the following spells prepared:"
 					],
@@ -6206,6 +6230,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Naes is a 18th-level spellcaster. His spellcasting ability is Wisdom (spell save {@dc 18}, {@hit 10} to hit with spell attacks). Naes has the following cleric spells prepared:"
 					],
@@ -6590,6 +6615,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Pazuzu's innate spellcasting ability is Charisma (spell save {@dc 24}, {@hit 16} to hit with spell attacks). He can innately cast the following spells, requiring no material components:"
 					],
@@ -6832,6 +6858,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Pelyious is a 9th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 15}, {@hit 7} to hit with spell attacks). Pelyious has the following wizard spells prepared:"
 					],
@@ -7053,6 +7080,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The phaerimm is a 15th-level spellcaster. It's innate spellcasting ability is Charisma (spell save {@dc 19}, {@hit 11} to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
 					],
@@ -7298,6 +7326,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Saemon is a 9th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 16}, {@hit 8} to hit with spell attacks). Saemon has the following wizard spells prepared:"
 					],
@@ -7519,6 +7548,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Sarevok is a 12th-level spellcaster. His spellcasting ability is Wisdom (spell save {@dc 16}, {@hit 8} to hit with spell attacks). Sarevok has the following cleric spells prepared:"
 					],
@@ -7731,6 +7761,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The sirene's spellcasting ability is Charisma (spell save {@dc 13}). It can innately cast the following spells, requiring no components:"
 					],
@@ -8180,6 +8211,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Ssendam's innate spellcasting ability is Charisma (spell save {@dc 23}, {@hit 15} to hit with spell attacks). Ssendam can innately cast the following spells, requiring no material components:"
 					],
@@ -8422,6 +8454,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Suldil Baldoriel is an 16th-level spellcaster. Her spellcasting ability is Charisma (spell save {@dc 17}, {@hit 9} to hit with spell attacks). Suldil can cast the following spells:"
 					],
@@ -9349,6 +9382,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Viconia's spellcasting ability is Charisma (spell save {@dc 15}). She can innately cast the following spells, requiring no material components:"
 					],
@@ -9365,6 +9399,7 @@
 				},
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Viconia is a 16th-level spellcaster. Her spellcasting ability is Wisdom (spell save {@dc 18}, {@hit 10} to hit with spell attacks). Viconia has the following cleric spells prepared:"
 					],
@@ -9582,6 +9617,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Viktor is a 16th-level spellcaster. His spellcasting ability is Charisma (spell save {@dc 15}, {@hit 7} to hit with spell attacks). Viktor has the following paladin spells prepared:"
 					],
@@ -10051,6 +10087,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Xan is a 9th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 14}, {@hit 6} to hit with spell attacks). Xan has the following wizard spells prepared:"
 					],
@@ -10242,6 +10279,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Xzar is an 16th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 17}, {@hit 12} to hit with spell attacks). Xzar has the following wizard spells prepared:"
 					],

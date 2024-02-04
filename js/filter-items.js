@@ -2,7 +2,16 @@
 
 class PageFilterEquipment extends PageFilter {
 	static _MISC_FILTER_ITEMS = [
-		"Item Group", "Bundle", "SRD", "Basic Rules", "Legacy", "Has Images", "Has Info", "Reprinted",
+		"Item Group",
+		"Bundle",
+		"SRD",
+		"Basic Rules",
+		"Legacy",
+		"Has Images",
+		"Has Info",
+		"Reprinted",
+		"Disadvantage on Stealth",
+		"Strength Requirement",
 	];
 
 	static _RE_FOUNDRY_ATTR = /(?:[-+*/]\s*)?@[a-z0-9.]+/gi;
@@ -91,6 +100,8 @@ class PageFilterEquipment extends PageFilter {
 		if (item.hasFluffImages || item.fluff?.images) item._fMisc.push("Has Images");
 		if (item.miscTags) item._fMisc.push(...item.miscTags.map(Parser.itemMiscTagToFull));
 		if (this._isReprinted({reprintedAs: item.reprintedAs, tag: "item", prop: "item", page: UrlUtil.PG_ITEMS})) item._fMisc.push("Reprinted");
+		if (item.stealth) item._fMisc.push("Disadvantage on Stealth");
+		if (item.strength != null) item._fMisc.push("Strength Requirement");
 
 		if (item.focus || item.name === "Thieves' Tools" || item.type === "INS" || item.type === "SCF" || item.type === "AT") {
 			item._fFocus = item.focus ? item.focus === true ? [...Parser.ITEM_SPELLCASTING_FOCUS_CLASSES] : [...item.focus] : [];

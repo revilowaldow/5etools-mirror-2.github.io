@@ -92,6 +92,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The amalgamation's innate spellcasting ability is Charisma (spell save {@dc 20}). It can innately cast the following spells, requiring no components:"
 					],
@@ -364,6 +365,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The wraith is an 8th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 13}, {@hit 5} to hit with spell attacks). The wraith knows the following sorcerer spells:"
 					],
@@ -545,6 +547,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The cavalier is an 8th-level spellcaster that uses Charisma as its spellcasting ability (spell save {@dc 13}; {@hit 5} to hit with spell attacks). They have the following paladin spells prepared:"
 					],
@@ -692,6 +695,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The chaplain is a 9th-level spellcaster that uses Wisdom as its spellcasting ability (spell save {@dc 12}; {@hit 4} to hit with spell attacks). They have the following cleric spells prepared:"
 					],
@@ -1618,6 +1622,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Eldrick Runeweaver is a 20th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 19}, {@hit 11} to hit with spell attacks). He can cast shield and invisibility at will and has the following wizard spells prepared:"
 					],
@@ -1986,6 +1991,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Eoghan is an 18th-level spellcaster. His spellcasting ability is Wisdom (spell save {@dc 17}, {@hit 9} to hit with spell attacks). He has the following druid spells prepared:"
 					],
@@ -2842,6 +2848,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The hedge mage is a 4th-level spellcaster that uses Intelligence as its spellcasting ability (spell save {@dc 12}; {@hit 4} to hit with spell attacks). The hedge mage has the following wizard spells prepared:"
 					],
@@ -3061,6 +3068,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Theodore Marshal is a 20th-level spellcaster. His spellcasting ability is Charisma (spell save {@dc 17}, {@hit 9} to hit with spell attacks). He has the following paladin spells prepared:"
 					],
@@ -3482,6 +3490,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Elias Drexel is a 20th-level spellcaster. His spellcasting ability is Wisdom (spell save {@dc 16}, {@hit 8} to hit with spell attacks). He knows the following ranger spells:"
 					],
@@ -3873,6 +3882,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Lucretia Mathias is a 20th-level spellcaster. Her spellcasting ability is Wisdom (spell save {@dc 20}, {@hit 12} to hit with spell attacks). She has the following cleric spells prepared:"
 					],
@@ -4397,6 +4407,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Oscar Yoren is a 9th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 14}, {@hit 6} to hit with spell attacks). Oscar Yoren has the following wizard spells prepared:"
 					],
@@ -4574,6 +4585,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The Pale Man is a 16th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 18}, {@hit 10} to hit with spell attacks). The Pale Man has the following wizard spells prepared:"
 					],
@@ -4922,6 +4934,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The Queen of Thieves' innate spellcasting ability is Intelligence. She can innately cast the following spells, requiring no material, somatic, or verbal components:"
 					],
@@ -4934,6 +4947,7 @@
 				},
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The Queen of Thieves is a 20th-level spellcaster. Her spellcasting ability is Intelligence (spell save {@dc 18}, {@hit 10} to hit with spell attacks). She has the following wizard spells prepared:"
 					],
@@ -5454,6 +5468,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Saint Gresha is an 8th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 13}, {@hit 5} to hit with spell attacks). Saint Gresha knows the following sorcerer spells:"
 					],
@@ -5604,6 +5619,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The scoundrel is a 3rd level spellcaster that uses Intelligence as its spellcasting ability (spell save {@dc 12}; {@hit 4} to hit with spell attacks). It knows the following spells from the wizard spell list:"
 					],
@@ -5858,6 +5874,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The urban ranger is an 8th-level spellcaster that uses Wisdom as its spellcasting ability (spell save {@dc 12}; {@hit 4} to hit with spell attacks). It knows the following spells from the ranger spell list:"
 					],
@@ -6159,6 +6176,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The warlock's innate spellcasting ability is Charisma. It can innately cast the following spells (spell save {@dc 12}, {@hit 4} to hit with spell attacks), requiring no material components:"
 					],
@@ -6271,7 +6289,8 @@
 			},
 			"tokenCredit": "Sidharth Chaturvedi",
 			"hasToken": true,
-			"hasFluff": true
+			"hasFluff": true,
+			"hasFluffImages": true
 		}
 	]
 }

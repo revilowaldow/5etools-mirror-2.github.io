@@ -1359,7 +1359,11 @@ class SpellcastingTraitConvert {
 
 	static _parseSpellcasting ({ent, isMarkdown, displayAs, actions, reactions}) {
 		let hasAnyHeader = false;
-		const spellcastingEntry = {"name": ent.name, "headerEntries": [this._parseToHit(ent.entries[0])]};
+		const spellcastingEntry = {
+			"name": ent.name,
+			"type": "spellcasting",
+			"headerEntries": [this._parseToHit(ent.entries[0])],
+		};
 		ent.entries.forEach((thisLine, i) => {
 			thisLine = thisLine.replace(/,\s*\*/g, ",*"); // put asterisks on the correct side of commas
 			if (i === 0) return;

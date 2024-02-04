@@ -9771,6 +9771,9 @@
 			"name": "Skeleton",
 			"source": "DMG",
 			"page": 282,
+			"creatureTypes": [
+				"undead"
+			],
 			"size": [
 				"M"
 			],
@@ -9798,6 +9801,13 @@
 				"poisoned"
 			],
 			"entries": [
+				{
+					"type": "entries",
+					"name": "Creature Type",
+					"entries": [
+						"You are Undead."
+					]
+				},
 				{
 					"type": "entries",
 					"name": "Brittle Bones",
@@ -11434,6 +11444,9 @@
 			"name": "Zombie",
 			"source": "DMG",
 			"page": 282,
+			"creatureTypes": [
+				"undead"
+			],
 			"size": [
 				"M"
 			],
@@ -11459,6 +11472,13 @@
 				"poisoned"
 			],
 			"entries": [
+				{
+					"type": "entries",
+					"name": "Creature Type",
+					"entries": [
+						"You are Undead."
+					]
+				},
 				{
 					"type": "entries",
 					"name": "Undead Fortitude",

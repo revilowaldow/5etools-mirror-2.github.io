@@ -2645,5 +2645,10 @@
 		"ver": "1.199.1",
 		"date": "2024-02-01",
 		"txt": "- Added \"Mark Card as Drawn\" button to Decks page\n- Added \"Time\" filters to Recipes page _[note that, currently, only homebrew recipes have time data on which to filter]_ \n- Fixed CR Scaler crash when scaling no-modifier damage rolls at low CRs\n- Fixed CR Scaler crash when scaling fixed (i.e., no roll) damage numbers\n- (Brew) Added support for \"dexterityMax\" on non-medium armor\n- (Brew) Improved Feat Text Converter \"spellcasting\" handling\n- (Brew) Added support for short-form range units to Spell Text Converter\n- (Brew) Fixed Spell Text Converter \"missing property\" validation raising false positives\n- (Brew) Fixed crash when rendering demo page as Markdown\n- (Fixed typos/added tags)"
+	},
+	{
+		"ver": "1.199.2",
+		"date": "2024-02-04",
+		"txt": "- Added \"Disadvantage on Stealth\" and \"Strength Requirement\" filters to Items page\n- (Brew) Added Creature Text Converter support for vulgar fraction characters\n- (Fixed typos/added tags)"
 	}
 ]

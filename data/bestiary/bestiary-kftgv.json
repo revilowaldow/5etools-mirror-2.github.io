@@ -388,6 +388,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Charmayne casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 17}):"
 					],
@@ -783,6 +784,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting (Humanoid or Hybrid Form Only)",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Eliphas casts one of the following spells, using Intelligence as the spellcasting ability (save {@dc 15}):"
 					],
@@ -1229,6 +1231,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The eldritch horror casts one of the following spells, requiring no components and using Intelligence as the spellcasting ability (save {@dc 14}):"
 					],
@@ -1423,6 +1426,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Markos casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 13}):"
 					],
@@ -1946,6 +1950,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Sythian casts one of the following spells, using Charisma as the spellcasting ability (spell save {@dc 14}):"
 					],
@@ -2168,6 +2173,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Tockworth casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability (spell save {@dc 14}):"
 					],

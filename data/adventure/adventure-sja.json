@@ -3615,6 +3615,456 @@
 					]
 				}
 			]
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Orientation",
+					"entries": [
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Project Leads",
+									"entries": [
+										"Chris Lindsay, Chris Tulach, Travis Woodall"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Writer",
+									"entries": [
+										"Will Doyle"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Editors",
+									"entries": [
+										"Scott Fitzgerald Gray, Christopher Perkins"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Graphic Design",
+									"entries": [
+										"Stacey Allan"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Cover Illustrator",
+									"entries": [
+										"Max Dunbar"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Interior Illustrators",
+									"entries": [
+										"Kent Davis, Max Dunbar, Warren Mahy"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Cartographer",
+									"entries": [
+										"Stacey Allan, Will Doyle, Dyson Logos"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Sensitivity Lead",
+									"entries": [
+										"Ma'at Crook"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Trial by Fire",
+					"entries": [
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Project Leads",
+									"entries": [
+										"Chris Lindsay, Chris Tulach, Travis Woodall"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Writer",
+									"entries": [
+										"Rich Lescouflair"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Editors",
+									"entries": [
+										"Scott Fitzgerald Gray, Christopher Perkins"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Graphic Design",
+									"entries": [
+										"Stacey Allan"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Cover Illustrator",
+									"entries": [
+										"Max Dunbar"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Interior Illustrators",
+									"entries": [
+										"Max Dunbar, Ralph Horsley, Katerina Ladon, David Auden Nash"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Cartographer",
+									"entries": [
+										"Dyson Logos"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Sensitivity Lead",
+									"entries": [
+										"Ma'at Crook"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Realmspace Sortie!",
+					"entries": [
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Project Leads",
+									"entries": [
+										"Chris Lindsay, Chris Tulach, Travis Woodall"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Writer",
+									"entries": [
+										"Chris Lindsay"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Editors",
+									"entries": [
+										"Christopher Perkins"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Graphic Design",
+									"entries": [
+										"Stacey Allan"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Cover Illustrator",
+									"entries": [
+										"Max Dunbar"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Interior Illustrators",
+									"entries": [
+										"Carlo Arellano, Max Dunbar, Olly Lawson, Richard Whitters"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Cartographer",
+									"entries": [
+										"CoupleOfKooks, Dyson Logos"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Sensitivity Lead",
+									"entries": [
+										"Ma'at Crook"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Behold H'Catha",
+					"entries": [
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Project Leads",
+									"entries": [
+										"Chris Lindsay, Chris Tulach, Travis Woodall"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Writers",
+									"entries": [
+										"Gabrielle Harbowy, Christopher Perkins, Chris Tulach"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Editors",
+									"entries": [
+										"Ashley \"Navigator\" Lawson, Christopher Perkins"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Graphic Design",
+									"entries": [
+										"Stacey Allan"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Cover Illustrator",
+									"entries": [
+										"Max Dunbar"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Interior Illustrators",
+									"entries": [
+										"Carlo Arellano, Conceptopolis, Max Dunbar, Cory Trego-Erdner, Shawn Wood"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Cartographer",
+									"entries": [
+										"Stacey Allan, Will Doyle, Dyson Logos"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Sensitivity Lead",
+									"entries": [
+										"Ma'at Crook"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"columns": 2,
+									"items": [
+										{
+											"type": "entries",
+											"name": "D&D Studio",
+											"entries": [
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"type": "item",
+															"name": "Executive Producer",
+															"entries": [
+																"Ray Winninger"
+															]
+														},
+														{
+															"type": "item",
+															"name": "Director of Studio Operations",
+															"entries": [
+																"Kyle Brink"
+															]
+														},
+														{
+															"type": "item",
+															"name": "Game Architects",
+															"entries": [
+																"Jeremy Crawford, Christopher Perkins"
+															]
+														},
+														{
+															"type": "item",
+															"name": "Design Manager",
+															"entries": [
+																"Steve Scott"
+															]
+														},
+														{
+															"type": "item",
+															"name": "Design Department",
+															"entries": [
+																"Justice Ramin Arman, Makenzie De Armas, Dan Dillon, Amanda Hamon, Ron Lundeen, Ben Petrisor, F. Wesley Schneider, Jason Tondro, James Wyatt"
+															]
+														},
+														{
+															"type": "item",
+															"name": "Managing Editor",
+															"entries": [
+																"Judy Bauer"
+															]
+														},
+														{
+															"type": "item",
+															"name": "Editing Department",
+															"entries": [
+																"Eytan Bernstein, Janica Carter, Adrian Ng"
+															]
+														},
+														{
+															"type": "item",
+															"name": "Principal Art Directors",
+															"entries": [
+																"Josh Herman, Kate Irwin"
+															]
+														},
+														{
+															"type": "item",
+															"name": "Art Department",
+															"entries": [
+																"Matt Cole, Trystan Falcone, Bree Heiss, Bob Jordan, Emi Tanji, Trish Yochum"
+															]
+														},
+														{
+															"type": "item",
+															"name": "Senior Producers",
+															"entries": [
+																"Lisa Ohanian, Dan Tovar"
+															]
+														},
+														{
+															"type": "item",
+															"name": "Producers",
+															"entries": [
+																"Bill Benham, Robert Hawkey, Andy Smith"
+															]
+														},
+														{
+															"type": "item",
+															"name": "Director of Product Management",
+															"entries": [
+																"Liz Schuh"
+															]
+														},
+														{
+															"type": "item",
+															"name": "Product Managers",
+															"entries": [
+																"Natalie Egan, Chris Lindsay, Hilary Ross, Chris Tulach"
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Organized Play",
+											"entries": [
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"type": "item",
+															"name": "D&D Adventurers League Wizards Team",
+															"entries": [
+																"Brandy Camel, Chris Lindsay, Chris Tulach"
+															]
+														},
+														{
+															"type": "item",
+															"name": "D&D Adventurers League Administrators",
+															"entries": [
+																"Ma'at Crook, Claire Hoffman, Greg Marks, Toni Winslow-Brill, Travis Woodall, Bee Zelda"
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "D&D Beyond",
+											"entries": [
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"type": "item",
+															"name": "Senior Producer",
+															"entries": [
+																"Faith Elisabeth Lilley"
+															]
+														},
+														{
+															"type": "item",
+															"name": "Digital Design Team",
+															"entries": [
+																"Jay Jani, Adam Walton, Joseph Keen"
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
 		}
 	]
 }

@@ -349,9 +349,13 @@ globalThis.Renderer = function () {
 		if (entry == null) return; // Avoid dying on nully entries
 		if (!textStack) throw new Error("Missing stack!");
 		if (!meta) throw new Error("Missing metadata!");
-		if (entry.type === "section") meta.depth = -1;
 
 		options = options || {};
+
+		// For wrapped entries, simply recurse
+		if (entry.type === "wrapper") return this._recursiveRender(entry.wrapped, textStack, meta, options);
+
+		if (entry.type === "section") meta.depth = -1;
 
 		meta._didRenderPrefix = false;
 		meta._didRenderSuffix = false;
@@ -359,9 +363,6 @@ globalThis.Renderer = function () {
 		if (typeof entry === "object") {
 			// the root entry (e.g. "Rage" in barbarian "classFeatures") is assumed to be of type "entries"
 			const type = entry.type == null || entry.type === "section" ? "entries" : entry.type;
-
-			// For wrapped entries, simply recurse
-			if (type === "wrapper") return this._recursiveRender(entry.wrapped, textStack, meta, options);
 
 			meta._typeStack.push(type);
 
@@ -784,7 +785,7 @@ globalThis.Renderer = function () {
 			? this._getPagePart(entry)
 			: "";
 		const partExpandCollapse = !this._isPartPageExpandCollapseDisabled && !isInlineTitle
-			? `<span class="rd__h-toggle ml-2 clickable no-select" data-rd-h-toggle-button="true" title="Toggle Visibility (CTRL to Toggle All)">[\u2013]</span>`
+			? this._getPtExpandCollapse()
 			: "";
 		const partPageExpandCollapse = !this._isPartPageExpandCollapseDisabled && (pagePart || partExpandCollapse)
 			? `<span class="ve-flex-vh-center">${[pagePart, partExpandCollapse].filter(Boolean).join("")}</span>`
@@ -905,6 +906,10 @@ globalThis.Renderer = function () {
 		}
 	};
 
+	this._getPtExpandCollapse = function () {
+		return `<span class="rd__h-toggle ml-2 clickable no-select" data-rd-h-toggle-button="true" title="Toggle Visibility (CTRL to Toggle All)">[\u2013]</span>`;
+	};
+
 	this._getPtExpandCollapseSpecial = function () {
 		return `<span class="rd__h-toggle ml-2 clickable no-select" data-rd-h-special-toggle-button="true" title="Toggle Visibility (CTRL to Toggle All)">[\u2013]</span>`;
 	};
@@ -917,7 +922,7 @@ globalThis.Renderer = function () {
 		this._handleTrackDepth(entry, 1);
 
 		const pagePart = this._getPagePart(entry, true);
-		const partExpandCollapse = this._getPtExpandCollapseSpecial();
+		const partExpandCollapse = !this._isPartPageExpandCollapseDisabled ? this._getPtExpandCollapseSpecial() : "";
 		const partPageExpandCollapse = `<span class="ve-flex-vh-center">${[pagePart, partExpandCollapse].filter(Boolean).join("")}</span>`;
 
 		if (entry.name != null) {
@@ -950,7 +955,7 @@ globalThis.Renderer = function () {
 		this._handleTrackDepth(entry, 1);
 
 		const pagePart = this._getPagePart(entry, true);
-		const partExpandCollapse = this._getPtExpandCollapseSpecial();
+		const partExpandCollapse = !this._isPartPageExpandCollapseDisabled ? this._getPtExpandCollapseSpecial() : "";
 		const partPageExpandCollapse = `<span class="ve-flex-vh-center">${[pagePart, partExpandCollapse].filter(Boolean).join("")}</span>`;
 
 		if (entry.name != null) {
@@ -981,7 +986,7 @@ globalThis.Renderer = function () {
 		this._handleTrackDepth(entry, 1);
 
 		const pagePart = this._getPagePart(entry, true);
-		const partExpandCollapse = this._getPtExpandCollapseSpecial();
+		const partExpandCollapse = !this._isPartPageExpandCollapseDisabled ? this._getPtExpandCollapseSpecial() : "";
 		const partPageExpandCollapse = `<span class="ve-flex-vh-center">${[pagePart, partExpandCollapse].filter(Boolean).join("")}</span>`;
 
 		textStack[0] += `<${this.wrapperTag} class="rd__b-special rd__b-inset" ${dataString}>`;

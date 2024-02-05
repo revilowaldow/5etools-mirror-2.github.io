@@ -152,7 +152,7 @@ class CreatureParser extends BaseParser {
 			// name of monster
 			if (meta.ixToConvert === 0) {
 				// region
-				const mCr = /^(?<name>.*)\s+(?<cr>CR \d+(?:\/\d+)? .*$)/.exec(meta.curLine);
+				const mCr = /^(?<name>.*)\s+(?<cr>CR (?:\d+(?:\/\d+)?|[⅛¼½]) .*$)/.exec(meta.curLine);
 				if (mCr) {
 					meta.curLine = mCr.groups.name;
 					meta.toConvert.splice(meta.ixToConvert + 1, 0, mCr.groups.cr);
@@ -1771,6 +1771,10 @@ class CreatureParser extends BaseParser {
 			.trim();
 
 		if (!line) return;
+
+		if (/^[⅛¼½]$/.test(line)) {
+			line = Parser.numberToCr(Parser.vulgarToNumber(line));
+		}
 
 		if (!/^(\d+\/\d+|\d+)$/.test(line)) {
 			cbWarning(`${stats.name ? `(${stats.name}) ` : ""}CR requires manual conversion "${line}"`);

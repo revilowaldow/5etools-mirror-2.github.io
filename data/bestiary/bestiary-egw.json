@@ -208,6 +208,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The nullifier's innate spellcasting ability is Charisma (spell save {@dc 16}). It can innately cast the following spells, requiring no material components:"
 					],
@@ -600,6 +601,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting (1/Day)",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The blood hunter can innately cast {@spell hex}. Its innate spellcasting ability is Intelligence."
 					],
@@ -755,6 +757,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Bol'bara's innate spellcasting ability is Charisma (spell save {@dc 12}, {@hit 4} to hit with spell attacks). She can innately cast the following spells, requiring no material components:"
 					],
@@ -2621,6 +2624,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The merrow is a 6th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 13}, {@hit 5} to hit with spell attacks). The merrow has the following druid spells prepared:"
 					],
@@ -2825,6 +2829,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Mossback Steward's innate spellcasting ability is Wisdom (spell save {@dc 15}). It can innately cast the following spells, requiring no material components."
 					],
@@ -3090,6 +3095,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Pellinost is a 5th-level spellcaster. His spellcasting ability is Wisdom (spell save {@dc 13}, {@hit 5} to hit with spell attacks). Pellinost has the following cleric spells prepared:"
 					],
@@ -3220,6 +3226,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The warlock's innate spellcasting ability is Charisma (spell save {@dc 13}, {@hit 5} to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
 					],
@@ -3457,6 +3464,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The sea fury's innate spellcasting ability is Charisma (spell save {@dc 16}, {@hit 8} to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
 					],
@@ -3840,6 +3848,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting (Lizardfolk Form Only)",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Skr'a S'orsk is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). Skr'a S'orsk has the following druid spells prepared:"
 					],

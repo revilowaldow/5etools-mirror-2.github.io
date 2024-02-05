@@ -791,6 +791,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The giant casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 20}):"
 					],
@@ -945,6 +946,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The giant casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 16}):"
 					],
@@ -2256,6 +2258,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The giant casts one of the following spells, using Intelligence as the spellcasting ability:"
 					],
@@ -2928,6 +2931,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The fensir casts one of the following spells, using Intelligence as the spellcasting ability:"
 					],
@@ -3079,6 +3083,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The firbolg casts one of the following spells, using Wisdom as the spellcasting ability (spell save {@dc 13}):"
 					],
@@ -3223,6 +3228,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The firbolg casts one of the following spells, using Wisdom as the spellcasting ability (spell save {@dc 14}):"
 					],
@@ -4147,6 +4153,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The fomorian casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 17}):"
 					],
@@ -4281,6 +4288,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The fomorian casts one of the following spells, using Charisma as the spellcasting ability (spell save {@dc 16}):"
 					],
@@ -5917,6 +5925,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The giant casts one of the following spells, using Wisdom as the spellcasting ability (spell save {@dc 16}):"
 					],
@@ -8286,6 +8295,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The stalker casts one of the following spells, requiring no spell components and using Wisdom as the spellcasting ability (spell save {@dc 15}):"
 					],
@@ -8852,6 +8862,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The giant casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 21}, {@hit 13} to hit with spell attacks):"
 					],
@@ -9043,6 +9054,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting (Psionics)",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The herald casts one of the following spells, requiring no spell components and using Intelligence as the spellcasting ability (spell save {@dc 21}):"
 					],

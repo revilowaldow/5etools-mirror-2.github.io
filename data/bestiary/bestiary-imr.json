@@ -338,6 +338,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Barbatos is a 6th-level spellcaster. His spellcasting ability is Wisdom (spell save {@dc 13}, {@hit 5} to hit with spell attacks). He has the following ranger spells prepared:"
 					],
@@ -535,6 +536,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The medusa's innate spellcasting ability is Charisma (spell save {@dc 13}). The medusa can innately cast the following spells, requiring no material components:"
 					],
@@ -822,6 +824,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Moghadam is an 18th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 16}, {@hit 8} to hit with spell attacks). He has the following artificer spells prepared:"
 					],
@@ -1007,6 +1010,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting (Psionics)",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The neo-otyugh's innate spellcasting ability is Intelligence (spell save {@dc 12}). It can innately cast the following spells, requiring no components:"
 					],
@@ -1529,6 +1533,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Thessalar is an 18th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 16}, {@hit 8} to hit with spell attacks). He has the following artificer spells prepared:"
 					],

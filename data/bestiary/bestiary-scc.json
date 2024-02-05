@@ -72,6 +72,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The archaic casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability (spell save {@dc 22}):"
 					],
@@ -378,6 +379,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Beledros casts one of the following spells, requiring no material components and using Wisdom as the spellcasting ability:"
 					],
@@ -645,6 +647,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The archivist casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability:"
 					],
@@ -1026,6 +1029,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The student casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 11}):"
 					],
@@ -1234,6 +1238,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Galazeth casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 23}):"
 					],
@@ -1610,6 +1615,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The apprentice casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability (spell save {@dc 12}):"
 					],
@@ -1724,6 +1730,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The pledgemage casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability (spell save {@dc 13}):"
 					],
@@ -1865,6 +1872,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The professor casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability:"
 					],
@@ -1994,6 +2002,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The professor casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability (spell save {@dc 15}):"
 					],
@@ -2439,6 +2448,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The Oracle casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability (spell save {@dc 18}):"
 					],
@@ -2741,6 +2751,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The recruiter casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 14}):"
 					],
@@ -2940,6 +2951,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The apprentice casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 12}):"
 					],
@@ -3048,6 +3060,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The pledgemage casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 13}):"
 					],
@@ -3191,6 +3204,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The professor casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 15}):"
 					],
@@ -3320,6 +3334,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The professor casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 15}):"
 					],
@@ -3452,6 +3467,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The apprentice casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability (spell save {@dc 12}):"
 					],
@@ -3553,6 +3569,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The pledgemage casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability (spell save {@dc 13}):"
 					],
@@ -3678,6 +3695,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The professor casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability (spell save {@dc 15}):"
 					],
@@ -3823,6 +3841,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The professor casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability (spell save {@dc 15}):"
 					],
@@ -4204,6 +4223,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Shadrix casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 23}):"
 					],
@@ -4369,6 +4389,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The apprentice casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 12}):"
 					],
@@ -4474,6 +4495,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The pledgemage casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 13}):"
 					],
@@ -4600,6 +4622,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The professor casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 15}):"
 					],
@@ -4727,6 +4750,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The professor casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 15}):"
 					],
@@ -5104,6 +5128,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Tanazir casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability (spell save {@dc 24}):"
 					],
@@ -5291,6 +5316,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Velomachus casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability:"
 					],
@@ -5458,6 +5484,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The apprentice casts one of the following spells, requiring no material components and using Wisdom as the spellcasting ability:"
 					],
@@ -5592,6 +5619,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The apprentice casts one of the following spells, requiring no material components and using Wisdom as the spellcasting ability:"
 					],
@@ -5736,6 +5764,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The professor casts one of the following spells, requiring no material components and using Wisdom as the spellcasting ability (spell save {@dc 15}):"
 					],
@@ -5877,6 +5906,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The professor casts one of the following spells, requiring no material components and using Wisdom as the spellcasting ability:"
 					],

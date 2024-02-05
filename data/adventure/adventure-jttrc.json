@@ -31939,6 +31939,365 @@
 					]
 				}
 			]
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Project Leads",
+									"entries": [
+										"Ajit A. George, F. Wesley Schneider"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Art Directors",
+									"entries": [
+										"Kate Irwin, Emi Tanji"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Writers",
+									"entries": [
+										"Justice Ramin Arman, Dominique Dickey, Ajit A. George, Basheer Ghouse, Alastor Guzman, D. Fox Harrell, T.K. Johnson, Felice Tzehuei Kuan, Surena Marie, Mimi Mondal, Mario Ortegón, Miyuki Jane Pinckard, Pam Punzalan, Erin Roberts, Terry H. Romero, Stephanie Yoon"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Rules Developers",
+									"entries": [
+										"Jeremy Crawford, Makenzie De Armas, Ben Petrisor, Taymoor Rehman"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Senior Editor",
+									"entries": [
+										"Judy Bauer"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Editors",
+									"entries": [
+										"Janica Carter, Dan Dillon, Keith Garrett, Scott Fitzgerald Gray, Laura Hirsbrunner, Kim Mohan, Christopher Perkins, Hannah Rose, Jessica Ross, Hans Ziegler"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Senior Graphic Designer",
+									"entries": [
+										"Trish Yochum"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Graphic Designer",
+									"entries": [
+										"Matt Cole"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Cover Illustrators",
+									"entries": [
+										"Evyn Fong, Sija Hong"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Cartographers",
+									"entries": [
+										"Sean Macdonald, Mike Schley"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Interior Illustrators",
+									"entries": [
+										"Mia Araujo, Alfven Ato, Tom Babbey, Zoltan Boros, Dmitry Burmak, Ekaterina Burmak, Nikki Dawes, Olga Drebas, Ejiwa \"Edge\" Ebenebe, Jessica Fong, Merlin G.G, KNIIO, Julian Kok, Ryan Alexander Lee, Adrián Ibarra Lugo, Andrew Mar, Brynn Metheney, Thabiso Mhlaba, Robson Michel, Hinchel Or, Vicki Pangestu, Claudio Pozas, April Prime, Julio Reyna, Domenico Sellaro, Brian Valeza, Jabari Weathers, Shawn Wood, Zuzanna Wuzyk"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Concept Illustrator",
+									"entries": [
+										"Shawn Wood"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Cultural Consultants",
+									"entries": [
+										"Nivair H. Gabriel, Jaymee Goh, Carmen Maria Marin"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Narrative Design Consultant",
+									"entries": [
+										"Whitney \"Strix\" Beltrán"
+									]
+								},
+								{
+									"type": "item",
+									"name": "System and Narrative Design Consultant",
+									"entries": [
+										"John Stavropoulos"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Project Engineer",
+									"entries": [
+										"Cynda Callaway"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Imaging Technician",
+									"entries": [
+										"Daniel Corona, Kevin Yee"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Prepress Specialist",
+									"entries": [
+										"Jefferson Dunlap"
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "D&D Tabletop Team",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Executive Producer",
+													"entries": [
+														"Ray Winninger"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Director of Studio Operations",
+													"entries": [
+														"Kyle Brink"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Game Architects",
+													"entries": [
+														"Jeremy Crawford, Christopher Perkins"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Design Manager",
+													"entries": [
+														"Steve Scott"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Design Department",
+													"entries": [
+														"Sydney Adams, Judy Bauer, Makenzie De Armas, Dan Dillon, Amanda Hamon, Ben Petrisor, Taymoor Rehman, F. Wesley Schneider, James Wyatt"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Art Department Manager",
+													"entries": [
+														"Richard Whitters"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Art Department",
+													"entries": [
+														"Matt Cole, Trystan Falcone, Bree Heiss, Kate Irwin, Bob Jordan, Emi Tanji, Shawn Wood, Trish Yochum"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Senior Producers",
+													"entries": [
+														"Lisa Ohanian, Dan Tovar"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Producers",
+													"entries": [
+														"Bill Benham, Robert Hawkey, Lea Heleotis"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Director of Product Management",
+													"entries": [
+														"Liz Schuh"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Product Managers",
+													"entries": [
+														"Natalie Egan, Chris Lindsay, Hilary Ross, Chris Tulach"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Marketing",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Director of Global Brand Marketing",
+													"entries": [
+														"Brian Perry"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Senior Global Brand Manager",
+													"entries": [
+														"Shelly Mazzanoble"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Associate Global Brand Manager",
+													"entries": [
+														"Sara Chan"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Senior Marketing Communications Manager",
+													"entries": [
+														"Greg Tito"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Community Manager",
+													"entries": [
+														"Brandy Camel"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Social Media Marketing Managers",
+													"entries": [
+														"Nicole Olson, Joshua Morris"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "D&D Beyond",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Senior Producer",
+													"entries": [
+														"Faith Elisabeth Lilley"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Digital Design Team",
+													"entries": [
+														"Jay Jani, Adam Walton"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						"{@b Special thanks} to Farai Chideya, Renee Knipe, Carlos Luna, Mary Anne Mohanraj, Stephanie Nudelman, Jessica Price, Diego Valdez"
+					]
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "adventure/JttRC/credits.webp"
+					},
+					"maxWidth": 300
+				},
+				{
+					"type": "gallery",
+					"images": [
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "adventure/JttRC/credits2.webp"
+							},
+							"title": "On the cover: A mischievous wynling soars above the Dyn Singh Night Market, avoiding people from countless lands and illusory shop signage, in this cover by Evyn Fong."
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "adventure/JttRC/credits3.webp"
+							},
+							"title": "On the alt-cover: The aura of the Radiant Citadel illuminates the ancestral shapes of the Dawn Incarnates, gemstone manifestations of stories and spirits, in this cover by Sija Hong."
+						}
+					]
+				}
+			]
 		}
 	]
 }

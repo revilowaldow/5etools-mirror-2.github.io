@@ -6471,6 +6471,13 @@
 							"id": "1ee",
 							"entries": [
 								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DoDk/aldor-the-immense.webp"
+									}
+								},
+								{
 									"type": "quote",
 									"entries": [
 										"Anyone who says money can't buy happiness doesn't know where to shop."

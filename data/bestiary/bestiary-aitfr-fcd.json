@@ -172,6 +172,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Tyreus is a 16th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 18}, {@hit 10} to hit with spell attacks). He has the following wizard spells prepared."
 					],

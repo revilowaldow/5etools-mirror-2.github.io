@@ -108,6 +108,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Andir's spellcasting ability is Intelligence (spell save {@dc 12}, {@hit 4} to hit with spell attacks). He has the following wizard spells prepared:"
 					],
@@ -1050,6 +1051,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The draconian casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 14}):"
 					],
@@ -2280,6 +2282,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The draconian casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 12}):"
 					],
@@ -3426,6 +3429,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Hrigg's spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). He has the following cleric spells prepared:"
 					],
@@ -5422,6 +5426,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Kansaldi casts one of the following spells, requiring no material components and using Wisdom as the spellcasting ability (spell save {@dc 16}):"
 					],
@@ -6842,6 +6847,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Lohezet casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability (spell save {@dc 17}):"
 					],
@@ -7007,6 +7013,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Soth casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 19}):"
 					],
@@ -7811,6 +7818,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Tem's spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to spell attacks). She has the following druid spells prepared:"
 					],
@@ -8855,6 +8863,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Wersten casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 16}):"
 					],

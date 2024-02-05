@@ -426,6 +426,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Alyxian casts one of the following spells, requiring no material components and using Charisma as the spellcasting modifier (spell save {@dc 17}):"
 					],
@@ -1465,6 +1466,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Ayo casts one of the following spells, using Wisdom as the spellcasting ability (spell save {@dc 11}):"
 					],
@@ -1608,6 +1610,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Ayo casts one of the following spells, using Wisdom as the spellcasting ability (spell save {@dc 13}):"
 					],
@@ -1762,6 +1765,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Ayo casts one of the following spells, using Wisdom as the spellcasting ability (spell save {@dc 14}):"
 					],
@@ -2292,6 +2296,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Dermot casts one of the following spells, using Wisdom as the spellcasting ability (spell save {@dc 13}):"
 					],
@@ -2430,6 +2435,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Dermot casts one of the following spells, using Wisdom as the spellcasting ability (spell save {@dc 15}):"
 					],
@@ -2574,6 +2580,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Dermot casts one of the following spells, using Wisdom as the spellcasting ability (spell save {@dc 16}):"
 					],
@@ -2785,6 +2792,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The extollant casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 15}):"
 					],
@@ -2923,6 +2931,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Galsariad casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 13}):"
 					],
@@ -3060,6 +3069,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Galsariad casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 15}):"
 					],
@@ -3213,6 +3223,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Galsariad casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 16}):"
 					],
@@ -3435,6 +3446,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Insight casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability (spell save {@dc 15}):"
 					],
@@ -4019,6 +4031,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The fanatic is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 11}, {@hit 3} to hit with spell attacks). The fanatic has the following cleric spells prepared:"
 					],
@@ -4718,6 +4731,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The high curator casts one of the following spells, requiring no material components and using Wisdom as the spellcasting ability (spell save {@dc 18}):"
 					],
@@ -4851,6 +4865,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The infiltrator casts one of the following spells, requiring no material components and using Wisdom as the spellcasting ability (spell save {@dc 14}):"
 					],
@@ -5141,6 +5156,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The extollant casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 15}):"
 					],
@@ -5256,6 +5272,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The initiate casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 13}):"
 					],
@@ -5378,6 +5395,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The silvertongue casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 16}):"
 					],
@@ -5777,6 +5795,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The agent casts one of the following spells, using Intelligence as the spellcasting ability:"
 					],
@@ -5974,6 +5993,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The mastermind casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability (spell save {@dc 15}):"
 					],
@@ -6226,6 +6246,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Shira casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 10}, {@hit 2} to hit with spell attacks):"
 					],
@@ -6693,6 +6714,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Verin casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 14}):"
 					],

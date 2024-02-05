@@ -428,6 +428,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Bavlorna casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability (spell save {@dc 14}):"
 					],
@@ -586,6 +587,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The brigganock casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 11}):"
 					],
@@ -1295,6 +1297,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Endelyn casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 14}):"
 					],
@@ -2343,6 +2346,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Iggwilv casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability (spell save {@dc 24}, {@hit 16} to hit with spell attacks):"
 					],
@@ -2852,6 +2856,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Kelek casts one of the following spells, using Charisma as the spellcasting ability (spell save {@dc 14}):"
 					],
@@ -3008,6 +3013,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Kettlesteam casts one of the following spells, using Charisma as the spellcasting ability (spell save {@dc 13}):"
 					],
@@ -3272,6 +3278,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Mercion casts one of the following spells, using Wisdom as the spellcasting ability (spell save {@dc 13}):"
 					],
@@ -3437,6 +3444,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"While carrying the {@item Witchlight vane|WbtW}, Light casts one of the following spells, requiring no spell components and using Charisma as the spellcasting ability (spell save {@dc 13}, {@hit 5} to hit with spell attacks):"
 					],
@@ -3580,6 +3588,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"While carrying the {@item Witchlight watch|WbtW}, Witch casts one of the following spells, requiring no spell components and using Intelligence as the spellcasting ability (spell save {@dc 13}, {@hit 5} to hit with spell attacks):"
 					],
@@ -4107,6 +4116,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Ringlerun casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 14}):"
 					],
@@ -4383,6 +4393,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Sir Talavar's innate spellcasting ability is Charisma (spell save {@dc 13}). It can innately cast a number of spells, requiring no material components. As the dragon ages and changes color, it gains additional spells as shown below."
 					],
@@ -4570,6 +4581,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Skabatha casts one of the following spells, requiring no material components and using Wisdom as the spellcasting ability (spell save {@dc 14}):"
 					],
@@ -4720,6 +4732,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Skylla casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 13}):"
 					],
@@ -4972,6 +4985,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Strongheart casts one of the following spells, using Charisma as the spellcasting ability (spell save {@dc 13}):"
 					],
@@ -5607,6 +5621,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The hand casts one of the following spells, using Charisma as the spellcasting ability:"
 					],
@@ -5875,6 +5890,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Zargash casts one of the following spells, using Wisdom as the spellcasting ability (spell save {@dc 13}):"
 					],

@@ -1705,9 +1705,6 @@
 			"subclassSource": "PHB",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
 				{
@@ -1730,6 +1727,9 @@
 			"subclassSource": "PHB",
 			"level": 3,
 			"header": 1,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
 			"entries": [
 				"You can use your Channel Divinity to invoke primeval forces to ensnare a foe. As an action, you can cause spectral vines to spring up and reach for a creature within 10 feet of you that you can see. The creature must succeed on a Strength or Dexterity saving throw (its choice) or be {@condition restrained}. While {@condition restrained} by the vines, the creature repeats the saving throw at the end of each of its turns. On a success, it frees itself and the vines vanish."
 			]
@@ -1854,6 +1854,9 @@
 			"subclassSource": "PHB",
 			"level": 3,
 			"header": 1,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
 			"entries": [
 				"You can use your Channel Divinity to utter ancient words that are painful for fey and fiends to hear. As an action, you present your holy symbol, and each fey or fiend within 30 feet of you that can hear you must make a Wisdom saving throw. On a failed save, the creature is turned for 1 minute or until it takes damage.",
 				"A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the {@action Dash} action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the {@action Dodge} action.",
@@ -1951,9 +1954,6 @@
 			"subclassSource": "PHB",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
 				{
@@ -2026,6 +2026,9 @@
 			"subclassSource": "PHB",
 			"level": 3,
 			"header": 1,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
 			"entries": [
 				"As an action, you can imbue one weapon that you are holding with positive energy, using your Channel Divinity. For 1 minute, you add your Charisma modifier to attack rolls made with that weapon (with a minimum bonus of +1). The weapon also emits bright light in a 20-foot radius and dim light 20 feet beyond that. If the weapon is not already magical, it becomes magical for the duration.",
 				"You can end this effect on your turn as part of any other action. If you are no longer holding or carrying this weapon, or if you fall {@condition unconscious}, this effect ends."
@@ -2117,6 +2120,9 @@
 			"subclassSource": "PHB",
 			"level": 3,
 			"header": 1,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
 			"entries": [
 				"As an action, you present your holy symbol and speak a prayer censuring fiends and undead, using your Channel Divinity. Each fiend or undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage.",
 				"A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the {@action Dash} action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the {@action Dodge} action."
@@ -2206,6 +2212,9 @@
 			"subclassSource": "PHB",
 			"level": 3,
 			"header": 1,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
 			"entries": [
 				"As an action, you present your holy symbol and speak a prayer of denunciation, using your Channel Divinity. Choose one creature within 60 feet of you that you can see. That creature must make a Wisdom saving throw, unless it is immune to being {@condition frightened}. Fiends and undead have disadvantage on this saving throw.",
 				"On a failed save, the creature is {@condition frightened} for 1 minute or until it takes any damage. While {@condition frightened}, the creature's speed is 0, and it can't benefit from any bonus to its speed.",
@@ -2222,9 +2231,6 @@
 			"subclassSource": "PHB",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
 				{
@@ -2357,6 +2363,9 @@
 			"subclassSource": "PHB",
 			"level": 3,
 			"header": 1,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
 			"entries": [
 				"As a bonus action, you can utter a vow of enmity against a creature you can see within 10 feet of you, using your Channel Divinity. You gain advantage on attack rolls against the creature for 1 minute or until it drops to 0 hit points or falls {@condition unconscious}."
 			]
@@ -2446,6 +2455,9 @@
 			"subclassSource": "SCAG",
 			"level": 3,
 			"header": 1,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
 			"entries": [
 				"As a bonus action, you issue a challenge that compels other creatures to do battle with you. Each creature of your choice that you can see within 30 feet of you must make a Wisdom saving throw. On a failed save, a creature can't willingly move more than 30 feet away from you. This effect ends on the creature if you are {@condition incapacitated} or die or if the creature is more than 30 feet away from you."
 			]
@@ -2460,9 +2472,6 @@
 			"subclassSource": "SCAG",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
 				{
@@ -2595,6 +2604,9 @@
 			"subclassSource": "SCAG",
 			"level": 3,
 			"header": 1,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
 			"entries": [
 				"As a bonus action, you can bolster injured creatures with your Channel Divinity. Each creature of your choice that can hear you within 30 feet of you regains hit points equal to {@dice 1d6} + your Charisma modifier (minimum of 1) if it has no more than half of its hit points."
 			]
@@ -2697,9 +2709,6 @@
 			"subclassSource": "TCE",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"{@i 3rd-level Oath of Glory feature}",
 				"You gain the following two Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works.",
@@ -2832,6 +2841,9 @@
 			"subclassSource": "TCE",
 			"level": 3,
 			"header": 2,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
 			"entries": [
 				"Immediately after you deal damage to a creature with your Divine Smite feature, you can use your Channel Divinity as a bonus action and distribute temporary hit points to creatures of your choice within 30 feet of you, which can include you. The total number of temporary hit points equals {@dice 2d8} + your level in this class, divided among the chosen creatures however you like."
 			]
@@ -2852,6 +2864,9 @@
 			"subclassSource": "TCE",
 			"level": 3,
 			"header": 2,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
 			"entries": [
 				"As a bonus action, you can use your Channel Divinity to augment your athleticism. For the next 10 minutes, you have advantage on Strength ({@skill Athletics}) and Dexterity ({@skill Acrobatics}) checks; you can carry, push, drag, and lift twice as much weight as normal; and the distance of your long and high jumps increases by 10 feet (this extra distance costs movement as normal)."
 			]
@@ -2966,26 +2981,16 @@
 			"subclassSource": "TCE",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"{@i 3rd-level Oath of the Watchers feature}",
 				"You gain the following Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works.",
 				{
-					"type": "entries",
-					"name": "Watcher's Will",
-					"entries": [
-						"You can use your Channel Divinity to invest your presence with the warding power of your faith. As an action, you can choose a number of creatures you can see within 30 feet of you, up to a number equal to your Charisma modifier (minimum of one creature). For 1 minute, you and the chosen creatures have advantage on Intelligence, Wisdom, and Charisma saving throws."
-					]
+					"type": "refSubclassFeature",
+					"subclassFeature": "Watcher's Will|Paladin||Watchers|TCE|3"
 				},
 				{
-					"type": "entries",
-					"name": "Abjure the Extraplanar",
-					"entries": [
-						"You can use your Channel Divinity to castigate unworldly beings. As an action, you present your holy symbol and each aberration, celestial, elemental, fey, or fiend within 30 feet of you that can hear you must make a Wisdom saving throw. On a failed save, the creature is turned for 1 minute or until it takes damage.",
-						"A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly end its move in a space within 30 feet of you. For its action, it can use only the {@action Dash} action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can take the {@action Dodge} action."
-					]
+					"type": "refSubclassFeature",
+					"subclassFeature": "Abjure the Extraplanar|Paladin||Watchers|TCE|3"
 				}
 			]
 		},
@@ -3071,6 +3076,41 @@
 						"You are the shield against the endless terrors that lie beyond the stars. Your blade must be forever sharp and your mind keen to survive what lies beyond."
 					]
 				}
+			]
+		},
+		{
+			"name": "Abjure the Extraplanar",
+			"source": "TCE",
+			"page": 54,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Watchers",
+			"subclassSource": "TCE",
+			"level": 3,
+			"header": 2,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
+			"entries": [
+				"You can use your Channel Divinity to castigate unworldly beings. As an action, you present your holy symbol and each aberration, celestial, elemental, fey, or fiend within 30 feet of you that can hear you must make a Wisdom saving throw. On a failed save, the creature is turned for 1 minute or until it takes damage.",
+				"A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly end its move in a space within 30 feet of you. For its action, it can use only the {@action Dash} action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can take the {@action Dodge} action."
+			]
+		},
+		{
+			"name": "Watcher's Will",
+			"source": "TCE",
+			"page": 54,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Watchers",
+			"subclassSource": "TCE",
+			"level": 3,
+			"header": 2,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
+			"entries": [
+				"You can use your Channel Divinity to invest your presence with the warding power of your faith. As an action, you can choose a number of creatures you can see within 30 feet of you, up to a number equal to your Charisma modifier (minimum of one creature). For 1 minute, you and the chosen creatures have advantage on Intelligence, Wisdom, and Charisma saving throws."
 			]
 		},
 		{
@@ -3165,26 +3205,15 @@
 			"subclassSource": "TDCSR",
 			"level": 3,
 			"header": 2,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
 				{
-					"type": "entries",
-					"name": "Marine Layer",
-					"page": 175,
-					"entries": [
-						"As an action, you channel the sea to create a thick cloud of fog that surrounds you for 20 feet in all directions. The fog moves with you, remaining centered on you and making its area heavily obscured. You and each creature within 5 feet of you instead treat the area as lightly obscured. This fog lasts for 10 minutes, spreads around corners, and cannot be dispersed unless you choose to end this effect (no action required)."
-					]
+					"type": "refSubclassFeature",
+					"subclassFeature": "Marine Layer|Paladin||Open Sea|TDCSR|3"
 				},
 				{
-					"type": "entries",
-					"name": "Fury of the Tides",
-					"page": 175,
-					"entries": [
-						"As a bonus action, you channel the powerful might of the waves to bolster your attacks for 1 minute. Once per turn for the duration, when you hit a creature with a weapon attack, you can choose to push the target 10 feet away from you. If pushed into an obstacle or another creature, the target takes bludgeoning damage equal to your Charisma modifier."
-					]
+					"type": "refSubclassFeature",
+					"subclassFeature": "Fury of the Tides|Paladin||Open Sea|TDCSR|3"
 				},
 				{
 					"type": "inset",
@@ -3195,6 +3224,40 @@
 						"Creatures in a lightly obscured area have {@quickref Advantage and Disadvantage|PHB|2|0|disadvantage} only on Wisdom ({@skill Perception}) checks that rely on sight. The rules for when your vision is obscured are described completely in the fifth edition core rules."
 					]
 				}
+			]
+		},
+		{
+			"name": "Fury of the Tides",
+			"source": "TDCSR",
+			"page": 175,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Open Sea",
+			"subclassSource": "TDCSR",
+			"level": 3,
+			"header": 2,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
+			"entries": [
+				"As a bonus action, you channel the powerful might of the waves to bolster your attacks for 1 minute. Once per turn for the duration, when you hit a creature with a weapon attack, you can choose to push the target 10 feet away from you. If pushed into an obstacle or another creature, the target takes bludgeoning damage equal to your Charisma modifier."
+			]
+		},
+		{
+			"name": "Marine Layer",
+			"source": "TDCSR",
+			"page": 175,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Open Sea",
+			"subclassSource": "TDCSR",
+			"level": 3,
+			"header": 2,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
+			"entries": [
+				"As an action, you channel the sea to create a thick cloud of fog that surrounds you for 20 feet in all directions. The fog moves with you, remaining centered on you and making its area heavily obscured. You and each creature within 5 feet of you instead treat the area as lightly obscured. This fog lasts for 10 minutes, spreads around corners, and cannot be dispersed unless you choose to end this effect (no action required)."
 			]
 		},
 		{
@@ -3393,9 +3456,6 @@
 			"subclassSource": "XGE",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
 				{
@@ -3418,6 +3478,9 @@
 			"subclassSource": "XGE",
 			"level": 3,
 			"header": 1,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
 			"entries": [
 				"You can use your Channel Divinity to exude a terrifying presence. As an action, you force each creature of your choice that you can see within 30 feet of you to make a Wisdom saving throw. On a failed save, a creature becomes {@condition frightened} of you for 1 minute. The {@condition frightened} creature can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success."
 			]
@@ -3432,6 +3495,9 @@
 			"subclassSource": "XGE",
 			"level": 3,
 			"header": 1,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
 			"entries": [
 				"You can use your Channel Divinity to strike with supernatural accuracy. When you make an attack roll, you can use your Channel Divinity to gain a +10 bonus to the roll. You make this choice after you see the roll, but before the DM says whether the attack hits or misses."
 			]
@@ -3613,9 +3679,6 @@
 			"subclassSource": "XGE",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
 				{
@@ -3638,6 +3701,9 @@
 			"subclassSource": "XGE",
 			"level": 3,
 			"header": 1,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
 			"entries": [
 				"You can use your Channel Divinity to augment your presence with divine power. As a bonus action, you grant yourself a +5 bonus to Charisma ({@skill Persuasion}) checks for the next 10 minutes."
 			]
@@ -3700,6 +3766,9 @@
 			"subclassSource": "XGE",
 			"level": 3,
 			"header": 1,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
 			"entries": [
 				"You can use your Channel Divinity to rebuke those who use violence. Immediately after an attacker within 30 feet of you deals damage with an attack against a creature other than you, you can use your reaction to force the attacker to make a Wisdom saving throw. On a failed save, the attacker takes radiant damage equal to the damage it just dealt. On a successful save, it takes half as much damage."
 			]

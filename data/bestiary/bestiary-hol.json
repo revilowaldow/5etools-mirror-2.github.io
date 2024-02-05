@@ -39,6 +39,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"You cast one of the following wizard spells (spell save {@dc 11}), using Intelligence as the spellcasting ability:"
 					],
@@ -161,6 +162,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"You cast one the following cleric spells (spell save {@dc 11}), using Wisdom as the spellcasting ability:"
 					],

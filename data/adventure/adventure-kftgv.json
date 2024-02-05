@@ -27441,6 +27441,284 @@
 					]
 				}
 			]
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Project Leads",
+									"entries": [
+										"Amanda Hamon, Christopher Perkins"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Art Director",
+									"entries": [
+										"Kate Irwin"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Project Concept",
+									"entries": [
+										"Dan Barrett"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Writers",
+									"entries": [
+										"Justice Ramin Arman, Kate Baker, Makenzie De Armas, Dan Dillon, Brooks Donohue, Amanda Hamon, Tim Hitchcock, Sadie Lowry, Jeffrey Ludwig, Sarah Madsen, Mario Ortegón, Christopher Perkins, Ben Petrisor, T. Alexander Stangroom"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Rules Developers",
+									"entries": [
+										"Jeremy Crawford, Dan Dillon, Ben Petrisor"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Editors",
+									"entries": [
+										"Judy Bauer, Eytan Bernstein, Janica Carter, Laura Hirsbrunner, Gregg Luben, Kim Mohan, Adrian Ng"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Lead Graphic Designer",
+									"entries": [
+										"Bob Jordan"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Graphic Designers",
+									"entries": [
+										"Trystan Falcone, Paolo Vacala, Trish Yochum"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Cover Illustrators",
+									"entries": [
+										"Simen Meyer, Anna Podedworna"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Interior Illustrators",
+									"entries": [
+										"Olivier Bernard, Bruce Brenneise, Kai Carpenter, Sidharth Chaturvedi, Conceptopolis, CoupleOfKooks, Daarken, Alayna Danner, Kent Davis, Nikki Dawes, Axel Defois, Evyn Fong, Alexandre Honoré, Julian Kok, Katerina Ladon, Andrew Mar, Robson Michel, Scott Murphy, David Auden Nash, Irina Nordsol, Svetlin Velinov, Zuzanna Wuzyk, Kieran Yanner"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Cartographers",
+									"entries": [
+										"Francesca Baerald, Mike Schley"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Consultants",
+									"entries": [
+										"Ma'at Crook, James Mendez Hodes"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Concept Illustrator",
+									"entries": [
+										"Shawn Wood"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Project Engineer",
+									"entries": [
+										"Cynda Callaway"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Imaging Technicians",
+									"entries": [
+										"Daniel Corona, Kevin Yee"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Prepress Specialist",
+									"entries": [
+										"Jefferson Dunlap"
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "D&D Studio",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Executive Producer",
+													"entries": [
+														"Kyle Brink"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Game Architects",
+													"entries": [
+														"Jeremy Crawford, Christopher Perkins"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Studio Art Director",
+													"entries": [
+														"Josh Herman"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Art Department",
+													"entries": [
+														"Matt Cole, Trystan Falcone, Bree Heiss, Kate Irwin, Bob Jordan Emi Tanji, Trish Yochum"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Design Department",
+													"entries": [
+														"Justice Ramin Arman, Makenzie De Armas, Dan Dillon, Amanda Hamon, Ron Lundeen, Ben Petrisor, Patrick Renie, F. Wesley Schneider, Carl Sibley, Jason Tondro, James Wyatt"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Managing Editor",
+													"entries": [
+														"Judy Bauer"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Editorial Department",
+													"entries": [
+														"Eytan Bernstein, Janica Carter, Adrian Ng"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Senior Producer",
+													"entries": [
+														"Dan Tovar"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Producers",
+													"entries": [
+														"Bill Benham, Robert Hawkey, Andy Smith, Gabe Waluconis"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Director of Product Management",
+													"entries": [
+														"Liz Schuh"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Product Managers",
+													"entries": [
+														"Natalie Egan, Chris Lindsay, Hilary Ross, Chris Tulach"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "D&D Beyond",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Digital Design Team",
+													"entries": [
+														"Jay Jani, Adam Walton, Joseph Keen, Cameron Powell"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "adventure/KftGV/credits.webp"
+					},
+					"maxWidth": 250
+				},
+				{
+					"type": "gallery",
+					"images": [
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "adventure/KftGV/credits2.webp"
+							},
+							"title": "On the cover: Daring thieves infiltrate a conservatory to steal a magical instrument, unaware of the evil that awaits them. Illustrator Anna Podedworna gives us a glimpse of the danger."
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "adventure/KftGV/credits3.webp"
+							},
+							"title": "On the cover: The Golden Vault is your gateway to adventure. Simen Meyer shows us the door to this vault, but not the treasure within. That you must discover for yourself!"
+						}
+					]
+				}
+			]
 		}
 	]
 }

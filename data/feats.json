@@ -669,7 +669,7 @@
 					"style": "list-hang-notitle",
 					"items": [
 						{
-							"type": "entries",
+							"type": "item",
 							"name": "Chaotic Flare",
 							"entries": [
 								"When you roll a 1 or a 20 on an attack roll or a saving throw, the magic of chaos flows through you. Roll a d4 and consult the Chaotic Flares table to determine what happens. A flare lasts until the end of your next turn, and a new flare can't occur until after the first flare ends.",

@@ -848,6 +848,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Asmodeus casts one of the following spells, requiring no material components and using Wisdom as the spellcasting ability (spell save {@dc 27}):"
 					],
@@ -1574,6 +1575,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting (Winged Form Only)",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Baalzebul casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 24}):"
 					],
@@ -1953,6 +1955,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Bel casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 24}):"
 					],
@@ -3006,6 +3009,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The paeliryon casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability (spell save {@dc 17}):"
 					],
@@ -3715,6 +3719,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Ekengarik casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 18}):"
 					],
@@ -5256,6 +5261,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Jenevere casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 21}):"
 					],
@@ -5396,6 +5402,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Koh Tam casts one of the following spells, using Wisdom as the spellcasting ability (spell save {@dc 17}):"
 					],
@@ -5743,6 +5750,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Levistus casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability (spell save {@dc 23}):"
 					],
@@ -6358,6 +6366,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Mephistopheles casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability (spell save {@dc 26}):"
 					],
@@ -7024,6 +7033,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Ramius casts one of the following spells, using Charisma as the spellcasting ability (spell save {@dc 17}):"
 					],
@@ -7432,6 +7442,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Sarevok casts one of the following spells, using Wisdom as the spellcasting ability (spell save {@dc 18}):"
 					],
@@ -8058,6 +8069,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Tiax casts one of the following spells, using Wisdom as the spellcasting ability (spell save {@dc 16}):"
 					],
@@ -9040,6 +9052,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Zariel casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 26}):"
 					],
@@ -9270,6 +9283,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Zythan casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 18})."
 					],

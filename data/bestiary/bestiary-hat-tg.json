@@ -66,6 +66,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Doric casts one of the following spells, using Wisdom as the spellcasting ability (spell save {@dc 15}):"
 					],
@@ -227,6 +228,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Edgin casts one of the following spells, using Charisma as the spellcasting ability (spell save {@dc 15}):"
 					],
@@ -640,6 +642,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Roll a {@dice d6}. On a roll of 1, Simon must roll on the Wild Magic Surge table in the Player's Handbook. On a roll of 2 or higher, Simon casts one of the following spells, using Charisma as the spellcasting ability (spell save {@dc 14}):"
 					],
@@ -807,6 +810,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Sofina casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 18}):"
 					],

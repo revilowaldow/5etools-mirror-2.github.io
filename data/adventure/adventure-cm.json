@@ -31193,6 +31193,278 @@
 					]
 				}
 			]
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Project Lead",
+									"entries": [
+										"Christopher Perkins"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Art Director",
+									"entries": [
+										"Kate Irwin"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Writing",
+									"entries": [
+										"Graeme Barber, Bill Benham, Kelly Lynne D'Angelo, Alison Huang, Mark Hulmes, Jennifer Kretchmer, Daniel Kwan, Adam Lee, Ari Levitch, Chris Lindsay, Sarah Madsen, Christopher Perkins, Michael Polkinghorn, Taymoor Rehman, Hannah Rose, Derek Ruiz, Kienna Shaw, Brandes Stoddard, Amy Vorpahl, Toni Winslow-Brill"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Rules Development",
+									"entries": [
+										"Jeremy Crawford, Dan Dillon, Ben Petrisor, Taymoor Rehman"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Editing",
+									"entries": [
+										"Michele Carter, Scott Fitzgerald Gray, Kim Mohan, Christopher Perkins, Hannah Rose"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Lead Graphic Designer",
+									"entries": [
+										"Trish Yochum"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Graphic Designer",
+									"entries": [
+										"Trystan Falcone"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Cover Illustrators",
+									"entries": [
+										"Clint Cearley, Simen Meyer"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Interior Illustrators",
+									"entries": [
+										"Mark Behm, Zoltan Boros, Filip Burburan, Christopher Burdett, Sidharth Chaturvedi, Nikki Dawes, Wayne England, Caroline Gariba, Sam Keiser, Julian Kok, Katerina Ladon, Andrew Mar, Irina Nordsol, Robin Olausson, Claudio Pozas, April Prime, Domenico Sellaro, Ernanda Souza, Brian Valeza, Tyler Walpole, Zuzanna Wuzyk, Kieran Yanner"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Cartographers",
+									"entries": [
+										"Tim Hartin, Dyson Logos, Sean Macdonald, Mike Schley"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Project Engineer",
+									"entries": [
+										"Cynda Callaway"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Imaging Technician",
+									"entries": [
+										"Kevin Yee"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Prepress Specialist",
+									"entries": [
+										"Jefferson Dunlap"
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "D&D Tabletop Team",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Executive Producer",
+													"entries": [
+														"Ray Winninger"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Principal Designers",
+													"entries": [
+														"Jeremy Crawford, Christopher Perkins"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Design Manager",
+													"entries": [
+														"Steve Scott"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Design Department",
+													"entries": [
+														"Dan Dillon, Adam Lee, Ari Levitch, Ben Petrisor, F. Wesley Schneider, James Wyatt"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Art Team Manager",
+													"entries": [
+														"Richard Whitters"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Art Department",
+													"entries": [
+														"Trystan Falcone, Kate Irwin, Emi Kuioka, Shawn Wood, Trish Yochum"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Senior Producer",
+													"entries": [
+														"Dan Tovar"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Producers",
+													"entries": [
+														"Bill Benham, Robert Hawkey, Lea Heliotis"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Director of Product Management",
+													"entries": [
+														"Liz Schuh"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Product Managers",
+													"entries": [
+														"Natalie Egan, Chris Lindsay, Hilary Ross"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Marketing",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Director of Global Brand Marketing",
+													"entries": [
+														"Brian Perry"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Global Brand Manager",
+													"entries": [
+														"Shelly Mazzanoble"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Senior Marketing Communications Manager",
+													"entries": [
+														"Greg Tito"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Community Manager",
+													"entries": [
+														"Brandy Camel"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						"{@b The map of Candlekeep was inspired by a map design by Marco Bernardini.}",
+						"Special thanks to our hundreds of playtesters!"
+					]
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "adventure/CM/credits.webp"
+					}
+				},
+				{
+					"type": "gallery",
+					"images": [
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "adventure/CM/credits2.webp"
+							},
+							"title": "On the cover: Clint Cearley gives us a glimpse of two adventurers trying to solve one of Candlekeep's great mysteries, unaware of the danger looming behind them."
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "adventure/CM/credits3.webp"
+							},
+							"title": "On the alt-cover: Simen Meyer's cover incorporates the symbol of Candlekeep and various creatures into its design, creating what looks like a book one might find in the library's vaults."
+						}
+					]
+				}
+			]
 		}
 	]
 }

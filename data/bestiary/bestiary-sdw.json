@@ -269,6 +269,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Lhammaruntosz's spellcasting ability is Charisma (spell save {@dc 17}). She can innately cast the following spells, requiring no material components:"
 					],
@@ -284,6 +285,7 @@
 				},
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Lhammaruntosz is an 8th-level spellcaster. Her spellcasting ability is Charisma (spell save {@dc 17}; {@hit 9} to hit with spell attacks). She has the following sorcerer spells prepared:"
 					],
@@ -552,6 +554,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting (Healer)",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The spellcaster's spellcasting ability is Wisdom (spell save {@dc 16}, {@hit 8} to hit with spell attacks). The spellcaster has following cleric spells prepared:"
 					],
@@ -699,6 +702,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting (Mage)",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The spellcaster's spellcasting ability is Intelligence (spell save {@dc 16}, {@hit 8} to hit with spell attacks). The spellcaster has following wizard spells prepared:"
 					],

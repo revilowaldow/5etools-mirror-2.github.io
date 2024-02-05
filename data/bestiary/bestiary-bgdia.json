@@ -395,6 +395,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Arkhan's spellcasting ability is Charisma (spell save {@dc 17}). He can cast the following spells, requiring no material components:"
 					],
@@ -579,6 +580,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Bel's spellcasting ability is Charisma (spell save {@dc 23}). Bel can innately cast the following spells, requiring no material components:"
 					],
@@ -808,6 +810,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The black gauntlet is a 5th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 15}, {@hit 7} to hit with spell attacks). It has the following cleric spells prepared:"
 					],
@@ -2227,6 +2230,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The hollyphant's innate spellcasting ability is Wisdom (spell save {@dc 15}). It can innately cast the following spells, requiring no material components:"
 					],
@@ -2513,6 +2517,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Kostchtchie's innate spellcasting ability is Charisma (spell save {@dc 20}). He can innately cast the following spells, requiring no material components:"
 					],
@@ -2690,6 +2695,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Krull is a 14th-level spellcaster. His spellcasting ability is Wisdom (spell save {@dc 16}, {@hit 8} to hit with spell attacks). He has the following cleric spells prepared:"
 					],
@@ -2971,6 +2977,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Mahadi's innate spellcasting ability is Charisma (spell save {@dc 18}, {@hit 9} to hit with spell attacks). He can innately cast the following spells, requiring no material components:"
 					],
@@ -3125,6 +3132,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The master of souls is a 5th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 14}, {@hit 6} to hit with spell attacks). It has the following wizard spells prepared:"
 					],
@@ -3774,6 +3782,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The reaper's innate spellcasting ability is Charisma (spell save {@dc 13}). It can innately cast the following spells, requiring no material components:"
 					],
@@ -4037,6 +4046,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The skull lasher is a 3rd-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 13}, {@hit 5} to hit with spell attacks). It has the following wizard spells prepared:"
 					],
@@ -4194,6 +4204,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Smiler's innate spellcasting ability is Charisma (spell save {@dc 15}). He can innately cast the following spells, requiring no material components:"
 					],
@@ -4472,6 +4483,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Thurstwell is a 2nd-level spellcaster. His spellcasting ability is Wisdom (spell save {@dc 13}). He has the following cleric spells prepared:"
 					],

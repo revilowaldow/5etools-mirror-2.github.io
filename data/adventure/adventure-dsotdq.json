@@ -27222,6 +27222,279 @@
 					}
 				}
 			]
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Project Lead",
+									"entries": [
+										"F. Wesley Schneider"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Art Director",
+									"entries": [
+										"Kate Irwin"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Writers",
+									"entries": [
+										"Justice Arman, Brian Cortijo, Kelly Digges, Dan Dillon, Ari Levitch, Renee Knipe, Ben Petrisor, Mario Ortegon, Erin Roberts, James L. Sutter"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Rules Developer",
+									"entries": [
+										"Jeremy Crawford"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Editors",
+									"entries": [
+										"Sydney Adams, Judy Bauer, Janica Carter, Laura Hirsbrunner, Adrian Ng, Jason Tondro"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Senior Graphic Designer",
+									"entries": [
+										"Trish Yochum"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Graphic Designer",
+									"entries": [
+										"Matt Cole"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Cover Illustrators",
+									"entries": [
+										"Cynthia Sheppard, Chase Stone"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Cartographers",
+									"entries": [
+										"Francesca Baerald, Mike Schley"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Interior Illustrators",
+									"entries": [
+										"Mark Behm, Olivier Bernard, Zoltan Boros, Bruce Brenneise, Ekaterina Burmak, Dawn Carlos, Jedd Chevrier, CoupleOfKooks, Daarken, Kent Davis, Nikki Dawes, Olga Drebas, Caroline Gariba, Evyn Fong, Alexandre Honoré, Ralph Horsley, Sam Keiser, Julian Kok, Katerina Ladon, Linda Lithen, Andrew Mar, Robson Michel, Scott Murphy, David Auden Nash, Jessica Nguyen, Irina Nordsol, Chris Rahn, Caio E Santos, David Sladek, Crystal Sully, Svetlin Velinov, Magali Villeneuve, Lauren Walsh, Shawn Wood, Zuzanna Wužyk, Kieran Yanner"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Concept Art Directors",
+									"entries": [
+										"Richard Whitters, Shawn Wood"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Concept Artists",
+									"entries": [
+										"Alix Branwyn, Tyler Jacobson, Chris Rahn, Magali Villeneuve, Shawn Wood"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Project Engineer",
+									"entries": [
+										"Cynda Callaway"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Imaging Technicians",
+									"entries": [
+										"Daniel Corona, Kevin Yee"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Prepress Specialist",
+									"entries": [
+										"Jefferson Dunlap"
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "D&D Studio",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Executive Producer",
+													"entries": [
+														"Ray Winninger"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Director of Studio Operations",
+													"entries": [
+														"Kyle Brink"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Game Architects",
+													"entries": [
+														"Jeremy Crawford, Christopher Perkins"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Design Manager",
+													"entries": [
+														"Steve Scott"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Design Department",
+													"entries": [
+														"Justice Arman, Judy Bauer, Eytan Bernstein, Janica Carter, Makenzie De Armas, Dan Dillon, Amanda Hamon, Adrian Ng, Ben Petrisor, F. Wesley Schneider, Jason Tondro, James Wyatt"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Art Department",
+													"entries": [
+														"Matt Cole, Trystan Falcone, Bree Heiss, Kate Irwin, Bob Jordan, Emi Tanji, Trish Yochum"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Senior Producers",
+													"entries": [
+														"Lisa Ohanian, Dan Tovar"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Producers",
+													"entries": [
+														"Bill Benham, Robert Hawkey, Lea Heleotis, Andy Smith"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Director of Product Management",
+													"entries": [
+														"Liz Schuh"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Product Managers",
+													"entries": [
+														"Natalie Egan, Chris Lindsay, Hilary Ross, Chris Tulach"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "D&D Beyond",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Senior Producer",
+													"entries": [
+														"Faith Elisabeth Lilley"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Digital Design Team",
+													"entries": [
+														"Jay Jani, Adam Walton, Joseph Keen, Cameron Powell"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						"Special thanks to the original Dragonlance creative team and adventure designers, including Mike Breault, Michael Dobson, Larry Elmore, Anne Gray, Michael Gray, Jeff Grubb, Bruce Heard, Laura Hickman, Tracy Hickman, Harold Johnson, James Lowder, Roger Moore, Bruce Nesmith, Douglas Niles, Elizabeth Riedel, Lisa Smedman, Carl Smith, Garry Spiegle, Margaret Weis, Michael Williams, Janet Vialls, Peter Vialls, and many more!",
+						"Additional thanks to the hundreds of playtesters whose efforts made this a better book!"
+					]
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "adventure/DSotDQ/credits.webp"
+					},
+					"maxWidth": 300
+				},
+				{
+					"type": "gallery",
+					"images": [
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "adventure/DSotDQ/credits2.webp"
+							},
+							"title": "On the cover: Dragons, draconians, and other servants of the Dragon Queen prepare for their invasion of Kalaman in this painting by Cynthia Sheppard."
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "adventure/DSotDQ/credits3.webp"
+							},
+							"title": "On the cover: The grim visage of the death knight Lord Soth, Knight of the Black Rose, glares from of a tangle of charred thorns in this cover by Chase Stone."
+						}
+					]
+				}
+			]
 		}
 	]
 }

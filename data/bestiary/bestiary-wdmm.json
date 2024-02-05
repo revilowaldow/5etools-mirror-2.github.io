@@ -381,6 +381,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Arcturia is an 18th-level spellcaster. Her spellcasting ability is Intelligence (spell save {@dc 20}, {@hit 12} to hit with spell attacks). Arcturia can cast {@spell alter self} at will and has the following wizard spells prepared:"
 					],
@@ -514,6 +515,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Ashtyrranthor's spellcasting ability is Charisma. She can innately cast the following spells, requiring no material components:"
 					],
@@ -619,6 +621,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Berlain is an 18th-level spellcaster. Her spellcasting ability is Intelligence (spell save {@dc 17}, {@hit 9} to hit with spell attacks). Berlain can cast {@spell disguise self} and invisibility at will and has the following wizard spells prepared:"
 					],
@@ -1044,6 +1047,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Cassiok is an 18th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 19}, {@hit 11} to hit with spell attacks). Cassiok can cast {@spell disguise self} and invisibility at will and has the following wizard spells prepared:"
 					],
@@ -1352,6 +1356,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Dezmyr is a 19th-level spellcaster. Her spellcasting ability is Charisma (spell save {@dc 18}, {@hit 10} to hit with spell attacks). She has the following paladin spells prepared:"
 					],
@@ -1536,6 +1541,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Ezzat is an 18th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 20}, {@hit 12} to hit with spell attacks). He has the following wizard spells prepared:"
 					],
@@ -1820,6 +1826,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The drow's innate spellcasting ability is Charisma (spell save DC 15). The drow can innately cast the following spells, requiring no material components:"
 					],
@@ -1916,6 +1923,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The mummy lord is a 10th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 17}, {@hit 9} to hit with spell attacks). The mummy lord has the following cleric spells prepared:"
 					],
@@ -2110,6 +2118,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Halaster is a 20th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 22}, {@hit 14} to hit with spell attacks). He can cast {@spell disguise self} and {@spell invisibility} at will. He can cast {@spell fly} and {@spell lightning bolt} once each without expending a spell slot, but can't do so again until he finishes a short or long rest. Halaster has the following wizard spells prepared:"
 					],
@@ -2595,6 +2604,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The pudding's spellcasting ability is Intelligence (spell save {@dc 12}, {@hit 4} to hit with spell attacks). It can cast the following spells, requiring no components:"
 					],
@@ -2793,6 +2803,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Keresta is a 9th-level spellcaster. Her spellcasting ability is Wisdom (spell save {@dc 15}, {@hit 7} to hit with spell attacks). She has the following cleric spells prepared:"
 					],
@@ -3538,6 +3549,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Muiral is a 13th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 17}, {@hit 9} to hit with spell attacks). He has the following wizard spells prepared:"
 					],
@@ -5001,6 +5013,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Trenzia is a 5th-level spellcaster. Her spellcasting ability is Intelligence (spell save {@dc 13}, {@hit 5} to hit with spell attacks). She requires no somatic or material components to cast its spells. Trenzia has the following wizard spells prepared:"
 					],
@@ -5085,6 +5098,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Trobriand is an 18th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 20}, {@hit 12} to hit with spell attacks). He has the following wizard spells prepared:"
 					],

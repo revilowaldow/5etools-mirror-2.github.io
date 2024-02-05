@@ -214,6 +214,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting (Psionics)",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Auspicia's innate spellcasting ability is Intelligence. She can innately cast the following spells, requiring no components:"
 					],
@@ -328,6 +329,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Brahma is a 4th-level spellcaster. Her spellcasting ability is Charisma (spell save {@dc 13}, {@hit 5} to hit with spell attacks). She has the following bard spells prepared:"
 					],
@@ -822,6 +824,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Donaar is a 5th-level spellcaster. His spellcasting ability is Charisma (spell save {@dc 13}, {@hit 5} to hit with spell attacks). He has the following paladin spells prepared:"
 					],
@@ -989,6 +992,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Flabbergast is a 9th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 13}, {@hit 5} to hit with spell attacks). He has the following wizard spells prepared:"
 					],
@@ -1144,6 +1148,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Jim is a 9th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 15}, {@hit 7} to hit with spell attacks). He has the following wizard spells prepared:"
 					],
@@ -1326,6 +1331,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"K'thriss's innate spellcasting ability is Charisma (spell save {@dc 14}). He can innately cast the following spells, requiring no material components:"
 					],
@@ -1343,6 +1349,7 @@
 				},
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"K'thriss is a 5th-level spellcaster. His spellcasting ability is Charisma (spell save {@dc 14}, {@hit 6} to hit with spell attacks). He regains his expended spell slots when he finishes a short or long rest, and knows the following warlock spells:"
 					],
@@ -1652,6 +1659,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Môrgæn's spellcasting ability is Intelligence. She can innately cast the following spells, requiring no material components:"
 					],
@@ -1662,6 +1670,7 @@
 				},
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Môrgæn is a 9th-level spellcaster. Her spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). She has the following ranger spells prepared:"
 					],
@@ -1960,6 +1969,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Omin is a 9th-level spellcaster. His spellcasting ability is Wisdom (spell save {@dc 15}, {@hit 7} to hit with spell attacks). He has the following cleric spells prepared:"
 					],
@@ -2164,6 +2174,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Pendragon is a 4th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 13}, {@hit 5} to hit with spell attacks). He has the following wizard spells prepared:"
 					],
@@ -2305,6 +2316,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Phoenix is a 4th-level spellcaster. His spellcasting ability is Wisdom (spell save {@dc 13}, {@hit 5} to hit with spell attacks). He has the following cleric spells prepared:"
 					],
@@ -2569,6 +2581,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Prophetess is a 5th-level spellcaster. Her spellcasting ability is Wisdom (spell save {@dc 13}, {@hit 5} to hit with spell attacks). Prophetess has the following cleric spells prepared:"
 					],
@@ -2724,6 +2737,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Rosie's innate spellcasting ability is Wisdom (spell save {@dc 12}). She can innately cast the following spells, requiring no material components:"
 					],
@@ -3181,6 +3195,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Walnut is a 7th-level spellcaster. Her spellcasting ability is Wisdom (spell save {@dc 14}, {@hit 6} to hit with spell attacks). She has the following druid spells prepared:"
 					],

@@ -397,6 +397,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Asteria casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 19}):"
 					],
@@ -602,6 +603,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Aurnozci casts one of the following spells, requiring no material components and using Wisdom as the spellcasting ability (spell save {@dc 20}):"
 					],
@@ -1233,6 +1235,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Brusipha casts one of the following spells, using Charisma as the spellcasting ability (spell save {@dc 13}):"
 					],
@@ -1731,6 +1734,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting (Medusa Form Only)",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Euryale casts one of the following spells, requiring no material components and using Wisdom as the spellcasting ability (spell save {@dc 19}):"
 					],
@@ -1917,6 +1921,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"While holding its shears, the hag casts one of the following spells, requiring no material components and using Wisdom as the spellcasting ability (spell save {@dc 14}):"
 					],
@@ -2107,6 +2112,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Gremorly casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 16}):"
 					],
@@ -2628,6 +2634,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The champion casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 18}):"
 					],
@@ -3049,6 +3056,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The medusa casts one of the following spells, requiring no material components and using Wisdom as the spellcasting ability (spell save {@dc 20}):"
 					],
@@ -3261,6 +3269,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The hierophant casts one of the following spells, using Charisma as the spellcasting ability (spell save {@dc 17}):"
 					],
@@ -3465,6 +3474,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Hulgaz casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 18}):"
 					],
@@ -3638,6 +3648,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The initiate casts one of the following spells, using Charisma as the spellcasting ability (spell save {@dc 13}):"
 					],
@@ -3779,6 +3790,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The living portent casts one of the following spells, requiring no material components and using Wisdom as the spellcasting ability:"
 					],
@@ -4365,6 +4377,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Oddlewin casts one of the following spells, using Charisma as the spellcasting ability (spell save {@dc 12}):"
 					],
@@ -4700,6 +4713,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Pazrodine casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 23}):"
 					],
@@ -5399,6 +5413,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The knight casts one of the following spells, using Charisma as the spellcasting ability (spell save {@dc 15}):"
 					],

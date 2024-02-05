@@ -210,6 +210,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Skall casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability (spell save {@dc 19}):"
 					],
@@ -418,6 +419,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The exorcist casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability (spell save {@dc 14}, {@hit 6} to hit with spell attacks):"
 					],

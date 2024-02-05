@@ -215,6 +215,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The dandylion casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 15}):"
 					],
@@ -813,6 +814,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting (Psionics)",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Sheldon casts one of the following spells, requiring no spell components and using Intelligence as the spellcasting ability (spell save {@dc 14}):"
 					],

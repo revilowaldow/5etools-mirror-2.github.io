@@ -167,6 +167,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Diderius is a 10th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 17}, {@hit 9} to hit with spell attacks). He has the following wizard spells prepared:"
 					],
@@ -1669,6 +1670,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Tiamat can innately cast the following spell, her spellcasting ability is Charisma (spell save {@dc 26}):"
 					],

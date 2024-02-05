@@ -59,6 +59,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The archon casts one of the following spells, using Charisma as the spellcasting ability:"
 					],
@@ -448,6 +449,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The witch casts one of the following spells, using Charisma as the spellcasting ability (spell save {@dc 16}):"
 					],
@@ -580,6 +582,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The faerie casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 13}):"
 					],
@@ -696,6 +699,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The faerie casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability:"
 					],
@@ -817,6 +821,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The faerie casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 12}):"
 					],
@@ -1173,6 +1178,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The high fae casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 18}):"
 					],
@@ -1481,6 +1487,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The high fae casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 19}):"
 					],
@@ -1640,6 +1647,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The high fae casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 19}):"
 					],
@@ -2065,6 +2073,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The ogre casts one of the following spells, requiring no material components and using Wisdom as the spellcasting ability (spell save {@dc 11}):"
 					],
@@ -2926,6 +2935,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The treefolk casts one of the following spells, requiring no material components and using Wisdom as the spellcasting ability (spell save {@dc 17}):"
 					],
@@ -3084,6 +3094,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The witchkite casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 17}):"
 					],

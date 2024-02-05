@@ -443,6 +443,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The seraph's spellcasting ability is Charisma (spell save {@dc 18}). The seraph can innately cast the following spells, using only verbal components:"
 					],
@@ -1074,6 +1075,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The daemon's spellcasting ability is Charisma (spell save {@dc 15}, {@hit 7} to hit with spell attacks). The daemon can innately cast the following spells, requiring no components:"
 					],
@@ -2046,6 +2048,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The doomcaller is an 18th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 18}, {@hit 10} to hit with spell attacks). It has the following spells prepared:"
 					],
@@ -2259,6 +2262,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The downcast apostate's spellcasting ability is Charisma. The apostate can innately cast the following spells, requiring no material components:"
 					],
@@ -2274,6 +2278,7 @@
 				},
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The downcast apostate is an 18th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 16}, {@hit 8} to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells:"
 					],
@@ -2540,6 +2545,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The herald is a 12th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 14}, {@hit 6} to hit with spell attacks). It has the following cleric spells prepared:"
 					],
@@ -2727,6 +2733,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The eldritch priest is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). It has the following cleric spells prepared:"
 					],
@@ -4044,6 +4051,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The seraph's spellcasting ability is Charisma (spell save {@dc 16}). The seraph can innately cast the following spells, using only verbal components:"
 					],
@@ -4364,6 +4372,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The harvester's spellcasting ability is Charisma (spell save {@dc 14}). It can innately cast the following spells, requiring only that the harvester be wearing its coat of lies:"
 					],
@@ -4660,6 +4669,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The widow's spellcasting ability is Charisma (spell save {@dc 20}, {@hit 12} to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
 					],
@@ -5544,6 +5554,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The seraph's spellcasting ability is Charisma (spell save {@dc 14}). The seraph can innately cast the following spells, using only verbal components:"
 					],
@@ -5711,6 +5722,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The seraph's spellcasting ability is Charisma (spell save {@dc 13}). The seraph can innately cast the following spells, using only verbal components:"
 					],
@@ -5868,6 +5880,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The lich troll is an 11th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 15}, {@hit 7} to hit with spell attacks). The lich troll has the following wizard spells prepared:"
 					],
@@ -6558,6 +6571,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The Malikirian imp's spellcasting ability is Charisma (spell save {@dc 12}). It can innately cast the following spells without material components:"
 					],
@@ -8376,6 +8390,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The panjaian ilharan's innate spellcasting ability is Wisdom (spell save {@dc 12}). It can innately cast the following spells, requiring no material components:"
 					],
@@ -8991,6 +9006,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The Shadowsteel ghast's innate spellcasting ability is Intelligence (spell save {@dc 13}, {@hit 5} to hit with spell attacks). It can innately cast the following spells, requiring no components:"
 					],
@@ -11076,6 +11092,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The werebear is a 13th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 15}, {@hit 6} to hit with spell attacks). It can cast spells in any form, regardless of verbal, somatic, or material components provided they have no gold cost. It has the following druid spells prepared:"
 					],

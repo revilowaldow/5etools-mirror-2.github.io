@@ -24347,6 +24347,9 @@
 						"Xanthoria's Defeat",
 						"Lichen Lich"
 					]
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -26091,6 +26094,9 @@
 				},
 				{
 					"name": "Story Tracker"
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -27848,6 +27854,9 @@
 						"Tayyib Empire",
 						"Umizu"
 					]
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -28068,6 +28077,9 @@
 						"Creature Stat Blocks",
 						"Creature Descriptions"
 					]
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -28148,6 +28160,9 @@
 						"type": "part",
 						"identifier": 4
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -28908,6 +28923,9 @@
 						"type": "appendix",
 						"identifier": "E"
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -30139,6 +30157,9 @@
 						},
 						"Conclusion"
 					]
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},

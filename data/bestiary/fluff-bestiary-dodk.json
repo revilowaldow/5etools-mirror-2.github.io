@@ -1292,6 +1292,15 @@
 						"These ethereal phantoms haunt the places where they died, grasping for any memory of their former identities. Their mental anguish breaks the minds of those who hear their wails, and they induce rapid mutations when they possess humanoid bodies."
 					]
 				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/DoDk/Warp Witch.webp"
+					}
+				}
 			]
 		}
 	]

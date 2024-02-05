@@ -7453,6 +7453,133 @@
 					]
 				}
 			]
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Lead Designer",
+									"entries": [
+										"James Wyatt"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Designers",
+									"entries": [
+										"Sydney Adams, Makenzie De Armas, Dan Dillon"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Rules Developers",
+									"entries": [
+										"Jeremy Crawford, Ben Petrisor"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Art Director",
+									"entries": [
+										"Kate Irwin"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Cover Illustrator",
+									"entries": [
+										"Karl Kopinski"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Interior Illustrators",
+									"entries": [
+										"Olivier Bernard, Christopher Burdett, Conceptopolis, Caroline Gariba, Ilse Gort, Suzanne Helmigh, Daniel Landerman, Linda Lithén, Brynn Metheney, David Auden Nash, Hector Ortiz, Ryan Pancoast, Jenn Ravenna, Alex Stone"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Cartographer",
+									"entries": [
+										"Mike Schley"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Graphic Designer",
+									"entries": [
+										"Bob Jordan"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Editors",
+									"entries": [
+										"Judy Bauer, Michele Carter"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Product Manager",
+									"entries": [
+										"Natalie Egan"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Producer",
+									"entries": [
+										"Rob Hawkey"
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "D&D Beyond",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Senior Producer",
+													"entries": [
+														"Faith Elisabeth Lilley"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Digital Design Team",
+													"entries": [
+														"Jay Jani, Adam Walton, Joseph Keen, Cameron Powell"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
 		}
 	]
 }

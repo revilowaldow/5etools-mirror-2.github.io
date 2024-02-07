@@ -107,6 +107,7 @@ class NavBar {
 		this._addElement_li(NavBar._CAT_UTILITIES, "makebrew.html", "Homebrew Builder");
 		this._addElement_li(NavBar._CAT_UTILITIES, "managebrew.html", "Homebrew Manager");
 		this._addElement_li(NavBar._CAT_UTILITIES, "homebrew", "Browse Local Homebrew");
+		this._addElement_li(NavBar._CAT_UTILITIES, "_img", "Browse Local Homebrew Images");
 		this._addElement_divider(NavBar._CAT_UTILITIES);
 		this._addElement_li(NavBar._CAT_UTILITIES, "inittrackerplayerview.html", "Initiative Tracker Player View");
 		this._addElement_divider(NavBar._CAT_UTILITIES);

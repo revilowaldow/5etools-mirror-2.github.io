@@ -1567,10 +1567,12 @@
 			"_copy": {
 				"name": "Commoner",
 				"source": "MM",
-				"_trait": {
-					"name": "Mountain Dwarf",
-					"source": "PHB"
-				}
+				"_templates": [
+					{
+						"name": "Mountain Dwarf",
+						"source": "PHB"
+					}
+				]
 			},
 			"hasToken": true,
 			"hasFluffImages": true
@@ -1583,10 +1585,12 @@
 			"_copy": {
 				"name": "Acolyte",
 				"source": "MM",
-				"_trait": {
-					"name": "Mountain Dwarf",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "Mountain Dwarf",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -3023,10 +3027,12 @@
 			"_copy": {
 				"name": "Commoner",
 				"source": "MM",
-				"_trait": {
-					"name": "Mountain Dwarf",
-					"source": "PHB"
-				}
+				"_templates": [
+					{
+						"name": "Mountain Dwarf",
+						"source": "PHB"
+					}
+				]
 			},
 			"hasToken": true,
 			"hasFluffImages": true

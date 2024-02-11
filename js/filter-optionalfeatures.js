@@ -76,19 +76,19 @@ class PageFilterOptionalFeatures extends PageFilter {
 				this._featureFilter,
 			],
 		});
-		this._miscFilter = new Filter({header: "Miscellaneous", items: ["SRD", "Legacy", "Grants Additional Spells"], isMiscFilter: true});
+		this._miscFilter = new Filter({header: "Miscellaneous", items: ["Has Info", "Has Images", "SRD", "Legacy", "Grants Additional Spells"], isMiscFilter: true});
 	}
 
-	static mutateForFilters (it) {
-		it._fSources = SourceFilter.getCompleteFilterSources(it);
+	static mutateForFilters (ent) {
+		ent._fSources = SourceFilter.getCompleteFilterSources(ent);
 
 		// (Convert legacy string format to array)
-		it.featureType = it.featureType && it.featureType instanceof Array ? it.featureType : it.featureType ? [it.featureType] : ["OTH"];
-		if (it.prerequisite) {
-			it._sPrereq = true;
-			it._fPrereqPact = it.prerequisite.filter(it => it.pact).map(it => it.pact);
-			it._fPrereqPatron = it.prerequisite.filter(it => it.patron).map(it => it.patron);
-			it._fprereqSpell = it.prerequisite
+		ent.featureType = ent.featureType && ent.featureType instanceof Array ? ent.featureType : ent.featureType ? [ent.featureType] : ["OTH"];
+		if (ent.prerequisite) {
+			ent._sPrereq = true;
+			ent._fPrereqPact = ent.prerequisite.filter(it => it.pact).map(it => it.pact);
+			ent._fPrereqPatron = ent.prerequisite.filter(it => it.patron).map(it => it.patron);
+			ent._fprereqSpell = ent.prerequisite
 				.filter(it => it.spell)
 				.map(prereq => {
 					return (prereq.spell || [])
@@ -111,17 +111,19 @@ class PageFilterOptionalFeatures extends PageFilter {
 							return `Any ${ptChoose}`;
 						});
 				});
-			it._fprereqFeature = it.prerequisite.filter(it => it.feature).map(it => it.feature);
-			it._fPrereqLevel = it.prerequisite.filter(it => it.level).map(PageFilterOptionalFeatures.getLevelFilterItem.bind(PageFilterOptionalFeatures));
+			ent._fprereqFeature = ent.prerequisite.filter(it => it.feature).map(it => it.feature);
+			ent._fPrereqLevel = ent.prerequisite.filter(it => it.level).map(PageFilterOptionalFeatures.getLevelFilterItem.bind(PageFilterOptionalFeatures));
 		}
 
-		it._dFeatureType = it.featureType.map(ft => Parser.optFeatureTypeToFull(ft));
-		it._lFeatureType = it.featureType.join(", ");
-		it.featureType.sort((a, b) => SortUtil.ascSortLower(Parser.optFeatureTypeToFull(a), Parser.optFeatureTypeToFull(b)));
+		ent._dFeatureType = ent.featureType.map(ft => Parser.optFeatureTypeToFull(ft));
+		ent._lFeatureType = ent.featureType.join(", ");
+		ent.featureType.sort((a, b) => SortUtil.ascSortLower(Parser.optFeatureTypeToFull(a), Parser.optFeatureTypeToFull(b)));
 
-		it._fMisc = it.srd ? ["SRD"] : [];
-		if (SourceUtil.isLegacySourceWotc(it.source)) it._fMisc.push("Legacy");
-		if (it.additionalSpells) it._fMisc.push("Grants Additional Spells");
+		ent._fMisc = ent.srd ? ["SRD"] : [];
+		if (SourceUtil.isLegacySourceWotc(ent.source)) ent._fMisc.push("Legacy");
+		if (ent.additionalSpells) ent._fMisc.push("Grants Additional Spells");
+		if (this._hasFluff(ent)) ent._fMisc.push("Has Info");
+		if (this._hasFluffImages(ent)) ent._fMisc.push("Has Images");
 	}
 
 	addToFilters (it, isExcluded) {

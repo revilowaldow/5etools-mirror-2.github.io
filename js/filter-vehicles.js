@@ -61,8 +61,8 @@ class PageFilterVehicles extends PageFilter {
 		ent._fMisc = ent.srd ? ["SRD"] : [];
 		if (SourceUtil.isLegacySourceWotc(ent.source)) ent._fMisc.push("Legacy");
 		if (Renderer.vehicle.hasToken(ent)) ent._fMisc.push("Has Token");
-		if (ent.hasFluff || ent.fluff?.entries) ent._fMisc.push("Has Info");
-		if (ent.hasFluffImages || ent.fluff?.images) ent._fMisc.push("Has Images");
+		if (this._hasFluff(ent)) ent._fMisc.push("Has Info");
+		if (this._hasFluffImages(ent)) ent._fMisc.push("Has Images");
 	}
 
 	addToFilters (it, isExcluded) {

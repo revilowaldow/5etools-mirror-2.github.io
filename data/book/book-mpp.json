@@ -3,6 +3,7 @@
 		{
 			"type": "section",
 			"name": "Introduction: Multiversal Menagerie",
+			"page": 4,
 			"id": "000",
 			"entries": [
 				{
@@ -36,6 +37,7 @@
 				{
 					"type": "section",
 					"name": "Using a Stat Block",
+					"page": 4,
 					"id": "001",
 					"entries": [
 						"This book is a companion to the {@book Monster Manual|MM} and uses a similar presentation. If you are unfamiliar with the monster stat block format, read the {@book introduction|MM|0} of the {@book Monster Manual|MM} before proceeding. That book explains stat block terminology and gives rules for various monster traits\u2014information that isn't repeated here.",
@@ -43,6 +45,7 @@
 						{
 							"type": "entries",
 							"name": "Unusual Attacks and Magic",
+							"page": 4,
 							"id": "002",
 							"entries": [
 								"Some creatures have weapons that deal unusual damage types and spellcasting that functions in an atypical way. Such an exception is a special feature of a stat block and represents how the creature uses its weapon or casts its spells; the exception has no effect on how a weapon or spell functions for a different creature."
@@ -51,6 +54,7 @@
 						{
 							"type": "entries",
 							"name": "Meeting Magic Item Prerequisites",
+							"page": 4,
 							"id": "003",
 							"entries": [
 								"If a stat block contains the name of a class in parentheses under the creature's name, the creature is considered a member of that class for the purpose of meeting prerequisites for magic items.",
@@ -356,6 +360,7 @@
 				{
 					"type": "section",
 					"name": "Petitioners",
+					"page": 4,
 					"id": "004",
 					"entries": [
 						"Petitioners are former mortals. They've lived, ceased living, and now exist on the Outer Planes. They typically inhabit a plane that shares their alignment or the realm of a deity they worship. Some, however, become lost and wander the planes or make new homes for themselves elsewhere on the Great Wheel.",
@@ -367,6 +372,7 @@
 								{
 									"type": "entries",
 									"name": "Plane Locked",
+									"page": 4,
 									"id": "006",
 									"entries": [
 										"The creature's creature type changes to Celestial or Fiend (DM's choice), and the creature can't leave the Outer Planes. Portals or magic that allow transport beyond the Outer Planes don't affect this creature."
@@ -375,6 +381,7 @@
 								{
 									"type": "entries",
 									"name": "Soul Shape",
+									"page": 4,
 									"id": "007",
 									"entries": [
 										"A dead petitioner can be returned to life only by the {@spell true resurrection} spell or the {@spell wish} spell. If affected by these spells, a petitioner chooses whether to return in its original mortal form or as a petitioner."
@@ -385,6 +392,7 @@
 						{
 							"type": "entries",
 							"name": "Death and the Planes",
+							"page": 4,
 							"id": "008",
 							"entries": [
 								"Mortals that die eventually have their souls return as petitioners in far-flung reaches of the Outer Planes. There, they manifest as idealized versions of themselves. These forms might be similar to the forms they had in life or be those of entirely different creatures. A petitioner or another Celestial or Fiend that is destroyed can reconstitute on a plane that shares its alignment after 100 years, or it might choose to become one with that plane and never return. A creature that re-forms on the planes multiple times becomes increasingly dissimilar from its original mortal form."
@@ -395,6 +403,7 @@
 				{
 					"type": "section",
 					"name": "Planar Influences",
+					"page": 6,
 					"id": "009",
 					"entries": [
 						"The Outer Planes are home to powerful forces of good and evil, chaos and order. Over time, these forces can alter creatures exposed to them. Due to their proximity to the Outer Planes, the inhabitants of the Outlands' gate-towns and nearby regions often exhibit traits associated with specific Outer Planes. Creatures might also have such traits if they dwell in other realms steeped in the energy of an Outer Plane\u2014whether such a place be in the Outlands, on the Material Plane, or elsewhere.",
@@ -409,6 +418,7 @@
 						{
 							"type": "entries",
 							"name": "Planar Alignment",
+							"page": 6,
 							"id": "00a",
 							"entries": [
 								"In addition to the plane-specific traits you can grant a creature, the influence of a plane changes a creature's alignment to match the plane's alignment, as shown on the Outer Plane Alignments table. If a plane a creature is influenced by has more than one alignment, you choose the creature's alignment from the options listed.",
@@ -495,6 +505,7 @@
 						{
 							"type": "entries",
 							"name": "The Abyss",
+							"page": 6,
 							"id": "00b",
 							"entries": [
 								"Creatures influenced by the Abyss gain demonic features, such as horns, scales, and black blood. A creature influenced by the Abyss also gains one or more of following traits of your choice:",
@@ -505,6 +516,7 @@
 										{
 											"type": "entries",
 											"name": "Entropy of the Abyss",
+											"page": 6,
 											"id": "00d",
 											"entries": [
 												"Whenever the creature deals bludgeoning, piercing, or slashing damage, it can change the damage type to necrotic."
@@ -513,6 +525,7 @@
 										{
 											"type": "entries",
 											"name": "Poison Tolerant",
+											"page": 6,
 											"id": "00e",
 											"entries": [
 												"The creature has advantage on saving throws it makes to avoid or end the {@condition poisoned} condition on itself."
@@ -521,6 +534,7 @@
 										{
 											"type": "entries",
 											"name": "Siege Monster",
+											"page": 6,
 											"id": "00f",
 											"entries": [
 												"The creature deals double damage to objects and structures."
@@ -533,6 +547,7 @@
 						{
 							"type": "entries",
 							"name": "Acheron",
+							"page": 6,
 							"id": "010",
 							"entries": [
 								"Creatures influenced by Acheron have rough, scarred skin that resembles armor or pitted metal. A creature influenced by Acheron also gains one or more of following traits of your choice:",
@@ -543,6 +558,7 @@
 										{
 											"type": "entries",
 											"name": "Battle Lust",
+											"page": 6,
 											"id": "012",
 											"entries": [
 												"Whenever the creature reduces another creature to 0 hit points with a melee attack on its turn, it gains 10 {@book temporary hit points|PHB|9|Temporary Hit Points}, and it can take a bonus action to move up to its speed without provoking {@action opportunity attack||opportunity attacks}."
@@ -551,6 +567,7 @@
 										{
 											"type": "entries",
 											"name": "Corrosive Death",
+											"page": 6,
 											"id": "013",
 											"entries": [
 												"When the creature drops to 0 hit points, it turns into a pile of rust. Any equipment it was wearing or carrying is unaffected."
@@ -559,6 +576,7 @@
 										{
 											"type": "entries",
 											"name": "Pack Tactics",
+											"page": 6,
 											"id": "014",
 											"entries": [
 												"The creature has advantage on an attack roll against a target if at least one of the creature's allies is within 5 feet of the target and the ally doesn't have the {@condition incapacitated} condition."
@@ -582,6 +600,7 @@
 						{
 							"type": "entries",
 							"name": "Arborea",
+							"page": 6,
 							"id": "015",
 							"entries": [
 								"Creatures influenced by Arborea change color to match the season, and their eyes glint with vibrant hues. A creature influenced by Arborea also gains one or more of following traits of your choice:",
@@ -592,6 +611,7 @@
 										{
 											"type": "entries",
 											"name": "Merry Music",
+											"page": 6,
 											"id": "017",
 											"entries": [
 												"Whenever the creature casts a spell or makes a spell attack, the faint sound of merry music can be heard by it and those affected by its magic."
@@ -600,6 +620,7 @@
 										{
 											"type": "entries",
 											"name": "Recklessness",
+											"page": 6,
 											"id": "018",
 											"entries": [
 												"At the start of its turn, the creature can gain advantage on attack rolls during that turn, but attack rolls against the creature have advantage until the start of its next turn."
@@ -612,6 +633,7 @@
 						{
 							"type": "entries",
 							"name": "Arcadia",
+							"page": 7,
 							"id": "019",
 							"entries": [
 								"Creatures influenced by Arcadia gain perfectly symmetrical features and appear eternally youthful or vigorous. A creature influenced by Arcadia also gains one or more of following traits of your choice:",
@@ -622,6 +644,7 @@
 										{
 											"type": "entries",
 											"name": "Arcadian Perfection (1/Day)",
+											"page": 7,
 											"id": "01b",
 											"entries": [
 												"If the creature fails a Strength, Dexterity, or Constitution saving throw, it can choose to succeed instead."
@@ -630,6 +653,7 @@
 										{
 											"type": "entries",
 											"name": "Unshakable Resolve",
+											"page": 7,
 											"id": "01c",
 											"entries": [
 												"An invisible, magical aura of confidence and hope surrounds the creature. When another creature that has the {@condition frightened} condition starts its turn within 5 feet of the creature, the {@condition frightened} condition affecting it is suppressed for 1 minute. When this suppression ends, the condition resumes if its duration hasn't expired."
@@ -642,6 +666,7 @@
 						{
 							"type": "entries",
 							"name": "The Beastlands",
+							"page": 7,
 							"id": "01d",
 							"entries": [
 								"Creatures influenced by the Beastlands gain wilder or more animalistic features, such as larger eyes, thicker fur, or more prominent canine teeth. Beasts influenced by the Beastlands are often affected per the {@spell awaken} spell\u2014though normal Beasts also typically range through these areas in large numbers. A creature influenced by the Beastlands also gains one or more of following traits of your choice:",
@@ -652,6 +677,7 @@
 										{
 											"type": "entries",
 											"name": "Speech of Beast and Leaf (Requires the Ability to Speak at Least One Language)",
+											"page": 7,
 											"id": "01f",
 											"entries": [
 												"This creature can comprehend and verbally communicate with Beasts and Plants."
@@ -660,6 +686,7 @@
 										{
 											"type": "entries",
 											"name": "Tracker's Eye",
+											"page": 7,
 											"id": "020",
 											"entries": [
 												"The creature can see {@condition invisible} creatures and objects as if they were visible."
@@ -668,6 +695,7 @@
 										{
 											"type": "entries",
 											"name": "Trackless",
+											"page": 7,
 											"id": "021",
 											"entries": [
 												"The creature leaves no tracks to indicate where it has been or where it's headed."
@@ -680,6 +708,7 @@
 						{
 							"type": "entries",
 							"name": "Bytopia",
+							"page": 7,
 							"id": "022",
 							"entries": [
 								"Creatures influenced by Bytopia appear carved, constructed, or sculpted by an expert artisan. A creature influenced by Bytopia also gains one or more of following traits of your choice:",
@@ -690,6 +719,7 @@
 										{
 											"type": "entries",
 											"name": "Phantasmal Dweomer (1/Day)",
+											"page": 7,
 											"id": "024",
 											"entries": [
 												"After being in continuous physical contact with a Tiny nonmagical object for 1 minute, the creature can imbue the object with one of the following magical properties (choose one or roll a {@dice d6}):",
@@ -715,6 +745,7 @@
 										{
 											"type": "entries",
 											"name": "Sounds of Work",
+											"page": 7,
 											"id": "025",
 											"entries": [
 												"Whenever the creature casts a spell or makes a spell attack, the faint sounds of hammering and sawing can be heard by it and those affected by its magic."
@@ -727,6 +758,7 @@
 						{
 							"type": "entries",
 							"name": "Carceri",
+							"page": 8,
 							"id": "026",
 							"entries": [
 								"Creatures influenced by Carceri appear as if they'd been imprisoned underground for a long period; their hair is matted, their nails or claws are long and dirty, and they have marks as if they were bound by chains or rope. A creature influenced by Carceri also gains one or more of following traits of your choice:",
@@ -737,6 +769,7 @@
 										{
 											"type": "entries",
 											"name": "Burden of Hopelessness",
+											"page": 8,
 											"id": "028",
 											"entries": [
 												"An invisible, magical aura of hopelessness surrounds the creature. Any other creature that starts its turn within 5 feet of the creature has its speed reduced by 10 feet until it is reduced to 0 hit points, regains hit points, or gains {@book temporary hit points|PHB|9|Temporary Hit Points}. This reduction never exceeds 10 feet."
@@ -745,6 +778,7 @@
 										{
 											"type": "entries",
 											"name": "Torturous Teleport",
+											"page": 8,
 											"id": "029",
 											"entries": [
 												"An invisible, magic-disrupting aura surrounds the creature. Any creature that teleports into or out of a space within 20 feet of the creature must make a DC 15 Constitution saving throw, taking 16 ({@dice 3d10}) force damage on a failed save, or half as much damage on a successful one."
@@ -757,6 +791,7 @@
 						{
 							"type": "entries",
 							"name": "Elysium",
+							"page": 8,
 							"id": "02a",
 							"entries": [
 								"Creatures influenced by Elysium have seasonal flowers sprouting from their heads, and they faintly smell of herbs or spices. A creature influenced by Elysium also gains one or more of following traits of your choice:",
@@ -767,6 +802,7 @@
 										{
 											"type": "entries",
 											"name": "Hardy Body",
+											"page": 8,
 											"id": "02c",
 											"entries": [
 												"The creature no longer needs food or water, and the creature can have no more than 4 levels of {@condition exhaustion}."
@@ -775,6 +811,7 @@
 										{
 											"type": "entries",
 											"name": "Peaceful Presence",
+											"page": 8,
 											"id": "02d",
 											"entries": [
 												"An invisible, magical aura of peace surrounds the creature. Any other creature that starts its turn within 5 feet of the creature has disadvantage on attack rolls until it is attacked, takes damage, or witnesses an ally being harmed."
@@ -787,6 +824,7 @@
 						{
 							"type": "entries",
 							"name": "Gehenna",
+							"page": 8,
 							"id": "02e",
 							"entries": [
 								"Creatures influenced by Gehenna appear haggard and have long, crooked limbs. A creature influenced by Gehenna also gains one or more of following traits of your choice:",
@@ -797,6 +835,7 @@
 										{
 											"type": "entries",
 											"name": "Treasure Sense",
+											"page": 8,
 											"id": "030",
 											"entries": [
 												"The creature can pinpoint, by scent, the location of precious metals and stones, such as coins and gems, within 60 feet of itself."
@@ -805,6 +844,7 @@
 										{
 											"type": "entries",
 											"name": "Vitality Theft",
+											"page": 8,
 											"id": "031",
 											"entries": [
 												"An invisible, magical aura surrounds the creature. Whenever another creature regains hit points within 5 feet of the creature, half of those regained hit points (rounded down) go to the creature generating the aura instead."
@@ -828,6 +868,7 @@
 						{
 							"type": "entries",
 							"name": "Hades",
+							"page": 7,
 							"id": "032",
 							"entries": [
 								"Creatures influenced by Hades often have dour, gray features and feel cold to the touch. A creature influenced by Hades also gains one or more of following traits of your choice:",
@@ -838,6 +879,7 @@
 										{
 											"type": "entries",
 											"name": "Aura of Gloom",
+											"page": 9,
 											"id": "034",
 											"entries": [
 												"An invisible, magical aura surrounds the creature. Colors are muted within 30 feet of the creature, and other creatures in that area have disadvantage on Charisma checks and Charisma saving throws."
@@ -846,6 +888,7 @@
 										{
 											"type": "entries",
 											"name": "Extinguish Light",
+											"page": 9,
 											"id": "035",
 											"entries": [
 												"Nonmagical flames within 10 feet of the creature are extinguished."
@@ -854,6 +897,7 @@
 										{
 											"type": "entries",
 											"name": "Larval Rebirth",
+											"page": 9,
 											"id": "036",
 											"entries": [
 												"When the creature dies, it re-forms somewhere in Hades as a {@creature larva|DMG} (see the {@book Dungeon Master's Guide|DMG}) in {@dice 1d10} days."
@@ -862,6 +906,7 @@
 										{
 											"type": "entries",
 											"name": "Shadowy Form",
+											"page": 9,
 											"id": "037",
 											"entries": [
 												"Whenever the creature is fully in darkness or dim light, it becomes semi-incorporeal and gains resistance to bludgeoning, piercing, and slashing damage. If the creature takes radiant damage, its Shadowy Form trait is suppressed for 1 hour."
@@ -874,6 +919,7 @@
 						{
 							"type": "entries",
 							"name": "Limbo",
+							"page": 9,
 							"id": "038",
 							"entries": [
 								"Creatures influenced by Limbo have their appearance shift at each dawn. Their skin might change color, or their features might morph into unnatural, even abstract, configurations. A creature influenced by Limbo also gains one or more of following traits of your choice:",
@@ -884,6 +930,7 @@
 										{
 											"type": "entries",
 											"name": "Chaotic Magic",
+											"page": 9,
 											"id": "03a",
 											"entries": [
 												"The creature can cast the {@spell thaumaturgy} cantrip, choosing a magical effect at random. Charisma is the spellcasting ability for this spell."
@@ -892,6 +939,7 @@
 										{
 											"type": "entries",
 											"name": "Churning Chaos",
+											"page": 9,
 											"id": "03b",
 											"entries": [
 												"When the creature scores a critical hit or takes a critical hit, chaotic energy bursts from the creature, creating one the following effects (choose one or roll a {@dice d6}):",
@@ -921,6 +969,7 @@
 										{
 											"type": "entries",
 											"name": "Hidden Slaad",
+											"page": 9,
 											"id": "03c",
 											"entries": [
 												"When the creature dies, a {@creature slaad tadpole} bursts from the creature's chest."
@@ -944,6 +993,7 @@
 						{
 							"type": "entries",
 							"name": "Mechanus",
+							"page": 9,
 							"id": "03d",
 							"entries": [
 								"Creatures influenced by Mechanus have angular, symmetrical features, and their skin gains a metallic sheen. A creature influenced by Mechanus also gains one or more of following traits of your choice:",
@@ -954,6 +1004,7 @@
 										{
 											"type": "entries",
 											"name": "Lightning Rod",
+											"page": 9,
 											"id": "03f",
 											"entries": [
 												"Lightning damage can't reduce the creature below 1 hit point. Whenever the creature takes lightning damage, one other creature within 5 feet of it (determined randomly) takes half as much damage."
@@ -962,6 +1013,7 @@
 										{
 											"type": "entries",
 											"name": "Structural Repair (1/Day)",
+											"page": 9,
 											"id": "040",
 											"entries": [
 												"After being in continuous physical contact with a nonmagical object for 1 minute, the creature can magically repair the object as though it had cast a {@spell mending} spell on it."
@@ -974,6 +1026,7 @@
 						{
 							"type": "entries",
 							"name": "Mount Celestia",
+							"page": 10,
 							"id": "041",
 							"entries": [
 								"Creatures influenced by Mount Celestia gain angelic features, such as gold- or platinum-colored skin, eyes, or hair. Spectral feathers might rise from a creature's back, or a halo might crown its head. A creature influenced by Mount Celestia also gains one or more of following traits of your choice:",
@@ -984,6 +1037,7 @@
 										{
 											"type": "entries",
 											"name": "Healing Orb",
+											"page": 10,
 											"id": "043",
 											"entries": [
 												"When the creature dies, its body releases a spectral orb that hovers in the same space and lasts for 1 minute. Any good-aligned creature that starts its turn within 5 feet of the orb regains {@dice 1d6} hit points."
@@ -992,6 +1046,7 @@
 										{
 											"type": "entries",
 											"name": "Light",
+											"page": 10,
 											"id": "044",
 											"entries": [
 												"The creature sheds bright light in a 10-foot radius and dim light for an additional 10 feet. As a bonus action, the creature can suppress this light or cause it to return. The light winks out if the creature dies."
@@ -1015,6 +1070,7 @@
 						{
 							"type": "entries",
 							"name": "The Nine Hells",
+							"page": 10,
 							"id": "045",
 							"entries": [
 								"Creatures influenced by the Nine Hells gain devilish features, such as horns, a forked tail, or the faint odor of sulfur or smoke. A creature influenced by the Nine Hells also gains one or more of following traits of your choice:",
@@ -1025,6 +1081,7 @@
 										{
 											"type": "entries",
 											"name": "Flames of the Nine",
+											"page": 10,
 											"id": "047",
 											"entries": [
 												"Whenever the creature deals bludgeoning, piercing, or slashing damage, it can change the damage type to fire."
@@ -1033,6 +1090,7 @@
 										{
 											"type": "entries",
 											"name": "Viper Nest",
+											"page": 10,
 											"id": "048",
 											"entries": [
 												"When the creature dies, its body disgorges a {@creature swarm of poisonous snakes} in the same space."
@@ -1052,6 +1110,7 @@
 						{
 							"type": "entries",
 							"name": "Pandemonium",
+							"page": 10,
 							"id": "049",
 							"entries": [
 								"A creature influenced by Pandemonium appears as though it were exposed to cold air for a long time, its skin dry and cracked. Its hair might blow in a phantom wind. A creature influenced by Pandemonium also gains one or more of following traits of your choice:",
@@ -1062,6 +1121,7 @@
 										{
 											"type": "entries",
 											"name": "Hindering Winds",
+											"page": 10,
 											"id": "04b",
 											"entries": [
 												"Cold winds sweep around the creature. Any other creature that enters a space within 20 feet of the creature or starts its turn there has its flying speed halved until the start of its next turn."
@@ -1070,6 +1130,7 @@
 										{
 											"type": "entries",
 											"name": "Wailing Screams",
+											"page": 10,
 											"id": "04c",
 											"entries": [
 												"Whenever the creature casts a spell or makes a spell attack, the faint sound of crying and screams can be heard by it and those affected by its magic."
@@ -1082,6 +1143,7 @@
 						{
 							"type": "entries",
 							"name": "Ysgard",
+							"page": 10,
 							"id": "04d",
 							"entries": [
 								"A creature influenced by Ysgard becomes hearty and muscular. Its scars always appear fresh. When the creature senses danger, it can't help but express joy. A creature influenced by Ysgard also gains one or more of following traits of your choice:",
@@ -1092,6 +1154,7 @@
 										{
 											"type": "entries",
 											"name": "Warrior's Wrath",
+											"page": 10,
 											"id": "04f",
 											"entries": [
 												"The creature has advantage on melee attack rolls against any target missing at least half its hit points."
@@ -1100,6 +1163,7 @@
 										{
 											"type": "entries",
 											"name": "Ysgardian Stand (2/Day)",
+											"page": 10,
 											"id": "050",
 											"entries": [
 												"If the creature has the {@condition prone} condition at the start of its turn, it can, at that time, end the {@condition prone} condition on itself and stand up without expending any movement. The creature can't use this trait while it has the {@condition incapacitated} condition."
@@ -1114,6 +1178,7 @@
 				{
 					"type": "section",
 					"name": "Denizens of the Outlands",
+					"page": 11,
 					"id": "051",
 					"entries": [
 						"As the Outlands are the crossroads of the Outer Planes, travelers in that realm might encounter any creature in existence, many of which have been influenced by other planes. The following sections detail the various creature types likely to be encountered in the Outlands. Use the tables in these sections to inspire encounters and whole adventures in the Outlands.",
@@ -1129,6 +1194,7 @@
 						{
 							"type": "entries",
 							"name": "Aberrations",
+							"page": 11,
 							"id": "053",
 							"entries": [
 								"With their inscrutable biologies and agendas, Aberrations might journey to the Outlands pursuing all manner of schemes or sustenance. Slaadi from Limbo are among the most common Aberrations found on the Outlands.",
@@ -1167,6 +1233,7 @@
 						{
 							"type": "entries",
 							"name": "Beasts",
+							"page": 11,
 							"id": "054",
 							"entries": [
 								"Varied Beasts roam the Outlands, with many species being long extinct on Material Plane worlds. Plane-influenced creatures and gigantic or idealized animals from the Beastlands are common.",
@@ -1205,6 +1272,7 @@
 						{
 							"type": "entries",
 							"name": "Celestials",
+							"page": 11,
 							"id": "055",
 							"entries": [
 								"Various Celestials watch over the Outlands, particularly those reaches that border the Upper Planes. Angels and {@book archons|MPP|1|Archons} (presented later in this book) are particularly common. Some seek to prevent fiendish incursions into the plane, while others try to align the Outlands closer to goodly philosophies.",
@@ -1243,6 +1311,7 @@
 						{
 							"type": "entries",
 							"name": "Constructs",
+							"page": 12,
 							"id": "056",
 							"entries": [
 								"Constructs in the Outlands might be the remnants of forgotten civilizations, servants of plane-walking magic-users, or creations with varied important or ridiculous purposes. Among the most common are modrons, mechanical denizens of Mechanus that seek to enforce order on the plane.",
@@ -1292,6 +1361,7 @@
 						{
 							"type": "entries",
 							"name": "Dragons",
+							"page": 12,
 							"id": "057",
 							"entries": [
 								"All varieties of Dragons can be found in the Outlands, though many dwell in isolated reaches away from the plane's gate-towns. Some remain aloof due to their territorial natures, while others seek to avoid the {@book Mausoleum of Chronepsis|SatO|_UNKNOWN}, home to the legendary dragon Chronepsis (see {@book Sigil and the Outlands|SatO} for details).",
@@ -1330,6 +1400,7 @@
 						{
 							"type": "entries",
 							"name": "Elementals",
+							"page": 13,
 							"id": "058",
 							"entries": [
 								"Elementals of all varieties can be found in the Outlands. Mephits are common and often serve more powerful creatures as messengers.",
@@ -1368,6 +1439,7 @@
 						{
 							"type": "entries",
 							"name": "Fey",
+							"page": 13,
 							"id": "059",
 							"entries": [
 								"Being close to nature\u2014even the surreal nature of the Outer Planes\u2014Fey dwelling in the Outlands are often influenced by other planes. Fey encountered near a gate-town typically exhibit influences from the town's associated Outer Plane.",
@@ -1406,6 +1478,7 @@
 						{
 							"type": "entries",
 							"name": "Fiends",
+							"page": 13,
 							"id": "05a",
 							"entries": [
 								"Denizens of the Lower Planes regularly invade the Outlands, seeking to shift the balance of the realm toward evil. The Blood War, the endless conflict between demons and devils, regularly spills onto the plane and can devastate whole regions.",
@@ -1444,6 +1517,7 @@
 						{
 							"type": "entries",
 							"name": "Giants",
+							"page": 13,
 							"id": "05b",
 							"entries": [
 								"Giants are common in the Outlands. Many gravitate toward regions influenced by planes corresponding with their alignments, but others seek to find the {@book secret realm|SatO|_UNKNOWN} of the giant god Annam (see {@book Sigil and the Outlands|SatO} for details).",
@@ -1482,6 +1556,7 @@
 						{
 							"type": "entries",
 							"name": "Humanoids",
+							"page": 14,
 							"id": "05c",
 							"entries": [
 								"Humanoids from across the planes travel the Outlands and number among the most common inhabitants of the gate-towns.",
@@ -1520,6 +1595,7 @@
 						{
 							"type": "entries",
 							"name": "Monstrosities",
+							"page": 14,
 							"id": "05d",
 							"entries": [
 								"Monstrosities are common in the Outlands. Due to the influence of the Outer Planes, many behave differently than they might on the Material Plane.",
@@ -1558,6 +1634,7 @@
 						{
 							"type": "entries",
 							"name": "Oozes",
+							"page": 14,
 							"id": "05e",
 							"entries": [
 								"Oozes often appear in swampy or subterranean reaches of the Outlands or in regions influenced by the Lower Planes.",
@@ -1607,6 +1684,7 @@
 						{
 							"type": "entries",
 							"name": "Plants",
+							"page": 14,
 							"id": "05f",
 							"entries": [
 								"Plants in the Outlands often grow to incredible size, produce remarkable flowers or fruit, and exhibit bizarre shapes and colors. Regions influenced by other planes are typically first recognizable by the effect those planes have on vegetation.",
@@ -1645,6 +1723,7 @@
 						{
 							"type": "entries",
 							"name": "Undead",
+							"page": 15,
 							"id": "060",
 							"entries": [
 								"Undead often lurk in the dismal reaches of the Outlands, but some wander the land, either seeking places to spend eternity or preying on the living.",
@@ -1692,6 +1771,7 @@
 				{
 					"type": "section",
 					"name": "Planar Encounters",
+					"page": 63,
 					"id": "061",
 					"entries": [
 						"The following tables present random encounters adventurers might face across the Outlands or in other realms influenced by the Outer Planes. These tables are divided by the alignment of the planes affecting a region. Unless otherwise noted, creatures marked with an asterisk (*) appear in this book, while the rest are described in the {@book Monster Manual|MM}.",
@@ -2074,6 +2154,7 @@
 		{
 			"type": "section",
 			"name": "Bestiary A to Z",
+			"page": 16,
 			"id": "062",
 			"entries": [
 				"This section presents stat blocks in alphabetical order for creatures suited to planar campaigns.",
@@ -2127,6 +2208,7 @@
 				{
 					"type": "section",
 					"name": "Faction Agents",
+					"page": 53,
 					"id": "094",
 					"entries": [
 						"This section presents stat blocks in alphabetical order for members of Sigil's twelve {@book ascendant factions|SatO|_UNKNOWN}. These groups and a summary of their beliefs appear on the {@book Ascendant Factions of Sigil table|MPP|1|Ascendant Factions of Sigil}. All are detailed further in {@book Sigil and the Outlands|SatO}.",
@@ -2209,9 +2291,271 @@
 		},
 		{
 			"type": "section",
-			"name": "Cover",
-			"id": "0a4",
+			"name": "Credits",
 			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Project Leads",
+									"entries": [
+										"Justice Ramin Arman, F. Wesley Schneider"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Art Director",
+									"entries": [
+										"Emi Tanji"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Writers",
+									"entries": [
+										"Dan Dillon, Ben Petrisor, F. Wesley Schneider"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Rules Developers",
+									"entries": [
+										"Jeremy Crawford, Ron Lundeen, Christopher Perkins"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Lead Editor",
+									"entries": [
+										"Adrian Ng"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Editors",
+									"entries": [
+										"Judy Bauer, Janica Carter, Christopher Perkins"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Graphic Designer",
+									"entries": [
+										"Matt Cole"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Cover Illustrators",
+									"entries": [
+										"Dmitry Burmak, Tony DiTerlizzi"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Interior Illustrators",
+									"entries": [
+										"Mark Behm, Eric Belisle, Olivier Bernard, Zoltan Boros, Christopher Burdett, Dmitry Burmak, Ekaterina Burmak, CoupleOfKooks, Kent Davis, Julie Dillon, Jessica Fong, Isabel Gibney, Quintin Gleim, Katerina Ladon, Adrián Ibarra Lugo, Warren Mahy, Dave Melvin, David Auden Nash, Irina Nordsol, Claudio Pozas, Chris Seaman, Taras Susak, Matias Tapia, John Tedrick, Brian Valeza, Kieran Yanner"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Concept Art Directors",
+									"entries": [
+										"Josh Herman, Emi Tanji"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Concept Artists",
+									"entries": [
+										"Eric Belisle, Dmitry Burmak, Ekaterina Burmak, Max Dunbar, Alex Konstad, Juho Laitila, Izzy Medrano, One Pixel Brush, Noor Rahman, John Tedrick, Terraform Studios, Shawn Wood"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Consultants",
+									"entries": [
+										"Michele Carter, Rico Corazón, Basheer Ghouse, Jonathan S. Tomhave"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Project Engineer",
+									"entries": [
+										"Cynda Callaway"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Imaging Technicians",
+									"entries": [
+										"Daniel Corona, Kevin Yee"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Prepress Specialist",
+									"entries": [
+										"Jefferson Dunlap"
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "D&D Studio",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Executive Producer",
+													"entries": [
+														"Kyle Brink"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Game Architects",
+													"entries": [
+														"Jeremy Crawford, Christopher Perkins"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Studio Art Director",
+													"entries": [
+														"Josh Herman"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Art Manager",
+													"entries": [
+														"Rob Sather"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Art Department",
+													"entries": [
+														"Matt Cole, Trystan Falcone, Bree Heiss, Kate Irwin, Bob Jordan, Noor Rahman, Emi Tanji, Trish Yochum"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Design Department",
+													"entries": [
+														"Justice Ramin Arman, Makenzie De Armas, Dan Dillon, Amanda Hamon, Ron Lundeen, Ben Petrisor, Patrick Renie, F. Wesley Schneider, Carl Sibley, Jason Tondro, James Wyatt"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Managing Editor",
+													"entries": [
+														"Judy Bauer"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Editorial Department",
+													"entries": [
+														"Eytan Bernstein, Janica Carter, Adrian Ng"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Senior Producer",
+													"entries": [
+														"Dan Tovar"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Producers",
+													"entries": [
+														"Bill Benham, Siera Bruggeman, Robert Hawkey, Andy Smith, Gabe Waluconis"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Director of Product Management",
+													"entries": [
+														"Liz Schuh"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Product Managers",
+													"entries": [
+														"Natalie Egan, Chris Lindsay, Hilary Ross, Chris Tulach"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "D&D Beyond",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Product Managers",
+													"entries": [
+														"Patrick Backmann, Jeff Turriff"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Digital Design Team",
+													"entries": [
+														"Jay Jani, Adam Walton, Cameron Powell, Joseph Keen, Sean Stoves"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						"Special thanks to Michele Carter; Lisa Ohanian; Black Isle Studios, the creators of {@i Planescape: Torment}; and the hundreds of playtesters who made this a better book!"
+					]
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "book/MPP/credits.webp"
+					},
+					"maxWidth": 350,
+					"credit": "Jessica Fong",
+					"width": 1200,
+					"height": 1412
+				},
+				"Additional thanks to the original Planescape setting designers, including Rich Baker, Wolfgang Baur, Tim Beach, Karen Boomgarden, Michele Carter, David \"Zeb\" Cook, Monte Cook, Tony DiTerlizzi, Dale Donovan, Jeff Grubb, Andria Hayday, Dori Jean Hein, Brian Kowal, Rob Lazzaretti, Colin McComb, Dawn Murin, rk post, Robh Ruppel, J. M. Salsbury, Bill Slavicsek, Lester Smith, Rick Swan, Ray Vallese, James Ward, Sue Weinlein, Skip Williams, Steve Winter, David Wise, and many more.",
 				{
 					"type": "gallery",
 					"images": [
@@ -2219,10 +2563,9 @@
 							"type": "image",
 							"href": {
 								"type": "internal",
-								"path": "book/MPP/058-02003.cover.webp"
+								"path": "book/MPP/credits2.webp"
 							},
-							"title": "On the Cover: the skull-like planar traveler Morte explores the multiverse, but he doesn't exactly make friends wherever he goes.",
-							"credit": "Dmitry Burmak",
+							"title": "On the Cover: On this cover by Dmitry Burmak, the skull-like planar traveler Morte explores the multiverse, but he doesn't exactly make friends wherever he goes.",
 							"width": 850,
 							"height": 570
 						},
@@ -2230,10 +2573,9 @@
 							"type": "image",
 							"href": {
 								"type": "internal",
-								"path": "book/MPP/059-02002.alt.cover.webp"
+								"path": "book/MPP/credits3.webp"
 							},
-							"title": "On the Alt-Cover: a githyanki warrior, the most recent in a long tradition of gith to explore the planes and model for the covers of hardback bestiaries.",
-							"credit": "Tony DiTerlizzi",
+							"title": "On the Alt-Cover: Artist Tony DiTerlizzi depicts a githyanki warrior, the most recent in a long tradition of gith to explore the planes and model for the covers of hardback bestiaries.",
 							"width": 850,
 							"height": 579
 						}

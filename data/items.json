@@ -1609,7 +1609,7 @@
 			"name": "Alexandrite",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 50000,
 			"entries": [
@@ -1620,7 +1620,7 @@
 			"name": "Amber",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 10000,
 			"entries": [
@@ -1641,7 +1641,7 @@
 			"name": "Amethyst",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 10000,
 			"entries": [
@@ -1730,7 +1730,7 @@
 			"name": "Amulet of dinosaur feathers (Sun Empire)",
 			"source": "PSX",
 			"page": 24,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 2500
 		},
@@ -2159,7 +2159,7 @@
 			"name": "Aquamarine",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 50000,
 			"entries": [
@@ -2989,7 +2989,7 @@
 			"name": "Azurite",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 1000,
 			"entries": [
@@ -3563,7 +3563,7 @@
 			"name": "Banded Agate",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 1000,
 			"entries": [
@@ -4113,7 +4113,7 @@
 			"name": "Bejeweled ivory drinking horn with gold filigree",
 			"source": "DMG",
 			"page": 135,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 750000
 		},
@@ -4121,7 +4121,7 @@
 			"name": "Bejeweled ivory drinking horn with gold inlay (Brazen Coalition)",
 			"source": "PSX",
 			"page": 25,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 750000
 		},
@@ -4606,7 +4606,7 @@
 			"name": "Black Opal",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 100000,
 			"entries": [
@@ -4617,7 +4617,7 @@
 			"name": "Black Pearl",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 50000,
 			"entries": [
@@ -4640,7 +4640,7 @@
 			"name": "Black Sapphire",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 500000,
 			"entries": [
@@ -4651,7 +4651,7 @@
 			"name": "Black velvet mask stitched with silver thread",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 2500
 		},
@@ -5333,7 +5333,7 @@
 			"name": "Bloodstone",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 5000,
 			"entries": [
@@ -5444,7 +5444,7 @@
 			"name": "Blue Quartz",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 1000,
 			"entries": [
@@ -5455,7 +5455,7 @@
 			"name": "Blue Sapphire",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 100000,
 			"entries": [
@@ -5466,7 +5466,7 @@
 			"name": "Blue Spinel",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 50000,
 			"entries": [
@@ -6048,7 +6048,7 @@
 			"name": "Bottle stopper cork embossed with gold leaf and set with amethysts",
 			"source": "DMG",
 			"page": 135,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 75000
 		},
@@ -6103,7 +6103,7 @@
 			"name": "Box of turquoise animal figurines",
 			"source": "DMG",
 			"page": 135,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 25000
 		},
@@ -6249,7 +6249,7 @@
 			"name": "Brass mug with jade inlay",
 			"source": "DMG",
 			"page": 135,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 25000
 		},
@@ -6455,7 +6455,7 @@
 			"name": "Bronze crown",
 			"source": "DMG",
 			"page": 135,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 25000
 		},
@@ -6484,7 +6484,7 @@
 			"name": "Bronze spyglass (Brazen Coalition)",
 			"source": "PSX",
 			"page": 24,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 25000
 		},
@@ -7175,7 +7175,7 @@
 			"name": "Carnelian",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 5000,
 			"entries": [
@@ -7530,7 +7530,7 @@
 			"name": "Carved bone statuette",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 2500
 		},
@@ -7538,7 +7538,7 @@
 			"name": "Carved harp of exotic wood with ivory inlay and zircon gems",
 			"source": "DMG",
 			"page": 135,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 75000
 		},
@@ -7546,7 +7546,7 @@
 			"name": "Carved ivory statuette",
 			"source": "DMG",
 			"page": 135,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 25000
 		},
@@ -7554,7 +7554,7 @@
 			"name": "Carved jade statuette (River Heralds)",
 			"source": "PSX",
 			"page": 24,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 25000
 		},
@@ -7678,7 +7678,7 @@
 			"name": "Ceremonial electrum dagger with a black pearl in the pommel",
 			"source": "DMG",
 			"page": 135,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 75000
 		},
@@ -7686,7 +7686,7 @@
 			"name": "Ceremonial silver dagger with gold pommel and black pearl (Legion of Dusk)",
 			"source": "PSX",
 			"page": 24,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 75000
 		},
@@ -7708,7 +7708,7 @@
 			"name": "Chalcedony",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 5000,
 			"entries": [
@@ -7970,7 +7970,7 @@
 			"name": "Chrysoberyl",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 10000,
 			"entries": [
@@ -7981,7 +7981,7 @@
 			"name": "Chrysoprase",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 5000,
 			"entries": [
@@ -8186,7 +8186,7 @@
 			"name": "Citrine",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 5000,
 			"entries": [
@@ -8486,7 +8486,7 @@
 			"name": "Cloth-of-gold vestments",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 2500
 		},
@@ -8494,7 +8494,7 @@
 			"name": "Cloth-of-gold vestments (Legion of Dusk)",
 			"source": "PSX",
 			"page": 24,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 2500
 		},
@@ -9147,7 +9147,7 @@
 			"name": "Copper (cp)",
 			"source": "PHB",
 			"page": 143,
-			"type": "$",
+			"type": "$C",
 			"rarity": "none",
 			"weight": 0.02,
 			"value": 1,
@@ -9165,7 +9165,7 @@
 			"name": "Copper Alms-Coin",
 			"source": "GGR",
 			"page": 9,
-			"type": "$",
+			"type": "$C",
 			"rarity": "none",
 			"value": 1
 		},
@@ -9173,7 +9173,7 @@
 			"name": "Copper chalice with silver filigree",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 2500
 		},
@@ -9202,7 +9202,7 @@
 			"name": "Copper stein with silver filigree (Brazen Coalition)",
 			"source": "PSX",
 			"page": 24,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 2500
 		},
@@ -9210,7 +9210,7 @@
 			"name": "Copper Zib",
 			"source": "GGR",
 			"page": 9,
-			"type": "$",
+			"type": "$C",
 			"rarity": "none",
 			"value": 1
 		},
@@ -9218,7 +9218,7 @@
 			"name": "Coral",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 10000,
 			"entries": [
@@ -13447,7 +13447,7 @@
 			"name": "Diamond",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 500000,
 			"entries": [
@@ -13980,7 +13980,7 @@
 			"name": "Dragon",
 			"source": "WDH",
 			"page": 169,
-			"type": "$",
+			"type": "$C",
 			"rarity": "none",
 			"value": 100,
 			"entries": [
@@ -14890,7 +14890,7 @@
 			"name": "Electrum (ep)",
 			"source": "PHB",
 			"page": 143,
-			"type": "$",
+			"type": "$C",
 			"rarity": "none",
 			"weight": 0.02,
 			"value": 50,
@@ -14908,7 +14908,7 @@
 			"name": "Electrum 50-Zib Coin",
 			"source": "GGR",
 			"page": 9,
-			"type": "$",
+			"type": "$C",
 			"rarity": "none",
 			"value": 50
 		},
@@ -15284,7 +15284,7 @@
 			"name": "Embroidered glove set with jewel chips",
 			"source": "DMG",
 			"page": 135,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 250000
 		},
@@ -15292,7 +15292,7 @@
 			"name": "Embroidered silk and velvet mantle set with numerous moonstones",
 			"source": "DMG",
 			"page": 135,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 250000
 		},
@@ -15300,7 +15300,7 @@
 			"name": "Embroidered silk handkerchief",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 2500
 		},
@@ -15308,7 +15308,7 @@
 			"name": "Emerald",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 100000,
 			"entries": [
@@ -15685,7 +15685,7 @@
 			"name": "Eye Agate",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 1000,
 			"entries": [
@@ -15779,7 +15779,7 @@
 			"name": "Eye patch with a mock eye set in blue sapphire and moonstone",
 			"source": "DMG",
 			"page": 135,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 250000
 		},
@@ -15787,7 +15787,7 @@
 			"name": "Eye patch with a mock eye set in blue sapphire and moonstone (Brazen Coalition)",
 			"source": "PSX",
 			"page": 25,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 250000
 		},
@@ -16131,7 +16131,7 @@
 			"name": "Feathered mantle with emerald clasp (Sun Empire)",
 			"source": "PSX",
 			"page": 25,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 250000
 		},
@@ -16987,7 +16987,7 @@
 			"name": "Fine gold chain set with a fire opal",
 			"source": "DMG",
 			"page": 135,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 250000
 		},
@@ -16995,7 +16995,7 @@
 			"name": "Fine gold chain with fire opals (Legion of Dusk)",
 			"source": "PSX",
 			"page": 25,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 250000
 		},
@@ -17003,7 +17003,7 @@
 			"name": "Fine robe with dinosaur feathers and silver embroidery (Sun Empire)",
 			"source": "PSX",
 			"page": 24,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 25000
 		},
@@ -17011,7 +17011,7 @@
 			"name": "Fine steel rapier with gold filigree hilt (Legion of Dusk)",
 			"source": "PSX",
 			"page": 24,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 75000
 		},
@@ -17029,7 +17029,7 @@
 			"name": "Finely articulated jade glove (River Heralds)",
 			"source": "PSX",
 			"page": 25,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 250000
 		},
@@ -17054,7 +17054,7 @@
 			"name": "Fire Opal",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 100000,
 			"entries": [
@@ -17631,7 +17631,7 @@
 			"name": "Garnet",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 10000,
 			"entries": [
@@ -18234,7 +18234,7 @@
 			"name": "Gold (gp)",
 			"source": "PHB",
 			"page": 143,
-			"type": "$",
+			"type": "$C",
 			"rarity": "none",
 			"weight": 0.02,
 			"value": 100,
@@ -18252,7 +18252,7 @@
 			"name": "Gold 5-Zino Coin",
 			"source": "GGR",
 			"page": 9,
-			"type": "$",
+			"type": "$C",
 			"rarity": "none",
 			"value": 500
 		},
@@ -18260,7 +18260,7 @@
 			"name": "Gold basin with rubies (Legion of Dusk)",
 			"source": "PSX",
 			"page": 25,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 750000
 		},
@@ -18268,7 +18268,7 @@
 			"name": "Gold bird cage with electrum filigree",
 			"source": "DMG",
 			"page": 135,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 25000
 		},
@@ -18302,7 +18302,7 @@
 			"name": "Gold chalice (Legion of Dusk)",
 			"source": "PSX",
 			"page": 24,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 75000
 		},
@@ -18310,7 +18310,7 @@
 			"name": "Gold chalice set with emeralds (Legion of Dusk)",
 			"source": "PSX",
 			"page": 25,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 750000
 		},
@@ -18318,7 +18318,7 @@
 			"name": "Gold circlet set with four aquamarines",
 			"source": "DMG",
 			"page": 135,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 250000
 		},
@@ -18326,7 +18326,7 @@
 			"name": "Gold cup set with emeralds",
 			"source": "DMG",
 			"page": 135,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 750000
 		},
@@ -18334,7 +18334,7 @@
 			"name": "Gold dragon comb set with red garnets as eyes",
 			"source": "DMG",
 			"page": 135,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 75000
 		},
@@ -18363,7 +18363,7 @@
 			"name": "Gold jewelry box with platinum filigree",
 			"source": "DMG",
 			"page": 135,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 750000
 		},
@@ -18371,7 +18371,7 @@
 			"name": "Gold jewelry box with platinum filigree (Brazen Coalition)",
 			"source": "PSX",
 			"page": 25,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 750000
 		},
@@ -18379,7 +18379,7 @@
 			"name": "Gold locket with a painted portrait inside",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 2500
 		},
@@ -18387,7 +18387,7 @@
 			"name": "Gold locket with a painted portrait inside (Legion of Dusk)",
 			"source": "PSX",
 			"page": 24,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 2500
 		},
@@ -18395,7 +18395,7 @@
 			"name": "Gold music box",
 			"source": "DMG",
 			"page": 135,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 250000
 		},
@@ -18403,7 +18403,7 @@
 			"name": "Gold music box (Brazen Coalition)",
 			"source": "PSX",
 			"page": 25,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 250000
 		},
@@ -18411,7 +18411,7 @@
 			"name": "Gold pendant with black onyx (Legion of Dusk)",
 			"source": "PSX",
 			"page": 24,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 25000
 		},
@@ -18419,7 +18419,7 @@
 			"name": "Gold ring set with bloodstones",
 			"source": "DMG",
 			"page": 135,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 25000
 		},
@@ -18427,7 +18427,7 @@
 			"name": "Gold ring with turquoise (Legion of Dusk)",
 			"source": "PSX",
 			"page": 24,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 2500
 		},
@@ -18435,7 +18435,7 @@
 			"name": "Gold Zino",
 			"source": "GGR",
 			"page": 9,
-			"type": "$",
+			"type": "$C",
 			"rarity": "none",
 			"value": 100
 		},
@@ -18443,7 +18443,7 @@
 			"name": "Gold-plated ceremonial helmet and pauldrons (Legion of Dusk)",
 			"source": "PSX",
 			"page": 25,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 250000
 		},
@@ -18451,7 +18451,7 @@
 			"name": "Gold-plated sextant with topaz (Brazen Coalition)",
 			"source": "PSX",
 			"page": 24,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 75000
 		},
@@ -19407,7 +19407,7 @@
 			"name": "Harbor Moon",
 			"source": "WDH",
 			"page": 169,
-			"type": "$",
+			"type": "$C",
 			"rarity": "none",
 			"value": 5000,
 			"entries": [
@@ -20172,7 +20172,7 @@
 			"name": "Hematite",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 1000,
 			"entries": [
@@ -23320,7 +23320,7 @@
 			"name": "Jacinth",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 500000,
 			"entries": [
@@ -23331,7 +23331,7 @@
 			"name": "Jade",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 10000,
 			"entries": [
@@ -23342,7 +23342,7 @@
 			"name": "Jade bowl (River Heralds)",
 			"source": "PSX",
 			"page": 24,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 25000
 		},
@@ -23350,7 +23350,7 @@
 			"name": "Jade breastplate (River Heralds)",
 			"source": "PSX",
 			"page": 25,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 750000
 		},
@@ -23358,7 +23358,7 @@
 			"name": "Jade game board with solid gold playing pieces",
 			"source": "DMG",
 			"page": 135,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 750000
 		},
@@ -23366,7 +23366,7 @@
 			"name": "Jade headpiece (River Heralds)",
 			"source": "PSX",
 			"page": 24,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 25000
 		},
@@ -23392,7 +23392,7 @@
 			"name": "Jade sword with amber (River Heralds)",
 			"source": "PSX",
 			"page": 24,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 75000
 		},
@@ -23400,7 +23400,7 @@
 			"name": "Jade totem with diamond eyes (River Heralds)",
 			"source": "PSX",
 			"page": 25,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 750000
 		},
@@ -23423,7 +23423,7 @@
 			"name": "Jasper",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 5000,
 			"entries": [
@@ -23542,7 +23542,7 @@
 			"name": "Jet",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 10000,
 			"entries": [
@@ -23685,7 +23685,7 @@
 			"name": "Jeweled anklet",
 			"source": "DMG",
 			"page": 135,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 250000
 		},
@@ -23693,7 +23693,7 @@
 			"name": "Jeweled anklet (Brazen Coalition)",
 			"source": "PSX",
 			"page": 25,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 250000
 		},
@@ -23701,7 +23701,7 @@
 			"name": "Jeweled gold crown",
 			"source": "DMG",
 			"page": 135,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 750000
 		},
@@ -23709,7 +23709,7 @@
 			"name": "Jeweled platinum ring",
 			"source": "DMG",
 			"page": 135,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 750000
 		},
@@ -24505,7 +24505,7 @@
 			"name": "Lapis Lazuli",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 1000,
 			"entries": [
@@ -24516,7 +24516,7 @@
 			"name": "Large gold bracelet",
 			"source": "DMG",
 			"page": 135,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 25000
 		},
@@ -24524,7 +24524,7 @@
 			"name": "Large gold bracelet (Legion of Dusk)",
 			"source": "PSX",
 			"page": 24,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 25000
 		},
@@ -24532,7 +24532,7 @@
 			"name": "Large jade totem (River Heralds)",
 			"source": "PSX",
 			"page": 24,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 75000
 		},
@@ -24540,7 +24540,7 @@
 			"name": "Large well-made tapestry",
 			"source": "DMG",
 			"page": 135,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 25000
 		},
@@ -24548,7 +24548,7 @@
 			"name": "Large well-made tapestry (Legion of Dusk)",
 			"source": "PSX",
 			"page": 24,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 25000
 		},
@@ -25700,7 +25700,7 @@
 			"name": "Lute crafted of exotic wood with mother-of-pearl inlay and zircon gems (Brazen Coalition)",
 			"source": "PSX",
 			"page": 24,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 75000
 		},
@@ -26052,7 +26052,7 @@
 			"name": "Malachite",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 1000,
 			"entries": [
@@ -26251,7 +26251,7 @@
 			"name": "Marble font with gold inlay (Legion of Dusk)",
 			"source": "PSX",
 			"page": 25,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 750000
 		},
@@ -26435,7 +26435,7 @@
 			"name": "Masterpiece painting in mahogany frame with gold inlay (Legion of Dusk)",
 			"source": "PSX",
 			"page": 25,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 250000
 		},
@@ -27608,7 +27608,7 @@
 			"name": "Moonstone",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 5000,
 			"entries": [
@@ -27631,7 +27631,7 @@
 			"name": "Moss Agate",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 1000,
 			"entries": [
@@ -28061,7 +28061,7 @@
 			"name": "Necklace of electrum medallions with red and blue tournalines (Brazen Coalition)",
 			"source": "PSX",
 			"page": 24,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 75000
 		},
@@ -28090,7 +28090,7 @@
 			"name": "Necklace of jade and pink pearls (River Heralds)",
 			"source": "PSX",
 			"page": 25,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 250000
 		},
@@ -28182,7 +28182,7 @@
 			"name": "Necklace string of small pink pearls",
 			"source": "DMG",
 			"page": 135,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 250000
 		},
@@ -28310,7 +28310,7 @@
 			"name": "Nib",
 			"source": "WDH",
 			"page": 169,
-			"type": "$",
+			"type": "$C",
 			"rarity": "none",
 			"value": 1,
 			"entries": [
@@ -28508,7 +28508,7 @@
 			"name": "Obsidian",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 1000,
 			"entries": [
@@ -28535,7 +28535,7 @@
 			"name": "Obsidian statuette with gold fittings and inlay",
 			"source": "DMG",
 			"page": 135,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 75000
 		},
@@ -28739,7 +28739,7 @@
 			"name": "Old masterpiece painting",
 			"source": "DMG",
 			"page": 135,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 250000
 		},
@@ -28773,7 +28773,7 @@
 			"name": "Onyx",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 5000,
 			"entries": [
@@ -28784,7 +28784,7 @@
 			"name": "Opal",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 100000,
 			"entries": [
@@ -29536,7 +29536,7 @@
 			"name": "Painted gold child's sarcophagus",
 			"source": "DMG",
 			"page": 135,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 750000
 		},
@@ -29544,7 +29544,7 @@
 			"name": "Painted gold war mask",
 			"source": "DMG",
 			"page": 135,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 75000
 		},
@@ -29622,7 +29622,7 @@
 			"name": "Pair of engraved bone dice",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 2500
 		},
@@ -29630,7 +29630,7 @@
 			"name": "Pair of engraved bone dice (Brazen Coalition)",
 			"source": "PSX",
 			"page": 24,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 2500
 		},
@@ -29731,7 +29731,7 @@
 			"name": "Pearl",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 10000,
 			"entries": [
@@ -29954,7 +29954,7 @@
 			"name": "Peridot",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 50000,
 			"entries": [
@@ -29986,7 +29986,7 @@
 			"name": "Pewter mug with green spinels (Brazen Coalition)",
 			"source": "PSX",
 			"page": 24,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 25000
 		},
@@ -30489,7 +30489,7 @@
 			"name": "Platinum (pp)",
 			"source": "PHB",
 			"page": 143,
-			"type": "$",
+			"type": "$C",
 			"rarity": "none",
 			"weight": 0.02,
 			"value": 1000,
@@ -30507,7 +30507,7 @@
 			"name": "Platinum 10-Zino Coin",
 			"source": "GGR",
 			"page": 9,
-			"type": "$",
+			"type": "$C",
 			"rarity": "none",
 			"value": 1000
 		},
@@ -30515,7 +30515,7 @@
 			"name": "Platinum 100-Zino Coin",
 			"source": "GGR",
 			"page": 9,
-			"type": "$",
+			"type": "$C",
 			"rarity": "none",
 			"value": 10000
 		},
@@ -30523,7 +30523,7 @@
 			"name": "Platinum bracelet set with a sapphire",
 			"source": "DMG",
 			"page": 135,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 250000
 		},
@@ -30531,7 +30531,7 @@
 			"name": "Platinum headdress with topaz sun symbol (Sun Empire)",
 			"source": "PSX",
 			"page": 25,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 250000
 		},
@@ -30539,7 +30539,7 @@
 			"name": "Platinum ring with yellow sapphire (Sun Empire)",
 			"source": "PSX",
 			"page": 25,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 750000
 		},
@@ -30582,7 +30582,7 @@
 			"name": "Platinum staff topped with amber (Sun Empire)",
 			"source": "PSX",
 			"page": 25,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 750000
 		},
@@ -32630,7 +32630,7 @@
 			"name": "Quartz",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 5000,
 			"entries": [
@@ -33199,7 +33199,7 @@
 			"name": "Rhodochrosite",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 1000,
 			"entries": [
@@ -34969,7 +34969,7 @@
 			"name": "Ruby",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 500000,
 			"entries": [
@@ -35756,7 +35756,7 @@
 			"name": "Sardonyx",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 5000,
 			"entries": [
@@ -36495,7 +36495,7 @@
 			"name": "Shard",
 			"source": "WDH",
 			"page": 169,
-			"type": "$",
+			"type": "$C",
 			"rarity": "none",
 			"value": 10,
 			"entries": [
@@ -37224,7 +37224,7 @@
 			"name": "Silk robe with gold embroidery",
 			"source": "DMG",
 			"page": 135,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 25000
 		},
@@ -37398,7 +37398,7 @@
 			"name": "Silver (sp)",
 			"source": "PHB",
 			"page": 143,
-			"type": "$",
+			"type": "$C",
 			"rarity": "none",
 			"weight": 0.02,
 			"value": 10,
@@ -37416,7 +37416,7 @@
 			"name": "Silver 25-Zib Coin",
 			"source": "GGR",
 			"page": 9,
-			"type": "$",
+			"type": "$C",
 			"rarity": "none",
 			"value": 25
 		},
@@ -37424,7 +37424,7 @@
 			"name": "Silver and gold brooch",
 			"source": "DMG",
 			"page": 135,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 75000
 		},
@@ -37432,7 +37432,7 @@
 			"name": "Silver chalice set with moonstones",
 			"source": "DMG",
 			"page": 135,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 75000
 		},
@@ -37461,7 +37461,7 @@
 			"name": "Silver ewer",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 2500
 		},
@@ -37469,7 +37469,7 @@
 			"name": "Silver headdress with amber and red-coral feathers (Sun Empire)",
 			"source": "PSX",
 			"page": 24,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 75000
 		},
@@ -37477,7 +37477,7 @@
 			"name": "Silver medallion (Sun Empire)",
 			"source": "PSX",
 			"page": 24,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 2500
 		},
@@ -37485,7 +37485,7 @@
 			"name": "Silver necklace with a gemstone pendant",
 			"source": "DMG",
 			"page": 135,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 25000
 		},
@@ -37493,7 +37493,7 @@
 			"name": "Silver necklace with an amber pendant (Sun Empire)",
 			"source": "PSX",
 			"page": 24,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 25000
 		},
@@ -37501,7 +37501,7 @@
 			"name": "Silver shoulder piece with amber and garnet (Sun Empire)",
 			"source": "PSX",
 			"page": 24,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 75000
 		},
@@ -37535,7 +37535,7 @@
 			"name": "Silver-plated steel longsword with jet set in hilt",
 			"source": "DMG",
 			"page": 135,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 75000
 		},
@@ -37965,7 +37965,7 @@
 			"name": "Small gold bracelet",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 2500
 		},
@@ -37973,7 +37973,7 @@
 			"name": "Small gold idol",
 			"source": "DMG",
 			"page": 135,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 75000
 		},
@@ -37981,7 +37981,7 @@
 			"name": "Small gold statuette set with rubies",
 			"source": "DMG",
 			"page": 135,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 750000
 		},
@@ -37989,7 +37989,7 @@
 			"name": "Small mirror set in a painted wooden frame",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 2500
 		},
@@ -39197,7 +39197,7 @@
 			"name": "Spinel",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 10000,
 			"entries": [
@@ -40750,7 +40750,7 @@
 			"name": "Star rose quartz",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 5000,
 			"entries": [
@@ -40761,7 +40761,7 @@
 			"name": "Star Ruby",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 100000,
 			"entries": [
@@ -40772,7 +40772,7 @@
 			"name": "Star Sapphire",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 100000,
 			"entries": [
@@ -41482,7 +41482,7 @@
 			"name": "Sun",
 			"source": "WDH",
 			"page": 169,
-			"type": "$",
+			"type": "$C",
 			"rarity": "none",
 			"value": 1000,
 			"entries": [
@@ -41493,7 +41493,7 @@
 			"name": "Sun amulet on a beaded chain (Sun Empire)",
 			"source": "PSX",
 			"page": 24,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 2500
 		},
@@ -42559,7 +42559,7 @@
 			"name": "Taol",
 			"source": "WDH",
 			"page": 169,
-			"type": "$",
+			"type": "$C",
 			"rarity": "none",
 			"value": 200,
 			"entries": [
@@ -43960,7 +43960,7 @@
 			"name": "Tiger Eye",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 1000,
 			"entries": [
@@ -44183,7 +44183,7 @@
 			"name": "Tiny jade figurine (River Heralds)",
 			"source": "PSX",
 			"page": 24,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 2500
 		},
@@ -44413,7 +44413,7 @@
 			"name": "Topaz",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 50000,
 			"entries": [
@@ -44488,7 +44488,7 @@
 			"name": "Tourmaline",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 10000,
 			"entries": [
@@ -44523,7 +44523,7 @@
 			"name": "Treasure chest crafted of exotic wood with gold fittings and opals (Brazen Coalition)",
 			"source": "PSX",
 			"page": 25,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 750000
 		},
@@ -46275,7 +46275,7 @@
 			"name": "Turquoise",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 1000,
 			"entries": [
@@ -46427,7 +46427,7 @@
 			"name": "Velvet doublet with gold buttons (Legion of Dusk)",
 			"source": "PSX",
 			"page": 24,
-			"type": "$",
+			"type": "$A",
 			"rarity": "none",
 			"value": 2500
 		},
@@ -49446,7 +49446,7 @@
 			"name": "Yellow Sapphire",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 100000,
 			"entries": [
@@ -49528,7 +49528,7 @@
 			"name": "Zircon",
 			"source": "DMG",
 			"page": 134,
-			"type": "$",
+			"type": "$G",
 			"rarity": "none",
 			"value": 5000,
 			"entries": [

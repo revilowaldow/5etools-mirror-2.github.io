@@ -11,8 +11,8 @@ class PageFilterObjects extends PageFilter {
 		obj._fMisc = obj.srd ? ["SRD"] : [];
 		if (SourceUtil.isLegacySourceWotc(obj.source)) obj._fMisc.push("Legacy");
 		if (Renderer.object.hasToken(obj)) obj._fMisc.push("Has Token");
-		if (obj.hasFluff || obj.fluff?.entries) obj._fMisc.push("Has Info");
-		if (obj.hasFluffImages || obj.fluff?.images) obj._fMisc.push("Has Images");
+		if (this._hasFluff(obj)) obj._fMisc.push("Has Info");
+		if (this._hasFluffImages(obj)) obj._fMisc.push("Has Images");
 	}
 
 	addToFilters (obj, isExcluded) {

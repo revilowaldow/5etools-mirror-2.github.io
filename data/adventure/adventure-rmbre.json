@@ -5043,6 +5043,222 @@
 					]
 				}
 			]
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Lead Designer",
+									"entries": [
+										"Kate Welch"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Adventure Designers and Rulebook Commenters",
+									"entries": [
+										"Ryan Hartman, Adam Lee, Ari Levitch, Jim Zub"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Adventure Developer",
+									"entries": [
+										"Ben Petrisor"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Playtest Coordinator",
+									"entries": [
+										"Bill Benham"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Editors",
+									"entries": [
+										"F. Wesley Schneider, Jeremy Crawford, Dan Dillon, Scott Fitzgerald Gray, Christopher Perkins"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Art Directors",
+									"entries": [
+										"Kate Irwin, Shauna Narciso, Richard Whitters"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Graphic Designer",
+									"entries": [
+										"Emi Tanji"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Cover Illustrator",
+									"entries": [
+										"Troy Little"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Illustrators",
+									"entries": [
+										"Eric Belisle, Conceptopolis, Wayne England, Randy Gallegos, Troy Little, Brynn Metheney, Ryan Pancoast, Steve Prescott, Richard Sardinha, Ilya Shkipin, Matt Stawicki, Autumn Rain Turkel, Kieran Yanner"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Cartographers",
+									"entries": [
+										"Kate Welch, Richard Whitters"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Original Rulebook Designer",
+									"entries": [
+										"Jeremy Crawford"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Original 5th Edition Designers",
+									"entries": [
+										"Jeremy Crawford, Mike Mearls, Christopher Perkins, James Wyatt, Rodney Thompson, Robert J. Schwalb, Peter Lee, Steve Townshend, Bruce R. Cordell"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Original 5th Edition Editors",
+									"entries": [
+										"Chris Sims, Michele Carter, Scott Fitzgerald Gray, Kim Mohan"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Based on the Griginal D&D Game By",
+									"entries": [
+										"E. Gary Gygax and Dave Arneson"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Producer",
+									"entries": [
+										"Dan Tovar"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Project Manager",
+									"entries": [
+										"Bill Benham"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Brand Manager",
+									"entries": [
+										"Shelly Mazzanoble"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Production Services",
+									"entries": [
+										"Cynda Callaway, Kevin Yee, David Gershman, Jefferson Dunlap"
+									]
+								},
+								{
+									"type": "item",
+									"name": "VP, Franchise & Global Brand Strategy",
+									"entries": [
+										"Nathan Stewart"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Director Licensing & Publishing",
+									"entries": [
+										"Liz Schuh"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Franchise Creative Director",
+									"entries": [
+										"Mike Mearls"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Licensing Manager",
+									"entries": [
+										"Hilary Ross"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Marketing and Communications",
+									"entries": [
+										"Bart Carroll, Pelham Greene, Greg Tito, Anna Vo"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Product Specialist",
+									"entries": [
+										"Christopher Lindsay"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Game Designer",
+									"entries": [
+										"Dan Dillon"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Senior Graphic Designer",
+									"entries": [
+										"Trish Yochum"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Associate Producer",
+									"entries": [
+										"Lea Heleotis"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "book/RMR/152-ram-condition-stunned.webp"
+					},
+					"width": 321,
+					"height": 508
+				}
+			]
 		}
 	]
 }

@@ -11347,6 +11347,296 @@
 				}
 			],
 			"id": "2c6"
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Exandria Created By",
+									"entries": [
+										"Matthew Mercer"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Lead Designers",
+									"entries": [
+										"James J. Haeck, Matthew Mercer, Hannah Rose"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Additional Design",
+									"entries": [
+										"John Stavropoulos"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Additional Contributions by Critical Role Cast",
+									"entries": [
+										"Laura Bailey, Taliesin Jaffe, Ashley Johnson, Liam O'Brien, Marisha Ray, Sam Riegel, Travis Willingham"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Additional Worldbuilding",
+									"entries": [
+										"Aabria Iyengar"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Managing Editor",
+									"entries": [
+										"Hannah Rose"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Editors",
+									"entries": [
+										"Scott Fitzgerald Gray, Marcie Wood"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Proofreader",
+									"entries": [
+										"Matt Walloch-Key"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Lore Keeper",
+									"entries": [
+										"Dani Carr"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Cultural Consultant",
+									"entries": [
+										"Basheer Ghouse"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Safety Consultant",
+									"entries": [
+										"John Stavropoulos"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Accessibility Consultants",
+									"entries": [
+										"Accessible Games, Chris Hopper, Deven Rue"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Layout and Graphic Design",
+									"entries": [
+										"Christopher J. De La Rosa, Gordon McAlpin"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Art Directors",
+									"entries": [
+										"James J. Haeck, Hannah Rose"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Producers",
+									"entries": [
+										"James J. Haeck, Hannah Rose, Ivan Van Norman"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Cover Illustrator",
+									"entries": [
+										"Genel Jumalon"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Lead Character Illustrator",
+									"entries": [
+										"Lauren Walsh"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Cartographer",
+									"entries": [
+										"Andy Law"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Illustrators",
+									"entries": [
+										"Jonah Baumann, Elliott Berggren, Lea Bichlmaier, Hunter Bonyun, Allie Briggs, Conceptopolis, Clara Daly, Kent Davis, Nikki Dawes, Biagio D'Alessandro, Stanislav Dikolenko, Isabel Gibney, Anna Grinenko, John Anthony di Giovanni, Wesley Griffith, Ilich Henriquez, Claudia Ianniciello, Genel Jumalon, Linda Lithén, Adrián Ibarra Lugo, Nguyen Hieu, Jessica Nguyen, Ariana Orner, Svetoslav Petrov, Kennef Riggles, Aaron J. Riley, Caio Santos, Jessica Scates, Elisa Serio, Ameera Sheikh, Cyarna Trim, Andrey Vasilchenko, Lauren Walsh, Azra Wheeler, Zuzanna Wuzyk"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Digital Edition Alt Text",
+									"entries": [
+										"Mysty Vander"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Head of Darrington Press",
+									"entries": [
+										"Ivan Van Norman"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Creative Director",
+									"entries": [
+										"Matthew Mercer"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Head of Business Development",
+									"entries": [
+										"Ben Van Der Fluit"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Marketing Manager",
+									"entries": [
+										"Darcy L. Ross"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Playtest Coordinator",
+									"entries": [
+										"Christina Farber"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Director of Retail Partnerships",
+									"entries": [
+										"Brittany Walloch-Key"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Special Thanks",
+									"entries": [
+										"CritRoleStats, Ajit George, James Introcaso, Arthur Loftis, Sadie Lowry, F. Wesley Schneider"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Playtesters",
+									"entries": [
+										"Michelle Nguyen Bradley, Dani Carr, Adrienne Cho, Shaunette DeTie, Dominique Dickey, Christina Farber, Matthew Gilbert, Mark Hulmes, LaTia Jacquise, Taliesin Jaffe, Matt Walloch-Key, Christopher Lockey, Sadie Lowry, Carlos Luna, Surena Marie, Stevie Morley, Caroline Pitt, Darcy L. Ross, Kyle Shire, Lauren Walsh, Marcie Wood, Critical Role Community"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Critical Role Team",
+									"entries": [
+										"Stephanie Benjamin, Diana Jeanne Calalo, Sarah Marie Campbell, Dani Carr, Niki Chi, Adrienne Cho, Shaunette DeTie, Nadia Dilbert, Steve Failows, Christina Farber, Maxwell James, Will Lamborn, Sarah Leeper, Tal Levitas, Christopher Lockey, Ed Lopez, Surena Marie, Aaron Monroy, Khoa Nguyen, Jeremiah Rivas, Rachel Romero, Max Schapiro, Vinnie Singh, Kyle Shire, Spenser Starke, Jordyn Torrence"
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "First Edition Credits",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Publisher",
+													"entries": [
+														"Green Ronin Publishing"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Writing and Design",
+													"entries": [
+														"Matthew Mercer and James Haeck"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Additional Development",
+													"entries": [
+														"Joseph Carriker and Steve Kenson"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Editing",
+													"entries": [
+														"Jennifer Lawrence and Evan Sass"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Proofreading",
+													"entries": [
+														"Caroline Pitt"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Art Direction and Graphic Design",
+													"entries": [
+														"Hal Mangold"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "book/TDCSR/credits.webp"
+					},
+					"width": 850,
+					"height": 1119
+				}
+			]
 		}
 	]
 }

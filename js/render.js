@@ -6094,6 +6094,14 @@ Renderer.optionalfeature = class {
 			<tr><td colspan="6"><p>${Renderer.get().render(Renderer.optionalfeature.getTypeEntry(ent))}</p></td></tr>
 		`;
 	}
+
+	static pGetFluff (ent) {
+		return Renderer.utils.pGetFluff({
+			entity: ent,
+			fnGetFluffData: DataUtil.optionalfeatureFluff.loadJSON.bind(DataUtil.optionalfeatureFluff),
+			fluffProp: "optionalfeatureFluff",
+		});
+	}
 };
 
 Renderer.reward = class {
@@ -6814,12 +6822,12 @@ Renderer.object = class {
 		`;
 	}
 
-	static hasToken (obj) {
-		return Renderer.generic.hasToken(obj);
+	static hasToken (obj, opts) {
+		return Renderer.generic.hasToken(obj, opts);
 	}
 
-	static getTokenUrl (obj) {
-		return Renderer.generic.getTokenUrl(obj, "objects/tokens");
+	static getTokenUrl (obj, opts) {
+		return Renderer.generic.getTokenUrl(obj, "objects/tokens", opts);
 	}
 
 	static pGetFluff (obj) {
@@ -7757,12 +7765,12 @@ Renderer.monster = class {
 		return skills;
 	}
 
-	static hasToken (mon) {
-		return Renderer.generic.hasToken(mon);
+	static hasToken (mon, opts) {
+		return Renderer.generic.hasToken(mon, opts);
 	}
 
-	static getTokenUrl (mon) {
-		return Renderer.generic.getTokenUrl(mon, "bestiary/tokens");
+	static getTokenUrl (mon, opts) {
+		return Renderer.generic.getTokenUrl(mon, "bestiary/tokens", opts);
 	}
 
 	static postProcessFluff (mon, fluff) {
@@ -10007,12 +10015,12 @@ Renderer.vehicle = class {
 		});
 	}
 
-	static hasToken (veh) {
-		return Renderer.generic.hasToken(veh);
+	static hasToken (veh, opts) {
+		return Renderer.generic.hasToken(veh, opts);
 	}
 
-	static getTokenUrl (veh) {
-		return Renderer.generic.getTokenUrl(veh, "vehicles/tokens");
+	static getTokenUrl (veh, opts) {
+		return Renderer.generic.getTokenUrl(veh, "vehicles/tokens", opts);
 	}
 };
 
@@ -10938,18 +10946,20 @@ Renderer.generic = class {
 
 	/* -------------------------------------------- */
 
-	static hasToken (ent) {
-		return ent.tokenUrl // TODO(Future) legacy; remove
-			|| ent.hasToken // An implicit token
+	static hasToken (ent, {isIgnoreImplicit = false} = {}) {
+		const fromEntity = ent.tokenUrl // TODO(Future) legacy; remove
 			|| ent.token // An explicit token
 			|| ent.tokenHref // An explicit token URL (local or external)
 		;
+		if (fromEntity || isIgnoreImplicit) return !!fromEntity;
+		return ent.hasToken; // An implicit token
 	}
 
-	static getTokenUrl (ent, mediaDir) {
+	static getTokenUrl (ent, mediaDir, {isIgnoreImplicit = false} = {}) {
 		if (ent.tokenUrl) return ent.tokenUrl; // TODO(Future) legacy; remove
 		if (ent.token) return Renderer.get().getMediaUrl("img", `${mediaDir}/${Parser.sourceJsonToAbv(ent.token.source)}/${Parser.nameToTokenName(ent.token.name)}.webp`);
 		if (ent.tokenHref) return Renderer.utils.getEntryMediaUrl(ent, "tokenHref", "img");
+		if (isIgnoreImplicit) return null;
 		return Renderer.get().getMediaUrl("img", `${mediaDir}/${Parser.sourceJsonToAbv(ent.source)}/${Parser.nameToTokenName(ent.name)}.webp`);
 	}
 };
@@ -12221,6 +12231,7 @@ Renderer.hover = class {
 			case UrlUtil.PG_RACES: return Renderer.race.pGetFluff;
 			case UrlUtil.PG_BACKGROUNDS: return Renderer.background.pGetFluff;
 			case UrlUtil.PG_FEATS: return Renderer.feat.pGetFluff;
+			case UrlUtil.PG_OPT_FEATURES: return Renderer.optionalfeature.pGetFluff;
 			case UrlUtil.PG_LANGUAGES: return Renderer.language.pGetFluff;
 			case UrlUtil.PG_VEHICLES: return Renderer.vehicle.pGetFluff;
 			case UrlUtil.PG_CHAR_CREATION_OPTIONS: return Renderer.charoption.pGetFluff;

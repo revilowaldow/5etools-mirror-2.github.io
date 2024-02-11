@@ -2366,7 +2366,7 @@
 			"hasFluffImages": true,
 			"_versions": [
 				{
-					"_template": {
+					"_abstract": {
 						"name": "Dragonborn (Chromatic; {{color}})",
 						"source": "FTD",
 						"_mod": {
@@ -2534,7 +2534,7 @@
 			"hasFluffImages": true,
 			"_versions": [
 				{
-					"_template": {
+					"_abstract": {
 						"name": "Dragonborn (Gem; {{color}})",
 						"source": "FTD",
 						"_mod": {
@@ -2730,7 +2730,7 @@
 			"hasFluffImages": true,
 			"_versions": [
 				{
-					"_template": {
+					"_abstract": {
 						"name": "Dragonborn (Metallic; {{color}})",
 						"source": "FTD",
 						"_mod": {
@@ -11647,7 +11647,7 @@
 			"hasFluffImages": true,
 			"_versions": [
 				{
-					"_template": {
+					"_abstract": {
 						"name": "Dragonborn ({{color}})",
 						"source": "PHB",
 						"_mod": {
@@ -11915,7 +11915,7 @@
 			"hasFluffImages": true,
 			"_versions": [
 				{
-					"_template": {
+					"_abstract": {
 						"name": "Dragonborn (Draconblood; {{color}})",
 						"source": "EGW",
 						"_mod": {
@@ -12142,7 +12142,7 @@
 			"hasFluffImages": true,
 			"_versions": [
 				{
-					"_template": {
+					"_abstract": {
 						"name": "Dragonborn (Ravenite; {{color}})",
 						"source": "EGW",
 						"_mod": {

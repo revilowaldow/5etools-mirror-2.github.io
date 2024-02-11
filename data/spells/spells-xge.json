@@ -825,6 +825,7 @@
 				"If you cast this spell multiple times, you can have up to three non-instantaneous effects created by it active at a time, and you can dismiss such an effect as an action."
 			],
 			"miscTags": [
+				"LGT",
 				"SGT"
 			],
 			"areaTags": [
@@ -1242,8 +1243,8 @@
 				"dexterity"
 			],
 			"areaTags": [
-				"ST",
-				"N"
+				"N",
+				"ST"
 			]
 		},
 		{
@@ -4290,9 +4291,9 @@
 				"humanoid"
 			],
 			"miscTags": [
+				"ADV",
 				"HL",
-				"UBA",
-				"ADV"
+				"UBA"
 			]
 		},
 		{
@@ -4412,8 +4413,8 @@
 				"UBA"
 			],
 			"areaTags": [
-				"ST",
-				"S"
+				"S",
+				"ST"
 			],
 			"hasFluffImages": true
 		},
@@ -4679,6 +4680,7 @@
 			],
 			"miscTags": [
 				"HL",
+				"LGT",
 				"PRM",
 				"SGT"
 			]
@@ -5228,6 +5230,7 @@
 				"constitution"
 			],
 			"miscTags": [
+				"LGT",
 				"SGT"
 			],
 			"areaTags": [
@@ -5676,8 +5679,8 @@
 				"UBA"
 			],
 			"areaTags": [
-				"ST",
-				"C"
+				"C",
+				"ST"
 			]
 		},
 		{

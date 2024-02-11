@@ -629,10 +629,12 @@
 			"_copy": {
 				"name": "Spy",
 				"source": "MM",
-				"_trait": {
-					"name": "Stout Halfling",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "Stout Halfling",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",

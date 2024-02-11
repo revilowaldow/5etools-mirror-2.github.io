@@ -4704,10 +4704,12 @@
 			"_copy": {
 				"name": "Archmage",
 				"source": "MM",
-				"_trait": {
-					"name": "Water Genasi",
-					"source": "EEPC"
-				},
+				"_templates": [
+					{
+						"name": "Water Genasi",
+						"source": "EEPC"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",

@@ -37813,7 +37813,9 @@
 										"type": "internal",
 										"path": "adventure/TftYP/credits.webp"
 									},
-									"title": "As proprietor of the Yawning Portal, Durnan has heard amazing tales from adventurers of all sorts from across the multiverse, as seen in this array of characters by Tyler Jacobson."
+									"title": "As proprietor of the Yawning Portal, Durnan has heard amazing tales from adventurers of all sorts from across the multiverse, as seen in this array of characters by Tyler Jacobson.",
+									"width": 2560,
+									"height": 1690
 								},
 								{
 									"type": "image",
@@ -37821,7 +37823,9 @@
 										"type": "internal",
 										"path": "adventure/TftYP/credits1.webp"
 									},
-									"title": "See if you can identify the face and the adventure found in {@i Tales from the Yawning Portal}."
+									"title": "See if you can identify the face and the adventure found in {@i Tales from the Yawning Portal}.",
+									"width": 1397,
+									"height": 1200
 								}
 							]
 						},

@@ -55,10 +55,12 @@
 			"_copy": {
 				"name": "Veteran",
 				"source": "MM",
-				"_trait": {
-					"name": "Mountain Dwarf",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "Mountain Dwarf",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -123,10 +125,12 @@
 			"_copy": {
 				"name": "Priest",
 				"source": "MM",
-				"_trait": {
-					"name": "Drow",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "Drow",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -1146,10 +1150,12 @@
 			"_copy": {
 				"name": "Acolyte",
 				"source": "MM",
-				"_trait": {
-					"name": "Drow",
-					"source": "PHB"
-				}
+				"_templates": [
+					{
+						"name": "Drow",
+						"source": "PHB"
+					}
+				]
 			},
 			"traitTags": [
 				"Fey Ancestry",
@@ -1168,10 +1174,12 @@
 			"_copy": {
 				"name": "Bandit",
 				"source": "MM",
-				"_trait": {
-					"name": "Drow",
-					"source": "PHB"
-				}
+				"_templates": [
+					{
+						"name": "Drow",
+						"source": "PHB"
+					}
+				]
 			},
 			"traitTags": [
 				"Fey Ancestry",
@@ -1189,10 +1197,12 @@
 			"_copy": {
 				"name": "Commoner",
 				"source": "MM",
-				"_trait": {
-					"name": "Drow",
-					"source": "PHB"
-				}
+				"_templates": [
+					{
+						"name": "Drow",
+						"source": "PHB"
+					}
+				]
 			},
 			"traitTags": [
 				"Fey Ancestry",
@@ -1210,10 +1220,12 @@
 			"_copy": {
 				"name": "Cultist",
 				"source": "MM",
-				"_trait": {
-					"name": "Drow",
-					"source": "PHB"
-				}
+				"_templates": [
+					{
+						"name": "Drow",
+						"source": "PHB"
+					}
+				]
 			},
 			"traitTags": [
 				"Fey Ancestry",
@@ -1231,10 +1243,12 @@
 			"_copy": {
 				"name": "Guard",
 				"source": "MM",
-				"_trait": {
-					"name": "Drow",
-					"source": "PHB"
-				}
+				"_templates": [
+					{
+						"name": "Drow",
+						"source": "PHB"
+					}
+				]
 			},
 			"traitTags": [
 				"Fey Ancestry",
@@ -1252,10 +1266,12 @@
 			"_copy": {
 				"name": "Noble",
 				"source": "MM",
-				"_trait": {
-					"name": "Drow",
-					"source": "PHB"
-				}
+				"_templates": [
+					{
+						"name": "Drow",
+						"source": "PHB"
+					}
+				]
 			},
 			"traitTags": [
 				"Fey Ancestry",
@@ -1273,10 +1289,12 @@
 			"_copy": {
 				"name": "Scout",
 				"source": "MM",
-				"_trait": {
-					"name": "Drow",
-					"source": "PHB"
-				}
+				"_templates": [
+					{
+						"name": "Drow",
+						"source": "PHB"
+					}
+				]
 			},
 			"traitTags": [
 				"Fey Ancestry",
@@ -1361,10 +1379,12 @@
 			"_copy": {
 				"name": "Spy",
 				"source": "MM",
-				"_trait": {
-					"name": "Drow",
-					"source": "PHB"
-				}
+				"_templates": [
+					{
+						"name": "Drow",
+						"source": "PHB"
+					}
+				]
 			},
 			"traitTags": [
 				"Fey Ancestry",
@@ -1826,10 +1846,12 @@
 			"_copy": {
 				"name": "Scout",
 				"source": "MM",
-				"_trait": {
-					"name": "Mountain Dwarf",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "Mountain Dwarf",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -2912,10 +2934,12 @@
 			"_copy": {
 				"name": "Spy",
 				"source": "MM",
-				"_trait": {
-					"name": "Deep Gnome",
-					"source": "DMG"
-				},
+				"_templates": [
+					{
+						"name": "Deep Gnome",
+						"source": "DMG"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -2989,10 +3013,12 @@
 			"_copy": {
 				"name": "Spy",
 				"source": "MM",
-				"_trait": {
-					"name": "High Elf",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "High Elf",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -3050,10 +3076,12 @@
 			"_copy": {
 				"name": "Assassin",
 				"source": "MM",
-				"_trait": {
-					"name": "Drow",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "Drow",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -3374,10 +3402,12 @@
 			"_copy": {
 				"name": "Veteran",
 				"source": "MM",
-				"_trait": {
-					"name": "Deep Gnome",
-					"source": "DMG"
-				},
+				"_templates": [
+					{
+						"name": "Deep Gnome",
+						"source": "DMG"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -3587,10 +3617,12 @@
 			"_copy": {
 				"name": "Spy",
 				"source": "MM",
-				"_trait": {
-					"name": "Deep Gnome",
-					"source": "DMG"
-				},
+				"_templates": [
+					{
+						"name": "Deep Gnome",
+						"source": "DMG"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -4054,10 +4086,12 @@
 			"_copy": {
 				"name": "Druid",
 				"source": "MM",
-				"_trait": {
-					"name": "High Elf",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "High Elf",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -4266,10 +4300,12 @@
 			"_copy": {
 				"name": "Wererat",
 				"source": "MM",
-				"_trait": {
-					"name": "Deep Gnome",
-					"source": "DMG"
-				}
+				"_templates": [
+					{
+						"name": "Deep Gnome",
+						"source": "DMG"
+					}
+				]
 			},
 			"spellcastingTags": [
 				"I"
@@ -4536,10 +4572,12 @@
 			"_copy": {
 				"name": "Wererat",
 				"source": "MM",
-				"_trait": {
-					"name": "Deep Gnome",
-					"source": "DMG"
-				},
+				"_templates": [
+					{
+						"name": "Deep Gnome",
+						"source": "DMG"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -4704,10 +4742,12 @@
 			"_copy": {
 				"name": "Wererat",
 				"source": "MM",
-				"_trait": {
-					"name": "Deep Gnome",
-					"source": "DMG"
-				},
+				"_templates": [
+					{
+						"name": "Deep Gnome",
+						"source": "DMG"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -5081,10 +5121,12 @@
 			"_copy": {
 				"name": "Bandit Captain",
 				"source": "MM",
-				"_trait": {
-					"name": "Drow",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "Drow",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -5136,10 +5178,12 @@
 			"_copy": {
 				"name": "Archmage",
 				"source": "MM",
-				"_trait": {
-					"name": "Drow",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "Drow",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",

@@ -40,10 +40,12 @@
 			"_copy": {
 				"name": "Priest",
 				"source": "MM",
-				"_trait": {
-					"name": "Mountain Dwarf",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "Mountain Dwarf",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -92,10 +94,12 @@
 			"_copy": {
 				"name": "Acolyte",
 				"source": "MM",
-				"_trait": {
-					"name": "Tiefling",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "Tiefling",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -174,10 +178,12 @@
 			"_copy": {
 				"name": "Acolyte",
 				"source": "MM",
-				"_trait": {
-					"name": "Half-Orc",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "Half-Orc",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -541,10 +547,12 @@
 			"_copy": {
 				"name": "Spy",
 				"source": "MM",
-				"_trait": {
-					"name": "Tabaxi",
-					"source": "VGM"
-				},
+				"_templates": [
+					{
+						"name": "Tabaxi",
+						"source": "VGM"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",

@@ -983,6 +983,215 @@
 					]
 				}
 			]
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"columns": 2,
+							"items": [
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"type": "item",
+											"name": "Lead Designers",
+											"entries": [
+												"Jason Tondro, Kate Welch"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Writer",
+											"entries": [
+												"Deborah Ann Woll"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Art Directors",
+											"entries": [
+												"Fury Galluzzi, Kate Irwin"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Rules Developers",
+											"entries": [
+												"Ben Petrisor, Kate Welch"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Editors",
+											"entries": [
+												"Judy Bauer, Patrick Renie, Hannah Rose"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Graphic Designer",
+											"entries": [
+												"Trish Yochum"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Cover Illustrator",
+											"entries": [
+												"Irina Nordsol"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Cartographer",
+											"entries": [
+												"Sean MacDonald"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Interior Illustrators",
+											"entries": [
+												"CoupleOfKooks, Calder Moore, Irina Nordsol, Robin Olausson"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Consultant",
+											"entries": [
+												"Nivair Gabriel"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Game Architects",
+											"entries": [
+												"Jeremy Crawford, Christopher Perkins"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Studio Art Director",
+											"entries": [
+												"Josh Herman"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Managing Editor",
+											"entries": [
+												"Judy Bauer"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Senior Producer",
+											"entries": [
+												"Dan Tovar"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Producer",
+											"entries": [
+												"Andy Smith"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Product Manager",
+											"entries": [
+												"Natalie Egan"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "D&D Beyond",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Product Manager",
+													"entries": [
+														"Jeff Turriff"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Digital Design Team",
+													"entries": [
+														"Jay Jani, Sean Stoves, Adam Walton"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Heroes' Feast Flavors of the Multiverse",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Authors",
+													"entries": [
+														"Kyle Newman, Jon Peterson, Michael Witwer, and Sam Witwer"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Official Dungeons & Dragons Licensed Recipe Developer",
+													"entries": [
+														"Adam Ried"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Ten Speed Press Editors",
+													"entries": [
+														"Shaida Boroumand and Claire Yee"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Ten Speed Press Art Director and Designer",
+													"entries": [
+														"Kelly Booth"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Ten Speed Press Photo Director",
+													"entries": [
+														"Emma Campion"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
 		}
 	]
 }

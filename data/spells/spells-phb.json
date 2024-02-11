@@ -54,8 +54,8 @@
 				"SGT"
 			],
 			"areaTags": [
-				"ST",
-				"MT"
+				"MT",
+				"ST"
 			]
 		},
 		{
@@ -2477,8 +2477,8 @@
 				"SGT"
 			],
 			"areaTags": [
-				"ST",
-				"MT"
+				"MT",
+				"ST"
 			]
 		},
 		{
@@ -4186,6 +4186,7 @@
 				"A flame, equivalent in brightness to a torch, springs forth from an object that you touch. The effect looks like a regular flame, but it creates no heat and doesn't use oxygen. A continual flame can be covered or hidden but not smothered or quenched."
 			],
 			"miscTags": [
+				"LGT",
 				"OBJ"
 			]
 		},
@@ -6406,8 +6407,8 @@
 				"SCL"
 			],
 			"areaTags": [
-				"ST",
-				"MT"
+				"MT",
+				"ST"
 			]
 		},
 		{
@@ -9531,6 +9532,9 @@
 			],
 			"savingThrow": [
 				"charisma"
+			],
+			"miscTags": [
+				"LGT"
 			]
 		},
 		{
@@ -11870,8 +11874,8 @@
 				"SGT"
 			],
 			"areaTags": [
-				"ST",
-				"MT"
+				"MT",
+				"ST"
 			],
 			"hasFluffImages": true
 		},
@@ -13889,8 +13893,8 @@
 				"TP"
 			],
 			"areaTags": [
-				"ST",
-				"MT"
+				"MT",
+				"ST"
 			]
 		},
 		{
@@ -14528,6 +14532,7 @@
 				"wisdom"
 			],
 			"miscTags": [
+				"LGT",
 				"PRM",
 				"SGT"
 			],
@@ -15850,8 +15855,8 @@
 				"R"
 			],
 			"areaTags": [
-				"ST",
-				"MT"
+				"MT",
+				"ST"
 			]
 		},
 		{
@@ -16830,8 +16835,8 @@
 				"MAC"
 			],
 			"areaTags": [
-				"MT",
-				"C"
+				"C",
+				"MT"
 			]
 		},
 		{
@@ -19762,9 +19767,9 @@
 				"necrotic"
 			],
 			"miscTags": [
+				"ADV",
 				"HL",
-				"SGT",
-				"ADV"
+				"SGT"
 			]
 		},
 		{

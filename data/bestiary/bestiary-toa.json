@@ -2584,10 +2584,12 @@
 			"_copy": {
 				"name": "Scout",
 				"source": "MM",
-				"_trait": {
-					"name": "Stout Halfling",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "Stout Halfling",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -3757,10 +3759,12 @@
 			"_copy": {
 				"name": "Bandit Captain",
 				"source": "MM",
-				"_trait": {
-					"name": "Rock Gnome",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "Rock Gnome",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -4269,10 +4273,12 @@
 			"_copy": {
 				"name": "Champion",
 				"source": "VGM",
-				"_trait": {
-					"name": "Yuan-ti Pureblood",
-					"source": "VGM"
-				},
+				"_templates": [
+					{
+						"name": "Yuan-ti Pureblood",
+						"source": "VGM"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",

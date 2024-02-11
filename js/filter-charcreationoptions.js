@@ -20,8 +20,8 @@ class PageFilterCharCreationOptions extends PageFilter {
 		it._fOptionType = Parser.charCreationOptionTypeToFull(it.optionType);
 		it._fMisc = it.srd ? ["SRD"] : [];
 		if (SourceUtil.isLegacySourceWotc(it.source)) it._fMisc.push("Legacy");
-		if (it.hasFluff || it.fluff?.entries) it._fMisc.push("Has Info");
-		if (it.hasFluffImages || it.fluff?.images) it._fMisc.push("Has Images");
+		if (this._hasFluff(it)) it._fMisc.push("Has Info");
+		if (this._hasFluffImages(it)) it._fMisc.push("Has Images");
 	}
 
 	addToFilters (it, isExcluded) {

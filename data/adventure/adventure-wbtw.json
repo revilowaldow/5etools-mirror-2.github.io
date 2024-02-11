@@ -26388,7 +26388,9 @@
 					"href": {
 						"type": "internal",
 						"path": "adventure/WBtW/credits.webp"
-					}
+					},
+					"width": 850,
+					"height": 1063
 				},
 				{
 					"type": "gallery",
@@ -26399,7 +26401,9 @@
 								"type": "internal",
 								"path": "adventure/WBtW/credits2.webp"
 							},
-							"title": "On the cover: The Witchlight Carnival has come to town! On the back cover, a displacer beast finds 8-year-old Tyler Jacobson and leads him back to the carnival, where he belongs."
+							"title": "On the Cover: The Witchlight Carnival has come to town! On the back cover, a displacer beast finds 8-year-old Tyler Jacobson and leads him back to the carnival, where he belongs.",
+							"width": 1200,
+							"height": 780
 						},
 						{
 							"type": "image",
@@ -26407,7 +26411,9 @@
 								"type": "internal",
 								"path": "adventure/WBtW/credits3.webp"
 							},
-							"title": "On the alt-cover: Hydro74 presents Star, a displacer beast kitten that loves adventuring in the Feywild. A wondrous magic item called the Witchlight vane graces the back cover."
+							"title": "On the Alt-Cover: Hydro74 presents Star, a displacer beast kitten that loves adventuring in the Feywild. A wondrous magic item called the Witchlight vane graces the back cover.",
+							"width": 1200,
+							"height": 780
 						}
 					]
 				}

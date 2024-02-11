@@ -2278,10 +2278,12 @@
 			"_copy": {
 				"name": "Cult Fanatic",
 				"source": "MM",
-				"_trait": {
-					"name": "Mountain Dwarf",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "Mountain Dwarf",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -2453,10 +2455,12 @@
 			"_copy": {
 				"name": "Ancient Silver Dragon",
 				"source": "MM",
-				"_trait": {
-					"name": "Legendary Shadow Dragon",
-					"source": "MM"
-				}
+				"_templates": [
+					{
+						"name": "Legendary Shadow Dragon",
+						"source": "MM"
+					}
+				]
 			},
 			"traitTags": [
 				"Legendary Resistances",
@@ -3050,10 +3054,12 @@
 			"_copy": {
 				"name": "Ancient Black Dragon",
 				"source": "MM",
-				"_trait": {
-					"name": "Dracolich",
-					"source": "MM"
-				},
+				"_templates": [
+					{
+						"name": "Dracolich",
+						"source": "MM"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -3153,10 +3159,12 @@
 			"_copy": {
 				"name": "Cultist",
 				"source": "MM",
-				"_trait": {
-					"name": "Wood Elf",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "Wood Elf",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -4032,10 +4040,12 @@
 			"_copy": {
 				"name": "Bandit Captain",
 				"source": "MM",
-				"_trait": {
-					"name": "Tabaxi",
-					"source": "VGM"
-				},
+				"_templates": [
+					{
+						"name": "Tabaxi",
+						"source": "VGM"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",

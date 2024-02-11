@@ -4303,10 +4303,12 @@
 			"_copy": {
 				"name": "Archmage",
 				"source": "MM",
-				"_trait": {
-					"name": "Tiefling",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "Tiefling",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",

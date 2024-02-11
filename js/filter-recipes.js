@@ -60,8 +60,8 @@ class PageFilterRecipes extends PageFilter {
 		it._fTimePreparation = it.time?.preparation ? this._mutateForFilters_getFilterTime(it.time.preparation) : null;
 		it._fTimeCooking = it.time?.cooking ? this._mutateForFilters_getFilterTime(it.time.cooking) : null;
 		it._fDiet = it.diet ? PageFilterRecipes._DIET_TO_FULL[it.diet] || it.diet : null;
-		if (it.hasFluff || it.fluff?.entries) it._fMisc.push("Has Info");
-		if (it.hasFluffImages || it.fluff?.images) it._fMisc.push("Has Images");
+		if (this._hasFluff(it)) it._fMisc.push("Has Info");
+		if (this._hasFluffImages(it)) it._fMisc.push("Has Images");
 	}
 
 	static _ONE_DAY_MINS = 24 * 60;

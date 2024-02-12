@@ -21,10 +21,12 @@
 			"_copy": {
 				"name": "Mage",
 				"source": "MM",
-				"_trait": {
-					"name": "Aarakocra",
-					"source": "DMG"
-				},
+				"_templates": [
+					{
+						"name": "Aarakocra",
+						"source": "DMG"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -227,10 +229,12 @@
 			"_copy": {
 				"name": "Cult Fanatic",
 				"source": "MM",
-				"_trait": {
-					"name": "Tiefling",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "Tiefling",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",

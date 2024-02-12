@@ -6475,7 +6475,9 @@
 									"href": {
 										"type": "internal",
 										"path": "adventure/DoDk/aldor-the-immense.webp"
-									}
+									},
+									"width": 1700,
+									"height": 1557
 								},
 								{
 									"type": "quote",
@@ -22003,7 +22005,7 @@
 												"This melancholic creature stands six feet tall with long, thin limbs. Her chalky white skin is cracked and rigid like stone, and her hair is a writhing mass of thick wet tendrils that end in toothy maws. She wears an emerald necklace and a distressed black ball gown. She covers her hair with a shawl and her face with a cracked porcelain mask."
 											]
 										},
-										"{@creature Lenore von Kessel|DoDk}, the Queen-Consort of Drakkenheim and wife of Ulrich IV has become a monster that uses the game statistics of a {@creature medusa|MOT}. Replace the normal {@i Petrifying Gaze} trait and actions with the following:",
+										"{@creature Lenore von Kessel|DoDk}, the Queen-Consort of Drakkenheim and wife of Ulrich IV has become a monster that uses the game statistics of a {@creature medusa}. Replace the normal {@i Petrifying Gaze} trait and actions with the following:",
 										{
 											"type": "list",
 											"items": [

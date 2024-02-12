@@ -78,6 +78,9 @@ class OptionalFeaturesPage extends ListPage {
 
 		super({
 			dataSource: DataUtil.optionalfeature.loadJSON.bind(DataUtil.optionalfeature),
+			dataSourceFluff: DataUtil.featFluff.loadJSON.bind(DataUtil.featFluff),
+
+			pFnGetFluff: Renderer.optionalfeature.pGetFluff.bind(Renderer.optionalfeature),
 
 			pageFilter,
 
@@ -146,21 +149,31 @@ class OptionalFeaturesPage extends ListPage {
 	}
 
 	_renderStats_doBuildStatsTab ({ent}) {
-		this._$wrpTabs.find(`.opt-feature-type`).remove();
-		const $wrpOptFeatType = $(`<div class="opt-feature-type"/>`).prependTo(this._$wrpTabs);
+		this._$wrpTabs.parent().find(`.opt-feature-type`).remove();
 
-		const commonPrefix = ent.featureType.length > 1 ? MiscUtil.findCommonPrefix(ent.featureType.map(fs => Parser.optFeatureTypeToFull(fs)), {isRespectWordBoundaries: true}) : "";
-		if (commonPrefix) $wrpOptFeatType.append(`${commonPrefix.trim()} `);
+		Promise.any([
+			Renderer.utils.pHasFluffText(ent, "optionalfeatureFluff"),
+			Renderer.utils.pHasFluffImages(ent, "optionalfeatureFluff"),
+		])
+			.then(hasAnyFluff => {
+				const $wrpOptFeatType = $(`<div class="opt-feature-type"></div>`);
 
-		ent.featureType.forEach((ft, i) => {
-			if (i > 0) $wrpOptFeatType.append("/");
-			$(`<span class="roller">${Parser.optFeatureTypeToFull(ft).substring(commonPrefix.length)}</span>`)
-				.click(() => {
-					this._filterBox.setFromValues({"Feature Type": {[ft]: 1}});
-					this.handleFilterChange();
-				})
-				.appendTo($wrpOptFeatType);
-		});
+				if (hasAnyFluff) $wrpOptFeatType.addClass("ml-0 mb-1").insertBefore(this._$wrpTabs);
+				else $wrpOptFeatType.prependTo(this._$wrpTabs);
+
+				const commonPrefix = ent.featureType.length > 1 ? MiscUtil.findCommonPrefix(ent.featureType.map(fs => Parser.optFeatureTypeToFull(fs)), {isRespectWordBoundaries: true}) : "";
+				if (commonPrefix) $wrpOptFeatType.append(`${commonPrefix.trim()} `);
+
+				ent.featureType.forEach((ft, i) => {
+					if (i > 0) $wrpOptFeatType.append("/");
+					$(`<span class="roller">${Parser.optFeatureTypeToFull(ft).substring(commonPrefix.length)}</span>`)
+						.click(() => {
+							this._filterBox.setFromValues({"Feature Type": {[ft]: 1}});
+							this.handleFilterChange();
+						})
+						.appendTo($wrpOptFeatType);
+				});
+			});
 
 		this._$pgContent.empty().append(RenderOptionalFeatures.$getRenderedOptionalFeature(ent));
 	}

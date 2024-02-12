@@ -545,10 +545,12 @@
 			"_copy": {
 				"name": "Brown Bear",
 				"source": "MM",
-				"_trait": {
-					"name": "Awakened",
-					"source": "PHB"
-				}
+				"_templates": [
+					{
+						"name": "Awakened",
+						"source": "PHB"
+					}
+				]
 			},
 			"hasToken": true
 		},
@@ -559,10 +561,12 @@
 			"_copy": {
 				"name": "Elk",
 				"source": "MM",
-				"_trait": {
-					"name": "Awakened",
-					"source": "PHB"
-				}
+				"_templates": [
+					{
+						"name": "Awakened",
+						"source": "PHB"
+					}
+				]
 			},
 			"hasToken": true
 		},
@@ -573,10 +577,12 @@
 			"_copy": {
 				"name": "Giant Wasp",
 				"source": "MM",
-				"_trait": {
-					"name": "Awakened",
-					"source": "PHB"
-				}
+				"_templates": [
+					{
+						"name": "Awakened",
+						"source": "PHB"
+					}
+				]
 			},
 			"hasToken": true
 		},
@@ -1164,10 +1170,12 @@
 			"_copy": {
 				"name": "Scout",
 				"source": "MM",
-				"_trait": {
-					"name": "Shield Dwarf",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "Shield Dwarf",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -1416,10 +1424,12 @@
 			"_copy": {
 				"name": "Archmage",
 				"source": "MM",
-				"_trait": {
-					"name": "Drow",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "Drow",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -2498,10 +2508,12 @@
 			"_copy": {
 				"name": "Mage",
 				"source": "MM",
-				"_trait": {
-					"name": "Tiefling",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "Tiefling",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -2697,10 +2709,12 @@
 			"_copy": {
 				"name": "Priest",
 				"source": "MM",
-				"_trait": {
-					"name": "Drow",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "Drow",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -3312,10 +3326,12 @@
 			"_copy": {
 				"name": "Mage",
 				"source": "MM",
-				"_trait": {
-					"name": "High Elf",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "High Elf",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -4664,10 +4680,12 @@
 			"_copy": {
 				"name": "Commoner",
 				"source": "MM",
-				"_trait": {
-					"name": "Stout Halfling",
-					"source": "PHB"
-				}
+				"_templates": [
+					{
+						"name": "Stout Halfling",
+						"source": "PHB"
+					}
+				]
 			},
 			"alignment": [
 				"L",
@@ -4890,10 +4908,12 @@
 			"_copy": {
 				"name": "Champion",
 				"source": "VGM",
-				"_trait": {
-					"name": "Shield Dwarf",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "Shield Dwarf",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -4953,10 +4973,12 @@
 			"_copy": {
 				"name": "Assassin",
 				"source": "MM",
-				"_trait": {
-					"name": "Bullywug",
-					"source": "DMG"
-				},
+				"_templates": [
+					{
+						"name": "Bullywug",
+						"source": "DMG"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -5213,10 +5235,12 @@
 			"_copy": {
 				"name": "Adult Bronze Dragon",
 				"source": "MM",
-				"_trait": {
-					"name": "Legendary Shadow Dragon",
-					"source": "MM"
-				}
+				"_templates": [
+					{
+						"name": "Legendary Shadow Dragon",
+						"source": "MM"
+					}
+				]
 			},
 			"alignment": [
 				"N",
@@ -5303,10 +5327,12 @@
 			"_copy": {
 				"name": "Archmage",
 				"source": "MM",
-				"_trait": {
-					"name": "Duergar",
-					"source": "MTF"
-				},
+				"_templates": [
+					{
+						"name": "Duergar",
+						"source": "MTF"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -5615,10 +5641,12 @@
 			"_copy": {
 				"name": "Archdruid",
 				"source": "VGM",
-				"_trait": {
-					"name": "Wood Elf",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "Wood Elf",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -5949,10 +5977,12 @@
 			"_copy": {
 				"name": "Archmage",
 				"source": "MM",
-				"_trait": {
-					"name": "Rock Gnome",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "Rock Gnome",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",

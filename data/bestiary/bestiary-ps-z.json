@@ -297,10 +297,12 @@
 			"_copy": {
 				"name": "Tarrasque",
 				"source": "MM",
-				"_trait": {
-					"name": "Eldrazi",
-					"source": "PSZ"
-				},
+				"_templates": [
+					{
+						"name": "Eldrazi",
+						"source": "PSZ"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -696,10 +698,12 @@
 			"_copy": {
 				"name": "Kraken",
 				"source": "MM",
-				"_trait": {
-					"name": "Eldrazi",
-					"source": "PSZ"
-				},
+				"_templates": [
+					{
+						"name": "Eldrazi",
+						"source": "PSZ"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -1140,10 +1144,12 @@
 			"_copy": {
 				"name": "Empyrean",
 				"source": "MM",
-				"_trait": {
-					"name": "Eldrazi",
-					"source": "PSZ"
-				},
+				"_templates": [
+					{
+						"name": "Eldrazi",
+						"source": "PSZ"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",

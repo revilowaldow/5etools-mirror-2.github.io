@@ -19499,7 +19499,7 @@
 												"A snake-haired woman in a flowing robe stands at the center of the room, scowling. She is surrounded by similar visages on the Euryale cards around the walls, while a door to the north displays the Comet card. \"Oh good, heroes,\" she sneers, the final word dripping with contempt. \"Shall we get this over with?\""
 											]
 										},
-										"The {@creature medusa|MOT} here answers to the name {@creature Euryale|BMT}, and though she expects to be attacked, she doesn't initiate battle. This isn't the same {@creature Euryale|BMT} described in {@book chapter 22|BMT|21}. If the characters refrain from attacking and show her courtesy or at least respect, she lets them pass unharmed.",
+										"The {@creature medusa} here answers to the name {@creature Euryale|BMT}, and though she expects to be attacked, she doesn't initiate battle. This isn't the same {@creature Euryale|BMT} described in {@book chapter 22|BMT|21}. If the characters refrain from attacking and show her courtesy or at least respect, she lets them pass unharmed.",
 										{
 											"type": "entries",
 											"name": "Dying Curse",

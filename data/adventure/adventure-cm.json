@@ -31441,7 +31441,9 @@
 					"href": {
 						"type": "internal",
 						"path": "adventure/CM/credits.webp"
-					}
+					},
+					"width": 850,
+					"height": 1063
 				},
 				{
 					"type": "gallery",
@@ -31452,7 +31454,9 @@
 								"type": "internal",
 								"path": "adventure/CM/credits2.webp"
 							},
-							"title": "On the cover: Clint Cearley gives us a glimpse of two adventurers trying to solve one of Candlekeep's great mysteries, unaware of the danger looming behind them."
+							"title": "On the Cover: Clint Cearley gives us a glimpse of two adventurers trying to solve one of Candlekeep's great mysteries, unaware of the danger looming behind them.",
+							"width": 850,
+							"height": 653
 						},
 						{
 							"type": "image",
@@ -31460,7 +31464,9 @@
 								"type": "internal",
 								"path": "adventure/CM/credits3.webp"
 							},
-							"title": "On the alt-cover: Simen Meyer's cover incorporates the symbol of Candlekeep and various creatures into its design, creating what looks like a book one might find in the library's vaults."
+							"title": "On the Alt-Cover: Simen Meyer's cover incorporates the symbol of Candlekeep and various creatures into its design, creating what looks like a book one might find in the library's vaults.",
+							"width": 850,
+							"height": 653
 						}
 					]
 				}

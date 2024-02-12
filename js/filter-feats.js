@@ -86,8 +86,8 @@ class PageFilterFeats extends PageFilter {
 		feat._fMisc = feat.srd ? ["SRD"] : [];
 		if (feat.basicRules) feat._fMisc.push("Basic Rules");
 		if (SourceUtil.isLegacySourceWotc(feat.source)) feat._fMisc.push("Legacy");
-		if (feat.hasFluff || feat.fluff?.entries) feat._fMisc.push("Has Info");
-		if (feat.hasFluffImages || feat.fluff?.images) feat._fMisc.push("Has Images");
+		if (this._hasFluff(feat)) feat._fMisc.push("Has Info");
+		if (this._hasFluffImages(feat)) feat._fMisc.push("Has Images");
 		if (feat.repeatable != null) feat._fMisc.push(feat.repeatable ? "Repeatable" : "Not Repeatable");
 
 		feat._slAbility = ability.asText || VeCt.STR_NONE;

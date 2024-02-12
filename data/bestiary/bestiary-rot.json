@@ -610,10 +610,12 @@
 			"_copy": {
 				"name": "Gladiator",
 				"source": "MM",
-				"_trait": {
-					"name": "Large or Smaller Half-Blue Dragon",
-					"source": "MM"
-				},
+				"_templates": [
+					{
+						"name": "Large or Smaller Half-Blue Dragon",
+						"source": "MM"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -662,10 +664,12 @@
 			"_copy": {
 				"name": "Assassin",
 				"source": "MM",
-				"_trait": {
-					"name": "Large or Smaller Half-Green Dragon",
-					"source": "MM"
-				},
+				"_templates": [
+					{
+						"name": "Large or Smaller Half-Green Dragon",
+						"source": "MM"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -708,10 +712,12 @@
 			"_copy": {
 				"name": "Gladiator",
 				"source": "MM",
-				"_trait": {
-					"name": "Large or Smaller Half-Red Dragon",
-					"source": "MM"
-				},
+				"_templates": [
+					{
+						"name": "Large or Smaller Half-Red Dragon",
+						"source": "MM"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -922,10 +928,12 @@
 			"_copy": {
 				"name": "Mage",
 				"source": "MM",
-				"_trait": {
-					"name": "Tiefling",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "Tiefling",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"trait": {
 						"mode": "prependArr",
@@ -1858,10 +1866,12 @@
 			"_copy": {
 				"name": "Dragonsoul",
 				"source": "RoT",
-				"_trait": {
-					"name": "Mountain Dwarf",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "Mountain Dwarf",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",

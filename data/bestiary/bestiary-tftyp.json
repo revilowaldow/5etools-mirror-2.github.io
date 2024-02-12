@@ -156,10 +156,12 @@
 			"_copy": {
 				"name": "Commoner",
 				"source": "MM",
-				"_trait": {
-					"name": "Drow",
-					"source": "PHB"
-				}
+				"_templates": [
+					{
+						"name": "Drow",
+						"source": "PHB"
+					}
+				]
 			},
 			"alignment": [
 				"C",
@@ -676,10 +678,12 @@
 			"_copy": {
 				"name": "Commoner",
 				"source": "MM",
-				"_trait": {
-					"name": "Stout Halfling",
-					"source": "PHB"
-				}
+				"_templates": [
+					{
+						"name": "Stout Halfling",
+						"source": "PHB"
+					}
+				]
 			},
 			"languageTags": [
 				"C",
@@ -857,10 +861,12 @@
 			"_copy": {
 				"name": "Spy",
 				"source": "MM",
-				"_trait": {
-					"name": "Stout Halfling",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "Stout Halfling",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -1187,10 +1193,12 @@
 			"_copy": {
 				"name": "Druid",
 				"source": "MM",
-				"_trait": {
-					"name": "Wood Elf",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "Wood Elf",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -2147,10 +2155,12 @@
 			"_copy": {
 				"name": "Commoner",
 				"source": "MM",
-				"_trait": {
-					"name": "Goblin",
-					"source": "DMG"
-				}
+				"_templates": [
+					{
+						"name": "Goblin",
+						"source": "DMG"
+					}
+				]
 			},
 			"hp": {
 				"average": 3,
@@ -2190,10 +2200,12 @@
 			"_copy": {
 				"name": "Priest",
 				"source": "MM",
-				"_trait": {
-					"name": "Mountain Dwarf",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "Mountain Dwarf",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -2776,10 +2788,12 @@
 			"_copy": {
 				"name": "Commoner",
 				"source": "MM",
-				"_trait": {
-					"name": "Half-Elf",
-					"source": "PHB"
-				}
+				"_templates": [
+					{
+						"name": "Half-Elf",
+						"source": "PHB"
+					}
+				]
 			},
 			"traitTags": [
 				"Fey Ancestry"
@@ -3301,10 +3315,12 @@
 			"_copy": {
 				"name": "Commoner",
 				"source": "MM",
-				"_trait": {
-					"name": "Half-Elf",
-					"source": "PHB"
-				}
+				"_templates": [
+					{
+						"name": "Half-Elf",
+						"source": "PHB"
+					}
+				]
 			},
 			"traitTags": [
 				"Fey Ancestry"
@@ -3397,10 +3413,12 @@
 			"_copy": {
 				"name": "Commoner",
 				"source": "MM",
-				"_trait": {
-					"name": "Kobold",
-					"source": "DMG"
-				}
+				"_templates": [
+					{
+						"name": "Kobold",
+						"source": "DMG"
+					}
+				]
 			},
 			"hp": {
 				"average": 3,
@@ -4074,10 +4092,12 @@
 			"_copy": {
 				"name": "Assassin",
 				"source": "MM",
-				"_trait": {
-					"name": "Mountain Dwarf",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "Mountain Dwarf",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -4109,10 +4129,12 @@
 			"_copy": {
 				"name": "Ogre",
 				"source": "MM",
-				"_trait": {
-					"name": "Skeleton",
-					"source": "DMG"
-				}
+				"_templates": [
+					{
+						"name": "Skeleton",
+						"source": "DMG"
+					}
+				]
 			},
 			"languageTags": [
 				"C",
@@ -4348,10 +4370,12 @@
 			"_copy": {
 				"name": "Commoner",
 				"source": "MM",
-				"_trait": {
-					"name": "Orc",
-					"source": "DMG"
-				}
+				"_templates": [
+					{
+						"name": "Orc",
+						"source": "DMG"
+					}
+				]
 			},
 			"traitTags": [
 				"Aggressive"
@@ -4420,10 +4444,12 @@
 			"_copy": {
 				"name": "Aboleth",
 				"source": "MM",
-				"_trait": {
-					"name": "Reduced Threat",
-					"source": "TftYP"
-				}
+				"_templates": [
+					{
+						"name": "Reduced Threat",
+						"source": "TftYP"
+					}
+				]
 			},
 			"damageTagsLegendary": [],
 			"hasToken": true
@@ -4435,10 +4461,12 @@
 			"_copy": {
 				"name": "Basilisk",
 				"source": "MM",
-				"_trait": {
-					"name": "Reduced Threat",
-					"source": "TftYP"
-				}
+				"_templates": [
+					{
+						"name": "Reduced Threat",
+						"source": "TftYP"
+					}
+				]
 			},
 			"hasToken": true
 		},
@@ -4449,10 +4477,12 @@
 			"_copy": {
 				"name": "Behir",
 				"source": "MM",
-				"_trait": {
-					"name": "Reduced Threat",
-					"source": "TftYP"
-				},
+				"_templates": [
+					{
+						"name": "Reduced Threat",
+						"source": "TftYP"
+					}
+				],
 				"_mod": {
 					"action": {
 						"mode": "removeArr",
@@ -4480,10 +4510,12 @@
 			"_copy": {
 				"name": "Beholder",
 				"source": "MM",
-				"_trait": {
-					"name": "Reduced Threat",
-					"source": "TftYP"
-				}
+				"_templates": [
+					{
+						"name": "Reduced Threat",
+						"source": "TftYP"
+					}
+				]
 			},
 			"hasToken": true
 		},
@@ -4494,10 +4526,12 @@
 			"_copy": {
 				"name": "Black Pudding",
 				"source": "MM",
-				"_trait": {
-					"name": "Reduced Threat",
-					"source": "TftYP"
-				}
+				"_templates": [
+					{
+						"name": "Reduced Threat",
+						"source": "TftYP"
+					}
+				]
 			},
 			"hasToken": true
 		},
@@ -4508,10 +4542,12 @@
 			"_copy": {
 				"name": "Carrion Crawler",
 				"source": "MM",
-				"_trait": {
-					"name": "Reduced Threat",
-					"source": "TftYP"
-				}
+				"_templates": [
+					{
+						"name": "Reduced Threat",
+						"source": "TftYP"
+					}
+				]
 			},
 			"hasToken": true
 		},
@@ -4522,10 +4558,12 @@
 			"_copy": {
 				"name": "Clay Golem",
 				"source": "MM",
-				"_trait": {
-					"name": "Reduced Threat",
-					"source": "TftYP"
-				}
+				"_templates": [
+					{
+						"name": "Reduced Threat",
+						"source": "TftYP"
+					}
+				]
 			},
 			"hasToken": true
 		},
@@ -4536,10 +4574,12 @@
 			"_copy": {
 				"name": "Darkmantle",
 				"source": "MM",
-				"_trait": {
-					"name": "Reduced Threat",
-					"source": "TftYP"
-				}
+				"_templates": [
+					{
+						"name": "Reduced Threat",
+						"source": "TftYP"
+					}
+				]
 			},
 			"hasToken": true
 		},
@@ -4550,10 +4590,12 @@
 			"_copy": {
 				"name": "Displacer Beast",
 				"source": "MM",
-				"_trait": {
-					"name": "Reduced Threat",
-					"source": "TftYP"
-				}
+				"_templates": [
+					{
+						"name": "Reduced Threat",
+						"source": "TftYP"
+					}
+				]
 			},
 			"hasToken": true
 		},
@@ -4564,10 +4606,12 @@
 			"_copy": {
 				"name": "Dragon Turtle",
 				"source": "MM",
-				"_trait": {
-					"name": "Reduced Threat",
-					"source": "TftYP"
-				},
+				"_templates": [
+					{
+						"name": "Reduced Threat",
+						"source": "TftYP"
+					}
+				],
 				"_mod": {
 					"action": [
 						{
@@ -4603,10 +4647,12 @@
 			"_copy": {
 				"name": "Ettercap",
 				"source": "MM",
-				"_trait": {
-					"name": "Reduced Threat",
-					"source": "TftYP"
-				}
+				"_templates": [
+					{
+						"name": "Reduced Threat",
+						"source": "TftYP"
+					}
+				]
 			},
 			"damageTags": [
 				"I",
@@ -4622,10 +4668,12 @@
 			"_copy": {
 				"name": "Flesh Golem",
 				"source": "MM",
-				"_trait": {
-					"name": "Reduced Threat",
-					"source": "TftYP"
-				}
+				"_templates": [
+					{
+						"name": "Reduced Threat",
+						"source": "TftYP"
+					}
+				]
 			},
 			"hasToken": true
 		},
@@ -4636,10 +4684,12 @@
 			"_copy": {
 				"name": "Glabrezu",
 				"source": "MM",
-				"_trait": {
-					"name": "Reduced Threat",
-					"source": "TftYP"
-				}
+				"_templates": [
+					{
+						"name": "Reduced Threat",
+						"source": "TftYP"
+					}
+				]
 			},
 			"hasToken": true
 		},
@@ -4650,10 +4700,12 @@
 			"_copy": {
 				"name": "Gray Ooze",
 				"source": "MM",
-				"_trait": {
-					"name": "Reduced Threat",
-					"source": "TftYP"
-				}
+				"_templates": [
+					{
+						"name": "Reduced Threat",
+						"source": "TftYP"
+					}
+				]
 			},
 			"damageTags": [
 				"A",
@@ -4668,10 +4720,12 @@
 			"_copy": {
 				"name": "Helmed Horror",
 				"source": "MM",
-				"_trait": {
-					"name": "Reduced Threat",
-					"source": "TftYP"
-				}
+				"_templates": [
+					{
+						"name": "Reduced Threat",
+						"source": "TftYP"
+					}
+				]
 			},
 			"hasToken": true
 		},
@@ -4682,10 +4736,12 @@
 			"_copy": {
 				"name": "Hezrou",
 				"source": "MM",
-				"_trait": {
-					"name": "Reduced Threat",
-					"source": "TftYP"
-				}
+				"_templates": [
+					{
+						"name": "Reduced Threat",
+						"source": "TftYP"
+					}
+				]
 			},
 			"hasToken": true
 		},
@@ -4696,10 +4752,12 @@
 			"_copy": {
 				"name": "Hook Horror",
 				"source": "MM",
-				"_trait": {
-					"name": "Reduced Threat",
-					"source": "TftYP"
-				}
+				"_templates": [
+					{
+						"name": "Reduced Threat",
+						"source": "TftYP"
+					}
+				]
 			},
 			"hasToken": true
 		},
@@ -4710,10 +4768,12 @@
 			"_copy": {
 				"name": "Ochre Jelly",
 				"source": "MM",
-				"_trait": {
-					"name": "Reduced Threat",
-					"source": "TftYP"
-				}
+				"_templates": [
+					{
+						"name": "Reduced Threat",
+						"source": "TftYP"
+					}
+				]
 			},
 			"hasToken": true
 		},
@@ -4724,10 +4784,12 @@
 			"_copy": {
 				"name": "Otyugh",
 				"source": "MM",
-				"_trait": {
-					"name": "Reduced Threat",
-					"source": "TftYP"
-				},
+				"_templates": [
+					{
+						"name": "Reduced Threat",
+						"source": "TftYP"
+					}
+				],
 				"_mod": {
 					"action": [
 						{
@@ -4761,10 +4823,12 @@
 			"_copy": {
 				"name": "Owlbear",
 				"source": "MM",
-				"_trait": {
-					"name": "Reduced Threat",
-					"source": "TftYP"
-				}
+				"_templates": [
+					{
+						"name": "Reduced Threat",
+						"source": "TftYP"
+					}
+				]
 			},
 			"hasToken": true
 		},
@@ -4775,10 +4839,12 @@
 			"_copy": {
 				"name": "Peryton",
 				"source": "MM",
-				"_trait": {
-					"name": "Reduced Threat",
-					"source": "TftYP"
-				}
+				"_templates": [
+					{
+						"name": "Reduced Threat",
+						"source": "TftYP"
+					}
+				]
 			},
 			"hasToken": true
 		},
@@ -4789,10 +4855,12 @@
 			"_copy": {
 				"name": "Remorhaz",
 				"source": "MM",
-				"_trait": {
-					"name": "Reduced Threat",
-					"source": "TftYP"
-				}
+				"_templates": [
+					{
+						"name": "Reduced Threat",
+						"source": "TftYP"
+					}
+				]
 			},
 			"hasToken": true
 		},
@@ -4803,10 +4871,12 @@
 			"_copy": {
 				"name": "Stone Golem",
 				"source": "MM",
-				"_trait": {
-					"name": "Reduced Threat",
-					"source": "TftYP"
-				}
+				"_templates": [
+					{
+						"name": "Reduced Threat",
+						"source": "TftYP"
+					}
+				]
 			},
 			"hasToken": true
 		},
@@ -4817,10 +4887,12 @@
 			"_copy": {
 				"name": "Vrock",
 				"source": "MM",
-				"_trait": {
-					"name": "Reduced Threat",
-					"source": "TftYP"
-				}
+				"_templates": [
+					{
+						"name": "Reduced Threat",
+						"source": "TftYP"
+					}
+				]
 			},
 			"hasToken": true
 		},
@@ -4831,10 +4903,12 @@
 			"_copy": {
 				"name": "Wight",
 				"source": "MM",
-				"_trait": {
-					"name": "Reduced Threat",
-					"source": "TftYP"
-				}
+				"_templates": [
+					{
+						"name": "Reduced Threat",
+						"source": "TftYP"
+					}
+				]
 			},
 			"hasToken": true
 		},
@@ -4845,10 +4919,12 @@
 			"_copy": {
 				"name": "Wyvern",
 				"source": "MM",
-				"_trait": {
-					"name": "Reduced Threat",
-					"source": "TftYP"
-				}
+				"_templates": [
+					{
+						"name": "Reduced Threat",
+						"source": "TftYP"
+					}
+				]
 			},
 			"hasToken": true
 		},
@@ -5043,10 +5119,12 @@
 			"_copy": {
 				"name": "Knight",
 				"source": "MM",
-				"_trait": {
-					"name": "High Elf",
-					"source": "PHB"
-				}
+				"_templates": [
+					{
+						"name": "High Elf",
+						"source": "PHB"
+					}
+				]
 			},
 			"traitTags": [
 				"Fey Ancestry"
@@ -6558,10 +6636,12 @@
 			"_copy": {
 				"name": "Commoner",
 				"source": "MM",
-				"_trait": {
-					"name": "Drow",
-					"source": "PHB"
-				}
+				"_templates": [
+					{
+						"name": "Drow",
+						"source": "PHB"
+					}
+				]
 			},
 			"traitTags": [
 				"Fey Ancestry",

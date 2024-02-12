@@ -3889,10 +3889,12 @@
 			"_copy": {
 				"name": "Adult Black Dragon",
 				"source": "MM",
-				"_trait": {
-					"name": "Legendary Shadow Dragon",
-					"source": "MM"
-				},
+				"_templates": [
+					{
+						"name": "Legendary Shadow Dragon",
+						"source": "MM"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",

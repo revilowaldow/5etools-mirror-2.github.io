@@ -2650,5 +2650,10 @@
 		"ver": "1.199.2",
 		"date": "2024-02-04",
 		"txt": "- Added \"Disadvantage on Stealth\" and \"Strength Requirement\" filters to Items page\n- (Brew) Added Creature Text Converter support for vulgar fraction characters\n- (Fixed typos/added tags)"
+	},
+	{
+		"ver": "1.199.3",
+		"date": "2024-02-11",
+		"txt": "- Added page numbers to Planescape: Adventures in the Multiverse adventures/books (Sigil and the Outlands, Turn of Fortune's Wheel, Morte's Planar Parade)\n- (Brew) Added fluff support to `optionalfeature`s\n- (Brew) Fixed rare case where loading a homebrew subclass could fail to load its depended-upon class\n- (Fixed typos/added tags)"
 	}
 ]

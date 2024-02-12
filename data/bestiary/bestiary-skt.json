@@ -270,10 +270,12 @@
 			"_copy": {
 				"name": "Veteran",
 				"source": "MM",
-				"_trait": {
-					"name": "Shield Dwarf",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "Shield Dwarf",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -1857,10 +1859,12 @@
 			"_copy": {
 				"name": "Priest",
 				"source": "MM",
-				"_trait": {
-					"name": "Rock Gnome",
-					"source": "PHB"
-				}
+				"_templates": [
+					{
+						"name": "Rock Gnome",
+						"source": "PHB"
+					}
+				]
 			},
 			"alignment": [
 				"C",
@@ -1931,10 +1935,12 @@
 			"_copy": {
 				"name": "Guard",
 				"source": "MM",
-				"_trait": {
-					"name": "Shield Dwarf",
-					"source": "PHB"
-				}
+				"_templates": [
+					{
+						"name": "Shield Dwarf",
+						"source": "PHB"
+					}
+				]
 			},
 			"alignment": [
 				"L",
@@ -2953,10 +2959,12 @@
 			"_copy": {
 				"name": "Veteran",
 				"source": "MM",
-				"_trait": {
-					"name": "Shield Dwarf",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "Shield Dwarf",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -3549,10 +3557,12 @@
 			"_copy": {
 				"name": "Knight",
 				"source": "MM",
-				"_trait": {
-					"name": "Shield Dwarf",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "Shield Dwarf",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"trait": {
 						"mode": "prependArr",
@@ -4132,10 +4142,12 @@
 			"_copy": {
 				"name": "Commoner",
 				"source": "MM",
-				"_trait": {
-					"name": "Shield Dwarf",
-					"source": "PHB"
-				}
+				"_templates": [
+					{
+						"name": "Shield Dwarf",
+						"source": "PHB"
+					}
+				]
 			},
 			"alignment": [
 				"L",
@@ -4160,10 +4172,12 @@
 			"_copy": {
 				"name": "Knight",
 				"source": "MM",
-				"_trait": {
-					"name": "Shield Dwarf",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "Shield Dwarf",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -5250,10 +5264,12 @@
 			"_copy": {
 				"name": "Assassin",
 				"source": "MM",
-				"_trait": {
-					"name": "Half-Orc",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "Half-Orc",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -5627,10 +5643,12 @@
 			"_copy": {
 				"name": "Guard",
 				"source": "MM",
-				"_trait": {
-					"name": "Shield Dwarf",
-					"source": "PHB"
-				}
+				"_templates": [
+					{
+						"name": "Shield Dwarf",
+						"source": "PHB"
+					}
+				]
 			},
 			"alignment": [
 				"L",
@@ -5671,10 +5689,12 @@
 			"_copy": {
 				"name": "Noble",
 				"source": "MM",
-				"_trait": {
-					"name": "Shield Dwarf",
-					"source": "PHB"
-				}
+				"_templates": [
+					{
+						"name": "Shield Dwarf",
+						"source": "PHB"
+					}
+				]
 			},
 			"alignment": [
 				"L",
@@ -6490,10 +6510,12 @@
 			"_copy": {
 				"name": "Bandit Captain",
 				"source": "MM",
-				"_trait": {
-					"name": "Shield Dwarf",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "Shield Dwarf",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -7415,10 +7437,12 @@
 			"_copy": {
 				"name": "Commoner",
 				"source": "MM",
-				"_trait": {
-					"name": "Rock Gnome",
-					"source": "PHB"
-				}
+				"_templates": [
+					{
+						"name": "Rock Gnome",
+						"source": "PHB"
+					}
+				]
 			},
 			"alignment": [
 				"C",
@@ -7441,10 +7465,12 @@
 			"_copy": {
 				"name": "Scout",
 				"source": "MM",
-				"_trait": {
-					"name": "Wood Elf",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "Wood Elf",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",

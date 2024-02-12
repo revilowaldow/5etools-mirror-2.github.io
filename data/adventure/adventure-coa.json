@@ -6827,7 +6827,7 @@
 											],
 											"id": "128"
 										},
-										"This isolated canyon descends into the depths of the Slough and is where the real treasures of the War-Slough are found, including the horn that Rexlexkala desires. Strange things occur sporadically as the characters descend, the place twisted and distorted by the great war. When a character least expects it (perhaps just after a rest, or in the midst of battle), a grotesque tentacle with a shrieking mouth instead of suckers bursts from the canyon wall to flail about wildly before withdrawing again. The tentacles are harmless unless the characters decide to attack one (then the tentacles have the statistics of a {@creature guardian naga}, but 0 movement speed, lawful evil alignment and no spellcasting trait).",
+										"This isolated canyon descends into the depths of the Slough and is where the real treasures of the War-Slough are found, including the horn that Rexlexkala desires. Strange things occur sporadically as the characters descend, the place twisted and distorted by the great war. When a character least expects it (perhaps just after a rest, or in the midst of battle), a {@creature grotesque tentacle|CoA} with a shrieking mouth instead of suckers bursts from the canyon wall to flail about wildly before withdrawing again. The tentacles are harmless unless the characters decide to attack one (then the tentacles have the statistics of a {@creature guardian naga}, but 0 movement speed, lawful evil alignment and no spellcasting trait).",
 										"Though the tentacles can be safely ignored, there are real dangers in the canyon. And to find items of true value, the characters have to make an effort to explore, heading deep into the canyon's bowels. Each hour the characters make a {@dc 20} Wisdom ({@skill Survival}) check to search for clues that might lead them to the treasures they seek. Failure results in an encounter, while success leads to treasure.",
 										{
 											"type": "entries",
@@ -6843,7 +6843,7 @@
 											"name": "Treasure",
 											"page": 78,
 											"entries": [
-												"Every time the characters succeed in their search for clues, they have a {@chance 50|50 percent} chance of finding Rexlexkala's Horn. Otherwise, they roll on the Infernal Items table. For a description of these items {@adventure see appendix D|CoA|16}. When they find the item, it might be in the clutches of a tentacle that erupts from the canyon walls, or it might be lodged at the bottom of a bubbling pool of demon ichor (which is a black pudding with 120 hit points and immunity to fire damage). After 3 such items, they'll no longer find any more infernal items here and even successful searches are now treated as failures."
+												"Every time the characters succeed in their search for clues, they have a {@chance 50|50 percent} chance of finding Rexlexkala's Horn. Otherwise, they roll on the Infernal Items table. For a description of these items {@adventure see appendix D|CoA|16}. When they find the item, it might be in the clutches of a tentacle that erupts from the canyon walls, or it might be lodged at the bottom of a bubbling pool of {@creature demon ichor|CoA} (which is a black pudding with 120 hit points and immunity to fire damage). After 3 such items, they'll no longer find any more infernal items here and even successful searches are now treated as failures."
 											],
 											"id": "12a"
 										},
@@ -6875,7 +6875,7 @@
 														[
 															"2",
 															"Infernal Plate Armor",
-															"Pool of demon ichor"
+															"Pool of {@creature demon ichor|CoA}"
 														],
 														[
 															"3",
@@ -6885,7 +6885,7 @@
 														[
 															"4",
 															"Canian Fork",
-															"Pool of demon ichor"
+															"Pool of {@creature demon ichor|CoA}"
 														],
 														[
 															"5",
@@ -11273,7 +11273,7 @@
 											"name": "Treasure",
 											"page": 131,
 											"entries": [
-												"For each hour spent at this location excavating valuables, select a very rare magic item from the {@book Dungeon Master's Guide|DMG} (excluding weapons). However, all characters participating must repeat the earlier Constitution saving throw, or suffer the negative effects described earlier. Additionally, for each character failing their saving throw, a frozen golem (iron golem with immunity to cold) emerges and attacks."
+												"For each hour spent at this location excavating valuables, select a very rare magic item from the {@book Dungeon Master's Guide|DMG} (excluding weapons). However, all characters participating must repeat the earlier Constitution saving throw, or suffer the negative effects described earlier. Additionally, for each character failing their saving throw, a {@creature frozen golem|CoA} (iron golem with immunity to cold) emerges and attacks."
 											],
 											"id": "203"
 										},
@@ -15061,7 +15061,7 @@
 											"id": "297"
 										},
 										"Cornelius Brassgrave (neutral evil {@creature veteran}) is a gnome artificer driven from a dozen separate haunts in the mortal planes, a creature of pure reason and no morality whose industrious experiments have poisoned seas and turned the living earth into a metal-tasting wasteland. He has made a number of large claims to Klendisk about how his machinery will revolutionize the mining at the Heights and is now finding that even golems and automata can be ground down by the weight of misery. Cornelius is less suited to Cania than most of the inhabitants of this mining town, so he tends to spend most of his time here, in his very warm home. His Constructs keep him informed and alert him to any problems in production.",
-										"Another reason that he's sticking to this haven is that Kargan Skul has been in a foul mood, believing him to be responsible for disrupting her supply lines. He isn't responsible, however, and just as confused about it as she is. If he is attacked, pieces of furniture animate (two {@creature stone golem||stone golems} with immunity to cold and fire damage) and come to his defense. If the characters slay Kargan Skul, thus raising Cornelius' value to Baron Klendisk, or they deal with the rogue modron in the mines, Cornelius rewards each character with brass armbands, engraved with the gnome's name and family crest (each is worth 600 gp but have no special properties)."
+										"Another reason that he's sticking to this haven is that Kargan Skul has been in a foul mood, believing him to be responsible for disrupting her supply lines. He isn't responsible, however, and just as confused about it as she is. If he is attacked, pieces of {@creature Animated Furniture|CoA|furniture animate} (two {@creature stone golem||stone golems} with immunity to cold and fire damage) and come to his defense. If the characters slay Kargan Skul, thus raising Cornelius' value to Baron Klendisk, or they deal with the rogue modron in the mines, Cornelius rewards each character with brass armbands, engraved with the gnome's name and family crest (each is worth 600 gp but have no special properties)."
 									],
 									"id": "296"
 								},
@@ -15089,7 +15089,7 @@
 											],
 											"id": "299"
 										},
-										"The rendering sheds themselves are run under a quite different arrangement, one that has persisted for as long as any denizens of the Heights can recall, and which Klendisk himself is powerfully uncertain about. The Regular Orthoclath (lawful neutral {@creature iron golem} with Charisma, Intelligence, and Wisdom scores of 16) is a thing of facets, eyes and geometrical shapes from the lawful planes of Nirvana, here with an apparently endless workforce of modrons. They work the vats and stills tirelessly, producing sorrow wine so long as the mines yield raw materials, and never complain or ask for payment. They usually work in teams of a dozen {@creature tridrone} modrons overseen by a {@creature pentadrone} modron. {@creature Quadrone} modrons are used by the Regular Orthoclath to send messages to teams.",
+										"The rendering sheds themselves are run under a quite different arrangement, one that has persisted for as long as any denizens of the Heights can recall, and which Klendisk himself is powerfully uncertain about. The {@creature Regular Orthoclath|CoA} (lawful neutral {@creature iron golem} with Charisma, Intelligence, and Wisdom scores of 16) is a thing of facets, eyes and geometrical shapes from the lawful planes of Nirvana, here with an apparently endless workforce of modrons. They work the vats and stills tirelessly, producing sorrow wine so long as the mines yield raw materials, and never complain or ask for payment. They usually work in teams of a dozen {@creature tridrone} modrons overseen by a {@creature pentadrone} modron. {@creature Quadrone} modrons are used by the {@creature Regular Orthoclath|CoA} to send messages to teams.",
 										"The modron's involvement predates Klendisk's appointment and the devil exhausts himself trying to discover the actual terms of their employment. In the absence of certainty, infernal rumor is that either these are, in some way, bad modrons who are being punished for crimes against lawfulness meaningless to others\u2014or else the whole business is some grand experiment into the enduring nature of law. Certainly, individual workers eventually become corrupted by the work, sad little pieces of geometry infected with emotion, grinding to a halt as they're consumed by misery. At which point the Orthoclath casts them out, and the devils are free to devour or toy with them, not that the creatures give any real sport. There are always, apparently, more modrons ready to troop down from the lawful planes and give themselves to the work."
 									],
 									"id": "298"
@@ -15165,7 +15165,7 @@
 												},
 												"If the characters pursue the modron, it tries to stay in the air 60-80 feet away from them and fires arrows. It can't be reasoned with. If it is badly damaged, it charges the weakest looking character and tries to grapple them. If successful, it uses its movement to jump into the abyss of the mine with its victim (maximum fall damage).",
 												"The characters can use this information as they see fit\u2014if either Kargan or Cornelius learn of the rogue modron, hostility between their two factions decreases a bit. Klendisk, if told, won't reveal the truth to Kargan. He, of course, is more than happy to have Brassgrave and Kargan constantly sniping at each other. He has no interest in his underlings uniting and ending up in a position where they could make demands of him.",
-												"If the modron's body is returned to the Regular Orthoclath (area T5), it is taken away to be repurposed."
+												"If the modron's body is returned to the {@creature Regular Orthoclath|CoA} (area T5), it is taken away to be repurposed."
 											],
 											"id": "29f"
 										},
@@ -15329,7 +15329,7 @@
 									],
 									"id": "2b0"
 								},
-								"{@creature Waeloquay|CoA} interacts with travelers by manifesting shapes out of water and ice\u2014the forms of those Fiends and mortals that it has previously taken within itself, that become steadily less and less detailed as it forgets their features, until all it is left with are blank-faced mannequins. Alternatively, if anyone has been foolish enough to look down into the water, {@creature Waeloquay|CoA} captures their reflection and creates an icy simulacrum of them. These creations ({@creature doppelganger||doppelgangers} with immunity to cold damage) crawl onto the ship and seek to ambush individual sailors and throw them overboard into {@creature Waeloquay|CoA}'s clutches, or else try to wreck the entire ship against the ice. Anyone ending up in the water faces the effects of a Styx controlled by a hungry Elemental entity. Anyone who drowns in the water here becomes part of {@creature Waeloquay|CoA}'s library of memories, at least until the Styx abrades them away.",
+								"{@creature Waeloquay|CoA} interacts with travelers by manifesting shapes out of water and ice\u2014the forms of those Fiends and mortals that it has previously taken within itself, that become steadily less and less detailed as it forgets their features, until all it is left with are blank-faced mannequins. Alternatively, if anyone has been foolish enough to look down into the water, {@creature Waeloquay|CoA} captures their reflection and creates an {@creature icy simulacrum|CoA} of them. These creations ({@creature doppelganger||doppelgangers} with immunity to cold damage) crawl onto the ship and seek to ambush individual sailors and throw them overboard into {@creature Waeloquay|CoA}'s clutches, or else try to wreck the entire ship against the ice. Anyone ending up in the water faces the effects of a Styx controlled by a hungry Elemental entity. Anyone who drowns in the water here becomes part of {@creature Waeloquay|CoA}'s library of memories, at least until the Styx abrades them away.",
 								"It is possible to bargain with the Elemental for safe passage and/or for the {@item Amulet of Proof Against Detection and Location||Amulets of Proof Against Detection and Location} that were lost here years ago. Fiendish ships often carry sacrifices to throw overboard to sate {@creature Waeloquay|CoA}'s hunger, but it also accepts items of great sentimental value from which it gnaws some mental sustenance.",
 								"If the characters don't bargain, then they must fight against a manifestation of the lake. If they defeat it, then {@creature Waeloquay|CoA} quickly moves them to the end of the lake and throws eight amulets into the barge, along with the skeletons still wearing them."
 							],
@@ -19212,7 +19212,10 @@
 											"{@creature Zariel|CoA}",
 											"{@dice 1d6} {@creature bearded devil||bearded devils}"
 										]
-									]
+									],
+									"data": {
+										"tableInclude": true
+									}
 								}
 							],
 							"id": "34e"

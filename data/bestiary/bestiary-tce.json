@@ -127,10 +127,12 @@
 			"_copy": {
 				"name": "Adult Red Dragon",
 				"source": "MM",
-				"_trait": {
-					"name": "Dracolich",
-					"source": "MM"
-				}
+				"_templates": [
+					{
+						"name": "Dracolich",
+						"source": "MM"
+					}
+				]
 			},
 			"traitTags": [
 				"Legendary Resistances",

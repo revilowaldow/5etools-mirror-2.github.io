@@ -41558,7 +41558,9 @@
 						"type": "internal",
 						"path": "adventure/CoS/credits.webp"
 					},
-					"title": "On the cover: the master of Ravenloft is having guests for dinner, and you are invited. Ben Oliver sheds light on the vampire Strahd von Zarovich, whose dark past is a tale to be told, and whose evil knows no bounds."
+					"title": "On the Cover: the master of Ravenloft is having guests for dinner, and you are invited. Ben Oliver sheds light on the vampire Strahd von Zarovich, whose dark past is a tale to be told, and whose evil knows no bounds.",
+					"width": 1234,
+					"height": 828
 				}
 			]
 		},
@@ -41572,14 +41574,18 @@
 					"href": {
 						"type": "internal",
 						"path": "adventure/CoS/218-poster-barovia.webp"
-					}
+					},
+					"width": 5355,
+					"height": 3775
 				},
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "adventure/CoS/219-poster-castle-ravenloft.webp"
-					}
+					},
+					"width": 7000,
+					"height": 4948
 				}
 			],
 			"id": "0a1"

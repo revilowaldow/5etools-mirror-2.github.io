@@ -1337,10 +1337,12 @@
 			"_copy": {
 				"name": "Occult Silvertongue",
 				"source": "CRCotN",
-				"_trait": {
-					"name": "Goliath",
-					"source": "VGM"
-				},
+				"_templates": [
+					{
+						"name": "Goliath",
+						"source": "VGM"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -2704,10 +2706,12 @@
 			"_copy": {
 				"name": "Priest",
 				"source": "MM",
-				"_trait": {
-					"name": "Firbolg",
-					"source": "VGM"
-				},
+				"_templates": [
+					{
+						"name": "Firbolg",
+						"source": "VGM"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -3357,10 +3361,12 @@
 			"_copy": {
 				"name": "Scholarly Mastermind",
 				"source": "CRCotN",
-				"_trait": {
-					"name": "Goblin",
-					"source": "DMG"
-				},
+				"_templates": [
+					{
+						"name": "Goblin",
+						"source": "DMG"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -3943,10 +3949,12 @@
 			"_copy": {
 				"name": "Assassin",
 				"source": "MM",
-				"_trait": {
-					"name": "Tiefling",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "Tiefling",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -5630,10 +5638,12 @@
 			"_copy": {
 				"name": "Scholarly Agent",
 				"source": "CRCotN",
-				"_trait": {
-					"name": "Tiefling",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "Tiefling",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -6081,10 +6091,12 @@
 			"_copy": {
 				"name": "Scholarly Agent",
 				"source": "CRCotN",
-				"_trait": {
-					"name": "Kenku",
-					"source": "VGM"
-				},
+				"_templates": [
+					{
+						"name": "Kenku",
+						"source": "VGM"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -6840,10 +6852,12 @@
 			"_copy": {
 				"name": "Scholarly Excavator",
 				"source": "CRCotN",
-				"_trait": {
-					"name": "Goliath",
-					"source": "VGM"
-				},
+				"_templates": [
+					{
+						"name": "Goliath",
+						"source": "VGM"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",

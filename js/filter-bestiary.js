@@ -342,8 +342,8 @@ class PageFilterBestiary extends PageFilter {
 		if (SourceUtil.isLegacySourceWotc(mon.source)) mon._fMisc.push("Legacy");
 		if (Renderer.monster.hasToken(mon)) mon._fMisc.push("Has Token");
 		if (mon.mythic) mon._fMisc.push("Mythic");
-		if (mon.hasFluff || mon.fluff?.entries) mon._fMisc.push("Has Info");
-		if (mon.hasFluffImages || mon.fluff?.images) mon._fMisc.push("Has Images");
+		if (this._hasFluff(mon)) mon._fMisc.push("Has Info");
+		if (this._hasFluffImages(mon)) mon._fMisc.push("Has Images");
 		if (this._isReprinted({reprintedAs: mon.reprintedAs, tag: "creature", prop: "monster", page: UrlUtil.PG_BESTIARY})) mon._fMisc.push("Reprinted");
 		if (this._hasRecharge(mon)) mon._fMisc.push("Has Recharge");
 		if (mon._versionBase_isVersion) mon._fMisc.push("Is Variant");

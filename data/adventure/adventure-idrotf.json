@@ -58780,7 +58780,9 @@
 								"type": "internal",
 								"path": "adventure/IDRotF/credits.webp"
 							},
-							"title": "On the Cover: Auril the Frostmaiden claims her latest victim in Tyler Jacobson's chillingly macabre cover illustration. On the back, an elemental spirit called a chwinga comes out to play."
+							"title": "On the Cover: Auril the Frostmaiden claims her latest victim in Tyler Jacobson's chillingly macabre cover illustration. On the back, an elemental spirit called a chwinga comes out to play.",
+							"width": 1140,
+							"height": 750
 						},
 						{
 							"type": "image",
@@ -58788,7 +58790,9 @@
 								"type": "internal",
 								"path": "adventure/IDRotF/credits2.webp"
 							},
-							"title": "On the Alt-Cover: Hydro74 shows the doom of Ten-Towns: Auril the Frostmaiden, the god of winter's wrath. Adorning the back cover is the Frostmaiden's holy symbol."
+							"title": "On the Alt-Cover: Hydro74 shows the doom of Ten-Towns: Auril the Frostmaiden, the god of winter's wrath. Adorning the back cover is the Frostmaiden's holy symbol.",
+							"width": 1140,
+							"height": 750
 						}
 					]
 				},

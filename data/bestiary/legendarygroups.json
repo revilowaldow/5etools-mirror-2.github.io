@@ -459,7 +459,7 @@
 							"type": "item",
 							"name": "Summon Underlings",
 							"entries": [
-								"The archdevil summons allied devils. The devils summoned depends on the archdevil using this feature. The summoned devils appear in unoccupied spaces which the archdevil can see. The Summoned Underlings table shows which devils each archdevil can summon."
+								"The archdevil summons allied devils. The devils summoned depends on the archdevil using this feature. The summoned devils appear in unoccupied spaces which the archdevil can see. The {@table Archdevil Lair Action List; Summoned Underlings|CoA|Summoned Underlings} table shows which devils each archdevil can summon."
 							]
 						},
 						{

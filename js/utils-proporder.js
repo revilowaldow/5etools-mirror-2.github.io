@@ -77,6 +77,20 @@ PropOrder._ObjectKey = class {
 		this.fnGetOrder = opts.fnGetOrder;
 		this.order = opts.order;
 	}
+
+	static getCopyKey ({fnGetModOrder}) {
+		return new this("_copy", {
+			order: [
+				"name",
+				"source",
+				"_templates",
+				new PropOrder._ObjectKey("_mod", {
+					fnGetOrder: fnGetModOrder,
+				}),
+				"_preserve",
+			],
+		});
+	}
 };
 
 PropOrder._ArrayKey = class {
@@ -122,17 +136,7 @@ PropOrder._MONSTER = [
 	"summonedByClass",
 
 	"_isCopy",
-	new PropOrder._ObjectKey("_copy", {
-		order: [
-			"name",
-			"source",
-			"_trait",
-			new PropOrder._ObjectKey("_mod", {
-				fnGetOrder: () => PropOrder._MONSTER__COPY_MOD,
-			}),
-			"_preserve",
-		],
-	}),
+	PropOrder._ObjectKey.getCopyKey({fnGetModOrder: () => PropOrder._MONSTER__COPY_MOD}),
 
 	"level",
 	"size",
@@ -259,7 +263,7 @@ PropOrder._MONSTER = [
 				fnGetOrder: () => PropOrder._MONSTER__COPY_MOD,
 			}),
 			"_preserve",
-			"_template",
+			"_abstract",
 			"_implementations",
 			...PropOrder._MONSTER,
 		],
@@ -289,17 +293,7 @@ PropOrder._MONSTER_TEMPLATE = [
 
 	"ref",
 
-	new PropOrder._ObjectKey("_copy", {
-		order: [
-			"name",
-			"source",
-			"_trait",
-			new PropOrder._ObjectKey("_mod", {
-				fnGetOrder: () => PropOrder._MONSTER_TEMPLATE__COPY_MOD,
-			}),
-			"_preserve",
-		],
-	}),
+	PropOrder._ObjectKey.getCopyKey({fnGetModOrder: () => PropOrder._MONSTER_TEMPLATE__COPY_MOD}),
 
 	"crMin",
 	"crMax",
@@ -363,17 +357,7 @@ PropOrder._SPELL = [
 	"additionalSources",
 	"otherSources",
 
-	new PropOrder._ObjectKey("_copy", {
-		order: [
-			"name",
-			"source",
-			"_trait",
-			new PropOrder._ObjectKey("_mod", {
-				fnGetOrder: () => PropOrder._SPELL__COPY_MOD,
-			}),
-			"_preserve",
-		],
-	}),
+	PropOrder._ObjectKey.getCopyKey({fnGetModOrder: () => PropOrder._SPELL__COPY_MOD}),
 
 	"level",
 	"school",
@@ -416,8 +400,8 @@ PropOrder._SPELL = [
 
 	"affectsCreatureType",
 
-	"miscTags",
-	"areaTags",
+	new PropOrder._ArrayKey("miscTags", {fnSort: SortUtil.ascSortLower}),
+	new PropOrder._ArrayKey("areaTags", {fnSort: SortUtil.ascSortLower}),
 
 	"hasFluff",
 	"hasFluffImages",
@@ -572,17 +556,7 @@ PropOrder._BACKGROUND = [
 	"additionalSources",
 	"otherSources",
 
-	new PropOrder._ObjectKey("_copy", {
-		order: [
-			"name",
-			"source",
-			"_trait",
-			new PropOrder._ObjectKey("_mod", {
-				fnGetOrder: () => PropOrder._BACKGROUND__COPY_MOD,
-			}),
-			"_preserve",
-		],
-	}),
+	PropOrder._ObjectKey.getCopyKey({fnGetModOrder: () => PropOrder._BACKGROUND__COPY_MOD}),
 
 	"prerequisite",
 	"ability",
@@ -633,17 +607,7 @@ PropOrder._LEGENDARY_GROUP = [
 
 	"additionalSources",
 
-	new PropOrder._ObjectKey("_copy", {
-		order: [
-			"name",
-			"source",
-			"_trait",
-			new PropOrder._ObjectKey("_mod", {
-				fnGetOrder: () => PropOrder._LEGENDARY_GROUP__COPY_MOD,
-			}),
-			"_preserve",
-		],
-	}),
+	PropOrder._ObjectKey.getCopyKey({fnGetModOrder: () => PropOrder._LEGENDARY_GROUP__COPY_MOD}),
 
 	"lairActions",
 	"regionalEffects",
@@ -1098,6 +1062,8 @@ PropOrder._FEAT = [
 	"additionalSources",
 	"otherSources",
 
+	PropOrder._ObjectKey.getCopyKey({fnGetModOrder: () => PropOrder._FEAT__COPY_MOD}),
+
 	"category",
 	"prerequisite",
 
@@ -1135,6 +1101,11 @@ PropOrder._FEAT = [
 	"foundryFlags",
 	"foundryEffects",
 	"foundryImg",
+];
+PropOrder._FEAT__COPY_MOD = [
+	"*",
+	"_",
+	...PropOrder._FEAT,
 ];
 PropOrder._FOUNDRY_FEAT = [
 	"name",
@@ -1255,16 +1226,7 @@ PropOrder._ITEM = [
 	"otherSources",
 	"reprintedAs",
 
-	new PropOrder._ObjectKey("_copy", {
-		order: [
-			"name",
-			"source",
-			new PropOrder._ObjectKey("_mod", {
-				fnGetOrder: () => PropOrder._ITEM__COPY_MOD,
-			}),
-			"_preserve",
-		],
-	}),
+	PropOrder._ObjectKey.getCopyKey({fnGetModOrder: () => PropOrder._ITEM__COPY_MOD}),
 
 	"baseItem",
 
@@ -1408,7 +1370,7 @@ PropOrder._ITEM = [
 		fnGetOrder: obj => Object.keys(obj).sort(SortUtil.ascSortLower),
 	}),
 
-	"miscTags",
+	new PropOrder._ArrayKey("miscTags", {fnSort: SortUtil.ascSortLower}),
 
 	"hasFluff",
 	"hasFluffImages",
@@ -1512,6 +1474,8 @@ PropOrder._OPTIONALFEATURE = [
 	"basicRules",
 	"otherSources",
 
+	PropOrder._ObjectKey.getCopyKey({fnGetModOrder: () => PropOrder._OPTIONALFEATURE__COPY_MOD}),
+
 	"isClassFeatureVariant",
 	"previousVersion",
 
@@ -1542,10 +1506,20 @@ PropOrder._OPTIONALFEATURE = [
 
 	"entries",
 
+	"hasFluff",
+	"hasFluffImages",
+
+	"fluff",
+
 	"foundrySystem",
 	"foundryFlags",
 	"foundryEffects",
 	"foundryImg",
+];
+PropOrder._OPTIONALFEATURE__COPY_MOD = [
+	"*",
+	"_",
+	...PropOrder._OPTIONALFEATURE,
 ];
 PropOrder._PSIONIC = [
 	"name",
@@ -1601,16 +1575,7 @@ PropOrder._RACE_SUBRACE = [
 	"otherSources",
 	"reprintedAs",
 
-	new PropOrder._ObjectKey("_copy", {
-		order: [
-			"name",
-			"source",
-			new PropOrder._ObjectKey("_mod", {
-				fnGetOrder: () => PropOrder._RACE__COPY_MOD,
-			}),
-			"_preserve",
-		],
-	}),
+	PropOrder._ObjectKey.getCopyKey({fnGetModOrder: () => PropOrder._RACE__COPY_MOD}),
 
 	"lineage",
 	"creatureTypes",
@@ -1667,7 +1632,7 @@ PropOrder._RACE_SUBRACE = [
 				fnGetOrder: () => PropOrder._RACE__COPY_MOD,
 			}),
 			"_preserve",
-			"_template",
+			"_abstract",
 			"_implementations",
 			...PropOrder._RACE,
 		],
@@ -1817,7 +1782,7 @@ PropOrder._RECIPE = [
 	"instructions",
 	"noteCook",
 
-	"miscTags",
+	new PropOrder._ArrayKey("miscTags", {fnSort: SortUtil.ascSortLower}),
 
 	"fluff",
 
@@ -1874,16 +1839,7 @@ PropOrder._DECK = [
 	"basicRules",
 	"otherSources",
 
-	new PropOrder._ObjectKey("_copy", {
-		order: [
-			"name",
-			"source",
-			new PropOrder._ObjectKey("_mod", {
-				fnGetOrder: () => PropOrder._DECK__COPY_MOD,
-			}),
-			"_preserve",
-		],
-	}),
+	PropOrder._ObjectKey.getCopyKey({fnGetModOrder: () => PropOrder._DECK__COPY_MOD}),
 
 	"cards",
 	"back",
@@ -1959,6 +1915,7 @@ PropOrder._PROP_TO_LIST = {
 	"makebrewCreatureAction": PropOrder._MAKE_BREW_CREATURE_ACTION,
 	"backgroundFluff": PropOrder._GENERIC_FLUFF,
 	"featFluff": PropOrder._GENERIC_FLUFF,
+	"optionalfeatureFluff": PropOrder._GENERIC_FLUFF,
 	"conditionFluff": PropOrder._GENERIC_FLUFF,
 	"itemFluff": PropOrder._GENERIC_FLUFF,
 	"languageFluff": PropOrder._GENERIC_FLUFF,

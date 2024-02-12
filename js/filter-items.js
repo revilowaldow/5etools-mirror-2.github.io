@@ -96,8 +96,8 @@ class PageFilterEquipment extends PageFilter {
 		if (item.srd) item._fMisc.push("SRD");
 		if (item.basicRules) item._fMisc.push("Basic Rules");
 		if (SourceUtil.isLegacySourceWotc(item.source)) item._fMisc.push("Legacy");
-		if (item.hasFluff || item.fluff?.entries) item._fMisc.push("Has Info");
-		if (item.hasFluffImages || item.fluff?.images) item._fMisc.push("Has Images");
+		if (this._hasFluff(item)) item._fMisc.push("Has Info");
+		if (this._hasFluffImages(item)) item._fMisc.push("Has Images");
 		if (item.miscTags) item._fMisc.push(...item.miscTags.map(Parser.itemMiscTagToFull));
 		if (this._isReprinted({reprintedAs: item.reprintedAs, tag: "item", prop: "item", page: UrlUtil.PG_ITEMS})) item._fMisc.push("Reprinted");
 		if (item.stealth) item._fMisc.push("Disadvantage on Stealth");
@@ -193,7 +193,15 @@ class PageFilterEquipment extends PageFilter {
 globalThis.PageFilterEquipment = PageFilterEquipment;
 
 class PageFilterItems extends PageFilterEquipment {
-	static _DEFAULT_HIDDEN_TYPES = new Set(["treasure", "futuristic", "modern", "renaissance"]);
+	static _DEFAULT_HIDDEN_TYPES = new Set([
+		Parser.ITEM_TYPE_JSON_TO_ABV["$"],
+		Parser.ITEM_TYPE_JSON_TO_ABV["$A"],
+		Parser.ITEM_TYPE_JSON_TO_ABV["$C"],
+		Parser.ITEM_TYPE_JSON_TO_ABV["$G"],
+		"futuristic",
+		"modern",
+		"renaissance",
+	]);
 	static _FILTER_BASE_ITEMS_ATTUNEMENT = ["Requires Attunement", "Requires Attunement By...", "Attunement Optional", VeCt.STR_NO_ATTUNEMENT];
 
 	// region static

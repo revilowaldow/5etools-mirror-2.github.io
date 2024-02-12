@@ -3,6 +3,7 @@
 		{
 			"type": "section",
 			"name": "Introduction: Beginning of the End",
+			"page": 4,
 			"id": "000",
 			"entries": [
 				"Ranging from the planar metropolis of Sigil to the fringes of the Outlands, this Dungeons & Dragons adventure takes characters on a tour of remarkable realms, where they'll brush shoulders with immortals and discover a plot to forever change the multiverse.",
@@ -21,6 +22,7 @@
 				{
 					"type": "section",
 					"name": "Adventure Summary",
+					"page": 4,
 					"id": "001",
 					"entries": [
 						"This story focuses on the characters correcting a multiversal glitch affecting them and the whole of the Outlands. The adventure begins with the characters awaking in Sigil, untethered from their lives and memories due to this unprecedented error in reality.",
@@ -28,6 +30,7 @@
 						{
 							"type": "entries",
 							"name": "A Multiversal Glitch",
+							"page": 4,
 							"id": "002",
 							"entries": [
 								"Sometimes the multiverse doesn't work as it should. In this adventure, characters find themselves victims of an unprecedented multiversal mistake. They each led a remarkable life, died by suspicious means, and were reborn untethered from their true pasts. This makes each character a singularity of existential uncertainty\u2014a being that the laws of the multiverse contort around as planar forces fail to identify their logical place in reality. This has the following effects on the characters:",
@@ -53,6 +56,7 @@
 						{
 							"type": "entries",
 							"name": "Adventure Structure",
+							"page": 4,
 							"id": "003",
 							"entries": [
 								"This adventure has three parts, as follows:",
@@ -66,6 +70,7 @@
 				{
 					"type": "section",
 					"name": "Running the Adventure",
+					"page": 5,
 					"id": "004",
 					"entries": [
 						"To run the adventure, you need the fifth edition core rulebooks ({@book Player's Handbook|PHB}, {@book Dungeon Master's Guide|DMG}, and {@book Monster Manual|MM}). In addition, you need the other two books included in this product: {@book Sigil and the Outlands|SatO} and {@book Morte's Planar Parade|MPP}.",
@@ -81,6 +86,7 @@
 						{
 							"type": "entries",
 							"name": "Directions on the Planes",
+							"page": 5,
 							"id": "006",
 							"entries": [
 								"Surreal locations like Sigil and the Outlands don't exist on planets with clearly defined cardinal directions. Nevertheless, maps and descriptions throughout this adventure refer to north, south, east, and west for ease of use. See {@book Sigil and the Outlands|SatO} for details on navigating these settings."
@@ -89,6 +95,7 @@
 						{
 							"type": "entries",
 							"name": "Using the Poster Map",
+							"page": 5,
 							"id": "007",
 							"entries": [
 								"{@book Sigil and the Outlands|SatO} contains a fold-out, double-sided {@book poster map|SatO|0} intended to be shared with the players at certain points in the adventure. One side of the poster map depicts the {@book city of Sigil|SatO|2}, while the reverse side shows the Outlands. These maps and the landmarks they depict aren't to scale, as both Sigil and the Outlands are vast and ever-changing, making them beyond the scope of traditional cartographic methods. Nevertheless, the location of places relative to one another prove useful as characters navigate these surreal locales. The adventure tells you when to show these maps to your players."
@@ -97,6 +104,7 @@
 						{
 							"type": "entries",
 							"name": "Starting Characters",
+							"page": 5,
 							"id": "008",
 							"entries": [
 								"Characters start this adventure at 3rd level. Players can create new 3rd-level characters, as described in the next section. If the players wonder why characters start at this level and don't recall what came before, ascribe it to the multiversal glitch the characters are experiencing.",
@@ -110,6 +118,7 @@
 								{
 									"type": "entries",
 									"name": "Character Creation",
+									"page": 5,
 									"id": "009",
 									"entries": [
 										"Characters of any origin are suited for this adventure. As the DM, you decide what character options are available to your players. Consider allowing players to choose from the {@book character options|MPMM|1} in {@book Mordenkainen Presents: Monsters of the Multiverse|MPMM} when creating their characters. If you want to include characters who hail from Sigil, a gate-town, or other places where planar travel is common, consider using the {@book character options|SatO|1} in {@book Sigil and the Outlands|SatO}.",
@@ -121,6 +130,7 @@
 						{
 							"type": "entries",
 							"name": "Character Advancement",
+							"page": 5,
 							"id": "00a",
 							"entries": [
 								"At the end of many of the adventure's chapters, each character receives enough experience points to advance 1 level, putting them at the level they should be for the next chapter. Much of {@adventure part 2|ToFW|2} can transpire in any order, with the characters advancing 3 levels, as detailed in {@adventure chapter 4|ToFW|2|Chapter 4\u2013Into the Outlands}. At the conclusion of {@adventure chapter 14|ToFW|3|Chapter 14: Behind the Wheel}, characters gain multiple levels at once. The Character Advancement table notes what level characters should be at the start of each chapter of the adventure. Characters who finish the adventure advance to 18th level.",
@@ -187,6 +197,7 @@
 				{
 					"type": "section",
 					"name": "Glitch Characters",
+					"page": 6,
 					"id": "00b",
 					"entries": [
 						"Once players have created their characters, ask each player the following questions and have them record their answers:",
@@ -207,6 +218,7 @@
 						{
 							"type": "entries",
 							"name": "Character Incarnations",
+							"page": 6,
 							"id": "00c",
 							"entries": [
 								"In this adventure, each character has not just a single form, but three incarnations. These incarnations share the same level and advance at the same time, but they can otherwise be as different or similar as the player wishes. Incarnations might use completely different character options, they might have different physical forms, or they might simply have cosmetic differences. A player plays only one incarnation at a time, switching incarnations only when one dies.",
@@ -238,6 +250,7 @@
 								{
 									"type": "entries",
 									"name": "Nexus Feature",
+									"page": 6,
 									"id": "00d",
 									"entries": [
 										"Nexus features are distinguishing objects or traits shared among a character's incarnations. They are icons of a character's personality or signature tokens. Nexus features help others recognize a character no matter which incarnation is being played. Have players determine a nexus feature by creating their own or rolling on the Nexus Features table.",
@@ -276,6 +289,7 @@
 								{
 									"type": "entries",
 									"name": "When Incarnations Die",
+									"page": 6,
 									"id": "00e",
 									"entries": [
 										"When a character dies, the multiversal glitch restores one of that character's incarnations of the player's choice to life soon after. This incarnation must be different from the one who just died, but each incarnation doesn't need to be played before a particular incarnation reappears.",
@@ -288,12 +302,14 @@
 						{
 							"type": "entries",
 							"name": "Running Glitch Characters",
+							"page": 6,
 							"id": "00f",
 							"entries": [
 								"Use the guidance in this section when portraying the glitch that affects characters in this adventure.",
 								{
 									"type": "entries",
 									"name": "Incarnations Returning",
+									"page": 6,
 									"id": "010",
 									"entries": [
 										"After dying, glitch characters return as one of their other incarnations\u2014even if those incarnations have died before. Once a player chooses which incarnation to play, have that incarnation reappear several minutes after the character's death as is convenient. Planar forces cause incarnations to appear in unlikely places, like in empty rooms, around bends in the road, or inside wardrobes. Let other characters happen across the incarnation rather than having incarnations rejoin the party on their own. Incarnations have no memory of how they came to be wherever they're found. If a character dies during combat, their next incarnation shouldn't appear until after the combat encounter ends."
@@ -302,6 +318,7 @@
 								{
 									"type": "entries",
 									"name": "Threatening the Unkillable",
+									"page": 7,
 									"id": "011",
 									"entries": [
 										"When a glitch character dies, they return as another incarnation. Let characters enjoy their unique situation. If a character wants to sabotage a massive machine by throwing their body into its gears or embrace similarly wild schemes, let them do so.",
@@ -311,6 +328,7 @@
 								{
 									"type": "entries",
 									"name": "Returned but not Reinvigorated",
+									"page": 7,
 									"id": "012",
 									"entries": [
 										"Use your discretion to determine whether incarnations return with all their expendable character features\u2014like spells or uses of traits. If having an incarnation return with their full suite of options would make the adventure less exciting, don't have the incarnation reappear until after the group finishes a long rest, or have the incarnation reappear with their class features expended. It's fine for death to be an annoyance, even for those who defy it."
@@ -319,6 +337,7 @@
 								{
 									"type": "entries",
 									"name": "New Characters",
+									"page": 7,
 									"id": "013",
 									"entries": [
 										"If a player wants to play a new character, you can have glitch characters leave the party or die permanently for mysterious reasons\u2014a glitch is, by definition, unreliable. New characters introduced experience the same multiversal glitch.",
@@ -326,6 +345,7 @@
 										{
 											"type": "inset",
 											"name": "Don't Rush Eternity",
+											"page": 7,
 											"id": "014",
 											"entries": [
 												"The multiverse might be falling apart, but there's no need to rush. Let characters explore Sigil and the Outlands at their leisure. Particularly when exploring the Outlands, days, months, or even years might pass as the party travels. There are no deadlines on this adventure's plots, and the threats the characters face will take ages to unfold. Use the time to feature locations from {@book Sigil and the Outlands|SatO} as you please, then get back to the adventure when it suits you."
@@ -338,6 +358,7 @@
 						{
 							"type": "entries",
 							"name": "Ending the Glitch",
+							"page": 7,
 							"id": "015",
 							"entries": [
 								"In {@adventure chapter 14|ToFW|3|Chapter 14: Behind the Wheel}, the glitch ends, and each player chooses which incarnation is their character's true self. From this point forward, party members function as normal characters\u2014albeit powerful ones."
@@ -346,6 +367,7 @@
 						{
 							"type": "entries",
 							"name": "Starting the Adventure",
+							"page": 7,
 							"id": "016",
 							"entries": [
 								"The adventure begins when the characters awake in the Mortuary in Sigil, a morbid fortress that disposes of the city's dead. The characters have their equipment, but they aren't familiar with their surroundings, how they got there, or Sigil itself. Moreover, the characters' memories of their pasts are unreliable. They know the gist of their traits, but other details about them\u2014including their names\u2014are vague. Learning how the characters lost their memories is revealed in the course of the adventure."
@@ -358,6 +380,7 @@
 		{
 			"type": "section",
 			"name": "Part 1: Schemes in Sigil",
+			"page": 8,
 			"id": "017",
 			"entries": [
 				{
@@ -374,12 +397,14 @@
 				{
 					"type": "section",
 					"name": "Chapter 1: Grave Escape",
+					"page": 9,
 					"id": "018",
 					"entries": [
 						"The characters have died, but their adventures are far from over. Victims of a multiversal mishap, they awaken with hazy memories in the basement of the Mortuary, a foreboding monument to death located in the Hive Ward of Sigil (detailed in {@book chapter 2|SatO|2|Hive Ward} of {@book Sigil and the Outlands|SatO}). Headquarters of the Heralds of Dust, a faction of undertakers and Undead, the Mortuary is a living tomb where the dead are interred, cremated, or raised to serve the Heralds of Dust. Surely, someone in the City of Doors can help the characters learn about their pasts, but the characters must first escape their gloomy prison before its wardens lay them to rest.",
 						{
 							"type": "entries",
 							"name": "Hey, Chief!",
+							"page": 9,
 							"id": "019",
 							"entries": [
 								"When you're ready to begin play, read the following text:",
@@ -396,6 +421,7 @@
 								{
 									"type": "entries",
 									"name": "Talking with Morte",
+									"page": 9,
 									"id": "01b",
 									"entries": [
 										"{@creature Morte|ToFW} is friendly toward the characters and does his best to answer their questions. In conversation, the skull addresses each character as \"Chief\" or some other inoffensive but still unflattering nickname.",
@@ -435,6 +461,7 @@
 						{
 							"type": "entries",
 							"name": "Mortuary Basement",
+							"page": 9,
 							"id": "01c",
 							"entries": [
 								"The basement of the Mortuary is a collection of musty chambers where the Heralds of Dust, also known as the Dusters, process Sigil's dead. Cheerless faction agents prowl its halls, wheeling corpses to embalming chambers or to the crematorium. The Heralds of Dust treat the dead with reverence and dignity, granting them last rites in accordance with the beliefs of the deceased whenever possible. Heralds of Dust abhor resurrection magic, decrying it as anathema to their work.",
@@ -442,6 +469,7 @@
 								{
 									"type": "entries",
 									"name": "Multiversal Glitch",
+									"page": 9,
 									"id": "01d",
 									"entries": [
 										"The Mortuary is a dangerous place for 3rd-level characters. If a character dies, refer to the \"{@adventure Running Glitch Characters|ToFW|0|Running Glitch Characters}\" section in this book's {@adventure introduction|ToFW|0}. If all the characters die at once, they reappear back in the morgue. {@creature Morte|ToFW} heckles them on their return."
@@ -452,6 +480,7 @@
 						{
 							"type": "entries",
 							"name": "Mortuary Basement Features",
+							"page": 10,
 							"id": "01e",
 							"entries": [
 								"Unless otherwise stated, the basement of the Mortuary has the following features:",
@@ -481,6 +510,7 @@
 						{
 							"type": "entries",
 							"name": "Mortuary Basement Locations",
+							"page": 10,
 							"id": "01f",
 							"entries": [
 								{
@@ -2225,6 +2255,7 @@
 								{
 									"type": "entries",
 									"name": "M1: Morgue",
+									"page": 10,
 									"id": "020",
 									"entries": [
 										"The characters begin their adventure in the morgue, a sterile room where Heralds of Dust identify the dead. It is described in the \"Hey, Chief!\" section and contains no creatures other than the talking skull {@creature Morte|ToFW} (see the accompanying stat block).",
@@ -2232,6 +2263,7 @@
 										{
 											"type": "entries",
 											"name": "Treasure",
+											"page": 10,
 											"id": "021",
 											"entries": [
 												"The shelf along the far wall contains a {@item healer's kit|PHB} with three uses remaining, several flasks of embalming chemicals, a polished scalpel that functions as a {@item dagger|PHB}, and any equipment the characters begin play with."
@@ -2242,6 +2274,7 @@
 								{
 									"type": "entries",
 									"name": "M2: Autopsy Room",
+									"page": 10,
 									"id": "022",
 									"entries": [
 										{
@@ -2257,6 +2290,7 @@
 										{
 											"type": "entries",
 											"name": "Treasure",
+											"page": 10,
 											"id": "024",
 											"entries": [
 												"The golem's chest contains the key to the locked drawer in {@adventure area M4|ToFW|1|M4: Cold Locker}."
@@ -2267,6 +2301,7 @@
 								{
 									"type": "entries",
 									"name": "M3: Possessions Room",
+									"page": 10,
 									"id": "025",
 									"entries": [
 										"This storage room houses objects confiscated from the dead. Two {@creature Poltergeist||poltergeists} (variant {@creature Specter||specters}) put on a macabre puppet show for an audience of three slack-jawed {@creature Skeleton||skeletons}. The spirits hover behind a makeshift curtain, using their unintelligible wails to give a pair of eerie dolls the impression of speech.",
@@ -2275,6 +2310,7 @@
 										{
 											"type": "entries",
 											"name": "Treasure",
+											"page": 10,
 											"id": "026",
 											"entries": [
 												"In addition to the {@item Potion of Poison Resistance||potion of resistance (poison)}, this room holds three faction uniforms (your choice), a purse containing 30 gp, and three trinkets (determined randomly by rolling on the {@item trinket|phb|Trinkets table} in the {@book Player's Handbook|PHB})."
@@ -2285,6 +2321,7 @@
 								{
 									"type": "entries",
 									"name": "M4: Cold Locker",
+									"page": 11,
 									"id": "027",
 									"entries": [
 										"Six mortuary stretchers, chilled drawers sized for Medium creatures, line the walls of this frigid chamber. The Heralds of Dust store members of their Undead workforce here.",
@@ -2331,6 +2368,7 @@
 								{
 									"type": "entries",
 									"name": "M5: Crematorium",
+									"page": 11,
 									"id": "028",
 									"entries": [
 										{
@@ -2344,6 +2382,7 @@
 										{
 											"type": "entries",
 											"name": "Safety Lever (Blue)",
+											"page": 11,
 											"id": "02a",
 											"entries": [
 												"To prevent flames from escaping into the hallway, a safety lever ensures the crematorium's two entrances\u2014iron doors with reinforced windows of heat-resistant glass\u2014are shut while its flame spouts are active.",
@@ -2353,6 +2392,7 @@
 										{
 											"type": "entries",
 											"name": "Furnace Lever (Red)",
+											"page": 12,
 											"id": "02b",
 											"entries": [
 												"When pulled, the furnace lever causes the torches set into the walls to erupt with gouts of flame. Creatures inside the fire-filled crematorium must make a DC 18 Dexterity saving throw, taking 44 ({@dice 8d10}) fire damage on a failed save, or half as much damage on a successful one."
@@ -2361,6 +2401,7 @@
 										{
 											"type": "entries",
 											"name": "Zombie Worker",
+											"page": 12,
 											"id": "02c",
 											"entries": [
 												"After the characters enter the crematorium for the first time, a human {@creature zombie} wearing a name tag that reads \"Maurice\" appears in the window of the opposite door and triggers the safety mechanism, trapping any characters inside the crematorium for 1 minute.",
@@ -2380,6 +2421,7 @@
 								{
 									"type": "entries",
 									"name": "M6: Corpse Retrieval",
+									"page": 12,
 									"id": "02e",
 									"entries": [
 										{
@@ -2394,6 +2436,7 @@
 										{
 											"type": "entries",
 											"name": "Falling Corpses",
+											"page": 12,
 											"id": "030",
 											"entries": [
 												"On initiative count 20, creatures within 10 feet of the chute must succeed on a DC 14 Dexterity saving throw or take 7 ({@dice 2d6}) bludgeoning damage and have the {@condition prone} condition. The chute stops ejecting corpses after 3 rounds."
@@ -2402,6 +2445,7 @@
 										{
 											"type": "entries",
 											"name": "Escape",
+											"page": 12,
 											"id": "031",
 											"entries": [
 												"After dealing with the ooze, the characters can climb up a corpse chute to the surface. Doing so requires a successful DC 15 Strength ({@skill Athletics}) check. The chute opens into Ragpicker's Square (see the \"{@adventure Surfacing in Sigil|ToFW|1|Surfacing in Sigil}\" section later in this chapter)."
@@ -2412,6 +2456,7 @@
 								{
 									"type": "entries",
 									"name": "M7: Dining Hall",
+									"page": 13,
 									"id": "032",
 									"entries": [
 										{
@@ -2428,6 +2473,7 @@
 										{
 											"type": "entries",
 											"name": "Treasure",
+											"page": 13,
 											"id": "034",
 											"entries": [
 												"The silverware on the table is collectively worth 200 gp."
@@ -2438,6 +2484,7 @@
 								{
 									"type": "entries",
 									"name": "M8: Burial Grove",
+									"page": 13,
 									"id": "035",
 									"entries": [
 										{
@@ -2454,6 +2501,7 @@
 								{
 									"type": "entries",
 									"name": "M9: Records Room",
+									"page": 13,
 									"id": "037",
 									"entries": [
 										{
@@ -2468,6 +2516,7 @@
 										{
 											"type": "entries",
 											"name": "Pigeonholes",
+											"page": 13,
 											"id": "039",
 											"entries": [
 												"Death certificates fill a network of cubbyholes around Thaeziagnuz's desk. A character can locate their own death certificate by searching for it and succeeding on a DC 18 Intelligence ({@skill Investigation}) check. Curiously, one field remains blank on each of the characters' death certificates: their cause of death."
@@ -2478,6 +2527,7 @@
 								{
 									"type": "entries",
 									"name": "M10: Hallway",
+									"page": 13,
 									"id": "03a",
 									"entries": [
 										"The stairway in this musty hallway ascends to a cellar door at the edge of the Mortuary's grounds near the Hive Ward (see the following section). An iron gate at the south end of the corridor leads to other areas in the Mortuary, but they are beyond the scope of this adventure."
@@ -2488,6 +2538,7 @@
 						{
 							"type": "entries",
 							"name": "Surfacing in Sigil",
+							"page": 13,
 							"id": "03b",
 							"entries": [
 								"When the characters exit the Mortuary, read or paraphrase the following description:",
@@ -2507,12 +2558,14 @@
 				{
 					"type": "section",
 					"name": "Chapter 2: Philosophers with Clubs",
+					"page": 14,
 					"id": "03d",
 					"entries": [
 						"The characters emerge from the Mortuary and find all of Sigil before them. Before running this part of the adventure, review {@book Sigil and the Outlands|SatO}. Use this chapter to familiarize characters with Sigil and get a taste for what it has to offer. After meeting the tout Parisa, the characters can explore as they please. When you're ready for the adventure to proceed, run the \"{@adventure Harmonium Officers|ToFW|1|Harmonium Officers}\" encounter.",
 						{
 							"type": "entries",
 							"name": "A Tout to Help You Out",
+							"page": 14,
 							"id": "03e",
 							"entries": [
 								"After leaving the Mortuary, the characters emerge in Ragpicker's Square in the Hive Ward. There they meet their first local, an irritable tiefling {@creature commoner} with devilish hooves who bumps into them in the street. Flustered and clearly in the wrong, the tiefling spins around and berates the characters:",
@@ -2537,6 +2590,7 @@
 						{
 							"type": "entries",
 							"name": "Exploring Sigil",
+							"page": 14,
 							"id": "040",
 							"entries": [
 								"{@book Chapter 2|SatO|2} of {@book Sigil and the Outlands|SatO} describes life in Sigil and the locations on the poster map. Use this information, along with the random encounter table in each ward's section, to bring the multiversal hub to life. Sigil is a metropolis with manifold attractions; feel free to add in adventuring sites of your own creation.",
@@ -2544,6 +2598,7 @@
 								{
 									"type": "entries",
 									"name": "Map of Sigil",
+									"page": 14,
 									"id": "041",
 									"entries": [
 										"If the characters accept Parisa's services, show your players the {@book poster map of Sigil|SatO|2} to guide their characters' exploration. The map simulates the tout's extensive knowledge of the city's layout, wards, and noteworthy sites.",
@@ -2553,6 +2608,7 @@
 								{
 									"type": "entries",
 									"name": "Sights and Wonders",
+									"page": 14,
 									"id": "042",
 									"entries": [
 										"Parisa or any other unofficial guide can recommend the following activities to the characters:",
@@ -2602,6 +2658,7 @@
 								{
 									"type": "entries",
 									"name": "Who Am I?",
+									"page": 15,
 									"id": "043",
 									"entries": [
 										"The core mystery of this adventure surrounds the characters' identities and the nature of their deaths. While the characters retain vague, surface-level details about themselves, they're likely to seek more information in places such as the Hall of Records in the Clerks' Ward or the Institute for Intellectual Excellence in the Market Ward. Ultimately, the answers they find are either unsatisfying or nonexistent, and no one knows how the characters died.",
@@ -2624,12 +2681,14 @@
 						{
 							"type": "entries",
 							"name": "Sigil Encounters",
+							"page": 15,
 							"id": "044",
 							"entries": [
 								"The following encounters can be introduced anywhere in Sigil. While the first two are optional, the \"{@adventure Harmonium Officers|ToFW|1|Harmonium Officers}\" encounter marks the end of the exploration portion of this chapter and moves the adventure's plot forward.",
 								{
 									"type": "entries",
 									"name": "Sensory Experience",
+									"page": 15,
 									"id": "045",
 									"entries": [
 										"A {@creature Society of Sensation muse|MPP} (see {@book Morte's Planar Parade|MPP}) in a flowery gown approaches the characters, eager to record a new sensation in their {@item sensory stone|SatO} (see {@book Sigil and the Outlands|SatO}). Roll on the Sensory Stone Sensations table and consult the entries below to determine the muse's desired sensation and how the characters can help them elicit it.",
@@ -2686,6 +2745,7 @@
 								{
 									"type": "entries",
 									"name": "Planar Philosophers",
+									"page": 16,
 									"id": "046",
 									"entries": [
 										"Intellectuals from three factions\u2014the Athar, the Bleak Cabal, and the Mind's Eye\u2014are locked in debate in a public forum, such as the Trianym outside the Hall of Speakers. The quarrelers consist of a strident {@creature Athar null|MPP}, an apathetic {@creature Bleak Cabal void soother|MPP}, and an uplifting {@creature Mind's Eye matter smith|MPP} (see {@book Morte's Planar Parade|MPP} for these stat blocks). Their dispute concerns the legitimacy of gods in the grand scheme of the multiverse. Their bombastic arguments have drawn a small crowd of spectators."
@@ -2694,6 +2754,7 @@
 								{
 									"type": "entries",
 									"name": "Three Arguments",
+									"page": 16,
 									"id": "047",
 									"entries": [
 										"The crux of their arguments are as follows:",
@@ -2705,6 +2766,7 @@
 								{
 									"type": "entries",
 									"name": "What Do You Think?",
+									"page": 16,
 									"id": "048",
 									"entries": [
 										"Having reached an impasse, the philosophers turn their attention to the characters, asking them to weigh in. The debate resolves in one of three ways:",
@@ -2735,6 +2797,7 @@
 								{
 									"type": "entries",
 									"name": "Harmonium Officers",
+									"page": 16,
 									"id": "049",
 									"entries": [
 										"Sigil's tripartite of justice\u2014the Fraternity of Order, the Harmonium, and the Mercykillers\u2014has learned of the character's multiversal glitch, whether from the Heralds of Dust or a creature that witnessed the characters' spontaneous resurrection. The Guvners deploy a cadre of Harmonium officers to place the characters under arrest.",
@@ -2755,6 +2818,7 @@
 								{
 									"type": "entries",
 									"name": "Development",
+									"page": 17,
 									"id": "04b",
 									"entries": [
 										"Whether they evade the Harmonium pursuers or get caught, the characters eventually meet {@creature Farrow|ToFW}, detailed below. The circumstance of this introduction depends on whether the characters escape or are captured, as detailed below:",
@@ -2790,6 +2854,7 @@
 								{
 									"type": "entries",
 									"name": "Farrow, Shadar-kai Spy",
+									"page": 17,
 									"id": "04c",
 									"entries": [
 										"{@creature Farrow|ToFW} was once a member of a covert network of shadar-kai\u2014elves shaped by the magic of the Shadowfell\u2014on a Material Plane world known as Mystara. Hurled into the Cage after a failed mission on their home world, {@creature Farrow|ToFW} has since acclimated to the City of Doors and put their talents to use. They have curly white hair, ashen skin, and a purplish birthmark on the right side of their face.",
@@ -2797,6 +2862,7 @@
 										{
 											"type": "entries",
 											"name": "Faces of Farrow",
+											"page": 17,
 											"id": "04d",
 											"entries": [
 												"In addition to their true form (a neutral, elf {@creature spy}), {@creature Farrow|ToFW} regularly dons the following disguises, replacing their game statistics with those of a {@book Sigil faction agent|MPP|1|Faction Agents} (detailed in {@book Morte's Planar Parade|MPP}):",
@@ -2809,6 +2875,7 @@
 										{
 											"type": "entries",
 											"name": "Mysterious Patron",
+											"page": 17,
 											"id": "04e",
 											"entries": [
 												"{@creature Farrow|ToFW} has been observing the characters from afar. The shadar-kai understands the characters' identity crisis and believes Shemeshka can help, but the spy doesn't disclose their employer's name due to Shemeshka's dire reputation; {@creature Farrow|ToFW} hopes they've done enough to earn the characters' trust in the meantime.",
@@ -2823,6 +2890,7 @@
 						{
 							"type": "entries",
 							"name": "Undersigil",
+							"page": 18,
 							"id": "04f",
 							"entries": [
 								"{@creature Farrow|ToFW} knows a path through Undersigil to Fortune's Wheel, a casino owned by Shemeshka. Though the shortcut avoids the Harmonium officers, the tunneled realms beneath Sigil bring their own dangers, as detailed by the encounters in this section. For more information about {@book Undersigil|SatO|2|Undersigil}, see {@book chapter 2|SatO|2} of {@book Sigil and the Outlands|SatO}.",
@@ -2830,6 +2898,7 @@
 								{
 									"type": "entries",
 									"name": "Stuffed Rat",
+									"page": 18,
 									"id": "050",
 									"entries": [
 										"Soon after the characters begin their travels in Undersigil, read the following description:",
@@ -2847,6 +2916,7 @@
 								{
 									"type": "entries",
 									"name": "Twisted Tea Party",
+									"page": 18,
 									"id": "052",
 									"entries": [
 										"{@creature Farrow|ToFW}'s shortcut takes the characters through the territory of the Coterie of Cakes, a dwindling faction of bullies and bakers who believe the multiverse is a giant, multilayered cake. Forced into Undersigil when their faction didn't quite take, the Cakers aggressively knead nonbelievers into members of their cake-based contingent.",
@@ -2924,6 +2994,7 @@
 								{
 									"type": "entries",
 									"name": "Cursed Cake",
+									"page": 19,
 									"id": "054",
 									"entries": [
 										"Unable to secure fresh ingredients in Undersigil, the Cakers prepped this pastry with the blood of a vargouille. A successful DC 16 Intelligence ({@skill Arcana}) check reveals the wings have black blood; they don't belong to a bat or any other Beast.",
@@ -2933,6 +3004,7 @@
 								{
 									"type": "entries",
 									"name": "Cursed Cakers",
+									"page": 19,
 									"id": "055",
 									"entries": [
 										"The Cakers have eaten the cursed cake. Makeup masks their languid complexions, but a character who succeeds on a DC 14 Wisdom ({@skill Insight} or {@skill Medicine}) check determines the Cakers aren't well. If a Caker is reduced to 0 hit points, a hostile {@creature vargouille reflection|MPP} sprouts from their corpse."
@@ -2941,6 +3013,7 @@
 								{
 									"type": "entries",
 									"name": "Portals",
+									"page": 19,
 									"id": "056",
 									"entries": [
 										"Each of the lettered sewer pipes on {@adventure map 2.1|ToFW|1|Map 2.1: Caker Tea Party} contains a portal to one of the others in this room. The pipes are large enough for a Medium or smaller creature to pass through without squeezing. A creature that enters a pipe emerges on the other side of the pipe with the matching letter on map 2.1. The Cakers know the destinations of each pipe and use them to their advantage in combat."
@@ -2949,6 +3022,7 @@
 								{
 									"type": "entries",
 									"name": "Treasure",
+									"page": 19,
 									"id": "057",
 									"entries": [
 										"Among the Cakers are two stale baguettes, three mincemeat pies, and a lemon tart. Additionally, {@creature Gertrube|ToFW} carries a {@item portal compass|SatO} (see {@book Sigil and the Outlands|SatO})."
@@ -2959,6 +3033,7 @@
 						{
 							"type": "entries",
 							"name": "To Fortune's Wheel",
+							"page": 19,
 							"id": "058",
 							"entries": [
 								"After the characters deal with the Cakers, the remainder of the journey through Undersigil is uneventful. They emerge from Undersigil in the Lady's Ward, about a block from Fortune's Wheel.",
@@ -2979,12 +3054,14 @@
 				{
 					"type": "section",
 					"name": "Chapter 3: Fortune Favors the Bold",
+					"page": 20,
 					"id": "05a",
 					"entries": [
 						"The characters arrive at Fortune's Wheel, a planar casino in the Lady's Ward owned by the Shemeshka the Marauder. As they wait for the arcanaloth to arrive, the characters experience the gambling hall, its games, and its colorful clientele. At the end of the evening, Shemeshka promises to investigate the characters' pasts if they agree to do her a favor.",
 						{
 							"type": "entries",
 							"name": "Warm Welcome",
+							"page": 20,
 							"id": "05b",
 							"entries": [
 								"The door of Fortune's Wheel opens into the Dragon Bar. When the party enters, a polite, snappily dressed tiefling bellhop ({@creature commoner}) named Valek delivers a letter to them that reads as follows:",
@@ -3012,6 +3089,7 @@
 								{
 									"type": "entries",
 									"name": "Planar Proprietor",
+									"page": 20,
 									"id": "05d",
 									"entries": [
 										"Shemeshka's reputation precedes her. Characters who question {@creature Farrow|ToFW}, Valek, or other locals about her might learn the following details:",
@@ -3054,12 +3132,14 @@
 						{
 							"type": "entries",
 							"name": "Fortune's Wheel",
+							"page": 20,
 							"id": "05e",
 							"entries": [
 								"Fortune's Wheel is a casino where risk-takers from across the multiverse place bets.",
 								{
 									"type": "entries",
 									"name": "Tracking Time",
+									"page": 20,
 									"id": "05f",
 									"entries": [
 										"The characters have enough time to finish a long rest. After this, they have 3 hours before Shemeshka arrives on the casino floor. They can use this time to explore Fortune's Wheel, play games, and interact with fellow gamblers. Use the games detailed in the following sections and the encounters in the \"{@adventure Timed Events|ToFW|1|Timed Events}\" section to fill the time. Don't worry about managing things to the minute. If the players are having fun, give them time to enjoy the casino."
@@ -3068,6 +3148,7 @@
 								{
 									"type": "entries",
 									"name": "Casino Games",
+									"page": 20,
 									"id": "060",
 									"entries": [
 										"Games of chance are scattered throughout the casino. Most involve the elements here."
@@ -3076,6 +3157,7 @@
 								{
 									"type": "entries",
 									"name": "Razorleaves",
+									"page": 20,
 									"id": "061",
 									"entries": [
 										"Due to the infinite currencies in Sigil, the games in Fortune's Wheel use razorleaves: gambling chips unique to the casino. A razorleaf\u2014or simply a \"razor\"\u2014looks like a gold-hued token inscribed with stylized razorvines. Each razorleaf is worth 10 gp.",
@@ -3085,6 +3167,7 @@
 								{
 									"type": "entries",
 									"name": "Gamblers",
+									"page": 20,
 									"id": "062",
 									"entries": [
 										"The Fortune's Wheel Gamblers table details NPCs the characters might encounter in the casino. Use these individuals to bring Fortune's Wheel to life through social interactions or by including them as quirky rivals for characters playing casino games.",
@@ -3125,6 +3208,7 @@
 						{
 							"type": "entries",
 							"name": "Fortune's Wheel Features",
+							"page": 21,
 							"id": "063",
 							"entries": [
 								"The casino has the following features:",
@@ -3154,6 +3238,7 @@
 						{
 							"type": "entries",
 							"name": "Fortune's Wheel Locations",
+							"page": 21,
 							"id": "064",
 							"entries": [
 								"The following locations are keyed to map 3.1. The compass and cardinal directions on the map are provided for ease of use.",
@@ -3691,6 +3776,7 @@
 								{
 									"type": "entries",
 									"name": "F1: Dragon Bar",
+									"page": 21,
 									"id": "065",
 									"entries": [
 										"The Dragon Bar is an extravagant reception area where gamblers gather before hitting the casino proper.",
@@ -3699,6 +3785,7 @@
 										{
 											"type": "entries",
 											"name": "F1a: Bar",
+											"page": 21,
 											"id": "066",
 											"entries": [
 												"A sculpture of a red dragon head protrudes from the wall above this mirrored bar, which is tended by a dead-eyed, lawful neutral {@creature equinal guardinal|MPP} (see {@book Morte's Planar Parade|MPP}) named Brayson. He is taciturn but friendly."
@@ -3707,6 +3794,7 @@
 										{
 											"type": "entries",
 											"name": "F1b: Hotel Access",
+											"page": 21,
 											"id": "067",
 											"entries": [
 												"A staircase near the main entrance ascends to a carpeted hallway of numbered, five-star suites. These accommodations exist in demiplanes accessible by guests and casino staff, or anyone else in possession of a room's portal key."
@@ -3715,6 +3803,7 @@
 										{
 											"type": "entries",
 											"name": "F1c: Kitchen",
+											"page": 22,
 											"id": "068",
 											"entries": [
 												"Five {@creature steam mephit} chefs prepare meals for guests in this hectic kitchen."
@@ -3723,6 +3812,7 @@
 										{
 											"type": "entries",
 											"name": "F1d: Stage",
+											"page": 22,
 											"id": "069",
 											"entries": [
 												"Opening acts take place on a small, curtained stage. Between shows, performers can be found in a dressing room adjacent to the stage."
@@ -3731,6 +3821,7 @@
 										{
 											"type": "entries",
 											"name": "F1e: Wheel",
+											"page": 22,
 											"id": "06a",
 											"entries": [
 												"This room, reminiscent of a museum exhibit, houses the original fortune's wheel: an eye-catching, vertical iron cartwheel. Gilded payouts decorate its weathered surface, including one coveted gold square that once paid out ludicrous sums. This roulette has since been decommissioned, replaced by the one in {@adventure area F7|ToFW|1|F7: Fortune's Wheel}."
@@ -3741,12 +3832,14 @@
 								{
 									"type": "entries",
 									"name": "F2: Casino Cages",
+									"page": 22,
 									"id": "06b",
 									"entries": [
 										"Here gamblers can cash out their winnings or purchase razorleaves for 10 gp apiece. An attentive {@creature imp} cashier sits behind each barred window, retrieving chips and funds from secure portals only they can access. There are two cages in Fortune's Wheel: one in the Dragon Bar with two cashiers and a slightly larger office in the casino proper with three.",
 										{
 											"type": "entries",
 											"name": "Welcome Gifts",
+											"page": 22,
 											"id": "06c",
 											"entries": [
 												"When the characters first visit one of the casino cages, a teller gives them each a black satin bag containing 10 razorleaves. If the characters aren't already aware of the casino beyond the Dragon Bar, an imp encourages them to speak with Vez the oni."
@@ -3757,6 +3850,7 @@
 								{
 									"type": "entries",
 									"name": "F3: Illusory Fountain",
+									"page": 22,
 									"id": "06d",
 									"entries": [
 										{
@@ -3771,6 +3865,7 @@
 										{
 											"type": "entries",
 											"name": "Scrying Statue",
+											"page": 22,
 											"id": "06f",
 											"entries": [
 												"Creatures in the security room ({@adventure area F10|ToFW|1|F10: Security Room}) can see and hear through the statue as if they were standing in its place. A {@spell detect magic} spell reveals an aura of divination magic around the statue."
@@ -3779,6 +3874,7 @@
 										{
 											"type": "entries",
 											"name": "Treasure",
+											"page": 22,
 											"id": "070",
 											"entries": [
 												"The statue is worth 5,000 gp, but damaging any part of it draws the immediate ire of two {@creature mezzoloth} bouncers in the crowd nearby."
@@ -3789,6 +3885,7 @@
 								{
 									"type": "entries",
 									"name": "F4: Slot Machines",
+									"page": 23,
 									"id": "071",
 									"entries": [
 										"The first time a character approaches a slot machine, read or paraphrase the following text:",
@@ -3898,6 +3995,7 @@
 								{
 									"type": "entries",
 									"name": "F5: Table Games",
+									"page": 23,
 									"id": "073",
 									"entries": [
 										"Various games take place at velvet-lined tables in this open area. Three games are detailed below; at your discretion, Fortune's Wheel might contain other table games of your own creation. The buy-in for a table game is 1 razorleaf per game unless anyone is feeling lucky and wants to up the ante.",
@@ -3916,6 +4014,7 @@
 										{
 											"type": "entries",
 											"name": "Dead Hand's Dice",
+											"page": 23,
 											"id": "074",
 											"entries": [
 												"A {@creature vampire} croupier coalesces from a cloud of mist to conduct dead hand's dice, a dice game popular among spacefaring pirates in the Astral Sea. The rules are as follows:",
@@ -3933,6 +4032,7 @@
 										{
 											"type": "entries",
 											"name": "Olidammara's Bounty",
+											"page": 24,
 											"id": "075",
 											"entries": [
 												"Named after a god of revelry, this game is played on a long table embroidered with a flat pattern of an unfolded, twenty-sided die. The game's dealer is also its deciding piece: a {@creature spectator} shaped like an icosahedron that rolls itself on the table once all bets have been placed to determine the outcome. The rules are as follows:",
@@ -3959,6 +4059,7 @@
 								{
 									"type": "entries",
 									"name": "F6: Big-Ticket Prize",
+									"page": 24,
 									"id": "076",
 									"entries": [
 										"This area displays a gilded {@item apparatus of Kwalish}, a prize that can be won by spinning the fortune's wheel in area F7. If the characters take the apparatus for a joyride, two {@creature mezzoloth} bouncers arrive in 3 rounds and demand the characters vacate the apparatus or be escorted to their room by force."
@@ -3967,6 +4068,7 @@
 								{
 									"type": "entries",
 									"name": "F7: Fortune's Wheel",
+									"page": 24,
 									"id": "077",
 									"entries": [
 										{
@@ -3980,6 +4082,7 @@
 										{
 											"type": "entries",
 											"name": "Spinning the Wheel",
+											"page": 24,
 											"id": "079",
 											"entries": [
 												"Fortune's wheel costs 5 razorleaves per spin, and a creature is allowed only one spin every 24 hours (the wheel doesn't function if more spins are attempted). To play, the participant sits in the chair, inserts the chips into a slot in the pedestal, and pulls the lever. To determine the result, roll a {@dice d10} and consult the Outer Wheel column of the Fortune's Wheel Results table, following its instructions or comparing the result to the entries below. The game always starts on the outer wheel and ends with a single result.",
@@ -4067,6 +4170,7 @@
 										{
 											"type": "entries",
 											"name": "Bag",
+											"page": 24,
 											"id": "07a",
 											"entries": [
 												"The participant wins a {@item bag of holding}."
@@ -4075,6 +4179,7 @@
 										{
 											"type": "entries",
 											"name": "Big-Ticket Prize",
+											"page": 24,
 											"id": "07b",
 											"entries": [
 												"The participant wins the gilded {@item apparatus of Kwalish} in {@adventure area F6|ToFW|1|F6: Big-Ticket Prize}. The apparatus remains in Fortune's Wheel for the evening. At your discretion, Valek can arrange for the apparatus to be delivered to the characters in the Outlands during {@adventure part 2|ToFW|2} of the adventure."
@@ -4083,6 +4188,7 @@
 										{
 											"type": "entries",
 											"name": "Coin",
+											"page": 24,
 											"id": "07c",
 											"entries": [
 												"The participant wins 50 gp."
@@ -4091,6 +4197,7 @@
 										{
 											"type": "entries",
 											"name": "Coins, Two",
+											"page": 24,
 											"id": "07d",
 											"entries": [
 												"The participant wins 500 gp."
@@ -4099,6 +4206,7 @@
 										{
 											"type": "entries",
 											"name": "Coins, Three",
+											"page": 24,
 											"id": "07e",
 											"entries": [
 												"The participant wins 5,000 gp."
@@ -4107,6 +4215,7 @@
 										{
 											"type": "entries",
 											"name": "Compass",
+											"page": 24,
 											"id": "07f",
 											"entries": [
 												"The participant wins a {@item portal compass|SatO} (see {@book Sigil and the Outlands|SatO})."
@@ -4115,6 +4224,7 @@
 										{
 											"type": "entries",
 											"name": "Crown",
+											"page": 24,
 											"id": "080",
 											"entries": [
 												"The participant becomes a quasi-deity with a petty portfolio, such as dust mites, scheduling conflicts, gazebos, or three-toed sloths. Celestials and Fiends acknowledge the participant's godly status, but with no followers to boast, the participant is divine in name only. At your discretion, the winner might gain additional minor abilities related to their portfolio, such as controlling dust mites or understanding sloths. The Lady of Pain and other figures who seek to oust gods from Sigil pay the winner no attention."
@@ -4123,6 +4233,7 @@
 										{
 											"type": "entries",
 											"name": "Feather",
+											"page": 24,
 											"id": "081",
 											"entries": [
 												"The participant wins a {@item Quaal's Feather Token, Bird||Quaal's feather token (bird)}."
@@ -4131,6 +4242,7 @@
 										{
 											"type": "entries",
 											"name": "Flask",
+											"page": 24,
 											"id": "082",
 											"entries": [
 												"The participant wins a {@item Holy Water (flask)|PHB|flask of holy water}."
@@ -4139,6 +4251,7 @@
 										{
 											"type": "entries",
 											"name": "Four-Leaf Clover",
+											"page": 24,
 											"id": "083",
 											"entries": [
 												"The participant wins a {@item stone of good luck}."
@@ -4147,6 +4260,7 @@
 										{
 											"type": "entries",
 											"name": "Fox",
+											"page": 24,
 											"id": "084",
 											"entries": [
 												"The participant wins a citrine {@item Figurine of Wondrous Power, Onyx Dog||figurine of wondrous power (onyx dog)} that becomes a Medium fox ({@creature mastiff}) when its command word is spoken."
@@ -4155,6 +4269,7 @@
 										{
 											"type": "entries",
 											"name": "Ghost",
+											"page": 25,
 											"id": "085",
 											"entries": [
 												"The participant wins a bottle containing the soul of an unknown creature. Removing the stopper frees the soul inside, allowing it to proceed to the afterlife."
@@ -4163,6 +4278,7 @@
 										{
 											"type": "entries",
 											"name": "House",
+											"page": 25,
 											"id": "086",
 											"entries": [
 												"The participant wins a property deed to a modest home in a gate-town of your choosing."
@@ -4171,6 +4287,7 @@
 										{
 											"type": "entries",
 											"name": "Key",
+											"page": 25,
 											"id": "087",
 											"entries": [
 												"The participant wins a random portal key."
@@ -4179,6 +4296,7 @@
 										{
 											"type": "entries",
 											"name": "Letter",
+											"page": 25,
 											"id": "088",
 											"entries": [
 												"The participant wins a {@book letter of recommendation|DMG|7|Letters of Recommendation} (see the {@book Dungeon Master's Guide|DMG}) penned by Shemeshka."
@@ -4187,6 +4305,7 @@
 										{
 											"type": "entries",
 											"name": "Star",
+											"page": 25,
 											"id": "089",
 											"entries": [
 												"The participant gains a {@reward boon of luck} (see the {@book Dungeon Master's Guide|DMG})."
@@ -4195,6 +4314,7 @@
 										{
 											"type": "entries",
 											"name": "Stein",
+											"page": 25,
 											"id": "08a",
 											"entries": [
 												"The participant wins a drink at the Ice Lounge ({@adventure area F8|ToFW|1|F8: Ice Lounge})."
@@ -4203,6 +4323,7 @@
 										{
 											"type": "entries",
 											"name": "Sword",
+											"page": 25,
 											"id": "08b",
 											"entries": [
 												"The participant wins a {@item +1 weapon} of their choice."
@@ -4211,6 +4332,7 @@
 										{
 											"type": "entries",
 											"name": "Tentacle",
+											"page": 25,
 											"id": "08c",
 											"entries": [
 												"The participant wins the still-writhing tentacle of a mind flayer. It's sticky."
@@ -4219,6 +4341,7 @@
 										{
 											"type": "entries",
 											"name": "Trinket",
+											"page": 25,
 											"id": "08d",
 											"entries": [
 												"The participant wins one random trinket (roll on the {@item trinket|phb|Trinkets table} in the {@book Player's Handbook|PHB})."
@@ -4227,6 +4350,7 @@
 										{
 											"type": "entries",
 											"name": "Tongue",
+											"page": 25,
 											"id": "08e",
 											"entries": [
 												"The participant gains the ability to speak one language of their choice."
@@ -4235,6 +4359,7 @@
 										{
 											"type": "entries",
 											"name": "Tunic",
+											"page": 25,
 											"id": "08f",
 											"entries": [
 												"The participant wins a tunic sized for them that reads \"I spun Fortune's Wheel, and all I got was this lousy tunic.\""
@@ -4245,6 +4370,7 @@
 								{
 									"type": "entries",
 									"name": "F8: Ice Lounge",
+									"page": 25,
 									"id": "090",
 									"entries": [
 										"Chilly fog emanates from the Ice Lounge, a bar chipped from a magic glacier. Its bartender is Phiwi, a warm-hearted {@creature yeti} who speaks Common. The mixologist's specialty is a face-numbing cocktail called the Abominable Yes Please.",
@@ -4262,6 +4388,7 @@
 										{
 											"type": "entries",
 											"name": "Sulking Dragon",
+											"page": 25,
 											"id": "091",
 											"entries": [
 												"Winter's Bite, a piteous {@creature young white dragon}, sits at the bar with his head hung, fidgeting with a single gold piece as he drowns his sorrow. The coin is all that remains of the dragon's hoard\u2014he gambled the rest away in a single night. Worse yet, the foolhardy dragon has racked up a 100 gp bar tab he can no longer afford. If a character pays off the dragon's debt, Winter's Bite thanks the character, calling them a \"friend of dragonkind\" before he departs the casino, never to return."
@@ -4272,6 +4399,7 @@
 								{
 									"type": "entries",
 									"name": "F9: Stage",
+									"page": 25,
 									"id": "092",
 									"entries": [
 										"A lofty, curtained stage rises at one end of the hall. Each evening, it boasts an assortment of acts. Behind the stage, performers prepare for the next act. A high-strung {@creature satyr} stage manager, Grigsby, roves between storage spaces and a dressing room strewn with makeup and bewitching costumes.",
@@ -4302,6 +4430,7 @@
 								{
 									"type": "entries",
 									"name": "F10: Security Room",
+									"page": 26,
 									"id": "093",
 									"entries": [
 										"Three {@creature Nothic||nothics} sit in this dim room, staring at screens connected to invisible sensors spread throughout the casino. The nothics can hear and see through the sensors as if they were there, but they can't move them. In addition to their observation capabilities, the sensors extend the range of each nothic's Weird Insight action, allowing the Aberrations to probe the minds of suspicious patrons.",
@@ -4320,6 +4449,7 @@
 								{
 									"type": "entries",
 									"name": "F11: Private Rooms",
+									"page": 26,
 									"id": "094",
 									"entries": [
 										"These lavish rooms are used for private meetings or exclusive table games. In one room, three {@creature Hound Archon|MPP|hound archons} (see {@book Morte's Planar Parade|MPP}) are playing dead hand's dice (see {@adventure area F5|ToFW|1|F5: Table Games})."
@@ -4328,6 +4458,7 @@
 								{
 									"type": "entries",
 									"name": "F12. Portal to the Platinum Rooms",
+									"page": 26,
 									"id": "095",
 									"entries": [
 										"This unremarkable alcove stands in a back hall used by casino staff. Within is a portal that opens for creatures carrying an exceptionally rare platinum razorleaf chip. Those who brandish such a chip and step into the alcove emerge into the Platinum Rooms, which are detailed in {@adventure chapter 14|ToFW|3|The Platinum Rooms}."
@@ -4338,12 +4469,14 @@
 						{
 							"type": "entries",
 							"name": "Timed Events",
+							"page": 26,
 							"id": "096",
 							"entries": [
 								"The following events occur at the end of each hour.",
 								{
 									"type": "entries",
 									"name": "Hour 1: Identity Thieves",
+									"page": 26,
 									"id": "097",
 									"entries": [
 										"Three amicable Vecna impersonators\u2014{@creature Doppelganger||doppelgangers} mirroring the archlich of the same name\u2014walk the casino floor doing inaccurate but amusing impressions. The trio approaches one of the characters and begins to recite cheesy one-liners, asking the party to \"give a lich a hand.\"",
@@ -4355,6 +4488,7 @@
 								{
 									"type": "entries",
 									"name": "Hour 2: Disgruntled Patron",
+									"page": 27,
 									"id": "098",
 									"entries": [
 										"If the characters didn't pay the bar tab of Winter's Bite, the {@creature young white dragon} in the Ice Lounge ({@adventure area F8|ToFW|1|F8: Ice Lounge}), the dragon finally snaps. The dragon wreaks havoc as he heads for the stage to bully the current performer, who retreats into the dressing room. If the characters don't intervene, four {@creature Mezzoloth||mezzoloths} arrive after 3 rounds and subdue the dragon, who continues to cause a scene as he's removed from the casino. A character who spends an action and succeeds on a DC 14 Charisma ({@skill Intimidation} or {@skill Persuasion}) check can convince the dragon to stop attacking and leave the establishment."
@@ -4363,6 +4497,7 @@
 								{
 									"type": "entries",
 									"name": "Hour 3: Shemeshka Arrives",
+									"page": 27,
 									"id": "099",
 									"entries": [
 										"Read the following text when {@creature Shemeshka|MPP} (see {@book Morte's Planar Parade|MPP}) makes her appearance:",
@@ -4378,6 +4513,7 @@
 								{
 									"type": "entries",
 									"name": "Roleplaying Shemeshka",
+									"page": 27,
 									"id": "09b",
 									"entries": [
 										"Shemeshka is dignified and dangerous\u2014a gregarious yugoloth who emanates an aura of grace and royalty. In conversation, she is composed and cordial, exuding confidence and sophistication without appearing pretentious or insincere. However, her smiles are hollow\u2014a placid veneer that masks her ruthless nature. To Shemeshka, the multiverse is a chessboard. She moves her pawns deliberately across the planes, using them to further far-reaching schemes. She views her enemies the same way she does her allies: unworthy, easily manipulated, and disposable."
@@ -4386,6 +4522,7 @@
 								{
 									"type": "entries",
 									"name": "Talking with Shemeshka",
+									"page": 27,
 									"id": "09c",
 									"entries": [
 										"As Shemeshka's guests, the characters can easily secure an audience with the casino's owner, who suggests they speak privately in {@adventure area F11|ToFW|1|F11: Private Rooms}.",
@@ -4393,6 +4530,7 @@
 										{
 											"type": "entries",
 											"name": "Shemeshka's Offer",
+											"page": 27,
 											"id": "09d",
 											"entries": [
 												"The arcanaloth promises to dig up information on the characters' pasts in exchange for a favor. She asks the characters to locate {@creature R04M|ToFW}, a monodrone that vanished into the Outlands some time ago and hasn't returned. She's too busy with the casino to track him down herself.",
@@ -4403,6 +4541,7 @@
 										{
 											"type": "entries",
 											"name": "Distraction",
+											"page": 27,
 											"id": "09e",
 											"entries": [
 												"The arcanaloth's mission is largely a distraction. Shemeshka doesn't expect the characters to return from the Outlands anytime soon, if at all. The wheels of a grand scheme are in motion, and she wants the characters out of her affairs."
@@ -4413,6 +4552,7 @@
 								{
 									"type": "entries",
 									"name": "To the Outlands",
+									"page": 27,
 									"id": "09f",
 									"entries": [
 										"If the characters accept her deal, Shemeshka gives the characters a piece of lapis lazuli shaped like an eye. She explains that it's a key to a portal, located in the Clerks' Ward near the base of a gigantic statue of a rearing, three-eyed horse. The portal stands in an archway and leads to the Outlands (detailed in {@adventure chapter 4|ToFW|2|Chapter 4\u2013Into the Outlands}).",
@@ -4429,11 +4569,13 @@
 		{
 			"type": "section",
 			"name": "Part 2: The Mosaic Mimir",
+			"page": 28,
 			"id": "0a0",
 			"entries": [
 				{
 					"type": "section",
 					"name": "Chapter 4\u2013Into the Outlands",
+					"page": 29,
 					"id": "0a1",
 					"entries": [
 						"While Shemeshka investigates the characters' origins and the strange magic affecting the adventurers, the party travels to the Outlands in search of a fugitive modron. Their trail leads to a mysterious castle with the ability to traverse the plane. The magical fortress has recently been occupied by Fiends, which prove to be an impediment to investigating the site, learning more about the missing modron, and exploring the Outlands beyond.",
@@ -4451,6 +4593,7 @@
 						{
 							"type": "entries",
 							"name": "Arrival in the Outlands",
+							"page": 29,
 							"id": "0a2",
 							"entries": [
 								"When the characters emerge from the portal, read the following:",
@@ -4478,6 +4621,7 @@
 						{
 							"type": "entries",
 							"name": "The Walking Castle",
+							"page": 29,
 							"id": "0a4",
 							"entries": [
 								"The walking castle Iedcaru is a treasure from ages past. It was created by githzerai as a hermitage where ascetics could travel the Outlands and meditate on the nature of realms beyond. While the castle has been forgotten by most githzerai scholars in Limbo, it remains the home of {@creature Zaythir|ToFW}, a sage who seeks to glean multiversal truths from mystical planar forces.",
@@ -4494,6 +4638,7 @@
 								{
 									"type": "entries",
 									"name": "Walking Castle Features",
+									"page": 30,
 									"id": "0a6",
 									"entries": [
 										"The castle has the following features:",
@@ -4530,6 +4675,7 @@
 						{
 							"type": "entries",
 							"name": "Walking Castle Locations",
+							"page": 30,
 							"id": "0a7",
 							"entries": [
 								"The following locations are keyed to map 4.1. The compass on the map and directions in the following descriptions are provided for ease of use.",
@@ -6224,6 +6370,7 @@
 								{
 									"type": "entries",
 									"name": "W1: Terrace",
+									"page": 30,
 									"id": "0a8",
 									"entries": [
 										"A paved ring with a 2-foot-high lip provides a foundation for the castle. The base of the tower opens into a hall without exterior doors. Along the west and east interior walls of this hall are doors that lead to area W2. The door to the east is locked. The door to the west has been shattered inward.",
@@ -6233,6 +6380,7 @@
 								{
 									"type": "entries",
 									"name": "W2: Library",
+									"page": 30,
 									"id": "0a9",
 									"entries": [
 										{
@@ -6247,6 +6395,7 @@
 										{
 											"type": "entries",
 											"name": "Research Collection",
+											"page": 30,
 											"id": "0ab",
 											"entries": [
 												"A character who spends 1 hour researching the Outer Planes here can make an Intelligence check with advantage, obtaining the knowledge sought with a successful check."
@@ -6255,6 +6404,7 @@
 										{
 											"type": "entries",
 											"name": "North Alcove",
+											"page": 30,
 											"id": "0ac",
 											"entries": [
 												"This alcove holds two braziers, a threadbare mat, and a table covered in candles and used incense sticks."
@@ -6263,6 +6413,7 @@
 										{
 											"type": "entries",
 											"name": "Sarcophagus",
+											"page": 30,
 											"id": "0ad",
 											"entries": [
 												"Visible through the transparent lid of this sarcophagus is the mummified body of Iedcaru's first caretaker, the githzerai scholar Laxuelu, whose name is etched on the lid. The mummy has brass eyes, and its sarcophagus can't be opened. Whenever a creature in the library speaks its desire for a text on a particular topic, the mummy's eyes magically move to look in the direction of a relevant work in the collection (if it exists)."
@@ -6271,6 +6422,7 @@
 										{
 											"type": "entries",
 											"name": "Treasure",
+											"page": 30,
 											"id": "0ae",
 											"entries": [
 												"Among the candles in the alcove sits a partially melted {@item candle of invocation} of a random alignment that has 1 hour of use remaining."
@@ -6281,6 +6433,7 @@
 								{
 									"type": "entries",
 									"name": "W3: Main Room",
+									"page": 30,
 									"id": "0af",
 									"entries": [
 										"A character who listens carefully before entering this area and succeeds on a DC 12 Wisdom ({@skill Perception}) check can hear the tieflings inside discussing whether to betray someone named Thlaarsh.",
@@ -6298,6 +6451,7 @@
 										{
 											"type": "entries",
 											"name": "Supplies",
+											"page": 30,
 											"id": "0b1",
 											"entries": [
 												"The kitchen has been plundered, but 14 days of {@item Rations (1 day)|PHB|rations} remain. These mostly consist of pickled radishes\u2014a favorite of {@creature Zaythir|ToFW}'s."
@@ -6308,6 +6462,7 @@
 								{
 									"type": "entries",
 									"name": "W4: Bedrooms",
+									"page": 30,
 									"id": "0b2",
 									"entries": [
 										"The following bedrooms surround the main room:",
@@ -6337,6 +6492,7 @@
 								{
 									"type": "entries",
 									"name": "W5: Study",
+									"page": 32,
 									"id": "0b3",
 									"entries": [
 										"If the nycaloth in this room is aware of the characters, it casts {@spell invisibility}. When a character enters the room, read or paraphrase the following, leaving out the last sentence if the nycaloth is {@condition invisible}:",
@@ -6351,6 +6507,7 @@
 										{
 											"type": "entries",
 											"name": "Treasure",
+											"page": 32,
 											"id": "0b5",
 											"entries": [
 												"The desk holds {@creature Zaythir|ToFW}'s notes on the Outlands, which are written in Gith, as well as {@item calligrapher's supplies|PHB}. On the desk is a broken {@item mimir|SatO} (see {@book Sigil and the Outlands|SatO}) with a skull made of colorful glass shards. This {@item mimir|SatO} is further detailed in the \"{@adventure Mosaic Mimir|ToFW|2|Mosaic Mimir}\" section later in this chapter."
@@ -6361,6 +6518,7 @@
 								{
 									"type": "entries",
 									"name": "W6: Castellan Chamber",
+									"page": 32,
 									"id": "0b6",
 									"entries": [
 										"If the two mezzoloths in this room were alerted by noise in {@adventure area W3|ToFW|2|W3: Main Room}, they cast {@spell darkness} before the characters enter. Otherwise, read or paraphrase the following when a character enters the room:",
@@ -6376,6 +6534,7 @@
 										{
 											"type": "entries",
 											"name": "Castellan",
+											"page": 32,
 											"id": "0b8",
 											"entries": [
 												"The statue and table here are together a unique magical being known as the Castellan. It is dormant when the characters initially enter this room. See \"{@adventure The Castellan|ToFW|2|The Castellan}\" later in the chapter for additional details."
@@ -6384,6 +6543,7 @@
 										{
 											"type": "entries",
 											"name": "Secret Door",
+											"page": 32,
 											"id": "0b9",
 											"entries": [
 												"A character who investigates the south wall and succeeds on a DC 18 Intelligence ({@skill Investigation}) check finds a secret door that slides open. In this space is a small table on which sit several candles and a {@item necklace of prayer beads} with {@dice 1d4 + 2} magic beads."
@@ -6394,6 +6554,7 @@
 								{
 									"type": "entries",
 									"name": "W7: Meditation Chamber",
+									"page": 32,
 									"id": "0ba",
 									"entries": [
 										"The lights in this room have been destroyed, leaving the area in dim light.",
@@ -6410,6 +6571,7 @@
 								{
 									"type": "entries",
 									"name": "W8. Signal Tower",
+									"page": 32,
 									"id": "0bc",
 									"entries": [
 										{
@@ -6423,6 +6585,7 @@
 										{
 											"type": "entries",
 											"name": "Crystal",
+											"page": 32,
 											"id": "0be",
 											"entries": [
 												"The green crystal affixed to the pedestal is a {@item gem of brightness}. When the gem is lit, its light can be seen over a mile away."
@@ -6435,6 +6598,7 @@
 						{
 							"type": "entries",
 							"name": "Castle's Residents",
+							"page": 32,
 							"id": "0bf",
 							"entries": [
 								"Once the Fiends are defeated and {@creature Zaythir|ToFW} is freed, the characters have access to the walking castle and the gratitude of its residents. These residents help the characters however they can.",
@@ -6452,6 +6616,7 @@
 								{
 									"type": "entries",
 									"name": "Zaythir",
+									"page": 32,
 									"id": "0c0",
 									"entries": [
 										"{@creature Zaythir|ToFW} is a patient scholar of the planes who rarely shows extremes of emotion. If she is freed and the Fiends are driven out of her home, she's indebted to the characters. She introduces herself and can provide information on the following topics:",
@@ -6488,6 +6653,7 @@
 								{
 									"type": "entries",
 									"name": "The Castellan",
+									"page": 33,
 									"id": "0c1",
 									"entries": [
 										"This magical wonder is inert when the characters first enter {@adventure area W6|ToFW|2|W6: Castellan Chamber}. {@creature Zaythir|ToFW} can reactivate it with a word, at which point its body animates and the table before it projects an illusory image of the Outlands.",
@@ -6510,6 +6676,7 @@
 						{
 							"type": "entries",
 							"name": "Mosaic Mimir",
+							"page": 34,
 							"id": "0c2",
 							"entries": [
 								"The Mosaic Mimir is a {@item mimir|SatO} (see {@book Sigil and the Outlands|SatO}) that looks like a human skull made of gold, silver, jade, and onyx. The {@i mimir} was badly damaged in the attack on Iedcaru, and it lies in pieces.",
@@ -6531,6 +6698,7 @@
 								{
 									"type": "entries",
 									"name": "Restoring the Mimir's Data",
+									"page": 34,
 									"id": "0c3",
 									"entries": [
 										{
@@ -6577,6 +6745,7 @@
 								{
 									"type": "entries",
 									"name": "The Last Great Modron March",
+									"page": 34,
 									"id": "0c4",
 									"entries": [
 										"Once data on all seven missing gate-towns is restored, the {@item mimir|SatO} can report on the Great Modron March. It provides the following details:",
@@ -6597,6 +6766,7 @@
 						{
 							"type": "entries",
 							"name": "Around the Outlands",
+							"page": 35,
 							"id": "0c5",
 							"entries": [
 								"{@creature Zaythir|ToFW} can help the characters piece together that to find {@creature R04M|ToFW}, they must restore the Mosaic Mimir by visiting the seven gate-towns for which it's missing data. Then, it should be able to relate the details about the last Great Modron March, which {@creature R04M|ToFW} was following. The characters might seek other sources for information about the last Great Modron March, but the event was so fraught with incongruities and lost so many modrons that it's impossible to know what tangent of the march {@creature R04M|ToFW} is following. {@creature Zaythir|ToFW} also offers to let the characters use Iedcaru as a base and conveyance across the Outlands\u2014though {@creature Zaythir|ToFW} won't leave the Outlands herself or let the walking castle travel to other planes.",
@@ -6611,6 +6781,7 @@
 								{
 									"type": "entries",
 									"name": "Adventures in the Outlands",
+									"page": 35,
 									"id": "0c7",
 									"entries": [
 										"{@adventure Chapters 5|ToFW|2|Chapter 5\u2013Automata: Recalibration} to {@adventure 11|ToFW|2|Chapter 11\u2013Sylvania: Titan on the Town} detail exploits in the seven gate-towns where the characters need to collect information to restore the Mosaic Mimir. These seven chapters can be run in any order. {@adventure Chapter 12|ToFW|2|Chapter 12\u2013Outlands Explorations} provides supplementary encounters you can use at any time. The Castellan can provide the characters with an illusory version of the {@book poster map of the Outlands|SatO|2} from {@book Sigil and the Outlands|SatO}. Then, the characters can decide where they wish to travel."
@@ -6619,6 +6790,7 @@
 								{
 									"type": "entries",
 									"name": "Travel in the Outlands",
+									"page": 35,
 									"id": "0c8",
 									"entries": [
 										"The Outlands is infinite in size and changes constantly. This makes the distances between locations and the time it takes to get from place to place variable. How long travel takes is up to you\u2014it could take {@dice 3d6} days to get from one gate-town to the next closest one, or weeks, or longer. While traveling in the walking castle, the characters are safe, and encounters occur only when you choose.",
@@ -6628,6 +6800,7 @@
 								{
 									"type": "entries",
 									"name": "Advancing in Level",
+									"page": 35,
 									"id": "0c9",
 									"entries": [
 										"Characters gain 1 level every time they complete two of the gate-town adventures in part 2. This is outlined on the Levels in the Outlands table. The characters will be 9th level before starting {@adventure chapter 13|ToFW|2|Chapter 13\u2013Secrets of the Spire}.",
@@ -6666,6 +6839,7 @@
 				{
 					"type": "section",
 					"name": "Chapter 5\u2013Automata: Recalibration",
+					"page": 36,
 					"id": "0ca",
 					"entries": [
 						"At the center of Automata stands a massive, toothed cog that encloses the gate to Mechanus, the plane of ultimate order. This towering gear rotates slowly\u2014one booming tick at a time\u2014in sync with the workings of the plane beyond. To repair the Mosaic Mimir, the characters must visit Automata's gate\u2014a feat easier said than done in the rigidly structured gate-town. To complicate matters, agents of chaos are eager to disrupt the town's perfect order.",
@@ -6684,6 +6858,7 @@
 						{
 							"type": "entries",
 							"name": "Exploring Automata",
+							"page": 36,
 							"id": "0cb",
 							"entries": [
 								{
@@ -6705,6 +6880,7 @@
 								{
 									"type": "entries",
 									"name": "Gate to Mechanus",
+									"page": 36,
 									"id": "0cd",
 									"entries": [
 										"With its size and persistent ticking, the gate to Mechanus is the central presence in Automata. Using the gate sends travelers to a location in Mechanus designated by complicated factors predicable only to the modrons overseeing the gate.",
@@ -6721,6 +6897,7 @@
 								{
 									"type": "entries",
 									"name": "Guarding the Gate",
+									"page": 36,
 									"id": "0cf",
 									"entries": [
 										"The gate to Mechanus is guarded by a {@creature decaton modron|MPP} (see {@book Morte's Planar Parade|MPP}) and four {@creature Pentadrone||pentadrones}. If any of these modrons are attacked or feel threatened, they can call on more pentadrones, which arrive in 3 rounds. The guards are indifferent to the characters, and they tell anyone who approaches to get in line. It takes 19 ({@dice 3d12}) hours for a creature at the back of the line to reach the gate. Even then, only those with a gate-access permit may approach the gate (see \"Accessing the Gate\"). If anyone approaches with questions about the gate, the guards direct them to the Gate Travel Administration.",
@@ -6730,6 +6907,7 @@
 								{
 									"type": "entries",
 									"name": "Accessing the Gate",
+									"page": 36,
 									"id": "0d0",
 									"entries": [
 										"Creatures seeking to use the gate or get close enough to record data using the Mosaic Mimir must obtain an access permit at the Gate Travel Administration building nearby. This monument to bureaucracy is filled with offices, forms, modron officials, and lengthy queues. It takes 26 ({@dice 4d12}) hours of standing in lines and answering repetitive questions before the characters receive the exception forms they need to fill out to approach the gate. This halfling-sized stack of forms takes {@dice 1d4} days to fill out and requires a character to succeed on a DC 12 Wisdom ({@skill Perception}) check. If a character fails this check, they miss a field or otherwise err and are provided a new stack of forms to fill out. These take just as long to complete as the first set of forms.",
@@ -6739,6 +6917,7 @@
 								{
 									"type": "entries",
 									"name": "Agents of Order",
+									"page": 37,
 									"id": "0d1",
 									"entries": [
 										"Aristimus (lawful neutral {@creature githzerai futurist|MPP}; see {@book Morte's Planar Parade|MPP}) is the captain of Automata's guards and a member of the town's ruling body, the Council of Order. If the characters clearly want to use the gate for something other than travel to Mechanus, they come to Aristimus's attention, either at the gate or in the Gate Travel Administration. The guard captain approaches them with a job in mind. Read or paraphrase the following text to introduce Aristimus:",
@@ -6775,6 +6954,7 @@
 								{
 									"type": "entries",
 									"name": "Finding Beltha",
+									"page": 38,
 									"id": "0d4",
 									"entries": [
 										"The characters have two options to track down Beltha:",
@@ -6801,6 +6981,7 @@
 						{
 							"type": "entries",
 							"name": "The Inverse",
+							"page": 38,
 							"id": "0d5",
 							"entries": [
 								{
@@ -6862,6 +7043,7 @@
 								{
 									"type": "entries",
 									"name": "Features of the Inverse",
+									"page": 38,
 									"id": "0d6",
 									"entries": [
 										"The Inverse has the following features:",
@@ -6891,6 +7073,7 @@
 								{
 									"type": "entries",
 									"name": "Seeds of Chaos",
+									"page": 38,
 									"id": "0d7",
 									"entries": [
 										"The residents of the Inverse are largely freethinkers and anarchists, with a smattering of criminals. Most fled here to avoid being prosecuted for crimes. Roll on the Inverse Incidents table for additional encounters characters might have in the Inverse.",
@@ -6929,6 +7112,7 @@
 								{
 									"type": "entries",
 									"name": "Inverse Hideout",
+									"page": 39,
 									"id": "0d8",
 									"entries": [
 										"Beltha's lair is a series of chambers at the edge of the Inverse (depicted on {@adventure map 5.1|ToFW|2|Map 5.1: Inverse Hideout}). It takes 30 minutes to find the lair if the characters know the way. Refer to the \"{@adventure Finding Beltha|ToFW|2|Finding Beltha}\" section if the characters don't know where to go.",
@@ -6946,6 +7130,7 @@
 										{
 											"type": "entries",
 											"name": "Exposed Machinery",
+											"page": 39,
 											"id": "0da",
 											"entries": [
 												"The area is filled with hazardous machinery that can catch creatures in its gears. A creature that starts its turn within 5 feet of these machines, or that moves into that area for the first time on a turn, must succeed on a DC 15 Dexterity saving throw or take 16 ({@dice 3d10}) bludgeoning damage and have the {@condition grappled} condition (escape DC 15) as it becomes caught in the gears. A {@condition grappled} creature can make another saving throw to escape the gears at the start of its next turn."
@@ -6954,6 +7139,7 @@
 										{
 											"type": "entries",
 											"name": "Treasure",
+											"page": 39,
 											"id": "0db",
 											"entries": [
 												"The crates and workbenches in the room are covered in rusted, worthless tools. On the balcony above lie knickknacks and pieces of symmetrical art worth a total of 200 gp. A character who examines the couch on the balcony and succeeds on a DC 16 Intelligence ({@skill Investigation}) check finds a stash of several well-packed, precision-made lenses hidden between the cushions. These lenses are worth 750 gp total."
@@ -6964,6 +7150,7 @@
 								{
 									"type": "entries",
 									"name": "Talking with Beltha",
+									"page": 39,
 									"id": "0dc",
 									"entries": [
 										"Beltha is an agitator in the Inverse. She's irreverent and doesn't believe people are meant to live as rigidly as the Council of Order and the powers of Mechanus prescribe. She stole the logbook from Concord Terminus to remind Automata's residents that even the modrons' plans aren't perfect. She plans to sell the logbook and expects to get 1,000 gp for it. She'll sell it to the characters for 1,500 gp, or 1,000 gp if a character succeeds on a DC 20 Charisma ({@skill Intimidation} or {@skill Persuasion}) check.",
@@ -6975,6 +7162,7 @@
 						{
 							"type": "entries",
 							"name": "Conclusion",
+							"page": 39,
 							"id": "0dd",
 							"entries": [
 								"If the characters return to him with the logbook and Beltha, Aristimus is outwardly reserved but inwardly delighted. So long as the logbook is recovered, he provides the characters with a pass to access the gate to Mechanus, along with a simple trinket: a precise copper pocket watch with a face that tracks 168 hours. The watch is worth 500 gp\u2014double that in lawfully aligned settlements, such as Automata. If the characters also return with Beltha, Aristimus provides the bonus he offered: 2,000 gp if Beltha is alive and 1,000 gp if not.",
@@ -6987,6 +7175,7 @@
 				{
 					"type": "section",
 					"name": "Chapter 6\u2013Curst: Invisible Bonds",
+					"page": 40,
 					"id": "0de",
 					"entries": [
 						"The gate-town of Curst stands as an entrapping ring around the gate to the prison plane of Carceri. A sinkhole of betrayers and a haven for those who don't want to be found, Curst is a place where anyone is welcome to enter\u2014but leaving is another story.",
@@ -7006,6 +7195,7 @@
 						{
 							"type": "entries",
 							"name": "Exploring Curst",
+							"page": 40,
 							"id": "0df",
 							"entries": [
 								"As the characters approach Curst, read the following text:",
@@ -7028,6 +7218,7 @@
 								{
 									"type": "entries",
 									"name": "Encounters in Curst",
+									"page": 40,
 									"id": "0e1",
 									"entries": [
 										"While exploring Curst, the characters might have any of the encounters listed on the Curst Encounters table.",
@@ -7068,12 +7259,14 @@
 						{
 							"type": "entries",
 							"name": "Gate to Carceri",
+							"page": 40,
 							"id": "0e2",
 							"entries": [
 								"In the center of Curst stands a rusty metal arch filled with swirling crimson sands and echoing with anguished wails. This is the gate to Carceri, also known as the Shackled Gate. No guards or deterrents block access to the gate. The gate is a two-way portal to Carceri, but most locals believe it's a one-way gate and refuse to approach. Characters loitering near the gate with the Mosaic Mimir might draw odd looks, but no challenges.",
 								{
 									"type": "entries",
 									"name": "Curst's Walls",
+									"page": 40,
 									"id": "0e3",
 									"entries": [
 										"A 30-foot-tall wall of rusted metal and razorvine surrounds Curst. It's patrolled by a ruthless cadre of guards called the Wall Watch. These guards are under orders from the town's leader, Baron Villigus Bazengar, to prevent anyone from leaving. Two neutral evil {@creature Veteran||veterans} and a {@creature maelephant|MPP} (see {@book Morte's Planar Parade|MPP}) guard Curst's gates. If attacked, these guards call on additional {@creature Maelephant|MPP|maelephants}, which arrive in 2 rounds. The Watch also uses a flight of four trained {@creature Wyvern||wyverns} to prevent flying creatures from escaping. If the characters attack and are defeated by Curst's guards, the characters' bodies are thrown in the gate-town's dump."
@@ -7082,6 +7275,7 @@
 								{
 									"type": "entries",
 									"name": "Leaving Curst",
+									"page": 41,
 									"id": "0e4",
 									"entries": [
 										"The Wall Watch prevents characters from leaving Curst, using either threats or outright force. Characters who ask how to gain permission to leave the gate-town are dismissively referred to the burgomaster's estate to get permission from the burgomaster. Baron Villigus isn't currently in the gate-town, though, so even attempting to get his permission to leave is impossible. The {@creature Farastu Demodand|MPP|farastu demodands} (see {@book Morte's Planar Parade|MPP}) who serve as the baron's guards stiffly relate this to anyone who appears at the estate before urging them to move on.",
@@ -7093,12 +7287,14 @@
 						{
 							"type": "entries",
 							"name": "Innocent Prisoner",
+							"page": 41,
 							"id": "0e5",
 							"entries": [
 								"Valder (neutral, human {@creature Mercykiller bloodhound|MPP}; see {@book Morte's Planar Parade|MPP}) is an ex-Mercykiller in hiding from his former faction. Decades ago, he disobeyed the Mercykillers by refusing to bring in a bounty he believed was innocent\u2014a deed that led to other faction members' deaths. Valder abandoned his family when he fled his home in Sigil and went into hiding. Recently, Valder's son Fellik tracked his father down. The reunion healed old wounds for the pair but was bittersweet, as Fellik (lawful good, human {@creature commoner}) died several years ago and is now a {@book petitioner|MPP|0|Petitioners} (detailed in {@book Morte's Planar Parade|MPP}). Now, Valder wants to help Fellik escape Curst and move on to his rightful afterlife.",
 								{
 									"type": "entries",
 									"name": "Meeting Valder",
+									"page": 41,
 									"id": "0e6",
 									"entries": [
 										"Valder approaches the characters as they prepare to escape Curst. Read or paraphrase the following text:",
@@ -7115,6 +7311,7 @@
 								{
 									"type": "entries",
 									"name": "Meeting Fellik",
+									"page": 42,
 									"id": "0e8",
 									"entries": [
 										"Valder's home, a tiny shack near the town dump, is made of rusted metal plates and scavenged wood. It is simply furnished with a few chairs, a table, a kitchenette, and a bench cluttered with metal scraps and tools. A curtained-off area holds a single bed.",
@@ -7134,6 +7331,7 @@
 								{
 									"type": "entries",
 									"name": "A Father's Request",
+									"page": 42,
 									"id": "0ea",
 									"entries": [
 										"Valder gets straight to the point: he wants the characters to help his son escape Curst. He can share any of the information in the \"{@adventure Innocent Prisoner|ToFW|2|Innocent Prisoner}\" section, as well as the following details:",
@@ -7155,6 +7353,7 @@
 						{
 							"type": "entries",
 							"name": "Curst Escape",
+							"page": 42,
 							"id": "0eb",
 							"entries": [
 								"When the characters return to Valder's shack, Fellik is ready to go. Valder gives his son a pouch containing 5 ep, and the pair share a brief hug. Fellik then leads the characters toward the dump. The journey through town is uneventful, but characters who have a passive Wisdom ({@skill Perception}) score of 16 or higher notice locals watching them suspiciously.",
@@ -7169,6 +7368,7 @@
 								{
 									"type": "entries",
 									"name": "Curst Escape Features",
+									"page": 42,
 									"id": "0ed",
 									"entries": [
 										"Curst's dump has the following features:",
@@ -7203,6 +7403,7 @@
 								{
 									"type": "entries",
 									"name": "Curst Escape Locations",
+									"page": 42,
 									"id": "0ee",
 									"entries": [
 										"The following locations are keyed to map 6.1.",
@@ -7863,6 +8064,7 @@
 								{
 									"type": "entries",
 									"name": "C1. Junk Heaps",
+									"page": 42,
 									"id": "0ef",
 									"entries": [
 										{
@@ -7876,6 +8078,7 @@
 										{
 											"type": "entries",
 											"name": "Dragon Skull",
+											"page": 43,
 											"id": "0f1",
 											"entries": [
 												"Fellik knows that the dragon's eye sockets hide a hidden path. It can be accessed by climbing 20 feet up the garbage heaps."
@@ -7886,6 +8089,7 @@
 								{
 									"type": "entries",
 									"name": "C2. Hidden Tunnel",
+									"page": 43,
 									"id": "0f2",
 									"entries": [
 										{
@@ -7902,6 +8106,7 @@
 								{
 									"type": "entries",
 									"name": "C3. Escape Route",
+									"page": 43,
 									"id": "0f4",
 									"entries": [
 										{
@@ -7926,6 +8131,7 @@
 										{
 											"type": "entries",
 											"name": "Tunnel",
+											"page": 43,
 											"id": "0f6",
 											"entries": [
 												"The tunnel to the north winds for nearly a mile before ending in an arch in the wall. This a portal to a stand of trees 3 miles outside Curst. The portal's key is an electrum coin."
@@ -7938,6 +8144,7 @@
 						{
 							"type": "entries",
 							"name": "Conclusion",
+							"page": 43,
 							"id": "0f7",
 							"entries": [
 								"The chapter concludes when the characters escape Curst. Once they do, consult the \"{@adventure Advancing in Level|ToFW|2|Advancing in Level}\" section of {@adventure chapter 4|ToFW|2|Chapter 4\u2013Into the Outlands} and let the party determine their next destination.",
@@ -7949,6 +8156,7 @@
 				{
 					"type": "section",
 					"name": "Chapter 7\u2013Excelsior: Lost Souls",
+					"page": 44,
 					"id": "0f8",
 					"entries": [
 						"Excelsior, the gate-town to the heavenly plane of Mount Celestia, welcomes any who are willing to embrace the lofty ideals of good and law. Good-hearted characters can easily reach the town's gate and update the Mosaic Mimir. In the process of doing so, they discover that while Excelsior strives to be an idyllic paradise, the gate-town has its problems.",
@@ -7967,6 +8175,7 @@
 						{
 							"type": "entries",
 							"name": "Exploring Excelsior",
+							"page": 44,
 							"id": "0f9",
 							"entries": [
 								"As the characters approach Excelsior, read or paraphrase the following description:",
@@ -7988,6 +8197,7 @@
 								{
 									"type": "entries",
 									"name": "The Godstrand",
+									"page": 44,
 									"id": "0fb",
 									"entries": [
 										"The gate to Mount Celestia stands atop the Godstrand, a soaring pillar whose top is perpetually hidden by clouds. Spiraling stairs ascend the tower. These are open to any who wish to climb, but those with corrupt intentions find the journey harrowing."
@@ -7996,6 +8206,7 @@
 								{
 									"type": "entries",
 									"name": "Climbing the Godstrand",
+									"page": 44,
 									"id": "0fc",
 									"entries": [
 										"Nearly a mile of stairs and ramps leads from the base of the Godstrand to its top. The stairs take most creatures approximately 18 minutes to climb.",
@@ -8005,6 +8216,7 @@
 								{
 									"type": "entries",
 									"name": "Gate to Mount Celestia",
+									"page": 44,
 									"id": "0fd",
 									"entries": [
 										"When the characters reach the gate to Mount Celestia, read or paraphrase the following text:",
@@ -8021,6 +8233,7 @@
 								{
 									"type": "entries",
 									"name": "Uncertain Investigations",
+									"page": 44,
 									"id": "0ff",
 									"entries": [
 										"After the characters update their {@item mimir|SatO}, they're approached by a {@creature hound archon|MPP} (see {@book Morte's Planar Parade|MPP}). He's one of the locals who's been reflecting on the gate, and he introduces himself as Varrel, a member of the town guard. He asks if the characters are adventurers who'd be interested in helping him with a task. If the characters agree to hear him out, read or paraphrase the following text:",
@@ -8038,6 +8251,7 @@
 								{
 									"type": "entries",
 									"name": "Law and Archons",
+									"page": 45,
 									"id": "101",
 									"entries": [
 										"As a hound archon, Varrel is a being of absolute law and goodness. Even if the characters are helping him, he won't condone crimes. If he sees a character commit a crime or finds out about it, he fines them 100 gp. If they discover evidence while committing a crime, he disregards it and informs the characters that he won't let it be used against Sincerity.",
@@ -8049,12 +8263,14 @@
 						{
 							"type": "entries",
 							"name": "Viper in the Garden",
+							"page": 45,
 							"id": "102",
 							"entries": [
 								"The following sections detail the cause of the disappearances in Excelsior, what information Varrel already has, and other details the characters might gain in their investigations. The characters might discover these details in any order, but the information should ultimately point toward Uncle Longteeth. If the characters reach a dead end, use Varrel to offer them a hint.",
 								{
 									"type": "entries",
 									"name": "The Soul Trade",
+									"page": 46,
 									"id": "103",
 									"entries": [
 										"No one in Excelsior is sure of it yet, but Sincerity is behind the disappearances in town. She uses empty {@item Iron Flask||iron flasks} provided by the night hag Uncle Longteeth to capture victims, then uses her trained sunflies to deliver the flasks to him. The night hag plans to take the souls to Hades, where he'll transform them into {@creature Larva|DMG|larvae} (see the {@book Dungeon Master's Guide|DMG}) and sell them as delicacies to deplorable immortals. The characters gradually discover this in the course of their investigation."
@@ -8063,6 +8279,7 @@
 								{
 									"type": "entries",
 									"name": "Missing Saints",
+									"page": 46,
 									"id": "104",
 									"entries": [
 										"Five lifelong residents of Excelsior have gone missing. Varrel and others can share the details from the Missing Excelsior Residents table.",
@@ -8113,6 +8330,7 @@
 								{
 									"type": "entries",
 									"name": "Speaking with Sincerity",
+									"page": 46,
 									"id": "105",
 									"entries": [
 										"The headquarters of the Excelsior guard is a palatial tower filled with simple but comfortable offices, libraries, and meeting rooms. Varrel can escort the characters to the meeting room where Sincerity is being questioned. Read or paraphrase the following description when the characters arrive:",
@@ -8144,6 +8362,7 @@
 								{
 									"type": "entries",
 									"name": "Sincerity's Home",
+									"page": 46,
 									"id": "107",
 									"entries": [
 										"If the characters ask to go to Sincerity's home, Varrel directs them to a tower of comfortable apartments. He won't go with them, as a lantern archon calls him away for some official errand.",
@@ -8175,6 +8394,7 @@
 								{
 									"type": "entries",
 									"name": "Questioning Locals",
+									"page": 47,
 									"id": "108",
 									"entries": [
 										"The characters might question Excelsior locals, witnesses Varrel knows were near a disappearance, or Sincerity's neighbors. If so, relevant locals might share the following information:",
@@ -8194,6 +8414,7 @@
 						{
 							"type": "entries",
 							"name": "Uncle Longteeth's Wagon",
+							"page": 47,
 							"id": "109",
 							"entries": [
 								"If the characters head a mile spireward out of town or follow Sincerity's sunflies, they find Uncle Longteeth's wagon. Read or paraphrase the following when they arrive:",
@@ -8210,6 +8431,7 @@
 								{
 									"type": "entries",
 									"name": "Decisive Evidence",
+									"page": 47,
 									"id": "10b",
 									"entries": [
 										"Sincerity drops her act and confesses to her crimes in the following circumstances:",
@@ -8242,6 +8464,7 @@
 						{
 							"type": "entries",
 							"name": "Conclusion",
+							"page": 47,
 							"id": "10c",
 							"entries": [
 								"The chapter concludes when Sincerity confesses to her crimes or the characters' investigation reaches a dead end. In either case, Varrel thanks the characters for their efforts and rewards them as agreed. Even if Varrel didn't get new evidence to use against Sincerity, he plans to keep working the case and see the missing locals saved in accordance with the law.",
@@ -8262,6 +8485,7 @@
 				{
 					"type": "section",
 					"name": "Chapter 8\u2013Faunel: Vicious Alliances",
+					"page": 48,
 					"id": "10d",
 					"entries": [
 						"The gate-town of Faunel is undergoing a rebirth after the previous incarnation of the town merged with the Beastlands, leaving behind only its buildings. Amid the overgrown ruins of the previous community, factions of sapient animals vie to control the town's future. When bloodthirsty gnoll hunters arrive in the area, the town's peace becomes even more tenuous.",
@@ -8280,6 +8504,7 @@
 						{
 							"type": "entries",
 							"name": "Exploring Faunel",
+							"page": 48,
 							"id": "10e",
 							"entries": [
 								{
@@ -8321,6 +8546,7 @@
 								{
 									"type": "entries",
 									"name": "Gate to the Beastlands",
+									"page": 48,
 									"id": "111",
 									"entries": [
 										"Nearly a mile from Camp Greenbriar stands the gate to the Beastlands: a peaceful pond surrounded by vine-covered ruins. A 20-foot-tall statue of a human with glowing eyes kneels by the pool. This is the guardian of the gate, an ancient being known as Wrath. It uses the {@creature empyrean} stat block, with the following changes:",
@@ -8340,6 +8566,7 @@
 						{
 							"type": "entries",
 							"name": "Ravenous",
+							"page": 49,
 							"id": "112",
 							"entries": [
 								"While the characters are exploring the area around Faunel or headed back from the portal to the Beastlands, they happen on the following scene:",
@@ -8355,6 +8582,7 @@
 								{
 									"type": "entries",
 									"name": "After the Battle",
+									"page": 49,
 									"id": "114",
 									"entries": [
 										"If Razak is with the characters after the battle, he identifies the ibex as Oka, a storyteller and advisor to {@creature Ophelia|ToFW}, leader of a group of local herbivores. If Razak wasn't with the characters, he comes across the scene as the battle ends and shares the same information. The ibex's body bears a distinguishing accessory: a beaded necklace with an eye-shaped topaz. The necklace is worth 40 gp.",
@@ -8364,6 +8592,7 @@
 								{
 									"type": "entries",
 									"name": "The Vile Hunt",
+									"page": 49,
 									"id": "115",
 									"entries": [
 										"Razak or others at Camp Greenbriar can identify the gnolls as members of the Vile Hunt. This group of local criminals hunt and kill for sport, targeting unawakened animals and Faunel's sapient residents indiscriminately. They're led by a cruel hunt master called Mick Mangehide. So far, the Vile Hunt has evaded locals' attempts to capture its members or drive them off."
@@ -8374,12 +8603,14 @@
 						{
 							"type": "entries",
 							"name": "The Three Packs",
+							"page": 49,
 							"id": "116",
 							"entries": [
 								"Three factions of awakened animals seek to control Faunel. These factions are roughly divided into predators, flying creatures, and herbivores. Razak or the locals at Camp Greenbriar can direct the characters to the nearby wildernesses where these groups dwell.",
 								{
 									"type": "entries",
 									"name": "Heart Delta",
+									"page": 49,
 									"id": "117",
 									"entries": [
 										"Heart Delta lies a few miles away from Camp Greenbriar. When the characters visit there, read or paraphrase the following description:",
@@ -8405,6 +8636,7 @@
 								{
 									"type": "entries",
 									"name": "Talking with Ophelia",
+									"page": 50,
 									"id": "119",
 									"entries": [
 										"{@creature Ophelia|ToFW} is wise and patient, and she seeks to protect her people. She wants to create a new Faunel where sapient animals overcome their instincts and live communally. If the characters converse with her, she shares the following information:",
@@ -8424,6 +8656,7 @@
 								{
 									"type": "entries",
 									"name": "Razortooth Rock",
+									"page": 50,
 									"id": "11a",
 									"entries": [
 										"Razortooth Rock stands 5 miles spireward from Camp Greenbriar. Read or paraphrase the following description as the characters approach:",
@@ -8449,6 +8682,7 @@
 								{
 									"type": "entries",
 									"name": "Talking with Ebonclaw",
+									"page": 50,
 									"id": "11c",
 									"entries": [
 										"{@creature Ebonclaw|ToFW} is arrogant and cunning, but he is nursing his wounded pride after a clash with {@creature Ophelia|ToFW}. He seeks to create a Faunel where the residents embrace their skills, becoming proud and powerful.",
@@ -8468,6 +8702,7 @@
 								{
 									"type": "entries",
 									"name": "Eagles' Aerie",
+									"page": 50,
 									"id": "11d",
 									"entries": [
 										"A forest of exceptionally tall trees lies a few hours away from Camp Greenbriar. If the characters visit the forest, read the following description:",
@@ -8494,6 +8729,7 @@
 								{
 									"type": "entries",
 									"name": "Talking with Parvaz",
+									"page": 51,
 									"id": "11f",
 									"entries": [
 										"{@creature Parvaz|ToFW} is guarded and pragmatic. He seeks to create a Faunel on par with other gate-towns, where the residents trade and leverage their unique abilities.",
@@ -8513,6 +8749,7 @@
 								{
 									"type": "entries",
 									"name": "Pursuing the Vile Hunt",
+									"page": 51,
 									"id": "120",
 									"entries": [
 										"The Vile Hunt gnolls lurk in a clearing a half-day's travel from Camp Greenbriar. If the characters bring this information to {@creature Ebonclaw|ToFW} or {@creature Ophelia|ToFW}, the first leader they speak to offers the characters 2,000 gp worth of gemstones to participate in a raid. They also send friendly animals equal to the number of characters. {@creature Ebonclaw|ToFW} sends {@creature Dire Wolf||dire wolves}, and {@creature Ophelia|ToFW} sends {@creature Rhinoceros||rhinoceroses}.",
@@ -8568,6 +8805,7 @@
 								{
 									"type": "entries",
 									"name": "Vile Hunt Camp",
+									"page": 51,
 									"id": "121",
 									"entries": [
 										"The Vile Hunt's camp is depicted on map 8.1. Read the following when the characters reach the camp:",
@@ -8582,6 +8820,7 @@
 										{
 											"type": "entries",
 											"name": "Triceratops",
+											"page": 51,
 											"id": "123",
 											"entries": [
 												"The triceratops uses its Trampling Charge trait as often as it can, attacking a random creature every round. A character who spends an action and succeeds on a DC 16 Wisdom ({@skill Animal Handling}) check can direct the dinosaur to flee from the camp toward the south."
@@ -8590,6 +8829,7 @@
 										{
 											"type": "entries",
 											"name": "Treasure",
+											"page": 51,
 											"id": "124",
 											"entries": [
 												"Among the filthy gear is a sack containing three {@item Potion of Healing||potions of healing} and 1,400 gp. The cages are empty except for one holding a lengthy snakeskin that functions as a {@item rope of entanglement}."
@@ -8602,6 +8842,7 @@
 						{
 							"type": "entries",
 							"name": "Conclusion",
+							"page": 51,
 							"id": "125",
 							"entries": [
 								"The chapter concludes when the characters leave Faunel or when they have defeated the Vile Hunt. If the characters return to any of the leaders of the animal groups, the leaders commend the characters' actions and provide them any promised rewards. Razak also thanks the characters for their help and gifts them his {@item ring of animal influence}.",
@@ -8613,6 +8854,7 @@
 				{
 					"type": "section",
 					"name": "Chapter 9\u2013Glorium: Heroes of the Day",
+					"page": 52,
 					"id": "126",
 					"entries": [
 						"he gate-town of Glorium rings with songs of glory. In the bay beyond the town swirls a great whirlpool that regularly swallows and disgorges ships. This is the gate to Ysgard, where the characters must bring the Mosaic Mimir.",
@@ -8631,6 +8873,7 @@
 						{
 							"type": "entries",
 							"name": "Exploring Glorium",
+							"page": 52,
 							"id": "127",
 							"entries": [
 								"When the character near Glorium, read or paraphrase the following description:",
@@ -8645,6 +8888,7 @@
 								{
 									"type": "entries",
 									"name": "Contests",
+									"page": 52,
 									"id": "129",
 									"entries": [
 										"The people of Glorium delight in good-natured competitions. Treat these competitions as a series of three ability checks. If a character succeeds on two or more of the three ability checks, they win. If a character fails on two or more ability checks, their opponent wins. The Glorium Contests table lists several competitions along with a suggested DC and ability check to use in competitions against Glorium's residents, which you can use as inspiration for contests of your own.",
@@ -8695,6 +8939,7 @@
 								{
 									"type": "entries",
 									"name": "Gate to Ysgard",
+									"page": 52,
 									"id": "12a",
 									"entries": [
 										"The gate to Ysgard is a maelstrom a mile offshore. Characters directed to the gate can see it in the distance from Glorium's docks. Spells like {@spell fly} or {@spell water walk} can help characters reach the gate, but getting close enough to update their {@item mimir|SatO} is a damp, miserable experience that attracts the attention of whirlwyrms (see the \"{@adventure Whirlwyrm Attack|ToFW|2|Whirlwyrm Attack}\" section).",
@@ -8704,6 +8949,7 @@
 								{
 									"type": "entries",
 									"name": "Courier",
+									"page": 52,
 									"id": "12b",
 									"entries": [
 										"Bkol Steelbane (chaotic good, orc {@creature veteran}) is a lanky sailor and one of two captains of the {@i Courier}. The other captain is the {@i Courier} itself, as the vessel is an amalgam of longship and joke-loving, sapient giant raven. The pair has been ferrying folks through the portal to Ysgard for years."
@@ -8712,6 +8958,7 @@
 								{
 									"type": "entries",
 									"name": "Passage to the Maelstrom",
+									"page": 52,
 									"id": "12c",
 									"entries": [
 										"Bkol and the {@i Courier} have recently returned from Ysgard and are willing to sail to the portal. Bkol charges 100 gp for the ride, but he allows the characters free passage if one of them beats him in a sea-urchin-eating contest. This contest (see the \"{@adventure Contests|ToFW|2|Contests}\" section) requires a participating character to succeed on at least two DC 17 Constitution ability checks. Even if a character loses, they earn Bkol's respect, and he reduces his price to 50 gp.",
@@ -8723,6 +8970,7 @@
 						{
 							"type": "entries",
 							"name": "Whirlwyrm Attack",
+							"page": 52,
 							"id": "12d",
 							"entries": [
 								"Reaching the gate to Ysgard by boat takes an hour. As the characters near the maelstrom, a character who succeeds on a DC 20 Wisdom ({@skill Perception}) check notices two serpentine shapes in the water. These are deadly giant eels known as whirlwyrms (use the {@creature giant crocodile} stat block). If no character notices the whirlwyrms, the characters and all the sailors on the {@i Courier} are surprised when the eels burst from the water\u2014one on each side of the ship\u2014and attack. A {@creature whirlwyrm|ToFW} dives underwater and flees if it is reduced to 10 or fewer hit points.",
@@ -8730,6 +8978,7 @@
 								{
 									"type": "entries",
 									"name": "Battle on the Courier",
+									"page": 53,
 									"id": "12e",
 									"entries": [
 										"{@adventure Map 9.1|ToFW|2|Map 9.1: Courier} depicts the {@i Courier}. The bird-boat has the following features:",
@@ -8762,6 +9011,7 @@
 						{
 							"type": "entries",
 							"name": "Saga of the Whirlwyrm",
+							"page": 53,
 							"id": "12f",
 							"entries": [
 								"Whether aboard the {@i Courier} or back on shore, the unusual nature of a {@creature whirlwyrm|ToFW} attack becomes clear. If the characters haven't met Bkol, he witnessed their encounter with the whirlwyrms and approaches. The captain is shocked to see whirlwyrms, as they typically hunt near Grakenok, a bariaur community across the bay. If the whirlwyrms are moving into the bay, Bkol suspects that something has happened to the bariaurs.",
@@ -8769,6 +9019,7 @@
 								{
 									"type": "entries",
 									"name": "Hero among Heroes",
+									"page": 53,
 									"id": "130",
 									"entries": [
 										"Read the following when the characters find Tyrza:",
@@ -8796,6 +9047,7 @@
 								{
 									"type": "entries",
 									"name": "The Competition",
+									"page": 54,
 									"id": "133",
 									"entries": [
 										"The characters aren't the only heroes headed to Grakenok. These two rivals also step up and seek to find out what's happened at Grakenok:",
@@ -8821,6 +9073,7 @@
 								{
 									"type": "entries",
 									"name": "Off to Adventure",
+									"page": 54,
 									"id": "134",
 									"entries": [
 										"Sytri and Tol want to be the first to find out what's happening in Grakenok, and Bkol encourages the characters to act swiftly to keep up with them. Sytri and Tol set off immediately, using their {@item Carpet of Flying, 3 ft. × 5 ft.||carpet of flying} and ship, respectively. The characters can travel to Grakenok however they like. It would take their walking castle days to circle the bay and reach Grakenok, so Bkol offers them use of the {@i Courier}.",
@@ -8832,12 +9085,14 @@
 						{
 							"type": "entries",
 							"name": "Perils at Sea",
+							"page": 54,
 							"id": "135",
 							"entries": [
 								"Use the following encounters to add peril to the characters' journey.",
 								{
 									"type": "entries",
 									"name": "Lost Dingy",
+									"page": 54,
 									"id": "136",
 									"entries": [
 										"Characters who have a passive Wisdom ({@skill Perception}) score of 14 or higher see the following scene:",
@@ -8857,6 +9112,7 @@
 								{
 									"type": "entries",
 									"name": "Whirlwyrm Spotted",
+									"page": 54,
 									"id": "138",
 									"entries": [
 										"A giant splash reveals another {@creature whirlwyrm|ToFW} (use the {@creature giant crocodile} stat block) swimming near the characters. If sailing characters want to sneak by the creature, they must succeed on a DC 10 group Dexterity ({@skill Stealth}) check, or the monster notices them and attacks. If the characters engage the creature in combat, they're delayed in arriving at Grakenok (see the \"Arriving in Grakenok\" section).",
@@ -8868,6 +9124,7 @@
 						{
 							"type": "entries",
 							"name": "Arriving in Grakenok",
+							"page": 54,
 							"id": "139",
 							"entries": [
 								"Determine the order in which the characters and their rivals arrive at Grakenok. The characters, Sytri, and Tol would reach the town at the same time, but each arrives 1 round later for each time they were delayed during the \"{@adventure Perils at Sea|ToFW|2|Perils at Sea}\" section. This order influences events in the following sections.",
@@ -8877,6 +9134,7 @@
 						{
 							"type": "entries",
 							"name": "Beast of Grakenok",
+							"page": 55,
 							"id": "13a",
 							"entries": [
 								"When Grakenok comes into sight, read or paraphrase the description below. If Sytri or Tol reached Grakenok before the characters, they are already engaged in battle.",
@@ -8918,6 +9176,7 @@
 								{
 									"type": "entries",
 									"name": "Four-Way Battle",
+									"page": 55,
 									"id": "13c",
 									"entries": [
 										"The characters, {@creature Doomguard Rot Blade|MPP|Sytri}, and {@creature Equinal Guardinal|MPP|Tol} all seek the glory of defeating the elder {@creature whirlwyrm|ToFW}. Track how much damage each character and the rival heroes deal to the monster every round. Instead of rolling damage, Sytri and Tol both deal 10 damage to the {@creature whirlwyrm|ToFW} on each of their turns. For every round by which a rival hero beats the characters to Grakenok (if any), that hero has already dealt 10 damage to the monster. If the characters beat Sytri or Tol to Grakenok, the rival heroes enter battle as soon as they arrive.",
@@ -8929,6 +9188,7 @@
 						{
 							"type": "entries",
 							"name": "Victory at Grakenok",
+							"page": 55,
 							"id": "13d",
 							"entries": [
 								"When the elder {@creature whirlwyrm|ToFW} is defeated, the bariaurs of Grakenok laud the heroes who saved them. They treat whoever dealt the {@creature whirlwyrm|ToFW} the most damage as the true hero, though\u2014whether this be one of the characters, Sytri, or Tol. To this true hero, the bariaurs present one of the {@creature whirlwyrm|ToFW}'s foot-long fangs. If a character wins, Sytri and Tol prove to be graceful competitors and congratulate the victor."
@@ -8937,6 +9197,7 @@
 						{
 							"type": "entries",
 							"name": "Conclusion",
+							"page": 55,
 							"id": "13e",
 							"entries": [
 								"On their return to Glorium, the characters are greeted by Tyrza and locals who want to know everything that happened. If a character brings back the {@creature whirlwyrm|ToFW} fang the bariaurs gave them, Tyrza recognizes that character as the Hero of the Day. She also rewards that character with a {@item Horn of Valhalla, Silver||silver horn of Valhalla} and your choice of one of the following treasures:",
@@ -8958,6 +9219,7 @@
 				{
 					"type": "section",
 					"name": "Chapter 10\u2013Rigus: Eternity's Rampart",
+					"page": 56,
 					"id": "13f",
 					"entries": [
 						"The gate-town of Rigus is under siege. Brutal attacks through the portal to Acheron have pinpointed the town's weaknesses and worn its defenders down. If the characters wish to access the gate to Acheron, they'll have to help the gate-town's defenders discover how their foes strike with such uncanny precision.",
@@ -8976,6 +9238,7 @@
 						{
 							"type": "entries",
 							"name": "Approaching Rigus",
+							"page": 56,
 							"id": "140",
 							"entries": [
 								"As the characters approach Rigus, read or paraphrase the following description:",
@@ -8990,6 +9253,7 @@
 								{
 									"type": "entries",
 									"name": "Attack on Rigus",
+									"page": 56,
 									"id": "142",
 									"entries": [
 										{
@@ -9014,6 +9278,7 @@
 								{
 									"type": "entries",
 									"name": "Entering Rigus",
+									"page": 56,
 									"id": "144",
 									"entries": [
 										"Read or paraphrase the following description as the characters near the entrance to Rigus:",
@@ -9042,6 +9307,7 @@
 						{
 							"type": "entries",
 							"name": "The Sealed Gate",
+							"page": 57,
 							"id": "146",
 							"entries": [
 								"Once inside, the characters can explore Rigus. Any patrolling soldier can curtly direct the characters to the gate to Acheron. The path to the gate, which lies beneath Rigus's hill, is accessible from the highest district. Reaching the gate involves a winding walk of over a mile from the town's entrance.",
@@ -9049,6 +9315,7 @@
 								{
 									"type": "entries",
 									"name": "Meeting Major Kalar",
+									"page": 57,
 									"id": "147",
 									"entries": [
 										"If the characters follow the guards' directions, they arrive at a field covered in simple command tents. It takes 15 minutes to find Major Kalar's white tent amid the bustle of officers and messengers. When the characters enter the tent, read the following:",
@@ -9078,6 +9345,7 @@
 						{
 							"type": "entries",
 							"name": "Acheron Incursion",
+							"page": 58,
 							"id": "149",
 							"entries": [
 								"Reaching the gate to Acheron involves following a long tunnel to a massive mechanical lift. So long as the characters are with Major Kalar, the town guards don't impede them.",
@@ -9092,6 +9360,7 @@
 								{
 									"type": "entries",
 									"name": "Rigus Forces",
+									"page": 58,
 									"id": "14b",
 									"entries": [
 										"Rigus's forces are largely hobgoblin and human {@creature Guard||guards}. Two commanders oversee these troops:",
@@ -9117,6 +9386,7 @@
 								{
 									"type": "entries",
 									"name": "Invaders' Methods",
+									"page": 58,
 									"id": "14c",
 									"entries": [
 										"The invading Acheron forces serve a warlord named Thalir Heartbane, a goblin warlord favored by the god Maglubiyet. Recently, an ettin servant of Thalir with heads named Zot and Sotu came into possession of a gray slaad's control gem (see the {@book Monster Manual|MM}). The gray slaad uses its Shapechanger trait to pose as Sergeant Luggik. During assaults through the portal, the slaad uses telepathy to relate information to Zot and Sotu's agents, who then slip back through the portal. This helps the invaders prepare ever-deadlier attacks."
@@ -9125,6 +9395,7 @@
 								{
 									"type": "entries",
 									"name": "Before Battle",
+									"page": 58,
 									"id": "14d",
 									"entries": [
 										"The characters can inspect the gate to Acheron or speak to any of the soldiers at the gate. Major Kalar won't let the characters attune the Mosaic Mimir to the portal, though, insisting they fulfill their deal with her first. There's little evidence to discover, but the soldiers reinforce the direness of their situation and convey their dread of the next attack. When the characters are done investigating, proceed with the following section."
@@ -9135,6 +9406,7 @@
 						{
 							"type": "entries",
 							"name": "Acheron Attacks",
+							"page": 58,
 							"id": "14e",
 							"entries": [
 								"When the attack from Acheron comes, read or paraphrase the following description:",
@@ -9198,6 +9470,7 @@
 								{
 									"type": "entries",
 									"name": "Gate to Acheron Battlefield Features",
+									"page": 58,
 									"id": "150",
 									"entries": [
 										"The battlefield around the gate to Acheron has the following features:",
@@ -9222,6 +9495,7 @@
 								{
 									"type": "entries",
 									"name": "Gate to Acheron Battlefield Events",
+									"page": 58,
 									"id": "151",
 									"entries": [
 										"During this battle, roll on the Gate to Acheron Battlefield Events table each round on initiative count 0. Also consider rolling on the table if a character tries to leave the mapped battlefield.",
@@ -9260,6 +9534,7 @@
 								{
 									"type": "entries",
 									"name": "Midbattle Deductions",
+									"page": 59,
 									"id": "152",
 									"entries": [
 										"During the battle, a character can spend an action to watch for something unusual. If they do, the character makes a DC 12 Wisdom ({@skill Perception}) check. If the check is successful, the character notices \"Sergeant Luggik\" stage fighting with a foe who clearly doesn't intend her harm. Unbeknownst to the character, the fake Luggik is using telepathy to relate information to this spy mid-battle.",
@@ -9269,6 +9544,7 @@
 								{
 									"type": "entries",
 									"name": "Second Wave",
+									"page": 59,
 									"id": "153",
 									"entries": [
 										"After the berserkers are defeated, the characters have 1 round to recover. If no character has already noticed Luggik's behavior, the character with the highest passive Wisdom ({@skill Perception}) score notices Luggik's mock fighting, as noted above. At the end of this round, read the following description:",
@@ -9289,6 +9565,7 @@
 						{
 							"type": "entries",
 							"name": "Conclusion",
+							"page": 59,
 							"id": "155",
 							"entries": [
 								"The characters might have pieced together that Luggik was replaced by a slaad spy. If they didn't, Major Kalar notices the control gem on Zot and Sotu's armor and makes suggestions until the characters have the gist of the details from the \"{@adventure Invaders' Methods|ToFW|2|Invaders' Methods}\" section.",
@@ -9311,6 +9588,7 @@
 				{
 					"type": "section",
 					"name": "Chapter 11\u2013Sylvania: Titan on the Town",
+					"page": 60,
 					"id": "156",
 					"entries": [
 						"Sylvania, gate-town to Arborea, lies in the embrace of a mystical forest. Ephemeral lights drift along mossy streets, and whimsical architecture complements a wilderness of ageless trees, talking vegetation, and colorful toadstools. Sylvania's gate is unique among the gate-towns, as it shifts locations around the community, confounding efforts to locate it. Further complicating the characters' efforts in town, a powerful being who has reached an emotional tipping point has become a problem for the community.",
@@ -9329,6 +9607,7 @@
 						{
 							"type": "entries",
 							"name": "Exploring Sylvania",
+							"page": 60,
 							"id": "157",
 							"entries": [
 								"As the characters approach Sylvania, read or paraphrase the following description:",
@@ -9381,6 +9660,7 @@
 								{
 									"type": "entries",
 									"name": "Gate to Arborea",
+									"page": 60,
 									"id": "159",
 									"entries": [
 										"The gate to Arborea lies in the woods near Sylvania, but it changes location randomly, rarely settling in a location for more than a day. Locals can explain the gate's wandering nature, but they can't locate it. The only beings who always know the gate's location are the ephemeral rulers of Sylvania: the Seven Spiritors. Usually the spiritors are busy overseeing festivities in town, but as luck would have it, one of them has need of the characters."
@@ -9391,6 +9671,7 @@
 						{
 							"type": "entries",
 							"name": "A Titanic Problem",
+							"page": 60,
 							"id": "15a",
 							"entries": [
 								"Among the endless celebrations ongoing throughout the gate-town, the scion of a god is nursing a crushing defeat and is on the verge of making it everyone's problem. As the characters are exploring Sylvania, read or paraphrase the following text:",
@@ -9415,6 +9696,7 @@
 								{
 									"type": "entries",
 									"name": "Meeting Kopoha",
+									"page": 61,
 									"id": "15c",
 									"entries": [
 										"When the characters seek out {@creature Kopoha|ToFW}, they find her in the following scene:",
@@ -9434,6 +9716,7 @@
 								{
 									"type": "entries",
 									"name": "Kopoha's Bad Day",
+									"page": 62,
 									"id": "15e",
 									"entries": [
 										"{@creature Kopoha|ToFW} recently endured a crushing defeat by her bitterest rival, her sister Alethira. The two are always trying to outdo each other as they vie for their parents' approval. They are usually well matched, but this time Alethira humiliated {@creature Kopoha|ToFW} by beating her at cards and taking her maul as a prize. This defeat exacerbated the worries {@creature Kopoha|ToFW} harbors (see the following section). She's trying to bury her worries by recklessly celebrating in Sylvania."
@@ -9442,6 +9725,7 @@
 								{
 									"type": "entries",
 									"name": "Titanic Pain",
+									"page": 62,
 									"id": "15f",
 									"entries": [
 										"In situations noted later in this chapter, {@creature Kopoha|ToFW} might share the following truths and a quandary about her life:",
@@ -9474,12 +9758,14 @@
 						{
 							"type": "entries",
 							"name": "Celebrations in Sylvania",
+							"page": 62,
 							"id": "160",
 							"entries": [
 								"Revelry is in no short supply in Sylvania. Characters looking for celebrations or distractions in the gate-town might stumble across or be directed to the events in this section. Use the events you think the characters will enjoy, in any order.",
 								{
 									"type": "entries",
 									"name": "Dryad Dance",
+									"page": 62,
 									"id": "161",
 									"entries": [
 										"In a clearing lit by energetic fireflies, a group of ten {@creature Dryad||dryads} sings and dances. The group welcomes anyone who comes in peace to enjoy the serenity of their trees. {@creature Kopoha|ToFW} eagerly participates, but her size makes her a menace to smaller dancers. While {@creature Kopoha|ToFW} is dancing, a character must keep those around the empyrean safe, perhaps by maneuvering her around the dance floor with a successful DC 14 ({@skill Acrobatics} or {@skill Sleight of Hand}) check.",
@@ -9490,6 +9776,7 @@
 								{
 									"type": "entries",
 									"name": "Pixie Parade",
+									"page": 62,
 									"id": "162",
 									"entries": [
 										{
@@ -9507,6 +9794,7 @@
 								{
 									"type": "entries",
 									"name": "Skull Bocce",
+									"page": 63,
 									"id": "163",
 									"entries": [
 										"Amid a field of memorials, a retired god of the dead and a retinue of skeletons and morbidly dressed competitors play a casual, good-natured game of bocce. The god (perhaps Jergal, an apathetic former god of death) invites {@creature Kopoha|ToFW} and the characters to play, but instead of normal balls, they're using the skulls of the group's skeletons. {@creature Kopoha|ToFW} is eager to play but is both bad at the game (which she's never played) and far too competitive for this group. She might also attempt to use the Mosaic Mimir as a ball\u2014which doesn't harm it but might make some characters anxious. A character must succeed on a DC 14 Strength ({@skill Athletics}) check or Charisma ({@skill Persuasion}) check to help {@creature Kopoha|ToFW} either win or deal with her loss gracefully.",
@@ -9524,6 +9812,7 @@
 								{
 									"type": "entries",
 									"name": "Widow's Henge",
+									"page": 63,
 									"id": "164",
 									"entries": [
 										"In a silent glade, a ring of standing stones surrounds a fallen menhir. The toppled rock is laden with an inviting but unattended feast. Any local or a character who succeeds on a DC 12 Intelligence ({@skill Arcana} or {@skill History}) check knows that this is Widow's Henge and that anyone who eats from the stone vanishes.",
@@ -9533,6 +9822,7 @@
 								{
 									"type": "entries",
 									"name": "Other Celebrations",
+									"page": 63,
 									"id": "165",
 									"entries": [
 										"There are countless other celebrations around Sylvania. Use the events here and challenges like those outlined in the \"{@adventure Contests|ToFW|2|Contests}\" section of {@adventure chapter 9|ToFW|2|Chapter 9\u2013Glorium: Heroes of the Day} to create more festivities and chances for {@creature Kopoha|ToFW} to confide in the characters."
@@ -9543,6 +9833,7 @@
 						{
 							"type": "entries",
 							"name": "Closing Time",
+							"page": 63,
 							"id": "166",
 							"entries": [
 								"The characters' celebrations with {@creature Kopoha|ToFW} might end in the following ways:",
@@ -9572,6 +9863,7 @@
 						{
 							"type": "entries",
 							"name": "Conclusion",
+							"page": 63,
 							"id": "167",
 							"entries": [
 								"Danai finds the characters soon after {@creature Kopoha|ToFW} departs and leads the characters to the gate to Arborea. The portal currently resides in an overgrown well in the forest outside town. The spiritor then returns to Sylvania to attend to other ongoing parties. If the characters are still in Danai's good graces, she might invite them to join her for one more celebration.",
@@ -9583,12 +9875,14 @@
 				{
 					"type": "section",
 					"name": "Chapter 12\u2013Outlands Explorations",
+					"page": 64,
 					"id": "168",
 					"entries": [
 						"This chapter presents encounters for use while characters explore the Outlands. These events aren't vital to the adventure and can be used in any order. Some reinforce recurring themes in the adventure, while others are exciting digressions. Use these events and the {@book encounter tables|MPP|0|Planar Encounters} in {@book Morte's Planar Parade|MPP} to further develop the Outlands. These events don't influence when characters advance in level.",
 						{
 							"type": "entries",
 							"name": "Planar Glitch",
+							"page": 64,
 							"id": "169",
 							"entries": [
 								"The characters' incarnations are just one manifestation of the planar instability caused by the inaccurate beliefs of modrons lost in the Outlands (see {@adventure chapter 15|ToFW|3|Chapter 15: Echoes of Delusion}). At any point during the characters' exploration of the Outlands, they might experience one of the events on the Glitch Encounters table.",
@@ -9635,6 +9929,7 @@
 						{
 							"type": "entries",
 							"name": "Angels in the Outlands",
+							"page": 64,
 							"id": "16a",
 							"entries": [
 								{
@@ -9658,6 +9953,7 @@
 								{
 									"type": "entries",
 									"name": "Good versus Evil",
+									"page": 64,
 									"id": "16c",
 									"entries": [
 										"Two teams\u2014the Noxious Stampede and the Righteous Hands\u2014vie for a single soul in the Outlands. Both teams need players, but the characters can join only one. Alternatively, the characters can join neither and instead influence the game's outcome from afar."
@@ -9666,6 +9962,7 @@
 								{
 									"type": "entries",
 									"name": "Noxious Stampede",
+									"page": 65,
 									"id": "16d",
 									"entries": [
 										"The Noxious Stampede consists of nine {@creature Maelephant|MPP|maelephants} (see {@book Morte's Planar Parade|MPP}). Their star pitcher, who goes by \"Snot Rocket,\" shoots stinking balls from its trunk like a cannon. The Fiends are sore losers and insufferable winners."
@@ -9674,6 +9971,7 @@
 								{
 									"type": "entries",
 									"name": "Righteous Hands",
+									"page": 65,
 									"id": "16e",
 									"entries": [
 										"A team of Celestials, the Righteous Hands consist of eight {@creature Hound Archon|MPP|hound archons} (see {@book Morte's Planar Parade|MPP}) and their star player, a {@creature deva} named {@creature Shariel|ToFW} whose flanged mace rings deeply when it connects with its target. The Righteous Hands are paragons of sportsmanship and honesty, rooting for each other and never disrespecting their opponents, no matter how low the Noxious Stampede stoops."
@@ -9682,6 +9980,7 @@
 								{
 									"type": "entries",
 									"name": "Spireball Rules",
+									"page": 65,
 									"id": "16f",
 									"entries": [
 										{
@@ -9701,6 +10000,7 @@
 								{
 									"type": "entries",
 									"name": "Setup",
+									"page": 65,
 									"id": "170",
 									"entries": [
 										"The offensive team rolls initiative to determine the batting order. Meanwhile, the defensive team designates a pitcher, who stands in the middle of the triangle facing home plate; all other participants on that team are fielders."
@@ -9709,6 +10009,7 @@
 								{
 									"type": "entries",
 									"name": "Batting",
+									"page": 65,
 									"id": "171",
 									"entries": [
 										"On their turn, each batter makes a DC 20 Strength ({@skill Athletics}) check. On a successful check, the batter hits the ball with their implement and sends it flying into the field, and the batter attempts to move to first base. The defensive team can try to catch the ball (see the \"Catching\" section).",
@@ -9716,6 +10017,7 @@
 										{
 											"type": "entries",
 											"name": "Home Run",
+											"page": 65,
 											"id": "172",
 											"entries": [
 												"A batter who rolls a 20 on the die hits a home run. The defending team doesn't get a chance to catch the ball, and the batter and every other team member currently on a base reach home plate."
@@ -9726,6 +10028,7 @@
 								{
 									"type": "entries",
 									"name": "Catching",
+									"page": 65,
 									"id": "173",
 									"entries": [
 										"If a batter hits the ball, the defensive team moves to catch it. One fielder of your choice must succeed on a DC 20 Dexterity ({@skill Acrobatics}) check. On a successful check, the batter is out and must stand down. On a failed check, the batter advances to first base, moving any other batters ahead of them forward by one base."
@@ -9734,6 +10037,7 @@
 								{
 									"type": "entries",
 									"name": "Scoring Points",
+									"page": 65,
 									"id": "174",
 									"entries": [
 										"Spireball has three bases corresponding to its three pedestals. Each time a batter returns from second base to home plate, their team scores 1 point.",
@@ -9743,6 +10047,7 @@
 								{
 									"type": "entries",
 									"name": "Play Ball!",
+									"page": 65,
 									"id": "175",
 									"entries": [
 										"Once the characters chose their team or decline, the game begins. The Righteous Hands are first to bat.",
@@ -9752,6 +10057,7 @@
 								{
 									"type": "entries",
 									"name": "Noxious Stampede Wins",
+									"page": 65,
 									"id": "176",
 									"entries": [
 										"If evil triumphs, members of the Noxious Stampede revel with Abyssal brags and celebratory gestures. If the characters joined this team or reveal they secretly assisted the maelephants from the sidelines, Snot Rocket produces a slimy {@item eversmoking bottle} and gives it to one of the characters."
@@ -9760,6 +10066,7 @@
 								{
 									"type": "entries",
 									"name": "Righteous Hands Win",
+									"page": 66,
 									"id": "177",
 									"entries": [
 										"If good prevails, the Righteous Hands celebrate and offer to shake hands with their opponents, who refuse the Celestials' gesture of goodwill. If the characters joined the Righteous Hands, {@creature Shariel|ToFW} gifts the characters with a prismatic chalice from Mount Celestia that functions as a {@item gem of brightness}.",
@@ -9769,6 +10076,7 @@
 								{
 									"type": "entries",
 									"name": "Tie Game",
+									"page": 66,
 									"id": "178",
 									"entries": [
 										"If the teams tie, the soul's fate is delayed for three hundred years. Both teams are visibly disappointed."
@@ -9779,6 +10087,7 @@
 						{
 							"type": "entries",
 							"name": "Mausoleum of Chronepsis",
+							"page": 66,
 							"id": "179",
 							"entries": [
 								{
@@ -9821,6 +10130,7 @@
 								{
 									"type": "entries",
 									"name": "The Witch and the Wyrmling",
+									"page": 66,
 									"id": "17b",
 									"entries": [
 										"This encounter occurs after the characters have the previous experience with Renesnuprah and visit another gate-town or two. The encounter begins while the characters are in their walking castle, and they hear a panicked cry from outside. When a character investigates, read or paraphrase the following:",
@@ -9850,6 +10160,7 @@
 								{
 									"type": "entries",
 									"name": "Wyrm Reception",
+									"page": 67,
 									"id": "17d",
 									"entries": [
 										"If Trikante is dealt with, Reenee thanks the characters and says the following:",
@@ -9866,6 +10177,7 @@
 								{
 									"type": "entries",
 									"name": "The Mausoleum",
+									"page": 67,
 									"id": "17f",
 									"entries": [
 										"This event occurs when the characters near the Mausoleum of Chronepsis while the time dragon Reenee is with them. As soon as the mausoleum is within sight, read the following description:",
@@ -9882,6 +10194,7 @@
 								{
 									"type": "entries",
 									"name": "Scales of Time",
+									"page": 68,
 									"id": "181",
 									"entries": [
 										"If Reenee leaves the characters one of her scales, as the characters are departing the Mausoleum of Chronepsis, read the following:",
@@ -9897,6 +10210,7 @@
 										{
 											"type": "insetReadaloud",
 											"name": "Time of the Dragon",
+											"page": 68,
 											"id": "183",
 											"entries": [
 												"{@i Supernatural Gift (Charm})",
@@ -9910,6 +10224,7 @@
 						{
 							"type": "entries",
 							"name": "Semuanya's Bog",
+							"page": 68,
 							"id": "184",
 							"entries": [
 								"In this encounter, a group of lizardfolk petitioners invite the characters to join them in visiting the realm of the lizardfolk deity Semuanya. Use this encounter wherever and whenever you please, particularly to lighten the mood after exploring a somber gate-town like Curst or Rigus.",
@@ -9925,6 +10240,7 @@
 								{
 									"type": "entries",
 									"name": "Lizardfolk Competitors",
+									"page": 68,
 									"id": "186",
 									"entries": [
 										"The twelve {@creature lizardfolk} are friendly Celestial {@book petitioners|MPP|0|Petitioners} (detailed in {@book Morte's Planar Parade|MPP}). They are led by the largest of their number: the colorfully frilled Sesspech. She introduces herself and eagerly shares the following information:",
@@ -9950,6 +10266,7 @@
 								{
 									"type": "entries",
 									"name": "Reaching Semuanya's Bog",
+									"page": 68,
 									"id": "187",
 									"entries": [
 										"The lizardfolk can travel with the characters for as long as you like. When the group finally reaches Semuanya's Bog, read the following text:",
@@ -9979,6 +10296,7 @@
 								{
 									"type": "entries",
 									"name": "Contests in Semuanya's Bog",
+									"page": 69,
 									"id": "189",
 									"entries": [
 										"Life is good but not easy in {@book Semuanya's Bog|SatO|3|Semuanya's Bog}. The spirits of lizardfolk champions engage in endless competition here. If the characters wish to join them, they're welcomed. Run any of the competitions from the Semuanya's Bog Contests table as detailed in the \"{@adventure Contests|ToFW|2|Contests}\" section of {@adventure chapter 9|ToFW|2|Chapter 9\u2013Glorium: Heroes of the Day}.",
@@ -10029,6 +10347,7 @@
 								{
 									"type": "entries",
 									"name": "Meeting Semuanya",
+									"page": 69,
 									"id": "18a",
 									"entries": [
 										"If the characters win three or more competitions, a manifestation of the god Semuanya appears. This manifestation of Semuanya is a muscular, 8-foot-tall lizardfolk. They have no game statistics and vanish if attacked.",
@@ -10043,12 +10362,14 @@
 				{
 					"type": "section",
 					"name": "Chapter 13\u2013Secrets of the Spire",
+					"page": 70,
 					"id": "18b",
 					"entries": [
 						"Once the characters restore the Mosaic Mimir's missing data, the magic device relates the information from \"{@adventure The Last Great Modron March|ToFW|2|The Last Great Modron March}\" section in {@adventure chapter 4|ToFW|2|Chapter 4\u2013Into the Outlands}. From this, the characters learn that the missing modron, {@creature R04M|ToFW}, likely followed the march's path to Dendradis, a rilmani community carved into the Spire. Upon traveling to Dendradis, the characters meet Ascetelis, a rilmani who offers to escort them into the Spire where the modron was last seen. Within the Spire, surrounded by mysteries of the multiverse, the characters finally catch up to {@creature R04M|ToFW}\u2014but they're not the first to do so.",
 						{
 							"type": "entries",
 							"name": "Dendradis",
+							"page": 70,
 							"id": "18c",
 							"entries": [
 								"Beings of absolute neutrality, rilmani originate from the Outlands, and their few communities cling to the Spire. These crystalline cloisters rise in clusters of crooked towers or fill natural crevices.",
@@ -10056,6 +10377,7 @@
 								{
 									"type": "entries",
 									"name": "Unwelcome to Dendradis",
+									"page": 70,
 									"id": "18d",
 									"entries": [
 										"When the characters approach Dendradis, read or paraphrase the following text:",
@@ -10081,6 +10403,7 @@
 								{
 									"type": "entries",
 									"name": "Ascetelis",
+									"page": 70,
 									"id": "18f",
 									"entries": [
 										"Before the characters depart or the situation with the ferrumachs grows too tense, a third rilmani arrives from inside. Read or paraphrase the following text:",
@@ -10119,6 +10442,7 @@
 								{
 									"type": "entries",
 									"name": "Ascetelis's Goals",
+									"page": 71,
 									"id": "192",
 									"entries": [
 										"Ascetelis, like most cuprilachs, is a spy and assassin. She doesn't tell the characters about her role, that the scroll she's holding is a hit list, or that she's been ordered to slay {@creature R04M|ToFW} and the characters for being threats to multiversal balance. She legitimately doesn't know where {@creature R04M|ToFW} is and wants to tag along with the characters until they find the modron. Then she plans to manufacture their collective doom.",
@@ -10128,6 +10452,7 @@
 								{
 									"type": "entries",
 									"name": "Tracking R04M",
+									"page": 71,
 									"id": "193",
 									"entries": [
 										"Hunting {@creature R04M|ToFW} might lead the characters into Dendradis or to explore the Spire on their own terms. Ascetelis either joins or follows the characters."
@@ -10136,6 +10461,7 @@
 								{
 									"type": "entries",
 									"name": "Rumors in Dendradis",
+									"page": 71,
 									"id": "194",
 									"entries": [
 										"With Ascetelis as an escort, the characters can enter Dendradis and ask residents what they know about {@creature R04M|ToFW}.",
@@ -10143,6 +10469,7 @@
 										{
 											"type": "entries",
 											"name": "Questioning Rilmani",
+											"page": 71,
 											"id": "195",
 											"entries": [
 												"Ascetelis suggests the group find and question rilmani artisans called plumachs. These rilmani harvest crystals from the Spire and might have seen {@creature R04M|ToFW}. It takes Ascetelis an hour to find a plumach willing to acknowledge the characters. There's a problem, though. Even among rilmani, plumachs are notorious for avoiding strangers and their troubles. A character can get a plumach to talk by succeeding on a DC 20 Charisma ({@skill Persuasion}) check. A character gains advantage on this check if the plumach is offered 250 gp worth of a rare material useful for crafting or the characters promise that after this conversation, no one in the group will ever speak to the plumach again.",
@@ -10155,6 +10482,7 @@
 								{
 									"type": "entries",
 									"name": "Steps along the Spire",
+									"page": 72,
 									"id": "196",
 									"entries": [
 										"Characters who spend a day searching the region around Dendradis for signs of {@creature R04M|ToFW} can make a DC 20 Wisdom ({@skill Survival}) check. If they succeed, they find the tracks of a lone monodrone leading into a narrow cave. The cave runs for nearly a mile, then opens into the {@adventure Desert of Rust|ToFW|2|Desert of Rust} (see the following section). The characters can't be certain these are {@creature R04M|ToFW}'s tracks\u2014particularly if they're not sure what type of modron {@creature R04M|ToFW} is\u2014but it's the best lead they find."
@@ -10165,12 +10493,14 @@
 						{
 							"type": "entries",
 							"name": "Inside the Spire",
+							"page": 72,
 							"id": "197",
 							"entries": [
 								"As mysterious as the Spire is, even less is known about what lies inside it. Just as the Spire's exterior poses an endless, unclimbable ascent, its interior holds a labyrinth of infinite tunnels and vertical hollows. Unknown to most except the rilmani, the Spire holds more than just these natural caves. Its caverns are lined with eerie rock formations and the eroded ruins of inexplicable structures. The Spire is hostile to magic, and many creatures instinctively avoid its dark, stifling interior.",
 								{
 									"type": "entries",
 									"name": "Spire Interior Features",
+									"page": 72,
 									"id": "198",
 									"entries": [
 										"The tunnels in the Spire have the following features:",
@@ -10200,6 +10530,7 @@
 								{
 									"type": "entries",
 									"name": "Desert of Rust",
+									"page": 72,
 									"id": "199",
 									"entries": [
 										"This miles-wide cavern within the Spire is covered in flakes of rust and, in some rare cases, fragments of eroded blades. Every few moments, a harmless metal scrap falls from above and clinks against the cavern floor. The cavern has no ceiling\u2014it rises endlessly into the infinite hollow of the Spire's interior.",
@@ -10212,12 +10543,14 @@
 						{
 							"type": "entries",
 							"name": "Climbing the Spire",
+							"page": 72,
 							"id": "19a",
 							"entries": [
 								"{@creature R04M|ToFW}'s path climbs the Spire's interior. If the characters follow, they pass through gradually sloping tunnels that take hours or even days to traverse. Use any of the following encounters as the characters climb. When you're ready to conclude this section, run the \"{@adventure Scholar of Impossibilities|ToFW|2|Scholar of Impossibilities}\" encounter.",
 								{
 									"type": "entries",
 									"name": "Memory from Elsewhere",
+									"page": 72,
 									"id": "19b",
 									"entries": [
 										"As the characters ascend the Spire, they witness mysterious sights. These scenes aren't dangerous, but you can elaborate on them as you please. Roll on or choose a result from the Sights within the Spire table to break up the characters' climb.",
@@ -10256,6 +10589,7 @@
 								{
 									"type": "entries",
 									"name": "The Whisker",
+									"page": 73,
 									"id": "19c",
 									"entries": [
 										{
@@ -10269,6 +10603,7 @@
 										{
 											"type": "entries",
 											"name": "Damaging the Bridge",
+											"page": 73,
 											"id": "19e",
 											"entries": [
 												"Each 5-foot segment of the bridge is a Large object with AC 15, 10 hit points, vulnerability to lightning damage, and immunity to poison and psychic damage. If any segment of the bridge is destroyed, the entire structure crumbles, causing creatures on it to fall. This part of the Spire has no ceiling or floor. Any creature that falls into the hollow plummets until rescued."
@@ -10277,6 +10612,7 @@
 										{
 											"type": "entries",
 											"name": "Piercer Demigod",
+											"page": 73,
 											"id": "19f",
 											"entries": [
 												"This crossing is home to the demigod Kirgaz Vizt the Unerring Avalanche, one of the few deities of {@creature Roper||ropers} and {@creature Piercer||piercers}. Kirgaz uses the {@creature piercer} stat block, with the following adjustments:",
@@ -10296,6 +10632,7 @@
 								{
 									"type": "entries",
 									"name": "Tomb of the Frog",
+									"page": 73,
 									"id": "1a0",
 									"entries": [
 										"On entering this area, the character with the highest passive Wisdom ({@skill Perception}) score hears heavy breathing. Those who investigate see the following:",
@@ -10321,6 +10658,7 @@
 										{
 											"type": "entries",
 											"name": "Followers of the Frog",
+											"page": 73,
 											"id": "1a3",
 											"entries": [
 												"The giant urges characters who speak with him to become the first of his new followers. He ignores characters who refuse, but he's pleased if any characters agree and bids them to spread word of his perfection. Characters who agree to follow the giant\u2014even if they're insincere\u2014hear faint croaking (that only they can hear) whenever they rest or cast a spell within the next 7 days. The croaking vanishes after this time, the giant having forgotten the characters."
@@ -10329,6 +10667,7 @@
 										{
 											"type": "entries",
 											"name": "Slaying the Giant",
+											"page": 73,
 											"id": "1a4",
 											"entries": [
 												"The giant defends himself if attacked, and turns hostile if the characters antagonize him. During battle, any creature affected by the giant's Curse of the Evil Eye action gains amphibian-like features. If the giant is slain, his body rapidly decays into a heap of mold. From the remains grow {@dice 2d4} magical, neon-green toadstools. A creature that consumes one of these 3-inch toadstools is affected as if by a {@item potion of water breathing}."
@@ -10337,6 +10676,7 @@
 										{
 											"type": "entries",
 											"name": "Frog Figures",
+											"page": 73,
 											"id": "1a5",
 											"entries": [
 												"All one hundred and eighteen of these misshapen amphibian figurines are worthless, but each looks uniquely shocked."
@@ -10349,6 +10689,7 @@
 						{
 							"type": "entries",
 							"name": "Scholar of Impossibilities",
+							"page": 73,
 							"id": "1a6",
 							"entries": [
 								"Run this encounter when you're ready to bring the hunt for {@creature R04M|ToFW} to an end.",
@@ -10364,6 +10705,7 @@
 								{
 									"type": "entries",
 									"name": "The Scholar",
+									"page": 74,
 									"id": "1a8",
 									"entries": [
 										"This baernaloth is an evil being that calls itself the Scholar. It is curious about the characters and seeks to expose them to its corruptive ideas. Should a character converse with it, the Scholar speaks cryptically while sharing the following information:",
@@ -10383,6 +10725,7 @@
 								{
 									"type": "entries",
 									"name": "Secrets of Eternity",
+									"page": 74,
 									"id": "1a9",
 									"entries": [
 										"If a character agrees to let the Scholar share a forbidden secret, the baernaloth requests that the character come close and let it whisper in their ear. The baernaloth then speaks in a language the character doesn't know but somehow understands. If the character lets the Scholar speak for a full minute, the character's mind is flooded with terrible knowledge. The character can't process the entirety of that knowledge, but what they can articulate is summarized by a secret from the Impossible Knowledge table or another mystery of your creation. The veracity and implications of these secrets are up to you.",
@@ -10420,6 +10763,7 @@
 										{
 											"type": "insetReadaloud",
 											"name": "Eyes of the Impossible",
+											"page": 74,
 											"id": "1aa",
 											"entries": [
 												"{@i Supernatural Gift (Charm})",
@@ -10433,6 +10777,7 @@
 						{
 							"type": "entries",
 							"name": "Ravenous Darkness",
+							"page": 74,
 							"id": "1ab",
 							"entries": [
 								"After a 100-foot climb past the Scholar's lair, the chasm opens onto a 30-foot-wide, 100-foot-long ledge. When the party approaches, read or paraphrase the following text:",
@@ -10460,6 +10805,7 @@
 								{
 									"type": "entries",
 									"name": "R04M, Sigil's Most Wanted",
+									"page": 75,
 									"id": "1ad",
 									"entries": [
 										"{@creature R04M|ToFW} is a neutral good {@creature monodrone} with an Intelligence of 8. He speaks Common and Modron. {@creature R04M|ToFW} is earnest, naive, and desperate to leave the Spire. He shares the following details once out of peril:",
@@ -10481,6 +10827,7 @@
 								{
 									"type": "entries",
 									"name": "Escaping the Spire",
+									"page": 75,
 									"id": "1ae",
 									"entries": [
 										"Once they've conversed with {@creature R04M|ToFW}, the characters can leave the Spire however they like. On their way out, Ascetelis attempts to ambush and kill the characters and then {@creature R04M|ToFW}. She attacks whenever is most opportune, perhaps when the group again crosses the {@adventure Whisker|ToFW|2|The Whisker} (detailed in this chapter).",
@@ -10497,11 +10844,13 @@
 		{
 			"type": "section",
 			"name": "Part 3: Secret Realities",
+			"page": 76,
 			"id": "1af",
 			"entries": [
 				{
 					"type": "section",
 					"name": "Chapter 14: Behind the Wheel",
+					"page": 77,
 					"id": "1b0",
 					"entries": [
 						"Having learned that Shemeshka might not be dealing with them honestly, the characters return to Sigil and Fortune's Wheel. There, {@creature R04M|ToFW}'s platinum chip grants the characters access to the casino's hidden Platinum Rooms and Shemeshka's private sanctum.",
@@ -10519,6 +10868,7 @@
 						{
 							"type": "entries",
 							"name": "Return to Sigil",
+							"page": 77,
 							"id": "1b1",
 							"entries": [
 								"How the characters return to Sigil from the Outlands is up to them. The portal they initially used to reach the Outlands remains open, but if the party wants to use a different portal, one can be found within a day's travel of any gate-town or near any other Outlands site. {@creature R04M|ToFW}, the Castellan, or another NPC can provide this information.",
@@ -10536,12 +10886,14 @@
 						{
 							"type": "entries",
 							"name": "The Platinum Rooms",
+							"page": 77,
 							"id": "1b2",
 							"entries": [
 								"Hidden through Fortune's Wheel's high-roller rooms lies a demiplanar hub that links to the multiverse's highest-stakes games of chance. Here, powerful beings and entities forbidden from entering Sigil gather to place bets on events where lives and the fates of worlds hang in the balance. Amid this network of hidden games of chance, Shemeshka keeps her personal sanctum and the true riches of Fortune's Wheel: the arcanaloth's trove of secrets.",
 								{
 									"type": "entries",
 									"name": "Staff and Visitors",
+									"page": 77,
 									"id": "1b3",
 									"entries": [
 										"The Platinum Rooms are staffed by approximately a dozen lawful evil tieflings who use the {@creature assassin} stat block. They politely mingle amid the gambling areas, facilitating betting and fetching visitors refreshments. This staff is directed by Colcook, Shemeshka's personal aide, who oversees the Platinum Rooms from {@adventure area P1|ToFW|3|P1: Fortune's End}. These staff carry no treasure, but they can pay out a character's winnings at booths similar to that in area P1.",
@@ -10589,6 +10941,7 @@
 								{
 									"type": "entries",
 									"name": "Guards",
+									"page": 77,
 									"id": "1b4",
 									"entries": [
 										"Two {@creature Warden Archon|MPP|warden archons} (see {@book Morte's Planar Parade|MPP}) monitor the Platinum Rooms from {@adventure area P5|ToFW|3|P5: Shemeshka's Guard}. Shemeshka won an eon of these archons' service in a deal with a Celestial lord, and the bearlike archons\u2014one black-furred and the other white\u2014obey her dutifully. The warden archons visit {@adventure areas P1|ToFW|3|P1: Fortune's End}\u2013{@adventure P4|ToFW|3|P4: Fiend's Ante} only if a disruption the tiefling staff can't handle occurs or if a patron is clearly cheating at the games. Any individual who wins at three or more of the games in the Platinum Rooms is considered a cheater. When the archons appear, they politely ask whoever's causing the disruption to come with them to {@adventure area P6|ToFW|3|P6a: House of Liars}, where they lock away culprits. Characters can access area P5 only by having the warden archons open the portal from that area."
@@ -10597,6 +10950,7 @@
 								{
 									"type": "entries",
 									"name": "Interrogating the Staff",
+									"page": 78,
 									"id": "1b5",
 									"entries": [
 										"Shemeshka's staff are under orders to keep visitors happy and busy gambling while also listening for useful information. The staff have no interest in sharing information about themselves or Shemeshka. Through roleplaying or by succeeding on a DC 16 Charisma ({@skill Intimidation} or {@skill Persuasion}) check, a character can convince Colcook or another staff member to share the following information:",
@@ -10613,6 +10967,7 @@
 								{
 									"type": "entries",
 									"name": "Platinum Room Features",
+									"page": 78,
 									"id": "1b6",
 									"entries": [
 										{
@@ -10660,6 +11015,7 @@
 						{
 							"type": "entries",
 							"name": "Platinum Room Locations",
+							"page": 78,
 							"id": "1b7",
 							"entries": [
 								"The following locations are keyed to map 14.1.",
@@ -11627,6 +11983,7 @@
 								{
 									"type": "entries",
 									"name": "P1: Fortune's End",
+									"page": 78,
 									"id": "1b8",
 									"entries": [
 										"Read or paraphrase the following text when the characters first enter the area:",
@@ -11642,6 +11999,7 @@
 										{
 											"type": "entries",
 											"name": "Colcook",
+											"page": 78,
 											"id": "1ba",
 											"entries": [
 												"Colcook (lawful evil, tiefling {@creature assassin}) is friendly and eager to serve. If the characters run out of platinum chips, he offers them one in exchange for a valuable secret, such as details about the attacks on Rigus from {@adventure chapter 10|ToFW|2|Chapter 10\u2013Rigus: Eternity's Rampart} or anything the Scholar in {@adventure chapter 13|ToFW|2|Chapter 13\u2013Secrets of the Spire} told the characters. Colcook determines what counts as a valuable secret.",
@@ -11651,6 +12009,7 @@
 										{
 											"type": "entries",
 											"name": "Platinum Room Portals",
+											"page": 78,
 											"id": "1bb",
 											"entries": [
 												"Three portals here connect to the gaming events that currently occupy the Platinum Rooms. The portals are permanently open, but opaque energy prevents creatures from seeing or hearing what lies on the other side. Each of these portals has a placard overhead, naming the event beyond. These placards and their portals are as follows:",
@@ -11680,6 +12039,7 @@
 										{
 											"type": "entries",
 											"name": "Shemeshka's Portal",
+											"page": 78,
 											"id": "1bc",
 											"entries": [
 												"An unopened, golden portal stands in an empty alcove to the north. This portal leads to Shemeshka's refuge. This portal can't be opened from this room; only creatures in {@adventure area P5|ToFW|3|P5: Shemeshka's Guard} with the proper portal key can open it. Once opened, the portal remains open for 10 minutes."
@@ -11690,6 +12050,7 @@
 								{
 									"type": "entries",
 									"name": "P2: Dungeonland",
+									"page": 80,
 									"id": "1bd",
 									"entries": [
 										{
@@ -11703,6 +12064,7 @@
 										{
 											"type": "entries",
 											"name": "Crystals",
+											"page": 80,
 											"id": "1bf",
 											"entries": [
 												"Four sizable, floating crystals drift about 8 feet off the ground. Each displays a scene from a lethally whimsical dungeon. The creatures depicted in the crystals are unaware they're being watched. Roll on the Dungeon Scenes table to determine what scene a crystal is depicting at any given time.",
@@ -11741,6 +12103,7 @@
 										{
 											"type": "entries",
 											"name": "Dungeonland Results",
+											"page": 80,
 											"id": "1c0",
 											"entries": [
 												"It takes an hour for a game of Dungeonland to play out, after which the adventurers exploring the dungeon either escape or meet terrible ends. Roll on the Dungeonland Results table to determine how the game concludes.",
@@ -11802,6 +12165,7 @@
 										{
 											"type": "entries",
 											"name": "Betting Booth",
+											"page": 80,
 											"id": "1c1",
 											"entries": [
 												"Knol Knockturn (neutral, tiefling {@creature assassin}) runs the betting booth, a desk at the center of the island. Knol can explain the rules of Dungeonland and take any bets the characters place. The standard entry is 1 platinum chip with a bet on whether the adventurers will escape the dungeon. If a participant chooses correctly, they double their entry bet. If they bet wrong, they lose the chips they bet.",
@@ -11811,6 +12175,7 @@
 										{
 											"type": "entries",
 											"name": "Magic Item Submissions",
+											"page": 80,
 											"id": "1c2",
 											"entries": [
 												"Knol also accepts magic items to be added to the dungeon, which can influence the game's results. A bettor can send a magic item to the dungeon. The magic item must be in the bettor's possession and be of at least uncommon rarity. Knol takes the item, then has an attendant magically deliver it into the dungeon, where it falls into the adventurers' hands. Once a magic item is delivered to the dungeon, it can't be returned. After the magic item is submitted, roll twice next time you roll on the Dungeonland Results table and use the higher result."
@@ -11819,6 +12184,7 @@
 										{
 											"type": "entries",
 											"name": "Portal",
+											"page": 80,
 											"id": "1c3",
 											"entries": [
 												"This permanently open portal connects to {@adventure area P1|ToFW|3|P1: Fortune's End}."
@@ -11829,6 +12195,7 @@
 								{
 									"type": "entries",
 									"name": "P3a: Supertemporal Arena Entrance",
+									"page": 81,
 									"id": "1c4",
 									"entries": [
 										{
@@ -11844,6 +12211,7 @@
 										{
 											"type": "entries",
 											"name": "Portals",
+											"page": 81,
 											"id": "1c6",
 											"entries": [
 												"The portal to the southwest leads to area P3b. The portal to the northeast connects to {@adventure area P1|ToFW|3|P1: Fortune's End}."
@@ -11854,6 +12222,7 @@
 								{
 									"type": "entries",
 									"name": "P3b: Supertemporal Arena",
+									"page": 81,
 									"id": "1c7",
 									"entries": [
 										{
@@ -11867,6 +12236,7 @@
 										{
 											"type": "entries",
 											"name": "Time in the Arena",
+											"page": 81,
 											"id": "1c9",
 											"entries": [
 												"The arena moves rapidly through time. Every minute in the arena equals 100 years in Sigil. Any mortal creature in the arena ages 10 years every 6 seconds (1 round). If a creature in the arena ages past its maximum age (as determined by you), it is reduced to dust. Unless noted otherwise, a character's life expectancy is around 100 years. If a character is killed in this way, the multiversal glitch causes them to reappear somewhere out of the other characters' sight, such as {@adventure area P1|ToFW|3|P1: Fortune's End}."
@@ -11875,6 +12245,7 @@
 										{
 											"type": "entries",
 											"name": "Winning the Contest",
+											"page": 82,
 											"id": "1ca",
 											"entries": [
 												"There is a 50 percent chance for either Bowolg or Volsheez to win their ages-long battle, but which of these fantastically slow-moving entities will triumph won't be known for hundreds of years. In the sped-up time of the Supertemporal Arena, though, the battle plays out in {@dice 3d6} minutes. A creature needs to spend approximately 10 rounds (aging 100 years) to witness the end of the battle. On seeing the battle's end, a creature can use the gate to return to Fortune's Wheel and collect any winnings they've earned from Amber."
@@ -11883,6 +12254,7 @@
 										{
 											"type": "entries",
 											"name": "Losing the Contest",
+											"page": 82,
 											"id": "1cb",
 											"entries": [
 												"If a character bets on the loser, the character can't place another bet until 24 hours later, after Shemeshka's agents have found another improbable event to witness using temporal hyper speed, like the deaths of stars or which gate-town will be consumed by a plane next."
@@ -11891,6 +12263,7 @@
 										{
 											"type": "entries",
 											"name": "Portal",
+											"page": 82,
 											"id": "1cc",
 											"entries": [
 												"This passage travels through both space and time. Any creature that uses the portal returns to {@adventure area P3a|ToFW|3|P3a: Supertemporal Arena Entrance} moments after they entered but aged by however long they spent in the arena."
@@ -11901,6 +12274,7 @@
 								{
 									"type": "entries",
 									"name": "P4: Fiend's Ante",
+									"page": 82,
 									"id": "1cd",
 									"entries": [
 										{
@@ -11916,6 +12290,7 @@
 										{
 											"type": "entries",
 											"name": "Buying into the Game",
+											"page": 83,
 											"id": "1cf",
 											"entries": [
 												"A character can buy into the game with 1 platinum chip, which a tiefling attendant exchanges for several dozen iron tokens. Dozens of stars in the sky are then highlighted in a new color of the character's choice."
@@ -11924,6 +12299,7 @@
 										{
 											"type": "entries",
 											"name": "Playing the Game",
+											"page": 83,
 											"id": "1d0",
 											"entries": [
 												"After every 10 minutes of playing, a character can make a DC 18 Dexterity ({@skill Sleight of Hand}) or Wisdom ({@skill Insight}) check. If they succeed, they double their number of tokens. If they fail, they lose half their tokens. If they fail twice, they lose all their tokens and are out of the game. While the table is large enough to keep a character playing the game away from Bholmaz's Fire Aura, Vixsheer's Fear Aura might affect them."
@@ -11932,6 +12308,7 @@
 										{
 											"type": "entries",
 											"name": "Goading the Fiends",
+											"page": 83,
 											"id": "1d1",
 											"entries": [
 												"Any character can goad the Fiends into attacking each other by succeeding on three DC 16 Charisma ({@skill Deception}) checks. These checks can be made once every 10 minutes during the game. A character doesn't need to be playing the game to goad the Fiends."
@@ -11940,6 +12317,7 @@
 										{
 											"type": "entries",
 											"name": "Winning the Game",
+											"page": 83,
 											"id": "1d2",
 											"entries": [
 												"A character wins the game if they succeed on three checks to play the game. The Fiends might attack the character if the character has been rude or is obviously cheating. A character is also deemed the winner if the Fiends slay each other, or if the character is otherwise the only one remaining at the table. A character who wins the game can collect 3 platinum chips from a tiefling attendant\u2014even if one of character's incarnations was slain by the Fiends\u2014along with an infernal document noting their right to invade the worlds they won as part of the game."
@@ -11948,6 +12326,7 @@
 										{
 											"type": "entries",
 											"name": "Portal",
+											"page": 83,
 											"id": "1d3",
 											"entries": [
 												"A permanent portal connects to {@adventure area P1|ToFW|3|P1: Fortune's End}.",
@@ -11969,6 +12348,7 @@
 								{
 									"type": "entries",
 									"name": "P5: Shemeshka's Guard",
+									"page": 83,
 									"id": "1d4",
 									"entries": [
 										"Characters can only access this area if the portal here is activated, creating a connection with {@adventure area P1|ToFW|3|P1: Fortune's End} (see the \"{@adventure Guards|ToFW|3|Guards}\" section earlier in this chapter). On entering this area, read the following description:",
@@ -11983,6 +12363,7 @@
 										{
 											"type": "entries",
 											"name": "Crystal Sphere",
+											"page": 83,
 											"id": "1d6",
 											"entries": [
 												"The crystal sphere shows scenes of {@adventure areas P1|ToFW|3|P1: Fortune's End}\u2013{@adventure P4|ToFW|3|P4: Fiend's Ante}, scrying on them as if it were a {@item crystal ball of true seeing}. The scene in the sphere changes to a different scene every 10 seconds. If removed from where it hovers, the sphere functions as a normal {@item crystal ball}."
@@ -11991,6 +12372,7 @@
 										{
 											"type": "entries",
 											"name": "Portal",
+											"page": 83,
 											"id": "1d7",
 											"entries": [
 												"A one-way portal here connects with area P1. It requires a powdered fox tooth to open\u2014both archons here carry a vial of such powder. Once opened, the portal remains open for 10 minutes. See the \"{@adventure Guards|ToFW|3|Guards}\" section earlier in this chapter for details on how to open this portal from area P1."
@@ -12001,6 +12383,7 @@
 								{
 									"type": "entries",
 									"name": "P6a: House of Liars",
+									"page": 83,
 									"id": "1d8",
 									"entries": [
 										{
@@ -12016,6 +12399,7 @@
 										{
 											"type": "entries",
 											"name": "Shemeshka's Domain",
+											"page": 84,
 											"id": "1da",
 											"entries": [
 												"The House of Liars is among Shemeshka's favorite safe houses, a layer of the Abyss she conned away from its previous owner, the demon Alrunes. Shemeshka can will the semiliving domain to defend her. During any battle that takes place in area P6 while Shemeshka is present, roll on the House of Liars Defenses table each round at initiative count 0.",
@@ -12054,6 +12438,7 @@
 										{
 											"type": "entries",
 											"name": "Mosaics",
+											"page": 84,
 											"id": "1db",
 											"entries": [
 												"The walls are covered in geometric patterns formed by gemstones. Each of the thousands of gems holds a tiny figure. These individuals are spies, scholars, and foes of Shemeshka whom the arcanaloth keeps bound using the Resplendent Cage (see {@adventure area P6b|ToFW|3|P6b: Resplendent Cage})."
@@ -12062,6 +12447,7 @@
 										{
 											"type": "entries",
 											"name": "Treasure",
+											"page": 84,
 											"id": "1dc",
 											"entries": [
 												"A character who searches the room finds curios worth 15,000 gp, a {@item dagger of venom}, a suit of {@item demon armor}, and an {@item Instrument of the Bards, Anstruth Harp||instrument of the bards (Anstruth harp)}, all designed with vulpine shapes.",
@@ -12079,6 +12465,7 @@
 								{
 									"type": "entries",
 									"name": "P6b: Resplendent Cage",
+									"page": 84,
 									"id": "1dd",
 									"entries": [
 										{
@@ -12093,6 +12480,7 @@
 										{
 											"type": "entries",
 											"name": "Prisoners",
+											"page": 84,
 											"id": "1df",
 											"entries": [
 												"Shemeshka tries to dissuade the characters from freeing random imprisoned creatures, many of which are evil or dangerous."
@@ -12103,6 +12491,7 @@
 								{
 									"type": "entries",
 									"name": "What Shemeshka Really Knows",
+									"page": 84,
 									"id": "1e0",
 									"entries": [
 										"Once Shemeshka's bodyguards are dispatched, she exasperatedly offers to tell the characters everything they want to know if they swear to leave and never bother her again. If they agree, she shares the following details:",
@@ -12126,6 +12515,7 @@
 						{
 							"type": "entries",
 							"name": "Unity of Self",
+							"page": 85,
 							"id": "1e1",
 							"entries": [
 								"Each character has another incarnation of themself imprisoned in a gem amid the walls of Shemeshka's sanctuary. If these gems are found and placed in {@adventure area P6b|ToFW|3|P6b: Resplendent Cage}, the incarnations are freed, and the following things happen:",
@@ -12161,6 +12551,7 @@
 								{
 									"type": "entries",
 									"name": "Returned Memories",
+									"page": 85,
 									"id": "1e2",
 									"entries": [
 										"When the characters' memories return, they're once again aware of the exploits of their 17th-level selves and how they ran afoul of Shemeshka's plots. Players can detail these memories however they please. They can fill in their characters' backgrounds all at once, or they can take time to process their characters' memories, recovering details a little at a time\u2014potentially over multiple sessions.",
@@ -12182,6 +12573,7 @@
 								{
 									"type": "entries",
 									"name": "Heroic Equipment",
+									"page": 85,
 									"id": "1e3",
 									"entries": [
 										"Trapped with each incarnation in the House of Liars are magic items each character possessed when they were at the height of their power. Now that the characters have regained that power, their lost magic items return. Each player should choose one of the following options, then select magic items of these rarities from the {@book Dungeon Master's Guide|DMG}:",
@@ -12196,6 +12588,7 @@
 						{
 							"type": "entries",
 							"name": "Fate of the Multiverse",
+							"page": 85,
 							"id": "1e4",
 							"entries": [
 								"With their memories restored, the characters are whole once more. However, they're now aware that they're not the only victims of Shemeshka's schemes. How they might put an end to this interplanar disruption is detailed in the following chapter.",
@@ -12207,6 +12600,7 @@
 				{
 					"type": "section",
 					"name": "Chapter 15: Echoes of Delusion",
+					"page": 86,
 					"id": "1e5",
 					"entries": [
 						"With their memories and capabilities restored, the characters are prepared to face any threat in the multiverse. The modron {@creature R04M|ToFW} has their first challenge in mind, though: freeing its lost modron brethren and putting an end to the disruption in the Outlands that caused the characters to become unmoored from reality.",
@@ -12225,6 +12619,7 @@
 						{
 							"type": "entries",
 							"name": "Missing Modrons",
+							"page": 86,
 							"id": "1e6",
 							"entries": [
 								"When the characters meet with {@creature R04M|ToFW} again, the monodrone assesses that they can now do what it couldn't: correct the multiversal disruption that affected the party and caused other glitches across the Outlands. {@creature R04M|ToFW} provides the following information:",
@@ -12244,6 +12639,7 @@
 								{
 									"type": "entries",
 									"name": "Back to the Outlands",
+									"page": 86,
 									"id": "1e7",
 									"entries": [
 										"Once the characters agree to aid {@creature R04M|ToFW}, they'll need to find a way to reach Gzemnid's Realm. {@creature R04M|ToFW} shares the location of the portal he originally used to escape into Sigil. This portal's location is up to you. Use this opportunity to return to a favorite site in the adventure or to help characters acclimate to their new powers. The {@creature R04M|ToFW}'s Portal table suggests a few locations for the gate to Gzemnid's Realm.",
@@ -12289,6 +12685,7 @@
 								{
 									"type": "entries",
 									"name": "Phenomenal Power",
+									"page": 86,
 									"id": "1e8",
 									"entries": [
 										"The characters have gained considerable power since their last adventure, and the challenges in the following section will test that power. Consider giving characters an opportunity to familiarize themselves with their new powers. Unused portions of this adventure, {@book Sigil and the Outlands|SatO}, {@book Morte's Planar Parade|MPP}, or even another anthology of D&D adventures can provide level-appropriate threats. When the characters are ready, proceed with the following section."
@@ -12299,12 +12696,14 @@
 						{
 							"type": "entries",
 							"name": "Tyrant's Spiral",
+							"page": 87,
 							"id": "1e9",
 							"entries": [
 								"The realm of the beholder deity Gzemnid lies beneath the Outlands. Most entrances into these mysterious, gas-filled caverns are found near chaotically aligned gate-towns\u2014like Bedlam, Sylvania, or Xaos\u2014but Gzemnid's Realm is elusive, even by the mutable standards of the Outlands. The portion of the Great Modron March that {@creature R04M|ToFW} belonged to became lost in a magically shifting cave system known as Tyrant's Spiral. These gas-filled caverns change constantly, trapping the modrons in an ever-contorting circle that exposes them to the same grim visions over and over again.",
 								{
 									"type": "entries",
 									"name": "Tyrant's Spiral Features",
+									"page": 87,
 									"id": "1ea",
 									"entries": [
 										"Tyrant's Spiral has the following features:",
@@ -12344,6 +12743,7 @@
 								{
 									"type": "entries",
 									"name": "Fungal Observers",
+									"page": 87,
 									"id": "1eb",
 									"entries": [
 										"Gzemnid's Realm is covered with fungal growths bristling with eyestalks and harmless maws. The beholder deity Gzemnid sees through these fungi and threatens intruders by whispering through countless lichenous mouths. This effect can't be dispelled. Improvise how the arrogant god comments on the characters' situation. Gzemnid always refers to itself in the third person. Examples of the beholder god's commentary are provided here:",
@@ -12356,6 +12756,7 @@
 								{
 									"type": "entries",
 									"name": "Marching Modrons",
+									"page": 88,
 									"id": "1ec",
 									"entries": [
 										"Thousands of modrons march through the caves, unaware that they're traveling in an endless loop. The modrons are indifferent to other creatures and ignore creatures they trample or creatures that try to communicate. If faced with barriers, the modrons create simple structures (like bridges or towers) by linking their bodies or dig around impediments. No matter how many modrons are destroyed, more take their place.",
@@ -12366,6 +12767,7 @@
 								{
 									"type": "entries",
 									"name": "Prepared for Power",
+									"page": 88,
 									"id": "1ed",
 									"entries": [
 										"Before running this part of the adventure, familiarize yourself with the characters' new class features. These powers should make the characters feel potent, but if you find the party overpowering encounters in this chapter, consider adding the following additional challenges after a round or two of combat:",
@@ -12390,6 +12792,7 @@
 								{
 									"type": "entries",
 									"name": "Tyrant's Spiral Locations",
+									"page": 88,
 									"id": "1ee",
 									"entries": [
 										"The following locations are keyed to map 15.1. This map is divided into six smaller maps depicting sites along the modrons' endless march. The distance between areas varies from yards to miles. Feel free to add additional encounters between areas, to change their order, or to have the characters come across the same areas multiple times to reinforce the space's surreal nature.",
@@ -12577,6 +12980,7 @@
 								{
 									"type": "entries",
 									"name": "T1: Lair of the Eye",
+									"page": 88,
 									"id": "1ef",
 									"entries": [
 										"Read or paraphrase the following text when the characters first enter the area:",
@@ -12602,6 +13006,7 @@
 										{
 											"type": "entries",
 											"name": "Stalks of Gzemnid",
+											"page": 88,
 											"id": "1f1",
 											"entries": [
 												"Soon after the characters enter the area, an ancient beholder drifts under one of the holes in the room's ceiling, then rasps, \"Great Gzemnid! See me clearly!\" This might be Xabash or another beholder if Xabash was destroyed. A round later, the earth shakes, and a gigantic beholder eyestalk bursts from above. This {@creature Eyestalk of Gzemnid|ToFW|giant eyestalk} uses the {@creature purple worm} stat block, but instead of Tail Stinger, it has the following action:",
@@ -12612,6 +13017,7 @@
 														{
 															"type": "entries",
 															"name": "Eradication Gaze (Recharge 5\u20136)",
+															"page": 88,
 															"id": "1f3",
 															"entries": [
 																"The eyestalk creates an area of magical devastation in a 150-foot cone. Any creature in that area must succeed on a DC 16 Dexterity saving throw or take 55 ({@dice 10d10}) necrotic damage. If this damage reduces a creature to 0 hit points, its body becomes a pile of fine violet dust."
@@ -12640,6 +13046,7 @@
 								{
 									"type": "entries",
 									"name": "T2: Beherit's Head",
+									"page": 90,
 									"id": "1f4",
 									"entries": [
 										{
@@ -12665,6 +13072,7 @@
 								{
 									"type": "entries",
 									"name": "T3: Ocular Space",
+									"page": 90,
 									"id": "1f6",
 									"entries": [
 										{
@@ -12679,6 +13087,7 @@
 										{
 											"type": "entries",
 											"name": "Beholders",
+											"page": 91,
 											"id": "1f8",
 											"entries": [
 												"Two {@creature Beholder||beholders} drift amid the floating rocks. They ignore the modrons but attack any other creature that moves amid the rocks. The beholders fight to the death while arguing between themselves whether to devour or to petrify the interlopers."
@@ -12687,6 +13096,7 @@
 										{
 											"type": "entries",
 											"name": "Pit",
+											"page": 91,
 											"id": "1f9",
 											"entries": [
 												"The pit is bottomless. Any creature that falls into it plummets for over 200 feet before landing on a ledge and taking 70 ({@dice 20d6}) bludgeoning damage."
@@ -12695,6 +13105,7 @@
 										{
 											"type": "entries",
 											"name": "Treasure",
+											"page": 91,
 											"id": "1fa",
 											"entries": [
 												"An {@item Ioun Stone, Mastery||Ioun stone (mastery)} is loosely embedded in the sculpted eye of one of the rocks floating over the pit. The first character with a passive Wisdom ({@skill Perception}) score of 18 or higher who comes within 5 feet of the rocks, or who checks the rocks with a {@spell detect magic} spell, notices the gem."
@@ -12705,6 +13116,7 @@
 								{
 									"type": "entries",
 									"name": "T4: Arlgolcheir's Morass",
+									"page": 91,
 									"id": "1fb",
 									"entries": [
 										{
@@ -12730,6 +13142,7 @@
 								{
 									"type": "entries",
 									"name": "T5: Gzemnid's Maw",
+									"page": 91,
 									"id": "1fd",
 									"entries": [
 										{
@@ -12745,6 +13158,7 @@
 										{
 											"type": "entries",
 											"name": "Modron Bridge",
+											"page": 91,
 											"id": "1ff",
 											"entries": [
 												"Hundreds of modrons form the bridge that spans the ravine while other modrons cross along their backs. These modrons don't defend themselves, but three {@creature Nonaton Modron|MPP|nonaton modrons} (see {@book Morte's Planar Parade|MPP}) emerge from the marching throng and engage any creature that attacks the bridge. These nonatons fight to the death. If the nonatons are defeated, three more nonatons arrive to defend the bridge after 1 minute."
@@ -12753,6 +13167,7 @@
 										{
 											"type": "entries",
 											"name": "Damaging the Bridge",
+											"page": 91,
 											"id": "200",
 											"entries": [
 												"Treat the modrons at the base of each side of the bridge as a Large object with AC 14 and 40 hit points. If destroyed, hundreds of modrons plummet into Gzemnid's maw, and the march halts for 5 minutes as more modrons pile atop one another to create a new bridge."
@@ -12761,6 +13176,7 @@
 										{
 											"type": "entries",
 											"name": "Outlands Portal",
+											"page": 91,
 											"id": "201",
 											"entries": [
 												"In addition to being a destructive rift, Gzemnid's maw is also a gigantic portal controlled by the beholder god itself. If Gzemnid can be convinced to open the portal and suppress the rift, the portal opens to a ravine near the gate-town of Xaos, and matter that passes through isn't destroyed. See \"{@adventure Escaping Tyrant's Spiral|ToFW|3|Escaping Tyrant's Spiral}\" later in this chapter for details on using this portal."
@@ -12771,6 +13187,7 @@
 								{
 									"type": "entries",
 									"name": "T6: X01's Throng",
+									"page": 91,
 									"id": "202",
 									"entries": [
 										{
@@ -12785,6 +13202,7 @@
 										{
 											"type": "entries",
 											"name": "X01",
+											"page": 92,
 											"id": "204",
 											"entries": [
 												"The modrons' leader has full hit points and the {@condition paralyzed} condition. {@creature X01|ToFW} can be interacted with only if it is separated from its septon bearers and moved away from the marching modrons. If the characters move {@creature X01|ToFW} away and attempt to repair or otherwise interact with it, see the following section."
@@ -12797,12 +13215,14 @@
 						{
 							"type": "entries",
 							"name": "Bad Data",
+							"page": 92,
 							"id": "205",
 							"entries": [
 								"The modron leader {@creature X01|ToFW} isn't just damaged\u2014its mind has been overwhelmed. This is a result of flawed orders {@creature X01|ToFW} received when it left Mechanus during the last Great Modron March, but more so because the misinformation it gathered in Tyrant's Spiral has skewed its understanding of the Outlands. {@creature X01|ToFW} and the modrons it leads now believe the Outlands are overrun with fiendish horrors and that the gears of Mechanus require major readjustments to restore balance to the planes.",
 								{
 									"type": "entries",
 									"name": "Investigating X01",
+									"page": 92,
 									"id": "206",
 									"entries": [
 										"A character who spends 1 minute investigating {@creature X01|ToFW} finds a panel on the modron's head leaking green vapor. If the panel is opened or {@creature X01|ToFW} is deliberately damaged, read the following:",
@@ -12819,6 +13239,7 @@
 								{
 									"type": "entries",
 									"name": "Corrupted Data",
+									"page": 92,
 									"id": "208",
 									"entries": [
 										{
@@ -12832,6 +13253,7 @@
 										{
 											"type": "entries",
 											"name": "Replacement Data",
+											"page": 92,
 											"id": "20a",
 											"entries": [
 												"As the planar incarnate is a manifestation of {@creature X01|ToFW}'s beliefs, those beliefs can be undermined. A character can present to {@creature X01|ToFW} evidence that the Outlands aren't overrun by Fiends, such as mementos they picked up in the gate-towns or recordings from the Mosaic Mimir. If a character uses an action to present such information and succeeds on a DC 18 Charisma ({@skill Persuasion}) check, the planar incarnate has disadvantage on attack rolls and saving throws until the start of the character's next turn."
@@ -12842,6 +13264,7 @@
 								{
 									"type": "entries",
 									"name": "Lost Data",
+									"page": 92,
 									"id": "20b",
 									"entries": [
 										"Once the planar incarnate is destroyed, {@creature X01|ToFW} collapses. A character with proficiency in Intelligence ({@skill Arcana} or {@skill Medicine}) can tell the following:",
@@ -12871,6 +13294,7 @@
 						{
 							"type": "entries",
 							"name": "Reactivating X01",
+							"page": 92,
 							"id": "20c",
 							"entries": [
 								{
@@ -12888,6 +13312,7 @@
 								{
 									"type": "entries",
 									"name": "Accurate",
+									"page": 94,
 									"id": "20d",
 									"entries": [
 										"If the characters' {@item mimir|SatO} largely details the Outlands in an unbiased way, {@creature X01|ToFW} realizes reality is behaving within expected parameters. It reactivates as a calm, logical modron that is eager to lead its followers directly to Mechanus, where they can make an unremarkable report."
@@ -12896,6 +13321,7 @@
 								{
 									"type": "entries",
 									"name": "Inconsistent",
+									"page": 94,
 									"id": "20e",
 									"entries": [
 										"If the characters provided inconsistent details about the Outlands\u2014several accurate and several skewed\u2014{@creature X01|ToFW} reactivates and exhibits dramatic mood swings. It seeks to lead the modrons to its home plane, but it is uncertain where that is."
@@ -12904,6 +13330,7 @@
 								{
 									"type": "entries",
 									"name": "Skewed",
+									"page": 94,
 									"id": "20f",
 									"entries": [
 										"If the characters' reports on the Outlands reflect their bias for a particular philosophy or alignment, the modrons act in opposition. The Skewed Data Results table notes {@creature X01|ToFW}'s personality after being influenced by data skewed along the lines of particular alignments. If the information characters provided to their {@item mimir|SatO} strongly reflects the philosophies of a faction in Sigil, choose the result that best corresponds with that faction's agenda.",
@@ -12944,12 +13371,14 @@
 						{
 							"type": "entries",
 							"name": "Escaping Tyrant's Spiral",
+							"page": 94,
 							"id": "210",
 							"entries": [
 								"If {@creature X01|ToFW} is reactivated, the modron wants to escape Tyrant's Spiral, but it doesn't know about the portals in the nearby areas. Characters might use the methods here to help the modrons escape.",
 								{
 									"type": "entries",
 									"name": "Portal to Hopeless",
+									"page": 94,
 									"id": "211",
 									"entries": [
 										"The portal to {@book Hopeless|SatO|3|Hopeless} in {@adventure area T3|ToFW|3|T3: Ocular Space} is narrow and a challenge for the modrons to reach. It will take days for all the modrons to pass through, and likely many portal-key tears to keep the portal open. {@creature Beholder||Beholders} also frequent this area and try to pick off modrons as they escape."
@@ -12958,6 +13387,7 @@
 								{
 									"type": "entries",
 									"name": "Portal to Sigil",
+									"page": 94,
 									"id": "212",
 									"entries": [
 										"The portal in {@adventure area T1|ToFW|3|T1: Lair of the Eye}, which the characters used to enter Tyrant's Spiral, still functions. However, like the portal to Hopeless, it is difficult to reach. Additionally, unleashing thousands of modrons on Sigil is dangerous. Should this happen, the Lady of Pain intervenes quickly and, through a {@creature dabus|MPP}, informs the characters they have 10 minutes to set things right. How the characters can reconcile this\u2014and avoid the Mazes\u2014is up to you."
@@ -12966,6 +13396,7 @@
 								{
 									"type": "entries",
 									"name": "Portal to Xaos",
+									"page": 94,
 									"id": "213",
 									"entries": [
 										"The portal in {@adventure area T5|ToFW|3|T5: Gzemnid's Maw} opens only when Gzemnid pleases. Characters can convince the beholder god to let the modrons pass, but Gzemnid demands to consume half the modrons first. A character can convince Gzemnid to eat only a quarter of the modrons by succeeding on a DC 20 Charisma ({@skill Persuasion}) check, or they might bribe Gzemnid with the promise of bringing it a more tempting meal\u2014for example, it has always wanted to eat a dragon or another god."
@@ -12974,6 +13405,7 @@
 								{
 									"type": "entries",
 									"name": "Remarkable Escape",
+									"page": 94,
 									"id": "214",
 									"entries": [
 										"It would take hundreds of castings of spells like {@spell gate} or {@spell teleportation circle} to relocate all the modrons. You might allow the characters to develop outlandish schemes or entreat otherworldly beings to help the modrons escape. Debts and ramifications accrued here can provide springboards to future adventures."
@@ -12982,6 +13414,7 @@
 								{
 									"type": "entries",
 									"name": "Abandonment or Sacrifice",
+									"page": 94,
 									"id": "215",
 									"entries": [
 										"The characters can leave the modrons in Tyrant's Spiral, but eventually Shemeshka or another being will manipulate the modrons to their own ends. If the characters try to destroy the modrons en masse, {@creature X01|ToFW} commands the modrons to defend themselves. Although annihilating the modrons would maintain the equilibrium of the planes, doing so might have ramifications on characters' alignments."
@@ -12994,12 +13427,14 @@
 				{
 					"type": "section",
 					"name": "Conclusion",
+					"page": 94,
 					"id": "216",
 					"entries": [
 						"If the characters release {@creature X01|ToFW} and the modrons from Tyrant's Spiral, their work for {@creature R04M|ToFW} is complete, but the ramifications for the multiverse might be dire.",
 						{
 							"type": "entries",
 							"name": "Realigning the Multiverse",
+							"page": 94,
 							"id": "217",
 							"entries": [
 								"How the characters contend with the lost modrons has far-rippling effects on the multiverse. The data from the characters' {@item mimir|SatO} affects not just {@creature X01|ToFW}'s perspective but also those of thousands of modrons. If the modrons return home, this data influences the cosmic alignment of Mechanus. Countless modrons across the multiverse then seek to rebalance the planes in accordance with the new arrangement of the plane of absolute law.",
@@ -13007,6 +13442,7 @@
 								{
 									"type": "entries",
 									"name": "Accurate",
+									"page": 95,
 									"id": "218",
 									"entries": [
 										"On returning to their home plane, the modrons report their data, which results in incremental refinements to Mechanus's workings. No precipitable changes to the status quo of the multiverse occur. No other creatures suffer the multiversal glitch the characters experienced."
@@ -13015,6 +13451,7 @@
 								{
 									"type": "entries",
 									"name": "Inconsistent",
+									"page": 95,
 									"id": "219",
 									"entries": [
 										"Unless the characters intervene, it takes months for {@creature X01|ToFW} and a much-diminished group of modrons to return to Mechanus. When they do, chaos ensues. Modrons behave strangely across the planes, and chaotic creatures like slaadi operate unopposed. Numerous creatures experience the multiversal glitch that affected the characters. Ultimately, the modron leader, Primus, initiates a new Great Modron March to correct the chaos sweeping the planes."
@@ -13023,6 +13460,7 @@
 								{
 									"type": "entries",
 									"name": "Skewed",
+									"page": 95,
 									"id": "21a",
 									"entries": [
 										"On the modrons' return to Mechanus, the skewed data in the characters' {@item mimir|SatO} causes all modrons across the planes to react differently toward different philosophies or types of beings. The Multiversal Effects of Skewed Data table summarizes the new behavior of the vast majority of modrons.",
@@ -13063,6 +13501,7 @@
 						{
 							"type": "entries",
 							"name": "Unity of Rings",
+							"page": 96,
 							"id": "21b",
 							"entries": [
 								"Once the characters have dealt with the modrons and escaped Tyrant's Spiral, they're free to go where they please. If they find themselves in the Outlands and seek to return to Sigil, they can find a portal to the city near the closest gate-town. This portal opens within sight of the Mortuary.",
@@ -13070,6 +13509,7 @@
 								{
 									"type": "entries",
 									"name": "Farrow or Other Sigil Contacts",
+									"page": 96,
 									"id": "21c",
 									"entries": [
 										"{@creature Farrow|ToFW} or another Sigil-based ally is glad to hear the characters resolved the strangeness plaguing them. The ally is well connected and know others who need accomplished adventurers. The ally also knows of useful portals, including those to Material Plane worlds the characters might hail from. Use this ally to lead the characters to future adventures."
@@ -13078,6 +13518,7 @@
 								{
 									"type": "entries",
 									"name": "R04M",
+									"page": 96,
 									"id": "21d",
 									"entries": [
 										"Depending on how the characters resolved the situation in Tyrant's Spiral, {@creature R04M|ToFW} might be pleased or horrified. Nevertheless, if the characters helped any of the modrons escape, {@creature R04M|ToFW} rewards them with the promised gems. This includes gems worth 15,013 gp as well as an {@item Elemental Gem, Emerald||elemental gem (emerald)} and a resin-encrusted {@item ring of regeneration}.",
@@ -13087,6 +13528,7 @@
 								{
 									"type": "entries",
 									"name": "Shemeshka",
+									"page": 96,
 									"id": "21e",
 									"entries": [
 										"The arcanaloth is frustrated by the characters' interfering with her plot and avoids them for a time, but she isn't one to let annoyance get in the way of opportunity. Shemeshka might eventually contact the characters to involve them in future schemes.",
@@ -13096,6 +13538,7 @@
 								{
 									"type": "entries",
 									"name": "Sigil Factions",
+									"page": 96,
 									"id": "21f",
 									"entries": [
 										"A character who reports their exploits to a Sigil faction they're a member of gains the attention of their faction's leaders. If the characters' {@item mimir|SatO} changed the multiverse in a way that their faction is in favor of or opposed to, a character's faction leader might have work for the party, either capitalizing on changes to reality or seeking to set things right."
@@ -13106,6 +13549,7 @@
 						{
 							"type": "entries",
 							"name": "The Lady's Gift",
+							"page": 96,
 							"id": "220",
 							"entries": [
 								"After the characters have attended to any immediate business in Sigil, read or paraphrase the following text when next they're traveling together in the city:",

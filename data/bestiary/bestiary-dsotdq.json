@@ -2613,10 +2613,12 @@
 			"_copy": {
 				"name": "Veteran",
 				"source": "MM",
-				"_trait": {
-					"name": "Hill Dwarf",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "Hill Dwarf",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -7731,10 +7733,12 @@
 			"_copy": {
 				"name": "Acolyte",
 				"source": "MM",
-				"_trait": {
-					"name": "Rock Gnome",
-					"source": "PHB"
-				},
+				"_templates": [
+					{
+						"name": "Rock Gnome",
+						"source": "PHB"
+					}
+				],
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",

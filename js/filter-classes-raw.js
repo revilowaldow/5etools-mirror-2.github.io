@@ -49,11 +49,11 @@ class PageFilterClassesRaw extends PageFilterClassesBase {
 	}
 
 	static async _pGetParentClass_pPrerelease ({sc}) {
-		await this._pGetParentClass_pPrereleaseBrew({sc, brewUtil: PrereleaseUtil});
+		return this._pGetParentClass_pPrereleaseBrew({sc, brewUtil: PrereleaseUtil});
 	}
 
 	static async _pGetParentClass_pBrew ({sc}) {
-		await this._pGetParentClass_pPrereleaseBrew({sc, brewUtil: BrewUtil2});
+		return this._pGetParentClass_pPrereleaseBrew({sc, brewUtil: BrewUtil2});
 	}
 
 	static async _pGetParentClass_pPrereleaseBrew ({sc, brewUtil}) {

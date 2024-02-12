@@ -21037,6 +21037,9 @@
 						"Creature Stat Blocks",
 						"Creature Descriptions"
 					]
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -27376,6 +27379,9 @@
 						"type": "appendix",
 						"identifier": "F"
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -30214,6 +30220,9 @@
 						"Conclusion",
 						"Appendix"
 					]
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -31303,7 +31312,7 @@
 					"name": "Story Tracker"
 				},
 				{
-					"name": "Cover"
+					"name": "Credits"
 				}
 			]
 		},
@@ -31416,6 +31425,9 @@
 						},
 						"Concluding the Adventure"
 					]
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -32372,6 +32384,9 @@
 						"Appendix A: Cheesemonger's Almanac",
 						"Appendix B: Kender Stumblenoodles Recipe"
 					]
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},

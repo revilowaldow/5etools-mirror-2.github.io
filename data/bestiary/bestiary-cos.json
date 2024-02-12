@@ -4745,10 +4745,12 @@
 			"_copy": {
 				"name": "Assassin",
 				"source": "MM",
-				"_trait": {
-					"name": "Vistana",
-					"source": "CoS"
-				}
+				"_templates": [
+					{
+						"name": "Vistana",
+						"source": "CoS"
+					}
+				]
 			},
 			"hasToken": true
 		},
@@ -4759,10 +4761,12 @@
 			"_copy": {
 				"name": "Bandit",
 				"source": "MM",
-				"_trait": {
-					"name": "Vistana",
-					"source": "CoS"
-				}
+				"_templates": [
+					{
+						"name": "Vistana",
+						"source": "CoS"
+					}
+				]
 			},
 			"hasToken": true
 		},
@@ -4773,10 +4777,12 @@
 			"_copy": {
 				"name": "Bandit Captain",
 				"source": "MM",
-				"_trait": {
-					"name": "Vistana",
-					"source": "CoS"
-				}
+				"_templates": [
+					{
+						"name": "Vistana",
+						"source": "CoS"
+					}
+				]
 			},
 			"hasToken": true
 		},
@@ -4787,10 +4793,12 @@
 			"_copy": {
 				"name": "Commoner",
 				"source": "MM",
-				"_trait": {
-					"name": "Vistana",
-					"source": "CoS"
-				}
+				"_templates": [
+					{
+						"name": "Vistana",
+						"source": "CoS"
+					}
+				]
 			},
 			"hasToken": true,
 			"hasFluffImages": true
@@ -4802,10 +4810,12 @@
 			"_copy": {
 				"name": "Guard",
 				"source": "MM",
-				"_trait": {
-					"name": "Vistana",
-					"source": "CoS"
-				}
+				"_templates": [
+					{
+						"name": "Vistana",
+						"source": "CoS"
+					}
+				]
 			},
 			"hasToken": true
 		},
@@ -4816,10 +4826,12 @@
 			"_copy": {
 				"name": "Spy",
 				"source": "MM",
-				"_trait": {
-					"name": "Vistana",
-					"source": "CoS"
-				}
+				"_templates": [
+					{
+						"name": "Vistana",
+						"source": "CoS"
+					}
+				]
 			},
 			"hasToken": true
 		},
@@ -4830,10 +4842,12 @@
 			"_copy": {
 				"name": "Thug",
 				"source": "MM",
-				"_trait": {
-					"name": "Vistana",
-					"source": "CoS"
-				}
+				"_templates": [
+					{
+						"name": "Vistana",
+						"source": "CoS"
+					}
+				]
 			},
 			"hasToken": true
 		},

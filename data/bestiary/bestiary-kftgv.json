@@ -713,6 +713,48 @@
 			"hasToken": true
 		},
 		{
+			"name": "Crimson Helmed Horror",
+			"source": "KftGV",
+			"_copy": {
+				"name": "Helmed Horror",
+				"source": "MM",
+				"_mod": {
+					"trait": [
+						{
+							"mode": "replaceArr",
+							"replace": "Spell Immunity",
+							"items": {
+								"name": "Spell Immunity",
+								"entries": [
+									"The helmed horror is immune to {@spell burning hands}, {@spell fireball}, and {@spell scorching ray}."
+								]
+							}
+						}
+					],
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "Longsword",
+							"items": {
+								"name": "Flaming Longsword",
+								"entries": [
+									"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) fire damage, or 9 ({@damage 1d10 + 4}) fire damage if used with two hands."
+								]
+							}
+						}
+					]
+				}
+			},
+			"bonus": [
+				{
+					"name": "Conjure Sword",
+					"entries": [
+						"As a bonus action on its first turn in combat, the helmed horror conjures a longsword-sized blade of fire, which appears in its free hand. This sword disappears in a cloud of smoke when the helmed horror drops to 0 hit points."
+					]
+				}
+			]
+		},
+		{
 			"name": "Dr. Cassee Dannell",
 			"isNpc": true,
 			"isNamedCreature": true,

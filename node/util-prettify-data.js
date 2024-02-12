@@ -40,6 +40,7 @@ const _FILE_PROP_ORDER = [
 	"foundrySubclassFeature",
 
 	"optionalfeature",
+	"optionalfeatureFluff",
 
 	"background",
 	"backgroundFeature",
@@ -200,6 +201,7 @@ function getFnListSort (prop) {
 		case "vehicleUpgrade":
 		case "backgroundFluff":
 		case "featFluff":
+		case "optionalfeatureFluff":
 		case "conditionFluff":
 		case "spellFluff":
 		case "itemFluff":

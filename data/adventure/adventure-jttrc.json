@@ -32274,7 +32274,9 @@
 						"type": "internal",
 						"path": "adventure/JttRC/credits.webp"
 					},
-					"maxWidth": 300
+					"maxWidth": 300,
+					"width": 850,
+					"height": 689
 				},
 				{
 					"type": "gallery",
@@ -32285,7 +32287,9 @@
 								"type": "internal",
 								"path": "adventure/JttRC/credits2.webp"
 							},
-							"title": "On the cover: A mischievous wynling soars above the Dyn Singh Night Market, avoiding people from countless lands and illusory shop signage, in this cover by Evyn Fong."
+							"title": "On the Cover: A mischievous wynling soars above the Dyn Singh Night Market, avoiding people from countless lands and illusory shop signage, in this cover by Evyn Fong.",
+							"width": 1280,
+							"height": 825
 						},
 						{
 							"type": "image",
@@ -32293,7 +32297,9 @@
 								"type": "internal",
 								"path": "adventure/JttRC/credits3.webp"
 							},
-							"title": "On the alt-cover: The aura of the Radiant Citadel illuminates the ancestral shapes of the Dawn Incarnates, gemstone manifestations of stories and spirits, in this cover by Sija Hong."
+							"title": "On the Alt-Cover: The aura of the Radiant Citadel illuminates the ancestral shapes of the Dawn Incarnates, gemstone manifestations of stories and spirits, in this cover by Sija Hong.",
+							"width": 1280,
+							"height": 825
 						}
 					]
 				}

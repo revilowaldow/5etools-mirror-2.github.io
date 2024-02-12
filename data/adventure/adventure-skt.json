@@ -21586,7 +21586,7 @@
 									"page": 112,
 									"id": "26a",
 									"entries": [
-										"Shortly after the characters arrive in Waterdeep, a cloud giant castle emerges from the clouds overhead and looms above the city, its ominous shadow causing widespread panic. Lady Laeral Silverhand dispatches heralds to calm the people and assure them that no harm will befall the city. If the adventurers decide to investigate, they must devise a method of reaching the giant castle, which hangs 1,000 feet in the air. The castle has a configuration similar to that of Lyn Armaal (see chapter 9, \"{@adventure Castle of the Cloud Giants|SKT|10}\") and is home to a neutral good clan made up of four adult {@creature Cloud Giant||cloud giants}, three {@creature Young Cloud Giant|SKT|young cloud giants}, four pet {@creature Griffon||griffons}, and eight {@creature Stone Giant||stone giants} that serve as guards. The {@creature Young Cloud Giant|SKT|young cloud giants} use the {@creature hill giant} statistics, with the following changes:",
+										"Shortly after the characters arrive in Waterdeep, a cloud giant castle emerges from the clouds overhead and looms above the city, its ominous shadow causing widespread panic. Lady Laeral Silverhand dispatches heralds to calm the people and assure them that no harm will befall the city. If the adventurers decide to investigate, they must devise a method of reaching the giant castle, which hangs 1,000 feet in the air. The castle has a configuration similar to that of Lyn Armaal (see chapter 9, \"{@adventure Castle of the Cloud Giants|SKT|11}\") and is home to a neutral good clan made up of four adult {@creature Cloud Giant||cloud giants}, three {@creature Young Cloud Giant|SKT|young cloud giants}, four pet {@creature Griffon||griffons}, and eight {@creature Stone Giant||stone giants} that serve as guards. The {@creature Young Cloud Giant|SKT|young cloud giants} use the {@creature hill giant} statistics, with the following changes:",
 										{
 											"type": "list",
 											"items": [
@@ -49952,7 +49952,9 @@
 						"type": "internal",
 						"path": "adventure/SKT/credits.webp"
 					},
-					"title": "On the cover: Heir to the Wyrmskull Throne, and indeed all giant-kind, the storm giant Serissa stands amidst the clouds, in the shadow of her mighty father, King Hekaton. Her contentious elder siblings, Mirran and Nym, occupy the forefront of this tempestuous illustration by the esteemed Tyler Jacobson."
+					"title": "On the Cover: Heir to the Wyrmskull Throne, and indeed all giant-kind, the storm giant Serissa stands amidst the clouds, in the shadow of her mighty father, King Hekaton. Her contentious elder siblings, Mirran and Nym, occupy the forefront of this tempestuous illustration by the esteemed Tyler Jacobson.",
+					"width": 1058,
+					"height": 704
 				}
 			]
 		}

@@ -27471,7 +27471,9 @@
 						"type": "internal",
 						"path": "adventure/DSotDQ/credits.webp"
 					},
-					"maxWidth": 300
+					"maxWidth": 300,
+					"width": 850,
+					"height": 843
 				},
 				{
 					"type": "gallery",
@@ -27482,7 +27484,9 @@
 								"type": "internal",
 								"path": "adventure/DSotDQ/credits2.webp"
 							},
-							"title": "On the cover: Dragons, draconians, and other servants of the Dragon Queen prepare for their invasion of Kalaman in this painting by Cynthia Sheppard."
+							"title": "On the Cover: Dragons, draconians, and other servants of the Dragon Queen prepare for their invasion of Kalaman in this painting by Cynthia Sheppard.",
+							"width": 1200,
+							"height": 780
 						},
 						{
 							"type": "image",
@@ -27490,7 +27494,9 @@
 								"type": "internal",
 								"path": "adventure/DSotDQ/credits3.webp"
 							},
-							"title": "On the cover: The grim visage of the death knight Lord Soth, Knight of the Black Rose, glares from of a tangle of charred thorns in this cover by Chase Stone."
+							"title": "On the Cover: The grim visage of the death knight Lord Soth, Knight of the Black Rose, glares from of a tangle of charred thorns in this cover by Chase Stone.",
+							"width": 1200,
+							"height": 780
 						}
 					]
 				}

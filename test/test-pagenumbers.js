@@ -3,6 +3,7 @@ import * as rl from "readline-sync";
 import * as fs from "fs";
 import "../js/parser.js";
 import "../js/utils.js";
+import {BLOCKLIST_SOURCES_PAGES} from "./util-test.js";
 
 const BLOCKLIST_FILE_PREFIXES = [
 	...ut.FILE_PREFIX_BLOCKLIST,
@@ -33,30 +34,6 @@ const BLOCKLIST_KEYS = new Set([
 	"dragonMundaneItems",
 ]);
 
-const BLOCKLIST_SOURCES = new Set([
-	// region Sources which only exist in digital form
-	Parser.SRC_DC,
-	Parser.SRC_SLW,
-	Parser.SRC_SDW,
-	Parser.SRC_VD,
-	Parser.SRC_HAT_TG,
-	Parser.SRC_HAT_LMI,
-	Parser.SRC_LK,
-	Parser.SRC_AATM,
-	Parser.SRC_HFStCM,
-
-	// N.b.: other MCV source creatures mysteriously have page numbers on Beyond
-	Parser.SRC_MCV4EC,
-	// endregion
-
-	// region Sources which are screens, and therefore "pageless"
-	Parser.SRC_SCREEN,
-	Parser.SRC_SCREEN_WILDERNESS_KIT,
-	Parser.SRC_SCREEN_DUNGEON_KIT,
-	Parser.SRC_SCREEN_SPELLJAMMER,
-	// endregion
-]);
-
 const SUB_KEYS = {};
 
 function run ({isModificationMode = false} = {}) {
@@ -74,7 +51,7 @@ function run ({isModificationMode = false} = {}) {
 					const data = json[k];
 					if (data instanceof Array) {
 						const noPage = data
-							.filter(it => !BLOCKLIST_SOURCES.has(SourceUtil.getEntitySource(it)))
+							.filter(it => !BLOCKLIST_SOURCES_PAGES.has(SourceUtil.getEntitySource(it)))
 							.filter(it => !(it.inherits ? it.inherits.page : it.page))
 							.filter(it => !it._copy?._preserve?.page);
 
@@ -90,7 +67,7 @@ function run ({isModificationMode = false} = {}) {
 										noPage.push(...subArr
 											// Skip un-named entries, as these are usually found on the page of their parent
 											.filter(subIt => subIt.name)
-											.filter(subIt => !BLOCKLIST_SOURCES.has(subIt.source))
+											.filter(subIt => !BLOCKLIST_SOURCES_PAGES.has(subIt.source))
 											.filter(subIt => !subIt.page));
 									});
 							});

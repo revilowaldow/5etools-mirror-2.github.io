@@ -45536,33 +45536,310 @@
 		},
 		{
 			"type": "section",
-			"name": "Cover",
-			"id": "4cc",
+			"name": "Credits",
 			"entries": [
 				{
-					"type": "gallery",
-					"images": [
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
 						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/PaBTSO/179-12-002.tso-cover.webp"
-							},
-							"title": "On the Cover: Goblins with psionic powers steal a piece of a mysterious obelisk from the sleepy town of Phandalin in this breathtaking cover by Antonio José Manzanedo.",
-							"credit": "Antonio José Manzanedo",
-							"width": 1194,
-							"height": 774
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Project Lead",
+									"entries": [
+										"Amanda Hamon"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Art Director",
+									"entries": [
+										"Bree Heiss"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Writers",
+									"entries": [
+										"Richard Baker, Eytan Bernstein, Makenzie De Armas, Amanda Hamon, Ron Lundeen, Christopher Perkins"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Rules Developers",
+									"entries": [
+										"Jeremy Crawford, Ben Petrisor"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Lead Editor",
+									"entries": [
+										"Eytan Bernstein"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Editors",
+									"entries": [
+										"Judy Bauer, Janica Carter, Christopher Perkins"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Lead Graphic Designer",
+									"entries": [
+										"Trish Yochum"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Additional Graphic Designer",
+									"entries": [
+										"Trystan Falcone"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Cover Illustrators",
+									"entries": [
+										"DZO, Antonio José Manzanedo"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Cartographer",
+									"entries": [
+										"Mike Schley"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Consultants",
+									"entries": [
+										"Rico Corazón, Siena East, Nivair Gabriel, Sara Thompson"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Interior Illustrators",
+									"entries": [
+										"Lily Abdullina, Wade Acuff, Zoltan Boros, Bruce Brenneise, Sam Burley, Devon Cady-Lee, Chris Casciano, Domenico Cava, Conceptopolis, CoupleOfKooks, Sarah Dahlinger, Kent Davis, Nikki Dawes, Axel Defois, Julie Dillon, Simon Dominic, Olga Drebas, Jason A. Engle, Isabel Gibney, Michele Giorgi, John Grello, Alexandre Honoré, Richard Luong, Warren Mahy, Brynn Metheney, Robson Michel, Scott Murphy, Jessica Nguyen, Hinchel Or, Vicki Pangestu, Klaus Pillon, Claudio Pozas, Steve Prescott, Julio Reyna, Wayne Reynolds, Ned Rogers, Mike Schley, Hex Sharpe, Ilya Shkipin, Craig J Spearing, John Stanko, Crystal Sully, Brian Valenzuela, Brian Valeza, Nino Vecia, Tyler Walpole, Jabari Weathers"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Concept Artists",
+									"entries": [
+										"Kent Davis, Richard Luong"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Project Engineer",
+									"entries": [
+										"Cynda Callaway"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Imaging Technicians",
+									"entries": [
+										"Daniel Corona, Kevin Yee"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Prepress Specialist",
+									"entries": [
+										"Jefferson Dunlap"
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "D&D Studio",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Executive Producer",
+													"entries": [
+														"Kyle Brink"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Game Architects",
+													"entries": [
+														"Jeremy Crawford, Christopher Perkins"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Studio Art Director",
+													"entries": [
+														"Josh Herman"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Art Manager",
+													"entries": [
+														"Rob Sather"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Art Department",
+													"entries": [
+														"Matt Cole, Trystan Falcone, Bree Heiss, Kate Irwin, Bob Jordan, Noor Rahman, Emi Tanji, Trish Yochum"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Design Department",
+													"entries": [
+														"Justice Ramin Arman, Makenzie De Armas, Dan Dillon, Amanda Hamon, Ron Lundeen, Ben Petrisor, Patrick Renie, F. Wesley Schneider, Carl Sibley, Jason Tondro, James Wyatt"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Managing Editor",
+													"entries": [
+														"Judy Bauer"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Editorial Department",
+													"entries": [
+														"Eytan Bernstein, Janica Carter, Adrian Ng"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Senior Producer",
+													"entries": [
+														"Dan Tovar"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Producers",
+													"entries": [
+														"Bill Benham, Siera Bruggeman, Robert Hawkey, Andy Smith, Gabriel Waluconis"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Director of Product Management",
+													"entries": [
+														"Liz Schuh"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Product Managers",
+													"entries": [
+														"Natalie Egan, Chris Lindsay, Hilary Ross, Chris Tulach"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "D&D Beyond",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Product Manager",
+													"entries": [
+														"Patrick Backmann, Jeff Turriff"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Digital Design Team",
+													"entries": [
+														"Jay Jani, Adam Walton, Cameron Powell, Joseph Keen, Sean Stoves"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"entries": [
+						"Special thanks to T. Alexander Stangroom and to the hundreds of playtesters whose efforts made this a better book.",
+						{
+							"type": "inset",
+							"name": "The following product provided information and inspiration:",
+							"entries": [
+								"{@adventure Lost Mine of Phandelver|LMoP}. 2014."
+							]
 						},
 						{
 							"type": "image",
 							"href": {
 								"type": "internal",
-								"path": "adventure/PaBTSO/180-12-003.tso-alt.webp"
+								"path": "adventure/PaBTSO/credits.webp"
 							},
-							"title": "On the Alt-Cover: A roiling array of sinister elements surrounds the titular obelisk that's at the center of the doom threatening Phandalin in this spectacular cover by DZO.",
-							"credit": "DZO",
-							"width": 1194,
-							"height": 774
+							"maxWidth": 350,
+							"width": 850,
+							"height": 578
+						},
+						{
+							"type": "gallery",
+							"images": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/PaBTSO/credits2.webp"
+									},
+									"title": "On the Cover: Goblins with psionic powers steal a piece of a mysterious obelisk from the sleepy town of Phandalin in this breathtaking cover by Antonio José Manzanedo.",
+									"width": 1194,
+									"height": 774
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/PaBTSO/credits3.webp"
+									},
+									"title": "On the Alt-Cover: A roiling array of sinister elements surrounds the titular obelisk that's at the center of the doom threatening Phandalin in this spectacular cover by DZO.",
+									"width": 1194,
+									"height": 774
+								}
+							]
 						}
 					]
 				}

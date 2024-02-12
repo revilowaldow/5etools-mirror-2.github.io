@@ -2,7 +2,7 @@
 
 // in deployment, `IS_DEPLOYED = "<version number>";` should be set below.
 globalThis.IS_DEPLOYED = undefined;
-globalThis.VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"1.199.2"/* 5ETOOLS_VERSION__CLOSE */;
+globalThis.VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"1.199.3"/* 5ETOOLS_VERSION__CLOSE */;
 globalThis.DEPLOYED_IMG_ROOT = undefined;
 // for the roll20 script to set
 globalThis.IS_VTT = false;
@@ -4079,7 +4079,8 @@ globalThis.DataUtil = {
 			if (it._copy) await DataUtil.generic._pMergeCopy(impl, page, entryList, it, options);
 
 			// Preload templates, if required
-			const templateData = entry._copy?._trait
+			// TODO(Template) allow templates for other entity types
+			const templateData = entry._copy?._templates
 				? (await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/bestiary/template.json`))
 				: null;
 			return DataUtil.generic.copyApplier.getCopy(impl, MiscUtil.copyFast(it), entry, templateData, options);
@@ -4601,25 +4602,49 @@ globalThis.DataUtil = {
 				if (copyMeta._mod) this._normaliseMods(copyMeta);
 
 				// fetch and apply any external template -- append them to existing copy mods where available
-				let template = null;
-				if (copyMeta._trait) {
-					template = templateData.monsterTemplate.find(t => t.name.toLowerCase() === copyMeta._trait.name.toLowerCase() && t.source.toLowerCase() === copyMeta._trait.source.toLowerCase());
-					if (!template) throw new Error(`${msgPtFailed} Could not find traits to apply with name "${copyMeta._trait.name}" and source "${copyMeta._trait.source}"`);
-					template = MiscUtil.copyFast(template);
+				let templates = null;
+				let templateErrors = [];
+				if (copyMeta._templates?.length) {
+					templates = copyMeta._templates
+						.map(({name: templateName, source: templateSource}) => {
+							templateName = templateName.toLowerCase().trim();
+							templateSource = templateSource.toLowerCase().trim();
 
-					if (template.apply._mod) {
-						this._normaliseMods(template.apply);
+							// TODO(Template) allow templates for other entity types
+							const template = templateData.monsterTemplate
+								.find(({name, source}) => name.toLowerCase().trim() === templateName && source.toLowerCase().trim() === templateSource);
 
-						if (copyMeta._mod) {
-							Object.entries(template.apply._mod).forEach(([k, v]) => {
-								if (copyMeta._mod[k]) copyMeta._mod[k] = copyMeta._mod[k].concat(v);
-								else copyMeta._mod[k] = v;
-							});
-						} else copyMeta._mod = template.apply._mod;
-					}
+							if (!template) {
+								templateErrors.push(`Could not find traits to apply with name "${templateName}" and source "${templateSource}"`);
+								return null;
+							}
 
-					delete copyMeta._trait;
+							return MiscUtil.copyFast(template);
+						})
+						.filter(Boolean);
+
+					templates
+						.forEach(template => {
+							if (!template.apply._mod) return;
+
+							this._normaliseMods(template.apply);
+
+							if (!copyMeta._mod) {
+								copyMeta._mod = template.apply._mod;
+								return;
+							}
+
+							Object.entries(template.apply._mod)
+								.forEach(([k, v]) => {
+									if (copyMeta._mod[k]) copyMeta._mod[k] = copyMeta._mod[k].concat(v);
+									else copyMeta._mod[k] = v;
+								});
+						});
+
+					delete copyMeta._templates;
 				}
+
+				if (templateErrors.length) throw new Error(`${msgPtFailed} ${templateErrors.join("; ")}`);
 
 				const copyToRootProps = new Set(Object.keys(copyTo));
 
@@ -4633,11 +4658,16 @@ globalThis.DataUtil = {
 					}
 				});
 
-				// apply any root racial properties after doing base copy
-				if (template && template.apply._root) {
-					Object.entries(template.apply._root)
-						.filter(([k, v]) => !copyToRootProps.has(k)) // avoid overwriting any real root properties
-						.forEach(([k, v]) => copyTo[k] = v);
+				// apply any root template properties after doing base copy
+				if (templates?.length) {
+					templates
+						.forEach(template => {
+							if (!template.apply?._root) return;
+
+							Object.entries(template.apply._root)
+								.filter(([k, v]) => !copyToRootProps.has(k)) // avoid overwriting any real root properties
+								.forEach(([k, v]) => copyTo[k] = v);
+						});
 				}
 
 				// apply mods
@@ -4742,7 +4772,7 @@ globalThis.DataUtil = {
 
 			return parent._versions
 				.map(ver => {
-					if (ver._template && ver._implementations?.length) return DataUtil.generic._getVersions_template({ver});
+					if (ver._abstract && ver._implementations?.length) return DataUtil.generic._getVersions_template({ver});
 					return DataUtil.generic._getVersions_basic({ver});
 				})
 				.flat()
@@ -4752,7 +4782,7 @@ globalThis.DataUtil = {
 		_getVersions_template ({ver}) {
 			return ver._implementations
 				.map(impl => {
-					let cpyTemplate = MiscUtil.copyFast(ver._template);
+					let cpyTemplate = MiscUtil.copyFast(ver._abstract);
 					const cpyImpl = MiscUtil.copyFast(impl);
 
 					DataUtil.generic._getVersions_mutExpandCopy({ent: cpyTemplate});
@@ -5515,6 +5545,11 @@ globalThis.DataUtil = {
 	optionalfeature: class extends _DataUtilPropConfigSingleSource {
 		static _PAGE = UrlUtil.PG_OPT_FEATURES;
 		static _FILENAME = "optionalfeatures.json";
+	},
+
+	optionalfeatureFluff: class extends _DataUtilPropConfigSingleSource {
+		static _PAGE = UrlUtil.PG_OPT_FEATURES;
+		static _FILENAME = "fluff-optionalfeatures.json";
 	},
 
 	class: class clazz extends _DataUtilPropConfigCustom {

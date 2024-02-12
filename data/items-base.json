@@ -797,7 +797,7 @@
 				"AF",
 				"RLD"
 			],
-			"range": "30/120",
+			"range": "40/120",
 			"reload": 50,
 			"dmg1": "3d6",
 			"dmgType": "R",

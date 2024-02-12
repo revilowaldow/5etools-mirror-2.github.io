@@ -96,6 +96,9 @@ class PageFilter {
 	static getListAliases (ent) {
 		return (ent.alias || []).map(it => `"${it}"`).join(",");
 	}
+
+	static _hasFluff (ent) { return ent.hasFluff || ent.fluff?.entries; }
+	static _hasFluffImages (ent) { return ent.hasFluffImages || ent.fluff?.images; }
 	// endregion
 }
 

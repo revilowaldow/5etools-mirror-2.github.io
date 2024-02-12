@@ -142,8 +142,8 @@ class PageFilterRaces extends PageFilter {
 		if (r.srd) r._fMisc.push("SRD");
 		if (r.basicRules) r._fMisc.push("Basic Rules");
 		if (SourceUtil.isLegacySourceWotc(r.source)) r._fMisc.push("Legacy");
-		if (r.hasFluff || r.fluff?.entries) r._fMisc.push("Has Info");
-		if (r.hasFluffImages || r.fluff?.images) r._fMisc.push("Has Images");
+		if (this._hasFluff(r)) r._fMisc.push("Has Info");
+		if (this._hasFluffImages(r)) r._fMisc.push("Has Images");
 		if (r.lineage) r._fMisc.push("Lineage");
 		if (this._isReprinted({reprintedAs: r.reprintedAs, tag: "race", prop: "race", page: UrlUtil.PG_RACES})) r._fMisc.push("Reprinted");
 

@@ -209,7 +209,7 @@
 				{
 					"name": "False Appearance",
 					"entries": [
-						"If the wurm is motionless at the start of combat, it has advantage on its initiative roll. Moreover, if a creature hasn't observed the wurm move or act, that creature must succeed on a {@dc 18} Intelligence (Investigation) check to discern that the wurm is animate."
+						"If the wurm is motionless at the start of combat, it has advantage on its initiative roll. Moreover, if a creature hasn't observed the wurm move or act, that creature must succeed on a {@dc 18} Intelligence ({@skill Investigation}) check to discern that the wurm is animate."
 					]
 				},
 				{
@@ -2960,7 +2960,7 @@
 				{
 					"name": "Plant Camouflage",
 					"entries": [
-						"The treefolk has advantage on Dexterity (Stealth) checks it makes in forest terrain."
+						"The treefolk has advantage on Dexterity ({@skill Stealth}) checks it makes in forest terrain."
 					]
 				},
 				{

@@ -56941,7 +56941,7 @@
 										{
 											"type": "entries",
 											"name": "Draconic Inscription",
-											"page": 241,
+											"page": 251,
 											"id": "69d",
 											"entries": [
 												"The inscription reads \"Speak thy master's name and enter.\""
@@ -56950,7 +56950,7 @@
 										{
 											"type": "entries",
 											"name": "Eight Doors",
-											"page": 241,
+											"page": 251,
 											"id": "69e",
 											"entries": [
 												"A character who succeeds on a DC 10 Intelligence ({@skill Arcana}) check recognizes that the symbols on the doors represent the eight schools of magic. Opening any of the eight doors reveals utter darkness beyond. A creature that has {@sense darkvision} can't see into or through this magical darkness, but a warlock with Devil's Sight can. Magical light, as well as light created by spells of 8th level or lower, can't illuminate it. This darkness fills the tunnels south of the doors and can't be dispelled. To pass through safely, a character must speak the name of one of Iriolarthas's eight apprentices and then step through the door associated with that wizard's school of magic. The eight apprentices were:",
@@ -57945,7 +57945,7 @@
 				{
 					"type": "section",
 					"name": "Owlbear Whisperer",
-					"page": 319,
+					"page": 264,
 					"id": "6f4",
 					"entries": [
 						{

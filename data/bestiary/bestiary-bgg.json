@@ -1171,7 +1171,7 @@
 					"name": "Vortex {@recharge 5}",
 					"entries": [
 						"The cradle conjures a vortex of wind at a point it can see within 90 feet of itself. The wind vortex is a 30-foot-radius, 100-foot-high cylinder centered on that point. Each creature other than the cradle in that area must make a {@dc 25} Dexterity saving throw. On a failed save, a creature takes 71 ({@damage 11d12}) bludgeoning damage and has the {@condition restrained} condition within the vortex. On a successful save, a creature takes half as much damage and is pushed to the nearest unoccupied space outside the cylinder. The vortex lasts until the start of the cradle's next turn. A creature with the {@condition restrained} condition falls {@condition prone} when the vortex ends.",
-						"A creature with the {@condition restrained} condition can use its action to try to escape the vortex. The creature makes a {@dc 19} Strength (Athletics) or Dexterity (Acrobatics) check. On a successful check, the creature escapes and moves {@dice 3d6 × 10} feet away from the vortex in a random direction."
+						"A creature with the {@condition restrained} condition can use its action to try to escape the vortex. The creature makes a {@dc 19} Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check. On a successful check, the creature escapes and moves {@dice 3d6 × 10} feet away from the vortex in a random direction."
 					]
 				}
 			],
@@ -1688,7 +1688,7 @@
 					"name": "Rolling Hills {@recharge}",
 					"entries": [
 						"The cradle magically creates a wave of dirt that extends from a point on the ground within 120 feet of itself. The wave is up to 30 feet long, up to 30 feet tall, and up to 30 feet wide. Each creature in the wave must make a {@dc 22} Strength saving throw. On a failed save, a creature takes 58 ({@damage 9d12}) bludgeoning damage, has the {@condition prone} condition, and is buried under dirt. On a successful save, a creature takes half as much damage only.",
-						"A buried creature has the {@condition restrained} condition, has total cover, and can't breathe. As an action, a creature buried in this way, or another creature within 5 feet of it that isn't buried, can make a {@dc 17} Strength (Athletics) check. On a successful check, the buried creature no longer has the {@condition prone} or {@condition restrained} conditions."
+						"A buried creature has the {@condition restrained} condition, has total cover, and can't breathe. As an action, a creature buried in this way, or another creature within 5 feet of it that isn't buried, can make a {@dc 17} Strength ({@skill Athletics}) check. On a successful check, the buried creature no longer has the {@condition prone} or {@condition restrained} conditions."
 					]
 				}
 			],
@@ -3418,7 +3418,7 @@
 				{
 					"name": "Magma Wave (Requires Fire Rune)",
 					"entries": [
-						"The giant emits a wave of magma from its fire rune in a 30-foot cone. Each creature in that area must make a {@dc 19} Dexterity saving throw. On a failed save, a creature takes 36 ({@damage 8d8}) fire damage and has the {@condition restrained} condition. As an action, a creature can make a {@dc 19} Strength (Athletics) check, freeing itself or a creature within its reach from the rock on a success. The rock restraining each creature has AC 17; 20 hit points; and immunity to fire, poison, and psychic damage. On a successful save, a creature takes half as much damage only."
+						"The giant emits a wave of magma from its fire rune in a 30-foot cone. Each creature in that area must make a {@dc 19} Dexterity saving throw. On a failed save, a creature takes 36 ({@damage 8d8}) fire damage and has the {@condition restrained} condition. As an action, a creature can make a {@dc 19} Strength ({@skill Athletics}) check, freeing itself or a creature within its reach from the rock on a success. The rock restraining each creature has AC 17; 20 hit points; and immunity to fire, poison, and psychic damage. On a successful save, a creature takes half as much damage only."
 					]
 				}
 			],
@@ -5293,7 +5293,7 @@
 				{
 					"name": "Woodland Camouflage",
 					"entries": [
-						"The lynx has advantage on Dexterity (Stealth) checks made to hide in undergrowth or snowy terrain."
+						"The lynx has advantage on Dexterity ({@skill Stealth}) checks made to hide in undergrowth or snowy terrain."
 					]
 				}
 			],
@@ -5466,7 +5466,7 @@
 			],
 			"reaction": [
 				{
-					"name": "Absorbent Fleece (Recharge 6)",
+					"name": "Absorbent Fleece {@recharge}",
 					"entries": [
 						"Immediately after the ram succeeds on a saving throw against a spell or a spell's attack misses it, the ram can make one Force Bolt attack."
 					]
@@ -7196,7 +7196,7 @@
 				{
 					"name": "Fog of Deception",
 					"entries": [
-						"The scion conjures a magical cloud that fills a 30-foot-radius sphere centered on a point it can see within 90 feet of itself. Each creature in that area must make a {@dc 24} Wisdom saving throw. On a failed save, a creature has the {@condition charmed} condition until the end of its next turn. While it has the {@condition charmed} condition, the creature must use its action to make a melee attack against a creature other than itself of the scion's choice. If no creature is within its reach, the affected creature makes a ranged attack against a creature of the scion's choice, throwing its weapon if necessary. On a successful save, a creature is immune to the scion's Fog of Deception for the next 24 hours."
+						"The scion conjures a magical cloud that fills a 30-foot-radius sphere centered on a point it can see within 90 feet of itself. Each creature in that area must make a {@dc 24} Wisdom saving throw. On a failed save, a creature has the {@condition charmed} condition until the end of its next turn. While it has the {@condition charmed} condition, the creature must use its action to make a melee attack against a creature other than itself of the scion's choice. If no creature is within its reach, the affected creature makes a ranged attack against a creature of the scion's choice, throwing its weapon if necessary. On a successful save, a creature is immune to the scion's Fog of {@skill Deception} for the next 24 hours."
 					]
 				}
 			],
@@ -7766,7 +7766,7 @@
 				{
 					"name": "Lava Wave {@recharge 5}",
 					"entries": [
-						"The scion emits a wave of lava from its blade, hands, or mouth in a 90-foot cone. Each creature in that area must make a {@dc 25} Dexterity saving throw. On a failed save, a creature takes 60 ({@damage 11d10}) fire damage and has the {@condition restrained} condition from being embedded in hardening rock. A creature can make a {@dc 25} Strength (Athletics) check as an action, freeing itself or a creature within reach from the rock on a success. The rock has AC 17 and 40 hit points, and it is immune to fire, poison, and psychic damage. On a successful save, a creature takes half as much damage only."
+						"The scion emits a wave of lava from its blade, hands, or mouth in a 90-foot cone. Each creature in that area must make a {@dc 25} Dexterity saving throw. On a failed save, a creature takes 60 ({@damage 11d10}) fire damage and has the {@condition restrained} condition from being embedded in hardening rock. A creature can make a {@dc 25} Strength ({@skill Athletics}) check as an action, freeing itself or a creature within reach from the rock on a success. The rock has AC 17 and 40 hit points, and it is immune to fire, poison, and psychic damage. On a successful save, a creature takes half as much damage only."
 					]
 				}
 			],

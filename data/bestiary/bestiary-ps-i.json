@@ -978,7 +978,7 @@
 				{
 					"name": "Vampiric Glamer",
 					"entries": [
-						"The vampire obscures its form with mind-affecting magic that makes others perceive it as a beautiful human of the same size and shape. The illusion ends if the vampire takes a bonus action to end it or if the vampire dies. A creature that can see the vampire can take an action to visually inspect it, ending the mental effect on itself and seeing the vampire's true form with a successful {@dc 20} Wisdom (Perception) check."
+						"The vampire obscures its form with mind-affecting magic that makes others perceive it as a beautiful human of the same size and shape. The illusion ends if the vampire takes a bonus action to end it or if the vampire dies. A creature that can see the vampire can take an action to visually inspect it, ending the mental effect on itself and seeing the vampire's true form with a successful {@dc 20} Wisdom ({@skill Perception}) check."
 					]
 				},
 				{

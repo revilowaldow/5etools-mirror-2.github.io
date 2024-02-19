@@ -353,7 +353,7 @@
 				{
 					"name": "Hide in Plain Sight",
 					"entries": [
-						"The alseid has advantage on Dexterity (Stealth) checks made to hide while it is in grassland."
+						"The alseid has advantage on Dexterity ({@skill Stealth}) checks made to hide while it is in grassland."
 					]
 				},
 				{
@@ -464,13 +464,13 @@
 				{
 					"name": "Keen Sight",
 					"entries": [
-						"The raptor has advantage on Wisdom (Perception) checks that rely on sight."
+						"The raptor has advantage on Wisdom ({@skill Perception}) checks that rely on sight."
 					]
 				},
 				{
 					"name": "Recorded Mimicry",
 					"entries": [
-						"The raptor can mimic any sound, including voices, it has heard in the last 24 hours. A creature that hears the sounds can tell they are imitations with a successful {@dc 12} Wisdom (Insight) check."
+						"The raptor can mimic any sound, including voices, it has heard in the last 24 hours. A creature that hears the sounds can tell they are imitations with a successful {@dc 12} Wisdom ({@skill Insight}) check."
 					]
 				}
 			],
@@ -1428,7 +1428,7 @@
 				{
 					"name": "Amphora",
 					"entries": [
-						"{@atk mw} {@hit 6} to hit, reach 5 ft., one Medium or smaller creature. {@h}8 ({@damage 1d8 + 4}) bludgeoning damage. If there is not already a creature inside the amphora, the target is {@condition restrained} inside. As an action, the {@condition restrained} creature can make a {@dc 14} Dexterity (Acrobatics) check, escaping from the amphora on a success. The effect also ends if the amphora is destroyed. The amphora has AC 8, 20 hit points, and immunity to poison and psychic damage."
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one Medium or smaller creature. {@h}8 ({@damage 1d8 + 4}) bludgeoning damage. If there is not already a creature inside the amphora, the target is {@condition restrained} inside. As an action, the {@condition restrained} creature can make a {@dc 14} Dexterity ({@skill Acrobatics}) check, escaping from the amphora on a success. The effect also ends if the amphora is destroyed. The amphora has AC 8, 20 hit points, and immunity to poison and psychic damage."
 					]
 				}
 			],
@@ -2161,7 +2161,7 @@
 				{
 					"name": "Keen Smell",
 					"entries": [
-						"The lion has advantage on Wisdom (Perception) checks that rely on smell."
+						"The lion has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
 					]
 				},
 				{
@@ -4553,7 +4553,7 @@
 				{
 					"name": "Detect",
 					"entries": [
-						"Polukranos makes a Wisdom (Perception) check."
+						"Polukranos makes a Wisdom ({@skill Perception}) check."
 					]
 				},
 				{
@@ -4652,7 +4652,7 @@
 				{
 					"name": "Unreadable Face",
 					"entries": [
-						"The Returned is immune to any effect that would sense its emotions or read its thoughts. Wisdom (Insight) checks to ascertain the Returned's intentions or sincerity are made with disadvantage."
+						"The Returned is immune to any effect that would sense its emotions or read its thoughts. Wisdom ({@skill Insight}) checks to ascertain the Returned's intentions or sincerity are made with disadvantage."
 					]
 				}
 			],
@@ -4763,7 +4763,7 @@
 				{
 					"name": "Unreadable Face",
 					"entries": [
-						"The Returned is immune to any effect that would sense its emotions or read its thoughts. Wisdom (Insight) checks to ascertain the Returned's intentions or sincerity are made with disadvantage."
+						"The Returned is immune to any effect that would sense its emotions or read its thoughts. Wisdom ({@skill Insight}) checks to ascertain the Returned's intentions or sincerity are made with disadvantage."
 					]
 				}
 			],
@@ -4871,7 +4871,7 @@
 				{
 					"name": "Unreadable Face",
 					"entries": [
-						"The Returned is immune to any effect that would sense its emotions or read its thoughts. Wisdom (Insight) checks to ascertain the Returned's intentions or sincerity are made with disadvantage."
+						"The Returned is immune to any effect that would sense its emotions or read its thoughts. Wisdom ({@skill Insight}) checks to ascertain the Returned's intentions or sincerity are made with disadvantage."
 					]
 				}
 			],
@@ -4977,7 +4977,7 @@
 				{
 					"name": "Unreadable Face",
 					"entries": [
-						"The Returned is immune to any effect that would sense its emotions or read its thoughts. Wisdom (Insight) checks to ascertain the Returned's intentions or sincerity are made with disadvantage."
+						"The Returned is immune to any effect that would sense its emotions or read its thoughts. Wisdom ({@skill Insight}) checks to ascertain the Returned's intentions or sincerity are made with disadvantage."
 					]
 				}
 			],
@@ -6060,7 +6060,7 @@
 				{
 					"name": "Breath Weapon {@recharge 5}",
 					"entries": [
-						"The cerberus exhales a 15-foot cone of molten rock. Each creature in the cone must make a {@dc 12} Dexterity saving throw, taking 10 ({@damage 3d6}) fire damage on a failed save, or half as much damage on a successful one. On a failed save, a creature is also {@condition restrained} by the hardening rock. A creature can make a {@dc 12} Strength (Athletics) check as an action, freeing itself or a creature within reach from the rock on a success. The rock has AC 17 and 10 hit points, and it is immune to fire, poison, and psychic damage."
+						"The cerberus exhales a 15-foot cone of molten rock. Each creature in the cone must make a {@dc 12} Dexterity saving throw, taking 10 ({@damage 3d6}) fire damage on a failed save, or half as much damage on a successful one. On a failed save, a creature is also {@condition restrained} by the hardening rock. A creature can make a {@dc 12} Strength ({@skill Athletics}) check as an action, freeing itself or a creature within reach from the rock on a success. The rock has AC 17 and 10 hit points, and it is immune to fire, poison, and psychic damage."
 					]
 				}
 			],
@@ -6145,7 +6145,7 @@
 				{
 					"name": "Keen Smell",
 					"entries": [
-						"The typhon has advantage on Wisdom (Perception) checks that rely on smell."
+						"The typhon has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
 					]
 				},
 				{
@@ -6305,7 +6305,7 @@
 				{
 					"name": "Breath Weapon {@recharge 5}",
 					"entries": [
-						"The cerberus exhales a 30-foot cone of molten rock. Each creature in the cone must make a {@dc 15} Dexterity saving throw, taking 21 ({@damage 6d6}) fire damage on a failed save, or half as much damage on a successful one. On a failed save, a creature is also {@condition restrained} by the hardening rock. A creature can make a {@dc 15} Strength (Athletics) check as an action, freeing itself or a creature within reach from the rock on a success. The rock has AC 17 and 20 hit points, and it is immune to fire, poison, and psychic damage."
+						"The cerberus exhales a 30-foot cone of molten rock. Each creature in the cone must make a {@dc 15} Dexterity saving throw, taking 21 ({@damage 6d6}) fire damage on a failed save, or half as much damage on a successful one. On a failed save, a creature is also {@condition restrained} by the hardening rock. A creature can make a {@dc 15} Strength ({@skill Athletics}) check as an action, freeing itself or a creature within reach from the rock on a success. The rock has AC 17 and 20 hit points, and it is immune to fire, poison, and psychic damage."
 					]
 				}
 			],

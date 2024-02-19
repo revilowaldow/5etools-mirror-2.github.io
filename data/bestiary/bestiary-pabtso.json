@@ -1873,7 +1873,7 @@
 				{
 					"name": "Special Equipment",
 					"entries": [
-						"Glasstaff wields a staff of defense (see appendix B). With the staff in hand, he can use an action to cast the {@spell mage armor} spell and use his reaction to cast the {@spell shield} spell."
+						"Glasstaff wields a {@item staff of defense|PaBTSO} (see appendix B). With the staff in hand, he can use an action to cast the {@spell mage armor} spell and use his reaction to cast the {@spell shield} spell."
 					]
 				}
 			],

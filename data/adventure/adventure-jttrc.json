@@ -4795,7 +4795,7 @@
 						{
 							"type": "entries",
 							"name": "Ambush at the Archway",
-							"page": 60,
+							"page": 50,
 							"id": "0f4",
 							"entries": [
 								"As the characters reach the archway entrance to the village, the character who has the highest passive Wisdom ({@skill Perception}) score is the first to notice something is wrong:",
@@ -4825,14 +4825,14 @@
 				{
 					"type": "section",
 					"name": "Welcome to Milpazul",
-					"page": 60,
+					"page": 50,
 					"id": "0f7",
 					"entries": [
 						"Once the characters deal with the bounty hunters, a handful of locals thank the characters for their assistance and welcome them to Milpazul. Not everyone is enthused, though. Some villagers regard adventurers with distrust, fearing they'll bring more trouble.",
 						{
 							"type": "entries",
 							"name": "Entering the Village",
-							"page": 60,
+							"page": 50,
 							"id": "0f8",
 							"entries": [
 								"As the characters progress into the village, read the following:",
@@ -4848,7 +4848,7 @@
 								{
 									"type": "entries",
 									"name": "Rufina",
-									"page": 60,
+									"page": 50,
 									"id": "0fa",
 									"entries": [
 										"Formerly a human, Rufina is now an olvidado\u2014a deceased person who remained behind after the Night of the Remembered. Rufina doesn't know how or why they don't pass on to the afterlife. Although beings like Rufina are uncommon in the region, they're not unheard of, and the skeleton is a well-liked member of the community. Rufina is neutral good and uses the {@creature commoner} stat block, but is Undead and doesn't require air, food, drink, or sleep.",
@@ -18741,7 +18741,7 @@
 				{
 					"type": "section",
 					"name": "Starting the Adventure",
-					"page": 50,
+					"page": 150,
 					"id": "348",
 					"entries": [
 						"The adventure begins once the characters arrive in Akharin Sangar. The city is filled with locals anticipating the festival of Shabe Taabaan. Whether the characters seek accommodations, opportunities to shop, or a glimpse of the festivities, they soon find themselves in Three Sun Square. Once the characters arrive, read the following description:",

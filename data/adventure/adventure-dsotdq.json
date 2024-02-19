@@ -657,7 +657,7 @@
 						{
 							"type": "entries",
 							"name": "City of Kalaman",
-							"page": 1,
+							"page": 11,
 							"id": "018",
 							"entries": [
 								"Kalaman began as a sleepy fishing village on the coast of the Turbidus Ocean. It might have remained so if not for the arrival of an Istarian trading mission centuries before the Cataclysm. Seeing the potential of a deep harbor so close to the mouth of a great river, the Empire of Istar invested heavily in the town, transforming it into a thriving trade hub. Solamnia soon found Istar's stranglehold on the booming port intolerable, and after a climactic battle on the plains west of the city, Istar ceded control of Kalaman.",
@@ -1391,7 +1391,7 @@
 								{
 									"type": "entries",
 									"name": "Tarnished Pride",
-									"page": 7,
+									"page": 27,
 									"id": "05f",
 									"entries": [
 										"Before the Cataclysm, Solamnia was a beacon of peace and prosperity. The knights established great cities and castles across the Plains of Solamnia, including Solanthus, Castle Brightblade, and Dargaard Keep. They ruled in accordance with the ideals of Vinas Solamnus, and they forged an alliance with Istar that spread those ideals across the world. The people of Solamnia attributed their prosperity to the wise and just rulership of the knights.",
@@ -1497,7 +1497,7 @@
 								{
 									"type": "entries",
 									"name": "Order of the Red Robes",
-									"page": 9,
+									"page": 29,
 									"id": "069",
 									"entries": [
 										"Inspired by the neutral god Lunitari, the Red Robes help others when it suits them and use their gifts for their own enrichment as they desire. Mages of the Red Robes are expected to wield their power responsibly, represent their order faithfully, and uphold the balance between good and evil in their own actions and the world at large."
@@ -1506,7 +1506,7 @@
 								{
 									"type": "entries",
 									"name": "Order of the Black Robes",
-									"page": 9,
+									"page": 29,
 									"id": "06a",
 									"entries": [
 										"Often reviled and feared in equal measure, the Black Robes follow the example of the evil god Nuitari, the black moon of Krynn. A mage of the Black Robes is expected to first further their own ambitions, then pursue the goals of their order, and then support the continued well-being of the Conclave."
@@ -2658,7 +2658,7 @@
 										{
 											"type": "entries",
 											"name": "Wall Carvings",
-											"page": 7,
+											"page": 47,
 											"id": "0c8",
 											"entries": [
 												"The carvings on the wall around the rotunda are magical runes. A character who examines the carvings learns their meaning by succeeding on a DC 14 Intelligence ({@skill Arcana}) check or by spending an hour studying them. The runes are an arcane cipher for the {@spell knock} spell. Reading the spell from the wall allows a character to cast the spell as if they were casting it from a {@item spell scroll} of {@spell knock}, except the spell on the wall isn't consumed. The characters can use this spell to open the door and complete the test."
@@ -3646,7 +3646,7 @@
 										{
 											"type": "entries",
 											"name": "Flaw",
-											"page": 5,
+											"page": 55,
 											"id": "0f0",
 											"entries": [
 												"\"I romanticize the past. That's when people had the chance to become legends.\""
@@ -3786,7 +3786,7 @@
 										{
 											"type": "entries",
 											"name": "Personality Trait",
-											"page": 7,
+											"page": 57,
 											"id": "0f9",
 											"entries": [
 												"\"My blood, my looks, my skill; everything about me is better than you.\""
@@ -3927,7 +3927,7 @@
 				{
 					"type": "section",
 					"name": "Parting Gift",
-					"page": 8,
+					"page": 58,
 					"id": "108",
 					"entries": [
 						"The morning after Ispin's funeral, the characters can take Becklin up on her invitation to Thornwall Keep. They have plenty of time to visit in the morning, as the Kingfisher Festival celebrations don't kick off until midday.",
@@ -4324,7 +4324,7 @@
 						{
 							"type": "entries",
 							"name": "Battle of High Hill",
-							"page": 3,
+							"page": 63,
 							"id": "128",
 							"entries": [
 								{
@@ -6903,7 +6903,7 @@
 										{
 											"type": "entries",
 											"name": "Ideal",
-											"page": 7,
+											"page": 87,
 											"id": "1ab",
 											"entries": [
 												"\"Not only can I make that, I can make it better!\""
@@ -7820,7 +7820,7 @@
 										{
 											"type": "entries",
 											"name": "Gate Controls",
-											"page": 1,
+											"page": 91,
 											"id": "1cd",
 											"entries": [
 												"The north and south gates each have a mechanism to open and close that gate. Unlocking a gate mechanism requires using one of the outpost's three gate keys or succeeding on a DC 14 Dexterity check using thieves' tools. Once unlocked, the winch on the controls moves freely. It takes 1 minute to fully open or close the gates using the controls. Opening a gate attracts the attention of all creatures in areas W1, W2, {@area W3|1d0|x}, and {@area W4|1d2|x}."
@@ -7908,7 +7908,7 @@
 												{
 													"type": "item",
 													"name": "Treasure",
-													"page": 2,
+													"page": 92,
 													"entry": "Under each of the sets of bunks is a simple wooden footlocker. Each holds two sets of common clothes and 10 gp. One footlocker also contains a silvered {@item longsword|PHB}, while another contains a {@item holy symbol|PHB} of Takhisis and a key for the gate controls in {@area area W1|1cb|x}."
 												}
 											]
@@ -7925,7 +7925,7 @@
 										{
 											"type": "entries",
 											"name": "North Cell",
-											"page": 2,
+											"page": 92,
 											"id": "1d8",
 											"entries": [
 												"This locked cell holds a neutral human {@creature Kalaman soldier|DSotDQ} (see {@adventure appendix B|DSotDQ|9}) named Lanal Brint. He was sleeping off a night of drink in this cell when the outpost was taken. He tells the characters anything they want to know about the fortress\u2014such as how the gate mechanisms work\u2014but only after he's separated from Elgo (see below)."
@@ -8520,7 +8520,7 @@
 										{
 											"type": "entries",
 											"name": "Treasure",
-											"page": 7,
+											"page": 97,
 											"id": "1ff",
 											"entries": [
 												"Once {@creature Caradoc|DSotDQ} is defeated, a character can get a better look at the scroll he was holding. Its slightly scorched parchment is sealed by black wax with a rose emblem stamped into it. If they open the scroll, the characters see the following words burned into the page:",

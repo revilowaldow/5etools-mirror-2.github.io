@@ -57,7 +57,7 @@
 				{
 					"name": "False Appearance",
 					"entries": [
-						"If the spider is motionless, has its eyes and mouth closed, and has its legs wrapped around its body at the start of combat, it has advantage on its initiative roll. Moreover, if a creature hasn't observed the spider move or act, that creature must succeed on a {@dc 18} Intelligence (Investigation) check to discern that the spider is anything other than an asteroid."
+						"If the spider is motionless, has its eyes and mouth closed, and has its legs wrapped around its body at the start of combat, it has advantage on its initiative roll. Moreover, if a creature hasn't observed the spider move or act, that creature must succeed on a {@dc 18} Intelligence ({@skill Investigation}) check to discern that the spider is anything other than an asteroid."
 					]
 				},
 				{
@@ -1257,7 +1257,7 @@
 				{
 					"name": "False Appearance",
 					"entries": [
-						"If the yggdrasti is motionless and rooted in the ground at the start of combat, it looks just like a dead tree and has advantage on its initiative roll. Moreover, if a creature hasn't observed the rooted yggdrasti move or act, that creature must succeed on a {@dc 18} Intelligence (Investigation) check to discern that the yggdrasti is animate."
+						"If the yggdrasti is motionless and rooted in the ground at the start of combat, it looks just like a dead tree and has advantage on its initiative roll. Moreover, if a creature hasn't observed the rooted yggdrasti move or act, that creature must succeed on a {@dc 18} Intelligence ({@skill Investigation}) check to discern that the yggdrasti is animate."
 					]
 				},
 				{

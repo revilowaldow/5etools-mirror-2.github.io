@@ -3325,7 +3325,7 @@
 						{
 							"type": "entries",
 							"name": "Ice Caves (areas 8-14)",
-							"page": 117,
+							"page": 118,
 							"id": "0b3",
 							"entries": []
 						},
@@ -5141,7 +5141,7 @@
 						{
 							"type": "entries",
 							"name": "Ss'tck'al (areas 14-22)",
-							"page": 131,
+							"page": 132,
 							"id": "11c",
 							"entries": []
 						},
@@ -6421,7 +6421,7 @@
 						{
 							"type": "entries",
 							"name": "Stronghold (areas 1-10)",
-							"page": 137,
+							"page": 136,
 							"id": "140",
 							"entries": []
 						},
@@ -8420,7 +8420,7 @@
 								{
 									"type": "entries",
 									"name": "Treasure",
-									"page": 163,
+									"page": 153,
 									"id": "1a3",
 									"entries": [
 										"The bottom of the pool holds the treasure that's been dropped in by various visitors: six {@item Potion of Healing||potions of healing}, one {@item potion of growth}, one {@item potion of fire breath}, a {@item wand of fear}, three {@item +1 Dagger||+1 daggers}, a {@item driftglobe}, and an {@item Elemental Gem, Blue Sapphire||elemental gem (clear sapphire/air elemental)}."
@@ -11780,7 +11780,7 @@
 						{
 							"type": "entries",
 							"name": "Thwarting the Dragon Queen",
-							"page": 137,
+							"page": 177,
 							"id": "231",
 							"entries": [
 								"The process of bringing back {@creature Tiamat|RoT} involves four key components\u2014the treasure amassed by the cult, the {@item Mask of the Dragon Queen|RoT}, the sacrifice of prisoners, and the ritual that is the culmination of all {@creature Severin|RoT}'s mad plans. The crashing or capture of Skyreach Castle has already set back the cult in its goal of collecting suitable treasure for the Dragon Queen, making the other three stages of the process that much more important.",
@@ -13435,6 +13435,167 @@
 									"title": "White Dragon Identifiers",
 									"width": 1500,
 									"height": 828
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Kobold Press",
+							"entries": [
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"type": "item",
+											"name": "Designers",
+											"entries": [
+												"Wolfgang Baur, Steve Winter, Alexander Winter"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Editors",
+											"entries": [
+												"Miranda Horner, Scott Fitzgerald Gray"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Interior Illustrators",
+											"entries": [
+												"John-Paul Balmet, Nicole Cardiff, Conceptopolis, Tyler Jacobson, Guido Kuip, Marcel Mercado, Bryan Syme"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Cartographer",
+											"entries": [
+												"Jared Blando"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Art Director",
+											"entries": [
+												"Marc Radle"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Producer",
+											"entries": [
+												"Wolfgang Baur"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Wizards of the Coast",
+							"entries": [
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"type": "item",
+											"name": "D&D Lead Designers",
+											"entries": [
+												"Mike Mearls, Jeremy Crawford"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Designers",
+											"entries": [
+												"Christopher Perkins, Matthew Sernett, Chris Sims, Rodney Thompson"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Editor",
+											"entries": [
+												"F. Wesley Schneider"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Art Directors",
+											"entries": [
+												"Kate Irwin, Shauna Narciso"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Graphic Designers",
+											"entries": [
+												"Bree Heiss, Emi Tanji"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Cover Illustrator",
+											"entries": [
+												"Raymond Swanland"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Concept Gallery Illustrators",
+											"entries": [
+												"David Baldeon, John-Paul Balmet, Von Caberte, Scott M. Fischer, Patrick Jensen, Kekai Kotaki, Todd Lockwood, Thom Tenery, Eva Widermann, Sara Winters"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Producers",
+											"entries": [
+												"Greg Bilsland, Dan Tovar"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Project Management",
+											"entries": [
+												"Neil Shinkle, John Hay"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Production Services",
+											"entries": [
+												"Cynda Callaway, Jefferson Dunlap, David Gershman, Anita Williams"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Other D&D Team Members",
+											"entries": [
+												"Bill Benham, Bart Carroll, Pelham Greene, Trevor Kidd, Adam Lee, Ari Levitch, Chris Lindsay, Kim Lundstrom, Shelly Mazzanoble, Ben Petrisor, Hilary Ross, Liz Schuh, Nathan Stewart, Greg Tito, Laura Tommervik, Dan Tovar, Anna Vo, Kate Welch, Shawn Wood, Richard Whitters, Trish Yochum"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Playtesters",
+											"entries": [
+												"Melissa Bassett, André Bégin, Mik Calow, Mélanie Côté, Manon Crevier, Ben Danderson, Dave Eadie, Frank Foulis, Rodrigo Gorgulho, Pete Griffith, Liam Gulliver, Jon Harvill, Joseph Kauffmann, Yan Lacharité, Renata Landim, Rodrigo Landim, Éric Leroux, Carlos Eduardo Lopes, Julia Lopes, David Muller, Claudio Pozas, Paula Pozas, Count Response, Sara Servin, Robin Stacey, Jaime Thayer, Keoki Young"
+											]
+										}
+									]
 								}
 							]
 						}

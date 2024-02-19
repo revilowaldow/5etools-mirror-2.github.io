@@ -3662,7 +3662,7 @@
 						{
 							"type": "entries",
 							"name": "1. Entry Chamber",
-							"page": 227,
+							"page": 27,
 							"id": "0c6",
 							"entries": [
 								{
@@ -5085,7 +5085,7 @@
 								{
 									"type": "entries",
 									"name": "Manipulating Time",
-									"page": 4,
+									"page": 41,
 									"id": "150",
 									"entries": [
 										"Having a mechanical guide spend 1 charge in this area causes the thessalkraken to reveal itself as it breaks the surface of the water seeking food. Spending 2 charges also causes {@dice 1d4} {@creature Lizardfolk Render|GoS|lizardfolk renders} to arrive, ready to brave the waters in search of gems. The lizardfolk take the appearance of the characters as a sign of offering, and attempt to force them into the water as sacrifices for their demigod."
@@ -5096,7 +5096,7 @@
 						{
 							"type": "entries",
 							"name": "31. Gemsmith's Cell",
-							"page": 14,
+							"page": 41,
 							"id": "151",
 							"entries": [
 								"The oak door leading to this area is locked, but can be opened with a successful DC 14 Dexterity check using thieves' tools, or forced open with a successful DC 14 Strength check. The chamber beyond holds the temple's most valued prisoner, {@creature Seodra|IMR} the gemsmith.",

@@ -505,6 +505,7 @@ PropOrder._ADVENTURE = [
 	"coverUrl",
 	"published",
 	"publishedOrder",
+	"author",
 	"storyline",
 	"level",
 
@@ -1033,6 +1034,7 @@ PropOrder._DEITY = [
 	"category",
 	"domains",
 	"province",
+	"dogma",
 	"symbol",
 	"symbolImg",
 

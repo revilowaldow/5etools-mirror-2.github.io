@@ -847,7 +847,7 @@
 				{
 					"name": "Sunlight Sensitivity",
 					"entries": [
-						"While in sunlight, the derro has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+						"While in sunlight, the derro has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
 					]
 				}
 			],
@@ -4460,7 +4460,7 @@
 				{
 					"name": "Stone Camouflage",
 					"entries": [
-						"The Pudding King has advantage on Dexterity (Stealth) checks made to hide in rocky terrain."
+						"The Pudding King has advantage on Dexterity ({@skill Stealth}) checks made to hide in rocky terrain."
 					]
 				},
 				{
@@ -4650,7 +4650,7 @@
 				{
 					"name": "Chameleon Skin",
 					"entries": [
-						"The troglodyte has advantage on Dexterity (Stealth) checks made to hide."
+						"The troglodyte has advantage on Dexterity ({@skill Stealth}) checks made to hide."
 					]
 				},
 				{

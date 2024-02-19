@@ -48,13 +48,13 @@
 				{
 					"name": "Chimeric Creation",
 					"entries": [
-						"The fox has fur that changes color to match its surroundings, giving it advantage on Dexterity (Stealth) checks."
+						"The fox has fur that changes color to match its surroundings, giving it advantage on Dexterity ({@skill Stealth}) checks."
 					]
 				},
 				{
 					"name": "Keen Hearing",
 					"entries": [
-						"The fox has advantage on Wisdom (Perception) checks that rely on hearing."
+						"The fox has advantage on Wisdom ({@skill Perception}) checks that rely on hearing."
 					]
 				}
 			],

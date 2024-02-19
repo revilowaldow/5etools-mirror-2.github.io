@@ -6682,6 +6682,9 @@ Renderer.deity = class {
 		"province": {
 			name: "Province",
 		},
+		"dogma": {
+			name: "Dogma",
+		},
 		"altNames": {
 			name: "Alternate Names",
 			displayFn: (it) => it.join(", "),
@@ -9237,7 +9240,7 @@ Renderer.item = class {
 
 	static _pPopulatePropertyAndTypeReference = null;
 	static pPopulatePropertyAndTypeReference () {
-		return Renderer.item._pPopulatePropertyAndTypeReference || (async () => {
+		Renderer.item._pPopulatePropertyAndTypeReference ||= (async () => {
 			const data = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/items-base.json`);
 
 			Object.entries(Parser.ITEM_TYPE_JSON_TO_ABV).forEach(([abv, name]) => Renderer.item._addType({abbreviation: abv, name}));
@@ -9248,6 +9251,8 @@ Renderer.item = class {
 
 			await Renderer.item._pAddPrereleaseBrewPropertiesAndTypes();
 		})();
+
+		return Renderer.item._pPopulatePropertyAndTypeReference;
 	}
 
 	// fetch every possible indexable item from official data

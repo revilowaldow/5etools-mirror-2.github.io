@@ -105,7 +105,7 @@
 				{
 					"name": "Detect",
 					"entries": [
-						"The deep crow makes a Wisdom (Perception) check."
+						"The deep crow makes a Wisdom ({@skill Perception}) check."
 					]
 				},
 				{
@@ -707,7 +707,7 @@
 				{
 					"name": "Sunlight Sensitivity",
 					"entries": [
-						"While in sunlight, the deep crow has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+						"While in sunlight, the deep crow has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
 					]
 				}
 			],
@@ -1396,7 +1396,7 @@
 				{
 					"name": "Fey Ancestry",
 					"entries": [
-						"K'thriss has advantage on saving throws against being {@condition charmed}, and magic can't put him to sleep. Sunlight Sensitivity. While in sunlight, K'thriss has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+						"K'thriss has advantage on saving throws against being {@condition charmed}, and magic can't put him to sleep. Sunlight Sensitivity. While in sunlight, K'thriss has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
 					]
 				}
 			],
@@ -1845,7 +1845,7 @@
 				{
 					"name": "Keen Hearing and Sight",
 					"entries": [
-						"Oak has advantage on Wisdom (Perception) checks that rely on hearing or sight."
+						"Oak has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or sight."
 					]
 				}
 			],
@@ -2946,7 +2946,7 @@
 				{
 					"name": "Absorb Attack",
 					"entries": [
-						"When a creature Splugoth can see hits him with a melee weapon attack, the weapon snags on a pocket of residual resurrectional energy and is caught fast. The attack is negated and the weapon cannot be used until the creature succeeds on a {@dc 12} Strength (Athletics) check as an action to pull it out of Splugoth. Natural weapons can have their attacks negated by this feature, but can then be retracted automatically at the end of the attacking creature's turn."
+						"When a creature Splugoth can see hits him with a melee weapon attack, the weapon snags on a pocket of residual resurrectional energy and is caught fast. The attack is negated and the weapon cannot be used until the creature succeeds on a {@dc 12} Strength ({@skill Athletics}) check as an action to pull it out of Splugoth. Natural weapons can have their attacks negated by this feature, but can then be retracted automatically at the end of the attacking creature's turn."
 					]
 				}
 			],

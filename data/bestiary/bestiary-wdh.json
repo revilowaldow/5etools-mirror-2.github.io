@@ -1291,7 +1291,7 @@
 				{
 					"name": "Sunlight Sensitivity",
 					"entries": [
-						"While in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+						"While in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
 					]
 				}
 			],
@@ -3253,7 +3253,7 @@
 				{
 					"name": "Sunlight Sensitivity",
 					"entries": [
-						"When not wearing his knave's eye patch, Jarlaxle has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+						"When not wearing his knave's eye patch, Jarlaxle has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
 					]
 				}
 			],
@@ -3472,7 +3472,7 @@
 				{
 					"name": "Special Equipment",
 					"entries": [
-						"Kaevja carries a yellow elemental gem. As an action she can break the gem releasing an earth elemental under her command."
+						"Kaevja carries a yellow {@item elemental gem}. As an action she can break the gem releasing an earth elemental under her command."
 					]
 				}
 			],
@@ -7118,7 +7118,7 @@
 				{
 					"name": "Keen Smell",
 					"entries": [
-						"The Shard Shunner has advantage on Wisdom (Perception) checks that rely on smell."
+						"The Shard Shunner has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
 					]
 				},
 				{
@@ -7460,7 +7460,7 @@
 				{
 					"name": "Sunlight Sensitivity",
 					"entries": [
-						"While in sunlight, Soluun has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+						"While in sunlight, Soluun has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
 					]
 				},
 				{
@@ -7472,7 +7472,7 @@
 				{
 					"name": "Boots of Elvenkind",
 					"entries": [
-						"Whilst wearing these boots Soluun's steps make no sound and he has advantage on any Dexterity (Stealth) checks that rely on moving silently."
+						"Whilst wearing these boots Soluun's steps make no sound and he has advantage on any Dexterity ({@skill Stealth}) checks that rely on moving silently."
 					]
 				}
 			],

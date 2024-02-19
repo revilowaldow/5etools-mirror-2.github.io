@@ -121,7 +121,7 @@
 				{
 					"name": "Quick Fingers",
 					"entries": [
-						"Agdon targets one creature within 5 feet of him that he can see and makes a Dexterity (Sleight of Hand) check, with a DC equal to 1 + the target's passive Wisdom (Perception) score. On a successful check, Agdon pilfers one object weighing 1 pound or less that the target has in its possession but not in its grasp, without the target noticing the theft."
+						"Agdon targets one creature within 5 feet of him that he can see and makes a Dexterity ({@skill Sleight of Hand}) check, with a DC equal to 1 + the target's passive Wisdom ({@skill Perception}) score. On a successful check, Agdon pilfers one object weighing 1 pound or less that the target has in its possession but not in its grasp, without the target noticing the theft."
 					]
 				}
 			],
@@ -1545,7 +1545,7 @@
 				{
 					"name": "False Appearance",
 					"entries": [
-						"If the rocking horse is motionless at the start of combat, it has advantage on its initiative roll. Moreover, if a creature hasn't observed the rocking horse move or act, that creature must succeed on a {@dc 18} Intelligence (Investigation) check to discern that the rocking horse is animate."
+						"If the rocking horse is motionless at the start of combat, it has advantage on its initiative roll. Moreover, if a creature hasn't observed the rocking horse move or act, that creature must succeed on a {@dc 18} Intelligence ({@skill Investigation}) check to discern that the rocking horse is animate."
 					]
 				},
 				{
@@ -1769,7 +1769,7 @@
 				{
 					"name": "Keen Sight",
 					"entries": [
-						"The swan has advantage on Wisdom (Perception) checks that rely on sight."
+						"The swan has advantage on Wisdom ({@skill Perception}) checks that rely on sight."
 					]
 				}
 			],
@@ -1942,7 +1942,7 @@
 				{
 					"name": "False Appearance",
 					"entries": [
-						"If the golem is embedded in a window and motionless at the start of combat, it has advantage on its initiative roll. Moreover, if a creature hasn't observed the golem move or act, that creature must succeed on a {@dc 18} Intelligence (Investigation) check to discern that the golem is animate."
+						"If the golem is embedded in a window and motionless at the start of combat, it has advantage on its initiative roll. Moreover, if a creature hasn't observed the golem move or act, that creature must succeed on a {@dc 18} Intelligence ({@skill Investigation}) check to discern that the golem is animate."
 					]
 				},
 				{
@@ -2061,7 +2061,7 @@
 				{
 					"name": "Keen Smell",
 					"entries": [
-						"The cat has advantage on Wisdom (Perception) checks that rely on smell."
+						"The cat has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
 					]
 				}
 			],
@@ -2881,7 +2881,7 @@
 				{
 					"name": "Special Equipment",
 					"entries": [
-						"Kelek wears bracers of defense and carries a staff of striking with 10 charges. The staff regains {@dice 1d6 + 4} expended charges daily at dawn. If its last charge is expended, roll a {@dice d20}; on a 1, the staff becomes a nonmagical quarterstaff."
+						"Kelek wears {@item bracers of defense} and carries a {@item staff of striking} with 10 charges. The staff regains {@dice 1d6 + 4} expended charges daily at dawn. If its last charge is expended, roll a {@dice d20}; on a 1, the staff becomes a nonmagical quarterstaff."
 					]
 				}
 			],
@@ -3038,7 +3038,7 @@
 				{
 					"name": "Mimicry",
 					"entries": [
-						"Kettlesteam can mimic any sounds she has heard, including voices. A creature that hears the sounds can tell they are imitations only with a successful {@dc 13} Wisdom (Insight) check."
+						"Kettlesteam can mimic any sounds she has heard, including voices. A creature that hears the sounds can tell they are imitations only with a successful {@dc 13} Wisdom ({@skill Insight}) check."
 					]
 				}
 			],
@@ -3160,7 +3160,7 @@
 				{
 					"name": "False Appearance",
 					"entries": [
-						"If the doll is motionless at the start of combat, it has advantage on its initiative roll. Moreover, if a creature hasn't observed the doll move or act, that creature must succeed on a {@dc 18} Intelligence (Investigation) check to discern that the doll is animate."
+						"If the doll is motionless at the start of combat, it has advantage on its initiative roll. Moreover, if a creature hasn't observed the doll move or act, that creature must succeed on a {@dc 18} Intelligence ({@skill Investigation}) check to discern that the doll is animate."
 					]
 				},
 				{
@@ -3735,7 +3735,7 @@
 				{
 					"name": "Special Equipment",
 					"entries": [
-						"Molliver wears  +1 leather armor and boots of levitation."
+						"Molliver wears +1 leather armor and {@item boots of levitation}."
 					]
 				}
 			],
@@ -3846,7 +3846,7 @@
 				{
 					"name": "Keen Sight",
 					"entries": [
-						"The paper bird has advantage on Wisdom (Perception) checks that rely on sight."
+						"The paper bird has advantage on Wisdom ({@skill Perception}) checks that rely on sight."
 					]
 				}
 			],
@@ -4638,7 +4638,7 @@
 					"name": "Alter Size",
 					"entries": [
 						"Skabatha magically shrinks herself to Tiny size (between 4 and 8 inches tall) or returns to her normal size. If Skabatha lacks the room to return to her normal size, she attains the maximum size possible in the space available. Anything she is wearing or carrying changes size along with her.",
-						"As a Tiny creature, Skabatha deals 2 ({@damage 1d4}) poison damage when she hits with a Claw attack. She has advantage on Dexterity (Stealth) checks, and disadvantage on Strength checks and Strength saving throws. Her statistics otherwise remain unchanged."
+						"As a Tiny creature, Skabatha deals 2 ({@damage 1d4}) poison damage when she hits with a Claw attack. She has advantage on Dexterity ({@skill Stealth}) checks, and disadvantage on Strength checks and Strength saving throws. Her statistics otherwise remain unchanged."
 					]
 				}
 			],
@@ -4874,7 +4874,7 @@
 				{
 					"name": "False Appearance",
 					"entries": [
-						"If Squirt is motionless at the start of combat, it has advantage on its initiative roll. Moreover, if a creature hasn't observed Squirt move or act, that creature must succeed on a {@dc 18} Intelligence (Investigation) check to discern that Squirt is animate."
+						"If Squirt is motionless at the start of combat, it has advantage on its initiative roll. Moreover, if a creature hasn't observed Squirt move or act, that creature must succeed on a {@dc 18} Intelligence ({@skill Investigation}) check to discern that Squirt is animate."
 					]
 				},
 				{
@@ -5380,7 +5380,7 @@
 				{
 					"name": "False Appearance",
 					"entries": [
-						"If the treant is motionless at the start of combat, it has advantage on its initiative roll. Moreover, if a creature hasn't observed the treant move or act, that creature must succeed on a {@dc 18} Intelligence (Investigation) check to discern that the treant is animate."
+						"If the treant is motionless at the start of combat, it has advantage on its initiative roll. Moreover, if a creature hasn't observed the treant move or act, that creature must succeed on a {@dc 18} Intelligence ({@skill Investigation}) check to discern that the treant is animate."
 					]
 				}
 			],
@@ -5490,7 +5490,7 @@
 				{
 					"name": "Special Equipment",
 					"entries": [
-						"Warduke wears a dread helm (see appendix A) and wields a flame tongue longsword."
+						"Warduke wears a dread helm (see appendix A) and wields a {@item flame tongue} longsword."
 					]
 				}
 			],
@@ -5763,7 +5763,7 @@
 				{
 					"name": "Special Equipment",
 					"entries": [
-						"Zarak carries a potion of invisibility."
+						"Zarak carries a {@item potion of invisibility}."
 					]
 				}
 			],
@@ -5921,7 +5921,7 @@
 				{
 					"name": "Special Equipment",
 					"entries": [
-						"Zargash wears a bat-shaped amulet that has the properties of a ring of feather falling."
+						"Zargash wears a bat-shaped amulet that has the properties of a {@item ring of feather falling}."
 					]
 				}
 			],

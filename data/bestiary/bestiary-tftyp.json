@@ -2848,6 +2848,9 @@
 					]
 				}
 			},
+			"alignment": [
+				"N"
+			],
 			"ac": [
 				{
 					"ac": 18,
@@ -2988,7 +2991,7 @@
 				{
 					"name": "Chameleon Skin",
 					"entries": [
-						"The troglodyte has advantage on Dexterity (Stealth) checks made to hide."
+						"The troglodyte has advantage on Dexterity ({@skill Stealth}) checks made to hide."
 					]
 				},
 				{

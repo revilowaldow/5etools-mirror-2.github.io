@@ -55,7 +55,7 @@
 				{
 					"name": "Keen Smell",
 					"entries": [
-						"The assassin bug has advantage on Wisdom (Perception) checks that rely on smell."
+						"The assassin bug has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
 					]
 				}
 			],
@@ -350,7 +350,7 @@
 				{
 					"name": "Keen Hearing",
 					"entries": [
-						"The dire corby has advantage on Wisdom (Perception) checks that rely on hearing."
+						"The dire corby has advantage on Wisdom ({@skill Perception}) checks that rely on hearing."
 					]
 				}
 			],
@@ -649,7 +649,7 @@
 				{
 					"name": "Keen Smell",
 					"entries": [
-						"The giant has advantage on Wisdom (Perception) checks that rely on smell."
+						"The giant has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
 					]
 				}
 			],

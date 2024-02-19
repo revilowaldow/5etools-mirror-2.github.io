@@ -1908,3 +1908,16 @@ class CreatureSavingThrowTagger extends _PrimaryLegendarySpellsTaggerBase {
 }
 
 globalThis.CreatureSavingThrowTagger = CreatureSavingThrowTagger;
+
+class CreatureSpecialEquipmentTagger {
+	static tryRun (mon) {
+		if (!mon.trait) return;
+		mon.trait = mon.trait
+			.map(ent => {
+				if (!/\bEquipment\b/.test(ent.name || "")) return ent;
+				return ItemTag.tryRun(ent);
+			});
+	}
+}
+
+globalThis.CreatureSpecialEquipmentTagger = CreatureSpecialEquipmentTagger;

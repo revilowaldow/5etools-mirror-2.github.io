@@ -218,7 +218,7 @@
 				{
 					"name": "Sunlight Sensitivity",
 					"entries": [
-						"While in sunlight, Aribeth has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+						"While in sunlight, Aribeth has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
 					]
 				},
 				{
@@ -932,7 +932,7 @@
 				{
 					"name": "Detect",
 					"entries": [
-						"The ravager makes a Wisdom (Perception) check."
+						"The ravager makes a Wisdom ({@skill Perception}) check."
 					]
 				},
 				{
@@ -3277,7 +3277,7 @@
 				{
 					"name": "Read Thoughts",
 					"entries": [
-						"The dread doppelganger magically reads the surface thoughts of one creature within 60 ft. of it. The effect can penetrate barriers, but 3 ft. of wood or dirt, 2 ft. of stone, 2 inches of metal, or a thin sheet of lead blocks it. While the target is in range, the dread doppelganger can continue reading its thoughts, as long as the dread doppelganger's Concentration isn't broken (as if {@status concentration||concentrating} on a spell). While reading the target's mind, the doppelganger has advantage on Wisdom (Insight) and Charisma ({@skill Deception}, {@skill Intimidation}, and {@skill Persuasion}) checks against the target."
+						"The dread doppelganger magically reads the surface thoughts of one creature within 60 ft. of it. The effect can penetrate barriers, but 3 ft. of wood or dirt, 2 ft. of stone, 2 inches of metal, or a thin sheet of lead blocks it. While the target is in range, the dread doppelganger can continue reading its thoughts, as long as the dread doppelganger's Concentration isn't broken (as if {@status concentration||concentrating} on a spell). While reading the target's mind, the doppelganger has advantage on Wisdom ({@skill Insight}) and Charisma ({@skill Deception}, {@skill Intimidation}, and {@skill Persuasion}) checks against the target."
 					]
 				}
 			],
@@ -4480,7 +4480,7 @@
 				{
 					"name": "Sunlight Sensitivity",
 					"entries": [
-						"While in sunlight, Imoen has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+						"While in sunlight, Imoen has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
 					]
 				}
 			],
@@ -5241,7 +5241,7 @@
 				{
 					"name": "Keen Hearing and Sight",
 					"entries": [
-						"Kivan has advantage on Wisdom (Perception) checks that rely on hearing or sight."
+						"Kivan has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or sight."
 					]
 				},
 				{
@@ -5423,7 +5423,7 @@
 				{
 					"name": "Mimicry",
 					"entries": [
-						"Lothar can mimic simple sounds he has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful {@dc 15} Wisdom (Insight) check."
+						"Lothar can mimic simple sounds he has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful {@dc 15} Wisdom ({@skill Insight}) check."
 					]
 				},
 				{
@@ -6706,7 +6706,7 @@
 				{
 					"name": "Disarm",
 					"entries": [
-						"Pazuzu knocks a weapon out of a target's hand if his attack roll (+14) beats the target's Strength (Athletics) or Dexterity (Acrobatics) check. If disarmed, the target's weapon flies 10 ft. in a random direction."
+						"Pazuzu knocks a weapon out of a target's hand if his attack roll (+14) beats the target's Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check. If disarmed, the target's weapon flies 10 ft. in a random direction."
 					]
 				},
 				{
@@ -7384,7 +7384,7 @@
 				{
 					"name": "Magical Equipment",
 					"entries": [
-						"Saemon wears a quiver of ehlonna."
+						"Saemon wears a {@item quiver of ehlonna}."
 					]
 				}
 			],
@@ -9250,7 +9250,7 @@
 				{
 					"name": "Keen Hearing and Sight",
 					"entries": [
-						"Vellin has advantage on Wisdom (Perception) checks that rely on hearing or sight."
+						"Vellin has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or sight."
 					]
 				},
 				{
@@ -9491,7 +9491,7 @@
 				{
 					"name": "Sunlight Sensitivity",
 					"entries": [
-						"While in sunlight, Viconia has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+						"While in sunlight, Viconia has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
 					]
 				}
 			],
@@ -9810,7 +9810,7 @@
 				{
 					"name": "Keen Hearing and Smell",
 					"entries": [
-						"The wolfwere has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+						"The wolfwere has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
 					]
 				},
 				{
@@ -9959,7 +9959,7 @@
 				{
 					"name": "Keen Hearing and Smell",
 					"entries": [
-						"The wolfwere has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+						"The wolfwere has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
 					]
 				},
 				{
@@ -10145,7 +10145,7 @@
 				{
 					"name": "Special Equipment",
 					"entries": [
-						"Xan wields a Moonblade. The Moonblade has a +3 bonus to attack and damage rolls (already factored into Xan's attacks) and has the finesse property."
+						"Xan wields a {@item Moonblade}. The Moonblade has a +3 bonus to attack and damage rolls (already factored into Xan's attacks) and has the finesse property."
 					]
 				},
 				{

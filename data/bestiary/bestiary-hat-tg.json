@@ -678,7 +678,7 @@
 				{
 					"name": "Special Equipment",
 					"entries": [
-						"Simon carries a bag of holding, two pairs of sending stones, and a deathly token (see Spellcasting)."
+						"Simon carries a {@item bag of holding}, two pairs of {@item sending stones}, and a deathly token (see Spellcasting)."
 					]
 				},
 				{

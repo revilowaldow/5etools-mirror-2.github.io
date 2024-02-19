@@ -52,7 +52,7 @@
 				{
 					"name": "Keen Smell",
 					"entries": [
-						"The demogorgon has advantage on Wisdom (Perception) checks that rely on smell."
+						"The demogorgon has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
 					]
 				},
 				{
@@ -306,7 +306,7 @@
 				{
 					"name": "Tail Pincer",
 					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}10 ({@damage 1d12 + 4}) slashing damage, and the target is {@condition grappled}. As an action, the target can escape the grapple by succeeding on a {@dc 14} Strength (Athletics) or Dexterity (Acrobatics) check (its choice). Until this grapple ends, the thessalhydra can't use its tail pincer."
+						"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}10 ({@damage 1d12 + 4}) slashing damage, and the target is {@condition grappled}. As an action, the target can escape the grapple by succeeding on a {@dc 14} Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check (its choice). Until this grapple ends, the thessalhydra can't use its tail pincer."
 					]
 				},
 				{
@@ -321,7 +321,7 @@
 				{
 					"name": "Detect",
 					"entries": [
-						"The thessalhydra makes a Wisdom (Perception) check with advantage."
+						"The thessalhydra makes a Wisdom ({@skill Perception}) check with advantage."
 					]
 				},
 				{

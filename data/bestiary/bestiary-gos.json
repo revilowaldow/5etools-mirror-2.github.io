@@ -61,7 +61,7 @@
 				{
 					"name": "Two Heads",
 					"entries": [
-						"The amphisbaena has advantage on Wisdom (Perception) checks and on saving throws against being {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition stunned}, and knocked {@condition unconscious}."
+						"The amphisbaena has advantage on Wisdom ({@skill Perception}) checks and on saving throws against being {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition stunned}, and knocked {@condition unconscious}."
 					]
 				}
 			],
@@ -209,7 +209,7 @@
 				{
 					"name": "Swamp Camouflage",
 					"entries": [
-						"The croaker has advantage on Dexterity (Stealth) checks made to hide in swampy terrain."
+						"The croaker has advantage on Dexterity ({@skill Stealth}) checks made to hide in swampy terrain."
 					]
 				}
 			],
@@ -357,7 +357,7 @@
 				{
 					"name": "Swamp Camouflage",
 					"entries": [
-						"The royal has advantage on Dexterity (Stealth) checks made to hide in swampy terrain."
+						"The royal has advantage on Dexterity ({@skill Stealth}) checks made to hide in swampy terrain."
 					]
 				}
 			],
@@ -2863,7 +2863,7 @@
 				{
 					"name": "Detect",
 					"entries": [
-						"The maw of Sekolah makes a Wisdom (Perception) check."
+						"The maw of Sekolah makes a Wisdom ({@skill Perception}) check."
 					]
 				},
 				{
@@ -3228,7 +3228,7 @@
 				{
 					"name": "Keen Sight and Smell",
 					"entries": [
-						"The peryton has advantage on Wisdom (Perception) checks that rely on sight or smell."
+						"The peryton has advantage on Wisdom ({@skill Perception}) checks that rely on sight or smell."
 					]
 				},
 				{
@@ -3268,7 +3268,7 @@
 				{
 					"name": "Detect",
 					"entries": [
-						"The peryton makes a Wisdom (Perception) check."
+						"The peryton makes a Wisdom ({@skill Perception}) check."
 					]
 				},
 				{
@@ -4632,7 +4632,7 @@
 				{
 					"name": "Brine Lurker",
 					"entries": [
-						"The deep diver has advantage on Dexterity (Stealth) checks made while submerged in water."
+						"The deep diver has advantage on Dexterity ({@skill Stealth}) checks made while submerged in water."
 					]
 				},
 				{
@@ -5125,8 +5125,8 @@
 				{
 					"name": "Whirlpool (1/Day)",
 					"entries": [
-						"The wave shaper targets a body of water at least 50 feet square and 25 feet deep, causing a whirlpool to form in the center of the area. The whirlpool forms a vortex that is 5 feet wide at the base, up to 50 feet wide at the top, 25 feet tall, and lasts for 1 minute or until the wave shaper is {@condition incapacitated}. Any creature or object in the water and within 25 feet of the vortex is pulled 10 feet toward it. A creature can swim away from the vortex by succeeding on a {@dc 14} Strength (Athletics) check.",
-						"When a creature enters the vortex for the first time on a turn or starts its turn there, it must make a {@dc 14} Strength saving throw. On a failed save, the creature takes 9 ({@damage 2d8}) bludgeoning damage and is caught in the vortex until it ends. On a success, the creature takes half damage and isn't caught in the vortex. A creature caught in the vortex can use its action to try to swim away from the vortex as described above, but it has disadvantage on the Strength (Athletics) check to do so.",
+						"The wave shaper targets a body of water at least 50 feet square and 25 feet deep, causing a whirlpool to form in the center of the area. The whirlpool forms a vortex that is 5 feet wide at the base, up to 50 feet wide at the top, 25 feet tall, and lasts for 1 minute or until the wave shaper is {@condition incapacitated}. Any creature or object in the water and within 25 feet of the vortex is pulled 10 feet toward it. A creature can swim away from the vortex by succeeding on a {@dc 14} Strength ({@skill Athletics}) check.",
+						"When a creature enters the vortex for the first time on a turn or starts its turn there, it must make a {@dc 14} Strength saving throw. On a failed save, the creature takes 9 ({@damage 2d8}) bludgeoning damage and is caught in the vortex until it ends. On a success, the creature takes half damage and isn't caught in the vortex. A creature caught in the vortex can use its action to try to swim away from the vortex as described above, but it has disadvantage on the Strength ({@skill Athletics}) check to do so.",
 						"The first time each turn that an object enters the vortex, the object takes 9 ({@damage 2d8}) bludgeoning damage. This damage occurs each round it remains in the vortex."
 					]
 				}
@@ -5951,7 +5951,7 @@
 				{
 					"name": "Detect",
 					"entries": [
-						"Thousand Teeth makes a Wisdom (Perception) check."
+						"Thousand Teeth makes a Wisdom ({@skill Perception}) check."
 					]
 				},
 				{

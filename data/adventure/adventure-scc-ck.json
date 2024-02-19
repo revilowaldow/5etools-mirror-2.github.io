@@ -6135,6 +6135,308 @@
 					]
 				}
 			]
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"columns": 2,
+							"items": [
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"type": "item",
+											"name": "Lead Designer",
+											"entries": [
+												"Amanda Hamon"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Assistant Lead Designers",
+											"entries": [
+												"Jeremy Crawford, James Wyatt"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Art Director",
+											"entries": [
+												"Emi Tanji"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Designers",
+											"entries": [
+												"Bill Benham, Makenzie De Armas, Dan Dillon, Steve Kenson, T. Alexander Stangroom"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Assistant Designers",
+											"entries": [
+												"Sydney Adams, Taymoor Rehman"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Rules Developers",
+											"entries": [
+												"Jeremy Crawford, Ben Petrisor"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Editors",
+											"entries": [
+												"Judy Bauer, Michele Carter, Scott Fitzgerald Gray, Ianara Natividad, Christopher Perkins, F. Wesley Schneider"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Cultural & Sensitivity Consultant",
+											"entries": [
+												"Tanya DePass"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Graphic Designers",
+											"entries": [
+												"Trystan Falcone, Emi Tanji, Trish Yochum"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Cover Illustrators",
+											"entries": [
+												"Hydro74, Magali Villeneuve"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Cartographers",
+											"entries": [
+												"Francesca Baerald, Sean Macdonald, Mike Schley"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Additional Art Directors",
+											"entries": [
+												"Ovidio Cartagena, Taylor Ingvarsson, Kate Irwin, Thomas Jenkot, Zack Stella, Sarah Wassell"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Interior Illustrators",
+											"entries": [
+												"Steve Argyle, Jinho Bae, Cristi Balanescu, Mike Bierek, Zoltan Boros, Alex Brock, Filip Burburan, Dmitry Burmak, Ekaterina Burmak, Paul Scott Canavan, Manuel Castañón, Jehan Choo, Billy Christian, Chris Cold, Justine Cruz, Alayna Danner, Jonas De Ro, Olga Drebas, Piotr Dura, Jesper Ejsing, Anna Fehr, Tony Foti, Caroline Gariba, Ilse Gort, Johan Grenier, Yeong-Hao Han, Josh Hass, Hydro74, Izzy, Tomasz Jedruszek, Jihun, Jason Kang, Igor Kieryluk, Mathias Kollros, Yigit Koroglu, Kekai Kotaki, Andrey Kuzinskiy, Luiza Laffitte, Lius Lasahido, Ryan Alexander Lee, Lie Setiawan, Daniel Ljunggren, Lindsey Look, Titus Lunter, Howard Lyon, Slawomir Maniak, Antonio José Manzanedo, Joseph Meehan, Viko Menezes, Robson Michel, Francisco Miyara, Scott Murphy, Marta Nael, Hector Ortiz, Adam Paquette, Alessandra Pisano, Steve Prescott, Chris Rahn, Jason Rainville, Andreas Rocha, Denman Rooke, Sean Sevestre, Liiga Smilshkalne, Bryan Sola, Craig J Spearing, Raymond Swanland, YW Tang, Viktor Titov, Jokubas Uogintas, Randy Vargas, Svetlin Velinov, Raoul Vitale, Johannes Voss, Sara Winters, Bayard Wu, Kieran Yanner, Andreas Zafiratos"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Strixhaven World Designers",
+											"entries": [
+												"Doug Beyer (creative lead), Taylor Ingvarsson (art director), Jess Lanzillo (creative director), Meris Mullaley (creative producer), Fox Allison, Annie Sardelis, Emily Teng, Andrew Vallas, James Wyatt, Ari Zirulnik"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Project Engineer",
+											"entries": [
+												"Cynda Callaway"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Imaging Technicians",
+											"entries": [
+												"Kevin Yee"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Prepress Specialist",
+											"entries": [
+												"Jefferson Dunlap"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "D&D Studio",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Executive Producer",
+													"entries": [
+														"Ray Winninger"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Game Design Architects",
+													"entries": [
+														"Jeremy Crawford, Christopher Perkins"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Design Manager",
+													"entries": [
+														"Steve Scott"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Design Department",
+													"entries": [
+														"Sydney Adams, Judy Bauer, Makenzie De Armas, Dan Dillon, Amanda Hamon, Ari Levitch, Ben Petrisor, Taymoor Rehman, F. Wesley Schneider, James Wyatt"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Art Department Manager",
+													"entries": [
+														"Richard Whitters"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Principal Art Director",
+													"entries": [
+														"Kate Irwin"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Art Department",
+													"entries": [
+														"Trystan Falcone, Emi Tanji, Shawn Wood, Trish Yochum"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Senior Producer",
+													"entries": [
+														"Dan Tovar"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Producers",
+													"entries": [
+														"Bill Benham, Robert Hawkey, Lea Heleotis"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Director of Product Management",
+													"entries": [
+														"Liz Schuh"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Product Managers",
+													"entries": [
+														"Natalie Egan, Chris Lindsay, Hilary Ross, Chris Tulach"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Marketing Executive Producer",
+													"entries": [
+														"Ray Winninger"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Director of Global Brand Marketing",
+													"entries": [
+														"Brian Perry"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Global Brand Manager",
+													"entries": [
+														"Shelly Mazzanoble"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Senior Marketing Communications Manager",
+													"entries": [
+														"Greg Tito"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Community Manager",
+													"entries": [
+														"Brandy Camel"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "book/SCC/credits.webp"
+					},
+					"maxWidth": 300,
+					"width": 850,
+					"height": 880
+				},
+				{
+					"type": "gallery",
+					"images": [
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/SCC/credits2.webp"
+							},
+							"title": "On the Cover: Three Strixhaven students find distractions from their studies in Magali Villeneuve's cover illustration. On the back, a harried Biblioplex assistant tries to tidy the mess.",
+							"width": 1200,
+							"height": 750
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/SCC/credits3.webp"
+							},
+							"title": "On the Alt-Cover: Hydro74 shows off the Strixhaven star, a symbol of unity and magical fellowship. The sigils of each of Strixhaven's five colleges adorn the back cover.",
+							"width": 1200,
+							"height": 750
+						}
+					]
+				}
+			]
 		}
 	]
 }

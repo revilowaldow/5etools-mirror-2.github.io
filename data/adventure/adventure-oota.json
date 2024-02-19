@@ -2593,7 +2593,7 @@
 										{
 											"type": "inset",
 											"name": "Narrow Escapes",
-											"page": 24,
+											"page": 25,
 											"id": "07d",
 											"entries": [
 												"If an encounter with the drow is going badly and you don't want the characters recaptured, you can always have fate intercede on their behalf with another encounter or event offering a distraction.",
@@ -3960,7 +3960,7 @@
 								{
 									"type": "entries",
 									"name": "Light",
-									"page": 32,
+									"page": 33,
 									"id": "0bf",
 									"entries": [
 										"The tunnels are completely dark, which doesn't hinder either the gnolls or the hook horrors."
@@ -37852,7 +37852,7 @@
 						{
 							"type": "entries",
 							"name": "Inhabitants",
-							"page": 174,
+							"page": 175,
 							"id": "47e",
 							"entries": [
 								"Karazikar considers itself the master of all it surveys. The beholder doesn't live alone, though, keeping its lair well stocked with disposable servants.",
@@ -38955,7 +38955,7 @@
 		{
 			"type": "section",
 			"name": "Chapter 15: The City of Spiders",
-			"page": 180,
+			"page": 190,
 			"id": "4d2",
 			"entries": [
 				"The center of the chaos and madness now spreading throughout the Underdark is the great drow city of Menzoberranzan. Few of the city's drow residents know that the Demon Queen of Spiders is behind the summoning ritual that brought the demon lords to the Underdark\u2014and that the reward for their faith in Lolth might well be their destruction.",
@@ -38972,14 +38972,14 @@
 				{
 					"type": "section",
 					"name": "Goals",
-					"page": 180,
+					"page": 190,
 					"id": "4d3",
 					"entries": [
 						"If the characters are working with {@creature Vizeran DeVir|OotA}, they have two goals in the City of Spiders: obtain Gromph Baenre's demon summoning grimoire, and place Vizeran's talisman in Menzoberranzan to draw the demon lords there for an epic showdown.",
 						{
 							"type": "entries",
 							"name": "Placing the \"Dark Heart\"",
-							"page": 180,
+							"page": 190,
 							"id": "4d4",
 							"entries": [
 								"After their adventures in the Wormwrithings and the Labyrinth, the characters can return to Araj to deliver the components they have collected to {@creature Vizeran DeVir|OotA}. Over ten days, the drow archmage uses those components to craft a talisman that looks and feels like a five-pound black heart carved of black stone. Imbued with arcane and fiendish power, the {@i dark heart} talisman acts as a beacon when Vizeran's ritual is performed, drawing all demons presently loose in the Underdark. The talisman radiates faint conjuration magic even before it is activated, but it's primarily a focus for the power of the ritual rather than a source of power itself.",

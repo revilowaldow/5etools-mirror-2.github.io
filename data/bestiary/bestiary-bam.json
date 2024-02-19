@@ -2850,7 +2850,7 @@
 				{
 					"name": "False Appearance",
 					"entries": [
-						"If the eye monger is motionless and has its eye and mouth closed at the start of combat, it has advantage on its initiative roll. Moreover, if a creature hasn't observed the eye monger move or act, that creature must succeed on a {@dc 18} Intelligence (Investigation) check to discern that the eye monger is animate."
+						"If the eye monger is motionless and has its eye and mouth closed at the start of combat, it has advantage on its initiative roll. Moreover, if a creature hasn't observed the eye monger move or act, that creature must succeed on a {@dc 18} Intelligence ({@skill Investigation}) check to discern that the eye monger is animate."
 					]
 				},
 				{
@@ -6874,7 +6874,7 @@
 				{
 					"name": "Phantasmal Form (3/Day)",
 					"entries": [
-						"The clown veils itself and everything it is wearing and carrying in an illusion that makes it look like some other creature of its size or smaller (such as a child) or an object small enough to fit in the clown's space (such as a floating balloon). Maintaining this effect requires the clown's {@status concentration} (as if {@status concentration||concentrating} on a spell), and the illusion fails to hold up to physical inspection. As an action, a creature that can see the clown's illusory form can make a {@dc 15} Wisdom (Insight) check, piercing the illusion and discerning the clown's true form on a success."
+						"The clown veils itself and everything it is wearing and carrying in an illusion that makes it look like some other creature of its size or smaller (such as a child) or an object small enough to fit in the clown's space (such as a floating balloon). Maintaining this effect requires the clown's {@status concentration} (as if {@status concentration||concentrating} on a spell), and the illusion fails to hold up to physical inspection. As an action, a creature that can see the clown's illusory form can make a {@dc 15} Wisdom ({@skill Insight}) check, piercing the illusion and discerning the clown's true form on a success."
 					]
 				}
 			],
@@ -7874,7 +7874,7 @@
 				{
 					"name": "Chameleon Carapace",
 					"entries": [
-						"The thri-kreen changes the color of its carapace to match the color and texture of its surroundings, gaining advantage on Dexterity (Stealth) checks it makes to hide in those surroundings."
+						"The thri-kreen changes the color of its carapace to match the color and texture of its surroundings, gaining advantage on Dexterity ({@skill Stealth}) checks it makes to hide in those surroundings."
 					]
 				},
 				{
@@ -8016,7 +8016,7 @@
 				{
 					"name": "Chameleon Carapace",
 					"entries": [
-						"The thri-kreen changes the color of its carapace to match the color and texture of its surroundings, gaining advantage on Dexterity (Stealth) checks it makes to hide in those surroundings."
+						"The thri-kreen changes the color of its carapace to match the color and texture of its surroundings, gaining advantage on Dexterity ({@skill Stealth}) checks it makes to hide in those surroundings."
 					]
 				}
 			],

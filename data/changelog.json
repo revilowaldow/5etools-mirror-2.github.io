@@ -2655,5 +2655,11 @@
 		"ver": "1.199.3",
 		"date": "2024-02-11",
 		"txt": "- Added page numbers to Planescape: Adventures in the Multiverse adventures/books (Sigil and the Outlands, Turn of Fortune's Wheel, Morte's Planar Parade)\n- (Brew) Added fluff support to `optionalfeature`s\n- (Brew) Fixed rare case where loading a homebrew subclass could fail to load its depended-upon class\n- (Fixed typos/added tags)"
+	},
+	{
+		"ver": "1.200.0",
+		"date": "2024-02-19",
+		"title": "Digital Magpie",
+		"txt": "- Added The Deck of Many Things: Card Reference Guide content (thanks @ Lyra for the data entry and conversion)\n- Added Humblewood Campaign Setting (thanks @ Ragu and @ Spappz for the existing homebrew conversion)\n- Added page numbers to Dungeons of Drakkenheim adventure content\n- (Brew) Fixed Creature Text Converter failing to convert `@recharge` tags in some names\n- (Brew) Added basic \"special equipment\" tagging to Creature Text Converter\n- (Fixed typos/added tags)"
 	}
 ]

@@ -52,7 +52,7 @@
 				{
 					"name": "Sunlight Vulnerability",
 					"entries": [
-						"While in sunlight, the snake has disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight. When the snake begins its turn in sunlight, it immediately suffers 10 radiant damage."
+						"While in sunlight, the snake has disadvantage on attack rolls and on Wisdom ({@skill Perception}) checks that rely on sight. When the snake begins its turn in sunlight, it immediately suffers 10 radiant damage."
 					]
 				},
 				{
@@ -303,7 +303,7 @@
 				{
 					"name": "Sunlight Sensitivity",
 					"entries": [
-						"While in sunlight, Kyrilla has disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight."
+						"While in sunlight, Kyrilla has disadvantage on attack rolls and on Wisdom ({@skill Perception}) checks that rely on sight."
 					]
 				}
 			],
@@ -350,7 +350,7 @@
 				{
 					"name": "Detect",
 					"entries": [
-						"Kyrilla makes a Wisdom (Perception) check."
+						"Kyrilla makes a Wisdom ({@skill Perception}) check."
 					]
 				},
 				{

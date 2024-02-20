@@ -1286,7 +1286,7 @@
 								[
 									"5th",
 									"33 ({@dice 6d8 + 6})",
-									"Proficiency Bonus. Ayik's proficiency bonus increases by 1, so increase the following numbers by 1: the bonuses in the Saving Throws and Skills entries (by 2 for {@skill Perception}), and the bonuses to hit of his weapon attacks. His passive Perception score increases by 2."
+									"Proficiency Bonus. Ayik's proficiency bonus increases by 1, so increase the following numbers by 1: the bonuses in the Saving Throws and Skills entries (by 2 for {@skill Perception}), and the bonuses to hit of his weapon attacks. His passive {@skill Perception} score increases by 2."
 								],
 								[
 									"6th",
@@ -1306,7 +1306,7 @@
 								[
 									"9th",
 									"55 ({@dice 10d8 + 10})",
-									"Proficiency Bonus. Ayik's proficiency bonus increases by 1, so increase the following numbers by 1: the bonuses in the Saving Throws and Skills entries (by 2 for {@skill Perception}), and the bonuses to hit of his weapon attacks. His passive Perception score increases by 2."
+									"Proficiency Bonus. Ayik's proficiency bonus increases by 1, so increase the following numbers by 1: the bonuses in the Saving Throws and Skills entries (by 2 for {@skill Perception}), and the bonuses to hit of his weapon attacks. His passive {@skill Perception} score increases by 2."
 								],
 								[
 									"10th",
@@ -3503,7 +3503,7 @@
 								[
 									"4th",
 									"27 ({@dice 5d8 + 5})",
-									"Ability Score Improvement. Hrigg's Wisdom score increases by 2, raising the modifier by 1, so increase the following numbers by 1: his spell save DC and the bonus to hit of his spell attacks, his Wisdom saving throw bonus, his {@skill Medicine} and {@skill Perception} bonuses, and his passive Perception score. Spellcasting. Hrigg learns another cantrip: {@spell spare the dying}."
+									"Ability Score Improvement. Hrigg's Wisdom score increases by 2, raising the modifier by 1, so increase the following numbers by 1: his spell save DC and the bonus to hit of his spell attacks, his Wisdom saving throw bonus, his {@skill Medicine} and {@skill Perception} bonuses, and his passive {@skill Perception} score. Spellcasting. Hrigg learns another cantrip: {@spell spare the dying}."
 								],
 								[
 									"5th",
@@ -3523,7 +3523,7 @@
 								[
 									"8th",
 									"49 ({@dice 9d8 + 9})",
-									"Ability Score Improvement. Hrigg's Wisdom score increases by 2, raising the modifier by 1, so increase the following numbers by 1: his spell save DC and the bonus to hit of his spell attacks, his Wisdom saving throw bonus, his {@skill Medicine} and {@skill Perception} bonuses, and his passive Perception score."
+									"Ability Score Improvement. Hrigg's Wisdom score increases by 2, raising the modifier by 1, so increase the following numbers by 1: his spell save DC and the bonus to hit of his spell attacks, his Wisdom saving throw bonus, his {@skill Medicine} and {@skill Perception} bonuses, and his passive {@skill Perception} score."
 								],
 								[
 									"9th",
@@ -4404,7 +4404,7 @@
 								[
 									"5th",
 									"33 ({@dice 6d8 + 6})",
-									"Proficiency Bonus. Iriad's proficiency bonus increases by 1, so make the following changes in her stat block: increase the bonuses in the Saving Throws and Skills entries by 1 (by 2 for {@skill Perception}, {@skill Stealth}, and {@skill Survival}); increase her passive Perception score by 2; increase the bonuses to hit of her weapon attacks by 1."
+									"Proficiency Bonus. Iriad's proficiency bonus increases by 1, so make the following changes in her stat block: increase the bonuses in the Saving Throws and Skills entries by 1 (by 2 for {@skill Perception}, {@skill Stealth}, and {@skill Survival}); increase her passive {@skill Perception} score by 2; increase the bonuses to hit of her weapon attacks by 1."
 								],
 								[
 									"6th",
@@ -4419,12 +4419,12 @@
 								[
 									"8th",
 									"49 ({@dice 9d8 + 9})",
-									"Ability Score Improvement. Iriad's Strength and Wisdom scores both increase by 1, raising their modifiers by 1, so increase the following numbers by 1: her {@skill Athletics}, {@skill Perception}, and {@skill Survival} bonuses and her passive Perception score."
+									"Ability Score Improvement. Iriad's Strength and Wisdom scores both increase by 1, raising their modifiers by 1, so increase the following numbers by 1: her {@skill Athletics}, {@skill Perception}, and {@skill Survival} bonuses and her passive {@skill Perception} score."
 								],
 								[
 									"9th",
 									"55 ({@dice 10d8 + 10})",
-									"Proficiency Bonus. Iriad's proficiency bonus increases by 1, so make the following changes in her stat block: increase the bonuses in the Saving Throws and Skills entries by 1 (by 2 for {@skill Perception}, {@skill Stealth}, and {@skill Survival}); increase her passive Perception score by 2; increase the bonuses to hit of her weapon attacks by 1."
+									"Proficiency Bonus. Iriad's proficiency bonus increases by 1, so make the following changes in her stat block: increase the bonuses in the Saving Throws and Skills entries by 1 (by 2 for {@skill Perception}, {@skill Stealth}, and {@skill Survival}); increase her passive {@skill Perception} score by 2; increase the bonuses to hit of her weapon attacks by 1."
 								],
 								[
 									"10th",
@@ -5454,7 +5454,7 @@
 				{
 					"name": "Special Equipment",
 					"entries": [
-						"Kansaldi has a glowing ruby embedded in her left eye socket. The gem functions as her eye and grants her truesight (included above). The gem can't be removed while Kansaldi is alive. When she dies, a creature can remove the gem as an action. The gem then functions as a gem of seeing."
+						"Kansaldi has a glowing ruby embedded in her left eye socket. The gem functions as her eye and grants her truesight (included above). The gem can't be removed while Kansaldi is alive. When she dies, a creature can remove the gem as an action. The gem then functions as a {@item gem of seeing}."
 					]
 				}
 			],
@@ -6179,7 +6179,7 @@
 								[
 									"5th",
 									"39 ({@dice 6d8 + 12})",
-									"Proficiency Bonus. Levna's proficiency bonus increases by 1, so increase the following numbers by 1: the bonuses in the Saving Throws and Skills entries, her passive Perception score, and the bonuses to hit of her weapon attacks."
+									"Proficiency Bonus. Levna's proficiency bonus increases by 1, so increase the following numbers by 1: the bonuses in the Saving Throws and Skills entries, her passive {@skill Perception} score, and the bonuses to hit of her weapon attacks."
 								],
 								[
 									"6th",
@@ -6199,7 +6199,7 @@
 								[
 									"9th",
 									"65 ({@dice 10d8 + 20})",
-									"Proficiency Bonus. Levna's proficiency bonus increases by 1, so increase the following numbers by 1: the bonuses in the Saving Throws and Skills entries, her passive Perception score, and the bonuses to hit of her weapon attacks."
+									"Proficiency Bonus. Levna's proficiency bonus increases by 1, so increase the following numbers by 1: the bonuses in the Saving Throws and Skills entries, her passive {@skill Perception} score, and the bonuses to hit of her weapon attacks."
 								],
 								[
 									"10th",
@@ -7430,7 +7430,7 @@
 				{
 					"name": "Keen Hearing and Sight",
 					"entries": [
-						"The scout has advantage on Wisdom (Perception) checks that rely on hearing or sight."
+						"The scout has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or sight."
 					]
 				},
 				{
@@ -7902,7 +7902,7 @@
 								[
 									"4th",
 									"27 ({@dice 5d6 + 10})",
-									"Ability Score Improvement. Tem's Wisdom score increases by 2, raising the modifier by 1, so increase the following numbers by 1: her spell save DC and the bonus to hit of spell attacks; her Wisdom saving throw bonus; her {@skill Insight}, {@skill Medicine}, and {@skill Perception} bonuses; her passive Perception score; and the DC of her Taunt action. Spellcasting. Tem learns another cantrip: {@spell mending}."
+									"Ability Score Improvement. Tem's Wisdom score increases by 2, raising the modifier by 1, so increase the following numbers by 1: her spell save DC and the bonus to hit of spell attacks; her Wisdom saving throw bonus; her {@skill Insight}, {@skill Medicine}, and {@skill Perception} bonuses; her passive {@skill Perception} score; and the DC of her Taunt action. Spellcasting. Tem learns another cantrip: {@spell mending}."
 								],
 								[
 									"5th",
@@ -7922,7 +7922,7 @@
 								[
 									"8th",
 									"49 ({@dice 9d6 + 18})",
-									"Ability Score Improvement. Tem's Wisdom score increases by 2, raising the modifier by 1, so increase the following numbers by 1: her spell save DC and the bonus to hit of spell attacks; her Wisdom saving throw bonus; her {@skill Insight}, {@skill Medicine}, and {@skill Perception} bonuses; her passive Perception score; and the DC of her Taunt action."
+									"Ability Score Improvement. Tem's Wisdom score increases by 2, raising the modifier by 1, so increase the following numbers by 1: her spell save DC and the bonus to hit of spell attacks; her Wisdom saving throw bonus; her {@skill Insight}, {@skill Medicine}, and {@skill Perception} bonuses; her passive {@skill Perception} score; and the DC of her Taunt action."
 								],
 								[
 									"9th",

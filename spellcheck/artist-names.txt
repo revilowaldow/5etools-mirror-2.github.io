@@ -100,9 +100,9 @@ Jinho
 Jokubas
 Joma
 Jordana
+Kachatorian
 Kafis
 Kasia
-Kachatorian
 Keiser
 Kekai
 Kieryluk
@@ -128,6 +128,7 @@ Lithén
 Litterell
 Lius
 Ljunggren
+Lovitt
 Luiza
 Lukacs
 Lutfullina
@@ -180,9 +181,11 @@ Sasso
 Schley
 Setiawan
 Sevestre
+Shavrin
 Shkipin
 Sidharth
 Sinek
+Sipl
 Siswanto
 Sladek
 Slawomir
@@ -201,6 +204,7 @@ Tenery
 Terese
 Thabiso
 Thacker
+Tinnel
 Titov
 Tomasz
 Trampier
@@ -209,6 +213,7 @@ Trott
 Turkel
 Uogintas
 Valeza
+Vallez
 Veltkamp
 Viko
 Villasenor
@@ -224,6 +229,7 @@ Yeong-Hao
 Yigit
 Yongjae
 Zabrocki
+Zaccaria
 Zafiratos
 Zezhou
 Zielińska

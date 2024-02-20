@@ -3472,6 +3472,18 @@
 			]
 		},
 		{
+			"name": "Balance Card",
+			"source": "BMT",
+			"page": 13,
+			"rarity": "legendary",
+			"wondrous": true,
+			"recharge": "dawn",
+			"entries": [
+				"As an action, you can brandish this card at one creature you can see within 30 feet of yourself and drain its life force. The target must succeed on a {@dc 17} Constitution saving throw or take {@damage 4d8} necrotic damage. You then regain a number of hit points equal to the necrotic damage the target takes. Once this property is used, it can't be used again until the next dawn.\""
+			],
+			"hasFluffImages": true
+		},
+		{
 			"name": "Balance of Harmony",
 			"source": "TftYP",
 			"page": 228,
@@ -5991,6 +6003,79 @@
 			],
 			"lootTables": [
 				"Magic Item Table F"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Borealus",
+			"source": "HWCS",
+			"page": 213,
+			"immune": [
+				"cold"
+			],
+			"resist": [
+				"fire"
+			],
+			"tier": "major",
+			"rarity": "artifact",
+			"reqAttune": true,
+			"weaponCategory": "simple",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"dmg2": "1d8",
+			"staff": true,
+			"entries": [
+				"This legendary artifact was created by a powerful wizard, crafted from the finger of a towering, ancient elemental aspect of frost. It is so cold to the touch that it numbs any skin it comes into contact with, although an attuned character is immune to this effect.",
+				{
+					"name": "Gifts of the Rime",
+					"type": "entries",
+					"entries": [
+						"As long as you are attuned to the Borealus, you gain the following benefits:",
+						{
+							"type": "list",
+							"items": [
+								"You are resistant to fire damage",
+								"You are immune to cold damage",
+								"You learn the {@spell ray of frost} cantrip"
+							]
+						}
+					]
+				},
+				{
+					"name": "Breath of Winter",
+					"type": "entries",
+					"entries": [
+						"While holding the staff you can use your action to unleash an icy-cold blizzard from your open mouth. A 100-foot-cone of hoarfrost blasts forth in a direction of your choice, dealing {@dice 9d8} cold damage to all creatures within the cone if they fail a DC 18 Constitution saving throw, or half as much on a success. You can't use this property again until the next dawn."
+					]
+				},
+				{
+					"name": "Glacial Prison",
+					"type": "entries",
+					"entries": [
+						"By using your action to touch the staff to a surface, you can cause a barrier of ice to spring into existence from a point you can see along this surface within 200 feet of you. This effect is otherwise identical to a {@spell wall of ice} spell cast at 6th level, with a DC 18 for all saving throws related to the effect. You can't use this property again until 3 days have passed."
+					]
+				},
+				{
+					"name": "Cruel Winds",
+					"type": "entries",
+					"entries": [
+						"Wherever the staff goes, a bitterly cold boreal wind accompanies it. The wind gusts intermittently within 30 feet of the attuned character and extinguishes all non-magical flames it comes into contact with."
+					]
+				},
+				{
+					"name": "Destroying the Staff",
+					"type": "entries",
+					"entries": [
+						"The staff can be destroyed through exposure to flames from a fire elemental of equal power to the being it was crafted from. After centuries of exposure, it will melt away into nothing."
+					]
+				}
+			],
+			"attachedSpells": [
+				"ray of frost",
+				"wall of ice"
 			],
 			"hasFluffImages": true
 		},
@@ -8747,6 +8832,18 @@
 			]
 		},
 		{
+			"name": "Comet Card",
+			"source": "BMT",
+			"page": 13,
+			"rarity": "legendary",
+			"wondrous": true,
+			"recharge": "dawn",
+			"entries": [
+				"As an action, you can hold this card aloft and call down a fiery meteor to a point you can see within 120 feet of yourself. Each creature within a 20-foot-radius sphere centered on that point must make a {@dc 17} Dexterity saving throw. On a failed save, a creature takes {@damage 6d6} bludgeoning damage and {@damage 6d6} fire damage, or half as much damage on a successful save. Once this property is used, it can't be used again until the next dawn."
+			],
+			"hasFluffImages": true
+		},
+		{
 			"name": "Common Clothes",
 			"source": "PHB",
 			"page": 150,
@@ -10793,270 +10890,270 @@
 					"rows": [
 						[
 							"01",
-							"Aberration"
+							"{@card Aberration|Deck of Many More Things|BMT}"
 						],
 						[
 							"02",
-							"Balance*"
+							"{@card Balance|Deck of Many More Things|BMT}*"
 						],
 						[
 							"03",
-							"Beast"
+							"{@card Beast|Deck of Many More Things|BMT}"
 						],
 						[
 							"04",
-							"Book"
+							"{@card Book|Deck of Many More Things|BMT}"
 						],
 						[
 							"05",
-							"Bridge"
+							"{@card Bridge|Deck of Many More Things|BMT}"
 						],
 						[
 							"06",
-							"Campfire"
+							"{@card Campfire|Deck of Many More Things|BMT}"
 						],
 						[
 							"07",
-							"Cavern"
+							"{@card Cavern|Deck of Many More Things|BMT}"
 						],
 						[
 							"08",
-							"Celestial"
+							"{@card Celestial|Deck of Many More Things|BMT}"
 						],
 						[
 							"09",
-							"Comet*"
+							"{@card Comet|Deck of Many More Things|BMT}*"
 						],
 						[
 							"10",
-							"Construct"
+							"{@card Construct|Deck of Many More Things|BMT}"
 						],
 						[
 							"11",
-							"Corpse"
+							"{@card Corpse|Deck of Many More Things|BMT}"
 						],
 						[
 							"12",
-							"Crossroads"
+							"{@card Crossroads|Deck of Many More Things|BMT}"
 						],
 						[
 							"13",
-							"Donjon*"
+							"{@card Donjon|Deck of Many More Things|BMT}*"
 						],
 						[
 							"14",
-							"Door"
+							"{@card Door|Deck of Many More Things|BMT}"
 						],
 						[
 							"15",
-							"Dragon"
+							"{@card Dragon|Deck of Many More Things|BMT}"
 						],
 						[
 							"16",
-							"Elemental"
+							"{@card Elemental|Deck of Many More Things|BMT}"
 						],
 						[
 							"17",
-							"Euryale*"
+							"{@card Euryale|Deck of Many More Things|BMT}*"
 						],
 						[
 							"18",
-							"Expert"
+							"{@card Expert|Deck of Many More Things|BMT}"
 						],
 						[
 							"19",
-							"Fates*"
+							"{@card Fates|Deck of Many More Things|BMT}*"
 						],
 						[
 							"20",
-							"Fey"
+							"{@card Fey|Deck of Many More Things|BMT}"
 						],
 						[
 							"21",
-							"Fiend"
+							"{@card Fiend|Deck of Many More Things|BMT}"
 						],
 						[
 							"22",
-							"Flames*"
+							"{@card Flames|Deck of Many More Things|BMT}*"
 						],
 						[
 							"23",
-							"Fool*"
+							"{@card Fool|Deck of Many More Things|BMT}*"
 						],
 						[
 							"24",
-							"Gem*"
+							"{@card Gem|Deck of Many More Things|BMT}*"
 						],
 						[
 							"25",
-							"Giant"
+							"{@card Giant|Deck of Many More Things|BMT}"
 						],
 						[
 							"26",
-							"Humanoid"
+							"{@card Humanoid|Deck of Many More Things|BMT}"
 						],
 						[
 							"27",
-							"Jester*"
+							"{@card Jester|Deck of Many More Things|BMT}*"
 						],
 						[
 							"28",
-							"Key*"
+							"{@card Key|Deck of Many More Things|BMT}*"
 						],
 						[
 							"29",
-							"Knight*"
+							"{@card Knight|Deck of Many More Things|BMT}*"
 						],
 						[
 							"30",
-							"Lance"
+							"{@card Lance|Deck of Many More Things|BMT}"
 						],
 						[
 							"31",
-							"Mage"
+							"{@card Mage|Deck of Many More Things|BMT}"
 						],
 						[
 							"32",
-							"Map"
+							"{@card Map|Deck of Many More Things|BMT}"
 						],
 						[
 							"33",
-							"Maze"
+							"{@card Maze|Deck of Many More Things|BMT}"
 						],
 						[
 							"34",
-							"Mine"
+							"{@card Mine|Deck of Many More Things|BMT}"
 						],
 						[
 							"35",
-							"Monstrosity"
+							"{@card Monstrosity|Deck of Many More Things|BMT}"
 						],
 						[
 							"36",
-							"Moon*"
+							"{@card Moon|Deck of Many More Things|BMT}*"
 						],
 						[
 							"37",
-							"Ooze"
+							"{@card Ooze|Deck of Many More Things|BMT}"
 						],
 						[
 							"38",
-							"Path"
+							"{@card Path|Deck of Many More Things|BMT}"
 						],
 						[
 							"39",
-							"Pit"
+							"{@card Pit|Deck of Many More Things|BMT}"
 						],
 						[
 							"40",
-							"Plant"
+							"{@card Plant|Deck of Many More Things|BMT}"
 						],
 						[
 							"41",
-							"Priest"
+							"{@card Priest|Deck of Many More Things|BMT}"
 						],
 						[
 							"42",
-							"Prisoner"
+							"{@card Prisoner|Deck of Many More Things|BMT}"
 						],
 						[
 							"43",
-							"Puzzle*"
+							"{@card Puzzle|Deck of Many More Things|BMT}*"
 						],
 						[
 							"44",
-							"Ring"
+							"{@card Ring|Deck of Many More Things|BMT}"
 						],
 						[
 							"45",
-							"Rogue*"
+							"{@card Rogue|Deck of Many More Things|BMT}*"
 						],
 						[
 							"46",
-							"Ruin*"
+							"{@card Ruin|Deck of Many More Things|BMT}*"
 						],
 						[
 							"47",
-							"Sage*"
+							"{@card Sage|Deck of Many More Things|BMT}*"
 						],
 						[
 							"48",
-							"Shield"
+							"{@card Shield|Deck of Many More Things|BMT}"
 						],
 						[
 							"49",
-							"Ship"
+							"{@card Ship|Deck of Many More Things|BMT}"
 						],
 						[
 							"50",
-							"Skull*"
+							"{@card Skull|Deck of Many More Things|BMT}*"
 						],
 						[
 							"51",
-							"Staff"
+							"{@card Staff|Deck of Many More Things|BMT}"
 						],
 						[
 							"52",
-							"Stairway"
+							"{@card Stairway|Deck of Many More Things|BMT}"
 						],
 						[
 							"53",
-							"Star*"
+							"{@card Star|Deck of Many More Things|BMT}*"
 						],
 						[
 							"54",
-							"Statue"
+							"{@card Statue|Deck of Many More Things|BMT}"
 						],
 						[
 							"55",
-							"Sun*"
+							"{@card Sun|Deck of Many More Things|BMT}*"
 						],
 						[
 							"56",
-							"Talons*"
+							"{@card Talons|Deck of Many More Things|BMT}*"
 						],
 						[
 							"57",
-							"Tavern"
+							"{@card Tavern|Deck of Many More Things|BMT}"
 						],
 						[
 							"58",
-							"Temple"
+							"{@card Temple|Deck of Many More Things|BMT}"
 						],
 						[
 							"59",
-							"Throne*"
+							"{@card Throne|Deck of Many More Things|BMT}*"
 						],
 						[
 							"60",
-							"Tomb"
+							"{@card Tomb|Deck of Many More Things|BMT}"
 						],
 						[
 							"61",
-							"Tower"
+							"{@card Tower|Deck of Many More Things|BMT}"
 						],
 						[
 							"62",
-							"Tree"
+							"{@card Tree|Deck of Many More Things|BMT}"
 						],
 						[
 							"63",
-							"Undead"
+							"{@card Undead|Deck of Many More Things|BMT}"
 						],
 						[
 							"64",
-							"Void*"
+							"{@card Void|Deck of Many More Things|BMT}*"
 						],
 						[
 							"65",
-							"Warrior"
+							"{@card Warrior|Deck of Many More Things|BMT}"
 						],
 						[
 							"66",
-							"Well"
+							"{@card Well|Deck of Many More Things|BMT}"
 						],
 						[
-							"67-00",
+							"67\u201300",
 							"Roll again"
 						]
 					],
@@ -11075,7 +11172,7 @@
 					"type": "entries",
 					"name": "Beast",
 					"entries": [
-						"You immediately transform into a random Beast with a CR of 5 or lower. Your game statistics\u2014including your ability scores, hit points, and possible actions\u2014are replaced by the Beast's game statistics, and any nonmagical equipment you're wearing or carrying melds into your new form and can't be used. Any magic items you're carrying drop in an unoccupied space within 5 feet of your new form.",
+						"You immediately transform into a {@filter random Beast with a CR of 5 or lower|bestiary|source=|Challenge Rating=[&0;&5]|type=beast}. Your game statistics\u2014including your ability scores, hit points, and possible actions\u2014are replaced by the Beast's game statistics, and any nonmagical equipment you're wearing or carrying melds into your new form and can't be used. Any magic items you're carrying drop in an unoccupied space within 5 feet of your new form.",
 						"You remain transformed in this way for {@dice 2d12} days; nothing can alter your form while you're under the effects of this card, but the {@spell Wish} spell can end the transformation early. When you revert to your normal form, you return to the same state you were in when you initially transformed."
 					]
 				},
@@ -11125,7 +11222,7 @@
 					"type": "entries",
 					"name": "Corpse",
 					"entries": [
-						"You immediately drop to 0 hit points, have the unconscious condition, and must begin making death saving throws. Spells and other magical effects that restore hit points have no effect on you until you are stabilized. If you fail three death saving throws, you die and can be resurrected only by the {@spell Wish} spell."
+						"You immediately drop to 0 hit points, have the {@condition unconscious} condition, and must begin making death saving throws. Spells and other magical effects that restore hit points have no effect on you until you are stabilized. If you fail three death saving throws, you die and can be resurrected only by the {@spell Wish} spell."
 					]
 				},
 				{
@@ -11217,7 +11314,7 @@
 					"type": "entries",
 					"name": "Maze",
 					"entries": [
-						"You gain {@dice 1d3} levels of exhaustion."
+						"You gain {@dice 1d3} levels of {@condition exhaustion}."
 					]
 				},
 				{
@@ -11231,7 +11328,7 @@
 					"type": "entries",
 					"name": "Monstrosity",
 					"entries": [
-						"A Large or larger Monstrosity with a challenge rating of 10 or less (chosen by the DM) appears in an unoccupied space within 15 feet of you. The creature is hostile toward you and attacks immediately. The creature disappears when it is killed or when you are reduced to 0 hit points. If there isn't enough space for a Large or larger creature to appear, this card has no effect."
+						"A {@filter Large or larger Monstrosity with a challenge rating of 10 or less|bestiary|source=|Challenge Rating=[&0;&10]|type=monstrosity|size=l;h;g} (chosen by the DM) appears in an unoccupied space within 15 feet of you. The creature is hostile toward you and attacks immediately. The creature disappears when it is killed or when you are reduced to 0 hit points. If there isn't enough space for a Large or larger creature to appear, this card has no effect."
 					]
 				},
 				{
@@ -11252,7 +11349,7 @@
 					"type": "entries",
 					"name": "Pit",
 					"entries": [
-						"A pit opens beneath you. You plummet {@damage 3d6 × 10} feet, take damage from the fall, and have the prone condition."
+						"A pit opens beneath you. You plummet {@damage 3d6 × 10} feet, take damage from the fall, and have the {@condition prone} condition."
 					]
 				},
 				{
@@ -11273,21 +11370,21 @@
 					"type": "entries",
 					"name": "Prisoner",
 					"entries": [
-						"Glowing chains made of magical force appear and wrap around you. You have the restrained condition until the chains are destroyed or you are freed. While you have this condition, you can't cast spells, and any magic items you're wearing or carrying have their properties suppressed. You draw no more cards. The chains are immune to damage and can't be dispelled using the {@spell Dispel Magic} spell or similar magic. However, a {@spell Disintegrate} spell destroys the chains instantly, freeing you. Another creature can also free you by succeeding on a DC 30 Dexterity check using thieves' tools."
+						"Glowing chains made of magical force appear and wrap around you. You have the {@condition restrained} condition until the chains are destroyed or you are freed. While you have this condition, you can't cast spells, and any magic items you're wearing or carrying have their properties suppressed. You draw no more cards. The chains are immune to damage and can't be dispelled using the {@spell Dispel Magic} spell or similar magic. However, a {@spell Disintegrate} spell destroys the chains instantly, freeing you. Another creature can also free you by succeeding on a {@dc 30} Dexterity check using {@item thieves' tools|PHB}."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Ring",
 					"entries": [
-						"A rare or rarer magic ring appears on your finger. If you have the attunement slots available, you're automatically attuned to the ring when it appears. The DM chooses the ring."
+						"A {@filter rare or rarer magic ring|items|source=|type=ring|rarity=rare;very rare;legendary;artifact|category=} appears on your finger. If you have the attunement slots available, you're automatically attuned to the ring when it appears. The DM chooses the ring."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Shield",
 					"entries": [
-						"A rare or rarer suit of magic armor that you are proficient with appears in your hands. The DM chooses the armor. If you lack proficiency with any armor, your base AC instead now equals 12 + your Dexterity modifier while you aren't wearing armor."
+						"A {@filter rare or rarer suit of magic armor|items|source=|type=light armor;heavy armor;medium armor|rarity=rare;very rare;legendary;artifact|category=} that you are proficient with appears in your hands. The DM chooses the armor. If you lack proficiency with any armor, your base AC instead now equals 12 + your Dexterity modifier while you aren't wearing armor."
 					]
 				},
 				{
@@ -11301,21 +11398,21 @@
 					"type": "entries",
 					"name": "Staff",
 					"entries": [
-						"A rare or rarer magic rod, staff, or wand appears in your hands. The DM chooses the item."
+						"A {@filter rare or rarer magic rod, staff, or wand|items|source=|type=rod;wand;staff|rarity=rare;very rare;legendary;artifact|category=} appears in your hands. The DM chooses the item."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Stairway",
 					"entries": [
-						"You can choose to either decrease your number of declared draws by two or receive a rare or rarer wondrous item, which appears in your hands. The DM chooses the item."
+						"You can choose to either decrease your number of declared draws by two or receive a {@filter rare or rarer wondrous item|items|source=|type=wondrous item|rarity=rare;very rare;legendary;artifact|category=}, which appears in your hands. The DM chooses the item."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Statue",
 					"entries": [
-						"You immediately have the petrified condition as your body is transformed into marble. The petrification lasts until you are freed with the {@spell Greater Restoration} spell or similar magic."
+						"You immediately have the {@condition petrified} condition as your body is transformed into marble. The petrification lasts until you are freed with the {@spell Greater Restoration} spell or similar magic."
 					]
 				},
 				{
@@ -11381,7 +11478,79 @@
 				"speak with plants",
 				"true resurrection"
 			],
+			"seeAlsoDeck": [
+				"Deck of Many More Things|BMT",
+				"Deck of Many More Things|DMTCRG"
+			],
 			"hasFluffImages": true
+		},
+		{
+			"name": "Deck of Many Things",
+			"source": "BMT",
+			"page": 13,
+			"tier": "major",
+			"rarity": "legendary",
+			"wondrous": true,
+			"entries": [
+				"A {@item Deck of Many Things} typically appears not as individual cards, but as a collection of cards characters can draw from. But this doesn't have to be true; you can give each card a property as a standalone item, so characters who find only one card can still enjoy this famed item and use the card on adventures.",
+				"This approach is particularly useful if you make a {@item Deck of Many Things} the object of a quest; as the characters explore, each card they find grants them a magical ability they can use in subsequent adventures to find the cards that remain. Eventually the heroes assemble the entire deck, which they can then use in the traditional manner, drawing transformative cards from it in a fitting climax to the campaign.",
+				"{@note This deck item comprises the following individual cards:}",
+				{
+					"type": "list",
+					"columns": 3,
+					"items": [
+						"{@item Balance Card|BMT}",
+						"{@item Comet Card|BMT}",
+						"{@item Donjon Card|BMT}",
+						"{@item Euryale Card|BMT}",
+						"{@item Fates Card|BMT}",
+						"{@item Flames Card|BMT}",
+						"{@item Fool Card|BMT}",
+						"{@item Gem Card|BMT}",
+						"{@item Jester Card|BMT}",
+						"{@item Key Card|BMT}",
+						"{@item Knight Card|BMT}",
+						"{@item Moon Card|BMT}",
+						"{@item Puzzle Card|BMT}",
+						"{@item Rogue Card|BMT}",
+						"{@item Ruin Card|BMT}",
+						"{@item Sage Card|BMT}",
+						"{@item Skull Card|BMT}",
+						"{@item Star Card|BMT}",
+						"{@item Sun Card|BMT}",
+						"{@item Talons Card|BMT}",
+						"{@item Throne Card|BMT}",
+						"{@item Void Card|BMT}"
+					]
+				}
+			],
+			"packContents": [
+				"Balance Card|BMT",
+				"Comet Card|BMT",
+				"Donjon Card|BMT",
+				"Euryale Card|BMT",
+				"Fates Card|BMT",
+				"Flames Card|BMT",
+				"Fool Card|BMT",
+				"Gem Card|BMT",
+				"Jester Card|BMT",
+				"Key Card|BMT",
+				"Knight Card|BMT",
+				"Moon Card|BMT",
+				"Puzzle Card|BMT",
+				"Rogue Card|BMT",
+				"Ruin Card|BMT",
+				"Sage Card|BMT",
+				"Skull Card|BMT",
+				"Star Card|BMT",
+				"Sun Card|BMT",
+				"Talons Card|BMT",
+				"Throne Card|BMT",
+				"Void Card|BMT"
+			],
+			"seeAlsoDeck": [
+				"Deck of Many Things|BMT"
+			]
 		},
 		{
 			"name": "Deck of Many Things",
@@ -12222,7 +12391,7 @@
 								},
 								"entry": "Ace of diamonds"
 							},
-							"Vizier"
+							"{@card Vizier|Deck of Several Things|LLK}"
 						],
 						[
 							{
@@ -12232,7 +12401,7 @@
 								},
 								"entry": "King of diamonds"
 							},
-							"Sun"
+							"{@card Sun|Deck of Several Things|LLK}"
 						],
 						[
 							{
@@ -12242,7 +12411,7 @@
 								},
 								"entry": "Queen of diamonds"
 							},
-							"Moon"
+							"{@card Moon|Deck of Several Things|LLK}"
 						],
 						[
 							{
@@ -12252,7 +12421,7 @@
 								},
 								"entry": "Jack of diamonds"
 							},
-							"Star"
+							"{@card Star|Deck of Several Things|LLK}"
 						],
 						[
 							{
@@ -12262,7 +12431,7 @@
 								},
 								"entry": "Two of diamonds"
 							},
-							"Comet"
+							"{@card Comet|Deck of Several Things|LLK}"
 						],
 						[
 							{
@@ -12272,7 +12441,7 @@
 								},
 								"entry": "Ace of hearts"
 							},
-							"The Fates"
+							"{@card The Fates|Deck of Several Things|LLK}"
 						],
 						[
 							{
@@ -12282,7 +12451,7 @@
 								},
 								"entry": "King of hearts"
 							},
-							"Throne"
+							"{@card Throne|Deck of Several Things|LLK}"
 						],
 						[
 							{
@@ -12292,7 +12461,7 @@
 								},
 								"entry": "Queen of hearts"
 							},
-							"Key"
+							"{@card Key|Deck of Several Things|LLK}"
 						],
 						[
 							{
@@ -12302,7 +12471,7 @@
 								},
 								"entry": "Jack of hearts"
 							},
-							"Knight"
+							"{@card Knight|Deck of Several Things|LLK}"
 						],
 						[
 							{
@@ -12312,7 +12481,7 @@
 								},
 								"entry": "Two of hearts"
 							},
-							"Gem"
+							"{@card Gem|Deck of Several Things|LLK}"
 						],
 						[
 							{
@@ -12322,7 +12491,7 @@
 								},
 								"entry": "Ace of clubs"
 							},
-							"Talons"
+							"{@card Talons|Deck of Several Things|LLK}"
 						],
 						[
 							{
@@ -12332,7 +12501,7 @@
 								},
 								"entry": "King of clubs"
 							},
-							"The Void"
+							"{@card The Void|Deck of Several Things|LLK}"
 						],
 						[
 							{
@@ -12342,7 +12511,7 @@
 								},
 								"entry": "Queen of clubs"
 							},
-							"Flames"
+							"{@card Flames|Deck of Several Things|LLK}"
 						],
 						[
 							{
@@ -12352,7 +12521,7 @@
 								},
 								"entry": "Jack of clubs"
 							},
-							"Skull"
+							"{@card Skull|Deck of Several Things|LLK}"
 						],
 						[
 							{
@@ -12362,7 +12531,7 @@
 								},
 								"entry": "Two of clubs"
 							},
-							"Idiot"
+							"{@card Idiot|Deck of Several Things|LLK}"
 						],
 						[
 							{
@@ -12372,7 +12541,7 @@
 								},
 								"entry": "Ace of spades"
 							},
-							"Donjon"
+							"{@card Donjon|Deck of Several Things|LLK}"
 						],
 						[
 							{
@@ -12382,7 +12551,7 @@
 								},
 								"entry": "King of spades"
 							},
-							"Ruin"
+							"{@card Ruin|Deck of Several Things|LLK}"
 						],
 						[
 							{
@@ -12392,7 +12561,7 @@
 								},
 								"entry": "Queen of spades"
 							},
-							"Euryale"
+							"{@card Euryale|Deck of Several Things|LLK}"
 						],
 						[
 							{
@@ -12402,7 +12571,7 @@
 								},
 								"entry": "Jack of spades"
 							},
-							"Rogue"
+							"{@card Rogue|Deck of Several Things|LLK}"
 						],
 						[
 							{
@@ -12412,7 +12581,7 @@
 								},
 								"entry": "Two of spades"
 							},
-							"Balance"
+							"{@card Balance|Deck of Several Things|LLK}"
 						],
 						[
 							{
@@ -12422,7 +12591,7 @@
 								},
 								"entry": "Joker (with TM)"
 							},
-							"Fool"
+							"{@card Fool|Deck of Several Things|LLK}"
 						],
 						[
 							{
@@ -12432,7 +12601,7 @@
 								},
 								"entry": "Joker (without TM)"
 							},
-							"Jester"
+							"{@card Jester|Deck of Several Things|LLK}"
 						]
 					]
 				},
@@ -12680,8 +12849,8 @@
 					"type": "table",
 					"caption": "Deck of Wonder",
 					"colStyles": [
-						"col-2 text-center",
-						"col-10"
+						"col-4 text-center",
+						"col-8"
 					],
 					"colLabels": [
 						"{@dice 1d22|Card}",
@@ -12696,7 +12865,7 @@
 								},
 								"entry": "A {@color ♦|#ff0000}"
 							},
-							"Chancellor*"
+							"{@card Chancellor|Deck of Wonder|BMT}*"
 						],
 						[
 							{
@@ -12706,7 +12875,7 @@
 								},
 								"entry": "K {@color ♦|#ff0000}"
 							},
-							"Day"
+							"{@card Day|Deck of Wonder|BMT}"
 						],
 						[
 							{
@@ -12716,7 +12885,7 @@
 								},
 								"entry": "Q {@color ♦|#ff0000}"
 							},
-							"Night"
+							"{@card Night|Deck of Wonder|BMT}"
 						],
 						[
 							{
@@ -12726,7 +12895,7 @@
 								},
 								"entry": "J {@color ♦|#ff0000}"
 							},
-							"Dawn"
+							"{@card Dawn|Deck of Wonder|BMT}"
 						],
 						[
 							{
@@ -12736,7 +12905,7 @@
 								},
 								"entry": "2 {@color ♦|#ff0000}"
 							},
-							"Dusk*"
+							"{@card Dusk|Deck of Wonder|BMT}*"
 						],
 						[
 							{
@@ -12746,7 +12915,7 @@
 								},
 								"entry": "A {@color ♥|#ff0000}"
 							},
-							"Destiny*"
+							"{@card Destiny|Deck of Wonder|BMT}*"
 						],
 						[
 							{
@@ -12756,7 +12925,7 @@
 								},
 								"entry": "K {@color ♥|#ff0000}"
 							},
-							"Crown"
+							"{@card Crown|Deck of Wonder|BMT}"
 						],
 						[
 							{
@@ -12766,7 +12935,7 @@
 								},
 								"entry": "Q {@color ♥|#ff0000}"
 							},
-							"Lock"
+							"{@card Lock|Deck of Wonder|BMT}"
 						],
 						[
 							{
@@ -12776,7 +12945,7 @@
 								},
 								"entry": "J {@color ♥|#ff0000}"
 							},
-							"Champion"
+							"{@card Champion|Deck of Wonder|BMT}"
 						],
 						[
 							{
@@ -12786,7 +12955,7 @@
 								},
 								"entry": "2 {@color ♥|#ff0000}"
 							},
-							"Coin*"
+							"{@card Coin|Deck of Wonder|BMT}*"
 						],
 						[
 							{
@@ -12796,7 +12965,7 @@
 								},
 								"entry": "A ♣"
 							},
-							"Vulture*"
+							"{@card Vulture|Deck of Wonder|BMT}*"
 						],
 						[
 							{
@@ -12806,7 +12975,7 @@
 								},
 								"entry": "K ♣"
 							},
-							"Chaos"
+							"{@card Chaos|Deck of Wonder|BMT}"
 						],
 						[
 							{
@@ -12816,7 +12985,7 @@
 								},
 								"entry": "Q ♣"
 							},
-							"Order"
+							"{@card Order|Deck of Wonder|BMT}"
 						],
 						[
 							{
@@ -12826,7 +12995,7 @@
 								},
 								"entry": "J ♣"
 							},
-							"Beginning"
+							"{@card Beginning|Deck of Wonder|BMT}"
 						],
 						[
 							{
@@ -12836,7 +13005,7 @@
 								},
 								"entry": "2 ♣"
 							},
-							"Mystery*"
+							"{@card Mystery|Deck of Wonder|BMT}*"
 						],
 						[
 							{
@@ -12846,7 +13015,7 @@
 								},
 								"entry": "A ♠"
 							},
-							"Isolation*"
+							"{@card Isolation|Deck of Wonder|BMT}*"
 						],
 						[
 							{
@@ -12856,7 +13025,7 @@
 								},
 								"entry": "K ♠"
 							},
-							"End"
+							"{@card End|Deck of Wonder|BMT}"
 						],
 						[
 							{
@@ -12866,7 +13035,7 @@
 								},
 								"entry": "Q ♠"
 							},
-							"Monster"
+							"{@card Monster|Deck of Wonder|BMT}"
 						],
 						[
 							{
@@ -12876,7 +13045,7 @@
 								},
 								"entry": "J ♠"
 							},
-							"Knife"
+							"{@card Knife|Deck of Wonder|BMT}"
 						],
 						[
 							{
@@ -12886,7 +13055,7 @@
 								},
 								"entry": "2 ♠"
 							},
-							"Justice*"
+							"{@card Justice|Deck of Wonder|BMT}*"
 						],
 						[
 							{
@@ -12896,7 +13065,7 @@
 								},
 								"entry": "Joker (with ™)"
 							},
-							"Student*"
+							"{@card Student|Deck of Wonder|BMT}*"
 						],
 						[
 							{
@@ -12906,7 +13075,7 @@
 								},
 								"entry": "Joker (without ™)"
 							},
-							"Mischief"
+							"{@card Mischief|Deck of Wonder|BMT}"
 						]
 					]
 				},
@@ -13068,6 +13237,9 @@
 			"attachedSpells": [
 				"augury",
 				"knock"
+			],
+			"seeAlsoDeck": [
+				"Deck of Wonder|BMT"
 			],
 			"hasFluffImages": true
 		},
@@ -13858,6 +14030,18 @@
 			]
 		},
 		{
+			"name": "Donjon Card",
+			"source": "BMT",
+			"page": 13,
+			"rarity": "legendary",
+			"wondrous": true,
+			"recharge": "dawn",
+			"entries": [
+				"As an action, you can brandish this card at one creature you can see within 30 feet of yourself. The target must succeed on a {@dc 17} Charisma saving throw, or it vanishes, transported to a prison on another plane of existence. After 1 minute, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied. Once this property is used, it can't be used again until the next dawn."
+			],
+			"hasFluffImages": true
+		},
+		{
 			"name": "Donjon's Sundering Sphere",
 			"source": "BMT",
 			"page": 35,
@@ -14051,7 +14235,7 @@
 		{
 			"name": "Dragongleam",
 			"source": "HotDQ",
-			"page": 69,
+			"page": 84,
 			"otherSources": [
 				{
 					"source": "ToD",
@@ -15536,6 +15720,18 @@
 			]
 		},
 		{
+			"name": "Euryale Card",
+			"source": "BMT",
+			"page": 13,
+			"rarity": "legendary",
+			"wondrous": true,
+			"recharge": "dawn",
+			"entries": [
+				"As an action, you can brandish this card at one creature you can see within 30 feet of yourself and attempt to turn it to stone. The target must succeed on a {@dc 17} Constitution saving throw, or it begins to turn to stone and has the {@condition restrained} condition. The affected target must repeat the saving throw at the end of its next turn. On a successful save, the effect ends on the target. On a failed save, the target has the {@condition petrified} condition (instead of the {@condition restrained} condition) until it is removed by the {@spell Greater Restoration} spell or similar magic. Once this property is used, it can't be used again until the next dawn."
+			],
+			"hasFluffImages": true
+		},
+		{
 			"name": "Euryale's Aegis",
 			"source": "BMT",
 			"page": 35,
@@ -16105,6 +16301,18 @@
 			]
 		},
 		{
+			"name": "Fates Card",
+			"source": "BMT",
+			"page": 13,
+			"rarity": "legendary",
+			"wondrous": true,
+			"recharge": "dawn",
+			"entries": [
+				"As a bonus action, you can brandish this card at one willing creature you can see within 30 feet of yourself, granting the creature a brief glimpse of the future. Until the start of your next turn, the creature has advantage on attack rolls, ability checks, and saving throws. Additionally, other creatures have disadvantage on attack rolls against the target for the duration. Once this property is used, it can't be used again until the next dawn."
+			],
+			"hasFluffImages": true
+		},
+		{
 			"name": "Feather of Diatryma Summoning",
 			"source": "WDH",
 			"page": 191,
@@ -16126,6 +16334,76 @@
 			"entries": [
 				"This small metal disk is inscribed with the image of a feather. When you fall at least 20 feet while the token is on your person, you descend 60 feet per round and take no damage from falling. The token's magic is expended after you land, whereupon the disk becomes nonmagical."
 			]
+		},
+		{
+			"name": "Feathered Helm",
+			"source": "HWCS",
+			"page": 213,
+			"rarity": "rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d3}",
+			"charges": 3,
+			"entries": [
+				"The helm itself is simple leather, hide, scale, or plate, but the magic imbued into it comes from the feather. The birdfolk races of Humblewood consider the giving of a feather to be one of the highest honors one can bestow, and it represents an eternal bond or deep appreciation.",
+				"The helm has 3 charges that, while wearing it, you can use to activate its abilities. The helm has different properties based on the race of the birdfolk who gifted the feather.",
+				{
+					"name": "Corvum",
+					"type": "entries",
+					"entries": [
+						"You can use a charge to cast {@spell Tasha's hideous laughter} (save DC 16) and two charges to cast {@spell detect thoughts} (save DC 16)."
+					]
+				},
+				{
+					"name": "Gallus",
+					"type": "entries",
+					"entries": [
+						"You can use a charge to cast {@spell bless} and two charges to cast {@spell aid}."
+					]
+				},
+				{
+					"name": "Luma",
+					"type": "entries",
+					"entries": [
+						"You can use a charge to cast a random 1st-level spell from the {@filter sorcerer spell list|spells|level=1|class=sorcerer}, then roll a {@dice d20}. On a roll of 20, you may use this ability again without expending a charge. On a roll of 1, the spell also targets you, unless you are its only target, in which case the spell fizzles to no effect. Any spell cast using this helm that requires a saving throw has a save DC of 16."
+					]
+				},
+				{
+					"name": "Raptor",
+					"type": "entries",
+					"entries": [
+						"You can use a charge to cast {@spell hunter's mark} and two charges to cast {@spell magic weapon}."
+					]
+				},
+				{
+					"name": "Strig",
+					"type": "entries",
+					"entries": [
+						"You can use a charge to cast {@spell divine favor} and two charges to cast {@spell pass without trace}."
+					]
+				},
+				"The helm regains {@dice 1d3} charges each day at dawn.",
+				{
+					"type": "inset",
+					"name": "A True Gift",
+					"entries": [
+						"Whether you are playing through the Humblewood adventure, or playing your own campaign in the Wood, look for organic relationships between a character and the races of birdfolk. If one stands out, use that to decide what type of feather is offered to the player in this helm.",
+						"Additionally, a player whose character is a birdfolk may want to make this gift themselves. Make sure to create a narrative bond between this character and who they share a feather with\u2014the gift of a feather is not something which should be given lightly."
+					]
+				}
+			],
+			"attachedSpells": [
+				"tasha's hideous laughter",
+				"detect thoughts",
+				"bless",
+				"aid",
+				"hunter's mark",
+				"magic weapon",
+				"divine favor",
+				"pass without trace"
+			],
+			"hasFluffImages": true
 		},
 		{
 			"name": "Feathered mantle with emerald clasp (Sun Empire)",
@@ -17205,6 +17483,18 @@
 			"hasFluff": true
 		},
 		{
+			"name": "Flames Card",
+			"source": "BMT",
+			"page": 13,
+			"rarity": "legendary",
+			"wondrous": true,
+			"recharge": "dawn",
+			"entries": [
+				"You can use this card to summon a devil. The card is attuned to {@filter a specific devil with a challenge rating of 8 or lower|bestiary|source=|Challenge Rating=[&0;&8]|tag=devil|miscellaneous=}. As an action, you can hold this card aloft and summon that devil, which appears in an unoccupied space you can see within 30 feet of you. The devil is initially unfriendly toward you and your companions. Roll initiative for the devil, which has its own turns. The DM has the creature's stat block. On each of your turns, you can issue a verbal command to the devil (no action required by you), and as long as you are holding this card, the devil obeys your commands. Otherwise, it is under the DM's control and acts according to its nature\u2014it might attack you if it thinks it can prevail or try to tempt you to undertake an evil act in exchange for further service. After 1 minute or when the devil's hit points drop to 0, the devil returns to the Lower Planes. Once this property is used, it can't be used again until the next dawn."
+			],
+			"hasFluffImages": true
+		},
+		{
 			"name": "Flask",
 			"source": "PHB",
 			"page": 153,
@@ -17413,6 +17703,18 @@
 			],
 			"lootTables": [
 				"Magic Item Table C"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Fool Card",
+			"source": "BMT",
+			"page": 13,
+			"rarity": "legendary",
+			"wondrous": true,
+			"recharge": "dawn",
+			"entries": [
+				"As an action, you can brandish this card at one creature you can see within 30 feet of yourself. The target must succeed on a {@dc 17} Wisdom saving throw, or for the next minute, the target can't cast spells or activate magic items, it has disadvantage on all saving throws, and other creatures have resistance to all damage it deals. Once this property is used, it can't be used again until the next dawn."
 			],
 			"hasFluffImages": true
 		},
@@ -17780,6 +18082,18 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Gem Card",
+			"source": "BMT",
+			"page": 14,
+			"rarity": "legendary",
+			"wondrous": true,
+			"recharge": "dawn",
+			"entries": [
+				"This card holds one 6th-level spell (chosen by the DM). As an action, you can brandish this card and use it to cast the spell stored inside (spell attack bonus +9, save DC 17). Once this property is used, it can't be used again until the next dawn."
+			],
+			"hasFluffImages": true
 		},
 		{
 			"name": "Gem of Brightness",
@@ -23487,6 +23801,21 @@
 			"hasFluffImages": true
 		},
 		{
+			"name": "Jester Card",
+			"source": "BMT",
+			"page": 14,
+			"rarity": "legendary",
+			"wondrous": true,
+			"recharge": "dawn",
+			"entries": [
+				"As an action, you can brandish this card and use it to cast the {@spell Otto's Irresistible Dance} spell (save {@dc 17}), and you have advantage on Constitution saving throws to maintain {@status concentration} on it. Once this property is used, it can't be used again until the next dawn."
+			],
+			"attachedSpells": [
+				"Otto's irresistible dance"
+			],
+			"hasFluffImages": true
+		},
+		{
 			"name": "Jester's Mask",
 			"source": "BMT",
 			"page": 36,
@@ -23879,6 +24208,23 @@
 			],
 			"lootTables": [
 				"Magic Item Table B"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Key Card",
+			"source": "BMT",
+			"page": 14,
+			"rarity": "legendary",
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "5",
+			"charges": 5,
+			"entries": [
+				"As an action, you can brandish this card and use it to cast the {@spell Knock} spell, with no sound made by the spell. This property can be used five times, and it regains all expended uses at dawn."
+			],
+			"attachedSpells": [
+				"knock"
 			],
 			"hasFluffImages": true
 		},
@@ -24280,6 +24626,18 @@
 			"entries": [
 				"While wearing this cloak made from the skin of 20 {@creature Knifewing|GHLoE|knifewings}, you gain a +1 bonus to AC. In addition, when you fall while wearing this cloak, you descend 60 feet per round and take no damage from falling."
 			]
+		},
+		{
+			"name": "Knight Card",
+			"source": "BMT",
+			"page": 14,
+			"rarity": "legendary",
+			"wondrous": true,
+			"recharge": "dawn",
+			"entries": [
+				"As an action, you can throw this card to an unoccupied space on the ground within 60 feet of yourself while speaking a command word, whereupon the card magically transforms into a {@creature deck defender|BMT} (see {@book chapter 9|BMT|8|Deck Defender} for its stat block) for up to 1 minute or until you use an action to speak the command word again, whereupon it transforms back into a card. The deck defender obeys your spoken commands. If you issue no commands, it takes the {@action Dodge} action and moves to avoid danger. The deck defender reverts to a card early if it drops to 0 hit points. Once this property is used, it can't be used again until the next dawn."
+			],
+			"hasFluffImages": true
 		},
 		{
 			"name": "Korolnor Scepter",
@@ -27483,6 +27841,24 @@
 			"hasFluffImages": true
 		},
 		{
+			"name": "Moon Card",
+			"source": "BMT",
+			"page": 14,
+			"resist": [
+				"bludgeoning",
+				"force",
+				"piercing",
+				"slashing"
+			],
+			"rarity": "legendary",
+			"wondrous": true,
+			"recharge": "dawn",
+			"entries": [
+				"As an action, you can speak a command word while touching this card and transform into a wolflike biped for 1 minute. For that duration, you have resistance to bludgeoning, piercing, and slashing damage, and when you hit a target with a weapon or an unarmed strike, the target takes an extra {@damage 1d6} force damage. Once this property is used, it can't be used again until the next dawn."
+			],
+			"hasFluffImages": true
+		},
+		{
 			"name": "Moonblade",
 			"source": "DMG",
 			"page": 217,
@@ -28187,6 +28563,97 @@
 			"value": 250000
 		},
 		{
+			"name": "Necronomicon Ex Corvis",
+			"source": "HWCS",
+			"page": 213,
+			"rarity": "artifact",
+			"reqAttune": true,
+			"wondrous": true,
+			"ability": {
+				"int": 2
+			},
+			"entries": [
+				"This legendary tome of dark necromancy was penned by the mad corvum necromancer Lathrus, of the Night's Call. The book is one of a kind and contains terrible necromantic secrets.",
+				"The {@i Necronomicon Ex Corvis} is a {@item spellbook|phb}, and as such only wizards can truly benefit from studying the dark secrets within.",
+				{
+					"name": "Abyssal Secrets",
+					"type": "entries",
+					"entries": [
+						"By spending a full week studying the dark secrets in this tome, your Intelligence score increases by 2. These secrets gnaw at your mind, however, and your Wisdom score decreases by 1."
+					]
+				},
+				{
+					"name": "Grasp of Shadows",
+					"type": "entries",
+					"entries": [
+						"By spending at least a minute reciting a ritual listed in this book, you can summon forth {@dice 1d4 + 2} {@creature shadow|mm|shadows}. These creatures are loyal to you and can understand any instructions you give them. They will carry out these instructions to the best of their ability. This property can only be used once per week."
+					]
+				},
+				{
+					"name": "Knowledge Beyond Reason",
+					"type": "entries",
+					"entries": [
+						"You may add the spells listed below into your spellbook. However, the tome removes the restriction that requires you to be able to prepare and cast these spells. In effect, you can copy these spells to your spellbook now, though they will only be available to prepare once you reach a level at which you can cast them.",
+						"Additionally, rather than pay gold pieces to copy any spell within into your spellbook, you may deal one point of damage to yourself and take one level of {@condition exhaustion} to scribe the spell in your own blood.",
+						{
+							"type": "table",
+							"colLabels": [
+								"Level",
+								"Spell"
+							],
+							"colStyles": [
+								"col-1",
+								"col-11"
+							],
+							"rows": [
+								[
+									"3rd",
+									"{@spell animate dead}, {@spell bestow curse}, {@spell vampiric touch}"
+								],
+								[
+									"4th",
+									"{@spell blight}"
+								],
+								[
+									"6th",
+									"{@spell circle of death}, {@spell magic jar}"
+								],
+								[
+									"7th",
+									"{@spell finger of death}"
+								]
+							]
+						}
+					]
+				},
+				{
+					"name": "The Corvum's Curse",
+					"type": "entries",
+					"entries": [
+						"After copying at least one spell from this tome into your spellbook, you must succeed on a DC 16 Wisdom saving throw or become cursed (as {@spell bestow curse}), with the effect of the curse being decided by the GM.",
+						"The curse persists for {@dice 2d4} days, but its duration resets anytime you copy a spell from this book. Otherwise, only a {@spell remove curse} spell cast using a 5th level or higher spell slot can rid you of this effect."
+					]
+				},
+				{
+					"name": "Destroying the Book",
+					"type": "entries",
+					"entries": [
+						"Unlike other artifacts, the book is not immune to damage. Pages removed from the book will lose their magic within a day. Additionally, exposing the book to direct sunlight for at least 8 hours will cause the dark magic within to dissipate, rendering it useless."
+					]
+				}
+			],
+			"attachedSpells": [
+				"animate dead",
+				"bestow curse",
+				"vampiric touch",
+				"blight",
+				"circle of death",
+				"magic jar",
+				"finger of death"
+			],
+			"hasFluffImages": true
+		},
+		{
 			"name": "Necrotic Absorbing Tattoo",
 			"source": "TCE",
 			"page": 119,
@@ -28270,6 +28737,20 @@
 						"In its lifetime, the sword has beheaded thousands of criminals, not all of whom were guilty of the crimes for which they were convicted. The sword cannot distinguish the guilty from the innocent. With each beheading, it hungers for more justice and blood. The sword is corrupt and irredeemable."
 					]
 				}
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Nest Charm",
+			"source": "HWCS",
+			"page": 214,
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"This charm is a sphere of intricate metal branches, interwoven to form a sort of nest.",
+				"By placing the charm on the ground and speaking its command word, you can cause it to unfold, creating a 30-foot-diameter circular platform of interwoven branches. Once the platform has reached its full size, a magical tree grows beneath it, lifting the platform 50 feet into the air, carrying any passengers and items along with it.",
+				"This perch lasts up to 8 hours, at which point the tree will retreat into the ground and the platform will shrink, eventually curling back into the small charm. At any time the command word can be spoken again to dismiss the perch in a similar fashion. Once the nest charm's power has been used, it can't be used again until the next dawn."
 			],
 			"hasFluffImages": true
 		},
@@ -32294,6 +32775,18 @@
 			]
 		},
 		{
+			"name": "Puzzle Card",
+			"source": "BMT",
+			"page": 14,
+			"rarity": "legendary",
+			"wondrous": true,
+			"recharge": "dawn",
+			"entries": [
+				"As an action, you can hold this card aloft and magically disable each trap within 60 feet of you that isn't behind {@book total cover|PHB|9|Cover}. A trap, for the purpose of this property, includes any object or mechanism that would inflict a sudden effect that was intended by its maker to cause harm or inconvenience. If the trap is the effect of a spell, such as {@spell Alarm}, that trap is suppressed for 10 minutes instead of being disabled. Once this property is used, it can't be used again until the next dawn."
+			],
+			"hasFluffImages": true
+		},
+		{
 			"name": "Pyremaul (Awakened)",
 			"source": "TDCSR",
 			"_copy": {
@@ -34819,6 +35312,18 @@
 			]
 		},
 		{
+			"name": "Rogue Card",
+			"source": "BMT",
+			"page": 14,
+			"rarity": "legendary",
+			"wondrous": true,
+			"recharge": "dawn",
+			"entries": [
+				"When you hit a target with a weapon attack while holding this card, you can deal an extra {@damage 6d6} force damage to that target. Once this property is used, it can't be used again until the next dawn."
+			],
+			"hasFluffImages": true
+		},
+		{
 			"name": "Rogue's Mantle",
 			"source": "BMT",
 			"page": 37,
@@ -35154,6 +35659,21 @@
 			"hasFluffImages": true
 		},
 		{
+			"name": "Ruin Card",
+			"source": "BMT",
+			"page": 15,
+			"rarity": "legendary",
+			"wondrous": true,
+			"recharge": "dawn",
+			"entries": [
+				"As an action, you can brandish this card and use it to cast the {@spell Disintegrate} spell (save {@dc 17}). Once this property is used, it can't be used again until the next dawn."
+			],
+			"attachedSpells": [
+				"disintegrate"
+			],
+			"hasFluffImages": true
+		},
+		{
 			"name": "Ruin's Wake (Awakened)",
 			"source": "EGW",
 			"_copy": {
@@ -35448,6 +35968,21 @@
 			"rarity": "none",
 			"weight": 1,
 			"value": 1500
+		},
+		{
+			"name": "Sage Card",
+			"source": "BMT",
+			"page": 15,
+			"rarity": "legendary",
+			"wondrous": true,
+			"recharge": "dawn",
+			"entries": [
+				"As an action, you can brandish this card and use it to cast the {@spell Contact Other Plane} spell. When you cast the spell in this way, your questions are answered by the mysterious figure depicted on the card. Once this property is used, it can't be used again until the next dawn."
+			],
+			"attachedSpells": [
+				"contact other plane"
+			],
+			"hasFluffImages": true
 		},
 		{
 			"name": "Sage's Mirror",
@@ -37628,6 +38163,21 @@
 				"enthrall",
 				"suggestion"
 			]
+		},
+		{
+			"name": "Skull Card",
+			"source": "BMT",
+			"page": 15,
+			"rarity": "legendary",
+			"wondrous": true,
+			"recharge": "dawn",
+			"entries": [
+				"As an action, you can brandish this card and use it to cast {@spell Spirit of Death|BMT} (see {@book chapter 7|BMT|6|Spirit of Death}) as a 6th-level spell (spell attack bonus {@hit 9}, save {@dc 17}). Once this property is used, it can't be used again until the next dawn."
+			],
+			"attachedSpells": [
+				"spirit of death|bmt"
+			],
+			"hasFluffImages": true
 		},
 		{
 			"name": "Skull Helm",
@@ -40590,6 +41140,18 @@
 			"hasFluffImages": true
 		},
 		{
+			"name": "Star Card",
+			"source": "BMT",
+			"page": 15,
+			"rarity": "legendary",
+			"wondrous": true,
+			"recharge": "dawn",
+			"entries": [
+				"As a bonus action, you can speak a command word while holding this card aloft to gain advantage on all saving throws you make for the next 10 minutes. Once this property is used, it can't be used again until the next dawn."
+			],
+			"hasFluffImages": true
+		},
+		{
 			"name": "Star Moth",
 			"source": "AAG",
 			"page": 50,
@@ -41524,6 +42086,21 @@
 			],
 			"lootTables": [
 				"Magic Item Table G"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Sun Card",
+			"source": "BMT",
+			"page": 15,
+			"rarity": "legendary",
+			"wondrous": true,
+			"recharge": "dawn",
+			"entries": [
+				"As an action, you can brandish this card and use it to cast the {@spell Sunbeam} spell (save {@dc 17}), projecting the light from the card's face. Once this property is used, it can't be used again until the next dawn."
+			],
+			"attachedSpells": [
+				"sunbeam"
 			],
 			"hasFluffImages": true
 		},
@@ -42501,6 +43078,18 @@
 			"wondrous": true,
 			"entries": [
 				"While this stuffed doll is within 5 feet of you, you can spend a short rest telling it to say up to six phrases, none of which can be more than six words long, and set an observable condition under which the doll speaks each phrase. You can also replace old phrases with new ones. Whatever the condition, it must occur within 5 feet of the doll to make it speak. For example, whenever someone picks up the doll, it might say, \"I want a piece of candy.\" The doll's phrases are lost when your attunement to the doll ends."
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Talons Card",
+			"source": "BMT",
+			"page": 15,
+			"rarity": "legendary",
+			"wondrous": true,
+			"recharge": "dawn",
+			"entries": [
+				"As an action, you can brandish this card and target one magic item you can see within 120 feet of yourself. If the item isn't an artifact, its magical properties are suppressed for 1 minute. Once this property is used, it can't be used again until the next dawn."
 			],
 			"hasFluffImages": true
 		},
@@ -43873,6 +44462,21 @@
 			"type": "GS",
 			"rarity": "none",
 			"value": 100
+		},
+		{
+			"name": "Throne Card",
+			"source": "BMT",
+			"page": 15,
+			"rarity": "legendary",
+			"wondrous": true,
+			"recharge": "dawn",
+			"entries": [
+				"As an action, you can speak a command word while holding this card to gain advantage on Charisma ({@skill Intimidation} or {@skill Persuasion}) checks for 1 minute. In addition, for that duration, you can use this card to cast the {@spell Command} spell (save {@dc 17}) as an action. Once this property is used, it can't be used again until the next dawn."
+			],
+			"attachedSpells": [
+				"command"
+			],
+			"hasFluffImages": true
 		},
 		{
 			"name": "Thunder Absorbing Tattoo",
@@ -46638,6 +47242,18 @@
 			]
 		},
 		{
+			"name": "Void Card",
+			"source": "BMT",
+			"page": 15,
+			"rarity": "legendary",
+			"wondrous": true,
+			"recharge": "dawn",
+			"entries": [
+				"As an action, you can brandish this card and attempt to banish up to three creatures you can see within 120 feet of yourself. If the target is from a different plane of existence than the plane you're on, the target must succeed on a {@dc 17} Charisma saving throw or be banished, returning to that other plane. Once this property is used, it can't be used again until the next dawn."
+			],
+			"hasFluffImages": true
+		},
+		{
 			"name": "Voidwalker Armor",
 			"source": "BMT",
 			"page": 39,
@@ -48714,6 +49330,25 @@
 			],
 			"attachedSpells": [
 				"dominate monster"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Wing Crest Shield",
+			"source": "HWCS",
+			"page": 214,
+			"type": "S",
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"wondrous": true,
+			"ac": 2,
+			"bonusAc": "+1",
+			"entries": [
+				"While wielding this shield, you gain a +1 bonus to your AC.",
+				"As an action, you can speak the command word to cast {@spell gust of wind} (save DC 15). Once the shield has been used to cast this spell, it can't be used to cast this spell again until the next dawn."
+			],
+			"attachedSpells": [
+				"gust of wind"
 			],
 			"hasFluffImages": true
 		},

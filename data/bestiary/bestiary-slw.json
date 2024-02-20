@@ -637,7 +637,7 @@
 				{
 					"name": "Keen Hearing and Smell",
 					"entries": [
-						"Tooth-N-Claw has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+						"Tooth-N-Claw has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
 					]
 				},
 				{

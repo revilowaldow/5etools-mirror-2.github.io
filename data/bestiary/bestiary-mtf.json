@@ -13223,7 +13223,7 @@
 					"entries": [
 						"While submerged, the leviathan magically creates a wall of water centered on itself. The wall is up 250 feet long, up to 250 feet high, and up to 50 feet thick. When the wall appears, all other creatures within its area must each make a {@dc 24} Strength saving throw. A creature takes 33 ({@damage 6d10}) bludgeoning damage on failed save, or half as much damage on a successful one.",
 						"At the start of each of the leviathan's turns after the wall appears, the wall, along with any other creatures in it, moves 50 feet away from the leviathan. Any Huge or smaller creature inside the wall or whose space the wall enters when it moves must succeed on a {@dc 24} Strength saving throw or take 27 ({@damage 5d10}) bludgeoning damage. A creature takes this damage no more than once on a turn. At the end of each turn the wall moves, the wall's height is reduced by 50 feet, and the damage creatures take from the wall on subsequent rounds is reduced by {@dice 1d10}. When the wall reaches 0 feet in height, the effect ends.",
-						"A creature caught in the wall can move by swimming. Because of the force of the wave, though, the creature must make a successful {@dc 24} Strength (Athletics) check to swim at all during that turn."
+						"A creature caught in the wall can move by swimming. Because of the force of the wave, though, the creature must make a successful {@dc 24} Strength ({@skill Athletics}) check to swim at all during that turn."
 					]
 				}
 			],
@@ -15197,7 +15197,7 @@
 				{
 					"name": "Diabolical Sense",
 					"entries": [
-						"The narzugon has advantage on Wisdom (Perception) checks made to perceive good-aligned creatures."
+						"The narzugon has advantage on Wisdom ({@skill Perception}) checks made to perceive good-aligned creatures."
 					]
 				},
 				{
@@ -23468,7 +23468,7 @@
 					"name": "Earth-Shaking Movement",
 					"entries": [
 						"As a bonus action after moving at least 10 feet on the ground, the zaratan can send a shock wave through the ground in a 120-foot-radius circle centered on itself. That area becomes {@quickref difficult terrain||3} for 1 minute. Each creature on the ground that is {@status concentration||concentrating} must succeed on a {@dc 25} Constitution saving throw or the creature's {@status concentration} is broken.",
-						"The shock wave deals 100 thunder damage to all structures in contact with the ground in the area. If a creature is near a structure that collapses, the creature might be buried; a creature within half the distance of the structure's height must make a {@dc 25} Dexterity saving throw. On a failed save, the creature takes 17 ({@damage 5d6}) bludgeoning damage, is knocked {@condition prone}, and is trapped in the rubble. A trapped creature is {@condition restrained}, requiring a successful {@dc 20} Strength (Athletics) check as an action to escape. Another creature within 5 feet of the buried creature can use its action to clear rubble and grant advantage on the check. If three creatures use their actions in this way, the check is an automatic success. On a successful save, the creature takes half as much damage and doesn't fall {@condition prone} or become trapped."
+						"The shock wave deals 100 thunder damage to all structures in contact with the ground in the area. If a creature is near a structure that collapses, the creature might be buried; a creature within half the distance of the structure's height must make a {@dc 25} Dexterity saving throw. On a failed save, the creature takes 17 ({@damage 5d6}) bludgeoning damage, is knocked {@condition prone}, and is trapped in the rubble. A trapped creature is {@condition restrained}, requiring a successful {@dc 20} Strength ({@skill Athletics}) check as an action to escape. Another creature within 5 feet of the buried creature can use its action to clear rubble and grant advantage on the check. If three creatures use their actions in this way, the check is an automatic success. On a successful save, the creature takes half as much damage and doesn't fall {@condition prone} or become trapped."
 					]
 				},
 				{

@@ -436,7 +436,7 @@
 				{
 					"name": "Special Equipment",
 					"entries": [
-						"Asteria wears Winged Boots, which grant her a flying speed (included in her statistics). She also carries one half of a pair of Sending Stones; the other half of the pair is held by Euryale."
+						"Asteria wears {@item Winged Boots}, which grant her a flying speed (included in her statistics). She also carries one half of a pair of {@item Sending Stones}; the other half of the pair is held by Euryale."
 					]
 				}
 			],
@@ -1765,7 +1765,7 @@
 				{
 					"name": "Special Equipment",
 					"entries": [
-						"Euryale carries one half of a pair of Sending Stones; the other half of the pair is held by Asteria."
+						"Euryale carries one half of a pair of {@item Sending Stones}; the other half of the pair is held by Asteria."
 					]
 				}
 			],

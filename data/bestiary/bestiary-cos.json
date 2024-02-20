@@ -2575,7 +2575,7 @@
 				{
 					"name": "Mimicry",
 					"entries": [
-						"The mongrelfolk can mimic any sounds it has heard, including voices. A creature that hears the sounds can tell they are imitations with a successful {@dc 12} Wisdom (Insight) check."
+						"The mongrelfolk can mimic any sounds it has heard, including voices. A creature that hears the sounds can tell they are imitations with a successful {@dc 12} Wisdom ({@skill Insight}) check."
 					]
 				}
 			],

@@ -76,7 +76,7 @@
 				{
 					"name": "Keen Sight and Smell",
 					"entries": [
-						"Billy Beaver has advantage on Wisdom (Perception) checks that rely on sight or smell."
+						"Billy Beaver has advantage on Wisdom ({@skill Perception}) checks that rely on sight or smell."
 					]
 				}
 			],

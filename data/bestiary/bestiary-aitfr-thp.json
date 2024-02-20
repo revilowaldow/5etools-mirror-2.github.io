@@ -71,7 +71,7 @@
 				{
 					"name": "Sunlight Sensitivity",
 					"entries": [
-						"While in sunlight, the horror has disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight."
+						"While in sunlight, the horror has disadvantage on attack rolls and on Wisdom ({@skill Perception}) checks that rely on sight."
 					]
 				}
 			],
@@ -421,7 +421,7 @@
 				{
 					"name": "Personal Insight",
 					"entries": [
-						"The usagt targets one creature it can see within 30 feet of it. The target must contest its Charisma ({@skill Deception}) check against the usagt's Wisdom (Insight) check.",
+						"The usagt targets one creature it can see within 30 feet of it. The target must contest its Charisma ({@skill Deception}) check against the usagt's Wisdom ({@skill Insight}) check.",
 						"The target has advantage on the roll if it is immune to being {@condition charmed}. A target can choose to fail this check.",
 						"If the usagt wins, it magically learns the identity of a creature from the target's past, someone the target wishes it could speak to again or with whom the target has left something unsaid. If somehow no such creature exists in the target's past, the usagt learns that instead."
 					]

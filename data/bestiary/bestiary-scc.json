@@ -1399,7 +1399,7 @@
 				{
 					"name": "False Appearance",
 					"entries": [
-						"If the groff is motionless at the start of combat, it has advantage on its initiative roll. Moreover, if a creature hasn't observed the groff move or act, that creature must succeed on a {@dc 18} Intelligence (Investigation) check to discern that the groff isn't an ordinary moss-covered bog patch."
+						"If the groff is motionless at the start of combat, it has advantage on its initiative roll. Moreover, if a creature hasn't observed the groff move or act, that creature must succeed on a {@dc 18} Intelligence ({@skill Investigation}) check to discern that the groff isn't an ordinary moss-covered bog patch."
 					]
 				},
 				{
@@ -1904,7 +1904,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The professor makes two Spectral Scroll attacks. It can also use Weight of History, if available."
+						"The professor makes two Spectral Scroll attacks. It can also use Weight of {@skill History}, if available."
 					]
 				},
 				{
@@ -2322,7 +2322,7 @@
 				{
 					"name": "Oriq Mask",
 					"entries": [
-						"Murgaxor wears an Oriq mask. While wearing the mask, Murgaxor can't be targeted by any divination magic or perceived through magical scrying sensors, and he adds double his proficiency bonus to Charisma (Deception) checks (included above)."
+						"Murgaxor wears an Oriq mask. While wearing the mask, Murgaxor can't be targeted by any divination magic or perceived through magical scrying sensors, and he adds double his proficiency bonus to Charisma ({@skill Deception}) checks (included above)."
 					]
 				},
 				{
@@ -2632,7 +2632,7 @@
 				{
 					"name": "Oriq Mask",
 					"entries": [
-						"The blood mage wears an Oriq mask. While wearing the mask, the blood mage can't be targeted by any divination magic or perceived through magical scrying sensors, and it adds double its proficiency bonus to Charisma (Deception) checks (included above)."
+						"The blood mage wears an Oriq mask. While wearing the mask, the blood mage can't be targeted by any divination magic or perceived through magical scrying sensors, and it adds double its proficiency bonus to Charisma ({@skill Deception}) checks (included above)."
 					]
 				},
 				{
@@ -2781,7 +2781,7 @@
 				{
 					"name": "Oriq Mask",
 					"entries": [
-						"The recruiter wears an Oriq mask. While wearing the mask, the recruiter can't be targeted by any divination magic or perceived through magical scrying sensors, and it adds double its proficiency bonus to Charisma (Deception) checks (included above)."
+						"The recruiter wears an Oriq mask. While wearing the mask, the recruiter can't be targeted by any divination magic or perceived through magical scrying sensors, and it adds double its proficiency bonus to Charisma ({@skill Deception}) checks (included above)."
 					]
 				}
 			],
@@ -6043,7 +6043,7 @@
 				{
 					"name": "Oriq Mask",
 					"entries": [
-						"Y'demi wears an Oriq mask. While wearing the mask, Y'demi can't be targeted by any divination magic or perceived through magical scrying sensors, and she adds double her proficiency bonus to Charisma (Deception) checks (included above)."
+						"Y'demi wears an Oriq mask. While wearing the mask, Y'demi can't be targeted by any divination magic or perceived through magical scrying sensors, and she adds double her proficiency bonus to Charisma ({@skill Deception}) checks (included above)."
 					]
 				},
 				{
@@ -6077,7 +6077,7 @@
 				{
 					"name": "Sanguine Tentacles (1/Day)",
 					"entries": [
-						"The blood in the copper basin disappears as tentacles of congealed blood fill a 10-foot cube centered at a point on the ground that Y'demi can see within 15 feet of her. The effect lasts for 1 minute, during which time that area is {@quickref difficult terrain||3}. Any creature entering that area for the first time on a turn or starting its turn there must succeed on a {@dc 13} Dexterity saving throw or be {@condition restrained} by the tentacles. A creature that starts its turn {@condition restrained} by the tentacles takes 10 ({@damage 3d6}) bludgeoning damage. A creature {@condition restrained} by the tentacles can use its action to make either a {@dc 13} Strength (Athletics) check or a {@dc 13} Dexterity (Acrobatics) check, ending the {@condition restrained} condition on itself on a success."
+						"The blood in the copper basin disappears as tentacles of congealed blood fill a 10-foot cube centered at a point on the ground that Y'demi can see within 15 feet of her. The effect lasts for 1 minute, during which time that area is {@quickref difficult terrain||3}. Any creature entering that area for the first time on a turn or starting its turn there must succeed on a {@dc 13} Dexterity saving throw or be {@condition restrained} by the tentacles. A creature that starts its turn {@condition restrained} by the tentacles takes 10 ({@damage 3d6}) bludgeoning damage. A creature {@condition restrained} by the tentacles can use its action to make either a {@dc 13} Strength ({@skill Athletics}) check or a {@dc 13} Dexterity ({@skill Acrobatics}) check, ending the {@condition restrained} condition on itself on a success."
 					]
 				}
 			],

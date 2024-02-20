@@ -1975,7 +1975,7 @@
 				{
 					"name": "Keen Hearing",
 					"entries": [
-						"The fox has advantage on Wisdom (Perception) checks that rely on hearing."
+						"The fox has advantage on Wisdom ({@skill Perception}) checks that rely on hearing."
 					]
 				}
 			],
@@ -2579,7 +2579,7 @@
 				{
 					"name": "Keen Smell",
 					"entries": [
-						"The vampire has advantage on Wisdom (Perception) checks that rely on smell."
+						"The vampire has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
 					]
 				},
 				{
@@ -3169,7 +3169,7 @@
 				{
 					"name": "Keen Smell",
 					"entries": [
-						"The werebear has advantage on Wisdom (Perception) checks that rely on smell."
+						"The werebear has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
 					]
 				},
 				{
@@ -3338,7 +3338,7 @@
 				{
 					"name": "Sunlight Sensitivity",
 					"entries": [
-						"While in sunlight, Grandolpha has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+						"While in sunlight, Grandolpha has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
 					]
 				}
 			],
@@ -3810,7 +3810,7 @@
 				{
 					"name": "Keen Smell",
 					"entries": [
-						"The ice troll has advantage on Wisdom (Perception) checks that rely on smell."
+						"The ice troll has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
 					]
 				},
 				{
@@ -3934,7 +3934,7 @@
 				{
 					"name": "Sunlight Sensitivity",
 					"entries": [
-						"While in sunlight, the kobold has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+						"While in sunlight, the kobold has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
 					]
 				}
 			],
@@ -4148,7 +4148,7 @@
 				{
 					"name": "Keen Hearing and Smell",
 					"entries": [
-						"Isarr has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+						"Isarr has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
 					]
 				}
 			],
@@ -5638,7 +5638,7 @@
 				{
 					"name": "Keen Smell",
 					"entries": [
-						"The seal has advantage on Wisdom (Perception) checks that rely on smell."
+						"The seal has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
 					]
 				}
 			],
@@ -6117,7 +6117,7 @@
 				{
 					"name": "Keen Hearing",
 					"entries": [
-						"The whale has advantage on Wisdom (Perception) checks that rely on hearing."
+						"The whale has advantage on Wisdom ({@skill Perception}) checks that rely on hearing."
 					]
 				}
 			],
@@ -6630,7 +6630,7 @@
 				{
 					"name": "Special Equipment",
 					"entries": [
-						"Vellynne wears bracers of defense and carries a wand of magic missiles (see \"Actions\" below)."
+						"Vellynne wears {@item bracers of defense} and carries a {@item wand of magic missiles} (see \"Actions\" below)."
 					]
 				}
 			],
@@ -7062,7 +7062,7 @@
 				{
 					"name": "Sunlight Sensitivity",
 					"entries": [
-						"While in sunlight, Xardorok has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+						"While in sunlight, Xardorok has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
 					]
 				}
 			],
@@ -7198,13 +7198,13 @@
 				{
 					"name": "Keen Smell",
 					"entries": [
-						"The yeti has advantage on Wisdom (Perception) checks that rely on smell."
+						"The yeti has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
 					]
 				},
 				{
 					"name": "Snow Camouflage",
 					"entries": [
-						"The yeti has advantage on Dexterity (Stealth) checks made to hide in snowy terrain."
+						"The yeti has advantage on Dexterity ({@skill Stealth}) checks made to hide in snowy terrain."
 					]
 				}
 			],

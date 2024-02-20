@@ -9974,7 +9974,7 @@
 				{
 					"name": "Pinion",
 					"entries": [
-						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) piercing damage. If the target is a Medium or smaller creature, it is pinned beneath the bony pinion and {@condition restrained}. The golem has two pinions, each of which can restrain one target. If a creature is {@condition restrained} by one of the pinions, the golem can't attack with it. Any creature {@condition restrained} by a pinion can free itself at the start of its turn with a successful {@dc 17} Strength (Athletics) check."
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) piercing damage. If the target is a Medium or smaller creature, it is pinned beneath the bony pinion and {@condition restrained}. The golem has two pinions, each of which can restrain one target. If a creature is {@condition restrained} by one of the pinions, the golem can't attack with it. Any creature {@condition restrained} by a pinion can free itself at the start of its turn with a successful {@dc 17} Strength ({@skill Athletics}) check."
 					]
 				},
 				{
@@ -10881,7 +10881,7 @@
 				{
 					"name": "False Appearance",
 					"entries": [
-						"If the egg hunter is motionless at the start of combat, it has advantage on its initiative roll. Moreover, if a creature hasn't observed the egg hunter move or act, that creature must succeed on a {@dc 18} Intelligence (Investigation) check to discern that the egg hunter is animate. Dragons have disadvantage on this check."
+						"If the egg hunter is motionless at the start of combat, it has advantage on its initiative roll. Moreover, if a creature hasn't observed the egg hunter move or act, that creature must succeed on a {@dc 18} Intelligence ({@skill Investigation}) check to discern that the egg hunter is animate. Dragons have disadvantage on this check."
 					]
 				}
 			],
@@ -12972,7 +12972,7 @@
 				{
 					"name": "False Appearance (Hoard Form Only)",
 					"entries": [
-						"If the mimic is motionless at the start of combat, it has advantage on its initiative roll. Moreover, if a creature hasn't observed the mimic move or act, that creature must succeed on a {@dc 18} Intelligence (Investigation) check to discern that the mimic is animate."
+						"If the mimic is motionless at the start of combat, it has advantage on its initiative roll. Moreover, if a creature hasn't observed the mimic move or act, that creature must succeed on a {@dc 18} Intelligence ({@skill Investigation}) check to discern that the mimic is animate."
 					]
 				}
 			],
@@ -13088,7 +13088,7 @@
 				{
 					"name": "False Appearance",
 					"entries": [
-						"If the scarab is motionless at the start of combat, it has advantage on its initiative roll. Moreover, if a creature hasn't observed the scarab move or act, that creature must succeed on a {@dc 18} Intelligence (Investigation) check to discern that the scarab is animate."
+						"If the scarab is motionless at the start of combat, it has advantage on its initiative roll. Moreover, if a creature hasn't observed the scarab move or act, that creature must succeed on a {@dc 18} Intelligence ({@skill Investigation}) check to discern that the scarab is animate."
 					]
 				}
 			],
@@ -15074,7 +15074,7 @@
 				{
 					"name": "False Appearance",
 					"entries": [
-						"If the swarm is motionless at the start of combat, it has advantage on its initiative roll. Moreover, if a creature hasn't observed the swarm move or act, that creature must succeed on a {@dc 18} Intelligence (Investigation) check to discern that the swarm is animate."
+						"If the swarm is motionless at the start of combat, it has advantage on its initiative roll. Moreover, if a creature hasn't observed the swarm move or act, that creature must succeed on a {@dc 18} Intelligence ({@skill Investigation}) check to discern that the swarm is animate."
 					]
 				},
 				{

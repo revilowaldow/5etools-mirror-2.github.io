@@ -2748,14 +2748,14 @@
 				{
 					"type": "entries",
 					"name": "Mushroom Tea",
-					"page": 154,
+					"page": 184,
 					"entries": [
 						"When the hearth fire dims in the Underdark, the drow are known to reach for their kettles\u2014not to make any herbal tea, but instead an after-dinner broth of simmering mushrooms. If they can find them, the drow prefer matsutake, though shiitake or maitake will do in a pinch. They place the sliced mushrooms into a clear broth seasoned with dried kelp, sometimes with a splash of fish stock or soy sauce and alcohol, and heat it in a teakettle. From this, they pour small cups of the fragrant tea to imbibe slowly until the mushrooms cook to perfection, at which point they are eaten with a fine skewer.",
 						{
 							"type": "statblock",
 							"tag": "recipe",
 							"name": "Mushroom Tea",
-							"page": 154
+							"page": 184
 						}
 					],
 					"id": "087"

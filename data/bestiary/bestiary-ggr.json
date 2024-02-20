@@ -1689,7 +1689,7 @@
 				{
 					"name": "Mimicry",
 					"entries": [
-						"The cackler can mimic any sounds it has heard, including voices. A creature that hears the sounds can tell they are imitations with a successful {@dc 11} Wisdom (Insight) check."
+						"The cackler can mimic any sounds it has heard, including voices. A creature that hears the sounds can tell they are imitations with a successful {@dc 11} Wisdom ({@skill Insight}) check."
 					]
 				}
 			],
@@ -2094,7 +2094,7 @@
 				{
 					"name": "Vine Staff",
 					"entries": [
-						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 17} Dexterity saving throw or become {@condition restrained} by twisting vines for 1 minute. A target {@condition restrained} in this way can use an action to make a {@dc 17} Strength (Athletics) or Dexterity (Acrobatics) check, ending the effect on itself on a success."
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 17} Dexterity saving throw or become {@condition restrained} by twisting vines for 1 minute. A target {@condition restrained} in this way can use an action to make a {@dc 17} Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check, ending the effect on itself on a success."
 					]
 				},
 				{
@@ -3092,7 +3092,7 @@
 				{
 					"name": "Keen Hearing and Sight",
 					"entries": [
-						"The felidar has advantage on Wisdom (Perception) checks that rely on hearing or sight."
+						"The felidar has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or sight."
 					]
 				},
 				{
@@ -3806,7 +3806,7 @@
 				{
 					"name": "Sunlight Sensitivity",
 					"entries": [
-						"While in sunlight, the horror has disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight."
+						"While in sunlight, the horror has disadvantage on attack rolls and on Wisdom ({@skill Perception}) checks that rely on sight."
 					]
 				}
 			],
@@ -4282,7 +4282,7 @@
 				{
 					"name": "Sunlight Sensitivity",
 					"entries": [
-						"While in sunlight, the gloamwing has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+						"While in sunlight, the gloamwing has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
 					]
 				}
 			],
@@ -5148,7 +5148,7 @@
 				{
 					"name": "Chameleon Skin",
 					"entries": [
-						"The hybrid has advantage on Dexterity (Stealth) checks made to hide."
+						"The hybrid has advantage on Dexterity ({@skill Stealth}) checks made to hide."
 					]
 				},
 				{
@@ -5475,7 +5475,7 @@
 				{
 					"name": "Inscrutable",
 					"entries": [
-						"Isperia is immune to any effect that would sense her emotions or read her thoughts, as well as any divination spell that she refuses. Wisdom (Insight) checks made to ascertain her intentions or sincerity have disadvantage."
+						"Isperia is immune to any effect that would sense her emotions or read her thoughts, as well as any divination spell that she refuses. Wisdom ({@skill Insight}) checks made to ascertain her intentions or sincerity have disadvantage."
 					]
 				},
 				{
@@ -6763,7 +6763,7 @@
 				{
 					"name": "Sunlight Sensitivity",
 					"entries": [
-						"While in sunlight, the vampire has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+						"While in sunlight, the vampire has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
 					]
 				}
 			],
@@ -8794,7 +8794,7 @@
 				{
 					"name": "Ruin Dweller",
 					"entries": [
-						"The stalker has advantage on Dexterity (Stealth) checks made to hide in ruins, and its speed is not reduced in {@quickref difficult terrain||3} composed of rubble."
+						"The stalker has advantage on Dexterity ({@skill Stealth}) checks made to hide in ruins, and its speed is not reduced in {@quickref difficult terrain||3} composed of rubble."
 					]
 				},
 				{
@@ -9070,7 +9070,7 @@
 				{
 					"name": "Sunlight Sensitivity",
 					"entries": [
-						"While in sunlight, the horror has disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight."
+						"While in sunlight, the horror has disadvantage on attack rolls and on Wisdom ({@skill Perception}) checks that rely on sight."
 					]
 				}
 			],
@@ -9380,7 +9380,7 @@
 				{
 					"name": "Sunlight Sensitivity",
 					"entries": [
-						"While in sunlight, the horror has disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight."
+						"While in sunlight, the horror has disadvantage on attack rolls and on Wisdom ({@skill Perception}) checks that rely on sight."
 					]
 				}
 			],
@@ -9484,7 +9484,7 @@
 				{
 					"name": "Keen Sight",
 					"entries": [
-						"The roc has advantage on Wisdom (Perception) checks that rely on sight."
+						"The roc has advantage on Wisdom ({@skill Perception}) checks that rely on sight."
 					]
 				}
 			],
@@ -9856,7 +9856,7 @@
 				{
 					"name": "Stone Camouflage",
 					"entries": [
-						"The giant has advantage on Dexterity (Stealth) checks made to hide in rocky terrain."
+						"The giant has advantage on Dexterity ({@skill Stealth}) checks made to hide in rocky terrain."
 					]
 				}
 			],

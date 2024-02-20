@@ -3410,7 +3410,7 @@
 						},
 						{
 							"type": "insetReadaloud",
-							"page": 65,
+							"page": 72,
 							"entries": [
 								{
 									"type": "list",
@@ -5458,7 +5458,7 @@
 						},
 						{
 							"type": "insetReadaloud",
-							"page": 81,
+							"page": 94,
 							"entries": [
 								{
 									"type": "list",
@@ -6052,7 +6052,7 @@
 										{
 											"type": "entries",
 											"name": "Halls of Splendor",
-											"page": 103,
+											"page": 104,
 											"entries": [
 												"The {@book League of Miracles|TDCSR|2|League of Miracles} is in the business of good first impressions. Though the Palace of Wonder is a secret to the people of Tal'Dorei, the spellwrights occasionally teleport particularly powerful mercenary mages to their home base in order to dazzle them with the castle's splendors. The palace's ground floor is made of a number of interconnected grand halls, awash in a tide of splendid, vibrant colors\u2014bordering on garish\u2014that crashes over all who enter.",
 												"These many grand dining, entertaining, and performance halls are gleaming spectacles of white marble, decorated by sparkling globes of magical light, and festooned with self-indulgent tapestries of the spellwrights' many dubious achievements. Any intruders here without the express permission of at least one spellwright will find themselves beset by a small army of {@creature animated armor|MM|animated armors} and other constructs\u2014including a {@creature platinum golem|TDCSR} that watches over the front entrance."

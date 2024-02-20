@@ -68,7 +68,7 @@
 				{
 					"name": "False Appearance",
 					"entries": [
-						"If the animated coffin is motionless at the start of combat, it has advantage on its initiative roll. Moreover, if a creature hasn't observed the coffin move or act, that creature must succeed on a {@dc 18} Intelligence (Investigation) check to discern that the coffin is animate."
+						"If the animated coffin is motionless at the start of combat, it has advantage on its initiative roll. Moreover, if a creature hasn't observed the coffin move or act, that creature must succeed on a {@dc 18} Intelligence ({@skill Investigation}) check to discern that the coffin is animate."
 					]
 				},
 				{

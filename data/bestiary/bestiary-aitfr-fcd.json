@@ -293,7 +293,7 @@
 				{
 					"name": "Scrutinize",
 					"entries": [
-						"Tyreus makes an Intelligence (Investigation) or Wisdom (Perception) check."
+						"Tyreus makes an Intelligence ({@skill Investigation}) or Wisdom ({@skill Perception}) check."
 					]
 				},
 				{

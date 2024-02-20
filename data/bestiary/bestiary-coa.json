@@ -928,7 +928,7 @@
 					]
 				},
 				{
-					"name": "Infernal Word: Stun (Recharge 4-6)",
+					"name": "Infernal Word: Stun {@recharge 4}",
 					"entries": [
 						"Asmodeus targets a creature he can see within 120 feet of him. The target must make a {@dc 24} Intelligence saving throw, taking 45 ({@damage 10d8}) force damage on a failed save, or half as much damage on a successful one. A creature that failed the save is {@condition stunned} for up to 1 minute. The {@condition stunned} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success, but taking the damage again on a failed save."
 					]
@@ -3240,7 +3240,7 @@
 				{
 					"name": "Transparent",
 					"entries": [
-						"Even when Devorastus is in plain sight, it takes a successful {@dc 15} Wisdom (Perception) check to spot Devorastus if it has neither moved nor attacked. A creature that tries to enter Devorastus' space while unaware of Devorastus is surprised by it."
+						"Even when Devorastus is in plain sight, it takes a successful {@dc 15} Wisdom ({@skill Perception}) check to spot Devorastus if it has neither moved nor attacked. A creature that tries to enter Devorastus' space while unaware of Devorastus is surprised by it."
 					]
 				}
 			],
@@ -3781,7 +3781,7 @@
 			],
 			"reaction": [
 				{
-					"name": "Hardened Carapace (Recharge 4-6)",
+					"name": "Hardened Carapace {@recharge 4}",
 					"entries": [
 						"When hit with an attack, Ekengarik temporarily hardens her carapace, reducing her speed to 0 and increasing her AC by 5 until the start of her next turn."
 					]
@@ -7957,7 +7957,7 @@
 				{
 					"name": "Detect",
 					"entries": [
-						"The dragon makes a Wisdom (Perception) check."
+						"The dragon makes a Wisdom ({@skill Perception}) check."
 					]
 				},
 				{
@@ -8110,7 +8110,7 @@
 				{
 					"name": "Special Equipment",
 					"entries": [
-						"Tiax wears a Ring of Resistance that grants him resistance to radiant damage."
+						"Tiax wears a {@item Ring of Resistance} that grants him resistance to radiant damage."
 					]
 				}
 			],

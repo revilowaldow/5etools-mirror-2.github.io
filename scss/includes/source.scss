@@ -80,6 +80,7 @@
 	$rgb-source-BMT: #694165;
 	$rgb-source-GHLoE: #c07e4e;
 	$rgb-source-DoDk: #825494;
+	$rgb-source-HWCS: #d0914b;
 
 	// region Categories
 
@@ -594,7 +595,8 @@
 		text-decoration-color: $rgb-source-HFFotM !important;
 	}
 
-	&BMT {
+	&BMT,
+	&DMTCRG {
 		color: $rgb-source-BMT !important;
 		border-color: $rgb-source-BMT !important;
 		text-decoration-color: $rgb-source-BMT !important;
@@ -610,6 +612,13 @@
 		color: $rgb-source-DoDk !important;
 		border-color: $rgb-source-DoDk !important;
 		text-decoration-color: $rgb-source-DoDk !important;
+	}
+
+	&HWCS,
+	&HWAitW {
+		color: $rgb-source-HWCS !important;
+		border-color: $rgb-source-HWCS !important;
+		text-decoration-color: $rgb-source-HWCS !important;
 	}
 	// endregion
 }

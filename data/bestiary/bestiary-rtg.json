@@ -291,7 +291,7 @@
 				{
 					"name": "Plant Camouflage",
 					"entries": [
-						"The rotter has advantage on Dexterity (Stealth) checks it makes in terrain with ample obscuring plant life."
+						"The rotter has advantage on Dexterity ({@skill Stealth}) checks it makes in terrain with ample obscuring plant life."
 					]
 				},
 				{

@@ -413,7 +413,7 @@
 				{
 					"name": "Detect",
 					"entries": [
-						"Lhammaruntosz makes a Wisdom (Perception) check."
+						"Lhammaruntosz makes a Wisdom ({@skill Perception}) check."
 					]
 				},
 				{

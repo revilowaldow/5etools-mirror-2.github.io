@@ -1881,7 +1881,7 @@
 				{
 					"name": "Keen Senses",
 					"entries": [
-						"The defender has advantage on Wisdom (Perception) checks."
+						"The defender has advantage on Wisdom ({@skill Perception}) checks."
 					]
 				},
 				{
@@ -5028,7 +5028,7 @@
 				{
 					"name": "Keen Sight",
 					"entries": [
-						"The hawk has advantage on Wisdom (Perception) checks that rely on sight."
+						"The hawk has advantage on Wisdom ({@skill Perception}) checks that rely on sight."
 					]
 				}
 			],
@@ -5110,7 +5110,7 @@
 				{
 					"name": "Keen Hearing and Smell",
 					"entries": [
-						"The hound has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+						"The hound has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
 					]
 				}
 			],

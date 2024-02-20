@@ -35432,7 +35432,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The tortle makes four Claw attacks or two Nature's Wrath attacks."
+						"The tortle makes four Claw attacks or two {@skill Nature}'s Wrath attacks."
 					]
 				},
 				{

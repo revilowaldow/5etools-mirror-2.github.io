@@ -809,6 +809,12 @@ class SkillTag {
 	static _fnTag (strMod) {
 		return strMod.replace(/\b(Acrobatics|Animal Handling|Arcana|Athletics|Deception|History|Insight|Intimidation|Investigation|Medicine|Nature|Perception|Performance|Persuasion|Religion|Sleight of Hand|Stealth|Survival)\b/g, (...m) => `{@skill ${m[1]}}`);
 	}
+
+	static tryRunProps (ent, {props} = {}) {
+		props
+			.filter(prop => ent[prop])
+			.forEach(prop => this.tryRun(ent[prop]));
+	}
 }
 
 class ActionTag {

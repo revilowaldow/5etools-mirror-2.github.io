@@ -39955,7 +39955,7 @@
 						{
 							"type": "entries",
 							"name": "21. Night and Day",
-							"page": 168,
+							"page": 186,
 							"id": "741",
 							"entries": [
 								{
@@ -40289,7 +40289,7 @@
 								{
 									"type": "entries",
 									"name": "32a. Soldiers' Quarters",
-									"page": 189,
+									"page": 198,
 									"id": "764",
 									"entries": [
 										"Thirty {@creature Hobgoblin||hobgoblins} rest in wooden bunk beds stacked three tiers high. There are enough beds to accommodate sixty guards. The hobgoblins sleep in their armor; their weapons and shields hang from hooks on the corners of their bunks."
@@ -57126,7 +57126,7 @@
 										{
 											"type": "entries",
 											"name": "Treasure",
-											"page": 176,
+											"page": 276,
 											"id": "a84",
 											"entries": [
 												"Scattered among the bones at the south end of the tunnel are 1,300 sp, 600 gp, and a thin gold playing card stamped with the image of a masked man and titled \"The Thief.\" The card is worth 10 gp and completes a deck of cards found in {@area area 10b|a42|x}."
@@ -57139,7 +57139,7 @@
 						{
 							"type": "entries",
 							"name": "24. Secret Vault",
-							"page": 176,
+							"page": 276,
 							"id": "a85",
 							"entries": [
 								"This oval chamber has a domed ceiling 20 feet high, as well as the following features:",
@@ -57156,7 +57156,7 @@
 								{
 									"type": "entries",
 									"name": "Treasure",
-									"page": 176,
+									"page": 276,
 									"id": "a87",
 									"entries": [
 										"The mace is a {@item mace of smiting} that belonged to Brythia. Characters who witnessed the ghostly scene in area 7 recognize the mace as the weapon used by the cleric in that vision.",
@@ -57170,7 +57170,7 @@
 				{
 					"type": "section",
 					"name": "Aftermath",
-					"page": 176,
+					"page": 276,
 					"id": "a88",
 					"entries": [
 						"{@creature Fazrian|WDMM}'s death enables the duergar to regain control of the Terminus Level. Valtagar has no immediate plans other than to fortify the level and prepare for his eventual return to Gracklstugh.",
@@ -59616,7 +59616,7 @@
 										{
 											"type": "entries",
 											"name": "Treasure",
-											"page": 268,
+											"page": 286,
 											"id": "b00",
 											"entries": [
 												"The cone's compartment contains a {@item potion of giant strength} (cloud) in a stoppered, J-shaped crystal flask worth 25 gp."
@@ -59636,7 +59636,7 @@
 								{
 									"type": "entries",
 									"name": "38a. Memento Mori",
-									"page": 268,
+									"page": 286,
 									"id": "b02",
 									"entries": [
 										{
@@ -59901,7 +59901,7 @@
 				{
 					"type": "section",
 					"name": "The Dungeon",
-					"page": 298,
+					"page": 289,
 					"id": "b19",
 					"entries": [
 						"Locations in the dungeon portion of this level (areas 1 through 21) are keyed to map 23. No tunnels or staircases connect this dungeon complex to the upper levels of Undermountain. Characters arrive in {@area area 1|b1a|x} after passing through a gate in Shadowdusk Hold ({@area area 35 on level 22|af8|x}).",

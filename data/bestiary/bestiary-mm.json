@@ -7407,7 +7407,7 @@
 				{
 					"name": "Inscrutable",
 					"entries": [
-						"The sphinx is immune to any effect that would sense its emotions or read its thoughts, as well as any divination spell that it refuses. Wisdom (Insight) checks made to ascertain the sphinx's intentions or sincerity have disadvantage."
+						"The sphinx is immune to any effect that would sense its emotions or read its thoughts, as well as any divination spell that it refuses. Wisdom ({@skill Insight}) checks made to ascertain the sphinx's intentions or sincerity have disadvantage."
 					]
 				},
 				{
@@ -10930,7 +10930,7 @@
 				{
 					"name": "Glaive",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}8 ({@damage 1d10 + 3}) slashing damage. If the target is a creature other than an undead or a construct, it must succeed on a {@dc 12} Constitution saving throw or lose 5 ({@dice 1d10}) hit points at the start of each of its turns due to an infernal wound. Each time the devil hits the wounded target with this attack, the damage dealt by the wound increases by 5 ({@dice 1d10}). Any creature can take an action to stanch the wound with a successful {@dc 12} Wisdom (Medicine) check. The wound also closes if the target receives magical healing."
+						"{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}8 ({@damage 1d10 + 3}) slashing damage. If the target is a creature other than an undead or a construct, it must succeed on a {@dc 12} Constitution saving throw or lose 5 ({@dice 1d10}) hit points at the start of each of its turns due to an infernal wound. Each time the devil hits the wounded target with this attack, the damage dealt by the wound increases by 5 ({@dice 1d10}). Any creature can take an action to stanch the wound with a successful {@dc 12} Wisdom ({@skill Medicine}) check. The wound also closes if the target receives magical healing."
 					]
 				}
 			],
@@ -12796,7 +12796,7 @@
 						"Implanted in the slaad's brain is a magic control gem. The slaad must obey whoever possesses the gem and is immune to being {@condition charmed} while so controlled.",
 						"Certain spells can be used to acquire the gem. If the slaad fails its saving throw against {@spell imprisonment}, the spell can transfer the gem to the spellcaster's open hand, instead of imprisoning the slaad. A {@spell wish} spell, if cast in the slaad's presence, can be worded to acquire the gem.",
 						"A {@spell greater restoration} spell cast on the slaad destroys the gem without harming the slaad.",
-						"Someone who is proficient in Wisdom (Medicine) can remove the gem from an {@condition incapacitated} slaad. Each try requires 1 minute of uninterrupted work and a successful {@dc 20} Wisdom (Medicine) check. Each failed attempt deals 22 ({@damage 4d10}) psychic damage to the slaad."
+						"Someone who is proficient in Wisdom ({@skill Medicine}) can remove the gem from an {@condition incapacitated} slaad. Each try requires 1 minute of uninterrupted work and a successful {@dc 20} Wisdom ({@skill Medicine}) check. Each failed attempt deals 22 ({@damage 4d10}) psychic damage to the slaad."
 					],
 					"_version": {
 						"name": "Blue Slaad (Control Gem)",
@@ -14525,7 +14525,7 @@
 				{
 					"name": "Swamp Camouflage",
 					"entries": [
-						"The bullywug has advantage on Dexterity (Stealth) checks made to hide in swampy terrain."
+						"The bullywug has advantage on Dexterity ({@skill Stealth}) checks made to hide in swampy terrain."
 					]
 				},
 				{
@@ -19222,7 +19222,7 @@
 						"Implanted in the slaad's brain is a magic control gem. The slaad must obey whoever possesses the gem and is immune to being {@condition charmed} while so controlled.",
 						"Certain spells can be used to acquire the gem. If the slaad fails its saving throw against {@spell imprisonment}, the spell can transfer the gem to the spellcaster's open hand, instead of imprisoning the slaad. A {@spell wish} spell, if cast in the slaad's presence, can be worded to acquire the gem.",
 						"A {@spell greater restoration} spell cast on the slaad destroys the gem without harming the slaad.",
-						"Someone who is proficient in Wisdom (Medicine) can remove the gem from an {@condition incapacitated} slaad. Each try requires 1 minute of uninterrupted work and a successful {@dc 20} Wisdom (Medicine) check. Each failed attempt deals 22 ({@damage 4d10}) psychic damage to the slaad."
+						"Someone who is proficient in Wisdom ({@skill Medicine}) can remove the gem from an {@condition incapacitated} slaad. Each try requires 1 minute of uninterrupted work and a successful {@dc 20} Wisdom ({@skill Medicine}) check. Each failed attempt deals 22 ({@damage 4d10}) psychic damage to the slaad."
 					],
 					"_version": {
 						"name": "Death Slaad (Control Gem)",
@@ -19622,7 +19622,7 @@
 				{
 					"name": "Stone Camouflage",
 					"entries": [
-						"The gnome has advantage on Dexterity (Stealth) checks made to hide in rocky terrain."
+						"The gnome has advantage on Dexterity ({@skill Stealth}) checks made to hide in rocky terrain."
 					]
 				},
 				{
@@ -26850,7 +26850,7 @@
 					"name": "Berserk",
 					"entries": [
 						"Whenever the golem starts its turn with 40 hit points or fewer, roll a {@dice d6}. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object, with preference for an object smaller than itself. Once the golem goes berserk, it continues to do so until it is destroyed or regains all its hit points.",
-						"The golem's creator, if within 60 feet of the berserk golem, can try to calm it by speaking firmly and persuasively. The golem must be able to hear its creator, who must take an action to make a {@dc 15} Charisma (Persuasion) check. If the check succeeds, the golem ceases being berserk. If it takes damage while still at 40 hit points or fewer, the golem might go berserk again."
+						"The golem's creator, if within 60 feet of the berserk golem, can try to calm it by speaking firmly and persuasively. The golem must be able to hear its creator, who must take an action to make a {@dc 15} Charisma ({@skill Persuasion}) check. If the check succeeds, the golem ceases being berserk. If it takes damage while still at 40 hit points or fewer, the golem might go berserk again."
 					]
 				},
 				{
@@ -28068,7 +28068,7 @@
 				{
 					"name": "Eerie Resemblance",
 					"entries": [
-						"The gas spore resembles a beholder. A creature that can see the gas spore can discern its true nature with a successful {@dc 15} Intelligence (Nature) check."
+						"The gas spore resembles a beholder. A creature that can see the gas spore can discern its true nature with a successful {@dc 15} Intelligence ({@skill Nature}) check."
 					]
 				}
 			],
@@ -28189,7 +28189,7 @@
 				{
 					"name": "Transparent",
 					"entries": [
-						"Even when the cube is in plain sight, it takes a successful {@dc 15} Wisdom (Perception) check to spot a cube that has neither moved nor attacked. A creature that tries to enter the cube's space while unaware of the cube is {@quickref Surprise|PHB|3|0|surprised} by the cube."
+						"Even when the cube is in plain sight, it takes a successful {@dc 15} Wisdom ({@skill Perception}) check to spot a cube that has neither moved nor attacked. A creature that tries to enter the cube's space while unaware of the cube is {@quickref Surprise|PHB|3|0|surprised} by the cube."
 					]
 				}
 			],
@@ -34801,7 +34801,7 @@
 						"Implanted in the slaad's brain is a magic control gem. The slaad must obey whoever possesses the gem and is immune to being {@condition charmed} while so controlled.",
 						"Certain spells can be used to acquire the gem. If the slaad fails its saving throw against {@spell imprisonment}, the spell can transfer the gem to the spellcaster's open hand, instead of imprisoning the slaad. A {@spell wish} spell, if cast in the slaad's presence, can be worded to acquire the gem.",
 						"A {@spell greater restoration} spell cast on the slaad destroys the gem without harming the slaad.",
-						"Someone who is proficient in Wisdom (Medicine) can remove the gem from an {@condition incapacitated} slaad. Each try requires 1 minute of uninterrupted work and a successful {@dc 20} Wisdom (Medicine) check. Each failed attempt deals 22 ({@damage 4d10}) psychic damage to the slaad."
+						"Someone who is proficient in Wisdom ({@skill Medicine}) can remove the gem from an {@condition incapacitated} slaad. Each try requires 1 minute of uninterrupted work and a successful {@dc 20} Wisdom ({@skill Medicine}) check. Each failed attempt deals 22 ({@damage 4d10}) psychic damage to the slaad."
 					],
 					"_version": {
 						"name": "Gray Slaad (Control Gem)",
@@ -35180,7 +35180,7 @@
 				{
 					"name": "Mimicry",
 					"entries": [
-						"The hag can mimic animal sounds and humanoid voices. A creature that hears the sounds can tell they are imitations with a successful {@dc 14} Wisdom (Insight) check."
+						"The hag can mimic animal sounds and humanoid voices. A creature that hears the sounds can tell they are imitations with a successful {@dc 14} Wisdom ({@skill Insight}) check."
 					]
 				}
 			],
@@ -35195,7 +35195,7 @@
 					"name": "Illusory Appearance",
 					"entries": [
 						"The hag covers herself and anything she is wearing or carrying with a magical illusion that makes her look like another creature of her general size and humanoid shape. The illusion ends if the hag takes a bonus action to end it or if she dies.",
-						"The changes wrought by this effect fail to hold up to physical inspection. For example, the hag could appear to have smooth skin, but someone touching her would feel her rough flesh. Otherwise, a creature must take an action to visually inspect the illusion and succeed on a {@dc 20} Intelligence (Investigation) check to discern that the hag is disguised."
+						"The changes wrought by this effect fail to hold up to physical inspection. For example, the hag could appear to have smooth skin, but someone touching her would feel her rough flesh. Otherwise, a creature must take an action to visually inspect the illusion and succeed on a {@dc 20} Intelligence ({@skill Investigation}) check to discern that the hag is disguised."
 					]
 				},
 				{
@@ -35561,7 +35561,7 @@
 						"Implanted in the slaad's brain is a magic control gem. The slaad must obey whoever possesses the gem and is immune to being {@condition charmed} while so controlled.",
 						"Certain spells can be used to acquire the gem. If the slaad fails its saving throw against {@spell imprisonment}, the spell can transfer the gem to the spellcaster's open hand, instead of imprisoning the slaad. A {@spell wish} spell, if cast in the slaad's presence, can be worded to acquire the gem.",
 						"A {@spell greater restoration} spell cast on the slaad destroys the gem without harming the slaad.",
-						"Someone who is proficient in Wisdom (Medicine) can remove the gem from an {@condition incapacitated} slaad. Each try requires 1 minute of uninterrupted work and a successful {@dc 20} Wisdom (Medicine) check. Each failed attempt deals 22 ({@damage 4d10}) psychic damage to the slaad."
+						"Someone who is proficient in Wisdom ({@skill Medicine}) can remove the gem from an {@condition incapacitated} slaad. Each try requires 1 minute of uninterrupted work and a successful {@dc 20} Wisdom ({@skill Medicine}) check. Each failed attempt deals 22 ({@damage 4d10}) psychic damage to the slaad."
 					],
 					"_version": {
 						"name": "Green Slaad (Control Gem)",
@@ -35843,7 +35843,7 @@
 				{
 					"name": "Stone Camouflage",
 					"entries": [
-						"The grick has advantage on Dexterity (Stealth) checks made to hide in rocky terrain."
+						"The grick has advantage on Dexterity ({@skill Stealth}) checks made to hide in rocky terrain."
 					]
 				}
 			],
@@ -35966,7 +35966,7 @@
 				{
 					"name": "Stone Camouflage",
 					"entries": [
-						"The grick has advantage on Dexterity (Stealth) checks made to hide in rocky terrain."
+						"The grick has advantage on Dexterity ({@skill Stealth}) checks made to hide in rocky terrain."
 					]
 				}
 			],
@@ -36233,7 +36233,7 @@
 				{
 					"name": "Stone Camouflage",
 					"entries": [
-						"The grimlock has advantage on Dexterity (Stealth) checks made to hide in rocky terrain."
+						"The grimlock has advantage on Dexterity ({@skill Stealth}) checks made to hide in rocky terrain."
 					]
 				}
 			],
@@ -36782,7 +36782,7 @@
 				{
 					"name": "Inscrutable",
 					"entries": [
-						"The sphinx is immune to any effect that would sense its emotions or read its thoughts, as well as any divination spell that it refuses. Wisdom (Insight) checks made to ascertain the sphinx's intentions or sincerity have disadvantage."
+						"The sphinx is immune to any effect that would sense its emotions or read its thoughts, as well as any divination spell that it refuses. Wisdom ({@skill Insight}) checks made to ascertain the sphinx's intentions or sincerity have disadvantage."
 					]
 				},
 				{
@@ -38954,7 +38954,7 @@
 				{
 					"name": "Tail",
 					"entries": [
-						"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}10 ({@damage 1d8 + 6}) piercing damage. If the target is a creature other than an undead or a construct, it must succeed on a {@dc 17} Constitution saving throw or lose 10 ({@dice 3d6}) hit points at the start of each of its turns due to an infernal wound. Each time the devil hits the wounded target with this attack, the damage dealt by the wound increases by 10 ({@dice 3d6}). Any creature can take an action to stanch the wound with a successful {@dc 12} Wisdom (Medicine) check. The wound also closes if the target receives magical healing."
+						"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}10 ({@damage 1d8 + 6}) piercing damage. If the target is a creature other than an undead or a construct, it must succeed on a {@dc 17} Constitution saving throw or lose 10 ({@dice 3d6}) hit points at the start of each of its turns due to an infernal wound. Each time the devil hits the wounded target with this attack, the damage dealt by the wound increases by 10 ({@dice 3d6}). Any creature can take an action to stanch the wound with a successful {@dc 12} Wisdom ({@skill Medicine}) check. The wound also closes if the target receives magical healing."
 					]
 				},
 				{
@@ -40961,7 +40961,7 @@
 				{
 					"name": "Mimicry",
 					"entries": [
-						"The kenku can mimic any sounds it has heard, including voices. A creature that hears the sounds can tell they are imitations with a successful {@dc 14} Wisdom (Insight) check."
+						"The kenku can mimic any sounds it has heard, including voices. A creature that hears the sounds can tell they are imitations with a successful {@dc 14} Wisdom ({@skill Insight}) check."
 					]
 				}
 			],
@@ -49282,7 +49282,7 @@
 				{
 					"name": "Weird Insight",
 					"entries": [
-						"The nothic targets one creature it can see within 30 feet of it. The target must contest its Charisma (Deception) check against the nothic's Wisdom (Insight) check. If the nothic wins, it magically learns one fact or secret about the target. The target automatically wins if it is immune to being {@condition charmed}."
+						"The nothic targets one creature it can see within 30 feet of it. The target must contest its Charisma ({@skill Deception}) check against the nothic's Wisdom ({@skill Insight}) check. If the nothic wins, it magically learns one fact or secret about the target. The target automatically wins if it is immune to being {@condition charmed}."
 					]
 				}
 			],
@@ -49468,7 +49468,7 @@
 				{
 					"name": "Claw",
 					"entries": [
-						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage. If the target is a creature, it must succeed on a {@dc 16} Constitution saving throw or take 5 ({@damage 2d4}) slashing damage at the start of each of its turns due to a fiendish wound. Each time the nycaloth hits the wounded target with this attack, the damage dealt by the wound increases by 5 ({@dice 2d4}). Any creature can take an action to stanch the wound with a successful {@dc 13} Wisdom (Medicine) check. The wound also closes if the target receives magical healing."
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage. If the target is a creature, it must succeed on a {@dc 16} Constitution saving throw or take 5 ({@damage 2d4}) slashing damage at the start of each of its turns due to a fiendish wound. Each time the nycaloth hits the wounded target with this attack, the damage dealt by the wound increases by 5 ({@dice 2d4}). Any creature can take an action to stanch the wound with a successful {@dc 13} Wisdom ({@skill Medicine}) check. The wound also closes if the target receives magical healing."
 					]
 				},
 				{
@@ -55015,7 +55015,7 @@
 				{
 					"name": "Mimicry",
 					"entries": [
-						"The raven can mimic simple sounds it has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful {@dc 10} Wisdom (Insight) check."
+						"The raven can mimic simple sounds it has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful {@dc 10} Wisdom ({@skill Insight}) check."
 					]
 				}
 			],
@@ -55368,7 +55368,7 @@
 						"Implanted in the slaad's brain is a magic control gem. The slaad must obey whoever possesses the gem and is immune to being {@condition charmed} while so controlled.",
 						"Certain spells can be used to acquire the gem. If the slaad fails its saving throw against {@spell imprisonment}, the spell can transfer the gem to the spellcaster's open hand, instead of imprisoning the slaad. A {@spell wish} spell, if cast in the slaad's presence, can be worded to acquire the gem.",
 						"A {@spell greater restoration} spell cast on the slaad destroys the gem without harming the slaad.",
-						"Someone who is proficient in Wisdom (Medicine) can remove the gem from an {@condition incapacitated} slaad. Each try requires 1 minute of uninterrupted work and a successful {@dc 20} Wisdom (Medicine) check. Each failed attempt deals 22 ({@damage 4d10}) psychic damage to the slaad."
+						"Someone who is proficient in Wisdom ({@skill Medicine}) can remove the gem from an {@condition incapacitated} slaad. Each try requires 1 minute of uninterrupted work and a successful {@dc 20} Wisdom ({@skill Medicine}) check. Each failed attempt deals 22 ({@damage 4d10}) psychic damage to the slaad."
 					],
 					"_version": {
 						"name": "Red Slaad (Control Gem)",
@@ -58070,7 +58070,7 @@
 					"name": "Illusory Appearance",
 					"entries": [
 						"The hag covers herself and anything she is wearing or carrying with a magical illusion that makes her look like an ugly creature of her general size and humanoid shape. The effect ends if the hag takes a bonus action to end it or if she dies.",
-						"The changes wrought by this effect fail to hold up to physical inspection. For example, the hag could appear to have no claws, but someone touching her hand might feel the claws. Otherwise, a creature must take an action to visually inspect the illusion and succeed on a {@dc 16} Intelligence (Investigation) check to discern that the hag is disguised."
+						"The changes wrought by this effect fail to hold up to physical inspection. For example, the hag could appear to have no claws, but someone touching her hand might feel the claws. Otherwise, a creature must take an action to visually inspect the illusion and succeed on a {@dc 16} Intelligence ({@skill Investigation}) check to discern that the hag is disguised."
 					]
 				}
 			],
@@ -61597,7 +61597,7 @@
 				{
 					"name": "Stone Camouflage",
 					"entries": [
-						"The giant has advantage on Dexterity (Stealth) checks made to hide in rocky terrain."
+						"The giant has advantage on Dexterity ({@skill Stealth}) checks made to hide in rocky terrain."
 					]
 				}
 			],
@@ -63824,7 +63824,7 @@
 				{
 					"name": "Chameleon Carapace",
 					"entries": [
-						"The thri-kreen can change the color of its carapace to match the color and texture of its surroundings. As a result, it has advantage on Dexterity (Stealth) checks made to hide."
+						"The thri-kreen can change the color of its carapace to match the color and texture of its surroundings. As a result, it has advantage on Dexterity ({@skill Stealth}) checks made to hide."
 					]
 				},
 				{
@@ -64922,7 +64922,7 @@
 				{
 					"name": "Chameleon Skin",
 					"entries": [
-						"The troglodyte has advantage on Dexterity (Stealth) checks made to hide."
+						"The troglodyte has advantage on Dexterity ({@skill Stealth}) checks made to hide."
 					]
 				},
 				{
@@ -69878,7 +69878,7 @@
 				{
 					"name": "Life Drain",
 					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}5 ({@damage 1d6 + 2}) necrotic damage. The target must succeed on a {@dc 13} Constitution saving throw or its hit point maxum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.",
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}5 ({@damage 1d6 + 2}) necrotic damage. The target must succeed on a {@dc 13} Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.",
 						"A humanoid slain by this attack rises 24 hours later as a {@creature zombie} under the wight's control, unless the humanoid is restored to life or its body is destroyed. The wight can have no more than twelve zombies under its control at one time."
 					]
 				},
@@ -70363,7 +70363,7 @@
 				{
 					"name": "Snow Camouflage",
 					"entries": [
-						"The wolf has advantage on Dexterity (Stealth) checks made to hide in snowy terrain."
+						"The wolf has advantage on Dexterity ({@skill Stealth}) checks made to hide in snowy terrain."
 					]
 				}
 			],
@@ -71110,7 +71110,7 @@
 				{
 					"name": "Stone Camouflage",
 					"entries": [
-						"The xorn has advantage on Dexterity (Stealth) checks made to hide in rocky terrain."
+						"The xorn has advantage on Dexterity ({@skill Stealth}) checks made to hide in rocky terrain."
 					]
 				},
 				{
@@ -71254,7 +71254,7 @@
 				{
 					"name": "Snow Camouflage",
 					"entries": [
-						"The yeti has advantage on Dexterity (Stealth) checks made to hide in snowy terrain."
+						"The yeti has advantage on Dexterity ({@skill Stealth}) checks made to hide in snowy terrain."
 					]
 				}
 			],

@@ -196,15 +196,19 @@ class ItemTag {
 		// endregion
 
 		// region Other items
-		const otherItems = standardItems.filter(it => {
-			if (toolTypes.has(it.type)) return false;
-			// Disallow specific items
-			if (it.name === "Wave" && it.source === Parser.SRC_DMG) return false;
-			// Allow all non-specific-variant DMG items
-			if (it.source === Parser.SRC_DMG && !Renderer.item.isMundane(it) && it._category !== "Specific Variant") return true;
-			// Allow "sufficiently complex name" items
-			return it.name.split(" ").length > 2;
-		});
+		const otherItems = standardItems
+			.filter(it => {
+				if (toolTypes.has(it.type)) return false;
+				// Disallow specific items
+				if (it.name === "Wave" && it.source === Parser.SRC_DMG) return false;
+				// Allow all non-specific-variant DMG items
+				if (it.source === Parser.SRC_DMG && !Renderer.item.isMundane(it) && it._category !== "Specific Variant") return true;
+				// Allow "sufficiently complex name" items
+				return it.name.split(" ").length > 2;
+			})
+			// Prefer specific variants first, as they have longer names
+			.sort((itemA, itemB) => Number(itemB._category === "Specific Variant") - Number(itemA._category === "Specific Variant") || SortUtil.ascSortLower(itemA.name, itemB.name))
+		;
 		otherItems.forEach(it => {
 			this._ITEM_NAMES[it.name.toLowerCase()] = {name: it.name, source: it.source};
 		});
@@ -236,7 +240,7 @@ class ItemTag {
 						0,
 						str,
 						{
-							fnTag: this._fnTag,
+							fnTag: this._fnTag.bind(this),
 						},
 					);
 					return ptrStack._;
@@ -273,7 +277,7 @@ class ItemTag {
 						0,
 						str,
 						{
-							fnTag: this._fnTagBasicEquipment,
+							fnTag: this._fnTagBasicEquipment.bind(this),
 						},
 					);
 					return ptrStack._;

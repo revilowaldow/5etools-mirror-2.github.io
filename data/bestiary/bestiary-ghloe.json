@@ -609,7 +609,7 @@
 				{
 					"name": "Keen Hearing and Smell",
 					"entries": [
-						"The awakened chapped brute has advantage on Wisdom (Perception) checks that rely on hearing or smell. While {@condition deafened} and unable to smell, the brute can't use its blindsight."
+						"The awakened chapped brute has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell. While {@condition deafened} and unable to smell, the brute can't use its blindsight."
 					]
 				},
 				{
@@ -946,7 +946,7 @@
 				{
 					"name": "Bone Armor (1/Day)",
 					"entries": [
-						"A bone trader in its lair can use a bonus action to summon a temporary suit of bone armor that lasts for ten minutes or until dismissed by the bone trader. While wearing its bone armor, a bone trader has advantage on Wisdom saving throws and Charisma (Intimidation) checks."
+						"A bone trader in its lair can use a bonus action to summon a temporary suit of bone armor that lasts for ten minutes or until dismissed by the bone trader. While wearing its bone armor, a bone trader has advantage on Wisdom saving throws and Charisma ({@skill Intimidation}) checks."
 					]
 				},
 				{
@@ -1469,7 +1469,7 @@
 				{
 					"name": "Keen Hearing",
 					"entries": [
-						"The chapped brute has advantage on Wisdom (Perception) checks that rely on hearing. While {@condition deafened}, the brute can't use its blindsight."
+						"The chapped brute has advantage on Wisdom ({@skill Perception}) checks that rely on hearing. While {@condition deafened}, the brute can't use its blindsight."
 					]
 				}
 			],
@@ -1566,7 +1566,7 @@
 				{
 					"name": "Keen Hearing and Smell",
 					"entries": [
-						"The chapped brute abomination has advantage on Wisdom (Perception) checks that rely on hearing or smell. While {@condition deafened} and unable to smell, the brute can't use its blindsight."
+						"The chapped brute abomination has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell. While {@condition deafened} and unable to smell, the brute can't use its blindsight."
 					]
 				},
 				{
@@ -1593,7 +1593,7 @@
 					"name": "Engulf",
 					"entries": [
 						"Each creature {@condition grappled} by the chapped brute abomination must succeed on a {@dc 18} Strength saving throw or be pulled into the brute's body. An engulfed target is {@condition blinded}, {@condition restrained}, unable to breathe, and has total cover from effects that originate outside the brute. At the start of each of the brute's turns, each engulfed creature takes 14 ({@damage 4d6}) acid damage. The brute can hold only one Large creature or up to four Medium or smaller creatures inside it at a time.",
-						"An engulfed creature can try to escape by taking an action to make its choice of a {@dc 18} Strength (Athletics) or Dexterity (Acrobatics) check. On a success, the creature escapes and uses 10 feet of movement to enter a space of its choice within 5 feet of the brute.",
+						"An engulfed creature can try to escape by taking an action to make its choice of a {@dc 18} Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check. On a success, the creature escapes and uses 10 feet of movement to enter a space of its choice within 5 feet of the brute.",
 						"If the brute dies, an engulfed creature is no longer {@condition restrained} by it and can escape from the corpse by using 10 feet of movement.",
 						"If a creature dies inside the brute, the brute doesn't roll for Unstable Life at the start of its next turn and instead regains 20 hit points. The creature's body breaks up inside the brute, and the brute expels anything the creature wore or carried."
 					]
@@ -1801,7 +1801,7 @@
 				{
 					"name": "Keen Smell",
 					"entries": [
-						"The corpsejaw has advantage on Wisdom (Perception) checks that rely on smell."
+						"The corpsejaw has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
 					]
 				},
 				{
@@ -3252,7 +3252,7 @@
 				{
 					"name": "Keen Sight",
 					"entries": [
-						"The eye crawler has advantage on Wisdom (Perception) checks that rely on sight."
+						"The eye crawler has advantage on Wisdom ({@skill Perception}) checks that rely on sight."
 					]
 				}
 			],
@@ -3303,7 +3303,7 @@
 				{
 					"name": "Mimicry",
 					"entries": [
-						"The eye crow can mimic simple sounds it has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful {@dc 10} Wisdom (Insight) check."
+						"The eye crow can mimic simple sounds it has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful {@dc 10} Wisdom ({@skill Insight}) check."
 					]
 				},
 				{
@@ -3508,7 +3508,7 @@
 				{
 					"name": "Keen Hearing and Smell",
 					"entries": [
-						"The fzeg has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+						"The fzeg has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
 					]
 				},
 				{
@@ -3700,7 +3700,7 @@
 				{
 					"name": "Keen Hearing and Smell",
 					"entries": [
-						"The fzeglaich has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+						"The fzeglaich has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
 					]
 				},
 				{
@@ -3911,7 +3911,7 @@
 				{
 					"name": "Daemon Sight",
 					"entries": [
-						"Gegazol gains truesight out to 120 feet until the end of her next turn and can make a Wisdom (Perception) check."
+						"Gegazol gains truesight out to 120 feet until the end of her next turn and can make a Wisdom ({@skill Perception}) check."
 					]
 				},
 				{
@@ -4438,7 +4438,7 @@
 					"name": "Sever Tongue",
 					"entries": [
 						"{@atk mw} {@hit 9} to hit, reach 5 ft., one humanoid {@condition grappled} by the harvester of lies. {@h}33 ({@damage 8d6 + 5}) slashing damage and the target must succeed on a {@dc 17} Constitution saving throw or have their tongue ripped out. A creature without a tongue cannot speak or cast spells with verbal components. A creature is immune to this effect if it is immune to slashing damage, doesn't have or need a tongue, or has legendary actions.",
-						"A tongue can be reattached within 1 hour of being severed with a successful {@dc 10} Wisdom (Medicine) check, or at can be regrown using magic that replaces lost limbs."
+						"A tongue can be reattached within 1 hour of being severed with a successful {@dc 10} Wisdom ({@skill Medicine}) check, or at can be regrown using magic that replaces lost limbs."
 					]
 				}
 			],
@@ -5174,7 +5174,7 @@
 				{
 					"name": "Keen Sight",
 					"entries": [
-						"The ithjar has advantage on Wisdom (Perception) checks that rely on sight."
+						"The ithjar has advantage on Wisdom ({@skill Perception}) checks that rely on sight."
 					]
 				},
 				{
@@ -5394,7 +5394,7 @@
 					"name": "Berserk",
 					"entries": [
 						"Whenever the lenchtahg starts its turn with 54 hit points or fewer, roll a {@dice d6}. On a 1, the lenchtahg recalls its former life and current agony, and it goes berserk. On each of its turns while berserk, the lenchtahg attacks the nearest creature it can see. It treats all creatures as enemies and makes any opportunity attack it can. Also, it has advantage on attack rolls, but all attack rolls against it have advantage. If no creature is near enough to move to and attack, the lenchtahg moves as far as it can toward the closest creature.",
-						"Once the lenchtahg goes berserk, it remains so until destroyed or it has more than 54 hit points. Also, a fiend can calm the lenchtahg. The lenchtahg must be able to understand the fiend, who must take an action to make a {@dc 15} Charisma (Persuasion) check. If the check succeeds, the lenchtahg ceases being berserk."
+						"Once the lenchtahg goes berserk, it remains so until destroyed or it has more than 54 hit points. Also, a fiend can calm the lenchtahg. The lenchtahg must be able to understand the fiend, who must take an action to make a {@dc 15} Charisma ({@skill Persuasion}) check. If the check succeeds, the lenchtahg ceases being berserk."
 					]
 				},
 				{
@@ -6244,7 +6244,7 @@
 				{
 					"name": "Keen Hearing and Smell",
 					"entries": [
-						"The lupilisk has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+						"The lupilisk has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
 					]
 				},
 				{
@@ -6350,7 +6350,7 @@
 				{
 					"name": "Keen Hearing and Smell",
 					"entries": [
-						"The lupilisk elder has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+						"The lupilisk elder has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
 					]
 				},
 				{
@@ -6456,7 +6456,7 @@
 				{
 					"name": "Keen Hearing and Smell",
 					"entries": [
-						"The lupilisk whelp has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+						"The lupilisk whelp has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
 					]
 				},
 				{
@@ -7608,7 +7608,7 @@
 				{
 					"name": "Sunlight Sensitivity",
 					"entries": [
-						"While in sunlight, the morbus kobold has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+						"While in sunlight, the morbus kobold has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
 					]
 				}
 			],
@@ -8171,7 +8171,7 @@
 				{
 					"name": "Keen Sight and Smell",
 					"entries": [
-						"The oozing vulture has advantage on Wisdom (Perception) checks that rely on sight or smell."
+						"The oozing vulture has advantage on Wisdom ({@skill Perception}) checks that rely on sight or smell."
 					]
 				}
 			],
@@ -8561,7 +8561,7 @@
 				{
 					"name": "Mimicry",
 					"entries": [
-						"The psychic fragment can mimic a single word or phrase it spoke in life. A creature that hears the sounds can tell they are imitations with a successful {@dc 11} Wisdom (Insight) check."
+						"The psychic fragment can mimic a single word or phrase it spoke in life. A creature that hears the sounds can tell they are imitations with a successful {@dc 11} Wisdom ({@skill Insight}) check."
 					]
 				}
 			],
@@ -9268,7 +9268,7 @@
 				{
 					"name": "Loud",
 					"entries": [
-						"Creatures have advantage on Wisdom (Perception) checks made to hear the approach of a shatter corpse."
+						"Creatures have advantage on Wisdom ({@skill Perception}) checks made to hear the approach of a shatter corpse."
 					]
 				},
 				{
@@ -9432,7 +9432,7 @@
 				{
 					"name": "Keen Smell",
 					"entries": [
-						"The Sitri cat has advantage on Wisdom (Perception) checks that rely on smell."
+						"The Sitri cat has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
 					]
 				},
 				{
@@ -9963,7 +9963,7 @@
 				{
 					"name": "Keen Sight",
 					"entries": [
-						"The sky drake has advantage on Wisdom (Perception) checks that rely on sight."
+						"The sky drake has advantage on Wisdom ({@skill Perception}) checks that rely on sight."
 					]
 				}
 			],
@@ -10226,7 +10226,7 @@
 				{
 					"name": "False Appearance",
 					"entries": [
-						"The spythronar sac appears to be a tangled ball of string, twigs, and dirt. Someone who can see the sac can identify it with a successful {@dc 15} Intelligence (Arcana or Nature) check."
+						"The spythronar sac appears to be a tangled ball of string, twigs, and dirt. Someone who can see the sac can identify it with a successful {@dc 15} Intelligence ({@skill Arcana} or {@skill Nature}) check."
 					]
 				},
 				{
@@ -10456,7 +10456,7 @@
 				{
 					"name": "Adhesive",
 					"entries": [
-						"The spythronar web adheres to anything that touches it. To avoid adhering when touching the web, a creature must succeed on a {@dc 13} Strength saving throw, but a creature hit by the web's crush attack doesn't receive a saving throw. A Huge or smaller creature adhered to the web is also {@condition grappled} by it (escape {@dc 13}). If adhered to a target larger than it can grapple, the web can release the adhesive or remain adhered and be dragged along as the target moves. Neither choice requires an action from the web. Removing an object adhered to the web or the web from anything it's adhered to requires a successful {@dc 13} Strength (Athletics) check as an action."
+						"The spythronar web adheres to anything that touches it. To avoid adhering when touching the web, a creature must succeed on a {@dc 13} Strength saving throw, but a creature hit by the web's crush attack doesn't receive a saving throw. A Huge or smaller creature adhered to the web is also {@condition grappled} by it (escape {@dc 13}). If adhered to a target larger than it can grapple, the web can release the adhesive or remain adhered and be dragged along as the target moves. Neither choice requires an action from the web. Removing an object adhered to the web or the web from anything it's adhered to requires a successful {@dc 13} Strength ({@skill Athletics}) check as an action."
 					]
 				},
 				{
@@ -10584,7 +10584,7 @@
 				{
 					"name": "Keen Sight",
 					"entries": [
-						"The stormborn ithjar has advantage on Wisdom (Perception) checks that rely on sight."
+						"The stormborn ithjar has advantage on Wisdom ({@skill Perception}) checks that rely on sight."
 					]
 				},
 				{

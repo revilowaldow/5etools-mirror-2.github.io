@@ -76,7 +76,7 @@
 				{
 					"name": "Two Heads",
 					"entries": [
-						"The ettin has advantage on Wisdom (Perception) checks and on saving throws against being {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition stunned}, and knocked {@condition unconscious}."
+						"The ettin has advantage on Wisdom ({@skill Perception}) checks and on saving throws against being {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition stunned}, and knocked {@condition unconscious}."
 					]
 				},
 				{
@@ -680,7 +680,7 @@
 				{
 					"name": "Special Equipment",
 					"entries": [
-						"Lynx's crystal eye is a magically shrunken crystal ball of true seeing. One of her teeth is a refashioned ring of mind shielding, while another has been magicked to place her under a permanent {@spell Nystul's magic aura} spell, concealing the magic of these items and hiding her true nature from magic or features that can detect undead."
+						"Lynx's crystal eye is a magically shrunken {@item crystal ball} of true seeing. One of her teeth is a refashioned {@item ring of mind shielding}, while another has been magicked to place her under a permanent {@spell Nystul's magic aura} spell, concealing the magic of these items and hiding her true nature from magic or features that can detect undead."
 					]
 				},
 				{
@@ -1220,7 +1220,7 @@
 				{
 					"name": "Special Equipment",
 					"entries": [
-						"Sir Ursas wears a ring of mind shielding and plate armor of fire resistance."
+						"Sir Ursas wears a {@item ring of mind shielding} and {@item plate armor of fire resistance}."
 					]
 				},
 				{
@@ -2061,7 +2061,7 @@
 				{
 					"name": "Two Heads",
 					"entries": [
-						"The two-headed crocodile has advantage on Wisdom (Perception) checks and on saving throws against being {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition stunned}, and knocked {@condition unconscious}."
+						"The two-headed crocodile has advantage on Wisdom ({@skill Perception}) checks and on saving throws against being {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition stunned}, and knocked {@condition unconscious}."
 					]
 				},
 				{
@@ -2147,7 +2147,7 @@
 				{
 					"name": "Two Heads",
 					"entries": [
-						"The two-headed owlbear has advantage on Wisdom (Perception) checks and on saving throws against being {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition stunned}, and knocked {@condition unconscious}."
+						"The two-headed owlbear has advantage on Wisdom ({@skill Perception}) checks and on saving throws against being {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition stunned}, and knocked {@condition unconscious}."
 					]
 				},
 				{

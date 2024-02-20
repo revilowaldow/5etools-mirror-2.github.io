@@ -331,7 +331,7 @@
 				{
 					"name": "Illusory Appearance",
 					"entries": [
-						"The hag covers herself with a magical illusion that allows her to look like another creature of her general size and shape. The illusion ends when the hag chooses, or if she dies. A {@dc 20} Intelligence (Investigation) check will expose the hag's disguise."
+						"The hag covers herself with a magical illusion that allows her to look like another creature of her general size and shape. The illusion ends when the hag chooses, or if she dies. A {@dc 20} Intelligence ({@skill Investigation}) check will expose the hag's disguise."
 					]
 				},
 				{

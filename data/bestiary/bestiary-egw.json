@@ -1985,7 +1985,7 @@
 				{
 					"name": "Sunlight Sensitivity",
 					"entries": [
-						"While in sunlight, the gloomstalker has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+						"While in sunlight, the gloomstalker has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
 					]
 				}
 			],
@@ -2100,7 +2100,7 @@
 				{
 					"name": "Keen Hearing and Smell",
 					"entries": [
-						"The wolf has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+						"The wolf has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
 					]
 				},
 				{
@@ -2533,7 +2533,7 @@
 				{
 					"name": "Sunlight Sensitivity",
 					"entries": [
-						"While in sunlight, the kobold has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+						"While in sunlight, the kobold has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
 					]
 				}
 			],
@@ -3799,7 +3799,7 @@
 				{
 					"name": "Special Equipment",
 					"entries": [
-						"Sken wears a ring of obscuring. With it, she can cast the {@spell fog cloud} spell centered on herself three times per day. The cloud lasts for 1 minute (no {@status concentration} required)."
+						"Sken wears a {@item ring of obscuring|EGW}. With it, she can cast the {@spell fog cloud} spell centered on herself three times per day. The cloud lasts for 1 minute (no {@status concentration} required)."
 					]
 				}
 			],
@@ -4352,7 +4352,7 @@
 				{
 					"name": "Keen Hearing and Sight",
 					"entries": [
-						"Yinra has advantage on Wisdom (Perception) checks that rely on hearing or sight."
+						"Yinra has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or sight."
 					]
 				}
 			],

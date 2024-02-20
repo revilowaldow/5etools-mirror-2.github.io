@@ -29847,7 +29847,7 @@
 						{
 							"type": "entries",
 							"name": "F21. Temple of the Elder Elemental Eye",
-							"page": 112,
+							"page": 122,
 							"id": "4b3",
 							"entries": [
 								{
@@ -29865,7 +29865,7 @@
 										{
 											"type": "entries",
 											"name": "Altar",
-											"page": 112,
+											"page": 122,
 											"id": "4b6",
 											"entries": [
 												"Any non-evil creature that touches the altar or makes a melee weapon attack against it must succeed on a DC 15 Constitution saving throw or take 22 ({@dice 4d10}) psychic damage. The altar has AC 15, 150 hit points, and immunity to acid, cold, fire, lightning, poison, psychic, and thunder damage, as well as bludgeoning, piercing, and slashing damage from nonmagical weapons. As long as the altar remains intact, servants of Elemental Evil (including members of the hour elemental cults) can't be {@condition frightened} while in this room."
@@ -29874,7 +29874,7 @@
 										{
 											"type": "entries",
 											"name": "Flaming Water",
-											"page": 112,
+											"page": 122,
 											"id": "4b7",
 											"entries": [
 												"The flames burning on the pools are fed by oil seeps beneath the water. The water is tainted and undrinkable."
@@ -29885,7 +29885,7 @@
 								{
 									"type": "entries",
 									"name": "Cult Forces",
-									"page": 112,
+									"page": 122,
 									"id": "4b8",
 									"entries": [
 										"One of the four elemental prophets is here when the adventurers first arrive. Accompanying the prophet is a handful of subordinates. Choose from the following options, discounting any prophet who has been defeated:",
@@ -29903,7 +29903,7 @@
 										{
 											"type": "entries",
 											"name": "Sacrifice",
-											"page": 112,
+											"page": 122,
 											"id": "4b9",
 											"entries": [
 												"If the characters accept the prophet's offer, he or she demands a test of good faith. The prophet and entourage move to a tactically safe position. Then, to prove their sincerity, the new converts must offer the sacrifice. The villains have a {@creature commoner} named Darreth, abducted from Womford weeks ago, as a sacrifice. Darreth is already bound, gagged, and lying at the foot of the altar.",
@@ -29916,7 +29916,7 @@
 								{
 									"type": "entries",
 									"name": "Treasure",
-									"page": 112,
+									"page": 122,
 									"id": "4ba",
 									"entries": [
 										"Each elemental prophet carries an elemental weapon (see {@area chapter 7|74f|x})."

@@ -1729,7 +1729,7 @@
 				{
 					"name": "Symbol Speech",
 					"entries": [
-						"A dabus communicates by creating illusory symbols and pictures that float in the air in front of itself and disappear a few seconds later. A creature that can see such a message can decipher it with a successful {@dc 10} Intelligence (Investigation) check (no action required)."
+						"A dabus communicates by creating illusory symbols and pictures that float in the air in front of itself and disappear a few seconds later. A creature that can see such a message can decipher it with a successful {@dc 10} Intelligence ({@skill Investigation}) check (no action required)."
 					]
 				}
 			],
@@ -6042,7 +6042,7 @@
 				{
 					"name": "False Appearance",
 					"entries": [
-						"If the blight is motionless at the start of combat, it has advantage on its initiative roll. If a creature hasn't observed the blight move or act, that creature must succeed on a {@dc 18} Intelligence (Investigation) check to discern that the blight is animate."
+						"If the blight is motionless at the start of combat, it has advantage on its initiative roll. If a creature hasn't observed the blight move or act, that creature must succeed on a {@dc 18} Intelligence ({@skill Investigation}) check to discern that the blight is animate."
 					]
 				},
 				{
@@ -6615,7 +6615,7 @@
 				{
 					"name": "Special Equipment",
 					"entries": [
-						"Shemeshka carries a magic crown called the Razorvine Tiara. In the hands of anyone other than Shemeshka, the Razorvine Tiara functions as a tentacle rod that deals slashing damage instead of bludgeoning damage."
+						"Shemeshka carries a magic crown called the Razorvine Tiara. In the hands of anyone other than Shemeshka, the Razorvine Tiara functions as a {@item tentacle rod} that deals slashing damage instead of bludgeoning damage."
 					]
 				}
 			],

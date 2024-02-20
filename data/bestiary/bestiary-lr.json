@@ -150,7 +150,7 @@
 					"name": "Hearth of Moonlight and Shadow",
 					"entries": [
 						"At the start of a short or long rest, Amble can touch a point in space, and an {@condition invisible}, 30-foot-radius sphere of magic appears, centered on that point. Total cover blocks the sphere.",
-						"While within the sphere, Amble and their allies gain a +5 bonus to Dexterity (Stealth) and Wisdom (Perception) checks, and any light from open flames in the sphere isn't visible outside it.",
+						"While within the sphere, Amble and their allies gain a +5 bonus to Dexterity ({@skill Stealth}) and Wisdom ({@skill Perception}) checks, and any light from open flames in the sphere isn't visible outside it.",
 						"The sphere vanishes at the end of the rest or when Amble leaves the sphere."
 					]
 				},

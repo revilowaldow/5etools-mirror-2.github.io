@@ -503,6 +503,20 @@
 			]
 		},
 		{
+			"name": "Balance Card",
+			"source": "BMT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "decks/BMT/Deck of Many Things/03-balance.webp"
+					},
+					"credit": "Francesca Resta"
+				}
+			]
+		},
+		{
 			"name": "Battle Standard of Infernal Power",
 			"source": "BGDIA",
 			"images": [
@@ -608,6 +622,19 @@
 			]
 		},
 		{
+			"name": "Blade of the Wood",
+			"source": "HWCS",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/HWCS/Blade-of-the-Wood.webp"
+					}
+				}
+			]
+		},
+		{
 			"name": "Blood Spear",
 			"source": "CoS",
 			"images": [
@@ -704,6 +731,19 @@
 					"href": {
 						"type": "internal",
 						"path": "items/DMG/Boots of the Winterlands.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Borealus",
+			"source": "HWCS",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/HWCS/Borealus.webp"
 					}
 				}
 			]
@@ -1115,6 +1155,20 @@
 						"path": "items/AI/coin-of-decisionry.webp"
 					},
 					"credit": "Chris Walton"
+				}
+			]
+		},
+		{
+			"name": "Comet Card",
+			"source": "BMT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "decks/BMT/Deck of Many Things/12-comet.webp"
+					},
+					"credit": "Vallez Gax"
 				}
 			]
 		},
@@ -1610,6 +1664,20 @@
 			]
 		},
 		{
+			"name": "Donjon Card",
+			"source": "BMT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "decks/BMT/Deck of Many Things/17-donjon.webp"
+					},
+					"credit": "Jim Zaccaria"
+				}
+			]
+		},
+		{
 			"name": "Double-Bladed Scimitar",
 			"source": "ERLW",
 			"entries": [
@@ -1906,6 +1974,20 @@
 			]
 		},
 		{
+			"name": "Euryale Card",
+			"source": "BMT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "decks/BMT/Deck of Many Things/22-euryale.webp"
+					},
+					"credit": "Tinnel Lovitt"
+				}
+			]
+		},
+		{
 			"name": "Euryale's Aegis",
 			"source": "BMT",
 			"images": [
@@ -2007,6 +2089,33 @@
 					"href": {
 						"type": "internal",
 						"path": "items/BMT/Fate Dealers Deck.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Fates Card",
+			"source": "BMT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "decks/BMT/Deck of Many Things/08-fates.webp"
+					},
+					"credit": "Tinnel Lovitt"
+				}
+			]
+		},
+		{
+			"name": "Feathered Helm",
+			"source": "HWCS",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/HWCS/Feathered-Helm.webp"
 					}
 				}
 			]
@@ -2135,6 +2244,20 @@
 			]
 		},
 		{
+			"name": "Flames Card",
+			"source": "BMT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "decks/BMT/Deck of Many Things/20-flames.webp"
+					},
+					"credit": "Harry Conway"
+				}
+			]
+		},
+		{
 			"name": "Flying Chariot",
 			"source": "MOT",
 			"images": [
@@ -2158,6 +2281,20 @@
 						"type": "internal",
 						"path": "items/DMG/Folding Boat.webp"
 					}
+				}
+			]
+		},
+		{
+			"name": "Fool Card",
+			"source": "BMT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "decks/BMT/Deck of Many Things/01-fool.webp"
+					},
+					"credit": "Harry Conway"
 				}
 			]
 		},
@@ -2199,6 +2336,20 @@
 						"path": "items/DMG/Gauntlets of Ogre Power.webp"
 					},
 					"credit": "Conceptopolis"
+				}
+			]
+		},
+		{
+			"name": "Gem Card",
+			"source": "BMT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "decks/BMT/Deck of Many Things/05-gem.webp"
+					},
+					"credit": "Tinnel Lovitt"
 				}
 			]
 		},
@@ -3130,6 +3281,20 @@
 			]
 		},
 		{
+			"name": "Jester Card",
+			"source": "BMT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "decks/BMT/Deck of Many Things/14-jester.webp"
+					},
+					"credit": "Harry Conway"
+				}
+			]
+		},
+		{
 			"name": "Jester's Mask",
 			"source": "BMT",
 			"images": [
@@ -3208,6 +3373,20 @@
 			]
 		},
 		{
+			"name": "Key Card",
+			"source": "BMT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "decks/BMT/Deck of Many Things/02-key.webp"
+					},
+					"credit": "Tinnel Lovitt"
+				}
+			]
+		},
+		{
 			"name": "Khrusor, Spear of Heliod",
 			"source": "MOT",
 			"images": [
@@ -3259,6 +3438,20 @@
 				"name": "Kiss of the Changebringer",
 				"source": "TDCSR"
 			}
+		},
+		{
+			"name": "Knight Card",
+			"source": "BMT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "decks/BMT/Deck of Many Things/09-knight.webp"
+					},
+					"credit": "Vallez Gax"
+				}
+			]
 		},
 		{
 			"name": "Lantern of Revealing",
@@ -3828,6 +4021,20 @@
 			]
 		},
 		{
+			"name": "Moon Card",
+			"source": "BMT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "decks/BMT/Deck of Many Things/11-moon.webp"
+					},
+					"credit": "Vallez Gax"
+				}
+			]
+		},
+		{
 			"name": "Moonblade",
 			"source": "DMG",
 			"images": [
@@ -3976,6 +4183,19 @@
 			]
 		},
 		{
+			"name": "Necronomicon Ex Corvis",
+			"source": "HWCS",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/HWCS/Necronomicon-Ex-Corvis.webp"
+					}
+				}
+			]
+		},
+		{
 			"name": "Nepenthe",
 			"source": "VRGR",
 			"images": [
@@ -3984,6 +4204,19 @@
 					"href": {
 						"type": "internal",
 						"path": "items/VRGR/Nepenthe.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Nest Charm",
+			"source": "HWCS",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/HWCS/Nest-Charm.webp"
 					}
 				}
 			]
@@ -4426,6 +4659,20 @@
 			]
 		},
 		{
+			"name": "Puzzle Card",
+			"source": "BMT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "decks/BMT/Deck of Many Things/04-puzzle.webp"
+					},
+					"credit": "Tinnel Lovitt"
+				}
+			]
+		},
+		{
 			"name": "Pyremaul",
 			"source": "TDCSR",
 			"images": [
@@ -4584,6 +4831,19 @@
 					"href": {
 						"type": "internal",
 						"path": "items/HAT-LMI/Red Wizard Blade.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Red-Feather Bow",
+			"source": "HWCS",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/HWCS/Red-Feather-Bow.webp"
 					}
 				}
 			]
@@ -5021,6 +5281,20 @@
 			]
 		},
 		{
+			"name": "Rogue Card",
+			"source": "BMT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "decks/BMT/Deck of Many Things/06-rogue.webp"
+					},
+					"credit": "Harry Conway"
+				}
+			]
+		},
+		{
 			"name": "Rope of Entanglement",
 			"source": "DMG",
 			"images": [
@@ -5077,6 +5351,20 @@
 			]
 		},
 		{
+			"name": "Ruin Card",
+			"source": "BMT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "decks/BMT/Deck of Many Things/16-ruin.webp"
+					},
+					"credit": "Andrea Sipl"
+				}
+			]
+		},
+		{
 			"name": "Ruin's Wake",
 			"source": "EGW",
 			"images": [
@@ -5113,6 +5401,20 @@
 				"name": "Ruin's Wake",
 				"source": "EGW"
 			}
+		},
+		{
+			"name": "Sage Card",
+			"source": "BMT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "decks/BMT/Deck of Many Things/07-sage.webp"
+					},
+					"credit": "Joanna Barnum"
+				}
+			]
 		},
 		{
 			"name": "Saint Markovia's Thighbone",
@@ -5408,6 +5710,20 @@
 						"path": "items/GGR/Simic Keyrune.webp"
 					},
 					"credit": "Daniel Ljunggren"
+				}
+			]
+		},
+		{
+			"name": "Skull Card",
+			"source": "BMT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "decks/BMT/Deck of Many Things/19-skull.webp"
+					},
+					"credit": "Alex Dos Diaz"
 				}
 			]
 		},
@@ -5792,6 +6108,20 @@
 			]
 		},
 		{
+			"name": "Star Card",
+			"source": "BMT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "decks/BMT/Deck of Many Things/13-star.webp"
+					},
+					"credit": "Vallez Gax"
+				}
+			]
+		},
+		{
 			"name": "Star Razor",
 			"source": "TDCSR",
 			"entries": [
@@ -5922,6 +6252,20 @@
 						"type": "internal",
 						"path": "items/DMG/Sun Blade.webp"
 					}
+				}
+			]
+		},
+		{
+			"name": "Sun Card",
+			"source": "BMT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "decks/BMT/Deck of Many Things/10-sun.webp"
+					},
+					"credit": "Vallez Gax"
 				}
 			]
 		},
@@ -6085,6 +6429,20 @@
 			]
 		},
 		{
+			"name": "Talons Card",
+			"source": "BMT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "decks/BMT/Deck of Many Things/21-talons.webp"
+					},
+					"credit": "Abigail Larson"
+				}
+			]
+		},
+		{
 			"name": "Teeth of Dahlver-Nar",
 			"source": "TCE",
 			"images": [
@@ -6160,6 +6518,20 @@
 						"type": "internal",
 						"path": "items/PHB/Thieves' Tools.webp"
 					}
+				}
+			]
+		},
+		{
+			"name": "Throne Card",
+			"source": "BMT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "decks/BMT/Deck of Many Things/15-throne.webp"
+					},
+					"credit": "Andrea Sipl"
 				}
 			]
 		},
@@ -6387,6 +6759,20 @@
 						"type": "internal",
 						"path": "items/DMG/Vicious Weapon.webp"
 					}
+				}
+			]
+		},
+		{
+			"name": "Void Card",
+			"source": "BMT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "decks/BMT/Deck of Many Things/18-void.webp"
+					},
+					"credit": "Alex Dos Diaz"
 				}
 			]
 		},
@@ -6726,6 +7112,19 @@
 					"href": {
 						"type": "internal",
 						"path": "items/PotA/Windvane.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Wing Crest Shield",
+			"source": "HWCS",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/HWCS/Wing-Crest-Shield.webp"
 					}
 				}
 			]

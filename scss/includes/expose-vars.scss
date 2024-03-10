@@ -1,20 +1,20 @@
-@import "vars";
+@use "vars";
 
 // region Expose variables for homebrew
 :root {
-	--rgb-font: #{$rgb-font};
-	--rgb-font--muted: #{$rgb-font--muted};
-	--rgb-name: #{$rgb-name-red};
-	--rgb-bg: #{$rgb-bg};
-	--rgb-bg--alt: #{$rgb-bg--alt};
-	--rgb-border--statblock: #{$rgb-border-yellow--statblock};
+	--rgb-font: #{vars.$rgb-font};
+	--rgb-font--muted: #{vars.$rgb-font--muted};
+	--rgb-name: #{vars.$rgb-name-red};
+	--rgb-bg: #{vars.$rgb-bg};
+	--rgb-bg--alt: #{vars.$rgb-bg--alt};
+	--rgb-border--statblock: #{vars.$rgb-border-yellow--statblock};
 }
 
 :root.night-mode {
-	--rgb-font: #{$rgb-font--night};
-	--rgb-name: #{$rgb-name-red--night};
-	--rgb-bg: #{$rgb-bg--night};
-	--rgb-bg--alt: #{$rgb-bg--alt-night};
-	--rgb-border--statblock: #{$rgb-border-grey--statblock-night};
+	--rgb-font: #{vars.$rgb-font--night};
+	--rgb-name: #{vars.$rgb-name-red--night};
+	--rgb-bg: #{vars.$rgb-bg--night};
+	--rgb-bg--alt: #{vars.$rgb-bg--alt-night};
+	--rgb-border--statblock: #{vars.$rgb-border-grey--statblock-night};
 }
 // endregion

@@ -18,7 +18,7 @@ class _HtmlGenerator {
 
 class _HtmlGeneratorListButtons extends _HtmlGenerator {
 	static getBtnPreviewToggle () {
-		return `<button class="col-0-3 btn btn-default btn-xs p-0 lst__btn-collapse-all-previews" name="list-toggle-all-previews">[+]</button>`;
+		return `<button class="ve-col-0-3 btn btn-default btn-xs p-0 lst__btn-collapse-all-previews" name="list-toggle-all-previews">[+]</button>`;
 	}
 
 	static getBtnSource () {
@@ -43,7 +43,7 @@ class _HtmlGeneratorListButtons extends _HtmlGenerator {
 		},
 	) {
 		const attrs = [
-			this._getAttrClass(`col-${width} sort btn btn-default btn-xs`, {classListAdditional}),
+			this._getAttrClass(`ve-col-${width} sort btn btn-default btn-xs`, {classListAdditional}),
 			sortIdent ? `data-sort="${sortIdent}"` : null,
 			isDisabled ? `disabled` : null,
 		]

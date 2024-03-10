@@ -535,6 +535,41 @@
 			]
 		},
 		{
+			"name": "Dzaan",
+			"source": "IDRotF",
+			"_copy": {
+				"name": "Dzaan's Simulacrum",
+				"source": "IDRotF"
+			},
+			"entries": [
+				"Dzaan was a Red Wizard of Thay who studied the arcane tradition of illusion. The leaders of the Arcane Brotherhood welcomed him with open arms, eager to count a Red Wizard among their ranks. Dzaan might have become a force to reckon with in the brotherhood had his quest for power not led him to Icewind Dale, where he was killed by the people of Easthaven after making a few too many enemies.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Dzaan's Demise",
+									"entries": [
+										"Dzaan's trouble started after he broke away from his fellow wizards and hired adventurers to scour Icewind Dale for Netherese ruins. One group of them uncovered a buried tower in the tundra (see \"Lost Spire of Netheril\"), and Dzaan went out of his way to eliminate anyone who knew of it, including the adventurers who found it and several Ten-Towners with whom they had spoken. After turning the tower into his secret base, Dzaan visited Easthaven to gather supplies. Although he took the precaution of adopting a magical disguise, members of the local militia recognized Dzaan by the way he walked and spoke. They captured him, gagged him, confiscated his spellbook, and condemned him to death."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Companion",
+									"entries": [
+										"Because they're so despised throughout Faerûn, Red Wizards often adopt disguises and rarely travel abroad without an escort. They generally favor undead servants and bodyguards, since they find that undead tend to be more obedient than the living. Dzaan's bodyguard is a Thayan {@creature wight} named Krintaas. When Dzaan returned to Easthaven, he ordered his companion to stay with the simulacrum and watch over it and the buried Netherese spire."
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
 			"name": "Dzaan's Simulacrum",
 			"source": "IDRotF",
 			"entries": [

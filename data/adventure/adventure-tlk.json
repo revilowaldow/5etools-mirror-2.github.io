@@ -5,7 +5,7 @@
 			"name": "Note from the Author",
 			"page": 2,
 			"entries": [
-				"to say this is a loosely constructed adventure may be an exaggeration of some degree. However, some patron saint of children requested a pdf of my adventure notes. So, here we are. I've use one version or another of this adventure to introduce people to the D&D experience as it has all the elements of a good game with very little ramp up time needed. The adventure structure is created in such a way to allow for as much or as little combat is desired. Encounters can be changed to suit a lvl1 campaign, and with a little imagination I imagine one could have fun altering it for a party in the high teens. Some nice paintings of Ancient Dragons and Neoliths may be in order.",
+				"To say this is a loosely constructed adventure may be an exaggeration of some degree. However, some patron saint of children requested a pdf of my adventure notes. So, here we are. I've use one version or another of this adventure to introduce people to the D&D experience as it has all the elements of a good game with very little ramp up time needed. The adventure structure is created in such a way to allow for as much or as little combat is desired. Encounters can be changed to suit a lvl1 campaign, and with a little imagination I imagine one could have fun altering it for a party in the high teens. Some nice paintings of Ancient Dragons and Neoliths may be in order.",
 				"Have fun with it. Change, add, or remove monsters, items, and characters as you see fit.",
 				"A special thanks to the wonderful donors of the Extra Life Charity and the Dungeons and Dragons Team. Together we can manage to do a little bit of good in this mind-flayer-run world.",
 				{
@@ -701,6 +701,19 @@
 				}
 			],
 			"id": "000"
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						"{@b Illustrated and Written By} Shawn Wood"
+					]
+				}
+			]
 		}
 	]
 }

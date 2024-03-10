@@ -1,4 +1,4 @@
-@import "vars";
+@use "vars";
 
 // region Fix Chrome
 input[type="checkbox"]:checked {
@@ -34,7 +34,7 @@ input[type="radio"]:checked {
 
 // region Font style
 .ve-muted {
-	color: $rgb-font--muted !important;
+	color: vars.$rgb-font--muted !important;
 }
 
 .bold {
@@ -189,8 +189,7 @@ i > i {
 }
 
 .overflow-auto {
-	overflow-x: auto;
-	overflow-y: auto;
+	overflow: auto auto;
 }
 
 .overflow-y-auto {
@@ -222,7 +221,7 @@ i > i {
 }
 
 .overflow-ellipsis {
-	@include overflow-dots();
+	@include vars.mix-overflow-dots;
 }
 
 .overflow-overlay {
@@ -264,7 +263,7 @@ i > i {
 }
 
 .w-33 {
-	width: 33.3333333% !important;
+	width: 33.3333% !important;
 }
 
 .w-40 {
@@ -275,7 +274,7 @@ i > i {
 	width: 50% !important;
 
 	&--mr-2 {
-		width: calc(50% - #{$spacer * 0.5}) !important;
+		width: calc(50% - #{vars.$spacer * 0.5}) !important;
 	}
 }
 
@@ -284,7 +283,7 @@ i > i {
 }
 
 .w-66 {
-	width: 66.6666666% !important;
+	width: 66.6666% !important;
 }
 
 .w-70 {
@@ -396,7 +395,7 @@ i > i {
 }
 
 .max-w-33 {
-	max-width: 33.3333333% !important;
+	max-width: 33.3333% !important;
 }
 
 .max-w-80 {
@@ -474,7 +473,7 @@ i > i {
 }
 
 .h-ipt-xs {
-	height: $h-ipt-xs;
+	height: vars.$h-ipt-xs;
 }
 
 // Often useful as a hack to force flexbox to behave
@@ -737,7 +736,7 @@ i > i {
 		break-inside: avoid-column;
 	}
 
-	@media (max-width: 768px) {
+	@media (width <= 768px) {
 		column-count: 1;
 	}
 }
@@ -751,11 +750,11 @@ i > i {
 		break-inside: avoid-column;
 	}
 
-	@media (max-width: 768px) {
+	@media (width <= 768px) {
 		column-count: 2;
 	}
 
-	@media (max-width: 480px) {
+	@media (width <= 480px) {
 		column-count: 1;
 	}
 }
@@ -769,11 +768,11 @@ i > i {
 		break-inside: avoid-column;
 	}
 
-	@media (max-width: 768px) {
+	@media (width <= 768px) {
 		column-count: 3;
 	}
 
-	@media (max-width: 480px) {
+	@media (width <= 480px) {
 		column-count: 2;
 	}
 }
@@ -787,11 +786,11 @@ i > i {
 		break-inside: avoid-column;
 	}
 
-	@media (max-width: 768px) {
+	@media (width <= 768px) {
 		column-count: 3;
 	}
 
-	@media (max-width: 480px) {
+	@media (width <= 480px) {
 		column-count: 2;
 	}
 }
@@ -805,11 +804,11 @@ i > i {
 		break-inside: avoid-column;
 	}
 
-	@media (max-width: 768px) {
+	@media (width <= 768px) {
 		column-count: 3;
 	}
 
-	@media (max-width: 480px) {
+	@media (width <= 480px) {
 		column-count: 2;
 	}
 }

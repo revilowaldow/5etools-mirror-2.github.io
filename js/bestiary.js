@@ -68,22 +68,22 @@ class BestiarySublistManager extends SublistManager {
 		return [
 			new SublistCellTemplate({
 				name: "Name",
-				css: "bold col-5 pl-0",
+				css: "bold ve-col-5 pl-0",
 				colStyle: "",
 			}),
 			new SublistCellTemplate({
 				name: "Type",
-				css: "col-3-8",
+				css: "ve-col-3-8",
 				colStyle: "",
 			}),
 			new SublistCellTemplate({
 				name: "CR",
-				css: "col-1-2 ve-text-center",
+				css: "ve-col-1-2 ve-text-center",
 				colStyle: "text-center",
 			}),
 			new SublistCellTemplate({
 				name: "Number",
-				css: "col-2 ve-text-center",
+				css: "ve-col-2 ve-text-center",
 				colStyle: "text-center",
 			}),
 		];
@@ -98,7 +98,7 @@ class BestiarySublistManager extends SublistManager {
 
 		const cellsText = [name, type, cr];
 
-		const $hovStatblock = $(`<span class="col-1-4 help help--hover best-ecgen__visible">Stat Block</span>`)
+		const $hovStatblock = $(`<span class="ve-col-1-4 help help--hover best-ecgen__visible">Stat Block</span>`)
 			.mouseover(evt => this._encounterBuilder.doStatblockMouseOver({
 				evt,
 				ele: $hovStatblock[0],
@@ -110,26 +110,26 @@ class BestiarySublistManager extends SublistManager {
 			.mouseleave(evt => Renderer.hover.handleLinkMouseLeave(evt, $hovStatblock[0]));
 
 		const hovTokenMeta = EncounterBuilderUiBestiary.getTokenHoverMeta(mon);
-		const $hovToken = !hovTokenMeta ? $(`<span class="col-1-2 best-ecgen__visible"></span>`) : $(`<span class="col-1-2 best-ecgen__visible help help--hover">Token</span>`)
+		const $hovToken = !hovTokenMeta ? $(`<span class="ve-col-1-2 best-ecgen__visible"></span>`) : $(`<span class="ve-col-1-2 best-ecgen__visible help help--hover">Token</span>`)
 			.mouseover(evt => hovTokenMeta.mouseOver(evt, $hovToken[0]))
 			.mousemove(evt => hovTokenMeta.mouseMove(evt, $hovToken[0]))
 			.mouseleave(evt => hovTokenMeta.mouseLeave(evt, $hovToken[0]));
 
-		const $hovImage = $(`<span class="col-1-2 best-ecgen__visible help help--hover">Image</span>`);
+		const $hovImage = $(`<span class="ve-col-1-2 best-ecgen__visible help help--hover">Image</span>`);
 		Renderer.monster.hover.bindFluffImageMouseover({mon, $ele: $hovImage});
 
 		const $ptCr = (() => {
-			if (!ScaleCreature.isCrInScaleRange(mon)) return $(`<span class="col-1-2 ve-text-center">${cr}</span>`);
+			if (!ScaleCreature.isCrInScaleRange(mon)) return $(`<span class="ve-col-1-2 ve-text-center">${cr}</span>`);
 
 			const $iptCr = $(`<input value="${cr}" class="w-100 ve-text-center form-control form-control--minimal input-xs">`)
 				.click(() => $iptCr.select())
 				.change(() => this._encounterBuilder.pDoCrChange($iptCr, mon, mon._scaledCr));
 
-			return $$`<span class="col-1-2 ve-text-center">${$iptCr}</span>`;
+			return $$`<span class="ve-col-1-2 ve-text-center">${$iptCr}</span>`;
 		})();
 
-		const $eleCount1 = $(`<span class="col-2 ve-text-center">${count}</span>`);
-		const $eleCount2 = $(`<span class="col-2 pr-0 ve-text-center">${count}</span>`);
+		const $eleCount1 = $(`<span class="ve-col-2 ve-text-center">${count}</span>`);
+		const $eleCount2 = $(`<span class="ve-col-2 pr-0 ve-text-center">${count}</span>`);
 
 		const listItem = new ListItem(
 			hash,
@@ -168,7 +168,7 @@ class BestiarySublistManager extends SublistManager {
 
 			<div class="lst__wrp-cells best-ecgen__visible--flex lst--border lst__row-inner">
 				${sublistButtonsMeta.$wrp}
-				<span class="best-ecgen__name--sub col-3-5">${name}</span>
+				<span class="best-ecgen__name--sub ve-col-3-5">${name}</span>
 				${$hovStatblock}
 				${$hovToken}
 				${$hovImage}
@@ -430,12 +430,12 @@ class BestiaryPage extends ListPageMultiSource {
 					click: evt => this._handleBestiaryLinkClick(evt),
 					children: [
 						this._encounterBuilder.getButtons(mI),
-						e_({tag: "span", clazz: `best-ecgen__name bold col-4-2 pl-0`, text: mon.name}),
-						e_({tag: "span", clazz: `col-4-1`, text: type}),
-						e_({tag: "span", clazz: `col-1-7 ve-text-center`, text: cr}),
+						e_({tag: "span", clazz: `best-ecgen__name bold ve-col-4-2 pl-0`, text: mon.name}),
+						e_({tag: "span", clazz: `ve-col-4-1`, text: type}),
+						e_({tag: "span", clazz: `ve-col-1-7 ve-text-center`, text: cr}),
 						e_({
 							tag: "span",
-							clazz: `col-2 ve-text-center ${Parser.sourceJsonToColor(mon.source)} pr-0`,
+							clazz: `ve-col-2 ve-text-center ${Parser.sourceJsonToColor(mon.source)} pr-0`,
 							style: Parser.sourceJsonToStylePart(mon.source),
 							title: `${Parser.sourceJsonToFull(mon.source)}${Renderer.utils.getSourceSubText(mon)}`,
 							text: source,

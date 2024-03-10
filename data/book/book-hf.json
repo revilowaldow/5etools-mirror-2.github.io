@@ -3045,6 +3045,172 @@
 				}
 			],
 			"id": "093"
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Publisher",
+							"entries": [
+								"Aaron Wehner"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Editor",
+							"entries": [
+								"Emma Rudolph"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Production Editor",
+							"entries": [
+								"Kimmy Tejasindhu"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Art Director and Designer",
+							"entries": [
+								"Kelly Booth"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Photo Director",
+							"entries": [
+								"Emma Campion"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Production Designer",
+							"entries": [
+								"Mari Gill"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Production Manager",
+							"entries": [
+								"Dan Myers"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Color Manager",
+							"entries": [
+								"Jane Chinn"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Photo Assistants",
+							"entries": [
+								"Dane Christensen, Tyler Demogenes"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Food Stylist",
+							"entries": [
+								"Valerie Aikman-Smith"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Food Stylist Assistant",
+							"entries": [
+								"Morgan Baker"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Prop Stylist",
+							"entries": [
+								"Glenn Jenkins"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Prop Stylist Assistant",
+							"entries": [
+								"Zachary Wine"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Photo Retoucher",
+							"entries": [
+								"Tamara White"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Recipe Developer",
+							"entries": [
+								"Adam Ried"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Approvals Coordinator",
+							"entries": [
+								"Shaida Boroumand"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Copyeditors",
+							"entries": [
+								"Andrea Chesman, Patrick Barb"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Proofreader",
+							"entries": [
+								"Linda Bouchard"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Indexer",
+							"entries": [
+								"Ken DellaPenta"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Publicist",
+							"entries": [
+								"Daniel Wikey"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Marketer",
+							"entries": [
+								"Lauren Kretzschmar"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Wizards of the Coast Team",
+							"entries": [
+								"David Gershman, Shauna Narciso, Adam Lee, Hilary Ross, Liz Schuh"
+							]
+						}
+					]
+				}
+			]
 		}
 	]
 }

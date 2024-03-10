@@ -215,17 +215,17 @@ class ModalFilterOptionalFeatures extends ModalFilter {
 		const level = Renderer.optionalfeature.getListPrerequisiteLevelText(optfeat.prerequisite);
 
 		eleRow.innerHTML = `<div class="w-100 ve-flex-vh-center lst--border veapp__list-row no-select lst__wrp-cells">
-			<div class="col-0-5 pl-0 ve-flex-vh-center">${this._isRadio ? `<input type="radio" name="radio" class="no-events">` : `<input type="checkbox" class="no-events">`}</div>
+			<div class="ve-col-0-5 pl-0 ve-flex-vh-center">${this._isRadio ? `<input type="radio" name="radio" class="no-events">` : `<input type="checkbox" class="no-events">`}</div>
 
-			<div class="col-0-5 px-1 ve-flex-vh-center">
+			<div class="ve-col-0-5 px-1 ve-flex-vh-center">
 				<div class="ui-list__btn-inline px-2" title="Toggle Preview (SHIFT to Toggle Info Preview)">[+]</div>
 			</div>
 
-			<div class="col-3 ${optfeat._versionBase_isVersion ? "italic" : ""} ${this._getNameStyle()}">${optfeat._versionBase_isVersion ? `<span class="px-3"></span>` : ""}${optfeat.name}</div>
-			<span class="col-2 ve-text-center" title="${optfeat._dFeatureType}">${optfeat._lFeatureType}</span>
-			<span class="col-4 ve-text-center">${prerequisite}</span>
-			<span class="col-1 ve-text-center">${level}</span>
-			<div class="col-1 pr-0 ve-flex-h-center ${Parser.sourceJsonToColor(optfeat.source)}" title="${Parser.sourceJsonToFull(optfeat.source)}" ${Parser.sourceJsonToStyle(optfeat.source)}>${source}${Parser.sourceJsonToMarkerHtml(optfeat.source)}</div>
+			<div class="ve-col-3 ${optfeat._versionBase_isVersion ? "italic" : ""} ${this._getNameStyle()}">${optfeat._versionBase_isVersion ? `<span class="px-3"></span>` : ""}${optfeat.name}</div>
+			<span class="ve-col-2 ve-text-center" title="${optfeat._dFeatureType}">${optfeat._lFeatureType}</span>
+			<span class="ve-col-4 ve-text-center">${prerequisite}</span>
+			<span class="ve-col-1 ve-text-center">${level}</span>
+			<div class="ve-col-1 pr-0 ve-flex-h-center ${Parser.sourceJsonToColor(optfeat.source)}" title="${Parser.sourceJsonToFull(optfeat.source)}" ${Parser.sourceJsonToStyle(optfeat.source)}>${source}${Parser.sourceJsonToMarkerHtml(optfeat.source)}</div>
 		</div>`;
 
 		const btnShowHidePreview = eleRow.firstElementChild.children[1].firstElementChild;

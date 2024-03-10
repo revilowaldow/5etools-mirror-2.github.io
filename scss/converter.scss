@@ -1,4 +1,4 @@
-@import "includes/vars";
+@use "includes/vars";
 
 .inputArea,
 .outputArea {
@@ -25,8 +25,8 @@
 	&disp-message {
 		flex-shrink: 0;
 		font-size: 13px;
-		background-color: $rgb-bg--alt;
-		border: 1px solid $rgb-border-grey;
+		background-color: vars.$rgb-bg--alt;
+		border: 1px solid vars.$rgb-border-grey;
 		border-radius: 4px;
 		margin-right: 3rem;
 
@@ -35,7 +35,7 @@
 		}
 
 		&--error {
-			color: red;
+			color: #f00;
 		}
 	}
 }
@@ -43,13 +43,13 @@
 .night-mode {
 	.conv__ {
 		&disp-message {
-			background-color: $rgb-bg--alt-night;
-			border-color: $rgb-border-grey--night;
+			background-color: vars.$rgb-bg--alt-night;
+			border-color: vars.$rgb-border-grey--night;
 		}
 	}
 }
 
-@media (max-width: 991px) {
+@media (width <= 991px) {
 	.view-col-wrapper {
 		height: 40vh;
 	}

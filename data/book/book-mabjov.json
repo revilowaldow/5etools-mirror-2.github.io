@@ -6186,6 +6186,116 @@
 				}
 			],
 			"id": "11a"
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Writing and Design",
+							"entries": [
+								"James Ohlen"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Additional Design",
+							"entries": [
+								"Brent Knowles"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Editing",
+							"entries": [
+								"Drew Karpyshyn"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Graphic Design and Layout",
+							"entries": [
+								"Michal E. Cross"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Additional Writing",
+							"entries": [
+								"Patricia Barnabie, Drew Karpyshyn, Jesse Sky"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Monster Illustrations",
+							"entries": [
+								"Sebastian Kowoll"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Character Illustrations",
+							"entries": [
+								"Lius Lasahido"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Environment Illustrations",
+							"entries": [
+								"Julian Calle, Wadim Kashin, Erikas Perl"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Cover Art",
+							"entries": [
+								"Lius Lasahido"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Maps",
+							"entries": [
+								"John Stevenson"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Special Thanks",
+							"entries": [
+								"Everyone who worked on the {@i Baldur's Gate} videogame franchise, to Ed Greenwood for creating the {@i Forgotten Realms} and to the 5th edition {@style Dungeons & Dragons|small-caps} team"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Special Thanks",
+							"entries": [
+								"Cam Tofer for creating Minsc and Boo and to Luke Kristjanson for giving Minsc his voice"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Additional Special Thanks",
+							"entries": [
+								"Dean Andersen for helping with art direction, Linden Knowles and Carter Knowles for helping with design"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Additional Special Thanks",
+							"entries": [
+								"Sean Carriere, Ross Gardner, James LaValle, David Hollis, Eric Young, Mike Schoen, Michael Backus, Roneil Reddy, Russell Yale"
+							]
+						}
+					]
+				}
+			]
 		}
 	]
 }

@@ -8628,6 +8628,81 @@
 				}
 			],
 			"id": "159"
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Lead Designer",
+							"entries": [
+								"Chris Lindsay"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Design",
+							"entries": [
+								"M. T. Black, Celeste Conowitch, Ma'at Crook, Amy Lynn Dzura, Claire Hoffman, James Introcaso, Rich Lescouflair, Greg Marks, Shawn Merwin, Alan Patrick, Travis Woodall"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Editing",
+							"entries": [
+								"Ashley Michaela \"Navigator\" Lawson"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Editorial Assistance",
+							"entries": [
+								"Tanya C. Depass"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Producer",
+							"entries": [
+								"Lea Heleotis"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Art Director and Graphic Design",
+							"entries": [
+								"Emi Tanji"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Cartography",
+							"entries": [
+								"Dyson Logos"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Cover Artist",
+							"entries": [
+								"Lars Grant-West"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Interior Artists",
+							"entries": [
+								"Tom Babbey, Mark Behm, Justin Gerard, Ilich Henriquez, Ralph Horsley, Aaron Hubrich, Brynn Metheny, Jim Pavelec, Claudio Pozas, Jasper Sandner, Bryan Syme"
+							]
+						}
+					]
+				}
+			]
 		}
 	]
 }

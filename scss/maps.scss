@@ -1,4 +1,4 @@
-@import "includes/vars";
+@use "includes/vars";
 
 .maps {
 	.rd__wrp-map {
@@ -8,19 +8,19 @@
 
 	&__ {
 		&disp-message-initial {
-			background: $rgb-bg;
-			border: 1px solid $rgb-border-grey--trans;
+			background: vars.$rgb-bg;
+			border: 1px solid vars.$rgb-border-grey--trans;
 			border-radius: 5px;
 		}
 	}
 
 	&-menu {
-		background: $rgb-bg;
+		background: vars.$rgb-bg;
 		font-size: 1.12rem;
-		border-top: 1px solid $rgb-border-grey;
+		border-top: 1px solid vars.$rgb-border-grey;
 		width: 235px;
 
-		@media only screen and (max-width: $width-screen-sm) {
+		@media only screen and (max-width: vars.$width-screen-sm) {
 			max-height: 600px;
 		}
 
@@ -32,10 +32,10 @@
 			}
 
 			&label-cb {
-				border-bottom: 1px solid $rgb-border-grey;
+				border-bottom: 1px solid vars.$rgb-border-grey;
 
 				&:hover {
-					background-color: $rgb-bg--alt;
+					background-color: vars.$rgb-bg--alt;
 
 					.maps-menu__btn-chapter-scroll {
 						opacity: 1;
@@ -47,7 +47,7 @@
 
 	&-gallery {
 		&__wrp-chapter {
-			border: 1px solid $rgb-border-grey--trans;
+			border: 1px solid vars.$rgb-border-grey--trans;
 			border-radius: 5px;
 		}
 	}
@@ -56,28 +56,28 @@
 .night-mode .maps {
 	&__ {
 		&disp-message-initial {
-			background: $rgb-bg--night;
-			border-color: $rgb-border-grey--trans-night;
+			background: vars.$rgb-bg--night;
+			border-color: vars.$rgb-border-grey--trans-night;
 		}
 	}
 
 	&-menu {
-		background: $rgb-bg--night;
-		border-top-color: $rgb-border-grey--trans-night;
+		background: vars.$rgb-bg--night;
+		border-top-color: vars.$rgb-border-grey--trans-night;
 
 		&__label-cb {
-			border-bottom-color: $rgb-border-grey--night;
+			border-bottom-color: vars.$rgb-border-grey--night;
 
 			&:hover {
-				background-color: $rgb-bg--alt-night;
+				background-color: vars.$rgb-bg--alt-night;
 			}
 		}
 	}
 
 	&-gallery {
 		&__wrp-chapter {
-			background: $rgb-bg--night;
-			border-color: $rgb-border-grey--trans-night;
+			background: vars.$rgb-bg--night;
+			border-color: vars.$rgb-border-grey--trans-night;
 		}
 	}
 }

@@ -20,6 +20,7 @@
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "ToFW",
+			"page": 17,
 			"_copy": {
 				"name": "Society of Sensation Muse",
 				"source": "MPP",
@@ -39,6 +40,7 @@
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "ToFW",
+			"page": 50,
 			"_copy": {
 				"name": "Saber-Toothed Tiger",
 				"source": "MM",
@@ -104,6 +106,7 @@
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "ToFW",
+			"page": 17,
 			"_copy": {
 				"name": "Spy",
 				"source": "MM",
@@ -133,6 +136,7 @@
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "ToFW",
+			"page": 18,
 			"_copy": {
 				"name": "Thug",
 				"source": "MM",
@@ -161,6 +165,7 @@
 		{
 			"name": "Giant Whirlwyrm",
 			"source": "ToFW",
+			"page": 55,
 			"_copy": {
 				"name": "Behir",
 				"source": "MM",
@@ -193,6 +198,7 @@
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "ToFW",
+			"page": 17,
 			"_copy": {
 				"name": "Harmonium Peacekeeper",
 				"source": "MPP",
@@ -213,6 +219,7 @@
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "ToFW",
+			"page": 17,
 			"_copy": {
 				"name": "Hands of Havoc Fire Starter",
 				"source": "MPP",
@@ -232,6 +239,7 @@
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "ToFW",
+			"page": 61,
 			"_copy": {
 				"name": "Empyrean",
 				"source": "MM",
@@ -258,6 +266,7 @@
 		{
 			"name": "Modron Planar Incarnate",
 			"source": "ToFW",
+			"page": 92,
 			"_copy": {
 				"name": "Planar Incarnate",
 				"source": "MPP",
@@ -385,6 +394,7 @@
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "ToFW",
+			"page": 49,
 			"_copy": {
 				"name": "Elephant",
 				"source": "MM",
@@ -415,6 +425,7 @@
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "ToFW",
+			"page": 50,
 			"_copy": {
 				"name": "Giant Eagle",
 				"source": "MM",
@@ -443,6 +454,7 @@
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "ToFW",
+			"page": 75,
 			"_copy": {
 				"name": "Monodrone",
 				"source": "MM",
@@ -472,6 +484,7 @@
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "ToFW",
+			"page": 65,
 			"_copy": {
 				"name": "Deva",
 				"source": "MM",
@@ -490,6 +503,7 @@
 		{
 			"name": "Vecna Impersonator",
 			"source": "ToFW",
+			"page": 26,
 			"_copy": {
 				"name": "Doppelganger",
 				"source": "MM",
@@ -507,6 +521,7 @@
 		{
 			"name": "Whirlwyrm",
 			"source": "ToFW",
+			"page": 52,
 			"_copy": {
 				"name": "Giant Crocodile",
 				"source": "MM",
@@ -526,6 +541,7 @@
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "ToFW",
+			"page": 91,
 			"_copy": {
 				"name": "Hexton Modron",
 				"source": "MPP",
@@ -546,6 +562,7 @@
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "ToFW",
+			"page": 32,
 			"_copy": {
 				"name": "Githzerai Uniter",
 				"source": "MPP",

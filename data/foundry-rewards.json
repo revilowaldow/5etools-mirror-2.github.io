@@ -9,7 +9,7 @@
 					"transfer": true,
 					"changes": [
 						{
-							"key": "data.attributes.hp.max",
+							"key": "system.attributes.hp.bonuses.overall",
 							"mode": "ADD",
 							"value": "+ 40"
 						}

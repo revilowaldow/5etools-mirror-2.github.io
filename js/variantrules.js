@@ -11,12 +11,12 @@ class VariantRulesSublistManager extends SublistManager {
 		return [
 			new SublistCellTemplate({
 				name: "Name",
-				css: "bold col-10 pl-0",
+				css: "bold ve-col-10 pl-0",
 				colStyle: "",
 			}),
 			new SublistCellTemplate({
 				name: "Type",
-				css: "col-3 ve-text-center pr-0",
+				css: "ve-col-3 ve-text-center pr-0",
 				colStyle: "text-center",
 			}),
 		];
@@ -81,9 +81,9 @@ class VariantRulesPage extends ListPage {
 		const hash = UrlUtil.autoEncodeHash(rule);
 
 		eleLi.innerHTML = `<a href="#${hash}" class="lst--border lst__row-inner">
-			<span class="bold col-7 pl-0">${rule.name}</span>
-			<span class="col-3 ve-text-center">${rule.ruleType ? Parser.ruleTypeToFull(rule.ruleType) : "\u2014"}</span>
-			<span class="col-2 ve-text-center ${Parser.sourceJsonToColor(rule.source)} pr-0" title="${Parser.sourceJsonToFull(rule.source)}" ${Parser.sourceJsonToStyle(rule.source)}>${source}</span>
+			<span class="bold ve-col-7 pl-0">${rule.name}</span>
+			<span class="ve-col-3 ve-text-center">${rule.ruleType ? Parser.ruleTypeToFull(rule.ruleType) : "\u2014"}</span>
+			<span class="ve-col-2 ve-text-center ${Parser.sourceJsonToColor(rule.source)} pr-0" title="${Parser.sourceJsonToFull(rule.source)}" ${Parser.sourceJsonToStyle(rule.source)}>${source}</span>
 		</a>`;
 
 		const listItem = new ListItem(

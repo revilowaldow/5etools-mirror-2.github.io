@@ -3195,6 +3195,170 @@
 			"hasCardArt": true
 		},
 		{
+			"name": "Tarot Deck",
+			"source": "TD",
+			"page": 9,
+			"cards": [
+				"The Fool|Tarot Deck|TD",
+				"The Magician|Tarot Deck|TD",
+				"The High Priestess|Tarot Deck|TD",
+				"The Empress|Tarot Deck|TD",
+				"The Emperor|Tarot Deck|TD",
+				"The Hierophant|Tarot Deck|TD",
+				"The Lovers|Tarot Deck|TD",
+				"The Chariot|Tarot Deck|TD",
+				"Strength|Tarot Deck|TD",
+				"The Hermit|Tarot Deck|TD",
+				"The Wheel of Fortune|Tarot Deck|TD",
+				"Justice|Tarot Deck|TD",
+				"The Hanged Man|Tarot Deck|TD",
+				"Death|Tarot Deck|TD",
+				"Temperance|Tarot Deck|TD",
+				"The Devil|Tarot Deck|TD",
+				"The Tower|Tarot Deck|TD",
+				"The Star|Tarot Deck|TD",
+				"The Moon|Tarot Deck|TD",
+				"The Sun|Tarot Deck|TD",
+				"Judgement|Tarot Deck|TD",
+				"The World|Tarot Deck|TD",
+				"Ace of Strength|Tarot Deck|TD",
+				"Two of Strength|Tarot Deck|TD",
+				"Three of Strength|Tarot Deck|TD",
+				"Four of Strength|Tarot Deck|TD",
+				"Five of Strength|Tarot Deck|TD",
+				"Six of Strength|Tarot Deck|TD",
+				"Seven of Strength|Tarot Deck|TD",
+				"Eight of Strength|Tarot Deck|TD",
+				"Nine of Strength|Tarot Deck|TD",
+				"Ten of Strength|Tarot Deck|TD",
+				"Page of Strength|Tarot Deck|TD",
+				"Knight of Strength|Tarot Deck|TD",
+				"Queen of Strength|Tarot Deck|TD",
+				"King of Strength|Tarot Deck|TD",
+				"Ace of Intelligence|Tarot Deck|TD",
+				"Two of Intelligence|Tarot Deck|TD",
+				"Three of Intelligence|Tarot Deck|TD",
+				"Four of Intelligence|Tarot Deck|TD",
+				"Five of Intelligence|Tarot Deck|TD",
+				"Six of Intelligence|Tarot Deck|TD",
+				"Seven of Intelligence|Tarot Deck|TD",
+				"Eight of Intelligence|Tarot Deck|TD",
+				"Nine of Intelligence|Tarot Deck|TD",
+				"Ten of Intelligence|Tarot Deck|TD",
+				"Page of Intelligence|Tarot Deck|TD",
+				"Knight of Intelligence|Tarot Deck|TD",
+				"Queen of Intelligence|Tarot Deck|TD",
+				"King of Intelligence|Tarot Deck|TD",
+				"Ace of Wisdom|Tarot Deck|TD",
+				"Two of Wisdom|Tarot Deck|TD",
+				"Three of Wisdom|Tarot Deck|TD",
+				"Four of Wisdom|Tarot Deck|TD",
+				"Five of Wisdom|Tarot Deck|TD",
+				"Six of Wisdom|Tarot Deck|TD",
+				"Seven of Wisdom|Tarot Deck|TD",
+				"Eight of Wisdom|Tarot Deck|TD",
+				"Nine of Wisdom|Tarot Deck|TD",
+				"Ten of Wisdom|Tarot Deck|TD",
+				"Page of Wisdom|Tarot Deck|TD",
+				"Knight of Wisdom|Tarot Deck|TD",
+				"Queen of Wisdom|Tarot Deck|TD",
+				"King of Wisdom|Tarot Deck|TD",
+				"Ace of Charisma|Tarot Deck|TD",
+				"Two of Charisma|Tarot Deck|TD",
+				"Three of Charisma|Tarot Deck|TD",
+				"Four of Charisma|Tarot Deck|TD",
+				"Five of Charisma|Tarot Deck|TD",
+				"Six of Charisma|Tarot Deck|TD",
+				"Seven of Charisma|Tarot Deck|TD",
+				"Eight of Charisma|Tarot Deck|TD",
+				"Nine of Charisma|Tarot Deck|TD",
+				"Ten of Charisma|Tarot Deck|TD",
+				"Page of Charisma|Tarot Deck|TD",
+				"Knight of Charisma|Tarot Deck|TD",
+				"Queen of Charisma|Tarot Deck|TD",
+				"King of Charisma|Tarot Deck|TD"
+			],
+			"back": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/back.webp"
+				},
+				"width": 720,
+				"height": 1250
+			},
+			"entries": [
+				"Traditionally tarot is played by a reader and a seeker, but feel free to switch roles as the reading carries on. To read your own tarot, you take on both the roles of reader and seeker. Most tarot readings start with a question, and the quality of the question will determine the quality of the answer. For example, instead of asking {@i Why am I always sad?} try {@i How do I bring more joy to my life?}",
+				"Each card that is revealed adds to the unique tapestry of meaning, helping the seeker make inquiries into their own life and psyche to gain clarity about their current situation and conclude what might be possible for their future.",
+				"Although the root meaning of each card is explained in this booklet, the true meaning of each card can only be discovered within the context of the reading, as the cards begin to influence one another to create a story. And so it's best to allow the reading to unfold (five cards is a good number) without trying to define the answer.",
+				{
+					"type": "entries",
+					"name": "The Major Arcana,",
+					"page": 2,
+					"entries": [
+						"denoted by the cards numbered from 0 to 21 represent the archetypal life lessons all human beings experience, such as love, loss, change, and consciousness. The Major Arcana are challenges we revisit throughout our lives, but in different places; our life experience is continually expanding with time, so our capacity for understanding gives us a deeper insight into these lessons."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "The Minor Arcana,",
+					"page": 2,
+					"entries": [
+						"is made of 56 cards divided into four suits. These cards represent life's temporary highs and lows that pop up and fade away, unlike the enduring and evolving transformations of the Major Arcana.",
+						"In this tarot deck, we have mapped the traditional suits of the Minor Arcana\u2014Wands, Swords, Cups, and Pentacles\u2014to abilities within the game of D&D.",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"page": 2,
+							"items": [
+								{
+									"type": "item",
+									"name": "Strength",
+									"nameDot": false,
+									"entries": [
+										"signifies your physical ability to move and change your environment. It is also your passion, creativity, inner resolve, and heart. These cards show seekers that they need to take action and focus on their inner strength to bring about change in the world."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Intelligence",
+									"nameDot": false,
+									"entries": [
+										"represents how the power of the intellect can shape our world. These cards show seekers how they can use their thoughts to shape their attitude and their reality. Rarely do we see the world as it is without our mind creating a story around it."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Wisdom",
+									"nameDot": false,
+									"entries": [
+										"represents not only your external perception but also your capacity to look into your internal world and see all the subtleties within yourself. These cards tell seekers to turn within and listen to the nonverbal language of the heart and the body in order to gain access to the wisdom of insight and intuition."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Charisma",
+									"nameDot": false,
+									"entries": [
+										"denotes a person's confidence, eloquence, and their ability to influence the material world with their energy. These cards show seekers that a flowering of their inner beauty and power is taking place or that they have an opportunity to grow their self- esteem and expand their capacity for fun and joy."
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Upright and Reversed Meanings",
+					"page": 3,
+					"entries": [
+						"Many tarot readers give upside-down (reversed) cards an opposite meaning of the upright version. In this booklet, there is no reversed meaning, but as the reader of tarot, feel free to follow your intuition. If you feel that the seeker needs a bit of a wake-up call, then a reversed interpretation can often do the trick."
+					]
+				}
+			],
+			"hasCardArt": true
+		},
+		{
 			"name": "Trickster Gods of Omu",
 			"source": "ToA",
 			"page": 256,
@@ -4732,7 +4896,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/01-aberration.webp"
 				},
-				"credit": "Jim Zaccaria"
+				"credit": "Jim Zaccaria",
+				"width": 720,
+				"height": 1227
 			},
 			"entries": [
 				"You gain telepathy within a range of 90 feet."
@@ -4750,8 +4916,8 @@
 					"path": "decks/DMTCRG/Deck of Many More Things/02-balance.webp"
 				},
 				"credit": "Francesca Resta",
-				"width": 850,
-				"height": 1552
+				"width": 720,
+				"height": 1227
 			},
 			"entries": [
 				"Your mind suffers a wrenching alteration, causing your alignment to change. Lawful becomes chaotic, good becomes evil, and vice versa. If you are true neutral or unaligned, this card has no effect on you."
@@ -4768,7 +4934,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/03-beast.webp"
 				},
-				"credit": "Abigail Larson"
+				"credit": "Abigail Larson",
+				"width": 720,
+				"height": 1227
 			},
 			"entries": [
 				"You immediately transform into a {@filter random Beast with a CR of 5 or lower|bestiary|source=|Challenge Rating=[&0;&5]|type=beast}. Your game statistics\u2014including your ability scores, hit points, and possible actions\u2014are replaced by the Beast's game statistics, and any nonmagical equipment you're wearing or carrying melds into your new form and can't be used. Any magic items you're carrying drop in an unoccupied space within 5 feet of your new form.",
@@ -4786,7 +4954,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/04-book.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"You gain the ability to speak, read, and write {@dice 1d6 + 2} languages of your choice."
@@ -4803,7 +4973,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/05-bridge.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"You gain the ability to cast the {@spell Time Stop} spell {@dice 1d3} times. Use your Intelligence, Wisdom, or Charisma as the spellcasting ability (your choice)."
@@ -4820,7 +4992,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/06-campfire.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1232
 			},
 			"entries": [
 				"You immediately gain the benefits of finishing a long rest."
@@ -4837,7 +5011,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/07-cavern.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1233
 			},
 			"entries": [
 				"You gain a climbing speed equal to your walking speed. You also gain the ability to move up, down, across vertical surfaces, and along ceilings, while leaving your hands free."
@@ -4854,7 +5030,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/08-celestial.webp"
 				},
-				"credit": "Jim Zaccaria"
+				"credit": "Jim Zaccaria",
+				"width": 720,
+				"height": 1230
 			},
 			"entries": [
 				"You sprout a pair of softly luminescent, feathered wings from your back and gain a flying speed of 30 feet."
@@ -4872,8 +5050,8 @@
 					"path": "decks/DMTCRG/Deck of Many More Things/09-comet.webp"
 				},
 				"credit": "Vallez Gax",
-				"width": 850,
-				"height": 1552
+				"width": 720,
+				"height": 1230
 			},
 			"entries": [
 				"If you single-handedly defeat the next hostile monster or group of monsters you encounter, you gain experience points enough to gain one level. Otherwise, this card has no effect."
@@ -4890,7 +5068,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/10-construct.webp"
 				},
-				"credit": "Abigail Larson"
+				"credit": "Abigail Larson",
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"A {@creature homunculus} appears in an unoccupied space within 5 feet of you. The appearance of the homunculus is determined by the DM, and the homunculus treats you as its creator."
@@ -4907,7 +5087,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/11-corpse.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1231
 			},
 			"entries": [
 				"You immediately drop to 0 hit points, have the {@condition unconscious} condition, and must begin making death saving throws. Spells and other magical effects that restore hit points have no effect on you until you are stabilized. If you fail three death saving throws, you die and can be resurrected only by the {@spell Wish} spell."
@@ -4924,7 +5106,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/12-crossroads.webp"
 				},
-				"credit": "Abigail Larson"
+				"credit": "Abigail Larson",
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"Roll a {@dice d20}. If the roll is even, you age {@dice 1d10} years. If the roll is odd, you become younger by {@dice 1d10} years, to a minimum of 1 year. This effect can be undone only by the {@spell Wish} spell, divine intervention, or similar magic."
@@ -4942,8 +5126,8 @@
 					"path": "decks/DMTCRG/Deck of Many More Things/13-donjon.webp"
 				},
 				"credit": "Jim Zaccaria",
-				"width": 850,
-				"height": 1552
+				"width": 720,
+				"height": 1228
 			},
 			"entries": [
 				"You disappear and become entombed in a state of suspended animation in an extradimensional sphere. Everything you were wearing and carrying stays behind in the space you occupied when you disappeared. You remain imprisoned until you are found and removed from the sphere. You can't be located by any divination magic, but a {@spell wish} spell can reveal the location of your prison. You draw no more cards."
@@ -4960,7 +5144,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/14-door.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1233
 			},
 			"entries": [
 				"You gain the ability to cast the {@spell Gate} spell {@dice 1d4} times, requiring no material components. Use your Intelligence, Wisdom, or Charisma as the spellcasting ability (your choice)."
@@ -4977,7 +5163,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/15-dragon.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1228
 			},
 			"entries": [
 				"A dragon egg appears at your feet and immediately hatches into a dragon wyrmling. The type of dragon is chosen by the DM. The wyrmling views you as its parent and is staunchly loyal to you and your allies."
@@ -4994,7 +5182,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/16-elemental.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1231
 			},
 			"entries": [
 				"You become immune to one of the following damage types (choose immediately upon drawing this card): acid, cold, fire, lightning, or thunder."
@@ -5012,8 +5202,8 @@
 					"path": "decks/DMTCRG/Deck of Many More Things/17-euryale.webp"
 				},
 				"credit": "Tinnel Lovitt",
-				"width": 850,
-				"height": 1552
+				"width": 720,
+				"height": 1228
 			},
 			"entries": [
 				"The card's {@creature medusa}-like visage curses you. You take a \u22122 penalty on saving throws while cursed in this way. Only a god or the magic of the {@card Fates|Deck of Many More Things|BMT} card can end this curse."
@@ -5030,7 +5220,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/18-expert.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"Your Dexterity score increases by 2, to a maximum of 22."
@@ -5048,8 +5240,8 @@
 					"path": "decks/DMTCRG/Deck of Many More Things/19-fates.webp"
 				},
 				"credit": "Tinnel Lovitt",
-				"width": 850,
-				"height": 1552
+				"width": 720,
+				"height": 1230
 			},
 			"entries": [
 				"Reality's fabric unravels and spins anew, allowing you to avoid or erase one event as if it never happened. You can use the card's magic as soon as you draw the card or at any other time before you die."
@@ -5066,7 +5258,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/20-fey.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1230
 			},
 			"entries": [
 				"A fey crossing opens into the Feywild, and you're immediately pulled through it, disappearing in a flash of rainbow-colored light. You draw no more cards.",
@@ -5084,7 +5278,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/21-fiend.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"A powerful Fiend appears in a nearby unoccupied space and offers you a deal. The precise nature of this deal is up to the DM, but usually the Fiend offers some material reward in exchange for you and your allies completing a task for the Fiend. The Fiend is indifferent to you and can be bargained with; it keeps its side of any bargain it makes, though it might twist the wording of any agreement to suit its purposes. If attacked, or if negotiations fail and you refuse the Fiend's offer, it returns to its home plane."
@@ -5101,7 +5297,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/22-flames.webp"
 				},
-				"credit": "Harry Conway"
+				"credit": "Harry Conway",
+				"width": 720,
+				"height": 1227
 			},
 			"entries": [
 				"A powerful devil becomes your enemy. The devil seeks your ruin and plagues your life, savoring your suffering before attempting to slay you. This enmity lasts until either you or the devil dies."
@@ -5119,8 +5317,8 @@
 					"path": "decks/DMTCRG/Deck of Many More Things/23-fool.webp"
 				},
 				"credit": "Harry Conway",
-				"width": 850,
-				"height": 1552
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"You lose 10,000 XP, discard this card, and draw from the deck again, counting both draws as one of your declared draws. If losing that much XP would cause you to lose a level, you instead lose an amount that leaves you with just enough XP to keep your level."
@@ -5138,8 +5336,8 @@
 					"path": "decks/DMTCRG/Deck of Many More Things/24-gem.webp"
 				},
 				"credit": "Tinnel Lovitt",
-				"width": 850,
-				"height": 1552
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"Twenty-five pieces of jewelry worth 2,000 gp each or fifty gems worth 1,000 gp each appear at your feet."
@@ -5156,7 +5354,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/25-giant.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1228
 			},
 			"entries": [
 				"You immediately grow {@dice 2d10} inches in height, and your hit point maximum and current hit points both increase by 20."
@@ -5173,7 +5373,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/26-humanoid.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1228
 			},
 			"entries": [
 				"You can immediately choose to stop drawing from the deck, regardless of how many cards you initially declared."
@@ -5191,8 +5393,8 @@
 					"path": "decks/DMTCRG/Deck of Many More Things/27-jester.webp"
 				},
 				"credit": "Harry Conway",
-				"width": 850,
-				"height": 1552
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"You gain 10,000 XP, or you can draw two additional cards beyond your declared draws."
@@ -5210,8 +5412,8 @@
 					"path": "decks/DMTCRG/Deck of Many More Things/28-key.webp"
 				},
 				"credit": "Tinnel Lovitt",
-				"width": 850,
-				"height": 1552
+				"width": 720,
+				"height": 1228
 			},
 			"entries": [
 				"A rare or rarer magic weapon with which you are proficient appears in your hands. The DM chooses the weapon."
@@ -5229,8 +5431,8 @@
 					"path": "decks/DMTCRG/Deck of Many More Things/29-knight.webp"
 				},
 				"credit": "Vallez Gax",
-				"width": 850,
-				"height": 1552
+				"width": 720,
+				"height": 1230
 			},
 			"entries": [
 				"You gain the service of a 4th-level fighter who appears in a space you choose within 30 feet of you. The fighter is of the same race as you and serves you loyally until death, believing the fates have drawn him or her to you. You control this character."
@@ -5247,7 +5449,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/30-lance.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"All your ability scores increase by 1, to a maximum of 20."
@@ -5264,7 +5468,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/31-mage.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1228
 			},
 			"entries": [
 				"Your Intelligence score increases by 2, to a maximum of 22."
@@ -5281,7 +5487,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/32-map.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1230
 			},
 			"entries": [
 				"At any time you choose within 1 year of drawing this card, you can mentally name or describe an object or individual that is familiar to you. You immediately know the location of the object or individual, as well as the distance between you and the object or individual, even if the object or individual is on a different plane of existence. If you named an individual, you know if they are alive and any conditions they have. If you named an object, you know if it is broken or not. If you named a magic item that has charges, you know how many charges it has remaining."
@@ -5298,7 +5506,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/33-maze.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1228
 			},
 			"entries": [
 				"You gain {@dice 1d3} levels of {@condition exhaustion}."
@@ -5315,7 +5525,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/34-mine.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1230
 			},
 			"entries": [
 				"A pile of {@dice 2d6} gems (each worth 5,000 gp) and {@dice 1d10} chunks of precious ore (each worth 2,500 gp) appears at your feet."
@@ -5332,7 +5544,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/35-monstrosity.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"A {@filter Large or larger Monstrosity with a challenge rating of 10 or less|bestiary|source=|Challenge Rating=[&0;&10]|type=monstrosity|size=l;h;g} (chosen by the DM) appears in an unoccupied space within 15 feet of you. The creature is hostile toward you and attacks immediately. The creature disappears when it is killed or when you are reduced to 0 hit points. If there isn't enough space for a Large or larger creature to appear, this card has no effect."
@@ -5350,8 +5564,8 @@
 					"path": "decks/DMTCRG/Deck of Many More Things/36-moon.webp"
 				},
 				"credit": "Vallez Gax",
-				"width": 850,
-				"height": 1552
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"You are granted the ability to cast the {@spell wish} spell {@dice 1d3} times."
@@ -5368,7 +5582,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/37-ooze.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1231
 			},
 			"entries": [
 				"A {@creature gelatinous cube} immediately appears in your space and engulfs you. The gelatinous cube is hostile and remains until it is destroyed. If there isn't enough space for the gelatinous cube to appear, this card has no effect."
@@ -5385,7 +5601,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/38-path.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1230
 			},
 			"entries": [
 				"Your walking speed increases by 10 feet."
@@ -5402,7 +5620,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/39-pit.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"A pit opens beneath you. You plummet {@damage 3d6 × 10} feet, take damage from the fall, and have the {@condition prone} condition."
@@ -5419,7 +5639,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/40-plant.webp"
 				},
-				"credit": "Joanna Barnum"
+				"credit": "Joanna Barnum",
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"You gain the ability to cast {@spell Speak with Plants} without using a spell slot; you must finish a long rest before you can cast it this way again. If you have spell slots of 3rd level or higher, you can cast this spell using them. Use your Intelligence, Wisdom, or Charisma as the spellcasting ability (your choice)."
@@ -5436,7 +5658,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/41-priest.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"Your Wisdom score increases by 2, to a maximum of 22."
@@ -5453,7 +5677,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/42-prisoner.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"Glowing chains made of magical force appear and wrap around you. You have the {@condition restrained} condition until the chains are destroyed or you are freed. While you have this condition, you can't cast spells, and any magic items you're wearing or carrying have their properties suppressed. You draw no more cards. The chains are immune to damage and can't be dispelled using the {@spell Dispel Magic} spell or similar magic. However, a {@spell Disintegrate} spell destroys the chains instantly, freeing you. Another creature can also free you by succeeding on a {@dc 30} Dexterity check using {@item thieves' tools|PHB}."
@@ -5474,8 +5700,8 @@
 					"path": "decks/DMTCRG/Deck of Many More Things/43-puzzle.webp"
 				},
 				"credit": "Tinnel Lovitt",
-				"width": 850,
-				"height": 1552
+				"width": 720,
+				"height": 1228
 			},
 			"entries": [
 				"Permanently reduce your Intelligence by {@dice 1d4 + 1} (to a minimum score of 1). You can draw one additional card beyond your declared draws."
@@ -5492,7 +5718,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/44-ring.webp"
 				},
-				"credit": "Abigail Larson"
+				"credit": "Abigail Larson",
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"A {@filter rare or rarer magic ring|items|source=|type=ring|rarity=rare;very rare;legendary;artifact|category=} appears on your finger. If you have the attunement slots available, you're automatically attuned to the ring when it appears. The DM chooses the ring."
@@ -5510,8 +5738,8 @@
 					"path": "decks/DMTCRG/Deck of Many More Things/45-rogue.webp"
 				},
 				"credit": "Harry Conway",
-				"width": 850,
-				"height": 1552
+				"width": 720,
+				"height": 1228
 			},
 			"entries": [
 				"A nonplayer character of the DM's choice becomes hostile toward you. The identity of your new enemy isn't known until the NPC or someone else reveals it. Nothing less than a {@spell wish} spell or divine intervention can end the NPC's hostility toward you."
@@ -5529,8 +5757,8 @@
 					"path": "decks/DMTCRG/Deck of Many More Things/46-ruin.webp"
 				},
 				"credit": "Andrea Sipl",
-				"width": 850,
-				"height": 1552
+				"width": 720,
+				"height": 1228
 			},
 			"entries": [
 				"All forms of wealth that you carry or own, other than magic items, are lost to you. Portable property vanishes. Businesses, buildings, and land you own are lost in a way that alters reality the least. Any documentation that proves you should own something lost to this card also disappears."
@@ -5551,8 +5779,8 @@
 					"path": "decks/DMTCRG/Deck of Many More Things/47-sage.webp"
 				},
 				"credit": "Joanna Barnum",
-				"width": 850,
-				"height": 1552
+				"width": 720,
+				"height": 1227
 			},
 			"entries": [
 				"At any time you choose within one year of drawing this card, you can ask a question in meditation and mentally receive a truthful answer to that question. Besides information, the answer helps you solve a puzzling problem or other dilemma. In other words, the knowledge comes with wisdom on how to apply it."
@@ -5569,7 +5797,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/48-shield.webp"
 				},
-				"credit": "Joanna Barnum"
+				"credit": "Joanna Barnum",
+				"width": 720,
+				"height": 1227
 			},
 			"entries": [
 				"A {@filter rare or rarer suit of magic armor|items|source=|type=light armor;heavy armor;medium armor|rarity=rare;very rare;legendary;artifact|category=} that you are proficient with appears in your hands. The DM chooses the armor. If you lack proficiency with any armor, your base AC instead now equals 12 + your Dexterity modifier while you aren't wearing armor."
@@ -5586,7 +5816,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/49-ship.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1230
 			},
 			"entries": [
 				"You gain proficiency in three skills chosen by the DM."
@@ -5604,8 +5836,8 @@
 					"path": "decks/DMTCRG/Deck of Many More Things/50-skull.webp"
 				},
 				"credit": "Alex Dos Diaz",
-				"width": 850,
-				"height": 1552
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"You summon an {@creature avatar of death|DMG}\u2014a ghostly humanoid skeleton clad in a tattered black robe and carrying a spectral scythe. It appears in a space of the DM's choice within 10 feet of you and attacks you, warning all others that you must win the battle alone. The avatar fights until you die or it drops to 0 hit points, whereupon it disappears. If anyone tries to help you, the helper summons its own {@creature avatar of death|DMG}. A creature slain by an {@creature avatar of death|DMG} can't be restored to life."
@@ -5622,7 +5854,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/51-staff.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1230
 			},
 			"entries": [
 				"A {@filter rare or rarer magic rod, staff, or wand|items|source=|type=rod;wand;staff|rarity=rare;very rare;legendary;artifact|category=} appears in your hands. The DM chooses the item."
@@ -5639,7 +5873,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/52-stairway.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1228
 			},
 			"entries": [
 				"You can choose to either decrease your number of declared draws by two or receive a {@filter rare or rarer wondrous item|items|source=|type=wondrous item|rarity=rare;very rare;legendary;artifact|category=}, which appears in your hands. The DM chooses the item."
@@ -5657,8 +5893,8 @@
 					"path": "decks/DMTCRG/Deck of Many More Things/53-star.webp"
 				},
 				"credit": "Vallez Gax",
-				"width": 850,
-				"height": 1552
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"Increase one of your ability scores by 2. The score can exceed 20 but can't exceed 24."
@@ -5675,7 +5911,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/54-statue.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1230
 			},
 			"entries": [
 				"You immediately have the {@condition petrified} condition as your body is transformed into marble. The petrification lasts until you are freed with the {@spell Greater Restoration} spell or similar magic."
@@ -5693,8 +5931,8 @@
 					"path": "decks/DMTCRG/Deck of Many More Things/55-sun.webp"
 				},
 				"credit": "Vallez Gax",
-				"width": 850,
-				"height": 1552
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"You gain 50,000 XP, and {@filter a wondrous item|items|source=|type=wondrous item|category=} (which the DM determines randomly) appears in your hands."
@@ -5712,8 +5950,8 @@
 					"path": "decks/DMTCRG/Deck of Many More Things/56-talons.webp"
 				},
 				"credit": "Abigail Larson",
-				"width": 850,
-				"height": 1552
+				"width": 720,
+				"height": 1231
 			},
 			"entries": [
 				"Every magic item you wear or carry disintegrates. Artifacts in your possession aren't destroyed but do vanish."
@@ -5730,7 +5968,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/57-tavern.webp"
 				},
-				"credit": "Joanna Barnum"
+				"credit": "Joanna Barnum",
+				"width": 720,
+				"height": 1226
 			},
 			"entries": [
 				"Your Charisma score increases by 2 to a maximum of 22."
@@ -5747,7 +5987,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/58-temple.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"A deity or entity of similar power becomes bound to aid you. At any point in time between drawing the card and when you die, you can use your action to call on this entity for divine intervention, and the entity is bound to answer. The parameters and nature of this intervention are chosen by the DM. If you die without having used this intervention, the deity fulfills its obligation by casting the {@spell Resurrection} spell on you. Once the entity has answered your call for divine intervention or resurrected you, the entity is no longer bound to aid you."
@@ -5765,8 +6007,8 @@
 					"path": "decks/DMTCRG/Deck of Many More Things/59-throne.webp"
 				},
 				"credit": "Andrea Sipl",
-				"width": 850,
-				"height": 1552
+				"width": 720,
+				"height": 1227
 			},
 			"entries": [
 				"You gain proficiency in the {@skill Persuasion} skill, and you double your proficiency bonus on checks made with that skill. In addition, you gain rightful ownership of a small keep somewhere in the world. However, the keep is currently in the hands of monsters, which you must clear out before you can claim the keep as yours."
@@ -5783,7 +6025,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/60-tomb.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1230
 			},
 			"entries": [
 				"At any time you choose within 1 year of drawing this card, you can cast the {@spell True Resurrection} spell once without expending a spell slot or requiring material components. Use your Intelligence, Wisdom, or Charisma as the spellcasting ability (your choice)."
@@ -5800,7 +6044,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/61-tower.webp"
 				},
-				"credit": "Abigail Larson"
+				"credit": "Abigail Larson",
+				"width": 720,
+				"height": 1224
 			},
 			"entries": [
 				"Draw two additional cards beyond your declared number of draws. The magic of these cards doesn't immediately take effect; instead, choose one of the two additional cards to keep, returning the other to the deck. The magic of the card you keep takes effect immediately thereafter."
@@ -5817,7 +6063,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/62-tree.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"Your skin immediately becomes rough, like tree bark. Your base AC now equals 15 + your Dexterity modifier while you aren't wearing armor, but you have vulnerability to fire damage. This transformation can be undone only by the {@spell Wish} spell, divine intervention, or similar magic."
@@ -5834,7 +6082,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/63-undead.webp"
 				},
-				"credit": "Abigail Larson"
+				"credit": "Abigail Larson",
+				"width": 720,
+				"height": 1232
 			},
 			"entries": [
 				"Somewhere on the Material Plane, a {@creature revenant} rises. This revenant blames you for its existence and relentlessly hunts you to exact its revenge. The revenant exists until either 1 year passes, the revenant kills you, or you use a {@spell Wish} spell to banish it permanently to the afterlife."
@@ -5852,8 +6102,8 @@
 					"path": "decks/DMTCRG/Deck of Many More Things/64-void.webp"
 				},
 				"credit": "Alex Dos Diaz",
-				"width": 850,
-				"height": 1552
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"This black card spells disaster. Your soul is drawn from your body and contained in an object in a place of the DM's choice. One or more powerful beings guard the place. While your soul is trapped in this way, your body is {@condition incapacitated}. A {@spell wish} spell can't restore your soul, but the spell reveals the location of the object that holds it. You draw no more cards."
@@ -5870,7 +6120,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/65-warrior.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1230
 			},
 			"entries": [
 				"Your Strength score increases by 2 to a maximum of 22."
@@ -5887,7 +6139,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/66-well.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1228
 			},
 			"entries": [
 				"You learn three cantrips of your choice from any spell list."
@@ -5904,7 +6158,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/01-aberration.webp"
 				},
-				"credit": "Jim Zaccaria"
+				"credit": "Jim Zaccaria",
+				"width": 720,
+				"height": 1227
 			},
 			"entries": [
 				"{@i A beholder hovers in a cluttered laboratory. The Aberration card embodies things contrary to nature.}",
@@ -5996,8 +6252,8 @@
 					"path": "decks/DMTCRG/Deck of Many More Things/02-balance.webp"
 				},
 				"credit": "Francesca Resta",
-				"width": 850,
-				"height": 1552
+				"width": 720,
+				"height": 1227
 			},
 			"entries": [
 				"{@i A set of scales holds day and night in balance. This card deals with many aspects of balance, or with things being out of balance.}",
@@ -6088,7 +6344,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/03-beast.webp"
 				},
-				"credit": "Abigail Larson"
+				"credit": "Abigail Larson",
+				"width": 720,
+				"height": 1227
 			},
 			"entries": [
 				"{@i The Beast card points to creatures of the animal kingdom and foul, cruel, or bad-tempered behavior in people.}",
@@ -6179,7 +6437,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/04-book.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"{@i An enormous book rests among scrolls and parchment, with a quill and ink nearby. The Book card embodies written information.}",
@@ -6270,7 +6530,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/05-bridge.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"{@i A stone bridge arcs across a waterway. A shadowy figure lurks under the bridge, only its gleaming eyes clearly visible. This card reflects the effort required to overcome obstacles.}",
@@ -6361,7 +6623,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/06-campfire.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1232
 			},
 			"entries": [
 				"{@i A large campfire offers safety and comfort in the night. This card suggests a need for rest.}",
@@ -6452,7 +6716,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/07-cavern.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1233
 			},
 			"entries": [
 				"{@i A vast cavern is adorned with glowing fungi and striking stone formations. The Cavern card suggests exploration and delving into hidden secrets.}",
@@ -6543,7 +6809,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/08-celestial.webp"
 				},
-				"credit": "Jim Zaccaria"
+				"credit": "Jim Zaccaria",
+				"width": 720,
+				"height": 1230
 			},
 			"entries": [
 				"{@i A beautiful couatl twines through the clouds. This card suggests the involvement of celestial beings and service to the divine.}",
@@ -6635,8 +6903,8 @@
 					"path": "decks/DMTCRG/Deck of Many More Things/09-comet.webp"
 				},
 				"credit": "Vallez Gax",
-				"width": 850,
-				"height": 1552
+				"width": 720,
+				"height": 1230
 			},
 			"entries": [
 				"{@i A comet with an enormous tail streaks across the winter sky at night, outshining the stars. The Comet card brings dire warnings or devastation.}",
@@ -6727,7 +6995,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/10-construct.webp"
 				},
-				"credit": "Abigail Larson"
+				"credit": "Abigail Larson",
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"{@i A modron wields a wrench in the interior of a clockwork machine. This card signifies things made by hand, including Constructs.}",
@@ -6818,7 +7088,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/11-corpse.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1231
 			},
 			"entries": [
 				"{@i An adventurer lies dead in a dungeon hallway, pierced by arrows. The Corpse card embodies decay and corruption.}",
@@ -6909,7 +7181,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/12-crossroads.webp"
 				},
-				"credit": "Abigail Larson"
+				"credit": "Abigail Larson",
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"{@i A signpost points in many directions at a crossroads. The Crossroads cards warns of a difficult but necessary decision.}",
@@ -7001,8 +7275,8 @@
 					"path": "decks/DMTCRG/Deck of Many More Things/13-donjon.webp"
 				},
 				"credit": "Jim Zaccaria",
-				"width": 850,
-				"height": 1552
+				"width": 720,
+				"height": 1228
 			},
 			"entries": [
 				"{@i Underground stairs lead to a heavy door made of iron bars. This card represents both imprisonment and freedom.}",
@@ -7093,7 +7367,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/14-door.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1233
 			},
 			"entries": [
 				"{@i A large wooden door bars the path ahead. The card offers an opportunity to change.}",
@@ -7184,7 +7460,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/15-dragon.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1228
 			},
 			"entries": [
 				"{@i A menacing red dragon perches atop its treasure hoard inside a cave. This card can point to things connected to Dragons, but it also suggests hoarding, reed, and places rich in magical energy.}",
@@ -7275,7 +7553,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/16-elemental.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1231
 			},
 			"entries": [
 				"{@i A hungry Xorn feeds in an Underdark cavern. This card suggests an Elemental creature or reducing a thing to its essence.}",
@@ -7367,8 +7647,8 @@
 					"path": "decks/DMTCRG/Deck of Many More Things/17-euryale.webp"
 				},
 				"credit": "Tinnel Lovitt",
-				"width": 850,
-				"height": 1552
+				"width": 720,
+				"height": 1228
 			},
 			"entries": [
 				"{@i A female medusa with a serpentine tail instead of legs is surrounded by flowers and herbs. The Euryale card points to vision, insight, and observation,}",
@@ -7459,7 +7739,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/18-expert.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"{@i A bard plays a musical instrument. This card implies expertise, rightly or wrongly applied.}",
@@ -7551,8 +7833,8 @@
 					"path": "decks/DMTCRG/Deck of Many More Things/19-fates.webp"
 				},
 				"credit": "Tinnel Lovitt",
-				"width": 850,
-				"height": 1552
+				"width": 720,
+				"height": 1230
 			},
 			"entries": [
 				"{@i Three sisters weave, measure, and cut the threads of fate. This card explores the repercussions of decisions and reflects on the past.}",
@@ -7643,7 +7925,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/20-fey.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1230
 			},
 			"entries": [
 				"{@i A blink dog runs through the wild. When upright; this card can refer to a Fey creature or a sense of whimsy; reversed, it points to the gloomy Shadowfell.}",
@@ -7734,7 +8018,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/21-fiend.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"{@i A balor strikes from the depths of the Abyss. This card alludes to an actual Fiend or the forces of the Lower Planes.}",
@@ -7825,7 +8111,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/22-flames.webp"
 				},
-				"credit": "Harry Conway"
+				"credit": "Harry Conway",
+				"width": 720,
+				"height": 1227
 			},
 			"entries": [
 				"{@i A chain devil, wreathed in flames, looks menacing and angry. The Flames card brings enemies and vengeance.}",
@@ -7917,8 +8205,8 @@
 					"path": "decks/DMTCRG/Deck of Many More Things/23-fool.webp"
 				},
 				"credit": "Harry Conway",
-				"width": 850,
-				"height": 1552
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"{@i A person walks down a path, unwittingly dropping items along the way. The Fool card represents innocence.}",
@@ -8010,8 +8298,8 @@
 					"path": "decks/DMTCRG/Deck of Many More Things/24-gem.webp"
 				},
 				"credit": "Tinnel Lovitt",
-				"width": 850,
-				"height": 1552
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"{@i A large, faceted gemstone set in intricate filigree gleams invitingly. The Gem card brings vast wealth.}",
@@ -8102,7 +8390,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/25-giant.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1228
 			},
 			"entries": [
 				"{@i A hungry troll lurks in a forest clearing. The Giant card indicates something very large or that looms large in one's perception.}",
@@ -8193,7 +8483,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/26-humanoid.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1228
 			},
 			"entries": [
 				"{@i Kobolds set a trap in their cave lair. This card points to the importance of empathy in relationships with other people.}",
@@ -8285,8 +8577,8 @@
 					"path": "decks/DMTCRG/Deck of Many More Things/27-jester.webp"
 				},
 				"credit": "Harry Conway",
-				"width": 850,
-				"height": 1552
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"{@i A person wearing jester's motley and holding a staff rests his foot on a skull. This card deals with the relationship between humor and misfortune.}",
@@ -8378,8 +8670,8 @@
 					"path": "decks/DMTCRG/Deck of Many More Things/28-key.webp"
 				},
 				"credit": "Tinnel Lovitt",
-				"width": 850,
-				"height": 1552
+				"width": 720,
+				"height": 1228
 			},
 			"entries": [
 				"{@i This large metal key is bizarrely complicated. The Key card represents the perfect solution to a problem or having the right tool for the job.}",
@@ -8471,8 +8763,8 @@
 					"path": "decks/DMTCRG/Deck of Many More Things/29-knight.webp"
 				},
 				"credit": "Vallez Gax",
-				"width": 850,
-				"height": 1552
+				"width": 720,
+				"height": 1230
 			},
 			"entries": [
 				"{@i A knight formed of folded cards offers a sword also made from cards. The Knight card signifies trust and loyalty.}",
@@ -8563,7 +8855,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/30-lance.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"{@i An ornate dragonlance shines among more ordinary weapons on a rack. The Lance card warns that healing sometimes requires additional injury, as when infection must be cut away.}",
@@ -8654,7 +8948,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/31-mage.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1228
 			},
 			"entries": [
 				"{@i A warlock holds a black crystalline staff. This card suggests both mental acuity and arcane magic.}",
@@ -8745,7 +9041,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/32-map.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1230
 			},
 			"entries": [
 				"{@i X marks the spot on an elaborate treasure map. The Map card provides guidance that leads to the goal of the quest.}",
@@ -8836,7 +9134,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/33-maze.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1228
 			},
 			"entries": [
 				"{@i Unfortunate souls are trapped in an elaborate and impossible maze of cards. Those who draw the Maze card are lost.}",
@@ -8927,7 +9227,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/34-mine.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1230
 			},
 			"entries": [
 				"{@i A well-crafted pick leans against a wall at the entrance to a mine. The Mine card represents something valuable underground or buried in the earth.}",
@@ -9018,7 +9320,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/35-monstrosity.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"{@i An owlbear sits in a sunny glade. This card represents something monstrous, including familiar things that turn strange and threatening.}",
@@ -9110,8 +9414,8 @@
 					"path": "decks/DMTCRG/Deck of Many More Things/36-moon.webp"
 				},
 				"credit": "Vallez Gax",
-				"width": 850,
-				"height": 1552
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"{@i A crescent moon looms large in the autumn sky. The Moon card points to hidden potential.}",
@@ -9202,7 +9506,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/37-ooze.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1231
 			},
 			"entries": [
 				"{@i A gelatinous cube with various items suspended inside it creeps through a vaulted sewer. The Ooze card indicates the importance of something that seems lowly or innocuous.}",
@@ -9293,7 +9599,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/38-path.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1230
 			},
 			"entries": [
 				"{@i A well-worn path twists through the wilderness, with hidden dangers lurking in the shadows to both sides. This card suggests the importance of sticking with a plan and remaining focused on the destination.}",
@@ -9384,7 +9692,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/39-pit.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"{@i A deep hole studded with spikes gapes in the earth. The Pit card represents a literal or metaphorical fall\u2014losing status, wealth, or position.}",
@@ -9475,7 +9785,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/40-plant.webp"
 				},
-				"credit": "Joanna Barnum"
+				"credit": "Joanna Barnum",
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"{@i A myconid emits a cloud of spores. The Plant card reflects growth and natural life.}",
@@ -9566,7 +9878,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/41-priest.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"{@i A cleric holds a heavy mace. The Priest card represents wisdom, insight, closeness to the divine, and divine magic.}",
@@ -9657,7 +9971,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/42-prisoner.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"{@i A rogue begs for release from a dank prison cell. The Prisoner card represents someone or something locked and hidden away.}",
@@ -9752,8 +10068,8 @@
 					"path": "decks/DMTCRG/Deck of Many More Things/43-puzzle.webp"
 				},
 				"credit": "Tinnel Lovitt",
-				"width": 850,
-				"height": 1552
+				"width": 720,
+				"height": 1228
 			},
 			"entries": [
 				"{@i An elaborate puzzle box floats in the air, glowing from within. The Puzzle card speaks to intelligence and strategic thinking.}",
@@ -9844,7 +10160,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/44-ring.webp"
 				},
-				"credit": "Abigail Larson"
+				"credit": "Abigail Larson",
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"{@i An emerald ring glows within a decorative jewelry box. The Ring card suggests both a promise and the honor involved in keeping it.}",
@@ -9936,8 +10254,8 @@
 					"path": "decks/DMTCRG/Deck of Many More Things/45-rogue.webp"
 				},
 				"credit": "Harry Conway",
-				"width": 850,
-				"height": 1552
+				"width": 720,
+				"height": 1228
 			},
 			"entries": [
 				"{@i A roguish kenku lurking in the shadows holds a dagger, poised to strike. This card suggests treachery and deception.}",
@@ -10029,8 +10347,8 @@
 					"path": "decks/DMTCRG/Deck of Many More Things/46-ruin.webp"
 				},
 				"credit": "Andrea Sipl",
-				"width": 850,
-				"height": 1552
+				"width": 720,
+				"height": 1228
 			},
 			"entries": [
 				"{@i An elegant sword and crown disintegrate into eddies of ash. The Ruin card warns of the inevitability of decay and the danger of material attachments.}",
@@ -10125,8 +10443,8 @@
 					"path": "decks/DMTCRG/Deck of Many More Things/47-sage.webp"
 				},
 				"credit": "Joanna Barnum",
-				"width": 850,
-				"height": 1552
+				"width": 720,
+				"height": 1227
 			},
 			"entries": [
 				"{@i The mind of a sage is filled with obscure lore gained through exhaustive research. This card represents well-intentioned advice.}",
@@ -10217,7 +10535,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/48-shield.webp"
 				},
-				"credit": "Joanna Barnum"
+				"credit": "Joanna Barnum",
+				"width": 720,
+				"height": 1227
 			},
 			"entries": [
 				"{@i A circular shield is close at hand in a military barrack. The Shield card is a reminder of the need for protection.}",
@@ -10308,7 +10628,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/49-ship.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1230
 			},
 			"entries": [
 				"{@i A three-masted ship with a couatl figurehead sails across the open sea. The Ship card indicates a long journey, not necessarily by sea.}",
@@ -10400,8 +10722,8 @@
 					"path": "decks/DMTCRG/Deck of Many More Things/50-skull.webp"
 				},
 				"credit": "Alex Dos Diaz",
-				"width": 850,
-				"height": 1552
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"{@i A skeletal figure is shrouded in a swirling robe, though its skull is clearly visible. The Skull card is a reminder of the universality of death\u2014and the fact that everyone must confront death alone.s}",
@@ -10492,7 +10814,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/51-staff.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1230
 			},
 			"entries": [
 				"{@i An elegant black staff leans against a wall, waiting for its owner to return. The Staff card represents support or assistance.}",
@@ -10583,7 +10907,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/52-stairway.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1228
 			},
 			"entries": [
 				"{@i A spiral stairway leads both up and down, but the downward stairs are cluttered and dark. This card points to a change in difficulty, either increasing or decreasing.}",
@@ -10675,8 +11001,8 @@
 					"path": "decks/DMTCRG/Deck of Many More Things/53-star.webp"
 				},
 				"credit": "Vallez Gax",
-				"width": 850,
-				"height": 1552
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"{@i A brilliant star shines in the spring sky at twilight. The Star card represents inherent ability and training working in concert\u2014nature allied with nurture.}",
@@ -10767,7 +11093,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/54-statue.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1230
 			},
 			"entries": [
 				"{@i A statue depicts the god Istus offering the original {@item Deck of Many Things|DMG} as a gift. The Statue card is a reminder of the past.}",
@@ -10859,8 +11187,8 @@
 					"path": "decks/DMTCRG/Deck of Many More Things/55-sun.webp"
 				},
 				"credit": "Vallez Gax",
-				"width": 850,
-				"height": 1552
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"{@i A sun blazes brightly in the summer sky. The Sun card brings hope\u2014either well-founded or deluded.}",
@@ -10952,8 +11280,8 @@
 					"path": "decks/DMTCRG/Deck of Many More Things/56-talons.webp"
 				},
 				"credit": "Abigail Larson",
-				"width": 850,
-				"height": 1552
+				"width": 720,
+				"height": 1231
 			},
 			"entries": [
 				"{@i A clawed hand reaches to grab an emerald ring which disintegrates at the claw's approach. The Talons card indicates greed or the rapacious hunger of a predator.}",
@@ -11044,7 +11372,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/57-tavern.webp"
 				},
-				"credit": "Joanna Barnum"
+				"credit": "Joanna Barnum",
+				"width": 720,
+				"height": 1226
 			},
 			"entries": [
 				"{@i An adventuring party eats and laughs in a busy tavern. The Tavern card points to the pleasure of spending time with friends.}",
@@ -11135,7 +11465,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/58-temple.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"{@i A temple invites worshipers into the serene space within. The Temple card suggests the comfort found in ritual and communion with the divine.}",
@@ -11227,8 +11559,8 @@
 					"path": "decks/DMTCRG/Deck of Many More Things/59-throne.webp"
 				},
 				"credit": "Andrea Sipl",
-				"width": 850,
-				"height": 1552
+				"width": 720,
+				"height": 1227
 			},
 			"entries": [
 				"{@i An ostentatious throne stands on a dais, with a crown on the seat and a ceremonial sword leaning against one armrest. This card represents the authority of worldly rulers.}",
@@ -11319,7 +11651,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/60-tomb.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1230
 			},
 			"entries": [
 				"{@i A burial chamber holds a plain stone casket. The Tomb card suggests buried secrets and things long forgotten.}",
@@ -11410,7 +11744,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/61-tower.webp"
 				},
-				"credit": "Abigail Larson"
+				"credit": "Abigail Larson",
+				"width": 720,
+				"height": 1224
 			},
 			"entries": [
 				"{@i A tall, ornate tower made of black stone looms over a desolate landscape. The Tower card represents isolation.}",
@@ -11501,7 +11837,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/62-tree.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"{@i A tree has broken through a fortress wall and reclaimed part of the keep. This card suggests perseverance in difficult circumstances.}",
@@ -11592,7 +11930,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/63-undead.webp"
 				},
-				"credit": "Abigail Larson"
+				"credit": "Abigail Larson",
+				"width": 720,
+				"height": 1232
 			},
 			"entries": [
 				"{@i A lich beckons souls of the dead. This card can point to anything that refuses to die, from old grudges and unresolved issues to Undead creatures.}",
@@ -11684,8 +12024,8 @@
 					"path": "decks/DMTCRG/Deck of Many More Things/64-void.webp"
 				},
 				"credit": "Alex Dos Diaz",
-				"width": 850,
-				"height": 1552
+				"width": 720,
+				"height": 1229
 			},
 			"entries": [
 				"{@i An endless void seems to spiral toward a central hole that devours all. This card spells disaster.}",
@@ -11776,7 +12116,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/65-warrior.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1230
 			},
 			"entries": [
 				"{@i A barbarian holds a greataxe, The Warrior card embodies physical strength and fighting acumen.}",
@@ -11867,7 +12209,9 @@
 					"type": "internal",
 					"path": "decks/DMTCRG/Deck of Many More Things/66-well.webp"
 				},
-				"credit": "Ivan Shavrin"
+				"credit": "Ivan Shavrin",
+				"width": 720,
+				"height": 1228
 			},
 			"entries": [
 				"{@i A stone well stands in a peaceful meadow, surrounded by wildflowers. The Well card speaks of drawing resources from familiar places.}",
@@ -19948,6 +20292,1779 @@
 			},
 			"entries": [
 				"Mystery and riddles; the unknown; those who crave magical power and great knowledge"
+			]
+		},
+		{
+			"name": "Ace of Charisma",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 41,
+			"suit": "Charisma",
+			"value": 1,
+			"valueName": "Ace",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/CHA-A.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1245
+			},
+			"entries": [
+				"A new opportunity and a time of manifestation and abundance.",
+				"{@i A mysterious order of assassins begins to hunt down a member of the party.}"
+			]
+		},
+		{
+			"name": "Ace of Intelligence",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 27,
+			"suit": "Intelligence",
+			"value": 1,
+			"valueName": "Ace",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/INT-A.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1250
+			},
+			"entries": [
+				"Finding your inner wizard and using your genius to discover new ideas and have breakthroughs.",
+				"{@i The party meets a powerful Wizard whom they may ask one question and get a truthful answer from.}"
+			]
+		},
+		{
+			"name": "Ace of Strength",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 20,
+			"suit": "Strength",
+			"value": 1,
+			"valueName": "Ace",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/STR-A.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1248
+			},
+			"entries": [
+				"The source of all creative energy is within you. You have the power to imagine, begin and complete any project you set your mind to.",
+				"{@i A nobleman's children have run away to join the Lord Montague's Monstrous Circus. He begs that you find and return them.}"
+			]
+		},
+		{
+			"name": "Ace of Wisdom",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 34,
+			"suit": "Wisdom",
+			"value": 1,
+			"valueName": "Ace",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/WIS-A.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1247
+			},
+			"entries": [
+				"Our ability to access the power of insight to heal emotions and love ourselves.",
+				"{@i A group of elves asks if the party would aid them in recovering a sacred artifact.}"
+			]
+		},
+		{
+			"name": "Death",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 15,
+			"suit": "Major Arcana",
+			"value": 13,
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/MA-Death.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1247
+			},
+			"entries": [
+				"The transformation from one perceptual reality to another and the ending of habitual patterns",
+				"{@i A vampire Lord offers you the gift of eternal undeath in exchange for a single favor.}"
+			]
+		},
+		{
+			"name": "Eight of Charisma",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 44,
+			"suit": "Charisma",
+			"value": 8,
+			"valueName": "Eight",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/CHA-8.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1247
+			},
+			"entries": [
+				"Paying attention to doing the simple things well. Slow and steady wins the race.",
+				"{@i A dwarven forgemaster has had her magical hammer stolen and is asking for your help. In return, she'll forge you a weapon.}"
+			]
+		},
+		{
+			"name": "Eight of Intelligence",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 30,
+			"suit": "Intelligence",
+			"value": 8,
+			"valueName": "Eight",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/INT-8.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1248
+			},
+			"entries": [
+				"Entangling ourselves from guilty thoughts and self-punishment.",
+				"{@i A nearby village has been invaded by the drow and seeks aid.}"
+			]
+		},
+		{
+			"name": "Eight of Strength",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 23,
+			"suit": "Strength",
+			"value": 8,
+			"valueName": "Eight",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/STR-8.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1248
+			},
+			"entries": [
+				"Going with the flow and adapting to change. Hold the goal loosely and enjoy the journey.",
+				"{@i During a lightning storm, the adventurers see an entrance to a cavern. It is home to a coven of hags.}"
+			]
+		},
+		{
+			"name": "Eight of Wisdom",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 37,
+			"suit": "Wisdom",
+			"value": 8,
+			"valueName": "Eight",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/WIS-8.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1248
+			},
+			"entries": [
+				"Finding a way out of past pain by having faith that something better is waiting for you.",
+				"{@i Graves of a cemetery appear to be robbed, but some say it was the dead that dug their way out.}"
+			]
+		},
+		{
+			"name": "Five of Charisma",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 43,
+			"suit": "Charisma",
+			"value": 5,
+			"valueName": "Five",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/CHA-5.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1250
+			},
+			"entries": [
+				"Finding out how to move out of lack mentality and to enjoy the abundance, in whatever form, showing up in our lives.",
+				"{@i A kobold asks if the party wishes to join him on an adventure to the Dragon's Teeth mountains to find the fabled Eye of Tiamat.}"
+			]
+		},
+		{
+			"name": "Five of Intelligence",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 29,
+			"suit": "Intelligence",
+			"value": 5,
+			"valueName": "Five",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/INT-5.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1252
+			},
+			"entries": [
+				"The ways in which competition breeds conflict and divides us to create suffering.",
+				"{@i The adventurers encounter two nobles fighting over a magical (but cursed) item.}"
+			]
+		},
+		{
+			"name": "Five of Strength",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 22,
+			"suit": "Strength",
+			"value": 5,
+			"valueName": "Five",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/STR-5.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1251
+			},
+			"entries": [
+				"Being focused totally on being in the moment to work together effectively. Letting go of competition.",
+				"{@i A travelling circus's giant spider has died, leaving its owner distraught. Can you get some giant spider eggs for him to hatch?}"
+			]
+		},
+		{
+			"name": "Five of Wisdom",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 36,
+			"suit": "Wisdom",
+			"value": 5,
+			"valueName": "Five",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/WIS-5.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1249
+			},
+			"entries": [
+				"Keeping a bright outlook and not letting past pain affect your interpretation of the present moment.",
+				"{@i A revenant tells you its story and asks for aid in completing its act of vengeance.}"
+			]
+		},
+		{
+			"name": "Four of Charisma",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 42,
+			"suit": "Charisma",
+			"value": 4,
+			"valueName": "Four",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/CHA-4.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1248
+			},
+			"entries": [
+				"Being careful with finances while not falling into fear or greed.",
+				"{@i A dwarf claims to have discovered a vein of mithral in his mine, but now monsters have moved in, and he needs help reclaiming it.}"
+			]
+		},
+		{
+			"name": "Four of Intelligence",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 28,
+			"suit": "Intelligence",
+			"value": 4,
+			"valueName": "Four",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/INT-4.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1249
+			},
+			"entries": [
+				"Taking time to meditate before moving forward while making sure you are not avoiding action.",
+				"{@i The next short rest you take acts as a long rest instead.}"
+			]
+		},
+		{
+			"name": "Four of Strength",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 21,
+			"suit": "Strength",
+			"value": 4,
+			"valueName": "Four",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/STR-4.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1248
+			},
+			"entries": [
+				"The whole is greater than the sum of its parts. Seek out others to collaborate with.",
+				"{@i The mayor of a small town has declared tieflings a \"threat to moral decency\" and wants them rounded up and detained.}"
+			]
+		},
+		{
+			"name": "Four of Wisdom",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 35,
+			"suit": "Wisdom",
+			"value": 4,
+			"valueName": "Four",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/WIS-4.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1248
+			},
+			"entries": [
+				"Taking time to meditate and let go of all the noisy thoughts that are in your head.",
+				"{@i You discover a treasure map within an ornate box in the hollow of an old tree.}"
+			]
+		},
+		{
+			"name": "Judgement",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 19,
+			"suit": "Major Arcana",
+			"value": 20,
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/MA-Judgement.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1251
+			},
+			"entries": [
+				"Our capability to discern what is truly important and to use it to weed the garden of our life.",
+				"{@i A hill giant is sleeping off a night of drinking. Inside a chain mail pouch on its belt, you can hear someone whispering for help.}"
+			]
+		},
+		{
+			"name": "Justice",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 14,
+			"suit": "Major Arcana",
+			"value": 11,
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/MA-Justice.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1249
+			},
+			"entries": [
+				"Your capacity to create a new reality through shattering old, limiting beliefs.",
+				"{@i A poor villager comes to you seeking aid and offers you a rare magic item in compensation.}"
+			]
+		},
+		{
+			"name": "King of Charisma",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 47,
+			"suit": "Charisma",
+			"value": 14,
+			"valueName": "King",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/CHA-Ki.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1248
+			},
+			"entries": [
+				"Reaping the fruits of your endeavours. Enjoying abundance while not getting lost in acquiring.",
+				"{@i Is there a bard in the party? The king is having a ball and the entertainment has not shown up.}"
+			]
+		},
+		{
+			"name": "King of Intelligence",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 33,
+			"suit": "Intelligence",
+			"value": 14,
+			"valueName": "King",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/INT-Ki.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1249
+			},
+			"entries": [
+				"Using the panels of your intellect clearly without letting it override your heart.",
+				"{@i A queen has fallen under a witch's curse. You have been asked to help break the spell.}"
+			]
+		},
+		{
+			"name": "King of Strength",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 26,
+			"suit": "Strength",
+			"value": 14,
+			"valueName": "King",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/STR-Ki.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1248
+			},
+			"entries": [
+				"Fully expressing your powers of leadership and realising your vision. Teaching others.",
+				"{@i While travelling, the party comes across a nest of yuan-ti that are planning on enslaving a nearby village.}"
+			]
+		},
+		{
+			"name": "King of Wisdom",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 40,
+			"suit": "Wisdom",
+			"value": 14,
+			"valueName": "King",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/WIS-Ki.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1243
+			},
+			"entries": [
+				"Fully accepting this moment. Allowing complaints to dissolve. Being kind to yourself.",
+				"{@i A noble approaches you and says that an assassin has been sent to kill him and he needs your help.}"
+			]
+		},
+		{
+			"name": "Knight of Charisma",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 46,
+			"suit": "Charisma",
+			"value": 12,
+			"valueName": "Knight",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/CHA-Kn.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1248
+			},
+			"entries": [
+				"Finding a way to enjoy routine, take responsibility for our own success, and let go of expectations. Good work speaks for itself.",
+				"{@i The local mad wizard wants basilisk or cockatrice eggs and is willing to pay handsomely.}"
+			]
+		},
+		{
+			"name": "Knight of Intelligence",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 32,
+			"suit": "Intelligence",
+			"value": 12,
+			"valueName": "Knight",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/INT-Kn.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1248
+			},
+			"entries": [
+				"Channelling raw ambition into a constructive thoughtful and focused plan.",
+				"{@i A holy order needs your aid to sanctify a place defiled by demons.}"
+			]
+		},
+		{
+			"name": "Knight of Strength",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 25,
+			"suit": "Strength",
+			"value": 12,
+			"valueName": "Knight",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/STR-Kn.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1241
+			},
+			"entries": [
+				"Going full out and not looking back. Following your gut. Doing what it takes to make it happen.",
+				"{@i The adventurers find a sending stone. On the other end is someone who is in deep trouble and is pleading for help.}"
+			]
+		},
+		{
+			"name": "Knight of Wisdom",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 39,
+			"suit": "Wisdom",
+			"value": 12,
+			"valueName": "Knight",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/WIS-Kn.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1251
+			},
+			"entries": [
+				"Trusting your passion, allowing yourself to dream big, and imagining the best happening for you.",
+				"{@i There were whispers that the mayor of the town was seen signing a pact with an imp.}"
+			]
+		},
+		{
+			"name": "Nine of Charisma",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 45,
+			"suit": "Charisma",
+			"value": 9,
+			"valueName": "Nine",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/CHA-9.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1247
+			},
+			"entries": [
+				"The capability to come out of \"survival mode\" and enjoy the abundance and self-sufficiency that we do have. Appreciate the good.",
+				"{@i Something is digging tunnels under the city and your party has been asked to investigate.}"
+			]
+		},
+		{
+			"name": "Nine of Intelligence",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 31,
+			"suit": "Intelligence",
+			"value": 9,
+			"valueName": "Nine",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/INT-9.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1247
+			},
+			"entries": [
+				"Looking at how thoughts can create turmoil and finding a way to observe them from a dispassionate space of stillness.",
+				"{@i A mind flayer has used an intellect devourer to take over the prison warden. It uses him to prey on the prisoners.}"
+			]
+		},
+		{
+			"name": "Nine of Strength",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 24,
+			"suit": "Strength",
+			"value": 9,
+			"valueName": "Nine",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/STR-9.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1246
+			},
+			"entries": [
+				"Finding the wellspring of resolve to push through hardship. A test of faith.",
+				"{@i Evil from a haunted house has begun to blight the village farms in the valley below. Farmers have taken a collection to pay you to clear out the evil.}"
+			]
+		},
+		{
+			"name": "Nine of Wisdom",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 38,
+			"suit": "Wisdom",
+			"value": 9,
+			"valueName": "Nine",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/WIS-9.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1246
+			},
+			"entries": [
+				"Finding the balance between enjoying our accomplishments and not slipping into complacency.",
+				"{@i A horde of marauders is rumoured to be en route to a village. The townsfolk ask the party for help.}"
+			]
+		},
+		{
+			"name": "Page of Charisma",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 46,
+			"suit": "Charisma",
+			"value": 11,
+			"valueName": "Page",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/CHA-P.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1250
+			},
+			"entries": [
+				"Getting into action and rekindling a sense of adventure with even the small things. Realize what isn't working.",
+				"{@i Something has torn down the rope bridge that spans the chasm. The villagers need help rebuilding it.}"
+			]
+		},
+		{
+			"name": "Page of Intelligence",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 32,
+			"suit": "Intelligence",
+			"value": 11,
+			"valueName": "Page",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/INT-P.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1248
+			},
+			"entries": [
+				"Discovering new ways of communicating your ideas and putting them into action.",
+				"{@i A wizard wants you to find her some rare spell components.}"
+			]
+		},
+		{
+			"name": "Page of Strength",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 25,
+			"suit": "Strength",
+			"value": 11,
+			"valueName": "Page",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/STR-P.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1248
+			},
+			"entries": [
+				"It takes energy to do something awesome. Go for it! Engage your free spirit and follow your passion.",
+				"{@i A \"holy\" order of priests (actually evil) want you to retrieve a sacred object stolen from them. It's a unicorn's horn that was stolen by a real holy person.}"
+			]
+		},
+		{
+			"name": "Page of Wisdom",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 39,
+			"suit": "Wisdom",
+			"value": 11,
+			"valueName": "Page",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/WIS-P.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1248
+			},
+			"entries": [
+				"Embarking on a new path sparked by your curiosity and creativity.",
+				"{@i A man staggers toward you and hands you a silver key. He gasps, \"find the fish,\" before falling over dead. He smells of brine.}"
+			]
+		},
+		{
+			"name": "Queen of Charisma",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 47,
+			"suit": "Charisma",
+			"value": 13,
+			"valueName": "Queen",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/CHA-Q.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1248
+			},
+			"entries": [
+				"Creating a nurturing space for yourself and others to achieve greatness. Maintaining work/life balance.",
+				"{@i A farmer claims that his goose that lays golden eggs has been stolen by a cyclops and is asking for your help in getting it back.}"
+			]
+		},
+		{
+			"name": "Queen of Intelligence",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 33,
+			"suit": "Intelligence",
+			"value": 13,
+			"valueName": "Queen",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/INT-Q.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1248
+			},
+			"entries": [
+				"The necessity to clearly communicate what you desire from a space of loving-kindness.",
+				"{@i Someone comes to you with a murder mystery that they want you to solve.}"
+			]
+		},
+		{
+			"name": "Queen of Strength",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 26,
+			"suit": "Strength",
+			"value": 13,
+			"valueName": "Queen",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/STR-Q.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1246
+			},
+			"entries": [
+				"Spreading the love and letting your light shine. Having courage to take it to the next level.",
+				"{@i The party is asked to escort a political figure across a hostile terrain.}"
+			]
+		},
+		{
+			"name": "Queen of Wisdom",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 40,
+			"suit": "Wisdom",
+			"value": 13,
+			"valueName": "Queen",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/WIS-Q.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1253
+			},
+			"entries": [
+				"Going into the depth of compassion and quieting the critical mind to create emotional stability.",
+				"{@i A duck waddles up and says that he has witnessed a murder and wants you to catch the culprit.}"
+			]
+		},
+		{
+			"name": "Seven of Charisma",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 44,
+			"suit": "Charisma",
+			"value": 7,
+			"valueName": "Seven",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/CHA-7.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1246
+			},
+			"entries": [
+				"The power of allowing your plans to develop and unfold without urgency or restlessness.",
+				"{@i The town mayor is rumoured to be possessed by an evil spirit. The mayor is secretly preparing to sacrifice the entire town.}"
+			]
+		},
+		{
+			"name": "Seven of Intelligence",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 30,
+			"suit": "Intelligence",
+			"value": 7,
+			"valueName": "Seven",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/INT-7.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1253
+			},
+			"entries": [
+				"How we play games, hide our real selves, and mask our intentions out of fear or hurt.",
+				"{@i A doppelgänger has infiltrated the king's court and the king seeks someone who can root him out.}"
+			]
+		},
+		{
+			"name": "Seven of Strength",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 23,
+			"suit": "Strength",
+			"value": 7,
+			"valueName": "Seven",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/STR-7.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1243
+			},
+			"entries": [
+				"Dealing with the overwhelming. Letting go of what causes stress\u2014perfectionism, desire, fear, future-tripping.",
+				"{@i You find a magical sword. Roll a {@dice d6}. 1\u20133: It's a +1 sword. 4\u20136: It's a +1 sword that when unsheathed sings loudly.}"
+			]
+		},
+		{
+			"name": "Seven of Wisdom",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 37,
+			"suit": "Wisdom",
+			"value": 7,
+			"valueName": "Seven",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/WIS-7.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1248
+			},
+			"entries": [
+				"Our capacity to be discerning in our decisions and to choose from a place of clarity and wisdom.",
+				"{@i A librarian has discovered a hidden stone door covered with magical glyphs in the library's basement.}"
+			]
+		},
+		{
+			"name": "Six of Charisma",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 43,
+			"suit": "Charisma",
+			"value": 6,
+			"valueName": "Six",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/CHA-6.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1248
+			},
+			"entries": [
+				"Giving and receiving fully while not sacrificing your values or exhausting your energy.",
+				"{@i An old Mariner tells you the precise location of a legendary shipwreck off the coast.}"
+			]
+		},
+		{
+			"name": "Six of Intelligence",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 29,
+			"suit": "Intelligence",
+			"value": 6,
+			"valueName": "Six",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/INT-6.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1252
+			},
+			"entries": [
+				"Freeing yourself from burdens and old ways of thinking.",
+				"{@i A ghost approaches a member of the party claiming to be a long-dead relative. It seeks vengeance.}"
+			]
+		},
+		{
+			"name": "Six of Strength",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 22,
+			"suit": "Strength",
+			"value": 6,
+			"valueName": "Six",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/STR-6.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1250
+			},
+			"entries": [
+				"Enjoy the success, but don't get attached to it. What's your definition of success? Riding the highs and lows.",
+				"{@i The party is asked to have a young person accompany the group on their next adventure as a coming-of-age ceremony.}"
+			]
+		},
+		{
+			"name": "Six of Wisdom",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 36,
+			"suit": "Wisdom",
+			"value": 6,
+			"valueName": "Six",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/WIS-6.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1247
+			},
+			"entries": [
+				"Our ability to become a child and play in the world. A return to innocence.",
+				"{@i You find a gem. When you turn toward a distant mountain, the gem pulsates and glows.}"
+			]
+		},
+		{
+			"name": "Strength",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 20,
+			"suit": "Major Arcana",
+			"value": 8,
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/MA-Strength.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1244
+			},
+			"entries": [
+				"Your ability to move through fear to find the unshakable power within yourself.",
+				"{@i A burly warrior bars the way and challenges anyone to hand-to-hand combat.}"
+			]
+		},
+		{
+			"name": "Temperance",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 16,
+			"suit": "Major Arcana",
+			"value": 14,
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/MA-Temperance.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1251
+			},
+			"entries": [
+				"Our capacity to deal with something in a measured and patient way.",
+				"{@i You gain advantage on your next {@dice 1d6} Wisdom saving throws.}"
+			]
+		},
+		{
+			"name": "Ten of Charisma",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 45,
+			"suit": "Charisma",
+			"value": 10,
+			"valueName": "Ten",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/CHA-10.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1246
+			},
+			"entries": [
+				"The security that comes with having a network of people who support you and your dreams. Long-term success.",
+				"{@i A Paladin requests aid to recover the body of his fallen companion.}"
+			]
+		},
+		{
+			"name": "Ten of Intelligence",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 31,
+			"suit": "Intelligence",
+			"value": 10,
+			"valueName": "Ten",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/INT-10.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1246
+			},
+			"entries": [
+				"How we deal with what shows up in our lives. Do we avoid and deny? Do we react in anger? Do we remain conscious and aware?",
+				"{@i The mayor of the town is missing. She has been charmed by a vampire.}"
+			]
+		},
+		{
+			"name": "Ten of Strength",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 24,
+			"suit": "Strength",
+			"value": 10,
+			"valueName": "Ten",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/STR-10.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1250
+			},
+			"entries": [
+				"Making sure to speak up. Don't try to do it all. Delegate responsibility where you can. Express yourself.",
+				"{@i A benevolent order of druids wants their sacred stone back. It's in the crown of a pompous but powerful king.}"
+			]
+		},
+		{
+			"name": "Ten of Wisdom",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 38,
+			"suit": "Wisdom",
+			"value": 10,
+			"valueName": "Ten",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/WIS-10.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1247
+			},
+			"entries": [
+				"Uniting the head and the heart. Relating to others and your environment in emotional balance.",
+				"{@i The party comes across a magical portal with a ring of standing stones.}"
+			]
+		},
+		{
+			"name": "The Chariot",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 12,
+			"suit": "Major Arcana",
+			"value": 7,
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/MA-Chariot.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1245
+			},
+			"entries": [
+				"Following through on your intentions and manifesting your desires.",
+				"{@i You find a trapped efreet who offers you his services for a year if you can find a way to free him.}"
+			]
+		},
+		{
+			"name": "The Devil",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 16,
+			"suit": "Major Arcana",
+			"value": 15,
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/MA-Devil.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1248
+			},
+			"entries": [
+				"How we deal with our shadow self. This card calls us to cut through lies and see how honest we can be with ourselves.",
+				"{@i You encounter a devil who offers you a rare magic item in exchange for a favor.}"
+			]
+		},
+		{
+			"name": "The Emperor",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 11,
+			"suit": "Major Arcana",
+			"value": 4,
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/MA-Emperor.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1247
+			},
+			"entries": [
+				"Finding the source of your inner authority.",
+				"{@i You encounter a king of a far-off land who seeks your aid.}"
+			]
+		},
+		{
+			"name": "The Empress",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 10,
+			"suit": "Major Arcana",
+			"value": 3,
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/MA-Empress.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1245
+			},
+			"entries": [
+				"Realizing your capacity to express beauty and to nurture others from a place of power.",
+				"{@i You encounter the queen of a nation with an important mission for you.}"
+			]
+		},
+		{
+			"name": "The Fool",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 9,
+			"suit": "Major Arcana",
+			"value": 0,
+			"valueName": "Nought",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/MA-Fool.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1248
+			},
+			"entries": [
+				"Following your heart with innocence and wonder.",
+				"{@i You encounter a gnome who says that if you follow him, he'll lead you to a wondrous treasure.}"
+			]
+		},
+		{
+			"name": "The Hanged Man",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 15,
+			"suit": "Major Arcana",
+			"value": 12,
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/MA-Hanged Man.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1250
+			},
+			"entries": [
+				"The necessity to look at something from a different perspective.",
+				"{@i You have a strange dream of talking about life with an otyugh. When you wake up, you gain one permanent point of Wisdom.}"
+			]
+		},
+		{
+			"name": "The Hermit",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 13,
+			"suit": "Major Arcana",
+			"value": 9,
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/MA-Hermit.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1246
+			},
+			"entries": [
+				"Being a light unto yourself and finding your own way through the darkness.",
+				"{@i You meet a monk who is looking for worthy adventurers to defeat a magical monster.}"
+			]
+		},
+		{
+			"name": "The Hierophant",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 11,
+			"suit": "Major Arcana",
+			"value": 5,
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/MA-Hierophant.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1250
+			},
+			"entries": [
+				"Using spiritual understanding and wisdom to perceive the world",
+				"{@i You find a holy book written by a wise sage that contains a cryptic secret hidden within it.}"
+			]
+		},
+		{
+			"name": "The High Priestess",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 10,
+			"suit": "Major Arcana",
+			"value": 2,
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/MA-High Priestess.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1247
+			},
+			"entries": [
+				"Accessing your intuition and tuning in to the source of feminine power.",
+				"{@i You encounter a holy woman who offers you each a gift.}"
+			]
+		},
+		{
+			"name": "The Lovers",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 12,
+			"suit": "Major Arcana",
+			"value": 6,
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/MA-Lovers.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1246
+			},
+			"entries": [
+				"Finding harmony in relating with yourself and others while honoring your values.",
+				"{@i A mysterious person presents you with a tempting offer.}"
+			]
+		},
+		{
+			"name": "The Magician",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 9,
+			"suit": "Major Arcana",
+			"value": 1,
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/MA-Magician.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1247
+			},
+			"entries": [
+				"Tapping into your genius to find new ways of looking at the world.",
+				"{@i You meet a sage who gives you a key that opens a magical lock.}"
+			]
+		},
+		{
+			"name": "The Moon",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 18,
+			"suit": "Major Arcana",
+			"value": 18,
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/MA-Moon.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1247
+			},
+			"entries": [
+				"Facing and allowing deep-seated fears to dissolve in the light of your awareness. Remove words from the mind and breathe.",
+				"{@i You encounter a sorcerer who wants you to look into her crystal ball.}"
+			]
+		},
+		{
+			"name": "The Star",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 17,
+			"suit": "Major Arcana",
+			"value": 17,
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/MA-Star.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1251
+			},
+			"entries": [
+				"Finding something to focus on that can guide us through life. Our internal guidance system. Our North Star.",
+				"{@i You find a mechanical toy puppet that always walks to the nearest tavern.}"
+			]
+		},
+		{
+			"name": "The Sun",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 18,
+			"suit": "Major Arcana",
+			"value": 19,
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/MA-Sun.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1247
+			},
+			"entries": [
+				"Returning to the innocence and vitality of childhood.",
+				"{@i Roll {@dice 1d6+6} that is now your age for the next seventy-two hours.}"
+			]
+		},
+		{
+			"name": "The Tower",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 17,
+			"suit": "Major Arcana",
+			"value": 16,
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/MA-Tower.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1248
+			},
+			"entries": [
+				"The collapse of beliefs or material structures that we hold dear. It is in the nonresistance where we can find peace and wisdom.",
+				"{@i The Earth around you mysteriously begins to shake in a violent earthquake.}"
+			]
+		},
+		{
+			"name": "The Wheel of Fortune",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 14,
+			"suit": "Major Arcana",
+			"value": 10,
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/MA-Wheel of Fortune.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1250
+			},
+			"entries": [
+				"A turning point in your destiny and your ability to adapt to change.",
+				"{@i You meet a halfling wizard who\u2014If you treat him kindly\u2014gives you a \"wink of good luck.\" You gain advantage on your next role.}"
+			]
+		},
+		{
+			"name": "The World",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 19,
+			"suit": "Major Arcana",
+			"value": 21,
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/MA-World.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1247
+			},
+			"entries": [
+				"Endings. Coming to a place of completion and power internally and externally.",
+				"{@i You see someone weeping at the side of the road. They are being forced to marry someone they don't want to.}"
+			]
+		},
+		{
+			"name": "Three of Charisma",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 42,
+			"suit": "Charisma",
+			"value": 3,
+			"valueName": "Three",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/CHA-3.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1247
+			},
+			"entries": [
+				"Using the power of a team and learning how to collaborate.",
+				"{@i A shy ogre asks the party to rescue his pet goat from an evil cyclops.}"
+			]
+		},
+		{
+			"name": "Three of Intelligence",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 28,
+			"suit": "Intelligence",
+			"value": 3,
+			"valueName": "Three",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/INT-3.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1244
+			},
+			"entries": [
+				"Finding a way to heal and learn from anxiety and emotional pain.",
+				"{@i A weeping dryad asks you to save her forest from destruction at the hands of orcs.}"
+			]
+		},
+		{
+			"name": "Three of Strength",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 21,
+			"suit": "Strength",
+			"value": 3,
+			"valueName": "Three",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/STR-3.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1250
+			},
+			"entries": [
+				"Expanding your circle of influence and communicating your ideas. Making progress",
+				"{@i A young paladin-in-training says that his order has stolen an object sacred to hobgoblins. He feels guilty and wants to steal it and give it back to them.}"
+			]
+		},
+		{
+			"name": "Three of Wisdom",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 35,
+			"suit": "Wisdom",
+			"value": 3,
+			"valueName": "Three",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/WIS-3.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1248
+			},
+			"entries": [
+				"Taking time to celebrate the simple joy of aliveness with your friends.",
+				"{@i You were invited by the mayor of a nearby town to take part in their \"Festival of Monsters\".}"
+			]
+		},
+		{
+			"name": "Two of Charisma",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 41,
+			"suit": "Charisma",
+			"value": 2,
+			"valueName": "Two",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/CHA-2.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1246
+			},
+			"entries": [
+				"Our ability to manage our time with grace and ease by getting clear on our priorities.",
+				"{@i A group of Viking Warriors are in a longboat. They claim to found a way to the river Styx, and they're going to fight devils.}"
+			]
+		},
+		{
+			"name": "Two of Intelligence",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 27,
+			"suit": "Intelligence",
+			"value": 2,
+			"valueName": "Two",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/INT-2.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1249
+			},
+			"entries": [
+				"How our inner monologue causes confusion, and how we must find a way to listen to our heart.",
+				"{@i You see a lever that is inscribed with magical symbols. Do you pull it?}"
+			]
+		},
+		{
+			"name": "Two of Strength",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 20,
+			"suit": "Strength",
+			"value": 2,
+			"valueName": "Two",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/STR-2.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1248
+			},
+			"entries": [
+				"Growing and making progress toward a future goal. Enjoy discovering what you love to do.",
+				"{@i A drunken beggar in an alley swears to you he saw the king's son turn into a werewolf. There have been grisly killings in the city.}"
+			]
+		},
+		{
+			"name": "Two of Wisdom",
+			"source": "TD",
+			"set": "Tarot Deck",
+			"page": 34,
+			"suit": "Wisdom",
+			"value": 2,
+			"valueName": "Two",
+			"face": {
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "decks/TD/WIS-2.webp"
+				},
+				"credit": "Fred Gissubel",
+				"width": 720,
+				"height": 1248
+			},
+			"entries": [
+				"Being able to be with someone\u2014whether a friend or lover\u2014and still retain your own sense of individuality.",
+				"{@i You are approached by the captain of the city guard to see if you will track down and capture a dangerous criminal.}"
 			]
 		},
 		{

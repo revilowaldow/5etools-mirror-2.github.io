@@ -258,7 +258,7 @@ globalThis.Renderer = function () {
 		MiscUtil.delete(this._plugins, pluginType);
 	};
 
-	this._getPlugins = function (pluginType) { return this._plugins[pluginType] || []; };
+	this._getPlugins = function (pluginType) { return this._plugins[pluginType] ||= []; };
 
 	/** Run a function with the given plugin active. */
 	this.withPlugin = function ({pluginTypes, fnPlugin, fn}) {
@@ -437,11 +437,15 @@ globalThis.Renderer = function () {
 		}
 	};
 
-	this._RE_TEXT_CENTER = /\btext-center\b/;
+	this._RE_TEXT_CENTER = /\btext-center\b/g;
+	this._RE_COL_D = /\bcol-\d\d?(?:-\d\d?)?\b/g;
 
 	this._getMutatedStyleString = function (str) {
 		if (!str) return str;
-		return str.replace(this._RE_TEXT_CENTER, "ve-text-center");
+		return str
+			.replace(this._RE_TEXT_CENTER, "ve-$&")
+			.replace(this._RE_COL_D, "ve-$&")
+		;
 	};
 
 	this._adjustDepth = function (meta, dDepth) {
@@ -1548,11 +1552,26 @@ globalThis.Renderer = function () {
 		for (let i = 0; i < len; ++i) {
 			const s = tagSplit[i];
 			if (!s) continue;
-			if (s.startsWith("{@")) {
-				const [tag, text] = Renderer.splitFirstSpace(s.slice(1, -1));
-				this._renderString_renderTag(textStack, meta, options, tag, text);
-			} else textStack[0] += s;
+
+			if (!s.startsWith("{@")) {
+				this._renderString_renderBasic(textStack, meta, options, s);
+				continue;
+			}
+
+			const [tag, text] = Renderer.splitFirstSpace(s.slice(1, -1));
+			this._renderString_renderTag(textStack, meta, options, tag, text);
 		}
+	};
+
+	this._renderString_renderBasic = function (textStack, meta, options, str) {
+		// region Plugins
+		for (const plugin of this._getPlugins("string_basic")) {
+			const out = plugin(str, textStack, meta, options);
+			if (out) return void (textStack[0] += out);
+		}
+		// endregion
+
+		textStack[0] += str;
 	};
 
 	this._renderString_renderTag = function (textStack, meta, options, tag, text) {
@@ -1791,7 +1810,11 @@ globalThis.Renderer = function () {
 			case "@link": {
 				const [displayText, url] = Renderer.splitTagByPipe(text);
 				let outUrl = url == null ? displayText : url;
-				if (!outUrl.startsWith("http")) outUrl = `http://${outUrl}`; // avoid HTTPS, as the D&D homepage doesn't support it
+
+				// If a URL is prefixed with e.g. `https://` or `mailto:`, leave it as-is
+				// Otherwise, assume `http` (avoid HTTPS, as the D&D homepage doesn't support it)
+				if (!/^[a-zA-Z]+:/.test(outUrl)) outUrl = `http://${outUrl}`;
+
 				const fauxEntry = {
 					type: "link",
 					href: {
@@ -2046,7 +2069,21 @@ globalThis.Renderer = function () {
 		const replacementAttributes = pluginData.map(it => it.attributesHoverReplace).filter(Boolean);
 		if (replacementAttributes.length) return replacementAttributes.join(" ");
 
-		return `onmouseover="Renderer.hover.pHandleLinkMouseOver(event, this)" onmouseleave="Renderer.hover.handleLinkMouseLeave(event, this)" onmousemove="Renderer.hover.handleLinkMouseMove(event, this)" ondragstart="Renderer.hover.handleLinkDragStart(event, this)" data-vet-page="${entry.href.hover.page.qq()}" data-vet-source="${entry.href.hover.source.qq()}" data-vet-hash="${procHash.qq()}" ${entry.href.hover.preloadId != null ? `data-vet-preload-id="${`${entry.href.hover.preloadId}`.qq()}"` : ""} ${entry.href.hover.isFauxPage ? `data-vet-is-faux-page="true"` : ""} ${Renderer.hover.getPreventTouchString()}`;
+		return [
+			`onmouseover="Renderer.hover.pHandleLinkMouseOver(event, this)"`,
+			`onmouseleave="Renderer.hover.handleLinkMouseLeave(event, this)"`,
+			`onmousemove="Renderer.hover.handleLinkMouseMove(event, this)"`,
+			`onclick="Renderer.hover.handleLinkClick(event, this)"`,
+			`ondragstart="Renderer.hover.handleLinkDragStart(event, this)"`,
+			`data-vet-page="${entry.href.hover.page.qq()}"`,
+			`data-vet-source="${entry.href.hover.source.qq()}"`,
+			`data-vet-hash="${procHash.qq()}"`,
+			entry.href.hover.preloadId != null ? `data-vet-preload-id="${`${entry.href.hover.preloadId}`.qq()}"` : "",
+			entry.href.hover.isFauxPage ? `data-vet-is-faux-page="true"` : "",
+			Renderer.hover.getPreventTouchString(),
+		]
+			.filter(Boolean)
+			.join(" ");
 	};
 
 	/**
@@ -2099,8 +2136,12 @@ Renderer.get = () => {
 	return Renderer.defaultRenderer;
 };
 
+/**
+ * Note that a tag (`{@tag ...}`) is not valid inside a property injector (`{=prop ...}`),
+ *   but a property injector *is* valid inside a tag.
+ */
 Renderer.applyProperties = function (entry, object) {
-	const propSplit = Renderer.splitByPropertyInjectors(entry);
+	const propSplit = Renderer.splitByTags(entry);
 	const len = propSplit.length;
 	if (len === 1) return entry;
 
@@ -2109,6 +2150,12 @@ Renderer.applyProperties = function (entry, object) {
 	for (let i = 0; i < len; ++i) {
 		const s = propSplit[i];
 		if (!s) continue;
+
+		if (s.startsWith("{@")) {
+			const [tag, text] = Renderer.splitFirstSpace(s.slice(1, -1));
+			textStack += `{${tag} ${Renderer.applyProperties(text, object)}}`;
+			continue;
+		}
 
 		if (!s.startsWith("{=")) {
 			textStack += s;
@@ -2198,60 +2245,68 @@ Renderer.splitFirstSpace = function (string) {
 	return firstIndex === -1 ? [string, ""] : [string.substr(0, firstIndex), string.substr(firstIndex + 1)];
 };
 
-Renderer._splitByTagsBase = function (leadingCharacter) {
-	return function (string) {
-		let tagDepth = 0;
-		let char, char2;
-		const out = [];
-		let curStr = "";
-		let isLastOpen = false;
+Renderer._SPLIT_BY_TAG_LEADING_CHARS = new Set(["@", "="]);
 
-		const len = string.length;
-		for (let i = 0; i < len; ++i) {
-			char = string[i];
-			char2 = string[i + 1];
+Renderer.splitByTags = function (string) {
+	let tagDepth = 0;
+	let char, char2;
+	const out = [];
+	let curStr = "";
+	let isPrevCharOpenBrace = false;
 
-			switch (char) {
-				case "{":
-					isLastOpen = true;
-					if (char2 === leadingCharacter) {
-						if (tagDepth++ > 0) {
-							curStr += "{";
-						} else {
-							out.push(curStr.replace(/<VE_LEAD>/g, leadingCharacter));
-							curStr = `{${leadingCharacter}`;
-							++i;
-						}
-					} else curStr += "{";
-					break;
+	const pushOutput = () => {
+		if (!curStr) return;
+		out.push(curStr);
+	};
 
-				case "}":
-					isLastOpen = false;
-					curStr += "}";
-					if (tagDepth !== 0 && --tagDepth === 0) {
-						out.push(curStr.replace(/<VE_LEAD>/g, leadingCharacter));
-						curStr = "";
-					}
-					break;
+	const len = string.length;
+	for (let i = 0; i < len; ++i) {
+		char = string[i];
+		char2 = string[i + 1];
 
-				case leadingCharacter: {
-					if (!isLastOpen) curStr += "<VE_LEAD>";
-					else curStr += leadingCharacter;
+		switch (char) {
+			case "{":
+				if (!Renderer._SPLIT_BY_TAG_LEADING_CHARS.has(char2)) {
+					isPrevCharOpenBrace = false;
+					curStr += "{";
 					break;
 				}
 
-				default: isLastOpen = false; curStr += char; break;
+				isPrevCharOpenBrace = true;
+
+				if (tagDepth++ > 0) {
+					curStr += "{";
+				} else {
+					pushOutput();
+					curStr = `{${char2}`;
+					++i;
+				}
+
+				break;
+
+			case "}":
+				isPrevCharOpenBrace = false;
+				curStr += "}";
+				if (tagDepth !== 0 && --tagDepth === 0) {
+					pushOutput();
+					curStr = "";
+				}
+				break;
+
+			case "@":
+			case "=": {
+				curStr += char;
+				break;
 			}
+
+			default: isPrevCharOpenBrace = false; curStr += char; break;
 		}
+	}
 
-		if (curStr) out.push(curStr.replace(/<VE_LEAD>/g, leadingCharacter));
+	pushOutput();
 
-		return out;
-	};
+	return out;
 };
-
-Renderer.splitByTags = Renderer._splitByTagsBase("@");
-Renderer.splitByPropertyInjectors = Renderer._splitByTagsBase("=");
 
 Renderer._splitByPipeBase = function (leadingCharacter) {
 	return function (string) {
@@ -4218,7 +4273,7 @@ Renderer.tag = class {
 		get tag () { return `@${this.tagName}`; }
 
 		getStripped (tag, text) {
-			text = text.replace(/<\$([^$]+)\$>/gi, ""); // remove any variable tags
+			text = DataUtil.generic.variableResolver.getHumanReadableString(text); // replace any variables
 			return this._getStripped(tag, text);
 		}
 
@@ -6163,9 +6218,9 @@ Renderer.race = class {
 			<tr><td colspan="6">
 				<table class="w-100 summary stripe-even-table">
 					<tr>
-						<th class="col-4 ve-text-center">Ability Scores</th>
-						<th class="col-4 ve-text-center">Size</th>
-						<th class="col-4 ve-text-center">Speed</th>
+						<th class="ve-col-4 ve-text-center">Ability Scores</th>
+						<th class="ve-col-4 ve-text-center">Size</th>
+						<th class="ve-col-4 ve-text-center">Speed</th>
 					</tr>
 					<tr>
 						<td class="ve-text-center">${Renderer.getAbilityData(race.ability).asText}</td>
@@ -6197,7 +6252,7 @@ Renderer.race = class {
 
 	static getHeightAndWeightEntries (race, {isStatic = false} = {}) {
 		const colLabels = ["Base Height", "Base Weight", "Height Modifier", "Weight Modifier"];
-		const colStyles = ["col-2-3 ve-text-center", "col-2-3 ve-text-center", "col-2-3 ve-text-center", "col-2 ve-text-center"];
+		const colStyles = ["col-2-3 text-center", "col-2-3 text-center", "col-2-3 text-center", "col-2 text-center"];
 
 		const cellHeightMod = !isStatic
 			? `+<span data-race-heightmod="true">${race.heightAndWeight.heightMod}</span>`
@@ -6215,7 +6270,7 @@ Renderer.race = class {
 
 		if (!isStatic) {
 			colLabels.push("");
-			colStyles.push("col-3-1 ve-text-center");
+			colStyles.push("ve-col-3-1 text-center");
 			row.push(`<div class="ve-flex-vh-center">
 				<div class="ve-hidden race__disp-result-height-weight ve-flex-v-baseline">
 					<div class="mr-1">=</div>
@@ -7685,7 +7740,7 @@ Renderer.monster = class {
 		const absRemaining = Parser.ABIL_ABVS.filter(ab => !seenAbs.has(ab));
 
 		return `<tr>
-			${absRemaining.map(ab => `<th class="col-2 ve-text-center bold">${ab.toUpperCase()}</th>`).join("")}
+			${absRemaining.map(ab => `<th class="ve-col-2 ve-text-center bold">${ab.toUpperCase()}</th>`).join("")}
 		</tr>
 		<tr>
 			${absRemaining.map(ab => `<td class="ve-text-center">${Renderer.utils.getAbilityRoller(mon, ab)}</td>`).join("")}
@@ -8180,7 +8235,7 @@ Renderer.item = class {
 			const dexterityMax = (itemType === "MA" && item.dexterityMax == null)
 				? 2
 				: item.dexterityMax;
-			const isAddDex = item.dexterityMax != null || itemType !== "HA";
+			const isAddDex = item.dexterityMax != null || !["HA", "S"].includes(itemType);
 
 			const prefix = item.type === "S" ? "+" : "";
 			const suffix = isAddDex ? ` + Dex${dexterityMax ? ` (max ${dexterityMax})` : ""}` : "";
@@ -9862,12 +9917,12 @@ Renderer.vehicle = class {
 		return Parser.ABIL_ABVS.some(it => veh[it] != null) ? `<tr><td colspan="6">
 			<table class="w-100 summary stripe-even-table">
 				<tr>
-					<th class="col-2 ve-text-center">STR</th>
-					<th class="col-2 ve-text-center">DEX</th>
-					<th class="col-2 ve-text-center">CON</th>
-					<th class="col-2 ve-text-center">INT</th>
-					<th class="col-2 ve-text-center">WIS</th>
-					<th class="col-2 ve-text-center">CHA</th>
+					<th class="ve-col-2 ve-text-center">STR</th>
+					<th class="ve-col-2 ve-text-center">DEX</th>
+					<th class="ve-col-2 ve-text-center">CON</th>
+					<th class="ve-col-2 ve-text-center">INT</th>
+					<th class="ve-col-2 ve-text-center">WIS</th>
+					<th class="ve-col-2 ve-text-center">CHA</th>
 				</tr>
 				<tr>
 					<td class="ve-text-center">${Renderer.utils.getAbilityRoller(veh, "str")}</td>
@@ -11033,16 +11088,16 @@ Renderer.hover = class {
 
 	static cleanTempWindows () {
 		for (const [key, meta] of Renderer.hover._eleCache.entries()) {
-			// If this is an element-less "permanent" show which has been closed
+			// If this is an element-less "permanent" show (i.e. a "predefined" window) which has been closed
 			if (!meta.isPermanent && meta.windowMeta && typeof key === "number") {
 				meta.windowMeta.doClose();
 				Renderer.hover._eleCache.delete(key);
-				return;
+				continue;
 			}
 
 			if (!meta.isPermanent && meta.windowMeta && !document.body.contains(key)) {
 				meta.windowMeta.doClose();
-				return;
+				continue;
 			}
 
 			if (!meta.isPermanent && meta.isHovered && meta.windowMeta) {
@@ -11064,9 +11119,9 @@ Renderer.hover = class {
 			.forEach(([, meta]) => meta.doClose());
 	}
 
-	static _getSetMeta (ele) {
-		if (!Renderer.hover._eleCache.has(ele)) Renderer.hover._eleCache.set(ele, new Renderer.hover.LinkMeta());
-		return Renderer.hover._eleCache.get(ele);
+	static _getSetMeta (key) {
+		if (!Renderer.hover._eleCache.has(key)) Renderer.hover._eleCache.set(key, new Renderer.hover.LinkMeta());
+		return Renderer.hover._eleCache.get(key);
 	}
 
 	static _handleGenericMouseOverStart ({evt, ele}) {
@@ -11365,6 +11420,12 @@ Renderer.hover = class {
 
 		// Reset cursor
 		ele.style.cursor = "";
+	}
+
+	static handleLinkClick (evt, ele) {
+		// Close the window (if not permanent)
+		// Note that this prevents orphan windows when e.g. clicking a specific variant on an Items page magicvariant
+		Renderer.hover.handleLinkMouseLeave(evt, ele);
 	}
 
 	// (Baked into render strings)
@@ -12416,28 +12477,47 @@ Renderer.findName = function (entry) { return CollectionUtil.dfs(entry, {prop: "
 Renderer.findSource = function (entry) { return CollectionUtil.dfs(entry, {prop: "source"}); };
 Renderer.findEntry = function (entry) { return CollectionUtil.dfs(entry, {fnMatch: obj => obj.name && obj?.entries?.length}); };
 
-Renderer.stripTags = function (str) {
+/**
+ * @param {string} str
+ * @param {?Set<string>} allowlistTags
+ * @param {?Set<string>} blocklistTags
+ */
+Renderer.stripTags = function (str, {allowlistTags = null, blocklistTags = null} = {}) {
 	if (!str) return str;
-	let nxtStr = Renderer._stripTagLayer(str);
-	while (nxtStr.length !== str.length) {
-		str = nxtStr;
-		nxtStr = Renderer._stripTagLayer(str);
-	}
-	return nxtStr;
+
+	const ptrAccum = {_: ""};
+	Renderer._stripTags_textRender({str, ptrAccum, allowlistTags, blocklistTags});
+	return ptrAccum._;
 };
 
-Renderer._stripTagLayer = function (str) {
-	if (str.includes("{@")) {
-		const tagSplit = Renderer.splitByTags(str);
-		return tagSplit.filter(it => it).map(it => {
-			if (it.startsWith("{@")) {
-				let [tag, text] = Renderer.splitFirstSpace(it.slice(1, -1));
-				const tagInfo = Renderer.tag.TAG_LOOKUP[tag];
-				if (!tagInfo) throw new Error(`Unhandled tag: "${tag}"`);
-				return tagInfo.getStripped(tag, text);
-			} else return it;
-		}).join("");
-	} return str;
+Renderer._stripTags_textRender = function ({str, ptrAccum, allowlistTags = null, blocklistTags = null} = {}) {
+	const tagSplit = Renderer.splitByTags(str);
+	const len = tagSplit.length;
+	for (let i = 0; i < len; ++i) {
+		const s = tagSplit[i];
+		if (!s) continue;
+
+		if (!s.startsWith("{@")) {
+			ptrAccum._ += s;
+			continue;
+		}
+
+		const [tag, text] = Renderer.splitFirstSpace(s.slice(1, -1));
+
+		if (
+			(allowlistTags != null && allowlistTags.has(tag))
+			|| (blocklistTags != null && !blocklistTags.has(tag))
+		) {
+			ptrAccum._ += s;
+			continue;
+		}
+
+		const tagInfo = Renderer.tag.TAG_LOOKUP[tag];
+		if (!tagInfo) throw new Error(`Unhandled tag: "${tag}"`);
+		const stripped = tagInfo.getStripped(tag, text);
+
+		Renderer._stripTags_textRender({str: stripped, ptrAccum, allowlistTags, blocklistTags});
+	}
 };
 
 /**

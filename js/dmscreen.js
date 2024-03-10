@@ -165,6 +165,14 @@ class Board {
 		}).appendTo(this.$creen);
 	}
 
+	doToggleFullscreen () {
+		this.isFullscreen = !this.isFullscreen;
+		$(document.body).toggleClass("is-fullscreen", this.isFullscreen);
+		this.doAdjust$creenCss();
+		this.doSaveStateDebounced();
+		this.$creen.trigger("panelResize");
+	}
+
 	doHideLoading () {
 		this.$creen.find(`.dm-screen-loading`).remove();
 	}
@@ -193,6 +201,14 @@ class Board {
 		this.doCheckFillSpaces({isSkipSave: true});
 		this.initGlobalHandlers();
 		await this._pLoadTempData();
+
+		$(document.body)
+			.on("keydown", evt => {
+				if (evt.key !== "Escape" || !this.isFullscreen) return;
+				evt.stopPropagation();
+				evt.preventDefault();
+				this.doToggleFullscreen();
+			});
 
 		window.dispatchEvent(new Event("toolsLoaded"));
 	}
@@ -765,14 +781,7 @@ class SideMenu {
 		const $wrpFullscreen = $(`<div class="w-100 ve-flex-vh-center-around"></div>`).appendTo(this.$mnu);
 		const $btnFullscreen = $(`<button class="btn btn-primary">Toggle Fullscreen</button>`).appendTo($wrpFullscreen);
 		this.board.$btnFullscreen = $btnFullscreen;
-		$btnFullscreen.on("click", () => {
-			this.board.isFullscreen = !this.board.isFullscreen;
-			if (this.board.isFullscreen) $(`body`).addClass(`is-fullscreen`);
-			else $(`body`).removeClass(`is-fullscreen`);
-			this.board.doAdjust$creenCss();
-			this.board.doSaveStateDebounced();
-			this.board.$creen.trigger("panelResize");
-		});
+		$btnFullscreen.on("click", () => this.board.doToggleFullscreen());
 		const $btnLockPanels = $(`<button class="btn btn-danger" title="Lock Panels"><span class="glyphicon glyphicon-lock"/></button>`).appendTo($wrpFullscreen);
 		this.board.$btnLockPanels = $btnLockPanels;
 		$btnLockPanels.on("click", () => {
@@ -2111,9 +2120,26 @@ class Panel {
 
 			const $wrpContent = $(`<div class="panel-content-wrapper"/>`).appendTo($pnl);
 			const $wrpBtnAdd = $(`<div class="panel-add"/>`).appendTo($wrpContent);
-			const $btnAdd = $(`<span class="btn-panel-add glyphicon glyphicon-plus"/>`).on("click", () => {
-				openAddMenu();
-			}).appendTo($wrpBtnAdd);
+			const $btnAdd = $(`<span class="btn-panel-add glyphicon glyphicon-plus"/>`)
+				.on("click", () => {
+					openAddMenu();
+				})
+				.on("drop", async evt => {
+					evt = evt.originalEvent;
+
+					const data = EventUtil.getDropJson(evt);
+					if (!data) return;
+
+					if (data.type !== VeCt.DRAG_TYPE_IMPORT) return;
+
+					evt.stopPropagation();
+					evt.preventDefault();
+
+					const {page, source, hash} = data;
+					// FIXME(Future) "Stats" may not be the correct panel type, but works in most useful cases
+					this.doPopulate_Stats(page, source, hash);
+				})
+				.appendTo($wrpBtnAdd);
 			this.$btnAdd = $wrpBtnAdd;
 			this.$btnAddInner = $btnAdd;
 			this.$pnlWrpContent = $wrpContent;
@@ -3846,10 +3872,10 @@ class UnitConverter {
 				dirConv = 1;
 				updateDisplay();
 			};
-			$(`<td class="col-3">${u.n1}</td>`).click(clickL).appendTo($tr);
-			$(`<td class="col-3 code">×${u.x1.padStart(5)}</td>`).click(clickL).appendTo($tr);
-			$(`<td class="col-3">${u.n2}</td>`).click(clickR).appendTo($tr);
-			$(`<td class="col-3 code">×${u.x2.padStart(5)}</td>`).click(clickR).appendTo($tr);
+			$(`<td class="ve-col-3">${u.n1}</td>`).click(clickL).appendTo($tr);
+			$(`<td class="ve-col-3 code">×${u.x1.padStart(5)}</td>`).click(clickL).appendTo($tr);
+			$(`<td class="ve-col-3">${u.n2}</td>`).click(clickR).appendTo($tr);
+			$(`<td class="ve-col-3 code">×${u.x2.padStart(5)}</td>`).click(clickR).appendTo($tr);
 		});
 
 		const $wrpIpt = $(`<div class="split dm-unitconv__wrp-ipt"/>`).appendTo($wrpConverter);

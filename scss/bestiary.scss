@@ -1,4 +1,4 @@
-@import "includes/vars";
+@use "includes/vars";
 
 // region Token
 img.token {
@@ -14,13 +14,15 @@ img.token {
 }
 
 #pagecontent {
-	background-size: 100% auto;
-	background: url("../img/bestiary/stat-block-top-texture.webp") no-repeat, repeat top center, $rgb-bg-orange;
+	background:
+		url("../img/bestiary/stat-block-top-texture.webp") no-repeat,
+		repeat top center,
+		vars.$rgb-bg-orange;
 }
 
 .night-mode {
 	#pagecontent {
-		background: $rgb-bg--night !important;
+		background: vars.$rgb-bg--night !important;
 	}
 }
 // endregion
@@ -28,7 +30,7 @@ img.token {
 // region Proficiency dice rollers
 [data-proficiency-dice-mode="dice"] {
 	.rd__dc--rollable {
-		color: $rgb-link-blue;
+		color: vars.$rgb-link-blue;
 		cursor: pointer;
 	}
 
@@ -56,7 +58,7 @@ img.token {
 }
 
 .night-mode [data-proficiency-dice-mode="dice"] .rd__dc--rollable {
-	color: $rgb-link-blue--night;
+	color: vars.$rgb-link-blue--night;
 }
 // endregion
 
@@ -110,11 +112,11 @@ img.token {
 		}
 
 		&__name {
-			width: 26.66666666%;
+			width: 26.6667%;
 		}
 
 		&__name--sub {
-			width: 29.16666667%;
+			width: 29.1667%;
 		}
 	}
 }

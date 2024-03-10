@@ -182,7 +182,9 @@
 										"type": "internal",
 										"path": "book/DMTCRG/Five-Card Spread.webp"
 									},
-									"title": "Diagram 1: Five-Card Spread"
+									"title": "Diagram 1: Five-Card Spread",
+									"width": 800,
+									"height": 934
 								},
 								"A five-card spread (see diagram 1) allows a question to be answered with great complexity and nuance, as the cards show multiple perspectives and weave an interconnected story, Here's an example of a five-card spread you might use:",
 								{
@@ -240,7 +242,9 @@
 								"type": "internal",
 								"path": "book/DMTCRG/Adventure Spread.webp"
 							},
-							"title": "Diagram 2: Adventure Spread"
+							"title": "Diagram 2: Adventure Spread",
+							"width": 1444,
+							"height": 934
 						},
 						"Lay out the cards in this order:",
 						{
@@ -298,7 +302,9 @@
 								"type": "internal",
 								"path": "book/DMTCRG/Example Adventure Spread.webp"
 							},
-							"title": "Diagram 3: Example Adventure Spread"
+							"title": "Diagram 3: Example Adventure Spread",
+							"width": 1443,
+							"height": 934
 						},
 						{
 							"type": "list",
@@ -357,7 +363,9 @@
 								"type": "internal",
 								"path": "bestiary/BMT/Deck Defender.webp"
 							},
-							"credit": "Nikki Dawes"
+							"credit": "Nikki Dawes",
+							"width": 1700,
+							"height": 1079
 						}
 					]
 				},
@@ -818,7 +826,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/01-aberration.webp"
 							},
-							"credit": "Jim Zaccaria"
+							"credit": "Jim Zaccaria",
+							"width": 720,
+							"height": 1227
 						}
 					]
 				},
@@ -1000,7 +1010,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/03-beast.webp"
 							},
-							"credit": "Abigail Larson"
+							"credit": "Abigail Larson",
+							"width": 720,
+							"height": 1227
 						}
 					]
 				},
@@ -1090,7 +1102,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/04-book.webp"
 							},
-							"credit": "Ivan Shavrin"
+							"credit": "Ivan Shavrin",
+							"width": 720,
+							"height": 1229
 						}
 					]
 				},
@@ -1180,7 +1194,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/05-bridge.webp"
 							},
-							"credit": "Ivan Shavrin"
+							"credit": "Ivan Shavrin",
+							"width": 720,
+							"height": 1229
 						}
 					]
 				},
@@ -1270,7 +1286,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/06-campfire.webp"
 							},
-							"credit": "Ivan Shavrin"
+							"credit": "Ivan Shavrin",
+							"width": 720,
+							"height": 1232
 						}
 					]
 				},
@@ -1360,7 +1378,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/07-cavern.webp"
 							},
-							"credit": "Ivan Shavrin"
+							"credit": "Ivan Shavrin",
+							"width": 720,
+							"height": 1233
 						}
 					]
 				},
@@ -1450,7 +1470,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/08-celestial.webp"
 							},
-							"credit": "Jim Zaccaria"
+							"credit": "Jim Zaccaria",
+							"width": 720,
+							"height": 1230
 						}
 					]
 				},
@@ -1632,7 +1654,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/10-construct.webp"
 							},
-							"credit": "Abigail Larson"
+							"credit": "Abigail Larson",
+							"width": 720,
+							"height": 1229
 						}
 					]
 				},
@@ -1722,7 +1746,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/11-corpse.webp"
 							},
-							"credit": "Ivan Shavrin"
+							"credit": "Ivan Shavrin",
+							"width": 720,
+							"height": 1231
 						}
 					]
 				},
@@ -1812,7 +1838,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/12-crossroads.webp"
 							},
-							"credit": "Abigail Larson"
+							"credit": "Abigail Larson",
+							"width": 720,
+							"height": 1229
 						}
 					]
 				},
@@ -1994,7 +2022,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/14-door.webp"
 							},
-							"credit": "Ivan Shavrin"
+							"credit": "Ivan Shavrin",
+							"width": 720,
+							"height": 1233
 						}
 					]
 				},
@@ -2084,7 +2114,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/15-dragon.webp"
 							},
-							"credit": "Ivan Shavrin"
+							"credit": "Ivan Shavrin",
+							"width": 720,
+							"height": 1228
 						}
 					]
 				},
@@ -2174,7 +2206,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/16-elemental.webp"
 							},
-							"credit": "Ivan Shavrin"
+							"credit": "Ivan Shavrin",
+							"width": 720,
+							"height": 1231
 						}
 					]
 				},
@@ -2356,7 +2390,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/18-expert.webp"
 							},
-							"credit": "Ivan Shavrin"
+							"credit": "Ivan Shavrin",
+							"width": 720,
+							"height": 1229
 						}
 					]
 				},
@@ -2538,7 +2574,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/20-fey.webp"
 							},
-							"credit": "Ivan Shavrin"
+							"credit": "Ivan Shavrin",
+							"width": 720,
+							"height": 1230
 						}
 					]
 				},
@@ -2628,7 +2666,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/21-fiend.webp"
 							},
-							"credit": "Ivan Shavrin"
+							"credit": "Ivan Shavrin",
+							"width": 720,
+							"height": 1229
 						}
 					]
 				},
@@ -2718,7 +2758,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/22-flames.webp"
 							},
-							"credit": "Harry Conway"
+							"credit": "Harry Conway",
+							"width": 720,
+							"height": 1227
 						}
 					]
 				},
@@ -2992,7 +3034,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/25-giant.webp"
 							},
-							"credit": "Ivan Shavrin"
+							"credit": "Ivan Shavrin",
+							"width": 720,
+							"height": 1228
 						}
 					]
 				},
@@ -3082,7 +3126,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/26-humanoid.webp"
 							},
-							"credit": "Ivan Shavrin"
+							"credit": "Ivan Shavrin",
+							"width": 720,
+							"height": 1228
 						}
 					]
 				},
@@ -3448,7 +3494,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/30-lance.webp"
 							},
-							"credit": "Ivan Shavrin"
+							"credit": "Ivan Shavrin",
+							"width": 720,
+							"height": 1229
 						}
 					]
 				},
@@ -3538,7 +3586,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/31-mage.webp"
 							},
-							"credit": "Ivan Shavrin"
+							"credit": "Ivan Shavrin",
+							"width": 720,
+							"height": 1228
 						}
 					]
 				},
@@ -3628,7 +3678,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/32-map.webp"
 							},
-							"credit": "Ivan Shavrin"
+							"credit": "Ivan Shavrin",
+							"width": 720,
+							"height": 1230
 						}
 					]
 				},
@@ -3718,7 +3770,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/33-maze.webp"
 							},
-							"credit": "Ivan Shavrin"
+							"credit": "Ivan Shavrin",
+							"width": 720,
+							"height": 1228
 						}
 					]
 				},
@@ -3808,7 +3862,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/34-mine.webp"
 							},
-							"credit": "Ivan Shavrin"
+							"credit": "Ivan Shavrin",
+							"width": 720,
+							"height": 1230
 						}
 					]
 				},
@@ -3898,7 +3954,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/35-monstrosity.webp"
 							},
-							"credit": "Ivan Shavrin"
+							"credit": "Ivan Shavrin",
+							"width": 720,
+							"height": 1229
 						}
 					]
 				},
@@ -4080,7 +4138,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/37-ooze.webp"
 							},
-							"credit": "Ivan Shavrin"
+							"credit": "Ivan Shavrin",
+							"width": 720,
+							"height": 1231
 						}
 					]
 				},
@@ -4170,7 +4230,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/38-path.webp"
 							},
-							"credit": "Ivan Shavrin"
+							"credit": "Ivan Shavrin",
+							"width": 720,
+							"height": 1230
 						}
 					]
 				},
@@ -4260,7 +4322,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/39-pit.webp"
 							},
-							"credit": "Ivan Shavrin"
+							"credit": "Ivan Shavrin",
+							"width": 720,
+							"height": 1229
 						}
 					]
 				},
@@ -4350,7 +4414,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/40-plant.webp"
 							},
-							"credit": "Joanna Barnum"
+							"credit": "Joanna Barnum",
+							"width": 720,
+							"height": 1229
 						}
 					]
 				},
@@ -4440,7 +4506,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/41-priest.webp"
 							},
-							"credit": "Ivan Shavrin"
+							"credit": "Ivan Shavrin",
+							"width": 720,
+							"height": 1229
 						}
 					]
 				},
@@ -4530,7 +4598,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/42-prisoner.webp"
 							},
-							"credit": "Ivan Shavrin"
+							"credit": "Ivan Shavrin",
+							"width": 720,
+							"height": 1229
 						}
 					]
 				},
@@ -4712,7 +4782,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/44-ring.webp"
 							},
-							"credit": "Abigail Larson"
+							"credit": "Abigail Larson",
+							"width": 720,
+							"height": 1229
 						}
 					]
 				},
@@ -5078,7 +5150,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/48-shield.webp"
 							},
-							"credit": "Joanna Barnum"
+							"credit": "Joanna Barnum",
+							"width": 720,
+							"height": 1227
 						}
 					]
 				},
@@ -5168,7 +5242,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/49-ship.webp"
 							},
-							"credit": "Ivan Shavrin"
+							"credit": "Ivan Shavrin",
+							"width": 720,
+							"height": 1230
 						}
 					]
 				},
@@ -5350,7 +5426,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/51-staff.webp"
 							},
-							"credit": "Ivan Shavrin"
+							"credit": "Ivan Shavrin",
+							"width": 720,
+							"height": 1230
 						}
 					]
 				},
@@ -5440,7 +5518,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/52-stairway.webp"
 							},
-							"credit": "Ivan Shavrin"
+							"credit": "Ivan Shavrin",
+							"width": 720,
+							"height": 1228
 						}
 					]
 				},
@@ -5622,7 +5702,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/54-statue.webp"
 							},
-							"credit": "Ivan Shavrin"
+							"credit": "Ivan Shavrin",
+							"width": 720,
+							"height": 1230
 						}
 					]
 				},
@@ -5896,7 +5978,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/57-tavern.webp"
 							},
-							"credit": "Joanna Barnum"
+							"credit": "Joanna Barnum",
+							"width": 720,
+							"height": 1226
 						}
 					]
 				},
@@ -5986,7 +6070,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/58-temple.webp"
 							},
-							"credit": "Ivan Shavrin"
+							"credit": "Ivan Shavrin",
+							"width": 720,
+							"height": 1229
 						}
 					]
 				},
@@ -6168,7 +6254,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/60-tomb.webp"
 							},
-							"credit": "Ivan Shavrin"
+							"credit": "Ivan Shavrin",
+							"width": 720,
+							"height": 1230
 						}
 					]
 				},
@@ -6258,7 +6346,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/61-tower.webp"
 							},
-							"credit": "Abigail Larson"
+							"credit": "Abigail Larson",
+							"width": 720,
+							"height": 1224
 						}
 					]
 				},
@@ -6348,7 +6438,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/62-tree.webp"
 							},
-							"credit": "Ivan Shavrin"
+							"credit": "Ivan Shavrin",
+							"width": 720,
+							"height": 1229
 						}
 					]
 				},
@@ -6438,7 +6530,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/63-undead.webp"
 							},
-							"credit": "Abigail Larson"
+							"credit": "Abigail Larson",
+							"width": 720,
+							"height": 1232
 						}
 					]
 				},
@@ -6620,7 +6714,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/65-warrior.webp"
 							},
-							"credit": "Ivan Shavrin"
+							"credit": "Ivan Shavrin",
+							"width": 720,
+							"height": 1230
 						}
 					]
 				},
@@ -6710,7 +6806,9 @@
 								"type": "internal",
 								"path": "decks/DMTCRG/Deck of Many More Things/66-well.webp"
 							},
-							"credit": "Ivan Shavrin"
+							"credit": "Ivan Shavrin",
+							"width": 720,
+							"height": 1228
 						}
 					]
 				}
@@ -6974,7 +7072,9 @@
 								"path": "book/DMTCRG/Cover Front.webp"
 							},
 							"title": "Front Cover",
-							"credit": "Harry Conway (left and right), Tinnel Lovitt (center)"
+							"credit": "Harry Conway (left and right), Tinnel Lovitt (center)",
+							"width": 1700,
+							"height": 1142
 						},
 						{
 							"type": "image",
@@ -6983,7 +7083,9 @@
 								"path": "book/DMTCRG/Cover Back.webp"
 							},
 							"title": "Back Cover",
-							"credit": "Axel Defois"
+							"credit": "Axel Defois",
+							"width": 1700,
+							"height": 1140
 						}
 					]
 				}

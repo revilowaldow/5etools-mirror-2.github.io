@@ -5007,6 +5007,7 @@
 		{
 			"name": "Continental Nobility",
 			"source": "DoDk",
+			"page": 244,
 			"prerequisite": [
 				{
 					"level": {
@@ -6053,6 +6054,7 @@
 		{
 			"name": "Devoted Missionary",
 			"source": "DoDk",
+			"page": 246,
 			"skillProficiencies": [
 				{
 					"choose": {
@@ -10117,6 +10119,7 @@
 		{
 			"name": "Gate Warden",
 			"source": "SatO",
+			"page": 7,
 			"prerequisite": [
 				{
 					"campaign": [
@@ -16487,6 +16490,7 @@
 		{
 			"name": "Mageborn",
 			"source": "DoDk",
+			"page": 245,
 			"prerequisite": [
 				{
 					"level": {
@@ -19231,6 +19235,7 @@
 		{
 			"name": "Planar Philosopher",
 			"source": "SatO",
+			"page": 8,
 			"prerequisite": [
 				{
 					"campaign": [
@@ -20833,8 +20838,12 @@
 			"page": 57,
 			"feats": [
 				{
-					"lucky|phb": true,
-					"magic initiate|phb": true,
+					"lucky|phb": true
+				},
+				{
+					"magic initiate|phb": true
+				},
+				{
 					"skilled|phb": true
 				}
 			],
@@ -21266,8 +21275,12 @@
 			"page": 58,
 			"feats": [
 				{
-					"alert|phb": true,
-					"skilled|phb": true,
+					"alert|phb": true
+				},
+				{
+					"skilled|phb": true
+				},
+				{
 					"tough|phb": true
 				}
 			],
@@ -24954,6 +24967,7 @@
 		{
 			"name": "Survivor",
 			"source": "DoDk",
+			"page": 247,
 			"skillProficiencies": [
 				{
 					"choose": {
@@ -25742,6 +25756,7 @@
 		{
 			"name": "Treasure Seeker",
 			"source": "DoDk",
+			"page": 248,
 			"skillProficiencies": [
 				{
 					"investigation": true,
@@ -26551,6 +26566,7 @@
 		{
 			"name": "Variant Continental Nobility (Last of the Line)",
 			"source": "DoDk",
+			"page": 245,
 			"_copy": {
 				"name": "Continental Nobility",
 				"source": "DoDk"
@@ -26587,6 +26603,7 @@
 		{
 			"name": "Variant Devoted Missionary (Stargazer)",
 			"source": "DoDk",
+			"page": 247,
 			"_copy": {
 				"name": "Devoted Missionary",
 				"source": "DoDk"
@@ -26713,6 +26730,7 @@
 		{
 			"name": "Variant Mageborn (Malfeasant Mage)",
 			"source": "DoDk",
+			"page": 246,
 			"_copy": {
 				"name": "Mageborn",
 				"source": "DoDk"
@@ -26817,6 +26835,7 @@
 		{
 			"name": "Variant Survivor (Veteran of the Civil War)",
 			"source": "DoDk",
+			"page": 248,
 			"_copy": {
 				"name": "Survivor",
 				"source": "DoDk"
@@ -26826,6 +26845,7 @@
 		{
 			"name": "Variant Treasure Seeker (Soldier of Fortune)",
 			"source": "DoDk",
+			"page": 249,
 			"_copy": {
 				"name": "Treasure Seeker",
 				"source": "DoDk"

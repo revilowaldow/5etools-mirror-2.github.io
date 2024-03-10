@@ -8,30 +8,31 @@ import "../js/utils-dataloader.js";
 import "../js/hist.js";
 
 class GenTables {
-	_doLoadAdventureData () {
+	static BOOK_BLOCKLIST = {};
+	static ADVENTURE_BLOCKLIST = {};
+
+	_getAdventureData () {
 		return ut.readJson(`./data/adventures.json`).adventure
 			.map(idx => {
-				if (!GenTables.ADVENTURE_BLOCKLIST[idx.id]) {
-					return {
-						adventure: idx,
-						adventureData: JSON.parse(fs.readFileSync(`./data/adventure/adventure-${idx.id.toLowerCase()}.json`, "utf-8")),
-					};
-				}
+				if (GenTables.ADVENTURE_BLOCKLIST[idx.id]) return null;
+				return {
+					adventure: idx,
+					adventureData: JSON.parse(fs.readFileSync(`./data/adventure/adventure-${idx.id.toLowerCase()}.json`, "utf-8")),
+				};
 			})
-			.filter(it => it);
+			.filter(Boolean);
 	}
 
-	_doLoadBookData () {
+	_getBookData () {
 		return ut.readJson(`./data/books.json`).book
 			.map(idx => {
-				if (!GenTables.BOOK_BLOCKLIST[idx.id]) {
-					return {
-						book: idx,
-						bookData: JSON.parse(fs.readFileSync(`./data/book/book-${idx.id.toLowerCase()}.json`, "utf-8")),
-					};
-				}
+				if (GenTables.BOOK_BLOCKLIST[idx.id]) return null;
+				return {
+					book: idx,
+					bookData: JSON.parse(fs.readFileSync(`./data/book/book-${idx.id.toLowerCase()}.json`, "utf-8")),
+				};
 			})
-			.filter(it => it);
+			.filter(Boolean);
 	}
 
 	async pRun () {
@@ -50,41 +51,40 @@ class GenTables {
 	}
 
 	_addBookAndAdventureData (output) {
-		const advDocs = this._doLoadAdventureData();
-		const bookDocs = this._doLoadBookData();
-
-		advDocs.forEach(doc => {
-			const {
-				table: foundTables,
-				tableGroup: foundTableGroups,
-			} = UtilGenTables.getAdventureBookTables(
-				doc,
-				{
+		[
+			{
+				data: this._getAdventureData(),
+				options: {
 					headProp: "adventure",
 					bodyProp: "adventureData",
 					isRequireIncludes: true,
 				},
-			);
-
-			output.tables.push(...foundTables);
-			output.tableGroups.push(...foundTableGroups);
-		});
-
-		bookDocs.forEach(doc => {
-			const {
-				table: foundTables,
-				tableGroup: foundTableGroups,
-			} = UtilGenTables.getAdventureBookTables(
-				doc,
-				{
+			},
+			{
+				data: this._getBookData(),
+				options: {
 					headProp: "book",
 					bodyProp: "bookData",
 				},
-			);
+			},
+		]
+			.forEach(meta => {
+				meta.data
+					.forEach(doc => {
+						const {
+							table: foundTables,
+							tableGroup: foundTableGroups,
+						} = UtilGenTables.getAdventureBookTables(
+							doc,
+							{
+								...meta.options,
+							},
+						);
 
-			output.tables.push(...foundTables);
-			output.tableGroups.push(...foundTableGroups);
-		});
+						output.tables.push(...foundTables);
+						output.tableGroups.push(...foundTableGroups);
+					});
+			});
 	}
 
 	async _pAddClassData (output) {
@@ -93,13 +93,15 @@ class GenTables {
 		ut.unpatchLoadJson();
 
 		classData.class.forEach(cls => {
-			const {table: foundTables} = UtilGenTables.getClassTables(cls);
+			const {table: foundTables, tableGroup: foundTableGroups} = UtilGenTables.getClassTables(cls);
 			output.tables.push(...foundTables);
+			output.tableGroups.push(...foundTableGroups);
 		});
 
 		classData.subclass.forEach(sc => {
-			const {table: foundTables} = UtilGenTables.getSubclassTables(sc);
+			const {table: foundTables, tableGroup: foundTableGroups} = UtilGenTables.getSubclassTables(sc);
 			output.tables.push(...foundTables);
+			output.tableGroups.push(...foundTableGroups);
 		});
 	}
 
@@ -188,8 +190,6 @@ class GenTables {
 
 	// -----------------------
 }
-GenTables.BOOK_BLOCKLIST = {};
-GenTables.ADVENTURE_BLOCKLIST = {};
 
 const generator = new GenTables();
 export default generator.pRun();

@@ -813,7 +813,8 @@
 			"classSource": "TCE",
 			"level": 1,
 			"entries": [
-				"At 1st level, you learn how to invest a spark of magic into mundane objects. To use this ability, you must have {@item thieves' tools|PHB} or {@item artisan's tools|PHB} in hand. You then touch a Tiny nonmagical object as an action and give it one of the following magical properties of your choice:",
+				"{@i 1st-level artificer feature}",
+				"You've learned how to invest a spark of magic into mundane objects. To use this ability, you must have {@item thieves' tools|PHB} or {@item artisan's tools|PHB} in hand. You then touch a Tiny nonmagical object as an action and give it one of the following magical properties of your choice:",
 				{
 					"type": "list",
 					"items": [
@@ -858,7 +859,8 @@
 			"classSource": "TCE",
 			"level": 1,
 			"entries": [
-				"You have studied the workings of magic and how to channel it through objects. As a result, you have gained the ability to cast spells. To observers, you don't appear to be casting spells in a conventional way; you look as if you're producing wonders using mundane items or outlandish inventions.",
+				"{@i 1st-level artificer feature}",
+				"You've studied the workings of magic and how to cast spells, channeling the magic through objects. To observers, you don't appear to be casting spells in a conventional way; you appear to produce wonders from mundane items and outlandish inventions.",
 				{
 					"type": "entries",
 					"name": "Tools Required",
@@ -938,7 +940,8 @@
 			"classSource": "TCE",
 			"level": 2,
 			"entries": [
-				"At 2nd level, you gain the ability to imbue mundane items with certain magical infusions. The magic items you create with this feature are effectively prototypes of permanent items.",
+				"{@i 2nd-level artificer feature}",
+				"You've gained the ability to imbue mundane items with certain magical infusions, turning those objects into magic items.",
 				{
 					"type": "refClassFeature",
 					"classFeature": "Infusions Known|Artificer|TCE|2"
@@ -998,7 +1001,8 @@
 			"classSource": "TCE",
 			"level": 3,
 			"entries": [
-				"At 3rd level, you choose the type of specialist you are, each of which is detailed at the end of the class's description. Your choice grants you features at 5th level and again at 9th and 15th level."
+				"{@i 3rd-level artificer feature}",
+				"Choose the type of specialist you are, each of which is detailed at the end of the class's description. Your choice grants you features at 5th level and again at 9th and 15th level."
 			]
 		},
 		{
@@ -1015,7 +1019,8 @@
 			"classSource": "TCE",
 			"level": 3,
 			"entries": [
-				"At 3rd level, you learn how to produce exactly the tool you need: with {@item thieves' tools|PHB} or {@item artisan's tools|PHB} in hand, you can magically create one set of {@item artisan's tools|PHB} in an unoccupied space within 5 feet of you. This creation requires 1 hour of uninterrupted work, which can coincide with a short or long rest. Though the product of magic, the tools are nonmagical, and they vanish when you use this feature again."
+				"{@i 3rd-level artificer feature}",
+				"You've learned how to produce exactly the tool you need: with {@item thieves' tools|PHB} or {@item artisan's tools|PHB} in hand, you can magically create one set of {@item artisan's tools|PHB} in an unoccupied space within 5 feet of you. This creation requires 1 hour of uninterrupted work, which can coincide with a short or long rest. Though the product of magic, the tools are nonmagical, and they vanish when you use this feature again."
 			]
 		},
 		{
@@ -1032,6 +1037,7 @@
 			"classSource": "TCE",
 			"level": 4,
 			"entries": [
+				"{@i 4th-level artificer feature}",
 				"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
 			]
@@ -1050,7 +1056,8 @@
 			"classSource": "TCE",
 			"level": 5,
 			"entries": [
-				"At 5th level, you gain a feature granted by your Artificer Specialist choice."
+				"{@i 5th-level artificer feature}",
+				"You gain a feature granted by your Artificer Specialist choice."
 			]
 		},
 		{
@@ -1067,7 +1074,8 @@
 			"classSource": "TCE",
 			"level": 6,
 			"entries": [
-				"Starting at 6th level, your proficiency bonus is doubled for any ability check you make that uses your proficiency with a tool."
+				"{@i 6th-level artificer feature}",
+				"Your proficiency bonus is now doubled for any ability check you make that uses your proficiency with a tool."
 			]
 		},
 		{
@@ -1084,7 +1092,8 @@
 			"classSource": "TCE",
 			"level": 7,
 			"entries": [
-				"Starting at 7th level, you gain the ability to come up with solutions under pressure. When you or another creature you can see within 30 feet of you makes an ability check or a saving throw, you can use your reaction to add your Intelligence modifier to the roll.",
+				"{@i 7th-level artificer feature}",
+				"You've gained the ability to come up with solutions under pressure. When you or another creature you can see within 30 feet of you makes an ability check or a saving throw, you can use your reaction to add your Intelligence modifier to the roll.",
 				"You can use this feature a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a long rest."
 			]
 		},
@@ -1102,6 +1111,7 @@
 			"classSource": "TCE",
 			"level": 8,
 			"entries": [
+				"{@i 8th-level artificer feature}",
 				"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
 			]
@@ -1120,7 +1130,8 @@
 			"classSource": "TCE",
 			"level": 9,
 			"entries": [
-				"At 9th level, you gain a feature granted by your Artificer Specialist choice."
+				"{@i 9th-level artificer feature}",
+				"You gain a feature granted by your Artificer Specialist choice."
 			]
 		},
 		{
@@ -1137,7 +1148,8 @@
 			"classSource": "TCE",
 			"level": 10,
 			"entries": [
-				"When you reach 10th level, you achieve a profound understanding of how to use and make magic items:",
+				"{@i 10th-level artificer feature}",
+				"You've achieved a profound understanding of how to use and make magic items:",
 				{
 					"type": "list",
 					"items": [
@@ -1161,7 +1173,8 @@
 			"classSource": "TCE",
 			"level": 11,
 			"entries": [
-				"At 11th level, you learn how to store a spell in an object. Whenever you finish a long rest, you can touch one {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon} or one item that you can use as a spellcasting focus, and you store a spell in it, choosing a 1st- or 2nd-level spell from the {@filter artificer spell list|spells|class=Artificer|cast time=action|level=1;2} that requires 1 action to cast (you needn't have it prepared).",
+				"{@i 11th-level artificer feature}",
+				"You can now store a spell in an object. Whenever you finish a long rest, you can touch one {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon} or one item that you can use as a spellcasting focus, and you store a spell in it, choosing a 1st- or 2nd-level spell from the {@filter artificer spell list|spells|class=Artificer|cast time=action|level=1;2} that requires 1 action to cast (you needn't have it prepared).",
 				"While holding the object, a creature can take an action to produce the spell's effect from it, using your spellcasting ability modifier. If the spell requires {@status concentration}, the creature must concentrate. The spell stays in the object until it's been used a number of times equal to twice your Intelligence modifier (minimum of twice) or until you use this feature again to store a spell in an object."
 			]
 		},
@@ -1179,6 +1192,7 @@
 			"classSource": "TCE",
 			"level": 12,
 			"entries": [
+				"{@i 12th-level artificer feature}",
 				"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
 			]
@@ -1197,7 +1211,8 @@
 			"classSource": "TCE",
 			"level": 14,
 			"entries": [
-				"At 14th level, your skill with magic items deepens more:",
+				"{@i 14th-level artificer feature}",
+				"Your skill with magic items deepens:",
 				{
 					"type": "list",
 					"items": [
@@ -1221,7 +1236,8 @@
 			"classSource": "TCE",
 			"level": 15,
 			"entries": [
-				"At 15th level, you gain a feature granted by your Artificer Specialist choice."
+				"{@i 15th-level artificer feature}",
+				"You gain a feature granted by your Artificer Specialist choice."
 			]
 		},
 		{
@@ -1238,6 +1254,7 @@
 			"classSource": "TCE",
 			"level": 16,
 			"entries": [
+				"{@i 16th-level artificer feature}",
 				"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
 			]
@@ -1256,7 +1273,8 @@
 			"classSource": "TCE",
 			"level": 18,
 			"entries": [
-				"Starting at 18th level, you can attune to up to six magic items at once."
+				"{@i 18th-level artificer feature}",
+				"You can now attune to up to six magic items at once."
 			]
 		},
 		{
@@ -1273,6 +1291,7 @@
 			"classSource": "TCE",
 			"level": 19,
 			"entries": [
+				"{@i 19th-level artificer feature}",
 				"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
 			]
@@ -1291,7 +1310,8 @@
 			"classSource": "TCE",
 			"level": 20,
 			"entries": [
-				"At 20th level, you develop a mystical connection to your magic items, which you can draw on for protection:",
+				"{@i 20th-level artificer feature}",
+				"You have developed a mystical connection to your magic items, which you can draw on for protection:",
 				{
 					"type": "list",
 					"items": [

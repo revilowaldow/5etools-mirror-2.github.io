@@ -1,15 +1,15 @@
-@import "includes/vars";
+@use "includes/vars";
 
 .lst__ {
 	&item-group-header {
 		font-size: 14px;
-		background: $rgb-bg--alt;
+		background: vars.$rgb-bg--alt;
 	}
 }
 
 .night-mode .lst__ {
 	&item-group-header {
-		background: $rgb-bg--alt-night;
+		background: vars.$rgb-bg--alt-night;
 	}
 }
 

@@ -1359,7 +1359,7 @@ class ListPage {
 		$btnReset.before($btnHideSearch);
 
 		const $btnShowSearch = $(`<button class="btn btn-block btn-default btn-xs" type="button">Show List</button>`);
-		const $wrpBtnShowSearch = $$`<div class="col-12 mb-1 ve-hidden">${$btnShowSearch}</div>`.prependTo($wrpContent);
+		const $wrpBtnShowSearch = $$`<div class="ve-col-12 mb-1 ve-hidden">${$btnShowSearch}</div>`.prependTo($wrpContent);
 
 		$btnHideSearch.click(() => {
 			$wrpList.hideVe();

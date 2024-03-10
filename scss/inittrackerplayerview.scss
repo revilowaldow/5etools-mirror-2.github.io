@@ -6,7 +6,7 @@
 	display: none !important;
 }
 
-@media (max-width: 991px) {
+@media (width <= 991px) {
 	.viewport-wrapper {
 		bottom: 0;
 		height: 100vh;

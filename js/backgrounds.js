@@ -5,12 +5,12 @@ class BackgroundSublistManager extends SublistManager {
 		return [
 			new SublistCellTemplate({
 				name: "Name",
-				css: "bold col-4 pl-0",
+				css: "bold ve-col-4 pl-0",
 				colStyle: "",
 			}),
 			new SublistCellTemplate({
 				name: "Skills",
-				css: "col-8 pr-0",
+				css: "ve-col-8 pr-0",
 				colStyle: "",
 			}),
 		];
@@ -80,9 +80,9 @@ class BackgroundPage extends ListPage {
 		const source = Parser.sourceJsonToAbv(bg.source);
 
 		eleLi.innerHTML = `<a href="#${hash}" class="lst--border lst__row-inner">
-			<span class="bold col-4 pl-0">${name}</span>
-			<span class="col-6">${bg._skillDisplay}</span>
-			<span class="col-2 ve-text-center ${Parser.sourceJsonToColor(bg.source)} pr-0" title="${Parser.sourceJsonToFull(bg.source)}" ${Parser.sourceJsonToStyle(bg.source)}>${source}</span>
+			<span class="bold ve-col-4 pl-0">${name}</span>
+			<span class="ve-col-6">${bg._skillDisplay}</span>
+			<span class="ve-col-2 ve-text-center ${Parser.sourceJsonToColor(bg.source)} pr-0" title="${Parser.sourceJsonToFull(bg.source)}" ${Parser.sourceJsonToStyle(bg.source)}>${source}</span>
 		</a>`;
 
 		const listItem = new ListItem(

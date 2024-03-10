@@ -5,12 +5,12 @@ class ConditionsDiseasesSublistManager extends SublistManager {
 		return [
 			new SublistCellTemplate({
 				name: "Type",
-				css: "col-2 pl-0 ve-text-center",
+				css: "ve-col-2 pl-0 ve-text-center",
 				colStyle: "text-center",
 			}),
 			new SublistCellTemplate({
 				name: "Name",
-				css: "bold col-10 pr-0",
+				css: "bold ve-col-10 pr-0",
 				colStyle: "",
 			}),
 		];
@@ -73,10 +73,10 @@ class ConditionsDiseasesPage extends ListPage {
 		const hash = UrlUtil.autoEncodeHash(it);
 
 		eleLi.innerHTML = `<a href="#${hash}" class="lst--border lst__row-inner">
-			<span class="col-0-3 px-0 ve-flex-vh-center lst__btn-toggle-expand ve-self-flex-stretch">[+]</span>
-			<span class="col-3 ve-text-center">${PageFilterConditionsDiseases.getDisplayProp(it.__prop)}</span>
-			<span class="bold col-6-7 px-1">${it.name}</span>
-			<span class="col-2 ve-text-center ${Parser.sourceJsonToColor(it.source)} pr-0" title="${Parser.sourceJsonToFull(it.source)}" ${Parser.sourceJsonToStyle(it.source)}>${source}</span>
+			<span class="ve-col-0-3 px-0 ve-flex-vh-center lst__btn-toggle-expand ve-self-flex-stretch">[+]</span>
+			<span class="ve-col-3 ve-text-center">${PageFilterConditionsDiseases.getDisplayProp(it.__prop)}</span>
+			<span class="bold ve-col-6-7 px-1">${it.name}</span>
+			<span class="ve-col-2 ve-text-center ${Parser.sourceJsonToColor(it.source)} pr-0" title="${Parser.sourceJsonToFull(it.source)}" ${Parser.sourceJsonToStyle(it.source)}>${source}</span>
 		</a>
 		<div class="ve-flex ve-hidden relative lst__wrp-preview">
 			<div class="vr-0 absolute lst__vr-preview"></div>

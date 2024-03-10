@@ -4015,6 +4015,193 @@
 				}
 			],
 			"id": "06b"
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Publisher",
+							"entries": [
+								"Aaron Wehner"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Project Editors",
+							"entries": [
+								"Shaida Boroumand and Claire Yee"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Production Editors",
+							"entries": [
+								"Doug Ogan and Natalie Blachere"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Art Director and Designer",
+							"entries": [
+								"Kelly Booth"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Photo Director",
+							"entries": [
+								"Emma Campion"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Print Production Designers",
+							"entries": [
+								"Mari Gill and Faith Hague"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Print Production Manager",
+							"entries": [
+								"Dan Myers"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Print Prepress Color Manager",
+							"entries": [
+								"Jane Chinn"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Photo Retoucher",
+							"entries": [
+								"Tamara White"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Photo Assistant",
+							"entries": [
+								"Jeff Johnson"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Location",
+							"entries": [
+								"Castello di Amorosa Winery"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Food Stylist",
+							"entries": [
+								"Nicole Twohy"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Food Stylist Assistants",
+							"entries": [
+								"Genesis Vallejo and Allison Fellion"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Prop Stylist",
+							"entries": [
+								"Glenn Jenkins"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Prop Stylist Assistants",
+							"entries": [
+								"Zach Wine and Cindy Chesney"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Copyeditor",
+							"entries": [
+								"Deborah Kops"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Proofreader",
+							"entries": [
+								"Linda Bouchard"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Indexer",
+							"entries": [
+								"Ken DellaPenta"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Publicist",
+							"entries": [
+								"Lauren Ealy"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Marketer",
+							"entries": [
+								"Ashleigh Heaton"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Wizards of the Coast Team",
+							"entries": [
+								"Paul Morrissey"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Illustrators",
+							"entries": [
+								"Conceptopolis, LLC"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Character Portrait Illustrator",
+							"entries": [
+								"Simon Taylor"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Decorative Art Designers",
+							"entries": [
+								"Marisa Kwek and Kelly Booth"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Ebook Production Manager",
+							"entries": [
+								"Jessica Arnold"
+							]
+						}
+					]
+				}
+			]
 		}
 	]
 }

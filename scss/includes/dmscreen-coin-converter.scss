@@ -1,4 +1,4 @@
-@import "vars";
+@use "vars";
 
 .dm-money {
 	width: 100%;
@@ -13,7 +13,7 @@
 		&ctrl {
 			margin-top: 6px;
 			padding-top: 3px;
-			border-top: 1px solid $rgb-border-grey;
+			border-top: 1px solid vars.$rgb-border-grey;
 			flex-shrink: 0;
 		}
 
@@ -74,7 +74,7 @@
 .night-mode .dm-money {
 	&__ {
 		&ctrl {
-			border-color: $rgb-border-grey--night;
+			border-color: vars.$rgb-border-grey--night;
 		}
 	}
 }

@@ -1,7 +1,7 @@
-@import "vars";
+@use "vars";
 
 .night-mode .best-ecgen__ {
 	&wrp {
-		background: $rgb-bg--night;
+		background: vars.$rgb-bg--night;
 	}
 }

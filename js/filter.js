@@ -106,7 +106,7 @@ globalThis.PageFilter = PageFilter;
 
 class ModalFilter {
 	static _$getFilterColumnHeaders (btnMeta) {
-		return btnMeta.map((it, i) => $(`<button class="col-${it.width} ${i === 0 ? "pl-0" : i === btnMeta.length ? "pr-0" : ""} ${it.disabled ? "" : "sort"} btn btn-default btn-xs" ${it.disabled ? "" : `data-sort="${it.sort}"`} ${it.title ? `title="${it.title}"` : ""} ${it.disabled ? "disabled" : ""}>${it.text}</button>`));
+		return btnMeta.map((it, i) => $(`<button class="ve-col-${it.width} ${i === 0 ? "pl-0" : i === btnMeta.length ? "pr-0" : ""} ${it.disabled ? "" : "sort"} btn btn-default btn-xs" ${it.disabled ? "" : `data-sort="${it.sort}"`} ${it.title ? `title="${it.title}"` : ""} ${it.disabled ? "disabled" : ""}>${it.text}</button>`));
 	}
 
 	/**
@@ -136,7 +136,7 @@ class ModalFilter {
 	_$getWrpList () { return $(`<div class="list ui-list__wrp overflow-x-hidden overflow-y-auto h-100 min-h-0"></div>`); }
 
 	_$getColumnHeaderPreviewAll (opts) {
-		return $(`<button class="btn btn-default btn-xs ${opts.isBuildUi ? "col-1" : "col-0-5"}">${ListUiUtil.HTML_GLYPHICON_EXPAND}</button>`);
+		return $(`<button class="btn btn-default btn-xs ${opts.isBuildUi ? "ve-col-1" : "ve-col-0-5"}">${ListUiUtil.HTML_GLYPHICON_EXPAND}</button>`);
 	}
 
 	/**
@@ -172,11 +172,11 @@ class ModalFilter {
 
 		const $wrpFormHeaders = $(`<div class="input-group input-group--bottom ve-flex no-shrink"></div>`);
 		const $cbSelAll = opts.isBuildUi || this._isRadio ? null : $(`<input type="checkbox">`);
-		const $btnSendAllToRight = opts.isBuildUi ? $(`<button class="btn btn-xxs btn-default col-1" title="Add All"><span class="glyphicon glyphicon-arrow-right"></span></button>`) : null;
+		const $btnSendAllToRight = opts.isBuildUi ? $(`<button class="btn btn-xxs btn-default ve-col-1" title="Add All"><span class="glyphicon glyphicon-arrow-right"></span></button>`) : null;
 
 		if (!opts.isBuildUi) {
-			if (this._isRadio) $wrpFormHeaders.append(`<label class="btn btn-default btn-xs col-0-5 ve-flex-vh-center" disabled></label>`);
-			else $$`<label class="btn btn-default btn-xs col-0-5 ve-flex-vh-center">${$cbSelAll}</label>`.appendTo($wrpFormHeaders);
+			if (this._isRadio) $wrpFormHeaders.append(`<label class="btn btn-default btn-xs ve-col-0-5 ve-flex-vh-center" disabled></label>`);
+			else $$`<label class="btn btn-default btn-xs ve-col-0-5 ve-flex-vh-center">${$cbSelAll}</label>`.appendTo($wrpFormHeaders);
 		}
 
 		const $btnTogglePreviewAll = this._$getColumnHeaderPreviewAll(opts)
@@ -2190,15 +2190,15 @@ class Filter extends FilterBase {
 	}
 
 	_doRenderPills_doRenderWrpGroup_getDivider (group) {
-		const eleHeader = this._doRenderPills_doRenderWrpGroup_getDividerHeader(group);
 		const eleHr = this._doRenderPills_doRenderWrpGroup_getDividerHr(group);
+		const elesHeader = this._doRenderPills_doRenderWrpGroup_getDividerHeaders(group);
 
 		return e_({
 			tag: "div",
 			clazz: "ve-flex-col w-100",
 			children: [
 				eleHr,
-				eleHeader,
+				...elesHeader,
 			]
 				.filter(Boolean),
 		});
@@ -2206,15 +2206,17 @@ class Filter extends FilterBase {
 
 	_doRenderPills_doRenderWrpGroup_getDividerHr (group) { return e_({tag: "hr", clazz: `fltr__dropdown-divider--sub hr-2 mx-3`}); }
 
-	_doRenderPills_doRenderWrpGroup_getDividerHeader (group) {
+	_doRenderPills_doRenderWrpGroup_getDividerHeaders (group) {
 		const groupName = this._groupNameFn?.(group);
-		if (!groupName) return null;
+		if (!groupName) return [];
 
-		return e_({
-			tag: "div",
-			clazz: `fltr__divider-header ve-muted italic ve-small`,
-			text: groupName,
-		});
+		return [
+			e_({
+				tag: "div",
+				clazz: `fltr__divider-header ve-muted italic ve-small`,
+				text: groupName,
+			}),
+		];
 	}
 
 	_doRenderPills_doRenderWrpGroup_getWrpPillsSub () { return e_({tag: "div", clazz: `fltr__wrp-pills--sub fltr__container-pills`}); }
@@ -3104,15 +3106,15 @@ class SourceFilter extends Filter {
 		return [ent.source].concat(otherSourcesFilt.map(src => new SourceFilterItem({item: src.source, isIgnoreRed: true, isOtherSource: true})));
 	}
 
-	_doRenderPills_doRenderWrpGroup_getDividerHeader (group) {
+	_doRenderPills_doRenderWrpGroup_getDividerHeaders (group) {
 		switch (group) {
-			case SourceUtil.FILTER_GROUP_NON_STANDARD: return this._doRenderPills_doRenderWrpGroup_getDividerHeader_groupNonStandard(group);
-			case SourceUtil.FILTER_GROUP_HOMEBREW: return this._doRenderPills_doRenderWrpGroup_getDividerHeader_groupBrew(group);
-			default: return super._doRenderPills_doRenderWrpGroup_getDividerHeader(group);
+			case SourceUtil.FILTER_GROUP_NON_STANDARD: return this._doRenderPills_doRenderWrpGroup_getDividerHeaders_groupNonStandard(group);
+			case SourceUtil.FILTER_GROUP_HOMEBREW: return this._doRenderPills_doRenderWrpGroup_getDividerHeaders_groupBrew(group);
+			default: return super._doRenderPills_doRenderWrpGroup_getDividerHeaders(group);
 		}
 	}
 
-	_doRenderPills_doRenderWrpGroup_getDividerHeader_groupNonStandard (group) {
+	_doRenderPills_doRenderWrpGroup_getDividerHeaders_groupNonStandard (group) {
 		let dates = [];
 		const comp = BaseComponent.fromObject({
 			min: 0,
@@ -3234,25 +3236,31 @@ class SourceFilter extends Filter {
 			],
 		});
 
-		return e_({
-			tag: "div",
-			clazz: `split-v-center w-100`,
-			children: [
-				super._doRenderPills_doRenderWrpGroup_getDividerHeader(group) || e_({clazz: "div"}),
-				e_({
-					tag: "div",
-					clazz: `mb-1 ve-flex-h-right`,
-					children: [
-						grpBtnsActive,
-						grpBtnsInactive,
-					],
-				}),
-				wrpWrpSlider,
-			],
-		});
+		const elesDividerHeaders = super._doRenderPills_doRenderWrpGroup_getDividerHeaders(group);
+		if (!elesDividerHeaders.length) elesDividerHeaders.push(e_({clazz: "div"}));
+		if (elesDividerHeaders.length > 1) throw new Error("Unimplemented!");
+
+		return [
+			e_({
+				tag: "div",
+				clazz: `split-v-center w-100`,
+				children: [
+					...elesDividerHeaders,
+					e_({
+						tag: "div",
+						clazz: `mb-1 ve-flex-h-right`,
+						children: [
+							grpBtnsActive,
+							grpBtnsInactive,
+						],
+					}),
+				],
+			}),
+			wrpWrpSlider,
+		];
 	}
 
-	_doRenderPills_doRenderWrpGroup_getDividerHeader_groupBrew (group) {
+	_doRenderPills_doRenderWrpGroup_getDividerHeaders_groupBrew (group) {
 		const btnClear = e_({
 			tag: "button",
 			clazz: `btn btn-xxs btn-default px-1`,
@@ -3266,26 +3274,32 @@ class SourceFilter extends Filter {
 			},
 		});
 
-		return e_({
-			tag: "div",
-			clazz: `split-v-center w-100`,
-			children: [
-				super._doRenderPills_doRenderWrpGroup_getDividerHeader(group) || e_({clazz: "div"}),
-				e_({
-					tag: "div",
-					clazz: `mb-1 ve-flex-h-right`,
-					children: [
-						e_({
-							tag: "div",
-							clazz: `ve-flex-v-center btn-group`,
-							children: [
-								btnClear,
-							],
-						}),
-					],
-				}),
-			],
-		});
+		const elesDividerHeaders = super._doRenderPills_doRenderWrpGroup_getDividerHeaders(group);
+		if (!elesDividerHeaders.length) elesDividerHeaders.push(e_({clazz: "div"}));
+		if (elesDividerHeaders.length > 1) throw new Error("Unimplemented!");
+
+		return [
+			e_({
+				tag: "div",
+				clazz: `split-v-center w-100`,
+				children: [
+					...elesDividerHeaders,
+					e_({
+						tag: "div",
+						clazz: `mb-1 ve-flex-h-right`,
+						children: [
+							e_({
+								tag: "div",
+								clazz: `ve-flex-v-center btn-group`,
+								children: [
+									btnClear,
+								],
+							}),
+						],
+					}),
+				],
+			}),
+		];
 	}
 
 	_toDisplay_getMappedEntryVal (entryVal) {

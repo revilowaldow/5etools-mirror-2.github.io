@@ -277,16 +277,16 @@ class ModalFilterRaces extends ModalFilter {
 		const source = Parser.sourceJsonToAbv(race.source);
 
 		eleRow.innerHTML = `<div class="w-100 ve-flex-vh-center lst--border veapp__list-row no-select lst__wrp-cells">
-			<div class="col-0-5 pl-0 ve-flex-vh-center">${this._isRadio ? `<input type="radio" name="radio" class="no-events">` : `<input type="checkbox" class="no-events">`}</div>
+			<div class="ve-col-0-5 pl-0 ve-flex-vh-center">${this._isRadio ? `<input type="radio" name="radio" class="no-events">` : `<input type="checkbox" class="no-events">`}</div>
 
-			<div class="col-0-5 px-1 ve-flex-vh-center">
+			<div class="ve-col-0-5 px-1 ve-flex-vh-center">
 				<div class="ui-list__btn-inline px-2" title="Toggle Preview (SHIFT to Toggle Info Preview)">[+]</div>
 			</div>
 
-			<div class="col-4 ${race._versionBase_isVersion ? "italic" : ""} ${this._getNameStyle()}">${race._versionBase_isVersion ? `<span class="px-3"></span>` : ""}${race.name}</div>
-			<div class="col-4">${ability.asTextShort}</div>
-			<div class="col-2 ve-text-center">${size}</div>
-			<div class="col-1 pr-0 ve-flex-h-center ${Parser.sourceJsonToColor(race.source)}" title="${Parser.sourceJsonToFull(race.source)}" ${Parser.sourceJsonToStyle(race.source)}>${source}${Parser.sourceJsonToMarkerHtml(race.source)}</div>
+			<div class="ve-col-4 ${race._versionBase_isVersion ? "italic" : ""} ${this._getNameStyle()}">${race._versionBase_isVersion ? `<span class="px-3"></span>` : ""}${race.name}</div>
+			<div class="ve-col-4">${ability.asTextShort}</div>
+			<div class="ve-col-2 ve-text-center">${size}</div>
+			<div class="ve-col-1 pr-0 ve-flex-h-center ${Parser.sourceJsonToColor(race.source)}" title="${Parser.sourceJsonToFull(race.source)}" ${Parser.sourceJsonToStyle(race.source)}>${source}${Parser.sourceJsonToMarkerHtml(race.source)}</div>
 		</div>`;
 
 		const btnShowHidePreview = eleRow.firstElementChild.children[1].firstElementChild;

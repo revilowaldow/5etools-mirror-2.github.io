@@ -130,7 +130,7 @@ class InitTrackerPlayerViewV1 {
 
 		$$(tabMeta.$wrpTab)`<div class="ve-flex-col initp__content px-2 py-3 min-h-0">
 			<div class="initp__initial row">
-				<div class="col-12">
+				<div class="ve-col-12">
 					<p>
 						The Player View is part of a peer-to-peer (i.e., serverless) system to allow players to connect to a DM's <a href="dmscreen.html">DM Screen</a> initiative tracker. As a player, the usage is as follows:
 					<ol>
@@ -145,14 +145,14 @@ class InitTrackerPlayerViewV1 {
 			<hr class="initp__initial">
 
 			<div class="initp__initial row w-100 ve-flex">
-				<div class="col-5 bold mr-4">Player Name</div>
-				<div class="col-5 bold">Server Token</div>
-				<div class="col-2 ve-text-center"></div>
+				<div class="ve-col-5 bold mr-4">Player Name</div>
+				<div class="ve-col-5 bold">Server Token</div>
+				<div class="ve-col-2 ve-text-center"></div>
 			</div>
 			<div class="initp__initial row w-100 ve-flex mb-4">
-				<div class="col-5 bold mr-4">${$iptPlayerName}</div>
-				<div class="col-5 bold">${$iptServerToken}</div>
-				<div class="col-2 ve-flex-vh-center">${$btnConnect}</div>
+				<div class="ve-col-5 bold mr-4">${$iptPlayerName}</div>
+				<div class="ve-col-5 bold">${$iptServerToken}</div>
+				<div class="ve-col-2 ve-flex-vh-center">${$btnConnect}</div>
 			</div>
 
 			<div class="initp__wrp_active">
@@ -235,7 +235,7 @@ class InitTrackerPlayerViewV0 {
 			${$dispWarning}
 
 			<div class="initp__initial ve-flex">
-				<div class="col-12">
+				<div class="ve-col-12">
 					<p>
 						The Player View is part of a peer-to-peer (i.e., serverless) system to allow players to connect to a DM's DM Screen initiative tracker. As a player, the usage is as follows:
 					<ol>
@@ -249,14 +249,14 @@ class InitTrackerPlayerViewV0 {
 			<hr class="initp__initial">
 
 			<div class="initp__initial ve-flex-h-center w-100">
-				<div class="col-5 bold">Server Token</div>
-				<div class="col-2 ve-text-center"></div>
-				<div class="col-5 bold">Client Token</div>
+				<div class="ve-col-5 bold">Server Token</div>
+				<div class="ve-col-2 ve-text-center"></div>
+				<div class="ve-col-5 bold">Client Token</div>
 			</div>
 			<div class="initp__initial ve-flex-h-center w-100 flex mb-4">
-				<div class="col-5 bold">${$iptServerToken}</div>
-				<div class="col-2 ve-flex-vh-center">${$btnGenClientToken}</div>
-				<div class="col-5 bold">${$iptClientToken}</div>
+				<div class="ve-col-5 bold">${$iptServerToken}</div>
+				<div class="ve-col-2 ve-flex-vh-center">${$btnGenClientToken}</div>
+				<div class="ve-col-5 bold">${$iptClientToken}</div>
 			</div>
 
 			<div class="initp__wrp_active">

@@ -14,22 +14,22 @@ class OptionalFeaturesSublistManager extends SublistManager {
 		return [
 			new SublistCellTemplate({
 				name: "Name",
-				css: "bold col-4 pl-0",
+				css: "bold ve-col-4 pl-0",
 				colStyle: "",
 			}),
 			new SublistCellTemplate({
 				name: "Type",
-				css: "col-2 ve-text-center",
+				css: "ve-col-2 ve-text-center",
 				colStyle: "text-center",
 			}),
 			new SublistCellTemplate({
 				name: "Prerequisite",
-				css: "col-4-5",
+				css: "ve-col-4-5",
 				colStyle: "",
 			}),
 			new SublistCellTemplate({
 				name: "Level",
-				css: "col-1-5 ve-text-center pr-0",
+				css: "ve-col-1-5 ve-text-center pr-0",
 				colStyle: "text-center",
 			}),
 		];
@@ -114,12 +114,12 @@ class OptionalFeaturesPage extends ListPage {
 		const level = Renderer.optionalfeature.getListPrerequisiteLevelText(it.prerequisite);
 
 		eleLi.innerHTML = `<a href="#${hash}" class="lst--border lst__row-inner">
-			<span class="col-0-3 px-0 ve-flex-vh-center lst__btn-toggle-expand ve-self-flex-stretch">[+]</span>
-			<span class="bold col-3 px-1">${it.name}</span>
-			<span class="col-1-5 ve-text-center" title="${it._dFeatureType}">${it._lFeatureType}</span>
-			<span class="col-4-7">${prerequisite}</span>
-			<span class="col-1 ve-text-center">${level}</span>
-			<span class="col-1-5 ${Parser.sourceJsonToColor(it.source)} ve-text-center pr-0" title="${Parser.sourceJsonToFull(it.source)}" ${Parser.sourceJsonToStyle(it.source)}>${source}</span>
+			<span class="ve-col-0-3 px-0 ve-flex-vh-center lst__btn-toggle-expand ve-self-flex-stretch">[+]</span>
+			<span class="bold ve-col-3 px-1">${it.name}</span>
+			<span class="ve-col-1-5 ve-text-center" title="${it._dFeatureType}">${it._lFeatureType}</span>
+			<span class="ve-col-4-7">${prerequisite}</span>
+			<span class="ve-col-1 ve-text-center">${level}</span>
+			<span class="ve-col-1-5 ${Parser.sourceJsonToColor(it.source)} ve-text-center pr-0" title="${Parser.sourceJsonToFull(it.source)}" ${Parser.sourceJsonToStyle(it.source)}>${source}</span>
 		</a>
 		<div class="ve-flex ve-hidden relative lst__wrp-preview">
 			<div class="vr-0 absolute lst__vr-preview"></div>

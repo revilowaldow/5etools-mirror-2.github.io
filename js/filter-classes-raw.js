@@ -757,9 +757,9 @@ class ModalFilterClasses extends ModalFilter {
 			const $wrpFormBottom = $(`<div class="w-100"></div>`);
 
 			const $wrpFormHeaders = $(`<div class="input-group input-group--bottom ve-flex no-shrink">
-				<div class="btn btn-default disabled col-1 pl-0"></div>
-				<button class="col-9 sort btn btn-default btn-xs" data-sort="name">Name</button>
-				<button class="col-2 pr-0 sort btn btn-default btn-xs ve-grow" data-sort="source">Source</button>
+				<div class="btn btn-default disabled ve-col-1 pl-0"></div>
+				<button class="ve-col-9 sort btn btn-default btn-xs" data-sort="name">Name</button>
+				<button class="ve-col-2 pr-0 sort btn btn-default btn-xs ve-grow" data-sort="source">Source</button>
 			</div>`);
 
 			const $wrpForm = $$`<div class="ve-flex-col w-100 mb-2">${$wrpFormTop}${$wrpFormBottom}${$wrpFormHeaders}</div>`;
@@ -954,9 +954,9 @@ class ModalFilterClasses extends ModalFilter {
 
 		const source = Parser.sourceJsonToAbv(cls.source);
 
-		eleLabel.innerHTML = `<div class="col-1 pl-0 ve-flex-vh-center"><div class="fltr-cls__tgl"></div></div>
-		<div class="bold col-9 ${cls._versionBase_isVersion ? "italic" : ""}">${cls._versionBase_isVersion ? `<span class="px-3"></span>` : ""}${cls.name}</div>
-		<div class="col-2 pr-0 ve-flex-h-center ${Parser.sourceJsonToColor(cls.source)}" title="${Parser.sourceJsonToFull(cls.source)}" ${Parser.sourceJsonToStyle(cls.source)}>${source}${Parser.sourceJsonToMarkerHtml(cls.source)}</div>`;
+		eleLabel.innerHTML = `<div class="ve-col-1 pl-0 ve-flex-vh-center"><div class="fltr-cls__tgl"></div></div>
+		<div class="bold ve-col-9 ${cls._versionBase_isVersion ? "italic" : ""}">${cls._versionBase_isVersion ? `<span class="px-3"></span>` : ""}${cls.name}</div>
+		<div class="ve-col-2 pr-0 ve-flex-h-center ${Parser.sourceJsonToColor(cls.source)}" title="${Parser.sourceJsonToFull(cls.source)}" ${Parser.sourceJsonToStyle(cls.source)}>${source}${Parser.sourceJsonToMarkerHtml(cls.source)}</div>`;
 
 		return new ListItem(
 			clsI,
@@ -978,9 +978,9 @@ class ModalFilterClasses extends ModalFilter {
 
 		const source = Parser.sourceJsonToAbv(sc.source);
 
-		eleLabel.innerHTML = `<div class="col-1 pl-0 ve-flex-vh-center"><div class="fltr-cls__tgl"></div></div>
-		<div class="col-9 pl-1 ve-flex-v-center ${sc._versionBase_isVersion ? "italic" : ""}">${sc._versionBase_isVersion ? `<span class="px-3"></span>` : ""}<span class="mx-3">\u2014</span> ${sc.name}</div>
-		<div class="col-2 pr-0 ve-flex-h-center ${Parser.sourceJsonToColor(sc.source)}" title="${Parser.sourceJsonToFull(sc.source)}" ${Parser.sourceJsonToStyle(sc.source)}>${source}${Parser.sourceJsonToMarkerHtml(sc.source)}</div>`;
+		eleLabel.innerHTML = `<div class="ve-col-1 pl-0 ve-flex-vh-center"><div class="fltr-cls__tgl"></div></div>
+		<div class="ve-col-9 pl-1 ve-flex-v-center ${sc._versionBase_isVersion ? "italic" : ""}">${sc._versionBase_isVersion ? `<span class="px-3"></span>` : ""}<span class="mx-3">\u2014</span> ${sc.name}</div>
+		<div class="ve-col-2 pr-0 ve-flex-h-center ${Parser.sourceJsonToColor(sc.source)}" title="${Parser.sourceJsonToFull(sc.source)}" ${Parser.sourceJsonToStyle(sc.source)}>${source}${Parser.sourceJsonToMarkerHtml(sc.source)}</div>`;
 
 		return new ListItem(
 			`${clsI}--${scI}`,

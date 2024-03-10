@@ -2,7 +2,7 @@
 
 // in deployment, `IS_DEPLOYED = "<version number>";` should be set below.
 globalThis.IS_DEPLOYED = undefined;
-globalThis.VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"1.200.0"/* 5ETOOLS_VERSION__CLOSE */;
+globalThis.VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"1.201.0"/* 5ETOOLS_VERSION__CLOSE */;
 globalThis.DEPLOYED_IMG_ROOT = undefined;
 // for the roll20 script to set
 globalThis.IS_VTT = false;
@@ -2683,7 +2683,7 @@ globalThis.UrlUtil = {
 	categoryToPage (category) { return UrlUtil.CAT_TO_PAGE[category]; },
 	categoryToHoverPage (category) { return UrlUtil.CAT_TO_HOVER_PAGE[category] || UrlUtil.categoryToPage(category); },
 
-	pageToDisplayPage (page) { return UrlUtil.PG_TO_NAME[page] || page; },
+	pageToDisplayPage (page) { return UrlUtil.PG_TO_NAME[page] || (page || "").replace(/\.html$/, ""); },
 
 	getFilename (url) { return url.slice(url.lastIndexOf("/") + 1); },
 
@@ -3127,6 +3127,14 @@ UrlUtil.SUBLIST_PAGES = {
 	[UrlUtil.PG_CHAR_CREATION_OPTIONS]: true,
 	[UrlUtil.PG_RECIPES]: true,
 	[UrlUtil.PG_DECKS]: true,
+};
+
+UrlUtil.FAUX_PAGES = {
+	[UrlUtil.PG_CLASS_SUBCLASS_FEATURES]: true,
+	[UrlUtil.PG_CREATURE_FEATURES]: true,
+	[UrlUtil.PG_VEHICLE_FEATURES]: true,
+	[UrlUtil.PG_OBJECT_FEATURES]: true,
+	[UrlUtil.PG_TRAP_FEATURES]: true,
 };
 
 UrlUtil.PAGE_TO_PROPS = {};
@@ -4252,8 +4260,9 @@ globalThis.DataUtil = {
 						default: throw new Error(`${msgPtFailed} Unknown variable "${m[1]}"`);
 					}
 				});
+				// TODO(Future) add option to format as bonus
 				// eslint-disable-next-line no-eval
-				copyTo[prop][modInfo.prop] = eval(toExec);
+				copyTo[prop][modInfo.prop] = eval(DataUtil.generic.variableResolver.getCleanMathExpression(toExec));
 			}
 
 			static _doMod_scalarAddProp ({copyTo, copyFrom, modInfo, msgPtFailed, prop}) {
@@ -4693,17 +4702,152 @@ globalThis.DataUtil = {
 		},
 
 		variableResolver: class {
-			static _getSize ({ent}) { return ent.size?.[0] || Parser.SZ_MEDIUM; }
+			/** @abstract */
+			static _ResolverBase = class {
+				mode;
 
-			static _SIZE_TO_MULT = {
-				[Parser.SZ_LARGE]: 2,
-				[Parser.SZ_HUGE]: 3,
-				[Parser.SZ_GARGANTUAN]: 4,
+				getResolved ({ent, msgPtFailed, detail}) {
+					this._doVerifyInput({ent, msgPtFailed, detail});
+					return this._getResolved({ent, detail});
+				}
+
+				_doVerifyInput ({msgPtFailed, detail}) { /* Implement as required */ }
+
+				/**
+				 * @abstract
+				 * @return {string}
+				 */
+				_getResolved ({ent, mode, detail}) { throw new Error("Unimplemented!"); }
+
+				getDisplayText ({msgPtFailed, detail}) {
+					this._doVerifyInput({msgPtFailed, detail});
+					return this._getDisplayText({detail});
+				}
+
+				/**
+				 * @abstract
+				 * @return {string}
+				 */
+				_getDisplayText ({detail}) { throw new Error("Unimplemented!"); }
+
+				/* -------------------------------------------- */
+
+				_getSize ({ent}) { return ent.size?.[0] || Parser.SZ_MEDIUM; }
+
+				_SIZE_TO_MULT = {
+					[Parser.SZ_LARGE]: 2,
+					[Parser.SZ_HUGE]: 3,
+					[Parser.SZ_GARGANTUAN]: 4,
+				};
+
+				_getSizeMult (size) { return this._SIZE_TO_MULT[size] ?? 1; }
 			};
 
-			static _getSizeMult (size) { return this._SIZE_TO_MULT[size] ?? 1; }
+			static _ResolverName = class extends this._ResolverBase {
+				mode = "name";
+				_getResolved ({ent, detail}) { return ent.name; }
+				_getDisplayText ({detail}) { return "(name)"; }
+			};
 
-			static _getCleanMathExpression (str) { return str.replace(/[^-+/*0-9.,]+/g, ""); }
+			static _ResolverShortName = class extends this._ResolverBase {
+				mode = "short_name";
+				_getResolved ({ent, detail}) { return Renderer.monster.getShortName(ent); }
+				_getDisplayText ({detail}) { return "(short name)"; }
+			};
+
+			static _ResolverTitleShortName = class extends this._ResolverBase {
+				mode = "title_short_name";
+				_getResolved ({ent, detail}) { return Renderer.monster.getShortName(ent, {isTitleCase: true}); }
+				_getDisplayText ({detail}) { return "(short title name)"; }
+			};
+
+			/** @abstract */
+			static _ResolverAbilityScore = class extends this._ResolverBase {
+				_doVerifyInput ({msgPtFailed, detail}) {
+					if (!Parser.ABIL_ABVS.includes(detail)) throw new Error(`${msgPtFailed ? `${msgPtFailed} ` : ""} Unknown ability score "${detail}"`);
+				}
+			};
+
+			static _ResolverDc = class extends this._ResolverAbilityScore {
+				mode = "dc";
+				_getResolved ({ent, detail}) { return 8 + Parser.getAbilityModNumber(Number(ent[detail])) + Parser.crToPb(ent.cr); }
+				_getDisplayText ({detail}) { return `(${detail.toUpperCase()} DC)`; }
+			};
+
+			static _ResolverSpellDc = class extends this._ResolverDc {
+				mode = "spell_dc";
+				_getDisplayText ({detail}) { return `(${detail.toUpperCase()} spellcasting DC)`; }
+			};
+
+			static _ResolverToHit = class extends this._ResolverAbilityScore {
+				mode = "to_hit";
+
+				_getResolved ({ent, detail}) {
+					const total = Parser.crToPb(ent.cr) + Parser.getAbilityModNumber(Number(ent[detail]));
+					return total >= 0 ? `+${total}` : total;
+				}
+
+				_getDisplayText ({detail}) { return `(${detail.toUpperCase()} to-hit)`; }
+			};
+
+			static _ResolverDamageMod = class extends this._ResolverAbilityScore {
+				mode = "damage_mod";
+
+				_getResolved ({ent, detail}) {
+					const total = Parser.getAbilityModNumber(Number(ent[detail]));
+					return total === 0 ? "" : total > 0 ? ` + ${total}` : ` - ${Math.abs(total)}`;
+				}
+
+				_getDisplayText ({detail}) { return `(${detail.toUpperCase()} damage modifier)`; }
+			};
+
+			static _ResolverDamageAvg = class extends this._ResolverBase {
+				mode = "damage_avg";
+
+				_getResolved ({ent, detail}) {
+					const replaced = detail
+						.replace(/\b(?<abil>str|dex|con|int|wis|cha)\b/gi, (...m) => Parser.getAbilityModNumber(Number(ent[m.last().abil])))
+						.replace(/\bsize_mult\b/g, () => this._getSizeMult(this._getSize({ent})));
+
+					// eslint-disable-next-line no-eval
+					return Math.floor(eval(DataUtil.generic.variableResolver.getCleanMathExpression(replaced)));
+				}
+
+				_getDisplayText ({detail}) { return "(damage average)"; } // TODO(Future) more specific
+			};
+
+			static _ResolverSizeMult = class extends this._ResolverBase {
+				mode = "size_mult";
+
+				_getResolved ({ent, detail}) {
+					const mult = this._getSizeMult(this._getSize({ent}));
+
+					if (!detail) return mult;
+
+					// eslint-disable-next-line no-eval
+					return Math.floor(eval(`${mult} * ${DataUtil.generic.variableResolver.getCleanMathExpression(detail)}`));
+				}
+
+				_getDisplayText ({detail}) { return "(size multiplier)"; } // TODO(Future) more specific
+			};
+
+			static _RESOLVERS = [
+				new this._ResolverName(),
+				new this._ResolverShortName(),
+				new this._ResolverTitleShortName(),
+				new this._ResolverDc(),
+				new this._ResolverSpellDc(),
+				new this._ResolverToHit(),
+				new this._ResolverDamageMod(),
+				new this._ResolverDamageAvg(),
+				new this._ResolverSizeMult(),
+			];
+
+			static _MODE_LOOKUP = (() => {
+				return Object.fromEntries(
+					this._RESOLVERS.map(resolver => [resolver.mode, resolver]),
+				);
+			})();
 
 			static _WALKER = null;
 			static resolve ({obj, ent, msgPtFailed = null}) {
@@ -4716,55 +4860,39 @@ globalThis.DataUtil = {
 							string: str => str.replace(/<\$(?<variable>[^$]+)\$>/g, (...m) => {
 								const [mode, detail] = m.last().variable.split("__");
 
-								switch (mode) {
-									case "name": return ent.name;
-									case "short_name":
-									case "title_short_name": {
-										return Renderer.monster.getShortName(ent, {isTitleCase: mode === "title_short_name"});
-									}
+								const resolver = this._MODE_LOOKUP[mode];
+								if (!resolver) return m[0];
 
-									case "dc":
-									case "spell_dc": {
-										if (!Parser.ABIL_ABVS.includes(detail)) throw new Error(`${msgPtFailed ? `${msgPtFailed} ` : ""} Unknown ability score "${detail}"`);
-										return 8 + Parser.getAbilityModNumber(Number(ent[detail])) + Parser.crToPb(ent.cr);
-									}
-
-									case "to_hit": {
-										if (!Parser.ABIL_ABVS.includes(detail)) throw new Error(`${msgPtFailed ? `${msgPtFailed} ` : ""} Unknown ability score "${detail}"`);
-										const total = Parser.crToPb(ent.cr) + Parser.getAbilityModNumber(Number(ent[detail]));
-										return total >= 0 ? `+${total}` : total;
-									}
-
-									case "damage_mod": {
-										if (!Parser.ABIL_ABVS.includes(detail)) throw new Error(`${msgPtFailed ? `${msgPtFailed} ` : ""} Unknown ability score "${detail}"`);
-										const total = Parser.getAbilityModNumber(Number(ent[detail]));
-										return total === 0 ? "" : total > 0 ? ` + ${total}` : ` - ${Math.abs(total)}`;
-									}
-
-									case "damage_avg": {
-										const replaced = detail
-											.replace(/\b(?<abil>str|dex|con|int|wis|cha)\b/gi, (...m) => Parser.getAbilityModNumber(Number(ent[m.last().abil])))
-											.replace(/\bsize_mult\b/g, () => this._getSizeMult(this._getSize({ent})));
-
-										// eslint-disable-next-line no-eval
-										return Math.floor(eval(this._getCleanMathExpression(replaced)));
-									}
-
-									case "size_mult": {
-										const mult = this._getSizeMult(this._getSize({ent}));
-
-										if (!detail) return mult;
-
-										// eslint-disable-next-line no-eval
-										return Math.floor(eval(`${mult} * ${this._getCleanMathExpression(detail)}`));
-									}
-
-									default: return m[0];
-								}
+								return resolver.getResolved({ent, msgPtFailed, detail});
 							}),
 						},
 					);
 			}
+
+			static getHumanReadable ({obj, msgPtFailed}) {
+				DataUtil.generic.variableResolver._WALKER ||= MiscUtil.getWalker();
+
+				return DataUtil.generic.variableResolver._WALKER
+					.walk(
+						obj,
+						{
+							string: str => this.getHumanReadableString(str, {msgPtFailed}),
+						},
+					);
+			}
+
+			static getHumanReadableString (str, {msgPtFailed = null} = {}) {
+				return str.replace(/<\$(?<variable>[^$]+)\$>/g, (...m) => {
+					const [mode, detail] = m.last().variable.split("__");
+
+					const resolver = this._MODE_LOOKUP[mode];
+					if (!resolver) return m[0];
+
+					return resolver.getDisplayText({msgPtFailed, detail});
+				});
+			}
+
+			static getCleanMathExpression (str) { return str.replace(/[^-+/*0-9.,]+/g, ""); }
 		},
 
 		getVersions (parent, {impl = null, isExternalApplicationIdentityOnly = false} = {}) {

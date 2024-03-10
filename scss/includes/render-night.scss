@@ -1,27 +1,27 @@
-@import "vars";
+@use "vars";
 
 .night-mode .rd {
 	&__ {
 		&h--0,
 		&h--1,
 		&h--2 {
-			color: $rgb-name-red--night;
+			color: vars.$rgb-name-red--night;
 		}
 
 		&h--1 {
-			border-bottom-color: $rgb-name-red--night;
+			border-bottom-color: vars.$rgb-name-red--night;
 		}
 
 		&h--4 {
-			color: $rgb-name-alt--night;
+			color: vars.$rgb-name-alt--night;
 		}
 
 		&h--3 {
-			color: $rgb-name-alt--night;
+			color: vars.$rgb-name-alt--night;
 		}
 
 		&-image-title-inner {
-			border-color: $rgb-border-grey--night;
+			border-color: vars.$rgb-border-grey--night;
 		}
 
 		&b-inset {
@@ -33,7 +33,7 @@
 		}
 
 		&b-data {
-			border-color: $rgb-border-grey--statblock-night;
+			border-color: vars.$rgb-border-grey--statblock-night;
 		}
 
 		&b-flow {
@@ -45,46 +45,46 @@
 		}
 
 		&stats-name-page {
-			color: $rgb-font--night;
+			color: vars.$rgb-font--night;
 		}
 
 		&highlight {
-			background-color: $rgb-bg-highlight--night;
-			color: $rgb-bg--night;
+			background-color: vars.$rgb-bg-highlight--night;
+			color: vars.$rgb-bg--night;
 		}
 	}
 
 	&-item__ {
 		&type-rarity-attunement {
-			color: $rgb-font--night;
+			color: vars.$rgb-font--night;
 		}
 	}
 
 	&-spell__ {
 		&level-school-ritual {
-			color: $rgb-font--night;
+			color: vars.$rgb-font--night;
 		}
 	}
 
 	&-ability-icon {
 		&__ {
 			&fill-primary {
-				fill: $rgb-font--night;
+				fill: vars.$rgb-font--night;
 			}
 
 			&fill-bg {
-				fill: $rgb-bg--night;
+				fill: vars.$rgb-bg--night;
 			}
 
 			&stroke-bg {
-				stroke: $rgb-bg--night;
+				stroke: vars.$rgb-bg--night;
 			}
 		}
 	}
 
 	&-homebrew__ {
 		&b {
-			background-color: $rgb-bg-homebrew--night;
+			background-color: vars.$rgb-bg-homebrew--night;
 		}
 
 		&disp-old-content {
@@ -92,7 +92,7 @@
 		}
 
 		&disp-inline {
-			background-color: $rgb-bg-homebrew--night;
+			background-color: vars.$rgb-bg-homebrew--night;
 		}
 	}
 }

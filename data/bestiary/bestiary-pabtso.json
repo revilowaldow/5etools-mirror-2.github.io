@@ -216,6 +216,7 @@
 		{
 			"name": "Ash Zombie",
 			"source": "PaBTSO",
+			"page": 52,
 			"_copy": {
 				"name": "Zombie",
 				"source": "MM",
@@ -274,6 +275,7 @@
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "PaBTSO",
+			"page": 194,
 			"_copy": {
 				"name": "Mind Flayer Clairvoyant",
 				"source": "PaBTSO",
@@ -287,7 +289,7 @@
 					"trait": {
 						"mode": "appendArr",
 						"items": {
-							"name": "",
+							"name": "Severed Head",
 							"entries": [
 								"Chishinix is always accompanied by a {@creature Chishinix' Head|PaBTSO|severed head}."
 							]
@@ -303,6 +305,7 @@
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "PaBTSO",
+			"page": 194,
 			"_copy": {
 				"name": "Encephalon Gemmule",
 				"source": "PaBTSO",
@@ -1408,6 +1411,7 @@
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "PaBTSO",
+			"page": 121,
 			"_copy": {
 				"name": "Hydra",
 				"source": "MM",
@@ -1564,6 +1568,7 @@
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "PaBTSO",
+			"page": 10,
 			"_copy": {
 				"name": "Commoner",
 				"source": "MM",
@@ -1582,6 +1587,7 @@
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "PaBTSO",
+			"page": 8,
 			"_copy": {
 				"name": "Acolyte",
 				"source": "MM",
@@ -1612,6 +1618,7 @@
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "PaBTSO",
+			"page": 194,
 			"_copy": {
 				"name": "Mind Flayer Clairvoyant",
 				"source": "PaBTSO",
@@ -1637,6 +1644,7 @@
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "PaBTSO",
+			"page": 93,
 			"_copy": {
 				"name": "Psionic Ashenwight",
 				"source": "PaBTSO",
@@ -1660,6 +1668,7 @@
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "PaBTSO",
+			"page": 110,
 			"_copy": {
 				"name": "Medusa",
 				"source": "MM",
@@ -2240,6 +2249,7 @@
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "PaBTSO",
+			"page": 121,
 			"_copy": {
 				"name": "Water Weird",
 				"source": "MM",
@@ -2434,6 +2444,7 @@
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "PaBTSO",
+			"page": 115,
 			"_copy": {
 				"name": "Humanoid Mutate",
 				"source": "PaBTSO",
@@ -2816,6 +2827,7 @@
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "PaBTSO",
+			"page": 70,
 			"_copy": {
 				"name": "Wraith",
 				"source": "MM",
@@ -3024,6 +3036,7 @@
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "PaBTSO",
+			"page": 73,
 			"_copy": {
 				"name": "Commoner",
 				"source": "MM",
@@ -3042,6 +3055,7 @@
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "PaBTSO",
+			"page": 114,
 			"_copy": {
 				"name": "Drow Elite Warrior",
 				"source": "MM",
@@ -3218,6 +3232,7 @@
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "PaBTSO",
+			"page": 115,
 			"_copy": {
 				"name": "Humanoid Mutate",
 				"source": "PaBTSO",
@@ -4192,6 +4207,7 @@
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "PaBTSO",
+			"page": 122,
 			"_copy": {
 				"name": "Deep Gnome (Svirfneblin)",
 				"source": "MM",
@@ -4353,6 +4369,7 @@
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "PaBTSO",
+			"page": 174,
 			"_copy": {
 				"name": "Aberrant Zealot",
 				"source": "PaBTSO",
@@ -4477,6 +4494,7 @@
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "PaBTSO",
+			"page": 174,
 			"_copy": {
 				"name": "Githyanki Knight",
 				"source": "MM",
@@ -4497,6 +4515,7 @@
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "PaBTSO",
+			"page": 194,
 			"_copy": {
 				"name": "Mind Flayer Clairvoyant",
 				"source": "PaBTSO",
@@ -4531,6 +4550,7 @@
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "PaBTSO",
+			"page": 114,
 			"_copy": {
 				"name": "Drow Elite Warrior",
 				"source": "MM",
@@ -4554,6 +4574,7 @@
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "PaBTSO",
+			"page": 43,
 			"_copy": {
 				"name": "Quasit",
 				"source": "MM",

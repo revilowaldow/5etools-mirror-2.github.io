@@ -1,4 +1,4 @@
-@import "vars";
+@use "vars";
 
 .dm-map__ {
 	&picker-wrp-img {
@@ -8,7 +8,7 @@
 		line-height: 320px;
 		text-align: center;
 		font-size: 0;
-		border: 2px solid $rgb-border-grey;
+		border: 2px solid vars.$rgb-border-grey;
 	}
 
 	&picker-img {
@@ -21,16 +21,13 @@
 	}
 
 	&picker-disp-name {
-		top: calc(100% - 20px);
-		right: 14px;
-		bottom: 0;
-		left: 14px;
+		inset: calc(100% - 20px) 14px 0 14px;
 		line-height: 20px;
 		font-size: 14px;
-		background: white;
-		border-top: 1px solid $rgb-border-grey;
-		border-right: 1px solid $rgb-border-grey;
-		border-left: 1px solid $rgb-border-grey;
+		background: #fff;
+		border-top: 1px solid vars.$rgb-border-grey;
+		border-right: 1px solid vars.$rgb-border-grey;
+		border-left: 1px solid vars.$rgb-border-grey;
 		border-top-left-radius: 5px;
 		border-top-right-radius: 5px;
 	}
@@ -38,11 +35,11 @@
 
 .night-mode .dm-map__ {
 	&picker-wrp-img {
-		border-color: $rgb-border-grey--night;
+		border-color: vars.$rgb-border-grey--night;
 	}
 
 	&picker-disp-name {
-		background: $rgb-bg--night;
-		border-color: $rgb-border-grey--night;
+		background: vars.$rgb-bg--night;
+		border-color: vars.$rgb-border-grey--night;
 	}
 }

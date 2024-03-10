@@ -2,7 +2,7 @@
 Renderer
  */
 
-@import "vars";
+@use "vars";
 
 $rgb-inset-border: #656565;
 
@@ -21,8 +21,8 @@ $rgb-inset-border: #656565;
 	--w-pl-list-no-bullets: 10px;
 }
 
-@mixin rd__h--large() {
-	color: $rgb-name-red;
+@mixin rd__h--large () {
+	color: vars.$rgb-name-red;
 	font-family: "Times New Roman", serif;
 	font-variant: small-caps;
 	font-weight: 500;
@@ -101,9 +101,8 @@ $rgb-inset-border: #656565;
 		&compact-stats {
 			display: flex;
 			flex-wrap: wrap;
-			justify-content: space-between;
+			place-content: flex-start space-between;
 			align-items: flex-start;
-			align-content: flex-start;
 		}
 
 		&title-link {
@@ -305,7 +304,7 @@ $rgb-inset-border: #656565;
 
 		// statsBlockSectionHead
 		&h--0 {
-			@include rd__h--large();
+			@include rd__h--large;
 
 			font-size: var(--sz-font-h0);
 		}
@@ -313,17 +312,17 @@ $rgb-inset-border: #656565;
 		// underline headers
 		// statsBlockHead
 		&h--1 {
-			@include rd__h--large();
+			@include rd__h--large;
 
 			font-size: var(--sz-font-h1);
-			border-bottom: 1px solid $rgb-name-red;
+			border-bottom: 1px solid vars.$rgb-name-red;
 			margin: 0 0 0.2em;
 		}
 
 		// basic headers
 		// statsBlockSubHead
 		&h--2 {
-			@include rd__h--large();
+			@include rd__h--large;
 
 			font-size: var(--sz-font-h2);
 		}
@@ -356,7 +355,7 @@ $rgb-inset-border: #656565;
 		&h--2-flow-block > h4 {
 			font-size: inherit;
 			font-weight: inherit;
-			line-height: $font-line-height;
+			line-height: vars.$font-line-height;
 			margin: 0;
 		}
 
@@ -406,7 +405,7 @@ $rgb-inset-border: #656565;
 		&b-inset {
 			margin: 7px 15px;
 			padding: 5px 10px;
-			box-shadow: 0 0 4px 0 rgb(152, 142, 124);
+			box-shadow: 0 0 4px 0 rgb(152 142 124);
 			border: 1px solid $rgb-inset-border;
 			border-top: 2px solid $rgb-inset-border;
 			border-bottom: 2px solid $rgb-inset-border;
@@ -417,7 +416,7 @@ $rgb-inset-border: #656565;
 			}
 
 			&--readaloud {
-				box-shadow: 0 0 4px 0 rgb(152, 142, 124);
+				box-shadow: 0 0 4px 0 rgb(152 142 124);
 				border: 1px solid $rgb-inset-border;
 				border-left: 2px solid $rgb-inset-border;
 				border-right: 2px solid $rgb-inset-border;
@@ -430,7 +429,7 @@ $rgb-inset-border: #656565;
 		}
 
 		&b-data {
-			border: 3px solid $rgb-border-yellow--statblock;
+			border: 3px solid vars.$rgb-border-yellow--statblock;
 			border-left-width: 1px;
 			border-right-width: 1px;
 			margin: 5px;
@@ -438,9 +437,9 @@ $rgb-inset-border: #656565;
 			table-layout: fixed;
 
 			&--inset {
-				box-shadow: 0 0 4px 0 rgb(152, 142, 124);
+				box-shadow: 0 0 4px 0 rgb(152 142 124);
 				border: 1px solid $rgb-inset-border;
-				background-color: rgba(156, 150, 120, 0.1);
+				background-color: rgb(156 150 120 / 10%);
 			}
 		}
 
@@ -457,7 +456,7 @@ $rgb-inset-border: #656565;
 				font-weight: bold;
 
 				&:hover {
-					background: rgba(100, 100, 100, 0.08);
+					background: rgb(100 100 100 / 8%);
 				}
 			}
 
@@ -562,7 +561,7 @@ $rgb-inset-border: #656565;
 		&b-flow {
 			margin: 0 15px;
 			padding: 5px 10px;
-			box-shadow: 0 0 4px 0 rgb(152, 142, 124);
+			box-shadow: 0 0 4px 0 rgb(152 142 124);
 			border: 1px solid $rgb-inset-border;
 			border-top: 2px solid $rgb-inset-border;
 			border-bottom: 2px solid $rgb-inset-border;
@@ -574,9 +573,9 @@ $rgb-inset-border: #656565;
 		}
 
 		&stats-name-page {
-			font-family: "Convergence", Arial, sans-serif;
+			font-family: Convergence, Arial, sans-serif;
 			font-size: 12px;
-			color: $rgb-off-black;
+			color: vars.$rgb-off-black;
 			font-weight: 100;
 		}
 
@@ -590,7 +589,7 @@ $rgb-inset-border: #656565;
 		}
 
 		&highlight {
-			background-color: $rgb-bg-highlight;
+			background-color: vars.$rgb-bg-highlight;
 		}
 
 		&color {
@@ -602,14 +601,14 @@ $rgb-inset-border: #656565;
 
 	&-item__ {
 		&type-rarity-attunement {
-			color: $rgb-off-black;
+			color: vars.$rgb-off-black;
 		}
 	}
 
 	&-spell__ {
 		&level-school-ritual {
 			font-style: italic;
-			color: $rgb-off-black;
+			color: vars.$rgb-off-black;
 		}
 	}
 
@@ -618,22 +617,22 @@ $rgb-inset-border: #656565;
 
 		&__ {
 			&fill-primary {
-				fill: $rgb-off-black;
+				fill: vars.$rgb-off-black;
 			}
 
 			&fill-bg {
-				fill: $rgb-bg;
+				fill: vars.$rgb-bg;
 			}
 
 			&stroke-bg {
-				stroke: $rgb-bg;
+				stroke: vars.$rgb-bg;
 			}
 		}
 	}
 
 	&-homebrew__ {
 		&b {
-			background-color: $rgb-bg-homebrew;
+			background-color: vars.$rgb-bg-homebrew;
 			clear: both;
 		}
 
@@ -659,7 +658,7 @@ $rgb-inset-border: #656565;
 		}
 
 		&disp-inline {
-			background-color: $rgb-bg-homebrew;
+			background-color: vars.$rgb-bg-homebrew;
 			text-decoration: underline dotted;
 		}
 	}

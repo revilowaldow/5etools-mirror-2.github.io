@@ -666,19 +666,19 @@ class ModalFilterSpells extends ModalFilter {
 		const range = Parser.spRangeToFull(spell.range);
 
 		eleRow.innerHTML = `<div class="w-100 ve-flex-vh-center lst--border veapp__list-row no-select lst__wrp-cells">
-			<div class="col-0-5 pl-0 ve-flex-vh-center">${this._isRadio ? `<input type="radio" name="radio" class="no-events">` : `<input type="checkbox" class="no-events">`}</div>
+			<div class="ve-col-0-5 pl-0 ve-flex-vh-center">${this._isRadio ? `<input type="radio" name="radio" class="no-events">` : `<input type="checkbox" class="no-events">`}</div>
 
-			<div class="col-0-5 px-1 ve-flex-vh-center">
+			<div class="ve-col-0-5 px-1 ve-flex-vh-center">
 				<div class="ui-list__btn-inline px-2" title="Toggle Preview (SHIFT to Toggle Info Preview)">[+]</div>
 			</div>
 
-			<div class="col-3 ${spell._versionBase_isVersion ? "italic" : ""} ${this._getNameStyle()}">${spell._versionBase_isVersion ? `<span class="px-3"></span>` : ""}${spell.name}</div>
-			<div class="col-1-5 ve-text-center">${levelText}</div>
-			<div class="col-2 ve-text-center">${time}</div>
-			<div class="col-1 sp__school-${spell.school} ve-text-center" title="${Parser.spSchoolAndSubschoolsAbvsToFull(spell.school, spell.subschools)}" ${Parser.spSchoolAbvToStyle(spell.school)}>${school}</div>
-			<div class="col-0-5 ve-text-center" title="Concentration">${concentration}</div>
-			<div class="col-2 text-right">${range}</div>
-			<div class="col-1 pr-0 ve-flex-h-center ${Parser.sourceJsonToColor(spell.source)}" title="${Parser.sourceJsonToFull(spell.source)}" ${Parser.sourceJsonToStyle(spell.source)}>${source}${Parser.sourceJsonToMarkerHtml(spell.source)}</div>
+			<div class="ve-col-3 ${spell._versionBase_isVersion ? "italic" : ""} ${this._getNameStyle()}">${spell._versionBase_isVersion ? `<span class="px-3"></span>` : ""}${spell.name}</div>
+			<div class="ve-col-1-5 ve-text-center">${levelText}</div>
+			<div class="ve-col-2 ve-text-center">${time}</div>
+			<div class="ve-col-1 sp__school-${spell.school} ve-text-center" title="${Parser.spSchoolAndSubschoolsAbvsToFull(spell.school, spell.subschools)}" ${Parser.spSchoolAbvToStyle(spell.school)}>${school}</div>
+			<div class="ve-col-0-5 ve-text-center" title="Concentration">${concentration}</div>
+			<div class="ve-col-2 text-right">${range}</div>
+			<div class="ve-col-1 pr-0 ve-flex-h-center ${Parser.sourceJsonToColor(spell.source)}" title="${Parser.sourceJsonToFull(spell.source)}" ${Parser.sourceJsonToStyle(spell.source)}>${source}${Parser.sourceJsonToMarkerHtml(spell.source)}</div>
 		</div>`;
 
 		const btnShowHidePreview = eleRow.firstElementChild.children[1].firstElementChild;

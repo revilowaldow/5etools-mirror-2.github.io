@@ -17393,18 +17393,42 @@
 								"Aside from the pirate crews, Jahaka Anchorage is home to a handful of pirates who answer to the tavernkeeper, {@creature Bosco Daggerhand|ToA} ({@area area 6A|139|x})\u2014and only because he's master of the ale.",
 								{
 									"type": "inset",
-									"name": "Stirge",
+									"name": "Pirates of Jahaka Anchorage",
 									"page": 67,
 									"id": "131",
 									"entries": [
 										"Three pirate ships use Jahaka Anchorage as a base, and their captains have forged tenuous alliances with each other and {@creature Liara Portyr|ToA} of Fort Beluarian. Use the deckplans in {@book appendix C|DMG|12} of the Dungeon Master's Guide to represent each pirate ship, as needed. Each ship's crew is described below.",
-										"Captain {@creature Elok Jaharwon|ToA} (NE male Chultan human {@creature wereboar}) has no patience or sense of humor. He was first mate of the Dragonfang until a year ago, when he staged a mutiny and hurled the former captain overboard. The other captains are still adjusting to their ill-mannered new confederate, who seems intent on bullying his way toward declaring himself king of the pirates.",
-										"Elok wants to stop sending a slice of the pirates' profits to Fort Beluarian, which would end the alliance with {@creature Liara Portyr|ToA} and probably be self-defeating; the pirates could keep more of their profit, but they'd take fewer prizes and incur more risk. The other captains see the disadvantages clearly, but Jaharwon is building a following among the rank-and-file pirates of all three crews.",
-										"The Dragonfang's crew includes a first mate named Mad Kalita (LE female Chultan human {@creature spy}), fifteen Chultan {@creature Bandit||bandits}, three Chultan {@creature Thug||thugs}, and a \"sea witch\" named Eye of the Deep (N female Calishite human {@creature druid}).",
-										"The calculating Captain {@creature Zaroum Al-Saryak|ToA} (LE male Calishite human {@creature bandit captain}) has a special fondness for gemstones. He wears a coat with glittering gems sewn into it (750 gp) and wears a scimitar with gemstones embedded in the hilt (1,250 gp). His ship, the Emerald Eye, has cabins decorated like rooms in a Calishite pasha's palace. Al-Saryak is fond of chopping off the heads of those who displease him and dangling them from his ship's mermaid figurehead. A long-ago injury cost him his left eye and incised a scar in the form of a large X across his face. The ruined eye socket now holds a magical gem that allows Al-Saryak to discern ghostly pathways leading to treasure. The gem works for no one else. Al-Saryak holds the {@item Sending Stones||sending stone} matched to {@creature Liara Portyr|ToA}'s (see \"{@area Fort Beluarian|0f2|x}\").",
-										"The crew of the Emerald Eye consists of a first mate named Voltan (CE male Calishite human {@creature berserker}), twelve Calishite {@creature Bandit||bandits}, two Calishite {@creature Thug||thugs}, and five Chultan {@creature Tribal Warrior||tribal warriors}.",
-										"Captain {@creature Laskilar|ToA} (NE male Tethyrian human {@creature bandit captain} wearing a {@item cape of the mountebank}) is a flamboyant, rakish pirate who's grown tired of chasing merchant ships and hearing their captains whine and plead over lost revenues and spilled blood. He'd rather seek lost treasures and magic items, but not by digging into ruins and tombs; instead, he'll happily pursue adventurers across jungles and oceans to steal whatever hard-earned plunder he believes they have. His ship, the Stirge, is filled with scoundrels and cutthroats eager to do his dirty work. {@creature Laskilar|ToA} also stays in contact with a host of wealthy patrons in Port Nyanzaru and more distant ports who are eager to pay a king's ransom for the rarest of his ill-gotten gains.",
-										"The crew of the Stirge includes a first mate named Heel (NE male half-orc {@creature gladiator}), twelve Chultan and Tethyrian {@creature Bandit||bandits}, six Chultan {@creature Thug||thugs}, and a mad sea priest named Caldos Hellingskorn (CE male Illuskan {@creature priest} of Umberlee)."
+										{
+											"type": "entries",
+											"name": "Dragonfang",
+											"page": 67,
+											"id": "131a",
+											"entries": [
+												"Captain {@creature Elok Jaharwon|ToA} (NE male Chultan human {@creature wereboar}) has no patience or sense of humor. He was first mate of the Dragonfang until a year ago, when he staged a mutiny and hurled the former captain overboard. The other captains are still adjusting to their ill-mannered new confederate, who seems intent on bullying his way toward declaring himself king of the pirates.",
+												"Elok wants to stop sending a slice of the pirates' profits to Fort Beluarian, which would end the alliance with {@creature Liara Portyr|ToA} and probably be self-defeating; the pirates could keep more of their profit, but they'd take fewer prizes and incur more risk. The other captains see the disadvantages clearly, but Jaharwon is building a following among the rank-and-file pirates of all three crews.",
+												"The Dragonfang's crew includes a first mate named Mad Kalita (LE female Chultan human {@creature spy}), fifteen Chultan {@creature Bandit||bandits}, three Chultan {@creature Thug||thugs}, and a \"sea witch\" named Eye of the Deep (N female Calishite human {@creature druid})."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Emerald Eye",
+											"page": 67,
+											"id": "131b",
+											"entries": [
+												"The calculating Captain {@creature Zaroum Al-Saryak|ToA} (LE male Calishite human {@creature bandit captain}) has a special fondness for gemstones. He wears a coat with glittering gems sewn into it (750 gp) and wears a scimitar with gemstones embedded in the hilt (1,250 gp). His ship, the Emerald Eye, has cabins decorated like rooms in a Calishite pasha's palace. Al-Saryak is fond of chopping off the heads of those who displease him and dangling them from his ship's mermaid figurehead. A long-ago injury cost him his left eye and incised a scar in the form of a large X across his face. The ruined eye socket now holds a magical gem that allows Al-Saryak to discern ghostly pathways leading to treasure. The gem works for no one else. Al-Saryak holds the {@item Sending Stones||sending stone} matched to {@creature Liara Portyr|ToA}'s (see \"{@area Fort Beluarian|0f2|x}\").",
+												"The crew of the Emerald Eye consists of a first mate named Voltan (CE male Calishite human {@creature berserker}), twelve Calishite {@creature Bandit||bandits}, two Calishite {@creature Thug||thugs}, and five Chultan {@creature Tribal Warrior||tribal warriors}."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Stirge",
+											"page": 67,
+											"id": "131c",
+											"entries": [
+												"Captain {@creature Laskilar|ToA} (NE male Tethyrian human {@creature bandit captain} wearing a {@item cape of the mountebank}) is a flamboyant, rakish pirate who's grown tired of chasing merchant ships and hearing their captains whine and plead over lost revenues and spilled blood. He'd rather seek lost treasures and magic items, but not by digging into ruins and tombs; instead, he'll happily pursue adventurers across jungles and oceans to steal whatever hard-earned plunder he believes they have. His ship, the Stirge, is filled with scoundrels and cutthroats eager to do his dirty work. {@creature Laskilar|ToA} also stays in contact with a host of wealthy patrons in Port Nyanzaru and more distant ports who are eager to pay a king's ransom for the rarest of his ill-gotten gains.",
+												"The crew of the Stirge includes a first mate named Heel (NE male half-orc {@creature gladiator}), twelve Chultan and Tethyrian {@creature Bandit||bandits}, six Chultan {@creature Thug||thugs}, and a mad sea priest named Caldos Hellingskorn (CE male Illuskan {@creature priest} of Umberlee)."
+											]
+										}
 									]
 								},
 								{

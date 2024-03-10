@@ -619,6 +619,9 @@
 				},
 				{
 					"name": "A Zendikar Bestiary"
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -676,6 +679,9 @@
 						"Werewolf Den",
 						"Adventure Hooks"
 					]
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -802,6 +808,9 @@
 				},
 				{
 					"name": "A Kaladesh Bestiary"
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -840,6 +849,9 @@
 					"ordinal": {
 						"type": "appendix"
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -857,6 +869,9 @@
 			"contents": [
 				{
 					"name": "One Grung Above"
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -986,6 +1001,9 @@
 					"ordinal": {
 						"type": "appendix"
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -1134,6 +1152,9 @@
 				},
 				{
 					"name": "Elves of Llanowar"
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -1381,6 +1402,9 @@
 				},
 				{
 					"name": "App. F: What did They Find?"
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -1629,6 +1653,9 @@
 						"type": "appendix",
 						"identifier": "B"
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -2523,6 +2550,9 @@
 				},
 				{
 					"name": "Afterword: Playing with Your Food"
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -3580,6 +3610,9 @@
 						"type": "chapter",
 						"identifier": 5
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -4040,7 +4073,7 @@
 						"Subclasses",
 						{
 							"header": "Hemocraft",
-							"depth": 2
+							"depth": 1
 						},
 						{
 							"header": "Barbarian",
@@ -4202,6 +4235,76 @@
 					"ordinal": {
 						"type": "appendix"
 					}
+				},
+				{
+					"name": "Credits"
+				}
+			]
+		},
+		{
+			"name": "Tarot Deck",
+			"id": "TD",
+			"source": "TD",
+			"group": "supplement-alt",
+			"cover": {
+				"type": "internal",
+				"path": "covers/TD.webp"
+			},
+			"published": "2022-05-24",
+			"author": "Clarkson Potter",
+			"contents": [
+				{
+					"name": "Tarot Deck",
+					"headers": [
+						{
+							"header": "How to Read Tarot",
+							"depth": 1
+						},
+						{
+							"header": "Upright and Reversed Meanings",
+							"depth": 1
+						},
+						{
+							"header": "Card Spreads",
+							"depth": 1
+						},
+						{
+							"header": "D&D Encounters",
+							"depth": 1
+						},
+						{
+							"header": "An Adventure in a Spread",
+							"depth": 1
+						},
+						{
+							"header": "Creating the Story",
+							"depth": 1
+						}
+					]
+				},
+				{
+					"name": "The Deck",
+					"headers": [
+						"The Major Arcana",
+						"The Minor Arcana",
+						{
+							"header": "Strength",
+							"depth": 1,
+							"index": 1
+						},
+						{
+							"header": "Intelligence",
+							"depth": 1
+						},
+						{
+							"header": "Wisdom",
+							"depth": 1
+						},
+						{
+							"header": "Charisma",
+							"depth": 1
+						}
+					]
 				},
 				{
 					"name": "Credits"
@@ -4784,6 +4887,9 @@
 				},
 				{
 					"name": "Afterword: Playing with Your Food"
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},

@@ -9678,6 +9678,43 @@
 			"hasFluffImages": true
 		},
 		{
+			"name": "Crusader's Shortsword",
+			"alias": [
+				"Lost Sword"
+			],
+			"source": "CoS",
+			"page": 81,
+			"baseItem": "shortsword|phb",
+			"type": "M",
+			"rarity": "unknown (magic)",
+			"reqAttune": true,
+			"sentient": true,
+			"weight": 2,
+			"weaponCategory": "martial",
+			"property": [
+				"F",
+				"L"
+			],
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"bonusWeapon": "+1",
+			"entries": [
+				"The Crusader's Shortsword is a sentient lawful good {@item +1 shortsword} (Intelligence 11, Wisdom 13, Charisma 13). It has hearing and normal vision out to a range of 120 feet. It communicates by transmitting emotion to the creature carrying or wielding it.",
+				"The sword's purpose is to fight evil. The sword has the following additional properties:",
+				{
+					"type": "list",
+					"items": [
+						"The sword continually sheds bright light in a 15-foot radius and dim light for an additional 15 feet. Only by destroying the sword can this light be extinguished.",
+						"A lawful good creature can attune itself to the sword in 1 minute.",
+						"While attuned to the weapon, the sword's wielder can use the sword to cast the {@spell crusader's mantle} spell. Once used, this property of the sword can't be used again until the next dawn."
+					]
+				}
+			],
+			"attachedSpells": [
+				"crusader's mantle"
+			]
+		},
+		{
 			"name": "Crystal Ball",
 			"source": "DMG",
 			"page": 159,
@@ -17943,6 +17980,7 @@
 		{
 			"name": "Gate Warden Trinket",
 			"source": "SatO",
+			"page": 7,
 			"type": "G",
 			"rarity": "none",
 			"entries": [
@@ -25764,40 +25802,6 @@
 			]
 		},
 		{
-			"name": "Lost Sword",
-			"source": "CoS",
-			"page": 81,
-			"baseItem": "shortsword|phb",
-			"type": "M",
-			"rarity": "unknown (magic)",
-			"reqAttune": true,
-			"sentient": true,
-			"weight": 2,
-			"weaponCategory": "martial",
-			"property": [
-				"F",
-				"L"
-			],
-			"dmg1": "1d6",
-			"dmgType": "P",
-			"bonusWeapon": "+1",
-			"entries": [
-				"The Lost Sword is a sentient lawful good {@item +1 shortsword} (Intelligence 11, Wisdom 13, Charisma 13). It has hearing and normal vision out to a range of 120 feet. It communicates by transmitting emotion to the creature carrying or wielding it.",
-				"The sword's purpose is to fight evil. The sword has the following additional properties:",
-				{
-					"type": "list",
-					"items": [
-						"The sword continually sheds bright light in a 15-foot radius and dim light for an additional 15 feet. Only by destroying the sword can this light be extinguished.",
-						"A lawful good creature can attune itself to the sword in 1 minute.",
-						"While attuned to the weapon, the sword's wielder can use the sword to cast the {@spell crusader's mantle} spell. Once used, this property of the sword can't be used again until the next dawn."
-					]
-				}
-			],
-			"attachedSpells": [
-				"crusader's mantle"
-			]
-		},
-		{
 			"name": "Luba's Tarokka of Souls",
 			"source": "TCE",
 			"page": 129,
@@ -29657,22 +29661,6 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Order of the Silver Dragon +2 Shield",
-			"source": "CoS",
-			"page": 68,
-			"type": "S",
-			"tier": "major",
-			"rarity": "rare",
-			"weight": 6,
-			"ac": 2,
-			"bonusAc": "+2",
-			"entries": [
-				"While holding this shield, you have a +2 bonus to AC. This bonus is in addition to the shield's normal bonus to AC.",
-				"The shield is emblazoned with a stylized silver dragon that is the emblem of the Order of the Silver Dragon (see {@adventure {@i Curse of Strahd}, chapter 7|CoS|7|The Order of the Silver Dragon}). The shield whispers warnings to its bearer, granting a +2 bonus to initiative if the bearer isn't {@condition incapacitated}.",
-				"A shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time."
-			]
-		},
-		{
 			"name": "Ornithopter of Flying",
 			"source": "WBtW",
 			"page": 212,
@@ -30710,6 +30698,7 @@
 		{
 			"name": "Planar Philosopher Trinket",
 			"source": "SatO",
+			"page": 8,
 			"type": "G",
 			"rarity": "none",
 			"entries": [
@@ -37584,6 +37573,25 @@
 				"wall of fire"
 			],
 			"hasFluffImages": true
+		},
+		{
+			"name": "Shield of the Silver Dragon",
+			"alias": [
+				"Order of the Silver Dragon +2 Shield"
+			],
+			"source": "CoS",
+			"page": 68,
+			"type": "S",
+			"tier": "major",
+			"rarity": "rare",
+			"weight": 6,
+			"ac": 2,
+			"bonusAc": "+2",
+			"entries": [
+				"While holding this shield, you have a +2 bonus to AC. This bonus is in addition to the shield's normal bonus to AC.",
+				"The shield is emblazoned with a stylized silver dragon that is the emblem of the Order of the Silver Dragon (see {@adventure {@i Curse of Strahd}, chapter 7|CoS|7|The Order of the Silver Dragon}). The shield whispers warnings to its bearer, granting a +2 bonus to initiative if the bearer isn't {@condition incapacitated}.",
+				"A shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time."
+			]
 		},
 		{
 			"name": "Shield of the Tortoise",
@@ -45132,25 +45140,6 @@
 			"value": 750000
 		},
 		{
-			"name": "Treebane",
-			"source": "CoS",
-			"page": 198,
-			"baseItem": "battleaxe|phb",
-			"type": "M",
-			"rarity": "unknown (magic)",
-			"weight": 2,
-			"weaponCategory": "martial",
-			"property": [
-				"V"
-			],
-			"dmg1": "1d8",
-			"dmgType": "S",
-			"dmg2": "1d10",
-			"entries": [
-				"The axe's handle is carved with leaves and vines, and it weighs half as much as a normal battleaxe. When the axe hits a plant, whether an ordinary plant or a plant creature, the target takes an extra {@damage 1d8} slashing damage. When a creature of non-good alignment wields the axe, it sprouts thorns whenever its wielder makes an attack with it. These thorns prick the wielder for 1 piercing damage after the attack is made, and this damage is considered magical."
-			]
-		},
-		{
 			"name": "Trident of Fish Command",
 			"source": "DMG",
 			"page": 209,
@@ -50086,6 +50075,28 @@
 			"value": 100000,
 			"entries": [
 				"A transparent fiery yellow or yellow-green gemstone."
+			]
+		},
+		{
+			"name": "Yester Hill Axe",
+			"alias": [
+				"Treebane"
+			],
+			"source": "CoS",
+			"page": 198,
+			"baseItem": "battleaxe|phb",
+			"type": "M",
+			"rarity": "unknown (magic)",
+			"weight": 2,
+			"weaponCategory": "martial",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"entries": [
+				"The axe's handle is carved with leaves and vines, and it weighs half as much as a normal battleaxe. When the axe hits a plant, whether an ordinary plant or a plant creature, the target takes an extra {@damage 1d8} slashing damage. When a creature of non-good alignment wields the axe, it sprouts thorns whenever its wielder makes an attack with it. These thorns prick the wielder for 1 piercing damage after the attack is made, and this damage is considered magical."
 			]
 		},
 		{

@@ -941,6 +941,67 @@
 				}
 			],
 			"id": "032"
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Designers",
+							"entries": [
+								"Kat Kruger, Chris Tulach"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Plane Shift",
+							"entries": [
+								"Ixalan Design:James Wyatt"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Editor",
+							"entries": [
+								"Scott Fitzgerald Gray"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Graphic Designer",
+							"entries": [
+								"Emi Tanji"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Cover Illustrator",
+							"entries": [
+								"Cliff Childs"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Interior Illustrators",
+							"entries": [
+								"Tommy Arnold, John Avon, Naomi Baker, Milivoj Ceran, Zezhou Chen, Daarken, Dimitar, Emrah Elmasil, Florian de Gesincourt, Ryan Alexander Lee, Slawomir Maniak, Aaron Miller, Victor Adame Minguez, Dan Scott, John Stanko, YW Tang, Ben Wooten, Kieran Yanner"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Cartographer",
+							"entries": [
+								"Jared Blando"
+							]
+						}
+					]
+				}
+			]
 		}
 	]
 }

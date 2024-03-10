@@ -1,4 +1,4 @@
-@import "vars";
+@use "vars";
 
 :root {
 	--safe-area-inset-top: 0;
@@ -19,12 +19,12 @@
 // endregion
 
 .roller {
-	color: $rgb-link-blue;
+	color: vars.$rgb-link-blue;
 	cursor: pointer;
 }
 
 .text-muted a {
-	color: $rgb-link-blue--muted;
+	color: vars.$rgb-link-blue--muted;
 }
 
 .font-ui {
@@ -35,7 +35,7 @@
 .help--hover {
 	// This should approx. match the hover cutoff defined in renderer (768px).
 	// Approximate, since jQuery calculates window width differently, offset likely varies with e.g. scrollbar width.
-	@media (max-width: 780px) {
+	@media (width <= 780px) {
 		cursor: default !important;
 		text-decoration: none !important;
 	}
@@ -65,8 +65,8 @@ input {
 	min-width: 0;
 }
 
-input[type=checkbox],
-input[type=radio] {
+input[type="checkbox"],
+input[type="radio"] {
 	margin: 0;
 }
 
@@ -117,7 +117,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-	width: $w-scroll-body;
+	width: vars.$w-scroll-body;
 }
 
 /* *** */
@@ -128,7 +128,7 @@ body::-webkit-scrollbar {
 }
 
 .input-xs {
-	height: $h-ipt-xs;
+	height: vars.$h-ipt-xs;
 	padding: 1px 5px;
 	font-size: 12px;
 	line-height: 1.5;
@@ -144,8 +144,8 @@ body::-webkit-scrollbar {
 	display: inline-flex;
 	align-items: center;
 
-	> input[type=checkbox],
-	> input[type=radio] {
+	> input[type="checkbox"],
+	> input[type="radio"] {
 		margin: 0 0 0 5px;
 	}
 }
@@ -158,10 +158,10 @@ body::-webkit-scrollbar {
 }
 
 .btn-primary--half {
-	background: repeating-linear-gradient(135deg, $rgb-btn-primary-blue, $rgb-btn-primary-blue 16px, $rgb-btn-primary-blue--desaturated 16px, $rgb-btn-primary-blue--desaturated 32px);
+	background: repeating-linear-gradient(135deg, vars.$rgb-btn-primary-blue, vars.$rgb-btn-primary-blue 16px, vars.$rgb-btn-primary-blue--desaturated 16px, vars.$rgb-btn-primary-blue--desaturated 32px);
 }
 
-.dropdown-menu--side {
+.ve-dropdown-menu--side {
 	top: -10px;
 	left: 100%;
 	max-height: calc(100vh - 130px);
@@ -172,13 +172,13 @@ body::-webkit-scrollbar {
 	> a {
 		padding: 5px 14px 6px;
 
-		@media (min-width: 992px) {
+		@media (width >= 992px) {
 			border-top-left-radius: 0;
 			border-top-right-radius: 0;
 		}
 	}
 
-	@media (max-width: 991px) {
+	@media (width <= 991px) {
 		margin-top: 2px;
 		margin-bottom: 2px;
 	}
@@ -190,7 +190,7 @@ body::-webkit-scrollbar {
 	background-color: #006bc4;
 	border-top: 0;
 
-	@media (min-width: 992px) {
+	@media (width >= 992px) {
 		border-left: 1px solid transparent;
 		border-right: 1px solid transparent;
 		border-bottom: 1px solid #999;
@@ -199,13 +199,13 @@ body::-webkit-scrollbar {
 
 .nav > li > a:focus,
 .nav > li > a:hover {
-	background-color: rgba(0, 0, 0, 0.1);
+	background-color: rgb(0 0 0 / 10%);
 }
 
 .nav .open > a,
 .nav .open > a:focus,
 .nav .open > a:hover {
-	background-color: rgba(0, 0, 0, 0.1);
+	background-color: rgb(0 0 0 / 10%);
 }
 
 .row {
@@ -213,23 +213,23 @@ body::-webkit-scrollbar {
 	margin-left: 0;
 }
 
-.dropdown-menu > li > a.dropdown-ext-link {
+.ve-dropdown-menu > li > a.ve-dropdown-ext-link {
 	display: flex;
 	justify-content: space-between;
 }
 
-.dropdown-menu > li > a.dropdown-ext-link:hover {
+.ve-dropdown-menu > li > a.ve-dropdown-ext-link:hover {
 	padding-right: 10px;
 }
 
 /* Allow spans instead of links in dropdown menus. Styling borrowed from original */
-.dropdown-menu > li > span {
+.ve-dropdown-menu > li > span {
 	cursor: pointer;
 	display: block;
 	padding: 3px 20px;
 	clear: both;
 	font-weight: 400;
-	line-height: $font-line-height;
+	line-height: vars.$font-line-height;
 	color: #333;
 	white-space: nowrap;
 
@@ -237,17 +237,17 @@ body::-webkit-scrollbar {
 	&:hover {
 		color: #262626;
 		text-decoration: none;
-		background-color: $rgb-bg--alt;
+		background-color: vars.$rgb-bg--alt;
 	}
 }
 
-.dropdown-menu > .disabled > span {
+.ve-dropdown-menu > .disabled > span {
 	pointer-events: none;
-	color: $rgb-ctx-item-text-disabled;
+	color: vars.$rgb-ctx-item-text-disabled;
 
 	&:focus,
 	&:hover {
-		color: $rgb-ctx-item-text-disabled;
+		color: vars.$rgb-ctx-item-text-disabled;
 		text-decoration: none;
 		cursor: not-allowed;
 		background-color: transparent;
@@ -255,25 +255,25 @@ body::-webkit-scrollbar {
 	}
 }
 
-.dropdown-menu > .ctx-danger > span {
-	background: $rgb-btn-danger-bg-red;
-	color: white;
+.ve-dropdown-menu > .ctx-danger > span {
+	background: vars.$rgb-btn-danger-bg-red;
+	color: #fff;
 
 	&:focus,
 	&:hover {
-		color: white;
+		color: #fff;
 		text-decoration: none;
-		background-color: $rgb-btn-danger-border-red;
+		background-color: vars.$rgb-btn-danger-border-red;
 	}
 }
 /* *** */
 
-.dropdown-ext-link > .glyphicon {
+.ve-dropdown-ext-link > .glyphicon {
 	top: 3px;
 	display: none;
 }
 
-.dropdown-ext-link:hover > .glyphicon {
+.ve-dropdown-ext-link:hover > .glyphicon {
 	display: inline-block;
 }
 
@@ -298,7 +298,7 @@ body::-webkit-scrollbar {
 		&:last-child {
 			border-top-right-radius: 3px;
 			border-bottom-right-radius: 3px;
-			border-right: 1px solid $rgb-border-grey;
+			border-right: 1px solid vars.$rgb-border-grey;
 		}
 	}
 
@@ -359,7 +359,7 @@ body::-webkit-scrollbar {
 	> button,
 	> a.btn {
 		&:last-child {
-			border-right-color: $rgb-border-grey--night;
+			border-right-color: vars.$rgb-border-grey--night;
 		}
 	}
 }

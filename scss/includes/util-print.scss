@@ -1,6 +1,6 @@
-@import "vars";
+@use "vars";
 
-@include is-print {
+@include vars.mix-is-print {
 	.no-print {
 		display: none !important;
 	}
@@ -19,8 +19,8 @@
 		}
 
 		&my-2 {
-			margin-top: ($spacer * 0.5) !important;
-			margin-bottom: ($spacer * 0.5) !important;
+			margin-top: (vars.$spacer * 0.5) !important;
+			margin-bottom: (vars.$spacer * 0.5) !important;
 		}
 	}
 }

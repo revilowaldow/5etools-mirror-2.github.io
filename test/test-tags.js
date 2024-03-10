@@ -523,6 +523,8 @@ class ScaleDiceCheck extends DataTesterBase {
 }
 
 class StripTagTest extends DataTesterBase {
+	static _seenErrors = new Set();
+
 	static registerParsedPrimitiveHandlers (parsedJsonChecker) {
 		parsedJsonChecker.addPrimitiveHandler("string", this._checkString.bind(this));
 	}
@@ -540,7 +542,6 @@ class StripTagTest extends DataTesterBase {
 		}
 	}
 }
-StripTagTest._seenErrors = new Set();
 
 class TableDiceTest extends DataTesterBase {
 	static registerParsedPrimitiveHandlers (parsedJsonChecker) {

@@ -1,4 +1,3 @@
-
 .crc__reset {
 	min-width: 10rem;
 	display: block;
@@ -15,7 +14,7 @@
 	margin-bottom: 0;
 }
 
-.crc__row input[type=checkbox] {
+.crc__row input[type="checkbox"] {
 	margin: 0;
 }
 
@@ -41,20 +40,20 @@
 	align-items: center;
 }
 
-.crc__mon_feature input[type=number] {
+.crc__mon_feature input[type="number"] {
 	width: 3em;
 	vertical-align: middle;
 	text-align: right;
 }
 
-.crc__mon_feature input[type=checkbox] {
+.crc__mon_feature input[type="checkbox"] {
 	margin: 0;
 }
 
 .crc__mon_feature:nth-child(even) {
-	background: lightgrey;
+	background: #d3d3d3;
 }
 
 .night-mode .crc__mon_feature:nth-child(even) {
-	background: rgba(0, 0, 0, 0.31);
+	background: rgb(0 0 0 / 31%);
 }

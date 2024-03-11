@@ -105,6 +105,7 @@
 		{
 			"type": "section",
 			"name": "1: Bone House",
+			"page": 5,
 			"id": "00a",
 			"entries": [
 				"{@i By Tom \"Evhelm\" Donovan}",
@@ -112,6 +113,7 @@
 				{
 					"type": "section",
 					"name": "Background",
+					"page": 5,
 					"id": "00b",
 					"entries": [
 						"The bone trader Fibekruk has built its \"estate\" into the cool caverns of this forest-adjacent hillside. The caverns include its bone manse (a haunting negotiations chamber), a nest for its tamed knifewings, a storeroom, and private chambers. Outside the caverns is the forest, which hides the huts of Fibekruk's faevlin minions, their refuse pit, and a ruined cottage used as a storage space.",
@@ -126,6 +128,7 @@
 						{
 							"type": "entries",
 							"name": "Set the Hook",
+							"page": 5,
 							"id": "00c",
 							"entries": [
 								"Fibekruk has lately ordered the faevlin to collect bones from humans living in the nearby villages. The characters have been hired by a local village to deal with the faevlin spotted in the area. Perhaps someone close to the characters has also been abducted, and the trail led here. If the characters are returning to the area after a long absence (perhaps after receiving training in a distant land), the ruined cottage could hold significance to one or more of them. Of course, it's also possible the characters simply run across the Bone House in their explorations."
@@ -136,6 +139,7 @@
 				{
 					"type": "section",
 					"name": "Lair Overview",
+					"page": 5,
 					"id": "00d",
 					"entries": [
 						"The lair is described as it is during nighttime hours, when the faevlin do their best work. During the day, two sleepy faevlin stand watch with the knifewings while the rest of the faevlin sleep in their huts. The bone trader also rests during the day. The only light sources at night are the cooking fire in the faevlin camp and the braziers (kept burning constantly) in the bone manse. Otherwise, the forest and cavern are dark. Characters observing the scene see the faevlin eventually swap places or jobs, but other than the day-night crew change, the faevlin always divide into work crews.",
@@ -2282,6 +2286,7 @@
 						{
 							"type": "entries",
 							"name": "1. Ruined Cabin",
+							"page": 5,
 							"id": "00e",
 							"entries": [
 								{
@@ -2297,6 +2302,7 @@
 						{
 							"type": "entries",
 							"name": "2. Faevlin Camp",
+							"page": 5,
 							"id": "010",
 							"entries": [
 								{
@@ -2314,6 +2320,7 @@
 										{
 											"type": "entries",
 											"name": "Gold Pouch",
+											"page": 5,
 											"id": "013",
 											"entries": [
 												"The faevlin have meaningless trinkets and talismans, but one of them had the guts to secret away 3 gp in a bladder hidden in the hay coating the floor of one of the huts."
@@ -2326,6 +2333,7 @@
 						{
 							"type": "entries",
 							"name": "3. Refuse Pit",
+							"page": 5,
 							"id": "014",
 							"entries": [
 								{
@@ -2343,6 +2351,7 @@
 										{
 											"type": "entries",
 											"name": "Treasure",
+											"page": 5,
 											"id": "017",
 											"entries": [
 												"One of their many now-boneless victims at the bottom of the pit carried a small leather purse with 9 gp inside. If the characters watch the faevlin search for more than 10 minutes, the faevlin find it. The characters can find it themselves with a successful DC 10 Intelligence ({@skill Investigation}) check.",
@@ -2365,6 +2374,7 @@
 						{
 							"type": "entries",
 							"name": "4. Knifewing Den",
+							"page": 6,
 							"id": "018",
 							"entries": [
 								{
@@ -2392,6 +2402,7 @@
 										{
 											"type": "entries",
 											"name": "Cages",
+											"page": 6,
 											"id": "01b",
 											"entries": [
 												"Two of the cages are empty and two contain sheep stolen from nearby farms. As GM, you may decide if any prisoners are trapped in the cages, such as villagers from the nearby town or an NPC the characters have been sent to find. If you need a default humanoid prisoner, use Dirk Wheatfield, a human farmer who made the mistake of investigating sounds in his barn the previous night before being beaten senseless and dragged here. He has 1 hp and is suffering a level of {@condition exhaustion}. His left leg is missing its bones below the knee, hobbling him. Magical healing restores his ability to walk.",
@@ -2405,6 +2416,7 @@
 						{
 							"type": "entries",
 							"name": "5. Bone Manse",
+							"page": 6,
 							"id": "01c",
 							"entries": [
 								{
@@ -2422,6 +2434,7 @@
 										{
 											"type": "entries",
 											"name": "Unsettling Hollow",
+											"page": 6,
 											"id": "01f",
 											"entries": [
 												"Between the bones and the \"artwork,\" this space is designed to unsettle and disturb the bone trader's guests (or enemies). Charisma ability checks or saving throws made by humanoids other than Fibekruk and the faevlins suffer disadvantage while in this room."
@@ -2430,6 +2443,7 @@
 										{
 											"type": "entries",
 											"name": "Skull of Cohesion",
+											"page": 6,
 											"id": "020",
 											"entries": [
 												"Bones are notoriously difficult to bind together without copious binding agent. Most of the time, bone-builds are merely bone-accented! Skilled bone traders are capable of crafting a common magic item known as bones of cohesion, providing an aura of stability to structures in a 30 foot radius. This skull of cohesion lends its strength to the pagoda. If removed from the space (30 feet away from the structure), the pagoda collapses like a house of cards. Characters may use this item themselves to quickly set up or take down an encampment, but more usefully it makes donning (and subsequently doffing) armor a bit faster. Characters bearing the skull of cohesion may halve the time to don heavy armor and (if they set the skull no more than 30 feet away) halve the time to doff that same armor."
@@ -2442,6 +2456,7 @@
 						{
 							"type": "entries",
 							"name": "6. Bedroom and Showcase",
+							"page": 6,
 							"id": "021",
 							"entries": [
 								{
@@ -2469,6 +2484,7 @@
 										{
 											"type": "entries",
 											"name": "Wardrobes and Linens",
+											"page": 6,
 											"id": "024",
 											"entries": [
 												"The bone trader acquired its linens and the costumes in its wardrobes over several years. Most are beautiful, but fragile. Collected, the linens and clothes weigh around 30 pounds, are extremely bulky, and would be worth 20 gp to a collector. Traveling with them is likely to make them disintegrate: for each day a character moves the linens, roll a {@dice d10}. On a roll of a 1, the linens are damaged beyond repair and become worthless. (Characters who have proficiency with a tailor's kit cope with the fragility and are not subject to the roll.)"
@@ -2477,6 +2493,7 @@
 										{
 											"type": "entries",
 											"name": "Coin Purse",
+											"page": 7,
 											"id": "025",
 											"entries": [
 												"A search of the area with a successful DC 12 Intelligence ({@skill Investigation}) check reveals a section of the herringbone floor that doesn't match the pattern. Underneath is a small hollow where the bone trader hides the coins and other bargaining chips stolen or traded for from others. Its coffers are low, having recently acquired the tusked skull at a great price. Now, 5 gp and 49 sp are in the purse."
@@ -2489,6 +2506,7 @@
 						{
 							"type": "entries",
 							"name": "7. Storeroom",
+							"page": 7,
 							"id": "026",
 							"entries": [
 								{
@@ -2506,6 +2524,7 @@
 										{
 											"type": "entries",
 											"name": "Sundry Supplies",
+											"page": 7,
 											"id": "029",
 											"entries": [
 												"If hauled back to civilization, most of these supplies can be returned to their original owners. If characters are willing to return the supplies, the villagers are extremely grateful and owe the characters a future favor. Alternately, the characters may sell the sundries, netting 15 gp profit. Moving this many barrels and crates requires a wagon or other means of overland transport."
@@ -2520,6 +2539,7 @@
 				{
 					"type": "section",
 					"name": "Conclusion",
+					"page": 7,
 					"id": "02a",
 					"entries": [
 						"Lucky or particularly skilled characters who manage to kill, defeat, or otherwise drive off Fibekruk and its minions become folk heroes in the nearest village, gaining offers of free meals and lodging for the next two weeks in the village.",
@@ -2555,6 +2575,7 @@
 		{
 			"type": "section",
 			"name": "2: Faren's Rest",
+			"page": 9,
 			"id": "03d",
 			"entries": [
 				"{@i By Tom \"Evhelm\" Donovan}",
@@ -2562,6 +2583,7 @@
 				{
 					"type": "section",
 					"name": "Background",
+					"page": 9,
 					"id": "03e",
 					"entries": [
 						"Faren's Rest is a roadside village that grew up along a major trading route. Once, it was just an inn and tavern. Over time, it became an important waystation: a stable and a small hamlet grew up around the inn. A few generations ago, a local baron (Faren) got the bright idea to put a tax collector at the waystation. He quickly abused the tax, building a house across from the inn to keep an eye on things\u2014along with a statue of himself as a heroic warrior. Eventually one of the baron's many enemies did him in, and Faren's Rest became independent once again.",
@@ -2570,6 +2592,7 @@
 						{
 							"type": "entries",
 							"name": "Set the Hook",
+							"page": 9,
 							"id": "03f",
 							"entries": [
 								"There are a few ways the characters might be involved. The easiest is that the inn and tavern (The Outrageous Pig) is a recommended waystation for the party. Perhaps they're on the way to another adventure, or perhaps they are returning from one. When they arrive for their well-earned rest (from questing or traveling), the owner Betha Mathildis asks the party for help. She needs outsiders to talk to the mayor and try to convince him not to revive Faren's road toll and tax.",
@@ -2581,6 +2604,7 @@
 				{
 					"type": "section",
 					"name": "Lair Overview",
+					"page": 9,
 					"id": "040",
 					"entries": [
 						"The first time the characters see Rolant and Rose is in the mansion ({@area area 3|049|x}), but after that, they can be in Rolant's friend's home ({@area area 8|05b|x}). If the characters spend more than 24 hours before solving the mystery and dealing with Rose, two bodyguards join Rolant and Rose.",
@@ -3228,6 +3252,7 @@
 						{
 							"type": "entries",
 							"name": "1. The Outrageous Pig (Inn and Tavern)",
+							"page": 9,
 							"id": "041",
 							"entries": [
 								{
@@ -3247,6 +3272,7 @@
 										{
 											"type": "entries",
 											"name": "Ardel Bigring",
+											"page": 9,
 											"id": "044",
 											"entries": [
 												"One of the people getting a drink at the bar is Ardel Bigring. He and his family live next to the inn. If the characters talk to him, he invites them back to his home to meet his wife and talk there\u2014he thinks Betha's mistrustful talk might be bad for the public to hear, but he's happy to talk in private.",
@@ -3266,6 +3292,7 @@
 						{
 							"type": "entries",
 							"name": "2. Stables",
+							"page": 9,
 							"id": "045",
 							"entries": [
 								{
@@ -3283,6 +3310,7 @@
 										{
 											"type": "entries",
 											"name": "Helpful Merk",
+											"page": 9,
 											"id": "048",
 											"entries": [
 												"Merk is a nice kid, but extremely gullible\u2014and he idolizes Rolant. If the characters tell him that Rolant said to do something, he believes them without question and does his best to carry it out."
@@ -3295,6 +3323,7 @@
 						{
 							"type": "entries",
 							"name": "3. Faren's Mansion",
+							"page": 10,
 							"id": "049",
 							"entries": [
 								{
@@ -3308,40 +3337,34 @@
 								"Characters who arrive at the \"mansion\" with dinner from Betha are admitted immediately. It's easy to see that Rolant doesn't match Betha's description of him. The first time they meet him and Rose, have the characters make a Wisdom ({@skill Insight}) check:",
 								{
 									"type": "list",
+									"style": "list-hang-notitle",
 									"items": [
 										{
-											"type": "list",
-											"style": "list-hang-notitle",
-											"items": [
-												{
-													"type": "item",
-													"name": "0+:",
-													"entry": "Rolant is not as he was described."
-												},
-												{
-													"type": "item",
-													"name": "5+:",
-													"entry": "He is gaunt and taciturn."
-												},
-												{
-													"type": "item",
-													"name": "10+:",
-													"entry": "He seems lethargic, even sickly."
-												},
-												{
-													"type": "item",
-													"name": "15+:",
-													"entry": "His eyes are glazed and dead. Everything he does seems to be stiff and deliberate, like a puppet on a string."
-												},
-												{
-													"type": "item",
-													"name": "20+:",
-													"entry": "Something is clearly controlling his words and actions."
-												}
-											]
+											"type": "item",
+											"name": "0+:",
+											"entry": "Rolant is not as he was described."
+										},
+										{
+											"type": "item",
+											"name": "5+:",
+											"entry": "He is gaunt and taciturn."
+										},
+										{
+											"type": "item",
+											"name": "10+:",
+											"entry": "He seems lethargic, even sickly."
+										},
+										{
+											"type": "item",
+											"name": "15+:",
+											"entry": "His eyes are glazed and dead. Everything he does seems to be stiff and deliberate, like a puppet on a string."
+										},
+										{
+											"type": "item",
+											"name": "20+:",
+											"entry": "Something is clearly controlling his words and actions."
 										}
-									],
-									"style": "list-hang-notitle"
+									]
 								},
 								"No amount of talk persuades him to change his mind about the tax. Though he's a bit sluggish in his responses, his words are concise and unyielding.",
 								{
@@ -3351,6 +3374,7 @@
 										{
 											"type": "entries",
 											"name": "Rose, the Vitebriate",
+											"page": 10,
 											"id": "04c",
 											"entries": [
 												"Rose has managed to secret a gem worth 67 gp in a purse hidden on her person. Wherever she is killed, this purse remains even after she crumbles into a swarm of harmless roaches.",
@@ -3358,41 +3382,36 @@
 												"If the characters want to focus on Rose, have them make a Wisdom ({@skill Insight}) check:",
 												{
 													"type": "list",
+													"style": "list-hang-notitle",
 													"items": [
 														{
-															"type": "list",
-															"style": "list-hang-notitle",
-															"items": [
-																{
-																	"type": "item",
-																	"name": "0\u201313:",
-																	"entry": "She is a frightened little girl."
-																},
-																{
-																	"type": "item",
-																	"name": "14\u201318:",
-																	"entry": "She may be hiding behind Rolant, but she is fierce and focused."
-																},
-																{
-																	"type": "item",
-																	"name": "19\u201323:",
-																	"entry": "She neither holds nor carries herself like a child. She seems annoyed that you're here."
-																},
-																{
-																	"type": "item",
-																	"name": "24+:",
-																	"entry": "Something is clearly off about her\u2014she's not human, and she's armed with a hidden dagger."
-																}
-															]
+															"type": "item",
+															"name": "0\u201313:",
+															"entry": "She is a frightened little girl."
+														},
+														{
+															"type": "item",
+															"name": "14\u201318:",
+															"entry": "She may be hiding behind Rolant, but she is fierce and focused."
+														},
+														{
+															"type": "item",
+															"name": "19\u201323:",
+															"entry": "She neither holds nor carries herself like a child. She seems annoyed that you're here."
+														},
+														{
+															"type": "item",
+															"name": "24+:",
+															"entry": "Something is clearly off about her\u2014she's not human, and she's armed with a hidden dagger."
 														}
-													],
-													"style": "list-hang-notitle"
+													]
 												}
 											]
 										},
 										{
 											"type": "entries",
 											"name": "Orb of the World",
+											"page": 10,
 											"id": "04d",
 											"entries": [
 												"An expensive-looking orb, representing the world as an Arch Seraph wants it to be, is on the dining table as a centerpiece. The orb is made of solid steel and can be used as a club. If threatened here, Rose orders Rolant to use it to defend them. (It uses the same stats as a {@item dagger|PHB} but change the damage from piercing to bludgeoning.) If taken as treasure, the orb can be sold for 10 gp.",
@@ -3415,6 +3434,7 @@
 						{
 							"type": "entries",
 							"name": "4. Defaced Statue of Faren",
+							"page": 10,
 							"id": "04e",
 							"entries": [
 								{
@@ -3431,6 +3451,7 @@
 										{
 											"type": "entries",
 											"name": "The Statue",
+											"page": 10,
 											"id": "051",
 											"entries": [
 												"Characters who investigate the statue might recall two things. With a successful DC 15 Intelligence ({@skill History}) check, characters learn the information from the first paragraph of the {@area \"Background\"|03e|x} section. With a successful DC 10 Intelligence ({@skill Investigation}) check, characters learn that the statue has been defaced for decades\u2014even the exposed defacements show signs of erosion and a lack of dust or debris."
@@ -3439,6 +3460,7 @@
 										{
 											"type": "entries",
 											"name": "Hidden Cache",
+											"page": 10,
 											"id": "052",
 											"entries": [
 												"A successful DC 20 Intelligence ({@skill Investigation}) check reveals a hole at the base of the statue covered with moss. Rose stole a silver toe ring (worth 20 gp) from Zila Bigring and hid it here to use in case she needed to flee the area quickly."
@@ -3451,6 +3473,7 @@
 						{
 							"type": "entries",
 							"name": "5. Well",
+							"page": 10,
 							"id": "053",
 							"entries": [
 								{
@@ -3473,6 +3496,7 @@
 						{
 							"type": "entries",
 							"name": "6. Outhouses",
+							"page": 10,
 							"id": "055",
 							"entries": [
 								{
@@ -3488,6 +3512,7 @@
 						{
 							"type": "entries",
 							"name": "7. Wealthy Merchant's Home",
+							"page": 10,
 							"id": "057",
 							"entries": [
 								{
@@ -3505,6 +3530,7 @@
 										{
 											"type": "entries",
 											"name": "Ardel and Zila Bigring",
+											"page": 10,
 											"id": "05a",
 											"entries": [
 												"Ardel and his wife Zila are easy to talk to and willing to discuss Rolant. Zila believes something is wrong; Ardel admits his friend is behaving strangely but believes Zila and Betha are overreacting. If the characters try to convince Ardel that something is wrong (and/or that Rose is a threat), he can be persuaded with a successful DC 15 Charisma ({@skill Persuasion}) check. If Zila is present when the check is made, the characters have advantage on the roll. If Ardel is persuaded, he calls off the thug support for Rolant.",
@@ -3518,6 +3544,7 @@
 						{
 							"type": "entries",
 							"name": "8. Ambitious Merchant's Home",
+							"page": 11,
 							"id": "05b",
 							"entries": [
 								{
@@ -3536,6 +3563,7 @@
 										{
 											"type": "entries",
 											"name": "Bolts of Cloth",
+											"page": 11,
 											"id": "05e",
 											"entries": [
 												"The fabric on the corner table can be used as makeshift bindings to tie someone up in a pinch."
@@ -3548,6 +3576,7 @@
 						{
 							"type": "entries",
 							"name": "9. Assorted Homes",
+							"page": 11,
 							"id": "05f",
 							"entries": [
 								{
@@ -3563,6 +3592,7 @@
 						{
 							"type": "entries",
 							"name": "10. Open Road",
+							"page": 11,
 							"id": "061",
 							"entries": [
 								{
@@ -3580,6 +3610,7 @@
 				{
 					"type": "section",
 					"name": "Conclusion",
+					"page": 11,
 					"id": "063",
 					"entries": [
 						"Chasing the {@creature vitebriate|GHLoE} \"Rose\" out of Faren's Rest only delays the inevitable: only killing her releases Rolant from his domination and saves the town from a slow death at the hands of the greedy creature. Assuming the characters eventually kill the vitebriate, the question is not whether they have any success, but rather what that success looks like.",
@@ -3612,6 +3643,7 @@
 		{
 			"type": "section",
 			"name": "3: The Leatherhollow",
+			"page": 13,
 			"id": "06f",
 			"entries": [
 				"{@i By Tom \"Evhelm\" Donovan}",
@@ -3619,6 +3651,7 @@
 				{
 					"type": "section",
 					"name": "Background",
+					"page": 13,
 					"id": "070",
 					"entries": [
 						"Once upon a time, a cave belonging to morbus kobolds was attacked by a skinweaver. The creature slew their leader, installing itself as \"chief\" over the kobolds. It expects them to deliver fresh supplies of food and (just as importantly) hides for it to tan and work. When they fail to deliver sufficient hides, the skinweaver uses the kobolds for that purpose.",
@@ -3633,6 +3666,7 @@
 						{
 							"type": "entries",
 							"name": "Set the Hook",
+							"page": 13,
 							"id": "071",
 							"entries": [
 								"The characters are hired to investigate the mysterious disappearances from farms on the outskirts of the village. First it was just livestock, but now people are vanishing too. In the latest abduction, a child saw his parents carried off by \"little scaly men\" (kobolds). To increase the suspense, have one of the missing abductees be a family member or friend of the characters.",
@@ -6795,6 +6829,7 @@
 				{
 					"type": "section",
 					"name": "Lair Overview",
+					"page": 13,
 					"id": "072",
 					"entries": [
 						"No natural sources light the caves, so only the initial cave opening has daylight. The tunnels between the three cave sections are cramped enough that only Small creatures (like kobolds) can walk them upright, but larger creatures need to squeeze. The caves are damp and cool with smooth walls and floors. In the spythronar and skinweaver sections, spiderwebbing is prevalent on walls and ceilings and make the floors tacky.",
@@ -6802,6 +6837,7 @@
 						{
 							"type": "entries",
 							"name": "1. First Cave (Entrance)",
+							"page": 13,
 							"id": "073",
 							"entries": [
 								{
@@ -6829,6 +6865,7 @@
 										{
 											"type": "entries",
 											"name": "Pit Trap",
+											"page": 13,
 											"id": "076",
 											"entries": [
 												"The northern exit to this chamber is trapped. A concealed 10-foot-square spiked pit trap, is on area 1's side of the opening. Passive Perceptions of 15 or higher detect it just before stepping on it; a successful DC 14 Intelligence ({@skill Investigation}) check while looking for traps find it as well. When one character steps onto the trap, that character must succeed at a DC 12 Dexterity saving throw or take {@dice 2d10} piercing damage from the spikes in the 10-foot-deep pit."
@@ -6841,6 +6878,7 @@
 						{
 							"type": "entries",
 							"name": "2. Lavatory Pit & Cages",
+							"page": 13,
 							"id": "077",
 							"entries": [
 								{
@@ -6858,6 +6896,7 @@
 										{
 											"type": "entries",
 											"name": "Cages",
+											"page": 13,
 											"id": "07a",
 											"entries": [
 												"The cells are rudimentary and can be broken open with a successful DC 13 Strength ({@skill Athletics}) check or the locks picked with a successful DC 13 Dexterity (Thieves' Tools) check. There are two keys. The skinweaver carries one and the other is on one of the kobold corpses in the spythronar webs in {@area area 5|083|x}."
@@ -6870,6 +6909,7 @@
 						{
 							"type": "entries",
 							"name": "3. Barracks",
+							"page": 13,
 							"id": "07b",
 							"entries": [
 								{
@@ -6887,6 +6927,7 @@
 										{
 											"type": "entries",
 											"name": "Stalagmite",
+											"page": 13,
 											"id": "07e",
 											"entries": [
 												"A successful DC 15 Intelligence ({@skill History}) check reveals that this stalagmite has been carved into a crude representation of the Filth Grazer, which the morbus kobolds worship. They've been forced to denounce their allegiance to that entity while serving the skinweaver."
@@ -6899,6 +6940,7 @@
 						{
 							"type": "entries",
 							"name": "4. Root Cellar",
+							"page": 14,
 							"id": "07f",
 							"entries": [
 								{
@@ -6916,6 +6958,7 @@
 										{
 											"type": "entries",
 											"name": "Magical Boots",
+											"page": 14,
 											"id": "082",
 											"entries": [
 												"The elven boots are quickheels, magical boots (requiring attunement) that allow the wearer to use a bonus action to double their speed for a single round. This effect requires a long rest before the item can be used again. They have an Elven inscription written across the tongues that, when taken together reads, \"You only need to cross the finish line once to win the race.\""
@@ -6928,6 +6971,7 @@
 						{
 							"type": "entries",
 							"name": "5. Spider Lair",
+							"page": 14,
 							"id": "083",
 							"entries": [
 								{
@@ -6945,6 +6989,7 @@
 										{
 											"type": "entries",
 											"name": "Cocoons",
+											"page": 14,
 											"id": "086",
 											"entries": [
 												"Among the dozens of entombed animals are several kobolds who had the misfortune to cross the chamber while the spythronar were hunting. One of these cocooned (and deceased) kobolds has the key to the cages in {@area area 2|077|x} as well as a small pouch containing a {@item potion of healing}. The characters automatically find this kobold and his loot after thoroughly searching the area for ten minutes. Characters who succeed on an DC 13 Intelligence ({@skill Investigation}) check can speed up this process and do it in five minutes."
@@ -6957,6 +7002,7 @@
 						{
 							"type": "entries",
 							"name": "6. Skinweaver's Blinds",
+							"page": 14,
 							"id": "087",
 							"entries": [
 								{
@@ -6984,6 +7030,7 @@
 										{
 											"type": "entries",
 											"name": "Leather and Web Blind",
+											"page": 14,
 											"id": "08a",
 											"entries": [
 												"Characters particularly worried about being ambushed in the blind may want to try hacking their way through it or burning it. Hacking is reasonably effective (though slow). Each strand of webbing acts as webbing: AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage. The leather is similar: AC 12; hp 7; vulnerability to acid damage; immunity to bludgeoning, poison, and psychic damage. Destroying a web and a leather section exposes and clears a 5-foot-square section of the blind. If the characters take more than three rounds to clear the blind or move through it, the skinweaver attacks them through the blind. Because of its web-connections, treat the skinweaver as having {@sense blindsight} against any characters in contact with the blind."
@@ -6996,6 +7043,7 @@
 						{
 							"type": "entries",
 							"name": "7. Skinweaver Chamber",
+							"page": 15,
 							"id": "08b",
 							"entries": [
 								{
@@ -7014,6 +7062,7 @@
 										{
 											"type": "entries",
 											"name": "Filth Grazer Statue",
+											"page": 15,
 											"id": "08e",
 											"entries": [
 												"This crude statue is worthless but belonged to the kobold's original chieftain. She stashed a {@item potion of growth} down its throat. The vial can be discovered with a successful DC 13 Intelligence ({@skill Investigation}) check."
@@ -7022,6 +7071,7 @@
 										{
 											"type": "entries",
 											"name": "Key",
+											"page": 15,
 											"id": "08f",
 											"entries": [
 												"The skinweaver carries one of the keys to the cages in {@area area 2|077|x}."
@@ -7030,6 +7080,7 @@
 										{
 											"type": "entries",
 											"name": "Tapestries, Wardrobes, Bookshelves, and Desk",
+											"page": 15,
 											"id": "090",
 											"entries": [
 												"The majority of the tapestries are sewn to anchor points in the walls and are immovable without destroying them. The clothes in the wardrobe are tailored to the skinweaver and are similarly worthless except for their leather value. The books are on a variety of topics including languages, geography, and, of course, tailoring. Characters who spend at least an hour perusing the books gain advantage on their next Intelligence ability check. The small collection can be sold for 35 gp. The desk is filled with strange notations; even {@spell comprehend languages} does not reveal the meaning of the scribbles. A character proficient with {@item Leatherworker's Tools|PHB|leatherworker's} or {@item weaver's tools|PHB} who spends four hours researching them realizes they're patterns for exquisite leatherworking. The patterns can be sold to a collector (once translated out of the skinweaver's shorthand) for 100 gp.",
@@ -7049,6 +7100,7 @@
 						{
 							"type": "entries",
 							"name": "8. Tanning Area",
+							"page": 15,
 							"id": "091",
 							"entries": [
 								{
@@ -7066,6 +7118,7 @@
 										{
 											"type": "entries",
 											"name": "Vats",
+											"page": 15,
 											"id": "094",
 											"entries": [
 												"The vats contain the various chemical agents and acids the skinweaver employs to create its insane masterpieces. A creature who touches a substance takes {@dice 1d4} acid damage; a creature submerged in a vat takes {@dice 2d6} acid damage per round it is submerged and an additional {@dice 2d6} acid damage on the round after it's no longer submerged."
@@ -7074,6 +7127,7 @@
 										{
 											"type": "entries",
 											"name": "Rack",
+											"page": 15,
 											"id": "095",
 											"entries": [
 												"The metal rack is effective at restraining a creature but can easily be opened by any creature not {@condition restrained} on it."
@@ -7088,6 +7142,7 @@
 				{
 					"type": "section",
 					"name": "Conclusion",
+					"page": 15,
 					"id": "096",
 					"entries": [
 						"Defeating the skinweaver, rescuing the prisoners, and determining the fate of the person in the tanning room ends this adventure and disperses any remaining kobolds. The characters return to the local farms as heroes. Future adventures might seek to answer the question of where the skinweaver came from. Perhaps it only targeted people from a particular extended family or even a particular village: why only them? Who was really pulling the strings?",
@@ -7123,6 +7178,7 @@
 		{
 			"type": "section",
 			"name": "4: Apostate Temple",
+			"page": 17,
 			"id": "0ae",
 			"entries": [
 				"{@i By Tom \"Evhelm\" Donovan}",
@@ -7139,6 +7195,7 @@
 				{
 					"type": "section",
 					"name": "Background",
+					"page": 17,
 					"id": "0af",
 					"entries": [
 						"After turning on both Arch Seraph Solyma and Arch Daemon Venin, a bloodbonded (known to its followers as \"the Holy One\") has used its twisted lies to gather desperate villagers to the ruins of this forgotten temple. With its cult growing, the bloodbonded orders raids on shrines of the \"false\" gods, preaching the end of the dominion of Seraphs and Daemons alike. The temple's remote location proves perfect for the Holy One's efforts. Its followers have constructed makeshift storehouses, barracks, and even special chambers for the Holy One itself.",
@@ -7146,6 +7203,7 @@
 						{
 							"type": "entries",
 							"name": "Set the Hook",
+							"page": 17,
 							"id": "0b0",
 							"entries": [
 								"A local village, temple, or ruler may hire the characters to seek out the bloodbonded's temple and deal with its inhabitants because of the danger they pose. The characters may have received a vision from a seraphic (or daemonic) entity asking them to deal with the threat. A priest or other holy person might mandate the characters to silence the apostate and scatter its followers. The characters may be exploring a dense and unpopulated forest or a lofty and barren mountain, stumbling across the ruins. If a more personal reason is needed, have the characters track the bloodbonded's followers after an abduction; the bloodbonded is stealing people to sacrifice for its dark purposes.",
@@ -7157,6 +7215,7 @@
 				{
 					"type": "section",
 					"name": "Lair Overview",
+					"page": 17,
 					"id": "0b1",
 					"entries": [
 						"Assume that most of the roof that once covered the stylobate has fallen in, leaving all but the raised sanctuary platform partly exposed to the elements and sunlight during the day. The colonnades are almost entirely intact. Only a pair of large supporting columns in the northwest of the temple have collapsed outward, causing part of the stylobate and roof to collapse along with it.",
@@ -7409,6 +7468,7 @@
 						{
 							"type": "entries",
 							"name": "1. Stylobate Base",
+							"page": 17,
 							"id": "0b2",
 							"entries": [
 								{
@@ -7426,6 +7486,7 @@
 										{
 											"type": "entries",
 											"name": "Watchfires",
+											"page": 17,
 											"id": "0b5",
 											"entries": [
 												"These low fires shed 30 feet of bright light and an additional 30 feet of dim light. They are the only consistent light source on the stylobate level."
@@ -7438,6 +7499,7 @@
 						{
 							"type": "entries",
 							"name": "2. Barracks",
+							"page": 17,
 							"id": "0b6",
 							"entries": [
 								{
@@ -7455,6 +7517,7 @@
 										{
 											"type": "entries",
 											"name": "Footlockers",
+											"page": 17,
 											"id": "0b9",
 											"entries": [
 												"Small lidless fruit crates have been nailed to the bunks to form open-shelved footlockers for the cramped cultists. Most have a change of clothes, eating utensils, or hardtack, but one has secreted away a small gold bracelet worth 25 gp."
@@ -7467,6 +7530,7 @@
 						{
 							"type": "entries",
 							"name": "3. Storeroom",
+							"page": 17,
 							"id": "0ba",
 							"entries": [
 								{
@@ -7484,6 +7548,7 @@
 										{
 											"type": "entries",
 											"name": "Food Supplies",
+											"page": 17,
 											"id": "0bd",
 											"entries": [
 												"There are more than enough nonperishable supplies here to replenish up to twenty days' worth of rations."
@@ -7496,6 +7561,7 @@
 						{
 							"type": "entries",
 							"name": "4. Armory",
+							"page": 18,
 							"id": "0be",
 							"entries": [
 								{
@@ -7513,6 +7579,7 @@
 										{
 											"type": "entries",
 											"name": "Weapons and Armor",
+											"page": 18,
 											"id": "0c1",
 											"entries": [
 												"The arms and armor here are of poor quality. Twenty sets of {@item leather armor|PHB}, a dozen {@item Sling|PHB|slings} and a hundred pellets, four {@item Longsword|PHB|longswords}, five {@item Scimitar|PHB|scimitars}, and two {@item Light Crossbow|PHB|light crossbows} (no bolts) are here for the taking.",
@@ -7535,6 +7602,7 @@
 						{
 							"type": "entries",
 							"name": "5. Bloodbonded Quarters",
+							"page": 18,
 							"id": "0c2",
 							"entries": [
 								{
@@ -7553,6 +7621,7 @@
 										{
 											"type": "entries",
 											"name": "Books and The Mad Treatise",
+											"page": 18,
 											"id": "0c5",
 											"entries": [
 												"Most of the books the bloodbonded has acquired are written in Celestial and center on superstitions and folktales that are 90 percent fiction and 10 percent fact. They are dry grimoires with no literary value or illustrations. Only one book on the shelves stands out from the rest: The Mad Treatise. When the bloodbonded hits a dead end in its summoning attempts, it spends some time adding to its experimental log. The Mad Treatise is a lightly enchanted magic item (conjuration) and can be used as an arcane focus. Any spellcaster who uses the tome as its arcane focus and casts a conjuration spell that conjures at least one creature can choose one of the summoned creatures to be summoned with 5 {@book temporary hp|PHB|9|Temporary Hit Points}."
@@ -7561,6 +7630,7 @@
 										{
 											"type": "entries",
 											"name": "Chest",
+											"page": 18,
 											"id": "0c6",
 											"entries": [
 												"The collected valuables of the camp are stored in an unlocked chest: 2,800 cp, 1,300 sp, and 60 gp."
@@ -7569,6 +7639,7 @@
 										{
 											"type": "entries",
 											"name": "Furnishings",
+											"page": 18,
 											"id": "0c7",
 											"entries": [
 												"The wall tapestries are faded and have been splattered with blood, defacing the sacred and profane themes that once played across them. The rug is similarly dirty and ripped, though still soft. The desk and chair are rudimentary, having neither arms nor drawers."
@@ -7581,6 +7652,7 @@
 						{
 							"type": "entries",
 							"name": "6. Sanctuary Stairs",
+							"page": 18,
 							"id": "0c8",
 							"entries": [
 								{
@@ -7598,6 +7670,7 @@
 										{
 											"type": "entries",
 											"name": "Large Stairs",
+											"page": 18,
 											"id": "0cb",
 											"entries": [
 												"These extra-tall, extra-wide stairs are almost too large to ascend without climbing. They are treated as {@book difficult terrain|PHB|8|Difficult Terrain} for any creature smaller than Huge."
@@ -7610,6 +7683,7 @@
 						{
 							"type": "entries",
 							"name": "7. The Sanctuary",
+							"page": 18,
 							"id": "0cc",
 							"entries": [
 								{
@@ -7637,6 +7711,7 @@
 										{
 											"type": "entries",
 											"name": "Profane Summoning Circle",
+											"page": 18,
 											"id": "0cf",
 											"entries": [
 												"A complicated set of artistic shapes are inscribed in blood on the floor in a 15-foot-diameter area. Characters who succeed on a DC 14 Intelligence ({@skill Arcana}) check recognize the general arrangement and layout of the shapes as a circle of daemon summoning. However, this one has druidic symbols merged with it. Stepping voluntarily onto this circle without having dealt damage to another creature in the last round causes a character to take 7 ({@dice 2d6}) necrotic damage unless it succeeds on a DC 13 Charisma saving throw. This effect can trigger once per creature per round."
@@ -7645,6 +7720,7 @@
 										{
 											"type": "entries",
 											"name": "North-Side Altar",
+											"page": 18,
 											"id": "0d0",
 											"entries": [
 												"This altar has been horribly defaced and smashed with a large heavy object. Only the top of the altar remains intact. A copper chalice with gold filigree rests atop it, filled with dried blood. The chalice (cleaned of blood) is worth 25 gp."
@@ -7653,6 +7729,7 @@
 										{
 											"type": "entries",
 											"name": "Statue Ruins",
+											"page": 18,
 											"id": "0d1",
 											"entries": [
 												"It is difficult to determine what this statue looked like before its fall. A successful DC 15 Intelligence ({@skill History}) check determines that this statue depicted a four-winged seraphic figure wearing a crown and holding a scythe. Characters proficient with mason's tools have advantage on this check."
@@ -7661,6 +7738,7 @@
 										{
 											"type": "entries",
 											"name": "East Main Altar",
+											"page": 18,
 											"id": "0d2",
 											"entries": [
 												"This altar has been horribly defaced with a caustic agent. It was once lovingly painted but is now pocked and discolored. A silver ewer filled with acid rests on the altar. The acid from the ewer acts as using a {@item Acid (vial)|PHB|vial of acid} in combat. If the acid is cleaned out, the ewer is worth 30 gp."
@@ -7669,6 +7747,7 @@
 										{
 											"type": "entries",
 											"name": "Sacred Summoning Circle",
+											"page": 18,
 											"id": "0d3",
 											"entries": [
 												"A set of overlapping geometric shapes are roughly chiseled into the floor. The shapes are obscured by four dismembered body parts and the blood that accompanies them: two hands and two feet are spaced as if the body that connected them has been removed. The shapes cover a 15-foot-diameter area. Characters who succeed at a DC 14 Intelligence ({@skill Religion}) check recognize the general shape and layout of the shapes as a circle of seraphic summoning. However, the body parts and blood would not normally be part of such a ritual. Stepping voluntarily onto this circle without having dealt damage to another creature in the last round causes a character to take 7 ({@dice 2d6}) radiant damage unless it succeeds on a DC 13 Charisma saving throw. This effect can trigger once per creature per round."
@@ -7677,6 +7756,7 @@
 										{
 											"type": "entries",
 											"name": "South-Side Altar",
+											"page": 19,
 											"id": "0d4",
 											"entries": [
 												"This altar has been left entirely intact but is frustratingly bereft of art or pigmentation that would help divine its purpose or dedication. A pair of cloth-of-gold vestments have been folded meticulously on the altar, each worth 20 gp."
@@ -7685,6 +7765,7 @@
 										{
 											"type": "entries",
 											"name": "Cages",
+											"page": 19,
 											"id": "0d5",
 											"entries": [
 												"Depending on your comfort level and the comfort level of your players, these cages can be stocked with animals the cultists have caught, by dead prisoners they've recently killed, by living hostages, by living voluntary sacrifices, or by living involuntary sacrifices. There are four cages, each one large enough to comfortably contain a Medium-sized creature."
@@ -7699,6 +7780,7 @@
 				{
 					"type": "section",
 					"name": "Conclusion",
+					"page": 19,
 					"id": "0d6",
 					"entries": [
 						"Killing the bloodbonded is the only way to guarantee that its cult does not survive to trouble civilization again. Chasing it off is a half-measure. If the characters have been contracted to rescue captives (or if they merely witnessed a kidnapping and set out to track the abductors), freeing the prisoners in the cages and getting them to safety qualifies as success as well. If the prisoners are killed (perhaps in a failed hostage negotiation), that reflects poorly on the characters. Similarly, the bloodbonded's closest followers (the commoners) are brainwashed. To earn the most respect from their employers, the characters should allow as few commoners as possible to perish defending their monstrous leader.",
@@ -7733,6 +7815,7 @@
 		{
 			"type": "section",
 			"name": "5: Gloomrock Caverns",
+			"page": 21,
 			"id": "0e7",
 			"entries": [
 				"{@i By Tom \"Evhelm\" Donovan}",
@@ -7740,6 +7823,7 @@
 				{
 					"type": "section",
 					"name": "Background",
+					"page": 21,
 					"id": "0e8",
 					"entries": [
 						"This cave system houses a natural underground ecosystem. If not for the dawndrinker's presence, it's unlikely the characters would have found their way into it: there is no long-forgotten dungeon, no veins of precious metal, no dark and evil civilization below it\u2014unless you want there to be for a future adventure!",
@@ -7747,6 +7831,7 @@
 						{
 							"type": "entries",
 							"name": "Set the Hook",
+							"page": 21,
 							"id": "0e9",
 							"entries": [
 								"This dawndrinker has had months to (fairly literally) soak up the sun. The dawndrinker's aura of advanced darkness is in full effect. For a mile in any given direction, the sun is as pale as a cloud-shrouded moon, and, beneath even the slightest shade, total darkness reigns. Trees and plants have begun to wither, and docile animals have fled the area in droves, driven away by the persistent darkness. The characters have either been hired to determine the source of this darkness and restore the light, or have undertaken this quest on their own."
@@ -7757,6 +7842,7 @@
 				{
 					"type": "section",
 					"name": "Lair Overview",
+					"page": 21,
 					"id": "0ea",
 					"entries": [
 						"Carefully read over the dawndrinker's abilities, as it establishes the light-source rules for the lair. Notably, {@sense darkvision} does not function in the Gloomrock Caverns! Because the area is in perpetual night, other than the foraging habits of the grimlocks (which are cyclic and focused on the underwater lake in {@area areas 2|0f0|x} and {@area area 3|0f4|x}), the creatures' lives are almost static.",
@@ -10358,6 +10444,7 @@
 						{
 							"type": "entries",
 							"name": "1. Caverns Entrance",
+							"page": 21,
 							"id": "0eb",
 							"entries": [
 								{
@@ -10375,6 +10462,7 @@
 										{
 											"type": "entries",
 											"name": "Rough Ascent",
+											"page": 21,
 											"id": "0ee",
 											"entries": [
 												"Hidden 25 feet up on the northeast wall is a large opening to another tunnel ({@area area 4|0f8|x}). From ground level, it is difficult to see. Characters who succeed on a DC 15 Wisdom ({@skill Perception}) check (and have light sufficient to see it) notice it. The stones on the wall are jagged and easy to climb unless the characters are in combat. In combat, characters must succeed on a DC 10 Strength ({@skill Athletics}) check to advance up the wall."
@@ -10383,6 +10471,7 @@
 										{
 											"type": "entries",
 											"name": "Smooth Descent",
+											"page": 21,
 											"id": "0ef",
 											"entries": [
 												"Characters without sufficient light sources who are moving too quickly may pitch themselves over the 25-foot drop and into the water below. The wall here is wet, requiring a DC 15 Strength ({@skill Athletics}) check to successfully scale without the help of a rope. Characters who climb up from the water in area 2 and reach the top automatically notice the handholds the grimlocks made leading to {@area area 4|0f8|x}.",
@@ -10402,6 +10491,7 @@
 						{
 							"type": "entries",
 							"name": "2. Grimlock Island",
+							"page": 21,
 							"id": "0f0",
 							"entries": [
 								{
@@ -10419,6 +10509,7 @@
 										{
 											"type": "entries",
 											"name": "Garbage Island",
+											"page": 21,
 											"id": "0f3",
 											"entries": [
 												"The small island is covered in the detritus of sightless living. Beneath the filth and bones are the remains of a spelunker the grimlocks killed, who carried a {@item climber's kit|PHB} and {@item Silk Rope (50 feet)|PHB|50 feet of silk rope}."
@@ -10431,6 +10522,7 @@
 						{
 							"type": "entries",
 							"name": "3. Drake Lake",
+							"page": 21,
 							"id": "0f4",
 							"entries": [
 								{
@@ -10448,6 +10540,7 @@
 										{
 											"type": "entries",
 											"name": "Buried Treasure",
+											"page": 21,
 											"id": "0f7",
 											"entries": [
 												"One previous, tentative expedition to deal with the dawndrinker was fated to end here. Two skeletons sit at the bottom of the lake, twenty feet below the surface. While most of their gear is waterlogged, rusted, and worthless, a pristine {@item +1 flail} sits with the bones."
@@ -10460,6 +10553,7 @@
 						{
 							"type": "entries",
 							"name": "4. Slow Rise",
+							"page": 22,
 							"id": "0f8",
 							"entries": [
 								{
@@ -10478,6 +10572,7 @@
 										{
 											"type": "entries",
 											"name": "Scale the Wall",
+											"page": 22,
 											"id": "0fb",
 											"entries": [
 												"Characters who want to scale the 40-foot-tall wall to get to area 5 can do so with successful DC 13 Strength ({@skill Athletics}) checks."
@@ -10490,6 +10585,7 @@
 						{
 							"type": "entries",
 							"name": "5. Horror Flit Nest",
+							"page": 22,
 							"id": "0fc",
 							"entries": [
 								{
@@ -10507,6 +10603,7 @@
 										{
 											"type": "entries",
 											"name": "Treasure",
+											"page": 22,
 											"id": "0ff",
 											"entries": [
 												"Characters who seek out the horror flits' nest discover several spiked bone clubs (from grimlock meals) along with a belt pouch containing a handful of pearls (worth 250 gp total), assorted loose coins totaling 82 sp and 57 cp, and a {@item spell scroll} of {@spell burning hands}.",
@@ -10529,6 +10626,7 @@
 						{
 							"type": "entries",
 							"name": "6. Unsteady Stalagmites",
+							"page": 23,
 							"id": "100",
 							"entries": [
 								{
@@ -10547,6 +10645,7 @@
 										{
 											"type": "entries",
 											"name": "Fungi",
+											"page": 23,
 											"id": "103",
 											"entries": [
 												"The characters may be wary of the fungi, but it's harmless and edible. When the dawndrinker is not around, they are luminescent, but their light is one of the first things the dawndrinker consumed! A successful DC 10 Intelligence ({@skill Nature}) check tells a character that this fungi should be glowing, but isn't, for some reason that must be magical."
@@ -10555,6 +10654,7 @@
 										{
 											"type": "entries",
 											"name": "Floor Collapse",
+											"page": 23,
 											"id": "104",
 											"entries": [
 												"If two or more characters walk over the faulty section, it collapses. Characters who succeed at a DC 18 Dexterity saving throw grab the stable sides as the floor gives way and stay in area 6. Those who fail take 7 ({@dice 2d6}) bludgeoning damage from the floor debris as it crashes into the water around them. (These characters fall 30 feet into the water below, putting them between {@area areas 2|0f0|x} and {@area 3|0f4|x}.)"
@@ -10567,6 +10667,7 @@
 						{
 							"type": "entries",
 							"name": "7. Dawndrinker Glimmercave",
+							"page": 23,
 							"id": "105",
 							"entries": [
 								{
@@ -10595,6 +10696,7 @@
 										{
 											"type": "entries",
 											"name": "Pool",
+											"page": 23,
 											"id": "108",
 											"entries": [
 												"The pool of water is not deep\u2014only a few feet\u2014but it's large enough that smart characters may retreat into it to both slow the dawndrinker's movement (wading counts as {@book difficult terrain|PHB|8|Difficult Terrain}) and to hear the dawndrinker's approach before it strikes."
@@ -10603,6 +10705,7 @@
 										{
 											"type": "entries",
 											"name": "Retreat Up",
+											"page": 23,
 											"id": "109",
 											"entries": [
 												"Characters may think to climb away from the dawndrinker. In such a case, it uses the passage to area 8 to get the jump on the characters from behind."
@@ -10611,6 +10714,7 @@
 										{
 											"type": "entries",
 											"name": "Retreat East",
+											"page": 23,
 											"id": "10a",
 											"entries": [
 												"Characters may discover that the passage to area 8 narrows considerably\u2014and that retreating into it might force the dawndrinker to attack head on. Depending on the characters' abilities, this may be a useful way to contain the dawndrinker's strengths and force it to face only the character with the best AC at any given time!"
@@ -10623,6 +10727,7 @@
 						{
 							"type": "entries",
 							"name": "8. Sloped Tunnel",
+							"page": 23,
 							"id": "10b",
 							"entries": [
 								{
@@ -10641,6 +10746,7 @@
 										{
 											"type": "entries",
 											"name": "Miklas's Gear",
+											"page": 23,
 											"id": "10e",
 											"entries": [
 												"The dragonborn corpse wears its suit of {@item Plate Armor|PHB|plate mail} armor and {@item shield|PHB}. Her rations are spoiled, but her backpack still holds 18 gp, 3 moonstones (each worth 25 gp) and a {@item spell scroll} of {@spell daylight}. There are also three empty vials, as well as an intact one holding a {@item potion of greater healing}.",
@@ -10662,6 +10768,7 @@
 				{
 					"type": "section",
 					"name": "Conclusion",
+					"page": 23,
 					"id": "10f",
 					"entries": [
 						"Killing the dawndrinker allows all light sources to return to their original, normal strength. Failing to penetrate deeply enough into the lair to face the dawndrinker or allowing it to escape causes the darkness to persist and more of the region to fall into perpetual twilight.",
@@ -10689,6 +10796,7 @@
 		{
 			"type": "section",
 			"name": "6: Boulderwood Path",
+			"page": 25,
 			"id": "129",
 			"entries": [
 				"{@i By Tom \"Evhelm\" Donovan}",
@@ -10696,6 +10804,7 @@
 				{
 					"type": "section",
 					"name": "Background",
+					"page": 25,
 					"id": "12a",
 					"entries": [
 						"The Boulderwood was named for its large stone outcroppings, but now that name takes on a more sinister tone for the stony fate that befalls travelers on its dangerous paths. A pack of lupilisks recently moved into this dense forest, stopping trade and cutting off communication between realms on either side.",
@@ -10711,6 +10820,7 @@
 						{
 							"type": "entries",
 							"name": "Set the Hook",
+							"page": 25,
 							"id": "12b",
 							"entries": [
 								"A desperate western regent (or her agent, perhaps a captain of the guard or trusted advisor) tells the characters a rough outline of the information laid out in the Background. The characters' primary mission is to recover the signed and sealed documents (if possible) and the secondary mission is to determine what happened to the courier. Is the courier a traitor? Is there foul play involved? Is this just an accident?",
@@ -10722,6 +10832,7 @@
 				{
 					"type": "section",
 					"name": "Lair Overview",
+					"page": 25,
 					"id": "12c",
 					"entries": [
 						"The characters arrive on the road from the west at {@area area 1|12d|x}. This deep in the Boulderwood, the tree canopy is very thick. The rocky outcroppings here have led to fewer taller, stronger trees, so the canopy is still all encompassing but light does pass through.",
@@ -11656,6 +11767,7 @@
 						{
 							"type": "entries",
 							"name": "1. Forest Path",
+							"page": 25,
 							"id": "12d",
 							"entries": [
 								{
@@ -11673,6 +11785,7 @@
 										{
 											"type": "entries",
 											"name": "Stone Horse",
+											"page": 25,
 											"id": "130",
 											"entries": [
 												"Characters who investigate the horse with a successful DC 12 Intelligence ({@skill Investigation}) check discover that the statue is of impeccable workmanship, displaying the animal rearing back. It even has bridles and a broken yoke carved with symbols of the western regent. Those who suspect the horse was turned to stone (rather than being an artificial statue) can attempt a DC 15 Intelligence ({@skill Arcana}). A success recalls stories of fantastic fiends called {@creature Lupilisk|GHLoE|lupilisks} whose venom\u2014which grows stronger as the creature ages\u2014petrifies its prey. Characters who succeed by 5 or more also recall that lupilisks tend to hunt in packs and are often led by the oldest and most powerful among them."
@@ -11681,6 +11794,7 @@
 										{
 											"type": "entries",
 											"name": "Path",
+											"page": 25,
 											"id": "131",
 											"entries": [
 												"Characters who succeed at a DC 15 Wisdom ({@skill Survival}) check can pick out a set of wagon wheel tracks that indicate the wagon picked up speed here. Those who succeed by 5 or more know that the speed increase was uncontrolled and unsafe."
@@ -11693,6 +11807,7 @@
 						{
 							"type": "entries",
 							"name": "2. Watering Hole",
+							"page": 25,
 							"id": "132",
 							"entries": [
 								{
@@ -11710,6 +11825,7 @@
 										{
 											"type": "entries",
 											"name": "Rocky Area",
+											"page": 26,
 											"id": "135",
 											"entries": [
 												"The raised area that separates the pool's surroundings from the forest path is {@book difficult terrain|PHB|8|Difficult Terrain}. Characters can use this to their advantage to slow the lupilisks!"
@@ -11718,6 +11834,7 @@
 										{
 											"type": "entries",
 											"name": "Pool",
+											"page": 26,
 											"id": "136",
 											"entries": [
 												"The water is cool and clean to drink. It is 10 feet deep at its deepest point."
@@ -11726,6 +11843,7 @@
 										{
 											"type": "entries",
 											"name": "Treasure",
+											"page": 26,
 											"id": "137",
 											"entries": [
 												"The napping whelps had just finished a stony meal. A stone hand and a metal scroll case (one of the three pieces of the treaty) are all that remain of this courier guard.",
@@ -11747,6 +11865,7 @@
 						{
 							"type": "entries",
 							"name": "3. Ruined Wagon",
+							"page": 26,
 							"id": "138",
 							"entries": [
 								{
@@ -11764,6 +11883,7 @@
 										{
 											"type": "entries",
 											"name": "Wagon",
+											"page": 26,
 											"id": "13b",
 											"entries": [
 												"To establish the courier's cover, she was given several crates filled with jars of flour. The wreck of the wagon has broken most of the jars, and the crates are leaking flour. A successful DC 14 Wisdom ({@skill Survival} or {@skill Perception}) check reveals that the wagon capsized after being chased by at least ten quadrupedal creatures. A successful DC 14 Intelligence ({@skill Investigation}) check reveals that some of the rocks on the road are not rocks at all, but pieces of another horse statue. Succeeding at either of these checks, or spending 10 minutes searching, reveals no lockbox or other suitable safe place for the treaty; the treaty pieces are not here and were likely carried by the courier or her guards."
@@ -11776,6 +11896,7 @@
 						{
 							"type": "entries",
 							"name": "4. Elder Mount",
+							"page": 26,
 							"id": "13c",
 							"entries": [
 								{
@@ -11793,6 +11914,7 @@
 										{
 											"type": "entries",
 											"name": "Climbing",
+											"page": 26,
 											"id": "13f",
 											"entries": [
 												"Climbing or descending the gentle slope on the eastern side of the hillock does not require a check but is considered {@book difficult terrain|PHB|8|Difficult Terrain}. To ascend or descend the steeper three sides of the hillock requires a successful DC 15 Strength ({@skill Athletics}) check. The hillock is 30 feet above the forest floor."
@@ -11801,6 +11923,7 @@
 										{
 											"type": "entries",
 											"name": "Treasure",
+											"page": 26,
 											"id": "140",
 											"entries": [
 												"Near a petrified boot lies a necklace (an {@item amulet of proof against detection and location}) and the second piece of the treaty in a scroll case. This is the final resting place of the courier."
@@ -11813,6 +11936,7 @@
 						{
 							"type": "entries",
 							"name": "5. Hillside Nest",
+							"page": 26,
 							"id": "141",
 							"entries": [
 								{
@@ -11830,6 +11954,7 @@
 										{
 											"type": "entries",
 											"name": "Treasure",
+											"page": 26,
 											"id": "144",
 											"entries": [
 												"Searching the nest for treasure yields the third metal scroll case containing the third part of the treaty. A successful DC 16 Intelligence ({@skill Investigation}) check also yields a {@item ring of jumping} that was hidden in the filth."
@@ -11842,6 +11967,7 @@
 						{
 							"type": "entries",
 							"name": "6. Ancient Altar",
+							"page": 26,
 							"id": "145",
 							"entries": [
 								{
@@ -11868,6 +11994,7 @@
 										{
 											"type": "entries",
 											"name": "Climbing",
+											"page": 26,
 											"id": "148",
 											"entries": [
 												"Climbing or descending the gentle slope on the western side of the knoll does not require a check but is considered {@book difficult terrain|PHB|8|Difficult Terrain}. To ascend or descend the steeper southeast side of the hillock requires a successful DC 15 Strength ({@skill Athletics}) check. The knoll's crest is 30 feet above the forest floor."
@@ -11876,6 +12003,7 @@
 										{
 											"type": "entries",
 											"name": "Eyes on the Altar",
+											"page": 26,
 											"id": "149",
 											"entries": [
 												"If the characters arrive after collecting any or all the treaty scroll cases, a group of 12 {@creature Eye Crow|GHLoE|eye crows}* fly onto the altar and stare at the characters. Characters who approach the 12 swear they hear the word \"meddler\" being whispered by the birds\u2014but each character hears it in their native tongue. Attacking or moving threateningly towards the eye crows causes them to scatter to the trees (or further if pursued). However, if only a single character is present at the altar, the 12 attack, trying to pluck out the characters' eyes.",
@@ -11891,6 +12019,7 @@
 				{
 					"type": "section",
 					"name": "Conclusion",
+					"page": 27,
 					"id": "14a",
 					"entries": [
 						"Characters who unseal and open the scroll cases find that the treaty was written, signed, and then cut vertically, meaning that only someone who has all three pieces can truly understand all the treaty's articulations and stipulations. Characters who put the treaty together and read it find that it is exactly what the western regent said it was: a renewal of a treaty between the western and eastern regions. It is up to the characters what to do with it. Taking it back to the western regent is a halfway measure but taking it to the eastern regent may be a gamble (after all, what if the eastern regent is responsible for the attack on the courier?). In any case, opening the seals should diminish (but not negate) the reward.",
@@ -11930,6 +12059,7 @@
 		{
 			"type": "section",
 			"name": "7: Flamegrit Iron Mine",
+			"page": 29,
 			"id": "166",
 			"entries": [
 				"{@i By Tom \"Evhelm\" Donovan}",
@@ -11937,12 +12067,14 @@
 				{
 					"type": "section",
 					"name": "Background",
+					"page": 29,
 					"id": "167",
 					"entries": [
 						"In Stehlenwald province, the small city of Flamegrit is an iron mine that has a problem with elementals. Mjorks have been moving up through the lower levels of the mine, and now they've taken over. The dwarves have sealed off the mine, but they know it won't hold the mjorks forever: the mjorks seek to escape the mine's confines and spread their environment of ash and fire to the whole of Etharis.",
 						{
 							"type": "entries",
 							"name": "Set the Hook",
+							"page": 29,
 							"id": "168",
 							"entries": [
 								"The easiest way for the characters to be involved is to be in Flamegrit when the mine is sealed; the dwarven council recruits them to clear the top level of the mine and rescue miners trapped there. Perhaps the dwarves have a magic item or resource the characters need, or perhaps the dwarven council's permission is needed to travel through their lands or to explore. Whatever the characters need, the dwarves have it and will give it to the characters if they defeat the mjorks who have shut down their mine.",
@@ -11954,6 +12086,7 @@
 				{
 					"type": "section",
 					"name": "Lair Overview",
+					"page": 29,
 					"id": "169",
 					"entries": [
 						"The mine is hot. While rocky surfaces won't cause damage, it is exceptionally warm, like the inside of a sauna. Prolonged exposure without a buffer or cooler causes characters to accrue levels of {@condition exhaustion} at a rate of one level per eight hours. The air is stale and sooty, even in areas lacking mjorks. The northern area of the cavern is largely static, but if the characters delay too long in {@area area 2|16e|x}, two {@creature Mjork Sootling Swarm|GHLoE|sootling swarms}* climb from the pit and harass them. The {@creature mjork charger|GHLoE}* in {@area area 7|184|x} is on patrol across the southern area. Exceptionally loud noise (as from a {@spell thunderwave} or {@spell knock} spell) draws the charger to almost any location in the mine in {@dice 2d4} rounds.",
@@ -13254,6 +13387,7 @@
 						{
 							"type": "entries",
 							"name": "1. Entrance",
+							"page": 29,
 							"id": "16a",
 							"entries": [
 								{
@@ -13271,6 +13405,7 @@
 										{
 											"type": "entries",
 											"name": "Asher Fog",
+											"page": 29,
 											"id": "16d",
 											"entries": [
 												"The mjork asher's smoke shroud is in effect, emanating from its starting position near the supplies."
@@ -13283,6 +13418,7 @@
 						{
 							"type": "entries",
 							"name": "2. North Side",
+							"page": 29,
 							"id": "16e",
 							"entries": [
 								{
@@ -13300,6 +13436,7 @@
 										{
 											"type": "entries",
 											"name": "Pit",
+											"page": 29,
 											"id": "171",
 											"entries": [
 												"The central scar is between fifty and sixty feet deep, leading to the next level of the mine. Due to the mjorks' interference, the floor of the lower level is extremely hot; characters who contact it directly take 2 ({@dice 1d4}) fire damage per round. The branching pathways have been caved in, allowing only Tiny creatures to squeeze through. The ruined mining scaffold on the western side of the pit and the collapsed elevator on the eastern side can be climbed with a successful DC 10 Strength ({@skill Athletics}) check, or the sides of the pit walls can be scaled with a successful DC 15 Strength ({@skill Athletics}) check. Characters who spend more than a minute on the bottom level are attacked by three {@creature Mjork Sootling Swarm|GHLoE|sootling swarms}* that emerge from the side tunnels."
@@ -13312,6 +13449,7 @@
 						{
 							"type": "entries",
 							"name": "3. Smoking Crates",
+							"page": 29,
 							"id": "172",
 							"entries": [
 								{
@@ -13329,6 +13467,7 @@
 										{
 											"type": "entries",
 											"name": "Crates",
+											"page": 29,
 											"id": "175",
 											"entries": [
 												"The supplies are mostly destroyed. Characters who spend at least ten minutes salvaging from the crates find all the items in a {@item dungeoneer's pack|PHB} minus the rations and waterskin.",
@@ -13350,6 +13489,7 @@
 						{
 							"type": "entries",
 							"name": "4. Trapped Miners",
+							"page": 30,
 							"id": "176",
 							"entries": [
 								{
@@ -13377,6 +13517,7 @@
 										{
 											"type": "entries",
 											"name": "Barricade",
+											"page": 30,
 											"id": "179",
 											"entries": [
 												"If the characters don't interfere, the mjork burner breaks through the barricade 6 rounds after the characters see it. It proceeds to slaughter the miners. If the mjork is defeated, the miners happily help the characters disassemble the barricade."
@@ -13385,6 +13526,7 @@
 										{
 											"type": "entries",
 											"name": "Miners",
+											"page": 30,
 											"id": "17a",
 											"entries": [
 												"The miners are siblings from Clan Izim (Drik, Klup, Gred, and Trilk) and are extremely thankful to be saved. If the characters successfully save all four from the mjorks and escort them safely back to {@area area 1|16a|x}, they promise a boon of 50 gp from their clan treasury. Drik also gives the characters a pretty emerald she recovered while mining; unbeknownst to Drik, it is an {@item Elemental Gem, Emerald||elemental gem (emerald)}. The elemental gem and 12 sp can be recovered from the miners' corpses if the characters allow the burner to finish its grim task. The miners willingly share what they know of the mine: they can identify the three paths from the north to south areas, the bunkroom, the general store, and can confirm that there are no survivors below this level of the mine.",
@@ -13404,6 +13546,7 @@
 						{
 							"type": "entries",
 							"name": "5. West Cave",
+							"page": 30,
 							"id": "17b",
 							"entries": [
 								{
@@ -13431,6 +13574,7 @@
 										{
 											"type": "entries",
 											"name": "Torcheaters",
+											"page": 30,
 											"id": "17e",
 											"entries": [
 												"A flight of 6 {@creature Torcheater|GHLoE|torcheaters}* dwell in this cave, perched among the stalactites 15 feet overhead. They remain motionless and practically invisible unless the characters are carrying a fire-based light source. In that case, they swoop down to consume the light. They have no interest in fighting the characters unless attacked and flee if more than three of their number are slain."
@@ -13443,6 +13587,7 @@
 						{
 							"type": "entries",
 							"name": "6. General Store",
+							"page": 30,
 							"id": "17f",
 							"entries": [
 								{
@@ -13460,6 +13605,7 @@
 										{
 											"type": "entries",
 											"name": "Till",
+											"page": 30,
 											"id": "182",
 											"entries": [
 												"In a locked stone box behind the counter are 20 gp, 110 sp, and 255 cp. The box's lock can be opened with a successful DC 14 Dexterity (Thieves' Tools) check."
@@ -13468,6 +13614,7 @@
 										{
 											"type": "entries",
 											"name": "Supplies",
+											"page": 30,
 											"id": "183",
 											"entries": [
 												"As elsewhere, valuable supplies have been ruined. A successful DC 15 Intelligence ({@skill Investigation}) check reveals a matching set of three silk handkerchiefs that escaped the destruction, each worth 15 gp."
@@ -13480,6 +13627,7 @@
 						{
 							"type": "entries",
 							"name": "7. South Side",
+							"page": 30,
 							"id": "184",
 							"entries": [
 								{
@@ -13497,6 +13645,7 @@
 										{
 											"type": "entries",
 											"name": "Pit and Scaffold",
+											"page": 30,
 											"id": "187",
 											"entries": [
 												"See {@area area 2|16e|x} for details on the pit. Falling from the north side to the bottom is an 80-foot drop."
@@ -13509,6 +13658,7 @@
 						{
 							"type": "entries",
 							"name": "8. Bunkroom",
+							"page": 30,
 							"id": "188",
 							"entries": [
 								{
@@ -13526,6 +13676,7 @@
 										{
 											"type": "entries",
 											"name": "Footlockers",
+											"page": 30,
 											"id": "18b",
 											"entries": [
 												"More apt for resting mining picks than safe keeping for belongings between shifts, there are nevertheless a few valuables in these containers. Searching all the footlockers yields a pair of engraved bone dice (25 gp), three emeralds (each worth 50 gp), and 47 sp."
@@ -13538,6 +13689,7 @@
 						{
 							"type": "entries",
 							"name": "9. Abandoned Excavation",
+							"page": 30,
 							"id": "18c",
 							"entries": [
 								{
@@ -13560,6 +13712,7 @@
 						{
 							"type": "entries",
 							"name": "10. East Cave",
+							"page": 30,
 							"id": "18e",
 							"entries": [
 								{
@@ -13575,6 +13728,7 @@
 						{
 							"type": "entries",
 							"name": "11. Stone Bridge",
+							"page": 31,
 							"id": "190",
 							"entries": [
 								{
@@ -13592,6 +13746,7 @@
 										{
 											"type": "entries",
 											"name": "Collapse",
+											"page": 31,
 											"id": "193",
 											"entries": [
 												"The swarms have been eating away the wooden support beams holding the bridge in place. While it is still strong enough for a single character to cross, it collapses if two or more characters cross the bridge at the same time. Characters can spot the damage with a successful DC 12 Intelligence ({@skill Investigation}) check to determine the integrity of the bridge before crossing. It's a 60-foot drop off the bridge. If the bridge collapse is the reason for the fall, add 3 ({@dice 1d6}) additional bludgeoning damage from the debris to anyone who hits the pit floor."
@@ -13606,6 +13761,7 @@
 				{
 					"type": "section",
 					"name": "Conclusion",
+					"page": 31,
 					"id": "194",
 					"entries": [
 						"Clearing the mjorks from this level of the mine satisfies the dwarven council and completes the characters' quest. The characters can be rewarded and move on, but questions remain unanswered: What lurks below the mine? What caused the mjorks to suddenly emerge from the depths and wreak havoc? Perhaps another nearby mine has also gone dark, and this is the beginning of something far more sinister than a random attack by elementals? While the characters were clearing the mine, perhaps the dwarves above found themselves embattled by another foe\u2014were the mjorks just a convenient distraction? The dwarven council may have more missions for the characters, even if they're not exploring more subterranean spaces."
@@ -13636,6 +13792,7 @@
 		{
 			"type": "section",
 			"name": "8: Shadowsteel Citadel",
+			"page": 33,
 			"id": "1a1",
 			"entries": [
 				"{@i By Tom \"Evhelm\" Donovan}",
@@ -13643,6 +13800,7 @@
 				{
 					"type": "section",
 					"name": "Background",
+					"page": 33,
 					"id": "1a2",
 					"entries": [
 						"Before the dragon's arrival, this mountain stronghold was an open secret. Built near a large settlement, readily supplied with sundries and patrons, it's far enough from civilization that the powers-that-be didn't need to be threatened by its presence. The citadel was devoted with religious fervor to one pursuit: curses. The priests and mages who built the citadel did so through the favors of the common people: curses in exchange for a year of service building, guarding, maintaining, or cooking for the stronghold. Of course, payment in Shadowsteel or sufficient gold was also acceptable, allowing the rich to buy their curses as the poor pledged their service.",
@@ -13650,6 +13808,7 @@
 						{
 							"type": "entries",
 							"name": "Set the Hook",
+							"page": 33,
 							"id": "1a3",
 							"entries": [
 								"There are three easy reasons the characters may be investigating the Shadowsteel Citadel. First, a powerful figure in the nearby city may have sought a curse, but found the entrance blocked\u2014such a figure may hire the characters to investigate. Second, Chuldroth is wreaking havoc on the countryside; the characters may be tracking Chuldroth and followed him back to the citadel. Finally, the characters may stumble on the path leading to the citadel and investigate the caved-in entrance."
@@ -13660,6 +13819,7 @@
 				{
 					"type": "section",
 					"name": "Lair Overview",
+					"page": 33,
 					"id": "1a4",
 					"entries": [
 						"The citadel was prepared for a siege (after all, in the curse business you never know who might come knocking) but was not ready for a dragon to drop into their cathedral. Rooms meant for the living are generally tidy though dusty, with torches ready to be lit and braziers filled with oil. Rooms built for the dead are tomblike; no sources of light are prepared. When the dragon is absent, the Shadowsteel ghasts occasionally leave their tomb to get materials from the rest of the complex for their fell experiments.",
@@ -14076,6 +14236,7 @@
 						{
 							"type": "entries",
 							"name": "1. Path and Cliffs",
+							"page": 33,
 							"id": "1a5",
 							"entries": [
 								{
@@ -14091,6 +14252,7 @@
 						{
 							"type": "entries",
 							"name": "2. Collapsed Entrance",
+							"page": 33,
 							"id": "1a7",
 							"entries": [
 								{
@@ -14108,6 +14270,7 @@
 										{
 											"type": "entries",
 											"name": "Three Doors",
+											"page": 33,
 											"id": "1aa",
 											"entries": [
 												"Each inscription is in highly stylized Castinellan. The south door's inscription reads: \"Death and Curses.\" The north door reads: \"Long Death.\" The middle door reads: \"Curses Worse than Death.\" Opening the north or south doors activates the enchantments animating the undead in both spaces labeled area 3. The triggering runes on both doors can be discovered by a successful DC 15 Intelligence ({@skill Investigation}) check. {@spell Dispel magic} suppresses the rune for an hour, {@spell knock} triggers the rune, and it can be deactivated permanently through a successful DC 16 Intelligence ({@skill Arcana} or Thieves' Tools) check. The middle door is locked from this side but not trapped; it can be picked with a successful DC 14 Dexterity (Thieves' Tools) check."
@@ -14120,6 +14283,7 @@
 						{
 							"type": "entries",
 							"name": "3. Undead Guards",
+							"page": 33,
 							"id": "1ab",
 							"entries": [
 								{
@@ -14137,6 +14301,7 @@
 										{
 											"type": "entries",
 											"name": "Locked Door",
+											"page": 33,
 											"id": "1ae",
 											"entries": [
 												"The door to {@area area 5|1b3|x} is locked from both sides. The key is in the dragon's nest in {@area area 13|1d5|x}. The lock can be picked with a successful DC 16 Dexterity (Thieves' Tools) check.",
@@ -14158,6 +14323,7 @@
 						{
 							"type": "entries",
 							"name": "4. Empty Room",
+							"page": 34,
 							"id": "1af",
 							"entries": [
 								{
@@ -14174,6 +14340,7 @@
 										{
 											"type": "entries",
 											"name": "Clawed Footprints",
+											"page": 34,
 											"id": "1b2",
 											"entries": [
 												"Characters with a passive Perception of 14 or higher note a single trail through the dust from door to door. A successful DC 10 Wisdom ({@skill Survival}) check determines they were made by a single Medium-sized biped, while DC 15 reveals that the creature had clawed feet that walked from the west door to the east door and returned the same way."
@@ -14186,6 +14353,7 @@
 						{
 							"type": "entries",
 							"name": "5. Bunkroom",
+							"page": 34,
 							"id": "1b3",
 							"entries": [
 								{
@@ -14203,6 +14371,7 @@
 										{
 											"type": "entries",
 											"name": "Locked Door",
+											"page": 34,
 											"id": "1b6",
 											"entries": [
 												"The door to area 3 is locked. See {@area area 3|1ab|x} for details."
@@ -14211,6 +14380,7 @@
 										{
 											"type": "entries",
 											"name": "Treasure",
+											"page": 34,
 											"id": "1b7",
 											"entries": [
 												"The indentured soldiers' belongings are in the footlockers. A search of the space finds 27 gp and a small mirror set into a painted wooden frame (worth 25 gp).",
@@ -14230,6 +14400,7 @@
 						{
 							"type": "entries",
 							"name": "6. Guarded Negotiations Chamber",
+							"page": 34,
 							"id": "1b8",
 							"entries": [
 								{
@@ -14246,6 +14417,7 @@
 										{
 											"type": "entries",
 											"name": "Secret Door",
+											"page": 34,
 											"id": "1bb",
 											"entries": [
 												"Characters may notice that the way the chairs fell looks like whoever knocked them over was running toward the west wall. Any investigation into why the chairs are tipped over grants advantage on subsequent investigations to find the western secret door leading to {@area area 9|1c5|x}. A successful DC 15 Wisdom ({@skill Perception}) or Intelligence ({@skill Investigation}) check discovers the door and the stone button to activate it."
@@ -14254,6 +14426,7 @@
 										{
 											"type": "entries",
 											"name": "Locked Door",
+											"page": 34,
 											"id": "1bc",
 											"entries": [
 												"The southern door is locked and leads to the armory. The key is in {@area area 13|1d5|x}. A successful DC 18 Dexterity (Thieves' Tools) check opens it.",
@@ -14273,6 +14446,7 @@
 						{
 							"type": "entries",
 							"name": "7. Armory",
+							"page": 34,
 							"id": "1bd",
 							"entries": [
 								{
@@ -14289,6 +14463,7 @@
 										{
 											"type": "entries",
 											"name": "Arms and Armor",
+											"page": 34,
 											"id": "1c0",
 											"entries": [
 												"Six {@item Shortbow|PHB|shortbows}, eight {@item Longsword|PHB|longswords}, four {@item Pike|PHB|pikes}, and three sets of {@item leather armor|PHB} hang on racks. Two {@item Quiver|PHB|quivers} with 20 {@item Arrows (20)|PHB|arrows} each hang from hooks on the wall; five of the arrows in the first quiver are {@item +1 Arrow||+1 arrows}."
@@ -14301,6 +14476,7 @@
 						{
 							"type": "entries",
 							"name": "8. Dead in Waiting",
+							"page": 34,
 							"id": "1c1",
 							"entries": [
 								{
@@ -14318,6 +14494,7 @@
 										{
 											"type": "entries",
 											"name": "Treasure",
+											"page": 34,
 											"id": "1c4",
 											"entries": [
 												"One of the ghouls is wearing a {@item cape of the mountebank}."
@@ -14330,6 +14507,7 @@
 						{
 							"type": "entries",
 							"name": "9. Dining Room",
+							"page": 34,
 							"id": "1c5",
 							"entries": [
 								{
@@ -14347,6 +14525,7 @@
 										{
 											"type": "entries",
 											"name": "Secret Door",
+											"page": 34,
 											"id": "1c8",
 											"entries": [
 												"A successful DC 15 Wisdom ({@skill Perception}) or Intelligence ({@skill Investigation}) check discovers the secret eastern door leading to {@area area 6|1b8|x} and the stone button to activate it."
@@ -14359,6 +14538,7 @@
 						{
 							"type": "entries",
 							"name": "10. Kitchen",
+							"page": 34,
 							"id": "1c9",
 							"entries": [
 								{
@@ -14386,6 +14566,7 @@
 										{
 											"type": "entries",
 											"name": "Moldy Hitchhikers",
+											"page": 34,
 											"id": "1cc",
 											"entries": [
 												"If the characters disturb the hive at all (as by clearing the north door, for example), the insects leave their hives and envelop the characters. Disturbing as this is, they retreat after two rounds, leaving behind 3 {@creature Mold Spider|GHLoE|mold spiders}* per character.",
@@ -14399,6 +14580,7 @@
 						{
 							"type": "entries",
 							"name": "11. Storage",
+							"page": 34,
 							"id": "1cd",
 							"entries": [
 								{
@@ -14416,6 +14598,7 @@
 										{
 											"type": "entries",
 											"name": "Supplies",
+											"page": 35,
 											"id": "1d0",
 											"entries": [
 												"Characters willing to peer into every container find 40 days of iron rations, 100 feet of hempen rope, barrels of fresh water, and crates of dry baking ingredients. A successful DC 13 Intelligence ({@skill Investigation}) check discovers one of the chests has a false bottom with 100 gp inside."
@@ -14428,6 +14611,7 @@
 						{
 							"type": "entries",
 							"name": "12. Sacristy",
+							"page": 35,
 							"id": "1d1",
 							"entries": [
 								{
@@ -14454,6 +14638,7 @@
 										{
 											"type": "entries",
 											"name": "Treasure",
+											"page": 35,
 											"id": "1d4",
 											"entries": [
 												"Three sets of black vestments inlaid with gold can be sold for 30 gp each. Most of the books are worth little, but a few tomes on the art of cursing and the magic of Shadowsteel would sell for a total of 50 gp to a collector."
@@ -14466,6 +14651,7 @@
 						{
 							"type": "entries",
 							"name": "13. Ruined Cathedral",
+							"page": 35,
 							"id": "1d5",
 							"entries": [
 								{
@@ -14483,6 +14669,7 @@
 										{
 											"type": "entries",
 											"name": "Pews and Rubble",
+											"page": 35,
 											"id": "1d8",
 											"entries": [
 												"The debris around the room makes the area {@book difficult terrain|PHB|8|Difficult Terrain}."
@@ -14491,6 +14678,7 @@
 										{
 											"type": "entries",
 											"name": "Treasure",
+											"page": 35,
 											"id": "1d9",
 											"entries": [
 												"Scattered around the area are the remains of the people who made their last stand against the dragon, as well as the precious articles dedicated to the space. This includes the keys to doors in areas 3-5 and 6-8 along with two silver ewers (25 gp each), a {@item potion of lightning resistance}, a {@item +1 shortbow}, 638 sp, and 220 gp.",
@@ -14510,6 +14698,7 @@
 						{
 							"type": "entries",
 							"name": "14. Undead Alchemy Lab",
+							"page": 35,
 							"id": "1da",
 							"entries": [
 								{
@@ -14527,6 +14716,7 @@
 										{
 											"type": "entries",
 											"name": "Alchemy Lab",
+											"page": 35,
 											"id": "1dd",
 											"entries": [
 												"The materials here function as a fully-stocked alchemical lab. By spending an hour breaking down the supplies and taking only essentials, a character proficient in their use can create a complete set of {@item Alchemist's Supplies|PHB|alchemist's tools}. Two completed potions of levitate are already prepared."
@@ -14535,6 +14725,7 @@
 										{
 											"type": "entries",
 											"name": "Treasure Hoard",
+											"page": 35,
 											"id": "1de",
 											"entries": [
 												"The ghasts have been slowly collecting everything of value from the complex when the dragon goes hunting and storing it in the eastern alcove. Along with a chest containing 316 gp, characters may find three silver chalices (30 gp each), four gold bracelets (45 gp each), and a platinum-studded velvet mask (100 gp), all thematically linked to curses and Shadowsteel."
@@ -14549,6 +14740,7 @@
 				{
 					"type": "section",
 					"name": "Conclusion",
+					"page": 35,
 					"id": "1df",
 					"entries": [
 						"Defeating the dragon ensures its attacks on the region stop and provide information as to why the citadel is no longer functioning. If the Shadowsteel ghasts escape, they may set up a new \"cursed citadel\" the characters must find. Similarly, someone was gathering information through the eye crawler in {@area area 12|1d1|x}: who wanted to keep an eye on things here? Also, perhaps someone who doesn't know the whole story blames the characters for the citadel's fall\u2014they may be seeking to curse the characters now!",
@@ -14588,6 +14780,7 @@
 		{
 			"type": "section",
 			"name": "9: Storm Sanctuary",
+			"page": 37,
 			"id": "1fd",
 			"entries": [
 				"{@i By Tom \"Evhelm\" Donovan}",
@@ -14595,12 +14788,14 @@
 				{
 					"type": "section",
 					"name": "Background",
+					"page": 37,
 					"id": "1fe",
 					"entries": [
 						"Long ago, worshippers built a temple and shrine to the gods, who they imagined in the form of dragons. The temple and shrines are long abandoned, but a small cult of panjaian ilharans found the ruins and turned them to their own purposes: luring and protecting stormborn ithjars. The ilharans have built a small worship space and created an enchanted playground for their darling ithjars to frolic in. They are about to achieve their grandest goal: the stormborn ithjar who roosts here has lain eggs. The ilharans have taken great pains to make sure that the roost is safe\u2014even from curious members of their own sect\u2014and are awaiting the hatchlings. Wild animals have taken over the nearby ruins, but through long months of confrontation, the ilharans stay out of the ruins and the beasts don't venture into the ilharans' sanctuary.",
 						{
 							"type": "entries",
 							"name": "Set the Hook",
+							"page": 37,
 							"id": "1ff",
 							"entries": [
 								"The ilharans' plans are at odds with civilized society: hungry ithjar (both regular and stormborn) have been raiding roads and farms for decades, but lately they've grown bolder, wiping out villages and even attacking fortified settlements and castles. The characters have been hired by the governor or regent of the region to find the ithjar lair and wipe out the threat. Diviners have tracked the ithjar to the Storm Sanctuary, and now the characters must take them on. Alternatively, the characters may need an ithjar egg for a ritual, craft, or contract. Their efforts to locate an egg ultimately lead them to the Storm Sanctuary."
@@ -14611,6 +14806,7 @@
 				{
 					"type": "section",
 					"name": "Lair Overview",
+					"page": 37,
 					"id": "200",
 					"entries": [
 						"The Storm Sanctuary is high in the forested mountains and surrounded by natural formations and artificial constructions; many partitions close off parts of the Storm Sanctuary from other areas. Any flight\u2014whether magical or natural\u2014draws the immediate attention of two ithjars, and combat in the sky risks bringing all the ithjars in {@area area 6|215|x} and the stormborn ithjar from {@area area 8|21e|x}. Panjaian ilharans* and beasts present in areas where aerial combat is occurring get involved as well. Similarly, climbing the cliffs and crags on the eastern half of the map can be done with a successful DC 12 Strength ({@skill Athletics}) check. When a character reaches the zenith of a crag or cliff, the ithjars are alerted as if the character were flying.",
@@ -15425,6 +15621,7 @@
 						{
 							"type": "entries",
 							"name": "1. Open Pagoda",
+							"page": 37,
 							"id": "201",
 							"entries": [
 								{
@@ -15451,6 +15648,7 @@
 										{
 											"type": "entries",
 											"name": "Negotiating with the Ilharans",
+											"page": 37,
 											"id": "204",
 											"entries": [
 												"The panjaian stationed here are guardians of the ithjar. Respectful and knowledgeable characters may be able to convince the panjaian they're pilgrims come to adore the ithjar. The panjaians start as hostile but not so hostile they'll attack on sight. Arial is gullible and willing to believe that her own reputation has brought potential pilgrims; however, she has a hatred of elves. This can be overlooked unless an elf is the characters' spokesperson!",
@@ -15465,6 +15663,7 @@
 						{
 							"type": "entries",
 							"name": "2. Air Elemental Statue",
+							"page": 37,
 							"id": "205",
 							"entries": [
 								{
@@ -15482,6 +15681,7 @@
 										{
 											"type": "entries",
 											"name": "Beneath the Statue",
+											"page": 37,
 											"id": "208",
 											"entries": [
 												"Casting {@spell dispel magic} on the statue suppresses it for one hour. When the statue is suppressed, it becomes clear the stone it's anchored to is really the lid to a chest! A search of the base with a successful DC 18 Intelligence ({@skill Investigation}) check also reveals this to be true. In either case, once the truth about the \"stone\" is realized, it's a simple matter to pry it open. Inside are two moonstones (worth 50 gp each) and four {@item Potion of Greater Healing||potions of greater healing}."
@@ -15494,6 +15694,7 @@
 						{
 							"type": "entries",
 							"name": "3. Ruined Hall",
+							"page": 38,
 							"id": "209",
 							"entries": [
 								{
@@ -15521,6 +15722,7 @@
 										{
 											"type": "entries",
 											"name": "Beast Behavior",
+											"page": 38,
 											"id": "20c",
 											"entries": [
 												"Whenever a humanoid creature enters, if it is not a druid, the beasts are aggressively drawn from the nearby woods to attack it after one round has passed. Any characters with at least one level in druid are completely ignored by the attacking animals unless they attack the animals or aid the animals' enemies. A group entirely composed of druids still draws the animals in, but they merely circle the characters, sniffing curiously before leaving the way they came.",
@@ -15535,6 +15737,7 @@
 						{
 							"type": "entries",
 							"name": "4. Ruined Study",
+							"page": 38,
 							"id": "20d",
 							"entries": [
 								{
@@ -15552,6 +15755,7 @@
 										{
 											"type": "entries",
 											"name": "Panjaian Corpse",
+											"page": 39,
 											"id": "210",
 											"entries": [
 												"Characters who drag the corpse from under the rock or who lift the rock off of him discover an ornate dragon-headed key needed to open the gate in area 5, a {@item potion of hill giant strength}, and a coin purse with a handful of gemstones, each worth 50 gp: a citrine, a carnelian, three onyx, and two quartz."
@@ -15564,6 +15768,7 @@
 						{
 							"type": "entries",
 							"name": "5. Magic Gate",
+							"page": 39,
 							"id": "211",
 							"entries": [
 								{
@@ -15581,6 +15786,7 @@
 										{
 											"type": "entries",
 											"name": "Gaining Entry",
+											"page": 39,
 											"id": "214",
 											"entries": [
 												"The easiest way in is with the key (see area 4). Smashing the gate open requires dealing 20 damage to it (AC 17, damage threshold 5, 40 hp), but each time damage is done to it, it reverberates, creating a shockwave that deals 7 ({@dice 2d6}) thunder damage to creatures within a 20-foot radius of the door. This alerts the ithjar (and the panjaians) that someone is breaking through the gate. The gate is nearly impossible to scale, requiring a successful DC 20 Strength ({@skill Athletics}) check. The cliffs surrounding it can be climbed more easily. Picking the lock requires a successful DC 15 Dexterity (Thieves' Tools) check."
@@ -15593,6 +15799,7 @@
 						{
 							"type": "entries",
 							"name": "6. The Sacred Pool",
+							"page": 39,
 							"id": "215",
 							"entries": [
 								{
@@ -15610,6 +15817,7 @@
 										{
 											"type": "entries",
 											"name": "Wishing Pool",
+											"page": 39,
 											"id": "218",
 											"entries": [
 												"Hopeful pilgrims have quietly offered riches to the pool. The water is frigid but clear, allowing characters to see down to the bottom of the 15-foot-deep pool. Characters who search its depths with a successful DC 12 Intelligence ({@skill Investigation}) check over several dives may recover 74 sp, a zircon (50 gp), and 23 gp."
@@ -15622,6 +15830,7 @@
 						{
 							"type": "entries",
 							"name": "7. Nesting Cave",
+							"page": 39,
 							"id": "219",
 							"entries": [
 								{
@@ -15639,6 +15848,7 @@
 										{
 											"type": "entries",
 											"name": "Timing",
+											"page": 39,
 											"id": "21c",
 											"entries": [
 												"The stormborn ithjar rests during the day but hunts briefly during the nighttime hours. Characters who wait for nightfall have a chance to steal the eggs without fighting the stormborn ithjar (if that's their objective). Observing the nest unseen requires waiting in area 8 and succeeding at a group DC 16 Dexterity ({@skill Stealth}) check as they stay hidden for hours."
@@ -15647,6 +15857,7 @@
 										{
 											"type": "entries",
 											"name": "The Nest",
+											"page": 39,
 											"id": "21d",
 											"entries": [
 												"In addition to the eggs, a suit of {@item Mithral Half Plate Armor||mithral half-plate armor} has been broken up and its constituent pieces used to hold precious stones, each worth 50 gp: three sardonyx, two star rose quartz, and one cracked garnet."
@@ -15659,6 +15870,7 @@
 						{
 							"type": "entries",
 							"name": "8. Dragon Sanctuary",
+							"page": 39,
 							"id": "21e",
 							"entries": [
 								{
@@ -15676,6 +15888,7 @@
 										{
 											"type": "entries",
 											"name": "Dragon Heads",
+											"page": 39,
 											"id": "221",
 											"entries": [
 												"Once, this was a holy sanctuary for followers of the dragon gods. Its sacred energy is still present: divine spells that strengthen, bolster, or guard allies (such as {@spell bless} and {@spell spirit guardians}) are cast as if one spell level higher while in this sanctuary. {@spell Cure wounds} and other healing spells are unaffected. Spellcasters who can cast an affected spell immediately realize this property and intuitively understand how it works."
@@ -15690,6 +15903,7 @@
 				{
 					"type": "section",
 					"name": "Conclusion",
+					"page": 39,
 					"id": "222",
 					"entries": [
 						"Characters who capture the stormborn ithjar or recover the stormborn ithjar's eggs and fulfill the requirements of their quest can receive their reward. If they were hired to recover the creature or its eggs, they may find themselves facing an ithjar-riding army in the future! If the egg was a reagent in a ritual or spell, what else do they need to complete it? Does the ritual or spell do what they set out to do? Perhaps the Primordial Ilhara or her followers are upset about their desecrated sanctuary\u2014they may hunt down the characters in the future.",
@@ -15726,6 +15940,7 @@
 		{
 			"type": "section",
 			"name": "10: Sardonyx Necropolis",
+			"page": 41,
 			"id": "235",
 			"entries": [
 				"{@i By Tom \"Evhelm\" Donovan}",
@@ -15733,6 +15948,7 @@
 				{
 					"type": "section",
 					"name": "Background",
+					"page": 41,
 					"id": "236",
 					"entries": [
 						"At the height of this city's glory and power, a necropolis was built below the streets to commemorate the city's honored war-dead and the general who valorously led their forces before falling in battle. Over time, as the city's power began to wane, the necropolis was sealed and forgotten.",
@@ -15740,6 +15956,7 @@
 						{
 							"type": "entries",
 							"name": "Set the Hook",
+							"page": 41,
 							"id": "237",
 							"entries": [
 								"As the city panics, the characters are brought in to deal with the threat. The city's leadership has been reminded of the Sardonyx Necropolis's existence, but the city's watch has its hands full guarding the sewers, caves, and basements where the undead have broken through to the surface. Adventurers are needed to descend to the necropolis, destroy the undead, and stop whoever is causing the problem.",
@@ -15751,6 +15968,7 @@
 				{
 					"type": "section",
 					"name": "Lair Overview",
+					"page": 41,
 					"id": "238",
 					"entries": [
 						"The necropolis is underground, where natural light never penetrates. While there are torch sconces and braziers for oil spread throughout the area, none are stocked. Characters who put torches in the sconces or oil in the braziers and light them draw the undead like moths to a flame. Clever characters may use this strategy to draw undead where they want them, but since the dead are drawn to the light, they may get more than they bargain for! Descriptions assume the characters have some way to see but not necessarily in color.",
@@ -16220,6 +16438,7 @@
 						{
 							"type": "entries",
 							"name": "1. Cobblestone Walkway",
+							"page": 41,
 							"id": "239",
 							"entries": [
 								{
@@ -16237,6 +16456,7 @@
 										{
 											"type": "entries",
 											"name": "Sardonyx Gemstones",
+											"page": 41,
 											"id": "23c",
 											"entries": [
 												"Though the structure is magnificent, some expense was spared in its construction: only one in every 10 gemstones that sparkle on the structure are real sardonyx, worth 50 gp each. The rest are colored glass baubles. Characters proficient with jeweler's tools or glassblower's tools notice the difference immediately if attempting to remove one from the wall; otherwise, there is only a 10 percent chance that a given gemstone is real. There are 100 stones across each of the three entrances to the necropolis's main structure, 10 of which are real in each case. Prying a stone from the wall takes 5 minutes and an appropriate tool (such as a crowbar or piton and hammer). Glass fakes shatter after a minute of attempted extraction."
@@ -16245,6 +16465,7 @@
 										{
 											"type": "entries",
 											"name": "Graves",
+											"page": 41,
 											"id": "23d",
 											"entries": [
 												"Gravestones and crypt niches throughout have a first initial of a first name, first three letters of a last name, and a rank abbreviation inscribed on them. They are made of white stone and sanded or filed smooth but not shiny."
@@ -16257,6 +16478,7 @@
 						{
 							"type": "entries",
 							"name": "2. Angel of Health",
+							"page": 41,
 							"id": "23e",
 							"entries": [
 								{
@@ -16274,6 +16496,7 @@
 										{
 											"type": "entries",
 											"name": "Angel of Health",
+											"page": 42,
 											"id": "241",
 											"entries": [
 												"The statue depicts Julara, an angel of health and former servant of Aurelia (now an ally of Miklas). Characters who clear off the fungus from the base of the statue discover a plate inscribed with the following prayer: \"Julara, angel of health, protect us from disease and death.\" The blessing of Julara is potent: cleaning the statue grants characters who participate in the cleaning advantage on saves against disease while in the necropolis."
@@ -16282,6 +16505,7 @@
 										{
 											"type": "entries",
 											"name": "Spongy Fungus",
+											"page": 42,
 											"id": "242",
 											"entries": [
 												"Closer inspection (and knowledge) can reveal that what appears to be fungus is really a yellow, disease-bearing moss. Druids and those proficient with {@skill Medicine} automatically recognize it. Others must succeed at a DC 15 Intelligence ({@skill Nature}) check to discern that the spongy stuff is really moss infected with the Weeping Pox. Physical contact with the moss is sufficient to spread it (though if this contact is in service of cleaning the statue, the character gains advantage on their checks against the disease!)."
@@ -16294,6 +16518,7 @@
 						{
 							"type": "entries",
 							"name": "3. Unmarked Mausoleum",
+							"page": 42,
 							"id": "243",
 							"entries": [
 								{
@@ -16311,6 +16536,7 @@
 										{
 											"type": "entries",
 											"name": "Riddle of the Mausoleum",
+											"page": 42,
 											"id": "246",
 											"entries": [
 												"The door has no handle or keyhole but bears a riddle in archaic Celestial: \"If thou art better, thou dost not possess me; yet they who do art the best of men. I am never shouted, often overlooked, and cannot be bragged of. Speak my name and enter.\" The best answer to the riddle is \"humility,\" but \"humble,\" \"meek,\" \"modest,\" or some other similar trait works as well. Players who struggle with riddles can still gain access if a character makes a successful DC 15 Wisdom ({@skill Insight}) check."
@@ -16319,6 +16545,7 @@
 										{
 											"type": "entries",
 											"name": "Inside",
+											"page": 42,
 											"id": "247",
 											"entries": [
 												"This tomb's interior contains a simple stone platform where a corpse in tarnished armor reposes. Gleaming in his hands is a {@item +1 greataxe} that, when attuned, gives the wielder a +2 bonus to initiative checks."
@@ -16331,6 +16558,7 @@
 						{
 							"type": "entries",
 							"name": "4. Obelisk",
+							"page": 42,
 							"id": "248",
 							"entries": [
 								{
@@ -16348,6 +16576,7 @@
 										{
 											"type": "entries",
 											"name": "Obelisk",
+											"page": 42,
 											"id": "24b",
 											"entries": [
 												"The obelisk bears a simple inscription in Higher Bürach: \"By our lives have we secured yours.\""
@@ -16360,6 +16589,7 @@
 						{
 							"type": "entries",
 							"name": "5. Crypt Niches",
+							"page": 42,
 							"id": "24c",
 							"entries": [
 								{
@@ -16387,6 +16617,7 @@
 										{
 											"type": "entries",
 											"name": "Crypt Niches",
+											"page": 42,
 											"id": "24f",
 											"entries": [
 												"The niches have not yet been defiled or destroyed. The remains inside repose peacefully. Even a systematic search of the niches (which requires breaking their seals or smashing them open) reveals nothing of value interred with the corpses."
@@ -16399,6 +16630,7 @@
 						{
 							"type": "entries",
 							"name": "6. Statue of Lady Gilrain",
+							"page": 42,
 							"id": "250",
 							"entries": [
 								{
@@ -16416,6 +16648,7 @@
 										{
 											"type": "entries",
 											"name": "Gilrain's Blade",
+											"page": 42,
 											"id": "253",
 											"entries": [
 												"Characters with a passive Perception of at least 13 or who succeed at a DC 13 Wisdom ({@skill Perception}) check, recognize that the sword itself is metal (not stone) and removable. It is a {@item +1 longsword}."
@@ -16428,6 +16661,7 @@
 						{
 							"type": "entries",
 							"name": "7. Assorted Graves",
+							"page": 42,
 							"id": "254",
 							"entries": [
 								{
@@ -16450,6 +16684,7 @@
 						{
 							"type": "entries",
 							"name": "8. General's Tomb",
+							"page": 42,
 							"id": "256",
 							"entries": [
 								{
@@ -16467,6 +16702,7 @@
 										{
 											"type": "entries",
 											"name": "Noise",
+											"page": 42,
 											"id": "259",
 											"entries": [
 												"Loud combat or opening the general's coffin draws the creatures from area 9."
@@ -16475,6 +16711,7 @@
 										{
 											"type": "entries",
 											"name": "General's Coffin",
+											"page": 42,
 											"id": "25a",
 											"entries": [
 												"The coffin is behind bars that stretch to the ceiling, but the necromancer's zombified corpse is not. Getting inside the bars and opening the general's coffin unleashes a wave of potent disruptive magic on anyone or anything standing inside the interior walls containing area 8: spellcasters concentrating on spells automatically lose their concentration. Magical effects granted by potions or spells immediately end. Summoned creatures are banished. If the lid is replaced, the effect can be repeated after 24 hours. The general's corpse is skeletal and his clothes colorless and crumbling; nothing of value remains."
@@ -16483,6 +16720,7 @@
 										{
 											"type": "entries",
 											"name": "The Zombie",
+											"page": 43,
 											"id": "25b",
 											"entries": [
 												"Unlike the other undead and corpses in the necropolis, the zombie's clothes are modern, and though torn and ripped are reasonably new. A pin bearing a seal of office marks him as a low-level bureaucrat in the city above."
@@ -16495,6 +16733,7 @@
 						{
 							"type": "entries",
 							"name": "9. Destroyed Crypts",
+							"page": 43,
 							"id": "25c",
 							"entries": [
 								{
@@ -16512,6 +16751,7 @@
 										{
 											"type": "entries",
 											"name": "Untouched Mausoleum",
+											"page": 43,
 											"id": "25f",
 											"entries": [
 												"At the southwest end of area 9 is a mausoleum with double doors. This is where the ancient corpse walker retreats to if defeated (and where it can ultimately be destroyed). The doors are generally closed but unlocked. Inside the characters find cast off armor including {@item gauntlets of ogre power}."
@@ -16520,6 +16760,7 @@
 										{
 											"type": "entries",
 											"name": "Rough Terrain",
+											"page": 43,
 											"id": "260",
 											"entries": [
 												"The floor in this area is {@book difficult terrain|PHB|8|Difficult Terrain}."
@@ -16532,6 +16773,7 @@
 						{
 							"type": "entries",
 							"name": "10. Niches & Mosaic",
+							"page": 43,
 							"id": "261",
 							"entries": [
 								{
@@ -16549,6 +16791,7 @@
 										{
 											"type": "entries",
 											"name": "Niche Search",
+											"page": 43,
 											"id": "264",
 											"entries": [
 												"The destroyed niches have been looted, but the sealed ones have not. A thorough, systematic search of these niches (which requires breaking their seals and/or smashing them open) reveals one of the soldiers was interred with an outer garment that hasn't succumbed to time: a {@item cloak of elvenkind}."
@@ -16563,6 +16806,7 @@
 				{
 					"type": "section",
 					"name": "Conclusion",
+					"page": 43,
 					"id": "265",
 					"entries": [
 						"Destroying the corpse walkers and their skeletal legion marks the conclusion of the characters' journey to the Sardonyx Necropolis. Who was the lone zombie before he was turned into an undead puppet? Have some undead already escaped to wreak havoc and raise more undead legions elsewhere?",
@@ -16597,6 +16841,7 @@
 		{
 			"type": "section",
 			"name": "11: Foulest Truths",
+			"page": 45,
 			"id": "275",
 			"entries": [
 				"{@i By Greg Marks}",
@@ -16604,6 +16849,7 @@
 				{
 					"type": "section",
 					"name": "Background",
+					"page": 45,
 					"id": "276",
 					"entries": [
 						"Mauro Cavaliere began life as an entertainer, plying his trade as an actor, singer, and grifter. Eventually he accumulated enough money to branch into usury, and later, legitimate banking. Throughout his career, fast talking and silver lies lined his purse. Unfortunately, a few weeks ago, he met a violent end when former acquaintances murdered him for his fat purse. After pushing his body into the canal, it got caught in an effluent pipe near his home, floating there unnoticed for a day before rising again the next night as a harvester of lies.",
@@ -16611,6 +16857,7 @@
 						{
 							"type": "entries",
 							"name": "Set the Hook",
+							"page": 45,
 							"id": "277",
 							"entries": [
 								"In one week, it will be midsummer\u2014and the Black Carnival comes to the city. Morencians dress in costumes, lie about who they are, and indulge in all sorts of base activities. If allowed free reign during the Black Carnival, Mauro may feast and his pack of undead grow out of control.",
@@ -16632,6 +16879,7 @@
 										{
 											"type": "entries",
 											"name": "Alternate Hook",
+											"page": 45,
 											"id": "279",
 											"entries": [
 												"Magistrate Lucente was as crooked as a dog's leg, taking bribes to issue official writs, change a judicial ruling, or arrange for the jailing of political enemies. An enemy of the characters pays Magistrate Lucente to issue a warrant for the arrest of the characters. Before it can be served, however, his lifeless body is found with its tongue cut out. Using the corrupted warrant as leverage, Magistrate Savina orders the characters to solve Lucente's murder or be imprisoned."
@@ -16646,6 +16894,7 @@
 				{
 					"type": "section",
 					"name": "Lair Overview",
+					"page": 45,
 					"id": "27a",
 					"entries": [
 						"Much of the city on the canals rests on pilings that keep the buildings from sinking into the water. However, many older buildings have sunk a story or more, creating a maze of partially submerged basements, docks, and forests of large wooden poles.",
@@ -17270,6 +17519,7 @@
 						{
 							"type": "entries",
 							"name": "1. Underdock",
+							"page": 45,
 							"id": "27b",
 							"entries": [
 								{
@@ -17287,6 +17537,7 @@
 										{
 											"type": "entries",
 											"name": "Gate",
+											"page": 45,
 											"id": "27e",
 											"entries": [
 												"The stairs lead down to a ledge intended for dropping off passengers. There is no way to open the gate without a boat or getting into the water. The rusted iron gate's lock is beneath the dirty water. Though not locked, a successful DC 12 Strength check is needed to pull it open."
@@ -17295,6 +17546,7 @@
 										{
 											"type": "entries",
 											"name": "Boat and Dock",
+											"page": 45,
 											"id": "27f",
 											"entries": [
 												"A poleboat large enough for four passengers and a boatman is tied to a dock. While inspecting the boat, a successful DC 15 Wisdom ({@skill Survival}) check notes from the growth of algae between the boat and the dock that no one has used or cared for the boat in several weeks."
@@ -17303,6 +17555,7 @@
 										{
 											"type": "entries",
 											"name": "Hole in the Wall",
+											"page": 45,
 											"id": "280",
 											"entries": [
 												"Hard to see from the gate, a hole has been knocked into one of the foundation walls. This leads to planks nailed to pilings that support a neighboring building ({@area area 2|282|x})."
@@ -17311,6 +17564,7 @@
 										{
 											"type": "entries",
 											"name": "Locked Door",
+											"page": 45,
 											"id": "281",
 											"entries": [
 												"A locked ironbound timber door leads up into the house. The door can be opened with a successful DC 20 Dexterity (Thieves' Tools) check or forced open with a DC 20 Strength check. Stairs lead up to a three-story, narrow home that once belonged to Mauro Cavaliere. It is empty."
@@ -17323,6 +17577,7 @@
 						{
 							"type": "entries",
 							"name": "2. Path of Planks",
+							"page": 45,
 							"id": "282",
 							"entries": [
 								{
@@ -17341,6 +17596,7 @@
 										{
 											"type": "entries",
 											"name": "Planks",
+											"page": 46,
 											"id": "285",
 											"entries": [
 												"The slippery, warped boards can easily be crawled across, but any creature that tries to walk on them must succeed on a DC 15 Dexterity ({@skill Acrobatics}) check or slip into the water. If more than 250 pounds is placed on any plank at a time, the boards crack, dumping everyone into the water."
@@ -17353,6 +17609,7 @@
 						{
 							"type": "entries",
 							"name": "3. Pumping Room",
+							"page": 46,
 							"id": "286",
 							"entries": [
 								{
@@ -17381,6 +17638,7 @@
 										{
 											"type": "entries",
 											"name": "Chests",
+											"page": 46,
 											"id": "289",
 											"entries": [
 												"The three locked (DC 20) chests rest on an overturned wardrobe. The first chest contains Mauro Cavaliere's business records. If studied over a short rest, a character can determine that many of Mauro's business deals were based on lies, and he was stealing from many of his clients. The records also detail a money laundering scheme for the Red Mask gang. The documents also include details of his personal bank accounts. Most are empty now, but one in a local account box should have 2,700 gp in it, and the key is in the book! If the chest is underwater, the characters must carry the entire chest carefully and dry it out for at least a day in order to rescue the documents. The second chest includes 750 gp worth of jewelry and twenty-two copies of the same fake diamond necklace. A successful DC 15 Intelligence ({@skill Investigation}) check is needed to determine the forgery. Otherwise, the necklaces seem to be worth 50 gp each. The third chest is the smallest and has {@item spell scroll} of {@spell lesser restoration} in an old scroll tube, a {@item potion of greater healing}, and the mummified hand of a child. Each round this chest is underwater, roll {@dice 1d20}. If the roll is 8 or less, the scroll is destroyed."
@@ -17389,6 +17647,7 @@
 										{
 											"type": "entries",
 											"name": "Rising Water",
+											"page": 46,
 											"id": "28a",
 											"entries": [
 												"Every round, two feet of water rushes into the room and each pump maintains the balance by each pushing out one foot of water. If the shatter corpses stop pumping, the balance is disrupted, and the room quickly starts to fill. A character who succeeds on a DC 15 Strength ({@skill Athletics}) check can use an action to operate a pump. If the water rises to four feet, the chests go under water. If the water gets to seven feet, the {@creature Shambling Mound||shambling mounds} and four {@creature Swarm of Quippers||swarms of quippers} from area 2 can get inside, if they are still alive. The room becomes {@book difficult terrain|PHB|8|Difficult Terrain} if the water is two feet deep or more."
@@ -17401,6 +17660,7 @@
 						{
 							"type": "entries",
 							"name": "4. The Liar's Test",
+							"page": 46,
 							"id": "28b",
 							"entries": [
 								{
@@ -17418,6 +17678,7 @@
 										{
 											"type": "entries",
 											"name": "Cesspool",
+											"page": 46,
 											"id": "28e",
 											"entries": [
 												"The pool of filth is 10 feet deep, and can be swum across normally. Any creature doing so must succeed on a DC 11 Constitution saving throw or become infected with Sewer Plague. Any open flame in this room causes the room to explode, dealing 21 ({@dice 6d6}) fire damage. A successful DC 20 Dexterity saving throw halves the damage."
@@ -17426,6 +17687,7 @@
 										{
 											"type": "entries",
 											"name": "Liar's Door",
+											"page": 46,
 											"id": "28f",
 											"entries": [
 												"An iron door with no obvious hinges, handle, or lock is at the top of stairs that rise out of the waste pool. The iron is cast to depict two women with lips pursed as if to offer a kiss with small holes in the door between their lips. There appears to be a small switch inside the mouths of both women, just in reach of a creature's tongue. One woman is poised in a flirtatious manner offering a smiling kiss while the other's kiss appears more honest or virtuous. The door radiates abjuration and evocation magic if checked for.",
@@ -17439,6 +17701,7 @@
 						{
 							"type": "entries",
 							"name": "5. Mauro's Lair",
+							"page": 47,
 							"id": "290",
 							"entries": [
 								{
@@ -17457,6 +17720,7 @@
 										{
 											"type": "entries",
 											"name": "Boarded-Up Windows",
+											"page": 47,
 											"id": "293",
 											"entries": [
 												"Every story has a window on each side of the building. They are heavily boarded to prevent the curious or foolish from entering the condemned building. A window can be broken through with a successful DC 25 Strength check or by doing 25 points of damage to the timbers."
@@ -17465,6 +17729,7 @@
 										{
 											"type": "entries",
 											"name": "Collapsing Masonry",
+											"page": 47,
 											"id": "294",
 											"entries": [
 												"Every round that violent actions occur in the building causes a chunk of masonry to fall from overhead. A randomly determined character must succeed on a DC 15 Dexterity saving throw or get hit by the masonry, taking 14 ({@dice 4d6}) bludgeoning damage. Any creature hit by the masonry must succeed on a DC 15 Strength saving throw or be knocked into the water below. If the saving throw is failed by 5 or more, the chunk of wall pins the character underwater. The character is {@condition restrained} until the victim succeeds on a DC 15 escape check. A character adjacent to the victim can move the masonry with a DC 15 Strength ({@skill Athletics}) check.",
@@ -17474,6 +17739,7 @@
 										{
 											"type": "entries",
 											"name": "Corpse Pile",
+											"page": 47,
 											"id": "295",
 											"entries": [
 												"On the first floor, the only solid ground above water is a pile of loose rubble and corpses. Treat this ground as {@book difficult terrain|PHB|8|Difficult Terrain}."
@@ -17482,6 +17748,7 @@
 										{
 											"type": "entries",
 											"name": "Scaffolding",
+											"page": 47,
 											"id": "296",
 											"entries": [
 												"The scaffolding has plank floors attached to the walls every 10 feet vertically, roughly where each story previously was. There are ladders at alternating ends. Moving at more than half speed on the scaffolding requires a successful DC 15 Dexterity ({@skill Acrobatics}) check or the creature falls off into the water below."
@@ -17496,6 +17763,7 @@
 				{
 					"type": "section",
 					"name": "Conclusion",
+					"page": 47,
 					"id": "297",
 					"entries": [
 						"The defeat of Mauro Cavaliere fulfills any obligation the characters may have to Doge Vissia Giliverti or Magistrate Lucente, including a reward of 500 gp.",
@@ -17525,6 +17793,7 @@
 		{
 			"type": "section",
 			"name": "12: The Tower of Flicker and Shadow",
+			"page": 49,
 			"id": "2b0",
 			"entries": [
 				"{@i By Greg Marks}",
@@ -17532,6 +17801,7 @@
 				{
 					"type": "section",
 					"name": "Background",
+					"page": 49,
 					"id": "2b1",
 					"entries": [
 						"Seeking power, the wizard Henri L'ombre de la Nuit knowingly walked into the Dark Mists of Charneault and came out changed. Any trace of mercy or kindness was scrubbed away, and only a thirst for power remained. In addition, the wizard carried out {@i The Dark-Hearted Oath}, a spellbook containing vile rituals, including the steps needed to summon a candlelight daemon.",
@@ -17539,6 +17809,7 @@
 						{
 							"type": "entries",
 							"name": "Set the Hook",
+							"page": 49,
 							"id": "2b2",
 							"entries": [
 								"Following a chain of clues that include missing cats, the missing body of a murderer, and a mysterious fire that killed a family of seven, the characters have arrived at a tower in the Charneault Kingdom near Castle Lamesdhonneur. The tower is bathed in shadow, and occasional flickering arcane lights are seen through its narrow windows. The locals shun the Tower of Flicker and Shadow.",
@@ -17549,6 +17820,7 @@
 										{
 											"type": "entries",
 											"name": "Alternate Hook",
+											"page": 49,
 											"id": "2b4",
 											"entries": [
 												"If the party has a patron in your campaign, they were the rival targeted by Henri L'ombre de la Nuit. Their patron has asked the characters to bring the wizard to justice by going to the Tower of Flicker and Shadow to find proof of Henri's misdeeds and arrest the wizard.",
@@ -17573,6 +17845,7 @@
 				{
 					"type": "section",
 					"name": "Lair Overview",
+					"page": 49,
 					"id": "2b5",
 					"entries": [
 						"The tower cannot be entered via teleportation and the walls are enchanted to prevent effects that transmute them, such as {@spell passwall} or {@spell stone shape}. There is one door that provides entrance to the first floor ({@area area 1|2bb|x}), and there are two small slit windows on the top floor. The glass windows are similarly enchanted against transmutation or breakage. Each story is 20-feet tall with 5-foot thick stone floors separating them.",
@@ -17587,6 +17860,7 @@
 										{
 											"type": "entries",
 											"name": "The Death Trap",
+											"page": 49,
 											"id": "2b8",
 											"entries": [
 												"Henri has left via the portal mirror in {@area area 5|2d0|x} and rigged the tower death trap to activate when the characters enter the tower. When all the characters enter the tower, the following changes occur:",
@@ -17604,6 +17878,7 @@
 										{
 											"type": "entries",
 											"name": "Shadow Pillar",
+											"page": 49,
 											"id": "2b9",
 											"entries": [
 												"A 5-foot-wide pillar of impenetrable flickering darkness rises from the bottom of the tower through holes in each floor all the way to the very top of the tower. Any creature that is not an undead or fiend that enters or starts its turn in the pillar takes 22 ({@dice 4d10}) necrotic damage and has its speed is reduced by 10 feet until the end of its next turn. A successful DC 15 Constitution saving halves the damage and negates the decrease in speed. The hole in the floors that the pillar passes through are large enough that a creature could pass through them, provided they are willing to enter the darkness. The candlelight daemon uses the shadow pillar to move from floor to floor without being seen. It utilizes hit and run tactics when the party triggers other combats or traps, taking advantage of the teleportation effect of its horns attack to flee back into the pillar."
@@ -17612,6 +17887,7 @@
 										{
 											"type": "entries",
 											"name": "Stairways",
+											"page": 49,
 											"id": "2ba",
 											"entries": [
 												"Each floor has an enclosed stair that ascends to the next floor. At the top and bottom of each is a locked, reinforced wooden door. Each door has an AC 15 and 25 hp. The doors are immune to poison and psychic damage but vulnerable to fire. The locks can be opened with a successful DC 15 Dexterity (Thieves' Tools) check or a DC 20 Strength check to force it.",
@@ -18576,6 +18852,7 @@
 						{
 							"type": "entries",
 							"name": "1. First Floor\u2013Grand Hall",
+							"page": 49,
 							"id": "2bb",
 							"entries": [
 								{
@@ -18593,6 +18870,7 @@
 										{
 											"type": "entries",
 											"name": "Suggestion",
+											"page": 50,
 											"id": "2be",
 											"entries": [
 												"A {@spell suggestion} from the {@spell guards and wards} affects the area in front of the stairs. A creature passing through that area must succeed on a DC 17 Wisdom saving throw or stand quietly next to the shadow pillar for 8 hours."
@@ -18605,6 +18883,7 @@
 						{
 							"type": "entries",
 							"name": "2. Second Floor - Library",
+							"page": 50,
 							"id": "2bf",
 							"entries": [
 								{
@@ -18622,6 +18901,7 @@
 										{
 											"type": "entries",
 											"name": "Stinking Cloud",
+											"page": 50,
 											"id": "2c2",
 											"entries": [
 												"This entire area is filled with a {@spell stinking cloud} (spell save DC 17) from the {@spell guards and wards} spell."
@@ -18630,6 +18910,7 @@
 										{
 											"type": "entries",
 											"name": "Dark-Hearted Oath",
+											"page": 50,
 											"id": "2c3",
 											"entries": [
 												"Henri's copy of The Dark Hearted Oath rests on the reading table. Inside the tome are copies of all the spells that Henri has memorized, as well as a complete description of a ritual to summon a candlelight daemon and step by step directions for the construction and enchantment of their candle. A successful DC 17 Intelligence ({@skill Investigation}) notices a nearly invisible rune on the cover. Touching or moving the tome causes the rune to summon six {@creature Shadow||shadows} and three {@creature Wraith||wraiths} that attack the creature that triggered the rune. The rune can be dispelled as a 6th-level spell. Any creature of non-evil alignment who completes a long rest within 10 feet of the book must succeed on a DC 20 Wisdom saving throw or suffer 10 ({@dice 3d6}) psychic damage from nightmares filled with images of them reading The Dark Hearted Oath. If a character fails the saving throw and you are using the Influence dice optional rule from the Grim Hollow's Player's Guide, add one die to the Beast Pool.",
@@ -18639,6 +18920,7 @@
 										{
 											"type": "entries",
 											"name": "Trapped Tome",
+											"page": 50,
 											"id": "2c4",
 											"entries": [
 												"The tome in the glass case is a trap. A glass box encloses a tome whose cover is embossed with a skull. If the case is opened and exposed to air, an alchemical coating on the tome bursts into flame and fills the library with burnt othur fumes (DC 13 Constitution saving throw). A successful DC 20 Intelligence ({@skill Investigation}) check made while the glass case is sealed notices a glistening coating on the book. The trap cannot be disarmed while the case is closed and opening it triggers the trap. The book itself is blank.",
@@ -18667,6 +18949,7 @@
 						{
 							"type": "entries",
 							"name": "3. Third Floor\u2013Living Quarters",
+							"page": 50,
 							"id": "2c5",
 							"entries": [
 								{
@@ -18684,6 +18967,7 @@
 										{
 											"type": "entries",
 											"name": "Stinking Cloud",
+											"page": 50,
 											"id": "2c8",
 											"entries": [
 												"This entire area is filled with a {@spell stinking cloud} (spell save DC 17) from the guards and wards spell."
@@ -18692,6 +18976,7 @@
 										{
 											"type": "entries",
 											"name": "Treasure",
+											"page": 50,
 											"id": "2c9",
 											"entries": [
 												"A successful DC 15 Wisdom ({@skill Perception}) check locates a {@item potion of supreme healing} hidden under the bed's mattress."
@@ -18704,6 +18989,7 @@
 						{
 							"type": "entries",
 							"name": "4. Fourth Floor\u2013Laboratory",
+							"page": 50,
 							"id": "2ca",
 							"entries": [
 								{
@@ -18721,6 +19007,7 @@
 										{
 											"type": "entries",
 											"name": "Bodies",
+											"page": 50,
 											"id": "2cd",
 											"entries": [
 												"Seventeen humanoid bodies lie on slabs, each covered by a plain white sheet. There are symbols painted on each, recognizable with a successful DC 15 Intelligence ({@skill Arcana}) check as preparation for animating the undead. None are animated when the characters arrive in the room."
@@ -18729,6 +19016,7 @@
 										{
 											"type": "entries",
 											"name": "Bottles",
+											"page": 50,
 											"id": "2ce",
 											"entries": [
 												"The table of solutions contains spell components, organs in embalming fluid, blood, bile, and a host of other disgusting substances. Each is labeled with cramped handwriting."
@@ -18737,6 +19025,7 @@
 										{
 											"type": "entries",
 											"name": "Stained Glass Windows",
+											"page": 50,
 											"id": "2cf",
 											"entries": [
 												"Four large stained-glass windows decorate the cardinal points in the room. A shallow niche with a magically burning candle is enclosed behind each. The only way to reach the candle is to break the window. The windows depict the following:",
@@ -18760,6 +19049,7 @@
 						{
 							"type": "entries",
 							"name": "5. Fifth Floor\u2013Summoning Chamber",
+							"page": 51,
 							"id": "2d0",
 							"entries": [
 								{
@@ -18777,6 +19067,7 @@
 										{
 											"type": "entries",
 											"name": "Extinguishing the Candle",
+											"page": 51,
 											"id": "2d3",
 											"entries": [
 												"The candlelight daemon's candle can be extinguished with an action while adjacent to the candle. Strong winds, splashed fluids, or other attempts to smother it from a distance require the character to succeed on a DC 15 Dexterity check. The candle can also be destroyed by doing 15 points of damage to it. It is immune to necrotic, poison, and psychic damage and resistant to fire damage. If the candle is extinguished, the candlelight daemon is instantly banished."
@@ -18785,6 +19076,7 @@
 										{
 											"type": "entries",
 											"name": "Mirror Portal",
+											"page": 51,
 											"id": "2d4",
 											"entries": [
 												"Henri has set up a portal to a cave outside the city, where there is a matching mirror. With a command word, the mirrors fill with darkness in which a single candle flame flickers. By touching the flame in the mirror, and speaking the command word a second time, a creature can step between mirrors as part of their movement."
@@ -18799,6 +19091,7 @@
 				{
 					"type": "section",
 					"name": "Conclusion",
+					"page": 51,
 					"id": "2d5",
 					"entries": [
 						"With the candlelight daemon banished, the characters can kill or capture Henri L'ombre de la Nuit. There's ample evidence of his wrongdoing in the tower, and he is quickly tried and put to death. For their aid, the characters might be rewarded with the Tower of Flicker and Shadow, on the condition that they purify it. Who knows what other evils or traps await them in the tower? Is there a strong source of evil beneath it? Finding a way to banish the shadow pillar and determining a way to destroy {@i The Dark Hearted Oath} are both entire quests on their own."
@@ -18828,6 +19121,7 @@
 		{
 			"type": "section",
 			"name": "13: Swamp of Fate",
+			"page": 53,
 			"id": "2ee",
 			"entries": [
 				"{@i By Greg Marks}",
@@ -18835,6 +19129,7 @@
 				{
 					"type": "section",
 					"name": "Background",
+					"page": 53,
 					"id": "2ef",
 					"entries": [
 						"In times now forgotten, a small temple to Typharia, the goddess of truth, was raised on a series of small hills. Called Astranag, the holy shrine was a place of learning, focused on uncovering natural wonders and divining fate from the stars. After the God's End, the clear and fertile land about Astranag sank into more, and what was bright became foul. The burgeoning swamp swallowed most of the temple, and thick mists closed off the stars from sight. The place of clarity became obscured and forgotten by most until it was put to darker purpose.",
@@ -18843,6 +19138,7 @@
 						{
 							"type": "entries",
 							"name": "Set the Hook",
+							"page": 53,
 							"id": "2f0",
 							"entries": [
 								"The characters hear tales of a mystical tree in the swamp that grants wishes to those judged worthy. Hoping to receive their hearts' desire, they set out on a quest to find the tree. After much research, the characters locate a map drawn by a madman guilty of a series of increasingly outlandish murders. The map depicts the location of the tree among the ruins of some place called Astranag. After traveling through a dangerous swamp, they come across the swamp.",
@@ -18853,6 +19149,7 @@
 										{
 											"type": "entries",
 											"name": "Alternate Hook",
+											"page": 53,
 											"id": "2f2",
 											"entries": [
 												"Galia Feykin, a druid, has received a vision of a dryad in trouble. In her vision the dryad stands among the ruins of a temple sinking into a swamp, tears streaming down her face as a great shadow passes over her. The last thing she sees is the symbol of Typharia upon the temple's altar. Galia begs the characters to find this ancient temple and aid the dryad.",
@@ -18877,6 +19174,7 @@
 				{
 					"type": "section",
 					"name": "Lair Overview",
+					"page": 53,
 					"id": "2f3",
 					"entries": [
 						"Several awakened animals patrol the ruins of Astranag. They are listed where they're most likely to lair, but they move about. A delicate treaty exists between three groups of animals, and the characters might be able to take advantage of this animosity when dealing with the inhabitants of the ruins.",
@@ -20352,6 +20650,7 @@
 						{
 							"type": "entries",
 							"name": "1. The Hanging Tree",
+							"page": 54,
 							"id": "2f4",
 							"entries": [
 								{
@@ -20370,6 +20669,7 @@
 										{
 											"type": "entries",
 											"name": "Hanging Tree",
+											"page": 54,
 											"id": "2f7",
 											"entries": [
 												"A massive, entirely natural tree grows on the island. Six humanoid bodies of various races hang from its branches, fraying weathered rope tied around their necks or waists. A successful DC 13 Intelligence ({@skill Investigation}) check notes that the bodies appear to have been tied to the tree after they died from various forms of trauma and are unlikely to have bound themselves. All the bodies have been nibbled on since dying. A successful DC 15 Intelligence ({@skill Arcana}) check notes that several of the bodies show damage from necrotic energy."
@@ -20382,6 +20682,7 @@
 						{
 							"type": "entries",
 							"name": "2. Standing Stones",
+							"page": 54,
 							"id": "2f8",
 							"entries": [
 								{
@@ -20399,6 +20700,7 @@
 										{
 											"type": "entries",
 											"name": "Standing Stones",
+											"page": 54,
 											"id": "2fb",
 											"entries": [
 												"Each of the stones is covered in complicated scrollwork; many of the spirals have small holes carved into them. A successful DC 15 Intelligence ({@skill Nature}) check recognizes the patterns as the paths of planets and stars through the heavens, though in positions from long ago.",
@@ -20412,6 +20714,7 @@
 						{
 							"type": "entries",
 							"name": "3. Ruins of Astranag",
+							"page": 54,
 							"id": "2fc",
 							"entries": [
 								{
@@ -20429,6 +20732,7 @@
 										{
 											"type": "entries",
 											"name": "Ruins",
+											"page": 54,
 											"id": "2ff",
 											"entries": [
 												"The Hollow Sisters sleep in the ruins, now desecrated by the remains of other animals and humanoids they have partially eaten. The Hollow Sisters are cruel and torture their prey before consuming it. There are ample places one could hide and take cover."
@@ -20437,6 +20741,7 @@
 										{
 											"type": "entries",
 											"name": "Temple",
+											"page": 54,
 											"id": "300",
 											"entries": [
 												"At night, Folmar sleeps in the small temple to Typharia that is still mostly intact beyond a large hole in the roof. A plain room with a simple stone slab altar is all that remain of the former faith. The wall opposite the doors is badly chipped and damaged where Folmar has tried to desecrate Typharia's holy symbol. A {@item bedroll|PHB} and {@item backpack|PHB} are behind the altar. In the backpack, beyond food and personal effects, is a pouch with 270 gp and an {@item elixir of health}."
@@ -20449,6 +20754,7 @@
 						{
 							"type": "entries",
 							"name": "4. Wooded Hill",
+							"page": 54,
 							"id": "301",
 							"entries": [
 								{
@@ -20465,6 +20771,7 @@
 						{
 							"type": "entries",
 							"name": "5. The Ordeal Tree",
+							"page": 55,
 							"id": "303",
 							"entries": [
 								{
@@ -20492,6 +20799,7 @@
 										{
 											"type": "entries",
 											"name": "Sunken Boat",
+											"page": 55,
 											"id": "306",
 											"entries": [
 												"A foot of the rickety dock is a sunken boat that succumbed to Snapjaw's attack. While the passengers have been eaten, a chest has gone unnoticed in the remains. Inside the locked (DC 20) chest is the treasure a group of mercenaries had intended to offer the ordeal tree in exchange for power: 1,000 gp, a goat's horn with the blasphemous names of daemons carved into it, and a {@item ring of free action} that is cursed to bring misfortune to the wearer."
@@ -20504,6 +20812,7 @@
 						{
 							"type": "entries",
 							"name": "6. Shallows",
+							"page": 55,
 							"id": "307",
 							"entries": [
 								{
@@ -20532,6 +20841,7 @@
 				{
 					"type": "section",
 					"name": "Conclusion",
+					"page": 55,
 					"id": "309",
 					"entries": [
 						"If Folmar and his animals are defeated, the characters can choose to undergo the ordeal, but it most likely leads to death at the hands of the ordeal tree, one way or another. Any boons granted by the ordeal tree fade once the tree is destroyed, and only by destroying the tree can the world be made safer.",
@@ -20560,6 +20870,7 @@
 		{
 			"type": "section",
 			"name": "14: Street Prophet",
+			"page": 57,
 			"id": "31f",
 			"entries": [
 				"{@i By Greg Marks}",
@@ -20567,6 +20878,7 @@
 				{
 					"type": "section",
 					"name": "Background",
+					"page": 57,
 					"id": "320",
 					"entries": [
 						"Kazilor the doomcaller came to a poor neighborhood to preach that the end-times are at hand and that the city's leadership has done nothing to prepare the populace. The neighborhood increasingly fell under the doomcaller's sway, and throngs gather each day to hear the prophet speak in the square in front of his storefront chapel. Daemon attacks, civil unrest, and general lawlessness are on the rise as the apparent end of the world approaches. The fall of the city seems more likely.",
@@ -20575,6 +20887,7 @@
 						{
 							"type": "entries",
 							"name": "Set the Hook",
+							"page": 57,
 							"id": "321",
 							"entries": [
 								"The street prophet has gained a popular following. Dozens of commoners come out to see him preach while his two attractive acolytes move through the crowd handing out bread and meat. The local clergy have asked the guard to remove the street preacher, but the guards are worried about the reaction of the crowds and turn to instead to adventurers to handle the situation.",
@@ -20585,6 +20898,7 @@
 										{
 											"type": "entries",
 											"name": "Alternate Hook",
+											"page": 57,
 											"id": "323",
 											"entries": [
 												"If the characters are friendly with a reoccurring low-station NPC, they have gone missing while in the vicinity of the doomcaller and are currently being held in area 4. If the party doesn't rescue them soon, they become the next free meal prepared for the crowd!"
@@ -20599,6 +20913,7 @@
 				{
 					"type": "section",
 					"name": "Lair Overview",
+					"page": 57,
 					"id": "324",
 					"entries": [
 						"During the day, Kazilor, wrapped in bandages and robes, climbs the fountain in the street and begins haranguing passersby. By midday, a crowd forms. Kazilor's assistants Klanssa and Alezc hand out bread and meat while accepting donations. When night falls, a few are invited to join them inside for a worship service, though no one can say what they worship, and those who go rarely tell the tale (since few get out alive).",
@@ -20775,6 +21090,7 @@
 						{
 							"type": "entries",
 							"name": "1. Fountain Square",
+							"page": 57,
 							"id": "325",
 							"entries": [
 								{
@@ -20810,6 +21126,7 @@
 										{
 											"type": "entries",
 											"name": "Crowd",
+											"page": 57,
 											"id": "329",
 											"entries": [
 												"On an average day, {@dice 5d20} {@creature Commoner||commoners} come to listen to Kazilor preach. They crowd into the small square and fill the surrounding streets. Some climb onto surrounding buildings or hang from windows. Consider the entire area to be difficult terrain while the crowd is present. Three {@creature Downcast Mercenary|GHLoE|downcast mercenaries}* in the crowd are {@condition charmed} by Klanssa, Alezc, and Ilsoa to act as bouncers, keeping the crowd from being too disruptive during the sermon.",
@@ -20819,6 +21136,7 @@
 										{
 											"type": "entries",
 											"name": "Fountain",
+											"page": 58,
 											"id": "32a",
 											"entries": [
 												"The fountain is surrounded by a 4-foot-high wall made of marble and can be crouched behind to take cover. Water cascades out of the top and over three successively larger tiered bowls in a classic stacked configuration. The water is pure and drinkable."
@@ -20827,6 +21145,7 @@
 										{
 											"type": "entries",
 											"name": "Neighboring Shops",
+											"page": 58,
 											"id": "32b",
 											"entries": [
 												"Several shops front onto the square and surrounding streets. Half are boarded up and abandoned. Other nearby shops include a chandler, a baker, and canvas maker. The surrounding blocks are a significant fire hazard."
@@ -20839,6 +21158,7 @@
 						{
 							"type": "entries",
 							"name": "2. Storefront",
+							"page": 58,
 							"id": "32c",
 							"entries": [
 								{
@@ -20856,6 +21176,7 @@
 										{
 											"type": "entries",
 											"name": "Counter",
+											"page": 59,
 											"id": "32f",
 											"entries": [
 												"Under the counter is a small, sealed wooden box that has been nailed to the underside of the counter and filled with an alchemical device. A successful DC 15 Wisdom ({@skill Perception}) check notes that a wire connects the box to the door leading to area 3. A character that beats the DC by 5 or more also locates a hidden switch also under the counter. If the door to area 3 is opened without flipping the hidden switch, the wire opens the box and exposes it to air causing it to explode and do 22 ({@dice 4d10}) fire damage to all creatures in area 2. The trap can be disabled with a successful DC 20 Dexterity (Thieves' Tools) check."
@@ -20864,6 +21185,7 @@
 										{
 											"type": "entries",
 											"name": "Front Door",
+											"page": 59,
 											"id": "330",
 											"entries": [
 												"The front door is locked (DC 20 Dexterity (Thieves' Tools) check to unlock). Kazilor carries the only key. The door can be forced open with a successful DC 15 Strength check. The window can be easily smashed, though it makes a lot of noise and is easily heard for blocks."
@@ -20876,6 +21198,7 @@
 						{
 							"type": "entries",
 							"name": "3. Chapel",
+							"page": 59,
 							"id": "331",
 							"entries": [
 								{
@@ -20893,6 +21216,7 @@
 										{
 											"type": "entries",
 											"name": "Offerings",
+											"page": 59,
 											"id": "334",
 											"entries": [
 												"The offerings of the desperate are packed around the podium. Sacks of coins and jewelry (worth 273 gp), food, crafts, clothing, and the detritus of lives abandoned in anticipation of the end of the world."
@@ -20901,6 +21225,7 @@
 										{
 											"type": "entries",
 											"name": "Podium",
+											"page": 59,
 											"id": "335",
 											"entries": [
 												"On a shelf under the podium is a small book written in Abyssal containing lists of names: congregants that have fully embraced the doomcaller's message, missing people that have been killed and fed to the crowds, and a short list of fiendish true names including Malfikan, Allonassa, Rawnivour, and Ixixxitollan. These can be any kind of fiend the GM wishes to use in the campaign.",
@@ -20910,6 +21235,7 @@
 										{
 											"type": "entries",
 											"name": "Symbol",
+											"page": 59,
 											"id": "336",
 											"entries": [
 												"The runes painted on the wall are Abyssal runes associated with chaos. Looking closely and succeeding on a DC 18 Intelligence ({@skill Investigation}) check notes that a {@spell Symbol||symbol of death} (spell save DC 18) worked into it. The symbol triggers when a humanoid is in the room for more than three rounds without a fiend present."
@@ -20922,6 +21248,7 @@
 						{
 							"type": "entries",
 							"name": "4. Abattoir",
+							"page": 59,
 							"id": "337",
 							"entries": [
 								{
@@ -20939,6 +21266,7 @@
 										{
 											"type": "entries",
 											"name": "Alley Door",
+											"page": 59,
 											"id": "33a",
 											"entries": [
 												"The door to the alley is locked. It can be unlocked with a successful DC 20 Dexterity (Thieves' Tools) check or broken down with a successful DC 20 Strength check. Both Kazilor and Ilsoa have keys to this door."
@@ -20947,6 +21275,7 @@
 										{
 											"type": "entries",
 											"name": "Bodies",
+											"page": 59,
 											"id": "33b",
 											"entries": [
 												"Recently collected street people, congregants that would not be missed, or those that asked too many questions, have been killed and stacked here. Several have been partially butchered and are currently cooking in the hearth."
@@ -20959,6 +21288,7 @@
 						{
 							"type": "entries",
 							"name": "5. Abandoned Shop",
+							"page": 59,
 							"id": "33c",
 							"entries": [
 								{
@@ -20974,6 +21304,7 @@
 						{
 							"type": "entries",
 							"name": "6. Summoning Shop",
+							"page": 59,
 							"id": "33e",
 							"entries": [
 								{
@@ -20991,6 +21322,7 @@
 				{
 					"type": "section",
 					"name": "Conclusion",
+					"page": 59,
 					"id": "340",
 					"entries": [
 						{
@@ -21030,6 +21362,7 @@
 		{
 			"type": "section",
 			"name": "15: The Thundering Hills",
+			"page": 61,
 			"id": "35d",
 			"entries": [
 				"{@i By Greg Marks}",
@@ -21037,6 +21370,7 @@
 				{
 					"type": "section",
 					"name": "Background",
+					"page": 61,
 					"id": "35e",
 					"entries": [
 						"Generations-old legends speak of rumbling beneath the Thundering Hills. The stories change over time, but one thing never changes: there is always a great beast called a lindwyrm, a serpent with one pair of claws and an endless appetite. The stories say, when the lindwyrm wakes, devastation always follows. The stories are wrong. There are two lindwyrms under the Thundering Hills.",
@@ -21044,6 +21378,7 @@
 						{
 							"type": "entries",
 							"name": "Set the Hook",
+							"page": 61,
 							"id": "35f",
 							"entries": [
 								"The Lickscales have raided a farm, abducted the farmers, and carried off livestock. Nearby fishermen heard the commotion but, by the time they arrived, the Tolferson family had been carried away. It's clear from tracks in the snow that some humanoids attacked the farm and that at least some of the family was alive when they were taken. The Tolfersons were popular and the eldest son, Ulfrick Snow-Swimmer, was a local hero for saving two children from drowning when they feel through the ice. The adventurers are begged to follow the tracks, rescue the family, and wreck a terrible vengeance upon those who would raid the clan. Many whisper of creatures beneath the Thundering Hills, but the folk tales are rarely consistent beyond claiming a huge feral beast sleeps beneath there, its snores or restless sleep making the hills shake.",
@@ -21054,6 +21389,7 @@
 										{
 											"type": "entries",
 											"name": "Alternate Hook",
+											"page": 61,
 											"id": "361",
 											"entries": [
 												"Young Ingrind Settur, barely nine winters, was the only survivor of an attack on her village by one of the lindwyrms. No one believes her tale of a giant serpent burrowing out of the ground, though something clearly devastated the village. She seeks the aid of heroes. She claims that before being swallowed, her father buried the family's ancestral blade into the beast's scales, and Ingrind would have it returned that she might wield it when she grows to be a warrior like her father."
@@ -21068,6 +21404,7 @@
 				{
 					"type": "section",
 					"name": "Lair Overview",
+					"page": 61,
 					"id": "362",
 					"entries": [
 						"The trail leads deep into the snow-covered hills to a cave that shows significant recent traffic, including something quite large coming in and out of the cave. There is no light in the caves, but a foul smell emanates from within. While rough, the ceilings are generally 20 feet high in most places.",
@@ -22390,6 +22727,7 @@
 						{
 							"type": "entries",
 							"name": "1. Cave Entrance",
+							"page": 61,
 							"id": "363",
 							"entries": [
 								{
@@ -22407,6 +22745,7 @@
 										{
 											"type": "entries",
 											"name": "Tracks",
+											"page": 61,
 											"id": "366",
 											"entries": [
 												"A successful DC 15 Wisdom ({@skill Survival}) check identifies humanoid and kobold tracks, as well as some great serpentine beast with huge claws. The traffic is so great that it is impossible to determine exact numbers or if they last went in or out of the cave."
@@ -22419,6 +22758,7 @@
 						{
 							"type": "entries",
 							"name": "2. Windy Ravine",
+							"page": 61,
 							"id": "367",
 							"entries": [
 								{
@@ -22436,6 +22776,7 @@
 										{
 											"type": "entries",
 											"name": "Crevasse",
+											"page": 61,
 											"id": "36a",
 											"entries": [
 												"The crevasse is 15 feet across and continues out of sight in all directions. Should a creature fall, the bottom is 200 feet down. A creature with a 15 Strength can make the jump without a check, provided the violent winds don't stop them. A creature with a lower score must succeed on a Strength ({@skill Athletics}) check equal to 10 + (15\u2013the character's Strength score). Should a character miss the jump, they may attempt a DC 20 Dexterity saving throw to catch the opposite ledge before falling.",
@@ -22445,6 +22786,7 @@
 										{
 											"type": "entries",
 											"name": "Graffiti",
+											"page": 61,
 											"id": "36b",
 											"entries": [
 												"The graffiti scrawled on the walls shows crude drawings of two draconic serpents with one pair of claws surround by several small worshipping draconic creatures. Writing in poor Draconic spells out \"Gods of the Lickscales\" amid various rude statements."
@@ -22453,6 +22795,7 @@
 										{
 											"type": "entries",
 											"name": "Violent Winds",
+											"page": 61,
 											"id": "36c",
 											"entries": [
 												"Random violent winds blow in all directions, making jumping or flying across the crevasse difficult. When a creature attempts to cross the crevasse, roll a {@dice 1d10}. If the result is odd, the wind pushes down, back, or sideways, impeding progress. Subtract the result of the roll to the distance jumped. If the creature is flying, they must succeed on a Strength ({@skill Athletics}) check with a DC equal to 10 plus the number rolled or take 10 ({@dice 3d6}) bludgeoning damage as they bounce along crevasse's walls before righting themselves. If the result is even, it blows the creature up or forward, aiding progress. Add the result of the roll to the distance jumped or flown."
@@ -22465,6 +22808,7 @@
 						{
 							"type": "entries",
 							"name": "3. Burrow of the Lickscale",
+							"page": 62,
 							"id": "36d",
 							"entries": [
 								{
@@ -22491,6 +22835,7 @@
 						{
 							"type": "entries",
 							"name": "4. Nursery Pit",
+							"page": 62,
 							"id": "36f",
 							"entries": [
 								{
@@ -22508,6 +22853,7 @@
 										{
 											"type": "entries",
 											"name": "Captives",
+											"page": 62,
 											"id": "372",
 											"entries": [
 												"There are five Tolfersons, all in bad shape from their recent violent capture: Rune, Vigdis, Ulfric (called Snow-Swimmer), Asgiern, and Natala. They are individually bound and hanging over the ledge by ropes, five feet from the ledge and ten feet above the pit floor. If they are dropped, a newborn lindwyrm can kill one per bite, but then spends a round to swallow its prey."
@@ -22520,6 +22866,7 @@
 						{
 							"type": "entries",
 							"name": "5. Lair of the Lindwyrms",
+							"page": 62,
 							"id": "373",
 							"entries": [
 								{
@@ -22547,6 +22894,7 @@
 										{
 											"type": "entries",
 											"name": "Altar",
+											"page": 62,
 											"id": "376",
 											"entries": [
 												"The kobolds have piled many years' worth of stolen armor, weapons, trade goods, coins, and other knickknacks on a large flat stone. Several lit candles decorate the altar cause light to scatter off the treasure for 30-feet. Most of the treasure is not especially valuable, but 9,000 gp worth of coins and goods can be recovered. In addition, there is a {@item potion of flying}, a {@item staff of healing} that is cursed to give the owner an unhealthy obsession with blood, and a dented brass clock that only counts backwards and tolls ominously at noon."
@@ -22555,6 +22903,7 @@
 										{
 											"type": "entries",
 											"name": "Bones",
+											"page": 62,
 											"id": "377",
 											"entries": [
 												"Bones of all types litter the floor, many of them centuries old, to a depth of three feet, making it difficult to move through the room. Treat the entire room as {@book difficult terrain|PHB|8|Difficult Terrain} for any creature smaller than Large size."
@@ -22569,6 +22918,7 @@
 				{
 					"type": "section",
 					"name": "Conclusion",
+					"page": 62,
 					"id": "378",
 					"entries": [
 						"If the lindwyrms and the Lickscales are defeated, a great reoccurring evil is prevented\u2014though the legends of the beasts beneath the Thundering Hills are likely to remain for many generations. Oddly though, the rumbling doesn't stop. What horrors might bubble up from the crevasse that the presence of the lindwyrms had kept in check?",
@@ -22596,6 +22946,7 @@
 		{
 			"type": "section",
 			"name": "16: Safe in the Stillborn",
+			"page": 65,
 			"id": "388",
 			"entries": [
 				"{@i By Shawn Merwin}",
@@ -22603,6 +22954,7 @@
 				{
 					"type": "section",
 					"name": "Background",
+					"page": 65,
 					"id": "389",
 					"entries": [
 						"A downcast apostate called Master Krumm wanted to become immortal again, and he planned to perform dark rituals to make that happen. After being driven away from two different lairs by interfering adventurers, he sought a place where no one would bother him: the Stillborn Forest. Krumm found abandoned lodgings upon which to build his new home, including a small manor and a house for servants. Within a month, Krumm and his followers had created a well for water, a garden for food, abundant game for meat, and Krumm knew privacy like they never had before.",
@@ -22612,6 +22964,7 @@
 						{
 							"type": "entries",
 							"name": "Set the Hook",
+							"page": 65,
 							"id": "38a",
 							"entries": [
 								"A small but thriving hamlet called Oakendale rests at the edge of the Stillborn Forest. It acts as a gathering point for those brave souls who ply their trade in the forest as woodcutters, loggers, hunters, and treasure seekers. The leader of the town, a woman named Yvell Stowin, oversees the mercantile businesses that operate in and through Oakendale, acting as a de facto guildmistress. When many more foresters than normal fail to return from their work in a timely manner, Yvell reaches out to adventurers to enter the dangerous forest and see what the problem might be.",
@@ -22624,6 +22977,7 @@
 										{
 											"type": "entries",
 											"name": "Alternate Hook",
+											"page": 65,
 											"id": "38c",
 											"entries": [
 												"Xakalonus attacks have increased dramatically all over Etharis, with most of those attacks happening against people who use magic. After attacking magic-users and eating their brains, the xakalonuses immediately retreat. More than one report has pointed to the Stillborn Forest as the ultimate destination of these brain-eating creatures, so the characters are prompted to investigate."
@@ -22638,6 +22992,7 @@
 				{
 					"type": "section",
 					"name": "Lair Overview",
+					"page": 65,
 					"id": "38d",
 					"entries": [
 						"The Stillborn Forest is thick with trees, underbrush, wild game, and even some lesser fey creatures. Moving off established paths means entering {@book difficult terrain|PHB|8|Difficult Terrain}, and the countless trees offer much concealment and cover from ranged attacks.",
@@ -23061,6 +23416,7 @@
 						{
 							"type": "entries",
 							"name": "1. Logging Road",
+							"page": 65,
 							"id": "38e",
 							"entries": [
 								{
@@ -23079,6 +23435,7 @@
 										{
 											"type": "entries",
 											"name": "Tracks",
+											"page": 65,
 											"id": "391",
 											"entries": [
 												"A successful DC 15 Wisdom ({@skill Survival}) check identifies tracks of Medium-sized and booted humanoid creatures, along with some domesticated animals like horses. More recent tracks to and from the area were made by xakalonuses, which look like large wolf tracks but with much sharper claws."
@@ -23087,6 +23444,7 @@
 										{
 											"type": "entries",
 											"name": "Corrupted Foliage",
+											"page": 66,
 											"id": "392",
 											"entries": [
 												"If the characters take a moment to examine the corrupted trees along the west of the path, they can attempt a DC 20 Intelligence ({@skill Arcana} or {@skill Nature}) check. On a success, they learn that these trees were at one point magical, infused with a type of fey magic. Something drained the magic from them, leaving them alive but severely damaged.",
@@ -23096,6 +23454,7 @@
 										{
 											"type": "entries",
 											"name": "Lurking Monsters",
+											"page": 66,
 											"id": "393",
 											"entries": [
 												"Two sets of five {@creature Xakalonus|GHLoE|xakalonuses}* each wait to the north and south of the Krumm's Manor ({@area Area 3|39a|x}). They watch the situation, waiting for the hraptnon to arrive and take part in a final assault against the occupants of the manor. The characters' presence throws their plan into question. If the characters notice either of these sets of monsters and attack, the group of xakalonuses they attack defends themselves.",
@@ -23109,6 +23468,7 @@
 						{
 							"type": "entries",
 							"name": "2. Destroyed Dwelling",
+							"page": 66,
 							"id": "394",
 							"entries": [
 								{
@@ -23126,6 +23486,7 @@
 										{
 											"type": "entries",
 											"name": "Building",
+											"page": 66,
 											"id": "397",
 											"entries": [
 												"A character succeeding on a DC 15 Intelligence ({@skill Arcana} or {@skill Nature}) check determines that while it looks like the damage to the building was caused by an earthquake, the damage is too localized and specific. Highly concentrated thunder damage was the cause of the damage to the building."
@@ -23134,6 +23495,7 @@
 										{
 											"type": "entries",
 											"name": "Corpses",
+											"page": 66,
 											"id": "398",
 											"entries": [
 												"The three corpses in the front lawn belonged to members of Master Krumm's staff: a cook, a farmer, and a woodcutter. A successful DC 15 Wisdom ({@skill Medicine}) check determines that the bodies where slain by claws and bites from a rather larger creature. On the body of the cook is a key, which opens the back door of Krumm's manor."
@@ -23142,6 +23504,7 @@
 										{
 											"type": "entries",
 											"name": "Survivor",
+											"page": 66,
 											"id": "399",
 											"entries": [
 												"Inside the house are more corpses like the ones in the front yard. They bear the same wounds as well, although some of the bodies were killed by thunder damage. {@condition Unconscious} but stable, hidden by an overturned mattress, is a stable hand, a young human named Feder Estes. If roused from his current state, Feder speaks only Ostoyan and has little information to impart, save for the following:",
@@ -23163,6 +23526,7 @@
 						{
 							"type": "entries",
 							"name": "3. Krumm's Estate",
+							"page": 66,
 							"id": "39a",
 							"entries": [
 								{
@@ -23190,6 +23554,7 @@
 										{
 											"type": "entries",
 											"name": "Krumm's Motivation",
+											"page": 67,
 											"id": "39d",
 											"entries": [
 												"Master Krumm's rituals to regain his immortality failed for one simple reason: none of his sacrifices were powerful enough in spirit or magic to ignite the divine spark in him. With the characters, he sees several potential sparks. This leaves him in a quandary: he may need the characters to help hold off further attacks, but if he can kill one to complete the ritual, he can regain immortality, so defending against the attack won't matter."
@@ -23198,6 +23563,7 @@
 										{
 											"type": "entries",
 											"name": "The Manor",
+											"page": 67,
 											"id": "39e",
 											"entries": [
 												"The manor is full of Krumm's personal items, as well as tomes on rituals that could return immortality to once-immortal creatures. Components for those rituals are stored throughout the manor and could be sold for 1,500 gp to the right buyer. In the shed near the garden, three bound woodcutters await their fate as sacrifices to Krumm's ritual."
@@ -23210,6 +23576,7 @@
 						{
 							"type": "entries",
 							"name": "Hrapton's Advance",
+							"page": 67,
 							"id": "39f",
 							"entries": [
 								{
@@ -23238,6 +23605,7 @@
 				{
 					"type": "section",
 					"name": "Conclusion",
+					"page": 67,
 					"id": "3a1",
 					"entries": [
 						"If what could turn into a three-way battle results in the characters' victory, they learn that the foresters' disappearance was caused by both the hraptnon and xakalonuses, as well as the machinations of Master Krumm. Bringing Krumm back to Oakendale for justice settles the affair in the eyes of Yvell, who gratefully provides the promised reward.",
@@ -23269,6 +23637,7 @@
 		{
 			"type": "section",
 			"name": "17: Cave of Rising Sands",
+			"page": 69,
 			"id": "3c1",
 			"entries": [
 				"{@i By Shawn Merwin}",
@@ -23276,6 +23645,7 @@
 				{
 					"type": "section",
 					"name": "Background",
+					"page": 69,
 					"id": "3c2",
 					"entries": [
 						"Jacoty Endak traveled the length and breadth of Etharis. He sang songs, told tales, collected stories, and survived countless adventures. Jacoty thought he'd seen and experienced everything, until he fell madly in love with a chef named Hosken Kwilleau. The two moved to a remote region of the Castellan Province to live out their lives together, sharing their love with each other and those around them.",
@@ -23294,6 +23664,7 @@
 						{
 							"type": "entries",
 							"name": "Set the Hook",
+							"page": 69,
 							"id": "3c3",
 							"entries": [
 								"A sighting of the Great Beast in the area has led to a severe and dangerous increase in lycanthropy. While the Beast has vanished from the area, the citizens are left to deal with the aftermath. Lycanthropes ravage the area. To make matters worse, people in the region are disappearing. Others talk about experiencing lost time.",
@@ -23305,6 +23676,7 @@
 				{
 					"type": "section",
 					"name": "Lair Overview",
+					"page": 69,
 					"id": "3c4",
 					"entries": [
 						"Jacoty appears in different areas of the cavern complex, depending on how he has interacted with the characters in other areas. The boxed text describes the area and the occupants, minus Jacoty's possible presence. Adjust the boxed text as needed to describe the situation you're presenting.",
@@ -23319,6 +23691,7 @@
 										{
 											"type": "entries",
 											"name": "Sealed Inside",
+											"page": 69,
 											"id": "3c7",
 											"entries": [
 												"Once the characters enter the mouth of the cave, Jacoty's magic takes effect, and the mouth of the cave disappears, trapping the characters inside. The following is true until the characters manage to destroy the shrine and statue of Miklas in {@area Area 7|3e0|x}:",
@@ -25357,6 +25730,7 @@
 						{
 							"type": "entries",
 							"name": "1. Midden",
+							"page": 69,
 							"id": "3c8",
 							"entries": [
 								{
@@ -25374,6 +25748,7 @@
 										{
 											"type": "entries",
 											"name": "Refuse Hole",
+											"page": 69,
 											"id": "3cb",
 											"entries": [
 												"The stench coming out of the hole is so terrible that it has taken on magical properties. Living creatures (aside from the fzeglaichs) who start their turn within 20 feet of the refuse hole must succeed on a DC 20 Constitution saving throw or be {@condition stunned} until the start of their next turn."
@@ -25382,6 +25757,7 @@
 										{
 											"type": "entries",
 											"name": "Jacoty's Presence",
+											"page": 69,
 											"id": "3cc",
 											"entries": [
 												"Early in this combat, Jacoty ({@creature hourglass widow|GHLoE}*) teleports into the area and spends a round or two attacking the characters, telling them that they are never going to leave this lair alive. After testing their mettle and taking in their tactics and capabilities, he pops away to deal with them later elsewhere in the cavern lair. He repeats this process in other areas, hounding the characters and then disappearing before he is seriously injured."
@@ -25394,6 +25770,7 @@
 						{
 							"type": "entries",
 							"name": "2. Tainted Pool",
+							"page": 70,
 							"id": "3cd",
 							"entries": [
 								{
@@ -25411,6 +25788,7 @@
 										{
 											"type": "entries",
 											"name": "Pool",
+											"page": 70,
 											"id": "3d0",
 											"entries": [
 												"The pool contains fresh water that the residents of the lair use for survival. Jacoty's presence has caused the pool to take on corrupted characteristics in certain circumstances.",
@@ -25425,6 +25803,7 @@
 						{
 							"type": "entries",
 							"name": "3. Ill-Gotten Gains",
+							"page": 70,
 							"id": "3d1",
 							"entries": [
 								{
@@ -25450,6 +25829,7 @@
 										{
 											"type": "entries",
 											"name": "Writing Desk",
+											"page": 70,
 											"id": "3d4",
 											"entries": [
 												"The writing desk contains poems, notes, half-completed stories, and sketches. All of these were written by Jacoty, although he signed none of the works. The documents all convey a sense of loss, and the subject of the writings is a person named Hosken, who is apparently dead, although none of the work describes exactly who he was or how he died. Whoever wrote and drew these works is obviously heartbroken by the loss of Hosken.",
@@ -25469,6 +25849,7 @@
 						{
 							"type": "entries",
 							"name": "4. Larder",
+							"page": 70,
 							"id": "3d5",
 							"entries": [
 								{
@@ -25495,6 +25876,7 @@
 										{
 											"type": "entries",
 											"name": "Wall",
+											"page": 70,
 											"id": "3d8",
 											"entries": [
 												"The stone wall can magically expand or retract to block or allow access. A successful DC 15 Intelligence ({@skill Arcana}) check reveals that the runes on the wall function as a lock. When a spell of level 1 or higher is cast on the wall, it opens for 10 seconds to allow passage. Then it closes, needing magic to re-open again. Magic cast on the wall is instantly absorbed, so spells that would affect the door do not. Each five-foot section of the wall has an AC of 25 and 200 hit points."
@@ -25503,6 +25885,7 @@
 										{
 											"type": "entries",
 											"name": "Prisoners",
+											"page": 70,
 											"id": "3d9",
 											"entries": [
 												"Currently six prisoners occupy the larder. Three are {@creature Scout||scouts} who tracked the lycanthropes back to this lair. The other three are lycanthropes ({@creature Werewolf Ravager|GHLoE|werewolf ravagers}*) who refused to bow to the corruption of Jacoty. All of them are disoriented by lack of sustenance, as well as by Jacoty's time-distorting magic. Each can, however, describe Jacoty and call him \"the devil with the hourglass body.\""
@@ -25515,6 +25898,7 @@
 						{
 							"type": "entries",
 							"name": "5. Barracks",
+							"page": 70,
 							"id": "3da",
 							"entries": [
 								{
@@ -25531,6 +25915,7 @@
 						{
 							"type": "entries",
 							"name": "6. Study",
+							"page": 70,
 							"id": "3dc",
 							"entries": [
 								{
@@ -25548,6 +25933,7 @@
 										{
 											"type": "entries",
 											"name": "Zeragonia's Journal",
+											"page": 70,
 											"id": "3df",
 											"entries": [
 												"Written in code, the journal spans the last two years and talks about Zeragonia's personal struggle with her lycanthropy, how Miklas helped her overcome the affliction, and how she created this place to safely assist others who suffer from lycanthropy to control their more violent instincts. The last entry talks about the arrival of a stranger named Jacoty who seemed troubled. Zeragonia was interested in what those troubles might be, sensing a deeper darkness dwelling within him.",
@@ -25561,6 +25947,7 @@
 						{
 							"type": "entries",
 							"name": "7. Shrine to Miklas",
+							"page": 70,
 							"id": "3e0",
 							"entries": [
 								{
@@ -25578,6 +25965,7 @@
 										{
 											"type": "entries",
 											"name": "Zeragonia's Plight",
+											"page": 71,
 											"id": "3e3",
 											"entries": [
 												"If any of the characters focus on seeing what's happening with Zeragonia, they can attempt a DC 15 Wisdom ({@skill Insight}) check (no action required). On a success, they see that the woman is highly distressed and confused as she stares at the statue of Miklas."
@@ -25586,6 +25974,7 @@
 										{
 											"type": "entries",
 											"name": "Shrine",
+											"page": 71,
 											"id": "3e4",
 											"entries": [
 												"Jacoty corrupted the shrine to slowly turn the creatures in the cavern from those who wanted to be peaceful into killers. Zeragonia is the last holdout, but she is about to be turned to the dark side. The shrine radiates strong magic, and a successful DC 20 Intelligence ({@skill Arcana} or {@skill Religion}) reveals that the shrine is corrupting both the attitudes of the creatures in the area, as well as the time inconsistencies that have plagued the region."
@@ -25594,6 +25983,7 @@
 										{
 											"type": "entries",
 											"name": "Deactivating the Shrine",
+											"page": 71,
 											"id": "3e5",
 											"entries": [
 												"To deactivate the shrine, the characters must perform these actions, in order. Unless otherwise noted, each of these steps requires anyone attempting them to use an action to perform the step:",
@@ -25620,6 +26010,7 @@
 				{
 					"type": "section",
 					"name": "Conclusion",
+					"page": 71,
 					"id": "3e6",
 					"entries": [
 						"If the characters can rescue and redeem Zeragonia rather than killing her, Miklas smiles upon them for showing mercy. The statue speaks, and promises to answer three questions for the characters, or provide them with one wish (as per the {@spell wish} spell).",
@@ -25656,6 +26047,7 @@
 		{
 			"type": "section",
 			"name": "18: Mayhem at the Crossroads",
+			"page": 73,
 			"id": "3ff",
 			"entries": [
 				"{@i By Shawn Merwin}",
@@ -25663,6 +26055,7 @@
 				{
 					"type": "section",
 					"name": "Background",
+					"page": 73,
 					"id": "400",
 					"entries": [
 						"Floss's Cross was a prosperous hamlet set at the crossroads of two important trade routes. The people of Floss's Cross worked hard to provide the best food, drink, and services to the many travelers who passed through their village, and they grew accustomed to the prosperity that came with a respected reputation. The place earned a high standing among even the most powerful people in Etharis, making it a place where political, religious, social, and economic leaders would meet in secret to discuss, negotiate, barter, entreat, and strategize.",
@@ -25671,6 +26064,7 @@
 						{
 							"type": "entries",
 							"name": "Set the Hook",
+							"page": 73,
 							"id": "401",
 							"entries": [
 								"A powerful figure in Etharis (or your own world) came to Floss's Cross. Neither they, their bodyguards, nor other members of their retinue have been heard from since they first arrived. The disappearance of such a powerful figure has many people worried. Worse yet, rumors that a dreadful minion of the Great Beast has been hunting in the area stoke those worries. The characters are asked to find out what happened to this powerful figure."
@@ -25681,6 +26075,7 @@
 				{
 					"type": "section",
 					"name": "Lair Overview",
+					"page": 73,
 					"id": "402",
 					"entries": [
 						"The provided map shows only the center of the hamlet of Floss's Cross. Other shops, businesses, taverns, and inns rest outside of the hamlet's center. However, all the danger and duplicity the characters find in Floss's Cross radiate out from this central area. Any building on the map that's not numbered is an empty residence\u2014either fled by its normal occupants, or a building for rent that currently has no tenants. (Adding more interesting elements or enemies to those areas is recommended if you want to lengthen or increase the difficulty of the lair.)",
@@ -25837,6 +26232,7 @@
 						{
 							"type": "entries",
 							"name": "1. Floss Memorial Statue",
+							"page": 74,
 							"id": "403",
 							"entries": [
 								{
@@ -25853,6 +26249,7 @@
 										{
 											"type": "entries",
 											"name": "Statue",
+											"page": 74,
 											"id": "406",
 											"entries": [
 												"The statue has been magically empowered by the disavowed seraphs Rusk and Yort to act as a beacon for the caprathorn. A successful DC 25 Intelligence ({@skill Arcana}) check recognizes the summoning power of the magic infusing the statue. The magic of the statue cannot be dispelled with anything except a {@spell wish} spell or powerful divine intervention.",
@@ -25873,6 +26270,7 @@
 						{
 							"type": "entries",
 							"name": "2. Rusk's Residence",
+							"page": 74,
 							"id": "407",
 							"entries": [
 								"The doors and windows to this building have been shuttered and locked. The locks are not strong, easily defeated with a successful DC 10 Dexterity (Thieves' Tools) check. Once inside, the characters can examine the interior.",
@@ -25890,6 +26288,7 @@
 						{
 							"type": "entries",
 							"name": "3. Private Tavern",
+							"page": 74,
 							"id": "409",
 							"entries": [
 								{
@@ -25918,6 +26317,7 @@
 										{
 											"type": "entries",
 											"name": "Hemina",
+											"page": 74,
 											"id": "40c",
 											"entries": [
 												"Between the magic and the innate charms of the disavowed, Hemina is muddled in her thinking. She strongly believes both Rusk and Yort are wonderful friends. Hemina remembers serving food to the powerful figure and their bodyguards, but she hasn't seen them in a few days. She assumes they, like many of the people in town, are staying hidden because of the threat of the caprathorn."
@@ -25926,6 +26326,7 @@
 										{
 											"type": "entries",
 											"name": "Diners",
+											"page": 74,
 											"id": "40d",
 											"entries": [
 												"The dining party consists of six wealthy travelers ({@creature Noble||nobles}) who couldn't turn down the chance to eat a meal at one of the premiere restaurants among the elite of Etharis. Unfortunately for them, the seraphs added poison to the meal, with the plan of killing them, stealing their coin and jewelry, and burning the bodies.",
@@ -25935,6 +26336,7 @@
 										{
 											"type": "entries",
 											"name": "Pantry",
+											"page": 74,
 											"id": "40e",
 											"entries": [
 												"If the characters search the pantry, they find many ingredients of a magical, rather than a culinary, nature. On a successful DC 20 Intelligence ({@skill Arcana} or {@skill Nature}) check, someone knows these ingredients, if ingested in the correct amounts and combinations, could cause anything from lethargy to intense pain to incapacitation to death. These ingredients are rare, and an alchemist specializing in rare ingredients and components would pay 750 gp for them."
@@ -25943,6 +26345,7 @@
 										{
 											"type": "entries",
 											"name": "Rewards",
+											"page": 74,
 											"id": "40f",
 											"entries": [
 												"If the characters can save all six of the diners, the wealthy patrons give each character a reward of 500 gp, and they promise to owe the characters a favor (which you can determine what it means)."
@@ -25955,6 +26358,7 @@
 						{
 							"type": "entries",
 							"name": "4. Yort's Residence",
+							"page": 74,
 							"id": "410",
 							"entries": [
 								{
@@ -25972,6 +26376,7 @@
 										{
 											"type": "entries",
 											"name": "Ruse",
+											"page": 75,
 											"id": "413",
 											"entries": [
 												"Yort pretends to be a resident of the town, hiding out in his home. He knows better than to challenge the characters on his own, so he tries to get them to accompany him to an area where allies might help him. He also uses the statue to summon the caprathorn if the situation is dire."
@@ -25984,6 +26389,7 @@
 						{
 							"type": "entries",
 							"name": "5. Hostage",
+							"page": 75,
 							"id": "414",
 							"entries": [
 								"The doors and windows of this stable are boarded up, despite some structural damage. There are no locks to pick, but as this stable is not solidly built, a successful DC 20 Strength check can break open any door or window. If the characters gain access, they can see the situation.",
@@ -26002,6 +26408,7 @@
 										{
 											"type": "entries",
 											"name": "Powerful Figure",
+											"page": 75,
 											"id": "417",
 											"entries": [
 												"This powerful figure can be an NPC from Etharis (if you are running a Grim Hollow campaign) or from your own world. They should have enough influence and power to make their survival something important to your campaign.",
@@ -26015,6 +26422,7 @@
 						{
 							"type": "entries",
 							"name": "The Caprathorn",
+							"page": 75,
 							"id": "418",
 							"entries": [
 								"At whatever point you are ready to have the caprathorn make its appearance, it charges into the center of town.",
@@ -26033,6 +26441,7 @@
 										{
 											"type": "entries",
 											"name": "Chaotic Battle",
+											"page": 75,
 											"id": "41b",
 											"entries": [
 												"While the disavowed can summon the caprathorn, they cannot control it. This means that any battle involving all three sides (characters, disavowed, and caprathorn) can go in any direction. Many high-level groups could handle the battle even if the disavowed and caprathorn worked together, but regulating the action based on the success of the characters is highly recommended."
@@ -26047,6 +26456,7 @@
 				{
 					"type": "section",
 					"name": "Conclusion",
+					"page": 75,
 					"id": "41c",
 					"entries": [
 						"If the characters rescue the powerful figure being held in the stables before he is killed by his captors, that person rewards them with at least 1,000 gp worth of gems, coins, and other precious gifts\u2014if the characters assist that person in getting home, of course.",
@@ -26078,6 +26488,7 @@
 		{
 			"type": "section",
 			"name": "19: Prison of Good Intent",
+			"page": 77,
 			"id": "42b",
 			"entries": [
 				"{@i By Shawn Merwin}",
@@ -26085,6 +26496,7 @@
 				{
 					"type": "section",
 					"name": "Background",
+					"page": 77,
 					"id": "42c",
 					"entries": [
 						"The ancient elven vampire Aeilidrania terrorized communities around the world, gathering power, influence, information, and followers\u2014and built a small undead fiefdom for herself. When the vampire was at the height of her power, an angel of Empyreus named Benitent swooped in and captured her. It dragged the powerful undead creature to a remote prison, far from any civilized areas that she might threaten.",
@@ -26095,6 +26507,7 @@
 						{
 							"type": "entries",
 							"name": "Set the Hook",
+							"page": 77,
 							"id": "42d",
 							"entries": [
 								"A world-threatening problem is rapidly hurtling toward the characters, and one piece of information they need to fight it rests firmly in the twisted but brilliant mind of the elven vampire Aeilidrania. After some research and investigation, they hear rumors that the vampire they seek lives in a secluded region far from any civilized areas. Whether or not they learn of the vampire's imprisonment by Benitent, the angel of Empyreus, depends on how much research they undertake and how many resources they use. With no other means of securing the information they need to deal with the incredible threat, the characters are forced to seek out Aeilidrania."
@@ -26105,6 +26518,7 @@
 				{
 					"type": "section",
 					"name": "Lair Overview",
+					"page": 77,
 					"id": "42e",
 					"entries": [
 						"Benitent has taken steps to protect the area from magical incursion. Attempts to teleport directly into the area fail, displacing the teleporting party into the wilderness a couple of miles from this site, forcing them to use more conventional means of transportation. Within the bounds of the magical moat, the following effects hold sway:",
@@ -27472,6 +27886,7 @@
 						{
 							"type": "entries",
 							"name": "Lair Environs",
+							"page": 77,
 							"id": "42f",
 							"entries": [
 								"As the characters move closer and closer to the prison that Benitent created for Aeilidrania, they noticed the landscape turns from natural to unnatural in a noticeable way:",
@@ -27489,6 +27904,7 @@
 						{
 							"type": "entries",
 							"name": "1. Moat",
+							"page": 77,
 							"id": "431",
 							"entries": [
 								{
@@ -27506,6 +27922,7 @@
 										{
 											"type": "entries",
 											"name": "Magic Moat",
+											"page": 77,
 											"id": "434",
 											"entries": [
 												"The moat contains magic-infused water that acts to keep creatures from crossing it. The miasma acts as a curved {@spell wall of force} which, if touched, does 66 ({@dice 12d10}) radiant damage (no save). The miasma seals at the top, 60 feet above the island, making the bridge the only means to enter safely. As mentioned earlier, teleportation, planar magic, or digging beneath the island fail to allow egress."
@@ -27518,6 +27935,7 @@
 						{
 							"type": "entries",
 							"name": "2. Bridge",
+							"page": 78,
 							"id": "435",
 							"entries": [
 								{
@@ -27541,6 +27959,7 @@
 						{
 							"type": "entries",
 							"name": "3. Sty",
+							"page": 78,
 							"id": "437",
 							"entries": [
 								{
@@ -27569,6 +27988,7 @@
 										{
 											"type": "entries",
 											"name": "Runed Fence",
+											"page": 78,
 											"id": "43a",
 											"entries": [
 												"A successful DC 20 Intelligence ({@skill Arcana}) check reveals that the runes on the fence power an ongoing magical effect. The runes siphon small amounts of the pig's life force and redirect it to fuel the power of the moat. Destroying the fence eliminates the moat-powered effects on the island within 24 hours."
@@ -27581,6 +28001,7 @@
 						{
 							"type": "entries",
 							"name": "4. Tree",
+							"page": 78,
 							"id": "43b",
 							"entries": [
 								{
@@ -27598,6 +28019,7 @@
 										{
 											"type": "entries",
 											"name": "Lead Box",
+											"page": 78,
 											"id": "43e",
 											"entries": [
 												"A successful DC 15 Intelligence ({@skill Arcana}) check reveals the purpose of the box: it's meant to hold a fiendish creature. The lock that holds the chains can be opened with a successful DC 15 Dexterity (Thieves' Tools) check, or the chain can be easily severed with a weapon attack."
@@ -27606,6 +28028,7 @@
 										{
 											"type": "entries",
 											"name": "Imp",
+											"page": 78,
 											"id": "43f",
 											"entries": [
 												"Popilo, the Malikirian imp, serves Benitent. Its sole purpose is to tempt the characters to make a deal with it. Popilo offers to give the characters anything they request, particularly information, for a single piece of silver. Once the characters make any deal with Popilo, Benitent has the excuse needed to attack the characters for being evil and corrupt.",
@@ -27625,6 +28048,7 @@
 						{
 							"type": "entries",
 							"name": "5. Dwelling",
+							"page": 78,
 							"id": "440",
 							"entries": [
 								{
@@ -27642,6 +28066,7 @@
 										{
 											"type": "entries",
 											"name": "Habret",
+											"page": 78,
 											"id": "443",
 											"entries": [
 												"Habret could be found anywhere on the island, as the old man spends every waking hour doing chores. Habret can sense the presence of the characters if they approach him, but he cannot hear or see them. He speaks to them, inviting them to share the meat, fruit, and vegetables that he's butchered, grown, or harvested.",
@@ -27669,6 +28094,7 @@
 										{
 											"type": "entries",
 											"name": "Secret Trapdoor",
+											"page": 79,
 											"id": "444",
 											"entries": [
 												"A successful DC 15 Intelligence ({@skill Investigation}) or Wisdom ({@skill Perception}) allows the characters to notice that the animal-skin rug on the floor covered a trapdoor. The door leads to a 10-foot-deep cellar, which houses Aeilidrania's prison."
@@ -27677,6 +28103,7 @@
 										{
 											"type": "entries",
 											"name": "Aeilidrania",
+											"page": 79,
 											"id": "445",
 											"entries": [
 												"The elven vampire spends most of her time in the basement, but when Habret is in the house, she comes up to talk with him. She can't leave the house because of the abjuration magic employed by Benitent. She also knows she cannot harm Habret, and she finds the old man curious and enjoys talking with him.",
@@ -27699,6 +28126,7 @@
 				{
 					"type": "section",
 					"name": "Conclusion",
+					"page": 79,
 					"id": "446",
 					"entries": [
 						"It's likely that the characters must defeat Benitent to get the information they need from Aeilidrania; unfortunately, doing that releases all the abjurations that keep the vampire in and its minions out. A conscientious party would attempt to destroy the vampire instead of releasing her on the world.",
@@ -27727,6 +28155,7 @@
 		{
 			"type": "section",
 			"name": "20: Top of the World",
+			"page": 81,
 			"id": "466",
 			"entries": [
 				"{@i By Shawn Merwin}",
@@ -27734,6 +28163,7 @@
 				{
 					"type": "section",
 					"name": "Background",
+					"page": 81,
 					"id": "467",
 					"entries": [
 						"The undead dragon known as Gegazol inhabits an infamous lair in the frozen north of Etharis, but it's also saddled with a corrupting link to a daemonic force that resides within its undead body. Gegazol is normally content to rest in its home for decades at a time before its bloodlust encourages it to gather an army and march upon the Valikan Clans.",
@@ -27743,6 +28173,7 @@
 						{
 							"type": "entries",
 							"name": "Set the Hook",
+							"page": 81,
 							"id": "468",
 							"entries": [
 								"An enormous purple whirlpool of air and ether opens high above five of the largest cities of the world. While nothing has emerged from these whirlpools in the sky, the leaders of the world are naturally worried. The heroes of the world who've flown up and entered the whirlpool have not returned, except for the occasional corpses that plummet from the sky, scarred and maimed with elemental damage.",
@@ -27755,6 +28186,7 @@
 				{
 					"type": "section",
 					"name": "Lair Overview",
+					"page": 81,
 					"id": "469",
 					"entries": [
 						"This lair is not on this world, or really on any world. It's a realm between worlds, an elemental pocket dimension that Gegazol has taken the time to attune with. To defeat Gegazol and drive her away from this place and back to her own lair, they must first sever the connection between the undead dragon and the obelisks. Four smaller obelisks surround a larger central one.",
@@ -28589,6 +29021,7 @@
 						{
 							"type": "entries",
 							"name": "Lair Actions",
+							"page": 81,
 							"id": "46a",
 							"entries": [
 								"The lair actions for {@creature Gegazol|GHLoE} in {@i Grim Hollow: The Monster Grimoire} represent her abilities when she is at her frozen lair in Etharis. She has attuned to the power of the elemental pockets dimension, giving her these new lair actions instead.",
@@ -28606,6 +29039,7 @@
 						{
 							"type": "entries",
 							"name": "Lich trolls, Plateaus, and Obelisks",
+							"page": 81,
 							"id": "46b",
 							"entries": [
 								"In her attempt to tame and control the elemental power of this pocket dimension, Gegazol has recruited four {@creature Lich Troll|GHLoE|lich trolls} to her cause. Each of the lich trolls are spiritually connected to one of the four smaller elemental obelisks, while Gegazol is connected to the larger central obelisk.",
@@ -28626,6 +29060,7 @@
 						{
 							"type": "entries",
 							"name": "Bridges",
+							"page": 82,
 							"id": "46c",
 							"entries": [
 								"Rope bridges connect the plateaus to each other. These bridges aren't sturdy, but they hold up under heavy use. They are immune to elemental damage (fire, cold, thunder, lightning, force), but can be easily damaged with other types of damage. They have 20 hit points and an armor class of 15."
@@ -28636,12 +29071,14 @@
 				{
 					"type": "section",
 					"name": "Arrival",
+					"page": 82,
 					"id": "46d",
 					"entries": [
 						"As the characters move through the maelstrom in the sky, they are teleported to a random plateau. Roll {@dice 1d4} to see which plateau each character appears on.",
 						{
 							"type": "entries",
 							"name": "1. Thunder Obelisk",
+							"page": 82,
 							"id": "46e",
 							"entries": [
 								{
@@ -28659,6 +29096,7 @@
 										{
 											"type": "entries",
 											"name": "Thunder Obelisk",
+											"page": 82,
 											"id": "471",
 											"entries": [
 												"A successful DC 20 Intelligence ({@skill Arcana} or {@skill Nature}) check reveals that this obelisk is associated with thunder. To deactivate the obelisk and sever it from connection to the lich troll and Gegazol, the characters must make the following steps. A successful DC 20 Intelligence ({@skill Arcana}) check tells a character what these steps are, and what order they must be done in.",
@@ -28679,6 +29117,7 @@
 						{
 							"type": "entries",
 							"name": "2. Ice Obelisk",
+							"page": 82,
 							"id": "472",
 							"entries": [
 								{
@@ -28696,6 +29135,7 @@
 										{
 											"type": "entries",
 											"name": "Ice Obelisk",
+											"page": 82,
 											"id": "475",
 											"entries": [
 												"A successful DC 20 Intelligence ({@skill Arcana} or {@skill Nature}) check reveals that this obelisk is associated with cold. To deactivate the obelisk and sever it from connection to the lich troll and Gegazol, the characters must make the following steps. A successful DC 20 Intelligence ({@skill Arcana}) check tells a character what these steps are, and what order they must be done in.",
@@ -28716,6 +29156,7 @@
 						{
 							"type": "entries",
 							"name": "3. Flame Obelisk",
+							"page": 82,
 							"id": "476",
 							"entries": [
 								{
@@ -28733,6 +29174,7 @@
 										{
 											"type": "entries",
 											"name": "Flame Obelisk",
+											"page": 82,
 											"id": "479",
 											"entries": [
 												"A successful DC 20 Intelligence ({@skill Arcana} or {@skill Nature}) check reveals that this obelisk is associated with fire. To deactivate the obelisk and sever it from connection to the lich troll and Gegazol, the characters must make the following steps. A successful DC 20 Intelligence ({@skill Arcana}) check tells a character what these steps are, and what order they must be done in.",
@@ -28753,6 +29195,7 @@
 						{
 							"type": "entries",
 							"name": "4. Lightning Obelisk",
+							"page": 82,
 							"id": "47a",
 							"entries": [
 								{
@@ -28770,6 +29213,7 @@
 										{
 											"type": "entries",
 											"name": "Lightning Obelisk",
+											"page": 82,
 											"id": "47d",
 											"entries": [
 												"A successful DC 20 Intelligence ({@skill Arcana} or {@skill Nature}) check reveals that this obelisk is associated with lightning. To deactivate the obelisk and sever it from connection to the lich troll and Gegazol, the characters must make the following steps. A successful DC 20 Intelligence ({@skill Arcana}) check tells a character what these steps are, and what order they must be done in.",
@@ -28790,6 +29234,7 @@
 						{
 							"type": "entries",
 							"name": "5. Central Obelisk",
+							"page": 83,
 							"id": "47e",
 							"entries": [
 								{
@@ -28807,6 +29252,7 @@
 										{
 											"type": "entries",
 											"name": "Main Obelisk",
+											"page": 83,
 											"id": "481",
 											"entries": [
 												"This pillar is empowered by the smaller ones. As soon as the other pillars are deactivated, this one crumbles, making Gegazol able to be killed. Until that happens, no attack can reduce Gegazol to less than 1 hit point.",
@@ -28830,6 +29276,7 @@
 				{
 					"type": "section",
 					"name": "Conclusion",
+					"page": 83,
 					"id": "482",
 					"entries": [
 						"Gegazol can't be killed permanently until the daemonic skull is destroyed, and since the skull is not here, Gegazol reforms back in her icy home. And she will not be pleased at what the characters did to her. Revenge becomes foremost on her mind."
@@ -29361,7 +29808,6 @@
 				},
 				{
 					"type": "entries",
-					"name": "",
 					"entries": [
 						{
 							"type": "entries",
@@ -29430,7 +29876,6 @@
 				},
 				{
 					"type": "entries",
-					"name": "",
 					"entries": [
 						{
 							"type": "entries",

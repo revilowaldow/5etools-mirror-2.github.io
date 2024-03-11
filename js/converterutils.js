@@ -235,7 +235,7 @@ class BaseParser {
 
 		const cleanLine = curLine.trim();
 
-		if (/^\d..-\d.. level\s+\(/.test(cleanLine) && !opts.noSpellcastingWarlockSlotLevel) return false;
+		if (/^\d..-\d..[- ][Ll]evel\s+\(/.test(cleanLine) && !opts.noSpellcastingWarlockSlotLevel) return false;
 
 		// Start of a list item
 		if (/^[•●]/.test(cleanLine)) return false;
@@ -243,7 +243,7 @@ class BaseParser {
 		// A lowercase word
 		if (/^[a-z]/.test(cleanLine) && !opts.noLowercase) return true;
 		// An ordinal (e.g. "3rd"), but not a spell level (e.g. "1st level")
-		if (/^\d[a-z][a-z]/.test(cleanLine) && !/^\d[a-z][a-z] level/gi.test(cleanLine)) return true;
+		if (/^\d[a-z][a-z]/.test(cleanLine) && !/^\d[a-z][a-z][- ][Ll]evel/gi.test(cleanLine)) return true;
 		// A number (e.g. damage; "5 (1d6 + 2)"), optionally with slash-separated parts (e.g. "30/120 ft.")
 		if (/^\d+(\/\d+)*\s+/.test(cleanLine) && !opts.noNumber) return true;
 		// Opening brackets (e.g. damage; "(1d6 + 2)")

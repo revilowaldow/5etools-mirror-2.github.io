@@ -63,9 +63,9 @@ class MakeCards extends BaseComponent {
 
 		$$($wrpConfig)`<h5 class="split-v-center"><div>New Card Defaults</div>${$btnResetDefaults}</h5>
 		<div class="ve-flex-v-center bold">
-			<div class="col-4 ve-text-center pr-2">Type</div>
-			<div class="col-4 ve-text-center p-2">Color</div>
-			<div class="col-4 ve-text-center pl-2">Icon</div>
+			<div class="ve-col-4 ve-text-center pr-2">Type</div>
+			<div class="ve-col-4 ve-text-center p-2">Color</div>
+			<div class="ve-col-4 ve-text-center pl-2">Icon</div>
 		</div>`;
 
 		const $getColorIconConfigRow = (entityType) => {
@@ -85,9 +85,9 @@ class MakeCards extends BaseComponent {
 			hkIcon();
 
 			return $$`<div class="ve-flex-v-center stripe-even m-1">
-				<div class="col-4 ve-flex-vh-center pr-2">${entityMeta.searchTitle}</div>
-				<div class="col-4 ve-flex-vh-center p-2">${$iptColor}</div>
-				<div class="col-4 ve-flex-vh-center pl-2">${$btnChooseIcon}</div>
+				<div class="ve-col-4 ve-flex-vh-center pr-2">${entityMeta.searchTitle}</div>
+				<div class="ve-col-4 ve-flex-vh-center p-2">${$iptColor}</div>
+				<div class="ve-col-4 ve-flex-vh-center pl-2">${$btnChooseIcon}</div>
 			</div>`;
 		};
 
@@ -183,14 +183,14 @@ class MakeCards extends BaseComponent {
 				this._list.visibleItems.forEach(it => it.data.$cbSel.prop("checked", isSel));
 			});
 		$$`<div class="w-100 no-shrink ve-flex-v-center bold">
-			<div class="col-1 mr-2 ve-flex-vh-center">${$cbSelAll}</div>
-			<div class="col-3 mr-2 ve-flex-vh-center">Name</div>
-			<div class="col-1-5 mr-2 ve-flex-vh-center">Source</div>
-			<div class="col-1-5 mr-2 ve-flex-vh-center">Type</div>
-			<div class="col-1-1 mr-2 ve-flex-vh-center">Color</div>
-			<div class="col-1-1 mr-2 ve-flex-vh-center">Icon</div>
-			<div class="col-1 mr-2 ve-flex-vh-center">Count</div>
-			<div class="col-1-1 ve-flex-v-center ve-flex-h-right"/>
+			<div class="ve-col-1 mr-2 ve-flex-vh-center">${$cbSelAll}</div>
+			<div class="ve-col-3 mr-2 ve-flex-vh-center">Name</div>
+			<div class="ve-col-1-5 mr-2 ve-flex-vh-center">Source</div>
+			<div class="ve-col-1-5 mr-2 ve-flex-vh-center">Type</div>
+			<div class="ve-col-1-1 mr-2 ve-flex-vh-center">Color</div>
+			<div class="ve-col-1-1 mr-2 ve-flex-vh-center">Icon</div>
+			<div class="ve-col-1 mr-2 ve-flex-vh-center">Count</div>
+			<div class="ve-col-1-1 ve-flex-v-center ve-flex-h-right"/>
 		</div>`.appendTo($wrpContainer);
 
 		const $wrpList = $(`<div class="w-100 h-100"/>`);
@@ -379,14 +379,14 @@ class MakeCards extends BaseComponent {
 			});
 
 		const $ele = $$`<label class="ve-flex-v-center my-1 w-100 lst__row lst--border lst__row-inner">
-			<div class="col-1 mr-2 ve-flex-vh-center">${$cbSel}</div>
-			<div class="col-3 mr-2 ve-flex-v-center">${loaded.name}</div>
-			<div class="col-1-5 mr-2 ve-flex-vh-center ${Parser.sourceJsonToColor(loaded.source)}" title="${Parser.sourceJsonToFull(loaded.source)}" ${Parser.sourceJsonToStyle(loaded.source)}>${Parser.sourceJsonToAbv(loaded.source)}</div>
-			<div class="col-1-5 mr-2 ve-flex-vh-center">${Parser.getPropDisplayName(cardMeta.entityType)}</div>
-			<div class="col-1-1 mr-2 ve-flex-vh-center">${$iptRgb}</div>
-			<div class="col-1-1 mr-2 ve-flex-vh-center">${$btnIcon}</div>
-			<div class="col-1 mr-2 ve-flex-vh-center">${$iptCount}</div>
-			<div class="col-1-1 ve-flex-v-center ve-flex-h-right">${$btnCopy}${$btnDelete}</div>
+			<div class="ve-col-1 mr-2 ve-flex-vh-center">${$cbSel}</div>
+			<div class="ve-col-3 mr-2 ve-flex-v-center">${loaded.name}</div>
+			<div class="ve-col-1-5 mr-2 ve-flex-vh-center ${Parser.sourceJsonToColor(loaded.source)}" title="${Parser.sourceJsonToFull(loaded.source)}" ${Parser.sourceJsonToStyle(loaded.source)}>${Parser.sourceJsonToAbv(loaded.source)}</div>
+			<div class="ve-col-1-5 mr-2 ve-flex-vh-center">${Parser.getPropDisplayName(cardMeta.entityType)}</div>
+			<div class="ve-col-1-1 mr-2 ve-flex-vh-center">${$iptRgb}</div>
+			<div class="ve-col-1-1 mr-2 ve-flex-vh-center">${$btnIcon}</div>
+			<div class="ve-col-1 mr-2 ve-flex-vh-center">${$iptCount}</div>
+			<div class="ve-col-1-1 ve-flex-v-center ve-flex-h-right">${$btnCopy}${$btnDelete}</div>
 		</label>`;
 
 		const listItem = new ListItem(
@@ -619,7 +619,7 @@ class MakeCards extends BaseComponent {
 				.keydown(async evt => {
 					// prevent double-binding the return key if we have autocomplete enabled
 					await MiscUtil.pDelay(17); // arbitrary delay to allow dropdown to render (~1000/60, i.e. 1 60 FPS frame)
-					if ($modalInner.find(`.typeahead.dropdown-menu`).is(":visible")) return;
+					if ($modalInner.find(`.typeahead.ve-dropdown-menu`).is(":visible")) return;
 					// return key
 					if (evt.which === 13) doClose(true);
 					evt.stopPropagation();

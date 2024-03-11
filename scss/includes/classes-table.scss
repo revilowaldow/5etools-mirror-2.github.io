@@ -1,11 +1,11 @@
-@import "vars";
+@use "vars";
 
 .cls-tbl {
 	font-size: 0.8em;
-	background: $rgb-bg-orange;
+	background: vars.$rgb-bg-orange;
 
 	> tbody > tr > th {
-		color: $rgb-off-black;
+		color: vars.$rgb-off-black;
 		padding: 1px 0.3em;
 	}
 
@@ -16,7 +16,7 @@
 			font-variant: small-caps;
 			font-weight: 500;
 			padding-left: 0.2em;
-			color: $rgb-off-black;
+			color: vars.$rgb-off-black;
 		}
 
 		&col-group {
@@ -32,7 +32,7 @@
 				content: "";
 				height: 1px;
 				width: 96%;
-				border-bottom: 1px solid $rgb-off-black;
+				border-bottom: 1px solid vars.$rgb-off-black;
 			}
 		}
 
@@ -54,7 +54,7 @@
 		}
 
 		&stripe-odd:nth-child(odd) {
-			background: lightgrey;
+			background: #d3d3d3;
 		}
 
 		&cell-spell-progression--spell-points-enabled {
@@ -70,4 +70,3 @@
 		}
 	}
 }
-

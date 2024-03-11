@@ -9,7 +9,9 @@
 					"href": {
 						"type": "internal",
 						"path": "book/HWCS/Cover.webp"
-					}
+					},
+					"width": 1259,
+					"height": 818
 				},
 				{
 					"type": "section",
@@ -97,7 +99,9 @@
 									"href": {
 										"type": "internal",
 										"path": "book/HWCS/Birdfolk.webp"
-									}
+									},
+									"width": 889,
+									"height": 478
 								}
 							]
 						},
@@ -114,7 +118,9 @@
 									"href": {
 										"type": "internal",
 										"path": "book/HWCS/Humblefolk.webp"
-									}
+									},
+									"width": 889,
+									"height": 478
 								}
 							]
 						}
@@ -337,7 +343,9 @@
 													"href": {
 														"type": "internal",
 														"path": "book/HWCS/Different-Looks.webp"
-													}
+													},
+													"width": 878,
+													"height": 479
 												}
 											],
 											"type": "entries"
@@ -453,7 +461,9 @@
 													"href": {
 														"type": "internal",
 														"path": "book/HWCS/Languages.webp"
-													}
+													},
+													"width": 584,
+													"height": 776
 												}
 											],
 											"type": "entries"
@@ -837,7 +847,9 @@
 									"href": {
 										"type": "internal",
 										"path": "book/HWCS/Amaranthine.webp"
-									}
+									},
+									"width": 928,
+									"height": 1135
 								}
 							],
 							"type": "entries"
@@ -956,7 +968,9 @@
 							"href": {
 								"type": "internal",
 								"path": "book/HWCS/Tales-of-the-Amaranthine.webp"
-							}
+							},
+							"width": 631,
+							"height": 651
 						},
 						{
 							"type": "entries",
@@ -1054,7 +1068,9 @@
 									"href": {
 										"type": "internal",
 										"path": "book/HWCS/Prayer-to-Hath.webp"
-									}
+									},
+									"width": 447,
+									"height": 432
 								},
 								{
 									"type": "quote",
@@ -1080,7 +1096,9 @@
 					"href": {
 						"type": "internal",
 						"path": "book/HWCS/Humblewood.webp"
-					}
+					},
+					"width": 1259,
+					"height": 818
 				},
 				"Humblewood is a great and ancient land covered by a vast temperate forest. In some places, this forest is so old the trees dwarf even the tallest castles. In other places, smaller trees provide food and shelter for the fauna and folk of the Wood. Humblewood is named after the forest, but beyond the trees exist the towering range of The Crest mountains, the low-lying swamplands of the Mokk Fields, and the rocky shores of the Talongrip Coast.",
 				"Many Humblewood locations can be encountered by playing through the Adventure in the Wood portion of this book. This section also fleshes out other locations, providing GMs and players alike with the tools to understand the places of the Wood and the people who live there.",
@@ -1121,7 +1139,9 @@
 							"href": {
 								"type": "internal",
 								"path": "book/HWCS/Alderheart.webp"
-							}
+							},
+							"width": 629,
+							"height": 818
 						}
 					]
 				},
@@ -1255,7 +1275,9 @@
 							"href": {
 								"type": "internal",
 								"path": "book/HWCS/Saltars-Port.webp"
-							}
+							},
+							"width": 838,
+							"height": 818
 						}
 					]
 				},
@@ -2032,7 +2054,9 @@
 									"href": {
 										"type": "internal",
 										"path": "book/HWCS/Tenders-Symbol.webp"
-									}
+									},
+									"width": 250,
+									"height": 250
 								},
 								"{@b {@i The Tenders}}",
 								"{@b {@i Rank 1}} - Seedling",
@@ -3519,7 +3543,134 @@
 					"href": {
 						"type": "internal",
 						"path": "book/HWCS/WDTF.webp"
-					}
+					},
+					"width": 603,
+					"height": 384
+				}
+			]
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Writing and Game Design",
+							"entries": [
+								"Christopher Pinch, Matthew Gravelyn, Jordan Richer, Andrea Bruce, TR Rowe"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Concept Creators",
+							"entries": [
+								"Ricardo Evangelho, Jordan Richer, Leesha Hannigan, Andrea Bruce"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Editors",
+							"entries": [
+								"Andrea Bruce, TR Rowe, Dominik Parisien"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Art Director",
+							"entries": [
+								"Leesha Hannigan"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Graphic Designers",
+							"entries": [
+								"Rajaa Al-Subairi, Ricardo Evangelho, Meredith Smallwood"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Front Cover Illustrators",
+							"entries": [
+								"Leesha Hannigan, Christina Kraus"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Iconography",
+							"entries": [
+								"Leesha Hannigan"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Back Cover Illustrator",
+							"entries": [
+								"Derek Murphy"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Cartographers",
+							"entries": [
+								"Hugo Solis, Tim Paul Piotorwski, Blue Sword Games, David Lanza Cebrian"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Interior Illustrators",
+							"entries": [
+								"Leesha Hannigan, Andrea Radeck, Anneliese Mak, April Prime, Beck Hallstedt, Ben Zweifel, Brittany Pezzillo, Christina Kraus, Christina Pirvu, Crystal Sully, Cynthia F.G., Derek Murphy, Emily Hare, Griffin Macaulay, Ilse Gort, Jason Rainville, Jen Pattison, Jon Neimeister, Julia Metzger, Katy Grierson, Kiana Hamm, Kimberli Johnson, Lake Hurwitz, Lauren Henderson, Matei Monoranu, Paul Scott Canavan, Risa Hulett, Sarah Webb, Tiffany Turrill, Vadim Ciocazan, Valeria Ivanova, Veronika Fedorova"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Additional Contributors",
+							"entries": [
+								"Holly Conrad, Deven Rue, Catherine Hariton"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Special Thanks",
+							"entries": [
+								"Gail Simone, Erika Ishii, Brian Scott Walters, Geoffrey Palmer, Russ Charles, Corrina Malone"
+							]
+						}
+					]
+				},
+				"{@b An extra-special thanks to our amazing 14,604 Kickstarter backers who helped bring this project to life!}",
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "book/HWCS/credits.webp"
+					},
+					"maxWidth": 800,
+					"credit": "Lauren Henderson",
+					"width": 1700,
+					"height": 840
+				},
+				{
+					"type": "inset",
+					"entries": [
+						"{@book Humblewood Campaign Setting|HWCS} is Copyright © 2022 Hit Point Press Inc., 1175 Brookfield Rd East, Ottawa, Ontario, K1V0C3, Canada. All rights reserved. All characters and their distinctive likenesses are property of Hit Point Press Inc. in Canada, US and other countries. Any reproduction or unauthorized use of the material or artwork contained herein is prohibited without the express permission of Hit Point Press Inc. Reference to other copyrighted material in no way constitutes a challenge to the respective copyright holders of that material. Hit Point Press, The Deck of Many, Humblewood and its associated logos are trademarks of Hit Point Press Inc. Second Printing. Printed in Lithuania."
+					]
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "book/HWCS/credits1.webp"
+					},
+					"maxWidth": 250,
+					"credit": "Lauren Henderson",
+					"width": 850,
+					"height": 740
 				}
 			]
 		}

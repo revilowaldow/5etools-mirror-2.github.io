@@ -1,4 +1,4 @@
-@import "vars";
+@use "vars";
 
 .dm-time__ {
 	&btn-time {
@@ -33,7 +33,7 @@
 		height: calc(100% - 8px);
 		margin: 4px 8px;
 		flex-shrink: 0;
-		border-left: 1px solid $rgb-border-grey;
+		border-left: 1px solid vars.$rgb-border-grey;
 	}
 
 	&btn-day {
@@ -72,7 +72,7 @@
 	&disp-calendar-day {
 		cursor: pointer;
 		text-align: center;
-		border: 1px solid $rgb-border-grey;
+		border: 1px solid vars.$rgb-border-grey;
 		border-radius: 3px;
 		padding: 0 2px;
 		font-size: 12px;
@@ -82,7 +82,7 @@
 	}
 
 	&disp-calendar-day--active {
-		background: $rgb-stripe-grey--night;
+		background: vars.$rgb-stripe-grey--night;
 	}
 
 	&disp-day-entry {
@@ -163,7 +163,7 @@
 
 	&wrp-event-entries {
 		box-shadow: none;
-		border: 1px solid $rgb-border-grey;
+		border: 1px solid vars.$rgb-border-grey;
 		border-radius: 3px;
 		margin-top: 3px;
 		margin-left: 6px;
@@ -172,7 +172,7 @@
 
 	&bar-entry {
 		margin: 0 4px;
-		border-left: 1px solid $rgb-border-grey;
+		border-left: 1px solid vars.$rgb-border-grey;
 	}
 
 	&wind-speed {
@@ -244,11 +244,11 @@
 
 .night-mode .dm-time__ {
 	&bar-clock {
-		border-color: $rgb-border-grey--night;
+		border-color: vars.$rgb-border-grey--night;
 	}
 
 	&disp-calendar-day {
-		border-color: $rgb-border-grey--night;
+		border-color: vars.$rgb-border-grey--night;
 	}
 
 	&disp-day-entry--event,
@@ -266,15 +266,15 @@
 	}
 
 	&wrp-event-entries {
-		border-color: $rgb-border-grey--night;
+		border-color: vars.$rgb-border-grey--night;
 	}
 
 	&bar-entry {
-		border-color: $rgb-border-grey--night;
+		border-color: vars.$rgb-border-grey--night;
 	}
 
 	&cvs-moon {
-		border: 1px solid $rgb-border-grey--night;
+		border: 1px solid vars.$rgb-border-grey--night;
 	}
 
 	&calendar-ipt-date {

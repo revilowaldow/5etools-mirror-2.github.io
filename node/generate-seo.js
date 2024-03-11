@@ -12,6 +12,7 @@ import * as ut from "./util.js";
 
 const IS_DEV_MODE = true; // !!process.env.VET_SEO_IS_DEV_MODE; // N.b.: disabled as all known deployments are "dev"
 const BASE_SITE_URL = process.env.VET_BASE_SITE_URL || "https://5e.tools/";
+const LOG_EVERY = 1000; // Certain stakeholders prefer less logspam
 const isSkipUaEtc = !!process.env.VET_SEO_IS_SKIP_UA_ETC;
 const isOnlyVanilla = !!process.env.VET_SEO_IS_ONLY_VANILLA;
 const version = ut.readJson("package.json").version;
@@ -186,7 +187,7 @@ async function main () {
 			fs.writeFileSync(`./${path}`, html, "utf-8");
 
 			total++;
-			if (total % 100 === 0) console.log(`Wrote ${total} files...`);
+			if (total % LOG_EVERY === 0) console.log(`Wrote ${total} files...`);
 		});
 	}));
 	console.log(`Wrote ${total} files.`);

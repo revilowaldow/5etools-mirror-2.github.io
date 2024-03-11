@@ -193,7 +193,7 @@ export class InitiativeTrackerNetworking {
 		else fnDispServerStoppedState();
 
 		$$`<div class="row w-100">
-			<div class="col-12">
+			<div class="ve-col-12">
 				<p>
 				The Player View is part of a peer-to-peer system to allow players to connect to a DM's initiative tracker. Players should use the <a href="inittrackerplayerview.html">Initiative Tracker Player View</a> page to connect to the DM's instance. As a DM, the usage is as follows:
 				<ol>
@@ -327,7 +327,7 @@ export class InitiativeTrackerNetworking {
 		const $btnAltGenAll = $(`<button class="btn btn-primary btn-text-insert">Generate All</button>`).click(() => $btnGenServerTokens.click());
 		const $btnAltCopyAll = $(`<button class="btn btn-primary btn-text-insert">Copy Server Tokens</button>`).click(() => $btnCopyServers.click());
 		$$`<div class="ve-flex w-100">
-			<div class="col-12">
+			<div class="ve-col-12">
 				<p>
 				The Player View is part of a peer-to-peer (i.e., serverless) system to allow players to connect to a DM's initiative tracker. Players should use the <a href="inittrackerplayerview.html">Initiative Tracker Player View</a> page to connect to the DM's instance. As a DM, the usage is as follows:
 				<ol>
@@ -401,7 +401,7 @@ export class InitiativeTrackerNetworking {
 
 		$$`
 			<div class="ve-flex w-100">
-				<div class="col-12">
+				<div class="ve-col-12">
 					<div class="ve-flex-inline-v-center mr-2">
 						<span class="mr-1">Add a player (client):</span>
 						${$btnAddClient}
@@ -426,10 +426,10 @@ export class InitiativeTrackerNetworking {
 		UiUtil.$getAddModalRow($modalInner, "div")
 			.append($$`
 			<div class="ve-flex w-100">
-				<div class="col-2 bold">Player Name</div>
-				<div class="col-3-5 bold">Server Token</div>
-				<div class="col-1 ve-text-center">${$btnGenServerTokens}</div>
-				<div class="col-3-5 bold">Client Token</div>
+				<div class="ve-col-2 bold">Player Name</div>
+				<div class="ve-col-3-5 bold">Server Token</div>
+				<div class="ve-col-1 ve-text-center">${$btnGenServerTokens}</div>
+				<div class="ve-col-3-5 bold">Client Token</div>
 			</div>
 		`);
 
@@ -441,12 +441,12 @@ export class InitiativeTrackerNetworking {
 			$btnAcceptClientToken,
 			$btnDeleteClient,
 		) => $$`<div class="w-100 mb-2 ve-flex">
-			<div class="col-2 pr-1">${$iptName}</div>
-			<div class="col-3-5 px-1">${$iptTokenServer}</div>
-			<div class="col-1 px-1 ve-flex-vh-center">${$btnGenServerToken}</div>
-			<div class="col-3-5 px-1">${$iptTokenClient}</div>
-			<div class="col-1-5 px-1 ve-flex-vh-center">${$btnAcceptClientToken}</div>
-			<div class="col-0-5 pl-1 ve-flex-vh-center">${$btnDeleteClient}</div>
+			<div class="ve-col-2 pr-1">${$iptName}</div>
+			<div class="ve-col-3-5 px-1">${$iptTokenServer}</div>
+			<div class="ve-col-1 px-1 ve-flex-vh-center">${$btnGenServerToken}</div>
+			<div class="ve-col-3-5 px-1">${$iptTokenClient}</div>
+			<div class="ve-col-1-5 px-1 ve-flex-vh-center">${$btnAcceptClientToken}</div>
+			<div class="ve-col-0-5 pl-1 ve-flex-vh-center">${$btnDeleteClient}</div>
 		</div>`;
 
 		const clientRowMetas = [];

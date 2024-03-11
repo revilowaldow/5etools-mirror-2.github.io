@@ -91,9 +91,9 @@ class UtilGenTables {
 				chapterOut.index = table.chapter.index;
 				table.chapter = chapterOut;
 			}
-		} else if (table._tmpMeta.metaType === "class") {
+		} else if (table._tmpMeta.metaType === "class" || table._tmpMeta.metaType === "classFluff") {
 			table.parentEntity = {
-				type: table._tmpMeta.metaType,
+				type: table._tmpMeta.metaType = "class",
 				name: table._tmpMeta.className,
 				source: table._tmpMeta.classSource,
 			};
@@ -180,17 +180,9 @@ class UtilGenTables {
 			this._mutCleanData(tbl);
 		});
 
-		stacks.tableGroup.forEach(tg => {
-			const cleanSections = tg.path.filter(ent => ent.name).map(ent => this._getCleanSectionName(ent.name));
-			if (!tg.name) throw new Error("Group had no name!");
-
-			if (!this._isSectionInTitle(cleanSections, tg.name)) {
-				tg.name = `${cleanSections.last()}; ${tg.name}`;
-			}
-
-			this._mutDataAddPage(tg);
-			tg.source = doc[opts.headProp].source || doc[opts.headProp].id;
-			this._mutCleanData(tg);
+		this._mutPostProcessTableGroups({
+			stacks,
+			fnGetSource: it => doc[opts.headProp].source || doc[opts.headProp].id,
 		});
 
 		return stacks;
@@ -223,6 +215,25 @@ class UtilGenTables {
 			}));
 		});
 
+		if (cls.fluff) {
+			this._doSearch({
+				sectionOrders,
+				path,
+				tmpMeta: {
+					metaType: "classFluff",
+					className: cls.name,
+					classSource: cls.source || Parser.SRC_PHB,
+				},
+				section: cls.name,
+				data: {entries: cls.fluff},
+				stacks: stacks,
+				isRequireIncludes: true,
+
+				// Used to deduplicate headers
+				name: cls.name,
+			});
+		}
+
 		stacks.table.forEach(it => {
 			it.name = it.caption;
 			it.source = it._tmpMeta.subclassSource || it._tmpMeta.classSource;
@@ -230,6 +241,11 @@ class UtilGenTables {
 
 			this._mutDataAddPage(it);
 			this._mutCleanData(it);
+		});
+
+		this._mutPostProcessTableGroups({
+			stacks,
+			fnGetSource: it => it._tmpMeta.subclassSource || it._tmpMeta.classSource,
 		});
 
 		return stacks;
@@ -276,6 +292,11 @@ class UtilGenTables {
 			this._mutCleanData(it);
 		});
 
+		this._mutPostProcessTableGroups({
+			stacks,
+			fnGetSource: it => it._tmpMeta.subclassSource || it._tmpMeta.classSource,
+		});
+
 		return stacks;
 	}
 
@@ -316,7 +337,34 @@ class UtilGenTables {
 			this._mutCleanData(it);
 		});
 
+		this._mutPostProcessTableGroups({
+			stacks,
+			fnGetSource: it => it._tmpMeta.source,
+		});
+
 		return stacks;
+	}
+
+	static _mutPostProcessTableGroups (
+		{
+			stacks,
+			fnGetSource,
+		},
+	) {
+		stacks.tableGroup.forEach(tg => {
+			const cleanSections = tg.path.filter(ent => ent.name).map(ent => this._getCleanSectionName(ent.name));
+			if (!tg.name && !cleanSections.length) throw new Error("Group had no name!");
+
+			if (!tg.name) {
+				tg.name = cleanSections.last();
+			} if (!this._isSectionInTitle(cleanSections, tg.name)) {
+				tg.name = `${cleanSections.last()}; ${tg.name}`;
+			}
+
+			this._mutDataAddPage(tg);
+			tg.source = fnGetSource(tg);
+			this._mutCleanData(tg);
+		});
 	}
 }
 

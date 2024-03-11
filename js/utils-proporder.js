@@ -229,6 +229,7 @@ PropOrder._MONSTER = [
 	"tokenCredit",
 	"soundClip",
 	"foundryImg",
+	"foundryTokenScale",
 
 	"altArt",
 
@@ -1187,6 +1188,7 @@ PropOrder._VEHICLE = [
 	"foundrySystem",
 	"foundryFlags",
 	"foundryImg",
+	"foundryTokenScale",
 ];
 PropOrder._VEHICLE_UPGRADE = [
 	"name",
@@ -1215,6 +1217,7 @@ PropOrder._RACE_FLUFF = [
 ];
 PropOrder._ITEM = [
 	"name",
+	"alias",
 	"namePrefix",
 	"nameSuffix",
 	"nameRemove",
@@ -1392,6 +1395,7 @@ PropOrder._ITEM__COPY_MOD = [
 ];
 PropOrder._MAGICVARIANT = [
 	"name",
+	"alias",
 	"source",
 
 	"type",
@@ -1466,6 +1470,8 @@ PropOrder._OBJECT = [
 	"hasFluffImages",
 
 	"fluff",
+
+	"foundryTokenScale",
 ];
 PropOrder._OPTIONALFEATURE = [
 	"name",

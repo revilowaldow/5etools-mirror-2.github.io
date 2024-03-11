@@ -636,6 +636,21 @@
 				}
 			],
 			"id": "012"
+		},
+		{
+			"type": "entries",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						"Written by James Wyatt with Ashlie Hope",
+						"Cover art by Titus Lunter",
+						"Editing by Scott Fitzgerald Gray"
+					]
+				}
+			]
 		}
 	]
 }

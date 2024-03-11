@@ -10208,13 +10208,9 @@
 										},
 										"The dragon is Renesnuprah as an {@creature ancient time dragon|MPP} (see {@book Morte's Planar Parade|MPP}). She departs before the characters can act. The scale Reenee left begins to glow as it transforms into the following charm (a type of supernatural gift detailed in the {@book Dungeon Master's Guide|DMG}).",
 										{
-											"type": "insetReadaloud",
-											"name": "Time of the Dragon",
-											"page": 68,
-											"id": "183",
-											"entries": [
-												"{@i Supernatural Gift (Charm})",
-												"While holding the scale, you can use an action to summon Renesnuprah, an {@creature adult time dragon|MPP} (see {@book Morte's Planar Parade|MPP}). The dragon appears in an unoccupied space of your choice that you can see within 60 feet of you and aids you for 10 minutes. Afterward, the time dragon vanishes, and the scale crumbles."
+											"type": "list",
+											"items": [
+												"{@reward Time of the Dragon|ToFW}"
 											]
 										}
 									]
@@ -10761,13 +10757,9 @@
 										},
 										"The Scholar shares its secret with only one character. That character gains the following charm (a type of supernatural gift detailed in the {@book Dungeon Master's Guide|DMG}).",
 										{
-											"type": "insetReadaloud",
-											"name": "Eyes of the Impossible",
-											"page": 74,
-											"id": "1aa",
-											"entries": [
-												"{@i Supernatural Gift (Charm})",
-												"You are scarred by knowledge you shouldn't possess. Your eyes turn black, except for your pupils, which turn white. This charm grants you advantage on Charisma ({@skill Persuasion}) checks made to interact with evil creatures. Additionally, you can cast the spell {@spell eyebite} as an action. Your spellcasting ability for this spell is Intelligence, Wisdom, or Charisma (your choice when you gain this charm). Once you cast this spell, you can't cast it again until the next dawn. This charm vanishes after 13 days, when your appearance returns to normal."
+											"type": "list",
+											"items": [
+												"{@reward Eyes of the Impossible|ToFW}"
 											]
 										}
 									]
@@ -13594,30 +13586,302 @@
 		},
 		{
 			"type": "section",
-			"name": "Cover",
-			"id": "224",
+			"name": "Credits",
 			"entries": [
 				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "adventure/ToFW/058-04003.cover.webp"
-					},
-					"title": "On the Cover: Illustrator Magali Villeneuve shares glimpses of the Outlands under the knowing gazes of the arcanaloth Shemeshka and a mimir full of reality-warping secrets.",
-					"credit": "Magali Villeneuve",
-					"width": 850,
-					"height": 579
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Project Leads",
+									"entries": [
+										"Justice Ramin Arman, F. Wesley Schneider"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Art Director",
+									"entries": [
+										"Emi Tanji"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Writers",
+									"entries": [
+										"Justice Ramin Arman, Dan Dillon, F. Wesley Schneider"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Rules Developers",
+									"entries": [
+										"Jeremy Crawford, Christopher Perkins"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Lead Editor",
+									"entries": [
+										"Adrian Ng"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Editors",
+									"entries": [
+										"Judy Bauer, Eytan Bernstein, Janica Carter, Christopher Perkins"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Graphic Designer",
+									"entries": [
+										"Matt Cole"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Cover Illustrators",
+									"entries": [
+										"Tony DiTerlizzi, Magali Villeneuve"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Interior Illustrators",
+									"entries": [
+										"Luca Bancone, Marco Bernardini, Zoltan Boros, Bruce Brenneise, CoupleOfKooks, Nikki Dawes, Axel Defois, E.W. Hekaton, Michele Giorgi, Quintin Gleim, Jane Katsubo, Julian Kok, Adrián Ibarra Lugo, Warren Mahy, Dave Melvin, Robson Michel, Aaron Miller, Riccardo Moscatello, David Auden Nash, One Pixel Brush, Hinchel Or, Mike Pape, Andrea Piparo, Chris Seaman, Cory Trego-Erdner, Jabari Weathers"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Cartographers",
+									"entries": [
+										"Marco Bernardini, Jared Blando, Mike Schley"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Concept Art Directors",
+									"entries": [
+										"Josh Herman, Emi Tanji"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Concept Artists",
+									"entries": [
+										"Eric Belisle, Dmitry Burmak, Ekaterina Burmak, Max Dunbar, Alex Konstad, Juho Laitila, Izzy Medrano, One Pixel Brush, Noor Rahman, John Tedrick, Terraform Studios, Shawn Wood"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Consultants",
+									"entries": [
+										"Michele Carter, Rico Corazón, Basheer Ghouse, Jonathan S. Tomhave"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Project Engineer",
+									"entries": [
+										"Cynda Callaway"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Imaging Technicians",
+									"entries": [
+										"Daniel Corona, Kevin Yee"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Prepress Specialist",
+									"entries": [
+										"Jefferson Dunlap"
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "D&D Studio",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Executive Producer",
+													"entries": [
+														"Kyle Brink"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Game Architects",
+													"entries": [
+														"Jeremy Crawford, Christopher Perkins"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Studio Art Director",
+													"entries": [
+														"Josh Herman"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Art Manager",
+													"entries": [
+														"Rob Sather"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Art Department",
+													"entries": [
+														"Matt Cole, Trystan Falcone, Bree Heiss, Kate Irwin, Bob Jordan, Noor Rahman, Emi Tanji, Trish Yochum"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Design Department",
+													"entries": [
+														"Justice Ramin Arman, Makenzie De Armas, Dan Dillon, Amanda Hamon, Ron Lundeen, Ben Petrisor, Patrick Renie, F. Wesley Schneider, Carl Sibley, Jason Tondro, James Wyatt"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Managing Editor",
+													"entries": [
+														"Judy Bauer"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Editorial Department",
+													"entries": [
+														"Eytan Bernstein, Janica Carter, Adrian Ng"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Senior Producer",
+													"entries": [
+														"Dan Tovar"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Producers",
+													"entries": [
+														"Bill Benham, Siera Bruggeman, Robert Hawkey, Andy Smith, Gabe Waluconis"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Director of Product Management",
+													"entries": [
+														"Liz Schuh"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Product Managers",
+													"entries": [
+														"Natalie Egan, Chris Lindsay, Hilary Ross, Chris Tulach"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "D&D Beyond",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Product Managers",
+													"entries": [
+														"Patrick Backmann, Jeff Turriff"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Digital Design Team",
+													"entries": [
+														"Jay Jani, Adam Walton, Cameron Powell, Joseph Keen, Sean Stoves"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						"Special thanks to Michele Carter; Lisa Ohanian; Black Isle Studios, the creators of Planescape: Torment; and the hundreds of playtesters who made this a better book!"
+					]
 				},
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "adventure/ToFW/059-04002.alt.cover.webp"
+						"path": "adventure/ToFW/credits.webp"
 					},
-					"title": "On the Alt-Cover: On this cover by Tony DiTerlizzi, a group of planar adventurers prepare for whatever wonders and wildness the multiverse has in store.",
-					"credit": "Tony DiTerlizzi",
+					"maxWidth": 250,
 					"width": 850,
-					"height": 575
+					"height": 983
+				},
+				{
+					"type": "gallery",
+					"images": [
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "adventure/ToFW/058-04003.cover.webp"
+							},
+							"title": "On the Cover: Illustrator Magali Villeneuve shares glimpses of the Outlands under the knowing gazes of the arcanaloth Shemeshka and a mimir full of reality-warping secrets.",
+							"credit": "Magali Villeneuve",
+							"width": 850,
+							"height": 579
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "adventure/ToFW/059-04002.alt.cover.webp"
+							},
+							"title": "On the Alt-Cover: On this cover by Tony DiTerlizzi, a group of planar adventurers prepare for whatever wonders and wildness the multiverse has in store.",
+							"credit": "Tony DiTerlizzi",
+							"width": 850,
+							"height": 575
+						}
+					]
 				}
 			]
 		}

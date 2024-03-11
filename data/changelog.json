@@ -2661,5 +2661,11 @@
 		"date": "2024-02-19",
 		"title": "Digital Magpie",
 		"txt": "- Added The Deck of Many Things: Card Reference Guide content (thanks @ Lyra for the data entry and conversion)\n- Added Humblewood Campaign Setting (thanks @ Ragu and @ Spappz for the existing homebrew conversion)\n- Added page numbers to Dungeons of Drakkenheim adventure content\n- (Brew) Fixed Creature Text Converter failing to convert `@recharge` tags in some names\n- (Brew) Added basic \"special equipment\" tagging to Creature Text Converter\n- (Fixed typos/added tags)"
+	},
+	{
+		"ver": "1.201.0",
+		"date": "2024-03-10",
+		"title": "Page of Wisdom",
+		"txt": "- Added \"The Dungeons & Dragons Tarot Deck\" as partnered content (thanks @ Lyra for the data entry and conversion)\n- Added page numbers to: Grim Hollow: Lairs of Etharis adventure content; Phandelver and Below: The Shattered Obelisk adventure content\n- Added remaining page numbers to entries from: Dungeons of Drakkenheim; Planescape: Adventures in the Multiverse; Grim Hollow: Lairs of Etharis; Phandelver and Below: The Shattered Obelisk\n- Added credits sections to all adventures/books\n- Omnisearch results (and other links) can now be directly dropped onto DM Screen panels, without first opening a permanent hover window\n- The DM Screen \"fullscreen\" mode can now be exited by pressing `ESC`\n- Fixed various hover window bugs; temporary windows should now more reliably auto-close, and clicking any element now correctly triggers a fallback cleanup\n- Fixed display of Filter \"Select by Date\" slider\n- (Brew) Added support for `@tag`s in immunity/resistance/vulnerability notes\n- (Brew) Added `+`/`-` keybinds to the Text Converter to increment/decrement page number\n- (Brew) Improved Creature Text Converter handling of homebrew spellcasting spell level formats\n- (Brew) Added support for `mailto:` in `@link` tags\n- (Brew) Fixed crash when adding homebrew from file when offline\n- (Fixed typos/added tags)"
 	}
 ]

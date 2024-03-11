@@ -309,6 +309,20 @@
 				}
 			],
 			"id": "009"
+		},
+		{
+			"type": "entries",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						"Written by James Wyatt",
+						"Cover art by Adam Paquette"
+					]
+				}
+			]
 		}
 	]
 }

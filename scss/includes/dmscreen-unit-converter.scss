@@ -1,4 +1,4 @@
-@import "vars";
+@use "vars";
 
 .dm-unitconv {
 	width: 100%;
@@ -26,7 +26,9 @@
 		}
 
 		&ipt.ipt-invalid:focus {
-			box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(231, 99, 99, 0.6);
+			box-shadow:
+				inset 0 1px 1px rgb(0 0 0 / 7.5%),
+				0 0 8px rgb(231 99 99 / 60%);
 			border-color: #e92b31;
 		}
 	}

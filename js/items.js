@@ -30,22 +30,22 @@ class ItemsSublistManager extends SublistManager {
 		return [
 			new SublistCellTemplate({
 				name: "Name",
-				css: "bold col-6 pl-0",
+				css: "bold ve-col-6 pl-0",
 				colStyle: "",
 			}),
 			new SublistCellTemplate({
 				name: "Weight",
-				css: "ve-text-center col-2",
+				css: "ve-text-center ve-col-2",
 				colStyle: "text-center",
 			}),
 			new SublistCellTemplate({
 				name: "Cost",
-				css: "ve-text-center col-2",
+				css: "ve-text-center ve-col-2",
 				colStyle: "text-center",
 			}),
 			new SublistCellTemplate({
 				name: "Number",
-				css: "ve-text-center col-2 pr-0",
+				css: "ve-text-center ve-col-2 pr-0",
 				colStyle: "text-center",
 			}),
 		];
@@ -58,7 +58,7 @@ class ItemsSublistManager extends SublistManager {
 			item.value || item.valueMult ? Parser.itemValueToFullMultiCurrency(item, {isShortForm: true}).replace(/ +/g, "\u00A0") : "\u2014",
 		];
 
-		const $dispCount = $(`<span class="ve-text-center col-2 pr-0">${count}</span>`);
+		const $dispCount = $(`<span class="ve-text-center ve-col-2 pr-0">${count}</span>`);
 		const $ele = $$`<div class="lst__row lst__row--sublist ve-flex-col">
 			<a href="#${hash}" class="lst--border lst__row-inner">
 				${this.constructor._getRowCellsHtml({values: cellsText, templates: this.constructor._ROW_TEMPLATE.slice(0, 3)})}
@@ -257,13 +257,13 @@ class ItemsPage extends ListPage {
 						href: `#${hash}`,
 						clazz: "lst--border lst__row-inner",
 						children: [
-							e_({tag: "span", clazz: `col-3-5 pl-0 bold`, text: item.name}),
-							e_({tag: "span", clazz: `col-4-5`, text: type}),
-							e_({tag: "span", clazz: `col-1-5 ve-text-center`, text: `${item.value || item.valueMult ? Parser.itemValueToFullMultiCurrency(item, {isShortForm: true}).replace(/ +/g, "\u00A0") : "\u2014"}`}),
-							e_({tag: "span", clazz: `col-1-5 ve-text-center`, text: Parser.itemWeightToFull(item, true) || "\u2014"}),
+							e_({tag: "span", clazz: `ve-col-3-5 pl-0 bold`, text: item.name}),
+							e_({tag: "span", clazz: `ve-col-4-5`, text: type}),
+							e_({tag: "span", clazz: `ve-col-1-5 ve-text-center`, text: `${item.value || item.valueMult ? Parser.itemValueToFullMultiCurrency(item, {isShortForm: true}).replace(/ +/g, "\u00A0") : "\u2014"}`}),
+							e_({tag: "span", clazz: `ve-col-1-5 ve-text-center`, text: Parser.itemWeightToFull(item, true) || "\u2014"}),
 							e_({
 								tag: "span",
-								clazz: `col-1 ve-text-center ${Parser.sourceJsonToColor(item.source)} pr-0`,
+								clazz: `ve-col-1 ve-text-center ${Parser.sourceJsonToColor(item.source)} pr-0`,
 								style: Parser.sourceJsonToStylePart(item.source),
 								title: `${Parser.sourceJsonToFull(item.source)}${Renderer.utils.getSourceSubText(item)}`,
 								text: source,
@@ -302,14 +302,14 @@ class ItemsPage extends ListPage {
 						href: `#${hash}`,
 						clazz: "lst--border lst__row-inner",
 						children: [
-							e_({tag: "span", clazz: `col-3-5 pl-0 bold`, text: item.name}),
-							e_({tag: "span", clazz: `col-4`, text: type}),
-							e_({tag: "span", clazz: `col-1-5 ve-text-center`, text: Parser.itemWeightToFull(item, true) || "\u2014"}),
-							e_({tag: "span", clazz: `col-0-6 ve-text-center`, text: item._attunementCategory !== VeCt.STR_NO_ATTUNEMENT ? "×" : ""}),
-							e_({tag: "span", clazz: `col-1-4 ve-text-center`, text: (item.rarity || "").toTitleCase()}),
+							e_({tag: "span", clazz: `ve-col-3-5 pl-0 bold`, text: item.name}),
+							e_({tag: "span", clazz: `ve-col-4`, text: type}),
+							e_({tag: "span", clazz: `ve-col-1-5 ve-text-center`, text: Parser.itemWeightToFull(item, true) || "\u2014"}),
+							e_({tag: "span", clazz: `ve-col-0-6 ve-text-center`, text: item._attunementCategory !== VeCt.STR_NO_ATTUNEMENT ? "×" : ""}),
+							e_({tag: "span", clazz: `ve-col-1-4 ve-text-center`, text: (item.rarity || "").toTitleCase()}),
 							e_({
 								tag: "span",
-								clazz: `col-1 ve-text-center ${Parser.sourceJsonToColor(item.source)} pr-0`,
+								clazz: `ve-col-1 ve-text-center ${Parser.sourceJsonToColor(item.source)} pr-0`,
 								style: Parser.sourceJsonToStylePart(item.source),
 								title: `${Parser.sourceJsonToFull(item.source)}${Renderer.utils.getSourceSubText(item)}`,
 								text: source,

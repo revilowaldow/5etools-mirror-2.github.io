@@ -511,7 +511,7 @@ class NavBar {
 		}
 
 		const a = document.createElement("a");
-		a.className = "dropdown-toggle";
+		a.className = "ve-dropdown-toggle";
 		a.href = "#";
 		a.setAttribute("role", "button");
 		a.onclick = function (event) { NavBar._handleDropdownClick(this, event, isSide); };
@@ -522,7 +522,7 @@ class NavBar {
 		a.innerHTML = `${category} <span class="caret ${isSide ? "caret--right" : ""}"></span>`;
 
 		const ul = document.createElement("ul");
-		ul.className = `dropdown-menu ${isSide ? "dropdown-menu--side" : "dropdown-menu--top"}`;
+		ul.className = `ve-dropdown-menu ${isSide ? "ve-dropdown-menu--side" : "ve-dropdown-menu--top"}`;
 		ul.onclick = function (event) { event.stopPropagation(); };
 
 		li.appendChild(a);
@@ -649,7 +649,7 @@ class NavBar {
 	 * @private
 	 */
 	static _openDropdown_mutAlignment ({liNavbar}) {
-		const uls = [...liNavbar.querySelectorAll("ul.dropdown-menu")];
+		const uls = [...liNavbar.querySelectorAll("ul.ve-dropdown-menu")];
 		const widthRequired = window.innerWidth < 1200
 			? Math.max(...uls.map(ul => ul.getBoundingClientRect().width))
 			: uls.map(ul => ul.getBoundingClientRect().width).reduce((a, b) => a + b, 0);

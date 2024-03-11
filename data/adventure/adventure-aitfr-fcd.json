@@ -1049,7 +1049,6 @@
 								"The keystone for this fortress is fitted into the arched ceiling here, 10 feet above the ground.",
 								{
 									"type": "entries",
-									"name": "",
 									"entries": [
 										{
 											"type": "entries",
@@ -1285,6 +1284,46 @@
 				}
 			],
 			"id": "052"
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Adventure Writing & Maps",
+							"entries": [
+								"Will Hindmarch"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Adventure Graphic Designer",
+							"entries": [
+								"Bree Heiss"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Illustrators",
+							"entries": [
+								"Justine Jones, Russ Nicholson, Anna Steinbauer, and Gabor Szikszai"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Adventures in the Forgotten Realms Set Leads",
+							"entries": [
+								"James Wyatt (narrative), Zach Stella (art), with contributions from Tyler Jacobson"
+							]
+						}
+					]
+				}
+			]
 		}
 	]
 }

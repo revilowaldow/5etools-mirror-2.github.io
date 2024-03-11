@@ -11,17 +11,17 @@ class PsionicsSublistManager extends SublistManager {
 		return [
 			new SublistCellTemplate({
 				name: "Name",
-				css: "bold col-6 pl-0",
+				css: "bold ve-col-6 pl-0",
 				colStyle: "",
 			}),
 			new SublistCellTemplate({
 				name: "Type",
-				css: "col-3 ve-text-center",
+				css: "ve-col-3 ve-text-center",
 				colStyle: "text-center",
 			}),
 			new SublistCellTemplate({
 				name: "Order",
-				css: "col-3 ve-text-center pr-0",
+				css: "ve-col-3 ve-text-center pr-0",
 				colStyle: "text-center",
 			}),
 		];
@@ -116,10 +116,10 @@ class PsionicsPage extends ListPage {
 		const typeMeta = Parser.psiTypeToMeta(p.type);
 
 		eleLi.innerHTML = `<a href="#${hash}" class="lst--border lst__row-inner">
-			<span class="bold col-6 pl-0">${p.name}</span>
-			<span class="col-2 ve-text-center">${typeMeta.short}</span>
-			<span class="col-2 ve-text-center ${p._fOrder === VeCt.STR_NONE ? "list-entry-none" : ""}">${p._fOrder}</span>
-			<span class="col-2 ve-text-center pr-0" title="${Parser.sourceJsonToFull(p.source)}" ${Parser.sourceJsonToStyle(p.source)}>${source}</span>
+			<span class="bold ve-col-6 pl-0">${p.name}</span>
+			<span class="ve-col-2 ve-text-center">${typeMeta.short}</span>
+			<span class="ve-col-2 ve-text-center ${p._fOrder === VeCt.STR_NONE ? "list-entry-none" : ""}">${p._fOrder}</span>
+			<span class="ve-col-2 ve-text-center pr-0" title="${Parser.sourceJsonToFull(p.source)}" ${Parser.sourceJsonToStyle(p.source)}>${source}</span>
 		</a>`;
 
 		const listItem = new ListItem(

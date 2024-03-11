@@ -59,6 +59,7 @@
 		{
 			"name": "Blessing of Dumathoin",
 			"source": "PaBTSO",
+			"page": 118,
 			"type": "Blessing",
 			"entries": [
 				"Your eyes become keen enough to pick out hidden secrets. You gain {@sense darkvision}. If you already had {@sense darkvision}, you can see in color in the dark. In addition, you can use an action to gain {@sense truesight} for 1 minute. Once you gain {@sense truesight} in this way, you can't do so again until you finish a long rest."
@@ -129,6 +130,7 @@
 		{
 			"name": "Blessing of the Solipsistic Mind",
 			"source": "PaBTSO",
+			"page": 177,
 			"type": "Blessing",
 			"entries": [
 				"You access esoteric truths from an ancient tome by focusing deeply on your own thoughts. You can take an action to focus your inner mind. This focus lasts for 1 hour. While your inner mind is focused, you can't take reactions. For the duration, when you make an Intelligence check, Wisdom check, Intelligence saving throw, or Wisdom saving throw, you can roll a {@dice d8} and add the number rolled to the ability check or saving throw. You regain the ability to focus your inner mind when you finish a long rest."
@@ -1418,6 +1420,15 @@
 			]
 		},
 		{
+			"name": "Dragon Queen's Will",
+			"source": "DSotDQ",
+			"page": 178,
+			"type": "Charm",
+			"entries": [
+				"You've seen a glimpse of the Dragon Queen's ambitions. It haunts your dreams but steels your will to oppose her. This charm grants you a +4 bonus on Wisdom saving throws. Once used three times, the charm vanishes. While you have this charm, you suffer unsettling but harmless dreams of ravenous dragons. You also permanently gain the ability to speak Draconic if you couldn't already."
+			]
+		},
+		{
 			"name": "Echo of Dragonsight",
 			"source": "FTD",
 			"page": 28,
@@ -1487,6 +1498,24 @@
 			"entries": [
 				"{@i Piety 10+ Erebos trait}",
 				"You can cast {@spell vampiric touch} with this trait. Once you cast the spell in this way, you can't do so again until you finish a long rest. Wisdom is your spellcasting ability for this spell."
+			]
+		},
+		{
+			"name": "Eyes of the Impossible",
+			"source": "ToFW",
+			"page": 74,
+			"type": "Charm",
+			"entries": [
+				"You are scarred by knowledge you shouldn't possess. Your eyes turn black, except for your pupils, which turn white. This charm grants you advantage on Charisma ({@skill Persuasion}) checks made to interact with evil creatures. Additionally, you can cast the spell {@spell eyebite} as an action. Your spellcasting ability for this spell is Intelligence, Wisdom, or Charisma (your choice when you gain this charm). Once you cast this spell, you can't cast it again until the next dawn. This charm vanishes after 13 days, when your appearance returns to normal."
+			]
+		},
+		{
+			"name": "Favor of the Heroic Steed",
+			"source": "DSotDQ",
+			"page": 101,
+			"type": "Charm",
+			"entries": [
+				"Two heroic steeds find you worthy and agree to serve you. This charm has 2 charges. As an action, you can expend 1 charge to summon a {@creature warhorse} wearing plate barding (AC 18). The warhorse serves you for 24 hours, then vanishes."
 			]
 		},
 		{
@@ -1726,6 +1755,17 @@
 			"type": "Charm",
 			"entries": [
 				"When you activate this charm, you can cast the {@spell heroism} or {@spell thunderwave} spell (3rd-level versions). Alternatively, as a reaction when you miss with a weapon attack, you can make another attack against the target you missed. The charm vanishes after you activate it."
+			]
+		},
+		{
+			"name": "Habbakuk's Blessing",
+			"source": "DSotDQ",
+			"page": 116,
+			"type": "Charm",
+			"entries": [
+				"Habbakuk blesses your travels through the Northern Wastes. This charm grants you advantage on Wisdom ({@skill Survival}) checks made to notice the Wash's waters filling chasms.",
+				"Additionally, while traveling, you and up to 5 other creatures with you ignore {@book difficult terrain|PHB|8|Difficult Terrain} outdoors in the Northern Wastes, allowing you to move at double the pace listed on the Northern Wastes Land Travel table (see the \"{@adventure Into the Wastes|DSotDQ|5|Into the Wastes}\" section earlier in this chapter).",
+				"This charm vanishes 24 hours after you leave the Northern Wastes."
 			]
 		},
 		{
@@ -2556,6 +2596,15 @@
 			"entries": [
 				"Ever changing, mirthful, and beautiful, the primal elves could assume whatever sex they liked. When they bowed to Lolth's influence and chose to fix their physical forms, elves lost the ability to transform in this way. Yet occasionally elves are born who are so androgynous that they are proclaimed to be among the blessed of Corellon\u2014living symbols of the god's love and of the primal elves' original fluid state of being. Many of Corellon's chief priests bear this blessing.",
 				"The rarest of these blessed elves can change their sex whenever they finish a long rest-a miracle celebrated by elves of all sorts except drow. (The DM decides whether an elf can manifest this miracle.) Dark elves find this ability to be terrifying and characterize it as a curse, for it could destabilize their entire society. If Corellon's blessing manifests in a drow, that elf usually flees to the surface world to seek shelter among those dedicated to Corellon."
+			]
+		},
+		{
+			"name": "Time of the Dragon",
+			"source": "ToFW",
+			"page": 68,
+			"type": "Charm",
+			"entries": [
+				"While holding the scale, you can use an action to summon Renesnuprah, an {@creature adult time dragon|MPP} (see {@book Morte's Planar Parade|MPP}). The dragon appears in an unoccupied space of your choice that you can see within 60 feet of you and aids you for 10 minutes. Afterward, the time dragon vanishes, and the scale crumbles."
 			]
 		},
 		{

@@ -10332,13 +10332,9 @@
 										},
 										"As the characters enter this area, the next scene from the \"{@area Visions in Fire|20b|x}\" section plays out. After the scene completes, two {@creature Warhorse Skeleton||warhorse skeletons} manifest at the west end of the hall. These are the remains of the heroic warhorses Xheriev and Steelwind, which attack. However, if a character is wearing the armor of a Solamnic knight or succeeds on a DC 16 Wisdom ({@skill Animal Handling}) check, the skeletons stop, bow, and vanish. That character then gains the following charm (a type of {@book supernatural gift|DMG|7|Supernatural Gifts} detailed in the {@book Dungeon Master's Guide|DMG}).",
 										{
-											"type": "insetReadaloud",
-											"name": "Favor of the Heroic Steed",
-											"page": 101,
-											"id": "21b",
-											"entries": [
-												"{@i Supernatural Gift (Charm})",
-												"Two heroic steeds find you worthy and agree to serve you. This charm has 2 charges. As an action, you can expend 1 charge to summon a {@creature warhorse} wearing plate barding (AC 18). The warhorse serves you for 24 hours, then vanishes."
+											"type": "list",
+											"items": [
+												"{@reward Favor of the Heroic Steed|DSotDQ}"
 											]
 										}
 									]
@@ -12309,19 +12305,7 @@
 											"page": 116,
 											"id": "280",
 											"entries": [
-												"So long as there are no obvious threats in this room, {@creature Ishvern|DSotDQ} moves to the side of the well, softly speaks a brief prayer in Elvish, then empties several dozen blue pearls from a pouch into the well (he retains 750 gp worth of pearls just in case). After he does so, each character in the room who washed themself in area C3 and who didn't disturb the sarcophagi in area C5 gains the charm Habbakuk's Blessing (a type of {@book supernatural gift|DMG|7|Supernatural Gifts} detailed in the {@book Dungeon Master's Guide|DMG}; see below). With this done, {@creature Ishvern|DSotDQ} thanks the characters for helping him complete his party's task and prepares to depart.",
-												{
-													"type": "insetReadaloud",
-													"name": "Habbakuk's Blessing",
-													"page": 116,
-													"id": "281",
-													"entries": [
-														"{@i Supernatural Gift (Charm})",
-														"Habbakuk blesses your travels through the Northern Wastes. This charm grants you advantage on Wisdom ({@skill Survival}) checks made to notice the Wash's waters filling chasms.",
-														"Additionally, while traveling, you and up to 5 other creatures with you ignore {@book difficult terrain|PHB|8|Difficult Terrain} outdoors in the Northern Wastes, allowing you to move at double the pace listed on the Northern Wastes Land Travel table (see the \"{@area Into the Wastes|23a|x}\" section earlier in this chapter).",
-														"This charm vanishes 24 hours after you leave the Northern Wastes."
-													]
-												}
+												"So long as there are no obvious threats in this room, {@creature Ishvern|DSotDQ} moves to the side of the well, softly speaks a brief prayer in Elvish, then empties several dozen blue pearls from a pouch into the well (he retains 750 gp worth of pearls just in case). After he does so, each character in the room who washed themself in area C3 and who didn't disturb the sarcophagi in area C5 gains the charm {@reward Habbakuk's Blessing|DSotDQ} (a type of {@book supernatural gift|DMG|7|Supernatural Gifts} detailed in the {@book Dungeon Master's Guide|DMG}; see below). With this done, {@creature Ishvern|DSotDQ} thanks the characters for helping him complete his party's task and prepares to depart."
 											]
 										}
 									]
@@ -25335,7 +25319,7 @@
 											"page": 178,
 											"id": "45b",
 											"entries": [
-												"The first character who touches the primordial altar is {@condition stunned} until the start of their next turn. During that time, their mind fills with terrifying visions of Takhisis's draconic heads shrieking in triumph, the Dragon Armies marching across the face of Ansalon, and a dark temple rising from broken ground. The character gains the charm Dragon Queen's Will (a type of {@book supernatural gift|DMG|7|Supernatural Gifts} detailed in the {@book Dungeon Master's Guide|DMG}; see below)."
+												"The first character who touches the primordial altar is {@condition stunned} until the start of their next turn. During that time, their mind fills with terrifying visions of Takhisis's draconic heads shrieking in triumph, the Dragon Armies marching across the face of Ansalon, and a dark temple rising from broken ground. The character gains the charm {@reward Dragon Queen's Will|DSotDQ} (a type of {@book supernatural gift|DMG|7|Supernatural Gifts} detailed in the {@book Dungeon Master's Guide|DMG}; see below)."
 											]
 										},
 										{
@@ -25344,17 +25328,7 @@
 											"page": 178,
 											"id": "45c",
 											"entries": [
-												"As soon a creature touches the altar, three {@creature Wraith||wraiths} emerge and attack.",
-												{
-													"type": "insetReadaloud",
-													"name": "Dragon Queen's Will",
-													"page": 178,
-													"id": "45d",
-													"entries": [
-														"{@i Supernatural Gift (Charm})",
-														"You've seen a glimpse of the Dragon Queen's ambitions. It haunts your dreams but steels your will to oppose her. This charm grants you a +4 bonus on Wisdom saving throws. Once used three times, the charm vanishes. While you have this charm, you suffer unsettling but harmless dreams of ravenous dragons. You also permanently gain the ability to speak Draconic if you couldn't already."
-													]
-												}
+												"As soon a creature touches the altar, three {@creature Wraith||wraiths} emerge and attack."
 											]
 										}
 									]

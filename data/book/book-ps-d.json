@@ -2367,6 +2367,21 @@
 				}
 			],
 			"id": "040"
+		},
+		{
+			"type": "entries",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						"Written by James Wyatt with Ashlie Hope",
+						"Cover art by Tyler Jacobson",
+						"Editing by Scott Fitzgerald Gray"
+					]
+				}
+			]
 		}
 	]
 }

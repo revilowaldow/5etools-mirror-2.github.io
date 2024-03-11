@@ -85,7 +85,7 @@ export class EncounterBuilderUi extends BaseComponent {
 				<div class="btn-group mr-3">
 					${$btnRandom}
 					${$btnRandomMode}
-					<ul class="dropdown-menu">
+					<ul class="ve-dropdown-menu">
 						${$liRandomEasy}
 						${$liRandomMedium}
 						${$liRandomHard}
@@ -96,7 +96,7 @@ export class EncounterBuilderUi extends BaseComponent {
 				<div class="btn-group">
 					${$btnAdjust}
 					${$btnAdjustMode}
-					<ul class="dropdown-menu">
+					<ul class="ve-dropdown-menu">
 						${$liAdjustEasy}
 						${$liAdjustMedium}
 						${$liAdjustHard}
@@ -142,7 +142,7 @@ export class EncounterBuilderUi extends BaseComponent {
 				await pSetRandomMode(modeRandom);
 			});
 
-		const $btnRandomMode = $(`<button class="btn btn-primary dropdown-toggle"><span class="caret"></span></button>`);
+		const $btnRandomMode = $(`<button class="btn btn-primary ve-dropdown-toggle"><span class="caret"></span></button>`);
 		JqueryUtil.bindDropdownButton($btnRandomMode);
 
 		return {
@@ -189,7 +189,7 @@ export class EncounterBuilderUi extends BaseComponent {
 				await pSetAdjustMode(modeAdjust);
 			});
 
-		const $btnAdjustMode = $(`<button class="btn btn-primary dropdown-toggle"><span class="caret"></span></button>`);
+		const $btnAdjustMode = $(`<button class="btn btn-primary ve-dropdown-toggle"><span class="caret"></span></button>`);
 		JqueryUtil.bindDropdownButton($btnAdjustMode);
 
 		return {

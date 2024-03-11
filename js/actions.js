@@ -5,12 +5,12 @@ class ActionsSublistManager extends SublistManager {
 		return [
 			new SublistCellTemplate({
 				name: "Name",
-				css: "bold col-8 pl-0",
+				css: "bold ve-col-8 pl-0",
 				colStyle: "",
 			}),
 			new SublistCellTemplate({
 				name: "Time",
-				css: "ve-text-center col-4 pr-0",
+				css: "ve-text-center ve-col-4 pr-0",
 				colStyle: "text-center",
 			}),
 		];
@@ -72,10 +72,10 @@ class ActionsPage extends ListPage {
 		const time = it.time ? it.time.map(tm => PageFilterActions.getTimeText(tm)).join("/") : "\u2014";
 
 		eleLi.innerHTML = `<a href="#${hash}" class="lst--border lst__row-inner">
-			<span class="col-0-3 px-0 ve-flex-vh-center lst__btn-toggle-expand ve-self-flex-stretch">[+]</span>
-			<span class="col-5-7 px-1 bold">${it.name}</span>
-			<span class="col-4 ve-text-center">${time}</span>
-			<span class="col-2 ve-text-center ${Parser.sourceJsonToColor(it.source)} pr-0" title="${Parser.sourceJsonToFull(it.source)}" ${Parser.sourceJsonToStyle(it.source)}>${source}</span>
+			<span class="ve-col-0-3 px-0 ve-flex-vh-center lst__btn-toggle-expand ve-self-flex-stretch">[+]</span>
+			<span class="ve-col-5-7 px-1 bold">${it.name}</span>
+			<span class="ve-col-4 ve-text-center">${time}</span>
+			<span class="ve-col-2 ve-text-center ${Parser.sourceJsonToColor(it.source)} pr-0" title="${Parser.sourceJsonToFull(it.source)}" ${Parser.sourceJsonToStyle(it.source)}>${source}</span>
 		</a>
 		<div class="ve-flex ve-hidden relative lst__wrp-preview">
 			<div class="vr-0 absolute lst__vr-preview"></div>

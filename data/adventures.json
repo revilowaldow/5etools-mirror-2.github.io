@@ -11314,6 +11314,9 @@
 			"contents": [
 				{
 					"name": "The Lost Kenku"
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -11394,6 +11397,9 @@
 						"type": "appendix",
 						"identifier": "E"
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -15069,6 +15075,9 @@
 						"The Handoff",
 						"The End?"
 					]
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -15105,6 +15114,9 @@
 				},
 				{
 					"name": "Pregenerated Characters"
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -16422,6 +16434,9 @@
 						"Facing the Aspect",
 						"Epilogue"
 					]
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -16747,6 +16762,9 @@
 						"Franchise Downtime",
 						"The Campaign to Come"
 					]
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -20935,6 +20953,9 @@
 						"Lightning Rail to Wroat",
 						"Conclusion"
 					]
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -21691,6 +21712,9 @@
 						"Deciphering the Mask",
 						"Myths to Be Told"
 					]
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -24696,6 +24720,9 @@
 						"type": "appendix",
 						"identifier": "B"
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -24800,6 +24827,9 @@
 				},
 				{
 					"name": "Appendix: Maps, Monsters, & NPCs"
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -24897,6 +24927,9 @@
 				},
 				{
 					"name": "Appendix: Monsters and Magic Items"
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -24990,6 +25023,9 @@
 						"type": "appendix",
 						"identifier": "B"
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -25096,6 +25132,9 @@
 						"type": "appendix",
 						"identifier": "B"
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -25196,6 +25235,9 @@
 						"type": "appendix",
 						"identifier": "C"
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -25272,6 +25314,9 @@
 						"Completing the Mission",
 						"Magic Items"
 					]
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -25313,6 +25358,9 @@
 						"Completing the Mission",
 						"Magic Items"
 					]
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -25350,6 +25398,9 @@
 						"Completing the Mission",
 						"Magic Items"
 					]
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -25410,6 +25461,9 @@
 						"Completing the Mission",
 						"Magic Items"
 					]
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -25455,6 +25509,9 @@
 						"Completing the Mission",
 						"Magic Items"
 					]
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -25496,6 +25553,9 @@
 						"Completing the Mission",
 						"Magic Items"
 					]
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -25549,6 +25609,9 @@
 						"Completing the Mission",
 						"Magic Items"
 					]
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -31813,7 +31876,7 @@
 					]
 				},
 				{
-					"name": "Cover"
+					"name": "Credits"
 				}
 			]
 		},
@@ -32431,6 +32494,9 @@
 						"type": "appendix",
 						"identifier": "F"
 					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},
@@ -32463,6 +32529,9 @@
 						"Conclusion",
 						"Appendix A"
 					]
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},

@@ -1,7 +1,7 @@
-@import "vars";
+@use "vars";
 
 .night-mode .source {
-	$rgb-source-PHB: $rgb-subclass--night;
+	$rgb-source-PHB: vars.$rgb-subclass--night;
 	$rgb-source-SADS: #4f63f5;
 	$rgb-source-PSA: #eec276;
 

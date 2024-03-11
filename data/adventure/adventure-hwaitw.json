@@ -74,7 +74,9 @@
 					"href": {
 						"type": "internal",
 						"path": "adventure/HWAitW/Part-1.webp"
-					}
+					},
+					"width": 945,
+					"height": 526
 				},
 				"Part 1 of the adventure is designed to start a party of 1st level characters off on their journey in the world of Humblewood. The kinds of characters players create will influence how the campaign begins.",
 				"If characters are not playing races described in this book, perhaps they have heard legends of Humblewood, and have traveled or were brought here to explore the wonders of the forest. Maybe the newcomers have come to see the magnificent city of Alderheart, or to seek an audience with the Birdfolk Council. Any number of stories can be crafted about why standard 5th Edition races have ended up in the Wood, but keep in mind that they might be viewed as curiosities as they travel the land. Most folk in Humblewood haven't seen outsiders like them before.",
@@ -229,7 +231,9 @@
 							"href": {
 								"type": "internal",
 								"path": "adventure/HWAitW/Winnowing-Reach.webp"
-							}
+							},
+							"width": 1501,
+							"height": 1008
 						},
 						{
 							"type": "entries",
@@ -464,7 +468,9 @@
 									"href": {
 										"type": "internal",
 										"path": "adventure/HWAitW/Mokkden-Caverns-DM.webp"
-									}
+									},
+									"width": 1261,
+									"height": 944
 								},
 								{
 									"type": "gallery",
@@ -475,7 +481,9 @@
 												"type": "internal",
 												"path": "adventure/HWAitW/Mokkden-Caverns.webp"
 											},
-											"title": "Mokkden Caverns battlemap"
+											"title": "Mokkden Caverns battlemap",
+											"width": 1275,
+											"height": 1275
 										}
 									]
 								},
@@ -670,7 +678,9 @@
 									"href": {
 										"type": "internal",
 										"path": "adventure/HWAitW/Susans-Hut-DM.webp"
-									}
+									},
+									"width": 832,
+									"height": 668
 								},
 								{
 									"type": "gallery",
@@ -681,7 +691,9 @@
 												"type": "internal",
 												"path": "adventure/HWAitW/Susans-Hut.webp"
 											},
-											"title": "Susan's Hut battlemap"
+											"title": "Susan's Hut battlemap",
+											"width": 793,
+											"height": 793
 										}
 									]
 								},
@@ -717,7 +729,9 @@
 							"href": {
 								"type": "internal",
 								"path": "adventure/HWAitW/Potions.webp"
-							}
+							},
+							"width": 741,
+							"height": 367
 						},
 						{
 							"type": "table",
@@ -859,7 +873,9 @@
 					"href": {
 						"type": "internal",
 						"path": "adventure/HWAitW/Part-2.webp"
-					}
+					},
+					"width": 946,
+					"height": 539
 				},
 				"This part of the adventure introduces one of the greatest forces threatening the Wood: the Bandit Coalition, which has risen up and gained power since the fires first began to spread. The Coalition's membership is comprised mostly of humblefolk who, because of the fires, have been displaced from small villages deep in the Wood. Their homes are generally less fortified than the birdfolk perches, and while humblefolk refugees have sought shelter within Alderheart, many were refused entry due to overcrowding, and have turned to a life of banditry to sustain themselves.",
 				"The Coalition now represents a serious threat to the Wood, owing to the leadership of a scarred cervan warrior named {@creature Benna Seridan|HWCS}. Benna's mission is one of revenge against the Birdfolk Council at Alderheart, but she also seeks to support all the forest-dwellers who were displaced by the fires, many of whom now serve in the Coalition. The party must defend Alderheart from the Bandit Coalition, and will later be asked by the Council to help strike a decisive blow against the bandit menace.",
@@ -964,7 +980,9 @@
 							"href": {
 								"type": "internal",
 								"path": "adventure/HWAitW/Part-2-2.webp"
-							}
+							},
+							"width": 1047,
+							"height": 1080
 						},
 						"For more details about the city, refer to the description of Alderheart in {@book Chapter 3: Traversing the Wood|HWCS|3|Alderheart}. All the usual amenities of a large city can be found here. Refer to Fig. 2.1 for a map of Alderheart.",
 						{
@@ -972,7 +990,9 @@
 							"href": {
 								"type": "internal",
 								"path": "adventure/HWAitW/Alderheart.webp"
-							}
+							},
+							"width": 1170,
+							"height": 1080
 						},
 						{
 							"type": "entries",
@@ -1050,7 +1070,9 @@
 							"href": {
 								"type": "internal",
 								"path": "adventure/HWAitW/Elizas-Emporium.webp"
-							}
+							},
+							"width": 793,
+							"height": 793
 						},
 						{
 							"type": "inset",
@@ -1295,7 +1317,9 @@
 							"href": {
 								"type": "internal",
 								"path": "adventure/HWAitW/Bandit-Camp-DM.webp"
-							}
+							},
+							"width": 831,
+							"height": 831
 						},
 						{
 							"type": "gallery",
@@ -1306,7 +1330,9 @@
 										"type": "internal",
 										"path": "adventure/HWAitW/Bandit-Camp.webp"
 									},
-									"title": "Bandit Camp battlemap"
+									"title": "Bandit Camp battlemap",
+									"width": 793,
+									"height": 793
 								}
 							]
 						},
@@ -1752,7 +1778,9 @@
 							"href": {
 								"type": "internal",
 								"path": "adventure/HWAitW/Inner-Keep-DM.webp"
-							}
+							},
+							"width": 832,
+							"height": 849
 						},
 						{
 							"type": "gallery",
@@ -1763,7 +1791,9 @@
 										"type": "internal",
 										"path": "adventure/HWAitW/Inner-Keep.webp"
 									},
-									"title": "The Inner Keep battlemap"
+									"title": "The Inner Keep battlemap",
+									"width": 793,
+									"height": 793
 								}
 							]
 						},
@@ -1941,7 +1971,9 @@
 					"href": {
 						"type": "internal",
 						"path": "adventure/HWAitW/Part-3.webp"
-					}
+					},
+					"width": 946,
+					"height": 536
 				},
 				"With the Council agreeing to aid Meadowfen, and the bandit forces dealt with, the Wood is enjoying relative peace. The party is free to engage in some downtime activities. Just remember that there may be a need to increase the challenge of the encounters listed here if the party reaches level 4 before this part of the adventure.",
 				"In this part of the story, the party will receive an urgent summons from the Council in Alderheart, who will explain that a huge creature, about which little is known, has been spotted burrowing under the ashen fields of the Scorched Grove. This is an {@creature ashsnake|HWCS}, one of many new fire-aspected creatures never before encountered in Humblewood. It was brought to life as a manifestation of the great {@creature aspect of fire|HWCS|aspect of fire's} rage.",
@@ -2249,7 +2281,9 @@
 					"href": {
 						"type": "internal",
 						"path": "adventure/HWAitW/Part-4.webp"
-					}
+					},
+					"width": 944,
+					"height": 526
 				},
 				"Now that the {@creature aspect of fire|HWCS} has awoken from its long slumber, it's only a matter of time before it fully replenishes. Once it does, the aspect will surely have enough power to reduce all of Humblewood to ashes.",
 				"The seal which kept the aspect of fire sleeping beneath the Grove was broken by a corvum mage named {@creature Odwald Ebonhart|HWCS}. Odwald deeply regrets his actions and blames himself for the spreading wildfires. In his desperation, he has returned to the Avium, where he was once a student, and disguised himself as a librarian in order to access its resources. Out of fear for what might befall the Wood if the aspect is not stopped, Odwald has begun to secretly research the darkest of necromancies. He created a monstrous undead creature known as a {@creature cobblefright|HWCS}, which he hopes will provide him with the key to stopping the elemental menace once and for all. In so doing, Odwald has placed the Avium in grave danger, for his control of the monster is imperfect. Strange occurrences on campus have aroused the suspicions of a few students and professors that something isn't quite right at the Avium. While the Dean, {@creature Gabe Windsworth|HWCS}, doesn't yet have any concrete information, he's hoping the party will be able to investigate and help him uncover the mystery. This will lead the way to Odwald and his dangerous scheme.",
@@ -2481,7 +2515,9 @@
 									"href": {
 										"type": "internal",
 										"path": "adventure/HWAitW/Amulet.webp"
-									}
+									},
+									"width": 501,
+									"height": 639
 								}
 							]
 						}
@@ -2498,7 +2534,9 @@
 							"href": {
 								"type": "internal",
 								"path": "adventure/HWAitW/The-Avium.webp"
-							}
+							},
+							"width": 832,
+							"height": 1079
 						},
 						"At the heart of the Avium is the central building, made from the trunk of a petrified tree. It is orbited by four terrariums and a dozen or so smaller towers. Each structure which orbits the trunk does so at varying heights and speeds, between one rotation every 10 minutes, and one rotation every half hour.",
 						"The orbiting structures each have gliding platforms and moveable bridges, which correspond with bridge sections on other structures and connect at regular intervals to form complete overpasses. These structures stay aligned for 10 minutes, allowing for crossing by foot. For humblefolk students, knowing when to cross can make the difference between missing a class and arriving on time. But for birdfolk, the entire aerial campus can be traversed with ease. If ever in doubt about how long it will take for the route to an orbiting structure to connect, roll {@dice 3d10} and use that number in minutes to decide when the next favorable rotation will be.",
@@ -2723,7 +2761,9 @@
 									"href": {
 										"type": "internal",
 										"path": "adventure/HWAitW/Conjuration-Circle.webp"
-									}
+									},
+									"width": 760,
+									"height": 760
 								}
 							]
 						}
@@ -2890,7 +2930,9 @@
 							"href": {
 								"type": "internal",
 								"path": "adventure/HWAitW/Odwald-Trap.webp"
-							}
+							},
+							"width": 935,
+							"height": 667
 						},
 						{
 							"type": "insetReadaloud",
@@ -2996,7 +3038,9 @@
 							"href": {
 								"type": "internal",
 								"path": "adventure/HWAitW/Secret-Laboratory-DM.webp"
-							}
+							},
+							"width": 832,
+							"height": 879
 						},
 						{
 							"type": "gallery",
@@ -3007,7 +3051,9 @@
 										"type": "internal",
 										"path": "adventure/HWAitW/Secret-Laboratory.webp"
 									},
-									"title": "The Secret Laboratory battlemap"
+									"title": "The Secret Laboratory battlemap",
+									"width": 793,
+									"height": 793
 								}
 							]
 						},
@@ -3090,7 +3136,9 @@
 					"href": {
 						"type": "internal",
 						"path": "adventure/HWAitW/Part-5.webp"
-					}
+					},
+					"width": 945,
+					"height": 532
 				},
 				"In this part, the party will learn how to quell the aspect of fire's rage, and of a dungeon hidden somewhere within the Scorched Grove. There, a mystic staff known as {@item Borealus|HWCS|the Borealus} waits for someone worthy to wield its frozen power. Once obtained, {@i the Borealus} can help the party seal the creature and its harmful energies away properly, healing the imbalance in the Wood. Not many know about the ancient myth of {@i the Borealus} or its resting place. While {@creature Odwald Ebonhart|HWCS} managed to theorize how one might use this item to re-seal the aspect, he isn't sure how this would work in practice, or if {@i the Borealus} even truly exists. Pursuing the staff is a gamble, but without any other recourse, the mythic weapon might be the last hope to save the Wood from fiery ruin.",
 				"How this part of the adventure plays out depends on the choices the party made up until now, beginning with whether or not Odwald was killed, apprehended, or if he escaped in {@adventure Developments|HWAitW|4|Developments}.",
@@ -3694,7 +3742,9 @@
 							"href": {
 								"type": "internal",
 								"path": "adventure/HWAitW/Part-5-2.webp"
-							}
+							},
+							"width": 1280,
+							"height": 831
 						},
 						"Refer to Fig. 5.1 for a map of the Final Battle with the Aspect.",
 						"The final battle with the {@creature aspect of fire|HWCS} will take place in a 120-foot by 80-foot field that is mostly ashen plains. To the south of the field is 40-feet-deep tree cover. The aspect will be led through a gap in the tree cover that is 20 feet wide.",
@@ -3719,7 +3769,9 @@
 							"href": {
 								"type": "internal",
 								"path": "adventure/HWAitW/Scorched-Grove-DM.webp"
-							}
+							},
+							"width": 832,
+							"height": 831
 						},
 						{
 							"type": "gallery",
@@ -3730,7 +3782,9 @@
 										"type": "internal",
 										"path": "adventure/HWAitW/Scorched-Grove.webp"
 									},
-									"title": "The Final Battle battlemap"
+									"title": "The Final Battle battlemap",
+									"width": 793,
+									"height": 793
 								}
 							]
 						},
@@ -3847,6 +3901,131 @@
 							]
 						}
 					]
+				}
+			]
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Writing and Game Design",
+							"entries": [
+								"Christopher Pinch, Matthew Gravelyn, Jordan Richer, Andrea Bruce, TR Rowe"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Concept Creators",
+							"entries": [
+								"Ricardo Evangelho, Jordan Richer, Leesha Hannigan, Andrea Bruce"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Editors",
+							"entries": [
+								"Andrea Bruce, TR Rowe, Dominik Parisien"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Art Director",
+							"entries": [
+								"Leesha Hannigan"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Graphic Designers",
+							"entries": [
+								"Rajaa Al-Subairi, Ricardo Evangelho, Meredith Smallwood"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Front Cover Illustrators",
+							"entries": [
+								"Leesha Hannigan, Christina Kraus"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Iconography",
+							"entries": [
+								"Leesha Hannigan"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Back Cover Illustrator",
+							"entries": [
+								"Derek Murphy"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Cartographers",
+							"entries": [
+								"Hugo Solis, Tim Paul Piotorwski, Blue Sword Games, David Lanza Cebrian"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Interior Illustrators",
+							"entries": [
+								"Leesha Hannigan, Andrea Radeck, Anneliese Mak, April Prime, Beck Hallstedt, Ben Zweifel, Brittany Pezzillo, Christina Kraus, Christina Pirvu, Crystal Sully, Cynthia F.G., Derek Murphy, Emily Hare, Griffin Macaulay, Ilse Gort, Jason Rainville, Jen Pattison, Jon Neimeister, Julia Metzger, Katy Grierson, Kiana Hamm, Kimberli Johnson, Lake Hurwitz, Lauren Henderson, Matei Monoranu, Paul Scott Canavan, Risa Hulett, Sarah Webb, Tiffany Turrill, Vadim Ciocazan, Valeria Ivanova, Veronika Fedorova"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Additional Contributors",
+							"entries": [
+								"Holly Conrad, Deven Rue, Catherine Hariton"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Special Thanks",
+							"entries": [
+								"Gail Simone, Erika Ishii, Brian Scott Walters, Geoffrey Palmer, Russ Charles, Corrina Malone"
+							]
+						}
+					]
+				},
+				"{@b An extra-special thanks to our amazing 14,604 Kickstarter backers who helped bring this project to life!}",
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "adventure/HWAitW/credits.webp"
+					},
+					"maxWidth": 800,
+					"credit": "Lauren Henderson",
+					"width": 1700,
+					"height": 840
+				},
+				{
+					"type": "inset",
+					"entries": [
+						"{@book Humblewood Campaign Setting|HWCS} is Copyright © 2022 Hit Point Press Inc., 1175 Brookfield Rd East, Ottawa, Ontario, K1V0C3, Canada. All rights reserved. All characters and their distinctive likenesses are property of Hit Point Press Inc. in Canada, US and other countries. Any reproduction or unauthorized use of the material or artwork contained herein is prohibited without the express permission of Hit Point Press Inc. Reference to other copyrighted material in no way constitutes a challenge to the respective copyright holders of that material. Hit Point Press, The Deck of Many, Humblewood and its associated logos are trademarks of Hit Point Press Inc. Second Printing. Printed in Lithuania."
+					]
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "adventure/HWAitW/credits1.webp"
+					},
+					"maxWidth": 250,
+					"credit": "Lauren Henderson",
+					"width": 850,
+					"height": 740
 				}
 			]
 		}

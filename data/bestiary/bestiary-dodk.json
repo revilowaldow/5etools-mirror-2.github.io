@@ -2846,7 +2846,7 @@
 			],
 			"hp": {
 				"average": 22,
-				"formula": "4d8"
+				"formula": "4d8 + 4"
 			},
 			"speed": {
 				"walk": 30

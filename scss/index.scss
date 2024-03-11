@@ -31,7 +31,7 @@ table.home-table td {
 	border-radius: 0;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (width <= 1200px) {
 	.home__btn-page {
 		width: 113px;
 	}
@@ -72,7 +72,7 @@ table.home-table td {
 
 .home__h-player {
 	text-decoration: underline;
-	text-decoration-color: dodgerblue;
+	text-decoration-color: #1e90ff;
 }
 
 .home__h-rule {
@@ -82,7 +82,7 @@ table.home-table td {
 
 .home__h-dm {
 	text-decoration: underline;
-	text-decoration-color: darkviolet;
+	text-decoration-color: #9400d3;
 }
 
 .home__btn-player,
@@ -93,8 +93,8 @@ table.home-table td {
 .night-mode .home__btn-player:hover,
 .night-mode .home__btn-player:active,
 .night-mode .home__btn-player:focus {
-	border-color: dodgerblue;
-	color: dodgerblue;
+	border-color: #1e90ff;
+	color: #1e90ff;
 }
 
 .home__btn-rule,
@@ -117,8 +117,8 @@ table.home-table td {
 .night-mode .home__btn-dm:hover,
 .night-mode .home__btn-dm:active,
 .night-mode .home__btn-dm:focus {
-	border-color: darkviolet;
-	color: darkviolet;
+	border-color: #9400d3;
+	color: #9400d3;
 }
 
 .home__stripe {
@@ -162,7 +162,7 @@ table.home-table td {
 	display: none;
 }
 
-@media (max-width: 991px) {
+@media (width <= 991px) {
 	.home__split {
 		flex-direction: column;
 	}
@@ -205,7 +205,7 @@ table.home-table td {
 	}
 }
 
-@media (max-width: 507px) {
+@media (width <= 507px) {
 	.home__narrow-visible {
 		display: block !important;
 	}

@@ -1323,6 +1323,46 @@
 				}
 			],
 			"id": "058"
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Adventure Writing & Maps",
+							"entries": [
+								"Will Hindmarch"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Adventure Graphic Designer",
+							"entries": [
+								"Bree Heiss"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Illustrators",
+							"entries": [
+								"Deruchenko Alexander and Zoltan Boros"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Adventures in the Forgotten Realms Set Leads",
+							"entries": [
+								"James Wyatt (narrative), Zach Stella (art), with contributions from Tyler Jacobson"
+							]
+						}
+					]
+				}
+			]
 		}
 	]
 }

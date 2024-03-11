@@ -7,7 +7,7 @@ const onLoadSeo = async () => {
 	document.title = `${it.name} - 5etools`;
 	$(`.page__title`).text(`${_SEO_PAGE.toTitleCase()}: ${it.name}`);
 
-	$(`<div class="col-12 ve-flex-vh-center my-2 pt-3">
+	$(`<div class="ve-col-12 ve-flex-vh-center my-2 pt-3">
 		<button class="btn btn-primary">
 			<a href="/${_SEO_PAGE}.html" style="font-size: 1.7em; color: white;">${_SEO_STYLE === 1 ? `View All` : `View Complete`} ${_SEO_PAGE.toTitleCase()}</a>
 		</button>

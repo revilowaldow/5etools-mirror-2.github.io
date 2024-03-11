@@ -1,34 +1,46 @@
+@use "sass:color";
+
 @font-face {
-	font-family: "Convergence";
+	font-family: Convergence;
 	font-style: normal;
 	font-weight: 400;
-	src: local("Convergence-Regular"), url("../fonts/Convergence-Regular.woff2") format("woff2");
+	src:
+		local("Convergence-Regular"),
+		url("../fonts/Convergence-Regular.woff2") format("woff2");
 }
 
 @font-face {
-	font-family: "Roboto";
+	font-family: Roboto;
 	font-style: normal;
 	font-weight: 400;
-	src: local("Roboto"), url("../fonts/Roboto-Regular.woff2") format("woff2");
+	src:
+		local("Roboto"),
+		url("../fonts/Roboto-Regular.woff2") format("woff2");
 }
 
 @font-face {
 	font-family: "Glyphicons Halflings";
 	font-style: normal;
 	font-weight: 400;
-	src: local("glyphicons-halflings-regular"), url("../fonts/glyphicons-halflings-regular.woff2") format("woff2");
+	src:
+		local("glyphicons-halflings-regular"),
+		url("../fonts/glyphicons-halflings-regular.woff2") format("woff2");
 }
 
 // RMR/RMBRE
 @font-face {
 	font-family: "Blambot Casual";
-	src: local("Blambot-Casual"), url("../fonts/Blambot-Casual-Regular.woff2") format("woff2");
+	src:
+		local("Blambot-Casual"),
+		url("../fonts/Blambot-Casual-Regular.woff2") format("woff2");
 }
 
 // HWCS/HWAitW
 @font-face {
-	font-family: "HPPHumblescratch";
-	src: local("HPPHumblescratch"), url("../fonts/hpphumblescratch-webfont.woff2") format("woff2");
+	font-family: HPPHumblescratch;
+	src:
+		local("HPPHumblescratch"),
+		url("../fonts/hpphumblescratch-webfont.woff2") format("woff2");
 }
 
 @keyframes kf-fade-out {
@@ -64,7 +76,7 @@ $rgb-name-red: #822000;
 $rgb-name-red--night: #d29a38;
 $rgb-name-alt--night: #c2c2c2;
 $rgb-bg-orange: #fdf1dc;
-$rgb-bg-highlight: yellow;
+$rgb-bg-highlight: #ff0;
 $rgb-border-yellow--statblock: #e69a28;
 
 $rgb-link-blue: $rgb-active-blue;
@@ -83,8 +95,8 @@ $rgb-border-grey--list-row-night: #444;
 $rgb-border-grey--statblock-night: #565656;
 
 $rgb-modal-overlay-grey: #45454588;
-$rgb-shadow-grey: rgba(0, 0, 0, 0.175);
-$rgb-shadow-grey--dark: rgba(0, 0, 0, 0.475);
+$rgb-shadow-grey: rgb(0 0 0 / 17.5%);
+$rgb-shadow-grey--dark: rgb(0 0 0 / 47.5%);
 
 $rgb-stripe-grey: #88888818;
 $rgb-stripe-grey--faint: #bbbbbb18;
@@ -92,13 +104,13 @@ $rgb-stripe-grey--night: #aaa2;
 
 $rgb-cb-grey: #666;
 
-$rgb-bg: white;
-$rgb-bg--alt: whitesmoke;
+$rgb-bg: #fff;
+$rgb-bg--alt: #f5f5f5;
 $rgb-bg-homebrew: #ff00001a;
 
 $rgb-bg--night: #222;
 $rgb-bg--alt-night: #383838;
-$rgb-bg-homebrew--night: rgba(255, 0, 0, 0.15);
+$rgb-bg-homebrew--night: rgb(255 0 0 / 15%);
 
 $rgb-bg-highlight--night: #cc0;
 $rgb-font: #333;
@@ -144,8 +156,8 @@ $rgb-class-variant-brew--night: #da9db5;
 
 $rgb-roll-min: #ff3100;
 $rgb-roll-max: #00b400;
-$rgb-roll-min--muted: desaturate($rgb-roll-min, 35%);
-$rgb-roll-max--muted: desaturate($rgb-roll-max, 35%);
+$rgb-roll-min--muted: color.adjust($rgb-roll-min, $saturation: - 35%);
+$rgb-roll-max--muted: color.adjust($rgb-roll-max, $saturation: - 35%);
 
 // Colors blended using https://www.w3schools.com/colors/colors_mixer.asp
 $rgb-btn-primary-blue--night: #2a4e6c; // #337ab7 blended with #222
@@ -159,10 +171,10 @@ $rgb-alert-danger-red--night: #8d1d1a;
 $rgb-alert-warning-orange--night: #cd8514;
 $rgb-alert-success-green--night: #009e56;
 
-$rgb-alert-info-border-blue--night: lighten($rgb-alert-info-blue--night, $pct-darken-border);
-$rgb-alert-danger-border-red--night: lighten($rgb-alert-danger-red--night, $pct-darken-border);
-$rgb-alert-warning-border-orange--night: lighten($rgb-alert-warning-orange--night, $pct-darken-border);
-$rgb-alert-success-border-green--night: lighten($rgb-alert-success-green--night, $pct-darken-border);
+$rgb-alert-info-border-blue--night: color.adjust($rgb-alert-info-blue--night, $lightness: $pct-darken-border);
+$rgb-alert-danger-border-red--night: color.adjust($rgb-alert-danger-red--night, $lightness: $pct-darken-border);
+$rgb-alert-warning-border-orange--night: color.adjust($rgb-alert-warning-orange--night, $lightness: $pct-darken-border);
+$rgb-alert-success-border-green--night: color.adjust($rgb-alert-success-green--night, $lightness: $pct-darken-border);
 
 /* Z-Indices */
 $z-token-image: 10;
@@ -213,50 +225,50 @@ $h-ipt-xs: 22px;
 // endregion
 
 // region Fonts
-$font-line-height: 1.42857143;
+$font-line-height: 1.4286;
 // endregion
 
-@mixin shadow-1 () {
+@mixin mix-shadow-1 () {
 	box-shadow: 0 6px 12px $rgb-shadow-grey;
 }
 
-@mixin shadow-1--dark () {
+@mixin mix-shadow-1--dark () {
 	box-shadow: 0 6px 12px $rgb-shadow-grey--dark;
 }
 
-@mixin shadow-2 () {
+@mixin mix-shadow-2 () {
 	box-shadow: 0 3px 6px $rgb-shadow-grey;
 }
 
-@mixin shadow-active {
+@mixin mix-shadow-active {
 	box-shadow: 0 0 2px 0 #000b;
 }
 
-@mixin shadow-active--night {
+@mixin mix-shadow-active--night {
 	box-shadow: 0 0 3px 0 #fffb;
 }
 
-@mixin row-glow-active {
-	box-shadow: inset 0 0 0 5000px rgba(0, 107, 196, 0.3);
+@mixin mix-row-glow-active {
+	box-shadow: inset 0 0 0 5000px rgb(0 107 196 / 30%);
 }
 
-@mixin row-glow-active--alt {
-	box-shadow: inset 0 0 0 5000px rgba(148, 148, 148, 0.2);
+@mixin mix-row-glow-active--alt {
+	box-shadow: inset 0 0 0 5000px rgb(148 148 148 / 20%);
 }
 
-@mixin overflow-dots {
+@mixin mix-overflow-dots {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
 
-@mixin vr {
+@mixin mix-vr {
 	width: 1px;
 	height: 100%;
 	border-left: 1px solid $rgb-border-grey;
 }
 
-@mixin is-print {
+@mixin mix-is-print {
 	@media print {
 		@content;
 	}
@@ -268,7 +280,7 @@ $font-line-height: 1.42857143;
 
 /* *** */
 
-@mixin font-regular {
+@mixin mix-font-regular {
 	font-family: Arial, sans-serif;
 	font-variant: normal;
 	font-weight: normal;
@@ -304,7 +316,7 @@ $width-screen-lg--min: 1201px;
 
 	&:hover::before {
 		content: " 🔗";
-		color: rgba(0, 0, 0, 0.2);
+		color: rgb(0 0 0 / 20%);
 		position: relative;
 		float: left;
 		width: 14px;
@@ -322,7 +334,7 @@ $fltr-2stripe: 22px;
 // endregion
 
 // region Shared UI
-@mixin cb-custom {
+@mixin mix-cb-custom {
 	width: 16px;
 	height: 16px;
 	padding: 0;
@@ -336,15 +348,15 @@ $fltr-2stripe: 22px;
 	user-select: none;
 
 	&:active {
-		@include shadow-active();
+		@include mix-shadow-active;
 	}
 
 	&.active {
 		background: $rgb-cb-grey;
-		border-color: lighten($rgb-cb-grey, 15%);
+		border-color: color.adjust($rgb-cb-grey, $lightness: 15%);
 
 		&.disabled {
-			background-color: lighten($rgb-cb-grey, 25%);
+			background-color: color.adjust($rgb-cb-grey, $lightness: 25%);
 		}
 	}
 
@@ -354,20 +366,20 @@ $fltr-2stripe: 22px;
 	}
 }
 
-@mixin cb-custom--night {
+@mixin mix-cb-custom--night {
 	background: $rgb-bg--night;
 	border-color: $rgb-border-grey--night;
 
 	&:active {
-		@include shadow-active--night();
+		@include mix-shadow-active--night;
 	}
 
 	&.active {
 		background: $rgb-border-grey--night;
-		border-color: lighten($rgb-border-grey--night, 10%);
+		border-color: color.adjust($rgb-border-grey--night, $lightness: 10%);
 
 		&.disabled {
-			background-color: lighten($rgb-border-grey--night, 20%);
+			background-color: color.adjust($rgb-border-grey--night, $lightness: 20%);
 		}
 	}
 
@@ -376,4 +388,3 @@ $fltr-2stripe: 22px;
 	}
 }
 // endregion
-

@@ -1574,37 +1574,37 @@ Parser.monCrToFull = function (cr, {xp = null, isMythic = false} = {}) {
 	}
 };
 
-Parser.getFullImmRes = function (toParse) {
+Parser.getFullImmRes = function (toParse, {isPlainText = false} = {}) {
 	if (!toParse?.length) return "";
 
 	let maxDepth = 0;
 
-	function toString (it, depth = 0) {
+	const renderString = str => isPlainText ? Renderer.stripTags(`${str}`) : Renderer.get().render(`${str}`);
+
+	const render = (val, depth = 0) => {
 		maxDepth = Math.max(maxDepth, depth);
-		if (typeof it === "string") {
-			return it;
-		} else if (it.special) {
-			return it.special;
-		} else {
-			const stack = [];
+		if (typeof val === "string") return renderString(val);
 
-			if (it.preNote) stack.push(it.preNote);
+		if (val.special) return renderString(val.special);
 
-			const prop = it.immune ? "immune" : it.resist ? "resist" : it.vulnerable ? "vulnerable" : null;
-			if (prop) {
-				const toJoin = it[prop].length === Parser.DMG_TYPES.length && CollectionUtil.deepEquals(Parser.DMG_TYPES, it[prop])
-					? ["all damage"]
-					: it[prop].map(nxt => toString(nxt, depth + 1));
-				stack.push(depth ? toJoin.join(maxDepth ? "; " : ", ") : toJoin.joinConjunct(", ", " and "));
-			}
+		const stack = [];
 
-			if (it.note) stack.push(it.note);
+		if (val.preNote) stack.push(renderString(val.preNote));
 
-			return stack.join(" ");
+		const prop = val.immune ? "immune" : val.resist ? "resist" : val.vulnerable ? "vulnerable" : null;
+		if (prop) {
+			const toJoin = val[prop].length === Parser.DMG_TYPES.length && CollectionUtil.deepEquals(Parser.DMG_TYPES, val[prop])
+				? ["all damage"]
+				: val[prop].map(nxt => render(nxt, depth + 1));
+			stack.push(renderString(depth ? toJoin.join(maxDepth ? "; " : ", ") : toJoin.joinConjunct(", ", " and ")));
 		}
-	}
 
-	const arr = toParse.map(it => toString(it));
+		if (val.note) stack.push(renderString(val.note));
+
+		return stack.join(" ");
+	};
+
+	const arr = toParse.map(it => render(it));
 
 	if (arr.length <= 1) return arr.join("");
 
@@ -2645,6 +2645,7 @@ Parser.SRC_GHLoE = "GHLoE";
 Parser.SRC_DoDk = "DoDk";
 Parser.SRC_HWCS = "HWCS";
 Parser.SRC_HWAitW = "HWAitW";
+Parser.SRC_TD = "TD";
 Parser.SRC_SCREEN = "Screen";
 Parser.SRC_SCREEN_WILDERNESS_KIT = "ScreenWildernessKit";
 Parser.SRC_SCREEN_DUNGEON_KIT = "ScreenDungeonKit";
@@ -2820,6 +2821,7 @@ Parser.SOURCE_JSON_TO_FULL[Parser.SRC_GHLoE] = "Grim Hollow: Lairs of Etharis";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_DoDk] = "Dungeons of Drakkenheim";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_HWCS] = "Humblewood Campaign Setting";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_HWAitW] = "Humblewood: Adventure in the Wood";
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_TD] = "Tarot Deck";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_SCREEN] = "Dungeon Master's Screen";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_SCREEN_WILDERNESS_KIT] = "Dungeon Master's Screen: Wilderness Kit";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_SCREEN_DUNGEON_KIT] = "Dungeon Master's Screen: Dungeon Kit";
@@ -2970,6 +2972,7 @@ Parser.SOURCE_JSON_TO_ABV[Parser.SRC_GHLoE] = "GHLoE";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_DoDk] = "DoDk";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_HWCS] = "HWCS";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_HWAitW] = "HWAitW";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_TD] = "TD";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_SCREEN] = "Screen";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_SCREEN_WILDERNESS_KIT] = "ScWild";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_SCREEN_DUNGEON_KIT] = "ScDun";
@@ -3119,6 +3122,7 @@ Parser.SOURCE_JSON_TO_DATE[Parser.SRC_GHLoE] = "2023-11-30";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_DoDk] = "2023-12-21";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_HWCS] = "2019-06-17";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_HWAitW] = "2019-06-17";
+Parser.SOURCE_JSON_TO_DATE[Parser.SRC_TD] = "2022-05-24";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_SCREEN] = "2015-01-20";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_SCREEN_WILDERNESS_KIT] = "2020-11-17";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_SCREEN_DUNGEON_KIT] = "2020-09-21";
@@ -3307,6 +3311,7 @@ Parser.SOURCES_PARTNERED_WOTC = new Set([
 	Parser.SRC_DoDk,
 	Parser.SRC_HWCS,
 	Parser.SRC_HWAitW,
+	Parser.SRC_TD,
 ]);
 // region Source categories
 
@@ -3434,6 +3439,7 @@ Parser.SOURCES_AVAILABLE_DOCS_BOOK = {};
 	Parser.SRC_BMT,
 	Parser.SRC_DMTCRG,
 	Parser.SRC_HWCS,
+	Parser.SRC_TD,
 ].forEach(src => {
 	Parser.SOURCES_AVAILABLE_DOCS_BOOK[src] = src;
 	Parser.SOURCES_AVAILABLE_DOCS_BOOK[src.toLowerCase()] = src;

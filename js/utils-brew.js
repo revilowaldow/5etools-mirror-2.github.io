@@ -655,18 +655,18 @@ class _BrewUtil2Base {
 
 	/* -------------------------------------------- */
 
-	async _pGetBrewDependencies ({brewDocs, brewsRaw = null, brewsRawLocal = null, lockToken}) {
+	async _pGetBrewDependencies ({brewDocs, brewsRaw = null, brewsRawLocal = null, isIgnoreNetworkErrors = false, lockToken}) {
 		try {
 			lockToken = await this._LOCK.pLock({token: lockToken});
-			return (await this._pGetBrewDependencies_({brewDocs, brewsRaw, brewsRawLocal, lockToken}));
+			return (await this._pGetBrewDependencies_({brewDocs, brewsRaw, brewsRawLocal, isIgnoreNetworkErrors, lockToken}));
 		} finally {
 			this._LOCK.unlock();
 		}
 	}
 
-	async _pGetBrewDependencies_ ({brewDocs, brewsRaw = null, brewsRawLocal = null, lockToken}) {
+	async _pGetBrewDependencies_ ({brewDocs, brewsRaw = null, brewsRawLocal = null, isIgnoreNetworkErrors = false, lockToken}) {
 		const urlRoot = await this.pGetCustomUrl();
-		const brewIndex = await this.pGetSourceIndex(urlRoot);
+		const brewIndex = await this._pGetBrewDependencies_getBrewIndex({urlRoot, isIgnoreNetworkErrors});
 
 		const toLoadSources = [];
 		const loadedSources = new Set();
@@ -708,6 +708,16 @@ class _BrewUtil2Base {
 			brewDocsDependencies,
 			unavailableSources: [...unavailableSources].sort(SortUtil.ascSortLower),
 		};
+	}
+
+	async _pGetBrewDependencies_getBrewIndex ({urlRoot, isIgnoreNetworkErrors = false}) {
+		try {
+			return (await this.pGetSourceIndex(urlRoot));
+		} catch (e) {
+			// Support limited use for e.g. offline file uploads
+			if (isIgnoreNetworkErrors) return {};
+			throw e;
+		}
 	}
 
 	async pGetSourceUrl (source) {
@@ -839,7 +849,7 @@ class _BrewUtil2Base {
 
 		const brews = MiscUtil.copyFast(await this._pGetBrewRaw({lockToken}));
 
-		const {brewDocsDependencies, unavailableSources} = await this._pGetBrewDependencies({brewDocs, brewsRaw: brews, lockToken});
+		const {brewDocsDependencies, unavailableSources} = await this._pGetBrewDependencies({brewDocs, brewsRaw: brews, isIgnoreNetworkErrors: true, lockToken});
 		brewDocs.push(...brewDocsDependencies);
 
 		const brewsNxt = this._getNextBrews(brews, brewDocs);
@@ -1898,12 +1908,12 @@ class ManageBrewUi {
 		});
 
 		const $wrpBtnsSort = $$`<div class="filtertools manbrew__filtertools btn-group input-group input-group--bottom ve-flex no-shrink">
-			<label class="col-0-5 pr-0 btn btn-default btn-xs ve-flex-vh-center">${$cbAll}</label>
-			<button class="col-1 btn btn-default btn-xs" disabled>Type</button>
-			<button class="col-3 btn btn-default btn-xs" data-sort="source">Source</button>
-			<button class="col-3 btn btn-default btn-xs" data-sort="authors">Authors</button>
-			<button class="col-3 btn btn-default btn-xs" disabled>Origin</button>
-			<button class="col-1-5 btn btn-default btn-xs ve-grow" disabled>&nbsp;</button>
+			<label class="ve-col-0-5 pr-0 btn btn-default btn-xs ve-flex-vh-center">${$cbAll}</label>
+			<button class="ve-col-1 btn btn-default btn-xs" disabled>Type</button>
+			<button class="ve-col-3 btn btn-default btn-xs" data-sort="source">Source</button>
+			<button class="ve-col-3 btn btn-default btn-xs" data-sort="authors">Authors</button>
+			<button class="ve-col-3 btn btn-default btn-xs" disabled>Origin</button>
+			<button class="ve-col-1-5 btn btn-default btn-xs ve-grow" disabled>&nbsp;</button>
 		</div>`;
 
 		$$(rdState.$stgBrewList)`
@@ -2039,7 +2049,7 @@ class ManageBrewUi {
 				const lnkUrl = brewSource.url
 					? e_({
 						tag: "a",
-						clazz: "col-2 ve-text-center",
+						clazz: "ve-col-2 ve-text-center",
 						href: brewSource.url,
 						attrs: {
 							target: "_blank",
@@ -2049,7 +2059,7 @@ class ManageBrewUi {
 					})
 					: e_({
 						tag: "span",
-						clazz: "col-2 ve-text-center",
+						clazz: "ve-col-2 ve-text-center",
 					});
 
 				const eleRow = e_({
@@ -2058,12 +2068,12 @@ class ManageBrewUi {
 					children: [
 						e_({
 							tag: "span",
-							clazz: `col-4 manbrew__source px-1`,
+							clazz: `ve-col-4 manbrew__source px-1`,
 							text: brewSource.full,
 						}),
 						e_({
 							tag: "span",
-							clazz: `col-4 px-1`,
+							clazz: `ve-col-4 px-1`,
 							text: authorsFull,
 						}),
 						lnkUrl,
@@ -2169,23 +2179,23 @@ class ManageBrewUi {
 			children: [
 				e_({
 					tag: "label",
-					clazz: `col-0-5 ve-flex-vh-center ve-self-flex-stretch`,
+					clazz: `ve-col-0-5 ve-flex-vh-center ve-self-flex-stretch`,
 					children: [cbSel],
 				}),
 				e_({
 					tag: "div",
-					clazz: `col-1 ve-text-center italic mobile__text-clip-ellipsis`,
+					clazz: `ve-col-1 ve-text-center italic mobile__text-clip-ellipsis`,
 					title: ptCategory.title,
 					text: ptCategory.short,
 				}),
 				e_({
 					tag: "div",
-					clazz: `col-9 ve-flex-col`,
+					clazz: `ve-col-9 ve-flex-col`,
 					children: elesSub,
 				}),
 				e_({
 					tag: "div",
-					clazz: `col-1-5 btn-group ve-flex-vh-center`,
+					clazz: `ve-col-1-5 btn-group ve-flex-vh-center`,
 					children: [
 						btnPull,
 						btnEdit,
@@ -2650,12 +2660,12 @@ class GetBrewUi {
 
 	async pInit () {
 		const urlRoot = await this._brewUtil.pGetCustomUrl();
-		const [timestamps, propIndex, metaIndex, sourceIndex] = await Promise.all([
-			this._brewUtil.pLoadTimestamps(urlRoot),
-			this._brewUtil.pLoadPropIndex(urlRoot),
-			this._brewUtil.pLoadMetaIndex(urlRoot),
-			this._brewUtil.pGetSourceIndex(urlRoot),
-		]);
+
+		const indexes = await this._pInit_pGetIndexes({urlRoot});
+		// Tolerate e.g. opening when offline
+		if (!indexes) return null;
+
+		const {timestamps, propIndex, metaIndex, sourceIndex} = indexes;
 
 		const pathToMeta = {};
 		Object.entries(propIndex)
@@ -2705,6 +2715,27 @@ class GetBrewUi {
 			.sort((a, b) => SortUtil.ascSortLower(a._brewName, b._brewName));
 	}
 
+	async _pInit_pGetIndexes ({urlRoot}) {
+		try {
+			const [timestamps, propIndex, metaIndex, sourceIndex] = await Promise.all([
+				this._brewUtil.pLoadTimestamps(urlRoot),
+				this._brewUtil.pLoadPropIndex(urlRoot),
+				this._brewUtil.pLoadMetaIndex(urlRoot),
+				this._brewUtil.pGetSourceIndex(urlRoot),
+			]);
+			return {
+				timestamps,
+				propIndex,
+				metaIndex,
+				sourceIndex,
+			};
+		} catch (e) {
+			JqueryUtil.doToast({content: `Failed to load ${this._brewUtil.DISPLAY_NAME} indexes! ${VeCt.STR_SEE_CONSOLE}`, type: "danger"});
+			setTimeout(() => { throw e; });
+			return null;
+		}
+	}
+
 	async pHandlePreCloseModal ({rdState}) {
 		// region If the user has selected list items, prompt to load them before closing the modal
 		const cntSel = rdState.list.items.filter(it => it.data.cbSel.checked).length;
@@ -2727,7 +2758,7 @@ class GetBrewUi {
 
 		rdState.pageFilter = new this.constructor._PageFilterGetBrew({brewUtil: this._brewUtil});
 
-		const $btnAddSelected = $(`<button class="btn ${this._brewUtil.STYLE_BTN} btn-sm col-0-5 ve-text-center" disabled title="Add Selected"><span class="glyphicon glyphicon-save"></button>`);
+		const $btnAddSelected = $(`<button class="btn ${this._brewUtil.STYLE_BTN} btn-sm ve-col-0-5 ve-text-center" disabled title="Add Selected"><span class="glyphicon glyphicon-save"></button>`);
 
 		const $wrpRows = $$`<div class="list smooth-scroll max-h-unset"><div class="lst__row ve-flex-col"><div class="lst__wrp-cells lst--border lst__row-inner ve-flex w-100"><i>Loading...</i></div></div></div>`;
 
@@ -2749,15 +2780,15 @@ class GetBrewUi {
 		const $wrpMiniPills = $(`<div class="fltr__mini-view btn-group"></div>`);
 
 		const btnSortAddedPublished = this._brewUtil.IS_PREFER_DATE_ADDED
-			? `<button class="col-1-4 sort btn btn-default btn-xs" data-sort="added">Added</button>`
-			: `<button class="col-1-4 sort btn btn-default btn-xs" data-sort="published">Published</button>`;
+			? `<button class="ve-col-1-4 sort btn btn-default btn-xs" data-sort="added">Added</button>`
+			: `<button class="ve-col-1-4 sort btn btn-default btn-xs" data-sort="published">Published</button>`;
 
 		const $wrpSort = $$`<div class="filtertools manbrew__filtertools btn-group input-group input-group--bottom ve-flex no-shrink">
-			<label class="col-0-5 pr-0 btn btn-default btn-xs ve-flex-vh-center">${rdState.cbAll}</label>
-			<button class="col-3-5 sort btn btn-default btn-xs" data-sort="name">Name</button>
-			<button class="col-3 sort btn btn-default btn-xs" data-sort="author">Author</button>
-			<button class="col-1-2 sort btn btn-default btn-xs" data-sort="category">Category</button>
-			<button class="col-1-4 sort btn btn-default btn-xs" data-sort="modified">Modified</button>
+			<label class="ve-col-0-5 pr-0 btn btn-default btn-xs ve-flex-vh-center">${rdState.cbAll}</label>
+			<button class="ve-col-3-5 sort btn btn-default btn-xs" data-sort="name">Name</button>
+			<button class="ve-col-3 sort btn btn-default btn-xs" data-sort="author">Author</button>
+			<button class="ve-col-1-2 sort btn btn-default btn-xs" data-sort="category">Category</button>
+			<button class="ve-col-1-4 sort btn btn-default btn-xs" data-sort="modified">Modified</button>
 			${btnSortAddedPublished}
 			<button class="sort btn btn-default btn-xs ve-grow" disabled>Source</button>
 		</div>`;
@@ -2853,7 +2884,7 @@ class GetBrewUi {
 
 		const btnAdd = e_({
 			tag: "span",
-			clazz: `col-3-5 bold manbrew__load_from_url pl-0 clickable`,
+			clazz: `ve-col-3-5 bold manbrew__load_from_url pl-0 clickable`,
 			text: brewInfo._brewName,
 			click: evt => this._pHandleClick_btnGetRemote({evt, btn: btnAdd, url: brewInfo.download_url}),
 		});
@@ -2868,17 +2899,17 @@ class GetBrewUi {
 					children: [
 						e_({
 							tag: "label",
-							clazz: `col-0-5 ve-flex-vh-center ve-self-flex-stretch`,
+							clazz: `ve-col-0-5 ve-flex-vh-center ve-self-flex-stretch`,
 							children: [cbSel],
 						}),
 						btnAdd,
-						e_({tag: "span", clazz: "col-3", text: brewInfo._brewAuthor}),
-						e_({tag: "span", clazz: "col-1-2 ve-text-center mobile__text-clip-ellipsis", text: brewInfo._brewPropDisplayName, title: brewInfo._brewPropDisplayName}),
-						e_({tag: "span", clazz: "col-1-4 ve-text-center code", text: timestampModified}),
-						e_({tag: "span", clazz: "col-1-4 ve-text-center code", text: timestampAddedPublished}),
+						e_({tag: "span", clazz: "ve-col-3", text: brewInfo._brewAuthor}),
+						e_({tag: "span", clazz: "ve-col-1-2 ve-text-center mobile__text-clip-ellipsis", text: brewInfo._brewPropDisplayName, title: brewInfo._brewPropDisplayName}),
+						e_({tag: "span", clazz: "ve-col-1-4 ve-text-center code", text: timestampModified}),
+						e_({tag: "span", clazz: "ve-col-1-4 ve-text-center code", text: timestampAddedPublished}),
 						e_({
 							tag: "span",
-							clazz: "col-1 manbrew__source ve-text-center pr-0",
+							clazz: "ve-col-1 manbrew__source ve-text-center pr-0",
 							children: [
 								e_({
 									tag: "a",
@@ -3223,10 +3254,10 @@ class ManageEditableBrewContentsUi extends BaseComponent {
 		const $iptSearch = $(`<input type="search" class="search manbrew__search form-control w-100 lst__search lst__search--no-border-h" placeholder="Search entries...">`);
 		const $dispCntVisible = $(`<div class="lst__wrp-search-visible no-events ve-flex-vh-center"></div>`);
 		const $wrpBtnsSort = $$`<div class="filtertools manbrew__filtertools input-group input-group--bottom ve-flex no-shrink">
-			<label class="btn btn-default btn-xs col-1 pr-0 ve-flex-vh-center">${$cbAll}</label>
-			<button class="col-5 sort btn btn-default btn-xs" data-sort="name">Name</button>
-			<button class="col-1 sort btn btn-default btn-xs" data-sort="source">Source</button>
-			<button class="col-5 sort btn btn-default btn-xs" data-sort="category">Category</button>
+			<label class="btn btn-default btn-xs ve-col-1 pr-0 ve-flex-vh-center">${$cbAll}</label>
+			<button class="ve-col-5 sort btn btn-default btn-xs" data-sort="name">Name</button>
+			<button class="ve-col-1 sort btn btn-default btn-xs" data-sort="source">Source</button>
+			<button class="ve-col-5 sort btn btn-default btn-xs" data-sort="category">Category</button>
 		</div>`;
 
 		$$(tabMeta.$wrpTab)`
@@ -3309,10 +3340,10 @@ class ManageEditableBrewContentsUi extends BaseComponent {
 		const dispProp = this.constructor._getDisplayProp({ent, prop});
 
 		eleLi.innerHTML = `<label class="lst--border lst__row-inner no-select mb-0 ve-flex-v-center">
-			<div class="pl-0 col-1 ve-flex-vh-center"><input type="checkbox" class="no-events"></div>
-			<div class="col-5 bold">${dispName}</div>
-			<div class="col-1 ve-text-center" title="${(sourceMeta.full || "").qq()}" ${this._brewUtil.sourceToStyle(sourceMeta)}>${sourceMeta.abbreviation}</div>
-			<div class="col-5 ve-flex-vh-center pr-0">${dispProp}</div>
+			<div class="pl-0 ve-col-1 ve-flex-vh-center"><input type="checkbox" class="no-events"></div>
+			<div class="ve-col-5 bold">${dispName}</div>
+			<div class="ve-col-1 ve-text-center" title="${(sourceMeta.full || "").qq()}" ${this._brewUtil.sourceToStyle(sourceMeta)}>${sourceMeta.abbreviation}</div>
+			<div class="ve-col-5 ve-flex-vh-center pr-0">${dispProp}</div>
 		</label>`;
 
 		const listItem = new ListItem(
@@ -3378,8 +3409,8 @@ class ManageEditableBrewContentsUi extends BaseComponent {
 
 				const $row = $$`<div class="lst__row ve-flex-col px-0">
 					<div class="split-v-center lst--border lst__row-inner no-select mb-0 ve-flex-v-center">
-						<div class="col-10">${displayFn(this._brew, prop, k)}</div>
-						<div class="col-2 btn-group ve-flex-v-center ve-flex-h-right">
+						<div class="ve-col-10">${displayFn(this._brew, prop, k)}</div>
+						<div class="ve-col-2 btn-group ve-flex-v-center ve-flex-h-right">
 							${$btnDelete}
 						</div>
 					</div>
@@ -3403,10 +3434,10 @@ class ManageEditableBrewContentsUi extends BaseComponent {
 		const $wrpRows = $$`<div class="list ve-flex-col w-100 max-h-unset"></div>`;
 		const $iptSearch = $(`<input type="search" class="search manbrew__search form-control w-100 mt-1" placeholder="Search source...">`);
 		const $wrpBtnsSort = $$`<div class="filtertools manbrew__filtertools input-group input-group--bottom ve-flex no-shrink">
-			<label class="btn btn-default btn-xs col-1 pr-0 ve-flex-vh-center">${$cbAll}</label>
-			<button class="col-5 sort btn btn-default btn-xs" data-sort="name">Name</button>
-			<button class="col-2 sort btn btn-default btn-xs" data-sort="abbreviation">Abbreviation</button>
-			<button class="col-4 sort btn btn-default btn-xs" data-sort="json">JSON</button>
+			<label class="btn btn-default btn-xs ve-col-1 pr-0 ve-flex-vh-center">${$cbAll}</label>
+			<button class="ve-col-5 sort btn btn-default btn-xs" data-sort="name">Name</button>
+			<button class="ve-col-2 sort btn btn-default btn-xs" data-sort="abbreviation">Abbreviation</button>
+			<button class="ve-col-4 sort btn btn-default btn-xs" data-sort="json">JSON</button>
 		</div>`;
 
 		$$(tabMeta.$wrpTab)`
@@ -3442,10 +3473,10 @@ class ManageEditableBrewContentsUi extends BaseComponent {
 		const abv = source.abbreviation || _BrewInternalUtil.SOURCE_UNKNOWN_ABBREVIATION;
 
 		eleLi.innerHTML = `<label class="lst--border lst__row-inner no-select mb-0 ve-flex-v-center">
-			<div class="pl-0 col-1 ve-flex-vh-center"><input type="checkbox" class="no-events"></div>
-			<div class="col-5 bold">${name}</div>
-			<div class="col-2 ve-text-center">${abv}</div>
-			<div class="col-4 ve-flex-vh-center pr-0">${source.json}</div>
+			<div class="pl-0 ve-col-1 ve-flex-vh-center"><input type="checkbox" class="no-events"></div>
+			<div class="ve-col-5 bold">${name}</div>
+			<div class="ve-col-2 ve-text-center">${abv}</div>
+			<div class="ve-col-4 ve-flex-vh-center pr-0">${source.json}</div>
 		</label>`;
 
 		const listItem = new ListItem(

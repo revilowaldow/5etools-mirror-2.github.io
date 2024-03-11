@@ -5,12 +5,12 @@ class TrapsHazardsSublistManager extends SublistManager {
 		return [
 			new SublistCellTemplate({
 				name: "Type",
-				css: "col-4 ve-text-center pl-0",
+				css: "ve-col-4 ve-text-center pl-0",
 				colStyle: "text-center",
 			}),
 			new SublistCellTemplate({
 				name: "Name",
-				css: "bold col-8 pr-0",
+				css: "bold ve-col-8 pr-0",
 				colStyle: "",
 			}),
 		];
@@ -75,9 +75,9 @@ class TrapsHazardsPage extends ListPage {
 		const trapType = Parser.trapHazTypeToFull(it.trapHazType);
 
 		eleLi.innerHTML = `<a href="#${hash}" class="lst--border lst__row-inner">
-			<span class="col-3 pl-0 ve-text-center">${trapType}</span>
-			<span class="bold col-7">${it.name}</span>
-			<span class="col-2 ve-text-center ${Parser.sourceJsonToColor(it.source)} pr-0" title="${Parser.sourceJsonToFull(it.source)}" ${Parser.sourceJsonToStyle(it.source)}>${source}</span>
+			<span class="ve-col-3 pl-0 ve-text-center">${trapType}</span>
+			<span class="bold ve-col-7">${it.name}</span>
+			<span class="ve-col-2 ve-text-center ${Parser.sourceJsonToColor(it.source)} pr-0" title="${Parser.sourceJsonToFull(it.source)}" ${Parser.sourceJsonToStyle(it.source)}>${source}</span>
 		</a>`;
 
 		const listItem = new ListItem(

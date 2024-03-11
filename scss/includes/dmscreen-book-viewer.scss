@@ -1,15 +1,14 @@
-@import "vars";
+@use "vars";
 
 .dm-book__ {
 	&wrp-content {
-		overflow-y: auto;
-		overflow-x: hidden;
+		overflow: hidden auto;
 		transform: translateZ(0);
 	}
 
 	&wrp-controls {
 		padding: 2px 2px 1px 21px;
-		border-top: 1px solid $rgb-border-grey;
+		border-top: 1px solid vars.$rgb-border-grey;
 		justify-content: flex-end;
 	}
 
@@ -23,7 +22,6 @@
 
 .night-mode .dm-book__ {
 	&wrp-controls {
-		border-color: $rgb-border-grey--night;
+		border-color: vars.$rgb-border-grey--night;
 	}
 }
-

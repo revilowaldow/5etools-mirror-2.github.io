@@ -175,6 +175,20 @@
 				}
 			],
 			"id": "000"
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						"By Christopher Lindsay",
+						"{@i Author and Director of the Grung Preservation Society}"
+					]
+				}
+			]
 		}
 	]
 }

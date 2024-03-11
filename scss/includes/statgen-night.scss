@@ -1,4 +1,4 @@
-@import "vars";
+@use "vars";
 
 .night-mode .statgen .statgen {
 	&-shared__ {
@@ -11,26 +11,26 @@
 
 	&-rolled__ {
 		&wrp-results {
-			border-color: $rgb-border-grey--trans-night;
+			border-color: vars.$rgb-border-grey--trans-night;
 		}
 	}
 
 	&-pb__ {
 		&ipt-budget {
 			&--error {
-				border-color: red;
+				border-color: #f00;
 			}
 		}
 	}
 
 	&-asi__ {
 		&row {
-			border-bottom: 1px solid $rgb-border-grey--trans-night;
+			border-bottom: 1px solid vars.$rgb-border-grey--trans-night;
 		}
 
 		&cell {
 			&--top {
-				border-color: $rgb-border-grey--night;
+				border-color: vars.$rgb-border-grey--night;
 			}
 		}
 	}

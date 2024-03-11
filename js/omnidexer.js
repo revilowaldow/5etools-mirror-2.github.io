@@ -1298,7 +1298,7 @@ class IndexableSpecial {
 class IndexableSpecialPages extends IndexableSpecial {
 	pGetIndex () {
 		return Object.entries(UrlUtil.PG_TO_NAME)
-			.filter(([page]) => ![UrlUtil.PG_CLASS_SUBCLASS_FEATURES].includes(page))
+			.filter(([page]) => !UrlUtil.FAUX_PAGES[page])
 			.map(([page, name]) => ({
 				n: name,
 				c: Parser.CAT_ID_PAGE,

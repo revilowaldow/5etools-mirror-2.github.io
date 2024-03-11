@@ -4,6 +4,7 @@ class Prx {
 	static addHook (prop, hook) {
 		this.px._hooks[prop] = this.px._hooks[prop] || [];
 		this.px._hooks[prop].push(hook);
+		return hook;
 	}
 
 	static addHookAll (hook) {
@@ -966,8 +967,8 @@ class ListUiUtil {
 				ag: "div",
 				clazz: "ve-hidden ve-flex",
 				children: [
-					e_({tag: "div", clazz: "col-0-5"}),
-					e_({tag: "div", clazz: "col-11-5 ui-list__wrp-preview py-2 pr-2"}),
+					e_({tag: "div", clazz: "ve-col-0-5"}),
+					e_({tag: "div", clazz: "ve-col-11-5 ui-list__wrp-preview py-2 pr-2"}),
 				],
 			}).appendTo(item.ele);
 		} else elePreviewWrp = item.ele.lastElementChild;
@@ -2905,7 +2906,7 @@ class InputUiUtil {
 				if (opts.autocomplete) {
 					// prevent double-binding the return key if we have autocomplete enabled
 					await MiscUtil.pDelay(17); // arbitrary delay to allow dropdown to render (~1000/60, i.e. 1 60 FPS frame)
-					if ($modalInner.find(`.typeahead.dropdown-menu`).is(":visible")) return;
+					if ($modalInner.find(`.typeahead.ve-dropdown-menu`).is(":visible")) return;
 				}
 
 				evt.stopPropagation();
@@ -3554,31 +3555,31 @@ class SourceUiUtil {
 
 		const $stageInitial = $$`<div class="h-100 w-100 ve-flex-vh-center"><div class="ve-flex-col">
 			<h3 class="ve-text-center">${isEditMode ? "Edit Homebrew Source" : "Add a Homebrew Source"}</h3>
-			<div class="ui-source__row mb-2"><div class="col-12 ve-flex-v-center">
+			<div class="ui-source__row mb-2"><div class="ve-col-12 ve-flex-v-center">
 				<span class="mr-2 ui-source__name help" title="The name or title for the homebrew you wish to create. This could be the name of a book or PDF; for example, 'Monster Manual'">Title</span>
 				${$iptName}
 			</div></div>
-			<div class="ui-source__row mb-2"><div class="col-12 ve-flex-v-center">
+			<div class="ui-source__row mb-2"><div class="ve-col-12 ve-flex-v-center">
 				<span class="mr-2 ui-source__name help" title="An abbreviated form of the title. This will be shown in lists on the site, and in the top-right corner of stat blocks or data entries; for example, 'MM'">Abbreviation</span>
 				${$iptAbv}
 			</div></div>
-			<div class="ui-source__row mb-2"><div class="col-12 ve-flex-v-center">
+			<div class="ui-source__row mb-2"><div class="ve-col-12 ve-flex-v-center">
 				<span class="mr-2 ui-source__name help" title="This will be used to identify your homebrew universally, so should be unique to you and you alone">JSON Identifier</span>
 				${$iptJson}
 			</div></div>
-			<div class="ui-source__row mb-2"><div class="col-12 ve-flex-v-center">
+			<div class="ui-source__row mb-2"><div class="ve-col-12 ve-flex-v-center">
 				<span class="mr-2 ui-source__name help" title="A color which should be used when displaying the source abbreviation">Color</span>
 				${$iptColor}
 			</div></div>
-			<div class="ui-source__row mb-2"><div class="col-12 ve-flex-v-center">
+			<div class="ui-source__row mb-2"><div class="ve-col-12 ve-flex-v-center">
 				<span class="mr-2 ui-source__name help" title="A link to the original homebrew, e.g. a GM Binder page">Source URL</span>
 				${$iptUrl}
 			</div></div>
-			<div class="ui-source__row mb-2"><div class="col-12 ve-flex-v-center">
+			<div class="ui-source__row mb-2"><div class="ve-col-12 ve-flex-v-center">
 				<span class="mr-2 ui-source__name help" title="A comma-separated list of authors, e.g. 'John Doe, Joe Bloggs'">Author(s)</span>
 				${$iptAuthors}
 			</div></div>
-			<div class="ui-source__row mb-2"><div class="col-12 ve-flex-v-center">
+			<div class="ui-source__row mb-2"><div class="ve-col-12 ve-flex-v-center">
 				<span class="mr-2 ui-source__name help" title="A comma-separated list of people who converted the homebrew to 5etools' format, e.g. 'John Doe, Joe Bloggs'">Converted By</span>
 				${$iptConverters}
 			</div></div>
@@ -3620,8 +3621,8 @@ class SourceUiUtil {
 
 		const $stageExisting = $$`<div class="h-100 w-100 ve-flex-vh-center ve-hidden"><div>
 			<h3 class="ve-text-center">Select a Homebrew Source</h3>
-			<div class="mb-2"><div class="col-12 ve-flex-vh-center">${$selExisting}</div></div>
-			<div class="col-12 ve-flex-vh-center">${$btnBackExisting}${$btnConfirmExisting}</div>
+			<div class="mb-2"><div class="ve-col-12 ve-flex-vh-center">${$selExisting}</div></div>
+			<div class="ve-col-12 ve-flex-vh-center">${$btnBackExisting}${$btnConfirmExisting}</div>
 		</div></div>`.appendTo(options.$parent);
 	}
 }
@@ -5529,8 +5530,8 @@ class ComponentUiUtil {
 				});
 
 				const $ele = $$`<label class="ve-flex-v-center py-1 stripe-even">
-					<div class="col-1 ve-flex-vh-center">${$cb}</div>
-					<div class="col-11 ve-flex-v-center">${displayValue}</div>
+					<div class="ve-col-1 ve-flex-vh-center">${$cb}</div>
+					<div class="ve-col-11 ve-flex-v-center">${displayValue}</div>
 				</label>`;
 				$eles.push($ele);
 

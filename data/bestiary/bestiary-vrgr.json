@@ -798,13 +798,10 @@
 					]
 				}
 			],
+			"mythicHeader": [
+				"If the dullahan's Headless Summoning trait is active, it can use the options below as legendary actions."
+			],
 			"mythic": [
-				{
-					"name": "",
-					"entries": [
-						"If the dullahan's Headless Summoning trait is active, it can use the options below as legendary actions."
-					]
-				},
 				{
 					"name": "Coordinated Assault",
 					"entries": [

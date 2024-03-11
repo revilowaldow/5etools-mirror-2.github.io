@@ -18262,7 +18262,8 @@
 			"raceSource": "HWCS",
 			"page": 18,
 			"speed": {
-				"swim": 30
+				"walk": 25,
+				"swim": 25
 			},
 			"ability": [
 				{

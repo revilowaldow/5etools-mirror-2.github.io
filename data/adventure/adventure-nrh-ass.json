@@ -600,6 +600,186 @@
 				}
 			],
 			"id": "000"
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"columns": 2,
+							"items": [
+								{
+									"type": "entries",
+									"name": "Dungeons & Dragons Team:",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Adventure Design",
+													"entries": [
+														"Kat Kruger, Adam Lee"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Additional Development",
+													"entries": [
+														"Bill Benham"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Character Design",
+													"entries": [
+														"Chris Tulach"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Graphic Design",
+													"entries": [
+														"Emma Ekblad"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Editors",
+													"entries": [
+														"Ashley Michaela Lawson, Hannah Rose"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Creator Manager",
+													"entries": [
+														"Pelham Greene"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Illustrations",
+													"entries": [
+														"Red Central"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Producer",
+													"entries": [
+														"Bill Benham"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Brand Manager",
+													"entries": [
+														"Shelly Mazzanoble"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Director of Category Licensing",
+													"entries": [
+														"Ann Earp"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Ferrara Team:",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Sr. Associate Brand Manager, NERDS:",
+													"entries": [
+														"Lukas Krause"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Content Manager, NERDS:",
+													"entries": [
+														"Annie Belgrade"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Brand Manager, NERDS:",
+													"entries": [
+														"Joey Rath"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Director of Licensing & Partnerships, Ferrara Candy Co.",
+													"entries": [
+														"Amy Pagels"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Tripleclix Team:",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Managing Partner",
+													"entries": [
+														"Jennifer Erb"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Founder, Managing Partner",
+													"entries": [
+														"Christopher Erb"
+													]
+												},
+												{
+													"type": "item",
+													"name": "VP, Head of Partnership Marketing",
+													"entries": [
+														"Kenneth Lindenbaum"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Additional Support",
+													"entries": [
+														"VMLY&R Commerce, Taxi, Pep, and Golin"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
 		}
 	]
 }

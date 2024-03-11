@@ -2762,6 +2762,7 @@
 		{
 			"name": "Opportunistic Thief",
 			"source": "HWCS",
+			"page": 47,
 			"ability": [
 				{
 					"dex": 1

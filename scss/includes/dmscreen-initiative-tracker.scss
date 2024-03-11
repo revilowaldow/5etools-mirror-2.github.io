@@ -1,4 +1,4 @@
-@import "vars";
+@use "vars";
 
 .dm-init {
 	display: flex;
@@ -20,7 +20,7 @@
 	display: flex;
 	justify-content: space-between;
 	font-variant: small-caps;
-	border-bottom: 1px solid $rgb-border-grey;
+	border-bottom: 1px solid vars.$rgb-border-grey;
 	min-width: min-content;
 }
 
@@ -95,7 +95,7 @@
 	align-items: center;
 	margin: 0 3px 0 0;
 	padding-left: 5px;
-	border: 1px solid $rgb-border-grey;
+	border: 1px solid vars.$rgb-border-grey;
 }
 
 .dm-init__btn-creature {
@@ -129,8 +129,8 @@
 	margin-right: 3px;
 }
 
-.dm-init__row-rhs input[type=number]::-webkit-inner-spin-button,
-.dm-init__row-rhs input[type=number]::-webkit-outer-spin-button {
+.dm-init__row-rhs input[type="number"]::-webkit-inner-spin-button,
+.dm-init__row-rhs input[type="number"]::-webkit-outer-spin-button {
 	/* stylelint-disable-next-line property-no-vendor-prefix */
 	-webkit-appearance: none;
 	margin: 0;
@@ -143,22 +143,22 @@
 }
 
 .dm-init__row.dm-init__row-active .dm-init__wrp-stat-cb {
-	border-top: 1px solid $rgb-border-grey;
-	border-bottom: 1px solid $rgb-border-grey;
+	border-top: 1px solid vars.$rgb-border-grey;
+	border-bottom: 1px solid vars.$rgb-border-grey;
 }
 
 .dm-init__wrp-controls {
 	flex: none;
 	height: 29px;
 	padding: 3px;
-	border-top: 1px solid $rgb-border-grey;
+	border-top: 1px solid vars.$rgb-border-grey;
 	justify-content: space-evenly;
 	display: flex;
 }
 
 .dm-init__rounds {
 	width: 35px;
-	height: $h-ipt-xs;
+	height: vars.$h-ipt-xs;
 	display: inline-block;
 	border-radius: 0;
 	padding: 0;
@@ -201,22 +201,22 @@
 
 	&btn-cond {
 		min-width: 85px;
-		color: white !important;
+		color: #fff !important;
 		outline: none !important;
 	}
 }
 
 .night-mode {
 	.dm-init__wrp-header {
-		border-color: $rgb-border-grey--night;
+		border-color: vars.$rgb-border-grey--night;
 	}
 
 	.dm-init__wrp-controls {
-		border-color: $rgb-border-grey--night;
+		border-color: vars.$rgb-border-grey--night;
 	}
 
 	.dm-init__wrp-creature {
-		border-color: $rgb-border-grey--night;
+		border-color: vars.$rgb-border-grey--night;
 	}
 
 	.dm-init__row.dm-init__row-active input,
@@ -226,7 +226,6 @@
 	}
 
 	.dm-init__row.dm-init__row-active .dm-init__wrp-stat-cb {
-		border-color: $rgb-border-grey--night;
+		border-color: vars.$rgb-border-grey--night;
 	}
 }
-

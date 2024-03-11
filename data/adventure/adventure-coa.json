@@ -19894,6 +19894,172 @@
 				}
 			],
 			"id": "35f"
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Project Lead",
+									"entries": [
+										"James Ohlen"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Producer",
+									"entries": [
+										"Brent Knowles"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Lead Writer",
+									"entries": [
+										"Adrian Tchaikovsky"
+									]
+								}
+							]
+						},
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Writers",
+									"entries": [
+										"Marieke Cross, Andreana Lozano, Drew Karpyshyn, Brent Knowles, James Ohlen"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Rules Developers",
+									"entries": [
+										"Brent Knowles, Zack Webb"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Editor",
+									"entries": [
+										"Marieke Cross"
+									]
+								}
+							]
+						},
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Graphic Designer",
+									"entries": [
+										"Michal E. Cross"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Cover Illustrator",
+									"entries": [
+										"Aaron Sims Company"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Cartographer",
+									"entries": [
+										"John Stevenson"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Nine Hells Art",
+									"entries": [
+										"Sergei Sarichev"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Encounter Art",
+									"entries": [
+										"Sergey Musin"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Environment Art",
+									"entries": [
+										"Julian Calle"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Monster Art",
+									"entries": [
+										"Sebastian Kowoll"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Archdevil Art",
+									"entries": [
+										"Aaron Sims"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Character Art",
+									"entries": [
+										"Paul Adam, Lius Lasahido"
+									]
+								}
+							]
+						},
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Cultural & Sensitivity Consultant",
+									"entries": [
+										"Stacey Parshall Jensen"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Special Thanks",
+									"entries": [
+										"Christopher Perkins, Jeremy Crawford"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "adventure/CoA/credits.webp"
+					},
+					"title": "On the Cover: The undisputed lord of the Nine Hells is Asmodeus. All who occupy his realm fear and respect him.",
+					"width": 1174,
+					"height": 826
+				}
+			]
 		}
 	]
 }

@@ -1477,58 +1477,28 @@
 					"name": "Full Moon",
 					"known": {
 						"1": [
-							"shield"
-						],
-						"3": [
-							"lesser restoration"
-						],
-						"5": [
-							"dispel magic"
-						],
-						"7": [
-							"death ward"
-						],
-						"9": [
-							"Rary's telepathic bond"
-						]
-					}
-				},
-				{
-					"name": "New Moon",
-					"known": {
-						"1": [
-							"ray of sickness"
-						],
-						"3": [
-							"blindness/deafness"
-						],
-						"5": [
-							"vampiric touch"
-						],
-						"7": [
-							"confusion"
-						],
-						"9": [
-							"hold monster"
-						]
-					}
-				},
-				{
-					"name": "Crescent Moon",
-					"known": {
-						"1": [
+							"shield",
+							"ray of sickness",
 							"color spray"
 						],
 						"3": [
+							"lesser restoration",
+							"blindness/deafness",
 							"alter self"
 						],
 						"5": [
+							"dispel magic",
+							"vampiric touch",
 							"phantom steed"
 						],
 						"7": [
+							"death ward",
+							"confusion",
 							"hallucinatory terrain"
 						],
 						"9": [
+							"Rary's telepathic bond",
+							"hold monster",
 							"mislead"
 						]
 					}

@@ -195,16 +195,16 @@ export class InitiativeTrackerConditionAdd extends BaseComponent {
 
 		return $$`
 			<div class="ve-flex-v-center mb-2">
-				<div class="small-caps col-5 pr-1">Name</div>
-				<div class="small-caps col-2 px-1">Color</div>
-				<div class="small-caps col-4 px-1">Duration</div>
-				<div class="col-1 pl-1">&nbsp;</div>
+				<div class="small-caps ve-col-5 pr-1">Name</div>
+				<div class="small-caps ve-col-2 px-1">Color</div>
+				<div class="small-caps ve-col-4 px-1">Duration</div>
+				<div class="ve-col-1 pl-1">&nbsp;</div>
 			</div>
 			<div class="ve-flex-v-center mb-3">
-				<div class="col-5 pr-1">${$iptName}</div>
-				<div class="col-2 px-1">${$iptColor}</div>
-				<div class="col-4 px-1">${$iptTurns}</div>
-				<div class="col-1 pl-1">${$btnSave}</div>
+				<div class="ve-col-5 pr-1">${$iptName}</div>
+				<div class="ve-col-2 px-1">${$iptColor}</div>
+				<div class="ve-col-4 px-1">${$iptTurns}</div>
+				<div class="ve-col-1 pl-1">${$btnSave}</div>
 			</div>
 		`;
 	}

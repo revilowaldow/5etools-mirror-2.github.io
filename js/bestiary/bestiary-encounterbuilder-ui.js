@@ -295,7 +295,7 @@ export class EncounterBuilderUiBestiary extends EncounterBuilderUi {
 	getButtons (monId) {
 		return e_({
 			tag: "span",
-			clazz: `best-ecgen__visible col-1 no-wrap pl-0 btn-group`,
+			clazz: `best-ecgen__visible ve-col-1 no-wrap pl-0 btn-group`,
 			click: evt => {
 				evt.preventDefault();
 				evt.stopPropagation();
@@ -343,7 +343,7 @@ export class EncounterBuilderUiBestiary extends EncounterBuilderUi {
 			.click(() => this._sublistManager.pSetDataEntry({sublistItem, key: "isLocked", value: !sublistItem.data.isLocked}))
 			.toggleClass("active", sublistItem.data.isLocked);
 
-		const $wrp = $$`<span class="best-ecgen__visible col-1-5 no-wrap pl-0 btn-group">
+		const $wrp = $$`<span class="best-ecgen__visible ve-col-1-5 no-wrap pl-0 btn-group">
 			${$btnAdd}
 			${$btnSub}
 			${$btnRandomize}

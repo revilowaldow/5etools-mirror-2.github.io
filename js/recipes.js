@@ -15,12 +15,12 @@ class RecipesSublistManager extends SublistManager {
 		return [
 			new SublistCellTemplate({
 				name: "Name",
-				css: "bold col-9 pl-0",
+				css: "bold ve-col-9 pl-0",
 				colStyle: "",
 			}),
 			new SublistCellTemplate({
 				name: "Type",
-				css: "col-3 ve-text-center pr-0",
+				css: "ve-col-3 ve-text-center pr-0",
 				colStyle: "text-center",
 			}),
 		];
@@ -91,9 +91,9 @@ class RecipesPage extends ListPage {
 		const hash = UrlUtil.autoEncodeHash(ent);
 
 		eleLi.innerHTML = `<a href="#${hash}" class="lst--border lst__row-inner">
-			<span class="col-6 bold pl-0">${ent.name}</span>
-			<span class="col-4 ve-text-center">${ent.type || "\u2014"}</span>
-			<span class="col-2 ve-text-center ${Parser.sourceJsonToColor(ent.source)} pr-0" title="${Parser.sourceJsonToFull(ent.source)}" ${Parser.sourceJsonToStyle(ent.source)}>${source}</span>
+			<span class="ve-col-6 bold pl-0">${ent.name}</span>
+			<span class="ve-col-4 ve-text-center">${ent.type || "\u2014"}</span>
+			<span class="ve-col-2 ve-text-center ${Parser.sourceJsonToColor(ent.source)} pr-0" title="${Parser.sourceJsonToFull(ent.source)}" ${Parser.sourceJsonToStyle(ent.source)}>${source}</span>
 		</a>`;
 
 		const listItem = new ListItem(

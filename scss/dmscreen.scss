@@ -1,4 +1,14 @@
-@import "includes/vars";
+@use "includes/vars";
+
+@use "includes/dmscreen-book-viewer";
+@use "includes/dmscreen-calender";
+@use "includes/dmscreen-coin-converter";
+@use "includes/dmscreen-counter";
+@use "includes/dmscreen-initiative-tracker";
+@use "includes/dmscreen-initiative-tracker-player";
+@use "includes/dmscreen-map-viewer";
+@use "includes/dmscreen-panels-empty";
+@use "includes/dmscreen-unit-converter";
 
 $rgb-bg-panel-control: #80808080;
 
@@ -14,7 +24,7 @@ label {
 }
 
 .dm__panel-bg {
-	background: white;
+	background: #fff;
 }
 
 .dm-screen {
@@ -51,10 +61,7 @@ label {
 .dm-screen-panel.faux-hover .panel-content-wrapper-inner::after {
 	content: "";
 	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
+	inset: 0;
 }
 
 .panel-control-bar {
@@ -91,7 +98,7 @@ label {
 	padding: 0 4px;
 	font-family: "Times New Roman", serif;
 	font-variant: small-caps;
-	color: white;
+	color: #fff;
 	user-select: none;
 	background: #808080a0;
 	cursor: pointer;
@@ -122,7 +129,7 @@ label {
 	cursor: pointer;
 	font-size: 12px;
 	user-select: none;
-	color: rgba(255, 255, 255, 0.7);
+	color: rgb(255 255 255 / 70%);
 }
 
 .panel-add {
@@ -130,7 +137,7 @@ label {
 	justify-content: center;
 	align-items: center;
 	font-size: 5rem;
-	color: $rgb-border-grey;
+	color: vars.$rgb-border-grey;
 }
 
 .btn-panel-add {
@@ -139,7 +146,7 @@ label {
 	border-radius: 5px;
 	cursor: pointer;
 	user-select: none;
-	border: 1px solid $rgb-border-grey;
+	border: 1px solid vars.$rgb-border-grey;
 
 	&:hover,
 	&.faux-hover {
@@ -188,13 +195,13 @@ label {
 	bottom: 0;
 	height: 20px;
 	width: 100%;
-	border-top: 1px solid $rgb-border-grey;
-	background: white;
+	border-top: 1px solid vars.$rgb-border-grey;
+	background: #fff;
 }
 
 .night-mode {
 	.content-tab-bar {
-		border-color: $rgb-border-grey--night;
+		border-color: vars.$rgb-border-grey--night;
 	}
 }
 
@@ -238,14 +245,13 @@ label {
 }
 
 .panel-content-wrapper-inner {
-	background: white;
+	background: #fff;
 	height: 100%;
 	width: 100%;
-	overflow-y: auto;
-	overflow-x: hidden;
+	overflow: hidden auto;
 
 	td div.border {
-		background-color: $rgb-name-red;
+		background-color: vars.$rgb-name-red;
 	}
 }
 
@@ -255,7 +261,7 @@ label {
 
 .night-mode {
 	.panel-content-wrapper-inner::-webkit-scrollbar-track {
-		background: $rgb-bg--night;
+		background: vars.$rgb-bg--night;
 	}
 }
 
@@ -268,10 +274,7 @@ label {
 
 .panel-control-bg {
 	z-index: 54;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
+	inset: 0;
 }
 
 .panel-control-move-top {
@@ -347,8 +350,8 @@ label {
 }
 
 .panel-control-move--bg {
-	background: $rgb-border-grey--trans;
-	border: 1px solid $rgb-border-grey;
+	background: vars.$rgb-border-grey--trans;
+	border: 1px solid vars.$rgb-border-grey;
 }
 
 .night-mode {
@@ -384,7 +387,7 @@ label {
 
 .underline-tabs {
 	margin-top: -1px;
-	border-top: 1px solid $rgb-border-grey;
+	border-top: 1px solid vars.$rgb-border-grey;
 }
 
 .list {
@@ -436,20 +439,20 @@ label {
 
 .panel-zoom-reset .glyphicon {
 	top: 2px;
-	color: $rgb-border-grey;
+	color: vars.$rgb-border-grey;
 }
 
 /* cleaner, but Webkit-only */
-/*input[type=range].panel-zoom-slider {
+/* input[type=range].panel-zoom-slider {
 	position: absolute;
 	top: 28px;
 	left: 3px;
 	width: 20px;
 	-webkit-appearance: slider-vertical;
 	height: 80px;
-}*/
+} */
 
-input[type=range].panel-zoom-slider {
+input[type="range"].panel-zoom-slider {
 	position: absolute;
 	top: 59px;
 	left: -25px;
@@ -461,7 +464,7 @@ input[type=range].panel-zoom-slider {
 iframe {
 	width: 100%;
 	height: 100%;
-	background: $rgb-bg;
+	background: vars.$rgb-bg;
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -494,7 +497,7 @@ iframe {
 	border-radius: 0;
 }
 
-@media (max-width: 991px) {
+@media (width <= 991px) {
 	.viewport-wrapper {
 		bottom: 0;
 		height: 100vh;
@@ -523,7 +526,7 @@ iframe {
 
 body.is-fullscreen .sidemenu__toggle {
 	top: 12px;
-	left: -31px;
+	left: -29px;
 }
 
 body.is-fullscreen .sidemenu__hotzone {
@@ -554,10 +557,7 @@ body.is-fullscreen .sidemenu__hotzone {
 .sidemenu__history-item-cover {
 	position: absolute;
 	z-index: 57;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
+	inset: 0;
 	background: transparent;
 }
 
@@ -585,7 +585,7 @@ body.is-fullscreen .sidemenu__hotzone {
 	cursor: pointer;
 	font-size: 12px;
 	user-select: none;
-	color: rgba(255, 255, 255, 0.7);
+	color: rgb(255 255 255 / 70%);
 }
 
 .panel-history-control-middle {
@@ -600,8 +600,8 @@ body.is-fullscreen .sidemenu__hotzone {
 	cursor: move;
 	border-radius: 50%;
 	transition: opacity 0.1s;
-	background: $rgb-border-grey--trans;
-	border: 1px solid $rgb-border-grey;
+	background: vars.$rgb-border-grey--trans;
+	border: 1px solid vars.$rgb-border-grey;
 }
 
 .sidemenu__history-item-cover:hover .panel-history-control-middle {
@@ -618,11 +618,11 @@ body.is-fullscreen .sidemenu__hotzone {
 
 .night-mode {
 	.btn-panel-add {
-		border-color: $rgb-border-grey--night;
+		border-color: vars.$rgb-border-grey--night;
 	}
 
 	.underline-tabs {
-		border-color: $rgb-border-grey--night;
+		border-color: vars.$rgb-border-grey--night;
 	}
 
 	.panel-history-control-middle {
@@ -643,11 +643,11 @@ body.is-fullscreen .sidemenu__hotzone {
 	}
 
 	.panel-control-icon {
-		color: rgba(255, 255, 255, 0.7);
+		color: rgb(255 255 255 / 70%);
 	}
 
 	.panel-add {
-		color: $rgb-border-grey;
+		color: vars.$rgb-border-grey;
 	}
 
 	.btn-panel-add {
@@ -658,28 +658,18 @@ body.is-fullscreen .sidemenu__hotzone {
 	}
 
 	.panel-content-wrapper-inner {
-		background: $rgb-bg--night;
+		background: vars.$rgb-bg--night;
 	}
 
 	.panel-addmenu-tab-head[active="true"] {
-		background-color: $rgb-btn-default-active--night !important;
+		background-color: vars.$rgb-btn-default-active--night !important;
 	}
 
 	.panel-content-wrapper-inner td div.border {
-		background-color: $rgb-name-red--night;
+		background-color: vars.$rgb-name-red--night;
 	}
 
 	.dm__panel-bg {
-		background: $rgb-bg--night;
+		background: vars.$rgb-bg--night;
 	}
 }
-
-@import "includes/dmscreen-book-viewer";
-@import "includes/dmscreen-calender";
-@import "includes/dmscreen-coin-converter";
-@import "includes/dmscreen-counter";
-@import "includes/dmscreen-initiative-tracker";
-@import "includes/dmscreen-initiative-tracker-player";
-@import "includes/dmscreen-map-viewer";
-@import "includes/dmscreen-panels-empty";
-@import "includes/dmscreen-unit-converter";

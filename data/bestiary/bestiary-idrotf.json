@@ -1759,6 +1759,103 @@
 			"hasFluffImages": true
 		},
 		{
+			"name": "Dzaan",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "IDRotF",
+			"page": 271,
+			"_copy": {
+				"name": "Dzaan's Simulacrum",
+				"source": "IDRotF",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the simulacrum",
+						"with": "Dzaan",
+						"flags": "i"
+					}
+				}
+			},
+			"hp": {
+				"average": 49,
+				"formula": "9d8 + 9"
+			},
+			"cr": "4",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"Dzaan is a 9th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 13}, {@hit 5} to hit with spell attacks). He has the following wizard spells prepared:"
+					],
+					"will": [
+						{
+							"entry": "{@spell Shocking Grasp}",
+							"hidden": true
+						},
+						{
+							"entry": "{@spell Acid Splash}",
+							"hidden": true
+						}
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell acid splash} *",
+								"{@spell light}",
+								"{@spell minor illusion}",
+								"{@spell shocking grasp} *"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell detect magic}",
+								"{@spell disguise self}",
+								"{@spell magic missile} *"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell invisibility}",
+								"{@spell levitate}",
+								"{@spell phantasmal force}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell fireball}",
+								"{@spell sending}",
+								"{@spell slow}"
+							]
+						},
+						"4": {
+							"slots": 3,
+							"spells": [
+								"{@spell arcane eye}",
+								"{@spell confusion}"
+							]
+						},
+						"5": {
+							"slots": 1,
+							"spells": [
+								"{@spell animate objects}"
+							]
+						}
+					},
+					"footerEntries": [
+						"*See \"Actions\" below."
+					],
+					"ability": "int"
+				}
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
 			"name": "Dzaan's Simulacrum",
 			"isNpc": true,
 			"isNamedCreature": true,

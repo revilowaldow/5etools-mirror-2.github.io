@@ -1,4 +1,7 @@
-@import "includes/vars";
+@use "sass:color";
+
+@use "includes/vars";
+@use "includes/classes-table";
 
 // region class
 .cls__ {
@@ -17,22 +20,22 @@
 	&btn-toggle-sidebar {
 		cursor: pointer;
 		font-size: initial;
-		color: $rgb-off-black;
+		color: vars.$rgb-off-black;
 	}
 
 	// region buttons
 	&btn-cf {
 		&--active {
-			color: white;
-			background: $rgb-name-red;
+			color: #fff;
+			background: vars.$rgb-name-red;
 
 			&:active,
 			&:focus,
 			&:hover,
 			&:active:focus,
 			&:active:hover {
-				color: white;
-				background: darken($rgb-name-red, $pct-darken-active);
+				color: #fff;
+				background: color.adjust(vars.$rgb-name-red, $lightness: - vars.$pct-darken-active);
 			}
 		}
 	}
@@ -43,98 +46,98 @@
 		}
 
 		&--active-fresh {
-			color: white;
-			background: $rgb-subclass;
-			border-color: darken($rgb-subclass, $pct-darken-border);
+			color: #fff;
+			background: vars.$rgb-subclass;
+			border-color: color.adjust(vars.$rgb-subclass, $lightness: - vars.$pct-darken-border);
 
 			&:active,
 			&:focus,
 			&:hover,
 			&:active:focus,
 			&:active:hover {
-				color: white;
-				background: darken($rgb-subclass, $pct-darken-active);
-				border-color: darken($rgb-subclass, $pct-darken-border--active);
+				color: #fff;
+				background: color.adjust(vars.$rgb-subclass, $lightness: - vars.$pct-darken-active);
+				border-color: color.adjust(vars.$rgb-subclass, $lightness: - vars.$pct-darken-border--active);
 			}
 		}
 
 		&--active-reprinted {
-			color: white;
-			background: $rgb-subclass--stale;
-			border-color: darken($rgb-subclass--stale, $pct-darken-border);
+			color: #fff;
+			background: vars.$rgb-subclass--stale;
+			border-color: color.adjust(vars.$rgb-subclass--stale, $lightness: - vars.$pct-darken-border);
 
 			&:active,
 			&:focus,
 			&:hover,
 			&:active:focus,
 			&:active:hover {
-				color: white;
-				background: darken($rgb-subclass--stale, $pct-darken-active);
-				border-color: darken($rgb-subclass--stale, $pct-darken-border--active);
+				color: #fff;
+				background: color.adjust(vars.$rgb-subclass--stale, $lightness: - vars.$pct-darken-active);
+				border-color: color.adjust(vars.$rgb-subclass--stale, $lightness: - vars.$pct-darken-border--active);
 			}
 		}
 
 		&--active-spicy {
-			color: white;
-			background: $rgb-subclass-ua;
-			border-color: darken($rgb-subclass-ua, $pct-darken-border);
+			color: #fff;
+			background: vars.$rgb-subclass-ua;
+			border-color: color.adjust(vars.$rgb-subclass-ua, $lightness: - vars.$pct-darken-border);
 
 			&:active,
 			&:focus,
 			&:hover,
 			&:active:focus,
 			&:active:hover {
-				color: white;
-				background: darken($rgb-subclass-ua, $pct-darken-active);
-				border-color: darken($rgb-subclass-ua, $pct-darken-border--active);
+				color: #fff;
+				background: color.adjust(vars.$rgb-subclass-ua, $lightness: - vars.$pct-darken-active);
+				border-color: color.adjust(vars.$rgb-subclass-ua, $lightness: - vars.$pct-darken-border--active);
 			}
 		}
 
 		&--active-stale {
-			color: white;
-			background: $rgb-subclass-ua--stale;
-			border-color: darken($rgb-subclass-ua--stale, $pct-darken-border);
+			color: #fff;
+			background: vars.$rgb-subclass-ua--stale;
+			border-color: color.adjust(vars.$rgb-subclass-ua--stale, $lightness: - vars.$pct-darken-border);
 
 			&:active,
 			&:focus,
 			&:hover,
 			&:active:focus,
 			&:active:hover {
-				color: white;
-				background: darken($rgb-subclass-ua--stale, $pct-darken-active);
-				border-color: darken($rgb-subclass-ua--stale, $pct-darken-border--active);
+				color: #fff;
+				background: color.adjust(vars.$rgb-subclass-ua--stale, $lightness: - vars.$pct-darken-active);
+				border-color: color.adjust(vars.$rgb-subclass-ua--stale, $lightness: - vars.$pct-darken-border--active);
 			}
 		}
 
 		&--active-brew {
-			color: white;
-			background: $rgb-class-brew;
-			border-color: darken($rgb-class-brew, $pct-darken-border);
+			color: #fff;
+			background: vars.$rgb-class-brew;
+			border-color: color.adjust(vars.$rgb-class-brew, $lightness: - vars.$pct-darken-border);
 
 			&:active,
 			&:focus,
 			&:hover,
 			&:active:focus,
 			&:active:hover {
-				color: white;
-				background: darken($rgb-class-brew, $pct-darken-active);
-				border-color: darken($rgb-class-brew, $pct-darken-border--active);
+				color: #fff;
+				background: color.adjust(vars.$rgb-class-brew, $lightness: - vars.$pct-darken-active);
+				border-color: color.adjust(vars.$rgb-class-brew, $lightness: - vars.$pct-darken-border--active);
 			}
 		}
 
 		&--active-rebrewed {
-			color: white;
-			background: $rgb-class-variant-brew;
-			border-color: darken($rgb-class-variant-brew, $pct-darken-border);
+			color: #fff;
+			background: vars.$rgb-class-variant-brew;
+			border-color: color.adjust(vars.$rgb-class-variant-brew, $lightness: - vars.$pct-darken-border);
 
 			&:active,
 			&:focus,
 			&:hover,
 			&:active:focus,
 			&:active:hover {
-				color: white;
-				background: darken($rgb-class-variant-brew, $pct-darken-active);
-				border-color: darken($rgb-class-variant-brew, $pct-darken-border--active);
+				color: #fff;
+				background: color.adjust(vars.$rgb-class-variant-brew, $lightness: - vars.$pct-darken-active);
+				border-color: color.adjust(vars.$rgb-class-variant-brew, $lightness: - vars.$pct-darken-border--active);
 			}
 		}
 	}
@@ -147,8 +150,8 @@
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
-			color: $rgb-class-variant;
-			border-bottom-color: $rgb-class-variant;
+			color: vars.$rgb-class-variant;
+			border-bottom-color: vars.$rgb-class-variant;
 		}
 	}
 
@@ -156,8 +159,8 @@
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
-			color: $rgb-class-ua;
-			border-bottom-color: $rgb-class-ua;
+			color: vars.$rgb-class-ua;
+			border-bottom-color: vars.$rgb-class-ua;
 		}
 	}
 
@@ -165,8 +168,8 @@
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
-			color: $rgb-class-variant-brew;
-			border-bottom-color: $rgb-class-variant-brew;
+			color: vars.$rgb-class-variant-brew;
+			border-bottom-color: vars.$rgb-class-variant-brew;
 		}
 	}
 
@@ -174,8 +177,8 @@
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
-			color: $rgb-subclass--stale;
-			border-bottom-color: $rgb-subclass--stale;
+			color: vars.$rgb-subclass--stale;
+			border-bottom-color: vars.$rgb-subclass--stale;
 		}
 	}
 
@@ -183,8 +186,8 @@
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
-			color: $rgb-subclass-ua--stale;
-			border-bottom-color: $rgb-subclass-ua--stale;
+			color: vars.$rgb-subclass-ua--stale;
+			border-bottom-color: vars.$rgb-subclass-ua--stale;
 		}
 	}
 
@@ -192,8 +195,8 @@
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
-			color: $rgb-class-variant-brew;
-			border-bottom-color: $rgb-class-variant-brew;
+			color: vars.$rgb-class-variant-brew;
+			border-bottom-color: vars.$rgb-class-variant-brew;
 		}
 	}
 
@@ -201,8 +204,8 @@
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
-			color: $rgb-subclass;
-			border-bottom-color: $rgb-subclass;
+			color: vars.$rgb-subclass;
+			border-bottom-color: vars.$rgb-subclass;
 		}
 	}
 
@@ -210,8 +213,8 @@
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
-			color: $rgb-subclass-ua;
-			border-bottom-color: $rgb-subclass-ua;
+			color: vars.$rgb-subclass-ua;
+			border-bottom-color: vars.$rgb-subclass-ua;
 		}
 	}
 
@@ -219,8 +222,8 @@
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
-			color: $rgb-class-brew;
-			border-bottom-color: $rgb-class-brew;
+			color: vars.$rgb-class-brew;
+			border-bottom-color: vars.$rgb-class-brew;
 		}
 	}
 
@@ -228,8 +231,8 @@
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
-			color: $rgb-class-variant;
-			border-bottom-color: $rgb-class-variant;
+			color: vars.$rgb-class-variant;
+			border-bottom-color: vars.$rgb-class-variant;
 		}
 	}
 
@@ -237,8 +240,8 @@
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
-			color: $rgb-class-ua;
-			border-bottom-color: $rgb-class-ua;
+			color: vars.$rgb-class-ua;
+			border-bottom-color: vars.$rgb-class-ua;
 		}
 	}
 
@@ -246,8 +249,8 @@
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
-			color: $rgb-class-variant-brew;
-			border-bottom-color: $rgb-class-variant-brew;
+			color: vars.$rgb-class-variant-brew;
+			border-bottom-color: vars.$rgb-class-variant-brew;
 		}
 	}
 
@@ -255,8 +258,8 @@
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
-			color: $rgb-class-ua;
-			border-bottom-color: $rgb-class-ua;
+			color: vars.$rgb-class-ua;
+			border-bottom-color: vars.$rgb-class-ua;
 		}
 	}
 
@@ -264,8 +267,8 @@
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
-			color: $rgb-class-brew;
-			border-bottom-color: $rgb-class-brew;
+			color: vars.$rgb-class-brew;
+			border-bottom-color: vars.$rgb-class-brew;
 		}
 	}
 	// endregion
@@ -279,16 +282,16 @@
 	// region buttons
 	&btn-cf {
 		&--active {
-			color: $rgb-off-black;
-			background: $rgb-name-red--night;
+			color: vars.$rgb-off-black;
+			background: vars.$rgb-name-red--night;
 
 			&:active,
 			&:focus,
 			&:hover,
 			&:active:focus,
 			&:active:hover {
-				color: $rgb-off-black;
-				background: darken($rgb-name-red--night, $pct-darken-active);
+				color: vars.$rgb-off-black;
+				background: color.adjust(vars.$rgb-name-red--night, $lightness: - vars.$pct-darken-active);
 			}
 		}
 	}
@@ -299,98 +302,98 @@
 		}
 
 		&--active-fresh {
-			color: white;
-			background: $rgb-subclass--night;
-			border-color: darken($rgb-subclass--night, $pct-darken-border);
+			color: #fff;
+			background: vars.$rgb-subclass--night;
+			border-color: color.adjust(vars.$rgb-subclass--night, $lightness: - vars.$pct-darken-border);
 
 			&:active,
 			&:focus,
 			&:hover,
 			&:active:focus,
 			&:active:hover {
-				color: white;
-				background: darken($rgb-subclass--night, $pct-darken-active);
-				border-color: darken($rgb-subclass--night, $pct-darken-border--active);
+				color: #fff;
+				background: color.adjust(vars.$rgb-subclass--night, $lightness: - vars.$pct-darken-active);
+				border-color: color.adjust(vars.$rgb-subclass--night, $lightness: - vars.$pct-darken-border--active);
 			}
 		}
 
 		&--active-reprinted {
-			color: white;
-			background: $rgb-subclass--night-stale;
-			border-color: darken($rgb-subclass--night-stale, $pct-darken-border);
+			color: #fff;
+			background: vars.$rgb-subclass--night-stale;
+			border-color: color.adjust(vars.$rgb-subclass--night-stale, $lightness: - vars.$pct-darken-border);
 
 			&:active,
 			&:focus,
 			&:hover,
 			&:active:focus,
 			&:active:hover {
-				color: white;
-				background: darken($rgb-subclass--night-stale, $pct-darken-active);
-				border-color: darken($rgb-subclass--night-stale, $pct-darken-border--active);
+				color: #fff;
+				background: color.adjust(vars.$rgb-subclass--night-stale, $lightness: - vars.$pct-darken-active);
+				border-color: color.adjust(vars.$rgb-subclass--night-stale, $lightness: - vars.$pct-darken-border--active);
 			}
 		}
 
 		&--active-spicy {
-			color: white;
-			background: $rgb-subclass-ua--night;
-			border-color: darken($rgb-subclass-ua--night, $pct-darken-border);
+			color: #fff;
+			background: vars.$rgb-subclass-ua--night;
+			border-color: color.adjust(vars.$rgb-subclass-ua--night, $lightness: - vars.$pct-darken-border);
 
 			&:active,
 			&:focus,
 			&:hover,
 			&:active:focus,
 			&:active:hover {
-				color: white;
-				background: darken($rgb-subclass-ua--night, $pct-darken-active);
-				border-color: darken($rgb-subclass-ua--night, $pct-darken-border--active);
+				color: #fff;
+				background: color.adjust(vars.$rgb-subclass-ua--night, $lightness: - vars.$pct-darken-active);
+				border-color: color.adjust(vars.$rgb-subclass-ua--night, $lightness: - vars.$pct-darken-border--active);
 			}
 		}
 
 		&--active-stale {
-			color: white;
-			background: $rgb-subclass-ua--night-stale;
-			border-color: darken($rgb-subclass-ua--night-stale, $pct-darken-border);
+			color: #fff;
+			background: vars.$rgb-subclass-ua--night-stale;
+			border-color: color.adjust(vars.$rgb-subclass-ua--night-stale, $lightness: - vars.$pct-darken-border);
 
 			&:active,
 			&:focus,
 			&:hover,
 			&:active:focus,
 			&:active:hover {
-				color: white;
-				background: darken($rgb-subclass-ua--night-stale, $pct-darken-active);
-				border-color: darken($rgb-subclass-ua--night-stale, $pct-darken-border--active);
+				color: #fff;
+				background: color.adjust(vars.$rgb-subclass-ua--night-stale, $lightness: - vars.$pct-darken-active);
+				border-color: color.adjust(vars.$rgb-subclass-ua--night-stale, $lightness: - vars.$pct-darken-border--active);
 			}
 		}
 
 		&--active-brew {
-			color: white;
-			background: $rgb-class-brew--night;
-			border-color: darken($rgb-class-brew--night, $pct-darken-border);
+			color: #fff;
+			background: vars.$rgb-class-brew--night;
+			border-color: color.adjust(vars.$rgb-class-brew--night, $lightness: - vars.$pct-darken-border);
 
 			&:active,
 			&:focus,
 			&:hover,
 			&:active:focus,
 			&:active:hover {
-				color: white;
-				background: darken($rgb-class-brew--night, $pct-darken-active);
-				border-color: darken($rgb-class-brew--night, $pct-darken-border--active);
+				color: #fff;
+				background: color.adjust(vars.$rgb-class-brew--night, $lightness: - vars.$pct-darken-active);
+				border-color: color.adjust(vars.$rgb-class-brew--night, $lightness: - vars.$pct-darken-border--active);
 			}
 		}
 
 		&--active-rebrewed {
-			color: white;
-			background: $rgb-class-variant-brew--night;
-			border-color: darken($rgb-class-variant-brew--night, $pct-darken-border);
+			color: #fff;
+			background: vars.$rgb-class-variant-brew--night;
+			border-color: color.adjust(vars.$rgb-class-variant-brew--night, $lightness: - vars.$pct-darken-border);
 
 			&:active,
 			&:focus,
 			&:hover,
 			&:active:focus,
 			&:active:hover {
-				color: white;
-				background: darken($rgb-class-variant-brew--night, $pct-darken-active);
-				border-color: darken($rgb-class-variant-brew--night, $pct-darken-border--active);
+				color: #fff;
+				background: color.adjust(vars.$rgb-class-variant-brew--night, $lightness: - vars.$pct-darken-active);
+				border-color: color.adjust(vars.$rgb-class-variant-brew--night, $lightness: - vars.$pct-darken-border--active);
 			}
 		}
 	}
@@ -402,8 +405,8 @@
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
-			color: $rgb-class-variant--night;
-			border-bottom-color: $rgb-class-variant--night;
+			color: vars.$rgb-class-variant--night;
+			border-bottom-color: vars.$rgb-class-variant--night;
 		}
 	}
 
@@ -411,8 +414,8 @@
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
-			color: $rgb-class-ua--night;
-			border-bottom-color: $rgb-class-ua--night;
+			color: vars.$rgb-class-ua--night;
+			border-bottom-color: vars.$rgb-class-ua--night;
 		}
 	}
 
@@ -420,8 +423,8 @@
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
-			color: $rgb-subclass--night-stale;
-			border-bottom-color: $rgb-subclass--night-stale;
+			color: vars.$rgb-subclass--night-stale;
+			border-bottom-color: vars.$rgb-subclass--night-stale;
 		}
 	}
 
@@ -429,8 +432,8 @@
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
-			color: $rgb-subclass-ua--night-stale;
-			border-bottom-color: $rgb-subclass-ua--night-stale;
+			color: vars.$rgb-subclass-ua--night-stale;
+			border-bottom-color: vars.$rgb-subclass-ua--night-stale;
 		}
 	}
 
@@ -438,8 +441,8 @@
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
-			color: $rgb-subclass--night;
-			border-bottom-color: $rgb-subclass--night;
+			color: vars.$rgb-subclass--night;
+			border-bottom-color: vars.$rgb-subclass--night;
 		}
 	}
 
@@ -447,8 +450,8 @@
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
-			color: $rgb-subclass-ua--night;
-			border-bottom-color: $rgb-subclass-ua--night;
+			color: vars.$rgb-subclass-ua--night;
+			border-bottom-color: vars.$rgb-subclass-ua--night;
 		}
 	}
 
@@ -456,8 +459,8 @@
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
-			color: $rgb-class-brew--night;
-			border-bottom-color: $rgb-class-brew--night;
+			color: vars.$rgb-class-brew--night;
+			border-bottom-color: vars.$rgb-class-brew--night;
 		}
 	}
 
@@ -465,8 +468,8 @@
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
-			color: $rgb-class-variant-brew--night;
-			border-bottom-color: $rgb-class-variant-brew--night;
+			color: vars.$rgb-class-variant-brew--night;
+			border-bottom-color: vars.$rgb-class-variant-brew--night;
 		}
 	}
 
@@ -474,8 +477,8 @@
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
-			color: $rgb-class-variant-brew--night;
-			border-bottom-color: $rgb-class-variant-brew--night;
+			color: vars.$rgb-class-variant-brew--night;
+			border-bottom-color: vars.$rgb-class-variant-brew--night;
 		}
 	}
 
@@ -483,8 +486,8 @@
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
-			color: $rgb-class-variant--night;
-			border-bottom-color: $rgb-class-variant--night;
+			color: vars.$rgb-class-variant--night;
+			border-bottom-color: vars.$rgb-class-variant--night;
 		}
 	}
 
@@ -492,8 +495,8 @@
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
-			color: $rgb-class-ua--night;
-			border-bottom-color: $rgb-class-ua--night;
+			color: vars.$rgb-class-ua--night;
+			border-bottom-color: vars.$rgb-class-ua--night;
 		}
 	}
 
@@ -501,8 +504,8 @@
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
-			color: $rgb-class-variant-brew--night;
-			border-bottom-color: $rgb-class-variant-brew--night;
+			color: vars.$rgb-class-variant-brew--night;
+			border-bottom-color: vars.$rgb-class-variant-brew--night;
 		}
 	}
 
@@ -510,8 +513,8 @@
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
-			color: $rgb-class-ua--night;
-			border-bottom-color: $rgb-class-ua--night;
+			color: vars.$rgb-class-ua--night;
+			border-bottom-color: vars.$rgb-class-ua--night;
 		}
 	}
 
@@ -519,8 +522,8 @@
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
-			color: $rgb-class-brew--night;
-			border-bottom-color: $rgb-class-brew--night;
+			color: vars.$rgb-class-brew--night;
+			border-bottom-color: vars.$rgb-class-brew--night;
 		}
 	}
 	// endregion
@@ -528,27 +531,25 @@
 // endregion
 
 // region class table
-@import "includes/classes-table";
-
 .night-mode {
 	.cls-tbl {
-		background: $rgb-bg--night;
+		background: vars.$rgb-bg--night;
 
 		> tbody > tr > th {
-			color: $rgb-font--night;
+			color: vars.$rgb-font--night;
 		}
 
 		&__ {
 			&disp-name {
-				color: $rgb-font--night;
+				color: vars.$rgb-font--night;
 			}
 
 			&col-group::after {
-				border-color: $rgb-border-grey--night;
+				border-color: vars.$rgb-border-grey--night;
 			}
 
 			&stripe-odd:nth-child(odd) {
-				background: $rgb-stripe-grey;
+				background: vars.$rgb-stripe-grey;
 			}
 		}
 	}
@@ -568,7 +569,7 @@
 		cursor: pointer;
 		font-size: initial;
 		font-weight: initial;
-		color: $rgb-off-black;
+		color: vars.$rgb-off-black;
 	}
 
 	&section {
@@ -588,7 +589,7 @@
 .night-mode {
 	.cls-side__ {
 		&btn-toggle {
-			color: $rgb-font--night;
+			color: vars.$rgb-font--night;
 		}
 	}
 }
@@ -599,7 +600,7 @@
 	&wrp {
 		align-items: baseline;
 
-		@media (max-width: $width-screen-md) {
+		@media (max-width: vars.$width-screen-md) {
 			flex-direction: column !important;
 		}
 	}
@@ -618,7 +619,7 @@
 .cls-main__ {
 	&msg-no-content {
 		height: 40px;
-		color: $rgb-name-red;
+		color: vars.$rgb-name-red;
 		font-family: "Times New Roman", serif;
 		font-variant: small-caps;
 		font-weight: 500;
@@ -638,7 +639,7 @@
 
 .night-mode .cls-main__ {
 	&msg-no-content {
-		color: $rgb-name-red--night;
+		color: vars.$rgb-name-red--night;
 	}
 }
 // endregion
@@ -646,7 +647,7 @@
 // region comparison view
 .cls-comp__wrp-features {
 	width: 400px;
-	max-width: calc(100vw - #{2 * $spacer});
+	max-width: calc(100vw - #{2 * vars.$spacer});
 }
 // endregion
 
@@ -654,7 +655,7 @@
 .cls-bkmv__ {
 	&wrp-tabs {
 		background-color: #eee;
-		border-bottom: 1px solid $rgb-border-grey;
+		border-bottom: 1px solid vars.$rgb-border-grey;
 	}
 
 	&btn-tab {
@@ -663,9 +664,9 @@
 		padding: 2px 6px;
 		cursor: pointer;
 		user-select: none;
-		border-right: 1px solid $rgb-border-grey;
-		border-left: 1px solid $rgb-border-grey;
-		border-top: 1px solid $rgb-border-grey;
+		border-right: 1px solid vars.$rgb-border-grey;
+		border-left: 1px solid vars.$rgb-border-grey;
+		border-top: 1px solid vars.$rgb-border-grey;
 		border-top-right-radius: 4px;
 		border-top-left-radius: 4px;
 	}
@@ -673,7 +674,7 @@
 	&wrp-level {
 		z-index: 1;
 		left: -1px;
-		background: $rgb-bg--alt;
+		background: vars.$rgb-bg--alt;
 	}
 
 	&disp-level {
@@ -683,30 +684,30 @@
 
 	// region TODO are these used?
 	&btn-tab.active {
-		background: $rgb-active-blue;
-		color: white;
+		background: vars.$rgb-active-blue;
+		color: #fff;
 	}
 
 	&btn-tab.active {
-		border-color: darken($rgb-active-blue, $pct-darken-border);
+		border-color: color.adjust(vars.$rgb-active-blue, $lightness: - vars.$pct-darken-border);
 	}
 
 	&btn-tab.active.spicy-sauce {
-		background: $rgb-subclass-ua;
-		color: white;
+		background: vars.$rgb-subclass-ua;
+		color: #fff;
 	}
 
 	&btn-tab.active.spicy-sauce {
-		border-color: darken($rgb-subclass-ua, $pct-darken-border);
+		border-color: color.adjust(vars.$rgb-subclass-ua, $lightness: - vars.$pct-darken-border);
 	}
 
 	&btn-tab.active.refreshing-brew {
-		background: $rgb-class-brew;
-		color: white;
+		background: vars.$rgb-class-brew;
+		color: #fff;
 	}
 
 	&btn-tab.active.refreshing-brew {
-		border-color: darken($rgb-class-brew, $pct-darken-border);
+		border-color: color.adjust(vars.$rgb-class-brew, $lightness: - vars.$pct-darken-border);
 	}
 	// endregion
 }
@@ -714,15 +715,15 @@
 .night-mode .cls-bkmv__ {
 	&wrp-tabs {
 		background-color: #222;
-		border-color: $rgb-border-grey--night;
+		border-color: vars.$rgb-border-grey--night;
 	}
 
 	&btn-tab {
-		border-color: $rgb-border-grey--night;
+		border-color: vars.$rgb-border-grey--night;
 	}
 
 	&wrp-level {
-		background: $rgb-bg--alt-night;
+		background: vars.$rgb-bg--alt-night;
 	}
 }
 // endregion
@@ -778,15 +779,15 @@
 		}
 
 		&item {
-			@include overflow-dots();
+			@include vars.mix-overflow-dots;
 
 			cursor: pointer;
 			user-select: none;
 			max-height: 20px;
-			color: $rgb-name-red;
+			color: vars.$rgb-name-red;
 
 			&:hover {
-				background: lightgrey;
+				background: #d3d3d3;
 			}
 
 			&:active {
@@ -796,59 +797,59 @@
 			// region Header coloring
 			// `feature-<variant>-<ua|brew>-<subclass>-<reprint>`
 			&--feature-variant-subclass {
-				color: $rgb-class-variant;
+				color: vars.$rgb-class-variant;
 			}
 
 			&--feature-variant-ua-subclass {
-				color: $rgb-class-ua;
+				color: vars.$rgb-class-ua;
 			}
 
 			&--feature-subclass-reprint {
-				color: $rgb-subclass--stale;
+				color: vars.$rgb-subclass--stale;
 			}
 
 			&--feature-ua-subclass-reprint {
-				color: $rgb-subclass-ua--stale;
+				color: vars.$rgb-subclass-ua--stale;
 			}
 
 			&--feature-subclass {
-				color: $rgb-subclass;
+				color: vars.$rgb-subclass;
 			}
 
 			&--feature-ua-subclass {
-				color: $rgb-subclass-ua;
+				color: vars.$rgb-subclass-ua;
 			}
 
 			&--feature-brew-subclass {
-				color: $rgb-class-brew;
+				color: vars.$rgb-class-brew;
 			}
 
 			&--feature-brew-subclass-reprint {
-				color: $rgb-class-variant-brew;
+				color: vars.$rgb-class-variant-brew;
 			}
 
 			&--feature-variant-brew-subclass {
-				color: $rgb-class-variant-brew;
+				color: vars.$rgb-class-variant-brew;
 			}
 
 			&--feature-variant {
-				color: $rgb-class-variant;
+				color: vars.$rgb-class-variant;
 			}
 
 			&--feature-variant-ua {
-				color: $rgb-class-ua;
+				color: vars.$rgb-class-ua;
 			}
 
 			&--feature-variant-brew {
-				color: $rgb-class-variant-brew;
+				color: vars.$rgb-class-variant-brew;
 			}
 
 			&--feature-ua {
-				color: $rgb-class-ua;
+				color: vars.$rgb-class-ua;
 			}
 
 			&--feature-brew {
-				color: $rgb-class-brew;
+				color: vars.$rgb-class-brew;
 			}
 			// endregion
 
@@ -875,85 +876,85 @@
 
 		&--active,
 		&:hover {
-			color: $rgb-font--night;
+			color: vars.$rgb-font--night;
 		}
 	}
 
 	&item {
-		color: $rgb-name-red--night;
+		color: vars.$rgb-name-red--night;
 
 		&:hover {
-			background: $rgb-off-black;
+			background: vars.$rgb-off-black;
 		}
 
 		&:active {
-			color: white;
+			color: #fff;
 		}
 
 		// region Header coloring
 		// `feature-<variant>-<ua|brew>-<subclass>-<reprint>`
 		&--feature-variant-subclass {
-			color: $rgb-class-variant--night;
+			color: vars.$rgb-class-variant--night;
 		}
 
 		&--feature-variant-ua-subclass {
-			color: $rgb-class-ua--night;
+			color: vars.$rgb-class-ua--night;
 		}
 
 		&--feature-subclass-reprint {
-			color: $rgb-subclass--night-stale;
+			color: vars.$rgb-subclass--night-stale;
 		}
 
 		&--feature-ua-subclass-reprint {
-			color: $rgb-subclass-ua--night-stale;
+			color: vars.$rgb-subclass-ua--night-stale;
 		}
 
 		&--feature-brew-subclass-reprint {
-			color: $rgb-class-variant-brew--night;
+			color: vars.$rgb-class-variant-brew--night;
 		}
 
 		&--feature-subclass {
-			color: $rgb-subclass--night;
+			color: vars.$rgb-subclass--night;
 		}
 
 		&--feature-ua-subclass {
-			color: $rgb-subclass-ua--night;
+			color: vars.$rgb-subclass-ua--night;
 		}
 
 		&--feature-ua-subclass-reprint {
-			color: $rgb-subclass-ua--stale;
+			color: vars.$rgb-subclass-ua--stale;
 		}
 
 		&--feature-brew-subclass {
-			color: $rgb-class-brew--night;
+			color: vars.$rgb-class-brew--night;
 		}
 
 		&--feature-brew-subclass-reprint {
-			color: $rgb-class-variant-brew;
+			color: vars.$rgb-class-variant-brew;
 		}
 
 		&--feature-variant-brew-subclass {
-			color: $rgb-class-variant-brew--night;
+			color: vars.$rgb-class-variant-brew--night;
 		}
 
 		&--feature-variant {
-			color: $rgb-class-variant--night;
+			color: vars.$rgb-class-variant--night;
 		}
 
 		&--feature-variant-ua {
-			color: $rgb-class-ua--night;
+			color: vars.$rgb-class-ua--night;
 		}
 
 		&--feature-variant-brew {
-			color: $rgb-class-variant-brew--night;
+			color: vars.$rgb-class-variant-brew--night;
 		}
 
 		&--feature-ua {
-			color: $rgb-class-ua--night;
+			color: vars.$rgb-class-ua--night;
 		}
 
 		&--feature-brew {
-			color: $rgb-class-brew--night;
+			color: vars.$rgb-class-brew--night;
 		}
 		// endregion
 	}

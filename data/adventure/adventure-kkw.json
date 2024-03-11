@@ -834,6 +834,124 @@
 					]
 				}
 			]
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						{
+							"type": "item",
+							"name": "Lead Designers",
+							"entries": [
+								"James Wyatt, Jeremy Crawford"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Adventure Writer",
+							"entries": [
+								"Chris Tulach"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Designers",
+							"entries": [
+								"Ari Levitch, Ben Petrisor, Mike Mearls, Robert J. Schwalb"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Managing Editor",
+							"entries": [
+								"Jeremy Crawford"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Editors",
+							"entries": [
+								"Christopher Perkins, Kim Mohan, Michele Carter, Phil Athans, Kate Welch"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Art Direction",
+							"entries": [
+								"Shauna Narciso, Ari Levitch"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Graphic Designer",
+							"entries": [
+								"Trish Yochum, Emi Tanji"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Additional Art Direction",
+							"entries": [
+								"Jeremy Jarvis, Jeremy Cranford, Pamela Ansman-Wolfe, Taylor Ingvarsson, Dawn Murin, Cynthia Sheppard, Andrew Vallas, Mark Winters"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Cartography",
+							"entries": [
+								"Dyson Logos"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Interior Illustrators",
+							"entries": [
+								"Noah Bradley, Mathias Kollros, Karl Kopinski, Svetlin Velinov, Kev Walker, Richard Wright, Kristen Zirngibl"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Ravnica World Design",
+							"entries": [
+								"Doug Beyer, Sam Burley, Jeremy Cranford, Kelly Digges, Brady Dommermuth, Jenna Helland, Cory H. Herndon, Jeremy Jarvis, Kimberly Kreines, Chris L'etoile, Adam Lee, Ari Levitch, Alison Lührs, Shawn Main, Dawn Murin, Richard Whitters, Mark Winters, James Wyatt"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Producer",
+							"entries": [
+								"Matt Warren, Dan Tovar"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Imaging Technicians",
+							"entries": [
+								"Kevin Yee"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Art Administration",
+							"entries": [
+								"David Gershman"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Other D&D Team Members",
+							"entries": [
+								"Bart Carroll, Kate Irwin, Christopher Lindsay, Shelly Mazzanoble, Hilary Ross, Liz Schuh, Nathan Stewart, Greg Tito"
+							]
+						}
+					]
+				}
+			]
 		}
 	]
 }

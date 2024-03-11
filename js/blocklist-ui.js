@@ -220,10 +220,10 @@ class BlocklistUi {
 			});
 
 		const $wrpFilterTools = $$`<div class="input-group input-group--bottom ve-flex no-shrink">
-			<button class="col-4 sort btn btn-default btn-xs ve-grow" data-sort="source">Source</button>
-			<button class="col-2 sort btn btn-default btn-xs" data-sort="category">Category</button>
-			<button class="col-5 sort btn btn-default btn-xs" data-sort="name">Name</button>
-			<button class="col-1 sort btn btn-default btn-xs" disabled>&nbsp;</button>
+			<button class="ve-col-4 sort btn btn-default btn-xs ve-grow" data-sort="source">Source</button>
+			<button class="ve-col-2 sort btn btn-default btn-xs" data-sort="category">Category</button>
+			<button class="ve-col-5 sort btn btn-default btn-xs" data-sort="name">Name</button>
+			<button class="ve-col-1 sort btn btn-default btn-xs" disabled>&nbsp;</button>
 		</div>`;
 
 		const $wrpList = $(`<div class="list-display-only smooth-scroll overflow-y-auto h-100 min-h-0"></div>`);
@@ -533,10 +533,10 @@ class BlocklistUi {
 			});
 
 		const $ele = $$`<div class="${this._addListItem_getItemStyles()}">
-			<span class="col-4 ve-text-center">${sourceFull}</span>
-			<span class="col-2 ve-text-center">${display.displayCategory}</span>
-			<span class="col-5 ve-text-center">${displayName}</span>
-			<span class="col-1 ve-text-center">${$btnRemove}</span>
+			<span class="ve-col-4 ve-text-center">${sourceFull}</span>
+			<span class="ve-col-2 ve-text-center">${display.displayCategory}</span>
+			<span class="ve-col-5 ve-text-center">${displayName}</span>
+			<span class="ve-col-1 ve-text-center">${$btnRemove}</span>
 		</div>`;
 
 		const listItem = new ListItem(

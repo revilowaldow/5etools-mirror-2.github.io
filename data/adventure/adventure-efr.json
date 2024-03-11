@@ -1933,6 +1933,183 @@
 					]
 				}
 			]
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Lead Designers:",
+							"entry": "Jeremy Crawford, James Wyatt, Keith Baker"
+						},
+						{
+							"type": "item",
+							"name": "Designers:",
+							"entry": "Ben Petrisor, Bill Benham, Dan Dillon, James Introcaso, Adam Lee"
+						},
+						{
+							"type": "item",
+							"name": "Story Consultants:",
+							"entry": "Joe Manganiello, Jim Zub"
+						},
+						{
+							"type": "item",
+							"name": "Developers:",
+							"entry": "Jeremy Crawford, Dan Dillon, Mike Mearls, Christopher Perkins, Ben Petrisor"
+						},
+						{
+							"type": "item",
+							"name": "Editors:",
+							"entry": "Christopher Perkins, F. Wesley Schneider, Michele Carter, Kim Mohan, Scott Fitzgerald Gray"
+						},
+						{
+							"type": "item",
+							"name": "Managing Editor:",
+							"entry": "Christopher Perkins"
+						},
+						{
+							"type": "item",
+							"name": "Art Director:",
+							"entry": "Kate Irwin"
+						},
+						{
+							"type": "item",
+							"name": "Graphic Designers:",
+							"entry": "Trish Yochum"
+						},
+						{
+							"type": "item",
+							"name": "Concept Art Director:",
+							"entry": "Richard Whitters"
+						},
+						{
+							"type": "item",
+							"name": "Creative Art Director:",
+							"entry": "Shauna Narciso"
+						},
+						{
+							"type": "item",
+							"name": "Cover Illustrators:",
+							"entry": "Wesley Burt, Vance Kelly"
+						},
+						{
+							"type": "item",
+							"name": "Interior Illustrators:",
+							"entry": "Dave Allsop, John Avon, Mark Behm, Eric Belisle, Zoltan Boros, Colin Boyer, Christopher Burdett, Paul Scott Canavan, Sidharth Chaturvedi, Chippy, Adam Cook, Eric Deschamps, Olga Drebas, Jason A. Engle, Caroline Gariba, Tomas Giorello, Brian Hagan, Leesha Hannigan, Suzanne Helmigh, Fred Hooper, Lake Hurwitz, Miles Johnston, Andrew Jones, Sam Keiser, Julian Kok, Michael Komarck, Ron Lemen, Titus Lunter, Howard Lyon, Efflam Mercier, Lee Moyer, Ben Oliver, Lucio Parillo, Claudio Pozas, Steve Prescott, Vincent Proce, Jenn Ravenna, Wayne Reynolds, Dan Scott, Craig J Spearing, Zack Stella, Matt Stewart, Philip Straub, Matias Tapia, Mark Tedin, Cory Trego-Erdner, Brian Valenzuela, Brian Valeza, Charlie Wen, Shawn Wood, Ben Wootten, Kieran Yanner, James Zhang"
+						},
+						{
+							"type": "item",
+							"name": "Concept Illustrators:",
+							"entry": "Richard Whitters, Shawn Wood"
+						},
+						{
+							"type": "item",
+							"name": "Infernal Font Designer:",
+							"entry": "Daniel Reeve"
+						},
+						{
+							"type": "item",
+							"name": "Interior Cartographers:",
+							"entry": "Dyson Logos, Lee Moyer"
+						},
+						{
+							"type": "item",
+							"name": "Poster Map Cartographer:",
+							"entry": "Lee Moyer"
+						},
+						{
+							"type": "item",
+							"name": "Producers:",
+							"entry": "Dan Tovar, Bill Benham"
+						},
+						{
+							"type": "item",
+							"name": "Product Engineer:",
+							"entry": "Cynda Callaway"
+						},
+						{
+							"type": "item",
+							"name": "Imaging Technicians:",
+							"entry": "Sven Bolen, Carmen Cheung, Kevin Yee"
+						},
+						{
+							"type": "item",
+							"name": "Art Administration:",
+							"entry": "David Gershman"
+						},
+						{
+							"type": "item",
+							"name": "Prepress Specialist:",
+							"entry": "Jefferson Dunlap"
+						},
+						{
+							"type": "item",
+							"name": "Franchise & Global Brand Strategy:",
+							"entry": "Nathan Stewart"
+						},
+						{
+							"type": "item",
+							"name": "Director Licensing & Publishing:",
+							"entry": "Liz Schuh"
+						},
+						{
+							"type": "item",
+							"name": "Licensing Manager:",
+							"entry": "Hilary Ross"
+						},
+						{
+							"type": "item",
+							"name": "Marketing and Communications:",
+							"entry": "Bart Carroll, Pelham Greene, Greg Tito, Anna Vo"
+						},
+						{
+							"type": "item",
+							"name": "Brand Manager:",
+							"entry": "Shelly Mazzanoble"
+						},
+						{
+							"type": "item",
+							"name": "Game Designers:",
+							"entry": "Ari Levitch, Kate Welch"
+						},
+						{
+							"type": "item",
+							"name": "Art Director:",
+							"entry": "Emi Tanji"
+						},
+						{
+							"type": "item",
+							"name": "Product Marketing Specialist:",
+							"entry": "Chris Lindsay"
+						},
+						{
+							"type": "item",
+							"name": "The following D&D books provided material and inspiration:",
+							"entries": [
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										"Baker, Keith. Wayfinder's Guide to Eberron. 2018.",
+										"Baker, Keith, Bill Slavicsek & James Wyatt. Eberron Campaign Setting. 2004.",
+										"Baker, Keith & James Wyatt. Sharn: City of Towers. 2004.",
+										"Noonan, David, Frank Brunner & Rich Burlew. Explorer's Handbook. 2005.",
+										"Slavicsek, Bill, David Noonan & Christopher Perkins. Five Nations. 2005.",
+										"Wyatt, James, Keith Baker, Ari Marmell, Robert J. Schwalb & Chris Sims. Eberron Campaign Guide. 2009.",
+										"Wyatt, James, Wolfgang Baur & Ari Marmell. The Forge of War. 2007."
+									]
+								}
+							]
+						},
+						"Many thanks to the hundreds of fans who playtested this book!"
+					]
+				}
+			]
 		}
 	]
 }

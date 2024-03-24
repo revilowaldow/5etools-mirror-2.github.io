@@ -1,14 +1,14 @@
 {
 	"_meta": {
-		"otherSources": {
-			"monster": {
-				"MTF": "TTP"
-			}
-		},
 		"dependencies": {
 			"monster": [
 				"MM"
 			]
+		},
+		"otherSources": {
+			"monster": {
+				"MTF": "TTP"
+			}
 		}
 	},
 	"monster": [

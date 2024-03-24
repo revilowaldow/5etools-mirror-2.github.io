@@ -2,6 +2,12 @@
 
 class AcConvert {
 	static tryPostProcessAc (mon, cbMan, cbErr) {
+		const traitNames = new Set(
+			(mon.trait || [])
+				.map(it => it.name ? it.name.toLowerCase() : null)
+				.filter(Boolean),
+		);
+
 		if (this._tryPostProcessAc_special(mon, cbMan, cbErr)) return;
 
 		const nuAc = [];
@@ -114,14 +120,14 @@ class AcConvert {
 
 						// everything else
 						default: {
-							const simpleFrom = this._getSimpleFrom(fromLow);
+							const simpleFrom = this._getSimpleFrom({fromLow, traitNames});
 							if (simpleFrom) return froms.push(simpleFrom);
 
 							// Special parsing for barding, as the pre-barding armor type might not exactly match our known
 							//   barding names (e.g. "chainmail barding")
 							const mWithBarding = /^(?<ac>\d+) with (?<name>(?<type>.*?) barding)$/.exec(fromLow);
 							if (mWithBarding) {
-								let simpleFromBarding = this._getSimpleFrom(mWithBarding.groups.type);
+								let simpleFromBarding = this._getSimpleFrom({fromLow: mWithBarding.groups.type, traitNames});
 								if (simpleFromBarding) {
 									simpleFromBarding = simpleFromBarding
 										.replace(/{@item ([^}]+)}/, (...m) => {
@@ -203,7 +209,7 @@ class AcConvert {
 		return false;
 	}
 
-	static _getSimpleFrom (fromLow) {
+	static _getSimpleFrom ({fromLow, traitNames}) {
 		switch (fromLow) {
 			// region unhandled/other
 			case "unarmored defense":
@@ -323,6 +329,10 @@ class AcConvert {
 				if (/scraps of .*?armor/i.test(fromLow)) { // e.g. "scraps of hide armor"
 					return fromLow;
 				}
+
+				if (traitNames.has(fromLow)) {
+					return fromLow;
+				}
 			}
 		}
 	}
@@ -371,9 +381,19 @@ class _CreatureImmunityResistanceVulnerabilityConverterBase {
 	static _getSplitInput ({ipt}) {
 		return ipt
 			.toLowerCase()
-			.split(";")
+
+			// Split e.g.
+			// "Bludgeoning and Piercing from nonmagical attacks, Acid, Fire, Lightning"
+			.split(/(.*\b(?:from|by)\b[^,;.!?]+)(?:[,;] ?)?/g)
 			.map(it => it.trim())
-			.filter(Boolean);
+			.filter(Boolean)
+
+			// Split e.g.
+			// "poison; bludgeoning, piercing, and slashing from nonmagical attacks"
+			.flatMap(pt => pt.split(";"))
+			.map(it => it.trim())
+			.filter(Boolean)
+		;
 	}
 
 	/**
@@ -1343,9 +1363,14 @@ class MiscTag {
 globalThis.MiscTag = MiscTag;
 
 class SpellcastingTraitConvert {
+	static SPELL_SRC_MAP = {};
+	static SPELL_SRD_MAP = {};
+
 	static init (spellData) {
-		// reversed so official sources take precedence over 3pp
-		spellData.forEach(s => SpellcastingTraitConvert.SPELL_SRC_MAP[s.name.toLowerCase()] = s.source);
+		spellData.forEach(s => {
+			this.SPELL_SRC_MAP[s.name.toLowerCase()] = s.source;
+			if (typeof s.srd === "string") this.SPELL_SRD_MAP[s.srd.toLowerCase()] = s.name;
+		});
 	}
 
 	static tryParseSpellcasting (ent, {isMarkdown, cbErr, displayAs, actions, reactions}) {
@@ -1490,12 +1515,24 @@ class SpellcastingTraitConvert {
 			str = str.substring(0, ixParenOpen);
 		}
 
+		str = this._parseSpell_getNonSrdSpellName(str);
+
 		return [
 			`{@spell ${str}${this._parseSpell_getSourcePart(str)}}`,
 			ptsSuffix.join(" "),
 		]
 			.filter(Boolean)
 			.join(" ");
+	}
+
+	static _parseSpell_getNonSrdSpellName (spellName) {
+		const nonSrdName = SpellcastingTraitConvert.SPELL_SRD_MAP[spellName.toLowerCase().trim()];
+		if (!nonSrdName) return spellName;
+
+		if (spellName.toSpellCase() === spellName) return nonSrdName.toSpellCase();
+		if (spellName.toLowerCase() === spellName) return nonSrdName.toLowerCase();
+		if (spellName.toTitleCase() === spellName) return nonSrdName.toTitleCase();
+		return spellName;
 	}
 
 	static _parseSpell_getSourcePart (spellName) {
@@ -1583,7 +1620,6 @@ class SpellcastingTraitConvert {
 		});
 	}
 }
-SpellcastingTraitConvert.SPELL_SRC_MAP = {};
 
 globalThis.SpellcastingTraitConvert = SpellcastingTraitConvert;
 

@@ -397,7 +397,7 @@
 				{
 					"name": "Pseudopod",
 					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d6 + 4}) bludgeoning damage plus 7 ({@damage 2d6}) psychic damage."
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage plus 7 ({@damage 2d6}) psychic damage."
 					]
 				},
 				{
@@ -26907,7 +26907,7 @@
 				{
 					"name": "Acid Breath {@recharge 5}",
 					"entries": [
-						"The neothelid exhales acid in a 60- foot cone. Each creature in that area must make a {@dc 18} Dexterity saving throw, taking 35 ({@damage 10d6}) acid damage on a failed save, or half as much damage on a successful one."
+						"The neothelid exhales acid in a 60-foot cone. Each creature in that area must make a {@dc 18} Dexterity saving throw, taking 35 ({@damage 10d6}) acid damage on a failed save, or half as much damage on a successful one."
 					]
 				}
 			],
@@ -31151,7 +31151,7 @@
 								],
 								[
 									"21\u201325",
-									"The target's eyes become beacons, filling a 15- foot cone with dim light when they are open."
+									"The target's eyes become beacons, filling a 15-foot cone with dim light when they are open."
 								],
 								[
 									"26\u201330",

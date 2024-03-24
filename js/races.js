@@ -1,12 +1,6 @@
 "use strict";
 
 class RacesSublistManager extends SublistManager {
-	constructor () {
-		super({
-			sublistClass: "subraces",
-		});
-	}
-
 	static get _ROW_TEMPLATE () {
 		return [
 			new SublistCellTemplate({
@@ -72,8 +66,6 @@ class RacesPage extends ListPage {
 			pFnGetFluff: Renderer.race.pGetFluff.bind(Renderer.race),
 
 			pageFilter,
-
-			listClass: "races",
 
 			dataProps: ["race"],
 

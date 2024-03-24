@@ -58,6 +58,7 @@
 </head>
 
 <body>
+
 <div class="cancer__wrp-sidebar-rhs cancer__anchor"><div class="cancer__disp-cancer"></div><div class="cancer__sidebar-rhs-inner cancer__sidebar-rhs-inner--top"><!--5ETOOLS_AD_RIGHT_1--></div><div class="cancer__sidebar-rhs-inner cancer__sidebar-rhs-inner--bottom"><!--5ETOOLS_AD_RIGHT_2--></div></div>
 
 <div class="viewport-wrapper">
@@ -75,41 +76,42 @@
 
 	<div class="view-col-group--cancer h-100 mh-0">
 		<div class="container view-col-wrapper view-col-wrapper--cancer">
-			<div class="view-col" id="listcontainer" style="flex: 4">
+			<div class="view-col ve-flex-4" id="listcontainer">
 				<div class="lst__form-top" id="filter-search-group">
 					<div class="w-100 relative">
 						<input type="search" id="lst__search" autocomplete="off" autocapitalize="off" spellcheck="false" class="search form-control lst__search lst__search--no-border-h">
 						<div id="lst__search-glass" class="lst__wrp-search-glass no-events ve-flex-vh-center"><span class="glyphicon glyphicon-search"></span></div>
 						<div class="lst__wrp-search-visible no-events ve-flex-vh-center"></div>
 					</div>
-					<button class="btn btn-default" id="reset">Reset</button>
+					<button type="button" class="btn btn-default" id="reset">Reset</button>
 				</div>
 
 				<div id="filtertools" class="input-group input-group--bottom ve-flex no-shrink">
-					<button class="ve-col-6 sort btn btn-default btn-xs" data-sort="name">Name</button>
-					<button class="ve-col-4 sort btn btn-default btn-xs" data-sort="type">Category</button>
-					<button class="sort btn btn-default btn-xs ve-grow" data-sort="source">Source</button>
+					<button type="button" class="ve-col-6 sort btn btn-default btn-xs" data-sort="name">Name</button>
+					<button type="button" class="ve-col-4 sort btn btn-default btn-xs" data-sort="type">Category</button>
+					<button type="button" class="sort btn btn-default btn-xs ve-grow" data-sort="source">Source</button>
 				</div>
 
-				<div class="list list--stats recipes"></div>
+				<div id="list" class="list list--stats"></div>
 			</div>
 
-			<div id="contentwrapper" class="view-col" style="flex: 7">
+			<div class="cancer__wrp-mobile-1 cancer__anchor"><div class="cancer__disp-cancer"></div><!--5ETOOLS_AD_MOB_PLAYER_1--></div>
+
+			<div id="contentwrapper" class="view-col ve-flex-7">
 				<div id="sublistcontainer" class="sublist sublist--resizable no-print">
 					<div id="sublistsort" class="btn-group sublist__wrp-cols">
-						<button class="ve-col-9 sort btn btn-default btn-xs" data-sort="name">Name</button>
-						<button class="ve-col-3 sort btn btn-default btn-xs" data-sort="type">Category</button>
+						<button type="button" class="ve-col-9 sort btn btn-default btn-xs" data-sort="name">Name</button>
+						<button type="button" class="ve-col-3 sort btn btn-default btn-xs" data-sort="type">Category</button>
 					</div>
-					<div class="list subrecipes">
-						<!-- populate with JS -->
-					</div>
+
+					<div id="sublist" class="list"></div>
 				</div>
 
 				<div class="wrp-stat-tab" id="stat-tabs">
 					<div id="tabs-right"></div>
 				</div>
 
-				<div class="wrp-stats-table wrp-stats-table--book">
+				<div id="wrp-pagecontent" class="wrp-stats-table wrp-stats-table--book">
 					<table id="pagecontent" class="w-100 stats stats--book recipes__tbl-recipes">
 						<tr><th class="border" colspan="6"></th></tr>
 						<tr><td colspan="6" class="initial-message">Select an entry from the list to view it here</td></tr>
@@ -119,13 +121,16 @@
 
 				<div class="split-v-center mt-2 no-print">
 					<div class="ve-small ve-muted italic mr-2" title="We gratefully accept any and all corrections in our Discord, a link to which can be found on the homepage.">Please note that allergen and other dietary information may be incomplete and/or inaccurate.</div>
-					<button class="btn btn-xs btn-info" id="manage-brew">Manage Homebrew</button>
+					<button type="button" class="btn btn-xs btn-info" id="manage-brew">Manage Homebrew</button>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>    <!--5ETOOLS_SCRIPT_ANCHOR-->
+</div>
+
+<!--5ETOOLS_SCRIPT_ANCHOR-->
 <!--5ETOOLS_AD_ADHESION-->
+
 <script type="text/javascript" src="lib/jquery.js"></script>
 <script type="text/javascript" src="js/parser.js"></script>
 <script type="text/javascript" src="js/utils.js"></script>
@@ -144,10 +149,11 @@
 <script type="text/javascript" src="js/scalecreature.js"></script>
 <script type="text/javascript" src="js/hist.js"></script>
 <script type="text/javascript" src="js/listpage.js"></script>
+<script type="text/javascript" src="js/filter-common.js"></script>
 <script type="text/javascript" src="js/filter-recipes.js"></script>
 <script type="text/javascript" src="js/recipes.js"></script>
 <script type="text/javascript" src="js/list2.js"></script>
 <script type="text/javascript" src="lib/elasticlunr.js"></script>
-</body>
 
+</body>
 </html>

@@ -1,15 +1,6 @@
 "use strict";
 
 class SpellsSublistManager extends SublistManager {
-	constructor () {
-		super({
-			sublistClass: "subspells",
-			sublistListOptions: {
-				fnSort: PageFilterSpells.sortSpells,
-			},
-		});
-	}
-
 	static get _ROW_TEMPLATE () {
 		return [
 			new SublistCellTemplate({
@@ -223,7 +214,6 @@ class SpellsPage extends ListPageMultiSource {
 		super({
 			pageFilter: new PageFilterSpells(),
 
-			listClass: "spells",
 			listOptions: {
 				fnSort: PageFilterSpells.sortSpells,
 			},

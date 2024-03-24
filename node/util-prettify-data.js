@@ -12,8 +12,10 @@ const FILE_BLOCKLIST = new Set([
 	"life.json",
 	"makecards.json",
 	"renderdemo.json",
-	"foundry.json",
 	"makebrew-creature.json",
+	"sources.json",
+	"fluff-index.json",
+	"changelog.json",
 
 	"index-meta.json",
 	"index-props.json",
@@ -41,6 +43,7 @@ const _FILE_PROP_ORDER = [
 
 	"optionalfeature",
 	"optionalfeatureFluff",
+	"foundryOptionalfeature",
 
 	"background",
 	"backgroundFeature",
@@ -168,7 +171,21 @@ const _FILE_PROP_ORDER = [
 	// endregion
 ];
 
-const KEY_BLOCKLIST = new Set(["data", "itemTypeAdditionalEntries", "itemType", "itemProperty", "itemEntry"]);
+const KEY_BLOCKLIST = new Set([
+	"data",
+	"itemTypeAdditionalEntries",
+	"itemType",
+	"itemProperty",
+	"itemEntry",
+	"raceFluffMeta",
+	"linkedLootTables",
+]);
+
+const PRIMITIVE_TYPES = new Set([
+	"boolean",
+	"number",
+	"string",
+]);
 
 const PROPS_TO_UNHANDLED_KEYS = {};
 
@@ -185,6 +202,7 @@ function getFnListSort (prop) {
 		case "makebrewCreatureTrait":
 		case "makebrewCreatureAction":
 		case "action":
+		case "foundryAction":
 		case "background":
 		case "legendaryGroup":
 		case "language":
@@ -199,6 +217,7 @@ function getFnListSort (prop) {
 		case "foundryFeat":
 		case "vehicle":
 		case "vehicleUpgrade":
+		case "foundryVehicleUpgrade":
 		case "backgroundFluff":
 		case "featFluff":
 		case "optionalfeatureFluff":
@@ -210,17 +229,22 @@ function getFnListSort (prop) {
 		case "objectFluff":
 		case "raceFluff":
 		case "item":
+		case "foundryItem":
 		case "baseitem":
 		case "magicvariant":
+		case "foundryMagicvariant":
 		case "itemGroup":
 		case "itemMastery":
 		case "object":
 		case "optionalfeature":
+		case "foundryOptionalfeature":
 		case "psionic":
 		case "reward":
+		case "foundryReward":
 		case "rewardFluff":
 		case "variantrule":
 		case "race":
+		case "foundryRace":
 		case "foundryRaceFeature":
 		case "table":
 		case "trap":
@@ -244,6 +268,7 @@ function getFnListSort (prop) {
 		case "foundryClass":
 			return (a, b) => SortUtil.ascSortDateString(Parser.sourceJsonToDate(b.source), Parser.sourceJsonToDate(a.source)) || SortUtil.ascSortLower(a.name, b.name) || SortUtil.ascSortLower(a.source, b.source);
 		case "subclass":
+		case "foundrySubclass":
 			return (a, b) => SortUtil.ascSortDateString(Parser.sourceJsonToDate(b.source), Parser.sourceJsonToDate(a.source)) || SortUtil.ascSortLower(a.name, b.name);
 		case "classFeature":
 		case "foundryClassFeature":
@@ -277,24 +302,49 @@ function getFnListSort (prop) {
 	}
 }
 
-export const getPrettified = json => {
+export const getPrettified = (json, {isFoundryPrefixKeys = false} = {}) => {
 	let isModified = false;
 
 	// region Sort keys within entities
 	Object.entries(json)
-		.filter(([k, v]) => !KEY_BLOCKLIST.has(k) && v instanceof Array)
+		.filter(([k]) => !KEY_BLOCKLIST.has(k))
 		.forEach(([k, v]) => {
-			if (PropOrder.hasOrder(k)) {
-				PROPS_TO_UNHANDLED_KEYS[k] = PROPS_TO_UNHANDLED_KEYS[k] || new Set();
+			if (v == null || PRIMITIVE_TYPES.has(typeof v)) return;
 
-				json[k] = v.map(it => PropOrder.getOrdered(it, k, {fnUnhandledKey: uk => PROPS_TO_UNHANDLED_KEYS[k].add(uk)}));
+			const kMod = isFoundryPrefixKeys && !k.startsWith("_") ? `foundry${k.uppercaseFirst()}` : k;
 
-				json[k].sort(getFnListSort(k));
-
-				isModified = true;
+			if (!PropOrder.hasOrder(kMod)) {
+				console.warn(`\t\tUnhandled property: "${kMod}"`);
 				return;
 			}
-			console.warn(`\t\tUnhandled property: "${k}"`);
+
+			PROPS_TO_UNHANDLED_KEYS[kMod] = PROPS_TO_UNHANDLED_KEYS[kMod] || new Set();
+
+			if (json[k] instanceof Array) {
+				json[k] = v.map(it => PropOrder.getOrdered(
+					it,
+					kMod,
+					{
+						fnUnhandledKey: uk => {
+							PROPS_TO_UNHANDLED_KEYS[kMod].add(uk);
+						},
+					},
+				));
+
+				json[k].sort(getFnListSort(kMod));
+			} else {
+				json[k] = PropOrder.getOrdered(
+					v,
+					kMod,
+					{
+						fnUnhandledKey: uk => {
+							PROPS_TO_UNHANDLED_KEYS[kMod].add(uk);
+						},
+					},
+				);
+			}
+
+			isModified = true;
 		});
 	// endregion
 
@@ -321,7 +371,12 @@ export const getPrettified = json => {
 export const prettifyFile = file => {
 	console.log(`\tPrettifying ${file}...`);
 	const json = ut.readJson(file);
-	const {json: jsonPrettified, isModified} = getPrettified(json);
+	const {json: jsonPrettified, isModified} = getPrettified(
+		json,
+		{
+			isFoundryPrefixKeys: file.includes("foundry.json") || file.split("/").last().startsWith("foundry-"),
+		},
+	);
 	if (isModified) fs.writeFileSync(file, CleanUtil.getCleanJson(jsonPrettified), "utf-8");
 };
 

@@ -1,12 +1,6 @@
 "use strict";
 
 class RecipesSublistManager extends SublistManager {
-	constructor () {
-		super({
-			sublistClass: "subrecipes",
-		});
-	}
-
 	_getCustomHashId ({entity}) {
 		return Renderer.recipe.getCustomHashId(entity);
 	}
@@ -70,8 +64,6 @@ class RecipesPage extends ListPage {
 			pFnGetFluff,
 
 			pageFilter,
-
-			listClass: "recipes",
 
 			dataProps: ["recipe"],
 

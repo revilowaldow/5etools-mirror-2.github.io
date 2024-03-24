@@ -2,7 +2,7 @@
 
 @use "vars";
 
-@media (max-width: vars.$width-screen-md) {
+@media screen and (width <= #{vars.$width-screen-md}) {
 	.ve-dropdown-menu-filter {
 		max-height: 525px;
 	}
@@ -35,7 +35,7 @@ $flt-ignore--hover: #e6e6e6;
 			font-size: 15px;
 			align-items: center;
 
-			@media only screen and (max-width: vars.$width-screen-sm) {
+			@media screen and (width <= #{vars.$width-screen-sm}) {
 				flex-direction: column;
 
 				&--multi {
@@ -45,13 +45,13 @@ $flt-ignore--hover: #e6e6e6;
 		}
 
 		&h-text {
-			@media only screen and (max-width: vars.$width-screen-sm) {
+			@media screen and (width <= #{vars.$width-screen-sm}) {
 				align-self: flex-start;
 			}
 		}
 
 		&h-wrp-btns-outer {
-			@media only screen and (max-width: vars.$width-screen-sm) {
+			@media screen and (width <= #{vars.$width-screen-sm}) {
 				width: 100%;
 				flex-direction: column;
 				align-items: initial !important;
@@ -64,7 +64,7 @@ $flt-ignore--hover: #e6e6e6;
 		}
 
 		&h-wrp-state-btns-outer {
-			@media only screen and (max-width: vars.$width-screen-sm) {
+			@media screen and (width <= #{vars.$width-screen-sm}) {
 				flex-direction: column;
 
 				> * {
@@ -236,7 +236,7 @@ $flt-ignore--hover: #e6e6e6;
 			border-bottom: vars.$rgb-border-grey 1px dotted;
 			width: 100%;
 
-			@media only screen and (max-width: vars.$width-screen-sm) {
+			@media screen and (width <= #{vars.$width-screen-sm}) {
 				box-shadow: inset 0 0 2px 2px vars.$rgb-border-grey--muted;
 				height: 7px;
 				flex-shrink: 0;

@@ -10616,7 +10616,7 @@
 				{
 					"name": "Storm Breath {@recharge 5}",
 					"entries": [
-						"The stormborn ithjar exhales a 30- foot cone of lightning and thunder. Each creature in that area must make a {@dc 16} Dexterity saving throw. On a failure, a creature takes 31 ({@damage 7d8}) lightning damage and 31 ({@damage 7d8}) thunder damage and falls {@condition prone}. If the save succeeds, the creature takes half the lightning and thunder damage and doesn't fall {@condition prone}. The discharge of this breath weapon is audible for 1 mile outside and 300 feet inside."
+						"The stormborn ithjar exhales a 30-foot cone of lightning and thunder. Each creature in that area must make a {@dc 16} Dexterity saving throw. On a failure, a creature takes 31 ({@damage 7d8}) lightning damage and 31 ({@damage 7d8}) thunder damage and falls {@condition prone}. If the save succeeds, the creature takes half the lightning and thunder damage and doesn't fall {@condition prone}. The discharge of this breath weapon is audible for 1 mile outside and 300 feet inside."
 					]
 				}
 			],

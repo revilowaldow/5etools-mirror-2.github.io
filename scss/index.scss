@@ -1,3 +1,5 @@
+@use "includes/vars";
+
 table.home-table {
 	padding: 0 10px 10px;
 }
@@ -31,7 +33,7 @@ table.home-table td {
 	border-radius: 0;
 }
 
-@media only screen and (width <= 1200px) {
+@media screen and (width <= #{vars.$width-screen-lg}) {
 	.home__btn-page {
 		width: 113px;
 	}
@@ -162,7 +164,7 @@ table.home-table td {
 	display: none;
 }
 
-@media (width <= 991px) {
+@media screen and (width <= #{vars.$width-screen-md}) {
 	.home__split {
 		flex-direction: column;
 	}
@@ -205,7 +207,7 @@ table.home-table td {
 	}
 }
 
-@media (width <= 507px) {
+@media screen and (width <= 507px) {
 	.home__narrow-visible {
 		display: block !important;
 	}

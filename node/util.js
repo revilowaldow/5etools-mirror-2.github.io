@@ -22,13 +22,17 @@ const FILE_EXTENSION_ALLOWLIST = [
 
 const FILE_PREFIX_BLOCKLIST = [
 	"bookref-",
-	"foundry-",
 	"gendata-",
 ];
 
 const DIR_PREFIX_BLOCKLIST = [
+	"_",
+];
+
+const DIR_BLOCKLIST = [
 	".git",
 	".idea",
+	"node_modules",
 ];
 
 /**
@@ -40,6 +44,7 @@ const DIR_PREFIX_BLOCKLIST = [
  * @param [opts.allowlistFileExts] Allowlisted filename extensions (case sensitive).
  * @param [opts.dir] Directory to list.
  * @param [opts.allowlistDirs] Directory allowlist.
+ * @param [opts.blocklistDirs] Directory blocklist.
  */
 function listFiles (opts) {
 	opts = opts || {};
@@ -48,6 +53,7 @@ function listFiles (opts) {
 	opts.blocklistDirPrefixes = opts.blocklistDirPrefixes === undefined ? DIR_PREFIX_BLOCKLIST : opts.blocklistDirPrefixes;
 	opts.allowlistFileExts = opts.allowlistFileExts === undefined ? FILE_EXTENSION_ALLOWLIST : opts.allowlistFileExts;
 	opts.allowlistDirs = opts.allowlistDirs || null;
+	opts.blocklistDirs = opts.blocklistDirs === undefined ? DIR_BLOCKLIST : opts.blocklistDirs;
 
 	const dirContent = fs.readdirSync(opts.dir, "utf8")
 		.filter(file => {
@@ -55,6 +61,7 @@ function listFiles (opts) {
 
 			if (isDirectory(path)) {
 				if (opts.blocklistDirPrefixes != null && opts.blocklistDirPrefixes.some(it => file.startsWith(it))) return false;
+				if (opts.blocklistDirs != null && opts.blocklistDirs.some(it => it === file)) return false;
 				return opts.allowlistDirs ? opts.allowlistDirs.includes(path) : true;
 			}
 

@@ -1,12 +1,6 @@
 "use strict";
 
 class VehiclesSublistManager extends SublistManager {
-	constructor () {
-		super({
-			sublistClass: "subvehicles",
-		});
-	}
-
 	static get _ROW_TEMPLATE () {
 		return [
 			new SublistCellTemplate({
@@ -65,8 +59,6 @@ class VehiclesPage extends ListPage {
 			pFnGetFluff,
 
 			pageFilter,
-
-			listClass: "vehicles",
 
 			dataProps: ["vehicle", "vehicleUpgrade"],
 

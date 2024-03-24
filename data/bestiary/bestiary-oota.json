@@ -6,14 +6,14 @@
 				"MTF"
 			]
 		},
+		"internalCopies": [
+			"monster"
+		],
 		"otherSources": {
 			"monster": {
 				"MTF": "OotA"
 			}
-		},
-		"internalCopies": [
-			"monster"
-		]
+		}
 	},
 	"monster": [
 		{

@@ -20,7 +20,7 @@
 		border-top: 1px solid vars.$rgb-border-grey;
 		width: 235px;
 
-		@media only screen and (max-width: vars.$width-screen-sm) {
+		@media screen and (width <= #{vars.$width-screen-sm}) {
 			max-height: 600px;
 		}
 

@@ -104,10 +104,10 @@ class SearchPage {
 		SearchPage._$wrpResults = $(`<div class="ve-flex-col w-100">${this._getWrpResult_message("Loading...")}</div>`);
 
 		$$(SearchPage._$wrp)`<div class="ve-flex-col w-100 pg-search__wrp">
-			<div class="ve-flex-v-center mb-2 mobile-ish__ve-flex-col">
-				<div class="ve-flex-v-center input-group btn-group mr-2 w-100 mobile-ish__mb-2">${$iptSearch}${$btnSearch}</div>
+			<div class="ve-flex-v-center mb-2 mobile-lg__ve-flex-col">
+				<div class="ve-flex-v-center input-group btn-group mr-2 w-100 mobile-lg__mb-2">${$iptSearch}${$btnSearch}</div>
 
-				<div class="ve-flex-v-center mobile__ve-flex-col mobile-ish__ve-flex-ai-start mobile-ish__w-100">
+				<div class="ve-flex-v-center mobile__ve-flex-col mobile-lg__ve-flex-ai-start mobile-lg__w-100">
 					${$btnHelp}
 					<div class="ve-flex-v-center btn-group mr-2 mobile__mb-2 mobile__mr-0">
 						${$btnToggleBrew}

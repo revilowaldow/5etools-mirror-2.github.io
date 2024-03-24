@@ -753,7 +753,9 @@
 						"As a bonus action on its first turn in combat, the helmed horror conjures a longsword-sized blade of fire, which appears in its free hand. This sword disappears in a cloud of smoke when the helmed horror drops to 0 hit points."
 					]
 				}
-			]
+			],
+			"tokenCredit": "David Calabrese",
+			"hasToken": true
 		},
 		{
 			"name": "Dr. Cassee Dannell",

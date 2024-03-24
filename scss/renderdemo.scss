@@ -15,7 +15,7 @@
 	width: 200px;
 }
 
-@media (max-width: vars.$width-screen-md) {
+@media screen and (width <= #{vars.$width-screen-md}) {
 	#wrp-jsoninput {
 		height: 480px;
 	}

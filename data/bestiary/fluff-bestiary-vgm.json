@@ -1,13 +1,13 @@
 {
 	"_meta": {
-		"internalCopies": [
-			"monsterFluff"
-		],
 		"dependencies": {
 			"monsterFluff": [
 				"MM"
 			]
-		}
+		},
+		"internalCopies": [
+			"monsterFluff"
+		]
 	},
 	"monsterFluff": [
 		{

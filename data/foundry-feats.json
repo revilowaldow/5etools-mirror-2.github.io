@@ -144,6 +144,22 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "War Caster",
+			"source": "PHB",
+			"effects": [
+				{
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.concentration.roll.mode",
+							"mode": "OVERRIDE",
+							"value": "1"
+						}
+					]
+				}
+			]
 		}
 	]
 }

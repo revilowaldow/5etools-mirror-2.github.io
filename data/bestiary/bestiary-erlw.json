@@ -1,16 +1,16 @@
 {
 	"_meta": {
+		"dependencies": {
+			"monster": [
+				"MM"
+			]
+		},
 		"otherSources": {
 			"monster": {
 				"MM": "ERLW",
 				"VGM": "ERLW",
 				"TCE": "ERLW"
 			}
-		},
-		"dependencies": {
-			"monster": [
-				"MM"
-			]
 		}
 	},
 	"monster": [

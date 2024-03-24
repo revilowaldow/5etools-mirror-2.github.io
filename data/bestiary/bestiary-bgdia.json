@@ -7,6 +7,9 @@
 				"MTF"
 			]
 		},
+		"internalCopies": [
+			"monster"
+		],
 		"otherSources": {
 			"monster": {
 				"MM": "BGDIA",
@@ -16,10 +19,7 @@
 				"RoT": "BGDIA",
 				"DMG": "BGDIA"
 			}
-		},
-		"internalCopies": [
-			"monster"
-		]
+		}
 	},
 	"monster": [
 		{

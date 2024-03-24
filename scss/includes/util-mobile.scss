@@ -1,49 +1,13 @@
 @use "vars";
 
-// If it's anything less than full desktop size, enable these styles
-.mobile-ish__ {
-	@media only screen and (min-width: vars.$width-screen-lg--min) {
+@mixin mix-mobile-styles ($width-screen) {
+	@media screen and (width > #{$width-screen}) {
 		&visible {
 			display: none !important;
 		}
 	}
 
-	@media only screen and (max-width: vars.$width-screen-lg) {
-		&hidden {
-			display: none !important;
-		}
-
-		&ve-flex-col {
-			display: flex !important;
-			flex-direction: column !important;
-		}
-
-		&ve-flex-ai-start {
-			align-items: flex-start !important;
-		}
-
-		&w-100 {
-			width: 100% !important;
-		}
-
-		&mr-0 {
-			margin-right: 0 !important;
-		}
-
-		&mb-2 {
-			margin-bottom: (vars.$spacer * 0.5) !important;
-		}
-	}
-}
-
-.mobile__ {
-	@media only screen and (min-width: vars.$width-screen-sm--min) {
-		&visible {
-			display: none !important;
-		}
-	}
-
-	@media only screen and (max-width: vars.$width-screen-sm) {
+	@media screen and (width <= #{$width-screen}) {
 		&hidden {
 			display: none !important;
 		}
@@ -506,4 +470,16 @@
 		}
 		// endregion
 	}
+}
+
+.mobile-lg__ {
+	@include mix-mobile-styles(vars.$width-screen-lg);
+}
+
+.mobile-md__ {
+	@include mix-mobile-styles(vars.$width-screen-md);
+}
+
+.mobile__ {
+	@include mix-mobile-styles(vars.$width-screen-sm);
 }

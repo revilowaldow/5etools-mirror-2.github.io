@@ -2766,6 +2766,7 @@
 					]
 				}
 			],
+			"tokenCredit": "Andrea Mazzocchetti",
 			"attachedItems": [
 				"club|phb"
 			],
@@ -2776,6 +2777,7 @@
 				"MLW",
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -3950,6 +3952,7 @@
 					]
 				}
 			],
+			"tokenCredit": "Anna Christenson",
 			"attachedItems": [
 				"rapier|phb"
 			],
@@ -3967,6 +3970,7 @@
 				"MLW",
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -4489,6 +4493,7 @@
 					]
 				}
 			],
+			"tokenCredit": "Aireesse",
 			"attachedItems": [
 				"club|phb"
 			],
@@ -4503,6 +4508,7 @@
 				"MLW",
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -4811,6 +4817,7 @@
 					]
 				}
 			],
+			"tokenCredit": "Ubergank",
 			"attachedItems": [
 				"club|phb"
 			],
@@ -4826,6 +4833,7 @@
 				"MLW",
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -6622,6 +6630,7 @@
 					]
 				}
 			],
+			"tokenCredit": "Jaqdaw",
 			"attachedItems": [
 				"club|phb"
 			],
@@ -6637,6 +6646,7 @@
 				"MLW",
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -8407,6 +8417,7 @@
 					]
 				}
 			],
+			"tokenCredit": "Kiruko_Kun",
 			"attachedItems": [
 				"rapier|phb"
 			],
@@ -8424,6 +8435,7 @@
 				"MLW",
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		}
 	]

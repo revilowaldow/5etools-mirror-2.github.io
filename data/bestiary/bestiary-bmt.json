@@ -1,5 +1,10 @@
 {
 	"_meta": {
+		"dependencies": {
+			"monster": [
+				"MM"
+			]
+		},
 		"otherSources": {
 			"monster": {
 				"DMG": "BMT",
@@ -10,11 +15,6 @@
 				"BAM": "BMT",
 				"MOT": "BMT"
 			}
-		},
-		"dependencies": {
-			"monster": [
-				"MM"
-			]
 		}
 	},
 	"monster": [

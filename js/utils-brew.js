@@ -2119,7 +2119,7 @@ class ManageBrewUi {
 
 		const btnViewJson = e_({
 			tag: "button",
-			clazz: `btn btn-default btn-xs mobile-ish__hidden w-24p`,
+			clazz: `btn btn-default btn-xs mobile-lg__hidden w-24p`,
 			title: `${this._LBL_LIST_VIEW_JSON}: ${this.constructor._getBrewJsonTitle({brew, brewName})}`,
 			children: [
 				e_({

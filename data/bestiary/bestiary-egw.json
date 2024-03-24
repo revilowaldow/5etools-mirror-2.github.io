@@ -5,15 +5,15 @@
 				"MM"
 			]
 		},
+		"internalCopies": [
+			"monster"
+		],
 		"otherSources": {
 			"monster": {
 				"MM": "EGW",
 				"TftYP": "EGW"
 			}
-		},
-		"internalCopies": [
-			"monster"
-		]
+		}
 	},
 	"monster": [
 		{

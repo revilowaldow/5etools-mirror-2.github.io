@@ -3,7 +3,6 @@
 class TablesSublistManager extends SublistManager {
 	constructor () {
 		super({
-			sublistClass: "subtablesdata",
 			sublistListOptions: {
 				sortByInitial: "sortName",
 			},
@@ -55,7 +54,6 @@ class TablesPage extends ListPage {
 
 			pageFilter,
 
-			listClass: "tablesdata",
 			listOptions: {
 				sortByInitial: "sortName",
 			},

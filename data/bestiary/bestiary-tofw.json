@@ -1,17 +1,17 @@
 {
 	"_meta": {
+		"dependencies": {
+			"monster": [
+				"MM",
+				"MPP"
+			]
+		},
 		"otherSources": {
 			"monster": {
 				"MPP": "ToFW",
 				"MM": "ToFW",
 				"DMG": "ToFW"
 			}
-		},
-		"dependencies": {
-			"monster": [
-				"MM",
-				"MPP"
-			]
 		}
 	},
 	"monster": [

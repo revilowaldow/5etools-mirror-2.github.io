@@ -2,7 +2,7 @@
 
 // in deployment, `IS_DEPLOYED = "<version number>";` should be set below.
 globalThis.IS_DEPLOYED = undefined;
-globalThis.VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"1.201.1"/* 5ETOOLS_VERSION__CLOSE */;
+globalThis.VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"1.202.0"/* 5ETOOLS_VERSION__CLOSE */;
 globalThis.DEPLOYED_IMG_ROOT = undefined;
 // for the roll20 script to set
 globalThis.IS_VTT = false;
@@ -1293,12 +1293,12 @@ globalThis.ObjUtil = {
 	},
 };
 
-// TODO refactor other misc utils into this
-globalThis.MiscUtil = {
-	COLOR_HEALTHY: "#00bb20",
-	COLOR_HURT: "#c5ca00",
-	COLOR_BLOODIED: "#f7a100",
-	COLOR_DEFEATED: "#cc0000",
+// TODO refactor specific utils out of this
+globalThis.MiscUtil = class {
+	static COLOR_HEALTHY = "#00bb20";
+	static COLOR_HURT = "#c5ca00";
+	static COLOR_BLOODIED = "#f7a100";
+	static COLOR_DEFEATED = "#cc0000";
 
 	/**
 	 * @param obj
@@ -1306,12 +1306,12 @@ globalThis.MiscUtil = {
 	 * @param isPreserveUndefinedValueKeys Otherwise, drops the keys of `undefined` values
 	 * (e.g. `{a: undefined}` -> `{}`).
 	 */
-	copy (obj, {isSafe = false, isPreserveUndefinedValueKeys = false} = {}) {
+	static copy (obj, {isSafe = false, isPreserveUndefinedValueKeys = false} = {}) {
 		if (isSafe && obj === undefined) return undefined; // Generally use "unsafe," as this helps identify bugs.
 		return JSON.parse(JSON.stringify(obj));
-	},
+	}
 
-	copyFast (obj) {
+	static copyFast (obj) {
 		if ((typeof obj !== "object") || obj == null) return obj;
 
 		if (obj instanceof Array) return obj.map(MiscUtil.copyFast);
@@ -1319,9 +1319,9 @@ globalThis.MiscUtil = {
 		const cpy = {};
 		for (const k of Object.keys(obj)) cpy[k] = MiscUtil.copyFast(obj[k]);
 		return cpy;
-	},
+	}
 
-	async pCopyTextToClipboard (text) {
+	static async pCopyTextToClipboard (text) {
 		function doCompatibilityCopy () {
 			const $iptTemp = $(`<textarea class="clp__wrp-temp"></textarea>`)
 				.appendTo(document.body)
@@ -1339,26 +1339,26 @@ globalThis.MiscUtil = {
 				} else doCompatibilityCopy();
 			} catch (e) { doCompatibilityCopy(); }
 		} else doCompatibilityCopy();
-	},
+	}
 
-	checkProperty (object, ...path) {
+	static checkProperty (object, ...path) {
 		for (let i = 0; i < path.length; ++i) {
 			object = object[path[i]];
 			if (object == null) return false;
 		}
 		return true;
-	},
+	}
 
-	get (object, ...path) {
+	static get (object, ...path) {
 		if (object == null) return null;
 		for (let i = 0; i < path.length; ++i) {
 			object = object[path[i]];
 			if (object == null) return object;
 		}
 		return object;
-	},
+	}
 
-	set (object, ...pathAndVal) {
+	static set (object, ...pathAndVal) {
 		if (object == null) return null;
 
 		const val = pathAndVal.pop();
@@ -1372,31 +1372,31 @@ globalThis.MiscUtil = {
 		}
 
 		return val;
-	},
+	}
 
-	getOrSet (object, ...pathAndVal) {
+	static getOrSet (object, ...pathAndVal) {
 		if (pathAndVal.length < 2) return null;
 		const existing = MiscUtil.get(object, ...pathAndVal.slice(0, -1));
 		if (existing != null) return existing;
 		return MiscUtil.set(object, ...pathAndVal);
-	},
+	}
 
-	getThenSetCopy (object1, object2, ...path) {
+	static getThenSetCopy (object1, object2, ...path) {
 		const val = MiscUtil.get(object1, ...path);
 		return MiscUtil.set(object2, ...path, MiscUtil.copyFast(val, {isSafe: true}));
-	},
+	}
 
-	delete (object, ...path) {
+	static delete (object, ...path) {
 		if (object == null) return object;
 		for (let i = 0; i < path.length - 1; ++i) {
 			object = object[path[i]];
 			if (object == null) return object;
 		}
 		return delete object[path.last()];
-	},
+	}
 
 	/** Delete a prop from a nested object, then all now-empty objects backwards from that point. */
-	deleteObjectPath (object, ...path) {
+	static deleteObjectPath (object, ...path) {
 		const stack = [object];
 
 		if (object == null) return object;
@@ -1412,9 +1412,9 @@ globalThis.MiscUtil = {
 		}
 
 		return out;
-	},
+	}
 
-	merge (obj1, obj2) {
+	static merge (obj1, obj2) {
 		obj2 = MiscUtil.copyFast(obj2);
 
 		Object.entries(obj2)
@@ -1438,21 +1438,21 @@ globalThis.MiscUtil = {
 			});
 
 		return obj1;
-	},
+	}
 
 	/**
 	 * @deprecated
 	 */
-	mix: (superclass) => new MiscUtil._MixinBuilder(superclass),
-	_MixinBuilder: function (superclass) {
+	static mix = (superclass) => new MiscUtil._MixinBuilder(superclass);
+	static _MixinBuilder = function (superclass) {
 		this.superclass = superclass;
 
 		this.with = function (...mixins) {
 			return mixins.reduce((c, mixin) => mixin(c), this.superclass);
 		};
-	},
+	};
 
-	clearSelection () {
+	static clearSelection () {
 		if (document.getSelection) {
 			document.getSelection().removeAllRanges();
 			document.getSelection().addRange(document.createRange());
@@ -1466,9 +1466,9 @@ globalThis.MiscUtil = {
 		} else if (document.selection) {
 			document.selection.empty();
 		}
-	},
+	}
 
-	randomColor () {
+	static randomColor () {
 		let r; let g; let b;
 		const h = RollerUtil.randomise(30, 0) / 30;
 		const i = ~~(h * 6);
@@ -1483,7 +1483,7 @@ globalThis.MiscUtil = {
 			case 5: r = 1; g = 0; b = q; break;
 		}
 		return `#${`00${(~~(r * 255)).toString(16)}`.slice(-2)}${`00${(~~(g * 255)).toString(16)}`.slice(-2)}${`00${(~~(b * 255)).toString(16)}`.slice(-2)}`;
-	},
+	}
 
 	/**
 	 * @param hex Original hex color.
@@ -1492,7 +1492,7 @@ globalThis.MiscUtil = {
 	 * @param [opts.dark] Color to return if a "dark" color would contrast best.
 	 * @param [opts.light] Color to return if a "light" color would contrast best.
 	 */
-	invertColor (hex, opts) {
+	static invertColor (hex, opts) {
 		opts = opts || {};
 
 		hex = hex.slice(1); // remove #
@@ -1508,18 +1508,18 @@ globalThis.MiscUtil = {
 
 		r = (255 - r).toString(16); g = (255 - g).toString(16); b = (255 - b).toString(16);
 		return `#${[r, g, b].map(it => it.padStart(2, "0")).join("")}`;
-	},
+	}
 
-	scrollPageTop () {
+	static scrollPageTop () {
 		document.body.scrollTop = document.documentElement.scrollTop = 0;
-	},
+	}
 
-	expEval (str) {
+	static expEval (str) {
 		// eslint-disable-next-line no-new-func
 		return new Function(`return ${str.replace(/[^-()\d/*+.]/g, "")}`)();
-	},
+	}
 
-	parseNumberRange (input, min = Number.MIN_SAFE_INTEGER, max = Number.MAX_SAFE_INTEGER) {
+	static parseNumberRange (input, min = Number.MIN_SAFE_INTEGER, max = Number.MAX_SAFE_INTEGER) {
 		if (!input || !input.trim()) return null;
 
 		const errInvalid = input => { throw new Error(`Could not parse range input "${input}"`); };
@@ -1563,9 +1563,9 @@ globalThis.MiscUtil = {
 		}
 
 		return out;
-	},
+	}
 
-	findCommonPrefix (strArr, {isRespectWordBoundaries} = {}) {
+	static findCommonPrefix (strArr, {isRespectWordBoundaries} = {}) {
 		if (isRespectWordBoundaries) {
 			return MiscUtil._findCommonPrefixSuffixWords({strArr});
 		}
@@ -1588,15 +1588,15 @@ globalThis.MiscUtil = {
 			}
 		});
 		return prefix;
-	},
+	}
 
-	findCommonSuffix (strArr, {isRespectWordBoundaries} = {}) {
+	static findCommonSuffix (strArr, {isRespectWordBoundaries} = {}) {
 		if (!isRespectWordBoundaries) throw new Error(`Unimplemented!`);
 
 		return MiscUtil._findCommonPrefixSuffixWords({strArr, isSuffix: true});
-	},
+	}
 
-	_findCommonPrefixSuffixWords ({strArr, isSuffix}) {
+	static _findCommonPrefixSuffixWords ({strArr, isSuffix}) {
 		let prefixTks = null;
 		let lenMax = -1;
 
@@ -1633,18 +1633,18 @@ globalThis.MiscUtil = {
 		return isSuffix
 			? ` ${prefixTks.join(" ")}`
 			: `${prefixTks.join(" ")} `;
-	},
+	}
 
 	/**
 	 * @param fgHexTarget Target/resultant color for the foreground item
 	 * @param fgOpacity Desired foreground transparency (0-1 inclusive)
 	 * @param bgHex Background color
 	 */
-	calculateBlendedColor (fgHexTarget, fgOpacity, bgHex) {
+	static calculateBlendedColor (fgHexTarget, fgOpacity, bgHex) {
 		const fgDcTarget = CryptUtil.hex2Dec(fgHexTarget);
 		const bgDc = CryptUtil.hex2Dec(bgHex);
 		return ((fgDcTarget - ((1 - fgOpacity) * bgDc)) / fgOpacity).toString(16);
-	},
+	}
 
 	/**
 	 * Borrowed from lodash.
@@ -1654,7 +1654,7 @@ globalThis.MiscUtil = {
 	 * @param options Options object.
 	 * @return {Function} The debounced function.
 	 */
-	debounce (func, wait, options) {
+	static debounce (func, wait, options) {
 		let lastArgs; let lastThis; let maxWait; let result; let timerId; let lastCallTime; let lastInvokeTime = 0; let leading = false; let maxing = false; let trailing = true;
 
 		wait = Number(wait) || 0;
@@ -1739,10 +1739,10 @@ globalThis.MiscUtil = {
 		debounced.cancel = cancel;
 		debounced.flush = flush;
 		return debounced;
-	},
+	}
 
 	// from lodash
-	throttle (func, wait, options) {
+	static throttle (func, wait, options) {
 		let leading = true; let trailing = true;
 
 		if (typeof options === "object") {
@@ -1751,13 +1751,13 @@ globalThis.MiscUtil = {
 		}
 
 		return this.debounce(func, wait, {leading, maxWait: wait, trailing});
-	},
+	}
 
-	pDelay (msecs, resolveAs) {
+	static pDelay (msecs, resolveAs) {
 		return new Promise(resolve => setTimeout(() => resolve(resolveAs), msecs));
-	},
+	}
 
-	GENERIC_WALKER_ENTRIES_KEY_BLOCKLIST: new Set(["caption", "type", "colLabels", "colLabelGroups", "name", "colStyles", "style", "shortName", "subclassShortName", "id", "path"]),
+	static GENERIC_WALKER_ENTRIES_KEY_BLOCKLIST = new Set(["caption", "type", "colLabels", "colLabelGroups", "name", "colStyles", "style", "shortName", "subclassShortName", "id", "path"]);
 
 	/**
 	 * @param [opts]
@@ -1771,7 +1771,7 @@ globalThis.MiscUtil = {
 	 * @param [opts.isNoModification] If the walker should not attempt to modify the data.
 	 * @param [opts.isBreakOnReturn] If the walker should fast-exist on any handler returning a value.
 	 */
-	getWalker (opts) {
+	static getWalker (opts) {
 		opts = opts || {};
 
 		if (opts.isBreakOnReturn && !opts.isNoModification) throw new Error(`"isBreakOnReturn" may only be used in "isNoModification" mode!`);
@@ -1893,9 +1893,9 @@ globalThis.MiscUtil = {
 		};
 
 		return {walk: fn};
-	},
+	}
 
-	_getWalker_applyHandlers ({opts, handlers, obj, lastKey, stack}) {
+	static _getWalker_applyHandlers ({opts, handlers, obj, lastKey, stack}) {
 		handlers = handlers instanceof Array ? handlers : [handlers];
 		const didBreak = handlers.some(h => {
 			const out = h(obj, lastKey, stack);
@@ -1904,12 +1904,12 @@ globalThis.MiscUtil = {
 		});
 		if (didBreak) return VeCt.SYM_WALKER_BREAK;
 		return obj;
-	},
+	}
 
-	_getWalker_runHandlers ({handlers, obj, lastKey, stack}) {
+	static _getWalker_runHandlers ({handlers, obj, lastKey, stack}) {
 		handlers = handlers instanceof Array ? handlers : [handlers];
 		handlers.forEach(h => h(obj, lastKey, stack));
-	},
+	}
 
 	/**
 	 * TODO refresh to match sync version
@@ -1923,7 +1923,7 @@ globalThis.MiscUtil = {
 	 * @param [opts.isDepthFirst] If array/object recursion should occur before array/object primitive handling.
 	 * @param [opts.isNoModification] If the walker should not attempt to modify the data.
 	 */
-	getAsyncWalker (opts) {
+	static getAsyncWalker (opts) {
 		opts = opts || {};
 		const keyBlocklist = opts.keyBlocklist || new Set();
 
@@ -2040,25 +2040,32 @@ globalThis.MiscUtil = {
 		};
 
 		return {pWalk: pFn};
-	},
+	}
 
-	async _getAsyncWalker_pApplyHandlers ({opts, handlers, obj, lastKey, stack}) {
+	static async _getAsyncWalker_pApplyHandlers ({opts, handlers, obj, lastKey, stack}) {
 		handlers = handlers instanceof Array ? handlers : [handlers];
 		await handlers.pSerialAwaitMap(async pH => {
 			const out = await pH(obj, lastKey, stack);
 			if (!opts.isNoModification) obj = out;
 		});
 		return obj;
-	},
+	}
 
-	async _getAsyncWalker_pRunHandlers ({handlers, obj, lastKey, stack}) {
+	static async _getAsyncWalker_pRunHandlers ({handlers, obj, lastKey, stack}) {
 		handlers = handlers instanceof Array ? handlers : [handlers];
 		await handlers.pSerialAwaitMap(pH => pH(obj, lastKey, stack));
-	},
+	}
 
-	pDefer (fn) {
+	static pDefer (fn) {
 		return (async () => fn())();
-	},
+	}
+
+	static isNearStrictlyEqual (a, b) {
+		if (a == null && b == null) return true;
+		if (a == null && b != null) return false;
+		if (a != null && b == null) return false;
+		return a === b;
+	}
 };
 
 // EVENT HANDLERS ======================================================================================================

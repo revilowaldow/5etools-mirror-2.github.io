@@ -3,7 +3,6 @@
 class OptionalFeaturesSublistManager extends SublistManager {
 	constructor () {
 		super({
-			sublistClass: "suboptfeatures",
 			sublistListOptions: {
 				fnSort: PageFilterOptionalFeatures.sortOptionalFeatures,
 			},
@@ -84,7 +83,6 @@ class OptionalFeaturesPage extends ListPage {
 
 			pageFilter,
 
-			listClass: "optfeatures",
 			listOptions: {
 				fnSort: PageFilterOptionalFeatures.sortOptionalFeatures,
 			},

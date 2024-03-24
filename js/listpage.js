@@ -107,7 +107,6 @@ class SublistManager {
 
 	/**
 	 * @param [opts]
-	 * @param [opts.sublistClass] Sublist class.
 	 * @param [opts.sublistListOptions] Other sublist options.
 	 * @param [opts.isSublistItemsCountable] If the sublist items should be countable, i.e. have a quantity.
 	 * @param [opts.shiftCountAddSubtract] If the sublist items should be countable, i.e. have a quantity.
@@ -115,7 +114,6 @@ class SublistManager {
 	constructor (opts) {
 		opts = opts || {};
 
-		this._sublistClass = opts.sublistClass; // TODO(PageGen) remove once all pages transitioned
 		this._sublistListOptions = opts.sublistListOptions || {};
 		this._isSublistItemsCountable = !!opts.isSublistItemsCountable;
 		this._shiftCountAddSubtract = opts.shiftCountAddSubtract ?? 20;
@@ -160,7 +158,7 @@ class SublistManager {
 
 		this._listSub = new List({
 			...this._sublistListOptions,
-			$wrpList: this._sublistClass ? $(`.${this._sublistClass}`) : $(`#sublist`),
+			$wrpList: $(`#sublist`),
 			isUseJquery: true,
 		});
 
@@ -987,7 +985,6 @@ class ListPage {
 	 * `pageFilter` must be specified.)
 	 * @param [opts.pageFilter] PageFilter implementation for this page. (Either `filters` and `filterSource` or
 	 * `pageFilter` must be specified.)
-	 * @param [opts.listClass] List class.
 	 * @param opts.listOptions Other list options.
 	 * @param opts.dataProps JSON data propert(y/ies).
 	 *
@@ -1017,7 +1014,6 @@ class ListPage {
 		this._filters = opts.filters;
 		this._filterSource = opts.filterSource;
 		this._pageFilter = opts.pageFilter;
-		this._listClass = opts.listClass; // TODO(PageGen) remove once all pages transitioned
 		this._listOptions = opts.listOptions || {};
 		this._dataProps = opts.dataProps;
 		this._bookViewOptions = opts.bookViewOptions;
@@ -1152,7 +1148,7 @@ class ListPage {
 		const $btnReset = $("#reset");
 		this._list = this._initList({
 			$iptSearch,
-			$wrpList: this._listClass ? $(`.list.${this._listClass}`) : $(`#list`),
+			$wrpList: $(`#list`),
 			$btnReset,
 			$btnClear: $(`#lst__search-glass`),
 			dispPageTagline: document.getElementById(`page__subtitle`),

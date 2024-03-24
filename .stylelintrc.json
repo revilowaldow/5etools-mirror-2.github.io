@@ -20,6 +20,7 @@
 		"selector-id-pattern": null,
 
 		"color-named": "never",
+		"number-max-precision": 8,
 		"selector-no-qualifying-type": null,
 		"selector-max-compound-selectors": null,
 		"selector-max-id": null,

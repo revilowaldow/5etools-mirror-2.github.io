@@ -5,15 +5,15 @@
 				"MM"
 			]
 		},
+		"internalCopies": [
+			"monster"
+		],
 		"otherSources": {
 			"monster": {
 				"MM": "CRCotN",
 				"EGW": "CRCotN"
 			}
-		},
-		"internalCopies": [
-			"monster"
-		]
+		}
 	},
 	"monster": [
 		{

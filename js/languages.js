@@ -1,12 +1,6 @@
 "use strict";
 
 class LanguagesSublistManager extends SublistManager {
-	constructor () {
-		super({
-			sublistClass: "sublanguages",
-		});
-	}
-
 	static get _ROW_TEMPLATE () {
 		return [
 			new SublistCellTemplate({
@@ -69,8 +63,6 @@ class LanguagesPage extends ListPage {
 			pFnGetFluff: Renderer.language.pGetFluff.bind(Renderer.language),
 
 			pageFilter,
-
-			listClass: "languages",
 
 			dataProps: ["language"],
 

@@ -49,7 +49,7 @@
 	}
 }
 
-@media (width <= 991px) {
+@media screen and (width <= #{vars.$width-screen-md}) {
 	.view-col-wrapper {
 		height: 40vh;
 	}

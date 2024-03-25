@@ -1,3 +1,5 @@
+@use "includes/vars";
+
 #initp__wrp_active {
 	display: none;
 }
@@ -6,7 +8,7 @@
 	display: none !important;
 }
 
-@media (width <= 991px) {
+@media screen and (width <= #{vars.$width-screen-md}) {
 	.viewport-wrapper {
 		bottom: 0;
 		height: 100vh;

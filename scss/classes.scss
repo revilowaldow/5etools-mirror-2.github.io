@@ -600,7 +600,7 @@
 	&wrp {
 		align-items: baseline;
 
-		@media (max-width: vars.$width-screen-md) {
+		@media screen and (width <= #{vars.$width-screen-md}) {
 			flex-direction: column !important;
 		}
 	}

@@ -392,7 +392,7 @@
 				{
 					"name": "Lightning Breath",
 					"entries": [
-						"Lhammaruntosz exhales lightning in a 90- foot line that is 5 feet wide. Each creature in that line must make a {@dc 19} Dexterity saving throw, taking 66 ({@damage 12d10}) lightning damage on a failed save, or half as much damage on a successful one."
+						"Lhammaruntosz exhales lightning in a 90-foot line that is 5 feet wide. Each creature in that line must make a {@dc 19} Dexterity saving throw, taking 66 ({@damage 12d10}) lightning damage on a failed save, or half as much damage on a successful one."
 					]
 				},
 				{

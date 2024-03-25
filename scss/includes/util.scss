@@ -736,7 +736,7 @@ i > i {
 		break-inside: avoid-column;
 	}
 
-	@media (width <= 768px) {
+	@media screen and (width <= #{vars.$width-screen-sm}) {
 		column-count: 1;
 	}
 }
@@ -750,11 +750,11 @@ i > i {
 		break-inside: avoid-column;
 	}
 
-	@media (width <= 768px) {
+	@media screen and (width <= #{vars.$width-screen-sm}) {
 		column-count: 2;
 	}
 
-	@media (width <= 480px) {
+	@media screen and (width <= #{vars.$width-screen-xs}) {
 		column-count: 1;
 	}
 }
@@ -768,11 +768,11 @@ i > i {
 		break-inside: avoid-column;
 	}
 
-	@media (width <= 768px) {
+	@media screen and (width <= #{vars.$width-screen-sm}) {
 		column-count: 3;
 	}
 
-	@media (width <= 480px) {
+	@media screen and (width <= #{vars.$width-screen-xs}) {
 		column-count: 2;
 	}
 }
@@ -786,11 +786,11 @@ i > i {
 		break-inside: avoid-column;
 	}
 
-	@media (width <= 768px) {
+	@media screen and (width <= #{vars.$width-screen-sm}) {
 		column-count: 3;
 	}
 
-	@media (width <= 480px) {
+	@media screen and (width <= #{vars.$width-screen-xs}) {
 		column-count: 2;
 	}
 }
@@ -804,11 +804,11 @@ i > i {
 		break-inside: avoid-column;
 	}
 
-	@media (width <= 768px) {
+	@media screen and (width <= #{vars.$width-screen-sm}) {
 		column-count: 3;
 	}
 
-	@media (width <= 480px) {
+	@media screen and (width <= #{vars.$width-screen-xs}) {
 		column-count: 2;
 	}
 }

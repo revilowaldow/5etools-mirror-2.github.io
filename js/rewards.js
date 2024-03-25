@@ -1,12 +1,6 @@
 "use strict";
 
 class RewardsSublistManager extends SublistManager {
-	constructor () {
-		super({
-			sublistClass: "subrewards",
-		});
-	}
-
 	static get _ROW_TEMPLATE () {
 		return [
 			new SublistCellTemplate({
@@ -60,8 +54,6 @@ class RewardsPage extends ListPage {
 			pFnGetFluff: Renderer.reward.pGetFluff.bind(Renderer.feat),
 
 			pageFilter,
-
-			listClass: "rewards",
 
 			dataProps: ["reward"],
 

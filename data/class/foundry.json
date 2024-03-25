@@ -639,6 +639,14 @@
 			}
 		},
 		{
+			"name": "Fighting Style",
+			"source": "PHB",
+			"className": "Ranger",
+			"classSource": "PHB",
+			"level": 2,
+			"isIgnored": true
+		},
+		{
 			"name": "Favored Enemy and Natural Explorer improvements",
 			"source": "PHB",
 			"className": "Ranger",
@@ -665,14 +673,6 @@
 					}
 				]
 			}
-		},
-		{
-			"name": "Fighting Style",
-			"source": "PHB",
-			"className": "Ranger",
-			"classSource": "PHB",
-			"level": 2,
-			"isIgnored": true
 		},
 		{
 			"name": "Expertise",
@@ -867,6 +867,11 @@
 			"classSource": "TCE",
 			"level": 1,
 			"entryData": {
+				"skillProficiencies": [
+					{
+						"any": 5
+					}
+				],
 				"armorProficiencies": [
 					{
 						"light": true
@@ -882,11 +887,6 @@
 							],
 							"count": 1
 						}
-					}
-				],
-				"skillProficiencies": [
-					{
-						"any": 5
 					}
 				]
 			}
@@ -926,23 +926,6 @@
 			"classSource": "TCE",
 			"level": 1,
 			"entryData": {
-				"armorProficiencies": [
-					{
-						"light": true
-					}
-				],
-				"savingThrowProficiencies": [
-					{
-						"choose": {
-							"from": [
-								"wis",
-								"int",
-								"cha"
-							],
-							"count": 1
-						}
-					}
-				],
 				"skillProficiencies": [
 					{
 						"choose": {
@@ -959,6 +942,23 @@
 							"count": 2
 						}
 					}
+				],
+				"armorProficiencies": [
+					{
+						"light": true
+					}
+				],
+				"savingThrowProficiencies": [
+					{
+						"choose": {
+							"from": [
+								"wis",
+								"int",
+								"cha"
+							],
+							"count": 1
+						}
+					}
 				]
 			}
 		},
@@ -969,6 +969,22 @@
 			"classSource": "TCE",
 			"level": 1,
 			"entryData": {
+				"skillProficiencies": [
+					{
+						"choose": {
+							"from": [
+								"acrobatics",
+								"animal handling",
+								"athletics",
+								"intimidation",
+								"nature",
+								"perception",
+								"survival"
+							],
+							"count": 2
+						}
+					}
+				],
 				"armorProficiencies": [
 					{
 						"light": true,
@@ -985,22 +1001,6 @@
 								"con"
 							],
 							"count": 1
-						}
-					}
-				],
-				"skillProficiencies": [
-					{
-						"choose": {
-							"from": [
-								"acrobatics",
-								"animal handling",
-								"athletics",
-								"intimidation",
-								"nature",
-								"perception",
-								"survival"
-							],
-							"count": 2
 						}
 					}
 				]
@@ -1055,7 +1055,6 @@
 			"subclassShortName": "Zealot",
 			"subclassSource": "XGE",
 			"level": 3,
-			"isChooseSystemRenderEntries": true,
 			"system": {
 				"activation.type": "special",
 				"activation.condition": "While you're raging, the first creature you hit on each of your turns with a weapon attack"
@@ -1083,7 +1082,8 @@
 						]
 					}
 				}
-			]
+			],
+			"isChooseSystemRenderEntries": true
 		},
 		{
 			"name": "Bonus Proficiencies",
@@ -1110,15 +1110,15 @@
 			"subclassSource": "PHB",
 			"level": 3,
 			"entryData": {
+				"weaponProficiencies": [
+					{
+						"martial": true
+					}
+				],
 				"armorProficiencies": [
 					{
 						"medium": true,
 						"shield|phb": true
-					}
-				],
-				"weaponProficiencies": [
-					{
-						"martial": true
 					}
 				]
 			}
@@ -1150,7 +1150,8 @@
 				"target.value": 1,
 				"target.type": "object",
 				"range.value": 30,
-				"range.units": "ft"
+				"range.units": "ft",
+				"actionType": "summ"
 			}
 		},
 		{
@@ -1237,14 +1238,14 @@
 			"subclassSource": "XGE",
 			"level": 3,
 			"entryData": {
-				"armorProficiencies": [
-					{
-						"medium": true
-					}
-				],
 				"weaponProficiencies": [
 					{
 						"scimitar|phb": true
+					}
+				],
+				"armorProficiencies": [
+					{
+						"medium": true
 					}
 				]
 			}
@@ -1366,6 +1367,11 @@
 			"subclassSource": "PHB",
 			"level": 1,
 			"entryData": {
+				"languageProficiencies": [
+					{
+						"any": 2
+					}
+				],
 				"skillProficiencies": [
 					{
 						"choose": {
@@ -1377,11 +1383,6 @@
 							],
 							"count": 2
 						}
-					}
-				],
-				"languageProficiencies": [
-					{
-						"any": 2
 					}
 				]
 			}
@@ -1592,14 +1593,14 @@
 			"subclassSource": "PHB",
 			"level": 1,
 			"entryData": {
-				"armorProficiencies": [
-					{
-						"heavy": true
-					}
-				],
 				"weaponProficiencies": [
 					{
 						"martial": true
+					}
+				],
+				"armorProficiencies": [
+					{
+						"heavy": true
 					}
 				]
 			}
@@ -1645,14 +1646,14 @@
 			"subclassSource": "PHB",
 			"level": 1,
 			"entryData": {
-				"armorProficiencies": [
-					{
-						"heavy": true
-					}
-				],
 				"weaponProficiencies": [
 					{
 						"martial": true
+					}
+				],
+				"armorProficiencies": [
+					{
+						"heavy": true
 					}
 				]
 			}
@@ -1813,14 +1814,14 @@
 			"subclassSource": "TCE",
 			"level": 1,
 			"entryData": {
-				"armorProficiencies": [
-					{
-						"heavy": true
-					}
-				],
 				"weaponProficiencies": [
 					{
 						"martial": true
+					}
+				],
+				"armorProficiencies": [
+					{
+						"heavy": true
 					}
 				]
 			}
@@ -1833,6 +1834,11 @@
 			"subclassShortName": "Twilight",
 			"subclassSource": "TCE",
 			"level": 1,
+			"system": {
+				"target.type": "creature",
+				"range.value": 10,
+				"range.units": "ft"
+			},
 			"actorTokenMod": {
 				"dimSight": [
 					{
@@ -1840,11 +1846,6 @@
 						"value": 300
 					}
 				]
-			},
-			"system": {
-				"target.type": "creature",
-				"range.value": 10,
-				"range.units": "ft"
 			}
 		},
 		{
@@ -1994,6 +1995,18 @@
 			}
 		},
 		{
+			"name": "Fungal Infestation",
+			"source": "TCE",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Spores",
+			"subclassSource": "TCE",
+			"level": 6,
+			"system": {
+				"actionType": "summ"
+			}
+		},
+		{
 			"name": "Spreading Spores",
 			"source": "TCE",
 			"className": "Druid",
@@ -2039,7 +2052,20 @@
 			"system": {
 				"target.type": "space",
 				"range.value": 30,
-				"range.units": "ft"
+				"range.units": "ft",
+				"actionType": "summ"
+			}
+		},
+		{
+			"name": "Call of the Shadowseeds",
+			"source": "TDCSR",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Blighted",
+			"subclassSource": "TDCSR",
+			"level": 6,
+			"system": {
+				"actionType": "summ"
 			}
 		},
 		{
@@ -2159,6 +2185,11 @@
 			"subclassShortName": "Battle Master",
 			"subclassSource": "PHB",
 			"level": 3,
+			"system": {
+				"activation.type": null,
+				"uses.value": null,
+				"uses.max": null
+			},
 			"entryData": {
 				"resources": [
 					{
@@ -2170,11 +2201,6 @@
 						"faces": "8 + (sign(ceil((<$level$> - 2) / 8) - 1) * 2)"
 					}
 				]
-			},
-			"system": {
-				"activation.type": null,
-				"uses.value": null,
-				"uses.max": null
 			}
 		},
 		{
@@ -2467,14 +2493,14 @@
 			"subclassSource": "TCE",
 			"level": 3,
 			"entryData": {
-				"toolProficiencies": [
-					{
-						"smith's tools": true
-					}
-				],
 				"languageProficiencies": [
 					{
 						"giant": true
+					}
+				],
+				"toolProficiencies": [
+					{
+						"smith's tools": true
 					}
 				]
 			}
@@ -2943,6 +2969,11 @@
 			"subclassSource": "TDCSR",
 			"level": 6,
 			"entryData": {
+				"languageProficiencies": [
+					{
+						"any": 1
+					}
+				],
 				"skillProficiencies": [
 					{
 						"choose": {
@@ -2955,11 +2986,6 @@
 							],
 							"count": 1
 						}
-					}
-				],
-				"languageProficiencies": [
-					{
-						"any": 1
 					}
 				]
 			}
@@ -2973,6 +2999,11 @@
 			"subclassSource": "TDCSR",
 			"level": 11,
 			"entryData": {
+				"languageProficiencies": [
+					{
+						"any": 1
+					}
+				],
 				"skillProficiencies": [
 					{
 						"choose": {
@@ -2985,11 +3016,6 @@
 							],
 							"count": 1
 						}
-					}
-				],
-				"languageProficiencies": [
-					{
-						"any": 1
 					}
 				]
 			}
@@ -3003,6 +3029,11 @@
 			"subclassSource": "TDCSR",
 			"level": 17,
 			"entryData": {
+				"languageProficiencies": [
+					{
+						"any": 1
+					}
+				],
 				"skillProficiencies": [
 					{
 						"choose": {
@@ -3015,11 +3046,6 @@
 							],
 							"count": 1
 						}
-					}
-				],
-				"languageProficiencies": [
-					{
-						"any": 1
 					}
 				]
 			}
@@ -3371,6 +3397,42 @@
 			}
 		},
 		{
+			"name": "Drake Companion",
+			"source": "FTD",
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "Drakewarden",
+			"subclassSource": "FTD",
+			"level": 3,
+			"system": {
+				"actionType": "summ"
+			}
+		},
+		{
+			"name": "Primal Companion",
+			"source": "TCE",
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "Beast Master",
+			"subclassSource": "PHB",
+			"level": 3,
+			"system": {
+				"actionType": "summ"
+			}
+		},
+		{
+			"name": "Ranger's Companion",
+			"source": "PHB",
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "Beast Master",
+			"subclassSource": "PHB",
+			"level": 3,
+			"system": {
+				"actionType": "summ"
+			}
+		},
+		{
 			"name": "Otherworldly Glamour",
 			"source": "TCE",
 			"className": "Ranger",
@@ -3571,16 +3633,16 @@
 			"subclassSource": "XGE",
 			"level": 3,
 			"entryData": {
+				"languageProficiencies": [
+					{
+						"any": 2
+					}
+				],
 				"toolProficiencies": [
 					{
 						"disguise kit": true,
 						"forgery kit": true,
 						"gaming set": true
-					}
-				],
-				"languageProficiencies": [
-					{
-						"any": 2
 					}
 				]
 			}
@@ -3805,6 +3867,7 @@
 			"subclassSource": "XGE",
 			"level": 6,
 			"system": {
+				"actionType": "summ",
 				"target.value": 1,
 				"target.type": "creature",
 				"range.value": 120,
@@ -3850,16 +3913,16 @@
 			"subclassShortName": "Storm",
 			"subclassSource": "XGE",
 			"level": 6,
+			"system": {
+				"target.value": 10,
+				"target.units": "ft",
+				"target.type": "sphere"
+			},
 			"entryData": {
 				"resist": [
 					"lightning",
 					"thunder"
 				]
-			},
-			"system": {
-				"target.value": 10,
-				"target.units": "ft",
-				"target.type": "sphere"
 			}
 		},
 		{
@@ -4053,15 +4116,15 @@
 			"subclassShortName": "Undead",
 			"subclassSource": "VRGR",
 			"level": 10,
-			"entryData": {
-				"resist": [
-					"necrotic"
-				]
-			},
 			"system": {
 				"target.value": 30,
 				"target.units": "ft",
 				"target.type": "radius"
+			},
+			"entryData": {
+				"resist": [
+					"necrotic"
+				]
 			}
 		},
 		{
@@ -4112,6 +4175,18 @@
 						"medium": true
 					}
 				]
+			}
+		},
+		{
+			"name": "Accursed Specter",
+			"source": "XGE",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Hexblade",
+			"subclassSource": "XGE",
+			"level": 6,
+			"system": {
+				"actionType": "summ"
 			}
 		},
 		{
@@ -4335,16 +4410,16 @@
 						"performance": true
 					}
 				],
-				"armorProficiencies": [
-					{
-						"light": true
-					}
-				],
 				"weaponProficiencies": [
 					{
 						"choose": {
 							"fromFilter": "type=melee weapon|property=!two-handed|rarity=none"
 						}
+					}
+				],
+				"armorProficiencies": [
+					{
+						"light": true
 					}
 				]
 			}
@@ -4648,6 +4723,18 @@
 						"martial": true
 					}
 				]
+			}
+		},
+		{
+			"name": "Steel Defender",
+			"source": "TCE",
+			"className": "Artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Battle Smith",
+			"subclassSource": "TCE",
+			"level": 3,
+			"system": {
+				"actionType": "summ"
 			}
 		},
 		{

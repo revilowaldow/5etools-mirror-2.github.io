@@ -48,7 +48,7 @@
 		max-height: initial;
 	}
 
-	@media (width <= 1023px) {
+	@media screen and (width <= #{vars.$width-screen-md}) {
 		max-width: 95vw;
 	}
 

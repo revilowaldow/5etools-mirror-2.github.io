@@ -5,6 +5,9 @@
 				"MM"
 			]
 		},
+		"internalCopies": [
+			"monster"
+		],
 		"otherSources": {
 			"monster": {
 				"MM": "PaBTSO",
@@ -12,10 +15,7 @@
 				"MOT": "PaBTSO",
 				"MPMM": "PaBTSO"
 			}
-		},
-		"internalCopies": [
-			"monster"
-		]
+		}
 	},
 	"monster": [
 		{

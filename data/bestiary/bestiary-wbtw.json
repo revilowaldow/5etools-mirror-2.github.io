@@ -1,13 +1,5 @@
 {
 	"_meta": {
-		"otherSources": {
-			"monster": {
-				"MM": "WBtW",
-				"VGM": "WBtW",
-				"GoS": "WBtW",
-				"CoS": "WBtW"
-			}
-		},
 		"dependencies": {
 			"monster": [
 				"MM"
@@ -15,7 +7,15 @@
 		},
 		"internalCopies": [
 			"monster"
-		]
+		],
+		"otherSources": {
+			"monster": {
+				"MM": "WBtW",
+				"VGM": "WBtW",
+				"GoS": "WBtW",
+				"CoS": "WBtW"
+			}
+		}
 	},
 	"monster": [
 		{

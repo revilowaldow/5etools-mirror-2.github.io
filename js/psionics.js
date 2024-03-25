@@ -1,12 +1,6 @@
 "use strict";
 
 class PsionicsSublistManager extends SublistManager {
-	constructor () {
-		super({
-			sublistClass: "subpsionics",
-		});
-	}
-
 	static get _ROW_TEMPLATE () {
 		return [
 			new SublistCellTemplate({
@@ -64,10 +58,6 @@ class PsionicsPage extends ListPage {
 			dataSource: "data/psionics.json",
 
 			pageFilter,
-
-			listClass: "psionics",
-
-			sublistClass: "subpsionics",
 
 			dataProps: ["psionic"],
 

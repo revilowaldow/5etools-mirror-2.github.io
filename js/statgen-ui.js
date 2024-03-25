@@ -661,8 +661,8 @@ class StatGenUi extends BaseComponent {
 		// region Point Buy stages
 		const $stgPbHeader = this._render_$getStgPbHeader();
 		const $stgPbCustom = this._render_$getStgPbCustom();
-		const $vrPbCustom = $(`<div class="vr-5 mobile-ish__hidden"></div>`);
-		const $hrPbCustom = $(`<hr class="hr-5 mobile-ish__visible">`);
+		const $vrPbCustom = $(`<div class="vr-5 mobile-lg__hidden"></div>`);
+		const $hrPbCustom = $(`<hr class="hr-5 mobile-lg__visible">`);
 		const hkStgPb = () => {
 			$stgPbHeader.toggleVe(this.ixActiveTab === this._IX_TAB_PB);
 			$stgPbCustom.toggleVe(this.ixActiveTab === this._IX_TAB_PB);
@@ -859,7 +859,7 @@ class StatGenUi extends BaseComponent {
 			${$stgArrayHeader}
 			${$stgManualHeader}
 
-			<div class="ve-flex mobile-ish__ve-flex-col w-100 px-3">
+			<div class="ve-flex mobile-lg__ve-flex-col w-100 px-3">
 				<div class="ve-flex-col">
 					${$stgPbHeader}
 
@@ -1363,7 +1363,7 @@ class StatGenUi extends BaseComponent {
 		const $wrpAsi = this._render_$getWrpAsi();
 
 		$$($wrpTab)`
-			<div class="ve-flex mobile-ish__ve-flex-col w-100 px-3">
+			<div class="ve-flex mobile-lg__ve-flex-col w-100 px-3">
 				<div class="ve-flex-col">
 					<div class="ve-flex">
 						<div class="ve-flex-col mr-3">

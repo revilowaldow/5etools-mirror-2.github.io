@@ -1,3 +1,5 @@
+@use "includes/vars";
+
 .list--stats {
 	height: initial;
 	max-height: 100%;
@@ -23,13 +25,13 @@ h3.ele-magic {
 	margin: 0;
 }
 
-@media (width <= 991px) {
+@media screen and (width <= #{vars.$width-screen-md}) {
 	.list--stats {
 		max-height: 20em;
 	}
 }
 
-@media (device-height <= 700px) {
+@media screen and (device-height <= 700px) {
 	.list {
 		max-height: 20em;
 	}

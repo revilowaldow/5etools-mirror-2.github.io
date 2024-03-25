@@ -645,7 +645,7 @@ Parser.sourceJsonToDate = function (source) {
 };
 
 Parser.sourceJsonToColor = function (source) {
-	return `source${Parser.sourceJsonToAbv(source)}`;
+	return `source__${source}`;
 };
 
 Parser.sourceJsonToStyle = function (source) {
@@ -2536,7 +2536,7 @@ Parser.vehicleTypeToFull = function (vehicleType) {
 
 // SOURCES =============================================================================================================
 
-Parser.SRC_5ETOOLS_TMP = "Parser.SRC_5ETOOLS_TMP"; // Temp source, used as a placeholder value
+Parser.SRC_5ETOOLS_TMP = "SRC_5ETOOLS_TMP"; // Temp source, used as a placeholder value
 
 Parser.SRC_CoS = "CoS";
 Parser.SRC_DMG = "DMG";
@@ -2645,6 +2645,7 @@ Parser.SRC_GHLoE = "GHLoE";
 Parser.SRC_DoDk = "DoDk";
 Parser.SRC_HWCS = "HWCS";
 Parser.SRC_HWAitW = "HWAitW";
+Parser.SRC_ToB1_2023 = "ToB1-2023";
 Parser.SRC_TD = "TD";
 Parser.SRC_SCREEN = "Screen";
 Parser.SRC_SCREEN_WILDERNESS_KIT = "ScreenWildernessKit";
@@ -2821,6 +2822,7 @@ Parser.SOURCE_JSON_TO_FULL[Parser.SRC_GHLoE] = "Grim Hollow: Lairs of Etharis";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_DoDk] = "Dungeons of Drakkenheim";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_HWCS] = "Humblewood Campaign Setting";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_HWAitW] = "Humblewood: Adventure in the Wood";
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_ToB1_2023] = "Tome of Beasts 1 (2023 Edition)";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_TD] = "Tarot Deck";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_SCREEN] = "Dungeon Master's Screen";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_SCREEN_WILDERNESS_KIT] = "Dungeon Master's Screen: Wilderness Kit";
@@ -2972,6 +2974,7 @@ Parser.SOURCE_JSON_TO_ABV[Parser.SRC_GHLoE] = "GHLoE";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_DoDk] = "DoDk";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_HWCS] = "HWCS";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_HWAitW] = "HWAitW";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_ToB1_2023] = "ToB1'23";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_TD] = "TD";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_SCREEN] = "Screen";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_SCREEN_WILDERNESS_KIT] = "ScWild";
@@ -3122,6 +3125,7 @@ Parser.SOURCE_JSON_TO_DATE[Parser.SRC_GHLoE] = "2023-11-30";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_DoDk] = "2023-12-21";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_HWCS] = "2019-06-17";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_HWAitW] = "2019-06-17";
+Parser.SOURCE_JSON_TO_DATE[Parser.SRC_ToB1_2023] = "2023-05-31";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_TD] = "2022-05-24";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_SCREEN] = "2015-01-20";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_SCREEN_WILDERNESS_KIT] = "2020-11-17";
@@ -3311,6 +3315,7 @@ Parser.SOURCES_PARTNERED_WOTC = new Set([
 	Parser.SRC_DoDk,
 	Parser.SRC_HWCS,
 	Parser.SRC_HWAitW,
+	Parser.SRC_ToB1_2023,
 	Parser.SRC_TD,
 ]);
 // region Source categories
@@ -3397,6 +3402,7 @@ Parser.SOURCES_NON_FR = new Set([
 	Parser.SRC_DoDk,
 	Parser.SRC_HWCS,
 	Parser.SRC_HWAitW,
+	Parser.SRC_ToB1_2023,
 ]);
 
 // endregion
@@ -3439,6 +3445,7 @@ Parser.SOURCES_AVAILABLE_DOCS_BOOK = {};
 	Parser.SRC_BMT,
 	Parser.SRC_DMTCRG,
 	Parser.SRC_HWCS,
+	Parser.SRC_ToB1_2023,
 	Parser.SRC_TD,
 ].forEach(src => {
 	Parser.SOURCES_AVAILABLE_DOCS_BOOK[src] = src;

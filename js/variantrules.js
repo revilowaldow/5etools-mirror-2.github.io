@@ -1,12 +1,6 @@
 "use strict";
 
 class VariantRulesSublistManager extends SublistManager {
-	constructor () {
-		super({
-			sublistClass: "subvariantrules",
-		});
-	}
-
 	static get _ROW_TEMPLATE () {
 		return [
 			new SublistCellTemplate({
@@ -57,8 +51,6 @@ class VariantRulesPage extends ListPage {
 			dataSource: DataUtil.variantrule.loadJSON.bind(DataUtil.variantrule),
 
 			pageFilter,
-
-			listClass: "variantrules",
 
 			dataProps: ["variantrule"],
 

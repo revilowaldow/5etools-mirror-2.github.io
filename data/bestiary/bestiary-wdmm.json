@@ -8,16 +8,16 @@
 				"MTF"
 			]
 		},
+		"internalCopies": [
+			"monster"
+		],
 		"otherSources": {
 			"monster": {
 				"MM": "WDMM",
 				"VGM": "WDMM",
 				"MTF": "WDMM"
 			}
-		},
-		"internalCopies": [
-			"monster"
-		]
+		}
 	},
 	"monster": [
 		{

@@ -260,6 +260,25 @@ globalThis.Renderer = function () {
 
 	this._getPlugins = function (pluginType) { return this._plugins[pluginType] ||= []; };
 
+	// TODO(Future) refactor to use this
+	this._applyPlugins_useFirst = function (pluginType, commonArgs, pluginArgs) {
+		for (const plugin of this._getPlugins(pluginType)) {
+			const out = plugin(commonArgs, pluginArgs);
+			if (out) return out;
+		}
+	};
+
+	this._applyPlugins_useAll = function (pluginType, commonArgs, pluginArgs) {
+		const plugins = this._getPlugins(pluginType);
+		if (!plugins?.length) return null;
+
+		let input = pluginArgs.input;
+		for (const plugin of plugins) {
+			input = plugin(commonArgs, pluginArgs) ?? input;
+		}
+		return input;
+	};
+
 	/** Run a function with the given plugin active. */
 	this.withPlugin = function ({pluginTypes, fnPlugin, fn}) {
 		for (const pt of pluginTypes) this.addPlugin(pt, fnPlugin);
@@ -1547,7 +1566,9 @@ globalThis.Renderer = function () {
 	};
 
 	this._renderString = function (entry, textStack, meta, options) {
-		const tagSplit = Renderer.splitByTags(entry);
+		const str = this._applyPlugins_useAll("string_preprocess", {textStack, meta, options}, {input: entry}) ?? entry;
+
+		const tagSplit = Renderer.splitByTags(str);
 		const len = tagSplit.length;
 		for (let i = 0; i < len; ++i) {
 			const s = tagSplit[i];
@@ -9605,6 +9626,12 @@ Renderer.vehicle = class {
 
 	static getVehicleRenderableEntriesMeta (ent) {
 		return {
+			entryDamageVulnerabilities: ent.vulnerable
+				? `{@b Damage Vulnerabilities} ${Parser.getFullImmRes(ent.vulnerable)}`
+				: null,
+			entryDamageResistances: ent.resist
+				? `{@b Damage Resistances} ${Parser.getFullImmRes(ent.resist)}`
+				: null,
 			entryDamageImmunities: ent.immune
 				? `{@b Damage Immunities} ${Parser.getFullImmRes(ent.immune)}`
 				: null,
@@ -9940,6 +9967,8 @@ Renderer.vehicle = class {
 		entriesMeta ||= Renderer.vehicle.getVehicleRenderableEntriesMeta(ent);
 
 		const props = [
+			"entryDamageVulnerabilities",
+			"entryDamageResistances",
 			"entryDamageImmunities",
 			"entryConditionImmunities",
 		];

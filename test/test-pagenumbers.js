@@ -9,10 +9,12 @@ const BLOCKLIST_FILE_PREFIXES = [
 	...ut.FILE_PREFIX_BLOCKLIST,
 	"fluff-",
 
+	"foundry-",
+	"foundry.json",
+
 	// specific files
 	"makebrew-creature.json",
 	"makecards.json",
-	"foundry.json",
 	"characters.json",
 ];
 

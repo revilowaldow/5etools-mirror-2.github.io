@@ -106,7 +106,7 @@
 			"name": "Hazirawn",
 			"source": "HotDQ",
 			"system": {
-				"attackBonus": "+1 + floor(@item.attunement / 2)",
+				"attack.bonus": "+1 + floor(@item.attunement / 2)",
 				"damage.parts": [
 					[
 						"2d6+1+floor(@item.attunement / 2)",

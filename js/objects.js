@@ -1,12 +1,6 @@
 "use strict";
 
 class ObjectsSublistManager extends SublistManager {
-	constructor () {
-		super({
-			sublistClass: "subobjects",
-		});
-	}
-
 	static get _ROW_TEMPLATE () {
 		return [
 			new SublistCellTemplate({
@@ -63,8 +57,6 @@ class ObjectsPage extends ListPage {
 			pFnGetFluff,
 
 			pageFilter,
-
-			listClass: "objects",
 
 			dataProps: ["object"],
 

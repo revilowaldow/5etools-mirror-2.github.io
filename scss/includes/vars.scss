@@ -286,15 +286,12 @@ $font-line-height: 1.4286;
 	font-weight: normal;
 }
 
+$width-screen-xxs: 320px;
 $width-screen-xs: 480px;
 $width-screen-sm: 768px;
 $width-screen-md: 991px;
 $width-screen-lg: 1200px;
-
-$width-screen-xs--min: 481px;
-$width-screen-sm--min: 769px;
-$width-screen-md--min: 992px;
-$width-screen-lg--min: 1201px;
+$width-screen-hg: 1600px;
 
 // region linked titles
 %linked-titles-base {

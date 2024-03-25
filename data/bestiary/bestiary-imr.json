@@ -7,6 +7,9 @@
 				"VGM"
 			]
 		},
+		"internalCopies": [
+			"monster"
+		],
 		"otherSources": {
 			"monster": {
 				"MM": "IMR",
@@ -19,10 +22,7 @@
 				"LLK": "IMR",
 				"SKT": "IMR"
 			}
-		},
-		"internalCopies": [
-			"monster"
-		]
+		}
 	},
 	"monster": [
 		{

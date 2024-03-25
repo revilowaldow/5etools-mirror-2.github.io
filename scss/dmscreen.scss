@@ -497,7 +497,7 @@ iframe {
 	border-radius: 0;
 }
 
-@media (width <= 991px) {
+@media screen and (width <= #{vars.$width-screen-md}) {
 	.viewport-wrapper {
 		bottom: 0;
 		height: 100vh;

@@ -96,6 +96,22 @@
 			}
 		},
 		{
+			"name": "Eldritch Mind",
+			"source": "TCE",
+			"effects": [
+				{
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.concentration.roll.mode",
+							"mode": "OVERRIDE",
+							"value": "1"
+						}
+					]
+				}
+			]
+		},
+		{
 			"name": "Eldritch Sight",
 			"source": "PHB",
 			"system": {

@@ -13,7 +13,7 @@ env:
    IMAGE_NAME: 5etools
 
    # Used to force a clean (i.e., non-incremental) Docker build
-   DO_CLEAN_BUILD: 0
+   DO_CLEAN_BUILD: 1
 
 concurrency:
    group: "release"
@@ -52,6 +52,7 @@ jobs:
                echo "IMAGE_VERSION=$IMAGE_VERSION" >> $GITHUB_ENV
 
                echo "IMAGE_ID=$(echo ghcr.io/${{ github.repository_owner }}/$IMAGE_NAME | tr '[A-Z]' '[a-z]')" >> $GITHUB_ENV
+               echo "IMAGE_ID_IMG=$(echo ghcr.io/${{ github.repository_owner }}/$IMAGE_NAME-img | tr '[A-Z]' '[a-z]')" >> $GITHUB_ENV
 
          -  name: Set Deployed Flag
             run: |
@@ -101,16 +102,21 @@ jobs:
                   # Build an incremental image...
                   echo "Version is ${{ github.ref_name }}, doing an incremental docker build"
 
-                  # Pull the old image
+                  # Pull the old images
                   docker pull $IMAGE_ID:latest
+                  docker pull IMAGE_ID_IMG:latest
 
                   # Save the current CMD from the image
                   SAVE_CMD=$(docker inspect --format='{{json .Config.Cmd}}' $IMAGE_ID:latest)
 
                   # Convert .dockerignore to .rsync-filter
                   bash ./.github/create-rsync-filter.sh
+               
+                  # Copy img files to host
+                  docker run --rm -v "$(pwd)":/tmp/5et-new $IMAGE_ID_IMG:latest rsync -rlcv --filter='dir-merge /tmp/5et-new/.rsync-filter' /var/www/localhost/htdocs/img /tmp/5et-new/
+                  docker rmi $(docker images -q $IMAGE_ID_IMG:*)
 
-                  # Run up the previous container, and rsync the current new of files into it
+                  # Run up the previous containers, and rsync the current new of files into it
                   CONTAINER_ID=$(docker run -d -v "$(pwd)":/tmp/5et-new $IMAGE_ID:latest  rsync -rlcvF --delete-excluded /tmp/5et-new/ /var/www/localhost/htdocs/)
                   docker logs -f $CONTAINER_ID
 

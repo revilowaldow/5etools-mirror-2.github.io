@@ -42,7 +42,7 @@
 		line-height: 1;
 		margin-right: 2px;
 
-		@media (min-width: vars.$width-screen-sm--min) {
+		@media screen and (width > #{vars.$width-screen-sm}) {
 			display: none;
 		}
 	}
@@ -52,14 +52,14 @@
 		min-height: 33px;
 		flex-shrink: 0;
 
-		@media (max-width: vars.$width-screen-sm) {
+		@media screen and (width <= #{vars.$width-screen-sm}) {
 			width: 100%;
 			display: flex;
 		}
 	}
 
 	&nav-inner {
-		@media (max-width: vars.$width-screen-sm) {
+		@media screen and (width <= #{vars.$width-screen-sm}) {
 			display: flex;
 			margin-top: 3px;
 			flex-direction: column;
@@ -148,7 +148,7 @@
 }
 
 #navigation .page__nav-hidden-mobile {
-	@media (max-width: vars.$width-screen-sm) {
+	@media screen and (width <= #{vars.$width-screen-sm}) {
 		display: none;
 		margin-left: 0;
 	}
@@ -181,7 +181,7 @@
 	height: 100vh;
 	width: 100vw;
 
-	@media (max-width: vars.$width-screen-md) {
+	@media screen and (width <= #{vars.$width-screen-md}) {
 		bottom: auto;
 		height: initial;
 		min-height: 100vh;
@@ -203,12 +203,12 @@
 	min-height: 0;
 
 	&--cancer {
-		@media (min-width: vars.$width-screen-md--min) {
+		@media screen and (width > #{vars.$width-screen-md}) {
 			// min-height: calc(100vh - #{$sz-y-header});
 		}
 	}
 
-	@media (max-width: vars.$width-screen-md) {
+	@media screen and (width <= #{vars.$width-screen-md}) {
 		flex-direction: column;
 		max-height: none;
 		height: initial;
@@ -340,28 +340,28 @@ input[type="checkbox"].sidemenu__row__label__cb {
 			right: 10px;
 		}
 
-		@media only screen and (width >= 320px) {
+		@media screen and (width > #{vars.$width-screen-xxs}) {
 			max-width: 300px;
 			min-width: 270px;
 		}
 
-		@media only screen and (min-width: vars.$width-screen-xs--min) {
+		@media screen and (width > #{vars.$width-screen-xs}) {
 			max-width: 460px;
 			min-width: 430px;
 		}
 
-		@media only screen and (min-width: vars.$width-screen-sm--min) {
+		@media screen and (width > #{vars.$width-screen-sm}) {
 			max-width: 740px;
 			min-width: 500px;
 		}
 
-		@media only screen and (max-width: vars.$width-screen-sm) {
+		@media screen and (width <= #{vars.$width-screen-sm}) {
 			top: 40px;
 		}
 	}
 
 	&wrp-input {
-		@media only screen and (max-width: vars.$width-screen-sm) {
+		@media screen and (width <= #{vars.$width-screen-sm}) {
 			margin-top: 2px;
 			margin-left: 0;
 		}
@@ -412,7 +412,7 @@ input[type="checkbox"].sidemenu__row__label__cb {
 		height: 32px;
 		min-width: 100px;
 
-		@media (width >= 992px) {
+		@media screen and (width > #{vars.$width-screen-md}) {
 			border-top-left-radius: 0;
 			border-top-color: transparent;
 		}
@@ -428,7 +428,7 @@ input[type="checkbox"].sidemenu__row__label__cb {
 		height: 32px;
 		padding: 3px 7px;
 
-		@media (width >= 992px) {
+		@media screen and (width > #{vars.$width-screen-md}) {
 			border-top-right-radius: 0;
 			border-top-color: transparent;
 		}
@@ -781,7 +781,7 @@ input[type="checkbox"].sidemenu__row__label__cb {
 		border-bottom-color: #c0c0c0;
 	}
 
-	@media (max-width: vars.$width-screen-md) {
+	@media screen and (width <= #{vars.$width-screen-md}) {
 		overflow-y: initial;
 	}
 }
@@ -825,13 +825,13 @@ input[type="checkbox"].sidemenu__row__label__cb {
 	font-size: 0.8em;
 
 	&--stats {
-		@media (min-width: vars.$width-screen-md--min) {
+		@media screen and (width > #{vars.$width-screen-md}) {
 			overflow-y: scroll;
 			margin-right: -9px;
 		}
 	}
 
-	@media (max-width: vars.$width-screen-md) {
+	@media screen and (width <= #{vars.$width-screen-md}) {
 		max-height: 40vh;
 	}
 
@@ -1036,11 +1036,6 @@ tr.text.compact > td p:last-child {
 	margin-bottom: 0;
 }
 
-div#lootoutput {
-	height: 100%;
-	clear: both;
-}
-
 .mon__ {
 	&btn-reset-cr,
 	&btn-scale-cr {
@@ -1063,11 +1058,6 @@ div#lootoutput {
 		&--compact {
 			top: 41px;
 		}
-	}
-
-	&wrp-size-type-align--token,
-	&wrp-avoid-token {
-		max-width: calc(100% - 11rem);
 	}
 
 	&sect-header-inner {
@@ -1094,105 +1084,6 @@ div#lootoutput {
 		border-bottom: 1px solid vars.$rgb-name-red;
 		vertical-align: bottom !important;
 		padding-left: 0.2rem;
-	}
-
-	&wrp-token {
-		display: block;
-		position: absolute;
-		z-index: vars.$z-token-image;
-		top: 0;
-		right: 0.5rem;
-		width: auto;
-		max-width: 11rem;
-		height: auto;
-		transition:
-			opacity vars.$time-2-frames,
-			max-width vars.$time-2-frames,
-			right vars.$time-2-frames;
-
-		&:hover {
-			max-width: 100%;
-			right: 0;
-			opacity: 1 !important;
-			transition:
-				opacity vars.$time-2-frames,
-				max-width vars.$time-2-frames,
-				right vars.$time-2-frames;
-
-			.mon__btn-token-cycle {
-				opacity: 1;
-				transition: opacity vars.$time-2-frames;
-			}
-
-			.mon__wrp-token-footer {
-				opacity: 1;
-				transition: opacity vars.$time-2-frames;
-			}
-		}
-	}
-
-	&token {
-		width: 100%;
-		height: 100%;
-	}
-
-	&btn-token-cycle {
-		position: absolute;
-		top: 50%;
-		bottom: 50%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 40px;
-		height: 40px;
-		background: vars.$rgb-shadow-grey--dark;
-		cursor: pointer;
-		color: #fff;
-		border: 1px solid vars.$rgb-border-grey--trans;
-		opacity: 0;
-		transition: opacity vars.$time-2-frames;
-
-		&--left {
-			left: 0;
-			border-top-left-radius: 5px;
-			border-bottom-left-radius: 5px;
-			border-right: 0;
-		}
-
-		&--right {
-			right: 0;
-			border-top-right-radius: 5px;
-			border-bottom-right-radius: 5px;
-			border-left: 0;
-		}
-
-		&:hover {
-			color: #ddd;
-		}
-	}
-
-	&wrp-token-footer {
-		display: flex;
-		position: absolute;
-		height: 22px;
-		right: 5px;
-		bottom: 0;
-		left: 5px;
-		align-items: center;
-		justify-content: center;
-		opacity: 0;
-		transition: opacity vars.$time-2-frames;
-	}
-
-	&token-footer {
-		background: vars.$rgb-shadow-grey--dark;
-		color: #fff;
-		font-family: "Times New Roman", serif;
-		font-variant: small-caps;
-		font-size: 16px;
-		border-radius: 5px;
-		padding: 1px 5px;
-		border: 1px solid vars.$rgb-border-grey--trans;
 	}
 }
 
@@ -1622,7 +1513,7 @@ input[type="checkbox"].readonly {
 		min-height: 75px;
 		max-height: 80%;
 
-		@media (max-width: vars.$width-screen-md) {
+		@media screen and (width <= #{vars.$width-screen-md}) {
 			max-height: 40vh;
 			height: initial;
 		}
@@ -1667,24 +1558,6 @@ input[type="checkbox"].readonly {
 
 /* ENTRY RENDERING CSS */
 // TODO refactor everything
-tr.trait,
-tr.action,
-tr.reaction,
-tr.legendary,
-tr.mythic,
-tr.lairaction,
-tr.regionaleffect {
-	.rd__b--3 {
-		margin-bottom: 1rem;
-	}
-}
-
-tr.lairaction,
-tr.regionaleffect {
-	p {
-		margin-bottom: 5px;
-	}
-}
 
 // Book mode adjustments
 .stats--book-large {
@@ -1755,7 +1628,7 @@ tr.regionaleffect {
 	max-height: 100vh;
 }
 
-@media only screen and (width >= 1600px) {
+@media screen and (width > #{vars.$width-screen-hg}) {
 	#listcontainer.book-contents {
 		position: fixed;
 		top: 0;
@@ -1802,28 +1675,28 @@ tr.regionaleffect {
 	padding: 0 20px;
 }
 
-@media (max-width: vars.$width-screen-lg) {
+@media screen and (width <= #{vars.$width-screen-lg}) {
 	.f-all-wrapper {
 		right: calc((50vw - (970px / 2)) + 1.5em);
 		left: calc(((100vw - (970px * (4 / 6))) / 2) + 1.5em);
 	}
 }
 
-@media (max-width: vars.$width-screen-md) {
+@media screen and (width <= #{vars.$width-screen-md}) {
 	.f-all-wrapper {
 		right: calc(((100vw - 750px) / 2) + 1.5em);
 		left: calc(((100vw - 750px) / 2) + 1.5em);
 	}
 }
 
-@media only screen and (max-width: vars.$width-screen-sm) {
+@media screen and (width <= #{vars.$width-screen-sm}) {
 	.f-all-wrapper {
 		right: calc(((100vw - 750px) / 2) + 1.5em);
 		left: calc(((100vw - 750px) / 2) + 1.5em);
 	}
 }
 
-@media only screen and (max-width: vars.$width-screen-xs) {
+@media screen and (width <= #{vars.$width-screen-xs}) {
 	.f-all-wrapper {
 		right: calc(3.5em);
 		left: calc(3.5em);
@@ -1872,7 +1745,7 @@ header p.lead {
 	background: vars.$rgb-bg-orange;
 }
 
-@media only screen and (width >= 1600px) {
+@media screen and (width > #{vars.$width-screen-hg}) {
 	#listcontainer.book-contents {
 		@include vars.mix-shadow-1;
 
@@ -1930,23 +1803,23 @@ header p.lead {
 			column-gap: 7px;
 			break-inside: avoid-column;
 
-			@media (width <= 2160px) {
+			@media screen and (width <= 2160px) {
 				column-count: 5;
 			}
 
-			@media (width <= 1800px) {
+			@media screen and (width <= 1800px) {
 				column-count: 4;
 			}
 
-			@media (width <= 1440px) {
+			@media screen and (width <= 1440px) {
 				column-count: 3;
 			}
 
-			@media (width <= 1080px) {
+			@media screen and (width <= 1080px) {
 				column-count: 2;
 			}
 
-			@media only screen and (width <= 720px) {
+			@media screen and (width <= 720px) {
 				column-count: 1;
 			}
 		}
@@ -2057,7 +1930,7 @@ th.border {
 			right: 10px;
 			padding: 2px 0;
 
-			@media (max-width: vars.$width-screen-sm) {
+			@media screen and (width <= #{vars.$width-screen-sm}) {
 				display: none;
 			}
 		}
@@ -2802,7 +2675,7 @@ th.border {
 		}
 
 		&input {
-			@media (width >= 992px) {
+			@media screen and (width > #{vars.$width-screen-md}) {
 				border-top-color: transparent;
 			}
 
@@ -2814,7 +2687,7 @@ th.border {
 		&submit {
 			border-top-color: vars.$rgb-border-grey--night;
 
-			@media (width >= 992px) {
+			@media screen and (width > #{vars.$width-screen-md}) {
 				border-top-color: transparent;
 			}
 
@@ -2873,7 +2746,7 @@ th.border {
 		}
 	}
 
-	@media only screen and (width >= 1600px) {
+	@media screen and (width > #{vars.$width-screen-hg}) {
 		#listcontainer.book-contents {
 			background: vars.$rgb-bg--night;
 			border-right: 1px solid #404040;
@@ -3194,7 +3067,7 @@ th.border {
 			top: 150px;
 		}
 
-		@media (width <= 1800px) {
+		@media screen and (width <= 1800px) {
 			display: none;
 		}
 	}

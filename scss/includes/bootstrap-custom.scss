@@ -35,7 +35,7 @@
 .help--hover {
 	// This should approx. match the hover cutoff defined in renderer (768px).
 	// Approximate, since jQuery calculates window width differently, offset likely varies with e.g. scrollbar width.
-	@media (width <= 780px) {
+	@media screen and (width <= #{vars.$width-screen-sm}) {
 		cursor: default !important;
 		text-decoration: none !important;
 	}
@@ -172,13 +172,13 @@ body::-webkit-scrollbar {
 	> a {
 		padding: 5px 14px 6px;
 
-		@media (width >= 992px) {
+		@media screen and (width > #{vars.$width-screen-md}) {
 			border-top-left-radius: 0;
 			border-top-right-radius: 0;
 		}
 	}
 
-	@media (width <= 991px) {
+	@media screen and (width <= #{vars.$width-screen-md}) {
 		margin-top: 2px;
 		margin-bottom: 2px;
 	}
@@ -190,7 +190,7 @@ body::-webkit-scrollbar {
 	background-color: #006bc4;
 	border-top: 0;
 
-	@media (width >= 992px) {
+	@media screen and (width > #{vars.$width-screen-md}) {
 		border-left: 1px solid transparent;
 		border-right: 1px solid transparent;
 		border-bottom: 1px solid #999;

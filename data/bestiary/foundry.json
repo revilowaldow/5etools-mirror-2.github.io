@@ -3,6 +3,9 @@
 		{
 			"name": "Beast of the Land",
 			"source": "TCE",
+			"prototypeToken": {
+				"actorLink": true
+			},
 			"effects": [
 				{
 					"name": "Ranger's Leadership",
@@ -19,6 +22,9 @@
 		{
 			"name": "Beast of the Sea",
 			"source": "TCE",
+			"prototypeToken": {
+				"actorLink": true
+			},
 			"effects": [
 				{
 					"name": "Ranger's Leadership",
@@ -35,6 +41,9 @@
 		{
 			"name": "Beast of the Sky",
 			"source": "TCE",
+			"prototypeToken": {
+				"actorLink": true
+			},
 			"effects": [
 				{
 					"name": "Ranger's Leadership",
@@ -72,6 +81,9 @@
 		{
 			"name": "Drake Companion",
 			"source": "FTD",
+			"prototypeToken": {
+				"actorLink": true
+			},
 			"effects": [
 				{
 					"name": "Ranger's Leadership",
@@ -108,6 +120,9 @@
 		{
 			"name": "Homunculus Servant",
 			"source": "TCE",
+			"prototypeToken": {
+				"actorLink": true
+			},
 			"effects": [
 				{
 					"name": "Artificer's Leadership",
@@ -139,6 +154,9 @@
 		{
 			"name": "Steel Defender",
 			"source": "TCE",
+			"prototypeToken": {
+				"actorLink": true
+			},
 			"effects": [
 				{
 					"name": "Artificer's Leadership",

@@ -172,19 +172,19 @@ Shared UI components
 		border-radius: 4px;
 		box-shadow: 0 6px 12px rgb(0 0 0 / 17.5%);
 
-		@media (width <= 767px) {
+		@media screen and (width <= #{vars.$width-screen-sm}) {
 			min-width: 0;
 		}
 
-		@media (width >= 768px) {
+		@media screen and (width > #{vars.$width-screen-sm}) {
 			max-width: 750px;
 		}
 
-		@media (width >= 992px) {
+		@media screen and (width > #{vars.$width-screen-md}) {
 			max-width: 970px;
 		}
 
-		@media (width >= 1200px) {
+		@media screen and (width > #{vars.$width-screen-lg}) {
 			max-width: 1170px;
 		}
 
@@ -393,7 +393,7 @@ Shared UI components
 		margin-left: $w-tab + 6px;
 		font-size: 28px;
 
-		@media only screen and (max-width: vars.$width-screen-lg) {
+		@media screen and (width <= #{vars.$width-screen-lg}) {
 			margin-left: $w-tab-mobile-ish + 6px;
 		}
 	}
@@ -401,7 +401,7 @@ Shared UI components
 	&btn-tab {
 		width: $w-tab;
 
-		@media only screen and (max-width: vars.$width-screen-lg) {
+		@media screen and (width <= #{vars.$width-screen-lg}) {
 			width: 33px;
 			height: 30px;
 		}

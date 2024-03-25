@@ -13920,6 +13920,16 @@
 			]
 		},
 		{
+			"name": "Dissimortuum's Cursed Mask",
+			"source": "ToB1-2023",
+			"page": 106,
+			"rarity": "rare",
+			"wondrous": true,
+			"entries": [
+				"The dissimortuum's mask is nigh indestructible. When the creature is destroyed, its mask usually survives and breaks free. On its own, the object emits a faint magical aura with mixed enchantment and necromantic properties. It is a tempting souvenir, but any humanoid or giant foolish enough to don the mask is immediately wracked by pain and takes 7 ({@damage 2d6}) necrotic damage. The creature must succeed on a DC 15 Wisdom saving throw or become dominated by the mask. The domination arrives slowly. The creature acts normally for a day or two, but then the creature notices periods of time that cannot be accounted for. During these unremembered times, the creature gathers the grisly components needed to build a new body for the dissimortuum. This process takes a week, after which the creature is freed from domination as the dissimortuum arises anew and dons its mask once more."
+			]
+		},
+		{
 			"name": "Docent",
 			"source": "ERLW",
 			"page": 276,
@@ -29436,6 +29446,7 @@
 			],
 			"wondrous": true,
 			"weight": 8,
+			"bonusSavingThrowConcentration": "+2",
 			"recharge": "dawn",
 			"rechargeAmount": 3,
 			"charges": 3,
@@ -36516,6 +36527,7 @@
 			"dmg1": "1d4",
 			"dmgType": "S",
 			"bonusWeapon": "+3",
+			"critThreshold": 18,
 			"entries": [
 				"Said to be a gift to Glasya from Asmodeus, the Scourge of Shadow is a multi-headed whip constructed from infernal iron. The scourge is nigh-in- destructible, and Glasya carries it with her wherever she goes. When she wields the whip in battle, it shrouds her in an aura of shadow.",
 				"The Scourge of Shadow is a magic whip. You have a +3 bonus to attack and damage rolls made with this weapon, and it does {@damage 3d4} slashing damage instead of its regular damage. When you hit a good aligned creature with it, that creatures takes an extra {@damage 4d4} necrotic damage.",
@@ -39760,6 +39772,18 @@
 			"value": 10000,
 			"entries": [
 				"A transparent red, red-brown, or deep green gemstone."
+			]
+		},
+		{
+			"name": "Spinosaurus",
+			"source": "ToB1-2023",
+			"page": 103,
+			"type": "MNT",
+			"rarity": "none",
+			"value": 200000,
+			"entries": [
+				"Before it can be ridden in combat, a {@creature spinosaurus dinosaur|ToB1-2023} must practice bearing the weight of its trainer and passengers. They rarely master more than a handful of tricks, but they are extremely comfortable in the water and can be trained to be are aware that some of their riders may not breathe water.",
+				"An adult spinosaurus can carry up to six tons as cargo. Riding a spinosaurus requires an exotic saddle, riding platform, or howdah."
 			]
 		},
 		{
@@ -46990,6 +47014,17 @@
 				"Magic Item Table E"
 			],
 			"hasFluffImages": true
+		},
+		{
+			"name": "Vanisher Hat",
+			"source": "ToB1-2023",
+			"page": 319,
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"This plain hat appears to be a rough burlap tam. A creature that can see through illusions sees the hat as a golden, bejeweled coronet. While wearing this hat, you can use an action to speak its command word to become invisible and gain a flying speed of 40 feet for up to 1 minute. Anything you are wearing or carrying is invisible with you. You remain invisible and capable of flying until you repeat the command word as an action or until you attack or cast a spell. Once used, the hat can't be used again until the next dawn."
+			]
 		},
 		{
 			"name": "Vanquisher's Banner",

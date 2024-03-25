@@ -7,6 +7,9 @@ import "../js/utils.js";
 const BLOCKLIST_FILE_PREFIXES = [
 	...ut.FILE_PREFIX_BLOCKLIST,
 
+	"foundry-",
+	"foundry.json",
+
 	// specific files
 	"demo.json",
 ];

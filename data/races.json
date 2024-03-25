@@ -3084,13 +3084,21 @@
 				"max": 350
 			},
 			"darkvision": 60,
-			"traitTags": [
-				"Tool Proficiency"
-			],
 			"languageProficiencies": [
 				{
 					"common": true,
 					"dwarvish": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"smith's tools",
+							"brewer's supplies",
+							"mason's tools"
+						]
+					}
 				}
 			],
 			"weaponProficiencies": [
@@ -3195,13 +3203,15 @@
 				"max": 350
 			},
 			"darkvision": 60,
-			"traitTags": [
-				"Tool Proficiency"
-			],
 			"languageProficiencies": [
 				{
 					"common": true,
 					"dwarvish": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"anyArtisansTool": 2
 				}
 			],
 			"resist": [
@@ -3373,7 +3383,7 @@
 					"name": "Trance",
 					"entries": [
 						"You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness.",
-						"Whenever you finish this trance, you can change your season, and you can gain two proficiencies that you don't have, each one with a weapon or a tool of your choice selected from the Player's Handbook. You mystically acquire these proficiencies by drawing them from shared elven memory, and you retain them until you finish your next long rest."
+						"Whenever you finish this trance, you can change your season, and you can gain two proficiencies that you don't have, each one with a {@book weapon|phb|5|weapons} or a {@book tool|phb|5|tools} of your choice selected from the Player's Handbook. You mystically acquire these proficiencies by drawing them from shared elven memory, and you retain them until you finish your next long rest."
 					]
 				}
 			],
@@ -4024,6 +4034,17 @@
 				{
 					"other": true,
 					"auran": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"brewer's supplies",
+							"carpenter's tools",
+							"smith's tools"
+						]
+					}
 				}
 			],
 			"entries": [
@@ -8324,12 +8345,14 @@
 				}
 			],
 			"darkvision": 60,
-			"traitTags": [
-				"Tool Proficiency"
-			],
 			"languageProficiencies": [
 				{
 					"other": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"tinker's tools": true
 				}
 			],
 			"resist": [
@@ -8844,8 +8867,7 @@
 			},
 			"traitTags": [
 				"Language Proficiency",
-				"Natural Weapon",
-				"Tool Proficiency"
+				"Natural Weapon"
 			],
 			"languageProficiencies": [
 				{
@@ -9964,7 +9986,7 @@
 					"name": "Trance",
 					"entries": [
 						"You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness.",
-						"Whenever you finish this trance, you can gain two proficiencies that you don't have, each one with a weapon or a tool of your choice selected from the Player's Handbook. You mystically acquire these proficiencies by drawing them from shared elven memory, and you retain them until you finish your next long rest."
+						"Whenever you finish this trance, you can gain two proficiencies that you don't have, each one with a {@book weapon|phb|5|weapons} or a {@book tool|phb|5|tools} of your choice selected from the Player's Handbook. You mystically acquire these proficiencies by drawing them from shared elven memory, and you retain them until you finish your next long rest."
 					]
 				}
 			],
@@ -10052,7 +10074,7 @@
 					"name": "Trance",
 					"entries": [
 						"You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness.",
-						"Whenever you finish this trance, you can gain two proficiencies that you don't have, each one with a weapon or a tool of your choice selected from the Player's Handbook. You mystically acquire these proficiencies by drawing them from shared elven memory, and you retain them until you finish your next long rest."
+						"Whenever you finish this trance, you can gain two proficiencies that you don't have, each one with a {@book weapon|phb|5|weapons} or a {@book tool|phb|5|tools} of your choice selected from the Player's Handbook. You mystically acquire these proficiencies by drawing them from shared elven memory, and you retain them until you finish your next long rest."
 					]
 				}
 			],
@@ -12683,8 +12705,12 @@
 				}
 			],
 			"traitTags": [
-				"Natural Weapon",
-				"Tool Proficiency"
+				"Natural Weapon"
+			],
+			"toolProficiencies": [
+				{
+					"any": 1
+				}
 			],
 			"entries": [
 				{
@@ -14480,9 +14506,6 @@
 					"cha": 1
 				}
 			],
-			"traitTags": [
-				"Tool Proficiency"
-			],
 			"entries": [
 				{
 					"name": "Inspiring",
@@ -14512,9 +14535,6 @@
 				{
 					"dex": 1
 				}
-			],
-			"traitTags": [
-				"Tool Proficiency"
 			],
 			"entries": [
 				{
@@ -15561,8 +15581,10 @@
 					"con": 1
 				}
 			],
-			"traitTags": [
-				"Tool Proficiency"
+			"toolProficiencies": [
+				{
+					"tinker's tools": true
+				}
 			],
 			"entries": [
 				{
@@ -15728,8 +15750,10 @@
 					"con": 2
 				}
 			],
-			"traitTags": [
-				"Tool Proficiency"
+			"toolProficiencies": [
+				{
+					"thieves' tools": true
+				}
 			],
 			"entries": [
 				{
@@ -18214,12 +18238,14 @@
 					"int": 2
 				}
 			],
-			"traitTags": [
-				"Tool Proficiency"
-			],
 			"skillProficiencies": [
 				{
 					"survival": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"navigator's tools": true
 				}
 			],
 			"additionalSpells": [

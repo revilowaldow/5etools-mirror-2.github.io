@@ -2667,5 +2667,11 @@
 		"date": "2024-03-10",
 		"title": "Page of Wisdom",
 		"txt": "- Added \"The Dungeons & Dragons Tarot Deck\" as partnered content (thanks @ Lyra for the data entry and conversion)\n- Added page numbers to: Grim Hollow: Lairs of Etharis adventure content; Phandelver and Below: The Shattered Obelisk adventure content\n- Added remaining page numbers to entries from: Dungeons of Drakkenheim; Planescape: Adventures in the Multiverse; Grim Hollow: Lairs of Etharis; Phandelver and Below: The Shattered Obelisk\n- Added credits sections to all adventures/books\n- Omnisearch results (and other links) can now be directly dropped onto DM Screen panels, without first opening a permanent hover window\n- The DM Screen \"fullscreen\" mode can now be exited by pressing `ESC`\n- Fixed various hover window bugs; temporary windows should now more reliably auto-close, and clicking any element now correctly triggers a fallback cleanup\n- Fixed display of Filter \"Select by Date\" slider\n- (Brew) Added support for `@tag`s in immunity/resistance/vulnerability notes\n- (Brew) Added `+`/`-` keybinds to the Text Converter to increment/decrement page number\n- (Brew) Improved Creature Text Converter handling of homebrew spellcasting spell level formats\n- (Brew) Added support for `mailto:` in `@link` tags\n- (Brew) Fixed crash when adding homebrew from file when offline\n- (Fixed typos/added tags)"
+	},
+	{
+		"ver": "1.202.0",
+		"date": "2024-03-24",
+		"title": "Old 'Bold",
+		"txt": "- Added Tome of Beast 1 (2023 Edition) content _[for now; as with all \"partnered\" content, to be moved to the homebrew repo at a later date]_\n- (Brew) Improved Creature Text Converter\n  - SRD spell names in `\"spellcasting\"` are now mapped to their expected full names\n  - Improved parsing of conditional resistances/immunities/vulnerabilities\n  - Fixed rare case where creature type could be misinterpreted as size\n- (Brew) Added Vehicles support for vulnerabilities/resistances\n- (Brew) Updated source editor to better match schema/requirements\n  - Added version input\n  - Empty optional fields are no longer included in output\n  - Output `\"color\"`s are now schema-valid\n- (Fixed typos/added tags)"
 	}
 ]

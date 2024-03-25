@@ -6,6 +6,9 @@
 				"ToA"
 			]
 		},
+		"internalCopies": [
+			"monster"
+		],
 		"otherSources": {
 			"monster": {
 				"MM": "IDRotF",
@@ -13,10 +16,7 @@
 				"SKT": "IDRotF",
 				"VRGR": "IDRotF"
 			}
-		},
-		"internalCopies": [
-			"monster"
-		]
+		}
 	},
 	"monster": [
 		{

@@ -1553,7 +1553,7 @@ class CreatureParser extends BaseParser {
 		// regular creatures
 
 		// region Size
-		const reSize = new RegExp(`(${Object.values(Parser.SIZE_ABV_TO_FULL).join("|")})`, "i");
+		const reSize = new RegExp(`\\b(${Object.values(Parser.SIZE_ABV_TO_FULL).join("|")})\\b`, "i");
 		const reSizeGlobal = new RegExp(reSize, "gi");
 
 		const tks = meta.curLine.split(reSizeGlobal);

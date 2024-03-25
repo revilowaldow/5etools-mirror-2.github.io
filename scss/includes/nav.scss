@@ -11,7 +11,7 @@
 	}
 }
 
-@media (max-width: vars.$width-screen-sm) {
+@media screen and (width <= #{vars.$width-screen-sm}) {
 	.nav > li > a {
 		border: 1px solid vars.$rgb-border-grey;
 	}
@@ -58,7 +58,7 @@
 	}
 }
 
-@media (max-width: vars.$width-screen-lg) {
+@media screen and (width <= #{vars.$width-screen-lg}) {
 	.nav .caret--right {
 		transform: none;
 	}

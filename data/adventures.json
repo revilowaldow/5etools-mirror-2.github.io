@@ -34020,6 +34020,134 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Descent into the Lost Caverns of Tsojcanth",
+			"id": "DitLCoT",
+			"source": "DitLCoT",
+			"group": "supplement",
+			"coverUrl": "img/covers/QftIS.webp",
+			"published": "2024-03-26",
+			"storyline": "Quests from the Infinite Staircase",
+			"level": {
+				"start": 9,
+				"end": 9
+			},
+			"contents": [
+				{
+					"name": "Descent into the Lost Caverns of Tsojcanth",
+					"headers": [
+						"Using This Supplement",
+						"Background",
+						"Tournament Rules",
+						"Lost Caverns",
+						{
+							"depth": 1,
+							"header": "L1: Entry Caverns"
+						},
+						{
+							"depth": 1,
+							"header": "L2: Slate Chamber"
+						},
+						{
+							"depth": 1,
+							"header": "L3: Guano-Covered Cave"
+						},
+						{
+							"depth": 1,
+							"header": "L4: Littered Cave"
+						},
+						{
+							"depth": 1,
+							"header": "L5: Grotto"
+						},
+						{
+							"depth": 1,
+							"header": "L6: Fungal Cavern"
+						},
+						{
+							"depth": 1,
+							"header": "L7: Slimy Cavern"
+						},
+						{
+							"depth": 1,
+							"header": "L8: Stinking Cave"
+						},
+						{
+							"depth": 1,
+							"header": "L9: Bat Corridor"
+						},
+						{
+							"depth": 1,
+							"header": "L10: Long Gallery"
+						},
+						{
+							"depth": 1,
+							"header": "L11: Fomorian Cave"
+						},
+						{
+							"depth": 1,
+							"header": "L12: River Ledge"
+						},
+						{
+							"depth": 1,
+							"header": "L13: Underground Lake"
+						},
+						{
+							"depth": 1,
+							"header": "L14: Basilisk Den"
+						},
+						{
+							"depth": 1,
+							"header": "L15: Rainbow Cavern"
+						},
+						{
+							"depth": 1,
+							"header": "L16: Boulder Heap"
+						},
+						{
+							"depth": 1,
+							"header": "L17: Lavish Parlor"
+						},
+						{
+							"depth": 1,
+							"header": "L18: Black-Water Lake"
+						},
+						{
+							"depth": 1,
+							"header": "L19: Cave of Crystals"
+						},
+						{
+							"depth": 1,
+							"header": "L20: Pool Cavern"
+						},
+						"Conclusion",
+						"Appendix A: Magic Items",
+						"Appendix B: Creature",
+						"Appendix C: Score Sheet",
+						"Appendix D: Premade Characters",
+						"Credits"
+					]
+				}
+			]
+		},
+		{
+			"name": "Quests from the Infinite Staircase",
+			"id": "QftIS",
+			"source": "QftIS",
+			"group": "supplement",
+			"coverUrl": "img/covers/QftIS.webp",
+			"published": "2024-07-16",
+			"storyline": "Quests from the Infinite Staircase",
+			"level": {
+				"start": 1,
+				"end": 13
+			},
+			"contents": [
+				{
+					"name": "Introduction"
+				}
+			]
 		}
 	]
 }

@@ -31383,9 +31383,11 @@
 												}
 											]
 										}
-									]
+									],
+									"id": "57d"
 								}
-							]
+							],
+							"id": "57c"
 						},
 						{
 							"type": "entries",
@@ -31428,9 +31430,11 @@
 												}
 											]
 										}
-									]
+									],
+									"id": "57f"
 								}
-							]
+							],
+							"id": "57e"
 						},
 						"{@b The map of Candlekeep was inspired by a map design by Marco Bernardini.}",
 						"Special thanks to our hundreds of playtesters!"
@@ -31470,7 +31474,8 @@
 						}
 					]
 				}
-			]
+			],
+			"id": "4e2"
 		}
 	]
 }

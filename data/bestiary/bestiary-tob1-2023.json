@@ -1144,19 +1144,22 @@
 				{
 					"name": "Breath Weapons {@recharge 5}",
 					"entries": [
-						"The dragon uses one of the following breath weapons."
-					]
-				},
-				{
-					"name": "• Gravitic Breath",
-					"entries": [
-						"The dragon exhales localized gravity in a 60\u2011foot cube, originating from the dragon. When a creature ends a fall in the cube, it takes {@damage 1d10} bludgeoning damage for every 10 feet it fell, to a maximum of {@dice 20d10}. A creature that enters the cube for the first time on a turn or starts its turn there must make a {@dc 20} Dexterity saving throw. On a failure, the creature is {@condition restrained}. On a success, the creature's speed is halved as long as it remains in the cube. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. The cube lasts until the dragon's breath weapon recharges."
-					]
-				},
-				{
-					"name": "• Stellar Breath",
-					"entries": [
-						"The dragon exhales star fire in a 60-foot cone. Each creature in that area must make a {@dc 20} Dexterity saving throw, taking 31 ({@damage 9d6}) fire damage and 31 ({@damage 9d6}) radiant damage on a failed save, or half as much damage on a successful one."
+						"The dragon uses one of the following breath weapons.",
+						{
+							"type": "list",
+							"items": [
+								{
+									"type": "item",
+									"name": "Gravitic Breath",
+									"entry": "The dragon exhales localized gravity in a 60\u2011foot cube, originating from the dragon. When a creature ends a fall in the cube, it takes {@damage 1d10} bludgeoning damage for every 10 feet it fell, to a maximum of {@dice 20d10}. A creature that enters the cube for the first time on a turn or starts its turn there must make a {@dc 20} Dexterity saving throw. On a failure, the creature is {@condition restrained}. On a success, the creature's speed is halved as long as it remains in the cube. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. The cube lasts until the dragon's breath weapon recharges."
+								},
+								{
+									"type": "item",
+									"name": "Stellar Breath",
+									"entry": "The dragon exhales star fire in a 60-foot cone. Each creature in that area must make a {@dc 20} Dexterity saving throw, taking 31 ({@damage 9d6}) fire damage and 31 ({@damage 9d6}) radiant damage on a failed save, or half as much damage on a successful one."
+								}
+							]
+						}
 					]
 				}
 			],
@@ -1817,19 +1820,26 @@
 				{
 					"name": "Breath Weapon {@recharge 5}",
 					"entries": [
-						"The drake uses one of the following breath weapons."
-					]
-				},
-				{
-					"name": "• Dazing Breath",
-					"entries": [
-						"The alehouse drake exhales sweet-smelling gas in a 30-foot cone. Each creature in that area must succeed on a {@dc 13} Charisma saving throw or become {@condition incapacitated} for 1 minute. While {@condition incapacitated}, the creature is indifferent about creatures that it is hostile toward within 50 feet of the drake. If the creature is attacked, harmed by a spell, or witnesses any of its allies being harmed, it is no longer indifferent but remains {@condition incapacitated}. The {@condition incapacitated} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
-					]
-				},
-				{
-					"name": "• Intoxicating Breath",
-					"entries": [
-						"The alehouse drake burps intoxicating gas in a 15-foot cone. Each creature in the area must make a {@dc 13} Constitution saving throw. On a failure, a creature takes 7 ({@damage 2d6}) poison damage and is {@condition poisoned} for 1 minute. On a success, a creature takes half the damage and isn't {@condition poisoned}. A {@condition poisoned} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+						"The drake uses one of the following breath weapons.",
+						{
+							"type": "list",
+							"items": [
+								{
+									"type": "item",
+									"name": "Dazing Breath",
+									"entries": [
+										"The alehouse drake exhales sweet-smelling gas in a 30-foot cone. Each creature in that area must succeed on a {@dc 13} Charisma saving throw or become {@condition incapacitated} for 1 minute. While {@condition incapacitated}, the creature is indifferent about creatures that it is hostile toward within 50 feet of the drake. If the creature is attacked, harmed by a spell, or witnesses any of its allies being harmed, it is no longer indifferent but remains {@condition incapacitated}. The {@condition incapacitated} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Intoxicating Breath",
+									"entries": [
+										"The alehouse drake burps intoxicating gas in a 15-foot cone. Each creature in the area must make a {@dc 13} Constitution saving throw. On a failure, a creature takes 7 ({@damage 2d6}) poison damage and is {@condition poisoned} for 1 minute. On a success, a creature takes half the damage and isn't {@condition poisoned}. A {@condition poisoned} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+									]
+								}
+							]
+						}
 					]
 				}
 			],
@@ -3298,19 +3308,26 @@
 				{
 					"name": "Breath Weapons {@recharge 5}",
 					"entries": [
-						"The dragon uses one of the following breath weapons."
-					]
-				},
-				{
-					"name": "• Gravitic Breath",
-					"entries": [
-						"The dragon exhales localized gravity in a 90\u2011foot cube, originating from the dragon. When a creature ends a fall in the cube, it takes {@damage 1d10} bludgeoning damage for every 10 feet it fell, to a maximum of {@dice 20d10}. A creature that enters the cube for the first time on a turn or starts its turn there must make a {@dc 24} Dexterity saving throw. On a failure, the creature is {@condition restrained}. On a success, the creature's speed is halved as long as it remains in the cube. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. The cube lasts for 1 minute."
-					]
-				},
-				{
-					"name": "• Stellar Breath",
-					"entries": [
-						"The dragon exhales star fire in a 90-foot cone. Each creature in that area must make a {@dc 24} Dexterity saving throw, taking 42 ({@damage 12d6}) fire damage and 42 ({@damage 12d6}) radiant damage on a failed save, or half as much damage on a successful one."
+						"The dragon uses one of the following breath weapons.",
+						{
+							"type": "list",
+							"items": [
+								{
+									"type": "item",
+									"name": "Gravitic Breath",
+									"entries": [
+										"The dragon exhales localized gravity in a 90\u2011foot cube, originating from the dragon. When a creature ends a fall in the cube, it takes {@damage 1d10} bludgeoning damage for every 10 feet it fell, to a maximum of {@dice 20d10}. A creature that enters the cube for the first time on a turn or starts its turn there must make a {@dc 24} Dexterity saving throw. On a failure, the creature is {@condition restrained}. On a success, the creature's speed is halved as long as it remains in the cube. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. The cube lasts for 1 minute."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Stellar Breath",
+									"entries": [
+										"The dragon exhales star fire in a 90-foot cone. Each creature in that area must make a {@dc 24} Dexterity saving throw, taking 42 ({@damage 12d6}) fire damage and 42 ({@damage 12d6}) radiant damage on a failed save, or half as much damage on a successful one."
+									]
+								}
+							]
+						}
 					]
 				}
 			],
@@ -4931,32 +4948,31 @@
 						"The aridni enchants one arrow with minor magic. The next time it hits a creature with a Pixie Bow attack before the start of its next turn, the target must succeed on a {@dc 14} Wisdom saving throw or suffer one of the following effects:",
 						{
 							"type": "list",
-							"style": "list-hang-notitle",
 							"items": [
 								{
 									"type": "item",
-									"name": "• Confusion",
+									"name": "Confusion",
 									"entries": [
 										"The target can't take reactions and acts randomly until the end of its next turn, as if it had failed the saving throw against the {@spell confusion} spell."
 									]
 								},
 								{
 									"type": "item",
-									"name": "• Fear",
+									"name": "Fear",
 									"entries": [
 										"The target is {@condition frightened} until the end of its next turn and must spend its next turn moving away from the aridni by the safest available route."
 									]
 								},
 								{
 									"type": "item",
-									"name": "• Laughter",
+									"name": "Laughter",
 									"entries": [
 										"The target falls {@condition prone} and is {@condition incapacitated} with laughter until the end of its next turn."
 									]
 								},
 								{
 									"type": "item",
-									"name": "• Sleep",
+									"name": "Sleep",
 									"entries": [
 										"The target falls {@condition unconscious} for 1 minute. It wakes up if it takes damage or if another creature takes an action to shake it awake."
 									]
@@ -5947,6 +5963,20 @@
 			],
 			"environment": [
 				"any"
+			],
+			"altArt": [
+				{
+					"name": "Baba Yaga's Horsemen (Black Night)",
+					"source": "ToB1-2023"
+				},
+				{
+					"name": "Baba Yaga's Horsemen (Bright Day)",
+					"source": "ToB1-2023"
+				},
+				{
+					"name": "Baba Yaga's Horsemen (Red Sun)",
+					"source": "ToB1-2023"
+				}
 			],
 			"attachedItems": [
 				"lance|phb",
@@ -9822,31 +9852,40 @@
 				{
 					"name": "Imbalance Humors",
 					"entries": [
-						"If the cambium has hit a creature that isn't a Construct or Undead with Needle Fingers in the past minute, it can cause a surge in one of the target's bodily humors, causing an imbalance. The target must succeed on a {@dc 17} Constitution saving throw or suffer one of the following effects of the cambium's choice. Unless noted otherwise, the target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
-					]
-				},
-				{
-					"name": "• Sanguine Flux",
-					"entries": [
-						"The target can't regain hp\u2014naturally or magically\u2014until after it finishes a long rest."
-					]
-				},
-				{
-					"name": "• Choleric Flux",
-					"entries": [
-						"The target becomes confused for 1 minute. This effect works as if the target failed a saving throw against the {@spell confusion} spell, except the cambium doesn't have to maintain {@status concentration}."
-					]
-				},
-				{
-					"name": "• Melancholic Flux",
-					"entries": [
-						"The target is {@condition incapacitated} and its speed is halved for 1 minute."
-					]
-				},
-				{
-					"name": "• Phlegmatic Flux",
-					"entries": [
-						"The target is {@condition poisoned} for 1 minute."
+						"If the cambium has hit a creature that isn't a Construct or Undead with Needle Fingers in the past minute, it can cause a surge in one of the target's bodily humors, causing an imbalance. The target must succeed on a {@dc 17} Constitution saving throw or suffer one of the following effects of the cambium's choice. Unless noted otherwise, the target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+						{
+							"type": "list",
+							"items": [
+								{
+									"type": "item",
+									"name": "Sanguine Flux",
+									"entries": [
+										"The target can't regain hp\u2014naturally or magically\u2014until after it finishes a long rest."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Choleric Flux",
+									"entries": [
+										"The target becomes confused for 1 minute. This effect works as if the target failed a saving throw against the {@spell confusion} spell, except the cambium doesn't have to maintain {@status concentration}."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Melancholic Flux",
+									"entries": [
+										"The target is {@condition incapacitated} and its speed is halved for 1 minute."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Phlegmatic Flux",
+									"entries": [
+										"The target is {@condition poisoned} for 1 minute."
+									]
+								}
+							]
+						}
 					]
 				}
 			],
@@ -11548,25 +11587,24 @@
 						"The city watch captain shouts orders at up to two friendly creatures it can see within 30 feet of it. Each target can do one of the following as a reaction:",
 						{
 							"type": "list",
-							"style": "list-hang-notitle",
 							"items": [
 								{
 									"type": "item",
-									"name": "• Attack",
+									"name": "Attack",
 									"entries": [
 										"The target makes one weapon attack with advantage."
 									]
 								},
 								{
 									"type": "item",
-									"name": "• Defend",
+									"name": "Defend",
 									"entries": [
 										"The target gains a +2 bonus to its Armor Class until the start of the captain's next turn."
 									]
 								},
 								{
 									"type": "item",
-									"name": "• Reposition",
+									"name": "Reposition",
 									"entries": [
 										"The target moves up to half its speed without provoking opportunity attacks."
 									]
@@ -14336,19 +14374,26 @@
 				{
 					"name": "Eject Spores",
 					"entries": [
-						"The myconid ejects one of the following types of spores at one creature it can see within 15 feet of it."
-					]
-				},
-				{
-					"name": "• Deathcap Spores",
-					"entries": [
-						"The target must succeed on a {@dc 13} Constitution saving throw or be {@condition poisoned} for 1 minute. It can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
-					]
-				},
-				{
-					"name": "• Slumber Spores",
-					"entries": [
-						"The target must succeed on a {@dc 13} Constitution saving throw or fall {@condition unconscious} for 1 minute. The target wakes up if it takes damage or if another creature takes an action to shake it awake."
+						"The myconid ejects one of the following types of spores at one creature it can see within 15 feet of it.",
+						{
+							"type": "list",
+							"items": [
+								{
+									"type": "item",
+									"name": "Deathcap Spores",
+									"entries": [
+										"The target must succeed on a {@dc 13} Constitution saving throw or be {@condition poisoned} for 1 minute. It can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Slumber Spores",
+									"entries": [
+										"The target must succeed on a {@dc 13} Constitution saving throw or fall {@condition unconscious} for 1 minute. The target wakes up if it takes damage or if another creature takes an action to shake it awake."
+									]
+								}
+							]
+						}
 					]
 				}
 			],
@@ -19070,32 +19115,31 @@
 						"The dwarven ringmage draws circles of magic in the air and sends them toward one creature it can see within 30 feet of it, causing one of the following effects:",
 						{
 							"type": "list",
-							"style": "list-hang-notitle",
 							"items": [
 								{
 									"type": "item",
-									"name": "• Rings of Binding",
+									"name": "Rings of Binding",
 									"entries": [
 										"The target must succeed on a {@dc 15} Strength saving throw or be {@condition restrained} by magical rings until the end of its next turn."
 									]
 								},
 								{
 									"type": "item",
-									"name": "• Rings of Bravery",
+									"name": "Rings of Bravery",
 									"entries": [
 										"The target can't be {@condition frightened} and has advantage on melee weapon attack rolls until the end of its next turn."
 									]
 								},
 								{
 									"type": "item",
-									"name": "• Rings of Protection",
+									"name": "Rings of Protection",
 									"entries": [
 										"The target has a +2 bonus to its Armor Class until the end of its next turn."
 									]
 								},
 								{
 									"type": "item",
-									"name": "• Rings of Retribution",
+									"name": "Rings of Retribution",
 									"entries": [
 										"When any creature hits the target before the start of the ringmage's next turn, the creature takes 4 ({@damage 1d8}) acid, cold, fire, lightning, or thunder damage (the ringmage's choice)."
 									]
@@ -19756,19 +19800,26 @@
 				{
 					"name": "Celestial Blessing {@recharge 5}",
 					"entries": [
-						"The einherjar calls on its celestial patrons for one of the following blessings:"
-					]
-				},
-				{
-					"name": "• Odin's Strength",
-					"entries": [
-						"The einherjar roars a battle prayer to Odin. Each friendly creature within 60 feet of the einherjar and that can hear the prayer deals an extra 4 ({@damage 1d8}) radiant damage when it hits with any weapon. In addition, when an affected creature makes an attack roll, the creature can roll a {@dice d6} and add the number rolled to the attack roll."
-					]
-				},
-				{
-					"name": "• Valkyries' Mercy",
-					"entries": [
-						"The einherjar pleads for the assistance of the valkyries to save one friendly creature it can see within 60 feet of it that has been reduced to 0 hp. The creature regains 13 {@dice 3d8} hp. Once the einherjar has aided a creature with Valkyries' Mercy, it can't target that creature with Valkyries' Mercy again until the creature finishes a long rest."
+						"The einherjar calls on its celestial patrons for one of the following blessings:",
+						{
+							"type": "list",
+							"items": [
+								{
+									"type": "item",
+									"name": "Odin's Strength",
+									"entries": [
+										"The einherjar roars a battle prayer to Odin. Each friendly creature within 60 feet of the einherjar and that can hear the prayer deals an extra 4 ({@damage 1d8}) radiant damage when it hits with any weapon. In addition, when an affected creature makes an attack roll, the creature can roll a {@dice d6} and add the number rolled to the attack roll."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Valkyries' Mercy",
+									"entries": [
+										"The einherjar pleads for the assistance of the valkyries to save one friendly creature it can see within 60 feet of it that has been reduced to 0 hp. The creature regains 13 {@dice 3d8} hp. Once the einherjar has aided a creature with Valkyries' Mercy, it can't target that creature with Valkyries' Mercy again until the creature finishes a long rest."
+									]
+								}
+							]
+						}
 					]
 				}
 			],
@@ -29919,26 +29970,32 @@
 				{
 					"name": "Makeshift Trap",
 					"entries": [
-						"The kobold trapsmith cobbles together a quick trap with materials at hand and throws it at a point on the ground it can see within 30 feet of it. The trapsmith chooses one of the following traps. Each creature in the trap's area must succeed on a {@dc 13} Dexterity saving throw or suffer the trap's effects."
-					]
-				},
-				{
-					"name": "• Bursting Much-Heavy Net",
-					"entries": [
-						"Each creature that fails the saving throw within 10 feet of where the trap lands takes 10 ({@damage 3d6}) bludgeoning damage and is {@condition restrained} for 1 minute. A creature can take an action to free the {@condition restrained} creature by succeeding on a {@dc 13} Strength check.",
-						"• Spikes-on-Spikes. Each creature within 10 feet of where the trap lands takes 10 ({@damage 4d4}) piercing damage and the area within 10 feet of the point is difficult terrain for 1 minute."
-					]
-				},
-				{
-					"name": "• Spring-Loaded Whirly Blades",
-					"entries": [
-						"Each creature that fails the saving throw within 10 feet of where the trap lands takes 14 ({@damage 4d6}) slashing damage and its speed is reduced by 10 feet until the end of its next turn."
-					]
-				},
-				{
-					"name": "• Static-Generating Thingamabob",
-					"entries": [
-						"Each creature that fails the saving throw within 5 feet of where the trap lands takes 9 ({@damage 2d8}) lightning damage and is {@condition stunned} until the end of its next turn."
+						"The kobold trapsmith cobbles together a quick trap with materials at hand and throws it at a point on the ground it can see within 30 feet of it. The trapsmith chooses one of the following traps. Each creature in the trap's area must succeed on a {@dc 13} Dexterity saving throw or suffer the trap's effects.",
+						{
+							"type": "list",
+							"items": [
+								{
+									"type": "item",
+									"name": "Bursting Much-Heavy Net",
+									"entry": "Each creature that fails the saving throw within 10 feet of where the trap lands takes 10 ({@damage 3d6}) bludgeoning damage and is {@condition restrained} for 1 minute. A creature can take an action to free the {@condition restrained} creature by succeeding on a {@dc 13} Strength check."
+								},
+								{
+									"type": "item",
+									"name": "Spikes-on-Spikes",
+									"entry": "Each creature within 10 feet of where the trap lands takes 10 ({@damage 4d4}) piercing damage and the area within 10 feet of the point is difficult terrain for 1 minute."
+								},
+								{
+									"type": "item",
+									"name": "Spring-Loaded Whirly Blades",
+									"entry": "Each creature that fails the saving throw within 10 feet of where the trap lands takes 14 ({@damage 4d6}) slashing damage and its speed is reduced by 10 feet until the end of its next turn."
+								},
+								{
+									"type": "item",
+									"name": "Static-Generating Thingamabob",
+									"entry": "Each creature that fails the saving throw within 5 feet of where the trap lands takes 9 ({@damage 2d8}) lightning damage and is {@condition stunned} until the end of its next turn."
+								}
+							]
+						}
 					]
 				}
 			],
@@ -34517,32 +34574,31 @@
 						"The mirror hag curses one creature she can see within 60 feet of her, corrupting its form. The target must make a {@dc 15} Constitution saving throw. On a success, the target is immune to the hag's Reconfiguring Curse for the next 24 hours. On a failure, the target is cursed, suffering one of the following effects of the hag's choice:",
 						{
 							"type": "list",
-							"style": "list-hang-notitle",
 							"items": [
 								{
 									"type": "item",
-									"name": "• Disfigured",
+									"name": "Disfigured",
 									"entries": [
 										"The target's skin erupts with growths and lesions, and it has disadvantage on all Charisma checks made to influence Humanoids, except for {@skill Intimidation}."
 									]
 								},
 								{
 									"type": "item",
-									"name": "• Sickly",
+									"name": "Sickly",
 									"entries": [
 										"The target becomes frail and unhealthy, and it has disadvantage on Constitution saving throws. It regains only half its lost hp at the end of a long rest, and it halves the result of any Hit Dice rolled to restore hp during a short rest."
 									]
 								},
 								{
 									"type": "item",
-									"name": "• Twisted",
+									"name": "Twisted",
 									"entries": [
 										"The target's limbs and spine become bent and clumsy. It has disadvantage on all Dexterity checks and Dexterity saving throws, and its speed is reduced by 10 feet."
 									]
 								},
 								{
 									"type": "item",
-									"name": "• Withered",
+									"name": "Withered",
 									"entries": [
 										"The target's muscles atrophy, and it has disadvantage on all Strength checks and Strength saving throws."
 									]
@@ -36022,25 +36078,24 @@
 						"The naina uses one of the following breath weapons:",
 						{
 							"type": "list",
-							"style": "list-hang-notitle",
 							"items": [
 								{
 									"type": "item",
-									"name": "• Poison Breath",
+									"name": "Poison Breath",
 									"entries": [
 										"The naina exhales poison breath in a 60-foot cone. Each creature in the area must make a {@dc 17} Constitution saving throw. On a failure, a creature takes 40 ({@damage 9d8}) poison damage and is {@condition poisoned} for 1 minute. On a success, a creature takes half the damage and isn't {@condition poisoned}. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
 									]
 								},
 								{
 									"type": "item",
-									"name": "• Paralysis Breath",
+									"name": "Paralysis Breath",
 									"entries": [
 										"The naina exhales paralyzing breath in a 30-foot cone. Each creature in that area must succeed on a {@dc 17} Constitution saving throw or be {@condition paralyzed} for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
 									]
 								},
 								{
 									"type": "item",
-									"name": "• Sleep Breath",
+									"name": "Sleep Breath",
 									"entries": [
 										"The naina exhales sleep gas around it. Each creature within 20 feet of the naina must succeed on a {@dc 17} Constitution saving throw or fall {@condition unconscious} for 10 minutes. This effect ends for a creature if the creature takes damage or another creature uses an action to wake it."
 									]
@@ -45614,37 +45669,47 @@
 				{
 					"name": "Alien Piping",
 					"entries": [
-						"The selang plays one of the following ear-bending melodies on alien pipes. One creature the selang can see within 60 feet of it is the only creature that can hear the melody. The target must succeed on a {@dc 14} Wisdom saving throw or be affected by the chosen melody."
-					]
-				},
-				{
-					"name": "• Capering",
-					"entries": [
-						"On the target's next turn, it must use all of its movement dancing without leaving its space, and it has disadvantage on attack rolls and Dexterity saving throws."
-					]
-				},
-				{
-					"name": "• Captivating",
-					"entries": [
-						"The target is {@condition charmed} until the end of its next turn, humming along to the selang's pleasant melody."
-					]
-				},
-				{
-					"name": "• Disorienting",
-					"entries": [
-						"The target is {@condition incapacitated} until the end of its next turn, and when it moves, it moves in a random direction."
-					]
-				},
-				{
-					"name": "• Drowsy",
-					"entries": [
-						"The target falls {@condition unconscious} and dreams of evil entities and sinister portals for 10 minutes. The creature wakes up if it takes damage or if another creature takes an action to shake it awake."
-					]
-				},
-				{
-					"name": "• Haunting",
-					"entries": [
-						"The target is {@condition frightened} until the end of its next turn, and it must take the Dash action and move away from the selang by the safest available route, unless there is nowhere to move."
+						"The selang plays one of the following ear-bending melodies on alien pipes. One creature the selang can see within 60 feet of it is the only creature that can hear the melody. The target must succeed on a {@dc 14} Wisdom saving throw or be affected by the chosen melody.",
+						{
+							"type": "list",
+							"items": [
+								{
+									"type": "item",
+									"name": "Capering",
+									"entries": [
+										"On the target's next turn, it must use all of its movement dancing without leaving its space, and it has disadvantage on attack rolls and Dexterity saving throws."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Captivating",
+									"entries": [
+										"The target is {@condition charmed} until the end of its next turn, humming along to the selang's pleasant melody."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Disorienting",
+									"entries": [
+										"The target is {@condition incapacitated} until the end of its next turn, and when it moves, it moves in a random direction."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Drowsy",
+									"entries": [
+										"The target falls {@condition unconscious} and dreams of evil entities and sinister portals for 10 minutes. The creature wakes up if it takes damage or if another creature takes an action to shake it awake."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Haunting",
+									"entries": [
+										"The target is {@condition frightened} until the end of its next turn, and it must take the Dash action and move away from the selang by the safest available route, unless there is nowhere to move."
+									]
+								}
+							]
+						}
 					]
 				}
 			],
@@ -54969,25 +55034,33 @@
 				{
 					"name": "Song of the Forest",
 					"entries": [
-						"The vila sings one of the following songs at up to three creatures it can see within 30 feet of it. Each target that can hear the song must succeed on a {@dc 14} Wisdom saving throw or suffer the song's effect."
-					]
-				},
-				{
-					"name": "• Ancient Lullaby",
-					"entries": [
-						"Each creature that fails the saving throw falls {@condition unconscious} for 1 minute. The {@condition unconscious} creature wakes up if it takes damage or if another creature takes an action to shake it awake."
-					]
-				},
-				{
-					"name": "• Fascinating Melody",
-					"entries": [
-						"Each creature that fails the saving throw is {@condition stunned} until the end of its next turn."
-					]
-				},
-				{
-					"name": "• Luckless Tune",
-					"entries": [
-						"Each creature that fails the saving throw has disadvantage on attack rolls and ability checks until the end of its next turn."
+						"The vila sings one of the following songs at up to three creatures it can see within 30 feet of it. Each target that can hear the song must succeed on a {@dc 14} Wisdom saving throw or suffer the song's effect.",
+						{
+							"type": "list",
+							"items": [
+								{
+									"type": "item",
+									"name": "Ancient Lullaby",
+									"entries": [
+										"Each creature that fails the saving throw falls {@condition unconscious} for 1 minute. The {@condition unconscious} creature wakes up if it takes damage or if another creature takes an action to shake it awake."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Fascinating Melody",
+									"entries": [
+										"Each creature that fails the saving throw is {@condition stunned} until the end of its next turn."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Luckless Tune",
+									"entries": [
+										"Each creature that fails the saving throw has disadvantage on attack rolls and ability checks until the end of its next turn."
+									]
+								}
+							]
+						}
 					]
 				},
 				{
@@ -55518,19 +55591,26 @@
 				{
 					"name": "Breath Weapons {@recharge 5}",
 					"entries": [
-						"The dragon uses one of the following breath weapons."
-					]
-				},
-				{
-					"name": "• Gravitic Breath",
-					"entries": [
-						"The dragon exhales localized gravity in a 15\u2011foot cube, originating from the dragon. When a creature ends a fall in the cube, it takes {@damage 1d10} bludgeoning damage for every 10 feet it fell, to a maximum of {@dice 20d10}. A creature that enters the cube for the first time on a turn or starts its turn there must make a {@dc 13} Dexterity saving throw. On a failure, the creature is {@condition restrained}. On a success, the creature's speed is halved as long as it remains in the cube. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. The cube lasts until the start of the dragon's next turn."
-					]
-				},
-				{
-					"name": "• Stellar Breath",
-					"entries": [
-						"The dragon exhales star fire in a 15-foot cone. Each creature in that area must make a {@dc 13} Dexterity saving throw, taking 10 ({@damage 3d6}) fire damage and 10 ({@damage 3d6}) radiant damage on a failed save, or half as much damage on a successful one."
+						"The dragon uses one of the following breath weapons.",
+						{
+							"type": "list",
+							"items": [
+								{
+									"type": "item",
+									"name": "Gravitic Breath",
+									"entries": [
+										"The dragon exhales localized gravity in a 15\u2011foot cube, originating from the dragon. When a creature ends a fall in the cube, it takes {@damage 1d10} bludgeoning damage for every 10 feet it fell, to a maximum of {@dice 20d10}. A creature that enters the cube for the first time on a turn or starts its turn there must make a {@dc 13} Dexterity saving throw. On a failure, the creature is {@condition restrained}. On a success, the creature's speed is halved as long as it remains in the cube. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. The cube lasts until the start of the dragon's next turn."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Stellar Breath",
+									"entries": [
+										"The dragon exhales star fire in a 15-foot cone. Each creature in that area must make a {@dc 13} Dexterity saving throw, taking 10 ({@damage 3d6}) fire damage and 10 ({@damage 3d6}) radiant damage on a failed save, or half as much damage on a successful one."
+									]
+								}
+							]
+						}
 					]
 				}
 			],
@@ -58298,19 +58378,26 @@
 				{
 					"name": "Breath Weapons {@recharge 5}",
 					"entries": [
-						"The dragon uses one of the following breath weapons."
-					]
-				},
-				{
-					"name": "• Gravitic Breath",
-					"entries": [
-						"The dragon exhales localized gravity in a 30-foot cube, originating from the dragon. When a creature ends a fall in the cube, it takes {@damage 1d10} bludgeoning damage for every 10 feet it fell, to a maximum of {@dice 20d10}. A creature that enters the cube for the first time on a turn or starts its turn there must make a {@dc 17} Dexterity saving throw. On a failure, the creature is {@condition restrained}. On a success, the creature's speed is halved as long as it remains in the cube. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. The cube lasts until the dragon's breath weapon recharges."
-					]
-				},
-				{
-					"name": "• Stellar Breath",
-					"entries": [
-						"The dragon exhales star fire in a 30-foot cone. Each creature in that area must make a {@dc 17} Dexterity saving throw, taking 21 ({@damage 6d6}) fire damage and 21 ({@damage 6d6}) radiant damage on a failed save, or half as much damage on a successful one."
+						"The dragon uses one of the following breath weapons.",
+						{
+							"type": "list",
+							"items": [
+								{
+									"type": "item",
+									"name": "Gravitic Breath",
+									"entries": [
+										"The dragon exhales localized gravity in a 30-foot cube, originating from the dragon. When a creature ends a fall in the cube, it takes {@damage 1d10} bludgeoning damage for every 10 feet it fell, to a maximum of {@dice 20d10}. A creature that enters the cube for the first time on a turn or starts its turn there must make a {@dc 17} Dexterity saving throw. On a failure, the creature is {@condition restrained}. On a success, the creature's speed is halved as long as it remains in the cube. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. The cube lasts until the dragon's breath weapon recharges."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Stellar Breath",
+									"entries": [
+										"The dragon exhales star fire in a 30-foot cone. Each creature in that area must make a {@dc 17} Dexterity saving throw, taking 21 ({@damage 6d6}) fire damage and 21 ({@damage 6d6}) radiant damage on a failed save, or half as much damage on a successful one."
+									]
+								}
+							]
+						}
 					]
 				}
 			],

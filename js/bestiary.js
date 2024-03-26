@@ -731,7 +731,7 @@ class BestiaryPage extends ListPageMultiSource {
 		// region dice rollers
 		const expectedPB = Parser.crToPb(mon.cr);
 
-		const pluginDc = (tag, text) => {
+		const pluginDc = (commonArgs, {input: {tag, text}}) => {
 			if (isNaN(text) || expectedPB <= 0) return null;
 
 			const withoutPB = Number(text) - expectedPB;
@@ -740,7 +740,7 @@ class BestiaryPage extends ListPageMultiSource {
 			return `DC <span class="rd__dc rd__dc--rollable" data-roll-prof-type="dc" data-roll-prof-dice="${profDiceString.qq()}"><span class="rd__dc--rollable-text">${text}</span><span class="rd__dc--rollable-dice">${profDiceString}</span></span>`;
 		};
 
-		const pluginDice = (entry, textStack, meta, options) => {
+		const pluginDice = (commonArgs, {input: entry}) => {
 			if (expectedPB <= 0 || entry.subType !== "d20" || entry.context?.type == null) return null;
 
 			const text = Renderer.getEntryDiceDisplayText(entry);

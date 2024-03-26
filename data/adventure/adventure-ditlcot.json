@@ -1,0 +1,1631 @@
+{
+	"data": [
+		{
+			"type": "section",
+			"name": "Descent into the Lost Caverns of Tsojcanth",
+			"id": "000",
+			"entries": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "adventure/DitLCoT/000-00-001.iggwilv-cover.webp"
+					},
+					"credit": "Jodie Muir",
+					"width": 1700,
+					"height": 2196
+				},
+				"Deep in the Yatil Mountains lie the Lost Caverns of Tsojcanth, formerly occupied by the legendary archmage Iggwilv the Witch Queen. Though Iggwilv is long gone, her lair is anything but empty. Demons, giants, and other formidable creatures haunt the perilous caverns, and the archmage's magical defenses remain intact. The rewards for braving these threats defy imagination. Iggwilv is rumored to have amassed a magical hoard of unsurpassed value, a trove of such fame that scores of adventurers have perished in search of it.",
+				"This supplement is part of a yearlong celebration of Dungeons & Dragons and its 50th anniversary. The adventure presented herein is an abridged, quick-play version of \"The Lost Caverns of Tsojcanth,\" which appears in {@adventure Quests from the Infinite Staircase|QftIS}. See that book for the full adventure.",
+				"\"Descent into the Lost Caverns of Tsojcanth\" is designed for four to six 9th-level characters.",
+				{
+					"type": "section",
+					"name": "Using This Supplement",
+					"id": "001",
+					"entries": [
+						"In addition to the adventure, this supplement includes the following appendices:",
+						"{@area Appendix A|05d|x} presents a small trove of magic items available to all who brave the Lost Caverns of Tsojcanth. At the DM's discretion, the characters might earn one or more of these treasures as a reward for completing the adventure.",
+						"{@area Appendix B|062|x} contains a creature that dwells in the Lost Caverns, the {@creature pech|DitLCoT}.",
+						"{@area Appendix C|064|x} features a score sheet for use in competitive play. See the \"{@area Tournament Rules|008|x}\" section for how to run the adventure as a tournament-style scenario.",
+						"{@area Appendix D|065|x} provides six premade characters suitable for this adventure. Each player can choose one of these characters or provide a 9th-level character of their own.",
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "adventure/DitLCoT/001-00-002.original-cover.webp"
+							},
+							"width": 425,
+							"height": 549
+						},
+						{
+							"type": "insetReadaloud",
+							"name": "About the Original",
+							"id": "002",
+							"entries": [
+								"Published in 1982, the official {@i Lost Caverns of Tsojcanth} module was an expanded and revised version of {@i The Lost Caverns of Tsojconth}, a tournament adventure created by Gary Gygax for Winter Con V in 1976. The adventure offers tantalizing details about Iggwilv the Witch Queen\u2014perhaps better known as the archmage Tasha, famous for her {@i Hideous Laughter} spell. This adaptation pays homage to the original by including a score sheet for competitive play."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Running the Adventure",
+							"id": "003",
+							"entries": [
+								"To run the adventure, you need the fifth edition core rulebooks: the {@book Player's Handbook|PHB}, {@book Dungeon Master's Guide|DMG}, and {@book Monster Manual|MM}. When a creature's name appears in {@b bold} type, that's a visual cue pointing you to its stat block as a way of saying, \"Hey, DM, you should get this creature's stat block ready. You're going to need it.\" The {@book Monster Manual|MM} contains stat blocks for most of the creatures in these adventures; the {@creature pech|DitLCoT} appears in {@area appendix B|062|x}.",
+								{
+									"type": "insetReadaloud",
+									"id": "004",
+									"entries": [
+										"Text that appears in a box like this is meant to be read aloud or paraphrased for the players when their characters first arrive at a location or under a specific circumstance, as described in the text."
+									]
+								},
+								"Spells and equipment mentioned in this supplement are described in the {@book Player's Handbook|PHB}. Magic items are described in the {@book Dungeon Master's Guide|DMG}."
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Background",
+					"id": "005",
+					"entries": [
+						"Iggwilv carved out a kingdom for herself through magical prowess, strength, and wit, bolstered by a horde of demons bound by magic to further her aims. In her quest for absolute power, Iggwilv accumulated countless enemies determined to destroy her. Among these was the demon lord Graz'zt, whom the archmage imprisoned for a time. Eventually, Iggwilv's ambitions proved excessive, and a climactic battle with Graz'zt broke her power. The Witch Queen then vanished. As her evil influence waned, Iggwilv's realm was sundered, and her lair was lost.",
+						"This lost lair purportedly lies deep in a series of caverns somewhere in the Yatil Mountains. In the decades since Iggwilv's disappearance, adventurers and treasure hunters have sought the Lost Caverns of Tsojcanth and the treasures within. This adventure assumes the characters know the way to the fabled lair, having assembled fragments of information regarding the caverns' location or learned it from another reliable source.",
+						{
+							"type": "entries",
+							"name": "Adventure Hooks",
+							"id": "006",
+							"entries": [
+								"If the prospect of claiming Iggwilv's hoard isn't enough to persuade the characters to undertake this quest, you can further motivate the party with either of the following adventure hooks:",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"type": "item",
+											"name": "Iggwilv's Rival",
+											"entry": "An archmage who was once embroiled in a heated rivalry with Iggwilv has reason to believe she isn't dead. The archmage recruits the characters to search the Lost Caverns for any evidence of the Witch Queen's lingering presence."
+										},
+										{
+											"type": "item",
+											"name": "Margrave's Agents",
+											"entry": "The margrave of a nation near the mountains has uncovered clues to the Lost Caverns' whereabouts, thanks to a few partially successful expeditions in recent years. Most of the agents the margrave sent came back battle worn and empty-handed, if they returned at all. The margrave hires the characters to recover Iggwilv's hoard before it falls into the hands of his rivals."
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Setting the Adventure",
+							"id": "007",
+							"entries": [
+								"On the world of Oerth in the Greyhawk campaign setting, the Lost Caverns hide within the Yatil Mountains, nestled between the nations of Ket and Perrenland, with Bissel to the south.",
+								"You can set the adventure in a different world by placing it in any mountain range near a kingdom or settlement\u2014before her disappearance, Iggwilv's influence spanned multiple worlds and planes of existence. Consider the following suggestions:",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"type": "item",
+											"name": "Dragonlance",
+											"entry": "The Speaker of the Suns, leader of the Qualinesti elves, might charge the characters to search for the Lost Caverns in the Kharolis Mountains south of the elves' forest home."
+										},
+										{
+											"type": "item",
+											"name": "Eberron",
+											"entry": "The nations of Aundair, Breland, and Thrane vie to explore the Lost Caverns in the Blackcap Mountains. Iggwilv's experiments there drew power from the depths of Kyber."
+										},
+										{
+											"type": "item",
+											"name": "Forgotten Realms",
+											"entry": "The Lost Caverns are hidden in the Sunset Mountains, northeast of Proskur along the High Road. The High Overseer of Elturel might hire the characters to locate the caverns."
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Tournament Rules",
+					"id": "008",
+					"entries": [
+						"If you wish to emulate the competitive adventures of old, you can run this adventure as a tournament-style scenario by following the guidance in this section. Rather than pitting characters against one another, adventuring parties are scored as a group.",
+						"These rules are optional. You don't need to score your players to run this adventure. The scoring system included in this supplement is meant to spark joy, not contention.",
+						{
+							"type": "entries",
+							"name": "Rewards",
+							"id": "009",
+							"entries": [
+								"At game conventions and store events, these rules can be used to award prizes to the highest-scoring groups. Otherwise, they mainly exist for groups to enjoy bragging rights, comradery, and other intangible benefits. Consider sharing your group's final score as a lighthearted challenge to other players."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Scoring",
+							"id": "00a",
+							"entries": [
+								"Have this adventure's score sheet (see {@area appendix C|064|x}) handy as you run the adventure. As the characters traverse the Lost Caverns, silently cross-reference the actions of the party with those denoted on the score sheet, making note of any events that qualify for a point increase or deduction.",
+								"Keep these actions and their associated point values secret during the adventure. You can share them with the players afterward, along with the group's final score. Alternatively, you can announce these point fluctuations as they occur to your players for comedic or dramatic effect.",
+								"After the adventure, use the score sheet to tally the group's points and calculate their final score, then report that score to the players. It's possible\u2014albeit unlikely\u2014to earn a negative final score."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Time Limit",
+							"id": "00b",
+							"entries": [
+								"As a tournament scenario, this adventure has a strict time limit: a single game session equal to four hours of play. Encourage players at the onset not to dawdle\u2014the clock is ticking! The adventure concludes once that time has elapsed or whenever any of the following conditions have been met:",
+								{
+									"type": "list",
+									"items": [
+										"Every character in the party is dead or otherwise out of commission.",
+										"The characters explore every area of the lesser caverns (presented later in this adventure).",
+										"The characters descend to the greater caverns (see {@area area L16|043|x} of the lesser caverns) or leave the Lost Caverns altogether. Let players know that these actions will end the adventure (and thus their opportunity to score more points)."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Resting",
+									"id": "00c",
+									"entries": [
+										"To keep the dungeon challenging, the characters can take only one short rest during the session. Long rests are prohibited for tournament play of this adventure."
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Lost Caverns",
+					"id": "00d",
+					"entries": [
+						"The Lost Caverns of Tsojcanth hide in the Yatil Mountains south of Iggwilv's Horn. Not much is known about the caverns' namesake, the mysterious Tsojcanth, who was eclipsed by the archmage who succeeded them. Whether Tsojcanth was slain by Iggwilv or left before her arrival, this predecessor's only remaining trace is the caverns' name, while the Witch Queen's influence persists long after her departure.",
+						"The caverns are divided into the lesser and greater caverns. This abbreviated adventure focuses only on the former.",
+						{
+							"type": "entries",
+							"name": "Starting the Adventure",
+							"id": "00e",
+							"entries": [
+								"Read or paraphrase the following text to begin the adventure:",
+								{
+									"type": "insetReadaloud",
+									"id": "00f",
+									"entries": [
+										"You are a member of a group of adventurers, united in weeks past by your pursuit of a common prize: the treasures of the Lost Caverns of Tsojcanth\u2014the former lair of the archmage Iggwilv, the so-called Witch Queen.",
+										"Guided by a series of hard-won clues, your trek through the Yatil Mountains halts at a yawning cleft in the mountainside. Stalactites and stalagmites growing at the entrance give the cave mouth the impression of fangs waiting to snap together. The opening is forty feet wide, twenty feet high, and blackened by soot. Past the stone maw, a wide passage with roughly hewn stairs descends into darkness."
+									]
+								},
+								"The tunnel slants down to {@area area L1|012|x} of the lesser caverns."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Lesser Caverns Features",
+							"id": "010",
+							"entries": [
+								"The lesser caverns form the upper level of the Lost Caverns. Unless otherwise noted, the lesser caverns have the following features:",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"type": "item",
+											"name": "Ambience",
+											"entry": "The caverns are damp, humid, and full of life. Stalactites drip into shallow puddles, and water trickles down the slick cave walls. The sounds of cave bats, small insects, and the caverns' monstrous denizens echo throughout."
+										},
+										{
+											"type": "item",
+											"name": "Ceilings",
+											"entry": "Ceilings are 15 feet high in corridors and tunnels and 20 feet high in chambers."
+										},
+										{
+											"type": "item",
+											"name": "Lighting",
+											"entry": "The caverns are unlit. Denizens carry their own light or rely on {@sense darkvision} to see. Area descriptions assume the characters have a light source or other means of seeing in the dark."
+										},
+										{
+											"type": "item",
+											"name": "Underground Rivers",
+											"entry": "The rivers that span the lesser caverns have strong currents. A creature that enters a river for the first time on a turn or starts its turn there must succeed on a DC 15 Strength saving throw or be swept 20 feet in the direction indicated by the arrows on the map."
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Lesser Cavern Locations",
+							"id": "011",
+							"entries": [
+								"The following locations are keyed to map 1.1.",
+								{
+									"type": "gallery",
+									"images": [
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "adventure/DitLCoT/002-map-0.01-lesser-caverns.webp"
+											},
+											"imageType": "map",
+											"title": "Map 1.1: Lesser Caverns",
+											"credit": "Mike Schley",
+											"width": 4096,
+											"height": 5301,
+											"id": "05e"
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "adventure/DitLCoT/003-map-0.01-lesser-caverns-player.webp"
+											},
+											"imageType": "mapPlayer",
+											"title": "Player Version",
+											"width": 4096,
+											"height": 5301,
+											"credit": "Mike Schley",
+											"mapParent": {
+												"id": "05e"
+											}
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "L1: Entry Caverns",
+									"id": "012",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"id": "013",
+											"entries": [
+												"This wide chamber is ringed with a mixture of rough-hewn and natural passageways leading away from the entrance and into the unknown. Beside each of these tunnels is a grotesque face carved into the stone. Though each face is slightly different\u2014one has flap-like ears, another protruding tusks, and a third drooping wattles\u2014all are strange and doleful."
+											]
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "adventure/DitLCoT/004-00-003.ghastly-visage.webp"
+											},
+											"title": "A ghastly visage outside the entry caverns portends the dangers within",
+											"credit": "Adrián Ibarra Lugo",
+											"width": 850,
+											"height": 1912
+										},
+										"Each of the carved faces is magical. They are immune to all damage and speak a few programmed messages. When a creature approaches one of the tunnels leaving the chamber, the face beside it animates and warns in a deep, dire tone, \"Turn back\u2014this is not the way!\"",
+										"A character who examines one of the faces and succeeds on a DC 15 Wisdom ({@skill Perception}) check notices the glint of a gemstone in its mouth.",
+										{
+											"type": "entries",
+											"name": "Speaking to the Faces",
+											"id": "014",
+											"entries": [
+												"The faces repeat their warning if spoken to, except in the following two circumstances:",
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"type": "item",
+															"name": "\"Say 'Aah!",
+															"entry": "'\" If a character asks one of the faces to open its mouth, stick out its tongue, or yawn, the face sticks out its tongue and says \"aah,\" revealing a gemstone the size of a hen's egg on its tongue."
+														},
+														{
+															"type": "item",
+															"name": "\"Truth",
+															"entry": "\" If a character asks one of the faces which way to go or uses the word \"truth\" while speaking near a face, the faces respond in unison. Five of the faces lie, saying, \"My way is the right way.\" The face marking the southeast tunnel leading to {@area area L9|02e|x}, however, responds, \"I watch the best way.\""
+														}
+													]
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Treasure",
+											"id": "015",
+											"entries": [
+												"Each of the faces contains a different gem worth 200 gp: amber, amethyst, blue aquamarine, garnet, peridot, and pink tourmaline.",
+												"A creature that tries to retrieve a gem from one of the faces without first asking the face to open its mouth must make a DC 17 Dexterity ({@skill Sleight of Hand}) check. On a failed check, the creature takes 11 ({@dice 2d10}) bludgeoning damage as the mouth clamps shut. The mouth similarly damages tools or weapons inserted into it without its permission."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "L2: Slate Chamber",
+									"id": "016",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"id": "017",
+											"entries": [
+												"Alternating blue and gray bands of slate and shale compose the walls of this cave. Rusted weapons lie scattered on the ground.",
+												"A hulking, crudely formed figure made of gray clay charges at you from an alcove in the northeast, growling. The hilt of a pristine sword protrudes from the creature's chest."
+											]
+										},
+										"The figure is a {@creature clay golem} created by Iggwilv to destroy intruders. The golem attacks any creature that enters the chamber. The golem fights to the death and pursues trespassers relentlessly, even chasing them out of the caverns.",
+										{
+											"type": "entries",
+											"name": "Treasure",
+											"id": "018",
+											"entries": [
+												"The weapon stuck in the clay golem is a slender-bladed {@item Giant Slayer Shortsword||Giant Slayer (shortsword)}. The sword's name (\"Longtooth\") is engraved into the blade in Gnomish. Once the golem is destroyed, the sword can easily be freed from its chest."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "L3: Guano-Covered Cave",
+									"id": "019",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"id": "01a",
+											"entries": [
+												"The floor of this vaulted cave is covered in pungent piles of bat guano. Large leather hides hang from the stalactites above, flapping in a chilly draft. Sounds of flowing water echo from the far side of the cave."
+											]
+										},
+										"The ceiling of this soiled cave is 50 feet high. This cave once hosted dozens of bats, but a {@creature cloaker} that dwells here devoured them. The hungry creature hides among the stalactites, waiting to fall on one of the characters.",
+										{
+											"type": "entries",
+											"name": "Tunnel Ledge",
+											"id": "01b",
+											"entries": [
+												"A ledge on the north wall of the cave stretches out 30 feet above the floor. A short tunnel leads from the ledge to the river beyond. The water's surface is 40 feet below the tunnel's exit."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "L4: Littered Cave",
+									"id": "01c",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"id": "01d",
+											"entries": [
+												"This small cave is littered with broken bones. Near the back wall lies a busted skeleton with a horned bovine head splintered with cracks. Two leather sacks brimming with gold rest near the skeleton."
+											]
+										},
+										"The skeleton is that of a minotaur thief who fell prey to the trap in this cave. The two leather sacks beside it are illusions designed to lure greedy intruders to their doom. A character who inspects the sacks and succeeds on a DC 18 Intelligence ({@skill Investigation}) check or who makes physical contact with one of them discerns their false nature.",
+										{
+											"type": "entries",
+											"name": "Crushing Ceiling Trap",
+											"id": "01e",
+											"entries": [
+												"A 20-foot-wide section of the ceiling over the skeleton contains a crushing deadfall. A character who examines the ceiling and succeeds on a DC 17 Wisdom ({@skill Perception}) check notices bits of decayed flesh stuck to the ceiling, which is flat and made of stone.",
+												"Whenever a creature enters the area marked on the map, the trap magically triggers. That section of the ceiling rapidly drops, crushing anything in its path. Creatures in that area must make a DC 17 Dexterity saving throw. On a failed save, a creature takes 55 ({@dice 10d10}) bludgeoning damage and has the {@condition prone} condition. On a successful save, it takes half as much damage only and is pushed to the nearest unoccupied space outside the trap's area. Objects wedged under the trap are destroyed. The stone then retracts into the ceiling, and the trap resets.",
+												"A successful {@spell Dispel Magic} spell (DC 17) suppresses the trap and its illusions for 24 hours."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Treasure",
+											"id": "01f",
+											"entries": [
+												"A pouch on the minotaur's skeleton holds five diamonds worth 100 gp each. The illusory sacks contain nothing."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "L5: Grotto",
+									"id": "020",
+									"entries": [
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "adventure/DitLCoT/005-00-004.diligent-pechs.webp"
+											},
+											"title": "Four pechs diligently dig a staired tunnel up into the mountain, decorating its walls with carvings",
+											"credit": "Mark Behm",
+											"width": 1700,
+											"height": 1143
+										},
+										{
+											"type": "insetReadaloud",
+											"id": "021",
+											"entries": [
+												"This tunnel has been worked recently, judging by the stone chips and dust covering the floor. Roughly carved images of cave-dwelling creatures decorate the smooth stone walls.",
+												"The sounds of mining tools echo from the end of the tunnel, where hewn steps rise into the darkness."
+											]
+										},
+										"Eight {@creature Pech|DitLCoT|pechs} (see {@area appendix B|062|x}) are diligently carving a tunnel from this grotto up into the mountain toward an enclosed cavern they can sense. For now, the tunnel leads only to a dead end. If the characters draw attention with light or noise, the pechs investigate.",
+										"The pechs are initially indifferent toward the characters, admonishing them to douse any bright lights they carry, as the lights hurt the pechs' eyes. If the characters comply, the pechs become curious and willing to chat. Otherwise, they resume their work, defending themselves if necessary.",
+										"In conversation, the pechs warn the characters about the clay golem in the slate chamber ({@area area L2|016|x}). Characters can improve the pechs' attitude toward them by offering the pechs at least 500 gp of gems or a unique carving or sculpture, especially one made of stone. Friendly pechs might be willing to help fight the clay golem or use their Communal Spellcasting action to restore {@condition petrified} characters.",
+										{
+											"type": "entries",
+											"name": "Carvings",
+											"id": "022",
+											"entries": [
+												"The carvings on the walls depict cave-dwelling creatures, such as bats and crickets, as well as creatures from the Elemental Plane of Earth such as {@creature dao}, {@creature Pech|DitLCoT|pechs}, {@creature xorn}, and {@creature Earth Elemental||earth elementals}. Characters who inspect the carvings and succeed on a DC 16 Intelligence ({@skill Arcana}) check identify the planar creatures."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "L6: Fungal Cavern",
+									"id": "023",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"id": "024",
+											"entries": [
+												"Bioluminescent fungi, some as high as six feet tall, fill this moist cavern. The caps of the mushrooms sprouting from the floor and walls glow with a faint blue light. Pale, dog-sized insects chitter among the fungus."
+											]
+										},
+										"Three ghost-white cave crickets (use the {@creature giant frog} stat block) nibble at the glowing mushrooms in this cave, which radiate dim light. The crickets are indifferent toward the characters.",
+										"If the characters disturb the crickets, the insects begin to chirp loudly. The trolls in {@area area L8|02b|x} investigate any loud noises coming from this area.",
+										{
+											"type": "entries",
+											"name": "Mushrooms",
+											"id": "025",
+											"entries": [
+												"The fungi in this chamber are edible, and characters can forage here without having to make an ability check. Doing so doesn't disturb the crickets."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "L7: Slimy Cavern",
+									"id": "026",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"id": "027",
+											"entries": [
+												"This cavern is full of sizable mushrooms, but the air stings with an acrid scent. Slime in sickly yellow, green, and orange shades blankets most of the fungi, as well as the walls and ceiling.",
+												"Near the back of the cave is a cranny mostly free of fungus. A black-cloaked figure, motionless, is wedged into the crack."
+											]
+										},
+										"Originally this was another cultivated fungus farm like area L6, but slime molds are overtaking the cave. The cloaked figure is the corpse of an elf adventurer who died here, trapped by the green slime. His body has been partially calcified by the mineral-rich water dripping from the ceiling.",
+										{
+											"type": "entries",
+											"name": "Green Slime",
+											"id": "028",
+											"entries": [
+												"Six patches of {@hazard green slime} (see the {@book Dungeon Master's Guide|DMG}) cling to the ceiling near the fallen adventurer. A character who inspects the slime and succeeds on a DC 15 Intelligence ({@skill Nature}) check recognizes the danger it poses. The slime falls on creatures that approach the corpse."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Mushrooms",
+											"id": "029",
+											"entries": [
+												"The fungi here are mostly edible. Foraging in this cavern requires a successful DC 15 Wisdom ({@skill Survival}) check to avoid the harmful molds and slime. On a failed check, the mushrooms the character gathers are contaminated by the slime. A creature that eats a contaminated mushroom must succeed on a DC 12 Constitution saving throw or have the {@condition poisoned} condition for 8 hours."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Treasure",
+											"id": "02a",
+											"entries": [
+												"The elf corpse carries a silvered {@item rapier|PHB} and wears {@item Bracers of Defense}."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "L8: Stinking Cave",
+									"id": "02b",
+									"entries": [
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "adventure/DitLCoT/006-00-005.hungry-trolls-splash.webp"
+											},
+											"title": "Three hungry trolls pass the time in their foul-smelling cave",
+											"credit": "Arash Radkia",
+											"width": 1700,
+											"height": 1161
+										},
+										{
+											"type": "insetReadaloud",
+											"id": "02c",
+											"entries": [
+												"This reeking cave is filled with rotting vegetation, bones, pieces of pale chitin, dung, and less identifiable foulness. Three larger heaps of material serve as giant sleeping pallets.",
+												"Three hulking creatures with warty green skin and wiry hair mill through the detritus, chewing cracked bones clutched in their clawed hands."
+											]
+										},
+										"This cave is the lair of three {@creature Troll||trolls}. They regularly gather rotting material from their den and spread it through the nearby fungus caverns (areas L6 and L7) to ensure the mushrooms grow and attract cave crickets for the trolls to feed on. The trolls are ornery, having long gone without the taste of humanoid flesh\u2014their favorite delicacy. The trolls attack anyone they notice, fantasizing aloud in Giant about the meal they're about to have.",
+										{
+											"type": "entries",
+											"name": "Treasure",
+											"id": "02d",
+											"entries": [
+												"Gathered under the trolls' beds is their accumulated loot: 120 gp, 900 sp, four gems worth 50 gp each, gnome-sized wooden dentures set with mother-of-pearl teeth (worth 50 gp), a {@item quiver|PHB} with twenty silvered {@item Arrows (20)|PHB|arrows}, and a {@item Potion of Greater Healing||Potion of Healing (greater)}."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "L9: Bat Corridor",
+									"id": "02e",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"id": "02f",
+											"entries": [
+												"The sandy floor of this long, wide corridor is strewn with piles of bat guano. Small fungi sprout from these deposits and the walls. A cacophony of chitters and squeaks echoes from above."
+											]
+										},
+										"The ceiling of this corridor is covered in thousands of roosting bats. Bright light or any noise louder than a whisper agitates the bats and sends them into a panic, causing a number of {@creature Swarm of Bats||swarms of bats} equal to the number of characters in this area descend from the ceiling and attack the source of the disturbance. The swarms extinguish any nonmagical light sources they come within 5 feet of with a flurry of buffeting wings.",
+										"Whenever a creature destroys a swarm, a new swarm immediately forms in an unoccupied space within 15 feet of the creature. The new swarm acts on the destroyed swarm's initiative count.",
+										"If the characters extinguish all light sources and cease attacking and making loud noises, the bats settle back into their roosts at the end of the round. They don't pursue creatures beyond the corridor."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "L10: Long Gallery",
+									"id": "030",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"id": "031",
+											"entries": [
+												"The cavern widens into a gallery of considerable height and length. Clusters of small fungi grow throughout the chamber, and odd indentations dot the floor and walls at semiregular intervals. Somewhere farther back in the cave, a dim glow casts flickering shadows."
+											]
+										},
+										"The indentations are the rock-cyst burrows of four cave morays\u2014sluglike scavengers that slither between the burrow entrances through tunnels in the rock. The cave morays use the {@creature giant poisonous snake} stat block. They use their reach to bite at prey from the safety of their burrows.",
+										"Cave morays inside their burrows have {@book three-quarters cover|PHB|9|Cover}. A creature within 5 feet of a burrow can pull a cave moray from its burrow by grappling it. If removed from its burrow, a cave moray frantically tries to escape back to its hole.",
+										"Loud sounds here, including the din of battle, draw the attention of the fomorians in area L11. The cave morays retreat into their burrows when the fomorians arrive."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "L11: Fomorian Cave",
+									"id": "032",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"id": "033",
+											"entries": [
+												"This cave stinks of sweat, smoke, and spoiled meat. Old, cracked bones and skulls lie strewn on the floor. A large, flat rock supports massive stone goblets and the carcass of a giant toad, picked clean and buzzing with flies. Two piles of filthy hides and skins form beds at the far end of the cave.",
+												"Two hideous giants squat near a circle of hefty stones enclosing a crackling fire. Above the roaring flames, a charred giant insect rotates slowly on a spit."
+											]
+										},
+										"Two {@creature Fomorian||fomorians} inhabit this cave. The beds, fire pit, and utensils are all sized for Huge creatures.",
+										"The fomorians are cruel, violent, and bored. When the giants notice the characters, they abandon their meal and attack. One of the fomorians wields the roasting spit as its weapon, tearing bites off the bug-tipped skewer between swings.",
+										{
+											"type": "entries",
+											"name": "Treasure",
+											"id": "034",
+											"entries": [
+												"Stashed beneath the fomorians' beds are two ivory mammoth tusks (each is worth 600 gp and weighs 100 pounds), a {@item Spell Scroll} of {@spell Levitate}, and a beaten copper bowl with lapis lazuli handles, which is worth 750 gp."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "L12: River Ledge",
+									"id": "035",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"id": "036",
+											"entries": [
+												"A ten-foot-long wooden boat is tied to a ledge near the water. Intricate, flowing knotwork carving decorates the sides of the craft, which tapers to a point at both ends. Two oars lie inside."
+											]
+										},
+										"This ledge is visible from the lake (area L13) and from the shores of {@area areas L9|02e|x} and L14.",
+										{
+											"type": "entries",
+											"name": "Treasure",
+											"id": "037",
+											"entries": [
+												"The vessel is a {@item Folding Boat} created to traverse the lake and the rivers that branch from it. In addition to its usual properties, the boat has an extra command word that functions only while the boat is within the Lost Caverns. A character who knows this additional command word (\"Shrimpkin\")\u2014discovered by casting the {@spell Identify} spell on the boat or by examining clues in the boat's intricate designs and succeeding on a DC 16 Intelligence ({@skill Arcana}) check\u2014can command the boat to row itself in a particular direction at a speed of 30 feet or to hold its position in defiance of the water's swiftest currents."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "L13: Underground Lake",
+									"id": "038",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"id": "039",
+											"entries": [
+												"A river flows into the south side of this high-vaulted cavern, feeding a glassy, ebon-hued lake. Drops of water fall from the ceiling high above, rippling the mirrorlike surface of the water.",
+												"Two rivers flow out of the northern side of the lake, while a third flows out to the west. Ledges along the shore lead to dry tunnels."
+											]
+										},
+										"The lake teems with blind cave fish and crayfish. These critters are a food source for many of the denizens in the lesser caverns, including predators that dwell within the lake itself. The lake slopes sharply from its shores to a depth of 100 feet.",
+										"Four {@creature Chuul||chuuls} lurk near the lakebed, 90 feet below the surface. They're content to creep along the lightless depths and prey on cave fish unless something else catches their attention. Bright light draws the chuuls to the water's edge, as does any magic in the lake or near its surface, such as the boat from area L12. If drawn to the surface, the chuuls attack.",
+										{
+											"type": "entries",
+											"name": "L13a: Stone Bridge",
+											"id": "03a",
+											"entries": [
+												"An unadorned stone bridge spans the northwest river."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "L13b: Gargoyle Bridge",
+											"id": "03b",
+											"entries": [
+												"A bridge decorated with reliefs of gargoyles spans the west river flowing from the lake. The sound of roaring water echoes from downstream. A short distance beyond the bridge, the river becomes a waterfall, plummeting 300 feet into an Underdark lake. The lake and the creatures that inhabit it are beyond the scope of this adventure, but you can flesh them out as you see fit."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "L14: Basilisk Den",
+									"id": "03c",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"id": "03d",
+											"entries": [
+												"Oddly shaped chunks of rock are strewn about this cave, which reeks of ammonia. Scattered among the irregular rock pieces are stone sculptures of various creatures, including bats, subterranean lizards, and a broken bust of a gnome with a horrified expression."
+											]
+										},
+										"Four {@creature Basilisk||basilisks} dwell in this cave. Toward the back of the cave is a nest where the basilisks lay eggs. The basilisks are protective of their den, attacking any creatures that enter the cave.",
+										{
+											"type": "entries",
+											"name": "Treasure",
+											"id": "03e",
+											"entries": [
+												"The head and shoulder of a {@condition petrified} gnome lie near the basilisk nest at the back of the cave. The broken statue wears a pair of unpetrified goggles, which are {@item Eyes of Minute Seeing}."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "L15: Rainbow Cavern",
+									"id": "03f",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"id": "040",
+											"entries": [
+												"This vaulted cavern displays a rainbow of colors on its walls and floor. Stalactites hang like colorful icicles, and the stalagmites feature bright streaks and swirls. Mineral deposits form frozen curtains, cascades, and other fantastical shapes in vibrant hues."
+											]
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "adventure/DitLCoT/007-00-006.behir-lludd-splash.webp"
+											},
+											"title": "Adventurers clash with the behir Lludd in his lair within the Lost Caverns",
+											"credit": "Zoltan Boros",
+											"width": 1700,
+											"height": 2129
+										},
+										"The ceiling of this colorful cavern rises to a height of 50 feet. Careful examination of the floor reveals many cracked bone fragments among the stalagmites. Once the lair of a chimera, this cavern is now home to Lludd, a clever and long-lived {@creature behir} who ousted the smaller, weaker creature that preceded him. Lludd speaks Common and Giant in addition to Draconic. The behir lurks on a rufous ledge near the entrance to the chamber, waiting for morsels worthy of his hunger.",
+										"Lludd is hostile toward intruders, but he doesn't immediately resort to violence. Though he's selfish and cruel, the behir hasn't survived this long by attempting to devour every creature that enters his lair\u2014especially hardened adventurers. When he notices the characters, Lludd greets them in Common.",
+										{
+											"type": "entries",
+											"name": "Parleying with Lludd",
+											"id": "041",
+											"entries": [
+												"If the characters converse with Lludd, he offers to point them toward a place where they can find treasure in exchange for leaving him in peace. The behir keeps no hoard of his own. If they agree, Lludd directs them toward a \"vast treasure\" in the black-water lake ({@area area L18|04e|x}).",
+												"During the conversation, Lludd sizes up the party. If the characters appear wounded or offend the behir, he seizes his chance and unleashes his breath on them."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Treasure",
+											"id": "042",
+											"entries": [
+												"Inside Lludd's stomach is a {@item Periapt of Proof against Poison} left over from an unlucky explorer the behir digested."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "L16: Boulder Heap",
+									"id": "043",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"id": "044",
+											"entries": [
+												"Small, rounded boulders are carefully stacked here, blocking the entrance to a wide tunnel."
+											]
+										},
+										"The boulders are obviously not a natural formation. Lludd, the behir in area L15, piled them here to block the entrance to the greater caverns and prevent creatures that dwell there from taking him by surprise.",
+										"With 5 minutes of work, the characters can clear enough of the rocks to expose the tunnel beyond. There, a flight of nine hundred crudely shaped stone steps descends to the greater caverns. If the characters descend the steps, proceed to this adventure's {@area conclusion|05c|x}.",
+										{
+											"type": "entries",
+											"name": "Hollow Boulder",
+											"id": "045",
+											"entries": [
+												"If the characters move any of the rocks, they uncover a smooth, blue-green boulder that's strangely light and clunks dully when moved or shaken, revealing its hollowness. The boulder can be easily broken open with blunt weapons, with tools, or by smashing it against a hard surface."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Graven Glyphs",
+											"id": "046",
+											"entries": [
+												"Inside the hollow boulder is a bronze tablet worth 100 gp. The tablet is etched with a poem for those hoping to delve into the greater caverns. It offers cryptic insight on how to enter Iggwilv's inner sanctum in the greater caverns, where the archmage's true prize resides. The poem reads as follows:",
+												{
+													"type": "insetReadaloud",
+													"id": "047",
+													"entries": [
+														"In the center lies the gate, But its locks will surely vex. Many are the guards who wait As you seek the middle hex.",
+														"Randomly sent to find a way Back to a different iron door. A seventh time and you may stay, And seek the glowing prize no more.",
+														"You have won old Iggwilv's prize, Her hoarded cache of magic, And freed the one with yearning eyes, Whose lot was hunger tragic."
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "L17: Lavish Parlor",
+									"id": "048",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"id": "049",
+											"entries": [
+												"The natural cavern gives way to a luxurious parlor. Crystal chandeliers bathe the chamber in soft light, and the scent of orange blossoms perfumes the air. Plump cushions surround a low table heaped with ripe fruits, refreshing beverages, and succulent meats. Low sofas and comfortable chairs dot the walls of the lounge, and side tables between these sitting areas overflow with gemstones, jewelry, and other treasures.",
+												"Four impeccably dressed human aristocrats laugh and feast in the parlor. An unseen string quartet accompanies their revelry with soothing music."
+											]
+										},
+										"This area is brightly lit. The nobles invite the characters to join the repast, insisting the characters rest and regale them with tales of adventure.",
+										"The nobles are part of an elaborate, genie-wrought illusion created by Kashem, a bitter {@creature dao} bound to guard this chamber by Iggwilv. The Witch Queen imparted a mote of her power to Kashem in exchange for the dao's services. Long after the archmage's departure, Kashem still pursues her original charge to destroy all who enter.",
+										"When the characters arrive, Kashem floats silently above the chamber, waiting for a prime opportunity to strike. If the characters consume any of the food or drink, refuse to join the nobles outright, or see through the illusions, Kashem reveals herself and attacks.",
+										{
+											"type": "entries",
+											"name": "Illusory Finery",
+											"id": "04a",
+											"entries": [
+												"The room's genie-wrought furnishings and inhabitants are convincing illusions. These illusions blanket dingy, neglected versions of the objects they cover and feel real if touched. To pierce the dao's ruse, a character examining the chamber's fixtures must succeed on a DC 20 Intelligence ({@skill Investigation}) check. The nobles, however, fail to hold up to physical inspection. A character who touches a noble automatically succeeds on this check."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Poisoned Feast",
+											"id": "04b",
+											"entries": [
+												"The food and drink on the table are real\u2014and poisoned. A creature that consumes any of the food or drink must make a DC 16 Constitution saving throw. On a failed save, a creature takes 21 ({@dice 6d6}) poison damage and has the {@condition poisoned} condition for 1 hour. On a successful save, the creature takes half as much damage only. The illusory nobles nonchalantly partake of the sumptuous feast, politely encouraging the characters to sample the dishes."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Dust to Dust",
+											"id": "04c",
+											"entries": [
+												"If Kashem is slain, her body disintegrates into a pile of fine dust. This dust can be used in {@area area L20|057|x} to destroy the cage in the lake or prove that Kashem is dead."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Treasure",
+											"id": "04d",
+											"entries": [
+												"None of the treasure is real. Coins and precious objects taken from the chamber turn out to be flat stones and obvious counterfeits."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "L18: Black-Water Lake",
+									"id": "04e",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"id": "04f",
+											"entries": [
+												"The river flows into a flooded cavern, creating a small lake. The surface of the water is glossy and black. A rocky island rises from the center of the pool."
+											]
+										},
+										"The island is strewn with tiny garnets, which sparkle alluringly in the presence of light.",
+										{
+											"type": "entries",
+											"name": "Lurking Death",
+											"id": "050",
+											"entries": [
+												"Eight aquatic {@creature Ghast||ghasts} (each has a swimming speed of 30 feet) lurk in the lake, which is 20 feet deep. Spotting them beneath the water's mirrorlike surface requires a successful DC 20 Wisdom ({@skill Perception}) check. The ghasts ambush any creatures that enter the lake."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Rebuking Island",
+											"id": "051",
+											"entries": [
+												"Iggwilv recorded a series of messages in this cave to taunt intruders. Each time a creature sets foot on the island, an imperious voice echoes throughout the cave, uttering one of the following reproofs:",
+												{
+													"type": "list",
+													"items": [
+														"\"Fools! This is a dead end. Flee while you still can!\"",
+														"\"You were witless to enter at all, so you should probably just stay here.\"",
+														"(Peals of hideous, mocking laughter)"
+													]
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Treasure",
+											"id": "052",
+											"entries": [
+												"Six hundred garnets are strewn across the island, each about the size of a pea and worth 1 gp. It takes 10 minutes for a single creature to collect the gems by hand. The gems have a combined weight of 5 pounds."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "L19: Cave of Crystals",
+									"id": "053",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"id": "054",
+											"entries": [
+												"Veins of glittering quartz streak the walls of this crystal cave. Three bizarre creatures with stone-lidded eyes converse in grating tones. Each has three clawed arms, three stumpy legs, and a barrel-like body."
+											]
+										},
+										"Three {@creature xorn} from the Elemental Plane of Earth found their way to this cave through a planar rift that has since closed, stranding them here. The xorn are initially indifferent to the characters but defend themselves if attacked.",
+										{
+											"type": "entries",
+											"name": "Hungry Castaways",
+											"id": "055",
+											"entries": [
+												"The xorn are discussing their plight when the characters arrive. The creatures are hungry and upset at their situation. Prone to stress eating, the xorn crave any precious gems or metals they can sense on the characters. If anyone in the party can understand the xorn, the creatures explain their dilemma and attempt to persuade the characters to give them a meal of at least 100 gp worth of gems or metals per xorn.",
+												"If the characters have a means to send the xorn home\u2014such as the {@spell Banishment} spell\u2014the xorn offer to help locate other treasure for the characters as payment. Alternatively, a single character can convince the xorn to assist them in defeating a threat elsewhere in the caverns with a successful DC 18 Charisma ({@skill Persuasion}) check."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Treasure",
+											"id": "056",
+											"entries": [
+												"The xorn stashed 500 gp worth of uncut gems behind a large crystal formation in the northwest corner of the room. A character searching the crystals finds the stash with a successful DC 17 Wisdom ({@skill Perception}) check."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "L20: Pool Cavern",
+									"id": "057",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"id": "058",
+											"entries": [
+												"The narrow river flows into a domed cavern whose ceiling bristles with stalactites. Faint sounds of trickling water echo from the northwest."
+											]
+										},
+										"The river dead-ends in this flooded chamber. A {@creature marid} named Kasdu'ul is trapped at the bottom of the pool, 30 feet below the surface. An unbreakable stone cage etched with glowing runes confines the genie to the pool. Characters who look into the pool and succeed on a DC 15 Wisdom ({@skill Perception}) check notice the cage's faint, glimmering light in the water.",
+										{
+											"type": "entries",
+											"name": "Bound Genie",
+											"id": "059",
+											"entries": [
+												"Kasdu'ul was trapped here by the dao Kashem (see {@area area L17|048|x}) centuries ago, shortly before Kashem was fooled and bound by Iggwilv in turn. A permanent {@spell Antipathy/Sympathy} spell (save DC 18) protects the cage and repels creatures that aren't native to the Elemental Plane of Earth with its Antipathy effect. The runes on the cage invoke the hatred of Ogrémoch, the Prince of Evil Earth.",
+												"While the cage is intact, Kasdu'ul has the {@condition incapacitated} condition and speaks in a lethargic tone. If the characters overcome the Antipathy effect and approach the cage, the genie drowsily asks them to destroy it."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Destroying the Cage",
+											"id": "05a",
+											"entries": [
+												"The cage is immune to all damage and has no locks or opening mechanisms. It can be destroyed in the following ways:",
+												{
+													"type": "list",
+													"items": [
+														"A creature native to the Plane of Earth\u2014such as one of the pechs in {@area area L5|020|x} or the xorn in area L19\u2014can easily break the cage as if it were made of fragile clay.",
+														"If the dust of a slain dao is scattered over the lake, the cage instantly rusts away.",
+														"A successful {@spell Dispel Magic} (DC 18) spell cast on the cage causes it to crumble."
+													]
+												},
+												"Kasdu'ul has had many years to contemplate the cage's magical construction. She might propose one of these methods to the party from inside the cage."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Freed Genie",
+											"id": "05b",
+											"entries": [
+												"If the cage is destroyed, Kasdu'ul returns to her lively self. The grateful genie urges the characters to find and slay the dao that imprisoned her if they haven't already.",
+												"As thanks for freeing her, she's willing to cast {@spell Tongues}, {@spell Water Breathing}, and {@spell Water Walk} on the characters to facilitate their exploration. If the characters also present proof of Kashem's demise\u2014such as a pinch of the dust left behind after her death\u2014or they offer a convincing story and succeed on a DC 17 Charisma ({@skill Deception}) check, Kasdu'ul summons a {@creature water weird} and orders it to serve the characters for 1 hour, after which it vanishes. In either case, Kasdu'ul then bids the characters farewell and returns to the Elemental Plane of Water."
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Conclusion",
+					"id": "05c",
+					"entries": [
+						"Whether the characters found the entrance to the greater caverns (see {@area area L16|043|x}), succumbed to the dungeon's many threats, wisely decided to turn back, or simply ran out of time, Iggwilv's greatest treasures remain yet to be discovered. This adventure ends on a cliffhanger.",
+						"The rest of the Witch Queen's lair, her hoard, and even more iconic adventures can be found in {@adventure Quests from the Infinite Staircase|QftIS}!"
+					]
+				},
+				{
+					"type": "section",
+					"name": "Appendix A: Magic Items",
+					"id": "05d",
+					"entries": [
+						"This section presents four magic items related to Iggwilv and the Lost Caverns. These items are presented in alphabetical order.",
+						{
+							"type": "list",
+							"columns": 3,
+							"items": [
+								"{@item Demon Skin|DitLCoT}",
+								"{@item Iggwilv's Horn|DitLCoT}",
+								"{@item Potion of Polychromy|DitLCoT}",
+								"{@item Tasha's Creeping Keelboat|DitLCoT}"
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Appendix B: Creature",
+					"id": "062",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"{@creature Pech|DitLCoT}"
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Appendix C: Score Sheet",
+					"id": "064",
+					"entries": [
+						"Use this score sheet to tally the players' points. Players can gain or lose points for each of these actions only once.",
+						{
+							"type": "table",
+							"caption": "Points by Area",
+							"colLabels": [
+								"",
+								"Action",
+								"Points"
+							],
+							"colStyles": [
+								"col-2",
+								"col-8 text",
+								"col-2 text-center"
+							],
+							"rows": [
+								[
+									"L1: Entry Caverns",
+									"Caused a face to say \"aah\"",
+									"+1"
+								],
+								[
+									"",
+									"Asked a face which way to go or used the word \"truth\"",
+									"+1"
+								],
+								[
+									"",
+									"Recovered any gems",
+									"+1"
+								],
+								[
+									"",
+									"Got bit by a stone face",
+									"\u22121"
+								],
+								[
+									"L2: Slate Chamber",
+									"Defeated the clay golem",
+									"+1"
+								],
+								[
+									"",
+									"Removed the sword stuck in the clay golem's chest",
+									"+1"
+								],
+								[
+									"L3: Guano-Covered Cave",
+									"Defeated the cloaker",
+									"+1"
+								],
+								[
+									"",
+									"Used the tunnel ledge to access the areas to the north",
+									"+1"
+								],
+								[
+									"L4: Littered Cave",
+									"Avoided the crushing ceiling trap",
+									"+1"
+								],
+								[
+									"",
+									"Recovered the treasure",
+									"+1"
+								],
+								[
+									"L5: Grotto",
+									"Attacked the pechs",
+									"\u22121"
+								],
+								[
+									"",
+									"Improved the pechs' mood",
+									"+2"
+								],
+								[
+									"",
+									"Refused to douse any bright lights",
+									"\u22121"
+								],
+								[
+									"L6: Fungal Cavern",
+									"Disturbed the crickets",
+									"\u22121"
+								],
+								[
+									"L7: Slimy Cavern",
+									"Gathered or ate contaminated mushrooms",
+									"\u22121"
+								],
+								[
+									"",
+									"Recovered the elf corpse's equipment",
+									"+1"
+								],
+								[
+									"L8: Stinking Cave",
+									"Defeated the trolls",
+									"+3"
+								],
+								[
+									"",
+									"Found the trolls' loot",
+									"+1"
+								],
+								[
+									"L9: Bat Corridor",
+									"Disturbed the bats",
+									"\u22121"
+								],
+								[
+									"L10: Long Gallery",
+									"Attracted the attention of the fomorians in area L11",
+									"\u22121"
+								],
+								[
+									"",
+									"Pulled a cave moray from its burrow",
+									"+1"
+								],
+								[
+									"L11: Fomorian Cave",
+									"Defeated the fomorians",
+									"+3"
+								],
+								[
+									"",
+									"Found the fomorians' loot",
+									"+1"
+								],
+								[
+									"L12: River Ledge",
+									"Learned the boat's command word",
+									"+1"
+								],
+								[
+									"L13: Underground Lake",
+									"Defeated the chuuls",
+									"+2"
+								],
+								[
+									"",
+									"Failed a Strength saving throw in any of the rivers",
+									"\u22121"
+								],
+								[
+									"",
+									"Cast {@spell Control Water}, {@spell Water Breathing}, or {@spell Water Walk}",
+									"+1"
+								],
+								[
+									"L14: Basilisk Den",
+									"Defeated the basilisks",
+									"+1"
+								],
+								[
+									"",
+									"One or more characters gained the {@condition petrified} condition",
+									"\u22121"
+								],
+								[
+									"",
+									"Recovered the treasure near the basilisk's nest",
+									"+1"
+								],
+								[
+									"L15: Rainbow Cavern",
+									"Defeated Lludd the behir",
+									"+3"
+								],
+								[
+									"L16: Boulder Heap",
+									"Cleared the rocks to expose the tunnel to the greater caverns",
+									"+1"
+								],
+								[
+									"",
+									"Discovered the bronze tablet within the hollow boulder",
+									"+1"
+								],
+								[
+									"L17: Lavish Parlor",
+									"Ate any of the poisoned food or drink",
+									"\u22121"
+								],
+								[
+									"",
+									"Defeated Kashem the dao",
+									"+2"
+								],
+								[
+									"",
+									"Saw through Kashem's illusions before she attacked",
+									"+1"
+								],
+								[
+									"L18: Black-Water Lake",
+									"Gathered all the garnets on the island",
+									"+1"
+								],
+								[
+									"",
+									"Received an insult from Iggwilv",
+									"+1"
+								],
+								[
+									"",
+									"Used a cleric or paladin's Channel Divinity feature against the ghasts",
+									"+1"
+								],
+								[
+									"L19: Cave of Crystals",
+									"Attacked the xorn",
+									"\u22121"
+								],
+								[
+									"",
+									"Sent any xorn home",
+									"+2"
+								],
+								[
+									"",
+									"Enlisted the help of the xorn",
+									"+1"
+								],
+								[
+									"L20: Pool Caverns",
+									"Freed Kasdu'ul the marid",
+									"+2"
+								],
+								[
+									"",
+									"Provided proof of Kashem's demise or convinced Kasdu'ul of the dao's defeat",
+									"+1"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "Additional Points",
+							"colLabels": [
+								"Condition",
+								"Points"
+							],
+							"colStyles": [
+								"col-10",
+								"col-2 text-center"
+							],
+							"rows": [
+								[
+									"Per character death",
+									"\u22121"
+								],
+								[
+									"One or more players thanked the DM during or after the session",
+									"+1"
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Appendix D: Premade Characters",
+					"id": "065",
+					"entries": [
+						"If a player doesn't have a level-appropriate character to play, have them choose one from this section. The Premade Characters table summarizes the characters, all of whom are 9th level. Give players who choose from these options time to read over their character sheets before starting the adventure.",
+						{
+							"type": "table",
+							"caption": "Premade Characters",
+							"colLabels": [
+								"Name",
+								"Species",
+								"Class"
+							],
+							"colStyles": [
+								"col-4",
+								"col-4",
+								"col-4"
+							],
+							"rows": [
+								[
+									"Cathartic",
+									"Human",
+									"Cleric"
+								],
+								[
+									"Dunil",
+									"Halfling",
+									"Rogue"
+								],
+								[
+									"Ethelrede",
+									"Human",
+									"Fighter"
+								],
+								[
+									"Flemin",
+									"Dwarf",
+									"Monk"
+								],
+								[
+									"Rustle Berrydust",
+									"Gnome",
+									"Wizard"
+								],
+								[
+									"Weslocke",
+									"Tiefling",
+									"Warlock"
+								]
+							]
+						},
+						{
+							"type": "gallery",
+							"images": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DitLCoT/013-00-012.cathartic.webp"
+									},
+									"credit": "Fay Dalton",
+									"title": "{@5etools Cathartic|img/pdf/DitLCoT/cathartic.pdf}",
+									"width": 850,
+									"height": 1087
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DitLCoT/014-00-013.dunil.webp"
+									},
+									"credit": "Fay Dalton",
+									"title": "{@5etools Dunil|img/pdf/DitLCoT/dunil.pdf}",
+									"width": 850,
+									"height": 1087
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DitLCoT/015-00-014.ethelrede.webp"
+									},
+									"credit": "Fay Dalton",
+									"title": "{@5etools Ethelrede|img/pdf/DitLCoT/ethelrede.pdf}",
+									"width": 850,
+									"height": 1087
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DitLCoT/016-00-015.flemin.webp"
+									},
+									"credit": "Fay Dalton",
+									"title": "{@5etools Flemin|img/pdf/DitLCoT/flemin.pdf}",
+									"width": 850,
+									"height": 1087
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DitLCoT/017-00-016.rustle-berrydust.webp"
+									},
+									"credit": "Fay Dalton",
+									"title": "{@5etools Rustle Berrydust|img/pdf/DitLCoT/rustle-berrydust.pdf}",
+									"width": 850,
+									"height": 1087
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DitLCoT/018-00-017.weslocke.webp"
+									},
+									"credit": "Fay Dalton",
+									"title": "{@5etools Weslocke|img/pdf/DitLCoT/weslocke.pdf}",
+									"width": 850,
+									"height": 1087
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Credits",
+					"id": "06d",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"columns": 2,
+									"items": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Lead Designer",
+													"entries": [
+														"Justice Ramin Arman"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Designer",
+													"entries": [
+														"Dan Dillon"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Rules Developer",
+													"entries": [
+														"Ron Lundeen"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Art Director",
+													"entries": [
+														"Fury Galluzzi"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Lead Editor",
+													"entries": [
+														"Judy Bauer"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Editor",
+													"entries": [
+														"Hannah Rose"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Graphic Designer",
+													"entries": [
+														"Paolo Vacala"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Cover Illustrator",
+													"entries": [
+														"Jodie Muir"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Cartographer",
+													"entries": [
+														"Mike Schley"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Interior Illustrators",
+													"entries": [
+														"Stephen Andrade, Mark Behm, Zoltan Boros, Adrián Ibarra Lugo, Arash Radkia"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Premade Character Portraits",
+													"entries": [
+														"Fay Dalton"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Consultants",
+													"entries": [
+														"James Mendez-Hodes, Pam Punzalan"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Game Architects",
+													"entries": [
+														"Jeremy Crawford, Christopher Perkins"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Studio Art Director",
+													"entries": [
+														"Josh Herman"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Senior Producer",
+													"entries": [
+														"Dan Tovar"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Producers",
+													"entries": [
+														"Bill Benham, Siera Bruggeman, Robert Hawkey"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Product Manager",
+													"entries": [
+														"Natalie Egan"
+													]
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "D&D Beyond",
+											"entries": [
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"type": "item",
+															"name": "Product Manager",
+															"entries": [
+																"Jeff Turriff"
+															]
+														},
+														{
+															"type": "item",
+															"name": "Digital Design Team",
+															"entries": [
+																"Jay Jani, Sean Stoves, Adam Walton"
+															]
+														}
+													]
+												}
+											],
+											"id": "060"
+										}
+									]
+								}
+							],
+							"id": "05f"
+						},
+						{
+							"type": "entries",
+							"name": "Original Credits",
+							"id": "06e",
+							"entries": [
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"type": "item",
+											"name": "Design",
+											"entries": [
+												"Gary Gygax"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Development",
+											"entries": [
+												"Gary Gygax, Allen Hammack, Jon Pickens, Edward G. Sollers"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Editing",
+											"entries": [
+												"Edward G. Sollers"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Art",
+											"entries": [
+												"Jim Holloway, Erol Otus, Jeff Easley, Stephen D. Sullivan"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Playtesting",
+											"entries": [
+												"Jeff Dolphin, Luke Gygax, David Kuntz, Richard Kuntz, Sonny Savage, James M. Ward"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Special Thanks",
+											"entries": [
+												"Rob Kuntz"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Special thanks to the original designer of this adventure, Gary Gygax, as well as everyone who contributed to it:",
+									"entry": "Jeff Dolphin, Luke Gygax, Jeff Easley, Allen Hammack, Jim Holloway, David Kuntz, Richard Kuntz, Erol Otus, Jon Pickens, Sonny Savage, Edward G. Sollers, Stephen D. Sullivan, and James M. Ward."
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

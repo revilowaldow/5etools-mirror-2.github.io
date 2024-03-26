@@ -27400,9 +27400,11 @@
 												}
 											]
 										}
-									]
+									],
+									"id": "076"
 								}
-							]
+							],
+							"id": "05c"
 						},
 						{
 							"type": "entries",
@@ -27431,9 +27433,11 @@
 												}
 											]
 										}
-									]
+									],
+									"id": "078"
 								}
-							]
+							],
+							"id": "077"
 						},
 						"Special thanks to the original Dragonlance creative team and adventure designers, including Mike Breault, Michael Dobson, Larry Elmore, Anne Gray, Michael Gray, Jeff Grubb, Bruce Heard, Laura Hickman, Tracy Hickman, Harold Johnson, James Lowder, Roger Moore, Bruce Nesmith, Douglas Niles, Elizabeth Riedel, Lisa Smedman, Carl Smith, Garry Spiegle, Margaret Weis, Michael Williams, Janet Vialls, Peter Vialls, and many more!",
 						"Additional thanks to the hundreds of playtesters whose efforts made this a better book!"
@@ -27474,7 +27478,8 @@
 						}
 					]
 				}
-			]
+			],
+			"id": "05b"
 		}
 	]
 }

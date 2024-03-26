@@ -1581,6 +1581,19 @@
 			]
 		},
 		{
+			"name": "Demon Skin",
+			"source": "DitLCoT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/DitLCoT/Demon Skin.webp"
+					}
+				}
+			]
+		},
+		{
 			"name": "Demonomicon of Iggwilv",
 			"source": "TCE",
 			"images": [
@@ -3027,6 +3040,19 @@
 						"path": "items/WBtW/Iggwilvs Cauldron (Iron).webp"
 					},
 					"credit": "Olga Drebas"
+				}
+			]
+		},
+		{
+			"name": "Iggwilv's Horn",
+			"source": "DitLCoT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/DitLCoT/Iggwilvs Horn.webp"
+					}
 				}
 			]
 		},
@@ -4568,6 +4594,19 @@
 						"path": "items/SatO/Portal Compass.webp"
 					},
 					"credit": "CoupleOfKooks"
+				}
+			]
+		},
+		{
+			"name": "Potion of Polychromy",
+			"source": "DitLCoT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/DitLCoT/Potion of Polychromy.webp"
+					}
 				}
 			]
 		},
@@ -6439,6 +6478,19 @@
 						"path": "decks/BMT/Deck of Many Things/21-talons.webp"
 					},
 					"credit": "Abigail Larson"
+				}
+			]
+		},
+		{
+			"name": "Tasha's Creeping Keelboat",
+			"source": "DitLCoT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/DitLCoT/Tashas Creeping Keelboat.webp"
+					}
 				}
 			]
 		},

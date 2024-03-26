@@ -41550,7 +41550,8 @@
 						"Pozas, Claudio. \"Fair Barovia.\" {@i Dungeon 207}. 2012.",
 						"TSR, Inc. {@i Van Richten's Monster Hunter's Compendium, Volume One}. 1999.",
 						"\u2014\u2014\u2014. {@i Van Richten's Monster Hunter's Compendium, Volume Three}. 2000."
-					]
+					],
+					"id": "326"
 				},
 				{
 					"type": "image",
@@ -41562,7 +41563,8 @@
 					"width": 1234,
 					"height": 828
 				}
-			]
+			],
+			"id": "13c"
 		},
 		{
 			"type": "section",

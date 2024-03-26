@@ -2673,5 +2673,11 @@
 		"date": "2024-03-24",
 		"title": "Old 'Bold",
 		"txt": "- Added Tome of Beast 1 (2023 Edition) content _[for now; as with all \"partnered\" content, to be moved to the homebrew repo at a later date]_\n- (Brew) Improved Creature Text Converter\n  - SRD spell names in `\"spellcasting\"` are now mapped to their expected full names\n  - Improved parsing of conditional resistances/immunities/vulnerabilities\n  - Fixed rare case where creature type could be misinterpreted as size\n- (Brew) Added Vehicles support for vulnerabilities/resistances\n- (Brew) Updated source editor to better match schema/requirements\n  - Added version input\n  - Empty optional fields are no longer included in output\n  - Output `\"color\"`s are now schema-valid\n- (Fixed typos/added tags)"
+	},
+	{
+		"ver": "1.203.0",
+		"date": "2024-03-26",
+		"title": "Mind the Step",
+		"txt": "- Added Descent into the Lost Caverns of Tsojcanth content\n- (Brew) Improved Item Text Converter handling of generic variant armor types\n- (Brew) Improved Creature Text Converter handling of bulleted lists\n- (Fixed typos/added tags)"
 	}
 ]

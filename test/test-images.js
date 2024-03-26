@@ -22,7 +22,7 @@ class _TestTokenImages {
 	static _mmTokens = null;
 
 	static _isMmToken (filename) {
-		if (!this._mmTokens) this._mmTokens = fs.readdirSync(`${this._PATH_BASE}/${Parser.sourceJsonToAbv(Parser.SRC_MM)}`).mergeMap(it => ({[it]: true}));
+		if (!this._mmTokens) this._mmTokens = fs.readdirSync(`${this._PATH_BASE}/${Parser.SRC_MM}`).mergeMap(it => ({[it]: true}));
 		return !!this._mmTokens[filename.split("/").last()];
 	}
 
@@ -32,13 +32,12 @@ class _TestTokenImages {
 			.forEach(file => {
 				ut.readJson(`./data/bestiary/${file}`).monster
 					.forEach(m => {
-						const source = Parser.sourceJsonToAbv(m.source);
-						const implicitTokenPath = `${this._PATH_BASE}/${source}/${Parser.nameToTokenName(m.name)}.${this._EXT}`;
+						const implicitTokenPath = `${this._PATH_BASE}/${m.source}/${Parser.nameToTokenName(m.name)}.${this._EXT}`;
 
 						if (m.hasToken) this._expectedFromHashToken[implicitTokenPath] = true;
 
-						if (!fs.existsSync(`${this._PATH_BASE}/${source}`)) {
-							this._expectedDirs[source] = true;
+						if (!fs.existsSync(`${this._PATH_BASE}/${m.source}`)) {
+							this._expectedDirs[m.source] = true;
 							return;
 						}
 
@@ -48,13 +47,13 @@ class _TestTokenImages {
 						if (m.variant) {
 							m.variant
 								.filter(it => it.token)
-								.forEach(entry => this._expected.add(`${this._PATH_BASE}/${Parser.sourceJsonToAbv(entry.token.source)}/${Parser.nameToTokenName(entry.token.name)}.${this._EXT}`));
+								.forEach(entry => this._expected.add(`${this._PATH_BASE}/${entry.token.source}/${Parser.nameToTokenName(entry.token.name)}.${this._EXT}`));
 						}
 
 						// add tokens specified as alt art
 						if (m.altArt) {
 							m.altArt
-								.forEach(alt => this._expected.add(`${this._PATH_BASE}/${Parser.sourceJsonToAbv(alt.source)}/${Parser.nameToTokenName(alt.name)}.${this._EXT}`));
+								.forEach(alt => this._expected.add(`${this._PATH_BASE}/${alt.source}/${Parser.nameToTokenName(alt.name)}.${this._EXT}`));
 						}
 					});
 			});

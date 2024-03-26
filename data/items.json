@@ -22104,6 +22104,25 @@
 			"hasFluffImages": true
 		},
 		{
+			"name": "Iggwilv's Horn",
+			"source": "DitLCoT",
+			"page": 14,
+			"rarity": "rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"You can use an action to blow this horn to cast one of the following spells from it: {@spell Arms of Hadar}, {@spell Fog Cloud}, {@spell Gust of Wind}, or {@spell Web}. If the spell requires a saving throw, the spell save DC is 13.",
+				"Once the horn has been used to cast a spell, it can't be used to cast that spell again until the next dawn."
+			],
+			"attachedSpells": [
+				"arms of Hadar",
+				"fog cloud",
+				"gust of wind",
+				"web"
+			],
+			"hasFluffImages": true
+		},
+		{
 			"name": "Ignacious, the Sword of Burning Truth",
 			"source": "DoDk",
 			"page": 234,
@@ -31943,6 +31962,18 @@
 			"entries": [
 				"{#itemEntry Potion of Resistance}"
 			]
+		},
+		{
+			"name": "Potion of Polychromy",
+			"source": "DitLCoT",
+			"page": 15,
+			"type": "P",
+			"rarity": "uncommon",
+			"entries": [
+				"When you drink this potion, you and everything you are wearing or carrying take on a rainbow-hued appearance for 1 hour. During that time, you can use a bonus action to turn any color or combination of colors you choose. If you mimic the colors of your surroundings, your hues continually shift to match your surroundings, and you have advantage on Dexterity ({@skill Stealth}) checks until you change your colors again or the potion wears off.",
+				"The potion is separated into seven brightly colored bands of immiscible liquids and has a syrupy taste."
+			],
+			"hasFluffImages": true
 		},
 		{
 			"name": "Potion of Possibility",
@@ -43186,6 +43217,23 @@
 			"entries": [
 				"Brass coin, about two inches square with a hold large enough for a {@item nib|wdh} to fit in (1 taol = 200 {@item nib|wdh|nibs})"
 			]
+		},
+		{
+			"name": "Tasha's Creeping Keelboat",
+			"source": "DitLCoT",
+			"page": 15,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"bonusAc": "+1",
+			"entries": [
+				"This magic vehicle is a boat 10 feet wide and 30 feet long. It has four legs that propel it across land and water. It has a walking and swimming speed of 20 feet, but it can't travel underwater. The boat moves according to your spoken directions while you are riding it, and creatures of your choice gain a +1 bonus to their Armor Class while on the boat.",
+				"The boat can transport up to 1,000 pounds without hindrance. It can carry up to twice this weight, but it moves at half speed if it carries more than its normal capacity."
+			],
+			"seeAlsoVehicle": [
+				"Tasha's Creeping Keelboat|DitLCoT"
+			],
+			"hasFluffImages": true
 		},
 		{
 			"name": "Tearulai",

@@ -6007,7 +6007,8 @@
 												}
 											]
 										}
-									]
+									],
+									"id": "174"
 								},
 								{
 									"type": "entries",
@@ -6040,7 +6041,8 @@
 												}
 											]
 										}
-									]
+									],
+									"id": "175"
 								},
 								{
 									"type": "entries",
@@ -6087,7 +6089,8 @@
 												}
 											]
 										}
-									]
+									],
+									"id": "176"
 								},
 								{
 									"type": "entries",
@@ -6120,7 +6123,8 @@
 												}
 											]
 										}
-									]
+									],
+									"id": "177"
 								},
 								{
 									"type": "entries",
@@ -6160,7 +6164,8 @@
 												}
 											]
 										}
-									]
+									],
+									"id": "178"
 								},
 								{
 									"type": "entries",
@@ -6200,7 +6205,8 @@
 												}
 											]
 										}
-									]
+									],
+									"id": "179"
 								},
 								{
 									"type": "entries",
@@ -6240,11 +6246,13 @@
 												}
 											]
 										}
-									]
+									],
+									"id": "17a"
 								}
 							]
 						}
-					]
+					],
+					"id": "173"
 				},
 				{
 					"type": "entries",
@@ -6276,9 +6284,11 @@
 							]
 						},
 						"{@note (1. Gargoyle (Tomb of Horrors); 2. Tarul Var (Dead in Thay); 3. Mialee (Sunless Citadel); 4. Sir Bluto Sans Pite (White Plume Mountain); 5. Tordek (Forge of Fury); 6. Xipe, the Oni (Hidden Shrine of Tamoachan); 7. Manticore (White Plume Mountain); 8. Kieren, Chosen of Ilmater (Dead in Thay))}"
-					]
+					],
+					"id": "17b"
 				}
-			]
+			],
+			"id": "172"
 		}
 	]
 }

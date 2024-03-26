@@ -318,9 +318,15 @@ class ItemParser extends BaseParser {
 
 	static _setCleanTaglineInfo_getProcArmorPart ({pt}) {
 		switch (pt) {
-			case "light": return {"type": "LA"};
-			case "medium": return {"type": "MA"};
-			case "heavy": return {"type": "HA"};
+			case "light":
+			case "light armor":
+				return {"type": "LA"};
+			case "medium":
+			case "medium armor":
+				return {"type": "MA"};
+			case "heavy":
+			case "heavy armor":
+				return {"type": "HA"};
 			default: {
 				const baseItem = this._setCleanTaglineInfo_getArmorBaseItem(pt);
 				if (!baseItem) throw new Error(`Could not find base item "${pt}"`);

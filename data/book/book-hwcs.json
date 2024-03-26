@@ -31,9 +31,11 @@
 								"{@b Holly Conrad}",
 								"Twitter: {@link @HollyConrad|https://twitter.com/HollyConrad}",
 								"Twitch: @commanderholly"
-							]
+							],
+							"id": "002"
 						}
-					]
+					],
+					"id": "001"
 				},
 				{
 					"type": "section",
@@ -52,9 +54,11 @@
 								"I am beyond excited for you all to take your first steps into this world, uncover some of its secrets during your adventures, experience its stories, and come away with many of your own stories to tell!",
 								"{@b Leesha Hannigan}, Art Director",
 								"Twitter: {@link @LeeshaHannigan|https://twitter.com/LeeshaHannigan}"
-							]
+							],
+							"id": "004"
 						}
-					]
+					],
+					"id": "003"
 				},
 				{
 					"type": "section",
@@ -69,9 +73,11 @@
 						"Recently, fires have begun to rage through the Wood with a strength and fury not seen since ages past. Forest-dwellers are again being displaced from their homes, seeking refuge in Alderheart, and perch-dwellers are doing what they can to keep themselves safe up in their canopy sanctuaries. Relations between the humblefolk and birdfolk are tense. Moreover, a newly invigorated Bandit Coalition swells in numbers. Its sights are set upon Alderheart, where those displaced by the flames seek a means of survival.",
 						"You are a citizen of the Wood, caught up in this turmoil. Or perhaps you are a storyteller from another world. Either way, the future of the Wood is yours to write. Within this book you will find all the tools you need to build your character, travel the land, and create your own Humblewood story.",
 						"Whether or not Humblewood is able to survive the flames is up to you. Go forth and adventure! Only you can restore balance to the Wood."
-					]
+					],
+					"id": "005"
 				}
-			]
+			],
+			"id": "000"
 		},
 		{
 			"type": "section",
@@ -103,7 +109,8 @@
 									"width": 889,
 									"height": 478
 								}
-							]
+							],
+							"id": "008"
 						},
 						{
 							"type": "entries",
@@ -122,9 +129,11 @@
 									"width": 889,
 									"height": 478
 								}
-							]
+							],
+							"id": "009"
 						}
-					]
+					],
+					"id": "007"
 				},
 				{
 					"type": "section",
@@ -143,7 +152,8 @@
 									"name": "Sex & Gender",
 									"entries": [
 										"The sex or gender of a character doesn't confer any special bonuses or penalties. Playable races do not exhibit physical characteristics based on sex, and traits such as plumage, markings, and size difference are not associated with a specific sex or gender. The most significant variations in physical appearance come down to a character's subrace."
-									]
+									],
+									"id": "00c"
 								},
 								{
 									"type": "entries",
@@ -255,9 +265,11 @@
 											"entries": [
 												"The sizes listed in the racial descriptions represent suggested averages of the various races. Players can adjust these sizes depending on the kind of birdfolk or humblefolk character they'd like to play. Some varieties of strig, a race that takes their physical characteristics from owls, could be smaller sized, around 3 feet tall, if desired. Similarly, raptors, a race whose physical characteristics resemble birds of prey, could reach around 5 feet in height. For the sake of simplicity we advise that, regardless of the physical measurements of a character, they follow the size category rules of their race (Medium or Small). In the lore, this can be expressed by saying that even a small strig is solid and strong, where even a taller raptor is light and agile. This will make calculating things that rely on size categories much easier, rather than having to remember which size variant a player has chosen for a race.",
 												"Alternatively, if the races presented here are too big when placed in comparison to humans in other campaign settings, size categories can be adjusted accordingly. This is entirely a matter of taste. It is recommended to do whatever makes the most sense for the kinds of worlds you'd like to build and the kinds of stories you'd like to tell."
-											]
+											],
+											"id": "00e"
 										}
-									]
+									],
+									"id": "00d"
 								},
 								{
 									"type": "entries",
@@ -269,7 +281,8 @@
 											"name": "Cervan",
 											"entries": [
 												"Cervan characters could be imagined as elk, moose, or antelopes. Any hoofed creature with horns would fit the bill, especially those native to forest or mountainous environments. While not every cervan has horns, the ability to grow them is seen as a blessing of Cairith, and is a part of their culture."
-											]
+											],
+											"id": "010"
 										},
 										{
 											"type": "entries",
@@ -277,7 +290,8 @@
 											"entries": [
 												"Birds which are known for their dark coloration, such as crows, blackbirds and grackles, would be a good visual fit. Despite typically being dark-feathered, a variety of colorful corvids exist. Jays, nutcrackers, and jackdaws are good examples.",
 												"No matter which type of bird is being used for visual inspiration for your corvum, it is important that they have at least one black feather. Black feathers on a corvum are known as the \"Mark of Gesme\" and they are thought to impart some of Gesme's reckless curiosity."
-											]
+											],
+											"id": "011"
 										},
 										{
 											"type": "entries",
@@ -285,56 +299,64 @@
 											"entries": [
 												"Gallus characters are usually represented by land fowl of all kinds, ranging from those with small rounded bodies, suited to ground life, to those with longer proportions. Waterfowl, such as ducks or geese, could be used as visual inspiration for communities of gallus living by Humblewood's wetlands. Other fowl, such as peacocks, could also be used. While not closely-related to fowl, herons, storks, and bitterns could be a good reference for taller, marshland-dwelling communities of gallus.",
 												"Gallus characters with ostentatious, colorful plumage are generally better suited to the bright gallus subrace, while those with modest, earth-toned feathers might be better suited to the huden gallus subrace."
-											]
+											],
+											"id": "012"
 										},
 										{
 											"type": "entries",
 											"name": "Hedge",
 											"entries": [
 												"While inspired by hedgehogs, having a hedge character based on a quilled animal that inhabits forests, such as a porcupine, would also make sense. Although they would probably not be native to Humblewood, armadillos, pangolins, or echidnas would also work."
-											]
+											],
+											"id": "013"
 										},
 										{
 											"type": "entries",
 											"name": "Jerbeen",
 											"entries": [
 												"The jerbeens are inspired by jerboas, a kind of jumping mouse. Other small rodents with mouse-like proportions, including chinchillas, could be used for visual inspiration as well. Though a greater stretch, the jerbeen's speed, size, and communal way of life would make them an ideal analog for races based on rabbits or hares."
-											]
+											],
+											"id": "014"
 										},
 										{
 											"type": "entries",
 											"name": "Luma",
 											"entries": [
 												"Lumas are inspired by doves and pigeons, but their size and high charisma means that small songbirds such as chickadees, wrens, sparrows, and cardinals would also be a good fit. A bird-of-paradise could be used as well due to their focus on performance, though they might be better suited for visitors to Humblewood from more tropical regions. Birds with brighter or more decorative plumage would correspond to sera lumas, while those with more muted feathers would be better as sable lumas."
-											]
+											],
+											"id": "015"
 										},
 										{
 											"type": "entries",
 											"name": "Mapach",
 											"entries": [
 												"Inspired by raccoons, mapach characters can reference members of the weasel family, such as ferrets and badgers. Mapachs are hearty and crafty, and possess a climbing speed, which means many members of this family, including polecats, would be good fits."
-											]
+											],
+											"id": "016"
 										},
 										{
 											"type": "entries",
 											"name": "Raptor",
 											"entries": [
 												"Raptors take after smaller birds of prey, like falcons and hawks, but using larger species, like eagles or vultures as a reference would also work for raptor characters. Maran raptors could also take visual inspiration from seabirds, notably petrels or shearwaters, due to their swim speed."
-											]
+											],
+											"id": "017"
 										},
 										{
 											"type": "entries",
 											"name": "Strig",
 											"entries": [
 												"Strigs usually resemble owls of all kinds. Owls comprise a very large and diverse family of birds, and examples can be found which are small, large, or unique in appearance. For larger, more intimidating strigs, the great gray owl or giant scops owl can provide a robust presence, while smaller strigs could take inspiration from the little owl, or boreal owl. Regardless of their size, stout strigs tend to be bulkier, with denser feathers, while swift strigs have more slender and streamlined bodies."
-											]
+											],
+											"id": "018"
 										},
 										{
 											"type": "entries",
 											"name": "Vulpin",
 											"entries": [
 												"Vulpins generally look like foxes, but an alternative visual reference would be wolves, coyotes, or other hunting canines that could be commonly found in a forest environment. Vulpins should be represented as wild animals, to illustrate the duality of their sophisticated yet savage nature. Breeds of tamed dogs would not be a good fit."
-											]
+											],
+											"id": "019"
 										},
 										{
 											"entries": [
@@ -348,9 +370,11 @@
 													"height": 479
 												}
 											],
-											"type": "entries"
+											"type": "entries",
+											"id": "01a"
 										}
-									]
+									],
+									"id": "00f"
 								},
 								{
 									"type": "entries",
@@ -364,7 +388,8 @@
 											"name": "Common and Birdfolk",
 											"entries": [
 												"Birdfolk takes the place of Common in Humblewood. As the language of trade and custom, folk of the Wood take the time to learn it. Other 5e races who choose to visit Humblewood will want to know Birdfolk. Likewise, birdfolk or humblefolk characters visiting other lands should add Common to their language list."
-											]
+											],
+											"id": "01c"
 										},
 										{
 											"type": "table",
@@ -417,42 +442,48 @@
 											"name": "Birdfolk",
 											"entries": [
 												"Birdfolk is a language of clicks, caws, and whistles. Though primarily oral, a system for writing Birdfolk in pictograms was developed long before the founding of Alderheart and has since transformed into a set of abstract glyphs representing different sounds. Birdfolk can be written quickly with a quill, or scratched easily with a claw, and has been widely adopted throughout the Wood."
-											]
+											],
+											"id": "01d"
 										},
 										{
 											"type": "entries",
 											"name": "Cervan",
 											"entries": [
 												"Cervan is a complex language with no written script. It is seen as disrespectful to try and transcribe it using Birdfolk characters. Much of cervan history is preserved by village elders and passed down orally through the generations as stories, songs, and sayings. The adage, \"What is essential to learn lies in the teaching\", is often invoked to illustrate this point."
-											]
+											],
+											"id": "01e"
 										},
 										{
 											"type": "entries",
 											"name": "Hedge",
 											"entries": [
 												"Hedge is a language meant to be spoken softly. It confounds many who try to learn it due to the prevalence of passive voice and the deferential manners built into conversation. These are meant to ensure that everyone's feelings are heard and respected. It is written using a variation of Sylvan script."
-											]
+											],
+											"id": "01f"
 										},
 										{
 											"type": "entries",
 											"name": "Jerbeen",
 											"entries": [
 												"Jerbeen is a system of squeaks and clicks represented in writing by using a variant of Birdfolk alphabet. It is a polite but direct language designed to communicate information quickly and effectively between multiple listeners."
-											]
+											],
+											"id": "020"
 										},
 										{
 											"type": "entries",
 											"name": "Mapach",
 											"entries": [
 												"Mapach is a very technically dense language that often incorporates rough equations and estimations of physical properties in normal conversation. Awareness of one's surroundings is key to survival, and the Mapach language emphasizes this. Mapach uses its own script of glyphs made of various lines, dashes, and dots."
-											]
+											],
+											"id": "021"
 										},
 										{
 											"type": "entries",
 											"name": "Vulpin",
 											"entries": [
 												"Vulpin is a language of growls, snarls, and yips. It is written in its own flowing cursive script. Speakers are taught to switch between low and high class versions of Vulpin depending on the context. The biggest stumbling block for new speakers is learning when to use which form."
-											]
+											],
+											"id": "022"
 										},
 										{
 											"entries": [
@@ -466,13 +497,17 @@
 													"height": 776
 												}
 											],
-											"type": "entries"
+											"type": "entries",
+											"id": "023"
 										}
-									]
+									],
+									"id": "01b"
 								}
-							]
+							],
+							"id": "00b"
 						}
-					]
+					],
+					"id": "00a"
 				},
 				{
 					"type": "section",
@@ -491,7 +526,8 @@
 								"{@class fighter|phb|Fighter: Scofflaw|Scofflaw|HWCS}"
 							]
 						}
-					]
+					],
+					"id": "024"
 				},
 				{
 					"type": "section",
@@ -509,7 +545,8 @@
 								"{@background Wind-Touched|HWCS}"
 							]
 						}
-					]
+					],
+					"id": "025"
 				},
 				{
 					"type": "section",
@@ -531,7 +568,8 @@
 								"{@feat Woodwise|HWCS}"
 							]
 						}
-					]
+					],
+					"id": "026"
 				},
 				{
 					"type": "section",
@@ -568,7 +606,8 @@
 														"{@spell Shape Plants|HWCS}"
 													]
 												}
-											]
+											],
+											"id": "029"
 										},
 										{
 											"type": "entries",
@@ -599,7 +638,8 @@
 														"{@spell Stellar Bodies|HWCS}"
 													]
 												}
-											]
+											],
+											"id": "02a"
 										},
 										{
 											"type": "entries",
@@ -641,7 +681,8 @@
 														"{@spell Stellar Bodies|HWCS}"
 													]
 												}
-											]
+											],
+											"id": "02b"
 										},
 										{
 											"type": "entries",
@@ -655,7 +696,8 @@
 														"{@spell Invoke the Amaranthine|HWCS}"
 													]
 												}
-											]
+											],
+											"id": "02c"
 										},
 										{
 											"type": "entries",
@@ -687,7 +729,8 @@
 														"{@spell Globe of Twilight|HWCS}"
 													]
 												}
-											]
+											],
+											"id": "02d"
 										},
 										{
 											"type": "entries",
@@ -717,7 +760,8 @@
 														"{@spell Stellar Bodies|HWCS}"
 													]
 												}
-											]
+											],
+											"id": "02e"
 										},
 										{
 											"type": "entries",
@@ -740,7 +784,8 @@
 														"{@spell Globe of Twilight|HWCS}"
 													]
 												}
-											]
+											],
+											"id": "02f"
 										},
 										{
 											"type": "entries",
@@ -771,13 +816,16 @@
 														"{@spell Stellar Bodies|HWCS}"
 													]
 												}
-											]
+											],
+											"id": "030"
 										}
 									]
 								}
-							]
+							],
+							"id": "028"
 						}
-					]
+					],
+					"id": "027"
 				},
 				{
 					"type": "section",
@@ -802,9 +850,11 @@
 								"{@spell Veil of Dusk|HWCS}"
 							]
 						}
-					]
+					],
+					"id": "031"
 				}
-			]
+			],
+			"id": "006"
 		},
 		{
 			"type": "section",
@@ -838,7 +888,8 @@
 								"To humblefolk who live outside of birdfolk perches, Ardea and Tyton are known as Dawnmother and Nightfather. They are depicted in forms that closely resemble the features of the humblefolk who worship them.",
 								"In the perches, humblefolk Amaranthine tend to be viewed as a folk religion alongside the primary birdfolk pantheon. Occasionally, perch-dwelling humblefolk will have small shrines in their homes, or in their shops dedicated to their Amaranthine.",
 								"While these Amaranthine go largely overlooked by most birdfolk, some who have taken the time to learn their legends pay homage to the featherless Amaranthine. This bothers a few humblefolk, but the priests of these Amaranthine understand that each one is but a reflection of the Great Rhythm, and welcome any birdfolk to learn from them."
-							]
+							],
+							"id": "034"
 						},
 						{
 							"entries": [
@@ -852,7 +903,8 @@
 									"height": 1135
 								}
 							],
-							"type": "entries"
+							"type": "entries",
+							"id": "035"
 						},
 						{
 							"type": "table",
@@ -950,7 +1002,8 @@
 								]
 							]
 						}
-					]
+					],
+					"id": "033"
 				},
 				{
 					"type": "section",
@@ -980,7 +1033,8 @@
 								"The two Amaranthine created much of the life in Humblewood. Ardea suffused the days with sun-loving flowers, plants, and animals, while Tyton baptized the night with insects and animals that embrace the dark. They birthed sentient races, and from them originate all birdfolk, the first of their children, followed shortly after by the humblefolk.",
 								"Originally, all birdfolk were the same. It was difficult to distinguish them from the birds of the forest, as they even possessed the ability to fly. One day, the entire flock of birdfolk decided on a grand contest of gift-giving, to prove which of them was the most worthy to lead. Ardea agreed to act as judge; whoever could present her with the greatest gift would become leaders among her children. For an entire season, birdfolk searched and scrounged, gathered and hunted, returning with trinkets, baubles, gifts great and small. Though Ardea commended all her children for their gifts, only five were truly deserving of her boon.",
 								"Gesme, Reya, Hanera, Altus, and Clhuran: these five became leaders of the birdfolk. They inspired tales, devotion, and gave the birdfolk races their distinct forms and skills. These great ones went on to become part of the Great Rhythm as keepers of nature's balance and protectors of birdfolk across Everden, eventually ascending and joining the Amaranthine. The followers of each of the five were granted new forms and great gifts, to match their leader's exploits. Yet, to accept these gifts, something needed to be lost. This is why the birdfolk of today can only glide: their gift of flight was taken as the price for becoming something new."
-							]
+							],
+							"id": "037"
 						},
 						{
 							"type": "entries",
@@ -992,7 +1046,8 @@
 								"Ardea was at first concerned at the presence of fire in the world, for she knew the forests could burn, and that misuse of the fire would bring harm to Everden. But, when she saw the birdfolk gather around the fires, and felt the gentle warmth a small flame could provide to her children, she was overcome with happiness.",
 								"\"This,\" she declared, \"is worthy of a boon.\"",
 								"And thus was Gesme changed. Set ablaze with the flames of knowledge and creativity, she became an Amaranthine. The forms of her followers changed too, and they became the first corvums. They were gifted with a bit of her cleverness and foresight, but Ardea gave them all black talons, feathers, and beaks as a reminder of the price Gesme paid to bring fire into the world."
-							]
+							],
+							"id": "038"
 						},
 						{
 							"type": "entries",
@@ -1008,7 +1063,8 @@
 								"\"You have nothing to be ashamed of, birdfolk. I see your skills are real. You are the first to so nearly best me in every event, and this is no easy feat.\" The traveler removed their cloak, and Reya could not believe her eyes. She had been challenged by the wind itself.",
 								"It swirled, spinning a cloak out of the very clouds, which it placed around Reya. \"Consider this a gift, for providing me with such sport.\" Reya thanked the wind, and with that, it departed, caressing Reya's feathers in a familiar breeze.",
 								"When the time came to present a gift, Reya offered Ardea her cloak of clouds, along with the story of her adventure. As Reya told her tale, Ardea could see the eyes of the other birdfolk light up with excitement. When Reya had finished, Ardea returned Reya's cloak to her, saying the story of her adventure was the rarer gift. Reya was changed, and became the Amaranthine of wind, archery, and exploration. Those she inspired became the first raptors. They began to take on a nomadic lifestyle, finding their fortune day by day as Reya once did and told tales of their own adventures by the light of the campfire."
-							]
+							],
+							"id": "039"
 						},
 						{
 							"type": "entries",
@@ -1025,7 +1081,8 @@
 								"\"I'm sorry, Mother Stork,\" Hanera said. \"I had meant to present you with a great harvest, but this is all I could provide.\"",
 								"Ardea took the wreath, and spoke gladly: \"You have given me more than enough, for you see my child, I received your compassion for an entire season.\" As Ardea spoke, celestial messengers appeared by her side, and together they transformed into the birdfolk family Hanera had so tenderly cared for.",
 								"For her charity, Hanera received the Amaranthine's boon: her feathers turned green and grew into vines and shoots, adorned with the most beautiful flowers. Other birdfolk stared in awe, and those who followed Hanera became the first gallus, blessed with her inspiring kindness, as well as her closeness with the earth and all growing things."
-							]
+							],
+							"id": "03a"
 						},
 						{
 							"type": "entries",
@@ -1041,7 +1098,8 @@
 								"Altus was puzzled, until the moon appeared from behind a cloud. He heard its laughter in the pond behind him. When he turned, he saw it: the moon's reflection set perfectly in the still, clear waters. Without delay, Altus filled the chalice with water. With the moon clearly reflected within the chalice, he quickly shut the lid. The moon was caught.",
 								"As dawn began to break over the horizon, Tyton appeared once again before Altus, \"Let my sister gaze upon my creation, but return it by day's end. The night has need of it,\" old Father Owl said, before departing for the lands beyond life.",
 								"And so it was that Altus presented Ardea with the moon. He became the first strig, and his people were gifted with his great strength and indomitable will. He kept his oath to Tyton, returning the moon that very evening. For this, Tyton gifted all strigs with the ability to see clearly under its light. Tyton welcomed Altus as a guest in his home, deep within the lands of death. Altus found the cold there bracing, and decided to share it with the people of Everden. This is why the weather is so inclement in winter; Altus returns each year, carrying storms of sleet and snow in his chalice, to test the birdfolk's endurance."
-							]
+							],
+							"id": "03b"
 						},
 						{
 							"type": "entries",
@@ -1058,7 +1116,8 @@
 								"With newfound confidence, he approached Ardea. All of the birdfolk were gathered, and when Clhuran looked upon the crowd he saw both enemies and friends. Thoughts of those friendships allowed Clhuran to reach deep within himself, and from the depths of his soul he felt a beat, like the Great Rhythm itself. Channeling this energy, Clhuran opened his beak and brought forth a most beautiful gift: a song.",
 								"It was a song so perfect, so harmonious, that no birdfolk could deny its charm. Ardea beamed. \"My child, you have within you a rare gift. May all of your kin be blessed by it.\" With those words, Clhuran became the first luma, the Amaranthine of all fortune, good or ill. His peculiar connection to fate is shared by all his kin.",
 								"Ever since Clhuran's performance all birds sing, hoping that they might imitate the perfect song he sang to Ardea. While some sing pleasantly, Clhuran made it so those who mocked him can only trill, shriek, or caw artlessly. This is why it is always important to show respect for others, no matter how odd they may seem."
-							]
+							],
+							"id": "03c"
 						},
 						{
 							"type": "section",
@@ -1079,11 +1138,14 @@
 									],
 									"by": "A mapach prayer to Hath"
 								}
-							]
+							],
+							"id": "03d"
 						}
-					]
+					],
+					"id": "036"
 				}
-			]
+			],
+			"id": "032"
 		},
 		{
 			"type": "section",
@@ -1115,7 +1177,8 @@
 							"entries": [
 								"Alderheart is home to every race of birdfolk and humblefolk. The thriving community attracts people from faraway lands, like traveling merchants, explorers, and foreign dignitaries. Citizens of the Humblewood who don't live in the city routinely journey there to trade goods, stock up on supplies, engage in artistic endeavors, or simply to catch up on the latest news and gossip. Effectively everyone in Humblewood is connected to Alderheart.",
 								"Virtually anything can be found in Alderheart, if you know where to look. The majority of the city's inhabitants are well-meaning, decent folk, but like any city there are dark alleys and back rooms. Crime here is usually kept in check by the Perch Guard, but while the city guards are vaunted as being among the best in the Wood, illicit activities continue under the cover of darkness."
-							]
+							],
+							"id": "040"
 						},
 						{
 							"type": "entries",
@@ -1132,7 +1195,8 @@
 								"Down past the trunk market, pathways widen and wind, illuminated by knotholes in the tree that allow sunlight to filter inside. Although some homes in these bright hollows are built near the bark, where windows can be shaped out of the wood, most homes are shaped inside the dim pathways. A select few obtain permission to shape homes on the outside surface of the trunk. These special homes are connected to interior pathways via carefully fenced roads, and are considered a luxury that many cannot afford.",
 								"The farther down the trunk one travels, the more shabby and ill-kept the residences and infrastructure become. There are no officially authorized ways to leave or enter the tree by way of lower parts of the trunk, and Perch Guard are constantly on the lookout for smugglers.",
 								"Beneath the lowest parts of the trunk, a series of tunnels have been carved into the roots of Alderheart. At first, the roots were not considered to be official parts of the city, and their development was largely overlooked by city officials in the canopy, until word arrived of the illicit activities taking place there. Many were convinced that the tunneling would simply go away if druids were to heal the tree, but Alderheart itself took pity on those living here, and decided to allow the tunnels to exist rather than force people from their homes. The root tunnels have since been strengthened by druidic shaping, lit to be on par with the inside of the trunk, and a garrison of the Perch Guard was stationed nearby. Even with these improvements, the roots remain the poorest area in Alderheart: the slums of the Great Tree City. Here, the air is always dank and humid, and wild fungi grow rampant. The buildings are mostly cobbled together from scavenged materials, and some have been converted into community gathering places. These hubs help connect communities in the roots with helpful aid from the trunk district, and allow the people here to organize and plan neighborhood events. Life in the roots isn't easy, but people are trying their best to keep their communities strong, as they petition the canopy for better living conditions. There are few shops here, and they typically traffic in smuggled and stolen goods. Crime is ever-present; many who dwell in the roots see it as necessary to survive."
-							]
+							],
+							"id": "041"
 						},
 						{
 							"type": "image",
@@ -1143,7 +1207,8 @@
 							"width": 629,
 							"height": 818
 						}
-					]
+					],
+					"id": "03f"
 				},
 				{
 					"type": "section",
@@ -1152,7 +1217,8 @@
 					"entries": [
 						"{@font fire feeds the soil|HPPHumblescratch}",
 						"This small town exists on the fringes of the Scorched Grove, where wind-blown ash causes the soil to be fertile and the land rich with game. It is dangerous living so close to the Grove, but the rewards make it worth the risk for the intrepid folk that call Ashbarrow home. The town takes its name from the small hill upon which it rests, and is inhabited by a mix of birdfolk and humblefolk who shelter within its low stone walls. A large watchtower near the town's center serves as both a means of observing when the winds will bring ash from the Scorched Grove, as well as an observatory for seers who watch the stars for signs and portents."
-					]
+					],
+					"id": "042"
 				},
 				{
 					"type": "section",
@@ -1166,7 +1232,8 @@
 							"name": "Magic, Inside and Out",
 							"entries": [
 								"The Avium was once a living tree that was home to a perch known for producing some of Humblewood's most legendary scholars. After the tree's death, a group of wizards from this perch decided to found the Avium here. They used transmutation magic to artificially petrify the tree, and then shaped it into a building capable of housing the largest mage college in Humblewood. Controlled by magical fields, the College's many structures float in circuit with one another: a collection of towers, courtyards, and observatories all hover around the huge central building, each equipped with a bridge that lines up with the main building at regular intervals. Those not gifted with the birdfolk's limited form of flight must harness their magic for transportation, or wait until the archways align to allow for foot traffic."
-							]
+							],
+							"id": "044"
 						},
 						{
 							"type": "entries",
@@ -1174,9 +1241,11 @@
 							"entries": [
 								"While the curriculum is diverse, the College does impose certain limitations, most notably regarding necromancy. As inhabitants of the Wood, the Avium's primary staff members originate from a culture with great respect for nature and the cycle of life. As such, the necromantic arts are taught mainly in a theoretical sense. Practical application of necromancy at the College is highly regulated, and available only under strict guidance.",
 								"Students are, however, encouraged to explore other schools of magic to their fullest potential. Breakthroughs in elemental theorems, teleportation methods, and advances in practical transmutation have been pioneered at the Avium. Within these classrooms you will find future Tenders, council members, and protectors of the Wood. The application process is demanding, and the curriculum rigorous. Few make it to graduation. For those who prove their grasp of the arcane, endorsement from the Avium is among the highest of honors."
-							]
+							],
+							"id": "045"
 						}
-					]
+					],
+					"id": "043"
 				},
 				{
 					"type": "section",
@@ -1186,7 +1255,8 @@
 						"{@font cultivating the forest|HPPHumblescratch}",
 						"Farming in birdfolk perches is unconventional. In the taller perches, fruiting vines and mosses are grown from the branches of the trees. The largest and most productive farming perch is Brackenmill. Considered a lesser perch due to its proximity to the ground, Brackenmill nevertheless consists of many proximate tree-farms that, after years of growth, melded into one another. It includes a central hub of shops, trade halls, and shipping platforms, all under the watchful eye of the local Perch Guard. Some of the farms have even begun to expand downward, encompassing small horticultural plots at the base of trees. The grounded farms produce luxury goods that can't be grown along the branches, and house corrals for giant insects that produce goods ranging from silk to meat.",
 						"Practically every store, tavern, and supplier in Alderheart gets their goods from Brackenmill. The movement of agricultural products to vendors around the Wood is overseen by a powerful trade guild made up of prominent farm-owning families. The guild is comprised of elected leaders and legacy members from the most noble of these families. Legacy members inherit their position and tend to hold lifetime appointments."
-					]
+					],
+					"id": "046"
 				},
 				{
 					"type": "section",
@@ -1201,7 +1271,8 @@
 							"entries": [
 								"The mountain's severe environment supports a variety of goats and small mammals that feast on hearty shrubbery growing between the crags. There are also several unique creatures native to the Crest. Griffons roost in the peaks and scour a wide territory around the mountain for prey. Basilisks feast on rocks, but have a special preference for creatures they have petrified with their deadly stone gaze. Giant eagles nest atop the highest cliffs, keeping their young safe from lowland predators. Mountain lions, powerful earth-aspected hunters, prey on goats, rodents, and occasionally more monstrous creatures.",
 								"The Crest is dotted with structures built during different points in history by both birdfolk and humblefolk. In addition to garnering interest from archeological teams, some of these mysterious ruins have become home to a handful of intrepid folk who have taken to life in this dangerous and remote place."
-							]
+							],
+							"id": "048"
 						},
 						{
 							"type": "entries",
@@ -1209,9 +1280,11 @@
 							"entries": [
 								"An old tale relates how the Amaranthine Altus was challenged to a contest of strength by a giant made from living rock. To achieve victory, Altus is said to have lifted the earth up with his talons, proving his might and creating the mountains. In some versions, the frustrated giant challenges Altus to several rematches. They travel across the face of Everden, raising higher and higher peaks, until all the mountains in the world are created. Every adaptation agrees: Altus is always victorious, and is given dominion over the high summits of the world. The snowy, harsh environment of the mountains is said to be directly influenced by Altus, the Amaranthine of storms.",
 								"It is a wonder that such a lush, expansive forest sits at the foot of these blustry peaks. Experts theorize that the formidable bulwark of rock helped the Wood thrive by shielding it from the bitter, salty winds of the ocean."
-							]
+							],
+							"id": "049"
 						}
-					]
+					],
+					"id": "047"
 				},
 				{
 					"type": "section",
@@ -1221,7 +1294,8 @@
 						"{@font city in the swamp|HPPHumblescratch}",
 						"In the south of the forest is a small perch known as Marshview. One of the most unconventional perches, Marshview is extremely disconnected from the goings on of the Wood. The location has basic amenities, like shops and an inn, but it is not a prime destination for travelers. Residents eye visitors with a mix of curiosity and suspicion, but are ultimately a kind and welcoming folk.",
 						"A balanced mix of birdfolk and humblefolk inhabitants results in architecture unique to Marshview. A reflection of its population, walkways and staircases are more common here than in other birdfolk settlements. Several buildings are on the ground, and traditional farming takes advantage of the limited dry ground between the forest and the nearby swamp."
-					]
+					],
+					"id": "04a"
 				},
 				{
 					"type": "section",
@@ -1230,7 +1304,8 @@
 					"entries": [
 						"{@font between fen and field|HPPHumblescratch}",
 						"Meadowfen is a peaceful village located between the Mokk Fields to the south and a glade of spruce copses to the north. It is a humble village, with a small number of residents. Most are farmers who work either the ash-enriched pastures to the north, or the marshlands to the south, which are ripe with sour berries and waterborne plants. Meadowfen has been quiet for as long as anyone can remember, and life here goes by slowly. Its closeness to the marsh keeps it safe from attacks by emberbats and other fire-based creatures from the Scorched Grove. Its distance from the Mokk Fields ensures deadly slimes don't stray into the village."
-					]
+					],
+					"id": "04b"
 				},
 				{
 					"type": "section",
@@ -1244,23 +1319,27 @@
 							"name": "Uninviting Geography",
 							"entries": [
 								"The fringes of the Mokk Fields are wreathed with reeds, water lilies, and pleasant greenery. Farther into the heart of the swamp, travelers find themselves inundated by stagnant, foul-smelling waters and muddy lowlands with poor footholds. Patches of dry stable ground are scarce, meaning that the slimy, gnarled trees that grow here are rarely suitable to support a perch."
-							]
+							],
+							"id": "04d"
 						},
 						{
 							"type": "entries",
 							"name": "Rare Goods",
 							"entries": [
 								"he Mokk Fields are not a popular travel destination, especially for birdfolk accustomed to towering trees and bustling perches. Still, some venture here seeking the area's unique resources. Plants and creatures found only in the swamp are useful for potion brewing or magical reagents, and there is good coin to be made for people willing to brave the area's many dangers. Of special note are the slimes, dangerous ooze creatures exclusive to this environment, whose residue has become a sought-after commodity for those with the skill to harvest it."
-							]
+							],
+							"id": "04e"
 						},
 						{
 							"type": "entries",
 							"name": "Mokkden Caverns",
 							"entries": [
 								"One of the more unlikely landforms of the Mokk Fields is the intricate, vast cavern system that runs beneath the swamps. Years ago, what was thought to be sinkholes were revealed to in fact be tunnel entrances to a series of caves. Scouts from Winnowing Reach have probed the depths to learn more about these caverns. The few who have returned reported a significant number of slimes. The damp, lightless caverns make a perfect home for the amorphous creatures that dwell here."
-							]
+							],
+							"id": "04f"
 						}
-					]
+					],
+					"id": "04c"
 				},
 				{
 					"type": "section",
@@ -1279,7 +1358,8 @@
 							"width": 838,
 							"height": 818
 						}
-					]
+					],
+					"id": "050"
 				},
 				{
 					"type": "section",
@@ -1295,7 +1375,8 @@
 								"Accounts of the great blaze have been recorded in Humblewood's history books, but the exact cause of the Great Calamity remains a mystery. The soils of the Grove were tested and found to be distinctively suited to channeling evocation energy, especially when used with fire spells. It was also discovered that the fire-aspected creatures of the Grove have extra-planar origins, giving rise to the theory that the Calamity was caused by magic. A popular myth told by forest-dwellers alleges that the Calamity was caused by the appearance of a great primal being of fire and destruction, which visited its wrath upon the Wood and then vanished as mysteriously as it arrived.",
 								"Whatever its origins, the fire devastated the area and displaced thousands of beasts and people from their homes. While the inhabitants of the Humblewood know that the death and rebirth is part of the natural order of the Wood, the Calamity that befell the Grove was clearly unnatural.",
 								"Each year, the Grove pushes on the boundary of the forest, growing slightly as its edges are set ablaze by windblown embers or fire-infused creatures. The expansion of the Grove leaves the newly-burned areas similarly affected, experiencing the supernatural qualities of the Grove. This gradual spread has increased with a recent spate of forest fires, making those who study the Grove nervous."
-							]
+							],
+							"id": "052"
 						},
 						{
 							"type": "entries",
@@ -1303,9 +1384,11 @@
 							"entries": [
 								"The Scorched Grove is cared for by a conclave of mystics and druids known as the Tenders. Many Tenders are talented thinkers and practitioners of natural magic, who have dedicated their lives to understanding the nature of the Calamity's effect on the Grove and healing the damage it has caused. They believe that through study and communion with nature, the natural balance of the energy in the wood can be restored, healing the Grove back into the tranquil forest it once was.",
 								"There is much debate about the intent and success of the Tenders. High-society perch-dwellers are inclined to think of the Tenders as nothing more than \"odd-birds,\" embarking on a fool's errand. These detractors claim that the Scorched Grove is simply a quirk of Humblewood's natural magic. Much of the populace agrees with this point of view, despite educated claims to the contrary. Still, given the affinity between nature and the cultures of the Wood, Tenders are generally respected for the care and reverence they give to the forest."
-							]
+							],
+							"id": "053"
 						}
-					]
+					],
+					"id": "051"
 				},
 				{
 					"type": "section",
@@ -1320,16 +1403,19 @@
 							"entries": [
 								"Citizens of coastal perches and villages are primarily folk who wish to remain close to the water. Sea raptors, mapachs, and jerbeens have carved out space for themselves along the coast, sometimes literally. These seaside settlements focus on fishing and salt drying, exporting their cured fish to the rest of the Wood.",
 								"The weather here is volatile. It can turn from clear and sunny to black and stormy with one gust of the wind. Most of the coast's inhabitants can spot these changes easily, knowing when to retreat to shelters. Living near the shore means enduring the occasional hurricane, windstorm, and tidal wave. Those who make the coast their home are known for resilience."
-							]
+							],
+							"id": "055"
 						},
 						{
 							"type": "entries",
 							"name": "Deadly Neighbors",
 							"entries": [
 								"A number of dangers face the people who live along the coastline. Large predatory lizards hunt and scavenge the sandy shores, and giant crabs have been known to drag victims to a watery grave. Rarest of all are the dreaded wakewyrms. Most professional fishing outfits employ hunters to stand guard, and guides and mercenaries are often hired by merchants hauling goods across the treacherous coastways. Those who wish to avoid the cost of protection can attempt the journey alone, but many grim fables describe foolish travelers who were too stingy to take the proper precautions."
-							]
+							],
+							"id": "056"
 						}
-					]
+					],
+					"id": "054"
 				},
 				{
 					"type": "section",
@@ -1343,11 +1429,14 @@
 							"name": "The Slime Industry",
 							"entries": [
 								"South-west of the Winnowing Reach are the damp slime-filled caves of the Mokkden Caverns. Initially considered a hindrance, slimes quickly became a valuable export for the Reach. Thanks to the profits from slime-wrangling, Winnowing Reach has grown to include businesses specializing in harvesting and shipping slime residue. The trade is mainly with the Avium for educational, research, and experimental purposes, but other buyers are appearing at a steady pace. Alchemists across the Wood find the substances useful in a variety of potions, and some healers are beginning to test the medicinal application of various slime-based concoctions."
-							]
+							],
+							"id": "058"
 						}
-					]
+					],
+					"id": "057"
 				}
-			]
+			],
+			"id": "03e"
 		},
 		{
 			"type": "section",
@@ -1355,7 +1444,8 @@
 			"page": 84,
 			"entries": [
 				"Refer to {@adventure Adventure in the Wood|HWAitW}."
-			]
+			],
+			"id": "059"
 		},
 		{
 			"type": "section",
@@ -1382,7 +1472,8 @@
 						"{@creature Wakewyrm|HWCS}"
 					]
 				}
-			]
+			],
+			"id": "05a"
 		},
 		{
 			"type": "section",
@@ -1405,7 +1496,8 @@
 							"name": "Ardwyn, Elder of Meadowfen",
 							"source": "HWCS"
 						}
-					]
+					],
+					"id": "05c"
 				},
 				{
 					"type": "entries",
@@ -1419,7 +1511,8 @@
 							"name": "Birdfolk Dockmaster",
 							"source": "HWCS"
 						}
-					]
+					],
+					"id": "05d"
 				},
 				{
 					"type": "entries",
@@ -1433,7 +1526,8 @@
 							"name": "Birdfolk Farmer",
 							"source": "HWCS"
 						}
-					]
+					],
+					"id": "05e"
 				},
 				{
 					"type": "entries",
@@ -1447,7 +1541,8 @@
 							"name": "Birdfolk Guard",
 							"source": "HWCS"
 						}
-					]
+					],
+					"id": "05f"
 				},
 				{
 					"type": "entries",
@@ -1472,9 +1567,11 @@
 									"name": "Cara Stormsinger",
 									"source": "HWCS"
 								}
-							]
+							],
+							"id": "061"
 						}
-					]
+					],
+					"id": "060"
 				},
 				{
 					"type": "entries",
@@ -1493,9 +1590,11 @@
 							"name": "Peculiar Design",
 							"entries": [
 								"Birdfolk ship design often causes confusion among other seafaring races due to the relative absence of rigging. While cordage is needed to keep sails in place and cargo stored, nets and climbing ropes prove less necessary when the crew is capable of limited flight. A birdfolk sailor can simply lash a rope to their leg, open their wings, and let the ocean breeze carry them up to the sails or to a lookout post on the main mast."
-							]
+							],
+							"id": "063"
 						}
-					]
+					],
+					"id": "062"
 				},
 				{
 					"type": "entries",
@@ -1509,7 +1608,8 @@
 							"name": "Birdfolk Skirmisher",
 							"source": "HWCS"
 						}
-					]
+					],
+					"id": "064"
 				},
 				{
 					"type": "entries",
@@ -1523,7 +1623,8 @@
 							"name": "Bita, the Council Speaker",
 							"source": "HWCS"
 						}
-					]
+					],
+					"id": "065"
 				},
 				{
 					"type": "entries",
@@ -1548,9 +1649,11 @@
 									"name": "Benna Seridan",
 									"source": "HWCS"
 								}
-							]
+							],
+							"id": "067"
 						}
-					]
+					],
+					"id": "066"
 				},
 				{
 					"type": "entries",
@@ -1564,7 +1667,8 @@
 							"name": "Cervan Priest",
 							"source": "HWCS"
 						}
-					]
+					],
+					"id": "068"
 				},
 				{
 					"type": "entries",
@@ -1578,7 +1682,8 @@
 							"name": "Corvum Assassin",
 							"source": "HWCS"
 						}
-					]
+					],
+					"id": "069"
 				},
 				{
 					"type": "entries",
@@ -1603,9 +1708,11 @@
 									"name": "Corvax Revayne",
 									"source": "HWCS"
 								}
-							]
+							],
+							"id": "06b"
 						}
-					]
+					],
+					"id": "06a"
 				},
 				{
 					"type": "entries",
@@ -1630,9 +1737,11 @@
 									"name": "Odwald Ebonhart",
 									"source": "HWCS"
 								}
-							]
+							],
+							"id": "06d"
 						}
-					]
+					],
+					"id": "06c"
 				},
 				{
 					"type": "entries",
@@ -1646,7 +1755,8 @@
 							"name": "Eliza Pennygleam",
 							"source": "HWCS"
 						}
-					]
+					],
+					"id": "06e"
 				},
 				{
 					"type": "entries",
@@ -1660,7 +1770,8 @@
 							"name": "Figory Figgins",
 							"source": "HWCS"
 						}
-					]
+					],
+					"id": "06f"
 				},
 				{
 					"type": "entries",
@@ -1674,7 +1785,8 @@
 							"name": "Gallus Druid",
 							"source": "HWCS"
 						}
-					]
+					],
+					"id": "070"
 				},
 				{
 					"type": "entries",
@@ -1688,7 +1800,8 @@
 							"name": "Gallus Monk",
 							"source": "HWCS"
 						}
-					]
+					],
+					"id": "071"
 				},
 				{
 					"type": "entries",
@@ -1713,9 +1826,11 @@
 									"name": "Glinda Nightseed",
 									"source": "HWCS"
 								}
-							]
+							],
+							"id": "073"
 						}
-					]
+					],
+					"id": "072"
 				},
 				{
 					"type": "entries",
@@ -1729,7 +1844,8 @@
 							"name": "Gregor Thornspur, Magistrate of Alderheart",
 							"source": "HWCS"
 						}
-					]
+					],
+					"id": "074"
 				},
 				{
 					"type": "entries",
@@ -1743,7 +1859,8 @@
 							"name": "Hedge Bard",
 							"source": "HWCS"
 						}
-					]
+					],
+					"id": "075"
 				},
 				{
 					"type": "entries",
@@ -1768,9 +1885,11 @@
 									"name": "Susan of the Swamp",
 									"source": "HWCS"
 								}
-							]
+							],
+							"id": "077"
 						}
-					]
+					],
+					"id": "076"
 				},
 				{
 					"type": "entries",
@@ -1784,7 +1903,8 @@
 							"name": "Jell Platena",
 							"source": "HWCS"
 						}
-					]
+					],
+					"id": "078"
 				},
 				{
 					"type": "entries",
@@ -1798,7 +1918,8 @@
 							"name": "Jerbeen Thief",
 							"source": "HWCS"
 						}
-					]
+					],
+					"id": "079"
 				},
 				{
 					"type": "entries",
@@ -1812,7 +1933,8 @@
 							"name": "Jerbeen Swashbuckler",
 							"source": "HWCS"
 						}
-					]
+					],
+					"id": "07a"
 				},
 				{
 					"type": "entries",
@@ -1826,7 +1948,8 @@
 							"name": "Kenna Brightspark",
 							"source": "HWCS"
 						}
-					]
+					],
+					"id": "07b"
 				},
 				{
 					"type": "entries",
@@ -1840,7 +1963,8 @@
 							"name": "Luma Cleric of Ardea",
 							"source": "HWCS"
 						}
-					]
+					],
+					"id": "07c"
 				},
 				{
 					"type": "entries",
@@ -1865,9 +1989,11 @@
 									"name": "Gabe Windsworth",
 									"source": "HWCS"
 								}
-							]
+							],
+							"id": "07e"
 						}
-					]
+					],
+					"id": "07d"
 				},
 				{
 					"type": "entries",
@@ -1881,7 +2007,8 @@
 							"name": "Mapach Bandit",
 							"source": "HWCS"
 						}
-					]
+					],
+					"id": "07f"
 				},
 				{
 					"type": "entries",
@@ -1906,9 +2033,11 @@
 									"name": "Krall, the Scavenger King",
 									"source": "HWCS"
 								}
-							]
+							],
+							"id": "081"
 						}
-					]
+					],
+					"id": "080"
 				},
 				{
 					"type": "entries",
@@ -1922,7 +2051,8 @@
 							"name": "Mapach Tinkerer",
 							"source": "HWCS"
 						}
-					]
+					],
+					"id": "082"
 				},
 				{
 					"type": "entries",
@@ -1936,7 +2066,8 @@
 							"name": "Mordane Swiftgale",
 							"source": "HWCS"
 						}
-					]
+					],
+					"id": "083"
 				},
 				{
 					"type": "entries",
@@ -1950,7 +2081,8 @@
 							"name": "Oakheart",
 							"source": "HWCS"
 						}
-					]
+					],
+					"id": "084"
 				},
 				{
 					"type": "entries",
@@ -1964,7 +2096,8 @@
 							"name": "Raptor Explorer",
 							"source": "HWCS"
 						}
-					]
+					],
+					"id": "085"
 				},
 				{
 					"type": "entries",
@@ -1979,7 +2112,8 @@
 							"name": "Raptor Ranger",
 							"source": "HWCS"
 						}
-					]
+					],
+					"id": "086"
 				},
 				{
 					"type": "entries",
@@ -1993,7 +2127,8 @@
 							"name": "Rhys Birchwalker",
 							"source": "HWCS"
 						}
-					]
+					],
+					"id": "087"
 				},
 				{
 					"type": "entries",
@@ -2018,9 +2153,11 @@
 									"name": "Riffin, the Ash-Knight",
 									"source": "HWCS"
 								}
-							]
+							],
+							"id": "089"
 						}
-					]
+					],
+					"id": "088"
 				},
 				{
 					"type": "entries",
@@ -2034,7 +2171,8 @@
 							"name": "Strig Tracker",
 							"source": "HWCS"
 						}
-					]
+					],
+					"id": "08a"
 				},
 				{
 					"type": "entries",
@@ -2066,7 +2204,8 @@
 								"{@b {@i Rank 5}} - Autumnal",
 								"{@b {@i Leader}} - Treekeeper",
 								"Joining the Tenders involves taking an oath to keep the balance of nature, to help it recover from disasters both natural and unnatural, and to help all people who have been harmed by natural imbalance. The Tenders know they can't control nature, and they teach that trying to do so is a folly which will only lead to further unbalancing of natural cycles. They do believe that when disaster strikes, it is their duty to restore the balance that was lost for the sake of all beings."
-							]
+							],
+							"id": "08c"
 						},
 						{
 							"type": "entries",
@@ -2079,7 +2218,8 @@
 									"name": "Havel of the Autumn Moon",
 									"source": "HWCS"
 								}
-							]
+							],
+							"id": "08d"
 						},
 						{
 							"type": "entries",
@@ -2092,9 +2232,11 @@
 									"name": "Tevor of the Spring Path",
 									"source": "HWCS"
 								}
-							]
+							],
+							"id": "08e"
 						}
-					]
+					],
+					"id": "08b"
 				},
 				{
 					"type": "entries",
@@ -2119,9 +2261,11 @@
 									"name": "Fray Merridan",
 									"source": "HWCS"
 								}
-							]
+							],
+							"id": "090"
 						}
-					]
+					],
+					"id": "08f"
 				},
 				{
 					"type": "entries",
@@ -2135,7 +2279,8 @@
 							"name": "Vulpin Noble",
 							"source": "HWCS"
 						}
-					]
+					],
+					"id": "091"
 				},
 				{
 					"type": "entries",
@@ -2160,9 +2305,11 @@
 									"name": "Shyla Denn",
 									"source": "HWCS"
 								}
-							]
+							],
+							"id": "093"
 						}
-					]
+					],
+					"id": "092"
 				},
 				{
 					"type": "entries",
@@ -2176,9 +2323,11 @@
 							"name": "Walden Krane, Magistrate of Winnowing Reach",
 							"source": "HWCS"
 						}
-					]
+					],
+					"id": "094"
 				}
-			]
+			],
+			"id": "05b"
 		},
 		{
 			"type": "section",
@@ -2198,7 +2347,8 @@
 							"name": "Glide",
 							"entries": [
 								"All birdfolk have feathered arms capable of gliding short distances and slowing their fall speed. Add the Glide trait to the NPC. Ignore heavy armor in this glide. Birdfolk NPCs with heavy weapons, armor, or shields in their stat block should be able to glide with them."
-							]
+							],
+							"id": "097"
 						},
 						{
 							"type": "entries",
@@ -2206,23 +2356,27 @@
 							"entries": [
 								"If your creature is a {@b gallus} or {@b luma}, they have much more developed wings. They have the Wing Flap trait, an ability that can propel them upwards into the air at up to half their base movement speed. This costs a bonus action to use, and cannot be used to gain height while gliding.",
 								"If your creature is a {@b corvum}, {@b raptor} or {@b strig}, they have taloned hands. Make sure to add Talons to their attacks, and calculate attack and damage bonuses for it using either Strength or Dexterity. The base damage for these attacks is {@damage 1d4} piercing damage. Birdfolk with Talons also have advantage on Strength ({@skill Athletics}) checks made to climb."
-							]
+							],
+							"id": "098"
 						},
 						{
 							"type": "entries",
 							"name": "Languages",
 							"entries": [
 								"Birdfolk all speak Birdfolk. They can also naturally understand Auran, the elemental language of air, but they have no innate ability to speak it."
-							]
+							],
+							"id": "099"
 						},
 						{
 							"type": "entries",
 							"name": "Racial Abilities",
 							"entries": [
 								"Every birdfolk race has two subraces, and each subrace possesses a different set of abilities."
-							]
+							],
+							"id": "09a"
 						}
-					]
+					],
+					"id": "096"
 				},
 				{
 					"type": "entries",
@@ -2243,16 +2397,19 @@
 									"name": "Ability Modifiers",
 									"entries": [
 										"+2 to the base creature's Intelligence score."
-									]
+									],
+									"id": "09d"
 								},
 								{
 									"type": "entries",
 									"name": "Learned",
 									"entries": [
 										"A corvum gains proficiency in one of the following skills: {@skill Arcana}, {@skill History}, {@skill Nature}, or {@skill Religion}."
-									]
+									],
+									"id": "09e"
 								}
-							]
+							],
+							"id": "09c"
 						},
 						{
 							"type": "list",
@@ -2269,16 +2426,19 @@
 									"name": "Ability Modifiers",
 									"entries": [
 										"+1 to the base creature's Dexterity score."
-									]
+									],
+									"id": "0a0"
 								},
 								{
 									"type": "entries",
 									"name": "Skulker",
 									"entries": [
 										"The dusk corvum has advantage on Dexterity ({@skill Stealth}) checks made in dim light or darkness."
-									]
+									],
+									"id": "0a1"
 								}
-							]
+							],
+							"id": "09f"
 						},
 						{
 							"type": "entries",
@@ -2289,18 +2449,22 @@
 									"name": "Ability Modifiers",
 									"entries": [
 										"+1 to the base creature's Charisma score."
-									]
+									],
+									"id": "0a3"
 								},
 								{
 									"type": "entries",
 									"name": "Convincing",
 									"entries": [
 										"The kindled corvum gains proficiency in your choice of the {@skill Deception} or {@skill Persuasion} skill. Additionally, they have advantage on all Charisma checks used to convince someone of their knowledge of anything pertaining to the skill they gained proficiency in from their Learned ability."
-									]
+									],
+									"id": "0a4"
 								}
-							]
+							],
+							"id": "0a2"
 						}
-					]
+					],
+					"id": "09b"
 				},
 				{
 					"type": "entries",
@@ -2321,9 +2485,11 @@
 									"name": "Ability Modifiers",
 									"entries": [
 										"+2 to the base creature's Wisdom score."
-									]
+									],
+									"id": "0a7"
 								}
-							]
+							],
+							"id": "0a6"
 						},
 						{
 							"type": "list",
@@ -2340,16 +2506,19 @@
 									"name": "Ability Modifiers",
 									"entries": [
 										"+1 to the base creature's Charisma score."
-									]
+									],
+									"id": "0a9"
 								},
 								{
 									"type": "entries",
 									"name": "Inspiring",
 									"entries": [
 										"As an action, the bright gallus inspires an ally that can see and hear them. The ally can roll a {@dice d4} and add the number rolled to their next ability check, attack roll, or saving throw."
-									]
+									],
+									"id": "0aa"
 								}
-							]
+							],
+							"id": "0a8"
 						},
 						{
 							"type": "entries",
@@ -2360,18 +2529,22 @@
 									"name": "Ability Modifiers",
 									"entries": [
 										"+1 to the base creature's Dexterity score."
-									]
+									],
+									"id": "0ac"
 								},
 								{
 									"type": "entries",
 									"name": "Seedspeech",
 									"entries": [
 										"The huden gallus can communicate simple ideas to living plants, and is able to interpret their responses in simple language."
-									]
+									],
+									"id": "0ad"
 								}
-							]
+							],
+							"id": "0ab"
 						}
-					]
+					],
+					"id": "0a5"
 				},
 				{
 					"type": "entries",
@@ -2392,30 +2565,35 @@
 									"name": "Size",
 									"entries": [
 										"Lumas are Small sized."
-									]
+									],
+									"id": "0b0"
 								},
 								{
 									"type": "entries",
 									"name": "Speed",
 									"entries": [
 										"Lumas have a base movement speed of 25 feet."
-									]
+									],
+									"id": "0b1"
 								},
 								{
 									"type": "entries",
 									"name": "Ability Modifiers",
 									"entries": [
 										"+2 to the base creature's Charisma score."
-									]
+									],
+									"id": "0b2"
 								},
 								{
 									"type": "entries",
 									"name": "Fated (Recharges after a Long Rest)",
 									"entries": [
 										"The Luma can choose to reroll any attack roll, skill check, or saving throw."
-									]
+									],
+									"id": "0b3"
 								}
-							]
+							],
+							"id": "0af"
 						},
 						{
 							"type": "list",
@@ -2432,23 +2610,27 @@
 									"name": "Ability Modifiers",
 									"entries": [
 										"+1 to the base creature's Constitution score."
-									]
+									],
+									"id": "0b5"
 								},
 								{
 									"type": "entries",
 									"name": "Damage Resistance",
 									"entries": [
 										"Sable lumas are resistant to poison damage."
-									]
+									],
+									"id": "0b6"
 								},
 								{
 									"type": "entries",
 									"name": "Resilience",
 									"entries": [
 										"Sable lumas have advantage on saving throws against being {@condition poisoned}."
-									]
+									],
+									"id": "0b7"
 								}
-							]
+							],
+							"id": "0b4"
 						},
 						{
 							"type": "entries",
@@ -2459,18 +2641,22 @@
 									"name": "Ability Modifiers",
 									"entries": [
 										"+1 to the base creature's Wisdom score."
-									]
+									],
+									"id": "0b9"
 								},
 								{
 									"type": "entries",
 									"name": "Songbird (Recharges after a Long Rest)",
 									"entries": [
 										"Sera lumas can cast {@spell charm person}. Charisma is their spellcasting ability and the spell does not require any somatic components to cast."
-									]
+									],
+									"id": "0ba"
 								}
-							]
+							],
+							"id": "0b8"
 						}
-					]
+					],
+					"id": "0ae"
 				},
 				{
 					"type": "entries",
@@ -2491,30 +2677,35 @@
 									"name": "Size",
 									"entries": [
 										"Raptors are Small sized."
-									]
+									],
+									"id": "0bd"
 								},
 								{
 									"type": "entries",
 									"name": "Speed",
 									"entries": [
 										"Raptors have a base movement speed of 25 feet."
-									]
+									],
+									"id": "0be"
 								},
 								{
 									"type": "entries",
 									"name": "Ability Modifiers",
 									"entries": [
 										"+2 to the base creature's Dexterity score."
-									]
+									],
+									"id": "0bf"
 								},
 								{
 									"type": "entries",
 									"name": "Hunter's Training",
 									"entries": [
 										"Raptors have proficiency with the {@item longbow|phb}, {@item shortbow|phb}, and {@item spear|phb}. Additionally, their familiarity with the longbow means that it is not considered a heavy weapon for them."
-									]
+									],
+									"id": "0c0"
 								}
-							]
+							],
+							"id": "0bc"
 						},
 						{
 							"type": "list",
@@ -2531,23 +2722,27 @@
 									"name": "Ability Modifiers",
 									"entries": [
 										"+1 to the base creature's Intelligence score."
-									]
+									],
+									"id": "0c2"
 								},
 								{
 									"type": "entries",
 									"name": "Speed",
 									"entries": [
 										"Maran raptors have a swim speed of 25 feet."
-									]
+									],
+									"id": "0c3"
 								},
 								{
 									"type": "entries",
 									"name": "Patient",
 									"entries": [
 										"When a maran raptor reacts with a readied action, they have advantage on the first attack roll, skill check, or ability check they make as a part of that action."
-									]
+									],
+									"id": "0c4"
 								}
-							]
+							],
+							"id": "0c1"
 						},
 						{
 							"type": "entries",
@@ -2558,18 +2753,22 @@
 									"name": "Ability Modifiers",
 									"entries": [
 										"+1 to the base creature's Wisdom score."
-									]
+									],
+									"id": "0c6"
 								},
 								{
 									"type": "entries",
 									"name": "Aerial Defense",
 									"entries": [
 										"As long as a mistral raptor is falling, gliding, or jumping, attacks made against them have disadvantage."
-									]
+									],
+									"id": "0c7"
 								}
-							]
+							],
+							"id": "0c5"
 						}
-					]
+					],
+					"id": "0bb"
 				},
 				{
 					"type": "entries",
@@ -2590,23 +2789,27 @@
 									"name": "Ability Modifiers",
 									"entries": [
 										"+2 to the base creature's Strength score."
-									]
+									],
+									"id": "0ca"
 								},
 								{
 									"type": "entries",
 									"name": "Senses",
 									"entries": [
 										"Strigs have {@sense darkvision} out to 60 feet."
-									]
+									],
+									"id": "0cb"
 								},
 								{
 									"type": "entries",
 									"name": "Patterned Feathers",
 									"entries": [
 										"Strigs have advantage on Dexterity ({@skill Stealth}) checks when they attempt to hide in a forest."
-									]
+									],
+									"id": "0cc"
 								}
-							]
+							],
+							"id": "0c9"
 						},
 						{
 							"type": "list",
@@ -2623,16 +2826,19 @@
 									"name": "Ability Modifiers",
 									"entries": [
 										"+1 to the base creature's Constitution score."
-									]
+									],
+									"id": "0ce"
 								},
 								{
 									"type": "entries",
 									"name": "Brawler",
 									"entries": [
 										"Whenever a stout strig hits with their talon attack, they may choose to grapple their target as a bonus action."
-									]
+									],
+									"id": "0cf"
 								}
-							]
+							],
+							"id": "0cd"
 						},
 						{
 							"type": "entries",
@@ -2643,18 +2849,22 @@
 									"name": "Ability Modifiers",
 									"entries": [
 										"+1 to the base creature's Dexterity score."
-									]
+									],
+									"id": "0d1"
 								},
 								{
 									"type": "entries",
 									"name": "Speed",
 									"entries": [
 										"Swift strigs have a base walking speed of 35 feet."
-									]
+									],
+									"id": "0d2"
 								}
-							]
+							],
+							"id": "0d0"
 						}
-					]
+					],
+					"id": "0c8"
 				},
 				{
 					"type": "entries",
@@ -2662,7 +2872,8 @@
 					"entries": [
 						"You can turn any NPC into a humblefolk by making the following changes to its base stat block. These rules can be used to further customize the generic humblefolk NPCs included in this book.",
 						"Humblefolk are Medium sized and use the base speed of the NPC unless otherwise specified."
-					]
+					],
+					"id": "0d3"
 				},
 				{
 					"type": "entries",
@@ -2683,23 +2894,27 @@
 									"name": "Ability Modifiers",
 									"entries": [
 										"+2 to the base creature's Constituion score."
-									]
+									],
+									"id": "0d6"
 								},
 								{
 									"type": "entries",
 									"name": "Languages",
 									"entries": [
 										"Cervans speak Birdfolk and Cervan."
-									]
+									],
+									"id": "0d7"
 								},
 								{
 									"type": "entries",
 									"name": "Surge of Vigor (Recharges after a Long Rest)",
 									"entries": [
 										"If an attack deals over half of a cervans current remaining hit points in damage (even if their hit points are reduced to 0 by the attack), they immediately regain hit points equal to {@dice 1d12} + their Constitution Modifier. "
-									]
+									],
+									"id": "0d8"
 								}
-							]
+							],
+							"id": "0d5"
 						},
 						{
 							"type": "list",
@@ -2716,16 +2931,19 @@
 									"name": "Ability Modifiers",
 									"entries": [
 										"+1 to the base creature's Dexterity score."
-									]
+									],
+									"id": "0da"
 								},
 								{
 									"type": "entries",
 									"name": "Speed",
 									"entries": [
 										"Grove cervans have a base walking speed of 35 feet."
-									]
+									],
+									"id": "0db"
 								}
-							]
+							],
+							"id": "0d9"
 						},
 						{
 							"type": "list",
@@ -2741,16 +2959,19 @@
 									"name": "Standing Leap",
 									"entries": [
 										"A grove cervan's base long jump is 30 feet, and their base high jump is 15 feet, with or without a running start."
-									]
+									],
+									"id": "0dd"
 								},
 								{
 									"type": "entries",
 									"name": "Nimble Step",
 									"entries": [
 										"Opportunity attacks made against the grove cervan are rolled with disadvantage."
-									]
+									],
+									"id": "0de"
 								}
-							]
+							],
+							"id": "0dc"
 						},
 						{
 							"type": "entries",
@@ -2761,16 +2982,19 @@
 									"name": "Ability Modifiers",
 									"entries": [
 										"+1 to the base creature's Strength score."
-									]
+									],
+									"id": "0e0"
 								},
 								{
 									"type": "entries",
 									"name": "Antlers",
 									"entries": [
 										"Pronghorn cervans have a set of large, strong antlers that can be used to make melee attacks. Their antler attack deals {@damage 1d6} piercing damage and is calculated using the creature's strength score for the purposes of determining the attack roll and damage bonus."
-									]
+									],
+									"id": "0e1"
 								}
-							]
+							],
+							"id": "0df"
 						},
 						{
 							"type": "list",
@@ -2786,18 +3010,22 @@
 									"name": "Robust Build",
 									"entries": [
 										"Double the pronghorn cervan's carrying capacity as well as the weight they can push, drag, or lift."
-									]
+									],
+									"id": "0e3"
 								},
 								{
 									"type": "entries",
 									"name": "Charge",
 									"entries": [
 										"If the pronghorn cervan moves at least 20 feet in a straight line towards an enemy, their Antler attack deals an extra {@dice 1d6} points of piercing damage. If the target of the charge is Large or smaller, they must make a Strength saving throw against a DC of the pronghorn cervan's Proficiency Bonus + 8 + the pronghorn's Strength modifier. On failure, the target is pushed 10 feet away from the pronghorn cervan."
-									]
+									],
+									"id": "0e4"
 								}
-							]
+							],
+							"id": "0e2"
 						}
-					]
+					],
+					"id": "0d4"
 				},
 				{
 					"type": "entries",
@@ -2818,37 +3046,43 @@
 									"name": "Size",
 									"entries": [
 										"Hedges are Small sized."
-									]
+									],
+									"id": "0e7"
 								},
 								{
 									"type": "entries",
 									"name": "Natural Armor",
 									"entries": [
 										"Hedges have a natural armor class of 14 + their Dexterity modifier."
-									]
+									],
+									"id": "0e8"
 								},
 								{
 									"type": "entries",
 									"name": "Speed",
 									"entries": [
 										"Hedges have a movement speed of 25 feet. They also have a burrow speed of 15 feet. They cannot burrow through anything more solid than packed soil."
-									]
+									],
+									"id": "0e9"
 								},
 								{
 									"type": "entries",
 									"name": "Ability Modifiers",
 									"entries": [
 										"+2 to the base creature's Charisma score, and +1 to the base creature's Wisdom score."
-									]
+									],
+									"id": "0ea"
 								},
 								{
 									"type": "entries",
 									"name": "Languages",
 									"entries": [
 										"Hedges speak Birdfolk and Hedge. They can also speak with beasts of any size which fall into the category of insects, spiders, worms, or other bugs."
-									]
+									],
+									"id": "0eb"
 								}
-							]
+							],
+							"id": "0e6"
 						},
 						{
 							"type": "list",
@@ -2864,11 +3098,14 @@
 									"name": "Curl Up",
 									"entries": [
 										"As an action, the hedge curls up into a spiny ball. While curled up in this way they cannot move, attack, or cast spells with somatic components, and their base armor class becomes 19. Any creature that misses the hedge with a melee attack while they are curled up takes {@dice 2d4} points of piercing damage from the sharp quills. If a creature hits the hedge while they are curled up, however, the hedge is knocked {@condition prone} in their space at the end of the turn. The hedge may uncurl themselves at any point during their turn."
-									]
+									],
+									"id": "0ed"
 								}
-							]
+							],
+							"id": "0ec"
 						}
-					]
+					],
+					"id": "0e5"
 				},
 				{
 					"type": "entries",
@@ -2889,30 +3126,35 @@
 									"name": "Size",
 									"entries": [
 										"Jerbeen are Small sized."
-									]
+									],
+									"id": "0f0"
 								},
 								{
 									"type": "entries",
 									"name": "Speed",
 									"entries": [
 										"Jerbeen have a movement speed of 30 feet."
-									]
+									],
+									"id": "0f1"
 								},
 								{
 									"type": "entries",
 									"name": "Ability Modifiers",
 									"entries": [
 										"+2 to the base creature's Dexterity score, and +1 to the base creature's Charisma score."
-									]
+									],
+									"id": "0f2"
 								},
 								{
 									"type": "entries",
 									"name": "Languages",
 									"entries": [
 										"Jerbeens speak Birdfolk and Jerbeen."
-									]
+									],
+									"id": "0f3"
 								}
-							]
+							],
+							"id": "0ef"
 						},
 						{
 							"type": "list",
@@ -2928,18 +3170,22 @@
 									"name": "Standing Leap",
 									"entries": [
 										"A jerbeen's long jump is 30 feet, and their base high jump is 15 feet, with or without a running start."
-									]
+									],
+									"id": "0f5"
 								},
 								{
 									"type": "entries",
 									"name": "Team Tactics",
 									"entries": [
 										"Jerbeens can take the {@action Help} action as a bonus action."
-									]
+									],
+									"id": "0f6"
 								}
-							]
+							],
+							"id": "0f4"
 						}
-					]
+					],
+					"id": "0ee"
 				},
 				{
 					"type": "entries",
@@ -2960,37 +3206,43 @@
 									"name": "Speed",
 									"entries": [
 										"Mapachs have a climb speed of 20 feet."
-									]
+									],
+									"id": "0f9"
 								},
 								{
 									"type": "entries",
 									"name": "Ability Modifiers",
 									"entries": [
 										"+2 to the base creature's Wisdom score, and +1 to the base creature's Constitution score."
-									]
+									],
+									"id": "0fa"
 								},
 								{
 									"type": "entries",
 									"name": "Damage Resistance",
 									"entries": [
 										"Mapachs are resistant to poison damage."
-									]
+									],
+									"id": "0fb"
 								},
 								{
 									"type": "entries",
 									"name": "Senses",
 									"entries": [
 										"Mapachs have {@sense darkvision} out to 60 feet."
-									]
+									],
+									"id": "0fc"
 								},
 								{
 									"type": "entries",
 									"name": "Languages",
 									"entries": [
 										"Mapachs speak Birdfolk and Mapach."
-									]
+									],
+									"id": "0fd"
 								}
-							]
+							],
+							"id": "0f8"
 						},
 						{
 							"type": "list",
@@ -3006,18 +3258,22 @@
 									"name": "Skulker",
 									"entries": [
 										"A mapach has advantage on Dexterity ({@skill Stealth}) checks made in dim light or darkness."
-									]
+									],
+									"id": "0ff"
 								},
 								{
 									"type": "entries",
 									"name": "Resilience",
 									"entries": [
 										"Mapachs roll with advantage on saving throws against being {@condition poisoned}."
-									]
+									],
+									"id": "100"
 								}
-							]
+							],
+							"id": "0fe"
 						}
-					]
+					],
+					"id": "0f7"
 				},
 				{
 					"type": "entries",
@@ -3038,23 +3294,27 @@
 									"name": "Ability Modifiers",
 									"entries": [
 										"+2 to the base creature's Intelligence score, and +1 to the base creature's Charisma score."
-									]
+									],
+									"id": "103"
 								},
 								{
 									"type": "entries",
 									"name": "Senses",
 									"entries": [
 										"Vulpins have {@sense darkvision} out to 60 feet."
-									]
+									],
+									"id": "104"
 								},
 								{
 									"type": "entries",
 									"name": "Languages",
 									"entries": [
 										"Vulpins speak Birdfolk and Vulpin."
-									]
+									],
+									"id": "105"
 								}
-							]
+							],
+							"id": "102"
 						},
 						{
 							"type": "list",
@@ -3070,20 +3330,25 @@
 									"name": "Bite",
 									"entries": [
 										"Vulpins have sharp fangs that enable them to make natural bite attacks. Their bite attack deals {@damage 1d6} points of piercing damage and can be calculated using either the creature's Dexterity or Strength score for the purposes of determining the attack roll and damage bonus. Vulpins are proficient in their bite attacks. If the base creature has the Multiattack ability, this applies to the vulpin's bite attack as well."
-									]
+									],
+									"id": "107"
 								},
 								{
 									"type": "entries",
 									"name": "Evasive",
 									"entries": [
 										"A vulpin includes their Intelligence modifier (if positive) as a bonus on all Dexterity saving throws."
-									]
+									],
+									"id": "108"
 								}
-							]
+							],
+							"id": "106"
 						}
-					]
+					],
+					"id": "101"
 				}
-			]
+			],
+			"id": "095"
 		},
 		{
 			"type": "section",
@@ -3104,7 +3369,8 @@
 						"{@item Wing Crest Shield|HWCS}"
 					]
 				}
-			]
+			],
+			"id": "109"
 		},
 		{
 			"type": "section",
@@ -3435,7 +3701,8 @@
 						]
 					]
 				}
-			]
+			],
+			"id": "10a"
 		},
 		{
 			"type": "section",
@@ -3547,7 +3814,8 @@
 					"width": 603,
 					"height": 384
 				}
-			]
+			],
+			"id": "10b"
 		},
 		{
 			"type": "section",
@@ -3659,7 +3927,8 @@
 					"type": "inset",
 					"entries": [
 						"{@book Humblewood Campaign Setting|HWCS} is Copyright © 2022 Hit Point Press Inc., 1175 Brookfield Rd East, Ottawa, Ontario, K1V0C3, Canada. All rights reserved. All characters and their distinctive likenesses are property of Hit Point Press Inc. in Canada, US and other countries. Any reproduction or unauthorized use of the material or artwork contained herein is prohibited without the express permission of Hit Point Press Inc. Reference to other copyrighted material in no way constitutes a challenge to the respective copyright holders of that material. Hit Point Press, The Deck of Many, Humblewood and its associated logos are trademarks of Hit Point Press Inc. Second Printing. Printed in Lithuania."
-					]
+					],
+					"id": "10d"
 				},
 				{
 					"type": "image",
@@ -3672,7 +3941,8 @@
 					"width": 850,
 					"height": 740
 				}
-			]
+			],
+			"id": "10c"
 		}
 	]
 }

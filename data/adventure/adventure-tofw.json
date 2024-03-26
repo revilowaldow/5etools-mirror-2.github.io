@@ -13808,9 +13808,11 @@
 												}
 											]
 										}
-									]
+									],
+									"id": "224"
 								}
-							]
+							],
+							"id": "1aa"
 						},
 						{
 							"type": "entries",
@@ -13839,9 +13841,11 @@
 												}
 											]
 										}
-									]
+									],
+									"id": "230"
 								}
-							]
+							],
+							"id": "22f"
 						},
 						"Special thanks to Michele Carter; Lisa Ohanian; Black Isle Studios, the creators of Planescape: Torment; and the hundreds of playtesters who made this a better book!"
 					]
@@ -13883,7 +13887,8 @@
 						}
 					]
 				}
-			]
+			],
+			"id": "183"
 		}
 	]
 }

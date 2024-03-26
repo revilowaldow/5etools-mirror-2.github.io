@@ -46626,9 +46626,11 @@
 												}
 											]
 										}
-									]
+									],
+									"id": "3fd"
 								}
-							]
+							],
+							"id": "290"
 						},
 						{
 							"type": "entries",
@@ -46657,9 +46659,11 @@
 												}
 											]
 										}
-									]
+									],
+									"id": "4b7"
 								}
-							]
+							],
+							"id": "3fe"
 						}
 					]
 				},
@@ -46672,7 +46676,8 @@
 							"name": "The following product provided information and inspiration:",
 							"entries": [
 								"{@adventure Lost Mine of Phandelver|LMoP}. 2014."
-							]
+							],
+							"id": "4b9"
 						},
 						{
 							"type": "image",
@@ -46709,9 +46714,11 @@
 								}
 							]
 						}
-					]
+					],
+					"id": "4b8"
 				}
-			]
+			],
+			"id": "28f"
 		}
 	]
 }

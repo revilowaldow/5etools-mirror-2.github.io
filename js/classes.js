@@ -1966,7 +1966,7 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 				"entries_styleClass_fromSource",
 				"section_styleClass_fromSource",
 			],
-			fnPlugin: (entryType, entry) => {
+			fnPlugin: (commonArgs, {input: {entryType, entry}}) => {
 				const source = entry.source || toRenderSource;
 				if (source === cls.source) return {isSkip: true};
 			},
@@ -2010,7 +2010,7 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 				//   subclasses are shown.
 				let hasNamePluginRun = false;
 				Renderer.get()
-					.addPlugin("entries_namePrefix", function (entry) {
+					.addPlugin("entries_namePrefix", (commonArgs, {input: entry}) => {
 						if (ptrIsFirstSubclassLevel._ === true || !entry.name) return;
 
 						if (hasNamePluginRun) return;
@@ -2027,7 +2027,7 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 						"entries_styleClass_fromSource",
 						"section_styleClass_fromSource",
 					],
-					fnPlugin: (entryType, entry) => {
+					fnPlugin: (commonArgs, {input: {entryType, entry}}) => {
 						const source = entry.source || toRenderSource;
 						if (source === sc.source) return {isSkip: true};
 					},

@@ -1204,6 +1204,8 @@ class ConvertUtil {
 	 * @returns {boolean}
 	 */
 	static isNameLine (line, {exceptions = null, splitterPunc = null} = {}) {
+		if (ConvertUtil.isListItemLine(line)) return false;
+
 		const spl = this._getMergedSplitName({line, splitterPunc});
 		if (spl.map(it => it.trim()).filter(Boolean).length === 1) return false;
 

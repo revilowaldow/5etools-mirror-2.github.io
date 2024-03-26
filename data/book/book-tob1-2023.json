@@ -623,7 +623,8 @@
 								"{@creature Wolf Reaver Dwarf|ToB1-2023}"
 							]
 						}
-					]
+					],
+					"id": "00d"
 				}
 			]
 		},
@@ -754,7 +755,8 @@
 												}
 											]
 										}
-									]
+									],
+									"id": "00f"
 								},
 								{
 									"type": "entries",
@@ -843,7 +845,8 @@
 												}
 											]
 										}
-									]
+									],
+									"id": "010"
 								},
 								{
 									"type": "entries",
@@ -857,11 +860,13 @@
 												"An extra special thanks to the designers and contributors to earlier versions of the monsters that appear in this book, such as the versions that appeared in the 2016 Tome of Beasts, the Southlands Bestiary, the Midgard Bestiary, and many others. These designers and contributors include but are not limited to: Lou Anders, Jobe Bittman, Michael John Conard, Ryan Costello Jr., James L. Crawford, Adam Daigle, Matthew Eyman, Crystal Frasier, Christopher Gilliford, Andrew Hind, Jeremy Hochhalter, Brandon Hodge, Michael Lane, Phillip Larwood, Jeff Lee, Greg Marks, Mike McArtor, Ben McFarland, Dave Olson, Carlos Ovalle, Richard Pett, James Pratt, Marc Radle, Adam Roy, Jon Sawatsky, Christina Stiles, Brian Suskind, Sersa Victory, Dan Voyce, Mike Welham, Ben Wertz"
 											]
 										}
-									]
+									],
+									"id": "011"
 								}
 							]
 						}
-					]
+					],
+					"id": "00e"
 				},
 				{
 					"type": "image",

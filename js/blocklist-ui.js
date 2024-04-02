@@ -226,7 +226,7 @@ class BlocklistUi {
 			<button class="ve-col-1 sort btn btn-default btn-xs" disabled>&nbsp;</button>
 		</div>`;
 
-		const $wrpList = $(`<div class="list-display-only smooth-scroll overflow-y-auto h-100 min-h-0"></div>`);
+		const $wrpList = $(`<div class="list-display-only smooth-scroll ve-overflow-y-auto h-100 min-h-0"></div>`);
 
 		$$(this._$wrpContent.empty())`
 			${this._$wrpControls}

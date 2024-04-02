@@ -50,7 +50,7 @@ class _InitiativeTrackerMonsterAddCustomizer extends BaseComponent {
 		const $iptCustomName = ComponentUiUtil.$getIptStr(this, "customName");
 
 		$$($modalInner)`
-			<div class="ve-flex-col py-2 w-100 h-100 overflow-y-auto">
+			<div class="ve-flex-col py-2 w-100 h-100 ve-overflow-y-auto">
 				<label class="split-v-center mb-2">
 					<span class="w-200p text-right no-shrink mr-2 bold">Custom Name:</span>
 					${$iptCustomName}

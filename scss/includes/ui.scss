@@ -30,7 +30,7 @@ Shared UI components
 .ui-list__ {
 	// TODO refactor all "list" class to use this:
 	//  - add "relative" class to each as required
-	//  - add "overflow-x-hidden" and "overflow-y-auto" classes
+	//  - add "ve-overflow-x-hidden" and "ve-overflow-y-auto" classes
 	//  - convert from ul to div
 	&wrp {
 		transform: translateZ(0);

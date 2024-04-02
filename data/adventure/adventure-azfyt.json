@@ -740,16 +740,16 @@
 					"type": "list",
 					"columns": 2,
 					"items": [
-						"{@5etools Azorius Vedlaken Wizard|pdf/adventure/AZfyT/Azorius Vedlaken Wizard 2.pdf}",
-						"{@5etools Boros Minotaur Fighter|pdf/adventure/AZfyT/Boros Minotaur Fighter 2.pdf}",
-						"{@5etools Dimir Human Rogue|pdf/adventure/AZfyT/Dimir Human Rogue 2.pdf}",
-						"{@5etools Golgari Elf Druid|pdf/adventure/AZfyT/Golgari Elf Druid 2.pdf}",
-						"{@5etools Gruul Human Barbarian|pdf/adventure/AZfyT/Gruul Human Barbarian 2.pdf}",
-						"{@5etools Izzet Goblin Sorcerer|pdf/adventure/AZfyT/Izzet Goblin Sorcerer 2.pdf}",
-						"{@5etools Orzhov Human Cleric|pdf/adventure/AZfyT/Orzhov Human Cleric 2.pdf}",
-						"{@5etools Rakdos Goblin Bard|pdf/adventure/AZfyT/Rakdos Goblin Bard 2.pdf}",
-						"{@5etools Selesnya Loxodon Paladin|pdf/adventure/AZfyT/Selesnya Loxodon Paladin 2.pdf}",
-						"{@5etools Simic Hybrid Monk|pdf/adventure/AZfyT/Simic Hybrid Monk 2.pdf}"
+						"{@5etools Azorius Vedlaken Wizard|img/pdf/AZfyT/Azorius Vedlaken Wizard 2.pdf}",
+						"{@5etools Boros Minotaur Fighter|img/pdf/AZfyT/Boros Minotaur Fighter 2.pdf}",
+						"{@5etools Dimir Human Rogue|img/pdf/AZfyT/Dimir Human Rogue 2.pdf}",
+						"{@5etools Golgari Elf Druid|img/pdf/AZfyT/Golgari Elf Druid 2.pdf}",
+						"{@5etools Gruul Human Barbarian|img/pdf/AZfyT/Gruul Human Barbarian 2.pdf}",
+						"{@5etools Izzet Goblin Sorcerer|img/pdf/AZfyT/Izzet Goblin Sorcerer 2.pdf}",
+						"{@5etools Orzhov Human Cleric|img/pdf/AZfyT/Orzhov Human Cleric 2.pdf}",
+						"{@5etools Rakdos Goblin Bard|img/pdf/AZfyT/Rakdos Goblin Bard 2.pdf}",
+						"{@5etools Selesnya Loxodon Paladin|img/pdf/AZfyT/Selesnya Loxodon Paladin 2.pdf}",
+						"{@5etools Simic Hybrid Monk|img/pdf/AZfyT/Simic Hybrid Monk 2.pdf}"
 					]
 				}
 			]

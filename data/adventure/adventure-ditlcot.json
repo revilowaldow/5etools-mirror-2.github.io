@@ -255,7 +255,15 @@
 											"credit": "Mike Schley",
 											"width": 4096,
 											"height": 5301,
-											"id": "05e"
+											"id": "05e",
+											"grid": {
+												"type": "square",
+												"size": 225,
+												"offsetX": 52,
+												"offsetY": -23,
+												"scale": 2,
+												"distance": 10
+											}
 										},
 										{
 											"type": "image",
@@ -270,6 +278,14 @@
 											"credit": "Mike Schley",
 											"mapParent": {
 												"id": "05e"
+											},
+											"grid": {
+												"type": "square",
+												"size": 225,
+												"offsetX": 52,
+												"offsetY": -23,
+												"scale": 2,
+												"distance": 10
 											}
 										}
 									]

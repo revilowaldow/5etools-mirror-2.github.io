@@ -993,6 +993,8 @@ PropOrder._CONDITION = [
 	"basicRules",
 	"otherSources",
 
+	"color",
+
 	"entries",
 
 	"hasFluff",
@@ -1027,6 +1029,8 @@ PropOrder._STATUS = [
 	"page",
 	"srd",
 	"basicRules",
+
+	"color",
 
 	"entries",
 ];

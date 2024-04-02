@@ -10,6 +10,7 @@
 				"path": "covers/LMoP.webp"
 			},
 			"published": "2014-07-15",
+			"author": "Wizards RPG Team",
 			"storyline": "Starter Set",
 			"level": {
 				"start": 1,
@@ -113,6 +114,7 @@
 				"path": "covers/HotDQ.webp"
 			},
 			"published": "2014-08-19",
+			"author": "Wizards RPG Team",
 			"storyline": "Tyranny of Dragons",
 			"level": {
 				"start": 1,
@@ -882,6 +884,7 @@
 				"path": "covers/RoT.webp"
 			},
 			"published": "2014-11-04",
+			"author": "Wizards RPG Team",
 			"storyline": "Tyranny of Dragons",
 			"level": {
 				"start": 8,
@@ -1445,6 +1448,7 @@
 				"path": "covers/PotA.webp"
 			},
 			"published": "2015-04-07",
+			"author": "Wizards RPG Team",
 			"storyline": "Elemental Evil",
 			"level": {
 				"start": 1,
@@ -2895,6 +2899,7 @@
 				"path": "covers/OotA.webp"
 			},
 			"published": "2015-09-15",
+			"author": "Wizards RPG Team",
 			"storyline": "Rage of Demons",
 			"level": {
 				"start": 1,
@@ -3647,6 +3652,7 @@
 				"path": "covers/CoS.webp"
 			},
 			"published": "2016-03-15",
+			"author": "Wizards RPG Team",
 			"storyline": "Ravenloft",
 			"level": {
 				"start": 1,
@@ -5269,6 +5275,7 @@
 				"path": "covers/SKT.webp"
 			},
 			"published": "2016-09-06",
+			"author": "Wizards RPG Team",
 			"storyline": "Storm King's Thunder",
 			"level": {
 				"start": 1,
@@ -7140,6 +7147,7 @@
 			},
 			"published": "2017-03-24",
 			"publishedOrder": 0,
+			"author": "Wizards RPG Team",
 			"storyline": "Tales from the Yawning Portal",
 			"level": {
 				"start": 1,
@@ -7436,6 +7444,7 @@
 			},
 			"published": "2017-03-24",
 			"publishedOrder": 1,
+			"author": "Wizards RPG Team",
 			"storyline": "Tales from the Yawning Portal",
 			"level": {
 				"start": 3,
@@ -7716,6 +7725,7 @@
 			},
 			"published": "2017-03-24",
 			"publishedOrder": 2,
+			"author": "Wizards RPG Team",
 			"storyline": "Tales from the Yawning Portal",
 			"level": {
 				"start": 5,
@@ -8000,6 +8010,7 @@
 			},
 			"published": "2017-03-24",
 			"publishedOrder": 3,
+			"author": "Wizards RPG Team",
 			"storyline": "Tales from the Yawning Portal",
 			"level": {
 				"start": 8,
@@ -8160,6 +8171,7 @@
 			},
 			"published": "2017-03-24",
 			"publishedOrder": 4,
+			"author": "Wizards RPG Team",
 			"storyline": "Tales from the Yawning Portal",
 			"level": {
 				"start": 9,
@@ -8651,6 +8663,7 @@
 			},
 			"published": "2017-03-24",
 			"publishedOrder": 5,
+			"author": "Wizards RPG Team",
 			"storyline": "Tales from the Yawning Portal",
 			"level": {
 				"start": 11,
@@ -9455,6 +9468,7 @@
 			},
 			"published": "2017-03-24",
 			"publishedOrder": 6,
+			"author": "Wizards RPG Team",
 			"storyline": "Tales from the Yawning Portal",
 			"level": {
 				"start": 10,
@@ -9649,6 +9663,7 @@
 				"path": "covers/ToA.webp"
 			},
 			"published": "2017-09-19",
+			"author": "Wizards RPG Team",
 			"storyline": "Tomb of Annihilation",
 			"level": {
 				"start": 1,
@@ -11222,6 +11237,7 @@
 				"path": "covers/TTP.webp"
 			},
 			"published": "2017-11-03",
+			"author": "Wizards RPG Team",
 			"storyline": "Tomb of Annihilation",
 			"level": {
 				"start": 1,
@@ -11306,6 +11322,7 @@
 				"path": "covers/TLK.webp"
 			},
 			"published": "2017-11-28",
+			"author": "Shawn Wood",
 			"storyline": "Extra Life",
 			"level": {
 				"start": 4,
@@ -11330,6 +11347,7 @@
 				"path": "covers/XMtS.webp"
 			},
 			"published": "2017-12-11",
+			"author": "Wizards MTG Team",
 			"storyline": "Ixalan",
 			"level": {
 				"start": 4,
@@ -11413,6 +11431,7 @@
 				"path": "covers/WDH.webp"
 			},
 			"published": "2018-09-18",
+			"author": "Wizards RPG Team",
 			"storyline": "Waterdeep",
 			"level": {
 				"start": 1,
@@ -11669,6 +11688,7 @@
 				"path": "covers/LLK.webp"
 			},
 			"published": "2018-11-10",
+			"author": "Extra Life",
 			"storyline": "Extra Life",
 			"level": {
 				"start": 5,
@@ -11796,6 +11816,7 @@
 				"path": "covers/WDMM.webp"
 			},
 			"published": "2018-11-13",
+			"author": "Wizards RPG Team",
 			"storyline": "Waterdeep",
 			"level": {
 				"start": 5,
@@ -15056,6 +15077,7 @@
 				"path": "covers/GGR.webp"
 			},
 			"published": "2018-11-20",
+			"author": "Wizards RPG Team",
 			"storyline": "Ravnica",
 			"level": {
 				"start": 1,
@@ -15091,6 +15113,7 @@
 				"path": "covers/AZfyT.webp"
 			},
 			"published": "2019-03-05",
+			"author": "Wizards RPG Team",
 			"storyline": "Ravnica",
 			"level": {
 				"start": 2,
@@ -15130,6 +15153,7 @@
 				"path": "covers/GoS.webp"
 			},
 			"published": "2019-05-21",
+			"author": "Wizards RPG Team",
 			"storyline": "Ghosts of Saltmarsh",
 			"level": {
 				"start": 1,
@@ -16303,6 +16327,7 @@
 				"path": "covers/HftT.webp"
 			},
 			"published": "2019-05-21",
+			"author": "Wizards RPG Team",
 			"storyline": "Stranger Things",
 			"level": {
 				"start": 3,
@@ -16338,6 +16363,7 @@
 				"path": "covers/HWAitW.webp"
 			},
 			"published": "2019-06-17",
+			"author": "The Deck of Many",
 			"storyline": "Humblewood",
 			"level": {
 				"start": 1,
@@ -16450,6 +16476,7 @@
 				"path": "covers/AI.webp"
 			},
 			"published": "2019-06-18",
+			"author": "Wizards RPG Team",
 			"storyline": "Acquisitions Incorporated",
 			"level": {
 				"start": 1,
@@ -16780,6 +16807,7 @@
 			},
 			"published": "2019-06-24",
 			"publishedOrder": 0,
+			"author": "Wizards RPG Team",
 			"storyline": "Essentials Kit",
 			"level": {
 				"start": 1,
@@ -16941,6 +16969,7 @@
 			},
 			"published": "2019-09-03",
 			"publishedOrder": 1,
+			"author": "Wizards RPG Team",
 			"storyline": "Essentials Kit",
 			"level": {
 				"start": 7,
@@ -17747,6 +17776,7 @@
 			},
 			"published": "2019-09-03",
 			"publishedOrder": 2,
+			"author": "Wizards RPG Team",
 			"storyline": "Essentials Kit",
 			"level": {
 				"start": 9,
@@ -18482,6 +18512,7 @@
 			},
 			"published": "2019-09-03",
 			"publishedOrder": 3,
+			"author": "Wizards RPG Team",
 			"storyline": "Essentials Kit",
 			"level": {
 				"start": 11,
@@ -19499,6 +19530,7 @@
 				"path": "covers/BGDIA.webp"
 			},
 			"published": "2019-09-18",
+			"author": "Wizards RPG Team",
 			"storyline": "Baldur's Gate",
 			"level": {
 				"start": 1,
@@ -20393,6 +20425,7 @@
 				"path": "covers/LR.webp"
 			},
 			"published": "2019-09-19",
+			"author": "Wizards RPG Team",
 			"storyline": "Extra Life",
 			"level": {
 				"start": 9,
@@ -20495,6 +20528,7 @@
 				"path": "covers/IMR.webp"
 			},
 			"published": "2019-11-12",
+			"author": "Wizards RPG Team",
 			"storyline": "Extra Life",
 			"level": {
 				"start": 5,
@@ -20875,6 +20909,7 @@
 				"path": "covers/ERLW.webp"
 			},
 			"published": "2019-11-19",
+			"author": "Wizards RPG Team",
 			"storyline": "Eberron",
 			"level": {
 				"start": 1,
@@ -20969,6 +21004,7 @@
 				"path": "covers/RMR.webp"
 			},
 			"published": "2019-11-19",
+			"author": "Wizards RPG Team",
 			"storyline": "Rick and Morty",
 			"level": {
 				"start": 1,
@@ -21191,6 +21227,7 @@
 			},
 			"published": "2020-03-17",
 			"publishedOrder": 0,
+			"author": "Darrington Press",
 			"storyline": "Wildemount",
 			"level": {
 				"start": 1,
@@ -21268,6 +21305,7 @@
 			},
 			"published": "2020-03-17",
 			"publishedOrder": 1,
+			"author": "Darrington Press",
 			"storyline": "Wildemount",
 			"level": {
 				"start": 1,
@@ -21412,6 +21450,7 @@
 			},
 			"published": "2020-03-17",
 			"publishedOrder": 2,
+			"author": "Darrington Press",
 			"storyline": "Wildemount",
 			"level": {
 				"start": 1,
@@ -21547,6 +21586,7 @@
 			},
 			"published": "2020-03-17",
 			"publishedOrder": 3,
+			"author": "Darrington Press",
 			"storyline": "Wildemount",
 			"level": {
 				"start": 1,
@@ -21662,6 +21702,7 @@
 				"path": "covers/MOT.webp"
 			},
 			"published": "2020-06-02",
+			"author": "Wizards RPG Team",
 			"storyline": "Mythic Odysseys of Theros",
 			"level": {
 				"start": 1,
@@ -21728,6 +21769,7 @@
 				"path": "covers/IDRotF.webp"
 			},
 			"published": "2020-09-15",
+			"author": "Wizards RPG Team",
 			"storyline": "Icewind Dale",
 			"level": {
 				"start": 1,
@@ -23474,6 +23516,7 @@
 				"path": "covers/CM.webp"
 			},
 			"published": "2021-03-16",
+			"author": "Wizards RPG Team",
 			"storyline": "Candlekeep Mysteries",
 			"level": {
 				"start": 1,
@@ -24517,6 +24560,7 @@
 				"path": "covers/VRGR.webp"
 			},
 			"published": "2021-05-18",
+			"author": "Wizards RPG Team",
 			"storyline": "Ravenloft",
 			"level": {
 				"start": 1,
@@ -24683,6 +24727,7 @@
 				"path": "covers/RtG.webp"
 			},
 			"published": "2021-05-21",
+			"author": "Extra Life",
 			"storyline": "Extra Life",
 			"level": {
 				"start": 6,
@@ -24737,6 +24782,7 @@
 				"path": "covers/AitFR-ISF.webp"
 			},
 			"published": "2021-06-30",
+			"author": "Wizards MTG Team",
 			"storyline": "Adventures in the Forgotten Realms",
 			"level": {
 				"start": 8,
@@ -24844,6 +24890,7 @@
 				"path": "covers/AitFR-THP.webp"
 			},
 			"published": "2021-07-07",
+			"author": "Wizards MTG Team",
 			"storyline": "Adventures in the Forgotten Realms",
 			"level": {
 				"start": 8,
@@ -24944,6 +24991,7 @@
 				"path": "covers/AitFR-AVT.webp"
 			},
 			"published": "2021-07-14",
+			"author": "Wizards MTG Team",
 			"storyline": "Adventures in the Forgotten Realms",
 			"level": {
 				"start": 9,
@@ -25040,6 +25088,7 @@
 				"path": "covers/AitFR-DN.webp"
 			},
 			"published": "2021-07-21",
+			"author": "Wizards MTG Team",
 			"storyline": "Adventures in the Forgotten Realms",
 			"level": {
 				"start": 9,
@@ -25149,6 +25198,7 @@
 				"path": "covers/AitFR-FCD.webp"
 			},
 			"published": "2021-07-28",
+			"author": "Wizards MTG Team",
 			"storyline": "Adventures in the Forgotten Realms",
 			"level": {
 				"start": 10,
@@ -25253,6 +25303,7 @@
 			},
 			"published": "2021-09-01",
 			"publishedOrder": 0,
+			"author": "Wizards RPG Team",
 			"storyline": "NERDS Restoring Harmony",
 			"level": {
 				"start": 1,
@@ -25332,6 +25383,7 @@
 			},
 			"published": "2021-09-01",
 			"publishedOrder": 1,
+			"author": "Wizards RPG Team",
 			"storyline": "NERDS Restoring Harmony",
 			"level": {
 				"start": 1,
@@ -25376,6 +25428,7 @@
 			},
 			"published": "2021-09-01",
 			"publishedOrder": 2,
+			"author": "Wizards RPG Team",
 			"storyline": "NERDS Restoring Harmony",
 			"level": {
 				"start": 1,
@@ -25416,6 +25469,7 @@
 			},
 			"published": "2021-09-01",
 			"publishedOrder": 3,
+			"author": "Wizards RPG Team",
 			"storyline": "NERDS Restoring Harmony",
 			"level": {
 				"start": 1,
@@ -25479,6 +25533,7 @@
 			},
 			"published": "2021-09-01",
 			"publishedOrder": 4,
+			"author": "Wizards RPG Team",
 			"storyline": "NERDS Restoring Harmony",
 			"level": {
 				"start": 1,
@@ -25527,6 +25582,7 @@
 			},
 			"published": "2021-09-01",
 			"publishedOrder": 5,
+			"author": "Wizards RPG Team",
 			"storyline": "NERDS Restoring Harmony",
 			"level": {
 				"start": 1,
@@ -25571,6 +25627,7 @@
 			},
 			"published": "2021-09-01",
 			"publishedOrder": 6,
+			"author": "Wizards RPG Team",
 			"storyline": "NERDS Restoring Harmony",
 			"level": {
 				"start": 1,
@@ -25625,6 +25682,7 @@
 				"path": "covers/WBtW.webp"
 			},
 			"published": "2021-09-21",
+			"author": "Wizards RPG Team",
 			"storyline": "The Wild Beyond the Witchlight",
 			"level": {
 				"start": 1,
@@ -26308,6 +26366,7 @@
 			},
 			"published": "2021-12-07",
 			"publishedOrder": 0,
+			"author": "Wizards RPG Team",
 			"storyline": "Strixhaven",
 			"level": {
 				"start": 1,
@@ -26616,6 +26675,7 @@
 			},
 			"published": "2021-12-07",
 			"publishedOrder": 1,
+			"author": "Wizards RPG Team",
 			"storyline": "Strixhaven",
 			"level": {
 				"start": 4,
@@ -26749,6 +26809,7 @@
 			},
 			"published": "2021-12-07",
 			"publishedOrder": 2,
+			"author": "Wizards RPG Team",
 			"storyline": "Strixhaven",
 			"level": {
 				"start": 6,
@@ -26867,6 +26928,7 @@
 			},
 			"published": "2021-12-07",
 			"publishedOrder": 3,
+			"author": "Wizards RPG Team",
 			"storyline": "Strixhaven",
 			"level": {
 				"start": 8,
@@ -27029,6 +27091,7 @@
 				"path": "covers/CRCotN.webp"
 			},
 			"published": "2022-03-15",
+			"author": "Darrington Press",
 			"storyline": "Critical Role",
 			"level": {
 				"start": 3,
@@ -27600,6 +27663,7 @@
 				"path": "covers/JttRC.webp"
 			},
 			"published": "2022-07-19",
+			"author": "Wizards RPG Team",
 			"storyline": "Journeys through the Radiant Citadel",
 			"level": {
 				"start": 1,
@@ -28081,6 +28145,7 @@
 				"path": "covers/DoSI.webp"
 			},
 			"published": "2022-07-31",
+			"author": "Wizards RPG Team",
 			"storyline": "Starter Set",
 			"level": {
 				"start": 1,
@@ -28304,6 +28369,7 @@
 				"path": "covers/SjA.webp"
 			},
 			"published": "2022-08-01",
+			"author": "Wizards RPG Team",
 			"storyline": "Spelljammer",
 			"level": {
 				"start": 1,
@@ -28390,6 +28456,7 @@
 				"path": "covers/SAiS.webp"
 			},
 			"published": "2022-08-16",
+			"author": "Wizards RPG Team",
 			"storyline": "Spelljammer",
 			"level": {
 				"start": 5,
@@ -28538,6 +28605,7 @@
 				"path": "covers/DSotDQ.webp"
 			},
 			"published": "2022-11-22",
+			"author": "Wizards RPG Team",
 			"storyline": "Dragonlance",
 			"level": {
 				"start": 1,
@@ -29150,6 +29218,7 @@
 				"path": "covers/KftGV.webp"
 			},
 			"published": "2023-02-21",
+			"author": "Wizards RPG Team",
 			"storyline": "Keys from the Golden Vault",
 			"level": {
 				"start": 1,
@@ -30384,6 +30453,7 @@
 				"path": "covers/GotSF.webp"
 			},
 			"published": "2023-08-01",
+			"author": "Wizards RPG Team",
 			"storyline": "Giants of the Star Forge",
 			"level": {
 				"start": 16,
@@ -30441,6 +30511,7 @@
 				"path": "covers/PaBTSO.webp"
 			},
 			"published": "2023-09-19",
+			"author": "Wizards RPG Team",
 			"storyline": "Starter Set",
 			"level": {
 				"start": 1,
@@ -31531,6 +31602,7 @@
 				"path": "covers/LK.webp"
 			},
 			"published": "2023-09-26",
+			"author": "Wizards RPG Team",
 			"storyline": "Minecraft",
 			"level": {
 				"start": 3,
@@ -31646,6 +31718,7 @@
 				"path": "covers/PAitM.webp"
 			},
 			"published": "2023-10-17",
+			"author": "Wizards RPG Team",
 			"storyline": "Planescape",
 			"level": {
 				"start": 3,
@@ -31890,6 +31963,7 @@
 				"path": "covers/CoA.webp"
 			},
 			"published": "2023-10-30",
+			"author": "Wizards RPG Team",
 			"storyline": "Extra Life",
 			"level": {
 				"start": 11,
@@ -32510,6 +32584,7 @@
 				"path": "covers/PiP.webp"
 			},
 			"published": "2023-11-20",
+			"author": "Wizards RPG Team",
 			"storyline": "Family Friendly",
 			"level": {
 				"start": 1,
@@ -32545,6 +32620,7 @@
 				"path": "covers/HFStCM.webp"
 			},
 			"published": "2023-11-21",
+			"author": "Wizards RPG Team",
 			"storyline": "Heroes' Feast",
 			"level": {
 				"start": 10,
@@ -32611,6 +32687,7 @@
 				"path": "covers/GHLoE.webp"
 			},
 			"published": "2023-11-30",
+			"author": "Ghostfire Gaming",
 			"storyline": "Grim Hollow",
 			"level": {
 				"start": 1,
@@ -33411,6 +33488,7 @@
 				"path": "covers/DoDk.webp"
 			},
 			"published": "2023-12-21",
+			"author": "Ghostfire Gaming",
 			"storyline": "Drakkenheim",
 			"level": {
 				"start": 1,
@@ -34026,8 +34104,12 @@
 			"id": "DitLCoT",
 			"source": "DitLCoT",
 			"group": "supplement",
-			"coverUrl": "img/covers/QftIS.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/QftIS.webp"
+			},
 			"published": "2024-03-26",
+			"author": "Wizards RPG Team",
 			"storyline": "Quests from the Infinite Staircase",
 			"level": {
 				"start": 9,
@@ -34132,12 +34214,75 @@
 			]
 		},
 		{
+			"name": "Red Dragon's Tale: A LEGO Adventure",
+			"id": "LRDT",
+			"source": "LRDT",
+			"group": "supplement-alt",
+			"cover": {
+				"type": "internal",
+				"path": "covers/LRDT.webp"
+			},
+			"published": "2024-04-01",
+			"author": "Wizards RPG Team",
+			"storyline": "LEGO",
+			"level": {
+				"start": 5,
+				"end": 5
+			},
+			"contents": [
+				{
+					"name": "Introduction",
+					"headers": [
+						"About the Heroes",
+						"Running the Adventure"
+					]
+				},
+				{
+					"name": "Scene 1: Inn Plain Sight"
+				},
+				{
+					"name": "Scene 2: The Meadow"
+				},
+				{
+					"name": "Scene 3: The Dungeon"
+				},
+				{
+					"name": "Scene 4: The Basement"
+				},
+				{
+					"name": "Scene 5: The Tower"
+				},
+				{
+					"name": "Scene 6: The Dragon"
+				},
+				{
+					"name": "Conclusion"
+				},
+				{
+					"name": "Nonplayer Characters"
+				},
+				{
+					"name": "Without D&D Rules"
+				},
+				{
+					"name": "Character Sheets"
+				},
+				{
+					"name": "Credits"
+				}
+			]
+		},
+		{
 			"name": "Quests from the Infinite Staircase",
 			"id": "QftIS",
 			"source": "QftIS",
 			"group": "supplement",
-			"coverUrl": "img/covers/QftIS.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/QftIS.webp"
+			},
 			"published": "2024-07-16",
+			"author": "Wizards RPG Team",
 			"storyline": "Quests from the Infinite Staircase",
 			"level": {
 				"start": 1,

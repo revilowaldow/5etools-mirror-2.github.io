@@ -8702,6 +8702,9 @@
 				"type": "internal",
 				"path": "bestiary/rothe.mp3"
 			},
+			"traitTags": [
+				"Beast of Burden"
+			],
 			"senseTags": [
 				"D"
 			],
@@ -28636,6 +28639,9 @@
 				"type": "internal",
 				"path": "bestiary/ox.mp3"
 			},
+			"traitTags": [
+				"Beast of Burden"
+			],
 			"damageTags": [
 				"P"
 			],

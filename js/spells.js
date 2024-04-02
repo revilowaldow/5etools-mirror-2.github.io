@@ -231,6 +231,7 @@ class SpellsPage extends ListPageMultiSource {
 				colTransforms: {
 					name: UtilsTableview.COL_TRANSFORM_NAME,
 					source: UtilsTableview.COL_TRANSFORM_SOURCE,
+					page: UtilsTableview.COL_TRANSFORM_PAGE,
 					level: {name: "Level", transform: (it) => Parser.spLevelToFull(it)},
 					time: {name: "Casting Time", transform: (it) => PageFilterSpells.getTblTimeStr(it[0])},
 					duration: {name: "Duration", transform: (it) => Parser.spDurationToFull(it)},

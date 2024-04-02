@@ -2,6 +2,7 @@ import * as fs from "fs";
 import "../js/parser.js";
 import "../js/utils.js";
 import * as ut from "../node/util.js";
+import {listFiles} from "../node/util.js";
 
 class _TestTokenImages {
 	static _IS_CLEAN_MM_EXTRAS = false;
@@ -132,26 +133,23 @@ class _TestAdventureBookImages {
 			};
 		};
 
-		[
-			{filename: "adventures.json", prop: "adventure", dir: "adventure"},
-			{filename: "books.json", prop: "book", dir: "book"},
-		].flatMap(({filename, prop, dir}) => ut.readJson(`./data/${filename}`)[prop]
-			.map(({id}) => `./data/${dir}/${dir}-${id.toLowerCase()}.json`))
-			.forEach(filename => {
+		listFiles()
+			.forEach(filepath => {
+				const json = ut.readJson(filepath);
 				walker.walk(
-					ut.readJson(filename),
+					json,
 					{
-						object: getHandler(filename, pathsMissing),
+						object: getHandler(filepath, pathsMissing),
 					},
 				);
 			});
 
 		if (pathsMissing.length) {
-			console.log(`Adventure/Book Errors:\n${pathsMissing.map(it => `\t${it}`).join("\n")}`);
+			console.log(`Missing Images:\n${pathsMissing.map(it => `\t${it}`).join("\n")}`);
 			return true;
 		}
 
-		console.log(`##### Adventure/Book Image Tests Passed #####`);
+		console.log(`##### Missing Image Test Passed #####`);
 		return false;
 	}
 }

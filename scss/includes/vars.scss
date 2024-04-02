@@ -185,6 +185,7 @@ $z-omnisearch: 100;
 $z-book-find: 100;
 $z-bookmode: 100;
 $z-rollerbox-hidden: 100;
+$z-card-viewer: 105; // Minimized rollbox should be underneath; active rollbox should be on top, so we can roll dice in cards
 $z-rollerbox-active: 110;
 
 // Z-indices 200-300 reserved for hover windows

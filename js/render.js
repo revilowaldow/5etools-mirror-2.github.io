@@ -1625,9 +1625,21 @@ globalThis.Renderer = function () {
 				this._recursiveRender(text, textStack, meta);
 				textStack[0] += `</s>`;
 				break;
+			case "@s2":
+			case "@strikeDouble":
+				textStack[0] += `<s class="ve-strike-double">`;
+				this._recursiveRender(text, textStack, meta);
+				textStack[0] += `</s>`;
+				break;
 			case "@u":
 			case "@underline":
 				textStack[0] += `<u>`;
+				this._recursiveRender(text, textStack, meta);
+				textStack[0] += `</u>`;
+				break;
+			case "@u2":
+			case "@underlineDouble":
+				textStack[0] += `<u class="ve-underline-double">`;
 				this._recursiveRender(text, textStack, meta);
 				textStack[0] += `</u>`;
 				break;
@@ -2044,20 +2056,23 @@ globalThis.Renderer = function () {
 	};
 
 	this._renderLink_getHref = function (entry) {
-		let href;
 		if (entry.href.type === "internal") {
 			// baseURL is blank by default
-			href = `${this.baseUrl}${entry.href.path}#`;
+			const ptBase = `${this.baseUrl}${entry.href.path}`;
+			let ptHash = "";
 			if (entry.href.hash != null) {
-				href += entry.href.hashPreEncoded ? entry.href.hash : UrlUtil.encodeForHash(entry.href.hash);
+				ptHash += entry.href.hashPreEncoded ? entry.href.hash : UrlUtil.encodeForHash(entry.href.hash);
 			}
 			if (entry.href.subhashes != null) {
-				href += Renderer.utils.getLinkSubhashString(entry.href.subhashes);
+				ptHash += Renderer.utils.getLinkSubhashString(entry.href.subhashes);
 			}
-		} else if (entry.href.type === "external") {
-			href = entry.href.url;
+			if (!ptHash) return ptBase;
+			return `${ptBase}#${ptHash}`;
 		}
-		return href;
+		if (entry.href.type === "external") {
+			return entry.href.url;
+		}
+		return "";
 	};
 
 	this._renderLink_getHoverString = function (entry) {
@@ -2141,6 +2156,7 @@ Renderer._INLINE_HEADER_TERMINATORS = new Set([".", ",", "!", "?", ";", ":", `"`
 Renderer._STYLE_TAG_ID_TO_STYLE = {
 	"small-caps": "small-caps",
 	"small": "ve-small",
+	"large": "ve-large",
 	"capitalize": "capitalize",
 	"dnd-font": "dnd-font",
 };
@@ -4334,12 +4350,28 @@ Renderer.tag = class {
 		tagName = "strike";
 	};
 
+	static TagStrikethroughDoubleShort = class extends this._TagTextStyle {
+		tagName = "s2";
+	};
+
+	static TagStrikethroughDoubleLong = class extends this._TagTextStyle {
+		tagName = "strikeDouble";
+	};
+
 	static TagUnderlineShort = class extends this._TagTextStyle {
 		tagName = "u";
 	};
 
 	static TagUnderlineLong = class extends this._TagTextStyle {
 		tagName = "underline";
+	};
+
+	static TagUnderlineDoubleShort = class extends this._TagTextStyle {
+		tagName = "u2";
+	};
+
+	static TagUnderlineDoubleLong = class extends this._TagTextStyle {
+		tagName = "underlineDouble";
 	};
 
 	static TagSup = class extends this._TagTextStyle {
@@ -4913,8 +4945,12 @@ Renderer.tag = class {
 		new this.TagItalicLong(),
 		new this.TagStrikethroughShort(),
 		new this.TagStrikethroughLong(),
+		new this.TagStrikethroughDoubleShort(),
+		new this.TagStrikethroughDoubleLong(),
 		new this.TagUnderlineShort(),
 		new this.TagUnderlineLong(),
+		new this.TagUnderlineDoubleShort(),
+		new this.TagUnderlineDoubleLong(),
 		new this.TagSup(),
 		new this.TagSub(),
 		new this.TagKbd(),
@@ -10412,7 +10448,7 @@ Renderer.recipe = class {
 				${entriesMeta.entryCooksNotes ? `<div class="w-100 ve-flex-col mt-4"><div class="ve-flex-vh-center bold mb-1 small-caps">Cook's Notes</div><div class="italic">${Renderer.get().render(entriesMeta.entryCooksNotes)}</div></div>` : ""}
 			</div>
 
-			<div class="pl-2 ve-flex-2 rd-recipes__wrp-instructions overflow-x-auto">
+			<div class="pl-2 ve-flex-2 rd-recipes__wrp-instructions ve-overflow-x-auto">
 				${Renderer.get().setFirstSection(true).render(entriesMeta.entryInstructions, 2)}
 			</div>
 		</div>`;
@@ -11621,7 +11657,7 @@ Renderer.hover = class {
 			});
 		const $wrpContent = $(`<div class="hwin__wrp-table"></div>`);
 		if (opts.height != null) $wrpContent.css("height", opts.height);
-		const $hovTitle = $(`<span class="window-title min-w-0 overflow-ellipsis" title="${`${opts.title || ""}`.qq()}">${opts.title || ""}</span>`);
+		const $hovTitle = $(`<span class="window-title min-w-0 ve-overflow-ellipsis" title="${`${opts.title || ""}`.qq()}">${opts.title || ""}</span>`);
 
 		const hoverWindow = {};
 		const hoverId = Renderer.hover._getNextId();

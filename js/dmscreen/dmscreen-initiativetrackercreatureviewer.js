@@ -158,7 +158,7 @@ export class InitiativeTrackerCreatureViewer extends BaseComponent {
 			}
 		})().then(null);
 
-		const $stg = $$`<div class="ve-flex-col w-100 h-100 min-h-0 overflow-y-auto">
+		const $stg = $$`<div class="ve-flex-col w-100 h-100 min-h-0 ve-overflow-y-auto">
 			${dispCreature}
 		</div>`;
 

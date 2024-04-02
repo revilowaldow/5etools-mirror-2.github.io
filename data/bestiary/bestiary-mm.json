@@ -47276,6 +47276,9 @@
 				"type": "internal",
 				"path": "bestiary/mule.mp3"
 			},
+			"traitTags": [
+				"Beast of Burden"
+			],
 			"damageTags": [
 				"B"
 			],

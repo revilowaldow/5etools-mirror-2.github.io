@@ -476,6 +476,7 @@
 				"path": "covers/Screen.webp"
 			},
 			"published": "2015-01-20",
+			"author": "Wizards RPG Team",
 			"contents": [
 				{
 					"name": "Tables"
@@ -695,6 +696,7 @@
 				"path": "covers/AL.webp"
 			},
 			"published": "2016-08-26",
+			"author": "Wizards RPG Team",
 			"contents": [
 				{
 					"name": "Faction Guide",
@@ -1168,6 +1170,7 @@
 				"path": "covers/GGR.webp"
 			},
 			"published": "2018-11-20",
+			"author": "Wizards RPG Team",
 			"contents": [
 				{
 					"name": "Welcome to Ravnica",
@@ -1303,6 +1306,7 @@
 				"path": "covers/SAC.webp"
 			},
 			"published": "2019-01-31",
+			"author": "Wizards RPG Team",
 			"contents": [
 				{
 					"name": "Sage Advice Compendium",
@@ -1418,6 +1422,7 @@
 				"path": "covers/AI.webp"
 			},
 			"published": "2019-06-18",
+			"author": "Wizards RPG Team",
 			"contents": [
 				{
 					"name": "Acquisitions Incorporated",
@@ -1560,6 +1565,7 @@
 				"path": "covers/RMR.webp"
 			},
 			"published": "2019-11-19",
+			"author": "Wizards RPG Team",
 			"contents": [
 				{
 					"name": "How to Play",
@@ -1669,6 +1675,7 @@
 				"path": "covers/ERLW.webp"
 			},
 			"published": "2019-11-19",
+			"author": "Wizards RPG Team",
 			"contents": [
 				{
 					"name": "Welcome to Eberron",
@@ -1933,6 +1940,7 @@
 				"path": "covers/EGW.webp"
 			},
 			"published": "2020-03-17",
+			"author": "Darrington Press",
 			"contents": [
 				{
 					"name": "Preface"
@@ -2238,6 +2246,7 @@
 				"path": "covers/MOT.webp"
 			},
 			"published": "2020-06-02",
+			"author": "Wizards RPG Team",
 			"contents": [
 				{
 					"name": "Welcome to Theros",
@@ -2366,6 +2375,7 @@
 				"path": "covers/ScreenDungeonKit.webp"
 			},
 			"published": "2020-09-21",
+			"author": "Wizards RPG Team",
 			"contents": [
 				{
 					"name": "Screen",
@@ -2566,6 +2576,7 @@
 				"path": "covers/ScreenWildernessKit.webp"
 			},
 			"published": "2020-11-17",
+			"author": "Wizards RPG Team",
 			"contents": [
 				{
 					"name": "Wilderness Journeys"
@@ -2744,6 +2755,7 @@
 				"path": "covers/VRGR.webp"
 			},
 			"published": "2021-05-18",
+			"author": "Wizards RPG Team",
 			"contents": [
 				{
 					"name": "Welcome to Ravenloft",
@@ -3388,6 +3400,7 @@
 				"path": "covers/DoD.webp"
 			},
 			"published": "2021-09-21",
+			"author": "Wizards RPG Team",
 			"contents": [
 				{
 					"name": "Feywild Overview",
@@ -4324,6 +4337,7 @@
 				"path": "covers/SAiS.webp"
 			},
 			"published": "2022-08-16",
+			"author": "Wizards RPG Team",
 			"contents": [
 				{
 					"name": "Introduction: Vast Oceans of Adventure",
@@ -4402,6 +4416,7 @@
 				"path": "covers/SAiS.webp"
 			},
 			"published": "2022-08-16",
+			"author": "Wizards RPG Team",
 			"contents": [
 				{
 					"name": "Introduction",
@@ -4427,6 +4442,7 @@
 				"path": "covers/ScreenSpelljammer.webp"
 			},
 			"published": "2022-08-16",
+			"author": "Wizards RPG Team",
 			"contents": [
 				{
 					"name": "Screen"
@@ -4458,8 +4474,12 @@
 			"id": "ToB1-2023",
 			"source": "ToB1-2023",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/ToB1-2023.webp",
+			"cover": {
+				"type": "internal",
+				"path": "covers/ToB1-2023.webp"
+			},
 			"published": "2023-05-31",
+			"author": "Kobold Press",
 			"contents": [
 				{
 					"name": "Introduction",
@@ -4620,6 +4640,7 @@
 				"path": "covers/MCV4EC.webp"
 			},
 			"published": "2023-09-21",
+			"author": "Wizards RPG Team",
 			"contents": [
 				{
 					"name": "Monstrous Compendium Vol. Four: Eldraine Creatures",
@@ -4645,6 +4666,7 @@
 				"path": "covers/PAitM.webp"
 			},
 			"published": "2023-10-07",
+			"author": "Wizards RPG Team",
 			"contents": [
 				{
 					"name": "Introduction: Multiversal Menagerie",
@@ -4700,6 +4722,7 @@
 				"path": "covers/PAitM.webp"
 			},
 			"published": "2023-10-07",
+			"author": "Wizards RPG Team",
 			"contents": [
 				{
 					"name": "Introduction: Infinite Doors to Adventure",
@@ -4768,6 +4791,7 @@
 				"path": "covers/AATM.webp"
 			},
 			"published": "2023-10-17",
+			"author": "Wizards RPG Team",
 			"contents": [
 				{
 					"name": "Adventure Atlas: The Mortuary",
@@ -4932,6 +4956,7 @@
 				"path": "covers/BMT.webp"
 			},
 			"published": "2023-11-14",
+			"author": "Wizards RPG Team",
 			"contents": [
 				{
 					"name": "Fool",
@@ -5625,6 +5650,7 @@
 				"path": "covers/DMTCRG.webp"
 			},
 			"published": "2023-11-14",
+			"author": "Wizards RPG Team",
 			"contents": [
 				{
 					"name": "The Deck of Many Things",

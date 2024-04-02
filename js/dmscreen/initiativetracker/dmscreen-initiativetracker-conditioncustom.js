@@ -70,7 +70,7 @@ export class InitiativeTrackerConditionCustomEdit extends BaseComponent {
 				this._state.conditionsCustom = [...this._state.conditionsCustom, InitiativeTrackerConditionUtil.getNewRowState()];
 			});
 
-		const $wrpRows = $(`<div class="ve-flex-col h-100 min-h-0 overflow-y-auto"></div>`);
+		const $wrpRows = $(`<div class="ve-flex-col h-100 min-h-0 ve-overflow-y-auto"></div>`);
 
 		const compRows = new _RenderableCollectionConditionsCustomEdit({comp: this, $wrpRows});
 		this._addHookBase("conditionsCustom", () => compRows.render())();

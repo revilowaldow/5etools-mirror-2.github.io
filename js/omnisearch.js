@@ -332,12 +332,22 @@ class Omnisearch {
 			.join(" ");
 	}
 
+	static _isFauxPage (r) {
+		return !!r.hx;
+	}
+
+	static getResultHref (r) {
+		const isFauxPage = this._isFauxPage(r);
+		if (isFauxPage) return null;
+		return r.c === Parser.CAT_ID_PAGE ? r.u : `${Renderer.get().baseUrl}${UrlUtil.categoryToPage(r.c)}#${r.uh || r.u}`;
+	}
+
 	static $getResultLink (r) {
-		const isFauxPage = !!r.hx;
+		const isFauxPage = this._isFauxPage(r);
 
 		if (isFauxPage) return $(`<span tabindex="0" ${r.h ? this._renderLink_getHoverString(r.c, r.u, r.s, {isFauxPage}) : ""} class="omni__lnk-name help">${r.cf}: ${r.n}</span>`);
 
-		const href = r.c === Parser.CAT_ID_PAGE ? r.u : `${Renderer.get().baseUrl}${UrlUtil.categoryToPage(r.c)}#${r.uh || r.u}`;
+		const href = this.getResultHref(r);
 		return $(`<a href="${href}" ${r.h ? this._renderLink_getHoverString(r.c, r.u, r.s, {isFauxPage}) : ""} class="omni__lnk-name">${r.cf}: ${r.n}</a>`);
 	}
 

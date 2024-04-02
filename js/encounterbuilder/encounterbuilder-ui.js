@@ -334,7 +334,7 @@ export class EncounterBuilderUi extends BaseComponent {
 
 		const $wrpRows = $(`<div class="ve-flex-col"></div>`);
 
-		const $stg = $$`<div class="w-70 overflow-x-auto ve-flex-col">
+		const $stg = $$`<div class="w-70 ve-overflow-x-auto ve-flex-col">
 			<div class="ve-flex-h-center mb-2 bb-1p small-caps ve-self-flex-start">
 				<div class="w-100p mr-1 h-ipt-xs no-shrink">Name</div>
 				<div class="w-40p ve-text-center mr-1 h-ipt-xs no-shrink">Level</div>

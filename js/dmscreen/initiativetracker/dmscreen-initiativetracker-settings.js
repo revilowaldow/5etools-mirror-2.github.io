@@ -191,7 +191,7 @@ export class InitiativeTrackerSettings extends BaseComponent {
 	}
 
 	_pGetShowModalResults_renderSection_additionalCols_body ({$modalInner}) {
-		const $wrpRows = $(`<div class="pr-1 h-120p ve-flex-col overflow-y-auto relative"></div>`).appendTo($modalInner);
+		const $wrpRows = $(`<div class="pr-1 h-120p ve-flex-col ve-overflow-y-auto relative"></div>`).appendTo($modalInner);
 		this._addHookBase("isStatsAddColumns", () => $wrpRows.toggleVe(this._state.isStatsAddColumns))();
 
 		const renderableCollectionStatsCols = new _RenderableCollectionStatsCols(

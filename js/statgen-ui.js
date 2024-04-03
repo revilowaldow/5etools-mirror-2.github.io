@@ -2325,10 +2325,10 @@ StatGenUi.CompAsi = class extends BaseComponent {
 	}
 
 	render ($wrpAsi) {
-		const $wrpRowsAsi = $(`<div class="ve-flex-col w-100 overflow-y-auto"></div>`);
-		const $wrpRowsRace = $(`<div class="ve-flex-col w-100 overflow-y-auto"></div>`);
-		const $wrpRowsBackground = $(`<div class="ve-flex-col w-100 overflow-y-auto"></div>`);
-		const $wrpRowsCustom = $(`<div class="ve-flex-col w-100 overflow-y-auto"></div>`);
+		const $wrpRowsAsi = $(`<div class="ve-flex-col w-100 ve-overflow-y-auto"></div>`);
+		const $wrpRowsRace = $(`<div class="ve-flex-col w-100 ve-overflow-y-auto"></div>`);
+		const $wrpRowsBackground = $(`<div class="ve-flex-col w-100 ve-overflow-y-auto"></div>`);
+		const $wrpRowsCustom = $(`<div class="ve-flex-col w-100 ve-overflow-y-auto"></div>`);
 
 		this._render_renderAsiFeatSection("common_cntAsi", "ability", $wrpRowsAsi);
 		this._render_renderAsiFeatSection("common_cntFeatsCustom", "custom", $wrpRowsCustom);

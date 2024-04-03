@@ -223,6 +223,8 @@ class RenderDecks {
 		const $wrpInfo = $$`<div class="stats stats--book decks-draw__wrp-desc mobile__hidden px-2 ve-text-center mb-4">${ptText}</div>`
 			.click(evt => evt.stopPropagation());
 
+		Renderer.dice.bindOnclickListener($wrpInfo[0]);
+
 		const $btnFlip = imgBack
 			? $(`<button class="btn btn-default btn-xs px-3" title="Flip Card"><i class="fas fa-rotate"></i> Flip</button>`)
 				.click(evt => {

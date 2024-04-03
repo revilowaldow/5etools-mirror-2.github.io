@@ -1605,7 +1605,7 @@ class Panel {
 		this.set$ContentTab(
 			PANEL_TYP_TEXTBOX,
 			null,
-			$(`<div class="panel-content-wrapper-inner overflow-y-hidden"/>`).append(NoteBox.make$Notebox(this.board, content)),
+			$(`<div class="panel-content-wrapper-inner ve-overflow-y-hidden"/>`).append(NoteBox.make$Notebox(this.board, content)),
 			title,
 			true,
 		);
@@ -2284,7 +2284,7 @@ class Panel {
 			if (!this.board.getConfirmTabClose() || (this.board.getConfirmTabClose() && confirm(`Are you sure you want to close tab "${this.tabDatas[ix].title}"?`))) this.doCloseTab(ix);
 		};
 
-		const $btnSelTab = $(`<span class="btn btn-default content-tab ve-flex ${tabCanRename ? "content-tab-can-rename" : ""}"><span class="content-tab-title overflow-ellipsis" title="${title}">${title}</span></span>`)
+		const $btnSelTab = $(`<span class="btn btn-default content-tab ve-flex ${tabCanRename ? "content-tab-can-rename" : ""}"><span class="content-tab-title ve-overflow-ellipsis" title="${title}">${title}</span></span>`)
 			.on("mousedown", (evt) => {
 				if (evt.which === 1) {
 					this.setActiveTab(ix);
@@ -3259,7 +3259,7 @@ class AddMenuSpecialTab extends AddMenuTab {
 
 	render () {
 		if (!this.$tab) {
-			const $tab = $(`<div class="ui-search__wrp-output underline-tabs overflow-y-auto pr-1" id="${this.tabId}"/>`);
+			const $tab = $(`<div class="ui-search__wrp-output underline-tabs ve-overflow-y-auto pr-1" id="${this.tabId}"/>`);
 
 			const $wrpRoller = $(`<div class="ui-modal__row"><span>Dice Roller <i class="text-muted">(pins the existing dice roller to a panel)</i></span></div>`).appendTo($tab);
 			const $btnRoller = $(`<button class="btn btn-primary btn-sm">Pin</button>`).appendTo($wrpRoller);
@@ -3972,8 +3972,8 @@ class AdventureOrBookView {
 	}
 
 	$getEle () {
-		this._$titlePrev = $(`<div class="dm-book__controls-title overflow-ellipsis text-right"/>`);
-		this._$titleNext = $(`<div class="dm-book__controls-title overflow-ellipsis"/>`);
+		this._$titlePrev = $(`<div class="dm-book__controls-title ve-overflow-ellipsis text-right"/>`);
+		this._$titleNext = $(`<div class="dm-book__controls-title ve-overflow-ellipsis"/>`);
 
 		const $btnPrev = $(`<button class="btn btn-xs btn-default mr-2" title="Previous Chapter"><span class="glyphicon glyphicon-chevron-left"/></button>`)
 			.click(() => this._handleButtonClick(-1));

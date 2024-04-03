@@ -62,7 +62,7 @@ export class RenderableCollectionRowDataBase extends RenderableCollectionAsyncGe
 	/* -------------------------------------------- */
 
 	_$getWrpRow () {
-		return $(`<div class="dm-init__row overflow-hidden pr-1"></div>`);
+		return $(`<div class="dm-init__row ve-overflow-hidden pr-1"></div>`);
 	}
 
 	async _pPopulateRow ({comp, $wrpRow, entity}) {

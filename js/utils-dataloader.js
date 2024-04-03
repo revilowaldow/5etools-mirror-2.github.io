@@ -17,6 +17,15 @@ class _DataLoaderConst {
 	static SOURCE_BREW_ALL_CURRENT = Symbol("SOURCE_BREW_ALL_CURRENT");
 
 	static ENTITY_NULL = Symbol("ENTITY_NULL");
+
+	static _SOURCES_ALL_NON_SITE = new Set([
+		this.SOURCE_PRERELEASE_ALL_CURRENT,
+		this.SOURCE_BREW_ALL_CURRENT,
+	]);
+
+	static isSourceAllNonSite (source) {
+		return this._SOURCES_ALL_NON_SITE.has(source);
+	}
 }
 
 class _DataLoaderInternalUtil {
@@ -638,6 +647,7 @@ class _DataTypeLoader {
 	async _pPrePopulate ({data, isPrerelease, isBrew}) { /* Implement as required */ }
 
 	async pGetSiteData ({pageClean, sourceClean}) {
+		if (_DataLoaderConst.isSourceAllNonSite(sourceClean)) return {};
 		const propCache = this._getSiteIdent({pageClean, sourceClean});
 		this._cache_pSiteData[propCache] = this._cache_pSiteData[propCache] || this._pGetSiteData({pageClean, sourceClean});
 		return this._cache_pSiteData[propCache];

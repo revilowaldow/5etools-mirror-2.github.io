@@ -1,11 +1,11 @@
 {
 	"data": [
 		{
-		    "type": "section",
-		    "name": "Introduction",
-		    "entries": [
-		        "Coming soon! In the meantime, check out the {@adventure preview adventure|DitLCoT}."
-		    ]
+			"type": "section",
+			"name": "Introduction",
+			"entries": [
+				"Coming soon! In the meantime, check out the {@adventure preview adventure|DitLCoT}."
+			]
 		}
 	]
 }

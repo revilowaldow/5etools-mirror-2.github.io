@@ -194,7 +194,7 @@ class MakeCards extends BaseComponent {
 		</div>`.appendTo($wrpContainer);
 
 		const $wrpList = $(`<div class="w-100 h-100"/>`);
-		$$`<div class="ve-flex-col h-100 w-100 overflow-y-auto mt-2 overflow-x-hidden">${$wrpList}</div>`.appendTo($wrpContainer);
+		$$`<div class="ve-flex-col h-100 w-100 ve-overflow-y-auto mt-2 ve-overflow-x-hidden">${$wrpList}</div>`.appendTo($wrpContainer);
 
 		this._list = new List({$iptSearch, $wrpList, isUseJquery: true});
 		this._list.init();

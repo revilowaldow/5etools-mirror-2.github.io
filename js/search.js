@@ -13,6 +13,23 @@ class SearchPage {
 		this._render();
 	}
 
+	/* -------------------------------------------- */
+
+	static _PARAM_QUERY = "q";
+	static _PARAM_LUCKY = "lucky";
+
+	static _getSearchParams () {
+		const params = new URLSearchParams(location.search);
+		return Object.fromEntries(params);
+	}
+
+	static _setSearchParams (obj) {
+		const params = new URLSearchParams(obj);
+		location.search = params.toString();
+	}
+
+	/* -------------------------------------------- */
+
 	static _render_$getBtnToggleFilter (
 		{
 			propOmnisearch,
@@ -43,11 +60,13 @@ class SearchPage {
 				if (evt.key !== "Enter") return;
 				$btnSearch.click();
 			})
-			.val(decodeURIComponent(location.search.slice(1).replace(/\+/g, " ")));
+			.val(this._getSearchParams()[this._PARAM_QUERY]);
 
 		const $btnSearch = $(`<button class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>`)
 			.click(() => {
-				location.search = encodeURIComponent($iptSearch.val().trim().toLowerCase());
+				this._setSearchParams({
+					[this._PARAM_QUERY]: $iptSearch.val().trim().toLowerCase(),
+				});
 			});
 
 		const $btnHelp = $(`<button class="btn btn-default mr-2 mobile__hidden" title="Help"><span class="glyphicon glyphicon-info-sign"></span></button>`)
@@ -146,17 +165,25 @@ class SearchPage {
 		}
 		SearchPage._rowMetas = [];
 
-		if (!location.search.slice(1)) {
+		const params = this._getSearchParams();
+
+		if (!params[this._PARAM_QUERY]) {
 			SearchPage._$wrpResults.empty().append(this._getWrpResult_message("Enter a search to view results"));
 			return;
 		}
 
-		Omnisearch.pGetResults(decodeURIComponent(location.search.slice(1).replace(/\+/g, " ")))
+		Omnisearch.pGetResults(params[this._PARAM_QUERY])
 			.then(results => {
 				SearchPage._$wrpResults.empty();
 
 				if (!results.length) {
 					SearchPage._$wrpResults.append(this._getWrpResult_message("No results found."));
+					return;
+				}
+
+				if (this._PARAM_LUCKY in params) {
+					const [result] = results;
+					window.location = `${Renderer.get().baseUrl}${Omnisearch.getResultHref(result.doc)}`;
 					return;
 				}
 

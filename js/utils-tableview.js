@@ -68,7 +68,7 @@ class UtilsTableview {
 	}
 
 	static _getTableHtml ({state, entities, colTransforms, sorter}) {
-		let stack = `<div class="overflow-y-auto w-100 h-100 ve-flex-col overflow-x-auto">
+		let stack = `<div class="ve-overflow-y-auto w-100 h-100 ve-flex-col ve-overflow-x-auto">
 			<table class="w-100 table-striped stats stats--book stats--book-large min-w-100 w-initial">
 				<thead>
 					<tr>${Object.values(colTransforms).map((c, i) => `<th data-col="${i}" class="px-2" colspan="${c.flex || 1}">${c.name}</th>`).join("")}</tr>
@@ -100,5 +100,6 @@ class UtilsTableview {
 	// region Default/generic transforms
 	static COL_TRANSFORM_NAME = {name: "Name"};
 	static COL_TRANSFORM_SOURCE = {name: "Source", transform: (it) => `<span class="${Parser.sourceJsonToColor(it)}" title="${Parser.sourceJsonToFull(it)}" ${Parser.sourceJsonToStyle(it)}>${Parser.sourceJsonToAbv(it)}</span>`};
+	static COL_TRANSFORM_PAGE = {name: "Page"};
 	// endregion
 }

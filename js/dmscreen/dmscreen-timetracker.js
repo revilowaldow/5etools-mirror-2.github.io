@@ -666,9 +666,9 @@ class TimeTrackerRoot extends TimeTrackerBase {
 	render ($parent) {
 		$parent.empty();
 
-		const $wrpClock = $(`<div class="ve-flex-col w-100 h-100 overflow-y-auto">`);
-		const $wrpCalendar = $(`<div class="ve-flex-col w-100 h-100 overflow-y-auto ve-flex-h-center">`);
-		const $wrpSettings = $(`<div class="ve-flex-col w-100 h-100 overflow-y-auto">`);
+		const $wrpClock = $(`<div class="ve-flex-col w-100 h-100 ve-overflow-y-auto">`);
+		const $wrpCalendar = $(`<div class="ve-flex-col w-100 h-100 ve-overflow-y-auto ve-flex-h-center">`);
+		const $wrpSettings = $(`<div class="ve-flex-col w-100 h-100 ve-overflow-y-auto">`);
 
 		const pod = this.getPod();
 
@@ -1771,7 +1771,7 @@ class TimeTrackerRoot_Calendar extends TimeTrackerComponent {
 			},
 		);
 
-		const $wrpCalendar = $(`<div class="overflow-y-auto smooth-scroll"/>`);
+		const $wrpCalendar = $(`<div class="ve-overflow-y-auto smooth-scroll"/>`);
 
 		const hookCalendar = (prop) => {
 			const timeInfo = getTimeInfo();
@@ -2239,7 +2239,7 @@ class TimeTrackerRoot_Calendar extends TimeTrackerComponent {
 		this._parent.addHook("moons", hookMoons);
 		hookMoons();
 
-		const $wrpEvents = $(`<div class="ve-flex-col w-100 overflow-y-auto dm-time__day-entry-wrapper"/>`);
+		const $wrpEvents = $(`<div class="ve-flex-col w-100 ve-overflow-y-auto dm-time__day-entry-wrapper"/>`);
 		const hookEvents = () => {
 			const todayEvents = getEvents(year, eventDay);
 			$wrpEvents.empty();
@@ -2260,7 +2260,7 @@ class TimeTrackerRoot_Calendar extends TimeTrackerComponent {
 		this._parent.addHook("events", hookEvents);
 		hookEvents();
 
-		const $wrpEncounters = $(`<div class="ve-flex-col w-100 overflow-y-auto dm-time__day-entry-wrapper"/>`);
+		const $wrpEncounters = $(`<div class="ve-flex-col w-100 ve-overflow-y-auto dm-time__day-entry-wrapper"/>`);
 		const hookEncounters = async () => {
 			await this._pLock("encounters");
 

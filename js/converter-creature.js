@@ -1432,7 +1432,17 @@ class CreatureParser extends BaseParser {
 		const spellcasting = [];
 		stats[prop] = stats[prop].map(ent => {
 			if (!ent.name || !ent.name.toLowerCase().includes("spellcasting")) return ent;
-			const parsed = SpellcastingTraitConvert.tryParseSpellcasting(ent, {isMarkdown, cbErr: options.cbErr, displayAs: prop, actions: stats.action, reactions: stats.reaction});
+			const parsed = SpellcastingTraitConvert.tryParseSpellcasting(
+				ent,
+				{
+					isMarkdown,
+					cbMan: (wrn) => options.cbWarning(`${stats.name ? `(${stats.name}) ` : ""}${wrn}`),
+					cbErr: (err) => options.cbWarning(`${stats.name ? `(${stats.name}) ` : ""}${err}`),
+					displayAs: prop,
+					actions: stats.action,
+					reactions: stats.reaction,
+				},
+			);
 			if (!parsed) return ent;
 			spellcasting.push(parsed);
 			return null;

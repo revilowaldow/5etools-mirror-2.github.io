@@ -8210,10 +8210,18 @@
 					"name": "Spellcasting (3/Day; Humanoid Form Only)",
 					"type": "spellcasting",
 					"headerEntries": [
-						"The bone collective casts the animate dead spell as an action, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 14})."
+						"The bone collective casts the {@spell animate dead} spell as an action, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 14})."
 					],
+					"daily": {
+						"3e": [
+							"{@spell animate dead}"
+						]
+					},
 					"ability": "cha",
-					"displayAs": "action"
+					"displayAs": "action",
+					"hidden": [
+						"daily"
+					]
 				}
 			],
 			"trait": [
@@ -50583,10 +50591,18 @@
 					"name": "Spellcasting (3/Day)",
 					"type": "spellcasting",
 					"headerEntries": [
-						"The stryx casts the comprehend languages spell, requiring no material components and using Wisdom as the spellcasting ability."
+						"The stryx casts the {@spell comprehend languages} spell, requiring no material components and using Wisdom as the spellcasting ability."
 					],
+					"daily": {
+						"3e": [
+							"{@spell comprehend languages}"
+						]
+					},
 					"ability": "wis",
-					"displayAs": "action"
+					"displayAs": "action",
+					"hidden": [
+						"daily"
+					]
 				}
 			],
 			"trait": [
@@ -56667,16 +56683,13 @@
 				"Common"
 			],
 			"cr": "6",
-			"spellcasting": [
+			"trait": [
 				{
 					"name": "Spellcasting Animosity",
-					"type": "spellcasting",
-					"headerEntries": [
+					"entries": [
 						"If the white ape sees a creature cast a spell, the ape has advantage on attack rolls against that creature on the ape's next turn."
 					]
-				}
-			],
-			"trait": [
+				},
 				{
 					"name": "Arcane Wasting",
 					"entries": [
@@ -56736,9 +56749,6 @@
 			"damageTags": [
 				"B",
 				"P"
-			],
-			"spellcastingTags": [
-				"O"
 			],
 			"miscTags": [
 				"AOE",

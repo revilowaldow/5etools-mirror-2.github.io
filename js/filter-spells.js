@@ -214,6 +214,7 @@ class PageFilterSpells extends PageFilter {
 			case Parser.SP_TM_ROUND: multiplier = 6; break;
 			case Parser.SP_TM_MINS: multiplier = 60; break;
 			case Parser.SP_TM_HRS: multiplier = 3600; break;
+			case Parser.SP_TM_SPECIAL: multiplier = 1_000_000; break; // Arbitrary large number
 		}
 		if (time.length > 1) offset += 0.5;
 		return (multiplier * firstTime.number) + offset;
@@ -415,6 +416,7 @@ class PageFilterSpells extends PageFilter {
 				Parser.SP_TM_ROUND,
 				Parser.SP_TM_MINS,
 				Parser.SP_TM_HRS,
+				Parser.SP_TM_SPECIAL,
 			],
 			displayFn: Parser.spTimeUnitToFull,
 			itemSortFn: null,

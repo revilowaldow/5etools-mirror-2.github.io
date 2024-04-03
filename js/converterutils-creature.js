@@ -645,7 +645,130 @@ class AlignmentConvert {
 globalThis.AlignmentConvert = AlignmentConvert;
 
 class TraitActionTag {
-	static _doTag ({m, cbMan, prop, outProp}) {
+	static _TAGS = { // true = map directly; string = map to this string
+		trait: {
+			"turn immunity": "Turn Immunity",
+			"brute": "Brute",
+			"antimagic susceptibility": "Antimagic Susceptibility",
+			"sneak attack": "Sneak Attack",
+			"reckless": "Reckless",
+			"web sense": "Web Sense",
+			"flyby": "Flyby",
+			"pounce": "Pounce",
+			"water breathing": "Water Breathing",
+
+			"turn resistance": "Turn Resistance",
+			"turn defiance": "Turn Resistance",
+			"turning defiance": "Turn Resistance",
+			"turn resistance aura": "Turn Resistance",
+			"undead fortitude": "Undead Fortitude",
+
+			"aggressive": "Aggressive",
+			"illumination": "Illumination",
+			"rampage": "Rampage",
+			"rejuvenation": "Rejuvenation",
+			"web walker": "Web Walker",
+			"incorporeal movement": "Incorporeal Movement",
+			"incorporeal passage": "Incorporeal Movement",
+
+			"keen hearing and smell": "Keen Senses",
+			"keen sight and smell": "Keen Senses",
+			"keen hearing and sight": "Keen Senses",
+			"keen hearing": "Keen Senses",
+			"keen smell": "Keen Senses",
+			"keen senses": "Keen Senses",
+
+			"hold breath": "Hold Breath",
+
+			"charge": "Charge",
+
+			"fey ancestry": "Fey Ancestry",
+
+			"siege monster": "Siege Monster",
+
+			"pack tactics": "Pack Tactics",
+
+			"regeneration": "Regeneration",
+
+			"shapechanger": "Shapechanger",
+
+			"false appearance": "False Appearance",
+
+			"spider climb": "Spider Climb",
+
+			"sunlight sensitivity": "Sunlight Sensitivity",
+			"sunlight hypersensitivity": "Sunlight Sensitivity",
+			"light sensitivity": "Light Sensitivity",
+			"vampire weaknesses": "Sunlight Sensitivity",
+
+			"amphibious": "Amphibious",
+
+			"legendary resistance": "Legendary Resistances",
+
+			"magic weapon": "Magic Weapons",
+			"magic weapons": "Magic Weapons",
+
+			"magic resistance": "Magic Resistance",
+
+			"spell immunity": "Spell Immunity",
+
+			"ambush": "Ambusher",
+			"ambusher": "Ambusher",
+
+			"amorphous": "Amorphous",
+			"amorphous form": "Amorphous",
+
+			"death burst": "Death Burst",
+			"death throes": "Death Burst",
+
+			"devil's sight": "Devil's Sight",
+			"devil sight": "Devil's Sight",
+
+			"immutable form": "Immutable Form",
+
+			"tree stride": "Tree Stride",
+
+			"unusual nature": "Unusual Nature",
+
+			"tunneler": "Tunneler",
+
+			"beast of burden": "Beast of Burden",
+		},
+		action: {
+			"multiattack": "Multiattack",
+			"frightful presence": "Frightful Presence",
+			"teleport": "Teleport",
+			"swallow": "Swallow",
+			"tentacle": "Tentacles",
+			"tentacles": "Tentacles",
+			"change shape": "Shapechanger",
+		},
+		reaction: {
+			"parry": "Parry",
+		},
+		bonus: {
+			"change shape": "Shapechanger",
+		},
+		legendary: {
+			// unused
+		},
+		mythic: {
+			// unused
+		},
+	};
+
+	static _TAGS_DEEP = {
+		action: {
+			"Swallow": strEntries => /\bswallowed\b/i.test(strEntries),
+		},
+	};
+
+	static _doAdd ({tags, tag, allowlist}) {
+		if (allowlist && !allowlist.has(tag)) return;
+		tags.add(tag);
+	}
+
+	static _doTag ({m, cbMan, prop, tags, allowlist}) {
 		if (!m[prop]) return;
 
 		m[prop]
@@ -658,36 +781,36 @@ class TraitActionTag {
 					.replace(/\([^)]+\)/g, "") // Remove parentheses
 					.trim();
 
-				const mapped = TraitActionTag.tags[prop][cleanName];
+				const mapped = TraitActionTag._TAGS[prop][cleanName];
 				if (mapped) {
-					if (mapped === true) return m[outProp].add(t.name);
-					return m[outProp].add(mapped);
+					if (mapped === true) return this._doAdd({tags, tag: t.name, allowlist});
+					return this._doAdd({tags, tag: mapped, allowlist});
 				}
 
 				if (this._isTraits(prop)) {
-					if (cleanName.startsWith("keen ")) return m[outProp].add("Keen Senses");
-					if (cleanName.endsWith(" absorption")) return m[outProp].add("Damage Absorption");
+					if (cleanName.startsWith("keen ")) return this._doAdd({tags, tag: "Keen Senses", allowlist});
+					if (cleanName.endsWith(" absorption")) return this._doAdd({tags, tag: "Damage Absorption", allowlist});
 				}
 
 				if (this._isActions(prop)) {
-					if (/\bbreath\b/.test(cleanName)) return m[outProp].add("Breath Weapon");
+					if (/\bbreath\b/.test(cleanName)) return this._doAdd({tags, tag: "Breath Weapon", allowlist});
 				}
 
-				if (cbMan) cbMan(prop, outProp, cleanName);
+				if (cbMan) cbMan(prop, tags, cleanName);
 			});
 	}
 
-	static _doTagDeep ({m, prop, outProp}) {
-		if (!TraitActionTag.tagsDeep[prop]) return;
+	static _doTagDeep ({m, prop, tags, allowlist}) {
+		if (!TraitActionTag._TAGS_DEEP[prop]) return;
 		if (!m[prop]) return;
 
 		m[prop].forEach(t => {
 			if (!t.entries) return;
 			const strEntries = JSON.stringify(t.entries);
 
-			Object.entries(TraitActionTag.tagsDeep[prop])
+			Object.entries(TraitActionTag._TAGS_DEEP[prop])
 				.forEach(([tagName, fnShouldTag]) => {
-					if (fnShouldTag(strEntries)) m[outProp].add(tagName);
+					if (fnShouldTag(strEntries)) this._doAdd({tags, tag: tagName, allowlist});
 				});
 		});
 	}
@@ -695,138 +818,21 @@ class TraitActionTag {
 	static _isTraits (prop) { return prop === "trait"; }
 	static _isActions (prop) { return prop === "action"; }
 
-	static tryRun (m, cbMan) {
-		m.traitTags = new Set(m.traitTags || []);
-		m.actionTags = new Set(m.actionTags || []);
+	static tryRun (m, {cbMan, allowlistTraitTags, allowlistActionTags} = {}) {
+		const traitTags = new Set(m.traitTags || []);
+		const actionTags = new Set(m.actionTags || []);
 
-		this._doTag({m, cbMan, prop: "trait", outProp: "traitTags"});
-		this._doTag({m, cbMan, prop: "action", outProp: "actionTags"});
-		this._doTag({m, cbMan, prop: "reaction", outProp: "actionTags"});
-		this._doTag({m, cbMan, prop: "bonus", outProp: "actionTags"});
+		this._doTag({m, cbMan, prop: "trait", tags: traitTags, allowlist: allowlistTraitTags});
+		this._doTag({m, cbMan, prop: "action", tags: actionTags, allowlist: allowlistActionTags});
+		this._doTag({m, cbMan, prop: "reaction", tags: actionTags, allowlist: allowlistActionTags});
+		this._doTag({m, cbMan, prop: "bonus", tags: actionTags, allowlist: allowlistActionTags});
 
-		this._doTagDeep({m, prop: "action", outProp: "actionTags"});
+		this._doTagDeep({m, prop: "action", tags: actionTags, allowlist: allowlistActionTags});
 
-		if (!m.traitTags.size) delete m.traitTags;
-		else m.traitTags = [...m.traitTags].sort(SortUtil.ascSortLower);
-
-		if (!m.actionTags.size) delete m.actionTags;
-		else m.actionTags = [...m.actionTags].sort(SortUtil.ascSortLower);
+		if (traitTags.size) m.traitTags = [...traitTags].sort(SortUtil.ascSortLower);
+		if (actionTags.size) m.actionTags = [...actionTags].sort(SortUtil.ascSortLower);
 	}
 }
-TraitActionTag.tags = { // true = map directly; string = map to this string
-	trait: {
-		"turn immunity": "Turn Immunity",
-		"brute": "Brute",
-		"antimagic susceptibility": "Antimagic Susceptibility",
-		"sneak attack": "Sneak Attack",
-		"reckless": "Reckless",
-		"web sense": "Web Sense",
-		"flyby": "Flyby",
-		"pounce": "Pounce",
-		"water breathing": "Water Breathing",
-
-		"turn resistance": "Turn Resistance",
-		"turn defiance": "Turn Resistance",
-		"turning defiance": "Turn Resistance",
-		"turn resistance aura": "Turn Resistance",
-		"undead fortitude": "Undead Fortitude",
-
-		"aggressive": "Aggressive",
-		"illumination": "Illumination",
-		"rampage": "Rampage",
-		"rejuvenation": "Rejuvenation",
-		"web walker": "Web Walker",
-		"incorporeal movement": "Incorporeal Movement",
-		"incorporeal passage": "Incorporeal Movement",
-
-		"keen hearing and smell": "Keen Senses",
-		"keen sight and smell": "Keen Senses",
-		"keen hearing and sight": "Keen Senses",
-		"keen hearing": "Keen Senses",
-		"keen smell": "Keen Senses",
-		"keen senses": "Keen Senses",
-
-		"hold breath": "Hold Breath",
-
-		"charge": "Charge",
-
-		"fey ancestry": "Fey Ancestry",
-
-		"siege monster": "Siege Monster",
-
-		"pack tactics": "Pack Tactics",
-
-		"regeneration": "Regeneration",
-
-		"shapechanger": "Shapechanger",
-
-		"false appearance": "False Appearance",
-
-		"spider climb": "Spider Climb",
-
-		"sunlight sensitivity": "Sunlight Sensitivity",
-		"sunlight hypersensitivity": "Sunlight Sensitivity",
-		"light sensitivity": "Light Sensitivity",
-		"vampire weaknesses": "Sunlight Sensitivity",
-
-		"amphibious": "Amphibious",
-
-		"legendary resistance": "Legendary Resistances",
-
-		"magic weapon": "Magic Weapons",
-		"magic weapons": "Magic Weapons",
-
-		"magic resistance": "Magic Resistance",
-
-		"spell immunity": "Spell Immunity",
-
-		"ambush": "Ambusher",
-		"ambusher": "Ambusher",
-
-		"amorphous": "Amorphous",
-		"amorphous form": "Amorphous",
-
-		"death burst": "Death Burst",
-		"death throes": "Death Burst",
-
-		"devil's sight": "Devil's Sight",
-		"devil sight": "Devil's Sight",
-
-		"immutable form": "Immutable Form",
-
-		"tree stride": "Tree Stride",
-
-		"unusual nature": "Unusual Nature",
-
-		"tunneler": "Tunneler",
-	},
-	action: {
-		"multiattack": "Multiattack",
-		"frightful presence": "Frightful Presence",
-		"teleport": "Teleport",
-		"swallow": "Swallow",
-		"tentacle": "Tentacles",
-		"tentacles": "Tentacles",
-		"change shape": "Shapechanger",
-	},
-	reaction: {
-		"parry": "Parry",
-	},
-	bonus: {
-		"change shape": "Shapechanger",
-	},
-	legendary: {
-		// unused
-	},
-	mythic: {
-		// unused
-	},
-};
-TraitActionTag.tagsDeep = {
-	action: {
-		"Swallow": strEntries => /\bswallowed\b/i.test(strEntries),
-	},
-};
 
 globalThis.TraitActionTag = TraitActionTag;
 
@@ -1373,85 +1379,93 @@ class SpellcastingTraitConvert {
 		});
 	}
 
-	static tryParseSpellcasting (ent, {isMarkdown, cbErr, displayAs, actions, reactions}) {
+	static tryParseSpellcasting (ent, {isMarkdown, cbMan, cbErr, displayAs, actions, reactions}) {
 		try {
-			return this._parseSpellcasting({ent, isMarkdown, displayAs, actions, reactions});
+			return this._parseSpellcasting({ent, isMarkdown, cbMan, displayAs, actions, reactions});
 		} catch (e) {
 			cbErr && cbErr(`Failed to parse spellcasting: ${e.message}`);
 			return null;
 		}
 	}
 
-	static _parseSpellcasting ({ent, isMarkdown, displayAs, actions, reactions}) {
-		let hasAnyHeader = false;
+	static _parseSpellcasting ({ent, isMarkdown, cbMan, displayAs, actions, reactions}) {
 		const spellcastingEntry = {
 			"name": ent.name,
 			"type": "spellcasting",
-			"headerEntries": [this._parseToHit(ent.entries[0])],
+			"headerEntries": [],
 		};
-		ent.entries.forEach((thisLine, i) => {
-			thisLine = thisLine.replace(/,\s*\*/g, ",*"); // put asterisks on the correct side of commas
-			if (i === 0) return;
 
-			const perDurations = [
-				{re: /\/rest/i, prop: "rest"},
-				{re: /\/day/i, prop: "daily"},
-				{re: /\/week/i, prop: "weekly"},
-				{re: /\/month/i, prop: "monthly"},
-				{re: /\/yeark/i, prop: "yearly"},
-			];
+		const headerEntry = this._getMutHeaderEntries({ent, cbMan, spellcastingEntry});
+		spellcastingEntry.headerEntries.push(headerEntry);
 
-			const perDuration = perDurations.find(({re}) => re.test(thisLine));
+		let hasAnyHeader = false;
+		ent.entries
+			.slice(1)
+			.forEach(line => {
+				line = line.replace(/,\s*\*/g, ",*"); // put asterisks on the correct side of commas
 
-			if (perDuration) {
-				hasAnyHeader = true;
-				let property = thisLine.substring(0, 1) + (/ each(?::| - )/.test(thisLine) ? "e" : "");
-				const value = this._getParsedSpells({thisLine, isMarkdown});
-				if (!spellcastingEntry[perDuration.prop]) spellcastingEntry[perDuration.prop] = {};
-				spellcastingEntry[perDuration.prop][property] = value;
-			} else if (/^Constant(?::| -) /.test(thisLine)) {
-				hasAnyHeader = true;
-				spellcastingEntry.constant = this._getParsedSpells({thisLine, isMarkdown});
-			} else if (/^At[- ][Ww]ill(?::| -) /.test(thisLine)) {
-				hasAnyHeader = true;
-				spellcastingEntry.will = this._getParsedSpells({thisLine, isMarkdown});
-			} else if (thisLine.includes("Cantrip")) {
-				hasAnyHeader = true;
-				const value = this._getParsedSpells({thisLine, isMarkdown});
-				if (!spellcastingEntry.spells) spellcastingEntry.spells = {"0": {"spells": []}};
-				spellcastingEntry.spells["0"].spells = value;
-			} else if (/[- ][Ll]evel/.test(thisLine) && /(?::| -) /.test(thisLine)) {
-				hasAnyHeader = true;
-				let property = thisLine.substring(0, 1);
-				const allSpells = this._getParsedSpells({thisLine, isMarkdown});
-				spellcastingEntry.spells = spellcastingEntry.spells || {};
+				const usesMeta = this._getUsesMeta({line, isMarkdown});
+				if (usesMeta) {
+					hasAnyHeader = true;
 
-				const out = {};
-				if (thisLine.includes(" slot")) {
-					const mWarlock = /^(\d)..(?:[- ][Ll]evel)?-(\d)..[- ][Ll]evel \((\d) (\d)..[- ][Ll]evel slots?\)/.exec(thisLine);
-					if (mWarlock) {
-						out.lower = parseInt(mWarlock[1]);
-						out.slots = parseInt(mWarlock[3]);
-						property = mWarlock[4];
-					} else {
-						const mSlots = /\((\d) slots?\)/.exec(thisLine);
-						if (!mSlots) throw new Error(`Could not find slot count!`);
-						out.slots = parseInt(mSlots[1]);
+					const value = this._getParsedSpells({line: usesMeta.lineRemaining});
+					MiscUtil.getOrSet(spellcastingEntry, usesMeta.prop, usesMeta.propPer, value);
+
+					return;
+				}
+
+				if (/^Constant(?::| -) /.test(line)) {
+					hasAnyHeader = true;
+					spellcastingEntry.constant = this._getParsedSpells({line, isMarkdown});
+					return;
+				}
+
+				if (/^At[- ][Ww]ill(?::| -) /.test(line)) {
+					hasAnyHeader = true;
+					spellcastingEntry.will = this._getParsedSpells({line, isMarkdown});
+					return;
+				}
+
+				if (line.includes("Cantrip")) {
+					hasAnyHeader = true;
+					const value = this._getParsedSpells({line, isMarkdown});
+					if (!spellcastingEntry.spells) spellcastingEntry.spells = {"0": {"spells": []}};
+					spellcastingEntry.spells["0"].spells = value;
+					return;
+				}
+
+				if (/[- ][Ll]evel/.test(line) && /(?::| -) /.test(line)) {
+					hasAnyHeader = true;
+					let property = line.substring(0, 1);
+					const allSpells = this._getParsedSpells({line, isMarkdown});
+					spellcastingEntry.spells = spellcastingEntry.spells || {};
+
+					const out = {};
+					if (line.includes(" slot")) {
+						const mWarlock = /^(\d)..(?:[- ][Ll]evel)?-(\d)..[- ][Ll]evel \((\d) (\d)..[- ][Ll]evel slots?\)/.exec(line);
+						if (mWarlock) {
+							out.lower = parseInt(mWarlock[1]);
+							out.slots = parseInt(mWarlock[3]);
+							property = mWarlock[4];
+						} else {
+							const mSlots = /\((\d) slots?\)/.exec(line);
+							if (!mSlots) throw new Error(`Could not find slot count!`);
+							out.slots = parseInt(mSlots[1]);
+						}
 					}
-				}
-				// add these last, to have nicer ordering
-				out.spells = allSpells;
+					// add these last, to have nicer ordering
+					out.spells = allSpells;
 
-				spellcastingEntry.spells[property] = out;
-			} else {
-				if (hasAnyHeader) {
-					if (!spellcastingEntry.footerEntries) spellcastingEntry.footerEntries = [];
-					spellcastingEntry.footerEntries.push(this._parseToHit(thisLine));
-				} else {
-					spellcastingEntry.headerEntries.push(this._parseToHit(thisLine));
+					spellcastingEntry.spells[property] = out;
+					return;
 				}
-			}
-		});
+
+				if (hasAnyHeader) {
+					(spellcastingEntry.footerEntries ||= []).push(this._parseToHit(line));
+				} else {
+					spellcastingEntry.headerEntries.push(this._parseToHit(line));
+				}
+			});
 
 		SpellcastingTraitConvert.mutSpellcastingAbility(spellcastingEntry);
 		SpellcastingTraitConvert._mutDisplayAs(spellcastingEntry, displayAs);
@@ -1462,9 +1476,84 @@ class SpellcastingTraitConvert {
 		return spellcastingEntry;
 	}
 
-	static _getParsedSpells ({thisLine, isMarkdown}) {
-		const mLabelSep = /(?::| -) /.exec(thisLine);
-		let spellPart = thisLine.substring((mLabelSep?.index || 0) + (mLabelSep?.[0]?.length || 0)).trim();
+	static _getMutHeaderEntries ({ent, cbMan, spellcastingEntry}) {
+		let line = this._parseToHit(ent.entries[0]);
+
+		const usesMeta = this._getUsesMeta({line: ent.name});
+
+		line = line
+			.replace(/(?<pre>casts? (?:the )?)(?<spell>[^.,?!:]+)(?<post>\.| spell |at[ -]will)/g, (...m) => {
+				const isWill = m.last().post.toLowerCase().replace(/-/g, " ") === "at will";
+
+				if (!usesMeta && !isWill) {
+					cbMan(`Found spell in header with no usage info: ${m.last().spell}`);
+					return m[0];
+				}
+
+				const ptSpells = m.last().spell
+					.split(" and ")
+					.map(sp => {
+						const value = this._getParsedSpells({line: sp});
+						const hidden = MiscUtil.getOrSet(spellcastingEntry, "hidden", []);
+
+						if (isWill) {
+							const tgt = MiscUtil.getOrSet(spellcastingEntry, "will", []);
+							tgt.push(...value);
+
+							if (!hidden.includes("will")) hidden.push("will");
+						} else {
+							const tgt = MiscUtil.getOrSet(spellcastingEntry, usesMeta.prop, usesMeta.propPer, []);
+							tgt.push(...value);
+
+							if (!hidden.includes(usesMeta.prop)) hidden.push(usesMeta.prop);
+						}
+
+						return value.join(", ");
+					})
+					.join(" and ");
+
+				return [
+					m.last().pre,
+					ptSpells,
+					m.last().post,
+				]
+					.join(" ")
+					.replace(/ +/g, " ");
+			});
+
+		return line;
+	}
+
+	static _getUsesMeta ({line}) {
+		const perDurations = [
+			{re: /(?<cnt>\d+)\/rest(?<ptEach> each)?/i, prop: "rest"},
+			{re: /(?<cnt>\d+)\/day(?<ptEach> each)?/i, prop: "daily"},
+			{re: /(?<cnt>\d+)\/week(?<ptEach> each)?/i, prop: "weekly"},
+			{re: /(?<cnt>\d+)\/month(?<ptEach> each)?/i, prop: "monthly"},
+			{re: /(?<cnt>\d+)\/yeark(?<ptEach> each)?/i, prop: "yearly"},
+		];
+
+		const metasPerDuration = perDurations
+			.map(({re, prop}) => ({m: re.exec(line), prop}))
+			.filter(({m}) => !!m);
+		if (!metasPerDuration.length) return null;
+
+		// Arbitrarily pick the first
+		const [metaPerDuration] = metasPerDuration;
+
+		const propPer = `${metaPerDuration.m.groups.cnt}${metaPerDuration.m.groups.ptEach ? "e" : ""}`;
+
+		return {
+			prop: metaPerDuration.prop,
+			propPer,
+			lineRemaining: line.slice(metaPerDuration.m.length),
+		};
+	}
+
+	static _getParsedSpells ({line, isMarkdown}) {
+		const mLabelSep = /(?::| -) /.exec(line);
+		let spellPart = line.substring((mLabelSep?.index || 0) + (mLabelSep?.[0]?.length || 0)).trim();
+
 		if (isMarkdown) {
 			const cleanPart = (part) => {
 				part = part.trim();

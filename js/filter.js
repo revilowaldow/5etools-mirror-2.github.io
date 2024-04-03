@@ -133,7 +133,7 @@ class ModalFilter {
 
 	get allData () { return this._allData; }
 
-	_$getWrpList () { return $(`<div class="list ui-list__wrp overflow-x-hidden overflow-y-auto h-100 min-h-0"></div>`); }
+	_$getWrpList () { return $(`<div class="list ui-list__wrp ve-overflow-x-hidden ve-overflow-y-auto h-100 min-h-0"></div>`); }
 
 	_$getColumnHeaderPreviewAll (opts) {
 		return $(`<button class="btn btn-default btn-xs ${opts.isBuildUi ? "ve-col-1" : "ve-col-0-5"}">${ListUiUtil.HTML_GLYPHICON_EXPAND}</button>`);
@@ -2613,7 +2613,7 @@ class SearchableFilter extends Filter {
 
 		const wrpValues = e_({
 			tag: "div",
-			clazz: "overflow-y-auto bt-0 absolute fltr-search__wrp-values",
+			clazz: "ve-overflow-y-auto bt-0 absolute fltr-search__wrp-values",
 		});
 
 		const fnsCleanup = [];
@@ -3440,7 +3440,7 @@ class AbilityScoreFilter extends FilterBase {
 
 		const wrpControls = this._getHeaderControls(opts);
 
-		this.__wrpPills = e_({tag: "div", clazz: `fltr__wrp-pills overflow-x-auto ve-flex-col w-100`});
+		this.__wrpPills = e_({tag: "div", clazz: `fltr__wrp-pills ve-overflow-x-auto ve-flex-col w-100`});
 		const hook = () => this.__wrpPills.toggleVe(!this._meta.isHidden);
 		this._addHook("meta", "isHidden", hook);
 		hook();

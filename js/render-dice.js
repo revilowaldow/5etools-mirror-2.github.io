@@ -19,6 +19,8 @@ Renderer.dice = {
 
 	_isManualMode: false,
 
+	/* -------------------------------------------- */
+
 	// region Utilities
 	DICE: [4, 6, 8, 10, 12, 20, 100],
 	getNextDice (faces) {
@@ -33,6 +35,8 @@ Renderer.dice = {
 		else return null;
 	},
 	// endregion
+
+	/* -------------------------------------------- */
 
 	// region DM Screen integration
 	_panel: null,
@@ -59,6 +63,27 @@ Renderer.dice = {
 		return Renderer.dice._$wrpRoll;
 	},
 	// endregion
+
+	/* -------------------------------------------- */
+
+	bindOnclickListener (ele) {
+		ele.addEventListener("click", (evt) => {
+			const eleDice = evt.target.hasAttribute("data-packed-dice")
+				? evt.target
+				// Tolerate e.g. Bestiary wrapped proficiency dice rollers
+				: evt.target.parentElement?.hasAttribute("data-packed-dice")
+					? evt.target.parentElement
+					: null;
+
+			if (!eleDice) return;
+
+			evt.preventDefault();
+			evt.stopImmediatePropagation();
+			Renderer.dice.pRollerClickUseData(evt, eleDice).then(null);
+		});
+	},
+
+	/* -------------------------------------------- */
 
 	/**
 	 * Silently roll an expression and get the result.

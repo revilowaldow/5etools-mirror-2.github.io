@@ -104,7 +104,7 @@ jobs:
 
                   # Pull the old images
                   docker pull $IMAGE_ID:latest
-                  docker pull IMAGE_ID_IMG:latest
+                  docker pull $IMAGE_ID_IMG:latest
 
                   # Save the current CMD from the image
                   SAVE_CMD=$(docker inspect --format='{{json .Config.Cmd}}' $IMAGE_ID:latest)

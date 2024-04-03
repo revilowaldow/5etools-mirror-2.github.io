@@ -833,7 +833,7 @@
 									"type": "internal",
 									"path": "adventure/XMtS/alante.webp"
 								},
-								"title": "{@5etools Alante, Cleric of the Five Sacraments|pdf/adventure/XMtS/alante.pdf}",
+								"title": "{@5etools Alante, Cleric of the Five Sacraments|img/pdf/XMtS/alante.pdf}",
 								"width": 507,
 								"height": 582
 							},
@@ -843,7 +843,7 @@
 									"type": "internal",
 									"path": "adventure/XMtS/artinoq.webp"
 								},
-								"title": "{@5etools Artinoq, Atzocan Archer|pdf/adventure/XMtS/artinoq.pdf}",
+								"title": "{@5etools Artinoq, Atzocan Archer|img/pdf/XMtS/artinoq.pdf}",
 								"width": 507,
 								"height": 582
 							}
@@ -875,7 +875,7 @@
 									"type": "internal",
 									"path": "adventure/XMtS/rouxil.webp"
 								},
-								"title": "{@5etools Rouxil, Emperor's Vanguard|pdf/adventure/XMtS/rouxil.pdf}",
+								"title": "{@5etools Rouxil, Emperor's Vanguard|img/pdf/XMtS/rouxil.pdf}",
 								"width": 507,
 								"height": 582
 							}
@@ -897,7 +897,7 @@
 									"type": "internal",
 									"path": "adventure/XMtS/velisha.webp"
 								},
-								"title": "{@5etools Velisha, Shaper of Highbranch|pdf/adventure/XMtS/velisha.pdf}",
+								"title": "{@5etools Velisha, Shaper of Highbranch|img/pdf/XMtS/velisha.pdf}",
 								"width": 507,
 								"height": 582
 							},
@@ -907,7 +907,7 @@
 									"type": "internal",
 									"path": "adventure/XMtS/ellie.webp"
 								},
-								"title": "{@5etools Ellie Redcap, Fathom Fleet Firebrand|pdf/adventure/XMtS/ellie.pdf}",
+								"title": "{@5etools Ellie Redcap, Fathom Fleet Firebrand|img/pdf/XMtS/ellie.pdf}",
 								"width": 507,
 								"height": 582
 							}
@@ -931,7 +931,7 @@
 									"type": "internal",
 									"path": "adventure/XMtS/turk.webp"
 								},
-								"title": "{@5etools Turk Two Coins, Ruthless Knave|pdf/adventure/XMtS/turk.pdf}",
+								"title": "{@5etools Turk Two Coins, Ruthless Knave|img/pdf/XMtS/turk.pdf}",
 								"width": 507,
 								"height": 582
 							},
@@ -959,9 +959,9 @@
 						},
 						{
 							"type": "item",
-							"name": "Plane Shift",
+							"name": "Plane Shift: Ixalan Design",
 							"entries": [
-								"Ixalan Design:James Wyatt"
+								"James Wyatt"
 							]
 						},
 						{

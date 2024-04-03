@@ -2679,5 +2679,11 @@
 		"date": "2024-03-26",
 		"title": "Mind the Step",
 		"txt": "- Added Descent into the Lost Caverns of Tsojcanth content\n- (Brew) Improved Item Text Converter handling of generic variant armor types\n- (Brew) Improved Creature Text Converter handling of bulleted lists\n- (Fixed typos/added tags)"
+	},
+	{
+		"ver": "1.204.0",
+		"date": "2024-04-02",
+		"title": "Brickolage",
+		"txt": "- Added Red Dragon's Tale: A LEGO Adventure content\n- Added optional \"feeling lucky\" parameter to Search page for use in browser custom search engine configuration. Note that this changes the syntax for any custom search engines; `?<search>` -> `?q=<search>[&lucky]` (i.e. `?q=goblin` or `?q=goblin&lucky`)\n- Added \"Page\" column to List page Table Views\n- Fixed dice rollers in Decks page card viewer\n- (Brew) Improved Creature Text Converter handling of spells in spellcasting headers\n- (Fixed typos/added tags)"
 	}
 ]

@@ -692,6 +692,12 @@ class RendererMarkdown {
 				this._recursiveRender(text, textStack, meta);
 				textStack[0] += `~~`;
 				break;
+			case "@s2":
+			case "@strikeDouble":
+				textStack[0] += `~~`;
+				this._recursiveRender(text, textStack, meta);
+				textStack[0] += `~~`;
+				break;
 			case "@note":
 				textStack[0] += "*";
 				this._recursiveRender(text, textStack, meta);

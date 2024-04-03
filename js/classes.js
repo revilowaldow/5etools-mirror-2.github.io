@@ -2375,7 +2375,7 @@ ClassesPage.ClassBookView = class extends BookModeViewBase {
 
 		// Main panel
 		const $tblBook = $(`<table class="w-100 stats stats--book stats--book-large stats--bkmv"></div>`);
-		$$`<div class="ve-flex-col overflow-y-auto container">${$tblBook}</div>`.appendTo($wrpContent);
+		$$`<div class="ve-flex-col ve-overflow-y-auto container">${$tblBook}</div>`.appendTo($wrpContent);
 
 		const renderStack = [];
 		Renderer.get().setFirstSection(true);

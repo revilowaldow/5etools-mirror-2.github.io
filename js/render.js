@@ -1172,7 +1172,7 @@ globalThis.Renderer = function () {
 					if (i < len - 1) tempStack[0] += "<br>";
 				}
 			}
-			textStack[0] += `<span class="rd__quote-by">\u2014 ${byArr ? tempStack.join("") : ""}${byArr && entry.from ? `, ` : ""}${entry.from ? `<i>${entry.from}</i>` : ""}</span>`;
+			textStack[0] += `<span class="rd__quote-by">\u2014 ${byArr ? tempStack.join("") : ""}${byArr && entry.from ? `, ` : ""}${entry.from ? `<i>${this.render(entry.from)}</i>` : ""}</span>`;
 			textStack[0] += `</p>`;
 		}
 
@@ -1251,7 +1251,21 @@ globalThis.Renderer = function () {
 	this._renderDice = function (entry, textStack, meta, options) {
 		const pluginResults = this._applyPlugins_getAll("dice", {textStack, meta, options}, {input: entry});
 
-		textStack[0] += Renderer.getEntryDice(entry, entry.name, {isAddHandlers: this._isAddHandlers, pluginResults});
+		for (const res of pluginResults) {
+			if (res.rendered) {
+				textStack[0] += res.rendered;
+				return;
+			}
+		}
+
+		const toDisplay = Renderer.getEntryDiceDisplayText(entry);
+
+		if (entry.rollable === true) {
+			textStack[0] += Renderer.getRollableEntryDice(entry, entry.name, toDisplay, {isAddHandlers: this._isAddHandlers, pluginResults});
+			return;
+		}
+
+		textStack[0] += toDisplay;
 	};
 
 	this._renderActions = function (entry, textStack, meta, options) {
@@ -2385,13 +2399,6 @@ Renderer._splitByPipeBase = function (leadingCharacter) {
 };
 
 Renderer.splitTagByPipe = Renderer._splitByPipeBase("@");
-
-Renderer.getEntryDice = function (entry, name, opts = {}) {
-	const toDisplay = Renderer.getEntryDiceDisplayText(entry);
-
-	if (entry.rollable === true) return Renderer.getRollableEntryDice(entry, name, toDisplay, opts);
-	else return toDisplay;
-};
 
 Renderer.getRollableEntryDice = function (
 	entry,
@@ -3685,7 +3692,12 @@ Renderer.utils = class {
 						if ((!fauxEntry.displayText && (rollText || "").includes("#$")) || (fauxEntry.displayText && fauxEntry.displayText.includes("#$"))) fauxEntry.displayText = (fauxEntry.displayText || rollText).replace(/#\$prompt_number[^$]*\$#/g, "(n)");
 						fauxEntry.displayText = fauxEntry.displayText || fauxEntry.toRoll;
 
-						if (tag === "@damage") fauxEntry.subType = "damage";
+						if (tag === "@damage") {
+							fauxEntry.subType = "damage";
+							const [damageType] = others;
+							if (damageType) fauxEntry.damageType = damageType;
+						}
+
 						if (tag === "@autodice") fauxEntry.autoRoll = true;
 
 						return fauxEntry;
@@ -4439,13 +4451,13 @@ Renderer.tag = class {
 		}
 	};
 
-	static TagHit = class extends this._TagBaseAt {
+	static TagHitText = class extends this._TagBaseAt {
 		tagName = "h";
 
 		_getStripped (tag, text) { return "Hit: "; }
 	};
 
-	static TagMiss = class extends this._TagBaseAt {
+	static TagMissText = class extends this._TagBaseAt {
 		tagName = "m";
 
 		_getStripped (tag, text) { return "Miss: "; }
@@ -4525,43 +4537,43 @@ Renderer.tag = class {
 		}
 	};
 
-	static TaChance = class extends this._TagDiceFlavor {
+	static TagChance = class extends this._TagDiceFlavor {
 		tagName = "chance";
 	};
 
-	static TaD20 = class extends this._TagDiceFlavor {
+	static TagD20 = class extends this._TagDiceFlavor {
 		tagName = "d20";
 	};
 
-	static TaDamage = class extends this._TagDiceFlavor {
+	static TagDamage = class extends this._TagDiceFlavor {
 		tagName = "damage";
 	};
 
-	static TaDice = class extends this._TagDiceFlavor {
+	static TagDice = class extends this._TagDiceFlavor {
 		tagName = "dice";
 	};
 
-	static TaAutodice = class extends this._TagDiceFlavor {
+	static TagAutodice = class extends this._TagDiceFlavor {
 		tagName = "autodice";
 	};
 
-	static TaHit = class extends this._TagDiceFlavor {
+	static TagHit = class extends this._TagDiceFlavor {
 		tagName = "hit";
 	};
 
-	static TaRecharge = class extends this._TagDiceFlavor {
+	static TagRecharge = class extends this._TagDiceFlavor {
 		tagName = "recharge";
 	};
 
-	static TaAbility = class extends this._TagDiceFlavor {
+	static TagAbility = class extends this._TagDiceFlavor {
 		tagName = "ability";
 	};
 
-	static TaSavingThrow = class extends this._TagDiceFlavor {
+	static TagSavingThrow = class extends this._TagDiceFlavor {
 		tagName = "savingThrow";
 	};
 
-	static TaSkillCheck = class extends this._TagDiceFlavor {
+	static TagSkillCheck = class extends this._TagDiceFlavor {
 		tagName = "skillCheck";
 	};
 
@@ -4970,8 +4982,8 @@ Renderer.tag = class {
 
 		new this.TagUnit(),
 
-		new this.TagHit(),
-		new this.TagMiss(),
+		new this.TagHitText(),
+		new this.TagMissText(),
 
 		new this.TagAtk(),
 
@@ -4981,16 +4993,16 @@ Renderer.tag = class {
 
 		new this.TagDcYourSpellSave(),
 
-		new this.TaChance(),
-		new this.TaD20(),
-		new this.TaDamage(),
-		new this.TaDice(),
-		new this.TaAutodice(),
-		new this.TaHit(),
-		new this.TaRecharge(),
-		new this.TaAbility(),
-		new this.TaSavingThrow(),
-		new this.TaSkillCheck(),
+		new this.TagChance(),
+		new this.TagD20(),
+		new this.TagDamage(),
+		new this.TagDice(),
+		new this.TagAutodice(),
+		new this.TagHit(),
+		new this.TagRecharge(),
+		new this.TagAbility(),
+		new this.TagSavingThrow(),
+		new this.TagSkillCheck(),
 
 		new this.TagScaledice(),
 		new this.TagScaledamage(),
@@ -5370,9 +5382,13 @@ Renderer.class = class {
 		return Renderer.hover.getGenericCompactRenderedString(clsEntry);
 	}
 
-	static getHitDiceEntry (clsHd) { return clsHd ? {toRoll: `${clsHd.number}d${clsHd.faces}`, rollable: true} : null; }
+	static getHitDiceEntry (clsHd) { return clsHd ? `{@dice ${clsHd.number}d${clsHd.faces}||Hit die}` : null; }
 	static getHitPointsAtFirstLevel (clsHd) { return clsHd ? `${clsHd.number * clsHd.faces} + your Constitution modifier` : null; }
-	static getHitPointsAtHigherLevels (className, clsHd, hdEntry) { return className && clsHd && hdEntry ? `${Renderer.getEntryDice(hdEntry, "Hit die")} (or ${((clsHd.number * clsHd.faces) / 2 + 1)}) + your Constitution modifier per ${className} level after 1st` : null; }
+	static getHitPointsAtHigherLevels (className, clsHd) {
+		return className && clsHd
+			? `${Renderer.get().render(Renderer.class.getHitDiceEntry(clsHd))} (or ${((clsHd.number * clsHd.faces) / 2 + 1)}) + your Constitution modifier per ${className} level after 1st`
+			: null;
+	}
 
 	static getRenderedArmorProfs (armorProfs) { return armorProfs.map(a => Renderer.get().render(a.full ? a.full : a === "light" || a === "medium" || a === "heavy" ? `{@filter ${a} armor|items|type=${a} armor}` : a)).join(", "); }
 	static getRenderedWeaponProfs (weaponProfs) { return weaponProfs.map(w => Renderer.get().render(w === "simple" || w === "martial" ? `{@filter ${w} weapons|items|type=${w} weapon}` : w.optional ? `<span class="help help--hover" title="Optional Proficiency">${w.proficiency}</span>` : w)).join(", "); }
@@ -6528,11 +6544,6 @@ Renderer.race = class {
 		// merge names, abilities, entries, tags
 		if (cpySr.name) {
 			cpy._subraceName = cpySr.name;
-
-			if (cpySr.alias) {
-				cpy.alias = cpySr.alias.map(it => Renderer.race.getSubraceName(cpy.name, it));
-				delete cpySr.alias;
-			}
 
 			cpy.name = Renderer.race.getSubraceName(cpy.name, cpySr.name);
 			delete cpySr.name;
@@ -9533,6 +9544,7 @@ Renderer.variantrule = class {
 	static getCompactRenderedString (rule) {
 		const cpy = MiscUtil.copyFast(rule);
 		delete cpy.name;
+		if (cpy.entries && cpy.ruleType) cpy.entries.unshift(`{@i ${Parser.ruleTypeToFull(cpy.ruleType)} Rule}`);
 		return `
 			${Renderer.utils.getExcludedTr({entity: rule, dataProp: "variantrule", page: UrlUtil.PG_VARIANTRULES})}
 			${Renderer.utils.getNameTr(rule, {page: UrlUtil.PG_VARIANTRULES})}

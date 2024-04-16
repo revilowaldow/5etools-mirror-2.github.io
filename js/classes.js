@@ -1160,14 +1160,12 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 		// region HP/hit dice
 		let $ptHp = null;
 		if (cls.hd) {
-			const hdEntry = Renderer.class.getHitDiceEntry(cls.hd);
-
 			$ptHp = $(`<tr></tr>`)
 				.fastSetHtml(`<td colspan="6" class="cls-side__section">
 					<h5 class="cls-side__section-head">Hit Points</h5>
-					<div><strong>Hit Dice:</strong> ${Renderer.getEntryDice(hdEntry, "Hit die")}</div>
+					<div><strong>Hit Dice:</strong> ${Renderer.get().render(Renderer.class.getHitDiceEntry(cls.hd))}</div>
 					<div><strong>Hit Points at 1st Level:</strong> ${Renderer.class.getHitPointsAtFirstLevel(cls.hd)}</div>
-					<div><strong>Hit Points at Higher Levels:</strong> ${Renderer.class.getHitPointsAtHigherLevels(cls.name, cls.hd, hdEntry)}</div>
+					<div><strong>Hit Points at Higher Levels:</strong> ${Renderer.class.getHitPointsAtHigherLevels(cls.name, cls.hd)}</div>
 				</td>`);
 			$ptsToToggle.push($ptHp);
 		}

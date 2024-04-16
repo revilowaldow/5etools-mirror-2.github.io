@@ -26,15 +26,21 @@ function getFileProbeTarget (path) {
 	};
 }
 
-function getProbeTarget (imgEntry, {localBrewDir = null, isAllowExternal = false}) {
+function getProbeTarget (imgEntry, {localBrewDir = null, localBrewDirImg = null, isAllowExternal = false}) {
 	if (imgEntry.href.type === "internal") {
 		return getFileProbeTarget(`img/${imgEntry.href.path}`);
 	}
 
 	if (imgEntry.href.type === "external") {
-		if (localBrewDir && imgEntry.href.url.startsWith(`${VeCt.URL_ROOT_BREW}`)) {
+		if (localBrewDir && imgEntry.href.url.startsWith(VeCt.URL_ROOT_BREW)) {
 			return getFileProbeTarget(
 				decodeURI(imgEntry.href.url.replace(`${VeCt.URL_ROOT_BREW}_img`, `${localBrewDir}/_img`)),
+			);
+		}
+
+		if (localBrewDirImg && imgEntry.href.url.startsWith(VeCt.URL_ROOT_BREW_IMG)) {
+			return getFileProbeTarget(
+				decodeURI(imgEntry.href.url.replace(VeCt.URL_ROOT_BREW_IMG, `${localBrewDirImg}/`)),
 			);
 		}
 
@@ -59,8 +65,8 @@ function getImageEntries (imageEntries, obj) {
 	return obj;
 }
 
-async function pMutImageDimensions (imgEntry, {localBrewDir = null, isAllowExternal = false}) {
-	const probeMeta = getProbeTarget(imgEntry, {localBrewDir, isAllowExternal});
+async function pMutImageDimensions (imgEntry, {localBrewDir = null, localBrewDirImg = null, isAllowExternal = false}) {
+	const probeMeta = getProbeTarget(imgEntry, {localBrewDir, localBrewDirImg, isAllowExternal});
 	if (probeMeta == null) return;
 
 	const {target, location, fnCleanup} = probeMeta;
@@ -80,6 +86,7 @@ async function main (
 		dirs,
 		files,
 		localBrewDir = null,
+		localBrewDirImg = null,
 		isAllowExternal = false,
 	},
 ) {
@@ -106,7 +113,7 @@ async function main (
 			.map(async () => {
 				while (imageEntries.length) {
 					const imageEntry = imageEntries.pop();
-					await pMutImageDimensions(imageEntry, {localBrewDir, isAllowExternal});
+					await pMutImageDimensions(imageEntry, {localBrewDir, localBrewDirImg, isAllowExternal});
 				}
 			}),
 	);
@@ -122,6 +129,7 @@ const program = new Command()
 	.option("--dir <dir...>", `Input directories`)
 	.option("--allow-external", "Allow external URLs to be probed.")
 	.option("--local-brew-dir <localBrewDir>", "Use local homebrew directory for relevant URLs.")
+	.option("--local-brew-dir-img <localBrewDirImg>", "Use local homebrew-img directory for relevant URLs.")
 ;
 
 program.parse(process.argv);
@@ -142,6 +150,7 @@ main({
 	dirs,
 	files,
 	localBrewDir: params.localBrewDir,
+	localBrewDirImg: params.localBrewDirImg,
 	isAllowExternal: params.allowExternal,
 })
 	.catch(e => console.error(e));

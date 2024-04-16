@@ -95,10 +95,6 @@ class RaceTraitTag {
 								traitTags.add("Magic Resistance");
 							}
 
-							if (/\bblindsight\b/i.test(str)) {
-								traitTags.add("Blindsight");
-							}
-
 							if (/\bsunlight sensitivity\b/i.test(str) || /\bdisadvantage [^.?!]+ direct sunlight\b/i.test(str)) {
 								traitTags.add("Sunlight Sensitivity");
 							}
@@ -143,10 +139,23 @@ class RaceLanguageTag {
 		return outStack;
 	}
 
-	static _LANGUAGES = new Set(["Abyssal", "Aquan", "Auran", "Celestial", "Common", "Draconic", "Dwarvish", "Elvish", "Giant", "Gnomish", "Goblin", "Halfling", "Ignan", "Infernal", "Orc", "Primordial", "Sylvan", "Terran", "Undercommon"]);
+	static _LANGUAGES = new Set([...Parser.LANGUAGES_STANDARD, ...Parser.LANGUAGES_EXOTIC]);
 	static _STOPWORDS = new Set(["Almost", "Elven", "Gifted", "It", "Languages", "Many", "Mimicry", "Only", "Or", "The", "Their", "They", "You", "Humans", "Conclave", "Kryta", "Hyperium", "Ithean", "Illyrian", "Speak"]);
 
 	static _isCaps (str) { return /^[A-Z]/.test(str); }
+
+	static _getTokens (str) {
+		let tokens = str.split(" ");
+
+		for (let i = 0; i < tokens.length; ++i) {
+			if (tokens[i] === "Deep" && /^Speech\W?$/.test(tokens[i + 1] || "")) {
+				tokens[i] = [tokens[i], tokens[i + 1]].join(" ");
+				tokens.splice(i + 1, 1);
+			}
+		}
+
+		return tokens;
+	}
 
 	static _handleString ({str, outStack, cbWarning, cbError}) {
 		// Remove the first word of each sentence, as it has non-title-based caps
@@ -165,9 +174,9 @@ class RaceLanguageTag {
 
 		// Tokenize, removing anything that we don't care about
 		const reChoose = /^(?:choice|choose|choosing|chosen|chooses|chose)$/;
-		const tokens = str.split(" ")
+		const tokens = this._getTokens(str)
 			// replace all non-word characters (i.e. remove punctuation from tokens)
-			.map(it => it.replace(/\W/g, "").trim())
+			.map(it => it.replace(/[^\w ]/g, "").trim())
 			.filter(t => {
 				if (!t) return false;
 

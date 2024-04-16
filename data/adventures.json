@@ -34273,6 +34273,117 @@
 			]
 		},
 		{
+			"name": "Vecna: Nest of the Eldritch Eye",
+			"id": "VNotEE",
+			"source": "VNotEE",
+			"group": "supplement",
+			"cover": {
+				"type": "internal",
+				"path": "covers/VEoR.webp"
+			},
+			"published": "2024-04-16",
+			"storyline": "Vecna",
+			"level": {
+				"start": 3,
+				"end": 3
+			},
+			"contents": [
+				{
+					"name": "Vecna: Nest of the Eldritch Eye",
+					"headers": [
+						"Running the Adventure",
+						"Beginning the Adventure",
+						"Dead Man's Message",
+						"Into Neverwinter's Catacombs",
+						{
+							"depth": 1,
+							"header": "N1: Entrance Tunnel"
+						},
+						{
+							"depth": 1,
+							"header": "N2: Half-Collapsed Chamber"
+						},
+						{
+							"depth": 1,
+							"header": "N3: Flooded Tunnel"
+						},
+						{
+							"depth": 1,
+							"header": "N4: Cinerary Rotunda"
+						},
+						{
+							"depth": 1,
+							"header": "N5: Tomb of the Mage"
+						},
+						{
+							"depth": 1,
+							"header": "N6: Tomb of the Knight"
+						},
+						{
+							"depth": 1,
+							"header": "N7: Crawlspace"
+						},
+						{
+							"depth": 1,
+							"header": "N8: Forked Tunnel"
+						},
+						{
+							"depth": 1,
+							"header": "N9: Sewerage Chamber"
+						},
+						{
+							"depth": 1,
+							"header": "N10: Crypt of the Silenced Singers"
+						},
+						{
+							"depth": 1,
+							"header": "N11: Door of the Eldritch Eye"
+						},
+						{
+							"depth": 1,
+							"header": "N12: Hall of the Whispered One"
+						},
+						{
+							"depth": 1,
+							"header": "N13: Cultist Quarters"
+						},
+						{
+							"depth": 1,
+							"header": "N14: Eldritch Library"
+						},
+						{
+							"depth": 1,
+							"header": "N15: Ritual Chamber"
+						},
+						"Concluding the Adventure",
+						"Credits"
+					]
+				}
+			]
+		},
+		{
+			"name": "Vecna: Eve of Ruin",
+			"id": "VEoR",
+			"source": "VEoR",
+			"group": "supplement",
+			"cover": {
+				"type": "internal",
+				"path": "covers/VEoR.webp"
+			},
+			"published": "2024-05-21",
+			"author": "Wizards RPG Team",
+			"storyline": "Vecna",
+			"level": {
+				"start": 10,
+				"end": 20
+			},
+			"contents": [
+				{
+					"name": "Introduction"
+				}
+			]
+		},
+		{
 			"name": "Quests from the Infinite Staircase",
 			"id": "QftIS",
 			"source": "QftIS",

@@ -2,7 +2,7 @@
 
 // in deployment, `IS_DEPLOYED = "<version number>";` should be set below.
 globalThis.IS_DEPLOYED = undefined;
-globalThis.VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"1.204.0"/* 5ETOOLS_VERSION__CLOSE */;
+globalThis.VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"1.205.0"/* 5ETOOLS_VERSION__CLOSE */;
 globalThis.DEPLOYED_IMG_ROOT = undefined;
 // for the roll20 script to set
 globalThis.IS_VTT = false;
@@ -55,6 +55,7 @@ globalThis.VeCt = {
 
 	URL_BREW: `https://github.com/TheGiddyLimit/homebrew`,
 	URL_ROOT_BREW: `https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/`, // N.b. must end with a slash
+	URL_ROOT_BREW_IMG: `https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/`, // N.b. must end with a slash
 	URL_PRERELEASE: `https://github.com/TheGiddyLimit/unearthed-arcana`,
 	URL_ROOT_PRERELEASE: `https://raw.githubusercontent.com/TheGiddyLimit/unearthed-arcana/master/`, // As above
 
@@ -506,7 +507,7 @@ globalThis.SourceUtil = class {
 
 	static isLegacySourceWotc (source) {
 		if (source == null) return false;
-		return source === Parser.SRC_VGM || source === Parser.SRC_MTF;
+		return Parser.SOURCES_LEGACY_WOTC.has(source);
 	}
 
 	// TODO(Future) remove this in favor of simply checking existence in `PrereleaseUtil`
@@ -2975,6 +2976,7 @@ UrlUtil.URL_TO_HASH_BUILDER["skill"] = UrlUtil.URL_TO_HASH_GENERIC;
 UrlUtil.URL_TO_HASH_BUILDER["sense"] = UrlUtil.URL_TO_HASH_GENERIC;
 UrlUtil.URL_TO_HASH_BUILDER["raceFeature"] = (it) => UrlUtil.encodeArrayForHash(it.name, it.raceName, it.raceSource, it.source);
 UrlUtil.URL_TO_HASH_BUILDER["citation"] = UrlUtil.URL_TO_HASH_GENERIC;
+UrlUtil.URL_TO_HASH_BUILDER["languageScript"] = UrlUtil.URL_TO_HASH_GENERIC;
 
 // Add lowercase aliases
 Object.keys(UrlUtil.URL_TO_HASH_BUILDER)
@@ -5449,13 +5451,13 @@ globalThis.DataUtil = {
 
 			// region Populate fonts, based on script
 			const scriptLookup = {};
-			(rawData.languageScript || []).forEach(script => scriptLookup[script.name] = script);
+			(rawData.languageScript || []).forEach(script => MiscUtil.set(scriptLookup, script.source, script.name, script));
 
 			const out = {language: MiscUtil.copyFast(rawData.language)};
 			out.language.forEach(lang => {
 				if (!lang.script || lang.fonts === false) return;
 
-				const script = scriptLookup[lang.script];
+				const script = MiscUtil.get(scriptLookup, lang.source, lang.script);
 				if (!script) return;
 
 				lang._fonts = [...script.fonts];

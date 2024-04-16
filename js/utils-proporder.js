@@ -117,6 +117,13 @@ PropOrder._ArrayKey = class {
 	}
 };
 
+PropOrder._PROPS_FOUNDRY_DATA = [
+	"foundrySystem",
+	"foundryFlags",
+	"foundryEffects",
+	"foundryImg",
+];
+
 PropOrder._META = [
 	"sources",
 
@@ -472,10 +479,7 @@ PropOrder._SPELL = [
 
 	"fluff",
 
-	"foundrySystem",
-	"foundryFlags",
-	"foundryEffects",
-	"foundryImg",
+	...PropOrder._PROPS_FOUNDRY_DATA,
 
 	new PropOrder._ObjectKey("roll20Spell", {
 		order: PropOrder._ROLL20_SPELL,
@@ -793,6 +797,17 @@ PropOrder._SUBCLASS__COPY_MOD = [
 	"_",
 	...PropOrder._SUBCLASS,
 ];
+PropOrder._SUBCLASS_FLUFF = [
+	"name",
+	"source",
+	"className",
+	"classSource",
+
+	"_copy",
+
+	"entries",
+	"images",
+];
 PropOrder._FOUNDRY_SUBCLASS = [
 	"name",
 	"source",
@@ -973,6 +988,9 @@ PropOrder._LANGUAGE = [
 ];
 PropOrder._LANGUAGE_SCRIPT = [
 	"name",
+
+	"source",
+
 	"fonts",
 ];
 PropOrder._NAME = [
@@ -1017,10 +1035,7 @@ PropOrder._DISEASE = [
 
 	"entries",
 
-	"foundrySystem",
-	"foundryFlags",
-	"foundryEffects",
-	"foundryImg",
+	...PropOrder._PROPS_FOUNDRY_DATA,
 ];
 PropOrder._STATUS = [
 	"name",
@@ -1173,10 +1188,7 @@ PropOrder._FEAT = [
 
 	"fluff",
 
-	"foundrySystem",
-	"foundryFlags",
-	"foundryEffects",
-	"foundryImg",
+	...PropOrder._PROPS_FOUNDRY_DATA,
 ];
 PropOrder._FEAT__COPY_MOD = [
 	"*",
@@ -1450,10 +1462,7 @@ PropOrder._ITEM = [
 	"fluff",
 
 	"foundryType",
-	"foundrySystem",
-	"foundryFlags",
-	"foundryEffects",
-	"foundryImg",
+	...PropOrder._PROPS_FOUNDRY_DATA,
 ];
 PropOrder._ITEM__COPY_MOD = [
 	"*",
@@ -1586,10 +1595,7 @@ PropOrder._OPTIONALFEATURE = [
 
 	"fluff",
 
-	"foundrySystem",
-	"foundryFlags",
-	"foundryEffects",
-	"foundryImg",
+	...PropOrder._PROPS_FOUNDRY_DATA,
 ];
 PropOrder._OPTIONALFEATURE__COPY_MOD = [
 	"*",
@@ -1626,6 +1632,8 @@ PropOrder._REWARD = [
 	"hasFluffImages",
 
 	"fluff",
+
+	...PropOrder._PROPS_FOUNDRY_DATA,
 ];
 PropOrder._VARIANTRULE = [
 	"name",
@@ -1694,10 +1702,7 @@ PropOrder._RACE_SUBRACE = [
 
 	"fluff",
 
-	"foundrySystem",
-	"foundryFlags",
-	"foundryEffects",
-	"foundryImg",
+	...PropOrder._PROPS_FOUNDRY_DATA,
 
 	new PropOrder._ArrayKey("_versions", {
 		fnGetOrder: () => [
@@ -2029,8 +2034,10 @@ PropOrder._PROP_TO_LIST = {
 	"background": PropOrder._BACKGROUND,
 	"legendaryGroup": PropOrder._LEGENDARY_GROUP,
 	"class": PropOrder._CLASS,
+	"classFluff": PropOrder._GENERIC_FLUFF,
 	"foundryClass": PropOrder._FOUNDRY_CLASS,
 	"subclass": PropOrder._SUBCLASS,
+	"subclassFluff": PropOrder._SUBCLASS_FLUFF,
 	"foundrySubclass": PropOrder._FOUNDRY_SUBCLASS,
 	"classFeature": PropOrder._CLASS_FEATURE,
 	"subclassFeature": PropOrder._SUBCLASS_FEATURE,

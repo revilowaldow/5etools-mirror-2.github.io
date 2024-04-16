@@ -73,15 +73,20 @@
 														"The {@5etools Elf Wizard|img/pdf/LRDT/Elf Wizard.pdf} knows many spells, including ones that create fireballs, turn creatures {@condition invisible}, and dispel other magical effects. The wizard can also identify magic items.",
 														"The {@5etools Gnome Fighter|img/pdf/LRDT/Gnome Fighter.pdf} is strong, athletic, well-armored, skilled with weapons, and able to take a lot of punishment.",
 														"The {@5etools Orc Rogue|img/pdf/LRDT/Orc Rogue.pdf} can be quiet, sneakily attack enemies who aren't looking, climb walls, pick locks, and disarm traps."
-													]
+													],
+													"id": "005"
 												}
-											]
+											],
+											"id": "004"
 										}
-									]
+									],
+									"id": "003"
 								}
-							]
+							],
+							"id": "002"
 						}
-					]
+					],
+					"id": "001"
 				},
 				{
 					"type": "section",
@@ -109,7 +114,8 @@
 								}
 							]
 						}
-					]
+					],
+					"id": "006"
 				},
 				{
 					"type": "section",
@@ -130,7 +136,8 @@
 										"After imprisoning the innkeeper in the tower's dungeon, Ervan took over the inn under an assumed name: Merry Rumwell. A few days later, a group of adventurers called the Hard Way arrived at the inn. Ervan hired them to steal one of Cinderhowl's eggs, promising gold and free hot wings in return. When the adventurers delivered the egg to Ervan as planned, he betrayed them. He slew them with magic and hid their remains in the basement of the tower.",
 										"Expecting the egg's theft to infuriate Cinderhowl, Ervan chose to remain at the inn, out of the dragon's sight. He has hidden the egg and hopes it will hatch soon. Once the egg hatches, Ervan plans to train the dragon wyrmling to do his evil bidding.",
 										"The adventure begins when the Player Characters arrive at the inn unexpectedly, unaware that an evil sorcerer resides there in the guise of the innkeeper."
-									]
+									],
+									"id": "009"
 								},
 								{
 									"type": "entries",
@@ -186,13 +193,17 @@
 												}
 											]
 										}
-									]
+									],
+									"id": "00a"
 								}
-							]
+							],
+							"id": "008"
 						}
-					]
+					],
+					"id": "007"
 				}
-			]
+			],
+			"id": "000"
 		},
 		{
 			"type": "section",
@@ -206,7 +217,8 @@
 					"entries": [
 						"After a long day on the road, you come to an inn built into the remains of a crumbling stone tower. The Inn Plain Sight smells of delicious hot wings. It's said that the proprietor, Alax Jadescales, makes them fresh to order.",
 						"Peering inside, you see that the inn is empty."
-					]
+					],
+					"id": "00c"
 				},
 				"The inn has a ground floor and an upper floor.",
 				{
@@ -220,12 +232,14 @@
 							"page": 5,
 							"entries": [
 								"The door to the back room swings open, and an innkeeper comes out to greet you. \"Oh, I'm afraid you've come at a bad time! We're closed for renovations. But I'll be happy to make you some hot wings to help you on your journey.\""
-							]
+							],
+							"id": "00e"
 						},
 						"The innkeeper, who introduces himself as Merry Rumwell, is actually the sorcerer Ervan Soulfallen in disguise. Merry doesn't want any guests right now and will say almost anything to get rid of the Player Characters. He tells them that he bought the inn from Alax Jadescales, who retired not too long ago, and that much work needs to be done before the inn is fit for guests. He's lying about Alax and the renovations; a search of the inn yields no evidence of construction work or remodeling.",
 						"If the Player Characters want to look around, Merry doesn't protest; in fact, he's happy to let the monsters in the bedroom take care of them (see \"Upper Floor\" below).",
 						"If attacked, Merry casts a spell ({@spell Dimension Door}) and disappears. He reappears in his workshop, which the Player Characters explore in scene 5."
-					]
+					],
+					"id": "00d"
 				},
 				{
 					"type": "entries",
@@ -238,7 +252,9 @@
 							"href": {
 								"type": "internal",
 								"path": "adventure/LRDT/food.webp"
-							}
+							},
+							"width": 744,
+							"height": 665
 						},
 						"Player Characters who spy on Merry discover that he doesn't cook the wings or make the sauce himself; he simply reheats wings that have already been prepared. Clearly, someone else did the hard work.",
 						{
@@ -281,7 +297,8 @@
 										}
 									]
 								}
-							]
+							],
+							"id": "010"
 						},
 						{
 							"type": "entries",
@@ -289,9 +306,11 @@
 							"page": 5,
 							"entries": [
 								"In the back is a kitchen that's barely used. This room contains several jars of hot sauce; a barrel of cooked, magically preserved chicken wings; and a rack of ordinary items that belonged to victims of the mimics upstairs, including a battleaxe, a {@item lute|PHB}, a pike, and a rapier."
-							]
+							],
+							"id": "011"
 						}
-					]
+					],
+					"id": "00f"
 				},
 				{
 					"type": "entries",
@@ -304,7 +323,8 @@
 							"page": 5,
 							"entries": [
 								"This room contains a bed and a closed chest. Mounted above the chest are three small pictures depicting a harp nestled between the horns of a crescent moon, a heroic portrait, and a mountain scene with a small plaque under it. Above the bed hangs a family portrait: two dragonborn parents with an unhatched egg. One proud parent has light-green scales; the other has golden scales."
-							]
+							],
+							"id": "013"
 						},
 						{
 							"type": "entries",
@@ -325,7 +345,8 @@
 										}
 									]
 								}
-							]
+							],
+							"id": "014"
 						},
 						{
 							"type": "entries",
@@ -337,7 +358,9 @@
 									"href": {
 										"type": "internal",
 										"path": "adventure/LRDT/mimic.webp"
-									}
+									},
+									"width": 1031,
+									"height": 1040
 								},
 								"The bed and the trunk are two {@creature mimic||mimics} (see the {@book Monster Manual|MM} for their stat block). The mimics attack as soon as one of them is touched.",
 								"The mimics are lazy and hungry. Feeding them makes them friendly enough to stop attacking and answer simple questions. They know the following:",
@@ -361,7 +384,8 @@
 										}
 									]
 								}
-							]
+							],
+							"id": "015"
 						},
 						{
 							"type": "entries",
@@ -369,7 +393,8 @@
 							"page": 6,
 							"entries": [
 								"If he hasn't already fled the scene, Merry casts a spell ({@spell Dimension Door}) that magically transports him to his workshop as soon as he hears any commotion in the bedroom. Player Characters can explore the workshop in scene 5."
-							]
+							],
+							"id": "016"
 						},
 						{
 							"type": "entries",
@@ -411,11 +436,14 @@
 										}
 									]
 								}
-							]
+							],
+							"id": "017"
 						}
-					]
+					],
+					"id": "012"
 				}
-			]
+			],
+			"id": "00b"
 		},
 		{
 			"type": "section",
@@ -428,7 +456,8 @@
 					"page": 6,
 					"entries": [
 						"Spiky ivy grows up the side of the crumbled tower, which is surrounded by a lush meadow. Next to the tower is an enormous tree with rustling leaves. Mushrooms grow in the shade under a stone bridge, which bears a carving of a dragon's face. Prowling the meadow is an owlbear that walks on all fours. It's clear that the owlbear is hunting three big spiders that crawl through the tall grass."
-					]
+					],
+					"id": "019"
 				},
 				"The dragon face carving on the bridge represents the Cult of the Dragon, suggesting this location was once used by members of that evil organization.",
 				{
@@ -441,7 +470,9 @@
 							"href": {
 								"type": "internal",
 								"path": "adventure/LRDT/owlbear.webp"
-							}
+							},
+							"width": 1143,
+							"height": 976
 						},
 						"Three {@creature giant spider||giant spiders} are fleeing from a hungry {@creature owlbear} (see the {@book Monster Manual|MM} for both stat blocks). If the Player Characters kill a spider, the owlbear stops to eat it. Once it has eaten all three spiders, the owlbear is full and falls asleep. If the Player Characters attack or threaten either the owlbear or a spider, the creature attacks them in return or flees if it takes any damage.",
 						"Once the owlbear and spiders are dealt with, the Player Characters can explore the tree, the mushrooms under the bridge, and the ivy growing on the tower.",
@@ -466,7 +497,8 @@
 								}
 							]
 						}
-					]
+					],
+					"id": "01a"
 				},
 				{
 					"type": "entries",
@@ -479,11 +511,13 @@
 							"page": 6,
 							"entries": [
 								"Birds scatter from the tree as its limbs start to move. One of the branches moves to reveal a smiling wooden face."
-							]
+							],
+							"id": "01c"
 						},
 						"Years ago, a druid used magic to turn the tree into an {@creature awakened tree} (see the {@book Monster Manual|MM} for its stat block). The awakened tree speaks slowly and thoughtfully, mostly about things like the weather and the seasons. It talks fondly of squirrels and birds\u2014although less fondly of woodpeckers and \"the sorcerer who lives in the tower.\"",
 						"If the Player Characters ask the awakened tree to share a secret or tell them what it knows, it shuffles aside and moves a rock to reveal a door leading to the dungeon below the tower. The handle to the door has a slight glow to it. Closer examination reveals that the door is held shut by an {@spell Arcane Lock} spell. The golden key hidden by the spiders in the meadow opens it, as does a {@spell Dispel Magic} or {@spell Knock} spell cast by the Elf Wizard. The door can also be destroyed, but it will take a while and create a lot of noise. If the Player Characters enter the dungeon, advance to scene 3."
-					]
+					],
+					"id": "01b"
 				},
 				{
 					"type": "entries",
@@ -495,7 +529,9 @@
 							"href": {
 								"type": "internal",
 								"path": "adventure/LRDT/myconids.webp"
-							}
+							},
+							"width": 1075,
+							"height": 853
 						},
 						"Player Characters can rest in the soft grass under the bridge, which creates enough shade for two {@creature myconid sprout||myconids} (see the {@book Monster Manual|MM} for their stat block) to dwell here comfortably. The myconids, which resemble oversized mushrooms, fight only in self-defense.",
 						"The myconids release spores that allow them to communicate telepathically with other intelligent creatures nearby. Player Characters who question the myconids learn the following information:",
@@ -526,7 +562,8 @@
 								}
 							]
 						}
-					]
+					],
+					"id": "01d"
 				},
 				{
 					"type": "entries",
@@ -534,9 +571,11 @@
 					"page": 7,
 					"entries": [
 						"The spiky ivy growing up the side of the tower is strong enough to be climbed. If the Player Characters use the ivy to reach the upper levels of the tower, skip scene 3 and continue with scene 4 or 5, depending on how high they climb."
-					]
+					],
+					"id": "01e"
 				}
-			]
+			],
+			"id": "018"
 		},
 		{
 			"type": "section",
@@ -551,7 +590,8 @@
 					"entries": [
 						"A torch lights the entrance to this musty dungeon. Leaning against one wall is a skeleton without a skull. Clutched in one of its bony hands is a fine scimitar. Other curious items\u2014a shield, a book, and a frosty staff\u2014are scattered throughout the gloom. A ladder ascends to a closed cell door.",
 						"Three black globs of ooze creep across the dungeon floor. Behind them, floating in the air, are several items: a glowing yellow gemstone, a skull, and a silvered frying pan."
-					]
+					],
+					"id": "020"
 				},
 				{
 					"type": "entries",
@@ -563,7 +603,9 @@
 							"href": {
 								"type": "internal",
 								"path": "adventure/LRDT/cube.webp"
-							}
+							},
+							"width": 1055,
+							"height": 830
 						},
 						"Before the Player Characters can explore the rest of the dungeon, they must contend with several Oozes (see the {@book Monster Manual|MM} for their stat blocks):",
 						{
@@ -587,7 +629,8 @@
 							]
 						},
 						"The puddings and the cubes slowly dissolve the flesh of creatures they engulf. The digestive acid of the baby cube is weak, making it mostly harmless."
-					]
+					],
+					"id": "021"
 				},
 				{
 					"type": "entries",
@@ -603,14 +646,18 @@
 									"href": {
 										"type": "internal",
 										"path": "adventure/LRDT/censer.webp"
-									}
+									},
+									"width": 897,
+									"height": 605
 								},
 								{
 									"type": "image",
 									"href": {
 										"type": "internal",
 										"path": "adventure/LRDT/pan.webp"
-									}
+									},
+									"width": 783,
+									"height": 635
 								}
 							]
 						},
@@ -709,9 +756,11 @@
 										}
 									]
 								}
-							]
+							],
+							"id": "023"
 						}
-					]
+					],
+					"id": "022"
 				},
 				{
 					"type": "entries",
@@ -750,9 +799,11 @@
 								}
 							]
 						}
-					]
+					],
+					"id": "024"
 				}
-			]
+			],
+			"id": "01f"
 		},
 		{
 			"type": "section",
@@ -775,18 +826,23 @@
 									"href": {
 										"type": "internal",
 										"path": "adventure/LRDT/grimoire.webp"
-									}
+									},
+									"width": 719,
+									"height": 788
 								},
 								{
 									"type": "image",
 									"href": {
 										"type": "internal",
 										"path": "adventure/LRDT/beholder.webp"
-									}
+									},
+									"width": 1012,
+									"height": 924
 								}
 							]
 						}
-					]
+					],
+					"id": "026"
 				},
 				{
 					"type": "entries",
@@ -800,7 +856,8 @@
 							"entries": [
 								"You've reached the bottom of the tower, as evidenced by the stone staircase that curls upward. Candlelight illuminates a pair of doors and some scattered treasure.",
 								"Standing in this basement are three animated skeletons dressed like adventurers. Tucked in a corner nearby are some brightly colored plants. Floating in the middle of the room is a terrifying, spherical monster with sharp teeth, one big eye, and ten smaller eyes on wriggling stalks."
-							]
+							],
+							"id": "028"
 						},
 						{
 							"type": "entries",
@@ -811,7 +868,8 @@
 								"If Alax is with the Player Characters, Pouncy's initial attitude is friendly. The beholder rushes toward Alax and begins to lick Alax's face\u2014a clear signal that the beholder is not what it seems. If Alax isn't present, the beholder bares its teeth and keeps its distance, but doesn't attack except in self-defense. Offering it milk or calling it Pouncy changes its attitude to friendly.",
 								"If Alax or one of the Player Characters can reflect the beholder's anti-magic cone back on it using a polished object such as a silvered frying pan, the polymorph effect on Pouncy ends, restoring the displacer beast to its natural form. The Elf Wizard can also restore Pouncy's true form by casting {@spell Dispel Magic} on the beholder.",
 								"Once Alax is reunited with Pouncy, they both return to the inn, trusting the Player Characters can deal with Ervan on their own. However, if the Player Characters call for help, Alax and Pouncy rejoin them."
-							]
+							],
+							"id": "029"
 						},
 						{
 							"type": "entries",
@@ -848,7 +906,8 @@
 									]
 								},
 								"Once the skeletons are defeated, a Player Character can use the {@item Spell Scroll} of Speak with Dead found in scene 3 (if it hasn't already been used) to interrogate the skull of one of the dead adventurers and ask it up to five questions. The skull knows the same information as the one in scene 3."
-							]
+							],
+							"id": "02a"
 						},
 						{
 							"type": "entries",
@@ -856,7 +915,8 @@
 							"page": 9,
 							"entries": [
 								"The plants that grow in the basement are pink and extremely poisonous. Any creature that so much as touches one of these plants takes {@damage 2d6} poison damage."
-							]
+							],
+							"id": "02b"
 						},
 						{
 							"type": "gallery",
@@ -866,28 +926,36 @@
 									"href": {
 										"type": "internal",
 										"path": "adventure/LRDT/dagger.webp"
-									}
+									},
+									"width": 889,
+									"height": 885
 								},
 								{
 									"type": "image",
 									"href": {
 										"type": "internal",
 										"path": "adventure/LRDT/sword.webp"
-									}
+									},
+									"width": 733,
+									"height": 1040
 								},
 								{
 									"type": "image",
 									"href": {
 										"type": "internal",
 										"path": "adventure/LRDT/cloak.webp"
-									}
+									},
+									"width": 967,
+									"height": 827
 								},
 								{
 									"type": "image",
 									"href": {
 										"type": "internal",
 										"path": "adventure/LRDT/ring.webp"
-									}
+									},
+									"width": 322,
+									"height": 310
 								}
 							]
 						},
@@ -897,7 +965,8 @@
 							"page": 10,
 							"entries": [
 								"The Player Characters can climb the staircase to reach the upper levels of the tower. If they take the stairs, continue with scene 5."
-							]
+							],
+							"id": "02c"
 						},
 						{
 							"type": "entries",
@@ -909,7 +978,9 @@
 									"href": {
 										"type": "internal",
 										"path": "adventure/LRDT/lantern.webp"
-									}
+									},
+									"width": 349,
+									"height": 626
 								},
 								"After the skeletons are dealt with, Player Characters can loot the basement. It contains the following treasures:",
 								{
@@ -946,11 +1017,14 @@
 										}
 									]
 								}
-							]
+							],
+							"id": "02d"
 						}
-					]
+					],
+					"id": "027"
 				}
-			]
+			],
+			"id": "025"
 		},
 		{
 			"type": "section",
@@ -969,7 +1043,8 @@
 							"page": 10,
 							"entries": [
 								"This level of the tower has a shrine backed against one wall. Carved above the shrine are five stone dragon heads, and resting on the shrine's altar is a lustrous green orb. A large key rests in a small stand on the floor."
-							]
+							],
+							"id": "030"
 						},
 						{
 							"type": "entries",
@@ -977,7 +1052,8 @@
 							"page": 10,
 							"entries": [
 								"The large key unlocks the door to the prison cell in the dungeon (see scene 3). It also locks and unlocks the trap door described below."
-							]
+							],
+							"id": "031"
 						},
 						{
 							"type": "entries",
@@ -985,7 +1061,8 @@
 							"page": 10,
 							"entries": [
 								"Just inside the door to this room, and exactly where one would stand to pick up the large key from its holder, is a hidden trap door. Any creature heavier than a housecat that steps on the trap door causes it to open, dropping the creature into the basement below (see scene 4). The creature takes {@damage 1d6} bludgeoning damage from the fall. A Player Character can use the large key described above to lock the trap door so that it doesn't open."
-							]
+							],
+							"id": "032"
 						},
 						{
 							"type": "entries",
@@ -997,12 +1074,15 @@
 									"href": {
 										"type": "internal",
 										"path": "adventure/LRDT/orb.webp"
-									}
+									},
+									"width": 765,
+									"height": 564
 								},
 								"An {@item Orb of Dragonkind} rests on the shrine's altar. This powerful magic item contains the essence of an evil dragon and is dangerous to use. Whoever controls the orb can issue a telepathic call that extends for 40 miles in all directions. Evil Dragons in range feel compelled to come to the orb as soon as possible by the most direct route. If the orb is used in this way, Cinderhowl is the only dragon to answer the call, as described in scene 6.",
 								"The shrine itself was built by the tower's original owner, who was a member of an evil organization called the Cult of the Dragon. The stone heads above the altar represent Tiamat, the five-headed queen of evil dragons. The five dragon heads snap at any creature other than a Dragon or a dragonborn that touches the orb or the shrine. Make one attack roll ({@dice 1d20 + 5}). If the attack hits, whoever triggered the attack takes {@damage 5d6} piercing damage.",
 								"If you're not using D&D rules, the biting dragon heads hit automatically."
-							]
+							],
+							"id": "033"
 						},
 						{
 							"type": "entries",
@@ -1010,9 +1090,11 @@
 							"page": 10,
 							"entries": [
 								"These winding steps ascend to the second floor. Under the stairs is a small alcove containing a {@item Potion of Clairvoyance} and a {@creature giant wolf spider} (see the {@book Monster Manual|MM} for its stat block). The spider attacks any creature that tries to take the potion and defends itself if attacked."
-							]
+							],
+							"id": "034"
 						}
-					]
+					],
+					"id": "02f"
 				},
 				{
 					"type": "entries",
@@ -1026,7 +1108,8 @@
 							"entries": [
 								"This space contains all the makings of an arcane workshop: a red candle, a cauldron, assorted spell components, scrolls, and a lit brazier made from a humanoid skull.",
 								"Merry Rumwell greets your arrival with frustration. \"Not you again! Go bother someone else!\" With that, the form of the innkeeper melts away, replaced by that of a crimson-clad sorcerer who grabs a scroll and disappears yet again."
-							]
+							],
+							"id": "036"
 						},
 						"Ervan casts another {@spell Dimension Door} spell and escapes before the Player Characters can do anything to him. He takes one of his Spell Scrolls with him (see \"Searching the Workshop\" below). The Player Characters catch up to Ervan in scene 6.",
 						{
@@ -1055,9 +1138,11 @@
 										}
 									]
 								}
-							]
+							],
+							"id": "037"
 						}
-					]
+					],
+					"id": "035"
 				},
 				{
 					"type": "entries",
@@ -1070,7 +1155,8 @@
 							"page": 10,
 							"entries": [
 								"At this height, not much of the tower remains. Resting on what's left of the third floor is a dragon egg surrounded by lit candles."
-							]
+							],
+							"id": "039"
 						},
 						"Ervan placed candles around the dragon egg to keep it warm until it hatches. Away from its mother, the wyrmling takes much longer to hatch than normal\u2014something the sorcerer didn't anticipate.",
 						"The dragon egg is visible from the tower's peak, where Ervan has chosen to make his final stand. If the characters look up, they see Ervan glaring at them. Read the following aloud:",
@@ -1079,13 +1165,16 @@
 							"page": 11,
 							"entries": [
 								"A ladder clinging to the wall stops just short of the tower's peak\u2014little more than a stone shelf on which the sorcerer stands, scroll in hand. His clothes flap in the wind as he glares at you. \"That's my egg!\" he shouts."
-							]
+							],
+							"id": "03a"
 						},
 						"The dragon egg is surprisingly resilient. Fire doesn't harm it, a fall won't break it, and nonmagical weapons can't crack it.",
 						"Despite the egg's natural resilience, Ervan won't risk damaging the egg by attacking Player Characters near it. If the characters seize the egg, Ervan yells, \"Thieves!\" Before Ervan can take further action, Cinderhowl catches sight of him and flies toward the tower. Continue with scene 6."
-					]
+					],
+					"id": "038"
 				}
-			]
+			],
+			"id": "02e"
 		},
 		{
 			"type": "section",
@@ -1097,7 +1186,9 @@
 					"href": {
 						"type": "internal",
 						"path": "adventure/LRDT/dragon.webp"
-					}
+					},
+					"width": 1595,
+					"height": 1205
 				},
 				"This final scene marks the arrival of Cinderhowl, who is searching the countryside for signs of the thieves who stole her egg. Activity atop the ruined tower draws her attention:",
 				{
@@ -1105,7 +1196,8 @@
 					"page": 11,
 					"entries": [
 						"A terrible roar fills the sky as a fully grown red dragon swoops toward the tower. The evil sorcerer blanches at the sight of the dragon and quickly unfurls his scroll."
-					]
+					],
+					"id": "03c"
 				},
 				"The adventure concludes with a double \"boss fight.\" The Player Characters must deal with two foes at once: Cinderhowl and Ervan Soulfallen. Clever characters can turn one of these foes against the other.",
 				{
@@ -1117,7 +1209,8 @@
 						"Nothing the Player Characters say can quench Cinderhowl's rage. The dragon is convinced Ervan hired them to steal her egg. As an action, a character can try to redirect Cinderhowl's rage toward Ervan, doing so with a successful {@dc 20} Charisma ({@skill Deception} or {@skill Persuasion}) check. Use whichever skill seems most appropriate.",
 						"If Cinderhowl was lured to the tower by the {@item Orb of Dragonkind} (see scene 5), the dragon tries to kill whoever has the orb after the egg is safely in her custody. If a Player Character willingly gives her the orb, Cinderhowl keeps it while granting nothing in return.",
 						"If Cinderhowl regains the egg but seems on the verge of losing the battle, she takes the egg back to her mountain lair after warning the Player Characters that she will haunt their nightmares."
-					]
+					],
+					"id": "03d"
 				},
 				{
 					"type": "entries",
@@ -1126,9 +1219,11 @@
 					"entries": [
 						"{@creature Ervan Soulfallen|LRDT} (see the \"Nonplayer Characters\" section at the end of the adventure for his stat block) targets Cinderhowl with his {@item Spell Scroll} of {@spell Hold Monster}. If Cinderhowl fails her saving throw, she has the {@condition paralyzed} condition for the spell's duration and falls to the ground, giving Ervan time to snatch the egg and run. If Cinderhowl succeeds on the saving throw, she laughs at Ervan's \"puny magic.\" Either way, the scroll turns to dust after Ervan casts the spell from it.",
 						"Ervan would sooner die than give up the egg."
-					]
+					],
+					"id": "03e"
 				}
-			]
+			],
+			"id": "03b"
 		},
 		{
 			"type": "section",
@@ -1136,7 +1231,8 @@
 			"page": 11,
 			"entries": [
 				"If the Player Characters defeat Ervan and Cinderhowl, Alax Jadescales prepares a banquet that includes platters of mouth-watering, all-youcan-eat hot wings. The Player Characters are welcome to stay at the Inn Plain Sight whenever they like."
-			]
+			],
+			"id": "03f"
 		},
 		{
 			"type": "section",
@@ -1152,7 +1248,8 @@
 						"{@creature Ervan Soulfallen|LRDT}"
 					]
 				}
-			]
+			],
+			"id": "040"
 		},
 		{
 			"type": "section",
@@ -1176,7 +1273,8 @@
 								"Creatures controlled by the Dungeon Master"
 							]
 						}
-					]
+					],
+					"id": "042"
 				},
 				{
 					"type": "entries",
@@ -1218,7 +1316,8 @@
 								}
 							]
 						}
-					]
+					],
+					"id": "043"
 				},
 				{
 					"type": "entries",
@@ -1272,13 +1371,17 @@
 											"entries": [
 												"Any minifigure that is Knocked Down by damage three times during a scene is Knocked Out (unable to take turns) until the next scene begins; the same rule applies to Alax Jadescales. If all the Player Characters' minifigures are Knocked Out when the Dungeon Master's turn begins, the adventure ends in defeat.",
 												"If Ervan Soulfallen is Knocked Down three times during a scene, he surrenders, escapes, or dies (your choice)."
-											]
+											],
+											"id": "047"
 										}
-									]
+									],
+									"id": "046"
 								}
-							]
+							],
+							"id": "045"
 						}
-					]
+					],
+					"id": "044"
 				},
 				{
 					"type": "entries",
@@ -1306,7 +1409,8 @@
 								}
 							]
 						}
-					]
+					],
+					"id": "048"
 				},
 				{
 					"type": "section",
@@ -1326,7 +1430,8 @@
 											"page": 14,
 											"entries": [
 												"Nonmagical, handheld weapons can't harm the minifigure wearing this breastplate."
-											]
+											],
+											"id": "04c"
 										},
 										{
 											"type": "entries",
@@ -1334,7 +1439,8 @@
 											"page": 14,
 											"entries": [
 												"A minifigure equipped with this shield can use it to shove another creature. The shield also protects against incoming arrows and breath weapons."
-											]
+											],
+											"id": "04d"
 										},
 										{
 											"type": "entries",
@@ -1342,7 +1448,8 @@
 											"page": 14,
 											"entries": [
 												"If a minifigure is hidden before making an attack with this dagger, the dagger's poison deals extra damage."
-											]
+											],
+											"id": "04e"
 										},
 										{
 											"type": "entries",
@@ -1350,7 +1457,8 @@
 											"page": 14,
 											"entries": [
 												"When used as a flail, this magic censer automatically destroys any Undead creature it hits."
-											]
+											],
+											"id": "04f"
 										},
 										{
 											"type": "entries",
@@ -1358,7 +1466,8 @@
 											"page": 14,
 											"entries": [
 												"A minifigure can use this lantern to see {@condition invisible} creatures and objects."
-											]
+											],
+											"id": "050"
 										},
 										{
 											"type": "entries",
@@ -1366,7 +1475,8 @@
 											"page": 14,
 											"entries": [
 												"After a minifigure reads this magic book, the book vanishes, and the minifigure gains the ability to perform amazing acrobatic feats for the rest of the adventure."
-											]
+											],
+											"id": "051"
 										},
 										{
 											"type": "entries",
@@ -1374,7 +1484,8 @@
 											"page": 14,
 											"entries": [
 												"Three times during the adventure, the orb can be used to teleport its holder to a safe location of the holder's choice within the confines of the built LEGO® set. The orb also has the power to summon evil dragons, as described in scene 5."
-											]
+											],
+											"id": "052"
 										},
 										{
 											"type": "entries",
@@ -1382,7 +1493,8 @@
 											"page": 14,
 											"entries": [
 												"Drinking this potion allows a minifigure to see or hear what's going on in a location that is otherwise beyond the range of its senses. For example, this potion can help a minifigure see what's on the opposite side of a closed door."
-											]
+											],
+											"id": "053"
 										},
 										{
 											"type": "entries",
@@ -1390,7 +1502,8 @@
 											"page": 14,
 											"entries": [
 												"Feeding this potion to a Knocked Out minifigure ends that effect on it, allowing the minifigure to resume taking turns. In addition, the minifigure's Knocked Down count for the current scene resets to 0. Alternatively, if a minifigure missing one or more Points drinks this potion, it regains one of its missing Points."
-											]
+											],
+											"id": "054"
 										},
 										{
 											"type": "entries",
@@ -1398,7 +1511,8 @@
 											"page": 14,
 											"entries": [
 												"This potion is identical to a {@item Potion of Healing} (see above), except two missing Points are regained instead of one."
-											]
+											],
+											"id": "055"
 										},
 										{
 											"type": "entries",
@@ -1406,7 +1520,8 @@
 											"page": 14,
 											"entries": [
 												"After drinking this potion, a minifigure can perform impressive feats of strength and athleticism until the current scene ends."
-											]
+											],
+											"id": "056"
 										},
 										{
 											"type": "entries",
@@ -1414,7 +1529,8 @@
 											"page": 14,
 											"entries": [
 												"After drinking this potion, a minifigure is immune to acid until the current scene ends."
-											]
+											],
+											"id": "057"
 										},
 										{
 											"type": "entries",
@@ -1422,7 +1538,8 @@
 											"page": 14,
 											"entries": [
 												"After drinking this potion, a minifigure can make an extra attack on each of its turns and moves more rapidly than normal. These effects end when the current scene ends."
-											]
+											],
+											"id": "058"
 										},
 										{
 											"type": "entries",
@@ -1430,7 +1547,8 @@
 											"page": 14,
 											"entries": [
 												"On the minifigure's turn, it can don this ring to become {@condition invisible} or remove the ring to become visible again."
-											]
+											],
+											"id": "059"
 										},
 										{
 											"type": "entries",
@@ -1438,7 +1556,8 @@
 											"page": 14,
 											"entries": [
 												"The minifigure can command this article of clothing to shed {@quickref Vision and Light||2||bright light} in a dazzling array of colors that enemies can't bear to look at."
-											]
+											],
+											"id": "05a"
 										},
 										{
 											"type": "entries",
@@ -1446,7 +1565,8 @@
 											"page": 14,
 											"entries": [
 												"On its turn, a minifigure holding this scimitar can attack twice with it instead of once."
-											]
+											],
+											"id": "05b"
 										},
 										{
 											"type": "entries",
@@ -1454,7 +1574,8 @@
 											"page": 14,
 											"entries": [
 												"Whoever holds this shield is great at spotting and finding things."
-											]
+											],
+											"id": "05c"
 										},
 										{
 											"type": "entries",
@@ -1462,7 +1583,8 @@
 											"page": 14,
 											"entries": [
 												"The scroll turns to dust as the minifigure casts the {@spell Animate Dead} spell, which transforms inanimate bones into an Undead skeleton under the caster's control."
-											]
+											],
+											"id": "05d"
 										},
 										{
 											"type": "entries",
@@ -1470,7 +1592,8 @@
 											"page": 14,
 											"entries": [
 												"The scroll turns to dust as the minifigure casts the {@spell Hold Monster} spell on another minifigure, preventing it from doing anything on its next turn."
-											]
+											],
+											"id": "05e"
 										},
 										{
 											"type": "entries",
@@ -1478,7 +1601,8 @@
 											"page": 14,
 											"entries": [
 												"The scroll turns to dust as the minifigure casts the {@spell Ice Storm} spell, which deals damage to all creatures in the storm's area."
-											]
+											],
+											"id": "05f"
 										},
 										{
 											"type": "entries",
@@ -1486,7 +1610,8 @@
 											"page": 14,
 											"entries": [
 												"The scroll turns to dust as the minifigure casts the {@spell Invisibility} spell on itself or another minifigure. The spell's recipient is {@condition invisible} until it attacks or casts a spell."
-											]
+											],
+											"id": "060"
 										},
 										{
 											"type": "entries",
@@ -1494,7 +1619,8 @@
 											"page": 14,
 											"entries": [
 												"The scroll turns to dust as the minifigure casts the {@spell Mage Armor} spell on itself or another minifigure, encasing the spell's recipient in magical armor."
-											]
+											],
+											"id": "061"
 										},
 										{
 											"type": "entries",
@@ -1502,7 +1628,8 @@
 											"page": 14,
 											"entries": [
 												"The scroll turns to dust as the minifigure casts the {@spell Magic Missile} spell, creating three magical darts that automatically hit their targets."
-											]
+											],
+											"id": "062"
 										},
 										{
 											"type": "entries",
@@ -1510,7 +1637,8 @@
 											"page": 14,
 											"entries": [
 												"The scroll turns to dust as the minifigure casts the {@spell Phantasmal Force} spell, which creates an illusion of a creature or an object. The illusion lasts until the end of the current scene, but the caster can make it vanish before then."
-											]
+											],
+											"id": "063"
 										},
 										{
 											"type": "entries",
@@ -1518,7 +1646,8 @@
 											"page": 14,
 											"entries": [
 												"The scroll turns to dust as the minifigure casts the {@spell Protection from Energy} spell, either on itself or on another creature, giving the spells' target immunity to one type of energy (such as cold or fire) until the end of the current scene."
-											]
+											],
+											"id": "064"
 										},
 										{
 											"type": "entries",
@@ -1526,7 +1655,8 @@
 											"page": 14,
 											"entries": [
 												"The scroll turns to dust as the minifigure casts the {@spell Speak with Dead} spell, which lets the caster interrogate a nearby inanimate skull, asking it up to five questions."
-											]
+											],
+											"id": "065"
 										},
 										{
 											"type": "entries",
@@ -1534,7 +1664,8 @@
 											"page": 14,
 											"entries": [
 												"A minifigure holding this staff can cause it to project a cone of cold energy at another minifigure. In addition to taking cold damage, the target can't do anything on its next turn."
-											]
+											],
+											"id": "066"
 										},
 										{
 											"type": "entries",
@@ -1542,7 +1673,8 @@
 											"page": 14,
 											"entries": [
 												"This sword is so sharp that it can cut through wood and stone. It can be used to break off elements of buildings and other large objects."
-											]
+											],
+											"id": "067"
 										},
 										{
 											"type": "entries",
@@ -1550,11 +1682,14 @@
 											"page": 14,
 											"entries": [
 												"After a minifigure reads this magic book, the book vanishes, and the minifigure gains special knowledge previously unknown to it, which takes the form of a secret or hint revealed by the Dungeon Master."
-											]
+											],
+											"id": "068"
 										}
-									]
+									],
+									"id": "04b"
 								}
-							]
+							],
+							"id": "04a"
 						},
 						{
 							"type": "gallery",
@@ -1564,20 +1699,26 @@
 									"href": {
 										"type": "internal",
 										"path": "adventure/LRDT/shield.webp"
-									}
+									},
+									"width": 692,
+									"height": 725
 								},
 								{
 									"type": "image",
 									"href": {
 										"type": "internal",
 										"path": "adventure/LRDT/staff.webp"
-									}
+									},
+									"width": 859,
+									"height": 986
 								}
 							]
 						}
-					]
+					],
+					"id": "049"
 				}
-			]
+			],
+			"id": "041"
 		},
 		{
 			"type": "section",
@@ -1595,7 +1736,9 @@
 								"type": "internal",
 								"path": "adventure/LRDT/dwarf.webp"
 							},
-							"title": "{@5etools Dwarf Cleric|img/pdf/LRDT/Dwarf Cleric.pdf}"
+							"title": "{@5etools Dwarf Cleric|img/pdf/LRDT/Dwarf Cleric.pdf}",
+							"width": 1075,
+							"height": 919
 						},
 						{
 							"type": "image",
@@ -1603,7 +1746,9 @@
 								"type": "internal",
 								"path": "adventure/LRDT/knight.webp"
 							},
-							"title": "{@5etools Elf Wizard|img/pdf/LRDT/Elf Wizard.pdf}"
+							"title": "{@5etools Elf Wizard|img/pdf/LRDT/Elf Wizard.pdf}",
+							"width": 883,
+							"height": 993
 						},
 						{
 							"type": "image",
@@ -1611,7 +1756,9 @@
 								"type": "internal",
 								"path": "adventure/LRDT/mage.webp"
 							},
-							"title": "{@5etools Gnome Fighter|img/pdf/LRDT/Gnome Fighter.pdf}"
+							"title": "{@5etools Gnome Fighter|img/pdf/LRDT/Gnome Fighter.pdf}",
+							"width": 649,
+							"height": 908
 						},
 						{
 							"type": "image",
@@ -1619,11 +1766,14 @@
 								"type": "internal",
 								"path": "adventure/LRDT/rogue.webp"
 							},
-							"title": "{@5etools Orc Rogue|img/pdf/LRDT/Orc Rogue.pdf}"
+							"title": "{@5etools Orc Rogue|img/pdf/LRDT/Orc Rogue.pdf}",
+							"width": 1005,
+							"height": 944
 						}
 					]
 				}
-			]
+			],
+			"id": "069"
 		},
 		{
 			"type": "section",
@@ -1689,7 +1839,8 @@
 										}
 									]
 								}
-							]
+							],
+							"id": "06b"
 						},
 						{
 							"type": "entries",
@@ -1711,7 +1862,8 @@
 										}
 									]
 								}
-							]
+							],
+							"id": "06c"
 						},
 						{
 							"type": "entries",
@@ -1738,7 +1890,8 @@
 										}
 									]
 								}
-							]
+							],
+							"id": "06d"
 						}
 					]
 				},
@@ -1748,7 +1901,9 @@
 						"type": "internal",
 						"path": "adventure/LRDT/cover.webp"
 					},
-					"title": "Cover"
+					"title": "Cover",
+					"width": 2039,
+					"height": 2636
 				},
 				{
 					"type": "gallery",
@@ -1758,25 +1913,32 @@
 							"href": {
 								"type": "internal",
 								"path": "adventure/LRDT/book.webp"
-							}
+							},
+							"width": 856,
+							"height": 846
 						},
 						{
 							"type": "image",
 							"href": {
 								"type": "internal",
 								"path": "adventure/LRDT/lantern.webp"
-							}
+							},
+							"width": 349,
+							"height": 626
 						},
 						{
 							"type": "image",
 							"href": {
 								"type": "internal",
 								"path": "adventure/LRDT/skeletons.webp"
-							}
+							},
+							"width": 1871,
+							"height": 1040
 						}
 					]
 				}
-			]
+			],
+			"id": "06a"
 		}
 	]
 }

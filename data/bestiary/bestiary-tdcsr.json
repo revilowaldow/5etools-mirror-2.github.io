@@ -65,7 +65,8 @@
 						"piercing",
 						"slashing"
 					],
-					"note": "from non-magical attacks"
+					"note": "from non-magical attacks",
+					"cond": true
 				}
 			],
 			"conditionImmune": [
@@ -1415,7 +1416,8 @@
 						"piercing",
 						"slashing"
 					],
-					"note": "from non-magical attacks"
+					"note": "from non-magical attacks",
+					"cond": true
 				}
 			],
 			"immune": [
@@ -3043,7 +3045,8 @@
 						"lightning",
 						"thunder"
 					],
-					"note": "while enlarged"
+					"note": "while enlarged",
+					"cond": true
 				},
 				{
 					"resist": [
@@ -3051,7 +3054,8 @@
 						"piercing",
 						"slashing"
 					],
-					"note": "while raging"
+					"note": "while raging",
+					"cond": true
 				}
 			],
 			"conditionImmune": [
@@ -3060,7 +3064,8 @@
 						"charmed",
 						"frightened"
 					],
-					"note": "while raging"
+					"note": "while raging",
+					"cond": true
 				}
 			],
 			"languages": [
@@ -4168,7 +4173,8 @@
 						"piercing",
 						"slashing"
 					],
-					"note": "from non-magical attacks"
+					"note": "from non-magical attacks",
+					"cond": true
 				}
 			],
 			"conditionImmune": [

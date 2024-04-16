@@ -6382,6 +6382,37 @@
 							]
 						},
 						{
+							"type": "gallery",
+							"images": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/CoS/map-4.02-walls.webp"
+									},
+									"title": "Walls of Ravenloft (Battlemap; DM Version)",
+									"width": 3840,
+									"height": 5211,
+									"imageType": "map",
+									"id": "411"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/CoS/map-4.02-walls-player.webp"
+									},
+									"title": "Walls of Ravenloft (Battlemap; Player Version)",
+									"width": 3840,
+									"height": 5211,
+									"imageType": "mapPlayer",
+									"mapParent": {
+										"id": "411"
+									}
+								}
+							]
+						},
+						{
 							"type": "entries",
 							"name": "K1. Front Courtyard",
 							"page": 52,
@@ -7458,6 +7489,37 @@
 									"mapParent": {
 										"id": "16f",
 										"autoScale": true
+									}
+								}
+							]
+						},
+						{
+							"type": "gallery",
+							"images": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/CoS/map-4.03-main-floor.webp"
+									},
+									"title": "Main Floor (Battlemap; DM Version)",
+									"width": 3000,
+									"height": 2072,
+									"imageType": "map",
+									"id": "4bc"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/CoS/map-4.03-main-floor-player.webp"
+									},
+									"title": "Main Floor (Battlemap; Player Version)",
+									"width": 3000,
+									"height": 2072,
+									"imageType": "mapPlayer",
+									"mapParent": {
+										"id": "4bc"
 									}
 								}
 							]
@@ -8566,6 +8628,37 @@
 									"mapParent": {
 										"id": "172",
 										"autoScale": true
+									}
+								}
+							]
+						},
+						{
+							"type": "gallery",
+							"images": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/CoS/map-4.04-court-revised.webp"
+									},
+									"title": "Court of the Count (Battlemap; DM Version)",
+									"width": 5560,
+									"height": 3840,
+									"imageType": "map",
+									"id": "530"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/CoS/map-4.04-court-player-revised.webp"
+									},
+									"title": "Court of the Count (Battlemap; Player Version)",
+									"width": 5560,
+									"height": 3840,
+									"imageType": "mapPlayer",
+									"mapParent": {
+										"id": "530"
 									}
 								}
 							]
@@ -9711,6 +9804,37 @@
 							]
 						},
 						{
+							"type": "gallery",
+							"images": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/CoS/map-4.05-weeping.webp"
+									},
+									"title": "Rooms of Weeping (Battlemap; DM Version)",
+									"width": 3000,
+									"height": 2072,
+									"imageType": "map",
+									"id": "54d"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/CoS/map-4.05-weeping-player.webp"
+									},
+									"title": "Rooms of Weeping (Battlemap; Player Version)",
+									"width": 3000,
+									"height": 2072,
+									"imageType": "mapPlayer",
+									"mapParent": {
+										"id": "54d"
+									}
+								}
+							]
+						},
+						{
 							"type": "entries",
 							"name": "K35. Guardian Vermin",
 							"page": 64,
@@ -10540,6 +10664,37 @@
 									"mapParent": {
 										"id": "191",
 										"autoScale": true
+									}
+								}
+							]
+						},
+						{
+							"type": "gallery",
+							"images": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/CoS/map-4.06-spires12.webp"
+									},
+									"title": "Spires and Tower of Ravenloft (Battlemap; DM Version)",
+									"width": 5000,
+									"height": 3372,
+									"imageType": "map",
+									"id": "573"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/CoS/map-4.06-spires12-player.webp"
+									},
+									"title": "Spires and Tower of Ravenloft (Battlemap; Player Version)",
+									"width": 5000,
+									"height": 3372,
+									"imageType": "mapPlayer",
+									"mapParent": {
+										"id": "573"
 									}
 								}
 							]
@@ -11673,7 +11828,8 @@
 										"path": "adventure/CoS/037-cos19-10.webp"
 									},
 									"width": 1000,
-									"height": 820
+									"height": 820,
+									"maxWidth": 480
 								},
 								{
 									"type": "entries",
@@ -14044,6 +14200,68 @@
 									"mapParent": {
 										"id": "459",
 										"autoScale": true
+									}
+								}
+							]
+						},
+						{
+							"type": "gallery",
+							"images": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/CoS/map-4.08-larders.webp"
+									},
+									"title": "Larders of Ill Omen (Battlemap; DM Version)",
+									"width": 3000,
+									"height": 2175,
+									"imageType": "map",
+									"id": "591"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/CoS/map-4.08-larders-player.webp"
+									},
+									"title": "Larders of Ill Omen (Battlemap; Player Version)",
+									"width": 3000,
+									"height": 2175,
+									"imageType": "mapPlayer",
+									"mapParent": {
+										"id": "591"
+									}
+								}
+							]
+						},
+						{
+							"type": "gallery",
+							"images": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/CoS/map-4.09-dungeons-and-catacombs.webp"
+									},
+									"title": "Dungeon and Catacombs (Battlemap; DM Version)",
+									"width": 3000,
+									"height": 2929,
+									"imageType": "map",
+									"id": "673"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/CoS/map-4.09-dungeons-and-catacombs-player.webp"
+									},
+									"title": "Dungeon and Catacombs (Battlemap; Player Version)",
+									"width": 3000,
+									"height": 2929,
+									"imageType": "mapPlayer",
+									"mapParent": {
+										"id": "673"
 									}
 								}
 							]
@@ -33707,7 +33925,7 @@
 											"page": 193,
 											"id": "64b",
 											"entries": [
-												"The vestige within this sarcophagus offers the dark gift of Great Taar Haak, the Five-Headed Destroyer. Taar Haak's gift is great strength. This dark gift grants its beneficiary the benefit of a {@item belt of fire giant strength}. This benefit lasts for 10 days, after which the dark giftvanishes.",
+												"The vestige within this sarcophagus offers the dark gift of Great Taar Haak, the Five-Headed Destroyer. Taar Haak's gift is great strength. This dark gift grants its beneficiary the benefit of a {@item belt of fire giant strength}. This benefit lasts for 10 days, after which the dark gift vanishes.",
 												"The beneficiary of this dark gift the following flaw: \"I like to bully others and make them feel weak and inferior.\""
 											]
 										},

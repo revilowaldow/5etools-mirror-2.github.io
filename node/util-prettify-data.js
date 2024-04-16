@@ -265,9 +265,11 @@ function getFnListSort (prop) {
 		case "card":
 			return SortUtil.ascSortCard.bind(SortUtil);
 		case "class":
+		case "classFluff":
 		case "foundryClass":
 			return (a, b) => SortUtil.ascSortDateString(Parser.sourceJsonToDate(b.source), Parser.sourceJsonToDate(a.source)) || SortUtil.ascSortLower(a.name, b.name) || SortUtil.ascSortLower(a.source, b.source);
 		case "subclass":
+		case "subclassFluff":
 		case "foundrySubclass":
 			return (a, b) => SortUtil.ascSortDateString(Parser.sourceJsonToDate(b.source), Parser.sourceJsonToDate(a.source)) || SortUtil.ascSortLower(a.name, b.name);
 		case "classFeature":

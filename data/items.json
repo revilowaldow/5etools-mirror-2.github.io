@@ -2270,6 +2270,7 @@
 			"source": "DMG",
 			"page": 152,
 			"srd": true,
+			"baseItem": "plate armor|phb",
 			"type": "HA",
 			"tier": "major",
 			"rarity": "legendary",

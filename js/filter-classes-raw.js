@@ -63,13 +63,25 @@ class PageFilterClassesRaw extends PageFilterClassesBase {
 	}
 
 	static async pPostLoad (data, {...opts} = {}) {
-		data = MiscUtil.copy(data);
+		// region Copy data
+		data = {...data};
+
+		const {propsCopied} = opts;
+
+		if (!data.class) data.class = [];
+		else data.class = MiscUtil.copyFast(data.class);
+
+		if (data.subclass) data.subclass = MiscUtil.copyFast(data.subclass);
+
+		if (propsCopied) {
+			propsCopied.add("class");
+			propsCopied.add("subclass");
+		}
+		// endregion
 
 		// Ensure prerelease/homebrew is initialised
 		await PrereleaseUtil.pGetBrewProcessed();
 		await BrewUtil2.pGetBrewProcessed();
-
-		if (!data.class) data.class = [];
 
 		// Attach subclasses to parent classes
 		if (data.subclass) {
@@ -84,7 +96,7 @@ class PageFilterClassesRaw extends PageFilterClassesBase {
 					cls = await this._pGetParentClass(sc);
 					if (cls) {
 						// If a base class exists, make a stripped-down copy and override its subclasses with our own
-						cls = MiscUtil.copy(cls);
+						cls = MiscUtil.copyFast(cls);
 						cls.subclasses = [];
 						data.class.push(cls);
 					} else {
@@ -313,7 +325,7 @@ class PageFilterClassesRaw extends PageFilterClassesBase {
 		ent.name = name;
 		ent.source = source;
 
-		const entityRoot = raw != null ? MiscUtil.copy(raw) : await DataLoader.pCacheAndGet(`raw_${prop}`, ent.source, ent.hash, {isCopy: true});
+		const entityRoot = raw != null ? MiscUtil.copyFast(raw) : await DataLoader.pCacheAndGet(`raw_${prop}`, ent.source, ent.hash, {isCopy: true});
 		const loadedRoot = {
 			type: prop,
 			entity: entityRoot,
@@ -362,8 +374,8 @@ class PageFilterClassesRaw extends PageFilterClassesBase {
 		if (!sideData) return false;
 		if (sideData.isIgnored) return true;
 
-		if (sideData.entries) entity.entries = MiscUtil.copy(sideData.entries);
-		if (sideData.entryData) entity.entryData = MiscUtil.copy(sideData.entryData);
+		if (sideData.entries) entity.entries = MiscUtil.copyFast(sideData.entries);
+		if (sideData.entryData) entity.entryData = MiscUtil.copyFast(sideData.entryData);
 
 		return false;
 	}
@@ -679,7 +691,7 @@ class ModalFilterClasses extends ModalFilter {
 					if (it.data.ixSubclass == null) out.class = this._filterCache.allData[it.data.ixClass];
 					else out.subclass = this._filterCache.allData[it.data.ixClass].subclasses[it.data.ixSubclass];
 				});
-				resolve(MiscUtil.copy(out));
+				resolve(MiscUtil.copyFast(out));
 
 				doClose(true);
 
@@ -912,7 +924,7 @@ class ModalFilterClasses extends ModalFilter {
 	async _pLoadAllData () {
 		this._pLoadingAllData = this._pLoadingAllData || (async () => {
 			const [data, prerelease, brew] = await Promise.all([
-				MiscUtil.copy(await DataUtil.class.loadRawJSON()),
+				MiscUtil.copyFast(await DataUtil.class.loadRawJSON()),
 				PrereleaseUtil.pGetBrewProcessed(),
 				BrewUtil2.pGetBrewProcessed(),
 			]);
@@ -932,13 +944,13 @@ class ModalFilterClasses extends ModalFilter {
 		const clsProps = brewUtil.getPageProps({page: UrlUtil.PG_CLASSES});
 
 		if (!clsProps.includes("*")) {
-			clsProps.forEach(prop => data[prop] = [...(data[prop] || []), ...MiscUtil.copy(brew[prop] || [])]);
+			clsProps.forEach(prop => data[prop] = [...(data[prop] || []), ...MiscUtil.copyFast(brew[prop] || [])]);
 			return;
 		}
 
 		Object.entries(brew)
 			.filter(([, brewVal]) => brewVal instanceof Array)
-			.forEach(([prop, brewArr]) => data[prop] = [...(data[prop] || []), ...MiscUtil.copy(brewArr)]);
+			.forEach(([prop, brewArr]) => data[prop] = [...(data[prop] || []), ...MiscUtil.copyFast(brewArr)]);
 	}
 
 	_getListItems (pageFilter, cls, clsI) {

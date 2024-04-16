@@ -1886,7 +1886,7 @@ class DataLoader {
 	 */
 	static async pCacheAndGet (page, source, hash, {isCopy = false, isRequired = false, isSilent = false, lockToken2} = {}) {
 		const fromCache = this.getFromCache(page, source, hash, {isCopy, _isReturnSentinel: true});
-		if (fromCache === _DataLoaderConst.ENTITY_NULL) return null;
+		if (fromCache === _DataLoaderConst.ENTITY_NULL) return this._getVerifiedRequiredEntity({pageClean: page, sourceClean: source, hashClean: hash, ent: null, isRequired});
 		if (fromCache) return fromCache;
 
 		const {page: pageClean, source: sourceClean, hash: hashClean} = _DataLoaderInternalUtil.getCleanPageSourceHash({page, source, hash});

@@ -1846,6 +1846,7 @@
 	"languageScript": [
 		{
 			"name": "Draconic",
+			"source": "PHB",
 			"fonts": [
 				"fonts/languages/PHB/Draconic/Iokharic.otf",
 				"fonts/languages/PHB/Draconic/Iokharic Bold.otf",
@@ -1855,6 +1856,7 @@
 		},
 		{
 			"name": "Dwarvish",
+			"source": "PHB",
 			"fonts": [
 				"fonts/languages/PHB/Dwarvish/Dethek.otf",
 				"fonts/languages/PHB/Dwarvish/Dethek Bold.otf",
@@ -1872,6 +1874,7 @@
 		},
 		{
 			"name": "Elvish",
+			"source": "PHB",
 			"fonts": [
 				"fonts/languages/PHB/Elvish/Espruar 5e.ttf",
 				"fonts/languages/PHB/Elvish/Espruar 3e.otf",
@@ -1888,6 +1891,7 @@
 		},
 		{
 			"name": "Infernal",
+			"source": "PHB",
 			"fonts": [
 				"fonts/languages/PHB/Infernal/Infernal.ttf",
 				"fonts/languages/PHB/Infernal/Barazhad.otf",
@@ -1898,6 +1902,7 @@
 		},
 		{
 			"name": "Thorass",
+			"source": "PHB",
 			"fonts": [
 				"fonts/languages/PHB/Human/Thorass.otf",
 				"fonts/languages/PHB/Human/Thorass Bold.otf",

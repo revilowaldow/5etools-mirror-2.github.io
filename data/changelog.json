@@ -2685,5 +2685,11 @@
 		"date": "2024-04-02",
 		"title": "Brickolage",
 		"txt": "- Added Red Dragon's Tale: A LEGO Adventure content\n- Added optional \"feeling lucky\" parameter to Search page for use in browser custom search engine configuration. Note that this changes the syntax for any custom search engines; `?<search>` -> `?q=<search>[&lucky]` (i.e. `?q=goblin` or `?q=goblin&lucky`)\n- Added \"Page\" column to List page Table Views\n- Fixed dice rollers in Decks page card viewer\n- (Brew) Improved Creature Text Converter handling of spells in spellcasting headers\n- (Fixed typos/added tags)"
+	},
+	{
+		"ver": "1.205.0",
+		"date": "2024-04-16",
+		"title": "Quick Peek",
+		"txt": "- Added Vecna: Nest of the Eldritch Eye content\n- Added top-down Castle Ravenloft battlemaps to Curse of Strahd\n- Bestiary \"Use Proficiency Dice\"/\"Use Proficiency Bonus\" button now remembers state between reloads\n- (Fixed typos/added tags)"
 	}
 ]

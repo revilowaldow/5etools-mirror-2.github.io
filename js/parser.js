@@ -2645,6 +2645,7 @@ Parser.SRC_MPP = "MPP";
 Parser.SRC_BMT = "BMT";
 Parser.SRC_DMTCRG = "DMTCRG";
 Parser.SRC_QftIS = "QftIS";
+Parser.SRC_VEoR = "VEoR";
 Parser.SRC_GHLoE = "GHLoE";
 Parser.SRC_DoDk = "DoDk";
 Parser.SRC_HWCS = "HWCS";
@@ -2677,6 +2678,7 @@ Parser.SRC_LK = "LK";
 Parser.SRC_CoA = "CoA";
 Parser.SRC_PiP = "PiP";
 Parser.SRC_DitLCoT = "DitLCoT";
+Parser.SRC_VNotEE = "VNotEE";
 Parser.SRC_LRDT = "LRDT";
 
 Parser.SRC_AL_PREFIX = "AL";
@@ -2825,6 +2827,7 @@ Parser.SOURCE_JSON_TO_FULL[Parser.SRC_MPP] = "Morte's Planar Parade";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_BMT] = "The Book of Many Things";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_DMTCRG] = "The Deck of Many Things: Card Reference Guide";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_QftIS] = "Quests from the Infinite Staircase";
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_VEoR] = "Vecna: Eve of Ruin";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_GHLoE] = "Grim Hollow: Lairs of Etharis";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_DoDk] = "Dungeons of Drakkenheim";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_HWCS] = "Humblewood Campaign Setting";
@@ -2857,6 +2860,7 @@ Parser.SOURCE_JSON_TO_FULL[Parser.SRC_LK] = "Lightning Keep";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_CoA] = "Chains of Asmodeus";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PiP] = "Peril in Pinebrook";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_DitLCoT] = "Descent into the Lost Caverns of Tsojcanth";
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_VNotEE] = "Vecna: Nest of the Eldritch Eye";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_LRDT] = "Red Dragon's Tale: A LEGO Adventure";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_ALCoS] = `${Parser.AL_PREFIX}Curse of Strahd`;
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_ALEE] = `${Parser.AL_PREFIX}Elemental Evil`;
@@ -2980,6 +2984,7 @@ Parser.SOURCE_JSON_TO_ABV[Parser.SRC_MPP] = "MPP";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_BMT] = "BMT";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_DMTCRG] = "DMTCRG";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_QftIS] = "QftIS";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_VEoR] = "VEoR";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_GHLoE] = "GHLoE";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_DoDk] = "DoDk";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_HWCS] = "HWCS";
@@ -3012,6 +3017,7 @@ Parser.SOURCE_JSON_TO_ABV[Parser.SRC_LK] = "LK";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_CoA] = "CoA";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PiP] = "PiP";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_DitLCoT] = "DitLCoT";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_VNotEE] = "VNotEE";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_LRDT] = "LRDT";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_ALCoS] = "ALCoS";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_ALEE] = "ALEE";
@@ -3134,6 +3140,7 @@ Parser.SOURCE_JSON_TO_DATE[Parser.SRC_MPP] = "2023-10-17";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_BMT] = "2023-11-14";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_DMTCRG] = "2023-11-14";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_QftIS] = "2024-07-16";
+Parser.SOURCE_JSON_TO_DATE[Parser.SRC_VEoR] = "2024-05-21";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_GHLoE] = "2023-11-30";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_DoDk] = "2023-12-21";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_HWCS] = "2019-06-17";
@@ -3166,6 +3173,7 @@ Parser.SOURCE_JSON_TO_DATE[Parser.SRC_LK] = "2023-09-26";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_CoA] = "2023-10-30";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_PiP] = "2023-11-20";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_DitLCoT] = "2024-03-26";
+Parser.SOURCE_JSON_TO_DATE[Parser.SRC_VNotEE] = "2024-04-16";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_LRDT] = "2024-04-01";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_ALCoS] = "2016-03-15";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_ALEE] = "2015-04-07";
@@ -3185,6 +3193,7 @@ Parser.SOURCE_JSON_TO_DATE[Parser.SRC_MCV4EC] = "2023-09-21";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_MisMV1] = "2023-05-03";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_AATM] = "2023-10-17";
 
+// region Source categories
 Parser.SOURCES_ADVENTURES = new Set([
 	Parser.SRC_LMoP,
 	Parser.SRC_HotDQ,
@@ -3264,6 +3273,7 @@ Parser.SOURCES_ADVENTURES = new Set([
 	Parser.SRC_CoA,
 	Parser.SRC_PiP,
 	Parser.SRC_DitLCoT,
+	Parser.SRC_VNotEE,
 	Parser.SRC_LRDT,
 	Parser.SRC_HFStCM,
 	Parser.SRC_GHLoE,
@@ -3336,7 +3346,11 @@ Parser.SOURCES_PARTNERED_WOTC = new Set([
 	Parser.SRC_TD,
 	Parser.SRC_LRDT,
 ]);
-// region Source categories
+Parser.SOURCES_LEGACY_WOTC = new Set([
+	Parser.SRC_EEPC,
+	Parser.SRC_VGM,
+	Parser.SRC_MTF,
+]);
 
 // An opinionated set of source that could be considered "core-core"
 Parser.SOURCES_VANILLA = new Set([
@@ -3564,6 +3578,8 @@ Parser.SOURCES_AVAILABLE_DOCS_ADVENTURE = {};
 	Parser.SRC_HWAitW,
 	Parser.SRC_QftIS,
 	Parser.SRC_LRDT,
+	Parser.SRC_VEoR,
+	Parser.SRC_VNotEE,
 ].forEach(src => {
 	Parser.SOURCES_AVAILABLE_DOCS_ADVENTURE[src] = src;
 	Parser.SOURCES_AVAILABLE_DOCS_ADVENTURE[src.toLowerCase()] = src;

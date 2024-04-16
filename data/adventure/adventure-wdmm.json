@@ -10181,20 +10181,20 @@
 											"id": "1c8",
 											"entries": [
 												"{@b Ceiling}. This cave has a jagged, 30-foot-high ceiling.",
-												"{@b Wreckage}. A 20-foot-high mountain of rotted-out rowboats fills the back 40 feet of this damp cave. Jutting like needles from the mound are shattered, barnacle-covered spars that were once masts. At the top of the mountain of junk is a {@creature crow|WDMM}'s nest that contains the sea hags' treasure (see \"Treasure\" below).",
+												"{@b Wreckage}. A 20-foot-high mountain of rotted-out rowboats fills the back 40 feet of this damp cave. Jutting like needles from the mound are shattered, barnacle-covered spars that were once masts. At the top of the mountain of junk is a crow's nest that contains the sea hags' treasure (see \"Treasure\" below).",
 												"{@b Wall Decor}. Hanging from iron spikes pounded into the walls are dozens of captain's wheels plundered from sunken ships and festooned with skulls.",
 												"{@b Figurehead}. Leaning against the south wall is a ship's figurehead carved in the form of a wailing banshee."
 											]
 										},
 										"The rowboat wreckage is {@quickref difficult terrain||3}, and sections of it are prone to collapse. Any creature that ends its turn on the wreckage must succeed on a DC 10 Dexterity saving throw or fall {@condition prone}.",
-										"The waterlogged figurehead stands 8 feet tall and weighs 1,200 pounds. A {@spell detect magic} spell reveals an aura of abjuration magic around it. Casting {@spell dispel magic} on the figurehead renders it nonmagical. Unless its magic is dispelled, the banshee figurehead lets out a tremendous wail if any creature other than a sea hag approaches within 10 feet of the {@creature crow|WDMM}'s nest. The banshee's wail echoes throughout the cavern and can be heard as far away as {@area area 10c|1c0|x}. If the hags survive, they gather reinforcements from {@area areas 10a|1be|x} and {@area 10b|1bf} and rush to defend their precious treasure.",
+										"The waterlogged figurehead stands 8 feet tall and weighs 1,200 pounds. A {@spell detect magic} spell reveals an aura of abjuration magic around it. Casting {@spell dispel magic} on the figurehead renders it nonmagical. Unless its magic is dispelled, the banshee figurehead lets out a tremendous wail if any creature other than a sea hag approaches within 10 feet of the crow's nest. The banshee's wail echoes throughout the cavern and can be heard as far away as {@area area 10c|1c0|x}. If the hags survive, they gather reinforcements from {@area areas 10a|1be|x} and {@area 10b|1bf} and rush to defend their precious treasure.",
 										{
 											"type": "entries",
 											"name": "Treasure",
 											"page": 50,
 											"id": "1c9",
 											"entries": [
-												"The {@creature crow|WDMM}'s nest contains 2,000 cp inside a lidless wooden chest, 250 sp inside a tin urn, an umbrella, a set of weaver's tools, an ebony walking cane with an octopus-shaped handle made of pewter (25 gp), and a cracked spyglass (250 gp)."
+												"The crow's nest contains 2,000 cp inside a lidless wooden chest, 250 sp inside a tin urn, an umbrella, a set of weaver's tools, an ebony walking cane with an octopus-shaped handle made of pewter (25 gp), and a cracked spyglass (250 gp)."
 											]
 										}
 									]

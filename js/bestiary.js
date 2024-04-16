@@ -374,7 +374,7 @@ class BestiaryPage extends ListPageMultiSource {
 		this._$wrpBtnProf = null;
 		this._$btnProf = null;
 
-		this._profDicMode = _BestiaryConsts.PROF_MODE_BONUS;
+		this._profDiceMode = null;
 
 		this._encounterBuilder = null;
 
@@ -520,27 +520,36 @@ class BestiaryPage extends ListPageMultiSource {
 	}
 
 	async _pOnLoad_pPreDataAdd () {
-		this._pPageInit_profBonusDiceToggle();
+		await this._pPageInit_pProfBonusDiceToggle();
 	}
 
 	_pOnLoad_pPostLoad () {
 		this._encounterBuilder.render();
 	}
 
-	_pPageInit_profBonusDiceToggle () {
+	async _pPageInit_pProfBonusDiceToggle () {
 		const $btnProfBonusDice = $("button#profbonusdice");
 
+		this._profDiceMode = await StorageUtil.pGetForPage("proficiencyDiceMode") || _BestiaryConsts.PROF_MODE_BONUS;
+
+		const hk = () => {
+			$btnProfBonusDice.text(this._profDiceMode === _BestiaryConsts.PROF_MODE_DICE ? "Use Proficiency Bonus" : "Use Proficiency Dice");
+			this._$pgContent.attr("data-proficiency-dice-mode", this._profDiceMode);
+			StorageUtil.pSetForPage("proficiencyDiceMode", this._profDiceMode).then(null);
+		};
+
 		$btnProfBonusDice.click(() => {
-			if (this._profDicMode === _BestiaryConsts.PROF_MODE_DICE) {
-				this._profDicMode = _BestiaryConsts.PROF_MODE_BONUS;
-				$btnProfBonusDice.html("Use Proficiency Dice");
-				this._$pgContent.attr("data-proficiency-dice-mode", this._profDicMode);
-			} else {
-				this._profDicMode = _BestiaryConsts.PROF_MODE_DICE;
-				$btnProfBonusDice.html("Use Proficiency Bonus");
-				this._$pgContent.attr("data-proficiency-dice-mode", this._profDicMode);
+			if (this._profDiceMode === _BestiaryConsts.PROF_MODE_DICE) {
+				this._profDiceMode = _BestiaryConsts.PROF_MODE_BONUS;
+				hk();
+				return;
 			}
+
+			this._profDiceMode = _BestiaryConsts.PROF_MODE_DICE;
+			hk();
 		});
+
+		hk();
 	}
 
 	_handleBestiaryLiClick (evt, listItem) {
@@ -557,11 +566,9 @@ class BestiaryPage extends ListPageMultiSource {
 	}
 
 	_bindProfDiceHandlers () {
-		this._$pgContent.attr("data-proficiency-dice-mode", this._profDicMode);
-
 		this._$pgContent
 			.on(`mousedown`, `[data-roll-prof-type]`, evt => {
-				if (this._profDicMode !== _BestiaryConsts.PROF_MODE_BONUS) evt.preventDefault();
+				if (this._profDiceMode !== _BestiaryConsts.PROF_MODE_BONUS) evt.preventDefault();
 			})
 			.on(`click`, `[data-roll-prof-type]`, evt => {
 				const parent = evt.currentTarget.closest(`[data-roll-prof-type]`);
@@ -571,7 +578,7 @@ class BestiaryPage extends ListPageMultiSource {
 
 				switch (type) {
 					case "d20": {
-						if (this._profDicMode === _BestiaryConsts.PROF_MODE_BONUS) return;
+						if (this._profDiceMode === _BestiaryConsts.PROF_MODE_BONUS) return;
 
 						evt.stopPropagation();
 						evt.preventDefault();
@@ -585,7 +592,7 @@ class BestiaryPage extends ListPageMultiSource {
 					}
 
 					case "dc": {
-						if (this._profDicMode === _BestiaryConsts.PROF_MODE_BONUS) {
+						if (this._profDiceMode === _BestiaryConsts.PROF_MODE_BONUS) {
 							evt.stopPropagation();
 							evt.preventDefault();
 							return;
@@ -736,7 +743,7 @@ class BestiaryPage extends ListPageMultiSource {
 			if (isNaN(text) || expectedPB <= 0) return null;
 
 			const withoutPB = Number(text) - expectedPB;
-			const profDiceString = BestiaryPage._addSpacesToDiceExp(`+1d${(expectedPB * 2)}${withoutPB >= 0 ? "+" : ""}${withoutPB}`);
+			const profDiceString = BestiaryPage._addSpacesToDiceExp(`1d${(expectedPB * 2)}${withoutPB >= 0 ? "+" : ""}${withoutPB}`);
 
 			return `DC <span class="rd__dc rd__dc--rollable" data-roll-prof-type="dc" data-roll-prof-dice="${profDiceString.qq()}"><span class="rd__dc--rollable-text">${text}</span><span class="rd__dc--rollable-dice">${profDiceString}</span></span>`;
 		};

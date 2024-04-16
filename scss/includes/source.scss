@@ -85,6 +85,7 @@
 	$rgb-source-HFFotM: #7b702c;
 	$rgb-source-BMT: #694165;
 	$rgb-source-QftIS: #6191ae;
+	$rgb-source-VEoR: #b74c62;
 	$rgb-source-GHLoE: #c07e4e;
 	$rgb-source-DoDk: #825494;
 	$rgb-source-HWCS: #d0914b;
@@ -457,6 +458,11 @@
 		&QftIS,
 		&DitLCoT {
 			@include mix-source-color($rgb-source-QftIS);
+		}
+
+		&VEoR,
+		&VNotEE {
+			@include mix-source-color($rgb-source-VEoR);
 		}
 
 		&GHLoE {

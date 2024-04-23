@@ -1510,7 +1510,7 @@
 										"type": "internal",
 										"path": "adventure/RMBRE/005-ddvram-pregen-01.webp"
 									},
-									"title": "{@comic {@5etools Meatface|img/pdf/RMBRE/Meatface.pdf}: Human Fighter}",
+									"title": "{@comic {@5etoolsImg Meatface|pdf/RMBRE/Meatface.pdf}: Human Fighter}",
 									"width": 240,
 									"height": 300,
 									"credit": "Troy Little"
@@ -1521,7 +1521,7 @@
 										"type": "internal",
 										"path": "adventure/RMBRE/006-ddvram-pregen-02.webp"
 									},
-									"title": "{@comic {@5etools Lyan Amaranthia|img/pdf/RMBRE/Lyan Amaranthia.pdf}: Wood Elf Cleric}",
+									"title": "{@comic {@5etoolsImg Lyan Amaranthia|pdf/RMBRE/Lyan Amaranthia.pdf}: Wood Elf Cleric}",
 									"width": 240,
 									"height": 300,
 									"credit": "Troy Little"
@@ -1532,7 +1532,7 @@
 										"type": "internal",
 										"path": "adventure/RMBRE/007-ddvram-pregen-03.webp"
 									},
-									"title": "{@comic {@5etools Keth Silverson|img/pdf/RMBRE/Keth Silverson.pdf}: Half-orc Rogue}",
+									"title": "{@comic {@5etoolsImg Keth Silverson|pdf/RMBRE/Keth Silverson.pdf}: Half-orc Rogue}",
 									"width": 240,
 									"height": 300,
 									"credit": "Troy Little"
@@ -1543,7 +1543,7 @@
 										"type": "internal",
 										"path": "adventure/RMBRE/008-ddvram-pregen-04.webp"
 									},
-									"title": "{@comic {@5etools Kiir Bravan|img/pdf/RMBRE/Kiir Bravan.pdf}: Half-elf Wizard}",
+									"title": "{@comic {@5etoolsImg Kiir Bravan|pdf/RMBRE/Kiir Bravan.pdf}: Half-elf Wizard}",
 									"width": 240,
 									"height": 300,
 									"credit": "Troy Little"
@@ -1554,7 +1554,7 @@
 										"type": "internal",
 										"path": "adventure/RMBRE/009-ddvram-pregen-05.webp"
 									},
-									"title": "{@comic {@5etools Ari Strongbow|img/pdf/RMBRE/Ari Strongbow.pdf}: Half-elf Fighter}",
+									"title": "{@comic {@5etoolsImg Ari Strongbow|pdf/RMBRE/Ari Strongbow.pdf}: Half-elf Fighter}",
 									"width": 240,
 									"height": 300,
 									"credit": "Troy Little"

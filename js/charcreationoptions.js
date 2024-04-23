@@ -50,7 +50,6 @@ class CharCreationOptionsPage extends ListPage {
 		const pageFilter = new PageFilterCharCreationOptions();
 		super({
 			dataSource: DataUtil.charoption.loadJSON.bind(DataUtil.charoption),
-			dataSourceFluff: DataUtil.charoptionFluff.loadJSON.bind(DataUtil.charoptionFluff),
 
 			pFnGetFluff: Renderer.charoption.pGetFluff.bind(Renderer.charoption),
 

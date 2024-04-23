@@ -647,7 +647,7 @@ class Omnisearch {
 		const $btnToTop = $(`<button class="btn btn-sm btn-default" title="To Top"><span class="glyphicon glyphicon-arrow-up"/></button>`)
 			.click(() => MiscUtil.scrollPageTop());
 
-		const $wrpTop = $$`<div class="bk__to-top">
+		const $wrpTop = $$`<div class="bk__to-top no-print">
 			${$btnToTop}
 		</div>`.appendTo(document.body);
 

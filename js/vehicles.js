@@ -54,7 +54,6 @@ class VehiclesPage extends ListPage {
 
 		super({
 			dataSource: "data/vehicles.json",
-			dataSourceFluff: "data/fluff-vehicles.json",
 
 			pFnGetFluff,
 

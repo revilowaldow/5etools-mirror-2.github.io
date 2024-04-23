@@ -1,6 +1,10 @@
 @use "includes/vars";
 
 .mon__ {
+	&name--token .stats-source {
+		padding-right: 12rem;
+	}
+
 	&wrp-size-type-align--token,
 	&wrp-avoid-token {
 		max-width: calc(100% - 11rem);
@@ -104,6 +108,10 @@
 		padding: 1px 5px;
 		border: 1px solid vars.$rgb-border-grey--trans;
 	}
+}
+
+.lst__is-exporting-image .mon__name--token .stats-source {
+	padding-right: 0;
 }
 
 // region Token

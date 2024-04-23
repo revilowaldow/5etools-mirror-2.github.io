@@ -59,7 +59,6 @@ class RacesPage extends ListPage {
 		const pageFilter = new PageFilterRaces();
 		super({
 			dataSource: DataUtil.race.loadJSON.bind(DataUtil.race, {isAddBaseRaces: true}),
-			dataSourceFluff: DataUtil.raceFluff.loadJSON.bind(DataUtil.raceFluff),
 			prereleaseDataSource: DataUtil.race.loadPrerelease.bind(DataUtil.race),
 			brewDataSource: DataUtil.race.loadBrew.bind(DataUtil.race),
 

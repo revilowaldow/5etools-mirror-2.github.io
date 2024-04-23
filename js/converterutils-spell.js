@@ -1,39 +1,66 @@
 "use strict";
 
 class DamageTagger {
-	static _addDamageTypeToArray (arr, str, options) {
+	static _addDamageTypeToSet (set, str, options) {
 		str = str.toLowerCase().trim();
-		if (str === "all" || str === "one" || str === "a") arr.push(...Parser.DMG_TYPES);
-		else if (Parser.DMG_TYPES.includes(str)) arr.push(str);
+		if (str === "all" || str === "one" || str === "a") Parser.DMG_TYPES.forEach(it => set.add(it));
+		else if (Parser.DMG_TYPES.includes(str)) set.add(str);
 		else options.cbWarning(`Unknown damage type "${str}"`);
 	}
 }
 
 class DamageInflictTagger extends DamageTagger {
 	static tryRun (sp, options) {
-		sp.damageInflict = [];
+		const tags = new Set();
+
 		JSON.stringify([sp.entries, sp.entriesHigherLevel]).replace(/(?:{@damage [^}]+}|\d+) (\w+)((?:, \w+)*)(,? or \w+)? damage/ig, (...m) => {
-			if (m[1]) this._addDamageTypeToArray(sp.damageInflict, m[1], options);
-			if (m[2]) m[2].split(",").map(it => it.trim()).filter(Boolean).forEach(str => this._addDamageTypeToArray(sp.damageInflict, str, options));
-			if (m[3]) this._addDamageTypeToArray(sp.damageInflict, m[3].split(" ").last(), options);
+			if (m[1]) this._addDamageTypeToSet(tags, m[1], options);
+			if (m[2]) m[2].split(",").map(it => it.trim()).filter(Boolean).forEach(str => this._addDamageTypeToSet(tags, str, options));
+			if (m[3]) this._addDamageTypeToSet(tags, m[3].split(" ").last(), options);
 		});
-		if (!sp.damageInflict.length) delete sp.damageInflict;
-		else sp.damageInflict = [...new Set(sp.damageInflict)].sort(SortUtil.ascSort);
+
+		if (!tags.size) return;
+		sp.damageInflict = [...tags].sort(SortUtil.ascSort);
 	}
 }
 
 class DamageResVulnImmuneTagger extends DamageTagger {
-	static tryRun (sp, prop, options) {
-		sp[prop] = [];
-		JSON.stringify([sp.entries, sp.entriesHigherLevel]).replace(/resistance to (\w+)((?:, \w+)*)(,? or \w+)? damage/ig, (...m) => {
-			if (m[1]) this._addDamageTypeToArray(sp[prop], m[1], options);
-			if (m[2]) m[2].split(",").map(it => it.trim()).filter(Boolean).forEach(str => this._addDamageTypeToArray(sp[prop], str, options));
-			if (m[3]) this._addDamageTypeToArray(sp[prop], m[3].split(" ").last(), options);
+	static get _RE () {
+		return (this.__RE ||= new RegExp(`${this._TYPE} to (?<ptBase>\\w+)(?<ptList>(?:, \\w+)*)(?<ptConj>,? or \\w+)? damage`, "gi"));
+	}
+
+	static tryRun (sp, options) {
+		const tags = new Set();
+
+		JSON.stringify([sp.entries, sp.entriesHigherLevel]).replace(this._RE, (...m) => {
+			const {ptBase, ptList, ptConj} = m.last();
+			if (ptBase) this._addDamageTypeToSet(tags, ptBase, options);
+			if (ptList) ptList.split(",").map(it => it.trim()).filter(Boolean).forEach(str => this._addDamageTypeToSet(tags, str, options));
+			if (ptConj) this._addDamageTypeToSet(tags, ptConj.split(" ").last(), options);
 		});
-		if (!sp[prop].length) delete sp[prop];
-		else sp[prop] = [...new Set(sp[prop])].sort(SortUtil.ascSort);
+
+		if (!tags.size) return;
+		sp[this._PROP] = [...tags].sort(SortUtil.ascSort);
 	}
 }
+
+class DamageResTagger extends DamageResVulnImmuneTagger {
+	static _TYPE = "resistance";
+	static _PROP = "damageResist";
+}
+globalThis.DamageResTagger = DamageResTagger;
+
+class DamageVulnTagger extends DamageResVulnImmuneTagger {
+	static _TYPE = "vulnerability";
+	static _PROP = "damageVulnerable";
+}
+globalThis.DamageVulnTagger = DamageVulnTagger;
+
+class DamageImmuneTagger extends DamageResVulnImmuneTagger {
+	static _TYPE = "immunity";
+	static _PROP = "damageImmune";
+}
+globalThis.DamageImmuneTagger = DamageImmuneTagger;
 
 class ConditionInflictTagger {
 	static tryRun (sp, options) {
@@ -438,7 +465,6 @@ class AffectedCreatureTypeTagger {
 AffectedCreatureTypeTagger._RE_TYPES = new RegExp(`\\b(${[...Parser.MON_TYPES, ...Object.values(Parser.MON_TYPE_TO_PLURAL)].map(it => it.escapeRegexp()).join("|")})\\b`, "gi");
 
 globalThis.DamageInflictTagger = DamageInflictTagger;
-globalThis.DamageResVulnImmuneTagger = DamageResVulnImmuneTagger;
 globalThis.ConditionInflictTagger = ConditionInflictTagger;
 globalThis.SavingThrowTagger = SavingThrowTagger;
 globalThis.AbilityCheckTagger = AbilityCheckTagger;

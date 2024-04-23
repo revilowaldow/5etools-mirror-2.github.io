@@ -185,7 +185,14 @@
 											"credit": "Marco Bernardini",
 											"width": 4096,
 											"height": 5301,
-											"id": "03e"
+											"id": "03e",
+											"grid": {
+												"type": "square",
+												"size": 189,
+												"offsetX": -67,
+												"offsetY": -84,
+												"scale": 2
+											}
 										},
 										{
 											"type": "image",
@@ -200,6 +207,13 @@
 											"credit": "Marco Bernardini",
 											"mapParent": {
 												"id": "03e"
+											},
+											"grid": {
+												"type": "square",
+												"size": 189,
+												"offsetX": -67,
+												"offsetY": -84,
+												"scale": 2
 											}
 										}
 									]

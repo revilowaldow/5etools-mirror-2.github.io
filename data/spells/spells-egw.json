@@ -314,7 +314,8 @@
 				"strength"
 			],
 			"miscTags": [
-				"OBJ"
+				"OBJ",
+				"PRM"
 			],
 			"areaTags": [
 				"ST"

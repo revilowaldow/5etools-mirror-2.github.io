@@ -49,7 +49,6 @@ class RewardsPage extends ListPage {
 		const pageFilter = new PageFilterRewards();
 		super({
 			dataSource: DataUtil.reward.loadJSON.bind(DataUtil.reward),
-			dataSourceFluff: DataUtil.rewardFluff.loadJSON.bind(DataUtil.rewardFluff),
 
 			pFnGetFluff: Renderer.reward.pGetFluff.bind(Renderer.feat),
 

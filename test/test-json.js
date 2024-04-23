@@ -23,6 +23,7 @@ async function main () {
 			if (relativeFilePath.startsWith("bestiary/fluff-bestiary-")) return "bestiary/fluff-bestiary.json";
 
 			if (relativeFilePath.startsWith("class/class-")) return "class/class.json";
+			if (relativeFilePath.startsWith("class/fluff-class-")) return "class/fluff-class.json";
 
 			if (relativeFilePath.startsWith("spells/spells-")) return "spells/spells.json";
 			if (relativeFilePath.startsWith("spells/fluff-spells-")) return "spells/fluff-spells.json";
@@ -46,7 +47,7 @@ async function main () {
 
 	if (errors.length) {
 		if (!process.env.CI) fs.writeFileSync(`test/test-json.error.log`, errorsFull.join("\n\n=====\n\n"));
-		console.error(`Schema test failed (${errors.length} failure${errors.length === 1 ? "" : "s"}).`);
+		console.error(`Schema test failed (${errors.length} failure${errors.length === 1 ? "`" : "s"}).`);
 		return false;
 	}
 

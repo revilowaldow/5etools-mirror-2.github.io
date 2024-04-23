@@ -1080,6 +1080,7 @@
 				"unconscious"
 			],
 			"miscTags": [
+				"PRM",
 				"PS"
 			],
 			"areaTags": [
@@ -1687,6 +1688,9 @@
 			],
 			"savingThrow": [
 				"wisdom"
+			],
+			"miscTags": [
+				"PRM"
 			],
 			"areaTags": [
 				"ST"
@@ -8203,6 +8207,7 @@
 				"undead"
 			],
 			"miscTags": [
+				"PIR",
 				"PRM"
 			]
 		},
@@ -8544,6 +8549,7 @@
 				"wisdom"
 			],
 			"miscTags": [
+				"PRM",
 				"SGT"
 			],
 			"areaTags": [
@@ -9172,6 +9178,7 @@
 			],
 			"miscTags": [
 				"OBS",
+				"PIR",
 				"PRM"
 			],
 			"areaTags": [
@@ -12030,6 +12037,7 @@
 				"intelligence"
 			],
 			"miscTags": [
+				"PRM",
 				"SGT"
 			]
 		},
@@ -13091,6 +13099,7 @@
 				}
 			],
 			"miscTags": [
+				"PIR",
 				"PRM"
 			],
 			"areaTags": [
@@ -18217,6 +18226,7 @@
 				"You can create a permanent teleportation circle by casting this spell in the same location every day for one year. You need not use the circle to teleport when you cast the spell in this way."
 			],
 			"miscTags": [
+				"PIR",
 				"PRM",
 				"TP"
 			]

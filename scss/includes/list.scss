@@ -33,6 +33,19 @@
 			transform: rotate(180deg);
 		}
 	}
+
+	&is-exporting-image {
+		.btn-name-pronounce,
+		.btn-stats-name {
+			display: none !important;
+		}
+
+		.lst-is-exporting-image {
+			&__hidden {
+				display: none !important;
+			}
+		}
+	}
 }
 
 input.lst__ {

@@ -266,10 +266,10 @@ class BookUtil {
 		BookUtil.curRender.controls.$btnsPrv = BookUtil.curRender.controls.$btnsPrv || [];
 		let $btnPrev;
 		if (BookUtil.referenceId) {
-			$btnPrev = $(`<button class="btn btn-xs btn-default bk__nav-head-foot-item"><span class="glyphicon glyphicon-chevron-left"/>Previous</button>`)
+			$btnPrev = $(`<button class="btn btn-xs btn-default bk__nav-head-foot-item no-print"><span class="glyphicon glyphicon-chevron-left"></span>Previous</button>`)
 				.click(() => this._showBookContent_goToPage({mod: -1, bookId, ixChapter}));
 		} else {
-			$btnPrev = $(`<a href="#${this._showBookContent_goToPage({mod: -1, isGetHref: true, bookId, ixChapter})}" class="btn btn-xs btn-default bk__nav-head-foot-item"><span class="glyphicon glyphicon-chevron-left"/>Previous</a>`)
+			$btnPrev = $(`<a href="#${this._showBookContent_goToPage({mod: -1, isGetHref: true, bookId, ixChapter})}" class="btn btn-xs btn-default bk__nav-head-foot-item no-print"><span class="glyphicon glyphicon-chevron-left"></span>Previous</a>`)
 				.click(() => MiscUtil.scrollPageTop());
 		}
 		$btnPrev
@@ -278,7 +278,7 @@ class BookUtil {
 		BookUtil.curRender.controls.$btnsPrv.push($btnPrev);
 
 		(BookUtil.curRender.controls.$divsPrv = BookUtil.curRender.controls.$divsPrv || [])
-			.push($(`<div class="bk__nav-head-foot-item"/>`)
+			.push($(`<div class="bk__nav-head-foot-item no-print"></div>`)
 				.toggle(!showPrev)
 				.appendTo($wrpControls));
 
@@ -289,10 +289,10 @@ class BookUtil {
 		BookUtil.curRender.controls.$btnsNxt = BookUtil.curRender.controls.$btnsNxt || [];
 		let $btnNext;
 		if (BookUtil.referenceId) {
-			$btnNext = $(`<button class="btn btn-xs btn-default bk__nav-head-foot-item">Next<span class="glyphicon glyphicon-chevron-right"/></button>`)
+			$btnNext = $(`<button class="btn btn-xs btn-default bk__nav-head-foot-item no-print">Next<span class="glyphicon glyphicon-chevron-right"></span></button>`)
 				.click(() => this._showBookContent_goToPage({mod: 1, bookId, ixChapter}));
 		} else {
-			$btnNext = $(`<a href="#${this._showBookContent_goToPage({mod: 1, isGetHref: true, bookId, ixChapter})}" class="btn btn-xs btn-default bk__nav-head-foot-item">Next<span class="glyphicon glyphicon-chevron-right"/></a>`)
+			$btnNext = $(`<a href="#${this._showBookContent_goToPage({mod: 1, isGetHref: true, bookId, ixChapter})}" class="btn btn-xs btn-default bk__nav-head-foot-item no-print">Next<span class="glyphicon glyphicon-chevron-right"></span></a>`)
 				.click(() => MiscUtil.scrollPageTop());
 		}
 		$btnNext
@@ -301,7 +301,7 @@ class BookUtil {
 		BookUtil.curRender.controls.$btnsNxt.push($btnNext);
 
 		(BookUtil.curRender.controls.$divsNxt = BookUtil.curRender.controls.$divsNxt || [])
-			.push($(`<div class="bk__nav-head-foot-item"/>`)
+			.push($(`<div class="bk__nav-head-foot-item no-print"></div>`)
 				.toggle(!showNxt)
 				.appendTo($wrpControls));
 

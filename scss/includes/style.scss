@@ -1094,10 +1094,6 @@ tr.text.compact > td p:last-child {
 }
 
 // FIXME temporary element selectors
-tr th.mon__name--token {
-	padding-right: calc(12rem);
-}
-
 #crcalc {
 	input[type="number"],
 	input[type="checkbox"],
@@ -1846,10 +1842,6 @@ header p.lead {
 			border-color: vars.$rgb-border-grey--night;
 		}
 	}
-}
-
-.mode div.pnl-menu {
-	background: #d3d3d3;
 }
 
 .stripe-odd:nth-child(odd),
@@ -3283,19 +3275,10 @@ th.border {
 	#classtable table tr:nth-child(odd) td {
 		background: #d3d3d3 !important;
 	}
-
-	.cls-bkmv__wrp-tabs {
-		display: none !important;
-	}
 	// endregion
 
 	// region bestiary.html
-	.mon__btn-scale-cr,
-	.mon__btn-reset-cr {
-		display: none !important;
-	}
-
-	.mon__name--token {
+	.mon__name--token .stats-source {
 		padding-right: 0 !important;
 	}
 
@@ -3312,21 +3295,10 @@ th.border {
 		border-color: #000 !important;
 	}
 
-	.rd__h-toggle {
-		display: none !important;
-	}
-
 	.rd__b-special,
 	.rd__li {
 		break-inside: avoid;
 		page-break-inside: avoid;
-	}
-	// endregion
-
-	// region books/adventures
-	.bk__to-top,
-	.bk__nav-head-foot-item {
-		display: none !important;
 	}
 	// endregion
 
@@ -3361,11 +3333,6 @@ th.border {
 		th.border {
 			border: 0 !important;
 			padding: 0 !important;
-		}
-
-		// classes page book view
-		.pnl-menu {
-			display: none;
 		}
 	}
 

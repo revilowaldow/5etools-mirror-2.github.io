@@ -91,10 +91,6 @@
 	max-height: 16px;
 	text-align: right;
 
-	&--btm {
-		cursor: ns-resize;
-	}
-
 	&--top {
 		cursor: move;
 		user-select: none;
@@ -169,6 +165,7 @@
 		right: 4px;
 		left: 4px;
 		height: 2px;
+		cursor: ns-resize;
 	}
 
 	&__resize-sw {

@@ -55,7 +55,6 @@ class FeatsPage extends ListPage {
 		const pageFilter = new PageFilterFeats();
 		super({
 			dataSource: DataUtil.feat.loadJSON.bind(DataUtil.feat),
-			dataSourceFluff: DataUtil.featFluff.loadJSON.bind(DataUtil.featFluff),
 
 			pFnGetFluff: Renderer.feat.pGetFluff.bind(Renderer.feat),
 

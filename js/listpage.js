@@ -978,11 +978,6 @@ class ListPage {
 	 * @param [opts.prereleaseDataSource] Function to fetch prerelease data.
 	 * @param [opts.brewDataSource] Function to fetch brew data.
 	 * @param [opts.pFnGetFluff] Function to fetch fluff for a given entity.
-	 * @param [opts.dataSourceFluff] Fluff JSON data url or function to fetch fluff data.
-	 * @param [opts.filters] Array of filters to use in the filter box. (Either `filters` and `filterSource` or
-	 * `pageFilter` must be specified.)
-	 * @param [opts.filterSource] Source filter. (Either `filters` and `filterSource` or
-	 * `pageFilter` must be specified.)
 	 * @param [opts.pageFilter] PageFilter implementation for this page. (Either `filters` and `filterSource` or
 	 * `pageFilter` must be specified.)
 	 * @param opts.listOptions Other list options.
@@ -1010,9 +1005,6 @@ class ListPage {
 		this._prereleaseDataSource = opts.prereleaseDataSource;
 		this._brewDataSource = opts.brewDataSource;
 		this._pFnGetFluff = opts.pFnGetFluff;
-		this._dataSourcefluff = opts.dataSourceFluff;
-		this._filters = opts.filters;
-		this._filterSource = opts.filterSource;
 		this._pageFilter = opts.pageFilter;
 		this._listOptions = opts.listOptions || {};
 		this._dataProps = opts.dataProps;
@@ -1034,7 +1026,6 @@ class ListPage {
 		this._dataList = [];
 		this._ixData = 0;
 		this._bookView = null;
-		this._bookViewToShow = null;
 		this._sublistManager = null;
 		this._btnsTabs = {};
 		this._lastRender = {};
@@ -1765,6 +1756,11 @@ class ListPage {
 			),
 			null,
 			new ContextUtil.Action(
+				"Export as Image (SHIFT to Copy Image)",
+				evt => this._pHandleClick_exportAsImage({evt, isFast: evt.shiftKey, $eleCopyEffect: $btnOptions}),
+			),
+			null,
+			new ContextUtil.Action(
 				"Download Pinned List (SHIFT to Copy Link)",
 				evt => this._sublistManager.pHandleClick_download({isUrl: evt.shiftKey, $eleCopyEffect: $btnOptions}),
 			),
@@ -1817,8 +1813,15 @@ class ListPage {
 
 		const menu = ContextUtil.getMenu(contextOptions);
 		$btnOptions
+			.off("mousedown")
+			.on("mousedown", evt => {
+				evt.preventDefault();
+			})
 			.off("click")
-			.on("click", evt => ContextUtil.pOpenMenu(evt, menu));
+			.on("click", async evt => {
+				evt.preventDefault();
+				await ContextUtil.pOpenMenu(evt, menu);
+			});
 	}
 
 	async _handleGenericContextMenuClick_pDoMassPopout (evt, ele, selection) {
@@ -2011,6 +2014,93 @@ class ListPage {
 
 	/** @abstract */
 	_renderStats_doBuildStatsTab ({ent}) { throw new Error("Unimplemented!"); }
+
+	/* -------------------------------------------- */
+
+	static _OFFSET_WINDOW_EXPORT_AS_IMAGE = 17;
+
+	async _pHandleClick_exportAsImage ({evt, isFast, $eleCopyEffect}) {
+		if (typeof domtoimage === "undefined") await import("../lib/dom-to-image-more.min.js");
+
+		const ent = this._dataList[Hist.lastLoadedId];
+
+		const optsDomToImage = {
+			// FIXME(Future) doesn't seem to have the desired effect; `lst__is-exporting-image` bodge used instead
+			adjustClonedNode: (node, clone, isAfter) => {
+				if (node.classList && node.classList.contains("stats-source") && !isAfter) {
+					clone.style.paddingRight = "0px";
+				}
+				return clone;
+			},
+		};
+
+		if (isFast) {
+			let blob;
+			try {
+				this._$pgContent.addClass("lst__is-exporting-image");
+				blob = await domtoimage.toBlob(this._$pgContent[0], optsDomToImage);
+			} finally {
+				this._$pgContent.removeClass("lst__is-exporting-image");
+			}
+
+			const isCopy = await MiscUtil.pCopyBlobToClipboard(blob);
+			if (isCopy) JqueryUtil.showCopiedEffect($eleCopyEffect, "Copied!");
+
+			return;
+		}
+
+		const html = this._$pgContent[0].outerHTML;
+		const page = UrlUtil.getCurrentPage();
+
+		const $cpy = $(html)
+			.addClass("lst__is-exporting-image");
+		$cpy.find();
+
+		const $btnCpy = $(`<button class="btn btn-default btn-xs" title="SHIFT to Copy and Close">Copy</button>`)
+			.on("click", async evt => {
+				const blob = await domtoimage.toBlob($cpy[0], optsDomToImage);
+				const isCopy = await MiscUtil.pCopyBlobToClipboard(blob);
+				if (isCopy) JqueryUtil.showCopiedEffect($btnCpy, "Copied!");
+
+				if (isCopy && evt.shiftKey) hoverWindow.doClose();
+			});
+
+		const $btnSave = $(`<button class="btn btn-default btn-xs" title="SHIFT to Save and Close">Save</button>`)
+			.on("click", async evt => {
+				const dataUrl = await domtoimage.toPng($cpy[0], optsDomToImage);
+				DataUtil.userDownloadDataUrl(`${ent.name}.png`, dataUrl);
+
+				if (evt.shiftKey) hoverWindow.doClose();
+			});
+
+		const width = this._$pgContent[0].getBoundingClientRect().width;
+		const posBtn = $eleCopyEffect[0].getBoundingClientRect().toJSON();
+		const hoverWindow = Renderer.hover.getShowWindow(
+			$$`<div class="ve-flex-col">
+				<div class="split-v-center mb-2 px-2 mt-2">
+					<i class="mr-2">Optionally resize the width of the window, then Copy or Save.</i>
+					<div class="btn-group">
+						${$btnCpy}
+						${$btnSave}
+					</div>
+				</div>
+				${$cpy}
+			</div>`,
+			Renderer.hover.getWindowPositionExact(
+				posBtn.left - width + posBtn.width - this.constructor._OFFSET_WINDOW_EXPORT_AS_IMAGE,
+				posBtn.top + posBtn.height + this.constructor._OFFSET_WINDOW_EXPORT_AS_IMAGE,
+				evt,
+			),
+			{
+				title: `Image Export - ${ent.name}`,
+				isPermanent: true,
+				isBookContent: page === UrlUtil.PG_RECIPES,
+				isResizeOnlyWidth: true,
+				isHideBottomBorder: true,
+				width,
+			},
+		);
+	}
 }
 
 class ListPageBookView extends BookModeViewBase {

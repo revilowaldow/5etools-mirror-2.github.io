@@ -26,10 +26,21 @@
 				"name": "Shield Guardian",
 				"source": "MM",
 				"_mod": {
-					"*": {
-						"mode": "replaceTxt",
-						"replace": "shield guardian",
-						"with": "drone"
+					"*": [
+						{
+							"mode": "replaceTxt",
+							"replace": "shield guardian",
+							"with": "drone"
+						},
+						{
+							"mode": "replaceTxt",
+							"replace": "guardian",
+							"with": "drone"
+						}
+					],
+					"trait": {
+						"mode": "removeArr",
+						"names": "Bound"
 					},
 					"action": [
 						{

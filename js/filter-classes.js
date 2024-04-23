@@ -93,9 +93,11 @@ class PageFilterClassesBase extends PageFilter {
 		opts = opts || {};
 		const subclassExclusions = opts.subclassExclusions || {};
 
+		// region Sources
+		// Note that we assume that, for fluff from a given source, a class/subclass will exist from that source.
+		//   This allows us to skip loading the class/subclass fluff in order to track the fluff's sources.
 		this._sourceFilter.addItem(cls.source);
 
-		if (cls.fluff) cls.fluff.forEach(it => this._addEntrySourcesToFilter(it));
 		cls.classFeatures.forEach(lvlFeatures => lvlFeatures.forEach(feature => this._addEntrySourcesToFilter(feature)));
 
 		cls.subclasses.forEach(sc => {
@@ -105,6 +107,7 @@ class PageFilterClassesBase extends PageFilter {
 				sc.subclassFeatures.forEach(lvlFeatures => lvlFeatures.forEach(feature => this._addEntrySourcesToFilter(feature)));
 			}
 		});
+		// endregion
 	}
 
 	async _pPopulateBoxOptions (opts) {

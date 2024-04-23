@@ -77,7 +77,6 @@ class OptionalFeaturesPage extends ListPage {
 
 		super({
 			dataSource: DataUtil.optionalfeature.loadJSON.bind(DataUtil.optionalfeature),
-			dataSourceFluff: DataUtil.featFluff.loadJSON.bind(DataUtil.featFluff),
 
 			pFnGetFluff: Renderer.optionalfeature.pGetFluff.bind(Renderer.optionalfeature),
 

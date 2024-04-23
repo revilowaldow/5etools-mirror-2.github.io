@@ -198,9 +198,9 @@ class SpellParser extends BaseParser {
 
 	static _addTags (stats, options) {
 		DamageInflictTagger.tryRun(stats, options);
-		DamageResVulnImmuneTagger.tryRun(stats, "damageResist", options);
-		DamageResVulnImmuneTagger.tryRun(stats, "damageImmune", options);
-		DamageResVulnImmuneTagger.tryRun(stats, "damageVulnerable", options);
+		DamageResTagger.tryRun(stats, options);
+		DamageVulnTagger.tryRun(stats, options);
+		DamageImmuneTagger.tryRun(stats, options);
 		ConditionInflictTagger.tryRun(stats, options);
 		SavingThrowTagger.tryRun(stats, options);
 		AbilityCheckTagger.tryRun(stats, options);
@@ -405,6 +405,19 @@ class SpellParser extends BaseParser {
 		;
 	}
 
+	static _getComponentCurrencyMult ({mCost}) {
+		const {currency, currencyLong} = mCost.groups;
+
+		if (currency) return Parser.COIN_CONVERSIONS[Parser.COIN_ABVS.indexOf(currency.toLowerCase())];
+
+		switch (currencyLong.toLowerCase()) {
+			case "gold": {
+				return Parser.COIN_CONVERSIONS[Parser.COIN_ABVS.indexOf("gp")];
+			}
+			default: throw new Error("Unimplemented!");
+		}
+	}
+
 	static _setCleanComponents (stats, line, options) {
 		const components = ConvertUtil.getStatblockLineHeaderText({reStartStr: this._RE_START_COMPONENTS, line});
 		const parts = components.split(StrUtil.COMMAS_NOT_IN_PARENTHESES_REGEX);
@@ -422,11 +435,11 @@ class SpellParser extends BaseParser {
 					default: {
 						if (lowerPt.startsWith("m ")) {
 							const materialText = pt.replace(/^m\s*\((.*)\)$/i, "$1").trim();
-							const mCost = /(\d*,?\d+)\s?(cp|sp|ep|gp|pp)/gi.exec(materialText);
+							const mCost = /(\d*,?\d+)\s?(?:(?<currency>cp|sp|ep|gp|pp)|(?:(?<currencyLong>gold)(?: pieces)?))/gi.exec(materialText);
 							const isConsumed = pt.toLowerCase().includes("consume");
 
 							if (mCost) {
-								const valueMult = Parser.COIN_CONVERSIONS[Parser.COIN_ABVS.indexOf(mCost[2].toLowerCase())];
+								const valueMult = this._getComponentCurrencyMult({mCost});
 								const valueNum = Number(mCost[1].replace(/,/g, ""));
 
 								stats.components.m = {

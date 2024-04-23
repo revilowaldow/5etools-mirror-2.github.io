@@ -4517,7 +4517,7 @@
 				{
 					"name": "Ice Wolves (Requires Frost Rune)",
 					"entries": [
-						"The giant magically summons {@dice 1d4} wolves made of ice (use the winter wolf stat block in the Monster Manual to represent them, but they are Elementals instead of Monstrosities). The wolves appear in unoccupied spaces the giant can see within 30 feet of itself. The wolves take their turn immediately after the giant on the same initiative count, and they obey the giant's commands. The wolves gain a +6 bonus to their attack and damage rolls while they are within 30 feet of the giant. The wolves disappear after 1 minute, when the giant dies, or when the giant uses this action again."
+						"The giant magically summons {@dice 1d4} wolves made of ice (use the {@creature winter wolf} stat block in the Monster Manual to represent them, but they are Elementals instead of Monstrosities). The wolves appear in unoccupied spaces the giant can see within 30 feet of itself. The wolves take their turn immediately after the giant on the same initiative count, and they obey the giant's commands. The wolves gain a +6 bonus to their attack and damage rolls while they are within 30 feet of the giant. The wolves disappear after 1 minute, when the giant dies, or when the giant uses this action again."
 					]
 				}
 			],
@@ -8112,7 +8112,7 @@
 					"name": "Spectral Touch",
 					"entries": [
 						"{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}20 ({@damage 3d8 + 7}) force damage plus 10 ({@damage 3d6}) necrotic damage. If the target is a creature, it must succeed on a {@dc 20} Constitution saving throw, or its hit point maximum is reduced by an amount equal to the necrotic damage taken. This reduction lasts until the target finishes a long rest. The target dies if its hit point maximum is reduced to 0.",
-						"A Humanoid slain by this attack immediately rises as a miniature spectral cloud (use the specter stat block in the Monster Manual). The miniature spectral cloud acts as an ally of its creator but isn't under its control."
+						"A Humanoid slain by this attack immediately rises as a miniature spectral cloud (use the {@creature specter} stat block in the Monster Manual). The miniature spectral cloud acts as an ally of its creator but isn't under its control."
 					]
 				},
 				{

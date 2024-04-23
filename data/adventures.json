@@ -33588,9 +33588,15 @@
 					"headers": [
 						"Overview",
 						"Black Ivory Inn",
-						"Developments",
+						{
+							"depth": 1,
+							"header": "Developments"
+						},
 						"Buckledown Row",
-						"Developments",
+						{
+							"depth": 1,
+							"header": "Developments"
+						},
 						"Chapel of Saint Brenna",
 						{
 							"depth": 1,
@@ -33632,7 +33638,10 @@
 							"depth": 1,
 							"header": "[10] Hidden Reliquary"
 						},
-						"Developments",
+						{
+							"depth": 1,
+							"header": "Developments"
+						},
 						"Eckerman Mill",
 						"Rat's Nest Tavern",
 						{
@@ -33667,7 +33676,10 @@
 							"depth": 1,
 							"header": "[8] Seer's Den"
 						},
-						"Developments",
+						{
+							"depth": 1,
+							"header": "Developments"
+						},
 						"Reed Manor",
 						{
 							"depth": 1,
@@ -33693,7 +33705,10 @@
 							"depth": 1,
 							"header": "[12] Materials Storage"
 						},
-						"Developments",
+						{
+							"depth": 1,
+							"header": "Developments"
+						},
 						"Shrine of Morrigan",
 						"Smithy on the Scar",
 						{
@@ -33724,7 +33739,10 @@
 							"depth": 1,
 							"header": "[6] Gun Platforms"
 						},
-						"Developments",
+						{
+							"depth": 1,
+							"header": "Developments"
+						},
 						"Stick's Ferry"
 					]
 				},
@@ -33736,13 +33754,25 @@
 					},
 					"headers": [
 						"Overview",
-						"Developments",
+						{
+							"depth": 1,
+							"header": "Developments"
+						},
 						"Cosmological Clocktower",
-						"Developments",
+						{
+							"depth": 1,
+							"header": "Developments"
+						},
 						"The Crater",
-						"Developments",
+						{
+							"depth": 1,
+							"header": "Developments"
+						},
 						"Kleinberg Estate",
-						"Developments",
+						{
+							"depth": 1,
+							"header": "Developments"
+						},
 						"Old Town Cistern",
 						{
 							"depth": 1,
@@ -33780,7 +33810,10 @@
 							"depth": 1,
 							"header": "[4] Underground Lake"
 						},
-						"Developments",
+						{
+							"depth": 1,
+							"header": "Developments"
+						},
 						"Queen's Park",
 						{
 							"depth": 1,
@@ -33798,9 +33831,15 @@
 							"depth": 1,
 							"header": "[4] Underground Pond"
 						},
-						"Developments",
+						{
+							"depth": 1,
+							"header": "Developments"
+						},
 						"Rose Theatre",
-						"Developments",
+						{
+							"depth": 1,
+							"header": "Developments"
+						},
 						"Saint Vitruvio's Cathedral",
 						{
 							"depth": 1,
@@ -33846,7 +33885,10 @@
 							"depth": 1,
 							"header": "[10] Argonath's Rest"
 						},
-						"Developments",
+						{
+							"depth": 1,
+							"header": "Developments"
+						},
 						"Slaughterstone Square"
 					]
 				},
@@ -33898,7 +33940,10 @@
 						"Court of Thieves",
 						"Drakkenheim Garrison",
 						"Inscrutable Tower",
-						"Developments",
+						{
+							"depth": 1,
+							"header": "Developments"
+						},
 						"Saint Selina's Monastery"
 					]
 				},
@@ -33981,7 +34026,10 @@
 						"Main Entrance",
 						"Throne Room",
 						"Dungeons of Drakkenheim",
-						"Developments",
+						{
+							"depth": 1,
+							"header": "Developments"
+						},
 						"Closing the Dimensional Rift",
 						"Beyond the Dimensional Rift",
 						"Eternal Custodian",

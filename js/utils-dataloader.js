@@ -1062,6 +1062,28 @@ class _DataTypeLoaderCustomSpellFluff extends _DataTypeLoaderMultiSource {
 	_prop = "spellFluff";
 }
 
+class _DataTypeLoaderClassSubclassFluff extends _DataTypeLoaderMultiSource {
+	static PROPS = ["classFluff", "subclassFluff"];
+	static PAGE = UrlUtil.PG_CLASSES;
+	static IS_FLUFF = true;
+
+	_getSiteIdent ({pageClean, sourceClean}) {
+		// use `.toString()` in case `sourceClean` is a `Symbol`
+		return `${this.constructor.PROPS.join("__")}__${sourceClean.toString()}`;
+	}
+
+	async _pGetSiteData ({pageClean, sourceClean}) {
+		return this._pGetSiteDataAll();
+	}
+
+	async _pGetSiteDataAll () {
+		const jsons = await this.constructor.PROPS.pMap(prop => DataUtil[prop].loadJSON());
+		const out = {};
+		jsons.forEach(json => Object.assign(out, {...json}));
+		return out;
+	}
+}
+
 /** @abstract */
 class _DataTypeLoaderCustomRawable extends _DataTypeLoader {
 	static _PROPS_RAWABLE;
@@ -1670,6 +1692,7 @@ class DataLoader {
 		_DataTypeLoaderCustomMonsterFluff.register({fnRegister});
 		_DataTypeLoaderCustomSpell.register({fnRegister});
 		_DataTypeLoaderCustomSpellFluff.register({fnRegister});
+		_DataTypeLoaderClassSubclassFluff.register({fnRegister});
 		// endregion
 
 		// region Predefined

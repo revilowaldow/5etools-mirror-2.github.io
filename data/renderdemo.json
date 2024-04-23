@@ -131,6 +131,7 @@
 									"type": "list",
 									"items": [
 										"Internal links: {@5etools This Is Your Life|lifegen.html}",
+										"Internal image links: {@5etoolsImg Players Handbook Cover|covers/PHB.webp}",
 										"External links: {@link https://discord.gg/5etools} or {@link Discord|https://discord.gg/5etools}"
 									]
 								},

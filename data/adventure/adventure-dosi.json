@@ -59,11 +59,11 @@
 						{
 							"type": "list",
 							"items": [
-								"{@5etools Hill Dwarf Cleric|img/pdf/DoSI/Hill-Dwarf-Cleric.pdf}",
-								"{@5etools Human Paladin|img/pdf/DoSI/Human-Paladin.pdf}",
-								"{@5etools Wood Elf Fighter|img/pdf/DoSI/Wood-Elf-Fighter.pdf}",
-								"{@5etools Lightfoot Halfling Rogue|img/pdf/DoSI/Lightfoot-Halfling-Rogue.pdf}",
-								"{@5etools High Elf Wizard|img/pdf/DoSI/High-Elf-Wizard.pdf}"
+								"{@5etoolsImg Hill Dwarf Cleric|pdf/DoSI/Hill-Dwarf-Cleric.pdf}",
+								"{@5etoolsImg Human Paladin|pdf/DoSI/Human-Paladin.pdf}",
+								"{@5etoolsImg Wood Elf Fighter|pdf/DoSI/Wood-Elf-Fighter.pdf}",
+								"{@5etoolsImg Lightfoot Halfling Rogue|pdf/DoSI/Lightfoot-Halfling-Rogue.pdf}",
+								"{@5etoolsImg High Elf Wizard|pdf/DoSI/High-Elf-Wizard.pdf}"
 							]
 						},
 						"Tell the players to read over the character sheets; give their characters names; and invent the details of their characters' personality and appearance. Encourage the players to write on the character sheets to make these characters their own."

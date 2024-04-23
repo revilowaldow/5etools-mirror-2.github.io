@@ -1453,6 +1453,7 @@ Parser.SP_MISC_TAG_TO_FULL = {
 	AAD: "Additional Attack Damage",
 	OBJ: "Affects Objects",
 	ADV: "Grants Advantage",
+	PIR: "Permanent If Repeated",
 };
 Parser.spMiscTagToFull = function (type) {
 	return Parser._parse_aToB(Parser.SP_MISC_TAG_TO_FULL, type);

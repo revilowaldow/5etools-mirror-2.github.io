@@ -24,22 +24,22 @@
 					],
 					"rows": [
 						[
-							"{@5etools Dwarf Cleric|img/pdf/LRDT/Dwarf Cleric.pdf}",
+							"{@5etoolsImg Dwarf Cleric|pdf/LRDT/Dwarf Cleric.pdf}",
 							"Brave protector and healer",
 							"Armor, Holy Symbol, Warhammer"
 						],
 						[
-							"{@5etools Elf Wizard|img/pdf/LRDT/Elf Wizard.pdf}",
+							"{@5etoolsImg Elf Wizard|pdf/LRDT/Elf Wizard.pdf}",
 							"Versatile magic-user",
 							"Arcane Focus (Rod), Spellbook, 3 Spell Scrolls (Invisibility, Mage Armor, and Magic Missile)"
 						],
 						[
-							"{@5etools Gnome Fighter|img/pdf/LRDT/Gnome Fighter.pdf}",
+							"{@5etoolsImg Gnome Fighter|pdf/LRDT/Gnome Fighter.pdf}",
 							"Stalwart warrior",
 							"Armor, Longsword, Shield, Shortsword"
 						],
 						[
-							"{@5etools Orc Rogue|img/pdf/LRDT/Orc Rogue.pdf}",
+							"{@5etoolsImg Orc Rogue|pdf/LRDT/Orc Rogue.pdf}",
 							"Sneaky and cunning expert",
 							"Cape, 2 Daggers, Light Crossbow"
 						]
@@ -69,10 +69,10 @@
 													"page": 4,
 													"entries": [
 														"During the adventure, when I ask you what you want your character to do, keep the following things in mind:",
-														"The {@5etools Dwarf Cleric|img/pdf/LRDT/Dwarf Cleric.pdf} wears good armor, wields an impressive weapon, and channels both helpful and harmful magic through a holy symbol that embodies their faith.",
-														"The {@5etools Elf Wizard|img/pdf/LRDT/Elf Wizard.pdf} knows many spells, including ones that create fireballs, turn creatures {@condition invisible}, and dispel other magical effects. The wizard can also identify magic items.",
-														"The {@5etools Gnome Fighter|img/pdf/LRDT/Gnome Fighter.pdf} is strong, athletic, well-armored, skilled with weapons, and able to take a lot of punishment.",
-														"The {@5etools Orc Rogue|img/pdf/LRDT/Orc Rogue.pdf} can be quiet, sneakily attack enemies who aren't looking, climb walls, pick locks, and disarm traps."
+														"The {@5etoolsImg Dwarf Cleric|pdf/LRDT/Dwarf Cleric.pdf} wears good armor, wields an impressive weapon, and channels both helpful and harmful magic through a holy symbol that embodies their faith.",
+														"The {@5etoolsImg Elf Wizard|pdf/LRDT/Elf Wizard.pdf} knows many spells, including ones that create fireballs, turn creatures {@condition invisible}, and dispel other magical effects. The wizard can also identify magic items.",
+														"The {@5etoolsImg Gnome Fighter|pdf/LRDT/Gnome Fighter.pdf} is strong, athletic, well-armored, skilled with weapons, and able to take a lot of punishment.",
+														"The {@5etoolsImg Orc Rogue|pdf/LRDT/Orc Rogue.pdf} can be quiet, sneakily attack enemies who aren't looking, climb walls, pick locks, and disarm traps."
 													],
 													"id": "005"
 												}
@@ -1736,7 +1736,7 @@
 								"type": "internal",
 								"path": "adventure/LRDT/dwarf.webp"
 							},
-							"title": "{@5etools Dwarf Cleric|img/pdf/LRDT/Dwarf Cleric.pdf}",
+							"title": "{@5etoolsImg Dwarf Cleric|pdf/LRDT/Dwarf Cleric.pdf}",
 							"width": 1075,
 							"height": 919
 						},
@@ -1746,7 +1746,7 @@
 								"type": "internal",
 								"path": "adventure/LRDT/knight.webp"
 							},
-							"title": "{@5etools Elf Wizard|img/pdf/LRDT/Elf Wizard.pdf}",
+							"title": "{@5etoolsImg Elf Wizard|pdf/LRDT/Elf Wizard.pdf}",
 							"width": 883,
 							"height": 993
 						},
@@ -1756,7 +1756,7 @@
 								"type": "internal",
 								"path": "adventure/LRDT/mage.webp"
 							},
-							"title": "{@5etools Gnome Fighter|img/pdf/LRDT/Gnome Fighter.pdf}",
+							"title": "{@5etoolsImg Gnome Fighter|pdf/LRDT/Gnome Fighter.pdf}",
 							"width": 649,
 							"height": 908
 						},
@@ -1766,7 +1766,7 @@
 								"type": "internal",
 								"path": "adventure/LRDT/rogue.webp"
 							},
-							"title": "{@5etools Orc Rogue|img/pdf/LRDT/Orc Rogue.pdf}",
+							"title": "{@5etoolsImg Orc Rogue|pdf/LRDT/Orc Rogue.pdf}",
 							"width": 1005,
 							"height": 944
 						}

@@ -722,6 +722,9 @@ PropOrder._CLASS = [
 
 	"subclassTitle",
 
+	"hasFluff",
+	"hasFluffImages",
+
 	"fluff",
 
 	"foundrySystem",
@@ -787,6 +790,11 @@ PropOrder._SUBCLASS = [
 	"subclassTableGroups",
 	"subclassFeatures",
 
+	"hasFluff",
+	"hasFluffImages",
+
+	"fluff",
+
 	"foundrySystem",
 	"foundryFlags",
 	"foundryAdvancement",
@@ -799,6 +807,7 @@ PropOrder._SUBCLASS__COPY_MOD = [
 ];
 PropOrder._SUBCLASS_FLUFF = [
 	"name",
+	"shortName",
 	"source",
 	"className",
 	"classSource",

@@ -9812,57 +9812,45 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "inset",
 					"name": "Developments",
 					"page": 79,
 					"id": "28b",
 					"entries": [
 						{
 							"type": "entries",
-							"id": "28c",
+							"name": "Check out anytime you'd like",
+							"page": 79,
+							"id": "28e",
 							"entries": [
-								{
-									"type": "entries",
-									"id": "28d",
-									"entries": [
-										{
-											"type": "entries",
-											"name": "Check out anytime you'd like",
-											"page": 79,
-											"id": "28e",
-											"entries": [
-												"With the protean abomination destroyed, the inn returns to the state it was meant to be in. The creature dissolves into nothing but a pile of goo and within it rests a chunk of meteoric iron with {@dice 2d4} {@adventure fragments of delerium|DoDk|13|Delerium} embedded in it. The ceiling of the inn has mostly collapsed from the impact and a clear hole in the floor leads directly into the basement where the abomination lay. The inn lies in shambles, another nondescript ruin of Drakkenheim. But, the entrance to the smugglers tunnel is still very much intact, and Open Mike's corpse can be found amongst the bodies of the patrons. The key to the smuggler's tunnel is safely fastened on his belt."
-											]
-										},
-										{
-											"type": "entries",
-											"name": "A Safe Passage",
-											"page": 79,
-											"id": "28f",
-											"entries": [
-												"The smuggler's tunnel now lays open to the players. The players can choose to use this tunnel that leads them directly to the {@area cistern|418|x} below {@area Slaughterstone Square|4ba|x} without provoking a random encounter. They come out from an inconspicuous grate in the floor of the cistern that the monsters of Drakkenheim seem to have overlooked. Once there, the sewers function as normal."
-											]
-										},
-										{
-											"type": "entries",
-											"name": "Thankful Pilgrim",
-											"page": 79,
-											"id": "290",
-											"entries": [
-												"If he survives, the priest is endlessly thankful to be rid of the Black Ivory Inn and to still be alive and offers the party a {@item bag of holding} or an {@item alchemy jug}. He asks if they would accompany him to {@area Saint Selina's Monastery|56a|x}. He would most like to introduce them to Lucretia Mathias and speak highly of their courageous and heroic deeds. He latches on to the characters, believing them to be the prophesied heroes that the book of Falling Fire spoke of."
-											]
-										},
-										{
-											"type": "entries",
-											"name": "Friendly Factions",
-											"page": 79,
-											"id": "291",
-											"entries": [
-												"The other survivors are all a little dazed from their time spent in the inn, confused and in shock of the grim reality they have just been awoken into. They all thank the characters and agree to speak highly of them to their leaders and commanders. If the characters made enemies of any of the survivors, or if they boldly helped them or rescued them, those stories are brought back to the factions they represented."
-											]
-										}
-									]
-								}
+								"With the protean abomination destroyed, the inn returns to the state it was meant to be in. The creature dissolves into nothing but a pile of goo and within it rests a chunk of meteoric iron with {@dice 2d4} {@adventure fragments of delerium|DoDk|13|Delerium} embedded in it. The ceiling of the inn has mostly collapsed from the impact and a clear hole in the floor leads directly into the basement where the abomination lay. The inn lies in shambles, another nondescript ruin of Drakkenheim. But, the entrance to the smugglers tunnel is still very much intact, and Open Mike's corpse can be found amongst the bodies of the patrons. The key to the smuggler's tunnel is safely fastened on his belt."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "A Safe Passage",
+							"page": 79,
+							"id": "28f",
+							"entries": [
+								"The smuggler's tunnel now lays open to the players. The players can choose to use this tunnel that leads them directly to the {@area cistern|418|x} below {@area Slaughterstone Square|4ba|x} without provoking a random encounter. They come out from an inconspicuous grate in the floor of the cistern that the monsters of Drakkenheim seem to have overlooked. Once there, the sewers function as normal."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Thankful Pilgrim",
+							"page": 79,
+							"id": "290",
+							"entries": [
+								"If he survives, the priest is endlessly thankful to be rid of the Black Ivory Inn and to still be alive and offers the party a {@item bag of holding} or an {@item alchemy jug}. He asks if they would accompany him to {@area Saint Selina's Monastery|56a|x}. He would most like to introduce them to Lucretia Mathias and speak highly of their courageous and heroic deeds. He latches on to the characters, believing them to be the prophesied heroes that the book of Falling Fire spoke of."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Friendly Factions",
+							"page": 79,
+							"id": "291",
+							"entries": [
+								"The other survivors are all a little dazed from their time spent in the inn, confused and in shock of the grim reality they have just been awoken into. They all thank the characters and agree to speak highly of them to their leaders and commanders. If the characters made enemies of any of the survivors, or if they boldly helped them or rescued them, those stories are brought back to the factions they represented."
 							]
 						}
 					]
@@ -10586,7 +10574,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "inset",
 					"name": "Developments",
 					"page": 84,
 					"id": "2ae",
@@ -13444,7 +13432,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "inset",
 					"name": "Developments",
 					"page": 92,
 					"id": "2dd",
@@ -16227,7 +16215,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "inset",
 					"name": "Developments",
 					"page": 97,
 					"id": "309",
@@ -17277,7 +17265,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "inset",
 					"name": "Developments",
 					"page": 102,
 					"id": "33a",
@@ -17330,19 +17318,19 @@
 								},
 								"If Oscar Yoren survives, but was attacked or mistreated by the characters (or later discovers they deceived him), he will plot his revenge against them. He won't act on these plans until he obtains eldritch lilies, and tries to convince characters to bring him more delerium and other resources, citing the needs for it to further his own work. In truth, he starts using these items to conjure demons, create undead, and conspire against the characters.",
 								"If Oscar Yoren dies, the Amethyst Academy approaches the characters about buying his brain and manuscripts (even if the characters were not working for the Academy originally).",
-								"If Oscar Yoren is killed and his research is destroyed or abandoned, the formula for creating {@i aqua expurgo} is lost. However, a player character or another group could also develop the formula again later in the campaign by studying samples of eldritch lilies.",
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "adventure/DoDk/068-05-014.oscar.webp"
-									},
-									"width": 1700,
-									"height": 2237
-								}
+								"If Oscar Yoren is killed and his research is destroyed or abandoned, the formula for creating {@i aqua expurgo} is lost. However, a player character or another group could also develop the formula again later in the campaign by studying samples of eldritch lilies."
 							]
 						}
 					]
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "adventure/DoDk/068-05-014.oscar.webp"
+					},
+					"width": 1700,
+					"height": 2237
 				},
 				{
 					"type": "section",
@@ -18407,7 +18395,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "inset",
 					"name": "Developments",
 					"page": 110,
 					"id": "369",
@@ -19005,7 +18993,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "inset",
 					"name": "Developments",
 					"page": 117,
 					"id": "397",
@@ -19337,7 +19325,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "inset",
 					"name": "Developments",
 					"page": 121,
 					"id": "3ad",
@@ -19821,7 +19809,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "inset",
 					"name": "Developments",
 					"page": 125,
 					"id": "3d2",
@@ -21771,7 +21759,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "inset",
 					"name": "Developments",
 					"page": 130,
 					"id": "414",
@@ -22826,7 +22814,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "inset",
 					"name": "Developments",
 					"page": 133,
 					"id": "431",
@@ -23468,7 +23456,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "inset",
 					"name": "Developments",
 					"page": 139,
 					"id": "458",
@@ -23841,7 +23829,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "inset",
 					"name": "Developments",
 					"page": 142,
 					"id": "47a",
@@ -25970,7 +25958,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "inset",
 					"name": "Developments",
 					"page": 151,
 					"id": "4af",
@@ -29664,52 +29652,40 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "inset",
 					"name": "Developments",
 					"page": 174,
 					"id": "565",
 					"entries": [
 						{
 							"type": "entries",
-							"id": "566",
+							"name": "The Tower Reclaimed",
+							"page": 174,
+							"id": "568",
 							"entries": [
+								"While it will be some time before the tower can be repaired and brought to a fully operational state again, accomplishing this major objective allows the Academy to move on to the next stage of their plans for Drakkenheim.",
 								{
-									"type": "entries",
-									"id": "567",
-									"entries": [
-										{
-											"type": "entries",
-											"name": "The Tower Reclaimed",
-											"page": 174,
-											"id": "568",
-											"entries": [
-												"While it will be some time before the tower can be repaired and brought to a fully operational state again, accomplishing this major objective allows the Academy to move on to the next stage of their plans for Drakkenheim.",
-												{
-													"type": "list",
-													"items": [
-														"The Amethyst Academy will permit a player character who is a sorcerer, warlock, or wizard that can cast spells of 6th level or higher and opts to formally join the Amethyst Academy to carry the {@item Inscrutable Staff|DoDk} on a mission to Castle Drakken that requires it.",
-														"The Amethyst Academy offers three very rare magic items in exchange for the {@item Inscrutable Staff|DoDk} to groups who wish to keep it. If this offer is refused, they may attempt to steal it back."
-													]
-												}
-											]
-										},
-										{
-											"type": "entries",
-											"name": "Stolen Tower",
-											"page": 174,
-											"id": "569",
-											"entries": [
-												"Simply holding the Inscrutable Tower and the staff hostage is enough to stay the hand of the Amethyst Academy in the short term, who are terrified of losing such a precious resource. A cunning foe could extort the Academy for all its worth by doing so. Although Eldrick Runeweaver might enact a last-ditch effort by launching a few schemes to reclaim the tower, if he's defeated, the distant Academy Directorate takes the long view and resorts to appeasement.",
-												{
-													"type": "quote",
-													"entries": [
-														"This is why we don't build anything tall in Caspia. The bigger they are the harder they fall...or float."
-													],
-													"by": "Pluto Jackson"
-												}
-											]
-										}
+									"type": "list",
+									"items": [
+										"The Amethyst Academy will permit a player character who is a sorcerer, warlock, or wizard that can cast spells of 6th level or higher and opts to formally join the Amethyst Academy to carry the {@item Inscrutable Staff|DoDk} on a mission to Castle Drakken that requires it.",
+										"The Amethyst Academy offers three very rare magic items in exchange for the {@item Inscrutable Staff|DoDk} to groups who wish to keep it. If this offer is refused, they may attempt to steal it back."
 									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Stolen Tower",
+							"page": 174,
+							"id": "569",
+							"entries": [
+								"Simply holding the Inscrutable Tower and the staff hostage is enough to stay the hand of the Amethyst Academy in the short term, who are terrified of losing such a precious resource. A cunning foe could extort the Academy for all its worth by doing so. Although Eldrick Runeweaver might enact a last-ditch effort by launching a few schemes to reclaim the tower, if he's defeated, the distant Academy Directorate takes the long view and resorts to appeasement.",
+								{
+									"type": "quote",
+									"entries": [
+										"This is why we don't build anything tall in Caspia. The bigger they are the harder they fall...or float."
+									],
+									"by": "Pluto Jackson"
 								}
 							]
 						}
@@ -33875,7 +33851,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "inset",
 					"name": "Developments",
 					"page": 191,
 					"id": "610",

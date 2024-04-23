@@ -6394,7 +6394,14 @@
 									"width": 3840,
 									"height": 5211,
 									"imageType": "map",
-									"id": "411"
+									"id": "411",
+									"grid": {
+										"type": "square",
+										"size": 175,
+										"offsetY": -27,
+										"scale": 2,
+										"distance": 10
+									}
 								},
 								{
 									"type": "image",
@@ -6408,6 +6415,13 @@
 									"imageType": "mapPlayer",
 									"mapParent": {
 										"id": "411"
+									},
+									"grid": {
+										"type": "square",
+										"size": 175,
+										"offsetY": -27,
+										"scale": 2,
+										"distance": 10
 									}
 								}
 							]
@@ -7506,7 +7520,15 @@
 									"width": 3000,
 									"height": 2072,
 									"imageType": "map",
-									"id": "4bc"
+									"id": "4bc",
+									"grid": {
+										"type": "square",
+										"size": 173,
+										"offsetX": 63,
+										"offsetY": 1,
+										"scale": 2,
+										"distance": 10
+									}
 								},
 								{
 									"type": "image",
@@ -7520,6 +7542,14 @@
 									"imageType": "mapPlayer",
 									"mapParent": {
 										"id": "4bc"
+									},
+									"grid": {
+										"type": "square",
+										"size": 173,
+										"offsetX": 63,
+										"offsetY": 1,
+										"scale": 2,
+										"distance": 10
 									}
 								}
 							]
@@ -8645,7 +8675,14 @@
 									"width": 5560,
 									"height": 3840,
 									"imageType": "map",
-									"id": "530"
+									"id": "530",
+									"grid": {
+										"type": "square",
+										"size": 160,
+										"offsetX": -17,
+										"offsetY": 10,
+										"distance": 10
+									}
 								},
 								{
 									"type": "image",
@@ -8659,6 +8696,13 @@
 									"imageType": "mapPlayer",
 									"mapParent": {
 										"id": "530"
+									},
+									"grid": {
+										"type": "square",
+										"size": 160,
+										"offsetX": -17,
+										"offsetY": 10,
+										"distance": 10
 									}
 								}
 							]
@@ -9816,7 +9860,15 @@
 									"width": 3000,
 									"height": 2072,
 									"imageType": "map",
-									"id": "54d"
+									"id": "54d",
+									"grid": {
+										"type": "square",
+										"size": 173,
+										"offsetX": 64,
+										"offsetY": 4,
+										"scale": 2,
+										"distance": 10
+									}
 								},
 								{
 									"type": "image",
@@ -9830,6 +9882,14 @@
 									"imageType": "mapPlayer",
 									"mapParent": {
 										"id": "54d"
+									},
+									"grid": {
+										"type": "square",
+										"size": 173,
+										"offsetX": 64,
+										"offsetY": 4,
+										"scale": 2,
+										"distance": 10
 									}
 								}
 							]
@@ -10681,7 +10741,15 @@
 									"width": 5000,
 									"height": 3372,
 									"imageType": "map",
-									"id": "573"
+									"id": "573",
+									"grid": {
+										"type": "square",
+										"size": 196,
+										"offsetX": 14,
+										"offsetY": -63,
+										"scale": 2,
+										"distance": 10
+									}
 								},
 								{
 									"type": "image",
@@ -10695,6 +10763,14 @@
 									"imageType": "mapPlayer",
 									"mapParent": {
 										"id": "573"
+									},
+									"grid": {
+										"type": "square",
+										"size": 197,
+										"offsetX": 44,
+										"offsetY": -56,
+										"scale": 2,
+										"distance": 10
 									}
 								}
 							]
@@ -14217,7 +14293,15 @@
 									"width": 3000,
 									"height": 2175,
 									"imageType": "map",
-									"id": "591"
+									"id": "591",
+									"grid": {
+										"type": "square",
+										"size": 245,
+										"offsetX": -66,
+										"offsetY": -57,
+										"scale": 2,
+										"distance": 10
+									}
 								},
 								{
 									"type": "image",
@@ -14231,6 +14315,14 @@
 									"imageType": "mapPlayer",
 									"mapParent": {
 										"id": "591"
+									},
+									"grid": {
+										"type": "square",
+										"size": 245,
+										"offsetX": -66,
+										"offsetY": -57,
+										"scale": 2,
+										"distance": 10
 									}
 								}
 							]
@@ -14248,7 +14340,14 @@
 									"width": 3000,
 									"height": 2929,
 									"imageType": "map",
-									"id": "673"
+									"id": "673",
+									"grid": {
+										"type": "square",
+										"size": 190,
+										"offsetX": -50,
+										"scale": 2,
+										"distance": 10
+									}
 								},
 								{
 									"type": "image",
@@ -14262,6 +14361,13 @@
 									"imageType": "mapPlayer",
 									"mapParent": {
 										"id": "673"
+									},
+									"grid": {
+										"type": "square",
+										"size": 190,
+										"offsetX": -50,
+										"scale": 2,
+										"distance": 10
 									}
 								}
 							]

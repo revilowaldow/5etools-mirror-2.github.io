@@ -52,7 +52,6 @@ class ObjectsPage extends ListPage {
 
 		super({
 			dataSource: DataUtil.object.loadJSON.bind(DataUtil.object),
-			dataSourceFluff: DataUtil.objectFluff.loadJSON.bind(DataUtil.objectFluff),
 
 			pFnGetFluff,
 

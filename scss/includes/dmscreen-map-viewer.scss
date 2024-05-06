@@ -1,4 +1,5 @@
-@use "vars";
+@use "../vars/vars";
+@use "../vars/vars-night";
 
 .dm-map__ {
 	&picker-wrp-img {
@@ -33,13 +34,13 @@
 	}
 }
 
-.night-mode .dm-map__ {
+.ve-night-mode .dm-map__ {
 	&picker-wrp-img {
-		border-color: vars.$rgb-border-grey--night;
+		border-color: vars-night.$rgb-border-grey--night;
 	}
 
 	&picker-disp-name {
-		background: vars.$rgb-bg--night;
-		border-color: vars.$rgb-border-grey--night;
+		background: vars-night.$rgb-bg--night;
+		border-color: vars-night.$rgb-border-grey--night;
 	}
 }

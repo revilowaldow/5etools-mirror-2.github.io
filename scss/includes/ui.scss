@@ -2,7 +2,8 @@
 Shared UI components
  */
 @use "sass:color";
-@use "vars";
+
+@use "../vars/vars";
 
 /* region Misc/Shared */
 .ui__ {
@@ -350,7 +351,6 @@ Shared UI components
 .ui-tab__ {
 	&btn-tab-head {
 		display: inline-block;
-		padding: 2px 4px 0;
 		border-bottom-right-radius: 0;
 		border-bottom-left-radius: 0;
 		cursor: pointer;
@@ -752,7 +752,6 @@ Shared UI components
 		transition: opacity vars.$time-2-frames;
 		opacity: 0;
 
-		padding: 0;
 		width: 14px;
 		height: 10px;
 		border: 0;

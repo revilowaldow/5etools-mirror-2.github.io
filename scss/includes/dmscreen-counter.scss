@@ -1,4 +1,4 @@
-@use "vars";
+@use "../vars/vars";
 
 .dm-cnt__ {
 	&ipt {
@@ -25,7 +25,7 @@
 	}
 }
 
-.night-mode .dm-cnt__ {
+.ve-night-mode .dm-cnt__ {
 	&ipt {
 		background: transparent;
 	}

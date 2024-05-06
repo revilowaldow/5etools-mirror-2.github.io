@@ -806,7 +806,7 @@ class SideMenu {
 		});
 		const $btnLoadFile = $(`<button class="btn btn-primary">Load from File</button>`).appendTo($wrpSaveLoadFile);
 		$btnLoadFile.on("click", async () => {
-			const {jsons, errors} = await DataUtil.pUserUpload({expectedFileTypes: ["dm-screen"]});
+			const {jsons, errors} = await InputUiUtil.pGetUserUploadJson({expectedFileTypes: ["dm-screen"]});
 
 			DataUtil.doHandleFileLoadErrorsGeneric(errors);
 

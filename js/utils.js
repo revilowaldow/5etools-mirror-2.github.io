@@ -2,7 +2,7 @@
 
 // in deployment, `IS_DEPLOYED = "<version number>";` should be set below.
 globalThis.IS_DEPLOYED = undefined;
-globalThis.VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"1.206.0"/* 5ETOOLS_VERSION__CLOSE */;
+globalThis.VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"1.206.1"/* 5ETOOLS_VERSION__CLOSE */;
 globalThis.DEPLOYED_IMG_ROOT = undefined;
 // for the roll20 script to set
 globalThis.IS_VTT = false;
@@ -1332,26 +1332,23 @@ globalThis.MiscUtil = class {
 			$iptTemp.remove();
 		}
 
-		if (navigator && navigator.permissions) {
-			try {
-				const access = await navigator.permissions.query({name: "clipboard-write"});
-				if (access.state === "granted" || access.state === "prompt") {
-					await navigator.clipboard.writeText(text);
-				} else doCompatibilityCopy();
-			} catch (e) { doCompatibilityCopy(); }
-		} else doCompatibilityCopy();
+		try {
+			await navigator.clipboard.writeText(text);
+		} catch (e) {
+			doCompatibilityCopy();
+		}
 	}
 
 	static async pCopyBlobToClipboard (blob) {
-		if (!navigator?.permissions) {
-			JqueryUtil.doToast({type: "danger", content: `Could not access clipboard!`});
-			return false;
-		}
-
-		const access = await navigator.permissions.query({name: "clipboard-write"});
-		if (!["granted", "prompt"].includes(access.state)) {
-			JqueryUtil.doToast({type: "danger", content: `Could not access clipboard!`});
-			return false;
+		// https://developer.mozilla.org/en-US/docs/Web/API/ClipboardItem#browser_compatibility
+		// TODO(Future) remove when Firefox moves feature from Nightly -> Main
+		if (typeof ClipboardItem === "undefined") {
+			JqueryUtil.doToast({
+				type: "danger",
+				content: `Could not access clipboard! If you are on Firefox, visit <code>about:config</code> and enable </code><code>dom.events.asyncClipboard.clipboardItem</code>.`,
+				isAutoHide: false,
+			});
+			return;
 		}
 
 		try {
@@ -1379,7 +1376,7 @@ globalThis.MiscUtil = class {
 	}
 
 	static get (object, ...path) {
-		if (object == null) return null;
+		if (object == null) return object;
 		for (let i = 0; i < path.length; ++i) {
 			object = object[path[i]];
 			if (object == null) return object;
@@ -1388,7 +1385,7 @@ globalThis.MiscUtil = class {
 	}
 
 	static set (object, ...pathAndVal) {
-		if (object == null) return null;
+		if (object == null) return object;
 
 		const val = pathAndVal.pop();
 		if (!pathAndVal.length) return null;
@@ -2094,6 +2091,16 @@ globalThis.MiscUtil = class {
 		if (a == null && b != null) return false;
 		if (a != null && b == null) return false;
 		return a === b;
+	}
+
+	static getDatUrl (blob) {
+		return new Promise((resolve, reject) => {
+			const reader = new FileReader();
+			reader.onload = () => resolve(reader.result);
+			reader.onerror = () => reject(reader.error);
+			reader.onabort = () => reject(new Error("Read aborted"));
+			reader.readAsDataURL(blob);
+		});
 	}
 };
 
@@ -3853,71 +3860,6 @@ globalThis.DataUtil = {
 		a.dispatchEvent(new MouseEvent("click", {bubbles: true, cancelable: true, view: window}));
 	},
 
-	/** Always returns an array of files, even in "single" mode. */
-	pUserUpload (
-		{
-			isMultiple = false,
-			expectedFileTypes = null,
-			propVersion = "siteVersion",
-		} = {},
-	) {
-		return new Promise(resolve => {
-			const $iptAdd = $(`<input type="file" ${isMultiple ? "multiple" : ""} class="ve-hidden" accept=".json">`)
-				.on("change", (evt) => {
-					const input = evt.target;
-
-					const reader = new FileReader();
-					let readIndex = 0;
-					const out = [];
-					const errs = [];
-
-					reader.onload = async () => {
-						const name = input.files[readIndex - 1].name;
-						const text = reader.result;
-
-						try {
-							const json = JSON.parse(text);
-
-							const isSkipFile = expectedFileTypes != null
-								&& json.fileType
-								&& !expectedFileTypes.includes(json.fileType)
-								&& !(await InputUiUtil.pGetUserBoolean({
-									textYes: "Yes",
-									textNo: "Cancel",
-									title: "File Type Mismatch",
-									htmlDescription: `The file "${name}" has the type "${json.fileType}" when the expected file type was "${expectedFileTypes.join("/")}".<br>Are you sure you want to upload this file?`,
-								}));
-
-							if (!isSkipFile) {
-								delete json.fileType;
-								delete json[propVersion];
-
-								out.push({name, json});
-							}
-						} catch (e) {
-							errs.push({filename: name, message: e.message});
-						}
-
-						if (input.files[readIndex]) {
-							reader.readAsText(input.files[readIndex++]);
-							return;
-						}
-
-						resolve({
-							files: out,
-							errors: errs,
-							jsons: out.map(({json}) => json),
-						});
-					};
-
-					reader.readAsText(input.files[readIndex++]);
-				})
-				.appendTo(document.body);
-
-			$iptAdd.click();
-		});
-	},
-
 	doHandleFileLoadErrorsGeneric (errors) {
 		if (!errors) return;
 		errors.forEach(err => {
@@ -4184,6 +4126,8 @@ globalThis.DataUtil = {
 		],
 
 		copyApplier: class {
+			static _WALKER = null;
+
 			// convert everything to arrays
 			static _normaliseMods (obj) {
 				Object.entries(obj._mod).forEach(([k, v]) => {
@@ -4573,12 +4517,32 @@ globalThis.DataUtil = {
 
 			static _doMod_scalarAddHit ({copyTo, copyFrom, modInfo, msgPtFailed, prop}) {
 				if (!copyTo[prop]) return;
-				copyTo[prop] = JSON.parse(JSON.stringify(copyTo[prop]).replace(/{@hit ([-+]?\d+)}/g, (m0, m1) => `{@hit ${Number(m1) + modInfo.scalar}}`));
+
+				const re = /{@hit ([-+]?\d+)}/g;
+				copyTo[prop] = this._WALKER.walk(
+					copyTo[prop],
+					{
+						string: (str) => {
+							return str
+								.replace(re, (m0, m1) => `{@hit ${Number(m1) + modInfo.scalar}}`);
+						},
+					},
+				);
 			}
 
 			static _doMod_scalarAddDc ({copyTo, copyFrom, modInfo, msgPtFailed, prop}) {
 				if (!copyTo[prop]) return;
-				copyTo[prop] = JSON.parse(JSON.stringify(copyTo[prop]).replace(/{@dc (\d+)(?:\|[^}]+)?}/g, (m0, m1) => `{@dc ${Number(m1) + modInfo.scalar}}`));
+
+				const re = /{@dc (\d+)(?:\|[^}]+)?}/g;
+				copyTo[prop] = this._WALKER.walk(
+					copyTo[prop],
+					{
+						string: (str) => {
+							return str
+								.replace(re, (m0, m1) => `{@dc ${Number(m1) + modInfo.scalar}}`);
+						},
+					},
+				);
 			}
 
 			static _doMod_maxSize ({copyTo, copyFrom, modInfo, msgPtFailed}) {
@@ -4677,6 +4641,8 @@ globalThis.DataUtil = {
 			}
 
 			static getCopy (impl, copyFrom, copyTo, templateData, {isExternalApplicationKeepCopy = false, isExternalApplicationIdentityOnly = false} = {}) {
+				this._WALKER ||= MiscUtil.getWalker();
+
 				if (isExternalApplicationKeepCopy) copyTo.__copy = MiscUtil.copyFast(copyFrom);
 
 				const msgPtFailed = `Failed to apply _copy to "${copyTo.name}" ("${copyTo.source}").`;
@@ -7762,6 +7728,12 @@ globalThis.EditorUtil = {
 
 		return editor;
 	},
+};
+
+globalThis.BrowserUtil = class {
+	static isFirefox () {
+		return navigator.userAgent.includes("Firefox");
+	}
 };
 
 // MISC WEBPAGE ONLOADS ================================================================================================

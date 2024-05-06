@@ -1353,7 +1353,7 @@ class TabUiUtil extends TabUiUtilBase {
 		super.decorate(obj, {isInitMeta});
 
 		obj.__$getBtnTab = function ({tabMeta, _propProxy, propActive, ixTab}) {
-			return $(`<button class="btn btn-default ui-tab__btn-tab-head ${tabMeta.isHeadHidden ? "ve-hidden" : ""}">${tabMeta.name.qq()}</button>`)
+			return $(`<button class="btn btn-default ui-tab__btn-tab-head pt-2p px-4p pb-0 ${tabMeta.isHeadHidden ? "ve-hidden" : ""}">${tabMeta.name.qq()}</button>`)
 				.click(() => obj[_propProxy][propActive] = ixTab);
 		};
 
@@ -1370,7 +1370,7 @@ class TabUiUtil extends TabUiUtilBase {
 
 		obj.__renderTypedTabMeta_buttons = function ({tabMeta, ixTab}) {
 			const $btns = tabMeta.buttons.map((meta, j) => {
-				const $btn = $(`<button class="btn ui-tab__btn-tab-head ${meta.type ? `btn-${meta.type}` : "btn-primary"}" ${meta.title ? `title="${meta.title.qq()}"` : ""}>${meta.html}</button>`)
+				const $btn = $(`<button class="btn ui-tab__btn-tab-head pt-2p px-4p pb-0 bbr-0 bbl-0 ${meta.type ? `btn-${meta.type}` : "btn-primary"}" ${meta.title ? `title="${meta.title.qq()}"` : ""}>${meta.html}</button>`)
 					.click(evt => meta.pFnClick(evt, $btn));
 				return $btn;
 			});
@@ -2633,7 +2633,7 @@ class InputUiUtil {
 		if (!isDataEntered) return null;
 		const outRaw = $iptNumber.val();
 		if (!outRaw.trim()) return null;
-		let out = UiUtil.strToInt(outRaw);
+		let out = UiUtil.strToNumber(outRaw);
 		if (opts.min) out = Math.max(opts.min, out);
 		if (opts.max) out = Math.min(opts.max, out);
 		if (opts.int) out = Math.round(out);
@@ -3306,6 +3306,76 @@ class InputUiUtil {
 
 		return Parser.CRS[comp._state.cur];
 		// endregion
+	}
+
+	/**
+	 * Always returns an array of files, even in "single" mode.
+	 * @param {?boolean} isMultiple
+	 * @param {?Array<string>} expectedFileTypes
+	 * @param {?string} propVersion
+	 */
+	static pGetUserUploadJson (
+		{
+			isMultiple = false,
+			expectedFileTypes = null,
+			propVersion = "siteVersion",
+		} = {},
+	) {
+		return new Promise(resolve => {
+			const $iptAdd = $(`<input type="file" ${isMultiple ? "multiple" : ""} class="ve-hidden" accept=".json">`)
+				.on("change", (evt) => {
+					const input = evt.target;
+
+					const reader = new FileReader();
+					let readIndex = 0;
+					const out = [];
+					const errs = [];
+
+					reader.onload = async () => {
+						const name = input.files[readIndex - 1].name;
+						const text = reader.result;
+
+						try {
+							const json = JSON.parse(text);
+
+							const isSkipFile = expectedFileTypes != null
+								&& json.fileType
+								&& !expectedFileTypes.includes(json.fileType)
+								&& !(await InputUiUtil.pGetUserBoolean({
+									textYes: "Yes",
+									textNo: "Cancel",
+									title: "File Type Mismatch",
+									htmlDescription: `The file "${name}" has the type "${json.fileType}" when the expected file type was "${expectedFileTypes.join("/")}".<br>Are you sure you want to upload this file?`,
+								}));
+
+							if (!isSkipFile) {
+								delete json.fileType;
+								delete json[propVersion];
+
+								out.push({name, json});
+							}
+						} catch (e) {
+							errs.push({filename: name, message: e.message});
+						}
+
+						if (input.files[readIndex]) {
+							reader.readAsText(input.files[readIndex++]);
+							return;
+						}
+
+						resolve({
+							files: out,
+							errors: errs,
+							jsons: out.map(({json}) => json),
+						});
+					};
+
+					reader.readAsText(input.files[readIndex++]);
+				})
+				.appendTo(document.body);
+
+			$iptAdd.click();
+		});
 	}
 }
 
@@ -4816,16 +4886,17 @@ class ComponentUiUtil {
 					//  breaks when the number is negative, as we need to add a "=" to the front of the input before
 					//  evaluating
 					// $ipt.change();
-					const nxt = component._state[prop] + delta;
+					const cur = isNaN(component._state[prop]) ? opts.fallbackOnNaN : component._state[prop];
+					const nxt = cur + delta;
 					if (!isValidValue(nxt)) return;
 					component._state[prop] = nxt;
 					$ipt.focus();
 				};
 
-				const $btnUp = $(`<button class="btn btn-default ui-ideco__btn-ticker bold no-select">+</button>`)
+				const $btnUp = $(`<button class="btn btn-default ui-ideco__btn-ticker p-0 bold no-select">+</button>`)
 					.click(() => handleClick(1));
 
-				const $btnDown = $(`<button class="btn btn-default ui-ideco__btn-ticker bold no-select">\u2012</button>`)
+				const $btnDown = $(`<button class="btn btn-default ui-ideco__btn-ticker p-0 bold no-select">\u2012</button>`)
 					.click(() => handleClick(-1));
 
 				return $$`<div class="ui-ideco__wrp ui-ideco__wrp--${side} ve-flex-vh-center ve-flex-col">

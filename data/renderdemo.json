@@ -131,7 +131,7 @@
 									"type": "list",
 									"items": [
 										"Internal links: {@5etools This Is Your Life|lifegen.html}",
-										"Internal image links: {@5etoolsImg Players Handbook Cover|covers/PHB.webp}",
+										"Internal \"img\" links (i.e., anything in {@link https://github.com/5etools-mirror-2/5etools-img}): {@5etoolsImg Players Handbook Cover|covers/PHB.webp}; {@5etoolsImg Human Paladin sheet|pdf/DoSI/Human-Paladin.pdf}",
 										"External links: {@link https://discord.gg/5etools} or {@link Discord|https://discord.gg/5etools}"
 									]
 								},

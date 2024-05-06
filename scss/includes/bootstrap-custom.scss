@@ -1,4 +1,5 @@
-@use "vars";
+@use "../vars/vars";
+@use "../vars/vars-night";
 
 :root {
 	--safe-area-inset-top: 0;
@@ -353,13 +354,13 @@ body::-webkit-scrollbar {
 	}
 }
 
-.night-mode .input-group {
+.ve-night-mode .input-group {
 	> input.form-control,
 	> label,
 	> button,
 	> a.btn {
 		&:last-child {
-			border-right-color: vars.$rgb-border-grey--night;
+			border-right-color: vars-night.$rgb-border-grey--night;
 		}
 	}
 }

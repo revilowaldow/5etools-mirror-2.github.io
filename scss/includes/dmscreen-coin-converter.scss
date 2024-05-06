@@ -1,4 +1,5 @@
-@use "vars";
+@use "../vars/vars";
+@use "../vars/vars-night";
 
 .dm-money {
 	width: 100%;
@@ -71,10 +72,10 @@
 	}
 }
 
-.night-mode .dm-money {
+.ve-night-mode .dm-money {
 	&__ {
 		&ctrl {
-			border-color: vars.$rgb-border-grey--night;
+			border-color: vars-night.$rgb-border-grey--night;
 		}
 	}
 }

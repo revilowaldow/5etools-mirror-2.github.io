@@ -1833,7 +1833,7 @@ class ManageBrewUi {
 	}
 
 	async _pHandleClick_btnLoadFromFile (rdState) {
-		const {files, errors} = await DataUtil.pUserUpload({isMultiple: true});
+		const {files, errors} = await InputUiUtil.pGetUserUploadJson({isMultiple: true});
 
 		DataUtil.doHandleFileLoadErrorsGeneric(errors);
 

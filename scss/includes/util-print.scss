@@ -1,4 +1,4 @@
-@use "vars";
+@use "../vars/vars";
 
 @include vars.mix-is-print {
 	.no-print {

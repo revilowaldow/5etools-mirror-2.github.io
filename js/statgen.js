@@ -63,7 +63,7 @@ class StatGenPage {
 						html: `<span class="glyphicon glyphicon-upload"></span>`,
 						title: "Load from File",
 						pFnClick: async () => {
-							const {jsons, errors} = await DataUtil.pUserUpload({expectedFileTypes: ["statgen"]});
+							const {jsons, errors} = await InputUiUtil.pGetUserUploadJson({expectedFileTypes: ["statgen"]});
 
 							DataUtil.doHandleFileLoadErrorsGeneric(errors);
 

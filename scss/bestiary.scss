@@ -1,4 +1,5 @@
-@use "includes/vars";
+@use "vars/vars";
+@use "vars/vars-night";
 
 .mon__ {
 	&name--token .stats-source {
@@ -134,9 +135,9 @@ img.token {
 		vars.$rgb-bg-orange;
 }
 
-.night-mode {
+.ve-night-mode {
 	#pagecontent {
-		background: vars.$rgb-bg--night !important;
+		background: vars-night.$rgb-bg--night !important;
 	}
 }
 // endregion
@@ -171,8 +172,8 @@ img.token {
 	}
 }
 
-.night-mode [data-proficiency-dice-mode="dice"] .rd__dc--rollable {
-	color: vars.$rgb-link-blue--night;
+.ve-night-mode [data-proficiency-dice-mode="dice"] .rd__dc--rollable {
+	color: vars-night.$rgb-link-blue--night;
 }
 // endregion
 

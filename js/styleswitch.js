@@ -149,8 +149,8 @@ StyleSwitcher._STORAGE_WIDE = "StyleSwitcher_style-wide";
 StyleSwitcher._STYLE_DAY = "day";
 StyleSwitcher._STYLE_NIGHT = "night";
 StyleSwitcher._STYLE_NIGHT_ALT = "nightAlt";
-StyleSwitcher._NIGHT_CLASS = "night-mode";
-StyleSwitcher._NIGHT_CLASS_ALT = "night-mode--alt";
+StyleSwitcher._NIGHT_CLASS = "ve-night-mode";
+StyleSwitcher._NIGHT_CLASS_ALT = "ve-night-mode--alt";
 StyleSwitcher._WIDE_ID = "style-switch__wide";
 
 try {

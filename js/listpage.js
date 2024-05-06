@@ -534,7 +534,7 @@ class SublistManager {
 	}
 
 	async pHandleClick_upload ({isAdditive = false} = {}) {
-		const {jsons, errors} = await DataUtil.pUserUpload({expectedFileTypes: this._getUploadFileTypes()});
+		const {jsons, errors} = await InputUiUtil.pGetUserUploadJson({expectedFileTypes: this._getUploadFileTypes()});
 
 		DataUtil.doHandleFileLoadErrorsGeneric(errors);
 
@@ -1691,7 +1691,7 @@ class ListPage {
 
 		this._btnsTabs[ident] = e_({
 			tag: "button",
-			clazz: "ui-tab__btn-tab-head btn btn-default",
+			clazz: "ui-tab__btn-tab-head btn btn-default pt-2p px-4p pb-0",
 			children: [
 				e_({
 					tag: "span",
@@ -2033,6 +2033,13 @@ class ListPage {
 				return clone;
 			},
 		};
+
+		// See: https://github.com/1904labs/dom-to-image-more/issues/146
+		if (BrowserUtil.isFirefox()) {
+			const bcr = this._$pgContent[0].getBoundingClientRect();
+			optsDomToImage.width = bcr.width;
+			optsDomToImage.height = bcr.height;
+		}
 
 		if (isFast) {
 			let blob;

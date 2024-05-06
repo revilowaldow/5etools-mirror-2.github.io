@@ -645,7 +645,8 @@ Parser.sourceJsonToDate = function (source) {
 };
 
 Parser.sourceJsonToColor = function (source) {
-	return `source__${source}`;
+	const sourceCased = Parser.sourceJsonToJson(source);
+	return `source__${sourceCased}`;
 };
 
 Parser.sourceJsonToStyle = function (source) {

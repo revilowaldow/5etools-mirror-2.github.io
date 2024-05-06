@@ -1,4 +1,5 @@
-@use "vars";
+@use "../vars/vars";
+@use "../vars/vars-night";
 
 .dm-init {
 	display: flex;
@@ -206,17 +207,17 @@
 	}
 }
 
-.night-mode {
+.ve-night-mode {
 	.dm-init__wrp-header {
-		border-color: vars.$rgb-border-grey--night;
+		border-color: vars-night.$rgb-border-grey--night;
 	}
 
 	.dm-init__wrp-controls {
-		border-color: vars.$rgb-border-grey--night;
+		border-color: vars-night.$rgb-border-grey--night;
 	}
 
 	.dm-init__wrp-creature {
-		border-color: vars.$rgb-border-grey--night;
+		border-color: vars-night.$rgb-border-grey--night;
 	}
 
 	.dm-init__row.dm-init__row-active input,
@@ -226,6 +227,6 @@
 	}
 
 	.dm-init__row.dm-init__row-active .dm-init__wrp-stat-cb {
-		border-color: vars.$rgb-border-grey--night;
+		border-color: vars-night.$rgb-border-grey--night;
 	}
 }

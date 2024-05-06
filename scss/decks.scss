@@ -1,12 +1,13 @@
 @use "sass:color";
 
-@use "includes/vars";
+@use "vars/vars";
+@use "vars/vars-night";
 
 :root {
 	--rgb-card-glint--edge: #d5592e;
 }
 
-:root.night-mode {
+:root.ve-night-mode {
 	--rgb-card-glint--edge: #ffd21f;
 }
 
@@ -347,12 +348,12 @@
 	}
 }
 
-.night-mode .decks {
+.ve-night-mode .decks {
 	&__ {
 		&wrp-card-rows {
 			&--list {
 				.decks__wrp-row {
-					border-color: vars.$rgb-border-grey--night;
+					border-color: vars-night.$rgb-border-grey--night;
 				}
 			}
 		}
@@ -360,13 +361,13 @@
 
 	&-draw__ {
 		&wrp-card {
-			background-color: vars.$rgb-name-red--night;
-			box-shadow: 0 0 30px 10px color.adjust(vars.$rgb-name-red--night, $alpha: - 0.7);
+			background-color: vars-night.$rgb-name-red--night;
+			box-shadow: 0 0 30px 10px color.adjust(vars-night.$rgb-name-red--night, $alpha: - 0.7);
 			color: rgb(255 255 255 / 53%);
 		}
 
 		&wrp-desc {
-			border-color: vars.$rgb-name-red--night;
+			border-color: vars-night.$rgb-name-red--night;
 			background-color: #574930;
 			box-shadow: 0 0 10px 0 #000;
 		}

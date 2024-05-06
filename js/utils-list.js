@@ -219,7 +219,7 @@ class ListUtilEntity {
 			...others
 		},
 	) {
-		const {jsons, errors} = await DataUtil.pUserUpload({
+		const {jsons, errors} = await InputUiUtil.pGetUserUploadJson({
 			expectedFileTypes: this._getFileTypes({page}),
 		});
 
@@ -516,7 +516,7 @@ class SaveManager extends BaseComponent {
 			? null
 			: $(`<button class="btn btn-default btn-xs" title="Load Lists from File">Import All</button>`)
 				.click(async () => {
-					const {jsons, errors} = await DataUtil.pUserUpload({
+					const {jsons, errors} = await InputUiUtil.pGetUserUploadJson({
 						expectedFileTypes: [ListUtil.getDownloadFiletypeSaves({page: this._page})],
 					});
 

@@ -1,4 +1,4 @@
-@use "vars";
+@use "../vars/vars";
 
 @mixin mix-source-color ($rgb) {
 	color: $rgb !important;

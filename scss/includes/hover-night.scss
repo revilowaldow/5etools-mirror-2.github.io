@@ -1,5 +1,20 @@
-@use "vars";
+@use "../vars/vars-night";
 
-.night-mode .hwin {
-	background: vars.$rgb-bg--night;
+.ve-night-mode {
+	.hwin {
+		background: vars-night.$rgb-bg--night;
+	}
+
+	.hwin table.summary-noback th,
+	.hwin table.summary th {
+		color: vars-night.$rgb-font--night;
+	}
+
+	.hwin .hoverborder .window-title {
+		color: vars-night.$rgb-font--night;
+	}
+
+	.hwin td div.border {
+		background-color: vars-night.$rgb-name-red--night;
+	}
 }

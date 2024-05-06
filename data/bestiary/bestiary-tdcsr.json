@@ -646,6 +646,12 @@
 					"entries": [
 						"When a creature within 5 feet of the stoneguard attacks a target other than the stoneguard, the stoneguard can make one attack against that creature."
 					]
+				},
+				{
+					"name": "Skin to Stone",
+					"entries": [
+						"When the stoneguard is attacked, it gains resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks until the end of the attacker's turn"
+					]
 				}
 			],
 			"senseTags": [

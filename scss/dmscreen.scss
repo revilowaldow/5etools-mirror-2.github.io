@@ -1,4 +1,5 @@
-@use "includes/vars";
+@use "vars/vars";
+@use "vars/vars-night";
 
 @use "includes/dmscreen-book-viewer";
 @use "includes/dmscreen-calender";
@@ -199,9 +200,9 @@ label {
 	background: #fff;
 }
 
-.night-mode {
+.ve-night-mode {
 	.content-tab-bar {
-		border-color: vars.$rgb-border-grey--night;
+		border-color: vars-night.$rgb-border-grey--night;
 	}
 }
 
@@ -259,9 +260,9 @@ label {
 	background: #f0f0f0;
 }
 
-.night-mode {
+.ve-night-mode {
 	.panel-content-wrapper-inner::-webkit-scrollbar-track {
-		background: vars.$rgb-bg--night;
+		background: vars-night.$rgb-bg--night;
 	}
 }
 
@@ -354,7 +355,7 @@ label {
 	border: 1px solid vars.$rgb-border-grey;
 }
 
-.night-mode {
+.ve-night-mode {
 	.panel-control-move--bg {
 		background: #777a;
 		border-color: #aaa;
@@ -616,13 +617,13 @@ body.is-fullscreen .sidemenu__hotzone {
 	display: none !important;
 }
 
-.night-mode {
+.ve-night-mode {
 	.btn-panel-add {
-		border-color: vars.$rgb-border-grey--night;
+		border-color: vars-night.$rgb-border-grey--night;
 	}
 
 	.underline-tabs {
-		border-color: vars.$rgb-border-grey--night;
+		border-color: vars-night.$rgb-border-grey--night;
 	}
 
 	.panel-history-control-middle {
@@ -658,18 +659,18 @@ body.is-fullscreen .sidemenu__hotzone {
 	}
 
 	.panel-content-wrapper-inner {
-		background: vars.$rgb-bg--night;
+		background: vars-night.$rgb-bg--night;
 	}
 
 	.panel-addmenu-tab-head[active="true"] {
-		background-color: vars.$rgb-btn-default-active--night !important;
+		background-color: vars-night.$rgb-btn-default-active--night !important;
 	}
 
 	.panel-content-wrapper-inner td div.border {
-		background-color: vars.$rgb-name-red--night;
+		background-color: vars-night.$rgb-name-red--night;
 	}
 
 	.dm__panel-bg {
-		background: vars.$rgb-bg--night;
+		background: vars-night.$rgb-bg--night;
 	}
 }

@@ -1,4 +1,5 @@
-@use "includes/vars";
+@use "vars/vars";
+@use "vars/vars-night";
 
 .lst__ {
 	&item-group-header {
@@ -7,9 +8,9 @@
 	}
 }
 
-.night-mode .lst__ {
+.ve-night-mode .lst__ {
 	&item-group-header {
-		background: vars.$rgb-bg--alt-night;
+		background: vars-night.$rgb-bg--alt-night;
 	}
 }
 

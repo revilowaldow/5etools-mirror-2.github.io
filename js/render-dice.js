@@ -1098,7 +1098,7 @@ Renderer.dice.lang = {
 			.replace(/\s*?\bdivided by\b\s*?/g, " / ")
 			// endregion
 			.replace(/\s+/g, "")
-			.replace(/[\u2012\u2013\u2014]/g, "-") // convert dashes
+			.replace(/[\u2012\u2013\u2014\u2212]/g, "-") // convert dashes
 			.replace(/[×]/g, "*") // convert mult signs
 			.replace(/\*\*/g, "^") // convert ** to ^
 			.replace(/÷/g, "/") // convert div signs

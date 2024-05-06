@@ -1,4 +1,5 @@
-@use "includes/vars";
+@use "vars/vars";
+@use "vars/vars-night";
 
 .pg-search__ {
 	$sz-image: 48px;
@@ -45,15 +46,15 @@
 	}
 }
 
-.night-mode {
+.ve-night-mode {
 	.pg-search__ {
 		&wrp-result {
-			border: 1px solid vars.$rgb-border-grey--night;
-			background: vars.$rgb-bg--night;
+			border: 1px solid vars-night.$rgb-border-grey--night;
+			background: vars-night.$rgb-bg--night;
 		}
 
 		&wrp-preview {
-			border: 1px solid vars.$rgb-border-grey--night;
+			border: 1px solid vars-night.$rgb-border-grey--night;
 		}
 	}
 }

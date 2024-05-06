@@ -85,9 +85,9 @@ class MapsPage extends BaseComponent {
 		const mapData = {};
 
 		// Apply the prerelease/brew data first, so the "official" data takes precedence, where required
-		Object.assign(mapData, MiscUtil.copy(await this._pGetPrereleaseBrewMaps({brewUtil: BrewUtil2})));
-		Object.assign(mapData, MiscUtil.copy(await this._pGetPrereleaseBrewMaps({brewUtil: PrereleaseUtil})));
-		Object.assign(mapData, MiscUtil.copy(mapDataBase));
+		Object.assign(mapData, MiscUtil.copyFast(await this._pGetPrereleaseBrewMaps({brewUtil: BrewUtil2})));
+		Object.assign(mapData, MiscUtil.copyFast(await this._pGetPrereleaseBrewMaps({brewUtil: PrereleaseUtil})));
+		Object.assign(mapData, MiscUtil.copyFast(mapDataBase));
 
 		return mapData;
 	}
@@ -134,8 +134,8 @@ class MapsPage extends BaseComponent {
 		propsDisplaySource.push(propDisplaySource);
 
 		const shortNameHtml = this._getShortNameHtml({source, sourceMeta});
-		const titleName = this._getTitleName({source, sourceMeta});
-		const searchName = this._getSearchName({source, sourceMeta});
+		const titleName = this._getTitleName({sourceMeta});
+		const searchName = this._getSearchName({sourceMeta});
 
 		const propsDisplayChapter = [];
 		const rendersChapter = sourceMeta.chapters
@@ -248,19 +248,31 @@ class MapsPage extends BaseComponent {
 	}
 
 	_getShortNameHtml ({source, sourceMeta}) {
-		if (!sourceMeta.parentSource) return Parser.sourceJsonToFull(source).qq();
-		const fullSource = Parser.sourceJsonToFull(source);
+		const titleName = this._getTitleName({sourceMeta});
+
+		if (!sourceMeta.parentSource) return titleName.qq();
+
 		const fullParentSource = Parser.sourceJsonToFull(sourceMeta.parentSource);
-		return fullSource.replace(new RegExp(`^${fullParentSource.escapeRegexp()}: `, "i"), `<span title="${Parser.sourceJsonToFull(sourceMeta.parentSource).qq()}">${Parser.sourceJsonToAbv(sourceMeta.parentSource).qq()}</span>: `);
+		const ptPrefixParent = `<span title="${Parser.sourceJsonToFull(sourceMeta.parentSource).qq()}">${Parser.sourceJsonToAbv(sourceMeta.parentSource).qq()}</span>: `;
+
+		let isIncludesParent = false;
+		let out = titleName
+			.replace(new RegExp(`^${fullParentSource.escapeRegexp()}: `, "i"), () => {
+				isIncludesParent = true;
+				return ptPrefixParent;
+			});
+		if (isIncludesParent) return out;
+
+		return `${ptPrefixParent}${out}`;
 	}
 
-	_getTitleName ({source, sourceMeta}) {
-		if (!sourceMeta.parentSource) return Parser.sourceJsonToFull(source).toLowerCase().trim();
-		return `${Parser.sourceJsonToFull(sourceMeta.parentSource)}: ${Parser.sourceJsonToFull(source)}`.toLowerCase().trim();
+	_getTitleName ({sourceMeta}) {
+		if (sourceMeta.name) return sourceMeta.name;
+		return Parser.sourceJsonToFull(sourceMeta.source).trim();
 	}
 
-	_getSearchName ({source, sourceMeta}) {
-		return this._getTitleName({source, sourceMeta}).toLowerCase().trim();
+	_getSearchName ({sourceMeta}) {
+		return this._getTitleName({sourceMeta}).toLowerCase().trim();
 	}
 
 	_isVisibleSourceSearch ({searchName}) { return searchName.includes(this._state.search.trim().toLowerCase()); }

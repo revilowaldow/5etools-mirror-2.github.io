@@ -3000,7 +3000,7 @@ Renderer.utils = class {
 		tabButtons.forEach((tb, i) => {
 			tb.ix = i;
 
-			tb.$t = $(`<button class="ui-tab__btn-tab-head btn btn-default stat-tab-gen">${tb.label}</button>`)
+			tb.$t = $(`<button class="ui-tab__btn-tab-head btn btn-default stat-tab-gen pt-2p px-4p pb-0">${tb.label}</button>`)
 				.click(() => tb.fnActivateTab({isUserInput: true}));
 
 			tb.fnActivateTab = ({isUserInput = false} = {}) => {

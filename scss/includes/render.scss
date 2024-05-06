@@ -2,7 +2,7 @@
 Renderer
  */
 
-@use "vars";
+@use "../vars/vars";
 
 $rgb-inset-border: #656565;
 
@@ -227,6 +227,10 @@ $rgb-inset-border: #656565;
 		&list-hang-notitle {
 			padding: 0;
 			list-style: none;
+
+			> .rd__list-name {
+				margin-left: 0;
+			}
 
 			> .rd__li {
 				margin-bottom: var(--h-mb-li);

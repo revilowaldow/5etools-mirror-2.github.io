@@ -790,7 +790,7 @@ NavBar.InteractionManager = class {
 
 	static async _pOnClick_button_loadStateFile (evt) {
 		evt.preventDefault();
-		const {jsons, errors} = await DataUtil.pUserUpload({expectedFileTypes: ["5etools"]});
+		const {jsons, errors} = await InputUiUtil.pGetUserUploadJson({expectedFileTypes: ["5etools"]});
 
 		DataUtil.doHandleFileLoadErrorsGeneric(errors);
 

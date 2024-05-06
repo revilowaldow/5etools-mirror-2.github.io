@@ -831,7 +831,7 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 				$(`.cls-main__sc-fluff`)
 					.each((i, e) => {
 						const $e = $(e);
-						$e.toggleVe(!!this._state[$e.attr("data-subclass-id")]);
+						$e.toggleVe(!!this._state[$e.attr("data-subclass-id-fluff")]);
 					});
 			}
 		};
@@ -2183,7 +2183,7 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 
 				if (!rdScFluff?.length) return;
 
-				$(`<tr class="cls-main__sc-fluff" data-subclass-id="${UrlUtil.getStateKeySubclass(sc)}"><td colspan="6"></td></tr>`)
+				$(`<tr class="cls-main__sc-fluff" data-subclass-id-fluff="${UrlUtil.getStateKeySubclass(sc)}"><td colspan="6"></td></tr>`)
 					.fastSetHtml(rdScFluff)
 					.appendTo($content);
 			});

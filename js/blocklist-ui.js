@@ -641,7 +641,7 @@ class BlocklistUi {
 	}
 
 	async _pImport_getUserUpload () {
-		return DataUtil.pUserUpload({expectedFileTypes: ["content-blocklist", "content-blacklist"]}); // Supports old fileType "content-blacklist"
+		return InputUiUtil.pGetUserUploadJson({expectedFileTypes: ["content-blocklist", "content-blacklist"]}); // Supports old fileType "content-blacklist"
 	}
 
 	async _pImport (evt) {

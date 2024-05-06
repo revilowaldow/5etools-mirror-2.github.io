@@ -2697,5 +2697,10 @@
 		"date": "2024-04-23",
 		"title": "Bodak Moment",
 		"txt": "- Added Tome of Beast 1 (2023 Edition) tokens (thanks to the original converter(s) for the majority of these)\n- Added \"Export as Image\" to list page \"Other Options\" menu\n- Added fluff images to classes/subclasses\n- (Brew) Revised class fluff format to match other entity types; added support for class/subclass fluff\n- (Brew) Simplified fluff loading process to remove need for `fluff._<prop>Fluff` structure when referring to non-inline fluff; `hasFluff`/`hasFluffImages` is now sufficient\n- (Brew) Fixed Spell Text Converter handling of \"gold\" in material components\n- (Brew) Fixed Spell Text Converter treating damage immunities/vulnerabilities as damage resistances\n- (Fixed typos/added tags)"
+	},
+	{
+		"ver": "1.206.1",
+		"date": "2024-05-06",
+		"txt": "- Fixed list page \"Export as Image\" failing to function on Firefox\n- Fixed Classes page failing to hide subclass images when \"Info\" is disabled\n- Fixed Dice Roller handling of unicode \"minus sign\" character\n- (Brew) Improved/fixed Creature Text Converter handling of: `&`-separated creature types; non-Oxford-comma-seperated immunity/resistance/vulnerability lists\n- (Fixed typos/added tags)"
 	}
 ]

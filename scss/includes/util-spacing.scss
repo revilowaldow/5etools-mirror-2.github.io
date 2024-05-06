@@ -1,4 +1,4 @@
-@use "vars";
+@use "../vars/vars";
 
 .b-0 {
 	border: 0 !important;
@@ -682,6 +682,11 @@
 	padding-left: 2px !important;
 }
 
+.px-4p {
+	padding-right: 4px !important;
+	padding-left: 4px !important;
+}
+
 .pt-0 {
 	padding-top: 0 !important;
 }
@@ -708,6 +713,10 @@
 
 .pt-1p {
 	padding-top: 1px !important;
+}
+
+.pt-2p {
+	padding-top: 2px !important;
 }
 
 .pr-0 {

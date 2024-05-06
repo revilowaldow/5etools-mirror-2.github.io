@@ -1,4 +1,5 @@
-@use "vars";
+@use "../vars/vars";
+@use "../vars/vars-night";
 
 .dm-book__ {
 	&wrp-content {
@@ -20,8 +21,8 @@
 	}
 }
 
-.night-mode .dm-book__ {
+.ve-night-mode .dm-book__ {
 	&wrp-controls {
-		border-color: vars.$rgb-border-grey--night;
+		border-color: vars-night.$rgb-border-grey--night;
 	}
 }

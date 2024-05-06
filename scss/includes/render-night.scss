@@ -1,27 +1,27 @@
-@use "vars";
+@use "../vars/vars-night";
 
-.night-mode .rd {
+.ve-night-mode .rd {
 	&__ {
 		&h--0,
 		&h--1,
 		&h--2 {
-			color: vars.$rgb-name-red--night;
+			color: vars-night.$rgb-name-red--night;
 		}
 
 		&h--1 {
-			border-bottom-color: vars.$rgb-name-red--night;
+			border-bottom-color: vars-night.$rgb-name-red--night;
 		}
 
 		&h--4 {
-			color: vars.$rgb-name-alt--night;
+			color: vars-night.$rgb-name-alt--night;
 		}
 
 		&h--3 {
-			color: vars.$rgb-name-alt--night;
+			color: vars-night.$rgb-name-alt--night;
 		}
 
 		&-image-title-inner {
-			border-color: vars.$rgb-border-grey--night;
+			border-color: vars-night.$rgb-border-grey--night;
 		}
 
 		&b-inset {
@@ -33,7 +33,7 @@
 		}
 
 		&b-data {
-			border-color: vars.$rgb-border-grey--statblock-night;
+			border-color: vars-night.$rgb-border-grey--statblock-night;
 		}
 
 		&b-flow {
@@ -45,46 +45,46 @@
 		}
 
 		&stats-name-page {
-			color: vars.$rgb-font--night;
+			color: vars-night.$rgb-font--night;
 		}
 
 		&highlight {
-			background-color: vars.$rgb-bg-highlight--night;
-			color: vars.$rgb-bg--night;
+			background-color: vars-night.$rgb-bg-highlight--night;
+			color: vars-night.$rgb-bg--night;
 		}
 	}
 
 	&-item__ {
 		&type-rarity-attunement {
-			color: vars.$rgb-font--night;
+			color: vars-night.$rgb-font--night;
 		}
 	}
 
 	&-spell__ {
 		&level-school-ritual {
-			color: vars.$rgb-font--night;
+			color: vars-night.$rgb-font--night;
 		}
 	}
 
 	&-ability-icon {
 		&__ {
 			&fill-primary {
-				fill: vars.$rgb-font--night;
+				fill: vars-night.$rgb-font--night;
 			}
 
 			&fill-bg {
-				fill: vars.$rgb-bg--night;
+				fill: vars-night.$rgb-bg--night;
 			}
 
 			&stroke-bg {
-				stroke: vars.$rgb-bg--night;
+				stroke: vars-night.$rgb-bg--night;
 			}
 		}
 	}
 
 	&-homebrew__ {
 		&b {
-			background-color: vars.$rgb-bg-homebrew--night;
+			background-color: vars-night.$rgb-bg-homebrew--night;
 		}
 
 		&disp-old-content {
@@ -92,7 +92,7 @@
 		}
 
 		&disp-inline {
-			background-color: vars.$rgb-bg-homebrew--night;
+			background-color: vars-night.$rgb-bg-homebrew--night;
 		}
 	}
 }

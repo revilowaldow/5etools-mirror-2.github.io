@@ -1,7 +1,9 @@
 import {rmDirRecursiveSync} from "./util.js";
 
-if (process.argv.length < 3) throw new Error(`An argument is required!`);
+if (process.argv.length < 3) throw new Error(`At least one argument is required!`);
 
-const tgt = process.argv[2];
-console.log(`Removing: ${tgt}`);
-rmDirRecursiveSync(tgt);
+process.argv.slice(2)
+	.forEach(tgt => {
+		console.log(`Removing: ${tgt}`);
+		rmDirRecursiveSync(tgt);
+	});

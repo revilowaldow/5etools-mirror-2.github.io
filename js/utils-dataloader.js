@@ -847,6 +847,14 @@ class _DataTypeLoaderOptionalfeatureFluff extends _DataTypeLoaderSingleSource {
 	_filename = "fluff-optionalfeatures.json";
 }
 
+class _DataTypeLoaderRewardFluff extends _DataTypeLoaderSingleSource {
+	static PROPS = ["rewardFluff"];
+	static PAGE = UrlUtil.PG_REWARDS;
+	static IS_FLUFF = true;
+
+	_filename = "fluff-rewards.json";
+}
+
 class _DataTypeLoaderItemFluff extends _DataTypeLoaderSingleSource {
 	static PROPS = ["itemFluff"];
 	static PAGE = UrlUtil.PG_ITEMS;
@@ -1743,6 +1751,7 @@ class DataLoader {
 		_DataTypeLoaderBackgroundFluff.register({fnRegister});
 		_DataTypeLoaderFeatFluff.register({fnRegister});
 		_DataTypeLoaderOptionalfeatureFluff.register({fnRegister});
+		_DataTypeLoaderRewardFluff.register({fnRegister});
 		_DataTypeLoaderItemFluff.register({fnRegister});
 		_DataTypeLoaderRaceFluff.register({fnRegister});
 		_DataTypeLoaderLanguageFluff.register({fnRegister});

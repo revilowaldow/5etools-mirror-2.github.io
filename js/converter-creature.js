@@ -720,7 +720,7 @@ class CreatureParser extends BaseParser {
 			.map(it => {
 				if (!it.name.trim() && !it.entries.length) return null;
 
-				const m = /can take (\d) legendary actions/gi.exec(it.entries[0]);
+				const m = /can take (\d) legendary actions?/gi.exec(it.entries[0]);
 				if (!it.name.trim() && m) {
 					if (m[1] !== "3") stats.legendaryActions = Number(m[1]);
 					return null;
@@ -1498,6 +1498,13 @@ class CreatureParser extends BaseParser {
 
 		if (/ or /.test(strType)) {
 			const pts = strType.split(/(?:, |,? or )/g);
+			type = {
+				choose: pts.map(it => it.trim()).filter(Boolean),
+			};
+		}
+
+		if (/ (&|and) /.test(strType)) {
+			const pts = strType.split(/(?:, |,? (?:&|and) )/g);
 			type = {
 				choose: pts.map(it => it.trim()).filter(Boolean),
 			};

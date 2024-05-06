@@ -374,6 +374,7 @@ class _CreatureImmunityResistanceVulnerabilityConverterBase {
 	static _getCleanIpt ({ipt}) {
 		return ipt
 			.replace(/^none\b/i, "") // Thanks.
+			.replace(/\.+\s*$/, "")
 			.trim()
 		;
 	}
@@ -463,7 +464,12 @@ class _CreatureImmunityResistanceVulnerabilityConverterBase {
 							pt = pt.slice(ixPreNote).trim();
 						}
 
-						if (pt) newGroup.push(pt);
+						pt = pt.trim();
+						if (!pt) return;
+
+						pt
+							.split(/ and /g)
+							.forEach(val => newGroup.push(val));
 					});
 
 				const newGroupOut = newGroup

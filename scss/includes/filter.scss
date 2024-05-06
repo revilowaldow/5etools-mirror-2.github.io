@@ -1,6 +1,6 @@
 @use "sass:color";
 
-@use "vars";
+@use "../vars/vars";
 
 @media screen and (width <= #{vars.$width-screen-md}) {
 	.ve-dropdown-menu-filter {

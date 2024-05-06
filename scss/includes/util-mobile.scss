@@ -1,4 +1,4 @@
-@use "vars";
+@use "../vars/vars";
 
 @mixin mix-mobile-styles ($width-screen) {
 	@media screen and (width > #{$width-screen}) {

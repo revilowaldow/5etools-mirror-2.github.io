@@ -1,4 +1,5 @@
-@use "includes/vars";
+@use "vars/vars";
+@use "vars/vars-night";
 
 .recipes {
 	&__ {
@@ -8,10 +9,10 @@
 	}
 }
 
-.night-mode .recipes {
+.ve-night-mode .recipes {
 	&__ {
 		&tbl-recipes {
-			border-left: 1px solid vars.$rgb-border-grey--trans-night;
+			border-left: 1px solid vars-night.$rgb-border-grey--trans-night;
 		}
 	}
 }

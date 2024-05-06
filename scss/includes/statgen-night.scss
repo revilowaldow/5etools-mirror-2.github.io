@@ -1,6 +1,6 @@
-@use "vars";
+@use "../vars/vars-night";
 
-.night-mode .statgen .statgen {
+.ve-night-mode .statgen .statgen {
 	&-shared__ {
 		&ipt {
 			&[readonly] {
@@ -11,7 +11,7 @@
 
 	&-rolled__ {
 		&wrp-results {
-			border-color: vars.$rgb-border-grey--trans-night;
+			border-color: vars-night.$rgb-border-grey--trans-night;
 		}
 	}
 
@@ -25,12 +25,12 @@
 
 	&-asi__ {
 		&row {
-			border-bottom: 1px solid vars.$rgb-border-grey--trans-night;
+			border-bottom: 1px solid vars-night.$rgb-border-grey--trans-night;
 		}
 
 		&cell {
 			&--top {
-				border-color: vars.$rgb-border-grey--night;
+				border-color: vars-night.$rgb-border-grey--night;
 			}
 		}
 	}

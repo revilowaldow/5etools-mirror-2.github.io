@@ -1,4 +1,5 @@
-@use "vars";
+@use "../vars/vars";
+@use "../vars/vars-night";
 
 // region Expose variables for homebrew
 :root {
@@ -10,11 +11,11 @@
 	--rgb-border--statblock: #{vars.$rgb-border-yellow--statblock};
 }
 
-:root.night-mode {
-	--rgb-font: #{vars.$rgb-font--night};
-	--rgb-name: #{vars.$rgb-name-red--night};
-	--rgb-bg: #{vars.$rgb-bg--night};
-	--rgb-bg--alt: #{vars.$rgb-bg--alt-night};
-	--rgb-border--statblock: #{vars.$rgb-border-grey--statblock-night};
+:root.ve-night-mode {
+	--rgb-font: #{vars-night.$rgb-font--night};
+	--rgb-name: #{vars-night.$rgb-name-red--night};
+	--rgb-bg: #{vars-night.$rgb-bg--night};
+	--rgb-bg--alt: #{vars-night.$rgb-bg--alt-night};
+	--rgb-border--statblock: #{vars-night.$rgb-border-grey--statblock-night};
 }
 // endregion

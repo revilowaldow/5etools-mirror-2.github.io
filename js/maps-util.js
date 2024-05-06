@@ -50,6 +50,7 @@ class MapsUtil {
 			? {
 				[head.id]: {
 					id: head.id,
+					name: head.name,
 					source: head.source,
 					prop,
 					parentSource: head.parentSource,

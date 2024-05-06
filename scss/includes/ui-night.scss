@@ -3,10 +3,11 @@ Shared UI components
  */
 @use "sass:color";
 
-@use "vars";
+@use "../vars/vars";
+@use "../vars/vars-night";
 
 /* region Misc/Shared */
-.night-mode .ui__ {
+.ve-night-mode .ui__ {
 	&ipt-color {
 		&::-webkit-color-swatch {
 			border: 0;
@@ -16,16 +17,16 @@ Shared UI components
 /* endregion */
 
 /* region List */
-.night-mode .ui-list__ {
+.ve-night-mode .ui-list__ {
 	&wrp-preview {
-		background: vars.$rgb-bg--night;
+		background: vars-night.$rgb-bg--night;
 	}
 
 	&btn-inline {
-		color: vars.$rgb-font--night;
+		color: vars-night.$rgb-font--night;
 
 		&:hover {
-			color: color.adjust(vars.$rgb-font--night, $lightness: 10%);
+			color: color.adjust(vars-night.$rgb-font--night, $lightness: 10%);
 			background: #ffffff30;
 		}
 	}
@@ -33,33 +34,33 @@ Shared UI components
 /* endregion */
 
 /* region Source overlay */
-.night-mode .ui-source__ {
+.ve-night-mode .ui-source__ {
 	&divider {
-		background: vars.$rgb-border-grey--night;
+		background: vars-night.$rgb-border-grey--night;
 	}
 }
 /* endregion */
 
 /* region Modals */
-.night-mode .ui-modal__ {
+.ve-night-mode .ui-modal__ {
 	&header {
 		&--border {
-			border-color: vars.$rgb-border-grey--trans-night;
+			border-color: vars-night.$rgb-border-grey--trans-night;
 		}
 	}
 
 	&footer {
-		border-color: vars.$rgb-border-grey--trans-night;
+		border-color: vars-night.$rgb-border-grey--trans-night;
 	}
 
 	&overlay-blind {
-		background-color: vars.$rgb-bg--night;
+		background-color: vars-night.$rgb-bg--night;
 	}
 
 	&inner {
-		background: vars.$rgb-bg--night;
+		background: vars-night.$rgb-bg--night;
 		box-shadow: 0 6px 12px rgb(0 0 0 / 56%);
-		border-color: vars.$rgb-border-grey--trans-night;
+		border-color: vars-night.$rgb-border-grey--trans-night;
 
 		&--mode-fullscreen {
 			box-shadow: none;
@@ -67,15 +68,15 @@ Shared UI components
 	}
 
 	&row--cb:hover {
-		background: vars.$rgb-bg--alt-night;
+		background: vars-night.$rgb-bg--alt-night;
 	}
 }
 /* endregion */
 
 /* region Search */
-.night-mode .ui-search__ {
+.ve-night-mode .ui-search__ {
 	&row {
-		border-color: vars.$rgb-border-grey--night;
+		border-color: vars-night.$rgb-border-grey--night;
 
 		&:hover {
 			background: vars.$rgb-off-black;
@@ -83,151 +84,153 @@ Shared UI components
 	}
 
 	&ipt-search-sub-wrp {
-		border-color: vars.$rgb-border-grey--night;
+		border-color: vars-night.$rgb-border-grey--night;
 	}
 }
 /* endregion */
 
 /* region Tabs */
-.night-mode .ui-tab__ {
+.ve-night-mode .ui-tab__ {
 	&btn-tab-head {
 		&--active,
 		&--active:focus,
 		&--active:hover,
 		&--active:active {
-			background-color: vars.$rgb-btn-default-active--night;
+			background-color: vars-night.$rgb-btn-default-active--night;
 		}
 	}
 
 	&wrp-tab-body {
 		&--background {
-			background: vars.$rgb-bg--night;
-			border-color: vars.$rgb-border-grey--trans-night;
-			border-bottom-color: color.adjust(vars.$rgb-border-grey--trans-night, $lightness: - 15%);
+			background: vars-night.$rgb-bg--night;
+			border-color: vars-night.$rgb-border-grey--trans-night;
+			border-bottom-color: color.adjust(vars-night.$rgb-border-grey--trans-night, $lightness: - 15%);
 		}
 	}
 
 	&wrp-tab-heads--border {
-		border-color: vars.$rgb-border-grey--night;
+		border-color: vars-night.$rgb-border-grey--night;
 		border-width: 2px;
 	}
 }
 
-.night-mode .ui-tab-side__ {
+.ve-night-mode .ui-tab-side__ {
 	&wrp-tab {
-		background: vars.$rgb-bg--night;
-		border-color: vars.$rgb-border-grey--trans-night;
+		background: vars-night.$rgb-bg--night;
+		border-color: vars-night.$rgb-border-grey--trans-night;
 	}
 }
 /* endregion */
 
 /* region Proficiency */
-.night-mode .ui-prof__ {
+.ve-night-mode .ui-prof__ {
 	&btn-cycle {
-		border-color: vars.$rgb-border-grey--night;
+		border-color: vars-night.$rgb-border-grey--night;
 
 		&:active {
-			@include vars.mix-shadow-active--night;
+			@include vars-night.mix-shadow-active--night;
 		}
 
 		&[data-state="0"] {
-			background: vars.$rgb-bg--night;
+			background: vars-night.$rgb-bg--night;
 		}
 
 		&[data-state="1"] {
-			background: vars.$rgb-border-grey--night;
-			border-color: color.adjust(vars.$rgb-border-grey--night, $lightness: 10%);
+			background: vars-night.$rgb-border-grey--night;
+			border-color: color.adjust(vars-night.$rgb-border-grey--night, $lightness: 10%);
 		}
 
 		&[data-state="2"] {
-			background: vars.$rgb-border-grey--night;
-			border-color: color.adjust(vars.$rgb-border-grey--night, $lightness: 10%);
+			background: vars-night.$rgb-border-grey--night;
+			border-color: color.adjust(vars-night.$rgb-border-grey--night, $lightness: 10%);
 
 			&::before {
-				color: vars.$rgb-bg--night;
+				color: vars-night.$rgb-bg--night;
 			}
 		}
 
 		&[data-state="3"] {
-			background: repeating-linear-gradient(135deg, vars.$rgb-bg--night, vars.$rgb-bg--night 10px, vars.$rgb-border-grey--night 10px, vars.$rgb-border-grey--night 20px);
-			border-color: color.adjust(vars.$rgb-border-grey--night, $lightness: 10%);
+			background: repeating-linear-gradient(135deg, vars-night.$rgb-bg--night, vars-night.$rgb-bg--night 10px, vars-night.$rgb-border-grey--night 10px, vars-night.$rgb-border-grey--night 20px);
+			border-color: color.adjust(vars-night.$rgb-border-grey--night, $lightness: 10%);
 		}
 	}
 }
 /* endregion */
 
 /* region Direction picker */
-.night-mode .ui-dir__ {
+.ve-night-mode .ui-dir__ {
 	&face {
-		background: vars.$rgb-bg--night;
-		border-color: vars.$rgb-border-grey--night;
+		background: vars-night.$rgb-bg--night;
+		border-color: vars-night.$rgb-border-grey--night;
 	}
 
 	&arm {
-		background: vars.$rgb-font--night;
+		background: vars-night.$rgb-font--night;
 		box-shadow: none;
 	}
 }
 /* endregion */
 
 /* region Hover tips */
-.night-mode .ui-tip__ {
+.ve-night-mode .ui-tip__ {
 	&child {
-		border-color: vars.$rgb-border-grey--night;
-		background: vars.$rgb-bg--night;
+		border-color: vars-night.$rgb-border-grey--night;
+		background: vars-night.$rgb-bg--night;
 	}
 }
 /* endregion */
 
 /* region Context menu */
-.night-mode .ui-ctx {
+.ve-night-mode .ui-ctx {
 	&__wrp {
-		background: vars.$rgb-bg--night;
-		border: 1px solid vars.$rgb-border-grey--trans-night;
-		border-top-color: vars.$rgb-border-grey--night;
+		background: vars-night.$rgb-bg--night;
+		border: 1px solid vars-night.$rgb-border-grey--trans-night;
+		border-top-color: vars-night.$rgb-border-grey--night;
 	}
 
 	&__divider {
-		background: vars.$rgb-border-grey--night;
+		background: vars-night.$rgb-border-grey--night;
 	}
 
 	&__btn {
+		color: vars-night.$rgb-font--night;
+
 		&:hover {
-			background: vars.$rgb-bg--alt-night;
+			background: vars-night.$rgb-bg--alt-night;
 			color: #fff;
 		}
 
 		&.disabled,
 		&.disabled:hover {
-			background: vars.$rgb-bg--night;
-			color: vars.$rgb-font--night;
+			background: vars-night.$rgb-bg--night;
+			color: vars-night.$rgb-font--night;
 		}
 	}
 }
 /* endregion */
 
 /* region Picker */
-.night-mode .ui-pick {
+.ve-night-mode .ui-pick {
 	&__ {
 		&disp-text {
-			border-color: vars.$rgb-border-grey--night;
+			border-color: vars-night.$rgb-border-grey--night;
 		}
 	}
 }
 /* endregion */
 
 /* region "Copied" tooltip */
-.night-mode .clp__ {
+.ve-night-mode .clp__ {
 	&disp-copied {
-		background: radial-gradient(ellipse at center, vars.$rgb-bg--night 0%, vars.$rgb-bg--night 35%, transparent 75%, transparent 100%);
+		background: radial-gradient(ellipse at center, vars-night.$rgb-bg--night 0%, vars-night.$rgb-bg--night 35%, transparent 75%, transparent 100%);
 	}
 }
 /* endregion */
 
 /* region Decorated inputs */
-.night-mode .ui-ideco__ {
+.ve-night-mode .ui-ideco__ {
 	&btn-ticker {
-		background: vars.$rgb-border-grey--night;
+		background: vars-night.$rgb-border-grey--night;
 		color: #fff;
 
 		&:hover,
@@ -239,14 +242,14 @@ Shared UI components
 		}
 
 		&:hover {
-			background: color.adjust(vars.$rgb-border-grey--night, $lightness: - vars.$pct-darken-hover);
+			background: color.adjust(vars-night.$rgb-border-grey--night, $lightness: - vars.$pct-darken-hover);
 			color: #fff;
 		}
 
 		&:active,
 		&:focus,
 		&:active:focus {
-			background: color.adjust(vars.$rgb-border-grey--night, $lightness: - vars.$pct-darken-active);
+			background: color.adjust(vars-night.$rgb-border-grey--night, $lightness: - vars.$pct-darken-active);
 			color: #fff;
 		}
 	}
@@ -254,62 +257,62 @@ Shared UI components
 /* endregion */
 
 /* region Select2 */
-.night-mode .ui-sel2__ {
+.ve-night-mode .ui-sel2__ {
 	&ipt-search {
-		background: transparent;
+		background: vars-night.$rgb-bg--night;
 	}
 
 	&wrp-options {
-		background-color: vars.$rgb-bg--night;
-		border-color: vars.$rgb-border-grey--night;
+		background-color: vars-night.$rgb-bg--night;
+		border-color: vars-night.$rgb-border-grey--night;
 	}
 
 	&disp-option {
 		&.active,
 		&:focus,
 		&:hover {
-			background: vars.$rgb-bg--alt-night;
+			background: vars-night.$rgb-bg--alt-night;
 		}
 
 		&:focus.active,
 		&:hover.active {
-			background: color.adjust(vars.$rgb-bg--alt-night, $lightness: vars.$pct-darken-active);
+			background: color.adjust(vars-night.$rgb-bg--alt-night, $lightness: vars.$pct-darken-active);
 		}
 	}
 }
 /* endregion */
 
 /* region Range Slider */
-.night-mode .ui-slidr {
+.ve-night-mode .ui-slidr {
 	&__ {
 		&thumb {
 			background: vars.$rgb-border-grey--trans;
-			border-color: vars.$rgb-font--night;
+			border-color: vars-night.$rgb-font--night;
 
 			&--hover,
 			&:hover {
 				background: color.adjust(vars.$rgb-border-grey--trans, $lightness: 10%);
-				border-color: vars.$rgb-font--night;
+				border-color: vars-night.$rgb-font--night;
 			}
 		}
 
 		&track-outer {
-			border-color: vars.$rgb-border-grey--night;
+			border-color: vars-night.$rgb-border-grey--night;
 		}
 
 		&track-inner {
-			background: vars.$rgb-border-grey--trans-night;
+			background: vars-night.$rgb-border-grey--trans-night;
 		}
 
 		&disp-value {
 			&--visible {
-				border-color: vars.$rgb-border-grey--night;
-				background: vars.$rgb-bg--night;
+				border-color: vars-night.$rgb-border-grey--night;
+				background: vars-night.$rgb-bg--night;
 			}
 		}
 
 		&pip {
-			background: vars.$rgb-font--night;
+			background: vars-night.$rgb-font--night;
 		}
 	}
 }

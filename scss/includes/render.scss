@@ -118,6 +118,19 @@ $rgb-inset-border: #656565;
 		&wrp-image {
 			margin: 5px auto 0;
 			text-align: center;
+
+			&--bg {
+				border-radius: 5px;
+				padding: 7px;
+			}
+
+			&--bg-light {
+				background: vars.$rgb-bg;
+			}
+
+			&--bg-dark {
+				background: vars.$rgb-off-black;
+			}
 		}
 
 		&image {
@@ -208,6 +221,14 @@ $rgb-inset-border: #656565;
 		// Thicker scrollbars for viewer
 		&scroller-viewer {
 			scrollbar-width: auto;
+
+			&--bg-light {
+				background: vars.$rgb-bg;
+			}
+
+			&--bg-dark {
+				background: vars.$rgb-off-black;
+			}
 
 			&::-webkit-scrollbar {
 				width: 15px;

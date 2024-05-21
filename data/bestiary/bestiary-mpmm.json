@@ -2179,6 +2179,9 @@
 				{
 					"source": "MTF",
 					"page": 117
+				},
+				{
+					"source": "VEoR"
 				}
 			],
 			"size": [
@@ -4619,6 +4622,9 @@
 				{
 					"source": "MTF",
 					"page": 161
+				},
+				{
+					"source": "VEoR"
 				}
 			],
 			"size": [
@@ -5499,6 +5505,9 @@
 				},
 				{
 					"source": "AATM"
+				},
+				{
+					"source": "VEoR"
 				}
 			],
 			"size": [
@@ -18532,6 +18541,9 @@
 				{
 					"source": "MTF",
 					"page": 162
+				},
+				{
+					"source": "VEoR"
 				}
 			],
 			"size": [
@@ -23008,6 +23020,9 @@
 				{
 					"source": "MTF",
 					"page": 232
+				},
+				{
+					"source": "VEoR"
 				}
 			],
 			"size": [
@@ -23143,6 +23158,9 @@
 				},
 				{
 					"source": "AATM"
+				},
+				{
+					"source": "VEoR"
 				}
 			],
 			"size": [
@@ -26232,6 +26250,9 @@
 				{
 					"source": "VGM",
 					"page": 217
+				},
+				{
+					"source": "VEoR"
 				}
 			],
 			"size": [
@@ -29042,6 +29063,9 @@
 				{
 					"source": "MTF",
 					"page": 160
+				},
+				{
+					"source": "VEoR"
 				}
 			],
 			"size": [

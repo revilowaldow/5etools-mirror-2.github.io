@@ -592,7 +592,8 @@
 						"path": "adventure/AitFR-FCD/thumbnail/16_1476395147.webp"
 					},
 					"id": "053",
-					"credit": "Will Hindmarch"
+					"credit": "Will Hindmarch",
+					"expectsLightBackground": true
 				},
 				{
 					"type": "entries",
@@ -1268,7 +1269,8 @@
 							},
 							"credit": "Russ Nicholson",
 							"width": 1243,
-							"height": 1060
+							"height": 1060,
+							"expectsLightBackground": true
 						},
 						{
 							"type": "image",
@@ -1278,7 +1280,8 @@
 							},
 							"credit": "Justine Jones",
 							"width": 1927,
-							"height": 1624
+							"height": 1624,
+							"expectsLightBackground": true
 						}
 					]
 				}

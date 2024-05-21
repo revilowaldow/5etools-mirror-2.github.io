@@ -2,6 +2,16 @@
 
 .ve-night-mode .rd {
 	&__ {
+		&wrp-image {
+			&--bg-light {
+				background-color: vars-night.$rgb-font--night;
+			}
+
+			&--bg-dark {
+				background-color: vars-night.$rgb-bg--alt-night;
+			}
+		}
+
 		&h--0,
 		&h--1,
 		&h--2 {
@@ -51,6 +61,16 @@
 		&highlight {
 			background-color: vars-night.$rgb-bg-highlight--night;
 			color: vars-night.$rgb-bg--night;
+		}
+
+		&scroller-viewer {
+			&--bg-light {
+				background-color: vars-night.$rgb-font--night;
+			}
+
+			&--bg-dark {
+				background-color: vars-night.$rgb-bg--alt-night;
+			}
 		}
 	}
 

@@ -2,7 +2,7 @@
 
 // in deployment, `IS_DEPLOYED = "<version number>";` should be set below.
 globalThis.IS_DEPLOYED = undefined;
-globalThis.VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"1.206.1"/* 5ETOOLS_VERSION__CLOSE */;
+globalThis.VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"1.207.0"/* 5ETOOLS_VERSION__CLOSE */;
 globalThis.DEPLOYED_IMG_ROOT = undefined;
 // for the roll20 script to set
 globalThis.IS_VTT = false;
@@ -4945,7 +4945,16 @@ globalThis.DataUtil = {
 					return DataUtil.generic._getVersions_basic({ver});
 				})
 				.flat()
-				.map(ver => DataUtil.generic._getVersion({parentEntity: parent, version: ver, impl, isExternalApplicationIdentityOnly}));
+				.map(ver => DataUtil.generic._getVersion({parentEntity: parent, version: ver, impl, isExternalApplicationIdentityOnly}))
+				.filter(ver => {
+					if (!UrlUtil.URL_TO_HASH_BUILDER[ver.__prop]) throw new Error(`Unhandled version prop "${ver.__prop}"!`);
+					return !ExcludeUtil.isExcluded(
+						UrlUtil.URL_TO_HASH_BUILDER[ver.__prop](ver),
+						ver.__prop,
+						SourceUtil.getEntitySource(ver),
+						{isNoCount: true},
+					);
+				});
 		},
 
 		_getVersions_template ({ver}) {
@@ -4997,6 +5006,7 @@ globalThis.DataUtil = {
 				_versionBase_hasToken: parentEntity.hasToken,
 				_versionBase_hasFluff: parentEntity.hasFluff,
 				_versionBase_hasFluffImages: parentEntity.hasFluffImages,
+				__prop: parentEntity.__prop,
 			};
 			const cpyParentEntity = MiscUtil.copyFast(parentEntity);
 
@@ -5004,6 +5014,12 @@ globalThis.DataUtil = {
 			delete cpyParentEntity.hasToken;
 			delete cpyParentEntity.hasFluff;
 			delete cpyParentEntity.hasFluffImages;
+
+			["additionalSources", "otherSources"]
+				.forEach(prop => {
+					if (cpyParentEntity[prop]?.length) cpyParentEntity[prop] = cpyParentEntity[prop].filter(srcMeta => srcMeta.source !== version.source);
+					if (!cpyParentEntity[prop]?.length) delete cpyParentEntity[prop];
+				});
 
 			DataUtil.generic.copyApplier.getCopy(
 				impl,
@@ -7495,15 +7511,15 @@ globalThis.ExcludeUtil = {
 };
 
 // EXTENSIONS ==========================================================================================================
-globalThis.ExtensionUtil = {
-	ACTIVE: false,
+globalThis.ExtensionUtil = class {
+	static ACTIVE = false;
 
-	_doSend (type, data) {
+	static _doSend (type, data) {
 		const detail = MiscUtil.copy({type, data}); // Note that this needs to include `JSON.parse` to function
 		window.dispatchEvent(new CustomEvent("rivet.send", {detail}));
-	},
+	}
 
-	async pDoSendStats (evt, ele) {
+	static async pDoSendStats (evt, ele) {
 		const {page, source, hash, extensionData} = ExtensionUtil._getElementData({ele});
 
 		if (page && source && hash) {
@@ -7522,9 +7538,9 @@ globalThis.ExtensionUtil = {
 
 			ExtensionUtil._doSend("entity", {page, entity: toSend, isTemp: !!evt.shiftKey});
 		}
-	},
+	}
 
-	async doDragStart (evt, ele) {
+	static async doDragStart (evt, ele) {
 		const {page, source, hash} = ExtensionUtil._getElementData({ele});
 		const meta = {
 			type: VeCt.DRAG_TYPE_IMPORT,
@@ -7533,9 +7549,9 @@ globalThis.ExtensionUtil = {
 			hash,
 		};
 		evt.dataTransfer.setData("application/json", JSON.stringify(meta));
-	},
+	}
 
-	_getElementData ({ele}) {
+	static _getElementData ({ele}) {
 		const $parent = $(ele).closest(`[data-page]`);
 		const page = $parent.attr("data-page");
 		const source = $parent.attr("data-source");
@@ -7544,31 +7560,31 @@ globalThis.ExtensionUtil = {
 		const extensionData = rawExtensionData ? JSON.parse(rawExtensionData) : null;
 
 		return {page, source, hash, extensionData};
-	},
+	}
 
-	pDoSendStatsPreloaded ({page, entity, isTemp, options}) {
+	static pDoSendStatsPreloaded ({page, entity, isTemp, options}) {
 		ExtensionUtil._doSend("entity", {page, entity, isTemp, options});
-	},
+	}
 
-	pDoSendCurrency ({currency}) {
+	static pDoSendCurrency ({currency}) {
 		ExtensionUtil._doSend("currency", {currency});
-	},
+	}
 
-	doSendRoll (data) { ExtensionUtil._doSend("roll", data); },
+	static doSendRoll (data) { ExtensionUtil._doSend("roll", data); }
 
-	pDoSend ({type, data}) { ExtensionUtil._doSend(type, data); },
+	static pDoSend ({type, data}) { ExtensionUtil._doSend(type, data); }
 
 	/* -------------------------------------------- */
 
-	_CACHE_EMBEDDED_STATS: {},
+	static _CACHE_EMBEDDED_STATS = {};
 
-	addEmbeddedToCache (page, source, hash, ent) {
+	static addEmbeddedToCache (page, source, hash, ent) {
 		MiscUtil.set(ExtensionUtil._CACHE_EMBEDDED_STATS, page.toLowerCase(), source.toLowerCase(), hash.toLowerCase(), MiscUtil.copyFast(ent));
-	},
+	}
 
-	_getEmbeddedFromCache (page, source, hash) {
+	static _getEmbeddedFromCache (page, source, hash) {
 		return MiscUtil.get(ExtensionUtil._CACHE_EMBEDDED_STATS, page.toLowerCase(), source.toLowerCase(), hash.toLowerCase());
-	},
+	}
 
 	/* -------------------------------------------- */
 };

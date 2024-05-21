@@ -2849,6 +2849,67 @@
 			"hasFluffImages": true
 		},
 		{
+			"name": "Venatrix",
+			"source": "VEoR",
+			"vehicleType": "INFWAR",
+			"size": "G",
+			"weight": 12000,
+			"terrain": [
+				"land"
+			],
+			"capCreature": 8,
+			"capCargo": 2000,
+			"ac": 19,
+			"speed": 100,
+			"str": 18,
+			"dex": 18,
+			"con": 10,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"hp": {
+				"hp": 200,
+				"dt": 10
+			},
+			"immune": [
+				"fire",
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"stunned",
+				"unconscious"
+			],
+			"actionStation": [
+				{
+					"name": "Helm (Requires 1 Crew)",
+					"entries": [
+						"Drive and steer the Venatrix."
+					]
+				},
+				{
+					"name": "2 Harpoon Guns (Each Station Requires 1 Crew)",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 120 ft., one target. {@h}10 ({@damage 2d8 + 1}) piercing damage."
+					]
+				},
+				{
+					"name": "Infernal Screamer (Requires 1 Crew)",
+					"entries": [
+						"One target the operator can see within 120 feet of itself must make a DC 15 Wisdom saving throw, taking 26 ({@damage 4d12}) psychic damage on a failed save or half as much damage on a successful one."
+					]
+				}
+			],
+			"hasToken": true
+		},
+		{
 			"name": "Warship",
 			"source": "GoS",
 			"page": 194,
@@ -3417,7 +3478,7 @@
 			"source": "BGDIA",
 			"page": 222,
 			"upgradeType": [
-				"IWM:W"
+				"IWM:A"
 			],
 			"entries": [
 				"The vehicle is covered with spikes inscribed with blasphemous symbols. Luminous, ghostly figures impaled on these spikes wail and reach out in agony.",

@@ -1632,6 +1632,11 @@
 			"name": "Inquisitor of the Tome",
 			"source": "VRGR",
 			"page": 249,
+			"otherSources": [
+				{
+					"source": "VEoR"
+				}
+			],
 			"size": [
 				"M"
 			],
@@ -2787,6 +2792,11 @@
 			"name": "Priest of Osybus",
 			"source": "VRGR",
 			"page": 241,
+			"otherSources": [
+				{
+					"source": "VEoR"
+				}
+			],
 			"size": [
 				"M"
 			],

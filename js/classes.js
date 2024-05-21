@@ -189,10 +189,12 @@ class UtilClassesPage {
 			];
 		}
 
-		return {
-			type: "gallery",
-			images: [...images],
-		};
+		return [
+			{
+				type: "gallery",
+				images: [...images],
+			},
+		];
 	}
 }
 

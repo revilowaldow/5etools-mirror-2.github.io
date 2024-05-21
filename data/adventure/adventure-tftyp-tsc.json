@@ -936,10 +936,10 @@
 									"imageType": "map",
 									"grid": {
 										"type": "square",
-										"size": 73,
-										"offsetX": -37,
-										"offsetY": 34,
-										"scale": 2
+										"size": 145,
+										"offsetX": -45,
+										"offsetY": 9,
+										"scale": 4
 									},
 									"id": "146",
 									"mapRegions": [

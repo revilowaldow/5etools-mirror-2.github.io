@@ -34424,7 +34424,1185 @@
 			},
 			"contents": [
 				{
-					"name": "Introduction"
+					"name": "Introduction: Danger to the Multiverse",
+					"headers": [
+						"Existence in Peril",
+						"Vecna's History",
+						"Kas's Plan",
+						"Adventure Summary",
+						"Running the Adventure",
+						"Character Creation",
+						"The Power of Secrets",
+						"Challenge Ratings"
+					]
+				},
+				{
+					"name": "Return from Neverdeath Graveyard",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 1
+					},
+					"headers": [
+						"Running This Chapter",
+						"Getting Started",
+						"In the Graveyard",
+						{
+							"depth": 1,
+							"header": "C1: Hallix Mausoleum"
+						},
+						{
+							"depth": 1,
+							"header": "C2: Lower Mausoleum"
+						},
+						{
+							"depth": 1,
+							"header": "C3: Uneven Chamber"
+						},
+						{
+							"depth": 1,
+							"header": "C4: Trapped Grate"
+						},
+						{
+							"depth": 1,
+							"header": "C5: Sarcelle's Cell"
+						},
+						{
+							"depth": 1,
+							"header": "C6: Supply Room"
+						},
+						{
+							"depth": 1,
+							"header": "C7: Fountain Room"
+						},
+						{
+							"depth": 1,
+							"header": "C8: East Pressure Room"
+						},
+						{
+							"depth": 1,
+							"header": "C9: Clockwork Alcove"
+						},
+						{
+							"depth": 1,
+							"header": "C10: Improvised Workshop"
+						},
+						{
+							"depth": 1,
+							"header": "C11: Umberto's Cell"
+						},
+						{
+							"depth": 1,
+							"header": "C12: West Pressure Room"
+						},
+						{
+							"depth": 1,
+							"header": "C13: Wall Crossing"
+						},
+						{
+							"depth": 1,
+							"header": "C14: Common Room"
+						},
+						{
+							"depth": 1,
+							"header": "C15: Kitchen"
+						},
+						{
+							"depth": 1,
+							"header": "C16: Subleader Quarters"
+						},
+						{
+							"depth": 1,
+							"header": "C17: Library"
+						},
+						{
+							"depth": 1,
+							"header": "C18: Vacant Cell"
+						},
+						{
+							"depth": 1,
+							"header": "C19: Demon Lair"
+						},
+						{
+							"depth": 1,
+							"header": "C20: Indrina's Cell"
+						},
+						{
+							"depth": 1,
+							"header": "C21: Haunted Room"
+						},
+						{
+							"depth": 1,
+							"header": "C22: Latrine"
+						},
+						{
+							"depth": 1,
+							"header": "C23: Corridor"
+						},
+						{
+							"depth": 1,
+							"header": "C24: Empty Crypts"
+						},
+						{
+							"depth": 1,
+							"header": "C25: Leader's Room"
+						},
+						{
+							"depth": 1,
+							"header": "C26: Sacrifice Gallery"
+						},
+						"Escaping Evernight",
+						"Dolindar Tomb",
+						{
+							"depth": 1,
+							"header": "B1: Portico"
+						},
+						{
+							"depth": 1,
+							"header": "B2: Hall"
+						},
+						{
+							"depth": 1,
+							"header": "B3: Lost Dolindars"
+						},
+						{
+							"depth": 1,
+							"header": "B4: Vault"
+						},
+						{
+							"depth": 1,
+							"header": "B5: Puzzle Door"
+						},
+						{
+							"depth": 1,
+							"header": "B6: Matriarch's Chamber"
+						},
+						"What's Next?"
+					]
+				},
+				{
+					"name": "The Wizards Three",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 2
+					},
+					"headers": [
+						"Running This Chapter",
+						"After Neverdeath",
+						"Rise of the Lich-God",
+						"The Sigil Sanctum",
+						{
+							"depth": 1,
+							"header": "S1: Library"
+						},
+						{
+							"depth": 1,
+							"header": "S2: Parlor"
+						},
+						{
+							"depth": 1,
+							"header": "S3: Workspace"
+						},
+						{
+							"depth": 1,
+							"header": "S4: Lounge"
+						},
+						"The Wizards Three",
+						"Kas the Destroyer",
+						"Surprise Development",
+						"Toward Web's Edge",
+						"Web's Edge",
+						{
+							"depth": 1,
+							"header": "W1: False Front"
+						},
+						{
+							"depth": 1,
+							"header": "W2: Lolth Shrine"
+						},
+						{
+							"depth": 1,
+							"header": "W3: Summoning Chamber"
+						},
+						{
+							"depth": 1,
+							"header": "W4: Corridor"
+						},
+						{
+							"depth": 1,
+							"header": "W5: Guardian Chamber"
+						},
+						{
+							"depth": 1,
+							"header": "W6: Holding Cells"
+						},
+						{
+							"depth": 1,
+							"header": "W7: Meeting Room"
+						},
+						{
+							"depth": 1,
+							"header": "W8: Mission Hall"
+						},
+						{
+							"depth": 1,
+							"header": "W9: Fodder Chamber"
+						},
+						{
+							"depth": 1,
+							"header": "W10: Barrack of the Faithful"
+						},
+						{
+							"depth": 1,
+							"header": "W11: Passageway"
+						},
+						{
+							"depth": 1,
+							"header": "W12: Sacred Web Hall"
+						},
+						"Next Steps"
+					]
+				},
+				{
+					"name": "The Lambent Zenith's Last Voyage",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 3
+					},
+					"headers": [
+						"Running the Adventure",
+						"A Doorway to Space",
+						"Into the Astral Sea",
+						"Wreck of the Lambent Zenith",
+						{
+							"depth": 1,
+							"header": "Z2: Upper Crew Quarters"
+						},
+						{
+							"depth": 1,
+							"header": "Z3: Galley and Pantry"
+						},
+						{
+							"depth": 1,
+							"header": "Z4: Mess Hall"
+						},
+						{
+							"depth": 1,
+							"header": "Z5: Companionway"
+						},
+						{
+							"depth": 1,
+							"header": "Z6: Lower Crew Quarters"
+						},
+						{
+							"depth": 1,
+							"header": "Z7: Storage"
+						},
+						{
+							"depth": 1,
+							"header": "Z8: Stateroom"
+						},
+						{
+							"depth": 1,
+							"header": "Z9: Brig"
+						},
+						{
+							"depth": 1,
+							"header": "Z10: Starboard Top Deck"
+						},
+						{
+							"depth": 1,
+							"header": "Z11: Grell Nest"
+						},
+						{
+							"depth": 1,
+							"header": "Z12: Lifeboat Wreck"
+						},
+						{
+							"depth": 1,
+							"header": "Z13: Study"
+						},
+						{
+							"depth": 1,
+							"header": "Z15: Captain's Quarters"
+						},
+						{
+							"depth": 1,
+							"header": "Z16: Navigation Room"
+						},
+						{
+							"depth": 1,
+							"header": "Z17: Bridge"
+						},
+						{
+							"depth": 1,
+							"header": "Z18: Forward Cargo Hold"
+						},
+						{
+							"depth": 1,
+							"header": "Z19: Safe Room"
+						},
+						"Heart of Havock",
+						{
+							"depth": 1,
+							"header": "A1: Entry Atrium"
+						},
+						{
+							"depth": 1,
+							"header": "A2: Ventricle Chamber"
+						},
+						{
+							"depth": 1,
+							"header": "A3: Flooded Atrium"
+						},
+						"Next Steps"
+					]
+				},
+				{
+					"name": "The Ruined Colossus",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 4
+					},
+					"headers": [
+						"Running This Chapter",
+						"Doorway to Eberron",
+						"An Important Detail",
+						"Mount Ironrot",
+						"Finding a Docent",
+						"Landro",
+						{
+							"depth": 1,
+							"header": "L1: Cave Entrance"
+						},
+						{
+							"depth": 1,
+							"header": "L2: Cave Graveyard"
+						},
+						{
+							"depth": 1,
+							"header": "L3: Cave Shack"
+						},
+						{
+							"depth": 1,
+							"header": "L4: Bottleneck"
+						},
+						{
+							"depth": 1,
+							"header": "L5: Right Foot"
+						},
+						{
+							"depth": 1,
+							"header": "L6: Left Foot"
+						},
+						{
+							"depth": 1,
+							"header": "L7: Leg Shafts"
+						},
+						{
+							"depth": 1,
+							"header": "L8: Armory"
+						},
+						{
+							"depth": 1,
+							"header": "L9: Blocked Antigravity Well"
+						},
+						{
+							"depth": 1,
+							"header": "L10: Artificer Quarters"
+						},
+						{
+							"depth": 1,
+							"header": "L11: Workshop"
+						},
+						{
+							"depth": 1,
+							"header": "L12: Lost Soldier"
+						},
+						{
+							"depth": 1,
+							"header": "L13: Dragonshard Pool"
+						},
+						{
+							"depth": 1,
+							"header": "L14: Blazebear Den"
+						},
+						{
+							"depth": 1,
+							"header": "L15: Overhang"
+						},
+						{
+							"depth": 1,
+							"header": "L16: Ruined Chamber"
+						},
+						{
+							"depth": 1,
+							"header": "L17: Bridge"
+						},
+						{
+							"depth": 1,
+							"header": "L18: Collapsed Antigravity Well"
+						},
+						{
+							"depth": 1,
+							"header": "L19: Muster Point"
+						},
+						{
+							"depth": 1,
+							"header": "L20: War Room"
+						},
+						{
+							"depth": 1,
+							"header": "L21: Shoulders"
+						},
+						{
+							"depth": 1,
+							"header": "L22: Walkway"
+						},
+						{
+							"depth": 1,
+							"header": "L23: Holding Cells"
+						},
+						{
+							"depth": 1,
+							"header": "L24: Intake Chamber"
+						},
+						{
+							"depth": 1,
+							"header": "L25: Vault"
+						},
+						{
+							"depth": 1,
+							"header": "L26: Throat"
+						},
+						{
+							"depth": 1,
+							"header": "L27: Weapons System"
+						},
+						{
+							"depth": 1,
+							"header": "L28: Graymatter Engine"
+						},
+						"Next Steps"
+					]
+				},
+				{
+					"name": "Death House",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 5
+					},
+					"headers": [
+						"Running This Chapter",
+						"Barovia",
+						"Arriving in Barovia",
+						"Death House",
+						{
+							"depth": 1,
+							"header": "D3: Den of Wolves"
+						},
+						{
+							"depth": 1,
+							"header": "D5: Dining Room"
+						},
+						{
+							"depth": 1,
+							"header": "D6: Upper Hall"
+						},
+						{
+							"depth": 1,
+							"header": "D8: Library"
+						},
+						{
+							"depth": 1,
+							"header": "D9: Secret Room"
+						},
+						{
+							"depth": 1,
+							"header": "D10: Conservatory"
+						},
+						{
+							"depth": 1,
+							"header": "D11: Balcony"
+						},
+						{
+							"depth": 1,
+							"header": "D13: Bathroom"
+						},
+						{
+							"depth": 1,
+							"header": "D14: Storage Room"
+						},
+						{
+							"depth": 1,
+							"header": "D16: Attic Hall"
+						},
+						{
+							"depth": 1,
+							"header": "D17: Spare Bedroom"
+						},
+						{
+							"depth": 1,
+							"header": "D18: Storage Room"
+						},
+						{
+							"depth": 1,
+							"header": "D19: Spare Bedroom"
+						},
+						{
+							"depth": 1,
+							"header": "D20: Children's Room"
+						},
+						{
+							"depth": 1,
+							"header": "D21: Secret Stairs"
+						},
+						{
+							"depth": 1,
+							"header": "D22: Dungeon Level Access"
+						},
+						{
+							"depth": 1,
+							"header": "D24: Cult Initiates' Quarters"
+						},
+						{
+							"depth": 1,
+							"header": "D25: Cultist Quarters and Well"
+						},
+						{
+							"depth": 1,
+							"header": "D26: Hidden Spiked Pit"
+						},
+						{
+							"depth": 1,
+							"header": "D27: Dining Hall"
+						},
+						{
+							"depth": 1,
+							"header": "D28: Larder"
+						},
+						{
+							"depth": 1,
+							"header": "D29: Intersection"
+						},
+						{
+							"depth": 1,
+							"header": "D30: Stairs Down"
+						},
+						{
+							"depth": 1,
+							"header": "D31: Darklord's Shrine"
+						},
+						{
+							"depth": 1,
+							"header": "D32: Hidden Trapdoor"
+						},
+						{
+							"depth": 1,
+							"header": "D33: Cult Leaders' Den"
+						},
+						{
+							"depth": 1,
+							"header": "D34: Cult Leaders' Quarters"
+						},
+						{
+							"depth": 1,
+							"header": "D35: Reliquary"
+						},
+						{
+							"depth": 1,
+							"header": "D36: Prison"
+						},
+						{
+							"depth": 1,
+							"header": "D37: Tunnel to Portcullis"
+						},
+						{
+							"depth": 1,
+							"header": "D38: Ritual Chamber"
+						},
+						"Strahd's Presence",
+						"Leaving the House",
+						"Next Steps"
+					]
+				},
+				{
+					"name": "Night of Blue Fire",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 6
+					},
+					"headers": [
+						"Running This Chapter",
+						"Krynn",
+						"Arriving on Krynn",
+						"The Peylon Tree",
+						{
+							"depth": 1,
+							"header": "P1: Rotted Roots"
+						},
+						{
+							"depth": 1,
+							"header": "P2: Hollow"
+						},
+						{
+							"depth": 1,
+							"header": "P3: Ledge"
+						},
+						{
+							"depth": 1,
+							"header": "P4: Grotto"
+						},
+						"Bittergrass Fen",
+						"The Blue Fire Wardens",
+						"Three Moons Vault",
+						{
+							"depth": 1,
+							"header": "V1: Entrance"
+						},
+						{
+							"depth": 1,
+							"header": "V2: Anteroom"
+						},
+						{
+							"depth": 1,
+							"header": "V3: Escape Tunnel"
+						},
+						{
+							"depth": 1,
+							"header": "V4: Halls"
+						},
+						{
+							"depth": 1,
+							"header": "V5: Scrying Chamber"
+						},
+						{
+							"depth": 1,
+							"header": "V6: Empty Cells"
+						},
+						{
+							"depth": 1,
+							"header": "V7: Valendar's Cell"
+						},
+						{
+							"depth": 1,
+							"header": "V8: Garrison"
+						},
+						{
+							"depth": 1,
+							"header": "V9: Winding Staircase"
+						},
+						{
+							"depth": 1,
+							"header": "V10: Trapped Black Rose Bearer"
+						},
+						{
+							"depth": 1,
+							"header": "V11: Vault Access"
+						},
+						{
+							"depth": 1,
+							"header": "V12: Treasure Vaults"
+						},
+						{
+							"depth": 1,
+							"header": "V13: Ruined Vault"
+						},
+						{
+							"depth": 1,
+							"header": "V14: Flooded Basement"
+						},
+						{
+							"depth": 1,
+							"header": "V15: Lunar Shrine"
+						},
+						{
+							"depth": 1,
+							"header": "V16: Locked Stairwell"
+						},
+						{
+							"depth": 1,
+							"header": "V17: White Tower Ruins"
+						},
+						{
+							"depth": 1,
+							"header": "V18: Veteran Camp"
+						},
+						{
+							"depth": 1,
+							"header": "V19: White Tower Lookout"
+						},
+						{
+							"depth": 1,
+							"header": "V20: Ruined Shrine"
+						},
+						{
+							"depth": 1,
+							"header": "V21: Drawbridge"
+						},
+						{
+							"depth": 1,
+							"header": "V22: Lookout Turret"
+						},
+						{
+							"depth": 1,
+							"header": "V23: Wall Walk"
+						},
+						{
+							"depth": 1,
+							"header": "V24: Rookery"
+						},
+						{
+							"depth": 1,
+							"header": "V25: Courtyard"
+						},
+						{
+							"depth": 1,
+							"header": "V26: Barrack"
+						},
+						{
+							"depth": 1,
+							"header": "V27: Armory"
+						},
+						{
+							"depth": 1,
+							"header": "V28: Royal Quarters"
+						},
+						{
+							"depth": 1,
+							"header": "V29: Orrery"
+						},
+						{
+							"depth": 1,
+							"header": "V30: Red Mirror Stairwell"
+						},
+						{
+							"depth": 1,
+							"header": "V31: Teremini's Quarters"
+						},
+						{
+							"depth": 1,
+							"header": "V32: Stairwell"
+						},
+						{
+							"depth": 1,
+							"header": "V33: Muster Yard"
+						},
+						{
+							"depth": 1,
+							"header": "V34. Circle of Undeath"
+						},
+						{
+							"depth": 1,
+							"header": "V35: Temple"
+						},
+						{
+							"depth": 1,
+							"header": "V36: Akaazi's Quarters"
+						},
+						{
+							"depth": 1,
+							"header": "V37: Aviary"
+						},
+						{
+							"depth": 1,
+							"header": "U1: White Lunarium"
+						},
+						{
+							"depth": 1,
+							"header": "U2: Red Lunarium"
+						},
+						{
+							"depth": 1,
+							"header": "U3: Black Lunarium"
+						},
+						{
+							"depth": 1,
+							"header": "U4: Moonbridges"
+						},
+						{
+							"depth": 1,
+							"header": "U5: Moondisk"
+						},
+						"Next Steps"
+					]
+				},
+				{
+					"name": "Tomb of Wayward Souls",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 7
+					},
+					"headers": [
+						"Running This Chapter",
+						"Oerth",
+						"Down to Oerth",
+						"Into the Tomb",
+						{
+							"depth": 1,
+							"header": "T1: False Entrance"
+						},
+						{
+							"depth": 1,
+							"header": "T2: False Entrance"
+						},
+						{
+							"depth": 1,
+							"header": "T3: Tomb Entrance"
+						},
+						{
+							"depth": 1,
+							"header": "T4: Face of the Great Blue Devil"
+						},
+						{
+							"depth": 1,
+							"header": "T5: Cave of Seven Casks"
+						},
+						{
+							"depth": 1,
+							"header": "T6: Hall of Gemstones"
+						},
+						{
+							"depth": 1,
+							"header": "T7: Skeleton Closet"
+						},
+						{
+							"depth": 1,
+							"header": "T8: Room of Myriad Archways"
+						},
+						{
+							"depth": 1,
+							"header": "T9: Forest of Spirits Mirage"
+						},
+						{
+							"depth": 1,
+							"header": "T10: Crushing Room Trap"
+						},
+						{
+							"depth": 1,
+							"header": "T11: Strange Altar"
+						},
+						{
+							"depth": 1,
+							"header": "T12: Room of Respite"
+						},
+						{
+							"depth": 1,
+							"header": "T13: Celestial Sky Mirage"
+						},
+						{
+							"depth": 1,
+							"header": "T14: Juggernaut Arena"
+						},
+						{
+							"depth": 1,
+							"header": "T15: Juggernaut Control Room"
+						},
+						{
+							"depth": 1,
+							"header": "T16: Acid Pit Crossing"
+						},
+						{
+							"depth": 1,
+							"header": "T17: Jade Serpent Guardians' Chamber"
+						},
+						{
+							"depth": 1,
+							"header": "T18: Hall of Discordance"
+						},
+						{
+							"depth": 1,
+							"header": "T19: Library"
+						},
+						{
+							"depth": 1,
+							"header": "T21: Phantasmal Mirage"
+						},
+						{
+							"depth": 1,
+							"header": "T22: Vortex Bridge"
+						},
+						{
+							"depth": 1,
+							"header": "T23: Arcane Laboratory"
+						},
+						{
+							"depth": 1,
+							"header": "T24: Underwater Trench Mirage"
+						},
+						{
+							"depth": 1,
+							"header": "T25: Crypt Doors"
+						},
+						{
+							"depth": 1,
+							"header": "T26: Crypt"
+						},
+						{
+							"depth": 1,
+							"header": "T27: Crypt Vault"
+						},
+						"Next Steps"
+					]
+				},
+				{
+					"name": "The Dragon Queen's Pride",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 8
+					},
+					"headers": [
+						"Running This Chapter",
+						"Avernus",
+						"Descending into Avernus",
+						"The Red Belvedere",
+						"Casino Rooms",
+						"Dragon's Pride",
+						{
+							"depth": 1,
+							"header": "N1: Wyrmsong Cantina"
+						},
+						{
+							"depth": 1,
+							"header": "N2: Enchanting Arcana"
+						},
+						{
+							"depth": 1,
+							"header": "N3: Virtuous Vices"
+						},
+						{
+							"depth": 1,
+							"header": "N4: Windfall's Office"
+						},
+						{
+							"depth": 1,
+							"header": "N5: Ruby Sanctum"
+						},
+						"Next Steps"
+					]
+				},
+				{
+					"name": "The Betrayer Revealed",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 9
+					},
+					"headers": [
+						"Running This Chapter",
+						"Returning from Avernus",
+						"Kas Reveals Himself",
+						"Pandesmos Outlook",
+						"Next Steps"
+					]
+				},
+				{
+					"name": "The War of Pandesmos",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 10
+					},
+					"headers": [
+						"Running This Chapter",
+						"Chaos Incarnate",
+						"Carapace Ridge",
+						"Hurricane Tower",
+						{
+							"depth": 1,
+							"header": "X1: Vestibule"
+						},
+						{
+							"depth": 1,
+							"header": "X2: Tower Base"
+						},
+						"Ruinous Citadel",
+						{
+							"depth": 1,
+							"header": "Y1: Drill Field"
+						},
+						{
+							"depth": 1,
+							"header": "Y2: Guard Hall"
+						},
+						{
+							"depth": 1,
+							"header": "Y3: Hall"
+						},
+						{
+							"depth": 1,
+							"header": "Y4: Vault"
+						},
+						{
+							"depth": 1,
+							"header": "Y5: Planning Chamber"
+						},
+						{
+							"depth": 1,
+							"header": "Y6: Food Storage"
+						},
+						{
+							"depth": 1,
+							"header": "Y7: Miska's Prison-Hall"
+						},
+						"Cliffside Redoubt",
+						{
+							"depth": 1,
+							"header": "F1: Upper Bunker"
+						},
+						{
+							"depth": 1,
+							"header": "F2: Lower Entrance"
+						},
+						{
+							"depth": 1,
+							"header": "F3: Central Chamber"
+						},
+						"Fighting Kas",
+						"Next Steps"
+					]
+				},
+				{
+					"name": "Eve of Ruin",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 11
+					},
+					"headers": [
+						"Running This Chapter",
+						"Reunion in Sigil",
+						"Vecna's Grasp",
+						{
+							"depth": 1,
+							"header": "E1: Kaleidoscopic Cavern"
+						},
+						{
+							"depth": 1,
+							"header": "E2: Unreality Tunnels"
+						},
+						"Torment of Kas",
+						{
+							"depth": 1,
+							"header": "K1: Ruined Bailey"
+						},
+						{
+							"depth": 1,
+							"header": "K2: Statues of Vecna"
+						},
+						{
+							"depth": 1,
+							"header": "K3: Receiving Room"
+						},
+						{
+							"depth": 1,
+							"header": "K4: Fountain of Blood"
+						},
+						{
+							"depth": 1,
+							"header": "K5: Kas's Chamber"
+						},
+						"Neverwinter's New King",
+						"Dead Gods",
+						{
+							"depth": 1,
+							"header": "G1: Crumbling Mound"
+						},
+						{
+							"depth": 1,
+							"header": "G2: Sword Bridge"
+						},
+						{
+							"depth": 1,
+							"header": "G3: Horror's Fissure"
+						},
+						{
+							"depth": 1,
+							"header": "G4: Shrine of Habbakuk"
+						},
+						"Cave of Shattered Reflection",
+						{
+							"depth": 1,
+							"header": "R1: Shattered Grotto"
+						},
+						{
+							"depth": 1,
+							"header": "R2: Threshold"
+						},
+						{
+							"depth": 1,
+							"header": "R3: Ritual Chamber"
+						},
+						"Conclusion"
+					]
+				},
+				{
+					"name": "Bestiary",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": "A"
+					},
+					"headers": [
+						"Abishais",
+						"Astral Dreadnought",
+						"Black Rose Bearer",
+						"Blades of Eberron",
+						"Blazebear",
+						"Bone Roc",
+						"Borthak",
+						"Cadaver Collector",
+						"Citadel Spider",
+						"Cosmic Horror",
+						"Deadbark Dryad",
+						"Deathwolf",
+						"Degloth",
+						"Eye Monger",
+						"False Lich",
+						"Granite Juggernaut",
+						"Hazvongel",
+						"Hertilod",
+						"Inquisitor of the Tome",
+						"Lunar Dragon",
+						"Mirror Shade",
+						"Moonlight Guardian",
+						"Necromancer Wizard",
+						"Night Scavver",
+						"Priest of Osybus",
+						"Relentless Impaler",
+						"Sorrowsworn",
+						"Spiderdragon",
+						"Spyder-Fiends",
+						"Star Angler",
+						"Vlazok",
+						"Warforged Warrior",
+						"Whirling Chandelier"
+					]
+				},
+				{
+					"name": "Character Dossier",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": "B"
+					},
+					"headers": [
+						"Acererak",
+						"Alustriel Silverhand",
+						"Kas the Betrayer",
+						"Lolth the Spider Queen",
+						"Lord Soth",
+						"Miska the Wolf-Spider",
+						"Mordenkainen",
+						"Strahd von Zarovich",
+						"Tasha",
+						"Tiamat",
+						"Vecna"
+					]
+				},
+				{
+					"name": "Secrets Tracker",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": "C"
+					}
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		},

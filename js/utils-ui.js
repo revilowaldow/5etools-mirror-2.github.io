@@ -5088,17 +5088,33 @@ class ComponentUiUtil {
 	 * @param [opts.isDisabled] If the selector should be display-only
 	 * @return {jQuery}
 	 */
-	static $getSelSearchable (comp, prop, opts) {
-		opts = opts || {};
+	static $getSelSearchable (
+		comp,
+		prop,
+		{
+			values,
+			isHiddenPerValue,
+			$ele,
+			html,
+			isAllowNull,
+			fnDisplay,
+			displayNullAs,
+			fnGetAdditionalStyleClasses,
+			asMeta,
+			isDisabled,
+			propProxy = "state",
+		} = {},
+	) {
+		const _propProxy = `_${propProxy}`;
 
-		const $iptDisplay = (opts.$ele || $(opts.html || `<input class="form-control input-xs form-control--minimal">`))
+		const $iptDisplay = ($ele || $(html || `<input class="form-control input-xs form-control--minimal">`))
 			.addClass("ui-sel2__ipt-display")
 			.attr("tabindex", "-1")
 			.click(() => {
-				if (opts.isDisabled) return;
+				if (isDisabled) return;
 				$iptSearch.focus().select();
 			})
-			.prop("disabled", !!opts.isDisabled)
+			.prop("disabled", !!isDisabled)
 			.disableSpellcheck();
 
 		const handleSearchChange = () => {
@@ -5110,10 +5126,10 @@ class ComponentUiUtil {
 		};
 		const handleSearchChangeDebounced = MiscUtil.debounce(handleSearchChange, 30);
 
-		const $iptSearch = (opts.$ele || $(opts.html || `<input class="form-control input-xs form-control--minimal">`))
+		const $iptSearch = ($ele || $(html || `<input class="form-control input-xs form-control--minimal">`))
 			.addClass("absolute ui-sel2__ipt-search")
 			.keydown(evt => {
-				if (opts.isDisabled) return;
+				if (isDisabled) return;
 
 				switch (evt.key) {
 					case "Escape": evt.stopPropagation(); return $iptSearch.blur();
@@ -5140,10 +5156,10 @@ class ComponentUiUtil {
 			})
 			.change(() => handleSearchChangeDebounced())
 			.click(() => {
-				if (opts.isDisabled) return;
+				if (isDisabled) return;
 				$iptSearch.focus().select();
 			})
-			.prop("disabled", !!opts.isDisabled)
+			.prop("disabled", !!isDisabled)
 			.disableSpellcheck();
 
 		const $wrpChoices = $(`<div class="absolute ui-sel2__wrp-options ve-overflow-y-scroll"></div>`);
@@ -5155,74 +5171,112 @@ class ComponentUiUtil {
 			<div class="ui-sel2__disp-arrow absolute no-events bold"><span class="glyphicon glyphicon-menu-down"></span></div>
 		</div>`;
 
-		const procValues = opts.isAllowNull ? [null, ...opts.values] : opts.values;
-		const metaOptions = procValues.map((v, i) => {
-			const display = v == null ? (opts.displayNullAs || "\u2014") : opts.fnDisplay ? opts.fnDisplay(v) : v;
-			const additionalStyleClasses = opts.fnGetAdditionalStyleClasses ? opts.fnGetAdditionalStyleClasses(v) : null;
+		let metaOptions = [];
 
-			const $ele = $(`<div class="ve-flex-v-center py-1 px-1 clickable ui-sel2__disp-option ${v == null ? `italic` : ""} ${additionalStyleClasses ? additionalStyleClasses.join(" ") : ""}" tabindex="0">${display}</div>`)
-				.click(() => {
-					if (opts.isDisabled) return;
+		const hk = () => {
+			if (comp._state[prop] == null) $iptDisplay.addClass("italic").addClass("ve-muted").val(displayNullAs || "\u2014");
+			else $iptDisplay.removeClass("italic").removeClass("ve-muted").val(fnDisplay ? fnDisplay(comp._state[prop]) : comp._state[prop]);
 
-					comp._state[prop] = v;
-					$(document.activeElement).blur();
-					// Temporarily remove pointer events from the dropdown, so it collapses thanks to its :hover CSS
-					$wrp.addClass("no-events");
-					setTimeout(() => $wrp.removeClass("no-events"), 50);
-				})
-				.keydown(evt => {
-					if (opts.isDisabled) return;
+			metaOptions.forEach(it => it.$ele.removeClass("active"));
+			const metaActive = metaOptions.find(it => it.value == null ? comp._state[prop] == null : it.value === comp._state[prop]);
+			if (metaActive) metaActive.$ele.addClass("active");
+		};
+		comp._addHookBase(prop, hk);
 
-					switch (evt.key) {
-						case "Escape": evt.stopPropagation(); return $ele.blur();
+		let values_;
+		const setValues = (nxtValues, {isResetOnMissing = false, isForce = false} = {}) => {
+			if (!isForce && CollectionUtil.deepEquals(values_, nxtValues)) return;
+			values_ = nxtValues;
 
-						case "ArrowDown": {
-							evt.preventDefault();
-							const visibleMetaOptions = metaOptions.filter(it => it.isVisible && !it.isForceHidden);
-							if (!visibleMetaOptions.length) return;
-							const ixCur = visibleMetaOptions.indexOf(out);
-							const nxt = visibleMetaOptions[ixCur + 1];
-							if (nxt) nxt.$ele.focus();
-							break;
-						}
+			metaOptions
+				.forEach(metaOption => {
+					metaOption.$ele.remove();
+				});
 
-						case "ArrowUp": {
-							evt.preventDefault();
-							const visibleMetaOptions = metaOptions.filter(it => it.isVisible && !it.isForceHidden);
-							if (!visibleMetaOptions.length) return;
-							const ixCur = visibleMetaOptions.indexOf(out);
-							const prev = visibleMetaOptions[ixCur - 1];
-							if (prev) return prev.$ele.focus();
-							$iptSearch.focus();
-							break;
-						}
+			const procValues = isAllowNull ? [null, ...nxtValues] : nxtValues;
 
-						case "Enter": {
+			metaOptions = procValues
+				.map((v, i) => {
+					const display = v == null ? (displayNullAs || "\u2014") : fnDisplay ? fnDisplay(v) : v;
+					const additionalStyleClasses = fnGetAdditionalStyleClasses ? fnGetAdditionalStyleClasses(v) : null;
+
+					const $ele = $(`<div class="ve-flex-v-center py-1 px-1 clickable ui-sel2__disp-option ${v == null ? `italic` : ""} ${additionalStyleClasses ? additionalStyleClasses.join(" ") : ""}" tabindex="0">${display}</div>`)
+						.on("click", () => {
+							if (isDisabled) return;
+
 							comp._state[prop] = v;
-							$ele.blur();
-							break;
-						}
-					}
-				})
-				.appendTo($wrpChoices);
+							$(document.activeElement).blur();
+							// Temporarily remove pointer events from the dropdown, so it collapses thanks to its :hover CSS
+							$wrp.addClass("no-events");
+							setTimeout(() => $wrp.removeClass("no-events"), 50);
+						})
+						.on("keydown", evt => {
+							if (isDisabled) return;
 
-			const isForceHidden = opts.isHiddenPerValue && !!(opts.isAllowNull ? opts.isHiddenPerValue[i - 1] : opts.isHiddenPerValue[i]);
-			if (isForceHidden) $ele.hideVe();
+							switch (evt.key) {
+								case "Escape": evt.stopPropagation(); return $ele.blur();
 
-			const out = {
-				value: v,
-				isVisible: true,
-				isForceHidden,
-				searchTerm: this._$getSelSearchable_getSearchString(display),
-				$ele,
-			};
-			return out;
-		});
+								case "ArrowDown": {
+									evt.preventDefault();
+									const visibleMetaOptions = metaOptions.filter(it => it.isVisible && !it.isForceHidden);
+									if (!visibleMetaOptions.length) return;
+									const ixCur = visibleMetaOptions.indexOf(out);
+									const nxt = visibleMetaOptions[ixCur + 1];
+									if (nxt) nxt.$ele.focus();
+									break;
+								}
+
+								case "ArrowUp": {
+									evt.preventDefault();
+									const visibleMetaOptions = metaOptions.filter(it => it.isVisible && !it.isForceHidden);
+									if (!visibleMetaOptions.length) return;
+									const ixCur = visibleMetaOptions.indexOf(out);
+									const prev = visibleMetaOptions[ixCur - 1];
+									if (prev) return prev.$ele.focus();
+									$iptSearch.focus();
+									break;
+								}
+
+								case "Enter": {
+									comp._state[prop] = v;
+									$ele.blur();
+									break;
+								}
+							}
+						})
+						.appendTo($wrpChoices);
+
+					const isForceHidden = isHiddenPerValue && !!(isAllowNull ? isHiddenPerValue[i - 1] : isHiddenPerValue[i]);
+					if (isForceHidden) $ele.hideVe();
+
+					const out = {
+						value: v,
+						isVisible: true,
+						isForceHidden,
+						searchTerm: this._$getSelSearchable_getSearchString(display),
+						$ele,
+					};
+					return out;
+				});
+
+			this._$getSel_setValues_handleResetOnMissing({
+				component: comp,
+				_propProxy,
+				prop,
+				isResetOnMissing,
+				nxtValues,
+				isAllowNull,
+			});
+
+			hk();
+		};
+
+		setValues(values);
 
 		const fnUpdateHidden = (isHiddenPerValue, isHideNull = false) => {
 			let metaOptions_ = metaOptions;
 
-			if (opts.isAllowNull) {
+			if (isAllowNull) {
 				metaOptions_[0].isForceHidden = isHideNull;
 				metaOptions_ = metaOptions_.slice(1);
 			}
@@ -5231,24 +5285,14 @@ class ComponentUiUtil {
 			handleSearchChange();
 		};
 
-		const hk = () => {
-			if (comp._state[prop] == null) $iptDisplay.addClass("italic").addClass("ve-muted").val(opts.displayNullAs || "\u2014");
-			else $iptDisplay.removeClass("italic").removeClass("ve-muted").val(opts.fnDisplay ? opts.fnDisplay(comp._state[prop]) : comp._state[prop]);
-
-			metaOptions.forEach(it => it.$ele.removeClass("active"));
-			const metaActive = metaOptions.find(it => it.value == null ? comp._state[prop] == null : it.value === comp._state[prop]);
-			if (metaActive) metaActive.$ele.addClass("active");
-		};
-		comp._addHookBase(prop, hk);
-		hk();
-
-		return opts.asMeta
+		return asMeta
 			? ({
 				$wrp,
 				unhook: () => comp._removeHookBase(prop, hk),
 				$iptDisplay,
 				$iptSearch,
 				fnUpdateHidden,
+				setValues,
 			})
 			: $wrp;
 	}
@@ -5256,6 +5300,37 @@ class ComponentUiUtil {
 	static _$getSelSearchable_getSearchString (str) {
 		if (str == null) return "";
 		return CleanUtil.getCleanString(str.trim().toLowerCase().replace(/\s+/g, " "));
+	}
+
+	// If the new value list doesn't contain our current value, reset our current value
+	static _$getSel_setValues_handleResetOnMissing (
+		{
+			component,
+			_propProxy,
+			prop,
+			isResetOnMissing,
+			nxtValues,
+			isSetIndexes,
+			isAllowNull,
+		},
+	) {
+		if (!isResetOnMissing) return;
+
+		if (component[_propProxy][prop] == null) return;
+
+		if (isSetIndexes) {
+			if (component[_propProxy][prop] >= 0 && component[_propProxy][prop] < nxtValues.length) {
+				if (isAllowNull) return component[_propProxy][prop] = null;
+				return component[_propProxy][prop] = 0;
+			}
+
+			return;
+		}
+
+		if (!nxtValues.includes(component[_propProxy][prop])) {
+			if (isAllowNull) return component[_propProxy][prop] = null;
+			return component[_propProxy][prop] = nxtValues[0];
+		}
 	}
 
 	/**
@@ -5272,7 +5347,21 @@ class ComponentUiUtil {
 	 * @param [opts.propProxy] Proxy prop.
 	 * @param [opts.isSetIndexes] If the index of the selected item should be set as state, rather than the item itself.
 	 */
-	static $getSelEnum (component, prop, {values, $ele, html, isAllowNull, fnDisplay, displayNullAs, asMeta, propProxy = "state", isSetIndexes = false} = {}) {
+	static $getSelEnum (
+		component,
+		prop,
+		{
+			values,
+			$ele,
+			html,
+			isAllowNull,
+			fnDisplay,
+			displayNullAs,
+			asMeta,
+			propProxy = "state",
+			isSetIndexes = false,
+		} = {},
+	) {
 		const _propProxy = `_${propProxy}`;
 
 		let values_;
@@ -5289,27 +5378,6 @@ class ComponentUiUtil {
 			component[_propProxy][prop] = isSetIndexes ? 0 : values_[0];
 		});
 
-		// If the new value list doesn't contain our current value, reset our current value
-		const setValues_handleResetOnMissing = ({isResetOnMissing, nxtValues}) => {
-			if (!isResetOnMissing) return;
-
-			if (component[_propProxy][prop] == null) return;
-
-			if (isSetIndexes) {
-				if (component[_propProxy][prop] >= 0 && component[_propProxy][prop] < nxtValues.length) {
-					if (isAllowNull) return component[_propProxy][prop] = null;
-					return component[_propProxy][prop] = 0;
-				}
-
-				return;
-			}
-
-			if (!nxtValues.includes(component[_propProxy][prop])) {
-				if (isAllowNull) return component[_propProxy][prop] = null;
-				return component[_propProxy][prop] = nxtValues[0];
-			}
-		};
-
 		const setValues = (nxtValues, {isResetOnMissing = false, isForce = false} = {}) => {
 			if (!isForce && CollectionUtil.deepEquals(values_, nxtValues)) return;
 			values_ = nxtValues;
@@ -5318,7 +5386,15 @@ class ComponentUiUtil {
 			if (isAllowNull) { const opt = document.createElement("option"); opt.value = "-1"; opt.text = displayNullAs || "\u2014"; $sel.append(opt); }
 			values_.forEach((it, i) => { const opt = document.createElement("option"); opt.value = `${i}`; opt.text = fnDisplay ? fnDisplay(it) : it; $sel.append(opt); });
 
-			setValues_handleResetOnMissing({isResetOnMissing, nxtValues});
+			this._$getSel_setValues_handleResetOnMissing({
+				component,
+				_propProxy,
+				prop,
+				isResetOnMissing,
+				nxtValues,
+				isSetIndexes,
+				isAllowNull,
+			});
 
 			hook();
 		};

@@ -581,6 +581,11 @@ globalThis.Renderer = function () {
 			page: entry.page,
 			source: entry.source,
 			hash: entry.hash,
+			...entry.expectsLightBackground
+				? {expectsLightBackground: true}
+				: entry.expectsDarkBackground
+					? {expectsDarkBackground: true}
+					: {},
 		};
 	};
 
@@ -591,6 +596,8 @@ globalThis.Renderer = function () {
 
 	this._renderImage_getWrapperClasses = function (entry) {
 		const out = ["rd__wrp-image", "relative"];
+		if (entry.expectsLightBackground) out.push("rd__wrp-image--bg", "rd__wrp-image--bg-light");
+		else if (entry.expectsDarkBackground) out.push("rd__wrp-image--bg", "rd__wrp-image--bg-dark");
 		if (entry.style) {
 			switch (entry.style) {
 				case "comic-speaker-left": out.push("rd__comic-img-speaker", "rd__comic-img-speaker--left"); break;
@@ -10138,12 +10145,21 @@ Renderer.vehicle = class {
 		static getVehicleInfwarRenderableEntriesMeta (ent) {
 			const dexMod = Parser.getAbilityModNumber(ent.dex);
 
+			const ptDtMt = [
+				ent.hp.dt != null ? `damage threshold ${ent.hp.dt}` : null,
+				ent.hp.mt != null ? `ishap threshold ${ent.hp.mt}` : null,
+			]
+				.filter(Boolean)
+				.join(", ");
+
+			const ptAc = ent.ac ?? dexMod === 0 ? `19` : `${19 + dexMod} (19 while motionless)`;
+
 			return {
 				entrySizeWeight: `{@i ${Parser.sizeAbvToFull(ent.size)} vehicle (${ent.weight.toLocaleString()} lb.)}`,
 				entryCreatureCapacity: `{@b Creature Capacity} ${Renderer.vehicle.getInfwarCreatureCapacity(ent)}`,
 				entryCargoCapacity: `{@b Cargo Capacity} ${Parser.weightToFull(ent.capCargo)}`,
-				entryArmorClass: `{@b Armor Class} ${dexMod === 0 ? `19` : `${19 + dexMod} (19 while motionless)`}`,
-				entryHitPoints: `{@b Hit Points} ${ent.hp.hp} (damage threshold ${ent.hp.dt}, mishap threshold ${ent.hp.mt})`,
+				entryArmorClass: `{@b Armor Class} ${ptAc}`,
+				entryHitPoints: `{@b Hit Points} ${ent.hp.hp}${ptDtMt ? ` (${ptDtMt})` : ""}`,
 				entrySpeed: `{@b Speed} ${ent.speed} ft.`,
 				entrySpeedNote: `[{@b Travel Pace} ${Math.floor(ent.speed / 10)} miles per hour (${Math.floor(ent.speed * 24 / 10)} miles per day)]`,
 				entrySpeedNoteTitle: `Based on "Special Travel Pace," DMG p242`,

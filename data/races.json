@@ -16997,6 +16997,7 @@
 			"raceName": "Human",
 			"raceSource": "PHB",
 			"page": 29,
+			"srd": true,
 			"basicRules": true,
 			"ability": [
 				{

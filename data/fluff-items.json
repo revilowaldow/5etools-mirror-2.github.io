@@ -1001,6 +1001,20 @@
 			]
 		},
 		{
+			"name": "Chime of Exile",
+			"source": "VEoR",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/VEoR/Chime of Exile.webp"
+					},
+					"credit": "Irina Nordsol"
+				}
+			]
+		},
+		{
 			"name": "Chime of Opening",
 			"source": "DMG",
 			"images": [
@@ -1262,6 +1276,20 @@
 						"path": "items/TCE/Crook of Rao.webp"
 					},
 					"credit": "Robson Michel"
+				}
+			]
+		},
+		{
+			"name": "Crown of Lies",
+			"source": "VEoR",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/VEoR/Crown of Lies.webp"
+					},
+					"credit": "Lauren Walsh"
 				}
 			]
 		},
@@ -2027,17 +2055,25 @@
 			]
 		},
 		{
-			"name": "Eye of Vecna",
+			"name": "Eye and Hand of Vecna",
 			"source": "DMG",
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Eye of Vecna.webp"
+						"path": "items/DMG/Eye and Hand of Vecna.webp"
 					}
 				}
 			]
+		},
+		{
+			"name": "Eye of Vecna",
+			"source": "DMG",
+			"_copy": {
+				"name": "Eye and Hand of Vecna",
+				"source": "DMG"
+			}
 		},
 		{
 			"name": "Eyes of Charming",
@@ -2673,15 +2709,10 @@
 		{
 			"name": "Hand of Vecna",
 			"source": "DMG",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/DMG/Hand of Vecna.webp"
-					}
-				}
-			]
+			"_copy": {
+				"name": "Eye and Hand of Vecna",
+				"source": "DMG"
+			}
 		},
 		{
 			"name": "Hardened Delerium-tipped Arrows",
@@ -5316,6 +5347,29 @@
 						"type": "internal",
 						"path": "items/DMG/Rod of Rulership.webp"
 					}
+				}
+			]
+		},
+		{
+			"name": "Rod of Seven Parts",
+			"source": "VEoR",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/VEoR/Rod of Seven Parts.webp"
+					},
+					"credit": "CoupleofKooks"
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/VEoR/Rod of Seven Parts Piece.webp"
+					},
+					"title": "A piece of the Rod of Seven Parts",
+					"credit": "CoupleofKooks"
 				}
 			]
 		},

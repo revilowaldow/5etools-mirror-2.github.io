@@ -393,6 +393,9 @@
 			"otherSources": [
 				{
 					"source": "LoX"
+				},
+				{
+					"source": "VEoR"
 				}
 			],
 			"size": [
@@ -2409,6 +2412,11 @@
 			"name": "Cosmic Horror",
 			"source": "BAM",
 			"page": 18,
+			"otherSources": [
+				{
+					"source": "VEoR"
+				}
+			],
 			"size": [
 				"G"
 			],
@@ -2796,6 +2804,11 @@
 			"name": "Eye Monger",
 			"source": "BAM",
 			"page": 21,
+			"otherSources": [
+				{
+					"source": "VEoR"
+				}
+			],
 			"size": [
 				"L"
 			],
@@ -5637,6 +5650,11 @@
 			"name": "Night Scavver",
 			"source": "BAM",
 			"page": 49,
+			"otherSources": [
+				{
+					"source": "VEoR"
+				}
+			],
 			"size": [
 				"H"
 			],
@@ -8927,6 +8945,23 @@
 				"see Disembodied Voice below"
 			],
 			"cr": "16",
+			"spellcasting": [
+				{
+					"name": "Wish",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The zodar casts the {@spell wish} spell, requiring no spell components and using Charisma as the spellcasting ability (spell save {@dc 17}). After casting this spell, the zodar turns to dust and is destroyed."
+					],
+					"will": [
+						{
+							"entry": "{@spell wish}",
+							"hidden": true
+						}
+					],
+					"ability": "cha",
+					"displayAs": "action"
+				}
+			],
 			"trait": [
 				{
 					"name": "Disembodied Voice",
@@ -8970,12 +9005,6 @@
 					"name": "Forced Teleport",
 					"entries": [
 						"The zodar magically warps space around one creature it can see within 60 feet of itself. The target must make a {@dc 21} Constitution saving throw. On a failed save, the target takes 22 ({@damage 4d10}) force damage, and the zodar teleports it, along with any equipment it's wearing or carrying, up to 60 feet to an unoccupied space that the zodar can see and that can support the target. On a successful save, the target takes half as much damage and isn't teleported."
-					]
-				},
-				{
-					"name": "Wish",
-					"entries": [
-						"The zodar casts the {@spell wish} spell, requiring no spell components and using Charisma as the spellcasting ability (spell save {@dc 17}). After casting this spell, the zodar turns to dust and is destroyed."
 					]
 				}
 			],

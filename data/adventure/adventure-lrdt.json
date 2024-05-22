@@ -1744,21 +1744,21 @@
 							"type": "image",
 							"href": {
 								"type": "internal",
-								"path": "adventure/LRDT/knight.webp"
+								"path": "adventure/LRDT/mage.webp"
 							},
 							"title": "{@5etoolsImg Elf Wizard|pdf/LRDT/Elf Wizard.pdf}",
-							"width": 883,
-							"height": 993
+							"width": 649,
+							"height": 908
 						},
 						{
 							"type": "image",
 							"href": {
 								"type": "internal",
-								"path": "adventure/LRDT/mage.webp"
+								"path": "adventure/LRDT/knight.webp"
 							},
 							"title": "{@5etoolsImg Gnome Fighter|pdf/LRDT/Gnome Fighter.pdf}",
-							"width": 649,
-							"height": 908
+							"width": 883,
+							"height": 993
 						},
 						{
 							"type": "image",

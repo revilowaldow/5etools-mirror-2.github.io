@@ -968,6 +968,11 @@ class DuplicateEntityCheck extends DataTesterBase {
 			.forEach(([prop, arr]) => {
 				const positions = {};
 				arr.forEach((ent, i) => {
+					if (ent == null) return;
+					if (typeof ent !== "object" || ent instanceof Array) return;
+
+					ent.__prop = prop;
+
 					isSkipBaseCheck || this._doAddPosition({prop, ent, ixArray: i, positions});
 
 					if (!ent._versions) return;

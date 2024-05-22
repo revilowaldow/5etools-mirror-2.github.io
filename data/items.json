@@ -7959,6 +7959,20 @@
 			"value": 2
 		},
 		{
+			"name": "Chime of Exile",
+			"source": "VEoR",
+			"page": 46,
+			"rarity": "very rare",
+			"wondrous": true,
+			"entries": [
+				"This silver chime is engraved with delicate magic sigils. While holding the chime, you can use an action to cast the {@spell Banishment} spell (spell save DC 20). If the target of the spell has 50 hit points or fewer, it automatically fails its saving throw. Once the chime has been used to cast the spell, it can't be used this way again until the next dawn."
+			],
+			"attachedSpells": [
+				"banishment"
+			],
+			"hasFluffImages": true
+		},
+		{
 			"name": "Chime of Opening",
 			"source": "DMG",
 			"page": 158,
@@ -9564,6 +9578,52 @@
 			"entries": [
 				"Using a crowbar grants advantage to Strength checks where the crowbar's leverage can be applied."
 			]
+		},
+		{
+			"name": "Crown of Lies",
+			"source": "VEoR",
+			"page": 6,
+			"rarity": "artifact",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"After betraying and nearly destroying the lich Vecna, the warrior Kas found himself trapped in the Shadowfell, imprisoned in a Domain of Dread called Tovag. There, he languished as a vampire. In time, the Dark Powers of the Domain of Dread lured Kas to a hidden forge, where he found the Crown of Lies. Once Kas vowed to deliver Vecna into the Dark Powers' clutches and donned the crown, the Dark Powers released Kas. From there, Kas set out to ruin his former master. Should Kas fail, the Dark Powers will reclaim him.",
+				"The crown is made of burnished and entwined metal rods. To attune to it, you must place it on your head and speak a true desire of your heart. You know how to attune to the crown when you touch it.",
+				{
+					"type": "entries",
+					"name": "Random Properties",
+					"entries": [
+						"The Crown of Lies has the following random properties (see the Dungeon Master's Guide for options):",
+						{
+							"type": "list",
+							"items": [
+								"1 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial} property",
+								"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial} property",
+								"1 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental} property"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Perfect Disguise",
+					"entries": [
+						"While attuned to the crown, you can use an action to transform yourself to look and feel like any creature you've seen at least once and whose size is no more than one size smaller or larger than yours.",
+						"The new form mimics the chosen creature's appearance exactly, including its voice. Your size and speed are replaced by the chosen creature's. You otherwise retain your own game statistics. While in this new form, the crown melds into your person and is undetectable.",
+						"Your new form lasts until you die, your attunement to the crown ends, or you use another action to transform into a different creature or your true form. Interactions with you while you are transformed by the crown reveal no illusory magic, nor do they reveal anything other than details about the creature you're disguised as. You count as the chosen creature for the purposes of spells, traps, and other defenses that wouldn't target the chosen creature.",
+						"While in your disguised form, any lies you tell always seem to be true, no matter what magical or mundane methods are used to try to detect your falsehoods. You are the recipient of {@spell Sending} spells addressed to you and the creature you are disguised as, and {@spell Scrying} and similar spells that target the creature you are disguised as actually target you. The only way to reveal your true nature while transformed by the crown is with a {@spell Wish} spell.",
+						"While wearing this crown in your true form, you can choose for the crown to be visible if you wish."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Destroying the Crown",
+					"entries": [
+						"If a creature wearing the crown is killed by the creature it is disguised as, the crown disintegrates and is destroyed."
+					]
+				}
+			],
+			"hasFluffImages": true
 		},
 		{
 			"name": "Crown of the Forest",
@@ -15972,15 +16032,15 @@
 					"name": "Properties of the Eye",
 					"type": "entries",
 					"entries": [
-						"Your alignment changes to neutral evil, and you gain the following benefits:"
-					]
-				},
-				{
-					"type": "list",
-					"items": [
-						"You have {@sense truesight}.",
-						"You can use an action to see as if you were wearing a {@item ring of X-ray vision}. You can end this effect as a bonus action.",
-						"The eye has 8 charges. You can use an action and expend 1 or more charges to cast one of the following spells (save DC 18) from it: {@spell clairvoyance} (2 charges), {@spell crown of madness} (1 charge), {@spell disintegrate} (4 charges), {@spell dominate monster} (5 charges), or {@spell eyebite} (4 charges). The eye regains {@dice 1d4 + 4} expended charges daily at dawn. Each time you cast a spell from the eye, there is a {@chance 5} chance that Vecna tears your soul from your body, devours it, and then takes control of the body like a puppet. If that happens, you become an NPC under the DM's control."
+						"Your alignment changes to neutral evil, and you gain the following benefits:",
+						{
+							"type": "list",
+							"items": [
+								"You have {@sense truesight}.",
+								"You can use an action to see as if you were wearing a {@item ring of X-ray vision}. You can end this effect as a bonus action.",
+								"The eye has 8 charges. You can use an action and expend 1 or more charges to cast one of the following spells (save DC 18) from it: {@spell clairvoyance} (2 charges), {@spell crown of madness} (1 charge), {@spell disintegrate} (4 charges), {@spell dominate monster} (5 charges), or {@spell eyebite} (4 charges). The eye regains {@dice 1d4 + 4} expended charges daily at dawn. Each time you cast a spell from the eye, there is a {@chance 5} chance that Vecna tears your soul from your body, devours it, and then takes control of the body like a puppet. If that happens, you become an NPC under the DM's control."
+							]
+						}
 					]
 				},
 				{
@@ -19720,15 +19780,15 @@
 					"name": "Properties of the Hand",
 					"type": "entries",
 					"entries": [
-						"Your alignment changes to neutral evil, and you gain the following benefits:"
-					]
-				},
-				{
-					"type": "list",
-					"items": [
-						"Your Strength score becomes 20, unless it is already 20 or higher.",
-						"Any melee spell attack you make with the hand, and any melee weapon attack made with a weapon held by it, deals an extra {@damage 2d8} cold damage on a hit.",
-						"The hand has 8 charges. You can use an action and expend 1 or more charges to cast one of the following spells (save DC 18) from it: {@spell finger of death} (5 charges), {@spell sleep} (1 charge), {@spell slow} (2 charges), or {@spell teleport} (3 charges). The hand regains {@dice 1d4 + 4} expended charges daily at dawn. Each time you cast a spell from the hand, it casts the {@spell suggestion} spell on you (save DC 18), demanding that you commit an evil act. The hand might have a specific act in mind or leave it up to you."
+						"Your alignment changes to neutral evil, and you gain the following benefits:",
+						{
+							"type": "list",
+							"items": [
+								"Your Strength score becomes 20, unless it is already 20 or higher.",
+								"Any melee spell attack you make with the hand, and any melee weapon attack made with a weapon held by it, deals an extra {@damage 2d8} cold damage on a hit.",
+								"The hand has 8 charges. You can use an action and expend 1 or more charges to cast one of the following spells (save DC 18) from it: {@spell finger of death} (5 charges), {@spell sleep} (1 charge), {@spell slow} (2 charges), or {@spell teleport} (3 charges). The hand regains {@dice 1d4 + 4} expended charges daily at dawn. Each time you cast a spell from the hand, it casts the {@spell suggestion} spell on you (save DC 18), demanding that you commit an evil act. The hand might have a specific act in mind or leave it up to you."
+							]
+						}
 					]
 				},
 				{
@@ -35323,6 +35383,128 @@
 			"lootTables": [
 				"Magic Item Table H"
 			]
+		},
+		{
+			"name": "Rod of Seven Parts",
+			"source": "VEoR",
+			"page": 8,
+			"baseItem": "quarterstaff|PHB",
+			"type": "RD",
+			"rarity": "artifact",
+			"reqAttune": true,
+			"weight": 4,
+			"weaponCategory": "simple",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"dmg2": "1d8",
+			"bonusWeapon": "+3",
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d4 + 3}",
+			"charges": 7,
+			"entries": [
+				"Eons ago, a war between the primordials and the gods scarred the planes of existence. A demon lord named {@creature Miska the Wolf-Spider|VEoR} eventually pushed the primordials' enemies to the brink of annihilation.",
+				"Desperate to save themselves and their allies, powerful elemental beings called the Wind Dukes of Aaqa rose against Miska. Committed to the concept of law, the Wind Dukes descended from a people called the vaati, who once ruled many worlds. Seven Wind Dukes wove their power into an artifact called the Rod of Law. The dukes used the rod to imprison Miska on the plane of Pandemonium. As a result, the rod shattered into seven parts that were scattered throughout the multiverse. The rod thus became known as the Rod of Seven Parts.",
+				{
+					"type": "entries",
+					"name": "Possessing the Broken Rod",
+					"entries": [
+						"The rod can't be attuned to while it is broken. While holding one piece of the broken rod, you know the general location of the next consecutive piece, as the rod yearns to be a complete artifact. Multiple rod pieces can be assembled into one piece or disassembled again, each requiring an action, although a partially complete rod doesn't gain any other abilities.",
+						"Additionally, while holding one piece of the broken rod, you can use an action to cast the spell associated with that piece, as listed on the Rod Pieces table. Once that piece of the rod has been used to cast a spell, it can't be used that way again until the next dawn."
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Rod Pieces",
+					"colStyles": [
+						"col-2",
+						"col-10"
+					],
+					"colLabels": [
+						"Piece",
+						"Spell"
+					],
+					"rows": [
+						[
+							"First",
+							"{@spell Commune}"
+						],
+						[
+							"Second",
+							"{@spell Arcane Gate}"
+						],
+						[
+							"Third",
+							"{@spell Reverse Gravity} (spell save DC 18)"
+						],
+						[
+							"Fourth",
+							"{@spell Regenerate}"
+						],
+						[
+							"Fifth",
+							"{@spell Find the Path}"
+						],
+						[
+							"Sixth",
+							"{@spell Mirage Arcane}"
+						],
+						[
+							"Seventh",
+							"{@spell Simulacrum}"
+						]
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Possessing the Whole Rod",
+					"entries": [
+						"Once all seven pieces are reassembled, a creature can attune to the Rod of Seven Parts. While attuned to the rod, you gain the following benefits:"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Magic Weapon",
+					"entries": [
+						"The Rod of Seven Parts functions for you as a magic quarterstaff that grants a +3 bonus to attack and damage rolls made with it."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Rod Spellcasting",
+					"entries": [
+						"The Rod of Seven Parts has 7 charges and regains {@dice 1d4 + 3} expended charges daily at dawn. While holding the rod, you can use an action to expend 1 charge and cast any of the spells in the Rod Pieces table. You can also use an action to cast {@spell Detect Evil and Good} from the rod without using any charges."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ultimate Law",
+					"entries": [
+						"If you are not of a lawful alignment, you find your worldview shifting toward keeping a personal code. You are more apt to keep your promises, follow through on your declarations, and adhere to your beliefs."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Destroying the Rod",
+					"entries": [
+						"The only way to destroy the Rod of Seven Parts is to immerse the assembled rod in lava in the Abyss. It must remain in the lava for fifty years before it finally is consumed.",
+						"A piece of the rod may be temporarily destroyed in this way, but each piece re-forms one year after it has succumbed. A re-formed piece teleports to a random place in the multiverse."
+					]
+				}
+			],
+			"attachedSpells": [
+				"commune",
+				"arcane gate",
+				"reverse gravity",
+				"regenerate",
+				"find the path",
+				"mirage arcane",
+				"simulacrum",
+				"detect evil and good"
+			],
+			"hasFluffImages": true
 		},
 		{
 			"name": "Rod of the Vonindod",
@@ -51069,6 +51251,114 @@
 			],
 			"lootTables": [
 				"Magic Item Table B"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Eye and Hand of Vecna",
+			"source": "DMG",
+			"page": 224,
+			"rarity": "artifact",
+			"reqAttune": true,
+			"wondrous": true,
+			"ability": {
+				"static": {
+					"str": 20
+				}
+			},
+			"entries": [
+				"Seldom is the name of Vecna spoken except in a hushed voice. Vecna was, in his time, one of the mightiest of all wizards. Through dark magic and conquest, he forged a terrible empire. For all his power, Vecna couldn't escape his own mortality. He began to fear death and take steps to prevent his end from ever coming about.",
+				"{@creature Orcus|MTF}, the demon prince of undeath, taught Vecna a ritual that would allow him to live on as a {@creature lich}. Beyond death, he became the greatest of all liches. Even though his body gradually withered and decayed, Vecna continued to expand his evil dominion. So formidable and hideous was his temper that his subjects feared to speak his name. He was the Whispered One, the Master of the Spider Throne, the Undying King, and the Lord of the Rotted Tower.",
+				"Some say that Vecna's lieutenant Kas coveted the Spider Throne for himself, or that the sword his lord made for him seduced him into rebellion. Whatever the reason, Kas brought the Undying King's rule to an end in a terrible battle that left Vecna's tower a heap of ash. Of Vecna, all that remained were one hand and one eye, grisly artifacts that still seek to work the Whispered One's will in the world.",
+				"The {@item Eye of Vecna} and the {@item Hand of Vecna} might be found together or separately. The eye looks like a bloodshot organ torn free from the socket. The hand is a mummified and shriveled left extremity.",
+				"To attune to the eye, you must gouge out your own eye and press the artifact into the empty socket. The eye grafts itself to your head and remains there until you die. Once in place, the eye transforms into a golden eye with a slit for a pupil, much like that of a cat. If the eye is ever removed, you die.",
+				"To attune to the hand, you must lop off your left hand at the wrist and the press the artifact against the stump. The hand grafts itself to your arm and becomes a functioning appendage. If the hand is ever removed, you die.",
+				{
+					"name": "Random Properties",
+					"type": "entries",
+					"entries": [
+						"The {@item Eye of Vecna} and the {@item Hand of Vecna} each have the following random properties:",
+						{
+							"type": "list",
+							"items": [
+								"1 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial property}",
+								"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
+								"1 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental property}"
+							]
+						}
+					]
+				},
+				{
+					"name": "Properties of the Eye",
+					"type": "entries",
+					"entries": [
+						"Your alignment changes to neutral evil, and you gain the following benefits:",
+						{
+							"type": "list",
+							"items": [
+								"You have {@sense truesight}.",
+								"You can use an action to see as if you were wearing a {@item ring of X-ray vision}. You can end this effect as a bonus action.",
+								"The eye has 8 charges. You can use an action and expend 1 or more charges to cast one of the following spells (save DC 18) from it: {@spell clairvoyance} (2 charges), {@spell crown of madness} (1 charge), {@spell disintegrate} (4 charges), {@spell dominate monster} (5 charges), or {@spell eyebite} (4 charges). The eye regains {@dice 1d4 + 4} expended charges daily at dawn. Each time you cast a spell from the eye, there is a {@chance 5} chance that Vecna tears your soul from your body, devours it, and then takes control of the body like a puppet. If that happens, you become an NPC under the DM's control."
+							]
+						}
+					]
+				},
+				{
+					"name": "Properties of the Hand",
+					"type": "entries",
+					"entries": [
+						"Your alignment changes to neutral evil, and you gain the following benefits:",
+						{
+							"type": "list",
+							"items": [
+								"Your Strength score becomes 20, unless it is already 20 or higher.",
+								"Any melee spell attack you make with the hand, and any melee weapon attack made with a weapon held by it, deals an extra {@damage 2d8} cold damage on a hit.",
+								"The hand has 8 charges. You can use an action and expend 1 or more charges to cast one of the following spells (save DC 18) from it: {@spell finger of death} (5 charges), {@spell sleep} (1 charge), {@spell slow} (2 charges), or {@spell teleport} (3 charges). The hand regains {@dice 1d4 + 4} expended charges daily at dawn. Each time you cast a spell from the hand, it casts the {@spell suggestion} spell on you (save DC 18), demanding that you commit an evil act. The hand might have a specific act in mind or leave it up to you."
+							]
+						}
+					]
+				},
+				{
+					"name": "Properties of the Eye and Hand",
+					"type": "entries",
+					"entries": [
+						"If you are attuned to both the hand and eye, you gain the following additional benefits:",
+						{
+							"type": "list",
+							"items": [
+								"You are immune to disease and poison.",
+								"Using the eye's X-ray vision never causes you to suffer {@condition exhaustion}.",
+								"You experience premonitions of danger and, unless you are {@condition incapacitated}, can't be {@quickref Surprise|PHB|3|0|surprised}.",
+								"If you start your turn with at least 1 hit point, you regain {@dice 1d10} hit points.",
+								"If a creature has a skeleton, you can attempt to turn its bones to jelly with a touch of the {@item Hand of Vecna}. You can do so by using an action to make a melee attack against a creature you can reach, using your choice of your melee attack bonus for weapons or spells. On a hit, the target must succeed on a DC 18 Constitution saving throw or drop to 0 hit points.",
+								"You can use an action to cast {@spell wish}. This property can't be used again until 30 days have passed."
+							]
+						}
+					]
+				},
+				{
+					"name": "Destroying the Eye and Hand",
+					"type": "entries",
+					"entries": [
+						"If the {@item Eye of Vecna} and the {@item Hand of Vecna} are both attached to the same creature, and that creature is slain by the {@item Sword of Kas}, both the eye and the hand burst into flame, turn to ash, and are destroyed forever. Any other attempt to destroy the eye or hand seems to work, but the artifact reappears in one of Vecna's many hidden vaults, where it waits to be rediscovered."
+					]
+				}
+			],
+			"items": [
+				"Eye of Vecna|DMG",
+				"Hand of Vecna|DMG"
+			],
+			"attachedSpells": [
+				"wish",
+				"finger of death",
+				"sleep",
+				"slow",
+				"teleport",
+				"clairvoyance",
+				"crown of madness",
+				"disintegrate",
+				"dominate monster",
+				"eyebite"
 			],
 			"hasFluffImages": true
 		},

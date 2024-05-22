@@ -1729,15 +1729,6 @@
 							"height": 1724
 						},
 						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/WDH/Yawning-Portal-Key.webp"
-							},
-							"width": 1000,
-							"height": 587
-						},
-						{
 							"type": "entries",
 							"name": "Familiar Faces",
 							"page": 20,
@@ -3597,52 +3588,7 @@
 							"page": 31,
 							"id": "096",
 							"entries": [
-								"See {@adventure appendix C|WDH|12} for a handout showing the floor plan of this building. Give a copy of this handout to your players as their characters begin to explore Trollskull Manor.",
-								{
-									"type": "gallery",
-									"images": [
-										{
-											"type": "image",
-											"imageType": "map",
-											"grid": {
-												"type": "square",
-												"size": 57,
-												"offsetY": 19,
-												"scale": 2
-											},
-											"href": {
-												"type": "internal",
-												"path": "adventure/WDH/Trollskull-Manor-DM.webp"
-											},
-											"title": "Trollskull Manor",
-											"width": 589,
-											"height": 800,
-											"id": "528"
-										},
-										{
-											"type": "image",
-											"imageType": "mapPlayer",
-											"grid": {
-												"type": "square",
-												"size": 71,
-												"offsetX": 2,
-												"offsetY": 28,
-												"scale": 2
-											},
-											"href": {
-												"type": "internal",
-												"path": "adventure/WDH/Trollskull-Manor-Players.webp"
-											},
-											"title": "Player Version",
-											"width": 737,
-											"height": 1000,
-											"mapParent": {
-												"id": "528",
-												"autoScale": true
-											}
-										}
-									]
-								},
+								"See {@adventure appendix C|WDH|13|Trollskull Manor} for a handout showing the floor plan of this building. Give a copy of this handout to your players as their characters begin to explore Trollskull Manor.",
 								"Four stories tall and boasting balconies, a turret, and five chimneys, the abandoned building is one of the grandest in Trollskull Alley. Characters can refurnish, rebuild, rename, and otherwise personalize their new stronghold to their hearts' content.",
 								{
 									"type": "entries",
@@ -33288,62 +33234,182 @@
 			"id": "4e6",
 			"entries": [
 				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "adventure/WDH/Friendly-Faces.webp"
-					},
-					"title": "Yawning Portal Friendly Faces",
-					"width": 1000,
-					"height": 1276
+					"type": "entries",
+					"name": "Yawning Portal Friendly Faces",
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "adventure/WDH/Friendly-Faces.webp"
+							},
+							"width": 1000,
+							"height": 1276
+						}
+					],
+					"id": "53b"
 				},
 				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "adventure/WDH/The-Code-Legal.webp"
-					},
-					"title": "The Code Legal",
-					"width": 2201,
-					"height": 2714
+					"type": "entries",
+					"name": "The Code Legal",
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "adventure/WDH/The-Code-Legal.webp"
+							},
+							"width": 2201,
+							"height": 2714
+						}
+					],
+					"id": "53c"
 				},
 				{
-					"type": "image",
-					"imageType": "mapPlayer",
-					"href": {
-						"type": "internal",
-						"path": "adventure/WDH/Trollskull-Manor-Players.webp"
-					},
-					"title": "Trollskull Manor",
-					"width": 737,
-					"height": 1000,
-					"grid": {
-						"type": "square",
-						"size": 71,
-						"offsetX": 2,
-						"offsetY": 28,
-						"scale": 2
-					}
+					"type": "entries",
+					"name": "Trollskull Manor",
+					"entries": [
+						{
+							"type": "gallery",
+							"images": [
+								{
+									"type": "image",
+									"imageType": "map",
+									"href": {
+										"type": "internal",
+										"path": "adventure/WDH/Trollskull-Manor-DM.webp"
+									},
+									"title": "Trollskull Manor",
+									"id": "528",
+									"width": 2513,
+									"height": 3338
+								},
+								{
+									"type": "image",
+									"imageType": "mapPlayer",
+									"href": {
+										"type": "internal",
+										"path": "adventure/WDH/Trollskull-Manor-Players.webp"
+									},
+									"title": "Trollskull Manor (Player Version)",
+									"width": 2100,
+									"height": 2850
+								}
+							]
+						}
+					],
+					"id": "53d"
 				},
 				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "adventure/WDH/The-Yawning-Portal.webp"
-					},
-					"title": "The Yawning Portal",
-					"width": 2400,
-					"height": 1724
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "adventure/WDH/Yawning-Portal-Key.webp"
-					},
-					"title": "The Yawning Portal Key",
-					"width": 1000,
-					"height": 587
+					"type": "entries",
+					"name": "Key to the Yawning Portal",
+					"page": 224,
+					"entries": [
+						"Here are the names of the numbered characters featured in the Yawning Portal illustration in the Introduction.",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"columns": 2,
+							"items": [
+								"1. Victoro Cassalanter",
+								"2. Ammalia Cassalanter",
+								"3. Vajra Safahr",
+								"4. Renaer Neverember",
+								"5. Laeral Silverhand",
+								"6. Mordenkainen",
+								"7. Qilué Veladorn",
+								"8. Alustriel Silverhand",
+								"9. The Simbul",
+								"10. Elminster",
+								"11. Harkle Harpell",
+								"12. Storm Silverhand",
+								"13. Syluné Silverhand",
+								"14. Dove Falconhand",
+								"15. Florin Falconhand",
+								"16. Illistyl Elventree",
+								"17. Jhessail Silventree",
+								"18. Merith Strongbow",
+								"19. Lanseril Snowmantle",
+								"20. Artus Cimber",
+								"21. Volothamp Geddarm",
+								"22. Minsc and Boo",
+								"23. Krydle",
+								"24. Delina",
+								"25. Vartan Hai Sylvar",
+								"26. Priam Agrivar",
+								"27. Ishi Barasume",
+								"28. Minder",
+								"29. Foxilon Cardluck",
+								"30. Shandie",
+								"31. Obaya Uday",
+								"32. Manshoon",
+								"33. Yoshimo",
+								"34. The Nameless One",
+								"35. Valygar Corthala",
+								"36. Abdel Adrian",
+								"37. Hexxat",
+								"38. Pikel Bouldershoulder",
+								"39. Ivan Bouldershoulder",
+								"40. Cadderly Bonaduce",
+								"41. Hrolf",
+								"42. Drizzt Do'Urden",
+								"43. Guenhwyvar",
+								"44. Ruqiah",
+								"45. Reginald Roundshield",
+								"46. Krebbyg Masq'il'yr",
+								"47. Spider Parrafin",
+								"48. Arkhan the Cruel",
+								"49. Tyril Tallguy",
+								"50. Dagny Halvor",
+								"51. Jamilah",
+								"52. Hitch",
+								"53. Dragonbait",
+								"54. Brawlwin Chainminer",
+								"55. Durnan (proprietor)",
+								"56. Skip Brickard",
+								"57. Diath Woodrow",
+								"58. Evelyn Marthain",
+								"59. Strix",
+								"60. Alias",
+								"61. Akabar Bel Akash",
+								"62. Olive Rustkettle",
+								"63. Mirt",
+								"64. The Black Viper",
+								"65. Artemis Entreri",
+								"66. Joppa",
+								"67. Fel'rekt Lafeen",
+								"68. Soluun Xibrindas",
+								"69. Jarlaxle Baenre",
+								"70. Danilo Thann",
+								"71. Paultin Seppa",
+								"72. Calliope",
+								"73. Ziraj the Hunter",
+								"74. Skeemo Weirdbottle",
+								"75. Davil Starsong",
+								"76. Tashlyn Yafeera",
+								"77. Istrid Horn",
+								"78. Nihiloor",
+								"79. Noska Ur'gray",
+								"80. Nar'l Xibrindas",
+								"81. Ahmaergo",
+								"82. Thorvin Twinbeard",
+								"83. Ott Steeltoes",
+								"84. Xanathar",
+								"85. Matthew Mercer"
+							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "adventure/WDH/The-Yawning-Portal.webp"
+							},
+							"title": "The Yawning Portal",
+							"width": 2400,
+							"height": 1724
+						}
+					],
+					"id": "53e"
 				}
 			]
 		},

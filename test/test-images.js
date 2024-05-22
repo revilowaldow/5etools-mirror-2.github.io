@@ -1,11 +1,19 @@
-import * as fs from "fs";
+import fs from "fs";
+import path from "path";
 import "../js/parser.js";
 import "../js/utils.js";
 import * as ut from "../node/util.js";
 import {listFiles} from "../node/util.js";
 
 class _TestTokenImages {
-	static _IS_CLEAN_MM_EXTRAS = false;
+	static _IS_CLEAN_EXTRAS = false;
+	static _IS_MOVE_EXTRAS = false;
+	static _SOURCES_CLEAN_EXTRAS = [
+		Parser.SRC_MM,
+		Parser.SRC_MPMM,
+		Parser.SRC_BAM,
+		Parser.SRC_VRGR,
+	];
 
 	static _PATH_BASE = `./img/bestiary/tokens`;
 	static _EXT = "webp";
@@ -20,11 +28,11 @@ class _TestTokenImages {
 	static _existing = new Set();
 	static _expectedFromHashToken = {};
 
-	static _mmTokens = null;
+	static _existingSourceTokens = null;
 
-	static _isMmToken (filename) {
-		if (!this._mmTokens) this._mmTokens = fs.readdirSync(`${this._PATH_BASE}/${Parser.SRC_MM}`).mergeMap(it => ({[it]: true}));
-		return !!this._mmTokens[filename.split("/").last()];
+	static _isExistingSourceToken ({filename, src}) {
+		(this._existingSourceTokens ||= {})[src] ||= fs.readdirSync(`${this._PATH_BASE}/${src}`).mergeMap(it => ({[it]: true}));
+		return !!this._existingSourceTokens[src][filename.split("/").last()];
 	}
 
 	static _readBestiaryJson () {
@@ -79,12 +87,25 @@ class _TestTokenImages {
 		});
 		this._existing.forEach((img) => {
 			delete this._expectedFromHashToken[img];
+
 			if (!this._expected.has(img)) {
-				if (this._IS_CLEAN_MM_EXTRAS && this._isMmToken(img)) {
-					fs.unlinkSync(img);
-					results.push(`[ !DELETE] ${img}`);
-					return;
+				if (this._IS_CLEAN_EXTRAS) {
+					const srcExisting = this._SOURCES_CLEAN_EXTRAS
+						.find(src => this._isExistingSourceToken({filename: img, src}));
+					if (srcExisting) {
+						fs.unlinkSync(img);
+						results.push(`[ !DELETE] ${img} (found in "${srcExisting}")`);
+						return;
+					}
 				}
+
+				if (this._IS_MOVE_EXTRAS) {
+					const dir = path.join(path.dirname(img), "extras");
+					fs.mkdirSync(dir, {recursive: true});
+					fs.copyFileSync(img, path.join(dir, path.basename(img)));
+					fs.unlinkSync(img);
+				}
+
 				results.push(`[   EXTRA] ${img}`);
 				isError = true;
 			}

@@ -373,7 +373,7 @@ class RenderMap {
 				`);
 			});
 
-		const $wrpCvs = $$`<div class="w-100 h-100 ve-overflow-x-scroll ve-overflow-y-scroll rd__scroller-viewer">
+		const $wrpCvs = $$`<div class="w-100 h-100 ve-overflow-x-scroll ve-overflow-y-scroll rd__scroller-viewer ${mapData.expectsLightBackground ? "rd__scroller-viewer--bg-light" : mapData.expectsDarkBackground ? "rd__scroller-viewer--bg-dark" : ""}">
 			${$cvs}
 		</div>`
 			.on("mousewheel DOMMouseScroll", evt => {

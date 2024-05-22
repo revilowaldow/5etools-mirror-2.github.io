@@ -23650,7 +23650,8 @@
 												"distance": 10
 											},
 											"mapParent": {
-												"id": "5d4"
+												"id": "5d4",
+												"offsetY": -244
 											},
 											"credit": "Dyson Logos"
 										}

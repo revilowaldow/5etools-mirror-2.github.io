@@ -31,6 +31,7 @@ async function main () {
 			return relativeFilePath;
 		},
 	});
+	await jsonTester.pInit();
 
 	const fileList = Uf.listJsonFiles("data")
 		.filter(filePath => {

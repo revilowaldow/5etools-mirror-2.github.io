@@ -34,8 +34,10 @@ const _FILE_PROP_ORDER = [
 	// region Player options
 	"class",
 	"foundryClass",
+	"classFluff",
 	"subclass",
 	"foundrySubclass",
+	"subclassFluff",
 	"classFeature",
 	"foundryClassFeature",
 	"subclassFeature",
@@ -259,6 +261,7 @@ function getFnListSort (prop) {
 		case "skill":
 		case "deck":
 		case "citation":
+		case "foundryMap":
 			return SortUtil.ascSortGenericEntity.bind(SortUtil);
 		case "deity":
 			return SortUtil.ascSortDeity.bind(SortUtil);

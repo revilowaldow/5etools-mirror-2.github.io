@@ -2281,6 +2281,11 @@
 			"isNamedCreature": true,
 			"source": "WBtW",
 			"page": 205,
+			"otherSources": [
+				{
+					"source": "VEoR"
+				}
+			],
 			"size": [
 				"M"
 			],

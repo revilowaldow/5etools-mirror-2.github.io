@@ -67,7 +67,7 @@
 						{
 							"key": "system.attributes.hp.bonuses.overall",
 							"mode": "ADD",
-							"value": "+ (2 * @srd5e.userchar.classes.druid.levels)"
+							"value": "+(2 * @srd5e.userchar.classes.druid.levels)"
 						},
 						{
 							"key": "data.attributes.ac.formula",
@@ -91,7 +91,7 @@
 						{
 							"key": "system.attributes.hp.bonuses.overall",
 							"mode": "ADD",
-							"value": "+ (5 * @srd5e.userchar.classes.ranger.levels)"
+							"value": "+(5 * @srd5e.userchar.classes.ranger.levels)"
 						},
 						{
 							"key": "data.attributes.ac.formula",
@@ -140,7 +140,7 @@
 						{
 							"key": "data.skills.prc.bonuses.check",
 							"mode": "ADD",
-							"value": "+ (2 * @srd5e.userchar.pb)"
+							"value": "+(2 * @srd5e.userchar.pb)"
 						},
 						{
 							"key": "data.skills.ste.bonuses.check",
@@ -184,7 +184,7 @@
 						{
 							"key": "data.skills.prc.bonuses.check",
 							"mode": "ADD",
-							"value": "+ (2 * @srd5e.userchar.pb)"
+							"value": "+(2 * @srd5e.userchar.pb)"
 						}
 					]
 				}
@@ -200,7 +200,7 @@
 						{
 							"key": "system.attributes.hp.bonuses.overall",
 							"mode": "ADD",
-							"value": "+ (5 * @srd5e.userchar.classes.druid.levels)"
+							"value": "+(5 * @srd5e.userchar.classes.druid.levels)"
 						}
 					]
 				}

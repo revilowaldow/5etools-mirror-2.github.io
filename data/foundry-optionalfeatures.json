@@ -11,7 +11,7 @@
 						{
 							"key": "data.bonuses.rsak.damage",
 							"mode": "ADD",
-							"value": "+ (@srd5e.name.eldritchblast * @abilities.cha.mod)"
+							"value": "+(@srd5e.name.eldritchblast * @abilities.cha.mod)"
 						}
 					]
 				}

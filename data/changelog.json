@@ -2709,5 +2709,10 @@
 		"title": "Ruinous Power",
 		"titleAlt": "Adam of Riches",
 		"txt": "- Added Vecna: Eve of Ruin content\n- (Brew) Added `\"expectsLightBackground\"`/`\"expectsDarkBackground\"` for `\"image\"`-type entries, allowing a theme-dependent background to be rendered under the image\n- (Brew) Fixed crash when attempting to view subclass with multiple fluff images\n- (Fixed typos/added tags)"
+	},
+	{
+		"ver": "1.207.1",
+		"date": "2024-05-26",
+		"txt": "- Fixed Classes page failing to show subclass info when enabling a subclass with the \"Info\" button active#\n- Fixed Search page `lucky` param redirecting to non-existent pages\n- (Brew) Added `\"isNoOutline\"` `\"data\"` flag for entries displayed in the Classes page\n- (Fixed typos/added tags)"
 	}
 ]

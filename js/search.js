@@ -182,9 +182,14 @@ class SearchPage {
 				}
 
 				if (this._PARAM_LUCKY in params) {
-					const [result] = results;
-					window.location = `${Renderer.get().baseUrl}${Omnisearch.getResultHref(result.doc)}`;
-					return;
+					const [href] = results
+						.map(res => Omnisearch.getResultHref(res.doc))
+						.filter(Boolean);
+
+					if (href) {
+						window.location = `${Renderer.get().baseUrl}${href}`;
+						return;
+					}
 				}
 
 				SearchPage._rowMetas = results.map(result => {

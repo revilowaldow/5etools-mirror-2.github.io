@@ -139,7 +139,7 @@
 						{
 							"key": "system.attributes.hp.bonuses.overall",
 							"mode": "ADD",
-							"value": "+ (2 * @details.level)"
+							"value": "+(2 * @details.level)"
 						}
 					]
 				}

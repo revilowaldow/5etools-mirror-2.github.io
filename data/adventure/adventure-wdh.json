@@ -33282,7 +33282,13 @@
 									"title": "Trollskull Manor",
 									"id": "528",
 									"width": 2513,
-									"height": 3338
+									"height": 3338,
+									"grid": {
+										"type": "square",
+										"size": 104,
+										"offsetX": 69,
+										"offsetY": 69
+									}
 								},
 								{
 									"type": "image",
@@ -33293,7 +33299,13 @@
 									},
 									"title": "Trollskull Manor (Player Version)",
 									"width": 2100,
-									"height": 2850
+									"height": 2850,
+									"grid": {
+										"type": "square",
+										"size": 101,
+										"offsetX": 3,
+										"offsetY": 49
+									}
 								}
 							]
 						}

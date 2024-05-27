@@ -755,6 +755,7 @@ PropOrder._FOUNDRY_CLASS = [
 PropOrder._SUBCLASS = [
 	"name",
 	"shortName",
+	"alias",
 	"source",
 	"className",
 	"classSource",

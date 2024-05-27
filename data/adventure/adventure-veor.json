@@ -1119,7 +1119,14 @@
 											"width": 4096,
 											"height": 2784,
 											"imageType": "map",
-											"id": "007"
+											"id": "007",
+											"grid": {
+												"type": "square",
+												"size": 163,
+												"offsetX": 32,
+												"offsetY": -30,
+												"scale": 2
+											}
 										},
 										{
 											"type": "image",
@@ -1134,6 +1141,13 @@
 											"credit": "Dyson Logos",
 											"mapParent": {
 												"id": "007"
+											},
+											"grid": {
+												"type": "square",
+												"size": 163,
+												"offsetX": 32,
+												"offsetY": -30,
+												"scale": 2
 											}
 										}
 									]
@@ -2241,7 +2255,13 @@
 											"width": 4096,
 											"height": 2633,
 											"imageType": "map",
-											"id": "008"
+											"id": "008",
+											"grid": {
+												"type": "square",
+												"size": 124,
+												"offsetX": 20,
+												"offsetY": 14
+											}
 										},
 										{
 											"type": "image",
@@ -2256,6 +2276,12 @@
 											"credit": "Dyson Logos",
 											"mapParent": {
 												"id": "008"
+											},
+											"grid": {
+												"type": "square",
+												"size": 124,
+												"offsetX": 20,
+												"offsetY": 14
 											}
 										}
 									]
@@ -2769,7 +2795,13 @@
 									"title": "Map 2.1: The Sanctum",
 									"credit": "Francesca Baerald",
 									"width": 4000,
-									"height": 5676
+									"height": 5676,
+									"grid": {
+										"type": "square",
+										"size": 121,
+										"offsetX": -2,
+										"offsetY": 34
+									}
 								},
 								{
 									"type": "entries",
@@ -3282,7 +3314,14 @@
 											"width": 2100,
 											"height": 2850,
 											"imageType": "map",
-											"id": "009"
+											"id": "009",
+											"grid": {
+												"type": "square",
+												"size": 114,
+												"offsetX": -13,
+												"offsetY": -15,
+												"scale": 2
+											}
 										},
 										{
 											"type": "image",
@@ -3297,6 +3336,13 @@
 											"credit": "Dyson Logos",
 											"mapParent": {
 												"id": "009"
+											},
+											"grid": {
+												"type": "square",
+												"size": 114,
+												"offsetX": -13,
+												"offsetY": -15,
+												"scale": 2
 											}
 										}
 									]
@@ -4174,7 +4220,14 @@
 											"credit": "Francesca Baerald",
 											"width": 4096,
 											"height": 5508,
-											"id": "00a"
+											"id": "00a",
+											"grid": {
+												"type": "square",
+												"size": 181,
+												"offsetX": 70,
+												"offsetY": -58,
+												"scale": 2
+											}
 										},
 										{
 											"type": "image",
@@ -4190,6 +4243,13 @@
 											"mapParent": {
 												"id": "00a",
 												"autoScale": true
+											},
+											"grid": {
+												"type": "square",
+												"size": 177,
+												"offsetX": 65,
+												"offsetY": -70,
+												"scale": 2
 											}
 										}
 									]
@@ -4959,7 +5019,14 @@
 											"width": 2100,
 											"height": 1350,
 											"imageType": "map",
-											"id": "00e"
+											"id": "00e",
+											"grid": {
+												"type": "square",
+												"size": 112,
+												"offsetX": 42,
+												"offsetY": 57,
+												"scale": 2
+											}
 										},
 										{
 											"type": "image",
@@ -4974,6 +5041,13 @@
 											"credit": "Dyson Logos",
 											"mapParent": {
 												"id": "00e"
+											},
+											"grid": {
+												"type": "square",
+												"size": 112,
+												"offsetX": 42,
+												"offsetY": 57,
+												"scale": 2
 											}
 										}
 									]
@@ -5295,7 +5369,10 @@
 											"credit": "Francesca Baerald",
 											"width": 4000,
 											"height": 5143,
-											"id": "00f"
+											"id": "00f",
+											"grid": {
+												"type": "none"
+											}
 										},
 										{
 											"type": "image",
@@ -5310,6 +5387,9 @@
 											"credit": "Francesca Baerald",
 											"mapParent": {
 												"id": "00f"
+											},
+											"grid": {
+												"type": "none"
 											}
 										}
 									]
@@ -5448,7 +5528,14 @@
 													"width": 1050,
 													"height": 1350,
 													"imageType": "map",
-													"id": "010"
+													"id": "010",
+													"grid": {
+														"type": "square",
+														"size": 85,
+														"offsetX": -31,
+														"offsetY": 17,
+														"scale": 2
+													}
 												},
 												{
 													"type": "image",
@@ -5463,6 +5550,13 @@
 													"credit": "Dyson Logos",
 													"mapParent": {
 														"id": "010"
+													},
+													"grid": {
+														"type": "square",
+														"size": 85,
+														"offsetX": -31,
+														"offsetY": 17,
+														"scale": 2
 													}
 												}
 											]
@@ -5906,7 +6000,14 @@
 											"width": 2100,
 											"height": 2850,
 											"imageType": "map",
-											"id": "011"
+											"id": "011",
+											"grid": {
+												"type": "square",
+												"size": 109,
+												"offsetX": 33,
+												"offsetY": 58,
+												"scale": 3
+											}
 										},
 										{
 											"type": "image",
@@ -5921,6 +6022,13 @@
 											"credit": "Dyson Logos",
 											"mapParent": {
 												"id": "011"
+											},
+											"grid": {
+												"type": "square",
+												"size": 109,
+												"offsetX": 33,
+												"offsetY": 58,
+												"scale": 3
 											}
 										}
 									]
@@ -7081,7 +7189,14 @@
 											"width": 2100,
 											"height": 2850,
 											"imageType": "map",
-											"id": "012"
+											"id": "012",
+											"grid": {
+												"type": "square",
+												"size": 201,
+												"offsetX": -98,
+												"offsetY": 57,
+												"scale": 3
+											}
 										},
 										{
 											"type": "image",
@@ -7096,6 +7211,13 @@
 											"credit": "Dyson Logos",
 											"mapParent": {
 												"id": "012"
+											},
+											"grid": {
+												"type": "square",
+												"size": 201,
+												"offsetX": -98,
+												"offsetY": 57,
+												"scale": 3
 											}
 										}
 									]
@@ -8393,7 +8515,13 @@
 											"width": 2100,
 											"height": 1350,
 											"imageType": "map",
-											"id": "524"
+											"id": "524",
+											"grid": {
+												"type": "square",
+												"size": 123,
+												"offsetX": 10,
+												"scale": 4
+											}
 										},
 										{
 											"type": "image",
@@ -8408,6 +8536,13 @@
 											"credit": "Dyson Logos",
 											"mapParent": {
 												"id": "524"
+											},
+											"grid": {
+												"type": "square",
+												"size": 123,
+												"offsetX": 10,
+												"offsetY": 4,
+												"scale": 4
 											}
 										}
 									]
@@ -8661,7 +8796,14 @@
 											"width": 1050,
 											"height": 1350,
 											"imageType": "map",
-											"id": "525"
+											"id": "525",
+											"grid": {
+												"type": "square",
+												"size": 143,
+												"offsetX": -10,
+												"offsetY": 12,
+												"scale": 7
+											}
 										},
 										{
 											"type": "image",
@@ -8676,6 +8818,13 @@
 											"credit": "Dyson Logos",
 											"mapParent": {
 												"id": "525"
+											},
+											"grid": {
+												"type": "square",
+												"size": 143,
+												"offsetX": -10,
+												"offsetY": 12,
+												"scale": 7
 											}
 										}
 									]
@@ -8950,7 +9099,14 @@
 											"width": 2100,
 											"height": 2850,
 											"imageType": "map",
-											"id": "526"
+											"id": "526",
+											"grid": {
+												"type": "square",
+												"size": 156,
+												"offsetX": 92,
+												"offsetY": -27,
+												"scale": 5
+											}
 										},
 										{
 											"type": "image",
@@ -8965,6 +9121,13 @@
 											"credit": "Dyson Logos",
 											"mapParent": {
 												"id": "526"
+											},
+											"grid": {
+												"type": "square",
+												"size": 156,
+												"offsetX": 92,
+												"offsetY": -27,
+												"scale": 5
 											}
 										}
 									]
@@ -9862,12 +10025,19 @@
 												"type": "internal",
 												"path": "adventure/VEoR/102-6.04-three-moons-vault-upper-level.webp"
 											},
-											"title": "Map 6.4: Three Moons Vault - Upper Level",
+											"title": "Map 6.4: Three Moons Vault\u2014Upper Level",
 											"credit": "Dyson Logos",
 											"width": 1050,
 											"height": 1350,
 											"imageType": "map",
-											"id": "527"
+											"id": "527",
+											"grid": {
+												"type": "square",
+												"size": 133,
+												"offsetX": 16,
+												"offsetY": -45,
+												"scale": 5
+											}
 										},
 										{
 											"type": "image",
@@ -9882,6 +10052,13 @@
 											"credit": "Dyson Logos",
 											"mapParent": {
 												"id": "527"
+											},
+											"grid": {
+												"type": "square",
+												"size": 133,
+												"offsetX": 16,
+												"offsetY": -45,
+												"scale": 5
 											}
 										}
 									]
@@ -10161,7 +10338,14 @@
 									"width": 1032,
 									"height": 1350,
 									"imageType": "map",
-									"id": "528"
+									"id": "528",
+									"grid": {
+										"type": "square",
+										"size": 129,
+										"offsetX": 18,
+										"offsetY": 24,
+										"scale": 2
+									}
 								},
 								{
 									"type": "image",
@@ -10176,6 +10360,13 @@
 									"credit": "Dyson Logos",
 									"mapParent": {
 										"id": "528"
+									},
+									"grid": {
+										"type": "square",
+										"size": 129,
+										"offsetX": 18,
+										"offsetY": 24,
+										"scale": 2
 									}
 								}
 							]
@@ -10366,7 +10557,10 @@
 													"title": "Map 7.2: Tomb Complex",
 													"credit": "Francesca Baerald",
 													"width": 4000,
-													"height": 2569
+													"height": 2569,
+													"grid": {
+														"type": "none"
+													}
 												}
 											]
 										}
@@ -10460,7 +10654,14 @@
 											"width": 2100,
 											"height": 2850,
 											"imageType": "map",
-											"id": "529"
+											"id": "529",
+											"grid": {
+												"type": "square",
+												"size": 146,
+												"offsetX": -19,
+												"offsetY": 15,
+												"scale": 3
+											}
 										},
 										{
 											"type": "image",
@@ -10475,6 +10676,13 @@
 											"credit": "Dyson Logos",
 											"mapParent": {
 												"id": "529"
+											},
+											"grid": {
+												"type": "square",
+												"size": 146,
+												"offsetX": -19,
+												"offsetY": 15,
+												"scale": 3
 											}
 										}
 									]
@@ -11305,7 +11513,13 @@
 											"credit": "Claudio Pozas",
 											"width": 850,
 											"height": 1507,
-											"imageType": "map"
+											"imageType": "map",
+											"grid": {
+												"type": "square",
+												"size": 142,
+												"offsetX": 73,
+												"offsetY": 53
+											}
 										},
 										{
 											"type": "entries",
@@ -11873,7 +12087,10 @@
 											"credit": "Francesca Baerald",
 											"width": 4000,
 											"height": 5429,
-											"id": "52a"
+											"id": "52a",
+											"grid": {
+												"type": "none"
+											}
 										},
 										{
 											"type": "image",
@@ -11888,6 +12105,9 @@
 											"credit": "Francesca Baerald",
 											"mapParent": {
 												"id": "52a"
+											},
+											"grid": {
+												"type": "none"
 											}
 										}
 									]
@@ -12255,7 +12475,13 @@
 													"width": 1050,
 													"height": 1350,
 													"imageType": "map",
-													"id": "52b"
+													"id": "52b",
+													"grid": {
+														"type": "square",
+														"size": 55,
+														"offsetX": 3,
+														"offsetY": 27
+													}
 												},
 												{
 													"type": "image",
@@ -12270,6 +12496,12 @@
 													"credit": "Dyson Logos",
 													"mapParent": {
 														"id": "52b"
+													},
+													"grid": {
+														"type": "square",
+														"size": 55,
+														"offsetX": 3,
+														"offsetY": 27
 													}
 												}
 											]
@@ -12474,7 +12706,14 @@
 													"width": 1050,
 													"height": 1350,
 													"imageType": "map",
-													"id": "52c"
+													"id": "52c",
+													"grid": {
+														"type": "square",
+														"size": 117,
+														"offsetX": -2,
+														"offsetY": 63,
+														"scale": 2
+													}
 												},
 												{
 													"type": "image",
@@ -12489,6 +12728,13 @@
 													"credit": "Dyson Logos",
 													"mapParent": {
 														"id": "52c"
+													},
+													"grid": {
+														"type": "square",
+														"size": 117,
+														"offsetX": -2,
+														"offsetY": 63,
+														"scale": 2
 													}
 												}
 											]
@@ -12845,7 +13091,14 @@
 											"width": 1050,
 											"height": 1350,
 											"imageType": "map",
-											"id": "52d"
+											"id": "52d",
+											"grid": {
+												"type": "square",
+												"size": 116,
+												"offsetX": 3,
+												"offsetY": -1,
+												"scale": 3
+											}
 										},
 										{
 											"type": "image",
@@ -12860,6 +13113,13 @@
 											"credit": "Dyson Logos",
 											"mapParent": {
 												"id": "52d"
+											},
+											"grid": {
+												"type": "square",
+												"size": 116,
+												"offsetX": 3,
+												"offsetY": -1,
+												"scale": 3
 											}
 										}
 									]
@@ -13337,7 +13597,14 @@
 									"width": 1031,
 									"height": 1318,
 									"imageType": "map",
-									"id": "52e"
+									"id": "52e",
+									"grid": {
+										"type": "square",
+										"size": 137,
+										"offsetX": 25,
+										"offsetY": -4,
+										"scale": 2
+									}
 								},
 								{
 									"type": "image",
@@ -13352,6 +13619,13 @@
 									"credit": "Dyson Logos",
 									"mapParent": {
 										"id": "52e"
+									},
+									"grid": {
+										"type": "square",
+										"size": 137,
+										"offsetX": 25,
+										"offsetY": -4,
+										"scale": 2
 									}
 								}
 							]
@@ -13542,7 +13816,14 @@
 									"credit": "Francesca Baerald",
 									"width": 4000,
 									"height": 2571,
-									"id": "52f"
+									"id": "52f",
+									"grid": {
+										"type": "square",
+										"size": 149,
+										"offsetX": -38,
+										"offsetY": 56,
+										"scale": 3
+									}
 								},
 								{
 									"type": "image",
@@ -13557,6 +13838,13 @@
 									"credit": "Francesca Baerald",
 									"mapParent": {
 										"id": "52f"
+									},
+									"grid": {
+										"type": "square",
+										"size": 149,
+										"offsetX": -38,
+										"offsetY": 56,
+										"scale": 3
 									}
 								}
 							]
@@ -13771,7 +14059,14 @@
 											"width": 1050,
 											"height": 1350,
 											"imageType": "map",
-											"id": "530"
+											"id": "530",
+											"grid": {
+												"type": "square",
+												"size": 129,
+												"offsetX": 6,
+												"offsetY": -2,
+												"scale": 3
+											}
 										},
 										{
 											"type": "image",
@@ -13786,6 +14081,13 @@
 											"credit": "Dyson Logos",
 											"mapParent": {
 												"id": "530"
+											},
+											"grid": {
+												"type": "square",
+												"size": 129,
+												"offsetX": 6,
+												"offsetY": -2,
+												"scale": 3
 											}
 										}
 									]
@@ -13988,7 +14290,14 @@
 											"width": 1935,
 											"height": 1350,
 											"imageType": "map",
-											"id": "531"
+											"id": "531",
+											"grid": {
+												"type": "square",
+												"size": 159,
+												"offsetX": 51,
+												"offsetY": 15,
+												"scale": 4
+											}
 										},
 										{
 											"type": "image",
@@ -14003,6 +14312,13 @@
 											"credit": "Dyson Logos",
 											"mapParent": {
 												"id": "531"
+											},
+											"grid": {
+												"type": "square",
+												"size": 159,
+												"offsetX": 51,
+												"offsetY": 15,
+												"scale": 4
 											}
 										}
 									]
@@ -14390,7 +14706,14 @@
 											"width": 1050,
 											"height": 1350,
 											"imageType": "map",
-											"id": "532"
+											"id": "532",
+											"grid": {
+												"type": "square",
+												"size": 126,
+												"offsetX": -56,
+												"offsetY": -6,
+												"scale": 4
+											}
 										},
 										{
 											"type": "image",
@@ -14405,6 +14728,13 @@
 											"credit": "Dyson Logos",
 											"mapParent": {
 												"id": "532"
+											},
+											"grid": {
+												"type": "square",
+												"size": 126,
+												"offsetX": -56,
+												"offsetY": -6,
+												"scale": 4
 											}
 										}
 									]
@@ -14708,7 +15038,14 @@
 											"width": 1050,
 											"height": 1350,
 											"imageType": "map",
-											"id": "533"
+											"id": "533",
+											"grid": {
+												"type": "square",
+												"size": 158,
+												"offsetX": -20,
+												"offsetY": -49,
+												"scale": 3
+											}
 										},
 										{
 											"type": "image",
@@ -14723,6 +15060,13 @@
 											"credit": "Dyson Logos",
 											"mapParent": {
 												"id": "533"
+											},
+											"grid": {
+												"type": "square",
+												"size": 158,
+												"offsetX": -20,
+												"offsetY": -49,
+												"scale": 3
 											}
 										}
 									]
@@ -14837,7 +15181,14 @@
 											"width": 1050,
 											"height": 1350,
 											"imageType": "map",
-											"id": "534"
+											"id": "534",
+											"grid": {
+												"type": "square",
+												"size": 219,
+												"offsetX": 10,
+												"offsetY": -69,
+												"scale": 4
+											}
 										},
 										{
 											"type": "image",
@@ -14852,6 +15203,13 @@
 											"credit": "Dyson Logos",
 											"mapParent": {
 												"id": "534"
+											},
+											"grid": {
+												"type": "square",
+												"size": 219,
+												"offsetX": 10,
+												"offsetY": -69,
+												"scale": 4
 											}
 										}
 									]
@@ -14986,7 +15344,14 @@
 							"credit": "Dyson Logos",
 							"width": 1050,
 							"height": 1262,
-							"imageType": "map"
+							"imageType": "map",
+							"grid": {
+								"type": "square",
+								"size": 156,
+								"offsetX": 84,
+								"offsetY": -24,
+								"scale": 3
+							}
 						},
 						"If the characters make their presence known, Lord Neverember orders the twelve {@creature Wight||wights} below the balcony to apprehend the characters and place them in the gallows. Lord Neverember doesn't join the fight unless the wights are destroyed or the characters attack him.",
 						"If a character tells the awestruck crowd that Lord Neverember is not the rightful ruler of Neverwinter and succeeds on a DC 15 Charisma ({@skill Persuasion}) check, the mob breaks into a violent frenzy. In this case, the mob distracts the wights so the characters can focus their attention on Lord Neverember.",
@@ -15058,7 +15423,14 @@
 											"width": 2100,
 											"height": 1350,
 											"imageType": "map",
-											"id": "535"
+											"id": "535",
+											"grid": {
+												"type": "square",
+												"size": 168,
+												"offsetX": -62,
+												"offsetY": 15,
+												"scale": 3
+											}
 										},
 										{
 											"type": "image",
@@ -15073,6 +15445,13 @@
 											"credit": "Dyson Logos",
 											"mapParent": {
 												"id": "535"
+											},
+											"grid": {
+												"type": "square",
+												"size": 168,
+												"offsetX": -62,
+												"offsetY": 15,
+												"scale": 3
 											}
 										}
 									]
@@ -15275,7 +15654,12 @@
 											"credit": "Francesca Baerald",
 											"width": 4000,
 											"height": 2571,
-											"id": "536"
+											"id": "536",
+											"grid": {
+												"type": "square",
+												"offsetX": 7,
+												"offsetY": 11
+											}
 										},
 										{
 											"type": "image",
@@ -15290,6 +15674,11 @@
 											"credit": "Francesca Baerald",
 											"mapParent": {
 												"id": "536"
+											},
+											"grid": {
+												"type": "square",
+												"offsetX": 7,
+												"offsetY": 11
 											}
 										}
 									]

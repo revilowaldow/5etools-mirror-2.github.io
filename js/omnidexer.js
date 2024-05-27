@@ -110,7 +110,7 @@ class Omnidexer {
 		if ((options.isNoFilter || (!arbiter.include && !(arbiter.filter && arbiter.filter(ent))) || (!arbiter.filter && (!arbiter.include || arbiter.include(ent)))) && !arbiter.isOnlyDeep) index.push(toAdd);
 
 		const primary = {it: ent, ix: ix, parentName: name};
-		const deepItems = await arbiter.pGetDeepIndex(this, primary, ent);
+		const deepItems = await arbiter.pGetDeepIndex(this, primary, ent, {name});
 		for (const item of deepItems) {
 			const toAdd = await this._pAddToIndex_pGetToAdd(state, ent, item);
 			if (!arbiter.filter || !arbiter.filter(ent)) index.push(toAdd);
@@ -303,11 +303,13 @@ class IndexableDirectorySubclass extends IndexableDirectory {
 		});
 	}
 
-	pGetDeepIndex (indexer, primary, sc) {
+	pGetDeepIndex (indexer, primary, sc, {name}) {
+		name ||= sc.name;
+
 		return [
 			{
-				b: sc.name,
-				n: `${sc.name} (${sc.className})`,
+				b: name,
+				n: `${name} (${sc.className})`,
 				s: indexer.getMetaId("s", sc.source),
 				u: `${UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES]({name: sc.className, source: sc.classSource})}${HASH_PART_SEP}${UrlUtil.getClassesPageStatePart({subclass: sc})}`,
 				p: sc.page,

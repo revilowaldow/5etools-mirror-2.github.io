@@ -2714,5 +2714,10 @@
 		"ver": "1.207.1",
 		"date": "2024-05-26",
 		"txt": "- Fixed Classes page failing to show subclass info when enabling a subclass with the \"Info\" button active#\n- Fixed Search page `lucky` param redirecting to non-existent pages\n- (Brew) Added `\"isNoOutline\"` `\"data\"` flag for entries displayed in the Classes page\n- (Fixed typos/added tags)"
+	},
+	{
+		"ver": "1.207.2",
+		"date": "2024-05-27",
+		"txt": "- (Brew) Added `\"alias\"` support for subclasses\n- (Brew) Fixed display of subclass fluff in Classes page outline\n- (Fixed typos/added tags)/added tags)"
 	}
 ]

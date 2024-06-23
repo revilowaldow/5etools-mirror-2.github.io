@@ -58,17 +58,24 @@
 </head>
 
 <body>
+
+<div class="overlay-noise"></div>
+
+<div class="cancer__wrp-sidebar-rhs cancer__anchor"><div class="cancer__disp-cancer"></div><div class="cancer__sidebar-rhs-inner cancer__sidebar-rhs-inner--top"><!--5ETOOLS_AD_RIGHT_1--></div><div class="cancer__sidebar-rhs-inner cancer__sidebar-rhs-inner--bottom"><!--5ETOOLS_AD_RIGHT_2--></div></div>
+
 <div class="viewport-wrapper">
 	<div class="cancer__wrp-leaderboard cancer__anchor"><div class="cancer__disp-cancer"></div><div class="cancer__wrp-leaderboard-inner"><!--5ETOOLS_AD_LEADERBOARD--></div></div>
 
 	<header class="hidden-xs hidden-sm page__header">
 		<div class="container ve-flex-v-baseline">
-			<h1 class="page__title no-wrap my-0">RoLang Demo</h1>
+			<h1 class="page__title no-wrap my-0" id="page__title">RoLang Demo</h1>
 			<p class="page__subtitle no-wrap my-0" id="page__subtitle">Edit the input and context, and hit Run</p>
 		</div>
 	</header>
 
-	<nav class="container page__nav" id="navigation"><ul class="nav nav-pills page__nav-inner" id="navbar"></ul></nav>
+	<nav class="container page__nav" id="navigation">
+		<ul class="nav nav-pills page__nav-inner" id="navbar"></ul>
+	</nav>
 
 	<div class="view-col-wrapper ve-flex-col px-4">
 		<div class="ve-flex-v-center mb-3">
@@ -106,7 +113,9 @@
 
 <!--5ETOOLS_SCRIPT_ANCHOR-->
 <!--5ETOOLS_AD_ADHESION-->
-<!--5ETOOLS_SCRIPT_ANCHOR__ACE-JS-->
+
+<script type="text/javascript" src="lib/jquery.js"></script>
+<script type="text/javascript" src="lib/ace.js"></script>
 <script type="text/javascript" src="js/parser.js"></script>
 <script type="text/javascript" src="js/utils.js"></script>
 <script type="text/javascript" src="js/utils-ui.js"></script>
@@ -116,6 +125,7 @@
 <script type="text/javascript" src="js/filter.js"></script>
 <script type="text/javascript" src="js/utils-dataloader.js"></script>
 <script type="text/javascript" src="js/utils-brew.js"></script>
+<script type="module" src="js/utils-config.js"></script>
 <script type="text/javascript" src="js/render.js"></script>
 <script type="text/javascript" src="js/render-dice.js"></script>
 <script type="text/javascript" src="js/render-markdown.js"></script>
@@ -124,9 +134,8 @@
 <script type="text/javascript" src="js/hist.js"></script>
 <script type="module" src="js/langdemo.js"></script>
 <script type="module" src="js/rolang.js"></script>
-<script type="text/javascript" src="lib/jquery.js"></script>
+<script type="text/javascript" src="js/list2.js"></script>
 <script type="text/javascript" src="lib/elasticlunr.js"></script>
-<script type="text/javascript" src="lib/ace.js"></script>
-</body>
 
+</body>
 </html>

@@ -11,7 +11,7 @@
 					"name": "Ranger's Leadership",
 					"changes": [
 						{
-							"key": "system.attributes.hp.bonuses.overall",
+							"key": "system.attributes.hp.max",
 							"mode": "ADD",
 							"value": "+ 5 * @srd5e.userchar.classes.ranger.levels"
 						}
@@ -30,7 +30,7 @@
 					"name": "Ranger's Leadership",
 					"changes": [
 						{
-							"key": "system.attributes.hp.bonuses.overall",
+							"key": "system.attributes.hp.max",
 							"mode": "ADD",
 							"value": "+ 5 * @srd5e.userchar.classes.ranger.levels"
 						}
@@ -49,7 +49,7 @@
 					"name": "Ranger's Leadership",
 					"changes": [
 						{
-							"key": "system.attributes.hp.bonuses.overall",
+							"key": "system.attributes.hp.max",
 							"mode": "ADD",
 							"value": "+ 4 * @srd5e.userchar.classes.ranger.levels"
 						}
@@ -65,7 +65,7 @@
 					"name": "Druid's Leadership",
 					"changes": [
 						{
-							"key": "system.attributes.hp.bonuses.overall",
+							"key": "system.attributes.hp.max",
 							"mode": "ADD",
 							"value": "+(2 * @srd5e.userchar.classes.druid.levels)"
 						},
@@ -89,7 +89,7 @@
 					"name": "Ranger's Leadership",
 					"changes": [
 						{
-							"key": "system.attributes.hp.bonuses.overall",
+							"key": "system.attributes.hp.max",
 							"mode": "ADD",
 							"value": "+(5 * @srd5e.userchar.classes.ranger.levels)"
 						},
@@ -128,7 +128,7 @@
 					"name": "Artificer's Leadership",
 					"changes": [
 						{
-							"key": "system.attributes.hp.bonuses.overall",
+							"key": "system.attributes.hp.max",
 							"mode": "ADD",
 							"value": "+ @srd5e.userchar.abilities.int.mod + @srd5e.userchar.classes.artificer.levels"
 						},
@@ -162,7 +162,7 @@
 					"name": "Artificer's Leadership",
 					"changes": [
 						{
-							"key": "system.attributes.hp.bonuses.overall",
+							"key": "system.attributes.hp.max",
 							"mode": "ADD",
 							"value": "+ @srd5e.userchar.abilities.int.mod + (5 * @srd5e.userchar.classes.artificer.levels)"
 						},
@@ -198,7 +198,7 @@
 					"name": "Druid's Leadership",
 					"changes": [
 						{
-							"key": "system.attributes.hp.bonuses.overall",
+							"key": "system.attributes.hp.max",
 							"mode": "ADD",
 							"value": "+(5 * @srd5e.userchar.classes.druid.levels)"
 						}

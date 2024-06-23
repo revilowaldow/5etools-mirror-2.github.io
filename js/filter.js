@@ -5330,6 +5330,9 @@ class MultiFilter extends FilterBase {
 		if (!this.__$wrpFilter) return;
 		this.__$wrpFilter.toggleClass("fltr__hidden--search", numVisible === 0);
 	}
+
+	_doTeardown () { this._filters.forEach(it => it._doTeardown()); }
+	trimState_ () { this._filters.forEach(it => it.trimState_()); }
 }
 MultiFilter._DETAULT_STATE = {
 	mode: "and",

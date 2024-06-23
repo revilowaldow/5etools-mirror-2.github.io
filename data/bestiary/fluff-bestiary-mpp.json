@@ -1,4 +1,9 @@
 {
+	"_meta": {
+		"internalCopies": [
+			"monsterFluff"
+		]
+	},
 	"monsterFluff": [
 		{
 			"name": "Adult Time Dragon",
@@ -421,42 +426,36 @@
 		{
 			"name": "Decaton Modron",
 			"source": "MPP",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"The least of the hierarchs, decatons monitor the physical well-being of base modrons. Two stubby legs support their spherical bodies, and ten mechanical tentacles sprout out from their rounded frames in all directions. Their heads contain ten eyes to readily observe the operations of surrounding base modrons. In emergencies, a decaton can discharge a bolt of electricity from each of its ten eyes, synchronizing them to deadly effect."
-					]
-				},
-				{
-					"type": "section",
-					"entries": [
-						{
+			"_copy": {
+				"name": "Modrons",
+				"source": "MPP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
 							"type": "entries",
-							"name": "Modrons",
 							"entries": [
-								"Constructed on the plane of Mechanus, modrons are partially mechanical beings that belong to a strict hierarchy. Each modron dutifully obeys commands from the rank directly above it and in turn acts as the superior to the rank directly below it, passing down commands from paragons of law to the lowliest monodrone. While most modrons are the lower-ranked base modrons\u2014monodrones, duodrones, tridrones, quadrones, and pentadrones\u2014the upper-tier hierarch modrons hold leadership positions, maintaining order in Mechanus and the realms beyond. For more information on modrons, see the{@i Monster Manual}."
+								{
+									"type": "entries",
+									"entries": [
+										"The least of the hierarchs, decatons monitor the physical well-being of base modrons. Two stubby legs support their spherical bodies, and ten mechanical tentacles sprout out from their rounded frames in all directions. Their heads contain ten eyes to readily observe the operations of surrounding base modrons. In emergencies, a decaton can discharge a bolt of electricity from each of its ten eyes, synchronizing them to deadly effect."
+									]
+								}
 							]
 						}
-					]
-				}
-			],
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "bestiary/MPP/Decaton Modron.webp"
-					}
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "bestiary/MPP/Modrons.webp"
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": {
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "bestiary/MPP/Decaton Modron.webp"
+							}
+						}
 					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Doomguard Doom Lord",
@@ -841,42 +840,36 @@
 		{
 			"name": "Hexton Modron",
 			"source": "MPP",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"When the armies of Mechanus mobilize against the forces of chaos, hextons are the field generals who command modron troops. These hulking hierarchs lead groups of modrons in endeavors outside Mechanus, with the most notable example being the Great Modron March. Hextons have solid frames that bristle with six shining flanges. They boast a pair of arms and tentacles, both of which end in powerful pincers."
-					]
-				},
-				{
-					"type": "section",
-					"entries": [
-						{
+			"_copy": {
+				"name": "Modrons",
+				"source": "MPP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
 							"type": "entries",
-							"name": "Modrons",
 							"entries": [
-								"Constructed on the plane of Mechanus, modrons are partially mechanical beings that belong to a strict hierarchy. Each modron dutifully obeys commands from the rank directly above it and in turn acts as the superior to the rank directly below it, passing down commands from paragons of law to the lowliest monodrone. While most modrons are the lower-ranked base modrons\u2014monodrones, duodrones, tridrones, quadrones, and pentadrones\u2014the upper-tier hierarch modrons hold leadership positions, maintaining order in Mechanus and the realms beyond. For more information on modrons, see the{@i Monster Manual}."
+								{
+									"type": "entries",
+									"entries": [
+										"When the armies of Mechanus mobilize against the forces of chaos, hextons are the field generals who command modron troops. These hulking hierarchs lead groups of modrons in endeavors outside Mechanus, with the most notable example being the Great Modron March. Hextons have solid frames that bristle with six shining flanges. They boast a pair of arms and tentacles, both of which end in powerful pincers."
+									]
+								}
 							]
 						}
-					]
-				}
-			],
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "bestiary/MPP/Hexton Modron.webp"
-					}
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "bestiary/MPP/Modrons.webp"
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": {
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "bestiary/MPP/Hexton Modron.webp"
+							}
+						}
 					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Hound Archon",
@@ -1070,6 +1063,34 @@
 			]
 		},
 		{
+			"name": "Modrons",
+			"source": "MPP",
+			"entries": [
+				{
+					"type": "section",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Modrons",
+							"entries": [
+								"Constructed on the plane of Mechanus, modrons are partially mechanical beings that belong to a strict hierarchy. Each modron dutifully obeys commands from the rank directly above it and in turn acts as the superior to the rank directly below it, passing down commands from paragons of law to the lowliest monodrone. While most modrons are the lower-ranked base modrons\u2014monodrones, duodrones, tridrones, quadrones, and pentadrones\u2014the upper-tier hierarch modrons hold leadership positions, maintaining order in Mechanus and the realms beyond. For more information on modrons, see the{@i Monster Manual}."
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Modrons.webp"
+					},
+					"title": "Modrons"
+				}
+			]
+		},
+		{
 			"name": "Musteval Guardinal",
 			"source": "MPP",
 			"entries": [
@@ -1106,82 +1127,70 @@
 		{
 			"name": "Nonaton Modron",
 			"source": "MPP",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"When modrons act against the will of Primus, nonatons are charged with bringing those rogue units into line. These inspectors also interrogate captured trespassers of Mechanus. Nonatons have wormlike bodies studded with nine mechanical arms."
-					]
-				},
-				{
-					"type": "section",
-					"entries": [
-						{
+			"_copy": {
+				"name": "Modrons",
+				"source": "MPP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
 							"type": "entries",
-							"name": "Modrons",
 							"entries": [
-								"Constructed on the plane of Mechanus, modrons are partially mechanical beings that belong to a strict hierarchy. Each modron dutifully obeys commands from the rank directly above it and in turn acts as the superior to the rank directly below it, passing down commands from paragons of law to the lowliest monodrone. While most modrons are the lower-ranked base modrons\u2014monodrones, duodrones, tridrones, quadrones, and pentadrones\u2014the upper-tier hierarch modrons hold leadership positions, maintaining order in Mechanus and the realms beyond. For more information on modrons, see the{@i Monster Manual}."
+								{
+									"type": "entries",
+									"entries": [
+										"When modrons act against the will of Primus, nonatons are charged with bringing those rogue units into line. These inspectors also interrogate captured trespassers of Mechanus. Nonatons have wormlike bodies studded with nine mechanical arms."
+									]
+								}
 							]
 						}
-					]
-				}
-			],
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "bestiary/MPP/Nonaton Modron.webp"
-					}
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "bestiary/MPP/Modrons.webp"
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": {
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "bestiary/MPP/Nonaton Modron.webp"
+							}
+						}
 					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Octon Modron",
 			"source": "MPP",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"At the head of Mechanus's sectors are the octons, hierarch modrons that oversee daily governance. They provide data to other hierarchs, such as productivity reports to septons and diagnostic data to decatons. Octons have eight mechanical tentacles which they use to manipulate objects and defend themselves, spinning them in a bludgeoning whirlwind."
-					]
-				},
-				{
-					"type": "section",
-					"entries": [
-						{
+			"_copy": {
+				"name": "Modrons",
+				"source": "MPP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
 							"type": "entries",
-							"name": "Modrons",
 							"entries": [
-								"Constructed on the plane of Mechanus, modrons are partially mechanical beings that belong to a strict hierarchy. Each modron dutifully obeys commands from the rank directly above it and in turn acts as the superior to the rank directly below it, passing down commands from paragons of law to the lowliest monodrone. While most modrons are the lower-ranked base modrons\u2014monodrones, duodrones, tridrones, quadrones, and pentadrones\u2014the upper-tier hierarch modrons hold leadership positions, maintaining order in Mechanus and the realms beyond. For more information on modrons, see the{@i Monster Manual}."
+								{
+									"type": "entries",
+									"entries": [
+										"At the head of Mechanus's sectors are the octons, hierarch modrons that oversee daily governance. They provide data to other hierarchs, such as productivity reports to septons and diagnostic data to decatons. Octons have eight mechanical tentacles which they use to manipulate objects and defend themselves, spinning them in a bludgeoning whirlwind."
+									]
+								}
 							]
 						}
-					]
-				}
-			],
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "bestiary/MPP/Octon Modron.webp"
-					}
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "bestiary/MPP/Modrons.webp"
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": {
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "bestiary/MPP/Octon Modron.webp"
+							}
+						}
 					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Planar Incarnate",
@@ -1240,42 +1249,36 @@
 		{
 			"name": "Septon Modron",
 			"source": "MPP",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"Septons are auditors of base modrons in Mechanus, recording the activities in each of the plane's sectors to ensure operations are in perfect order. They are easily identified by their seven flexible limbs."
-					]
-				},
-				{
-					"type": "section",
-					"entries": [
-						{
+			"_copy": {
+				"name": "Modrons",
+				"source": "MPP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
 							"type": "entries",
-							"name": "Modrons",
 							"entries": [
-								"Constructed on the plane of Mechanus, modrons are partially mechanical beings that belong to a strict hierarchy. Each modron dutifully obeys commands from the rank directly above it and in turn acts as the superior to the rank directly below it, passing down commands from paragons of law to the lowliest monodrone. While most modrons are the lower-ranked base modrons\u2014monodrones, duodrones, tridrones, quadrones, and pentadrones\u2014the upper-tier hierarch modrons hold leadership positions, maintaining order in Mechanus and the realms beyond. For more information on modrons, see the{@i Monster Manual}."
+								{
+									"type": "entries",
+									"entries": [
+										"Septons are auditors of base modrons in Mechanus, recording the activities in each of the plane's sectors to ensure operations are in perfect order. They are easily identified by their seven flexible limbs."
+									]
+								}
 							]
 						}
-					]
-				}
-			],
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "bestiary/MPP/Septon Modron.webp"
-					}
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "bestiary/MPP/Modrons.webp"
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": {
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "bestiary/MPP/Septon Modron.webp"
+							}
+						}
 					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Shator Demodand",

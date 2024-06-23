@@ -1,6 +1,6 @@
 export class Counter {
 	static $getCounter (board, state) {
-		const $wrpPanel = $(`<div class="w-100 h-100 dm-cnt__root dm__panel-bg dm__data-anchor"/>`) // root class used to identify for saving
+		const $wrpPanel = $(`<div class="w-100 h-100 dm-cnt__root dm__panel-bg dm__data-anchor"></div>`) // root class used to identify for saving
 			.data("getState", () => counters.getSaveableState());
 		const counters = new CounterRoot(board, $wrpPanel);
 		counters.setStateFrom(state);
@@ -31,10 +31,10 @@ class CounterRoot extends CounterComponent {
 
 		const pod = this.getPod();
 
-		this._$wrpRows = $$`<div class="ve-flex-col w-100 h-100 ve-overflow-y-auto relative"/>`;
+		this._$wrpRows = $$`<div class="ve-flex-col w-100 h-100 ve-overflow-y-auto relative"></div>`;
 		this._childComps.forEach(it => it.render(this._$wrpRows, pod));
 
-		const $btnAdd = $(`<button class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-plus"/> Add Counter</button>`)
+		const $btnAdd = $(`<button class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-plus"></span> Add Counter</button>`)
 			.click(() => {
 				const comp = new CounterRow(this._board, this._$wrpPanel);
 				this._childComps.push(comp);
@@ -43,7 +43,7 @@ class CounterRoot extends CounterComponent {
 			});
 
 		$$`<div class="w-100 h-100 ve-flex-col px-2 pb-3">
-			<div class="no-shrink pt-4"/>
+			<div class="no-shrink pt-4"></div>
 			${this._$wrpRows}
 			<div class="no-shrink ve-flex-h-right">${$btnAdd}</div>
 		</div>`.appendTo($parent);
@@ -123,13 +123,13 @@ class CounterRow extends CounterComponent {
 		this._addHookBase("max", hookDisplayMinMax);
 		hookDisplayMinMax();
 
-		const $btnDown = $(`<button class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-minus"/></button>`)
+		const $btnDown = $(`<button class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-minus"></span></button>`)
 			.click(() => this._state.current--);
 
-		const $btnUp = $(`<button class="btn btn-success btn-xs"><span class="glyphicon glyphicon-plus"/></button>`)
+		const $btnUp = $(`<button class="btn btn-success btn-xs"><span class="glyphicon glyphicon-plus"></span></button>`)
 			.click(() => this._state.current++);
 
-		const $btnRemove = $(`<button class="btn btn-danger btn-xxs"><span class="glyphicon glyphicon-trash"/></button>`)
+		const $btnRemove = $(`<button class="btn btn-danger btn-xxs"><span class="glyphicon glyphicon-trash"></span></button>`)
 			.click(() => {
 				const {removeRow} = this._parent;
 				removeRow(this);

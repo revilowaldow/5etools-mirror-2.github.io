@@ -114,7 +114,8 @@
 							"grid": {
 								"type": "none"
 							},
-							"credit": "{@link Jared Blando|https://jaredblando.com/}"
+							"credit": "{@link Jared Blando|https://jaredblando.com/}",
+							"id": "332"
 						},
 						{
 							"type": "entries",
@@ -6424,7 +6425,8 @@
 								"offsetX": 27,
 								"offsetY": -5
 							},
-							"credit": "Jason Engle"
+							"credit": "Jason Engle",
+							"id": "333"
 						},
 						{
 							"type": "entries",
@@ -6917,7 +6919,8 @@
 												"offsetX": 10,
 												"offsetY": 22
 											},
-											"credit": "{@link Jared Blando|https://jaredblando.com/}"
+											"credit": "{@link Jared Blando|https://jaredblando.com/}",
+											"id": "334"
 										},
 										{
 											"type": "insetReadaloud",
@@ -10996,7 +10999,8 @@
 								"offsetX": 47,
 								"offsetY": 38
 							},
-							"credit": "Robert Lazzaretti"
+							"credit": "Robert Lazzaretti",
+							"id": "335"
 						},
 						{
 							"type": "entries",

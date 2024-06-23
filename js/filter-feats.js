@@ -2,12 +2,7 @@
 
 class PageFilterFeats extends PageFilter {
 	// region static
-	static _PREREQ_KEY_TO_FULL = {
-		"other": "Special",
-		"spellcasting2020": "Spellcasting",
-		"spellcastingFeature": "Spellcasting",
-		"spellcastingPrepared": "Spellcasting",
-	};
+	static _PREREQ_KEYs_OTHER_IGNORED = new Set(["level"]);
 	// endregion
 
 	constructor () {
@@ -32,7 +27,7 @@ class PageFilterFeats extends PageFilter {
 		});
 		this._otherPrereqFilter = new Filter({
 			header: "Other",
-			items: ["Ability", "Race", "Psionics", "Proficiency", "Special", "Spellcasting"],
+			items: [...FilterCommon.PREREQ_FILTER_ITEMS],
 		});
 		this._levelFilter = new Filter({
 			header: "Level",
@@ -64,9 +59,12 @@ class PageFilterFeats extends PageFilter {
 
 		const prereqText = Renderer.utils.prerequisite.getHtml(feat.prerequisite, {isListMode: true}) || VeCt.STR_NONE;
 
-		feat._fPrereqOther = [...new Set((feat.prerequisite || []).flatMap(it => Object.keys(it)))]
-			.map(it => (this._PREREQ_KEY_TO_FULL[it] || it).uppercaseFirst());
-		if (feat.prerequisite) feat._fPrereqLevel = feat.prerequisite.filter(it => it.level != null).map(it => `Level ${it.level.level ?? it.level}`);
+		feat._fPrereqOther = FilterCommon.getFilterValuesPrerequisite(feat.prerequisite, {ignoredKeys: this._PREREQ_KEYs_OTHER_IGNORED});
+		feat._fPrereqLevel = feat.prerequisite
+			? feat.prerequisite
+				.filter(it => it.level != null)
+				.map(it => `Level ${it.level.level ?? it.level}`)
+			: [];
 		feat._fBenifits = [
 			feat.resist ? "Damage Resistance" : null,
 			feat.immune ? "Damage Immunity" : null,
@@ -102,7 +100,8 @@ class PageFilterFeats extends PageFilter {
 
 		this._sourceFilter.addItem(feat.source);
 		this._categoryFilter.addItem(feat.category);
-		if (feat.prerequisite) this._levelFilter.addItem(feat._fPrereqLevel);
+		this._levelFilter.addItem(feat._fPrereqLevel);
+		this._otherPrereqFilter.addItem(feat._fPrereqOther);
 		this._vulnerableFilter.addItem(feat._fVuln);
 		this._resistFilter.addItem(feat._fRes);
 		this._immuneFilter.addItem(feat._fImm);

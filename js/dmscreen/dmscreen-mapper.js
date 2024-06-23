@@ -1,6 +1,6 @@
 export class DmMapper {
 	static $getMapper (board, state) {
-		const $wrpPanel = $(`<div class="w-100 h-100 dm-map__root dm__panel-bg dm__data-anchor"/>`) // root class used to identify for saving
+		const $wrpPanel = $(`<div class="w-100 h-100 dm-map__root dm__panel-bg dm__data-anchor"></div>`) // root class used to identify for saving
 			.data("getState", () => mapper.getSaveableState());
 		const mapper = new DmMapperRoot(board, $wrpPanel);
 		mapper.setStateFrom(state);

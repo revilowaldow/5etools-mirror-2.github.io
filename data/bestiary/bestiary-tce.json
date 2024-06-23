@@ -118,7 +118,141 @@
 			"miscTags": [
 				"MW"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"_versions": [
+				{
+					"name": "Aberrant Spirit (Beholderkin)",
+					"source": "TCE",
+					"_mod": {
+						"action": [
+							{
+								"mode": "removeArr",
+								"names": [
+									"Claws (Slaad Only)",
+									"Psychic Slam (Star Spawn Only)"
+								]
+							},
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Eye Ray (Beholderkin Only)",
+									"with": "Eye Ray"
+								}
+							}
+						]
+					},
+					"speed": {
+						"walk": 30,
+						"fly": {
+							"number": 30,
+							"condition": "(hover)"
+						},
+						"canHover": true
+					},
+					"trait": null,
+					"traitTags": null,
+					"damageTags": [
+						"Y"
+					],
+					"miscTags": null
+				},
+				{
+					"name": "Aberrant Spirit (Slaad)",
+					"source": "TCE",
+					"_mod": {
+						"trait": [
+							{
+								"mode": "removeArr",
+								"names": [
+									"Whispering Aura (Star Spawn Only)"
+								]
+							},
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Regeneration (Slaad Only)",
+									"with": "Regeneration"
+								}
+							}
+						],
+						"action": [
+							{
+								"mode": "removeArr",
+								"names": [
+									"Eye Ray (Beholderkin Only)",
+									"Psychic Slam (Star Spawn Only)"
+								]
+							},
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Claws (Slaad Only)",
+									"with": "Claws"
+								}
+							}
+						]
+					},
+					"speed": {
+						"walk": 30
+					},
+					"traitTags": [
+						"Regeneration"
+					],
+					"damageTags": [
+						"S"
+					],
+					"miscTags": [
+						"MW"
+					]
+				},
+				{
+					"name": "Aberrant Spirit (Star Spawn)",
+					"source": "TCE",
+					"_mod": {
+						"trait": [
+							{
+								"mode": "removeArr",
+								"names": [
+									"Regeneration (Slaad Only)"
+								]
+							},
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Whispering Aura (Star Spawn Only)",
+									"with": "Whispering Aura"
+								}
+							}
+						],
+						"action": [
+							{
+								"mode": "removeArr",
+								"names": [
+									"Eye Ray (Beholderkin Only)",
+									"Claws (Slaad Only)"
+								]
+							},
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Psychic Slam (Star Spawn Only)",
+									"with": "Psychic Slam"
+								}
+							}
+						]
+					},
+					"speed": {
+						"walk": 30
+					},
+					"traitTags": [
+						"Regeneration"
+					],
+					"damageTags": [
+						"Y"
+					],
+					"miscTags": null
+				}
+			]
 		},
 		{
 			"name": "Adult Red Dracolich",
@@ -457,9 +591,6 @@
 					]
 				}
 			],
-			"attachedItems": [
-				"maul|phb"
-			],
 			"traitTags": [
 				"Flyby",
 				"Pack Tactics",
@@ -478,7 +609,105 @@
 				"MLW",
 				"MW"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"_versions": [
+				{
+					"name": "Bestial Spirit (Air)",
+					"source": "TCE",
+					"_mod": {
+						"trait": [
+							{
+								"mode": "removeArr",
+								"names": [
+									"Water Breathing (Water Only)",
+									"Pack Tactics (Land and Water Only)"
+								]
+							},
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Flyby (Air Only)",
+									"with": "Flyby"
+								}
+							}
+						]
+					},
+					"hp": {
+						"special": "20 + 5 for each spell level above 2nd"
+					},
+					"speed": {
+						"walk": 30,
+						"fly": 60
+					},
+					"traitTags": [
+						"Flyby"
+					]
+				},
+				{
+					"name": "Bestial Spirit (Land)",
+					"source": "TCE",
+					"_mod": {
+						"trait": [
+							{
+								"mode": "removeArr",
+								"names": [
+									"Water Breathing (Water Only)",
+									"Flyby (Air Only)"
+								]
+							},
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Pack Tactics (Land and Water Only)",
+									"with": "Pack Tactics"
+								}
+							}
+						]
+					},
+					"hp": {
+						"special": "30 + 5 for each spell level above 2nd"
+					},
+					"speed": {
+						"walk": 30,
+						"climb": 30
+					},
+					"traitTags": [
+						"Pack Tactics"
+					]
+				},
+				{
+					"name": "Bestial Spirit (Water)",
+					"source": "TCE",
+					"_mod": {
+						"trait": [
+							{
+								"mode": "removeArr",
+								"names": [
+									"Flyby (Air Only)"
+								]
+							},
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Pack Tactics (Land and Water Only)",
+									"with": "Pack Tactics"
+								}
+							}
+						]
+					},
+					"hp": {
+						"special": "30 + 5 for each spell level above 2nd"
+					},
+					"speed": {
+						"walk": 30,
+						"swim": 30
+					},
+					"traitTags": [
+						"Pack Tactics",
+						"Water Breathing"
+					]
+				}
+			]
 		},
 		{
 			"name": "Celestial Spirit",
@@ -569,7 +798,64 @@
 				"MW",
 				"RW"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"_versions": [
+				{
+					"name": "Celestial Spirit (Avenger)",
+					"source": "TCE",
+					"_mod": {
+						"action": [
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Radiant Bow (Avenger Only)",
+									"with": "Radiant Bow"
+								}
+							},
+							{
+								"mode": "removeArr",
+								"names": "Radiant Mace (Defender Only)"
+							}
+						]
+					},
+					"ac": [
+						{
+							"special": "11 + the level of the spell (natural armor)"
+						}
+					],
+					"miscTags": [
+						"RW"
+					]
+				},
+				{
+					"name": "Celestial Spirit (Defender)",
+					"source": "TCE",
+					"_mod": {
+						"action": [
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Radiant Mace (Defender Only)",
+									"with": "Radiant Mace"
+								}
+							},
+							{
+								"mode": "removeArr",
+								"names": "Radiant Bow (Avenger Only)"
+							}
+						]
+					},
+					"ac": [
+						{
+							"special": "13 + the level of the spell (natural armor)"
+						}
+					],
+					"miscTags": [
+						"MLW",
+						"MW"
+					]
+				}
+			]
 		},
 		{
 			"name": "Construct Spirit",
@@ -669,7 +955,71 @@
 			"miscTags": [
 				"MW"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"_versions": [
+				{
+					"name": "Construct Spirit (Clay)",
+					"source": "TCE",
+					"_mod": {
+						"reaction": [
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Berserk Lashing (Clay Only)",
+									"with": "Berserk Lashing"
+								}
+							}
+						]
+					},
+					"trait": null,
+					"damageTags": [
+						"B"
+					]
+				},
+				{
+					"name": "Construct Spirit (Metal)",
+					"source": "TCE",
+					"_mod": {
+						"trait": [
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Heated Body (Metal Only)",
+									"with": "Heated Body"
+								}
+							},
+							{
+								"mode": "removeArr",
+								"names": "Stony Lethargy (Stone Only)"
+							}
+						]
+					},
+					"reaction": null
+				},
+				{
+					"name": "Construct Spirit (Stone)",
+					"source": "TCE",
+					"_mod": {
+						"trait": [
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Stony Lethargy (Stone Only)",
+									"with": "Stony Lethargy"
+								}
+							},
+							{
+								"mode": "removeArr",
+								"names": "Heated Body (Metal Only)"
+							}
+						]
+					},
+					"reaction": null,
+					"damageTags": [
+						"B"
+					]
+				}
+			]
 		},
 		{
 			"name": "Dancing Item",
@@ -787,7 +1137,7 @@
 				"walk": 40,
 				"fly": {
 					"number": 40,
-					"condition": "(air only hover)"
+					"condition": "(air only; hover)"
 				},
 				"burrow": {
 					"number": 40,
@@ -896,7 +1246,156 @@
 			"miscTags": [
 				"MW"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"_versions": [
+				{
+					"name": "Elemental Spirit (Air)",
+					"source": "TCE",
+					"_mod": {
+						"trait": [
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Amorphous Form (Air, Fire, and Water Only)",
+									"with": "Amorphous Form"
+								}
+							}
+						],
+						"action": {
+							"mode": "replaceArr",
+							"replace": "Slam",
+							"items": {
+								"name": "Slam",
+								"entries": [
+									"{@atk mw} {@hitYourSpellAttack} to hit, reach 5 ft., one target. {@h}{@damage 1d10 + 4 + summonSpellLevel} bludgeoning damage."
+								]
+							}
+						}
+					},
+					"speed": {
+						"walk": 40,
+						"fly": {
+							"number": 40,
+							"condition": "(hover)"
+						},
+						"canHover": true
+					},
+					"resist": [
+						"lightning",
+						"thunder"
+					],
+					"immune": [
+						"poison"
+					],
+					"damageTags": [
+						"B"
+					]
+				},
+				{
+					"name": "Elemental Spirit (Earth)",
+					"source": "TCE",
+					"_mod": {
+						"action": {
+							"mode": "replaceArr",
+							"replace": "Slam",
+							"items": {
+								"name": "Slam",
+								"entries": [
+									"{@atk mw} {@hitYourSpellAttack} to hit, reach 5 ft., one target. {@h}{@damage 1d10 + 4 + summonSpellLevel} bludgeoning damage."
+								]
+							}
+						}
+					},
+					"speed": {
+						"walk": 40,
+						"burrow": 40
+					},
+					"resist": [
+						"piercing",
+						"slashing"
+					],
+					"immune": [
+						"poison"
+					],
+					"trait": null,
+					"damageTags": [
+						"B"
+					]
+				},
+				{
+					"name": "Elemental Spirit (Fire)",
+					"source": "TCE",
+					"_mod": {
+						"trait": [
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Amorphous Form (Air, Fire, and Water Only)",
+									"with": "Amorphous Form"
+								}
+							}
+						],
+						"action": {
+							"mode": "replaceArr",
+							"replace": "Slam",
+							"items": {
+								"name": "Slam",
+								"entries": [
+									"{@atk mw} {@hitYourSpellAttack} to hit, reach 5 ft., one target. {@h}{@damage 1d10 + 4 + summonSpellLevel} fire damage."
+								]
+							}
+						}
+					},
+					"speed": {
+						"walk": 40
+					},
+					"immune": [
+						"poison",
+						"fire"
+					],
+					"damageTags": [
+						"F"
+					]
+				},
+				{
+					"name": "Elemental Spirit (Water)",
+					"source": "TCE",
+					"_mod": {
+						"trait": [
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Amorphous Form (Air, Fire, and Water Only)",
+									"with": "Amorphous Form"
+								}
+							}
+						],
+						"action": {
+							"mode": "replaceArr",
+							"replace": "Slam",
+							"items": {
+								"name": "Slam",
+								"entries": [
+									"{@atk mw} {@hitYourSpellAttack} to hit, reach 5 ft., one target. {@h}{@damage 1d10 + 4 + summonSpellLevel} bludgeoning damage."
+								]
+							}
+						}
+					},
+					"speed": {
+						"walk": 40,
+						"swim": 40
+					},
+					"resist": [
+						"acid"
+					],
+					"immune": [
+						"poison"
+					],
+					"damageTags": [
+						"B"
+					]
+				}
+			]
 		},
 		{
 			"name": "Fey Spirit",
@@ -1006,7 +1505,45 @@
 			"conditionInflict": [
 				"charmed"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"_versions": [
+				{
+					"name": "Fey Spirit (Fuming)",
+					"source": "TCE",
+					"bonus": [
+						{
+							"name": "Fey Step",
+							"entries": [
+								"The fey magically teleports up to 30 feet to an unoccupied space it can see. The fey has advantage on the next attack roll it makes before the end of this turn."
+							]
+						}
+					]
+				},
+				{
+					"name": "Fey Spirit (Mirthful)",
+					"source": "TCE",
+					"bonus": [
+						{
+							"name": "Fey Step",
+							"entries": [
+								"The fey magically teleports up to 30 feet to an unoccupied space it can see. The fey can force one creature it can see within 10 feet of it to make a Wisdom saving throw against your spell save DC. Unless the save succeeds, the target is {@condition charmed} by you and the fey for 1 minute or until the target takes any damage."
+							]
+						}
+					]
+				},
+				{
+					"name": "Fey Spirit (Tricksy)",
+					"source": "TCE",
+					"bonus": [
+						{
+							"name": "Fey Step",
+							"entries": [
+								"The fey magically teleports up to 30 feet to an unoccupied space it can see. The fey can fill a 5-foot cube within 5 feet of it with magical darkness, which lasts until the end of its next turn."
+							]
+						}
+					]
+				}
+			]
 		},
 		{
 			"name": "Fiendish Spirit",
@@ -1134,7 +1671,150 @@
 			"miscTags": [
 				"MW"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"_versions": [
+				{
+					"name": "Fiendish Spirit (Demon)",
+					"source": "TCE",
+					"_mod": {
+						"trait": [
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Death Throes (Demon Only)",
+									"with": "Death Throes"
+								}
+							},
+							{
+								"mode": "removeArr",
+								"names": "Devil's Sight (Devil Only)"
+							}
+						],
+						"action": [
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Bite (Demon Only)",
+									"with": "Bite"
+								}
+							},
+							{
+								"mode": "removeArr",
+								"names": [
+									"Claws (Yugoloth Only)",
+									"Hurl Flame (Devil Only)"
+								]
+							}
+						]
+					},
+					"hp": {
+						"special": "50 + 15 for each spell level above 6th"
+					},
+					"speed": {
+						"walk": 40,
+						"climb": 40
+					},
+					"traitTags": [
+						"Death Burst",
+						"Magic Resistance"
+					],
+					"damageTags": [
+						"F"
+					]
+				},
+				{
+					"name": "Fiendish Spirit (Devil)",
+					"source": "TCE",
+					"_mod": {
+						"trait": [
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Devil's Sight (Devil Only)",
+									"with": "Devil's Sight"
+								}
+							},
+							{
+								"mode": "removeArr",
+								"names": "Death Throes (Demon Only)"
+							}
+						],
+						"action": [
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Hurl Flame (Devil Only)",
+									"with": "Hurl Flame"
+								}
+							},
+							{
+								"mode": "removeArr",
+								"names": [
+									"Bite (Demon Only)",
+									"Claws (Yugoloth Only)"
+								]
+							}
+						]
+					},
+					"hp": {
+						"special": "40 + 15 for each spell level above 6th"
+					},
+					"speed": {
+						"walk": 40,
+						"fly": 60
+					},
+					"traitTags": [
+						"Devil's Sight",
+						"Magic Resistance"
+					],
+					"damageTags": [
+						"N"
+					]
+				},
+				{
+					"name": "Fiendish Spirit (Yugoloth)",
+					"source": "TCE",
+					"_mod": {
+						"trait": [
+							{
+								"mode": "removeArr",
+								"names": [
+									"Death Throes (Demon Only)",
+									"Devil's Sight (Devil Only)"
+								]
+							}
+						],
+						"action": [
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Claws (Yugoloth Only)",
+									"with": "Claws"
+								}
+							},
+							{
+								"mode": "removeArr",
+								"names": [
+									"Bite (Demon Only)",
+									"Hurl Flame (Devil Only)"
+								]
+							}
+						]
+					},
+					"hp": {
+						"special": "60 + 15 for each spell level above 6th"
+					},
+					"speed": {
+						"walk": 40
+					},
+					"traitTags": [
+						"Magic Resistance"
+					],
+					"damageTags": [
+						"F"
+					]
+				}
+			]
 		},
 		{
 			"name": "Homunculus Servant",
@@ -1623,7 +2303,65 @@
 				"frightened"
 			],
 			"hasToken": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"_versions": [
+				{
+					"name": "Shadow Spirit (Despair)",
+					"source": "TCE",
+					"_mod": {
+						"trait": [
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Weight of Sorrow (Despair Only)",
+									"with": "Weight of Sorrow"
+								}
+							},
+							{
+								"mode": "removeArr",
+								"names": "Terror Frenzy (Fury Only)"
+							}
+						]
+					},
+					"bonus": null
+				},
+				{
+					"name": "Shadow Spirit (Fear)",
+					"source": "TCE",
+					"_mod": {
+						"bonus": [
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Shadow Stealth (Fear Only)",
+									"with": "Shadow Stealth"
+								}
+							}
+						]
+					},
+					"trait": null
+				},
+				{
+					"name": "Shadow Spirit (Fury)",
+					"source": "TCE",
+					"_mod": {
+						"trait": [
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Terror Frenzy (Fury Only)",
+									"with": "Terror Frenzy"
+								}
+							},
+							{
+								"mode": "removeArr",
+								"names": "Weight of Sorrow (Despair Only)"
+							}
+						]
+					},
+					"bonus": null
+				}
+			]
 		},
 		{
 			"name": "Steel Defender",
@@ -1844,7 +2582,145 @@
 				"paralyzed",
 				"poisoned"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"_versions": [
+				{
+					"name": "Undead Spirit (Ghostly)",
+					"source": "TCE",
+					"_mod": {
+						"trait": [
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Incorporeal Passage (Ghostly Only)",
+									"with": "Incorporeal Passage"
+								}
+							},
+							{
+								"mode": "removeArr",
+								"names": "Festering Aura (Putrid Only)"
+							}
+						],
+						"action": [
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Deathly Touch (Ghostly Only)",
+									"with": "Deathly Touch"
+								}
+							},
+							{
+								"mode": "removeArr",
+								"names": [
+									"Grave Bolt (Skeletal Only)",
+									"Rotting Claw (Putrid Only)"
+								]
+							}
+						]
+					},
+					"hp": {
+						"special": "30 + 10 for each spell level above 3rd"
+					},
+					"speed": {
+						"walk": 30,
+						"fly": {
+							"number": 40,
+							"condition": "(hover)"
+						},
+						"canHover": true
+					},
+					"damageTags": [
+						"N"
+					],
+					"conditionInflict": [
+						"frightened"
+					]
+				},
+				{
+					"name": "Undead Spirit (Putrid)",
+					"source": "TCE",
+					"_mod": {
+						"trait": [
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Festering Aura (Putrid Only)",
+									"with": "Festering Aura"
+								}
+							},
+							{
+								"mode": "removeArr",
+								"names": "Incorporeal Passage (Ghostly Only)"
+							}
+						],
+						"action": [
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Rotting Claw (Putrid Only)",
+									"with": "Rotting Claw"
+								}
+							},
+							{
+								"mode": "removeArr",
+								"names": [
+									"Deathly Touch (Ghostly Only)",
+									"Grave Bolt (Skeletal Only)"
+								]
+							}
+						]
+					},
+					"hp": {
+						"special": "30 + 10 for each spell level above 3rd"
+					},
+					"speed": {
+						"walk": 30
+					},
+					"traitTags": null,
+					"damageTags": [
+						"O",
+						"S"
+					],
+					"conditionInflict": [
+						"paralyzed",
+						"poisoned"
+					]
+				},
+				{
+					"name": "Undead Spirit (Skeletal)",
+					"source": "TCE",
+					"_mod": {
+						"action": [
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Grave Bolt (Skeletal Only)",
+									"with": "Grave Bolt"
+								}
+							},
+							{
+								"mode": "removeArr",
+								"names": [
+									"Deathly Touch (Ghostly Only)",
+									"Rotting Claw (Putrid Only)"
+								]
+							}
+						]
+					},
+					"hp": {
+						"special": "20 + 10 for each spell level above 3rd"
+					},
+					"speed": {
+						"walk": 30
+					},
+					"trait": null,
+					"traitTags": null,
+					"damageTags": [
+						"N"
+					],
+					"conditionInflict": null
+				}
+			]
 		},
 		{
 			"name": "Wildfire Spirit",

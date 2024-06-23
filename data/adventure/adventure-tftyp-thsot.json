@@ -2784,7 +2784,10 @@
 											},
 											"mapParent": {
 												"id": "171",
-												"autoScale": true
+												"offsetX": 74,
+												"offsetY": -34,
+												"scaleX": 0.2425,
+												"scaleY": 0.2425
 											},
 											"width": 11873,
 											"height": 8370

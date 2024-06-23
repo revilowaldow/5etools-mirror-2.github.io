@@ -36,7 +36,7 @@ class RenderItems {
 				<td class="text-right" colspan="4">${textRight}</td>
 			</tr>` : `<tr><td colspan="6" class="${textRight ? "text-right" : ""}">${textLeft || textRight}</td></tr>`}
 
-			${renderedText ? `<tr><td class="divider" colspan="6"><div/></td></tr>
+			${renderedText ? `<tr><td class="divider" colspan="6"><div></div></td></tr>
 			<tr class="text"><td colspan="6">${renderedText}</td></tr>` : ""}
 			${Renderer.utils.getPageTr(item, {tag: "item", fnUnpackUid: (uid) => DataUtil.proxy.unpackUid("item", uid, "item")})}
 			${Renderer.utils.getBorderTr()}

@@ -272,7 +272,13 @@ class MapsPage extends BaseComponent {
 	}
 
 	_getSearchName ({sourceMeta}) {
-		return this._getTitleName({sourceMeta}).toLowerCase().trim();
+		return [
+			this._getTitleName({sourceMeta}),
+			Parser.sourceJsonToAbv(sourceMeta.source),
+		]
+			.join(" - ")
+			.toLowerCase()
+			.trim();
 	}
 
 	_isVisibleSourceSearch ({searchName}) { return searchName.includes(this._state.search.trim().toLowerCase()); }

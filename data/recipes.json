@@ -8848,7 +8848,7 @@
 			"dishTypes": [
 				"drink"
 			],
-			"diet": "V",
+			"diet": "C",
 			"serves": {
 				"exact": 4
 			},
@@ -10960,7 +10960,7 @@
 			"dishTypes": [
 				"entree"
 			],
-			"diet": "V",
+			"diet": "C",
 			"allergenGroups": [
 				"soya",
 				"sulphites",
@@ -12453,7 +12453,7 @@
 			"source": "HFFotM",
 			"page": 63,
 			"type": "The Rock of Bral",
-			"diet": "V",
+			"diet": "C",
 			"allergenGroups": [
 				"sulphites"
 			],

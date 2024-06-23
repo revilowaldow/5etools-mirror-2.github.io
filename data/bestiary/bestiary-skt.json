@@ -7838,50 +7838,9 @@
 				"Common",
 				"Giant"
 			],
-			"spellcasting": [
-				{
-					"name": "Innate Spellcasting",
-					"type": "spellcasting",
-					"headerEntries": [
-						"The giant's innate spellcasting ability is Charisma. It can innately cast the following spells, requiring no material components:"
-					],
-					"will": [
-						"{@spell detect magic}",
-						"{@spell fog cloud}",
-						"{@spell light}"
-					],
-					"daily": {
-						"3e": [
-							"{@spell feather fall}",
-							"{@spell fly}",
-							"{@spell misty step}",
-							"{@spell telekinesis}"
-						],
-						"1e": [
-							"{@spell control weather}",
-							"{@spell gaseous form}"
-						]
-					},
-					"ability": "cha"
-				}
-			],
-			"trait": [
-				{
-					"name": "Keen Smell",
-					"entries": [
-						"The giant has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
-					]
-				}
-			],
-			"traitTags": [
-				"Keen Senses"
-			],
 			"languageTags": [
 				"C",
 				"GI"
-			],
-			"spellcastingTags": [
-				"I"
 			],
 			"hasToken": true
 		},

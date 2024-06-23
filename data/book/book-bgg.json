@@ -4840,7 +4840,8 @@
 										"offsetX": -81,
 										"scale": 3,
 										"distance": 10
-									}
+									},
+									"id": "023"
 								},
 								"The mound around the stone fingers has been smoothed to a circular plateau. Giant-sized shelters are carved into the sides of the plateau, and several free-standing structures made of fitted stones surround the mound. Map 4.3 depicts Dreamer's Reach, including the following features:",
 								{
@@ -4975,7 +4976,8 @@
 										"offsetY": -48,
 										"scale": 3,
 										"distance": 10
-									}
+									},
+									"id": "024"
 								},
 								"The Endless Rockslide plunges down the mountainside with tremendous force and thunderous sound. Creatures within 100 feet of the earth slide make ability checks that require hearing with disadvantage. A creature that starts its turn in the rockslide must make a DC 20 Strength saving throw. On a failed save, the creature descends 200 feet and takes 33 ({@dice 6d10}) bludgeoning damage. On a successful save, it takes half as much damage and can grab a stable handhold within reach to avoid descending. After descending 1,000 feet from the rockslide's origin, the creature passes through a permanent portal to the Plane of Earth. A creature with a burrow speed can use that speed to move in the slide, has advantage on the saving throw, and takes half damage on a failed save and no damage on a successful save. A creature with the Earth Glide trait automatically succeeds on the saving throw. The source of the slide is also a permanent portal to the Plane of Earth.",
 								"Map 4.4 shows the following features surrounding the Endless Rockslide:",
@@ -5110,7 +5112,8 @@
 										"offsetY": -20,
 										"scale": 3,
 										"distance": 10
-									}
+									},
+									"id": "025"
 								},
 								"Map 4.5 depicts the forest crystal and its surrounding glade, including the following features:",
 								{
@@ -5409,7 +5412,8 @@
 										"offsetY": 112,
 										"scale": 3,
 										"distance": 10
-									}
+									},
+									"id": "026"
 								},
 								"Map 4.7 depicts Gale's Eye Tower, including the following features:",
 								{
@@ -5544,7 +5548,8 @@
 										"offsetY": 84,
 										"scale": 3,
 										"distance": 10
-									}
+									},
+									"id": "027"
 								},
 								"Map 4.8 depicts Grolantor's Larder, including the following features:",
 								{
@@ -5860,7 +5865,8 @@
 										"offsetY": 47,
 										"scale": 3,
 										"distance": 10
-									}
+									},
+									"id": "03c"
 								},
 								"Map 4.10 depicts Horizon's Edge, including the following features:",
 								{
@@ -6325,7 +6331,8 @@
 										"offsetY": -106,
 										"scale": 3,
 										"distance": 10
-									}
+									},
+									"id": "03d"
 								},
 								"Map 4.13 shows the Misty Vale, including the following features:",
 								{
@@ -6456,7 +6463,8 @@
 										"offsetY": -58,
 										"scale": 3,
 										"distance": 10
-									}
+									},
+									"id": "03e"
 								},
 								"Map 4.14 depicts the Runic Circle, including the following features:",
 								{
@@ -6725,7 +6733,8 @@
 										"offsetY": -1,
 										"scale": 3,
 										"distance": 10
-									}
+									},
+									"id": "03f"
 								},
 								"Map 4.16 shows the Star Forge, including the following features:",
 								{
@@ -6890,7 +6899,8 @@
 										"offsetY": 143,
 										"scale": 3,
 										"distance": 10
-									}
+									},
+									"id": "040"
 								},
 								"Map 4.17 depicts the Thundering Observatory, including the following features:",
 								{
@@ -7023,7 +7033,8 @@
 										"offsetY": 107,
 										"scale": 3,
 										"distance": 10
-									}
+									},
+									"id": "041"
 								},
 								"Map 4.18 depicts the Worldroot Sapling, including the following features:",
 								{

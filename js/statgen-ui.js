@@ -204,9 +204,12 @@ class StatGenUi extends BaseComponent {
 		};
 	}
 
-	_roll_getRolledStats () {
+	async _roll_pGetRolledStats () {
 		const wrpTree = Renderer.dice.lang.getTree3(this._state.rolled_formula);
-		if (!wrpTree) return this._$rollIptFormula.addClass("form-control--error");
+		if (!wrpTree) {
+			this._$rollIptFormula.addClass("form-control--error");
+			return;
+		}
 
 		const rolls = [];
 		for (let i = 0; i < this._state.rolled_rollCount; i++) {
@@ -287,9 +290,15 @@ class StatGenUi extends BaseComponent {
 			})
 			.change(() => this._$rollIptFormula.removeClass("form-control--error"));
 
+		const lockRoll = new VeLock();
 		const $btnRoll = $(`<button class="btn btn-primary bold">Roll</button>`)
-			.click(() => {
-				this._state.rolled_rolls = this._roll_getRolledStats();
+			.click(async () => {
+				try {
+					await lockRoll.pLock();
+					this._state.rolled_rolls = await this._roll_pGetRolledStats();
+				} finally {
+					lockRoll.unlock();
+				}
 			});
 
 		const $btnRandom = $(`<button class="btn btn-xs btn-default mt-2">Randomly Assign</button>`)
@@ -723,7 +732,7 @@ class StatGenUi extends BaseComponent {
 					};
 					this._proxyAssignSimple("state", nxtState);
 				});
-			$(`<option/>`, {value: -1, text: "\u2014"}).appendTo($selRolled);
+			$(`<option></option>`, {value: -1, text: "\u2014"}).appendTo($selRolled);
 
 			let $optionsRolled = [];
 			const hkRolls = () => {
@@ -731,7 +740,7 @@ class StatGenUi extends BaseComponent {
 
 				this._state.rolled_rolls.forEach((it, i) => {
 					const cntPrevRolls = this._state.rolled_rolls.slice(0, i).filter(r => r.total === it.total).length;
-					const $opt = $(`<option/>`, {value: i, text: `${it.total}${cntPrevRolls ? Parser.numberToSubscript(cntPrevRolls) : ""}`}).appendTo($selRolled);
+					const $opt = $(`<option></option>`, {value: i, text: `${it.total}${cntPrevRolls ? Parser.numberToSubscript(cntPrevRolls) : ""}`}).appendTo($selRolled);
 					$optionsRolled.push($opt);
 				});
 
@@ -769,9 +778,9 @@ class StatGenUi extends BaseComponent {
 					};
 					this._proxyAssignSimple("state", nxtState);
 				});
-			$(`<option/>`, {value: -1, text: "\u2014"}).appendTo($selArray);
+			$(`<option></option>`, {value: -1, text: "\u2014"}).appendTo($selArray);
 
-			StatGenUi._STANDARD_ARRAY.forEach((it, i) => $(`<option/>`, {value: i, text: it}).appendTo($selArray));
+			StatGenUi._STANDARD_ARRAY.forEach((it, i) => $(`<option></option>`, {value: i, text: it}).appendTo($selArray));
 
 			const hookIxArray = () => {
 				const ix = this._state[propAbilSelectedScoreIx] == null ? -1 : this._state[propAbilSelectedScoreIx];
@@ -972,7 +981,7 @@ class StatGenUi extends BaseComponent {
 			this._parent._addHookBase(this._propIxAbilityScoreSet, hkIxEntity);
 			hkIxEntity();
 
-			const {$wrp: $selEntity, fnUpdateHidden: fnUpdateSelEntityHidden} = ComponentUiUtil.$getSelSearchable(
+			const {$wrp: $selEntity, setFnFilter: setFnFilterEntity} = ComponentUiUtil.$getSelSearchable(
 				this._parent,
 				this._propIxEntity,
 				{
@@ -989,8 +998,12 @@ class StatGenUi extends BaseComponent {
 
 			const doApplyFilterToSelEntity = () => {
 				const f = this._parent[this._propModalFilter].pageFilter.filterBox.getValues();
-				const isHiddenPerEntity = this._parent[this._propData].map(it => !this._parent[this._propModalFilter].pageFilter.toDisplay(f, it));
-				fnUpdateSelEntityHidden(isHiddenPerEntity, false);
+				setFnFilterEntity(value => {
+					if (value == null) return true;
+
+					const ent = this._parent[this._propData][value];
+					return this._parent[this._propModalFilter].pageFilter.toDisplay(f, ent);
+				});
 			};
 
 			this._parent[this._propModalFilter].pageFilter.filterBox.on(FilterBox.EVNT_VALCHANGE, () => doApplyFilterToSelEntity());
@@ -1041,9 +1054,14 @@ class StatGenUi extends BaseComponent {
 			const hkSetValuesSelAbilitySet = () => {
 				const entity = this._parent[this._propEntity];
 				$stgAbilityScoreSet.toggleVe(!!entity && entity.ability?.length > 1);
+
+				// Set to empty array between real sets, as otherwise two matching sets of list indices
+				//   will be considered "the same list," even though their display will ultimately be different.
+				// Using a blank list here forces any real list to cause a refresh.
+				setValuesSelAbilitySet([]);
+
 				setValuesSelAbilitySet(
 					[...new Array(entity?.ability?.length || 0)].map((_, ix) => ix),
-					{isForce: true},
 				);
 			};
 			this._parent._addHookBase(this._propIxEntity, hkSetValuesSelAbilitySet);

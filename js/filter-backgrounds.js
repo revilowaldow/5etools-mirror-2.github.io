@@ -13,15 +13,12 @@ class PageFilterBackgrounds extends PageFilter {
 		super();
 
 		this._skillFilter = new Filter({header: "Skill Proficiencies", displayFn: StrUtil.toTitleCase});
-		this._toolFilter = new Filter({header: "Tool Proficiencies", displayFn: PageFilterBackgrounds._getToolDisplayText.bind(PageFilterBackgrounds)});
-		this._languageFilter = new Filter({
-			header: "Language Proficiencies",
-			displayFn: it => it === "anyStandard"
-				? "Any Standard"
-				: it === "anyExotic"
-					? "Any Exotic"
-					: StrUtil.toTitleCase(it),
+		this._prereqFilter = new Filter({
+			header: "Prerequisite",
+			items: [...FilterCommon.PREREQ_FILTER_ITEMS],
 		});
+		this._toolFilter = new Filter({header: "Tool Proficiencies", displayFn: PageFilterBackgrounds._getToolDisplayText.bind(PageFilterBackgrounds)});
+		this._languageFilter = FilterCommon.getLanguageProficienciesFilter();
 		this._asiFilter = new AbilityScoreFilter({header: "Ability Scores"});
 		this._otherBenefitsFilter = new Filter({header: "Other Benefits"});
 		this._miscFilter = new Filter({header: "Miscellaneous", items: ["Has Info", "Has Images", "SRD", "Basic Rules", "Legacy"], isMiscFilter: true});
@@ -29,6 +26,8 @@ class PageFilterBackgrounds extends PageFilter {
 
 	static mutateForFilters (bg) {
 		bg._fSources = SourceFilter.getCompleteFilterSources(bg);
+
+		bg._fPrereq = FilterCommon.getFilterValuesPrerequisite(bg.prerequisite);
 
 		const {summary: skillDisplay, collection: skills} = Renderer.generic.getSkillSummary({
 			skillProfs: bg.skillProficiencies,
@@ -69,6 +68,7 @@ class PageFilterBackgrounds extends PageFilter {
 		if (isExcluded) return;
 
 		this._sourceFilter.addItem(bg._fSources);
+		this._prereqFilter.addItem(bg._fPrereq);
 		this._skillFilter.addItem(bg._fSkills);
 		this._toolFilter.addItem(bg._fTools);
 		this._languageFilter.addItem(bg._fLangs);
@@ -79,6 +79,7 @@ class PageFilterBackgrounds extends PageFilter {
 	async _pPopulateBoxOptions (opts) {
 		opts.filters = [
 			this._sourceFilter,
+			this._prereqFilter,
 			this._skillFilter,
 			this._toolFilter,
 			this._languageFilter,
@@ -92,6 +93,7 @@ class PageFilterBackgrounds extends PageFilter {
 		return this._filterBox.toDisplay(
 			values,
 			bg._fSources,
+			bg._fPrereq,
 			bg._fSkills,
 			bg._fTools,
 			bg._fLangs,

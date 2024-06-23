@@ -2581,7 +2581,8 @@
 												"offsetX": 62,
 												"offsetY": -26,
 												"scale": 3
-											}
+											},
+											"id": "037"
 										},
 										"{@creature Factol Skall|AATM} (see the {@area appendix|02e|x}) has repeatedly used the orrery, which has attracted the spirit of a dead and vengeful god (use the {@creature planar incarnate|MPP} stat block; see the {@area appendix|031|x}). The spirit bursts forth from the orrery and attacks the characters.",
 										"Skall aids the characters in combat against the spirit but withholds his more potent abilities unless the characters are about to be defeated. If the spirit is reduced to 0 hit points, it is sucked back into the orrery and sent back to the plane from whence it came.",

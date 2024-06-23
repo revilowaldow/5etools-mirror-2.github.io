@@ -616,11 +616,14 @@ Shared UI components
 /* region Picker */
 .ui-pick {
 	&__ {
+		&wrp-btns {
+			// Match the height of a pill -- 1 line of text, mb-1, 1px top/bottom border
+			min-height: calc((1em * #{vars.$font-line-height}) + (#{vars.$spacer} * 0.25) + 2px);
+		}
+
 		&btn-add {
 			font-weight: bold;
 			padding: 1px 2px;
-			// Even line heights look good on Chrome; precisely 8px looks good on Firefox.
-			line-height: 8px;
 			font-size: 18px;
 			display: flex;
 			height: 16px;

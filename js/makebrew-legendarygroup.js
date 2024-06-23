@@ -157,11 +157,11 @@ class LegendaryGroupBuilder extends Builder {
 		tabs.forEach(it => it.$wrpTab.appendTo($wrp));
 
 		// Legendary Group
-		const $tblLegGroup = $(`<table class="w-100 stats"/>`).appendTo(legGroupTab.$wrpTab);
+		const $tblLegGroup = $(`<table class="w-100 stats"></table>`).appendTo(legGroupTab.$wrpTab);
 		RenderBestiary.$getRenderedLegendaryGroup(this._state).appendTo($tblLegGroup);
 
 		// Data
-		const $tblData = $(`<table class="stats stats--book mkbru__wrp-output-tab-data"/>`).appendTo(dataTab.$wrpTab);
+		const $tblData = $(`<table class="stats stats--book mkbru__wrp-output-tab-data"></table>`).appendTo(dataTab.$wrpTab);
 		const asCode = Renderer.get().render({
 			type: "entries",
 			entries: [

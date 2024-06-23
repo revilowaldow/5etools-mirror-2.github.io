@@ -24,7 +24,7 @@ async function onJsonLoad (data) {
 
 	BookUtil.bookIndex = data?.book || [];
 
-	$(`.book-head-message`).text(`Select a book from the list on the left`);
+	$(`#page__subtitle`).text(`Select a book from the list on the left`);
 	$(`.book-loading-message`).text(`Select a book to begin`);
 
 	BookUtil.bookIndexPrerelease = (await PrereleaseUtil.pGetBrewProcessed())?.book || [];

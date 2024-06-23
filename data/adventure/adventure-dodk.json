@@ -7221,7 +7221,8 @@
 								"offsetX": 7,
 								"offsetY": 113,
 								"scale": 3
-							}
+							},
+							"id": "28c"
 						},
 						{
 							"type": "entries",
@@ -18677,7 +18678,8 @@
 												"offsetX": 39,
 												"offsetY": -8,
 												"scale": 2
-											}
+											},
+											"id": "28d"
 										},
 										{
 											"type": "entries",
@@ -19135,7 +19137,8 @@
 										"offsetX": -21,
 										"offsetY": -30,
 										"scale": 2
-									}
+									},
+									"id": "566"
 								},
 								{
 									"type": "entries",
@@ -22955,7 +22958,16 @@
 												"If interacted with, characters may be able to coax the handmaidens into leading them to the royal grotto by succeeding on three DC 15 Charisma checks, perhaps portraying themselves as valiant knights here to help or conjuring some other fable. Otherwise, characters can follow or chase them back to the royal grotto."
 											]
 										},
-										"In addition, many of the {@creature Haze Wight|DoDk|haze wights} wandering the garden are the undead remnants of the Queen's personal guard, and still bear the crests and livery of House von Kessel."
+										"In addition, many of the {@creature Haze Wight|DoDk|haze wights} wandering the garden are the undead remnants of the Queen's personal guard, and still bear the crests and livery of House von Kessel.",
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "adventure/DoDk/10-002.queens-retinue.webp"
+											},
+											"width": 850,
+											"height": 1370
+										}
 									]
 								}
 							]
@@ -23297,7 +23309,8 @@
 										"size": 66,
 										"offsetX": 21,
 										"offsetY": 41
-									}
+									},
+									"id": "567"
 								},
 								{
 									"type": "entries",
@@ -23343,7 +23356,8 @@
 												"offsetX": -11,
 												"offsetY": -51,
 												"scale": 2
-											}
+											},
+											"id": "64e"
 										}
 									]
 								},
@@ -35308,7 +35322,8 @@
 								"scale": 4,
 								"distance": 25,
 								"units": "kilometers"
-							}
+							},
+							"id": "64f"
 						},
 						{
 							"type": "entries",

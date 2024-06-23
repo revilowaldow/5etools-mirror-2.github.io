@@ -107,7 +107,8 @@
 										"size": 76,
 										"offsetX": -28,
 										"offsetY": -35
-									}
+									},
+									"id": "112"
 								}
 							]
 						},
@@ -2688,7 +2689,8 @@
 										"offsetX": -15,
 										"distance": 200000000,
 										"units": "miles"
-									}
+									},
+									"id": "113"
 								},
 								{
 									"type": "entries",
@@ -3022,7 +3024,8 @@
 										"type": "square",
 										"size": 60,
 										"offsetX": -23
-									}
+									},
+									"id": "114"
 								},
 								{
 									"type": "entries",
@@ -3608,7 +3611,8 @@
 									},
 									"title": "Spelljammer Academy Handout",
 									"width": 2550,
-									"height": 3300
+									"height": 3300,
+									"id": "115"
 								}
 							]
 						}

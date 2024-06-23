@@ -112,7 +112,7 @@ const removeDownloadBar = () => {
 const initDownloadBar = () => {
 	if (downloadBar !== null) removeDownloadBar();
 
-	const $displayProgress = $(`<div class="page__disp-download-progress-bar"/>`);
+	const $displayProgress = $(`<div class="page__disp-download-progress-bar"></div>`);
 	const $displayPercent = $(`<div class="page__disp-download-progress-text ve-flex-vh-center bold">0%</div>`);
 
 	const $btnCancel = $(`<button class="btn btn-default"><span class="glyphicon glyphicon-remove"></span></button>`)

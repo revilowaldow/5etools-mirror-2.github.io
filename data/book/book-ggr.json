@@ -4822,7 +4822,8 @@
 										"distance": 0.5,
 										"units": "miles"
 									},
-									"title": "Tenth District"
+									"title": "Tenth District",
+									"id": "221"
 								}
 							],
 							"id": "0e4"
@@ -4987,7 +4988,8 @@
 							"grid": {
 								"type": "none"
 							},
-							"title": "Precinct 1"
+							"title": "Precinct 1",
+							"id": "222"
 						},
 						{
 							"type": "entries",
@@ -5242,7 +5244,8 @@
 							"grid": {
 								"type": "none"
 							},
-							"title": "Precinct Two"
+							"title": "Precinct Two",
+							"id": "223"
 						},
 						{
 							"type": "entries",
@@ -5478,7 +5481,8 @@
 							"grid": {
 								"type": "none"
 							},
-							"title": "Precinct Three"
+							"title": "Precinct Three",
+							"id": "224"
 						},
 						{
 							"type": "entries",
@@ -5715,7 +5719,8 @@
 							"grid": {
 								"type": "none"
 							},
-							"title": "Precinct Four"
+							"title": "Precinct Four",
+							"id": "225"
 						},
 						{
 							"type": "entries",
@@ -5952,7 +5957,8 @@
 							"grid": {
 								"type": "none"
 							},
-							"title": "Precinct Five"
+							"title": "Precinct Five",
+							"id": "226"
 						},
 						{
 							"type": "entries",
@@ -6201,7 +6207,8 @@
 							"grid": {
 								"type": "none"
 							},
-							"title": "Precinct Six"
+							"title": "Precinct Six",
+							"id": "227"
 						},
 						{
 							"type": "entries",
@@ -7278,7 +7285,8 @@
 												"offsetY": -13,
 												"scale": 3
 											},
-											"title": "Map 4.1: Arrester Station"
+											"title": "Map 4.1: Arrester Station",
+											"id": "228"
 										}
 									],
 									"id": "151"
@@ -7566,7 +7574,8 @@
 												"offsetY": -3,
 												"scale": 3
 											},
-											"title": "Map 4.2: Legion Garrison"
+											"title": "Map 4.2: Legion Garrison",
+											"id": "229"
 										}
 									],
 									"id": "159"
@@ -7857,7 +7866,8 @@
 												"offsetY": 25,
 												"scale": 3
 											},
-											"title": "Map 4.3: Safe House"
+											"title": "Map 4.3: Safe House",
+											"id": "22a"
 										},
 										{
 											"type": "inset",
@@ -8156,7 +8166,8 @@
 												"offsetY": 46,
 												"scale": 3
 											},
-											"title": "Map 4.4: Undercity Mansion"
+											"title": "Map 4.4: Undercity Mansion",
+											"id": "22b"
 										}
 									],
 									"id": "16a"
@@ -8446,7 +8457,8 @@
 												"offsetY": -62,
 												"scale": 3
 											},
-											"title": "Map 4.5: Rubblebelt Encampment"
+											"title": "Map 4.5: Rubblebelt Encampment",
+											"id": "22c"
 										}
 									],
 									"id": "172"
@@ -8734,7 +8746,8 @@
 												"offsetY": 87,
 												"scale": 3
 											},
-											"title": "Map 4.6: Experimental Workshop"
+											"title": "Map 4.6: Experimental Workshop",
+											"id": "22d"
 										},
 										{
 											"type": "table",
@@ -9061,7 +9074,8 @@
 												"offsetY": -13,
 												"scale": 3
 											},
-											"title": "Map 4.7: Grand Basilica"
+											"title": "Map 4.7: Grand Basilica",
+											"id": "22e"
 										}
 									],
 									"id": "182"
@@ -9362,7 +9376,8 @@
 												"offsetY": -82,
 												"scale": 3
 											},
-											"title": "Map 4.8: Notorious Nightclub"
+											"title": "Map 4.8: Notorious Nightclub",
+											"id": "22f"
 										}
 									],
 									"id": "18a"
@@ -9650,7 +9665,8 @@
 												"offsetY": -10,
 												"scale": 3
 											},
-											"title": "Map 4.9: Vernadi Center"
+											"title": "Map 4.9: Vernadi Center",
+											"id": "230"
 										}
 									],
 									"id": "192"
@@ -9940,7 +9956,8 @@
 												"offsetY": 8,
 												"scale": 3
 											},
-											"title": "Map 4.10: Growth Chambers"
+											"title": "Map 4.10: Growth Chambers",
+											"id": "231"
 										}
 									],
 									"id": "19a"

@@ -783,7 +783,7 @@ class CreatureBuilder extends Builder {
 			return $selType.val();
 		};
 
-		const $btnRemove = $(`<button class="btn btn-xs btn-danger" title="Remove Row"><span class="glyphicon glyphicon-trash"/></button>`)
+		const $btnRemove = $(`<button class="btn btn-xs btn-danger" title="Remove Row"><span class="glyphicon glyphicon-trash"></span></button>`)
 			.click(() => {
 				chooseTypeRows.splice(chooseTypeRows.indexOf(out), 1);
 				$wrp.empty().remove();
@@ -830,7 +830,7 @@ class CreatureBuilder extends Builder {
 					setState();
 				}
 			});
-		const $btnRemove = $(`<button class="btn btn-xs btn-danger" title="Remove Row"><span class="glyphicon glyphicon-trash"/></button>`)
+		const $btnRemove = $(`<button class="btn btn-xs btn-danger" title="Remove Row"><span class="glyphicon glyphicon-trash"></span></button>`)
 			.click(() => {
 				tagRows.splice(tagRows.indexOf(out), 1);
 				$wrp.empty().remove();
@@ -918,7 +918,7 @@ class CreatureBuilder extends Builder {
 
 		const alignmentRows = [];
 
-		const $wrpRows = $(`<div/>`).appendTo($rowInner);
+		const $wrpRows = $(`<div></div>`).appendTo($rowInner);
 
 		if ((this._state.alignment && this._state.alignment.some(it => it && (it.special != null || it.alignment !== undefined))) || !~CreatureBuilder.__$getAlignmentInput__getAlignmentIx(this._state.alignment)) {
 			this._state.alignment.forEach(alignment => CreatureBuilder.__$getAlignmentInput__getAlignmentRow(doUpdateState, alignmentRows, alignment).$wrp.appendTo($wrpRows));
@@ -926,7 +926,7 @@ class CreatureBuilder extends Builder {
 			CreatureBuilder.__$getAlignmentInput__getAlignmentRow(doUpdateState, alignmentRows, this._state.alignment).$wrp.appendTo($wrpRows);
 		}
 
-		const $wrpBtnAdd = $(`<div/>`).appendTo($rowInner);
+		const $wrpBtnAdd = $(`<div></div>`).appendTo($rowInner);
 		$(`<button class="btn btn-xs btn-default">Add Alignment</button>`)
 			.appendTo($wrpBtnAdd)
 			.click(() => {
@@ -1018,7 +1018,7 @@ class CreatureBuilder extends Builder {
 		const $stageSpecial = $$`<div>${$iptSpecial}</div>`.toggleVe(initialMode === "2");
 		initialMode === "2" && alignment && $iptSpecial.val(alignment.special);
 
-		const $btnRemove = $(`<button class="btn btn-xs btn-danger mkbru__btn-rm-row mb-2" title="Remove Alignment"><span class="glyphicon glyphicon-trash"/></button>`)
+		const $btnRemove = $(`<button class="btn btn-xs btn-danger mkbru__btn-rm-row mb-2" title="Remove Alignment"><span class="glyphicon glyphicon-trash"></span></button>`)
 			.click(() => {
 				alignmentRows.splice(alignmentRows.indexOf(out), 1);
 				$wrp.empty().remove();
@@ -1045,10 +1045,10 @@ class CreatureBuilder extends Builder {
 
 		const acRows = [];
 
-		const $wrpRows = $(`<div/>`).appendTo($rowInner);
+		const $wrpRows = $(`<div></div>`).appendTo($rowInner);
 		this._state.ac.forEach(ac => CreatureBuilder.__$getAcInput__getAcRow(ac, acRows, doUpdateState).$wrp.appendTo($wrpRows));
 
-		const $wrpBtnAdd = $(`<div/>`).appendTo($rowInner);
+		const $wrpBtnAdd = $(`<div></div>`).appendTo($rowInner);
 		$(`<button class="btn btn-xs btn-default">Add Armor Class Source</button>`)
 			.appendTo($wrpBtnAdd)
 			.click(() => {
@@ -1152,7 +1152,7 @@ class CreatureBuilder extends Builder {
 		// "FROM" CONTROLS
 		const fromRows = [];
 
-		const $wrpFromRows = $(`<div/>`);
+		const $wrpFromRows = $(`<div></div>`);
 		if (ac && ac.from) ac.from.forEach(f => CreatureBuilder.__$getAcInput__getFromRow(f, fromRows, doUpdateState).$wrpFrom.appendTo($wrpFromRows));
 
 		const $btnAddFrom = $(`<button class="btn btn-xs btn-default mb-2">Add Another Feature/Item</button>`)
@@ -1166,7 +1166,7 @@ class CreatureBuilder extends Builder {
 		</div>`.toggleVe(initialMode === "1");
 
 		// REMOVE CONTROLS
-		const $btnRemove = $(`<button class="btn btn-xs btn-danger mkbru__btn-rm-row mb-2" title="Remove AC Source"><span class="glyphicon glyphicon-trash"/></button>`)
+		const $btnRemove = $(`<button class="btn btn-xs btn-danger mkbru__btn-rm-row mb-2" title="Remove AC Source"><span class="glyphicon glyphicon-trash"></span></button>`)
 			.click(() => {
 				acRows.splice(acRows.indexOf(out), 1);
 				$wrp.empty().remove();
@@ -1224,7 +1224,7 @@ class CreatureBuilder extends Builder {
 				searchWidget.doFocus();
 			});
 
-		const $btnRemove = $(`<button class="btn btn-xs btn-danger mkbru__btn-rm-row--nested-1 ml-2" title="Remove AC Feature/Item"><span class="glyphicon glyphicon-trash"/></button>`)
+		const $btnRemove = $(`<button class="btn btn-xs btn-danger mkbru__btn-rm-row--nested-1 ml-2" title="Remove AC Feature/Item"><span class="glyphicon glyphicon-trash"></span></button>`)
 			.click(() => {
 				fromRows.splice(fromRows.indexOf(outFrom), 1);
 				$wrpFrom.empty().remove();
@@ -1343,7 +1343,7 @@ class CreatureBuilder extends Builder {
 				doUpdateState();
 			});
 
-		const $btnAutoSimpleFormula = $(`<button class="btn btn-xs btn-default ${this._meta.autoCalc.hpModifier ? "active" : ""}" title="Auto-calculate modifier from Constitution"><span class="glyphicon glyphicon-refresh"/></button>`)
+		const $btnAutoSimpleFormula = $(`<button class="btn btn-xs btn-default ${this._meta.autoCalc.hpModifier ? "active" : ""}" title="Auto-calculate modifier from Constitution"><span class="glyphicon glyphicon-refresh"></span></button>`)
 			.click(() => {
 				if (this._meta.autoCalc.hpModifier) {
 					this._meta.autoCalc.hpModifier = false;
@@ -1362,7 +1362,7 @@ class CreatureBuilder extends Builder {
 				doUpdateState();
 			});
 
-		const $btnAutoSimpleAverage = $(`<button class="btn btn-xs btn-default ${this._meta.autoCalc.hpAverageSimple ? "active" : ""}" title="Auto-calculate"><span class="glyphicon glyphicon-refresh"/></button>`)
+		const $btnAutoSimpleAverage = $(`<button class="btn btn-xs btn-default ${this._meta.autoCalc.hpAverageSimple ? "active" : ""}" title="Auto-calculate"><span class="glyphicon glyphicon-refresh"></span></button>`)
 			.click(() => {
 				if (this._meta.autoCalc.hpAverageSimple) {
 					this._meta.autoCalc.hpAverageSimple = false;
@@ -1415,7 +1415,7 @@ class CreatureBuilder extends Builder {
 				doUpdateState();
 			});
 
-		const $btnAutoComplexAverage = $(`<button class="btn btn-xs btn-default ${this._meta.autoCalc.hpAverageComplex ? "active" : ""}" title="Auto-calculate from Formula"><span class="glyphicon glyphicon-refresh"/></button>`)
+		const $btnAutoComplexAverage = $(`<button class="btn btn-xs btn-default ${this._meta.autoCalc.hpAverageComplex ? "active" : ""}" title="Auto-calculate from Formula"><span class="glyphicon glyphicon-refresh"></span></button>`)
 			.click(() => {
 				if (this._meta.autoCalc.hpAverageComplex) {
 					this._meta.autoCalc.hpAverageComplex = false;
@@ -1732,7 +1732,7 @@ class CreatureBuilder extends Builder {
 			})
 			.val(this._state.passive || 0);
 
-		const $btnAuto = $(`<button class="btn btn-default btn-xs ${this._meta.autoCalc.passivePerception ? "active" : ""}" title="Auto-Calculate Passive Perception"><span class="glyphicon glyphicon-refresh"/></button>`)
+		const $btnAuto = $(`<button class="btn btn-default btn-xs ${this._meta.autoCalc.passivePerception ? "active" : ""}" title="Auto-Calculate Passive Perception"><span class="glyphicon glyphicon-refresh"></span></button>`)
 			.click(() => {
 				if (this._meta.autoCalc.passivePerception) {
 					delete this._meta.autoCalc.passivePerception;
@@ -1770,8 +1770,8 @@ class CreatureBuilder extends Builder {
 		const [$row, $rowInner] = BuilderUi.getLabelledRowTuple(rowName, {isMarked: true});
 
 		const groups = [];
-		const $wrpGroups = $(`<div/>`).appendTo($rowInner);
-		const $wrpControls = $(`<div/>`).appendTo($rowInner);
+		const $wrpGroups = $(`<div></div>`).appendTo($rowInner);
+		const $wrpControls = $(`<div></div>`).appendTo($rowInner);
 
 		const doUpdateState = () => {
 			const out = groups.map(it => it.getState());
@@ -1866,20 +1866,20 @@ class CreatureBuilder extends Builder {
 			.change(() => doUpdateState());
 		const $iptNotePost = $(`<input class="form-control input-xs form-control--minimal mr-2" placeholder="Post- note">`)
 			.change(() => doUpdateState());
-		const $btnRemove = $(`<button class="btn btn-xs btn-danger mkbru__btn-rm-row" title="Remove ${shortName} Group"><span class="glyphicon glyphicon-trash"/></button>`)
+		const $btnRemove = $(`<button class="btn btn-xs btn-danger mkbru__btn-rm-row" title="Remove ${shortName} Group"><span class="glyphicon glyphicon-trash"></span></button>`)
 			.click(() => {
 				groups.splice(groups.indexOf(out), 1);
 				$ele.remove();
 				doUpdateState();
 			});
 
-		const $wrpChildren = $(`<div class="ve-flex-col"/>`);
+		const $wrpChildren = $(`<div class="ve-flex-col"></div>`);
 		const $wrpControls = $$`<div class="mb-2 ve-flex-v-center">${$btnAddChild}${$btnAddChildGroup}${$iptNotePre}${$iptNotePost}${$btnRemove}</div>`;
 
 		const $ele = (() => {
 			const $base = $$`<div class="ve-flex-col ${depth ? "" : "mkbru__wrp-rows"}">${$wrpControls}${$wrpChildren}</div>`;
 			if (!depth) return $base;
-			else return $$`<div class="ve-flex-v-center w-100"><div class="mkbru_mon__row-indent"/>${$base}</div>`;
+			else return $$`<div class="ve-flex-v-center w-100"><div class="mkbru_mon__row-indent"></div>${$base}</div>`;
 		})();
 
 		if (initial) {
@@ -1897,7 +1897,7 @@ class CreatureBuilder extends Builder {
 	}
 
 	static __$getDefencesInput__getNodeItem (shortName, children, doUpdateState, type, value) {
-		const $btnRemove = $(`<button class="btn btn-xxs btn-danger" title="Remove ${shortName} Entry"><span class="glyphicon glyphicon-trash"/></button>`)
+		const $btnRemove = $(`<button class="btn btn-xxs btn-danger" title="Remove ${shortName} Entry"><span class="glyphicon glyphicon-trash"></span></button>`)
 			.click(() => {
 				children.splice(children.indexOf(out), 1);
 				$ele.remove();
@@ -2159,7 +2159,7 @@ class CreatureBuilder extends Builder {
 				cb();
 			});
 
-		const $btnAuto = $(`<button class="btn btn-xs btn-default ${this._meta.autoCalc.proficiency ? "active" : ""}" title="Auto-calculate from Challenge Rating (DMG p. 274)"><span class="glyphicon glyphicon-refresh"/></button>`)
+		const $btnAuto = $(`<button class="btn btn-xs btn-default ${this._meta.autoCalc.proficiency ? "active" : ""}" title="Auto-calculate from Challenge Rating (DMG p. 274)"><span class="glyphicon glyphicon-refresh"></span></button>`)
 			.click(() => {
 				if (this._meta.autoCalc.proficiency) {
 					this._meta.autoCalc.proficiency = false;
@@ -2203,8 +2203,8 @@ class CreatureBuilder extends Builder {
 		const [$row, $rowInner] = BuilderUi.getLabelledRowTuple("Spellcasting", {isMarked: true});
 
 		const traitRows = [];
-		const $wrpRows = $(`<div/>`).appendTo($rowInner);
-		const $wrpControls = $(`<div/>`).appendTo($rowInner);
+		const $wrpRows = $(`<div></div>`).appendTo($rowInner);
+		const $wrpControls = $(`<div></div>`).appendTo($rowInner);
 
 		const $btnAddRow = $(`<button class="btn btn-xs btn-default">Add Spellcasting Trait</button>`)
 			.appendTo($wrpControls)
@@ -2391,12 +2391,12 @@ class CreatureBuilder extends Builder {
 		const $btnAddSpell = $(`<button class="btn btn-xs btn-default">Add...</button>`)
 			.click((evt) => ContextUtil.pOpenMenu(evt, menu));
 
-		const $iptHeader = $(`<textarea class="form-control form-control--minimal resize-vertical mb-2" placeholder="Header text"/>`)
+		const $iptHeader = $(`<textarea class="form-control form-control--minimal resize-vertical mb-2" placeholder="Header text"></textarea>`)
 			.toggleVe(!!(trait && trait.headerEntries))
 			.change(() => doUpdateState());
 		if (trait && trait.headerEntries) $iptHeader.val(UiUtil.getEntriesAsText(trait.headerEntries));
 
-		const $iptFooter = $(`<textarea class="form-control form-control--minimal resize-vertical mb-2" placeholder="Footer text"/>`)
+		const $iptFooter = $(`<textarea class="form-control form-control--minimal resize-vertical mb-2" placeholder="Footer text"></textarea>`)
 			.toggleVe(!!(trait && trait.footerEntries))
 			.change(() => doUpdateState());
 		if (trait && trait.footerEntries) $iptFooter.val(UiUtil.getEntriesAsText(trait.footerEntries));
@@ -2405,12 +2405,14 @@ class CreatureBuilder extends Builder {
 		const $wrpSubRows = $$`<div class="ve-flex-col"></div>`;
 		const $wrpSubRowsOuter = $$`<div class="ve-flex-col">${$iptHeader}${$wrpSubRows}${$iptFooter}</div>`;
 
-		const $btnRemove = $(`<button class="btn btn-xs btn-danger" title="Remove Trait"><span class="glyphicon glyphicon-trash"/></button>`)
-			.click(() => {
+		const $btnRemove = $(`<button class="btn btn-xs btn-danger" title="Remove Trait"><span class="glyphicon glyphicon-trash"></span></button>`)
+			.click(async () => {
 				const currState = getState();
 				if (currState) {
 					delete currState.name; // ignore name key
-					if ((currState.headerEntries || currState.footerEntries || Object.keys(currState).some(it => it !== "headerEntries" && it !== "footerEntries")) && !confirm("Are you sure?")) return;
+					if ((currState.headerEntries || currState.footerEntries || Object.keys(currState).some(it => it !== "headerEntries" && it !== "footerEntries"))) {
+						if (!await InputUiUtil.pGetUserBoolean({title: "Remove Trait", htmlDescription: "Are you sure?", textYes: "Yes", textNo: "Cancel"})) return;
+					}
 				}
 
 				traitRows.splice(traitRows.indexOf(out), 1);
@@ -2471,9 +2473,9 @@ class CreatureBuilder extends Builder {
 			} else return null;
 		};
 
-		const $wrpItems = $(`<div class="ve-flex-col"/>`);
+		const $wrpItems = $(`<div class="ve-flex-col"></div>`);
 
-		const $btnAdd = $(`<button class="btn btn-xxs btn-default mr-2" title="Add Spell"><span class="glyphicon glyphicon-plus"/></button>`)
+		const $btnAdd = $(`<button class="btn btn-xxs btn-default mr-2" title="Add Spell"><span class="glyphicon glyphicon-plus"></span></button>`)
 			.click(async () => {
 				const options = {};
 
@@ -2489,7 +2491,7 @@ class CreatureBuilder extends Builder {
 				}
 			});
 
-		const $btnRemove = $(`<button class="btn btn-xxs btn-danger" title="Remove Spell Group"><span class="glyphicon glyphicon-trash"/></button>`)
+		const $btnRemove = $(`<button class="btn btn-xxs btn-danger" title="Remove Spell Group"><span class="glyphicon glyphicon-trash"></span></button>`)
 			.click(() => {
 				spellRows.splice(spellRows.indexOf(out), 1);
 				$ele.empty().remove();
@@ -2568,7 +2570,7 @@ class CreatureBuilder extends Builder {
 					out.$ele = $$`<div class="ve-flex mkbru_mon__spell-header-wrp mr-4">
 					<div class="italic">${Parser.spLevelToFull(meta.level)}-level Spells</div>
 					<div class="ve-flex-v-center text-muted small ml-auto"><span>(</span>${$iptSlots}<span class="mr-2">Slots</span></div>
-					<div class="mkbru_mon__spell-header-divider mr-2"/>
+					<div class="mkbru_mon__spell-header-divider mr-2"></div>
 					<label class="ve-flex-v-center text-muted small"><span class="mr-1">Warlock?</span>${$cbWarlock}<span>)</span></label>
 					</div>`;
 					out.getKeyPath = () => ["spells", `${meta.level}`, "spells"];
@@ -2597,7 +2599,7 @@ class CreatureBuilder extends Builder {
 			<div class="ve-flex-v-center mkbru__wrp-btn-xxs">${$btnAdd}${$btnRemove}</div>
 		</div>
 		${$wrpItems}
-		<div class="mkbru_mon__spell-divider mb-2"/>
+		<div class="mkbru_mon__spell-divider mb-2"></div>
 		</div>`;
 
 		if (data) data.forEach(spell => addItem(spell));
@@ -2618,7 +2620,7 @@ class CreatureBuilder extends Builder {
 			})
 			.hideVe();
 
-		const $btnToggleEdit = $(`<button class="btn btn-xxs btn-default mr-2" title="Toggle Edit Mode"><span class="glyphicon glyphicon-pencil"/></button>`)
+		const $btnToggleEdit = $(`<button class="btn btn-xxs btn-default mr-2" title="Toggle Edit Mode"><span class="glyphicon glyphicon-pencil"></span></button>`)
 			.click(() => {
 				$btnToggleEdit.toggleClass("active");
 				$iptSpell.toggleVe($btnToggleEdit.hasClass("active"));
@@ -2627,7 +2629,7 @@ class CreatureBuilder extends Builder {
 
 		const $wrpRender = $(`<div class="mr-2">${getHtml()}</div>`);
 
-		const $btnRemove = $(`<button class="btn btn-xxs btn-danger" title="Remove Spell"><span class="glyphicon glyphicon-trash"/></button>`)
+		const $btnRemove = $(`<button class="btn btn-xxs btn-danger" title="Remove Spell"><span class="glyphicon glyphicon-trash"></span></button>`)
 			.click(() => {
 				rowItems.splice(rowItems.indexOf(out), 1);
 				$ele.empty().remove();
@@ -2785,8 +2787,9 @@ class CreatureBuilder extends Builder {
 									});
 
 								const $btnReset = $(`<button class="btn btn-sm btn-danger">Reset</button>`)
-									.click(() => {
-										if (!confirm("Are you sure?")) return;
+									.click(async () => {
+										if (!await InputUiUtil.pGetUserBoolean({title: "Reset", htmlDescription: "Are you sure?", textYes: "Yes", textNo: "Cancel"})) return;
+
 										setState({
 											iptName: "",
 											cbMelee: true,
@@ -3018,11 +3021,11 @@ class CreatureBuilder extends Builder {
 
 		const entryRows = [];
 
-		const $wrpRowsOuter = $(`<div class="relative"/>`).appendTo($rowInner);
-		const $wrpRows = $(`<div/>`).appendTo($wrpRowsOuter);
+		const $wrpRowsOuter = $(`<div class="relative"></div>`).appendTo($rowInner);
+		const $wrpRows = $(`<div></div>`).appendTo($wrpRowsOuter);
 		const rowOptions = {prop: options.prop, shortName: options.shortName, $wrpRowsOuter};
 
-		const $wrpBtnAdd = $(`<div/>`).appendTo($rowInner);
+		const $wrpBtnAdd = $(`<div></div>`).appendTo($rowInner);
 		$(`<button class="btn btn-xs btn-default">Add ${options.shortName}</button>`)
 			.appendTo($wrpBtnAdd)
 			.click(() => {
@@ -3096,15 +3099,17 @@ class CreatureBuilder extends Builder {
 			$wrpRowsOuter: options.$wrpRowsOuter,
 		}) : null;
 
-		const $iptEntries = $(`<textarea class="form-control form-control--minimal resize-vertical mb-2"/>`)
+		const $iptEntries = $(`<textarea class="form-control form-control--minimal resize-vertical mb-2"></textarea>`)
 			.change(() => doUpdateState());
 
 		if (entry && entry.entries) $iptEntries.val(UiUtil.getEntriesAsText(entry.entries));
 
-		const $btnRemove = $(`<button class="btn btn-xs btn-danger mb-2" title="Remove ${options.shortName}"><span class="glyphicon glyphicon-trash"/></button>`)
-			.click(() => {
+		const $btnRemove = $(`<button class="btn btn-xs btn-danger mb-2" title="Remove ${options.shortName}"><span class="glyphicon glyphicon-trash"></span></button>`)
+			.click(async () => {
 				const currState = getState();
-				if (currState && currState.entries && !confirm("Are you sure?")) return;
+				if (currState && currState.entries) {
+					if (!await InputUiUtil.pGetUserBoolean({title: `Remove ${options.shortName}`, htmlDescription: "Are you sure?", textYes: "Yes", textNo: "Cancel"})) return;
+				}
 				entryRows.splice(entryRows.indexOf(out), 1);
 				$ele.empty().remove();
 				doUpdateState();
@@ -3364,7 +3369,7 @@ class CreatureBuilder extends Builder {
 			cb();
 		};
 
-		const $wrpIpts = $(`<div class="ve-flex-col w-100 mr-2"/>`);
+		const $wrpIpts = $(`<div class="ve-flex-col w-100 mr-2"></div>`);
 		const inputs = [];
 		Parser.ENVIRONMENTS.forEach(val => {
 			const $cb = $(`<input class="mkbru__ipt-cb mkbru_mon__cb-environment" type="checkbox">`)
@@ -3403,7 +3408,7 @@ class CreatureBuilder extends Builder {
 		const $cb = $(`<input class="mkbru__ipt-cb hidden" type="checkbox">`)
 			.prop("checked", true);
 
-		const $btnRemove = $(`<button class="btn btn-danger btn-xxs"><span class="glyphicon glyphicon-trash"/></button>`)
+		const $btnRemove = $(`<button class="btn btn-danger btn-xxs"><span class="glyphicon glyphicon-trash"></span></button>`)
 			.click(() => {
 				out.$ele.remove();
 				envRows.splice(envRows.indexOf(out), 1);
@@ -3480,11 +3485,11 @@ class CreatureBuilder extends Builder {
 		tabs.forEach(it => it.$wrpTab.appendTo($wrp));
 
 		// statblock
-		const $tblMon = $(`<table class="w-100 stats monster"/>`).appendTo(statTab.$wrpTab);
+		const $tblMon = $(`<table class="w-100 stats monster"></table>`).appendTo(statTab.$wrpTab);
 		RenderBestiary.$getRenderedCreature(this._state, {isSkipExcludesRender: true}).appendTo($tblMon);
 
 		// info
-		const $tblInfo = $(`<table class="w-100 stats"/>`).appendTo(infoTab.$wrpTab);
+		const $tblInfo = $(`<table class="w-100 stats"></table>`).appendTo(infoTab.$wrpTab);
 		Renderer.utils.pBuildFluffTab({
 			isImageTab: false,
 			$content: $tblInfo,
@@ -3493,7 +3498,7 @@ class CreatureBuilder extends Builder {
 		});
 
 		// images
-		const $tblImages = $(`<table class="w-100 stats"/>`).appendTo(imageTab.$wrpTab);
+		const $tblImages = $(`<table class="w-100 stats"></table>`).appendTo(imageTab.$wrpTab);
 		Renderer.utils.pBuildFluffTab({
 			isImageTab: true,
 			$content: $tblImages,
@@ -3502,7 +3507,7 @@ class CreatureBuilder extends Builder {
 		});
 
 		// data
-		const $tblData = $(`<table class="w-100 stats stats--book mkbru__wrp-output-tab-data"/>`).appendTo(dataTab.$wrpTab);
+		const $tblData = $(`<table class="w-100 stats stats--book mkbru__wrp-output-tab-data"></table>`).appendTo(dataTab.$wrpTab);
 		const asJson = Renderer.get().render({
 			type: "entries",
 			entries: [
@@ -3518,7 +3523,7 @@ class CreatureBuilder extends Builder {
 		$tblData.append(Renderer.utils.getBorderTr());
 
 		// markdown
-		const $tblMarkdown = $(`<table class="w-100 stats stats--book mkbru__wrp-output-tab-data"/>`).appendTo(markdownTab.$wrpTab);
+		const $tblMarkdown = $(`<table class="w-100 stats stats--book mkbru__wrp-output-tab-data"></table>`).appendTo(markdownTab.$wrpTab);
 		$tblMarkdown.append(Renderer.utils.getBorderTr());
 		$tblMarkdown.append(`<tr><td colspan="6">${this._getRenderedMarkdownCode()}</td></tr>`);
 		$tblMarkdown.append(Renderer.utils.getBorderTr());

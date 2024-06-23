@@ -74,7 +74,7 @@ class MakeCards extends BaseComponent {
 			const kColor = `color_${entityType}`;
 			const kIcon = `icon_${entityType}`;
 			const $iptColor = ComponentUiUtil.$getIptColor(this, kColor).addClass("cards-cfg__ipt-color");
-			const $dispIcon = $(`<div class="cards__disp-btn-icon"/>`);
+			const $dispIcon = $(`<div class="cards__disp-btn-icon"></div>`);
 			const $btnChooseIcon = $$`<button class="btn btn-xs btn-default cards__btn-choose-icon">${$dispIcon}</button>`
 				.click(async () => {
 					const icon = await MakeCards._pGetUserIcon(this._state[kIcon]);
@@ -101,16 +101,16 @@ class MakeCards extends BaseComponent {
 		const menuSearch = ContextUtil.getMenu(this._render_getContextMenuOptions());
 
 		const $iptSearch = $(`<input type="search" class="form-control mr-2" placeholder="Search cards...">`);
-		const $btnAdd = $(`<button class="btn btn-primary mr-2"><span class="glyphicon glyphicon-plus"/> Add</button>`)
+		const $btnAdd = $(`<button class="btn btn-primary mr-2"><span class="glyphicon glyphicon-plus"></span> Add</button>`)
 			.click(evt => ContextUtil.pOpenMenu(evt, menuSearch));
-		const $btnReset = $(`<button class="btn btn-danger mr-2"><span class="glyphicon glyphicon-trash"/> Reset</button>`)
-			.click(() => {
-				if (!confirm("Are you sure?")) return;
+		const $btnReset = $(`<button class="btn btn-danger mr-2"><span class="glyphicon glyphicon-trash"></span> Reset</button>`)
+			.click(async () => {
+				if (!await InputUiUtil.pGetUserBoolean({title: "Reset", htmlDescription: "Are you sure?", textYes: "Yes", textNo: "Cancel"})) return;
 				this._list.removeAllItems();
 				this._list.update();
 				this._doSaveStateDebounced();
 			});
-		const $btnExport = $(`<button class="btn btn-default"><span class="glyphicon glyphicon-download"/> Export JSON</button>`)
+		const $btnExport = $(`<button class="btn btn-default"><span class="glyphicon glyphicon-download"></span> Export JSON</button>`)
 			.click(() => {
 				const toDownload = this._list.items.map(it => {
 					const entityMeta = MakeCards._AVAILABLE_TYPES[it.values.entityType];
@@ -190,10 +190,10 @@ class MakeCards extends BaseComponent {
 			<div class="ve-col-1-1 mr-2 ve-flex-vh-center">Color</div>
 			<div class="ve-col-1-1 mr-2 ve-flex-vh-center">Icon</div>
 			<div class="ve-col-1 mr-2 ve-flex-vh-center">Count</div>
-			<div class="ve-col-1-1 ve-flex-v-center ve-flex-h-right"/>
+			<div class="ve-col-1-1 ve-flex-v-center ve-flex-h-right"></div>
 		</div>`.appendTo($wrpContainer);
 
-		const $wrpList = $(`<div class="w-100 h-100"/>`);
+		const $wrpList = $(`<div class="w-100 h-100"></div>`);
 		$$`<div class="ve-flex-col h-100 w-100 ve-overflow-y-auto mt-2 ve-overflow-x-hidden">${$wrpList}</div>`.appendTo($wrpContainer);
 
 		this._list = new List({$iptSearch, $wrpList, isUseJquery: true});
@@ -319,7 +319,7 @@ class MakeCards extends BaseComponent {
 			this._doSaveStateDebounced();
 		};
 
-		const $dispIcon = $(`<div class="cards__disp-btn-icon"/>`)
+		const $dispIcon = $(`<div class="cards__disp-btn-icon"></div>`)
 			.css("background-image", `url('${MakeCards._getIconPath(cardMeta.icon)}')`);
 		const $btnIcon = $$`<button class="btn btn-default btn-xs cards__btn-choose-icon">${$dispIcon}</button>`
 			.click(async () => {
@@ -341,7 +341,7 @@ class MakeCards extends BaseComponent {
 			})
 			.val(cardMeta.count);
 
-		const $btnCopy = $(`<button class="btn btn-default btn-xs mr-2" title="Copy JSON (SHIFT to view JSON)"><span class="glyphicon glyphicon-copy"/></button>`)
+		const $btnCopy = $(`<button class="btn btn-default btn-xs mr-2" title="Copy JSON (SHIFT to view JSON)"><span class="glyphicon glyphicon-copy"></span></button>`)
 			.click(async evt => {
 				const entityMeta = MakeCards._AVAILABLE_TYPES[listItem.values.entityType];
 				const toCopy = {
@@ -371,7 +371,7 @@ class MakeCards extends BaseComponent {
 					JqueryUtil.showCopiedEffect($btnCopy, "Copied JSON!");
 				}
 			});
-		const $btnDelete = $(`<button class="btn btn-danger btn-xs" title="Remove"><span class="glyphicon glyphicon-trash"/></button>`)
+		const $btnDelete = $(`<button class="btn btn-danger btn-xs" title="Remove"><span class="glyphicon glyphicon-trash"></span></button>`)
 			.click(() => {
 				this._list.removeItemByIndex(uid);
 				this._list.update();
@@ -631,7 +631,7 @@ class MakeCards extends BaseComponent {
 				source: icon_names,
 				items: "16",
 				fnGetItemPrefix: (iconName) => {
-					return `<span class="cards__disp-typeahead-icon mr-2" style="background-image: url('${MakeCards._getIconPath(iconName)}')"/> `;
+					return `<span class="cards__disp-typeahead-icon mr-2" style="background-image: url('${MakeCards._getIconPath(iconName)}')"></span> `;
 				},
 			});
 

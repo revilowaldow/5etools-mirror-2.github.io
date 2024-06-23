@@ -255,6 +255,8 @@ class AcConvert {
 			case "natural & tailored leather":
 			case "canny defense": // Dungeons of Drakkenheim
 				return fromLow;
+
+			case "plate armor of bhaal": return "plate armor of Bhaal";
 				// endregion
 
 			// region homebrew

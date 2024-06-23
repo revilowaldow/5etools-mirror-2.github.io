@@ -37087,7 +37087,8 @@
 												"size": 61,
 												"offsetX": -25,
 												"offsetY": 5
-											}
+											},
+											"id": "02e"
 										},
 										{
 											"type": "image",
@@ -37104,7 +37105,8 @@
 												"size": 61,
 												"offsetX": -23,
 												"offsetY": 5
-											}
+											},
+											"id": "02f"
 										}
 									]
 								},

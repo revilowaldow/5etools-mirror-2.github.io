@@ -3285,7 +3285,7 @@
 				{
 					"name": "Shadow Step",
 					"entries": [
-						"The banderhobb teleports up to 30 feet to an un occupied space of dim light or darkness that it can see."
+						"The banderhobb teleports up to 30 feet to an unoccupied space of dim light or darkness that it can see."
 					]
 				},
 				{
@@ -37794,7 +37794,7 @@
 			},
 			"str": 18,
 			"dex": 14,
-			"con": 15,
+			"con": 16,
 			"int": 8,
 			"wis": 10,
 			"cha": 10,

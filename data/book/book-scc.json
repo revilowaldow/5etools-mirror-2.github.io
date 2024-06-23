@@ -422,7 +422,8 @@
 									"title": "Map 1.1: Central Campus",
 									"width": 3000,
 									"height": 2026,
-									"credit": "Francesca Baerald"
+									"credit": "Francesca Baerald",
+									"id": "07f"
 								},
 								{
 									"type": "entries",
@@ -685,7 +686,8 @@
 									"title": "Map 1.2: Lorehold Campus",
 									"width": 3000,
 									"height": 2026,
-									"credit": "Francesca Baerald"
+									"credit": "Francesca Baerald",
+									"id": "080"
 								},
 								{
 									"type": "entries",
@@ -938,7 +940,8 @@
 									"title": "Map 1.3: Prismari Campus",
 									"width": 3000,
 									"height": 2025,
-									"credit": "Francesca Baerald"
+									"credit": "Francesca Baerald",
+									"id": "081"
 								},
 								{
 									"type": "entries",
@@ -1160,7 +1163,8 @@
 									"title": "Map 1.4: Quandrix Campus",
 									"width": 3000,
 									"height": 2026,
-									"credit": "Francesca Baerald"
+									"credit": "Francesca Baerald",
+									"id": "082"
 								},
 								{
 									"type": "entries",
@@ -1400,7 +1404,8 @@
 									"title": "Map 1.5: Silverquill Campus",
 									"width": 3000,
 									"height": 2026,
-									"credit": "Francesca Baerald"
+									"credit": "Francesca Baerald",
+									"id": "083"
 								},
 								{
 									"type": "entries",
@@ -1641,7 +1646,8 @@
 									"title": "Map 1.6: Witherbloom Campus",
 									"width": 3000,
 									"height": 2026,
-									"credit": "Francesca Baerald"
+									"credit": "Francesca Baerald",
+									"id": "084"
 								},
 								{
 									"type": "entries",
@@ -4799,7 +4805,8 @@
 					},
 					"imageType": "map",
 					"title": "Campus Map",
-					"credit": "Francesca Baerald"
+					"credit": "Francesca Baerald",
+					"id": "085"
 				}
 			]
 		},

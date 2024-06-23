@@ -984,6 +984,20 @@
 			}
 		},
 		{
+			"name": "Spirit of Death",
+			"source": "BMT",
+			"system": {
+				"summons": {
+					"profiles": [
+						{
+							"name": "Reaper Spirit",
+							"uuid": "@creature[reaper spirit|bmt]"
+						}
+					]
+				}
+			}
+		},
+		{
 			"name": "Spirit Shroud",
 			"source": "TCE",
 			"system": {
@@ -1023,6 +1037,314 @@
 				"target.value": 20,
 				"target.units": "ft",
 				"target.type": "sphere"
+			}
+		},
+		{
+			"name": "Summon Aberration",
+			"source": "TCE",
+			"system": {
+				"summons": {
+					"match": {
+						"proficiency": true,
+						"attacks": true,
+						"saves": true
+					},
+					"bonuses": {
+						"ac": "@item.level",
+						"hp": "(@item.level - 4) * 10",
+						"attackDamage": "@item.level"
+					},
+					"profiles": [
+						{
+							"name": "Beholderkin",
+							"uuid": "@creature[aberrant spirit (beholderkin)|tce]"
+						},
+						{
+							"name": "Slaad",
+							"uuid": "@creature[aberrant spirit (slaad)|tce]"
+						},
+						{
+							"name": "Star Spawn",
+							"uuid": "@creature[aberrant spirit (star spawn)|tce]"
+						}
+					]
+				}
+			}
+		},
+		{
+			"name": "Summon Beast",
+			"source": "TCE",
+			"system": {
+				"summons": {
+					"bonuses": {
+						"ac": "@item.level",
+						"hp": "(@item.level - 2) * 5",
+						"attackDamage": "@item.level"
+					},
+					"match": {
+						"proficiency": true,
+						"attacks": true
+					},
+					"profiles": [
+						{
+							"name": "Air",
+							"uuid": "@creature[bestial spirit (air)|tce]"
+						},
+						{
+							"name": "Land",
+							"uuid": "@creature[bestial spirit (land)|tce]"
+						},
+						{
+							"name": "Water",
+							"uuid": "@creature[bestial spirit (water)|tce]"
+						}
+					]
+				}
+			}
+		},
+		{
+			"name": "Summon Celestial",
+			"source": "TCE",
+			"system": {
+				"summons": {
+					"match": {
+						"proficiency": true,
+						"attacks": true
+					},
+					"bonuses": {
+						"ac": "@item.level",
+						"hp": "(@item.level - 5) * 10",
+						"attackDamage": "@item.level",
+						"healing": "@item.level"
+					},
+					"profiles": [
+						{
+							"name": "Avenger",
+							"uuid": "@creature[celestial spirit (avenger)|tce]"
+						},
+						{
+							"name": "Defender",
+							"uuid": "@creature[celestial spirit (defender)|tce]"
+						}
+					]
+				}
+			}
+		},
+		{
+			"name": "Summon Construct",
+			"source": "TCE",
+			"system": {
+				"summons": {
+					"bonuses": {
+						"ac": "@item.level",
+						"hp": "(@item.level - 4) * 15",
+						"attackDamage": "@item.level"
+					},
+					"match": {
+						"proficiency": true,
+						"attacks": true,
+						"saves": true
+					},
+					"profiles": [
+						{
+							"name": "Clay",
+							"uuid": "@creature[construct spirit (clay)|tce]"
+						},
+						{
+							"name": "Metal",
+							"uuid": "@creature[construct spirit (metal)|tce]"
+						},
+						{
+							"name": "Stone",
+							"uuid": "@creature[construct spirit (stone)|tce]"
+						}
+					]
+				}
+			}
+		},
+		{
+			"name": "Summon Draconic Spirit",
+			"source": "FTD",
+			"system": {
+				"summons": {
+					"profiles": [
+						{
+							"name": "Chromatic",
+							"uuid": "@creature[draconic spirit (chromatic)|ftd]"
+						},
+						{
+							"name": "Gem",
+							"uuid": "@creature[draconic spirit (gem)|ftd]"
+						},
+						{
+							"name": "Metallic",
+							"uuid": "@creature[draconic spirit (metallic)|ftd]"
+						}
+					]
+				}
+			}
+		},
+		{
+			"name": "Summon Elemental",
+			"source": "TCE",
+			"system": {
+				"summons": {
+					"bonuses": {
+						"ac": "@item.level",
+						"hp": "(@item.level - 4) * 10",
+						"attackDamage": "@item.level"
+					},
+					"match": {
+						"proficiency": true,
+						"attacks": true
+					},
+					"profiles": [
+						{
+							"name": "Air",
+							"uuid": "@creature[elemental spirit (air)|tce]"
+						},
+						{
+							"name": "Earth",
+							"uuid": "@creature[elemental spirit (earth)|tce]"
+						},
+						{
+							"name": "Fire",
+							"uuid": "@creature[elemental spirit (fire)|tce]"
+						},
+						{
+							"name": "Water",
+							"uuid": "@creature[elemental spirit (water)|tce]"
+						}
+					]
+				}
+			}
+		},
+		{
+			"name": "Summon Fey",
+			"source": "TCE",
+			"system": {
+				"summons": {
+					"bonuses": {
+						"ac": "@item.level",
+						"hp": "(@item.level - 3) * 10",
+						"attackDamage": "@item.level"
+					},
+					"match": {
+						"proficiency": true,
+						"attacks": true,
+						"saves": true
+					},
+					"profiles": [
+						{
+							"name": "Fuming",
+							"uuid": "@creature[fey spirit (fuming)|tce]"
+						},
+						{
+							"name": "Mirthful",
+							"uuid": "@creature[fey spirit (mirthful)|tce]"
+						},
+						{
+							"name": "Tricksy",
+							"uuid": "@creature[fey spirit (tricksy)|tce]"
+						}
+					]
+				}
+			}
+		},
+		{
+			"name": "Summon Fiend",
+			"source": "TCE",
+			"system": {
+				"summons": {
+					"bonuses": {
+						"ac": "@item.level",
+						"hp": "15 * @item.level",
+						"attackDamage": "@item.level",
+						"saveDamage": "@item.level"
+					},
+					"match": {
+						"attacks": true,
+						"proficiency": true,
+						"saves": true
+					},
+					"profiles": [
+						{
+							"name": "Demon",
+							"uuid": "@creature[fiendish spirit (demon)|tce]"
+						},
+						{
+							"name": "Devil",
+							"uuid": "@creature[fiendish spirit (devil)|tce]"
+						},
+						{
+							"name": "Yugoloth",
+							"uuid": "@creature[fiendish spirit (yugoloth)|tce]"
+						}
+					]
+				}
+			}
+		},
+		{
+			"name": "Summon Shadowspawn",
+			"source": "TCE",
+			"system": {
+				"summons": {
+					"match": {
+						"attacks": true,
+						"saves": true
+					},
+					"bonuses": {
+						"ac": "@item.level",
+						"hp": "(@item.level - 3) * 15",
+						"attackDamage": "@item.level"
+					},
+					"profiles": [
+						{
+							"name": "Fury",
+							"uuid": "@creature[shadow spirit (fury)|tce]"
+						},
+						{
+							"name": "Despair",
+							"uuid": "@creature[shadow spirit (despair)|tce]"
+						},
+						{
+							"name": "Fear",
+							"uuid": "@creature[shadow spirit (fear)|tce]"
+						}
+					]
+				}
+			}
+		},
+		{
+			"name": "Summon Undead",
+			"source": "TCE",
+			"system": {
+				"summons": {
+					"bonuses": {
+						"ac": "@item.level",
+						"hp": "(@item.level - 3) * 10",
+						"attackDamage": "@item.level"
+					},
+					"match": {
+						"attacks": true,
+						"proficiency": true,
+						"saves": true
+					},
+					"profiles": [
+						{
+							"name": "Ghostly",
+							"uuid": "@creature[undead spirit (ghostly)|tce]"
+						},
+						{
+							"name": "Putrid",
+							"uuid": "@creature[undead spirit (putrid)|tce]"
+						},
+						{
+							"name": "Skeletal",
+							"uuid": "@creature[undead spirit (skeletal)|tce]"
+						}
+					]
+				}
 			}
 		},
 		{

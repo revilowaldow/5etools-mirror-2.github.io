@@ -1093,7 +1093,8 @@
 							"imageType": "map",
 							"grid": {
 								"type": "none"
-							}
+							},
+							"id": "048"
 						}
 					],
 					"id": "041"

@@ -217,7 +217,8 @@
 						"size": 85,
 						"distance": 25
 					},
-					"credit": "Mike Schley"
+					"credit": "Mike Schley",
+					"id": "580"
 				}
 			]
 		},
@@ -3231,7 +3232,8 @@
 								"type": "none"
 							},
 							"title": "Map of Mystery",
-							"credit": "Claudio Pozas"
+							"credit": "Claudio Pozas",
+							"id": "581"
 						},
 						{
 							"type": "entries",
@@ -5923,7 +5925,7 @@
 												"type": "internal",
 												"path": "adventure/CM/thumbnail/033-map-5.01-vermeillon.webp"
 											},
-											"credit": "Time Hartin"
+											"credit": "Tim Hartin"
 										},
 										{
 											"type": "image",
@@ -5945,7 +5947,7 @@
 											"mapParent": {
 												"id": "564"
 											},
-											"credit": "Time Hartin"
+											"credit": "Tim Hartin"
 										}
 									]
 								},
@@ -6557,7 +6559,7 @@
 												"type": "internal",
 												"path": "adventure/CM/thumbnail/036-map-5.02-mayor-duvezins-house.webp"
 											},
-											"credit": "Time Hartin"
+											"credit": "Tim Hartin"
 										},
 										{
 											"type": "image",
@@ -6578,7 +6580,7 @@
 											"mapParent": {
 												"id": "565"
 											},
-											"credit": "Time Hartin"
+											"credit": "Tim Hartin"
 										}
 									]
 								},
@@ -8150,7 +8152,7 @@
 												"type": "internal",
 												"path": "adventure/CM/thumbnail/038-map-5.03-platinum-mine.webp"
 											},
-											"credit": "Time Hartin"
+											"credit": "Tim Hartin"
 										},
 										{
 											"type": "image",
@@ -8171,7 +8173,7 @@
 											"mapParent": {
 												"id": "566"
 											},
-											"credit": "Time Hartin"
+											"credit": "Tim Hartin"
 										}
 									]
 								},

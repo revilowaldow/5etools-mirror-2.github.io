@@ -319,10 +319,10 @@ class SpellBuilder extends Builder {
 
 		const otherSourceRows = [];
 
-		const $wrpRows = $(`<div/>`).appendTo($rowInner);
+		const $wrpRows = $(`<div></div>`).appendTo($rowInner);
 		(this._state.otherSources || []).forEach(it => this.__$getOtherSourcesInput__getOtherSourceRow(doUpdateState, otherSourceRows, it).$wrp.appendTo($wrpRows));
 
-		const $wrpBtnAdd = $(`<div/>`).appendTo($rowInner);
+		const $wrpBtnAdd = $(`<div></div>`).appendTo($rowInner);
 		$(`<button class="btn btn-xs btn-default">Add Other Source</button>`)
 			.appendTo($wrpBtnAdd)
 			.click(() => {
@@ -355,7 +355,7 @@ class SpellBuilder extends Builder {
 
 		const out = {getOtherSource};
 
-		const $wrpBtnRemove = $(`<div class="text-right mb-2"/>`);
+		const $wrpBtnRemove = $(`<div class="text-right mb-2"></div>`);
 		const $wrp = $$`<div class="ve-flex-col mkbru__wrp-rows mkbru__wrp-rows--removable">
 			<div class="ve-flex-v-center mb-2"><span class="mr-2 mkbru__sub-name--33">Source</span>${$selSource}</div>
 			<div class="ve-flex-v-center mb-2"><span class="mr-2 mkbru__sub-name--33">Page</span>${$iptPage}</div>
@@ -378,10 +378,10 @@ class SpellBuilder extends Builder {
 
 		const timeRows = [];
 
-		const $wrpRows = $(`<div/>`).appendTo($rowInner);
+		const $wrpRows = $(`<div></div>`).appendTo($rowInner);
 		this._state.time.forEach(time => SpellBuilder.__$getTimeInput__getTimeRow(doUpdateState, timeRows, time).$wrp.appendTo($wrpRows));
 
-		const $wrpBtnAdd = $(`<div/>`).appendTo($rowInner);
+		const $wrpBtnAdd = $(`<div></div>`).appendTo($rowInner);
 		$(`<button class="btn btn-xs btn-default">Add Casting Time</button>`)
 			.appendTo($wrpBtnAdd)
 			.click(() => {
@@ -430,7 +430,7 @@ class SpellBuilder extends Builder {
 			<span class="mr-2 mkbru__sub-name--33">Condition</span>${$iptCond}
 		</div>`.toggleVe(ixInitial === 2);
 
-		const $wrpBtnRemove = $(`<div class="text-right mb-2"/>`);
+		const $wrpBtnRemove = $(`<div class="text-right mb-2"></div>`);
 		const $wrp = $$`<div class="ve-flex-col mkbru__wrp-rows mkbru__wrp-rows--removable">
 			<div class="ve-flex-v-center mb-2">${$iptNum}${$selUnit}</div>
 			${$stageCond}
@@ -646,10 +646,10 @@ class SpellBuilder extends Builder {
 
 		const durationRows = [];
 
-		const $wrpRows = $(`<div/>`).appendTo($rowInner);
+		const $wrpRows = $(`<div></div>`).appendTo($rowInner);
 		this._state.duration.forEach(duration => SpellBuilder.__$getDurationInput__getDurationRow(doUpdateState, durationRows, duration).$wrp.appendTo($wrpRows));
 
-		const $wrpBtnAdd = $(`<div/>`).appendTo($rowInner);
+		const $wrpBtnAdd = $(`<div></div>`).appendTo($rowInner);
 		$(`<button class="btn btn-xs btn-default">Add Duration</button>`)
 			.appendTo($wrpBtnAdd)
 			.click(() => {
@@ -721,7 +721,7 @@ class SpellBuilder extends Builder {
 
 		// ENDS
 		const endRows = [];
-		const $wrpEndRows = $(`<div class="ve-flex-col"/>`);
+		const $wrpEndRows = $(`<div class="ve-flex-col"></div>`);
 		const $btnAddEnd = $(`<button class="btn btn-xs btn-default">Add &quot;Until&quot; Clause</button>`)
 			.click(() => {
 				SpellBuilder.__$getDurationInput__getDurationRow__getEndRow(doUpdateState, endRows, "dispel").$wrp.appendTo($wrpEndRows);
@@ -735,7 +735,7 @@ class SpellBuilder extends Builder {
 
 		const out = {getDuration};
 
-		const $wrpBtnRemove = $(`<div class="text-right mb-2"/>`);
+		const $wrpBtnRemove = $(`<div class="text-right mb-2"></div>`);
 		const $wrp = $$`<div class="ve-flex-col mkbru__wrp-rows mkbru__wrp-rows--removable">
 			<div class="ve-flex-v-center mb-2"><span class="mr-2 mkbru__sub-name--33">Duration Type</span>${$selDurationType}</div>
 			${$stageAmount}
@@ -761,7 +761,7 @@ class SpellBuilder extends Builder {
 
 		const out = {getEnd};
 
-		const $wrpBtnRemove = $(`<div/>`);
+		const $wrpBtnRemove = $(`<div></div>`);
 		const $wrp = $$`<div class="ve-flex">
 			<div class="mkbru__sub-name--33 mr-2"></div>
 			<div class="mb-2 ve-flex-v-center w-100">${$selEndType}${$wrpBtnRemove}</div>
@@ -792,7 +792,7 @@ class SpellBuilder extends Builder {
 		};
 
 		// CLASSES
-		const $wrpRowsCls = $(`<div/>`).appendTo($rowInnerCls);
+		const $wrpRowsCls = $(`<div></div>`).appendTo($rowInnerCls);
 		const doRefreshCls = () => {
 			$wrpRowsCls.empty();
 			classRows.splice(0, classRows.length);
@@ -800,7 +800,7 @@ class SpellBuilder extends Builder {
 		};
 		doRefreshCls();
 
-		const $wrpBtnAddCls = $(`<div/>`).appendTo($rowInnerCls);
+		const $wrpBtnAddCls = $(`<div></div>`).appendTo($rowInnerCls);
 		$(`<button class="btn btn-xs btn-default">Add Class</button>`)
 			.appendTo($wrpBtnAddCls)
 			.click(() => {
@@ -809,7 +809,7 @@ class SpellBuilder extends Builder {
 			});
 
 		// SUBCLASSES
-		const $wrpRowsSc = $(`<div/>`).appendTo($rowInnerSc);
+		const $wrpRowsSc = $(`<div></div>`).appendTo($rowInnerSc);
 		const doRefreshSc = () => {
 			$wrpRowsSc.empty();
 			subclassRows.splice(0, subclassRows.length);
@@ -817,7 +817,7 @@ class SpellBuilder extends Builder {
 		};
 		doRefreshSc();
 
-		const $wrpBtnAddSc = $(`<div/>`).appendTo($rowInnerSc);
+		const $wrpBtnAddSc = $(`<div></div>`).appendTo($rowInnerSc);
 		$(`<button class="btn btn-xs btn-default">Add Subclass</button>`)
 			.appendTo($wrpBtnAddSc)
 			.click(() => {
@@ -843,7 +843,7 @@ class SpellBuilder extends Builder {
 
 		const out = {getClass};
 
-		const $wrpBtnRemove = $(`<div class="text-right mb-2"/>`);
+		const $wrpBtnRemove = $(`<div class="text-right mb-2"></div>`);
 		const $wrp = $$`<div class="ve-flex-col mkbru__wrp-rows mkbru__wrp-rows--removable">
 			<div class="ve-flex-v-center mb-2"><span class="mr-2 mkbru__sub-name--33">Class Name</span>${$iptClass}</div>
 			<div class="ve-flex-v-center mb-2"><span class="mr-2 mkbru__sub-name--33">Class Source</span>${$selClassSource}</div>
@@ -897,7 +897,7 @@ class SpellBuilder extends Builder {
 
 		const out = {getSubclass};
 
-		const $wrpBtnRemove = $(`<div class="text-right mb-2"/>`);
+		const $wrpBtnRemove = $(`<div class="text-right mb-2"></div>`);
 		const $wrp = $$`<div class="ve-flex-col mkbru__wrp-rows">
 			<div class="ve-flex-v-center mb-2"><span class="mr-2 mkbru__sub-name--33">Class Name</span>${$iptClass}</div>
 			<div class="ve-flex-v-center mb-2"><span class="mr-2 mkbru__sub-name--33">Class Source</span>${$selClassSource}</div>
@@ -926,7 +926,7 @@ class SpellBuilder extends Builder {
 
 		const raceRows = [];
 
-		const $wrpRows = $(`<div/>`).appendTo($rowInner);
+		const $wrpRows = $(`<div></div>`).appendTo($rowInner);
 
 		const doRefresh = () => {
 			$wrpRows.empty();
@@ -935,7 +935,7 @@ class SpellBuilder extends Builder {
 		};
 		doRefresh();
 
-		const $wrpBtnAdd = $(`<div/>`).appendTo($rowInner);
+		const $wrpBtnAdd = $(`<div></div>`).appendTo($rowInner);
 		$(`<button class="btn btn-xs btn-default">Add Race</button>`)
 			.appendTo($wrpBtnAdd)
 			.click(() => {
@@ -975,7 +975,7 @@ class SpellBuilder extends Builder {
 
 		const out = {getRace};
 
-		const $wrpBtnRemove = $(`<div class="text-right mb-2"/>`);
+		const $wrpBtnRemove = $(`<div class="text-right mb-2"></div>`);
 		const $wrp = $$`<div class="ve-flex-col mkbru__wrp-rows">
 			<div class="ve-flex-v-center mb-2"><span class="mr-2 mkbru__sub-name--33">Name</span>${$iptRace}</div>
 			<div class="ve-flex-v-center mb-2"><span class="mr-2 mkbru__sub-name--33">Source</span>${$selSource}</div>
@@ -1042,7 +1042,7 @@ class SpellBuilder extends Builder {
 
 		const out = {getIdentObject};
 
-		const $wrpBtnRemove = $(`<div class="text-right mb-2"/>`);
+		const $wrpBtnRemove = $(`<div class="text-right mb-2"></div>`);
 		const $wrp = $$`<div class="ve-flex-col mkbru__wrp-rows">
 			<div class="ve-flex-v-center mb-2"><span class="mr-2 mkbru__sub-name--33">Name</span>${$iptName}</div>
 			<div class="ve-flex-v-center mb-2"><span class="mr-2 mkbru__sub-name--33">Source</span>${$selSource}</div>
@@ -1201,14 +1201,14 @@ class SpellBuilder extends Builder {
 		tabs.forEach(it => it.$wrpTab.appendTo($wrp));
 
 		// Spell
-		const $tblSpell = $(`<table class="w-100 stats"/>`).appendTo(spellTab.$wrpTab);
+		const $tblSpell = $(`<table class="w-100 stats"></table>`).appendTo(spellTab.$wrpTab);
 		// Make a copy of the spell, and add the data that would be displayed in the spells page
 		const procSpell = MiscUtil.copy(this._state);
 		Renderer.spell.initBrewSources(procSpell);
 		RenderSpells.$getRenderedSpell(procSpell, this._subclassLookup, {isSkipExcludesRender: true}).appendTo($tblSpell);
 
 		// Info
-		const $tblInfo = $(`<table class="w-100 stats"/>`).appendTo(infoTab.$wrpTab);
+		const $tblInfo = $(`<table class="w-100 stats"></table>`).appendTo(infoTab.$wrpTab);
 		Renderer.utils.pBuildFluffTab({
 			isImageTab: false,
 			$content: $tblInfo,
@@ -1217,7 +1217,7 @@ class SpellBuilder extends Builder {
 		});
 
 		// Images
-		const $tblImages = $(`<table class="w-100 stats"/>`).appendTo(imageTab.$wrpTab);
+		const $tblImages = $(`<table class="w-100 stats"></table>`).appendTo(imageTab.$wrpTab);
 		Renderer.utils.pBuildFluffTab({
 			isImageTab: true,
 			$content: $tblImages,
@@ -1226,7 +1226,7 @@ class SpellBuilder extends Builder {
 		});
 
 		// Data
-		const $tblData = $(`<table class="w-100 stats stats--book mkbru__wrp-output-tab-data"/>`).appendTo(dataTab.$wrpTab);
+		const $tblData = $(`<table class="w-100 stats stats--book mkbru__wrp-output-tab-data"></table>`).appendTo(dataTab.$wrpTab);
 		const asCode = Renderer.get().render({
 			type: "entries",
 			entries: [
@@ -1242,7 +1242,7 @@ class SpellBuilder extends Builder {
 		$tblData.append(Renderer.utils.getBorderTr());
 
 		// Markdown
-		const $tblMarkdown = $(`<table class="w-100 stats stats--book mkbru__wrp-output-tab-data"/>`).appendTo(markdownTab.$wrpTab);
+		const $tblMarkdown = $(`<table class="w-100 stats stats--book mkbru__wrp-output-tab-data"></table>`).appendTo(markdownTab.$wrpTab);
 		$tblMarkdown.append(Renderer.utils.getBorderTr());
 		$tblMarkdown.append(`<tr><td colspan="6">${this._getRenderedMarkdownCode()}</td></tr>`);
 		$tblMarkdown.append(Renderer.utils.getBorderTr());

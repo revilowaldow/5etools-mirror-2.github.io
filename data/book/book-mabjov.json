@@ -37,7 +37,7 @@
 					"type": "inset",
 					"name": "Mentors and Group Patron Rules",
 					"entries": [
-						"Dungeons & Dragons has already provided rules on mentors with their excellent write ups on Group Patrons, so we will be using that term in this book."
+						"Dungeons & Dragons has already provided rules on mentors with their excellent write ups on Group Patrons, so we use that term in this book."
 					],
 					"id": "003"
 				},
@@ -79,7 +79,7 @@
 							"type": "entries",
 							"name": "Themes and Goals",
 							"entries": [
-								"The group patron helps determine the theme of a campaign through the missions that they send the player characters on. All patrons have an overarching ambition that determines what kind of missions they will be giving out. This ambition or cause encourages all the player characters to work together."
+								"The group patron helps determine the theme of a campaign through the missions that they send the player characters on. All patrons have an overarching ambition that determines what kind of missions they offer. This ambition or cause encourages all the player characters to work together."
 							],
 							"id": "007"
 						},
@@ -106,7 +106,7 @@
 							"name": "Enemies",
 							"page": 6,
 							"entries": [
-								"Each group patron has a list of enemies. In addition to the infernal lords listed in the Campaign Villain section, these enemies include other group patrons. The contacts from these enemy group patrons can be used as rivals to the player characters or even as allies of the campaign villain."
+								"Each group patron has a list of enemies. In addition to the infernal lords listed in the Random Campaign Villain table, these enemies include other group patrons. The contacts from these enemy group patrons can be used as rivals to the player characters or even as allies of the campaign villain."
 							],
 							"id": "00a"
 						},
@@ -142,7 +142,7 @@
 							"name": "Goals",
 							"page": 6,
 							"entries": [
-								"An effective campaign villain has a clear reason for interfering with the characters' lives. It is usually in clear opposition to the goals of the player character's group patron."
+								"An effective campaign villain has a clear reason for interfering with the characters' lives. It is usually in clear opposition to the goals of the character's group patron."
 							],
 							"id": "00e"
 						},
@@ -244,14 +244,14 @@
 								[
 									"1",
 									"Adventurer's Guild",
-									"Doc Watson, Flimp",
+									"Doc Watson, Flimp Shagglecran",
 									"Lighthearted",
 									"An unlikely pair who want to bankroll you to become famous adventurers. Why not have some laughs on your way to stardom."
 								],
 								[
 									"2",
 									"Candlekeep",
-									"{@creature Valygar|MaBJoV|Valygar Corthola, Xan}",
+									"{@creature Valygar|MaBJoV|Valygar Corthola, Xan Moonblade}",
 									"High adventure",
 									"Work for the most prestigious academy in the world. Seek out ancient secrets and rare artifacts and place them in the care of the monks of Candlekeep."
 								],
@@ -272,14 +272,14 @@
 								[
 									"5",
 									"Flaming Fist",
-									"Borivik, {@creature Nauk|MaBJoV}",
+									"Borivik Windheim, {@creature Nauk|MaBJoV}",
 									"Mercenaries and War",
 									"Work for the world's most feared mercenaries."
 								],
 								[
 									"6",
 									"Harpers",
-									"{@creature Jaheira|MaBJoV|Jaheira, Vellin}",
+									"{@creature Jaheira|MaBJoV|Jaheira, Vellin Farstride}",
 									"Spies and Intrigue",
 									"Join the Harpers, a famed organization that works from the shadows to keep the world from falling into ruin."
 								],
@@ -344,7 +344,7 @@
 								[
 									"3",
 									"{@creature Cryonax|MaBJoV}",
-									"A prince of elemental evil. Ruler of the plane of ice. He wants to bring a winter to the world that never ends.",
+									"A prince of elemental evil. Ruler of the Plane of ice. He wants to bring a winter to the world that never ends.",
 									"{@creature Darien|MaBJoV}, {@creature Viconia DeVir|mabjov|Viconia}"
 								],
 								[
@@ -362,7 +362,7 @@
 								[
 									"6",
 									"Ssendam",
-									"The first Slaad. Lord of chaos and insanity. She wants to spread her anarchy and filth across the entire world.",
+									"The first slaad. Lord of chaos and insanity. She wants to spread her anarchy and filth across the entire world.",
 									"{@creature Xzar the Chaos Clone|mabjov|Xzar, Death Slaad}"
 								]
 							]
@@ -417,7 +417,7 @@
 								{
 									"type": "item",
 									"name": "Organizations:",
-									"entry": "Cowled Wizards, Emerald Cabal, Shadow Thieves"
+									"entry": "Cowled Wizards, Shadow Thieves"
 								},
 								{
 									"type": "item",
@@ -507,17 +507,42 @@
 							"id": "015"
 						},
 						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "book/MaBJoV/003.webp"
-							},
-							"width": 1844,
-							"height": 2387,
-							"grid": {
-								"type": "none"
-							},
-							"imageType": "map"
+							"type": "gallery",
+							"images": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/MaBJoV/033.webp"
+									},
+									"width": 1844,
+									"height": 2387,
+									"grid": {
+										"type": "none"
+									},
+									"title": "Map 1.1: Athkatla",
+									"imageType": "map",
+									"id": "017"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/MaBJoV/003.webp"
+									},
+									"imageType": "mapPlayer",
+									"grid": {
+										"type": "none"
+									},
+									"title": "Player Version",
+									"width": 2400,
+									"height": 3256,
+									"mapParent": {
+										"id": "017",
+										"autoScale": true
+									}
+								}
+							]
 						},
 						{
 							"type": "inset",
@@ -525,272 +550,234 @@
 							"entries": [
 								{
 									"type": "entries",
-									"name": "1. Adamantine Mug",
+									"name": "A1: Cloakspell Tower",
 									"entries": [
-										"Serves as a club for the district's merchants, offering discreet and superb service."
+										"Famous landmark forbidden to the public and a secret meeting place for the Cowled Wizards."
 									],
-									"page": 11,
-									"id": "017"
-								},
-								{
-									"type": "entries",
-									"name": "2. Brundith Fine Furnishings",
-									"entries": [
-										"Specializes in replica furniture with discreet hiding places."
-									],
-									"page": 11,
 									"id": "018"
 								},
 								{
 									"type": "entries",
-									"name": "3. Cloakspell Tower",
+									"name": "A2: Council House",
 									"entries": [
-										"Famous landmark forbidden to the public and a secret meeting place for the Cowled Wizards."
+										"The seat of power for the city's ruling Council of Six."
 									],
-									"page": 11,
 									"id": "019"
 								},
 								{
 									"type": "entries",
-									"name": "4. Copper Coronet",
+									"name": "A3: Waukeen's Promenade",
 									"entries": [
-										"A seedy dive whose regulars include smugglers and pirates."
+										"The most recognizable landmark of the city, this open-air market stadium houses some of its greatest guilds and merchant houses."
 									],
-									"page": 11,
 									"id": "01a"
 								},
 								{
 									"type": "entries",
-									"name": "5. Council House",
+									"name": "A4: Silverale Hall",
 									"entries": [
-										"The seat of power for the city's ruling Council of Six."
+										"This inn, tavern, and festhall is the oldest in the city."
 									],
-									"page": 11,
 									"id": "01b"
 								},
 								{
 									"type": "entries",
-									"name": "6. Crown Aflame",
+									"name": "A5: Grave District",
 									"entries": [
-										"This lavish theater was a previous temple to Azuth."
+										"Filled with ornate monuments and mausoleums erected in reverence to the Amnian dead."
 									],
-									"page": 11,
 									"id": "01c"
 								},
 								{
 									"type": "entries",
-									"name": "7. Dancing Dolphins House",
+									"name": "A6: Den of the Seven Vales",
 									"entries": [
-										"This mansion is used to host gatherings of wealthy merchant families."
+										"One of the city's cleaner festhalls."
 									],
-									"page": 11,
 									"id": "01d"
 								},
 								{
 									"type": "entries",
-									"name": "8. Den of the Seven Vales",
+									"name": "A7: Five Flagons",
 									"entries": [
-										"One of the city's cleaner festhalls."
+										"A popular tavern."
 									],
-									"page": 11,
 									"id": "01e"
 								},
 								{
 									"type": "entries",
-									"name": "9. Diamond Dragon",
+									"name": "A8: Sea's Bounty Tavern",
 									"entries": [
-										"The most expensive jewelry shop in the city."
+										"An old inn, tavern, and festhall."
 									],
-									"page": 11,
 									"id": "01f"
 								},
 								{
 									"type": "entries",
-									"name": "10. Dome of the Rose",
+									"name": "A9: Copper Coronet",
 									"entries": [
-										"An elegantly designed monastery devoted to the deity Lathander."
+										"A seedy dive whose regulars include smugglers and pirates."
 									],
-									"page": 11,
 									"id": "020"
 								},
 								{
 									"type": "entries",
-									"name": "11. Five Flagons",
+									"name": "A10: The Black Frog",
 									"entries": [
-										"A popular tavern."
+										"A seedy and dirty tavern."
 									],
-									"page": 11,
 									"id": "021"
 								},
 								{
 									"type": "entries",
-									"name": "12. Grave District",
+									"name": "A11: Temple of Talos",
 									"entries": [
-										"Filled with ornate monuments and mausoleums erected in reverence to the Amnian dead."
+										"Long abandoned temple overrun with beggars."
 									],
-									"page": 11,
 									"id": "022"
 								},
 								{
 									"type": "entries",
-									"name": "13. Great Griffin",
+									"name": "A12: Adamantine Mug",
 									"entries": [
-										"This massive, seven-ton bell is used to warn ships during storms."
+										"Serves as a club for the district's merchants, offering discreet and superb service."
 									],
-									"page": 11,
 									"id": "023"
 								},
 								{
 									"type": "entries",
-									"name": "14. Hall of the Society of the Lost Ingot",
+									"name": "A13: Diamond Dragon",
 									"entries": [
-										"A former temple of Ilmater used as a meeting place for merchants."
+										"The most expensive jewelry shop in the city."
 									],
-									"page": 11,
 									"id": "024"
 								},
 								{
 									"type": "entries",
-									"name": "15. Harfin Draether",
+									"name": "A14: House of The Lady of Masks",
 									"entries": [
-										"An expansive tavern renowned for its hearty and delicious fare."
+										"Lady Bellasdreia sells perfume and beauty masks from this former temple of Tymora."
 									],
-									"page": 11,
 									"id": "025"
 								},
 								{
 									"type": "entries",
-									"name": "16. House of the Lady of Masks",
+									"name": "A15: Seven Songs Importing",
 									"entries": [
-										"Lady Bellasdreia sells perfume and beauty masks from this former temple of Tymora."
+										"A business that specializes in exotic goods. A16: Dancing Dolphins House. This mansion is used to host gatherings of wealthy merchant families."
 									],
-									"page": 11,
 									"id": "026"
 								},
 								{
 									"type": "entries",
-									"name": "17. Moonhall",
+									"name": "A17: Shop of the Bizarre",
 									"entries": [
-										"A well-recognized temple of Selûne."
+										"Strange shop that specializes in magic items."
 									],
-									"page": 11,
 									"id": "027"
 								},
 								{
 									"type": "entries",
-									"name": "18. Pride of Athkatla",
+									"name": "A18: Shadowgates House",
 									"entries": [
-										"An enclosed market for traveling merchants."
+										"A private club that caters exclusively to noble-born women."
 									],
-									"page": 11,
 									"id": "028"
 								},
 								{
 									"type": "entries",
-									"name": "19. Sea's Bounty Tavern",
+									"name": "A19: Dome of the Rose",
 									"entries": [
-										"An old inn, tavern, and festhall."
+										"An elegantly designed monastery devoted to the deity Lathander."
 									],
-									"page": 11,
 									"id": "029"
 								},
 								{
 									"type": "entries",
-									"name": "20. Seven Songs Importing",
+									"name": "A20: Temple Bell",
 									"entries": [
-										"A business that specialized in exotic goods."
+										"This shop specializes in the sale of religious texts and priestly vestments."
 									],
-									"page": 11,
 									"id": "02a"
 								},
 								{
 									"type": "entries",
-									"name": "21. Shadowgates House",
+									"name": "A21: Silkstone Fashions",
 									"entries": [
-										"A private club that catered exclusively to noble-born women."
+										"A tailor's shop that offers fashionable accessories."
 									],
-									"page": 11,
 									"id": "02b"
 								},
 								{
 									"type": "entries",
-									"name": "22. Shop of the Bizarre",
+									"name": "A22: Moonhall",
 									"entries": [
-										"Strange shop that specializes in magic items."
+										"A well-recognized temple of Selûne."
 									],
-									"page": 11,
 									"id": "02c"
 								},
 								{
 									"type": "entries",
-									"name": "23. Silkstone Fashions",
+									"name": "A23: Hall of the Society of the Lost Ingot",
 									"entries": [
-										"A tailor's shop that offers fashionable accessories."
+										"A former temple of Ilmater used as a meeting place for merchants."
 									],
-									"page": 11,
 									"id": "02d"
 								},
 								{
 									"type": "entries",
-									"name": "24. Silverale Hall",
+									"name": "A24: Pride of Athkatla",
 									"entries": [
-										"This inn, tavern, and festhall is the oldest in the city."
+										"An enclosed market for traveling merchants."
 									],
-									"page": 11,
 									"id": "02e"
 								},
 								{
 									"type": "entries",
-									"name": "25. Temple Bell",
+									"name": "A25: Brundith Fine Furnishings",
 									"entries": [
-										"This shop specializes in the sale of religious texts and priestly vestments."
+										"Specializes in replica furniture with discreet hiding places."
 									],
-									"page": 11,
 									"id": "02f"
 								},
 								{
 									"type": "entries",
-									"name": "26. Temple of Helm",
+									"name": "A26: Crown Aflame",
 									"entries": [
-										"A temple that also houses the Order of the Gauntlet."
+										"This lavish theater was a previous temple to Azuth."
 									],
-									"page": 11,
 									"id": "030"
 								},
 								{
 									"type": "entries",
-									"name": "27. Temple of Sune",
+									"name": "A27: Harfin Draether",
 									"entries": [
-										"A new temple larger and more opulent than all the others in the district."
+										"An expansive tavern renowned for its hearty and delicious fare."
 									],
-									"page": 11,
 									"id": "031"
 								},
 								{
 									"type": "entries",
-									"name": "28. Temple of Talos",
+									"name": "A28: Temple of Sune",
 									"entries": [
-										"Long abandoned temple overrun with beggars."
+										"A new temple larger and more opulent than all the others in the district."
 									],
-									"page": 11,
 									"id": "032"
 								},
 								{
 									"type": "entries",
-									"name": "29. The Black Frog",
+									"name": "A29: Temple of Helm",
 									"entries": [
-										"A seedy and dirty tavern."
+										"A temple that also houses the Order of the Gauntlet."
 									],
-									"page": 11,
 									"id": "033"
 								},
 								{
 									"type": "entries",
-									"name": "30. Waukeen's Promenade",
+									"name": "A30: Great Griffin",
 									"entries": [
-										"The most recognizable landmark of the city, this open-air market stadium houses some of its greatest guilds and merchant houses."
+										"This massive, seven-ton bell is used to warn ships during storms."
 									],
-									"page": 11,
 									"id": "034"
 								}
 							],
@@ -870,7 +857,7 @@
 									"rows": [
 										[
 											"1",
-											"Demodand in pursuit of an escaped Carceri prisoner"
+											"{@creature Farastu Stalker|mabjov} in pursuit of an escaped Carceri prisoner"
 										],
 										[
 											"2",
@@ -904,9 +891,9 @@
 							"entries": [
 								{
 									"type": "entries",
-									"name": "Waukeen's Promenade",
+									"name": "Waukeen's Promenade (Area A3)",
 									"entries": [
-										"One of the greatest bazaars in Faerûn, all non-magical items in the Player's Handbook are available here. In addition, each day a character spends at the Bazaar they can roll on the following chart and discover a magical item for sale. They can spend 100 gp to get an additional roll to a maximum of 10 rolls per day.",
+										"One of the greatest bazaars in Faerûn, all non-magical items in the Player's Handbook are available here. In addition, each day a character spends at the Bazaar they can roll on the following chart and discover a magic item for sale. They can spend 100 gp to get an additional roll to a maximum of 10 rolls per day.",
 										{
 											"type": "table",
 											"caption": "Random Magical Item at Waukeen's Promenade",
@@ -1064,9 +1051,9 @@
 								},
 								{
 									"type": "entries",
-									"name": "Shop of the Bizarre",
+									"name": "Shop of the Bizarre (Area A17)",
 									"entries": [
-										"The most powerful items in Athkatla can be found in a shop run by the enigmatic and ruthless neogi. These spider-like monsters are planar travelers that trade in magic items and slaves. Each visit to the shop brings the chance of danger, for sometimes the neogi aren't looking to sell items, but are more interested in acquiring new slaves. When this happens, all of the magical items in the store are illusionary and the neogi have prepared an ambush. For each shopper, there is a neogi and an umber hulk, with a single neogi master leading the ambush. More powerful customers might mean the neogi bring an additional {@dice 1d6} gray renders. Item costs are as follows:",
+										"The most powerful items in Athkatla are found in a shop run by the enigmatic and ruthless neogi. These spider-like monsters are planar travelers that trade in magic items and slaves. Each visit to the shop brings the chance of danger, for sometimes the neogi aren't looking to sell items, but are more interested in acquiring new slaves. When this happens, all of the magic items in the store are illusionary and the neogi have prepared an ambush. For each shopper, there is a {@creature neogi|mpmm} and an {@creature umber hulk}, with a single {@creature neogi master|mpmm} leading the ambush. More powerful customers might mean the neogi bring an additional {@dice 1d6} {@creature gray render|mpmm|gray renders}. Use the Shop of the Bizarre Finds table to generate the items the shop sells. If there's been more than 24 hours since the characters have last visited, roll again. Use the Salable Magic Items table from the Dungeon Master's Guide to generate the costs associated with each generated item. If a legendary item is generated, its base price is 150,000 gp.",
 										{
 											"type": "table",
 											"caption": "Shop of the Bizarre Finds",
@@ -1215,7 +1202,7 @@
 							]
 						},
 						"Situated where the Western Heartlands meet the Sword Coast, the city-state of Baldur's Gate is a beacon of civilization in a largely untamed frontier land. Although somewhat small in terms of area, Baldur's Gate population rivals that of the highly regarded and influential Waterdeep to the north.",
-						"Because Baldur's Gate is first and foremost a city of trade built around its harbor, the docks remain the true heart of the city. This busy area is the base of operations for many key trade organizations in Faerûn, including the famous mercenary company the Flaming Fist. Even the role of the Gate's leaders, the Council of Four (or the \"Grand Dukes\"), has mercantile origins and still pulls many of its members from the ranks of successful merchants.",
+						"Because Baldur's Gate is first and foremost a city of trade built around its harbor, the docks remain the true heart of the city. This busy area is the base of operations for many key trade organizations in Faerûn, including the famous mercenary company the Flaming Fist. Even the role of the city's leaders, the Council of Four (or the \"Grand Dukes\"), has mercantile origins and still pulls many of its members from the ranks of successful merchants.",
 						"Often simply referred to as \"the Gate,\" especially by its residents\u2014Baldurians, as they're called\u2014Baldur's Gate was founded over 400 years ago. In those days, the settlement now known as Baldur's Gate was little more than a port with a surrounding shanty town. A combination of key historical figures and rapidly changing economic factors did much to shape the city within a relatively short amount of time.",
 						"Baldur's Gate is named for perhaps its most famous citizen, the legendary explorer Balduran. With his ship, the Wandering Eye, Balduran and his crew became the first Faerûnians to reach the once-mythical continent of Anchorome after sailing west across the Trackless Sea. After many years, Balduran returned to his home harbor and invested his accumulated wealth in its growth.",
 						"In this way, Balduran used the great fortune he amassed during his travels to help the small town that would someday bear his name grow into a major metropolis. His most famous project was the construction of the impressive city walls that helps make Baldur's Gate an island of security within the otherwise dangerous and unpredictable Sword Coast.",
@@ -1223,8 +1210,8 @@
 						"As the years went by, the Gate's rapid growth and increasing prosperity have caught the attention and resentment from wealthy nobles and merchants in Waterdeep and Amn. Although their relationships are strained at times\u2014especially with Amn during the Iron Crisis\u2014this conflict remains a trade rivalry that has never broken out into open war.",
 						"Baldur's Gate is surrounded by walls on three sides and the rushing River Chionthar to the south, making the city relatively secure from outside threats. For threats within the city, the Flaming Fist does its best to enforce law and order. However, the city's dense population and thriving economy have made it an ideal place for rogues and thieves to ply their trade. Facilitating such illicit activities is an extensive sewer system and network of subterranean structures. Such hidden passageways allow individuals to move throughout the city away from the prying eyes of more upstanding citizens and Flaming Fist patrols.",
 						"Topside, a system of magically powered lanterns keep the city well-lit throughout the night. These lights are at their most dense near the city's major temples, around the Ducal Palace, and by the docks where they promote both safety and productivity in these areas.",
-						"Buildings in the Gate generally get newer further away from the harbor, though exceptions can be found where previous structures were torn down for more recent construction in the same lot. The typical style for buildings in the city is towards the tall and narrow, reflecting the fixed amount of area available for development within the walls. However, the Gate is not without urban decay, which is especially common in the Northeast Outskirts, largely considered the slums of the city where only the most destitute make their homes. The northwest represents the opposite side of this coin, containing most of the finer estates belonging to wealthy Baldurians.",
-						"Like most aspects of life in Baldur's Gate, its balance of power largely revolves around what the city is mainly known for: commerce. The many trade organizations within the Gate have formed a symbiotic relationship with the Grand Dukes. The Dukes' approval can mean lucrative trade agreements, while strong trade organization support is often necessary for their election. Hired by the Dukes and paid through tariffs and taxes, the Flaming Fist mercenary company enforce the law\u2014while the city's highly organized and equally sizable Thieves' Guild works hard to ply their own trade without getting noticed.",
+						"Buildings in the Gate generally get newer further away from the harbor, though exceptions are found where previous structures were torn down for more recent construction in the same lot. The typical style for buildings in the city is towards the tall and narrow, reflecting the fixed amount of area available for development within the walls. However, the Gate is not without urban decay, which is especially common in the Northeast Outskirts, largely considered the slums of the city where only the most destitute make their homes. The northwest represents the opposite side of this coin, containing most of the finer estates belonging to wealthy Baldurians.",
+						"Like most aspects of life in Baldur's Gate, its balance of power largely revolves around what the city is mainly known for: commerce. The many trade organizations within the Gate have formed a symbiotic relationship with the Grand Dukes. The Dukes' approval means lucrative trade agreements, while strong trade organization support is often necessary for their election. Hired by the Dukes and paid through tariffs and taxes, the Flaming Fist mercenary company enforce the law\u2014while the city's highly organized and equally sizable Thieves' Guild works hard to ply their own trade without getting noticed.",
 						"Baldur's Gate has had its fate entwined for more than a century with that of Bhaal, god of murder. Bhaal foresaw that he would die in the Time of Troubles and enacted a plan that would allow him to return to life. While that plan took more than a century to come to fruition, Bhaal has indeed been reborn in the city of Baldur's Gate. Having been dead for more than a century, he now works to rebuild his following and thus strengthen his divine might.",
 						{
 							"type": "quote",
@@ -1239,7 +1226,7 @@
 							"entries": [
 								"Also known as the Council of Four, the Grand Dukes of Baldur's Gate rule the city and are entrusted with making political decisions to the benefit of its citizens. Each Duke is democratically elected by landowners within the Gate, serving for life or until resignation. Rarely, a Duke who has committed an egregious offense is then stripped of their title. Although anyone can theoretically become a Grand Duke with enough support, they are usually pulled from the ranks of wealthy merchants, renowned military leaders, and famous adventurers. The current Dukes consist of Ulder Ravengard (also commander of the Flaming Fist), Belynne Stelmane and Dillard Portyr. One of the positions has recently become open with the death of duke Thalamra Vanthampur. A newcomer to the city, {@creature Eo Ashmajiir|MaBJoV}, has been aggressively politicking to be elected to the empty seat.",
 								"The first Dukes were directly linked to the port city's nautical past and were entirely made up of retired sea captains. Despite the importance of its port, Baldur's Gate was originally ruled by wealthy farmers. Sailors resented having to pay hefty fees and taxes to use the gates built by their lost colleague, Balduran. They eventually overthrew the farmers, installing the four oldest sea captains as rulers of the Gate. The four were originally called \"Grand Dukes\" in jest, but the title\u2014now used unironically\u2014has stuck to this day.",
-								"The Grand Dukes operate out of the Ducal Palace, also known as the High Hall. One of the tallest buildings in Baldur's Gate, the Ducal Palace acts as an office for everyday decisions, a venue for regal ceremonies, and a suitably luxurious place to entertain politically important individuals visiting the city. The palace also provides sleeping quarters for temporarily displaced nobles and those whose main estates lie outside the city walls. As its name suggests, the Ducal Palace has been built to emulate the residences of more conventional royalty, complete with heavily fortified walls and high towers."
+								"The Grand Dukes operate out of the Ducal Palace ({@area B13|04d}), also known as the High Hall. One of the tallest buildings in Baldur's Gate, the Ducal Palace acts as an office for everyday decisions, a venue for regal ceremonies, and a suitably luxurious place to entertain politically important individuals visiting the city. The palace also provides sleeping quarters for temporarily displaced nobles and those whose main estates lie outside the city walls. As its name suggests, the Ducal Palace has been built to emulate the residences of more conventional royalty, complete with heavily fortified walls and high towers."
 							],
 							"page": 15,
 							"id": "03d"
@@ -1251,288 +1238,275 @@
 								"Founded in 1345 by Duke Eltan in Baldur's Gate, the Flaming Fist Mercenary Company continues to maintain both its headquarters and a strong presence within the city. What began as a consolidation of multiple local mercenary groups has quickly grown over the decades to a force of several thousand soldiers.",
 								"The rise of the Flaming Fist indeed resulted in reduced crime in Baldur's Gate and had the unexpected consequence of the city becoming a significant military power. The company continues to receive regular payment from the Dukes, as well as a portion of taxes collected from the harbor and at Wyrm's Crossing.",
 								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "book/MaBJoV/007.webp"
-									},
-									"width": 1829,
-									"height": 2371,
-									"grid": {
-										"type": "none"
-									},
-									"imageType": "map"
-								},
-								{
-									"type": "inset",
-									"name": "Notable Locations",
-									"entries": [
+									"type": "gallery",
+									"images": [
 										{
-											"type": "entries",
-											"name": "1. Baldur's Hall\u2014Splurging Sturgeon",
-											"entries": [
-												"Famous inn and tavern."
-											],
-											"page": 16,
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "book/MaBJoV/035.webp"
+											},
+											"width": 1844,
+											"height": 2387,
+											"grid": {
+												"type": "none"
+											},
+											"title": "Map 1.2: Baldur's Gate",
+											"imageType": "map",
 											"id": "040"
 										},
 										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "book/MaBJoV/007.webp"
+											},
+											"imageType": "mapPlayer",
+											"grid": {
+												"type": "none"
+											},
+											"title": "Player Version",
+											"width": 2400,
+											"height": 3256,
+											"mapParent": {
+												"id": "040",
+												"autoScale": true
+											}
+										}
+									]
+								},
+								{
+									"type": "inset",
+									"name": "Notable Locations in Baldur's Gate",
+									"entries": [
+										{
 											"type": "entries",
-											"name": "2. Blade and Star",
+											"name": "B1: Flaming Fist Fortress",
 											"entries": [
-												"Inn with reasonable prices."
+												"Holds the largest garrison of Flaming Fist soldiers in the city."
 											],
-											"page": 16,
 											"id": "041"
 										},
 										{
 											"type": "entries",
-											"name": "3. Blushing Mermaid",
+											"name": "B2: Citywatch Citadel",
 											"entries": [
-												"Seedy tavern."
+												"Fortress of the city watch."
 											],
-											"page": 16,
 											"id": "042"
 										},
 										{
 											"type": "entries",
-											"name": "4. Citywatch Citadel",
+											"name": "B3: Lady's Hall",
 											"entries": [
-												"Fortress of the city watch."
+												"Temple dedicated to Tymora."
 											],
-											"page": 16,
 											"id": "043"
 										},
 										{
 											"type": "entries",
-											"name": "5. Counting House",
+											"name": "B4: Krammoch Arkhstaff's House",
 											"entries": [
-												"The largest bank in the city."
+												"Home to the Arkhstaff family of sages."
 											],
-											"page": 16,
 											"id": "044"
 										},
 										{
 											"type": "entries",
-											"name": "6. Elfsong Tavern",
+											"name": "B5: Smiling Boar",
 											"entries": [
-												"Tavern famous for the haunting song of an elven maiden."
+												"High end restaurant run by halflings."
 											],
-											"page": 16,
 											"id": "045"
 										},
 										{
 											"type": "entries",
-											"name": "7. Felogyr's Fireworks",
+											"name": "B6: Sea Tower of Balduran",
 											"entries": [
-												"Sells fireworks and magic items."
+												"Flaming Fist fortress and prison."
 											],
-											"page": 16,
 											"id": "046"
 										},
 										{
 											"type": "entries",
-											"name": "8. Flaming Fist Fortress",
+											"name": "B7: Water Queen's House.",
 											"entries": [
-												"Holds the largest garrison of Flaming Fist soldiers in the city."
+												"Temple to Umberlee."
 											],
-											"page": 16,
 											"id": "047"
 										},
 										{
 											"type": "entries",
-											"name": "9. Hall of Wonders",
+											"name": "B8: Counting House",
 											"entries": [
-												"Temple to Gond."
+												"The largest bank in the city."
 											],
-											"page": 16,
 											"id": "048"
 										},
 										{
 											"type": "entries",
-											"name": "10. Harbormaster",
-											"entries": [],
-											"page": 16,
+											"name": "B9: Iron Throne Tower",
+											"entries": [
+												"Seat of power for the defunct Iron Throne mercantile house, now a meeting place for the Raven Circle."
+											],
 											"id": "049"
 										},
 										{
 											"type": "entries",
-											"name": "11. Helm and Cloak Inn",
+											"name": "B10: Hall of Wonders.",
 											"entries": [
-												"High end inn for the wealthy."
+												"Temple to Gond."
 											],
-											"page": 16,
 											"id": "04a"
 										},
 										{
 											"type": "entries",
-											"name": "12. Duchal Palace",
+											"name": "B11: High House of Wonders",
 											"entries": [
-												"The seat of power for the dukes of Baldur's Gate."
+												"Temple to Gond and the location of many contraptions and relics."
 											],
-											"page": 16,
 											"id": "04b"
 										},
 										{
 											"type": "entries",
-											"name": "13. High House of Wonders",
+											"name": "B12: Helm and Cloak Inn",
 											"entries": [
-												"Temple to Gond and the location of many contraptions and relics."
+												"High end inn for the wealthy."
 											],
-											"page": 16,
 											"id": "04c"
 										},
 										{
 											"type": "entries",
-											"name": "14. Iron Throne Tower",
+											"name": "B13: Ducal Palace",
 											"entries": [
-												"Seat of power for the defunct Iron Throne mercantile house, now a meeting place for the Raven Circle."
+												"The seat of power for the dukes of Baldur's Gate."
 											],
-											"page": 16,
 											"id": "04d"
 										},
 										{
 											"type": "entries",
-											"name": "15. Jopalin's",
+											"name": "B14: Three Old Kegs",
 											"entries": [
-												"Café."
+												"Famed as one of the best inns in Faerûn."
 											],
-											"page": 16,
 											"id": "04e"
 										},
 										{
 											"type": "entries",
-											"name": "16. Krammoch Arkhstaff's House",
+											"name": "B15: Ramazith's Tower",
 											"entries": [
-												"Home to the Arkhstaff family of sages."
+												"Tallest building in the city and currently occupied by a wizard named Lorroakan."
 											],
-											"page": 16,
 											"id": "04f"
 										},
 										{
 											"type": "entries",
-											"name": "17. Lady's Hall",
+											"name": "B16: Rose Portal.",
 											"entries": [
-												"Temple dedicated to Tymora."
+												"Shrine to Lathander."
 											],
-											"page": 16,
 											"id": "050"
 										},
 										{
 											"type": "entries",
-											"name": "18. Low Lantern",
+											"name": "B17: The Wide",
 											"entries": [
-												"A tavern built into a sailing ship."
+												"The largest market in the city."
 											],
-											"page": 16,
 											"id": "051"
 										},
 										{
 											"type": "entries",
-											"name": "19. Many Coins",
+											"name": "B18: Watchful Shield.",
 											"entries": [
-												"Money exchange."
+												"Temple to Helm."
 											],
-											"page": 16,
 											"id": "052"
 										},
 										{
 											"type": "entries",
-											"name": "20. Ramazith's Tower",
+											"name": "B19: Felogyr's Fireworks",
 											"entries": [
-												"Tallest building in the city and currently occupied by a wizard named Lorroakan."
+												"Sells fireworks and magic items."
 											],
-											"page": 16,
 											"id": "053"
 										},
 										{
 											"type": "entries",
-											"name": "21. Rose Portal",
+											"name": "B20: Blushing Mermaid",
 											"entries": [
-												"Shrine to Lathander."
+												"Seedy tavern."
 											],
-											"page": 16,
 											"id": "054"
 										},
 										{
 											"type": "entries",
-											"name": "22. Sea Tower of Balduran",
+											"name": "B21: Guild Hall",
 											"entries": [
-												"Flaming Fist fortress and prison."
+												"Location of Baldur's Gate's thieves' guild."
 											],
-											"page": 16,
 											"id": "055"
 										},
 										{
 											"type": "entries",
-											"name": "23. Smiling Boar",
+											"name": "B22: Unrolling Scroll.",
 											"entries": [
-												"High end restaurant run by halflings."
+												"Shrine to Oghma."
 											],
-											"page": 16,
 											"id": "056"
 										},
 										{
 											"type": "entries",
-											"name": "24. Sorcerous Sundries",
+											"name": "B23: Baldur's Hall\u2014Splurging Sturgeon",
 											"entries": [
-												"A magical shop run by the Red Wizards."
+												"Famous inn and tavern."
 											],
-											"page": 16,
 											"id": "057"
 										},
 										{
 											"type": "entries",
-											"name": "25",
+											"name": "B24: Jopalin's.",
 											"entries": [
-												"Guild hall. Location of Baldur's Gate's thieves' guild."
+												"Café."
 											],
-											"page": 16,
 											"id": "058"
 										},
 										{
 											"type": "entries",
-											"name": "26. Three Old Kegs",
-											"entries": [
-												"Famed as one of the best inns in Faerûn."
-											],
-											"page": 16,
+											"name": "B25: Harbormaster.",
+											"entries": [],
 											"id": "059"
 										},
 										{
 											"type": "entries",
-											"name": "27. Unrolling Scroll",
+											"name": "B26: Low Lantern",
 											"entries": [
-												"Shrine to Oghma."
+												"A tavern built into a sailing ship. B27: Many Coins. Money exchange."
 											],
-											"page": 16,
 											"id": "05a"
 										},
 										{
 											"type": "entries",
-											"name": "28. Watchful Shield",
+											"name": "B28: Elfsong Tavern",
 											"entries": [
-												"Temple to Helm."
+												"Tavern famous for the haunting song of an elf maiden."
 											],
-											"page": 16,
 											"id": "05b"
 										},
 										{
 											"type": "entries",
-											"name": "29. Water Queen's House",
+											"name": "B29: Sorcerous Sundries",
 											"entries": [
-												"Temple to Umberlee."
+												"A magical shop run by the Red Wizards."
 											],
-											"page": 16,
 											"id": "05c"
 										},
 										{
 											"type": "entries",
-											"name": "30. The Wide",
+											"name": "B30: Blade and Star",
 											"entries": [
-												"The largest market in the city."
+												"Inn with reasonable prices."
 											],
-											"page": 16,
 											"id": "05d"
 										}
 									],
@@ -1610,9 +1584,9 @@
 								},
 								{
 									"type": "entries",
-									"name": "Rilsa Rael (Fence)",
+									"name": "Rilsa Rael, Fence (Area B21)",
 									"entries": [
-										"Rilsa Rael is the Guild's fence in Little Calimshan, though she can also be found in the Guild Hall in the city proper. Items are restricted by how persuasive the customer can be with Rilsa (reflected in the {@skill Persuasion} roll). It takes a day for Rilsa to acquire the item from the appropriate contact.",
+										"Rilsa Rael is the Guild's fence in Little Calimshan, though she can also be found in the Guild Hall in the city proper. Items are restricted by how persuasive the customer can be with Rilsa (reflected in the Charisma ({@skill Persuasion}) roll). It takes a day for Rilsa to acquire the item from the appropriate contact.",
 										{
 											"type": "table",
 											"caption": "Rilsa Rael's Wares",
@@ -1687,7 +1661,7 @@
 									"type": "entries",
 									"name": "Sorcerous Sundries",
 									"entries": [
-										"This famed magical shop has had multiple owners over the decades. Currently it is a front for a Red Wizard operation led by Edwin Odeisseron. The Red Wizards are adept at discerning a customer's importance (reflected in the required level for the item) and reserve rarer items to those customers who they consider influential. However, a successful {@skill Deception} check at DC 20 can bypass this restriction. The Red Wizards can have a purchased item teleported from Thay within an hour.",
+										"This famed magical shop has had multiple owners over the decades. Currently it is a front for a Red Wizard operation led by {@creature Edwin Odesseiron|mabjov}. The Red Wizards are adept at discerning a customer's importance (reflected in the required level for the item) and reserve rarer items to those customers who they consider influential. However, a successful DC 20 Charisma ({@skill Deception}) can bypass this restriction. The Red Wizards can have a purchased item teleported from Thay within an hour.",
 										{
 											"type": "table",
 											"caption": "Magic Items at Sorcerous Sundries",
@@ -1790,9 +1764,9 @@
 								},
 								{
 									"type": "entries",
-									"name": "High House of Wonders",
+									"name": "High House of Wonders (Area B11)",
 									"entries": [
-										"These items can be purchased from the High House of Wonders\u2014the largest temple to Gond in Faerûn. The high priest only makes the rarest items available to those he considers to be pious in nature (reflected in a {@skill Religion} roll).",
+										"These items can be purchased from the High House of Wonders\u2014the largest temple to Gond in Faerûn. The high priest only makes the rarest items available to those he considers to be pious in nature (reflected in a Intelligence ({@skill Religion}) roll).",
 										{
 											"type": "table",
 											"caption": "Magic Items at the High House of Wonders",
@@ -1924,7 +1898,7 @@
 								}
 							]
 						},
-						"Suldanessellar is an elven city in the Forest of Tethir ruled by Queen Ellesime. It houses the Tree of Life and serves as a meeting place for all of the elvish tribes within the Forest of Tethir, including the Elmanesse elven tribe to the north and the Suldusk elven tribe to the south.",
+						" The Suldanessellar of the real world is an elven city in the Forest of Tethir ruled by Queen Ellesime. It houses the Tree of Life and serves as a meeting place for all of the elvish tribes within the Forest of Tethir, including the Elmanesse elven tribe to the north and the Suldusk elven tribe to the south.",
 						"Suldanessellar is all that remains of the ancient elven kingdom of Keltormir. The elves of that ancient kingdom were saved from complete annihilation by the great elven hero Tethir\u2014the inspiration for the name of the forest. A seed given to the elves by their god, Rillifane Rallathil, was planted in the spot of Tethir's death to honor him. This seed quickly grew into the Tree of Life; becoming so massive its branches were able to support the treetop city that would eventually become Suldanessellar.",
 						"In current times, Suldanessellar is still recovering from a tragedy that nearly destroyed it a century ago. {@creature Jon Irenicus|MaBJoV}, a great elven wizard exiled from the city, tried to use the Tree of Life to complete a ritual that would transform him into a god. With the help of his sister, Bodhi, he captured Queen Ellesime and {@condition poisoned} the Tree of Life. Jon's plan was thwarted when he was killed by the Bhaalspawn, Abdel Adrian.",
 						"But Jon's death didn't bring peace to the elves of Suldanessellar. Due to a pact with the Dark Powers of the Shadowfell, his spirit was drawn into a dark reflection of the treetop city. Trapped in this Domain of Dread, Irenicus\u2014with the help of his sister\u2014is still able to inflict misery on the elves of Suldanessellar from his prison.",
@@ -1934,7 +1908,7 @@
 							"entries": [
 								"This dismal echo of Suldanessellar exists in the Shadowfell. This realm is lorded over by the siblings Jon and {@creature Bodhi Irenicus|MaBJoV}. In their version of the elven city it is always night. The city is as beautiful as its counterpart, except for a few places that have been twisted to reflect the inhabitants, such as the palace where Jon rules and the tower where Bodhi roosts. The former House of the Horn has become a lair for the Shadar-Kai, a twisted race of elves associated with the Raven Queen\u2014the dark ruler of the entire Shadowfell. Finally, the branches on the borders of the city are black and malformed, becoming the domain of bloodthirsty {@creature wolfwere|MaBJoV|wolfweres}. The branches grow thicker the further one travels, and only with the permission of either Jon or Bodhi will a path open up for someone to escape back into the real world.",
 								"Jon and Bodhi lure travelers from across the Forest of Tethir into their cursed domain. They do this by opening pathways in the forest when the moon of Selune is at its fullest. These pathways seem to lead into supernaturally beautiful groves or echo with beautiful fey song. While most of those tricked into the shadow realm are younger elves from the city of Suldanessellar, there are members of almost every race trapped in the elven city's dark reflection.",
-								"Those who first arrive find themselves in a place reminiscent to its real-world counterpart. Most of those trapped in the shadow city try to recreate a semblance of a normal life. The majority of the elven population distract themselves with music, dancing under the stars and praying to the Seldarine. For some elves, the despair of the place becomes too much and they either join the Shadar-Kai or wander out into the Black Branches to be torn apart by the {@creature wolfwere|MaBJoV|wolfweres}.",
+								"Those who first arrive find themselves in a place reminiscent to its real-world counterpart. Most of those trapped in the shadow city try to recreate a semblance of a normal life. The majority of the elven population distract themselves with music, dancing under the stars and praying to the Seldarine. For some elves, the despair of the place becomes too much and they either join the Shadar-Kai or wander out into the Black Branches ({@area S15|081}) to be torn apart by the {@creature wolfwere|MaBJoV|wolfweres}.",
 								"Jon and Bodhi are always looking for those who can help free them from their prison. They have founded an organization called the Order of Icarus. Members of the Order are the only ones that the siblings allow to leave their realm. Members of the Order seek out magical secrets or capture learned sages or spell casters to bring back to their masters. Bodhi is the one who identifies those who might have the talents required to join the Order, selecting candidates from newly trapped travelers or children who have grown up in the Shadowfell and have just come of age.",
 								"The inhabitants of the real world Suldanessellar have been tormented by its dark reflection for the entire century of its existence. When an elf in Suldanessellar goes into their daily trance, they can communicate with the elves trapped in Jon and Bodhi's realm. Those who have loved ones trapped in the shadow realm can become obsessed, spending all of their time conversing with them."
 							],
@@ -1977,15 +1951,15 @@
 										],
 										[
 											"3",
-											"{@creature Wolfwere|MaBJoV} hunt for victims in the Black Branches"
+											"Victims hunted by a {@creature Wolfwere|MaBJoV} in the Black Branches"
 										],
 										[
 											"4",
-											"{@creature Skeleton warrior|MaBJoV} seeking to punish one who has transgressed against {@creature Jon Irenicus|MaBJoV}"
+											"A {@creature Skeleton warrior|MaBJoV} seeking to punish one who has transgressed against {@creature Jon Irenicus|MaBJoV}"
 										],
 										[
 											"5",
-											"{@creature Sword spider|MaBJoV|Sword spiders} hunt the outskirts"
+											"{@creature Sword spider|MaBJoV|Sword spiders} prowling the outskirts"
 										],
 										[
 											"6",
@@ -2005,17 +1979,42 @@
 							"id": "065"
 						},
 						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "book/MaBJoV/010.webp"
-							},
-							"width": 1842,
-							"height": 2389,
-							"grid": {
-								"type": "none"
-							},
-							"imageType": "map"
+							"type": "gallery",
+							"images": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/MaBJoV/034.webp"
+									},
+									"width": 1844,
+									"height": 2387,
+									"grid": {
+										"type": "none"
+									},
+									"title": "Map 1.3: Suldanesselar",
+									"imageType": "map",
+									"id": "067"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/MaBJoV/010.webp"
+									},
+									"imageType": "mapPlayer",
+									"grid": {
+										"type": "none"
+									},
+									"title": "Player Version",
+									"width": 2400,
+									"height": 3256,
+									"mapParent": {
+										"id": "067",
+										"autoScale": true
+									}
+								}
+							]
 						},
 						{
 							"type": "inset",
@@ -2023,152 +2022,137 @@
 							"entries": [
 								{
 									"type": "entries",
-									"name": "1. Hamadryad Nest",
+									"name": "S1: Palace",
 									"entries": [
-										"Gathering place for cursed {@creature hamadryad|MaBJoV|hamadryads}."
+										"Where Jon Irenicus rules."
 									],
-									"page": 21,
-									"id": "067"
-								},
-								{
-									"type": "entries",
-									"name": "2. Harpist House",
-									"entries": [
-										"A place where elves come to listen to beautiful music played."
-									],
-									"page": 21,
 									"id": "068"
 								},
 								{
 									"type": "entries",
-									"name": "3. House of the Forsaken",
+									"name": "S2: Tower of Blood",
 									"entries": [
-										"Asylum and prison."
+										"Where Bodhi keeps residence."
 									],
-									"page": 21,
 									"id": "069"
 								},
 								{
 									"type": "entries",
-									"name": "4. House of the Horn",
+									"name": "S3: House of Silence",
 									"entries": [
-										"Where the Shadar-Kai and servants of the Raven Queen congregate."
+										"Where most elves come to meditate."
 									],
-									"page": 21,
 									"id": "06a"
 								},
 								{
 									"type": "entries",
-									"name": "5. House of Icarus",
+									"name": "S4: House of the Horn",
 									"entries": [
-										"Where members of the Order of Icarus stay when in Suldanessellar."
+										"Where the Shadar-Kai and servants of the Raven Queen congregate."
 									],
-									"page": 21,
 									"id": "06b"
 								},
 								{
 									"type": "entries",
-									"name": "6. House of Silence",
+									"name": "S5: Hamadryad Nest",
 									"entries": [
-										"Where most elves come to meditate."
+										"Gathering place for cursed hamadryads."
 									],
-									"page": 21,
 									"id": "06c"
 								},
 								{
 									"type": "entries",
-									"name": "7. House of the Moon",
+									"name": "S6: Temple to Rillifane",
 									"entries": [
-										"A smaller temple dedicated to the goddess Sehanine Moonbow."
+										"A temple to the elven god Rillifane."
 									],
-									"page": 21,
 									"id": "06d"
 								},
 								{
 									"type": "entries",
-									"name": "8. House of the Talisman",
+									"name": "S7: Queen's Monument",
 									"entries": [
-										"Where non-elves can come to stay. Not an inn, but similar in purpose."
+										"A defaced state of Queen Ellesime."
 									],
-									"page": 21,
 									"id": "06e"
 								},
 								{
 									"type": "entries",
-									"name": "9. House of the Treekeeper",
+									"name": "S8: The Gazebo",
 									"entries": [
-										"Abandoned house, often the squatting ground for those lost to madness."
+										"A romantic place where elves try to forget the reality of their situation."
 									],
-									"page": 21,
 									"id": "06f"
 								},
 								{
 									"type": "entries",
-									"name": "10. Palace",
+									"name": "S9: House of the Talisman",
 									"entries": [
-										"Where {@creature Jon Irenicus|MaBJoV} rules."
+										"Where non-elves can come to stay. Not an inn, but similar in purpose."
 									],
-									"page": 21,
 									"id": "070"
 								},
 								{
 									"type": "entries",
-									"name": "11. Queen's Monument",
+									"name": "S10: Harpist House",
 									"entries": [
-										"A defaced state of Queen Ellesime."
+										"A place where elves come to listen to beautiful music played."
 									],
-									"page": 21,
 									"id": "071"
 								},
 								{
 									"type": "entries",
-									"name": "12. Temple to Rillifane",
+									"name": "S11: House of the Moon",
 									"entries": [
-										"A temple to the elven god Rillifane."
+										"A smaller temple dedicated to the goddess Sehanine Moonbow."
 									],
-									"page": 21,
 									"id": "072"
 								},
 								{
 									"type": "entries",
-									"name": "13. The Black Branches",
+									"name": "S12: House of Icarus",
 									"entries": [
-										"{@creature Wolfwere|MaBJoV|Wolfweres} have set up in these twisted black branches and ensure that no one gets far if they try to escape the cursed city."
+										"Where members of the Order of Icarus stay when in Suldanessellar."
 									],
-									"page": 21,
 									"id": "073"
 								},
 								{
 									"type": "entries",
-									"name": "14. The Gazebo",
+									"name": "S13: House of the Treekeeper",
 									"entries": [
-										"A romantic place where elves try to forget the reality of their situation."
+										"Abandoned house, often the squatting ground for those lost to madness."
 									],
-									"page": 21,
 									"id": "074"
 								},
 								{
 									"type": "entries",
-									"name": "15. Tower of Blood",
+									"name": "S14: House of the Forsaken",
 									"entries": [
-										"Where Bodhi keeps residence."
+										"Asylum and prison."
 									],
-									"page": 21,
 									"id": "075"
+								},
+								{
+									"type": "entries",
+									"name": "S15: The Black Branches",
+									"entries": [
+										"{@creature Wolfwere|MaBJoV|Wolfweres} have set up in these twisted black branches and ensure that no one gets far if they try to escape the cursed city."
+									],
+									"id": "081"
 								}
 							],
-							"page": 21,
+							"page": 23,
 							"id": "066"
 						},
 						{
 							"type": "entries",
-							"name": "Bazaars, Fences and shops",
+							"name": "Bazaars, Fences and Shops",
 							"entries": [
 								{
 									"type": "entries",
-									"name": "House of the Horn",
+									"name": "House of the Horn (Area S4)",
 									"entries": [
-										"The Shadar-Kai sell magical items obtained from across the Shadowfell in the House of the Horn. The Shadar Kai will reveal a random magic item for each 50 gp donated. There is always a 25% chance that the Shadar Kai will sell an item that has a curse associated with it. A successful {@skill Intimidation} check ensures that they do not.",
+										"The Shadar-Kai sell magical items obtained from across the Shadowfell in the House of the Horn. The Shadar Kai will reveal a random magic item for each 50 gp donated. There is always a 25% chance that the Shadar Kai will sell an item that has a curse associated with it. A successful Charisma ({@skill Intimidation}) check ensures that they do not.",
 										{
 											"type": "table",
 											"caption": "Random Magic Items at the House of the Horn",
@@ -2321,9 +2305,9 @@
 										},
 										{
 											"type": "entries",
-											"name": "House of the Moon",
+											"name": "House of the Moon (Area S11)",
 											"entries": [
-												"Elven magic items are made available to those who show proper deference to the Seldarine. This is reflected by a roll using the {@skill Religion} skill."
+												"Elven magic items are made available to those who show proper deference to the Seldarine. A successful Intelligence ({@skill Religion}) check must be made to be allowed to purchase the item."
 											],
 											"page": 23,
 											"id": "078"
@@ -2480,7 +2464,7 @@
 						},
 						"Ust Natha is a drow city located in the Middledark of the Underdark. Its location corresponds with the southwestern border of Amn and Tethyr on the surface world. The city is small, existing entirely within a single large cavern with most of its living areas built inside of hollowed out stalagmites. Despite its size, it has become a major trading hub between the drow and other races. The city also has historical significance for the drow, as legends claim that Ust Natha is located close to the surface caves where the Ilythiiri dark elves were forced to retreat after losing the fourth Crown war. After many generations, these Ilythiri refugees evolved into the modern day drow.",
 						"Ust Natha must contend with several other Underdark settlements in the region, including a kuo-toa city and an illithid enclave. A nearby svirfneblin village is allowed to remain nominally independent as long as they supply a quota of slaves each year. The largest danger to Ust Natha is a recently awakened nest of {@creature phaerimm|MaBJoV}, located several miles beneath the city itself.",
-						"The city is controlled by several competing drow houses, the most powerful of which is the Despana family. While a majority of the city's population are drow, in recent decades the city has allowed a large contingent of foreigners to take residence. This has been at the behest of Phaere Despana, who seeks to raise the fortunes of her house by creating a place within the Underdark where surface traders feel relatively safe. Organizations such as the Shadow Thieves and Zhentarim now have permanent trading establishments within the city. In addition to the drow population and surface traders, there are thousands of quaggoth and svirfneblin slaves that support the drow houses, and even a few Illithid and aboleth envoys can be found within the city.",
+						"The city is controlled by several competing drow houses, the most powerful of which is the Despana family. While a majority of the city's population are drow, in recent decades the city has allowed a large contingent of foreigners to take residence. This has been at the behest of Phaere Despana, who seeks to raise the fortunes of her house by creating a place within the Underdark where surface traders feel relatively safe. Organizations such as the Shadow Thieves and Zhentarim now have permanent trading establishments within the city. In addition to the drow population and surface traders, there are thousands of quaggoth and svirfneblin slaves that support the drow houses, and even a few illithid and aboleth envoys can be found within the city.",
 						{
 							"type": "entries",
 							"name": "House Despana",
@@ -2510,7 +2494,7 @@
 										}
 									]
 								},
-								"House Despana is a drow noble house with branches in many drow cities of the Underdark. The largest branch is located in Ust Natha, but there are about a half-dozen other branches, including a small house in the city of Menzoberranzan. The house is headed by Matron Mother Phaere Despana, who killed her mother to take over the house more than a century ago. She is aided by a powerful archmage named Malavon, who joined her a few years ago when his branch of Despana was forced out of the drow city of Rilauven."
+								"House Despana ({@area U9|08b}) is a drow noble house with branches in many drow cities of the Underdark. The largest branch is located in Ust Natha, but there are about a half-dozen other branches, including a small house in the city of Menzoberranzan. The house is headed by Matron Mother Phaere Despana, who killed her mother to take over the house more than a century ago. She is aided by a powerful archmage named Malavon ({@area U10|08c}), who joined her a few years ago when his branch of Despana was forced out of the drow city of Rilauven."
 							],
 							"page": 24,
 							"id": "07a"
@@ -2534,11 +2518,11 @@
 									"rows": [
 										[
 											"1",
-											"{@creature Achaierai|MaBJoV} band hunting for vengeance"
+											"An {@creature Achaierai|MaBJoV} band hunting for vengeance"
 										],
 										[
 											"2",
-											"{@creature Demodand, Farastu|mabjov|Demodands} pursuing an escaped prisoner"
+											"{@creature Kelubar Consul|mabjov|Kelubar Consuls} pursuing an escaped prisoner"
 										],
 										[
 											"3",
@@ -2550,7 +2534,7 @@
 										],
 										[
 											"5",
-											"Drow war band"
+											"A war band of eight {@creature drow} led by a {@creature drow mage}"
 										],
 										[
 											"6",
@@ -2566,7 +2550,7 @@
 							"type": "inset",
 							"name": "Carcerus",
 							"entries": [
-								"This prison is used not only by Ust Natha, but by other drow cities such as Rilauven and Guallidurth; even non-drow cities such as the nearby dwarven city of Iltkazar use the prison on occasion for their worst criminals. It is considered by most Underdark denizens as unescapable and being consigned to the prison a fate worse than death. The reason for this is that it is run by demodands from the infernal plane of Carceri. A portal to the plane of Carceri is even located in its lower depths. Some of the prisoners rumored to be held in the prison include powerful drider, rogue illithid such as Alhoon and even a few specimens of phaerrim. Worst of all, some believe that the demodands keep a small number of {@creature bebilith|MaBJoV} that they have tortured into serving their needs. These spider-like creatures can unerringly pursue escaped prisoners anywhere across Faerûn."
+								"This prison is used not only by Ust Natha, but by other drow cities such as Rilauven and Guallidurth; even non-drow cities such as the nearby dwarven city of Iltkazar use the prison on occasion for their worst criminals. It is considered by most Underdark denizens as unescapable and being consigned to the prison a fate worse than death. The reason for this is that it is run by {@creature Farastu Stalker|mabjov|demodands} from the infernal plane of Carceri. A portal to the plane of Carceri is even located in its lower depths. Some of the prisoners rumored to be held in the prison include powerful drider, rogue illithid such as Alhoon and even a few specimens of {@creature phaerimm|mabjov}. Worst of all, some believe that the demodands keep a small number of {@creature bebilith|MaBJoV} that they have tortured into serving their needs. These spider-like creatures can unerringly pursue escaped prisoners anywhere across Faerûn."
 							],
 							"page": 25,
 							"id": "07c"
@@ -2577,9 +2561,9 @@
 							"entries": [
 								{
 									"type": "entries",
-									"name": "Trade Center",
+									"name": "Trade Center (Area U13)",
 									"entries": [
-										"While not as large as Waukeen's Promenade in Athkatla, Ust Natha's trade center has a range of diverse items from across the surface world and the Underdark. Some items can always be found at the market. A customer can also spend 100 gp to get a roll on the rare item chart. They may roll a maximum of 5 times per day.",
+										"While not as large as Waukeen's Promenade in Athkatla, Ust Natha's trade center has a range of diverse items from across the surface world and the Underdark. Some items can always be found at the market. A customer can also spend 100 gp to get a roll on the Random Rare Magic Items at the Trade Center table. They may roll a maximum of 5 times per day.",
 										{
 											"type": "table",
 											"caption": "Common Items at the Trade Center",
@@ -2758,9 +2742,9 @@
 								},
 								{
 									"type": "entries",
-									"name": "Aboleth Bowl",
+									"name": "Aboleth Bowl (Area U15)",
 									"entries": [
-										"The most powerful items can be found at the aboleth bowl. The aboleth deal in ancient artifacts from civilizations long dead but dealing with them can be dangerous. The wealthier the customer (as displayed by the price of an item they want to purchase), the more likely the aboleth will simply try to take control of the customer and make them a slave. An intimidation roll is required to make the aboleth back down. A failed check means that {@dice 1d4} aboleth and one chuul per customer will attack.",
+										"The most powerful items are found at the aboleth bowl. The {@creature aboleth} deal in ancient artifacts from civilizations long dead but dealing with them can be dangerous. The wealthier the customer (as displayed by the price of an item they want to purchase), the more likely the aboleth simply tries to take control of the customer and make them a slave. A successful Charisma ({@skill Intimidation}) check is required to make the aboleth back down. A failed check means that {@dice 1d4} aboleth attack, assisted by one {@creature chuul} per customer.",
 										{
 											"type": "table",
 											"caption": "Magic Items at the Aboleth Bowl",
@@ -2854,156 +2838,166 @@
 									"id": "07f"
 								},
 								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "book/MaBJoV/012.webp"
-									},
-									"width": 1846,
-									"height": 2390,
-									"grid": {
-										"type": "none"
-									},
-									"imageType": "map"
-								},
-								{
-									"type": "inset",
-									"name": "Notable Locations",
-									"entries": [
+									"type": "gallery",
+									"images": [
 										{
-											"type": "entries",
-											"name": "1. Aboleth Bowl",
-											"entries": [
-												"An aquatic building where visiting Aboleth stay."
-											],
-											"page": 26,
-											"id": "081"
-										},
-										{
-											"type": "entries",
-											"name": "2. Achaierai Pen",
-											"entries": [
-												"Captured {@creature achaierai|MaBJoV} are brought here."
-											],
-											"page": 26,
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "book/MaBJoV/036.webp"
+											},
+											"width": 1844,
+											"height": 2387,
+											"grid": {
+												"type": "none"
+											},
+											"title": "Map 1.4: Ust Natha",
+											"imageType": "map",
 											"id": "082"
 										},
 										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "book/MaBJoV/012.webp"
+											},
+											"imageType": "mapPlayer",
+											"grid": {
+												"type": "none"
+											},
+											"title": "Player Version",
+											"width": 2400,
+											"height": 3256,
+											"mapParent": {
+												"id": "082",
+												"autoScale": true
+											}
+										}
+									]
+								},
+								{
+									"type": "inset",
+									"name": "Notable Locations in Ust Natha",
+									"entries": [
+										{
 											"type": "entries",
-											"name": "3. Bazaar",
+											"name": "U1: Temple to Lolth",
 											"entries": [
-												"Where all trade is done."
+												"The largest building in Ust Natha."
 											],
-											"page": 26,
 											"id": "083"
 										},
 										{
 											"type": "entries",
-											"name": "4. Carcerus",
+											"name": "U2: Carcerus",
 											"entries": [
 												"A portal to Carceri and demodand guards makes this the perfect prison for the Underdark's most dangerous criminals."
 											],
-											"page": 26,
 											"id": "084"
 										},
 										{
 											"type": "entries",
-											"name": "5. Discourteous Dryad",
+											"name": "U3: Female Fighter Society",
 											"entries": [
-												"A tavern run by the Adventurer's Guild and the only place truly safe for surface dwellers in Ust Natha."
+												"Where female drow are taught."
 											],
-											"page": 26,
 											"id": "085"
 										},
 										{
 											"type": "entries",
-											"name": "6. Duergar's Demise",
+											"name": "U4: Woolanth",
 											"entries": [
-												"A shop that sells illicit goods and also acts as a fence run by the Shadow Thieves."
+												"Small library and one of the largest collections of knowledge on Netheril in Faerûn, including books that detail the location of phaerimm prison cysts."
 											],
-											"page": 26,
 											"id": "086"
 										},
 										{
 											"type": "entries",
-											"name": "7. Female Fighter Society",
+											"name": "U5: Duergar's Demise",
 											"entries": [
-												"Where female drow are taught."
+												"A shop that sells illicit goods and also acts as a fence run by the Shadow Thieves."
 											],
-											"page": 26,
 											"id": "087"
 										},
 										{
 											"type": "entries",
-											"name": "8. House Claddath",
+											"name": "U6: House Claddath",
 											"entries": [
 												"A house with ties to the drow city of Ched Nasad."
 											],
-											"page": 26,
 											"id": "088"
 										},
 										{
 											"type": "entries",
-											"name": "9. House Despana",
+											"name": "U7: Discourteous Dryad",
 											"entries": [
-												"The most powerful drow house in Ust Natha."
+												"A tavern run by the Adventurer's Guild and the only place truly safe for surface dwellers in Ust Natha."
 											],
-											"page": 26,
 											"id": "089"
 										},
 										{
 											"type": "entries",
-											"name": "10. House Jae'llat",
+											"name": "U8: Male Fighter Society",
 											"entries": [
-												"One of Ust Natha's founding houses."
+												"Where male drow are taught as warriors."
 											],
-											"page": 26,
 											"id": "08a"
 										},
 										{
 											"type": "entries",
-											"name": "11. Malavon's Tower",
+											"name": "U9: House Despana",
 											"entries": [
-												"The home of Malavon Despana and where drow wizards are taught."
+												"The most powerful drow house in Ust Natha."
 											],
-											"page": 26,
 											"id": "08b"
 										},
 										{
 											"type": "entries",
-											"name": "12. Male Fighter Society",
+											"name": "U10: Malavon's Tower",
 											"entries": [
-												"Where male drow are taught as warriors."
+												"The home of Malavon Despana and where drow wizards are taught."
 											],
-											"page": 26,
 											"id": "08c"
 										},
 										{
 											"type": "entries",
-											"name": "13. Rothe Pens",
+											"name": "U11: House Jae'llat",
 											"entries": [
-												"Where herds of rothe are kept for future consumption."
+												"One of Ust Natha's founding houses."
 											],
-											"page": 26,
 											"id": "08d"
 										},
 										{
 											"type": "entries",
-											"name": "14. Temple to Lolth",
+											"name": "U12: Achaierai Pen",
 											"entries": [
-												"The largest building in Ust Natha."
+												"Captured achaierai are brought here."
 											],
-											"page": 26,
 											"id": "08e"
 										},
 										{
 											"type": "entries",
-											"name": "15. Woolanth",
+											"name": "U13: Bazaar",
 											"entries": [
-												"Small library and one of the largest collections of knowledge on Netheril in Faerûn, including books that detail the location of {@creature phaerimm|MaBJoV} prison cysts."
+												"Where all trade is done."
 											],
-											"page": 26,
 											"id": "08f"
+										},
+										{
+											"type": "entries",
+											"name": "U14: Rothé Pens",
+											"entries": [
+												"Where herds of rothé are kept for future consumption."
+											],
+											"id": "11c"
+										},
+										{
+											"type": "entries",
+											"name": "U15: Aboleth Bowl",
+											"entries": [
+												"An aquatic building where visiting aboleth stay."
+											],
+											"id": "11d"
 										}
 									],
 									"page": 26,
@@ -3025,7 +3019,7 @@
 			"name": "Group Patrons",
 			"page": 28,
 			"entries": [
-				"There are ten group patrons in this chapter. Each of the group patrons includes two characters that are contacts for the player characters. If you aren't using a group patron then you can use the characters as extra villains or even henchmen for your campaign villain. You can allow your players to use the stores and other benefits of an unused group patron, but a good rule of thumb is to increase the cost by 150%.",
+				"There are ten group patrons in this chapter. Each of the group patrons includes two NPCs that are contacts for the player characters. If you aren't using a group patron then you can use the NPCs as extra villains or even henchmen for your campaign villain. You can allow your players to use the stores and other benefits of an unused group patron, but a good rule of thumb is to increase the cost by 150 percent.",
 				{
 					"type": "section",
 					"name": "Adventurer's Guild",
@@ -3085,7 +3079,7 @@
 											"name": "Faceman",
 											"page": 28,
 											"entries": [
-												"This is the role that youths across Faerûn dream of becoming: the leader of the band; the iconic hero. These are the poster children for the Guild; the ones who will have beautiful men and women waiting for them in every town, eager to spend even one night with a living legend."
+												"This is the role that youths across Faerûn dream of becoming: the leader of the band; the iconic hero. These are the poster children for the Guild; the ones who have beautiful men and women waiting for them in every town, eager to spend even one night with a living legend."
 											],
 											"id": "097"
 										}
@@ -3127,7 +3121,7 @@
 										],
 										[
 											"4",
-											"Mercenaries. You hire out to anyone who needs the unique set of skills that your group provides. As long as the money is good"
+											"Mercenary. You hire out to anyone who needs the unique set of skills that your group provides. As long as the money is good"
 										],
 										[
 											"5",
@@ -3135,7 +3129,7 @@
 										],
 										[
 											"6",
-											"Zoology. You seek out monsters to research and write about"
+											"Zoologist. You seek out monsters to research and write about"
 										]
 									]
 								}
@@ -3183,7 +3177,7 @@
 											"name": "Henchmen",
 											"page": 29,
 											"entries": [
-												"You can hire henchmen at any adventurer's guildhall. These henchmen are willing to accompany you on dangerous adventures if you are willing to pay their daily rate. However, if you ever ask them to perform a risky task, such as engage in battle, you must succeed on an {@skill Intimidation} or {@skill Persuasion} check. Other risky tasks include scouting out dangerous areas and reporting back or checking a hallway for traps. You can only have one henchman at a time.",
+												"You can hire henchmen at any adventurer's guildhall. These henchmen are willing to accompany you on dangerous adventures if you are willing to pay their daily rate. However, if you ever ask them to perform a risky task, such as engage in battle, you must succeed on a Charisma ({@skill Intimidation} or {@skill Persuasion}) check. Other risky tasks include scouting out dangerous areas and reporting back or checking a hallway for traps. You can only have one henchman at a time.",
 												{
 													"type": "table",
 													"caption": "Henchmen Rates and Risk-taking DCs",
@@ -3317,7 +3311,7 @@
 														{
 															"type": "item",
 															"name": "Classes:",
-															"entry": "Barbarians, Clerics ({@skill Nature} Domain), Druids, Monks, Paladins (Oath of the Ancients) Rangers"
+															"entry": "Barbarians, Clerics (Knowledge Domain), Druids, Monks, Paladins (Oath of the Ancients) Rangers"
 														}
 													]
 												}
@@ -3336,7 +3330,7 @@
 														{
 															"type": "item",
 															"name": "Classes:",
-															"entry": "Bards, Clerics (non-Nature Domain), Fighters, Rogues"
+															"entry": "Bards, Clerics (non-Knowledge Domain), Fighters, Rogues"
 														}
 													]
 												}
@@ -3405,11 +3399,11 @@
 										],
 										[
 											"3",
-											"Archeology. Investigate a newly discovered Netherese ruins. Bring back any secrets found"
+											"Archeology. Investigate newly discovered Netherese ruins. Bring back any secrets found"
 										],
 										[
 											"4",
-											"Evil Magic User. Defeat a necromancer or lich and take their magical relics or tomes to be sealed up in Candlekeep"
+											"Evil Magic User. Defeat a {@creature necromancer wizard|mpmm} or {@creature lich} and take their magical relics or tomes to be sealed up in Candlekeep"
 										],
 										[
 											"5",
@@ -3498,7 +3492,7 @@
 											"name": "Arcane Secrets",
 											"page": 35,
 											"entries": [
-												"Candlekeep has the largest library of magical knowledge in all of Faerûn. This includes books and scrolls describing the secrets of how to build magic items. In order to find the appropriate recipe, you must have an {@skill Arcana} bonus equal to or higher than what is listed. Most recipes have prerequisite material components, often requiring you to hunt down a specific kind of monster. To craft the item, you must spend gold equal to the material cost. Some items require the aid of a powerful assistant to craft. You only need the assistant for a single day. You can either use {@skill Persuasion} or charm magic to get their assistance.",
+												"Candlekeep has the largest library of magical knowledge in all of Faerûn. This includes books and scrolls describing the secrets of how to build magic items. In order to find the appropriate recipe, you must have an Intelligence ({@skill Arcana}) bonus equal to or higher than what is listed. Most recipes have prerequisite material components, often requiring you to hunt down a specific kind of monster. To craft the item, you must spend gold equal to the material cost. Some items require the aid of a powerful assistant to craft. You only need the assistant for a single day. You can either use Charisma ({@skill Deception}, {@skill Intimidation}, {@skill Persuasion}) or charm magic to get their assistance.",
 												{
 													"type": "table",
 													"caption": "Adventurer's Guild Arcane Secrets",
@@ -3625,7 +3619,7 @@
 						},
 						"Sune is the goddess of beauty, also known as Lady Firehair and the Lady of Love. She represents not only physical beauty, but the beauty of music, fragrances and delicious foods. Her worshippers seek out the pleasure that comes from experiencing beauty in all its forms.",
 						"The Church of Sune believes that all mortals deserve the opportunity to experience beauty during their brief lives. The church goes about ensuring that this opportunity exists in two manners. The first is the support of artistic endeavors. This covers a wide variety of ventures including culinary arts, music, painting, sculpting and others. Clerics of Sune seek out exceptional artistic talent and provide them with monetary grants or help them become members of prestigious organizations.",
-						"The second focus of the church is much more pragmatic. The church uses its vast monetary resources to support civilization in all its forms; for without cities, towns and roads, there would not be theaters, restaurants, art galleries and all of the other venues that allow for the appreciation of beauty. The church pays for the construction of roads, forts and caravansaries so that travel between cities is less dangerous. They donate to military orders that defend civilization such as the Order of the Gauntlet and the Harpers. They work hard to make sure that the Lord's Alliance is well funded and try to smooth over squabbles between the city states that make up its membership. Because of this, there are more worshippers of Sune amongst the nobility of the Lord's Alliance than any other god or goddess.",
+						"The second focus of the church is much more pragmatic. The church uses its vast monetary resources to support civilization in all its forms; for without cities, towns and roads, there would not be theaters, restaurants, art galleries and all of the other venues that allow for the appreciation of beauty. The church pays for the construction of roads, forts and caravansaries so that travel between cities is less dangerous. They donate to military orders that defend civilization such as the Order of the Gauntlet and the Harpers. They work hard to make sure that the Lords' Alliance is well funded and try to smooth over squabbles between the city states that make up its membership. Because of this, there are more worshippers of Sune amongst the nobility of the Lords' Alliance than any other god or goddess.",
 						"Temples to Sune often include venues for appreciating the arts or are built within a city district that includes them. A temple might include a vast public bathhouse with heated plumbing, or a multistory theater to allow for nightly plays or musical performances.",
 						{
 							"type": "image",
@@ -3668,7 +3662,7 @@
 											"name": "Sisters and Brothers of the Ruby Rose",
 											"page": 40,
 											"entries": [
-												"This order's mission is twofold. You are tasked with guarding all of Sune's holy sites, from small shrines to city temples. In addition to this, you are tasked with hunting down the enemies of beauty and civilization. You often work with organizations such as the Order of the Gauntlet or the Lord's Alliance. To be initiated into the order, a prospective member must stand vigil for one night outside of a major temple of Sune. Members do not need to primarily worship Sune, but they are required to wear a symbol of her somewhere on their body.",
+												"This order's mission is twofold. You are tasked with guarding all of Sune's holy sites, from small shrines to city temples. In addition to this, you are tasked with hunting down the enemies of beauty and civilization. You often work with organizations such as the Order of the Gauntlet or the Lords' Alliance. To be initiated into the order, a prospective member must stand vigil for one night outside of a major temple of Sune. Members don't need to primarily worship Sune, but they are required to wear a symbol of her somewhere on their body.",
 												{
 													"type": "list",
 													"items": [
@@ -3740,7 +3734,7 @@
 							"name": "Church of Sune Enemies",
 							"page": 41,
 							"entries": [
-								"The ugliness of {@creature Baalzebul|MaBJoV} is especially abhorrent to Sune. She hates that the archdevil was formerly Triel, one of the most beautiful angels to be found on Mount Celestia. The Church of Sune also despises Ssendam, as the Slaad lord's insanity and ugliness is a danger to the structure of the civilized world.",
+								"The ugliness of {@creature Baalzebul|MaBJoV} is especially abhorrent to Sune. She hates that the archdevil was formerly Triel, one of the most beautiful angels to be found on Mount Celestia. The Church of Sune also despises {@creature Ssendam, Lord of Madness|mabjov|Ssendam}, as the slaad lord's insanity and ugliness is a danger to the structure of the civilized world.",
 								"Sune supports efforts to vanquish powerful armies that threaten the stability of the civilized world. This includes orc hordes, hobgoblin empires, frost giant raiders, the Red Wizards of Thay, the Cult of the Dragon and other similar threats.",
 								"Sune also detests the ugliness of the undead, especially the rotting dead such as zombies, ghouls, mummies and liches."
 							],
@@ -3800,7 +3794,7 @@
 											"name": "Divine Aid",
 											"page": 41,
 											"entries": [
-												"In any settlement that includes a shrine or temple to Sune, your group can have access to magical aid. The shrine in a town or village usually has a cleric able to cast any spell of up to 3rd level. A temple in a city will usually have a cleric that can cast any spell up to 5th level. These spells are cast without cost, however any material components must be provided."
+												"In any settlement that includes a shrine or temple to Sune, your group can access magical aid. The shrine in a town or village usually has a cleric able to cast any spell of up to 3rd level. A temple in a city will usually have a cleric that can cast any spell up to 5th level. These spells are cast without cost, however any material components must be provided."
 											],
 											"id": "0ba"
 										},
@@ -3818,7 +3812,7 @@
 											"name": "Religious Relics",
 											"page": 41,
 											"entries": [
-												"Each member of your party gains access to magic items that are blessed by Sune. When purchasing a religious relic, you must be of the required level. Then you must give your contact the cost of the item. Finally, if a service is required, you must roll on the religious service table.",
+												"Each member of your party gains access to magic items that are blessed by Sune. When purchasing a religious relic, you must be of the required level. Then you must give your contact the cost of the item. Finally, if a service is required, you must roll on the Religious Service table.",
 												{
 													"type": "table",
 													"caption": "Religious Relics from the Church of Sune",
@@ -4058,7 +4052,7 @@
 														{
 															"type": "item",
 															"name": "Classes:",
-															"entry": "Barbarians, Clerics ({@skill Nature} Domain), Druids, Monks, Paladins (Oath of the Ancients) Rangers"
+															"entry": "Barbarians, Clerics ({@skill Nature} Domain), Druids, Monks, Paladins (Oath of the Ancients), Rangers"
 														}
 													]
 												}
@@ -4196,7 +4190,7 @@
 											"name": "Secret Trails",
 											"page": 47,
 											"entries": [
-												"The Emerald Enclave knows of secret trails that lead to wondrous natural locations within Faerûn. Some trails lead to beautiful wild lands in the outer planes or on other worlds. These trails can be found in any of Faerûn's forests. After walking the trail for 8 hours you will arrive at your destination. However, there is a 1 in 4 chance that you will run across one of the dangers of the trail. There is no cost to learning these trails, but your contact must feel that you are ready before they will teach you how to access it.",
+												"The Emerald Enclave knows of secret trails that lead to wondrous natural locations within Faerûn. Some trails lead to beautiful wild lands in the outer planes or on other worlds. These trails are found in any of Faerûn's forests. After walking the trail for 8 hours you will arrive at your destination. However, there is a 1 in 4 chance that you will run across one of the dangers of the trail. There is no cost to learning these trails, but your contact must feel that you are ready before they will teach you how to access it.",
 												{
 													"type": "table",
 													"caption": "Emerald Enclave Secret Trails",
@@ -4217,43 +4211,43 @@
 															"Folk path",
 															"Llyrath forest in the Moonshae islands",
 															"1",
-															"Blights"
+															"{@creature Needle Blight||Needle Blights}"
 														],
 														[
 															"Mythal paths",
 															"Myth Rynn in the forest of Tethyr or Myth Drannor in the forest of Cormanthor",
 															"1",
-															"Quicklings"
+															"{@creature Quickling|mpmm|Quicklings}"
 														],
 														[
 															"The unicorn run",
 															"The Star Mounts or the Grandfather Tree in the High Forest",
 															"3",
-															"Displacer beasts"
+															"{@creature Displacer Beast||Displacer beasts}"
 														],
 														[
 															"Forest pool to the Feywild",
 															"The fens bordering the Summer Court",
 															"5",
-															"Ettercaps and giant spiders"
+															"{@creature Ettercap||Ettercaps} and {@creature Giant Spider||giant spiders}"
 														],
 														[
 															"Tree roots to Ysgard",
 															"The Gates of the Moon\u2014home to the goddesses Selune and Sune",
 															"7",
-															"Lone green hag or a coven"
+															"Lone {@creature green hag} or a coven"
 														],
 														[
 															"Forest paths to the Beastlands",
 															"The Grove of the Unicorns\u2014the realm of the goddess Mielikki",
 															"7",
-															"Fomorian giants"
+															"{@creature fomorian||Fomorian giants}"
 														],
 														[
 															"Mushroom ring to Bytopia",
 															"Whispertree\u2014the ancient oak tree that is home to the god Baervan Wildwanderer",
 															"7",
-															"Lone night hag or a coven"
+															"Lone {@creature night hag} or a coven"
 														]
 													]
 												}
@@ -4511,7 +4505,7 @@
 											"name": "Legal Immunity",
 											"page": 52,
 											"entries": [
-												"You have a degree of immunity from the law while within Baldur's Gate or in any of the nearby settlements. However, heinous crimes such as murder and rape will result in the death penalty, to be carried out by the Flaming Fist itself."
+												"You have a degree of immunity from the law while within Baldur's Gate or in any of the nearby settlements. However, heinous crimes such as murder result in the death penalty, to be carried out by the Flaming Fist itself."
 											],
 											"id": "0d7"
 										},
@@ -4520,7 +4514,7 @@
 											"name": "Missions",
 											"page": 52,
 											"entries": [
-												"Once per month the Flaming Fist gives your group a mission to perform. This mission takes precedence over all other activities. If completed, the group can roll on the Treasure Horde: Challenge 0-4 in the DMG for their reward."
+												"Once per month the Flaming Fist gives your group a mission to perform. This mission takes precedence over all other activities. If completed, the group rolls on the Treasure Hoard: Challenge 0-4 table in the {@book Dungeon Master's Guide|DMG} for their reward."
 											],
 											"id": "0d8"
 										},
@@ -4567,7 +4561,7 @@
 														[
 															"Marshal",
 															"Aristocratic",
-															"Every month roll on the Treasure Horde: Challenge 0-4 in the DMG"
+															"Every month roll on the Treasure Horde: Challenge 0-4 table from the {@book Dungeon Master's Guide|DMG}"
 														]
 													]
 												}
@@ -4792,7 +4786,7 @@
 										],
 										[
 											"5",
-											"Assassination. Assassinate an evil noble who threatens to destabilize the Lord's Alliance"
+											"Assassination. Assassinate an evil noble who threatens to destabilize the Lords' Alliance"
 										],
 										[
 											"6",
@@ -4825,7 +4819,7 @@
 											"name": "Fences",
 											"page": 59,
 											"entries": [
-												"Because the Harpers are devoted to tracking down magic items, they have a network with access to a larger variety of magical items than anywhere outside of the Red Wizards of Thay. Each member of your party gains access to certain magic items for a suitable donation. The different costs of acquiring these magic items are described in the table opposite.",
+												"Because the Harpers are devoted to tracking down magic items, they have a network with access to a larger variety of magic items than anywhere outside of the Red Wizards of Thay. Each member of your party gains access to certain magic items for a suitable donation. The different costs of acquiring these magic items are described in the table opposite.",
 												{
 													"type": "table",
 													"caption": "Items Aquired via Harper Fences",
@@ -4915,7 +4909,7 @@
 							"name": "Build a Group Patron",
 							"page": 64,
 							"entries": [
-								"Unlike the other Group Patrons in this book, the Knights of Bahamut doesn't exist yet as a functioning organization. It is the job of you and your party members to build the Knights of Bahamut into a powerful organization."
+								"Unlike the other group patrons in this book, the Knights of Bahamut doesn't exist yet as a functioning organization. It is the job of you and your party members to build the Knights of Bahamut into a powerful organization."
 							],
 							"id": "0e8"
 						},
@@ -5064,7 +5058,7 @@
 														{
 															"type": "item",
 															"name": "Copper:",
-															"entry": "The egg must be coated in acid. This can be done with non-magical acid once a day, or by using spells such as acid splash once a day."
+															"entry": "The egg must be coated in acid. This can be done with nonmagical acid once a day, or by using spells such as acid splash once a day."
 														},
 														{
 															"type": "item",
@@ -5074,7 +5068,7 @@
 														{
 															"type": "item",
 															"name": "Bronze:",
-															"entry": "The egg must be exposed to the sky for 12 hours a day or suffused with electricity once a day. The {@spell shocking grasp} spell could be used."
+															"entry": "The egg must be exposed to the sky for 12 hours a day or suffused with electricity once a day. The {@spell shocking grasp} spell also works."
 														},
 														{
 															"type": "item",
@@ -5088,10 +5082,10 @@
 														}
 													]
 												},
-												"A typical dragon egg takes {@dice 3d6} weeks to hatch. When an egg is not looked after properly, there is a cumulative 10% chance per day that the egg will die. Once this happens, the egg will never hatch.",
+												"A typical dragon egg takes {@dice 3d6} weeks to hatch. When an egg is not looked after properly, there is a cumulative 10 percent chance per day that the egg will die. Once this happens, the egg will never hatch.",
 												"If a prospective knight wishes to bond with a dragon, they must be present at the hatching. When the newborn hatches, the knight must be the first living creature that it sees. The knight must then make the Oath of Bahamut.",
-												"The Oath of Bahamut is the sacred rite that bonds a mortal and a dragon together. During the hatching of the egg, the knight intones the oath. If a knight ever breaks the oath, the bond ends immediately. The oath must be intoned in the Draconic language, while a very rare or legendary magical item is sacrificed. The speaker does not need to know Draconic; they may be coached by someone who does.",
-												"While the Oath is being spoken, the energy from the magic item is drained and used to bind the knight to a newly-hatched wyrmling. The magic item becomes non-magical and loses its properties."
+												"The Oath of Bahamut is the sacred rite that bonds a mortal and a dragon together. During the hatching of the egg, the knight intones the oath. If a knight ever breaks the oath, the bond ends immediately. The oath must be intoned in the Draconic language, while a very rare or legendary magic item is sacrificed. The speaker does not need to know Draconic; they may be coached by someone who does.",
+												"While the Oath is being spoken, the energy from the magic item is drained and used to bind the knight to a newly-hatched wyrmling. The magic item becomes nonmagical and loses its properties."
 											],
 											"id": "0ef"
 										},
@@ -5359,16 +5353,16 @@
 											"name": "Research",
 											"page": 71,
 											"entries": [
-												"Whenever you or your group makes ability checks to research lore related to magic, undead or the Shadowfell you gain advantage."
+												"Whenever you or your group makes ability checks to research lore related to magic, Undead or the Shadowfell you gain advantage."
 											],
 											"id": "0fb"
 										},
 										{
 											"type": "entries",
-											"name": "Magical Item Transmutation",
+											"name": "Magic Item Transmutation",
 											"page": 71,
 											"entries": [
-												"Over the centuries Jon has learned the secrets of transmuting many kinds of magic items. He is willing to share those secrets with those that he feels are worthy. The ritual takes a week to prepare for. To utilize the secret ritual, you require a magic item that is to be consumed in the ritual. You (or another member of your group) must make a successful {@skill Arcana} check to succeed. Whoever makes the {@skill Arcana} check can be given assistance (and thus gain advantage on the roll) by someone who has a level in Bard, Sorcerer, Warlock or Wizard. The material component cost in gold represents the components needed. These components are consumed as well. A failed check means only the non-magical components are consumed, not the magic item. Another check can be made after the required week of preparation.",
+												"Over the centuries Jon has learned the secrets of transmuting many kinds of magic items. He is willing to share those secrets with those that he feels are worthy. The ritual takes a week to prepare for. To utilize the secret ritual, you require a magic item that is to be consumed in the ritual. You (or another member of your group) must make a successful Intelligence ({@skill Arcana}) check to succeed. Whoever makes the check can be given assistance (and thus gain advantage on the roll) by someone who has at least a level in Bard, Sorcerer, Warlock or Wizard. The material component cost in gold represents the components needed. These components are consumed as well. A failed check means only the nonmagical components are consumed, not the magic item. Another check can be made after the required week of preparation.",
 												{
 													"type": "table",
 													"caption": "Item Transmutation Components and Costs",
@@ -5482,7 +5476,7 @@
 							"height": 435
 						},
 						"The Raven Circle is a secret sect devoted to the enigmatic Raven Queen. The Raven Queen is a powerful entity that resides on the Shadowfell. She is obsessed with collecting memories associated with loss and tragedy.",
-						"One of the greatest secrets of the Raven Circle is their members ability to use the Shadowfell to travel the world. The Shadowfell is a dark reflection or \"echo\" of the Prime Material Plane. When first entering the Shadowfell, it appears very similar to the area of the world it reflects. However, for most, the further the Shadowfell is explored the more divergent from the Prime Material it will become. Soon the distorted nature of the plane makes it easy to become lost. Members of the Raven Circle are able to see through these distortions and can thus navigate the Shadowfell without losing their place in the Prime Material. This ability also means that the Circle often uses domains within the Shadowfell as bases of operations.",
+						"One of the greatest secrets of the Raven Circle is their members ability to use the Shadowfell to travel the world. The Shadowfell is a dark reflection or \"echo\" of the Material Plane. When first entering the Shadowfell, it appears very similar to the area of the world it reflects. However, for most, the further the Shadowfell is explored the more divergent from the Material Plane it becomes. Soon the distorted nature of the plane makes it easy to become lost. Members of the Raven Circle can see through these distortions and thus navigate the Shadowfell without losing their place in the Material Plane. This ability also means that the Circle often uses domains within the Shadowfell as bases of operations.",
 						{
 							"type": "inset",
 							"page": 78,
@@ -5505,7 +5499,7 @@
 											"name": "The Raven Circle",
 											"page": 78,
 											"entries": [
-												"These are members who directly venerate the Raven Queen.",
+												"You directly venerate the Raven Queen.",
 												{
 													"type": "list",
 													"items": [
@@ -5713,7 +5707,7 @@
 											"name": "Weapons of the Raven Queen",
 											"page": 79,
 											"entries": [
-												"The Raven Queen is famed for using shadow magic to create weapons that are infused with the memories that she has collected over the millennia. The most famous weapon is {@item Blackrazor}, but there have been many others. All of these weapons are sentient and can only be used after their user attunes with them. You can call upon the Raven Queen to gift you such a weapon. For her to respond you must offer up a powerful magical weapon (rare, very rare or legendary) and the memories of a powerful tormented being (CR 5+ lycanthrope, intelligence undead, cursed, or a creature who has changed alignment). When you do this, you are granted a sentient weapon of your choice with a bonus as determined by the following chart:",
+												"The Raven Queen is famed for using shadow magic to create weapons infused with the memories that she has collected over the millennia. The most famous weapon is {@item Blackrazor}, but there have been many others. All of these weapons are sentient and can only be used after their user attunes with them. You can call upon the Raven Queen to gift you such a weapon. For her to respond you must offer up a powerful magical weapon (rare, very rare or legendary) and at least one devotion token. When you do this, you are granted a sentient weapon of your choice with a bonus as determined by the following chart:",
 												{
 													"type": "table",
 													"caption": "Raven Queen Sentient Weapon Bonuses",
@@ -5760,7 +5754,7 @@
 											"name": "Sentient Weapon Powers",
 											"page": 79,
 											"entries": [
-												"You can build up the power of your sentient weapon by spending your devotion tokens. See table below.",
+												"You increase the power of your sentient weapon by spending your devotion tokens as shown on the Sentient Weapon Powers table.",
 												{
 													"type": "table",
 													"caption": "Sentient Weapon Powers",
@@ -5788,7 +5782,7 @@
 														[
 															"Gem token",
 															"3",
-															"Roll on the Magic Item Minor Property table of the DMG. This can only be taken three times"
+															"Roll on the Magic Item Minor Property table of the {@book Dungeon Master's Guide|DMG}. This can only be taken three times"
 														],
 														[
 															"Feather token",
@@ -5823,7 +5817,7 @@
 														[
 															"Gem token",
 															"12",
-															"Roll once on the Artifact Minor Beneficial Properties table in the DMG. This can only be taken three times"
+															"Roll once on the Artifact Minor Beneficial Properties table in the {@book Dungeon Master's Guide|DMG}. This can only be taken three times"
 														]
 													]
 												}
@@ -6000,7 +5994,7 @@
 											"name": "Contraband",
 											"page": 85,
 											"entries": [
-												"You have access to all of the illegal items that the Shadow Thieves deal in. This ranges from poisons and narcotics to rare scrolls and magic items. You must pay full price for all of them. Please refer to the Contraband tables below."
+												"You have access to all of the illegal items that the Shadow Thieves deal in. This ranges from poisons and narcotics to rare scrolls and magic items. You must pay full price for all of them."
 											],
 											"id": "114"
 										},
@@ -6027,7 +6021,7 @@
 											"name": "Heist Targets",
 											"page": 85,
 											"entries": [
-												"As a member of the Shadow Thieves you are given access to a list of heist targets. These targets have been extensively researched by the Shadow Thieves. If you decide to engage in one of these heists you must promise to give a 25% cut to the organization.",
+												"As a member of the Shadow Thieves you are given access to a list of extensively researched heist targets as shown on the Heist Details table. If you decide to engage in one of these heists you must promise to give a 25 percent cut to the organization.",
 												{
 													"type": "table",
 													"caption": "Heist Details",
@@ -6050,35 +6044,35 @@
 															"Diamond Dragon Jewelers in Athkatla",
 															"{@item Gem of seeing}",
 															"15,000 gp in jewels",
-															"1 mage, 4 veterans",
+															"one {@creature mage}, four {@creature veteran||veterans}",
 															"20"
 														],
 														[
 															"Seven Songs import in Athkatla",
 															"{@item Nolzur's marvelous pigments}",
 															"8,000 gp",
-															"12 thugs, 1 assassin",
+															"twelve {@creature thug||thugs}, one {@creature assassin}",
 															"15"
 														],
 														[
 															"High House of Wonders in Baldur's Gate",
 															"{@item Apparatus of kwalish}, shield guardian control medallion",
 															"20,000 gp in art objects",
-															"2 clay golems, 1 stone golem, 1 iron golem",
+															"two {@creature clay golem||clay golems}, one {@creature stone golem}, one {@creature iron golem}",
 															"25"
 														],
 														[
-															"Duchal Palace in Baldur's Gate",
+															"Ducal Palace in Baldur's Gate",
 															"{@item Figurine of wondrous power}\u2014obsidian steed",
 															"15,000 gp in platinum ingots",
-															"12 knights, 2 mages",
+															"twelve {@creature knight||knights}, two {@creature mage||mages}",
 															"25"
 														],
 														[
 															"Temple of Lolth in Ust Natha",
 															"{@item Candle of invocation}",
 															"10,000 gp",
-															"6 elite drow warriors, 4 drow priestesses",
+															"six {@creature drow elite warrior||elite drow warriors}, four {@creature drow priestess of lolth||drow priestesses}",
 															"20"
 														]
 													]
@@ -6166,9 +6160,9 @@
 					"items": [
 						"{@creature Achaierai|MaBJoV}",
 						"{@creature Bebilith|MaBJoV}",
-						"{@creature Demodand, Farastu|MaBJoV}",
-						"{@creature Demodand, Kelubar|MaBJoV}",
-						"{@creature Demodand, Shator|MaBJoV}",
+						"{@creature Farastu Stalker|MaBJoV}",
+						"{@creature Kelubar Consul|MaBJoV}",
+						"{@creature Shator Warden|MaBJoV}",
 						"{@creature Dread Doppelganger|MaBJoV}",
 						"{@creature Gibberling|MaBJoV}",
 						"{@creature Hamadryad|MaBJoV}",

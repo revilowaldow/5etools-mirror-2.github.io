@@ -500,7 +500,6 @@
 			"entries": [
 				"You have a +2 bonus to AC while wearing this armor.",
 				"You have resistance to acid damage while you wear this armor.",
-				"Made from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes.",
 				"{@note Worn by {@creature Scanlan Shorthalt|TDCSR}.}"
 			]
 		},
@@ -521,7 +520,6 @@
 			"entries": [
 				"You have a +2 bonus to AC while wearing this armor.",
 				"You have resistance to cold damage while you wear this armor.",
-				"Made from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes.",
 				"{@note Worn by {@creature Vex'ahlia|TDCSR}.}"
 			]
 		},
@@ -6413,13 +6411,13 @@
 							"type": "item",
 							"name": "Expunge Imbalance",
 							"entries": [
-								"As a bonus action, you can expend 2 charges to cast the {@spell Lesser Restoration} spell from the armor.",
-								"The armor regains {@dice 1d4} expended charges daily at dawn.",
-								"This armor consists of a fitted metal chest piece worn with supple leather. Although it leaves the legs and arms relatively unprotected, this armor provides good protection for the wearer's vital organs while leaving the wearer relatively unencumbered."
+								"As a bonus action, you can expend 2 charges to cast the {@spell Lesser Restoration} spell from the armor."
 							]
 						}
 					]
-				}
+				},
+				"The armor regains {@dice 1d4} expended charges daily at dawn.",
+				"This armor consists of a fitted metal chest piece worn with supple leather. Although it leaves the legs and arms relatively unprotected, this armor provides good protection for the wearer's vital organs while leaving the wearer relatively unencumbered."
 			],
 			"attachedSpells": [
 				"lesser restoration"
@@ -9726,12 +9724,12 @@
 							"type": "item",
 							"name": "Whirling Hail",
 							"entries": [
-								"As an action, you can spend 3 charges and cast the {@spell Ice Storm} spell (save DC 16).",
-								"The crown regains {@dice 1d6} expended charges daily at dawn."
+								"As an action, you can spend 3 charges and cast the {@spell Ice Storm} spell (save DC 16)."
 							]
 						}
 					]
-				}
+				},
+				"The crown regains {@dice 1d6} expended charges daily at dawn."
 			],
 			"attachedSpells": [
 				"ice storm"
@@ -10575,12 +10573,12 @@
 							"type": "item",
 							"name": "Shuffling Stride",
 							"entries": [
-								"As a bonus action, you can expend 1 charge to throw a card from the deck to an unoccupied space within 60 feet of yourself and teleport, along with any equipment you're wearing or carrying, to that space. The card then vanishes and returns to the deck.",
-								"The deck regains {@dice 1d6} expended charges daily at dawn."
+								"As a bonus action, you can expend 1 charge to throw a card from the deck to an unoccupied space within 60 feet of yourself and teleport, along with any equipment you're wearing or carrying, to that space. The card then vanishes and returns to the deck."
 							]
 						}
 					]
-				}
+				},
+				"The deck regains {@dice 1d6} expended charges daily at dawn."
 			],
 			"attachedSpells": [
 				"arcane gate"
@@ -14175,12 +14173,12 @@
 							"type": "item",
 							"name": "Isolating Smite",
 							"entries": [
-								"When you hit a creature with this weapon, you can force the creature to make a DC 16 Charisma saving throw. On a failed save, the creature is banished to a harmless demiplane until the end of its next turn. When the banished creature returns, it reappears in the space it left or the nearest unoccupied space if that space is occupied. Once this property is used, it can't be used again until the next dawn.",
-								"When you end your attunement to the sphere, the sphere harmlessly detaches from the weapon, and the weapon reverts to a nonmagical piece of equipment."
+								"When you hit a creature with this weapon, you can force the creature to make a DC 16 Charisma saving throw. On a failed save, the creature is banished to a harmless demiplane until the end of its next turn. When the banished creature returns, it reappears in the space it left or the nearest unoccupied space if that space is occupied. Once this property is used, it can't be used again until the next dawn."
 							]
 						}
 					]
-				}
+				},
+				"When you end your attunement to the sphere, the sphere harmlessly detaches from the weapon, and the weapon reverts to a nonmagical piece of equipment."
 			]
 		},
 		{
@@ -18371,8 +18369,7 @@
 			"weight": 13,
 			"ac": 12,
 			"entries": [
-				"While wearing this armor, you have resistance to radiant damage. Each time a creature makes a melee attack against you, it takes 3 piercing damage. A creature can choose to make an attack with disadvantage to avoid this damage.",
-				"Made from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes."
+				"While wearing this armor, you have resistance to radiant damage. Each time a creature makes a melee attack against you, it takes 3 piercing damage. A creature can choose to make an attack with disadvantage to avoid this damage."
 			]
 		},
 		{
@@ -23407,7 +23404,7 @@
 			"source": "IDRotF",
 			"page": 238,
 			"type": "R",
-			"rarity": "unknown (magic)",
+			"rarity": "unknown",
 			"weaponCategory": "simple",
 			"property": [
 				"F",
@@ -25948,10 +25945,10 @@
 									"type": "item",
 									"name": "Woe",
 									"entry": "The creature has disadvantage on attack rolls, ability checks, and saving throws for the next hour."
-								},
-								"The deck can be used in this way twice, and you regain all expended uses at the next dawn."
+								}
 							]
-						}
+						},
+						"The deck can be used in this way twice, and you regain all expended uses at the next dawn."
 					]
 				},
 				{
@@ -39968,12 +39965,12 @@
 							"type": "item",
 							"name": "Twist of Fate",
 							"entries": [
-								"When a creature within 60 feet of you makes a saving throw or an attack roll, you can use your reaction to expend 3 charges and alter the outcome, turning a failed saving throw into a successful one, a missed attack roll into a hit, or vice versa.",
-								"The wand regains {@dice 1d6} expended charges daily at dawn."
+								"When a creature within 60 feet of you makes a saving throw or an attack roll, you can use your reaction to expend 3 charges and alter the outcome, turning a failed saving throw into a successful one, a missed attack roll into a hit, or vice versa."
 							]
 						}
 					]
-				}
+				},
+				"The wand regains {@dice 1d6} expended charges daily at dawn."
 			],
 			"hasFluffImages": true
 		},
@@ -47525,8 +47522,7 @@
 					"type": "entries",
 					"name": "Curse",
 					"entries": [
-						"This armor is cursed, and attuning to it extends the curse to you. As long as you remain cursed, you're unwilling to part with the armor. Taking it off fails to end the curse. While cursed in this way, you feel disconnected from your body, continuously hearing whispers that call for you to join them. Whenever you finish a long rest while cursed, you must make a DC 11 Charisma saving throw. On a failed save, your soul is drawn from your body and trapped in an object on a different plane of existence. The object and location of this object are chosen by the DM (but might be the House of Cards; see chapter 18). While your soul is trapped in this way, your body is inert and doesn't age or require sustenance. Destroying the object frees your soul; otherwise, only a {@spell Wish} spell can restore your soul to your body.",
-						"Made from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes."
+						"This armor is cursed, and attuning to it extends the curse to you. As long as you remain cursed, you're unwilling to part with the armor. Taking it off fails to end the curse. While cursed in this way, you feel disconnected from your body, continuously hearing whispers that call for you to join them. Whenever you finish a long rest while cursed, you must make a DC 11 Charisma saving throw. On a failed save, your soul is drawn from your body and trapped in an object on a different plane of existence. The object and location of this object are chosen by the DM (but might be the House of Cards; see chapter 18). While your soul is trapped in this way, your body is inert and doesn't age or require sustenance. Destroying the object frees your soul; otherwise, only a {@spell Wish} spell can restore your soul to your body."
 					]
 				}
 			]

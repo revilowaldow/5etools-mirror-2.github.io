@@ -1154,13 +1154,35 @@
 			"entries": [
 				"{@font travel the wild wood|HPPHumblescratch}",
 				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/HWCS/Humblewood.webp"
-					},
-					"width": 1259,
-					"height": 818
+					"type": "gallery",
+					"images": [
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/HWCS/Humblewood.webp"
+							},
+							"imageType": "map",
+							"title": "Humblewood",
+							"id": "10e",
+							"width": 4000,
+							"height": 2361
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/HWCS/Humblewood-Player-Version.webp"
+							},
+							"imageType": "mapPlayer",
+							"title": "(Player Version)",
+							"mapParent": {
+								"id": "10e"
+							},
+							"width": 4000,
+							"height": 2361
+						}
+					]
 				},
 				"Humblewood is a great and ancient land covered by a vast temperate forest. In some places, this forest is so old the trees dwarf even the tallest castles. In other places, smaller trees provide food and shelter for the fauna and folk of the Wood. Humblewood is named after the forest, but beyond the trees exist the towering range of The Crest mountains, the low-lying swamplands of the Mokk Fields, and the rocky shores of the Talongrip Coast.",
 				"Many Humblewood locations can be encountered by playing through the Adventure in the Wood portion of this book. This section also fleshes out other locations, providing GMs and players alike with the tools to understand the places of the Wood and the people who live there.",

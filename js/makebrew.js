@@ -247,7 +247,7 @@ class PageUi {
 		$$`<div class="w-100">${$btnSourceAdd}</div>`.appendTo($mnu);
 
 		$mnu.append(PageUi.__$getSideMenuDivider(true));
-		this._$menuInner = $(`<div/>`).appendTo($mnu);
+		this._$menuInner = $(`<div></div>`).appendTo($mnu);
 
 		if (prevMode) await this._pSetActiveBuilder(prevMode);
 	}
@@ -453,7 +453,7 @@ class Builder extends ProxyBase {
 						DataUtil.userDownloadText(`${DataUtil.getCleanFilename(BrewUtil2.sourceJsonToFull(this._ui.source))}.md`, mdOut);
 					});
 
-				const $btnSettings = $(`<button class="btn btn-default btn-xs mb-2"><span class="glyphicon glyphicon-cog"/></button>`)
+				const $btnSettings = $(`<button class="btn btn-default btn-xs mb-2"><span class="glyphicon glyphicon-cog"></span></button>`)
 					.click(() => RendererMarkdown.pShowSettingsModal());
 
 				return $$`<div class="ve-flex-v-center btn-group">${$btnDownload}${$btnSettings}</div>`;
@@ -520,7 +520,7 @@ class Builder extends ProxyBase {
 				return;
 			}
 
-			const $btnEdit = $(`<button class="btn btn-xs btn-default mr-2" title="Edit"><span class="glyphicon glyphicon-pencil"/></button>`)
+			const $btnEdit = $(`<button class="btn btn-xs btn-default mr-2" title="Edit"><span class="glyphicon glyphicon-pencil"></span></button>`)
 				.click(async () => {
 					if (
 						this.getOnNavMessage()
@@ -616,10 +616,10 @@ class Builder extends ProxyBase {
 				),
 			]);
 
-			const $btnBurger = $(`<button class="btn btn-xs btn-default mr-2" title="More Options"><span class="glyphicon glyphicon-option-vertical"/></button>`)
+			const $btnBurger = $(`<button class="btn btn-xs btn-default mr-2" title="More Options"><span class="glyphicon glyphicon-option-vertical"></span></button>`)
 				.click(evt => ContextUtil.pOpenMenu(evt, menu));
 
-			const $btnDelete = $(`<button class="btn btn-xs btn-danger" title="Delete"><span class="glyphicon glyphicon-trash"/></button>`)
+			const $btnDelete = $(`<button class="btn btn-xs btn-danger" title="Delete"><span class="glyphicon glyphicon-trash"></span></button>`)
 				.click(async () => {
 					if (!await InputUiUtil.pGetUserBoolean({title: "Delete Entity", htmlDescription: "Are you sure?", textYes: "Yes", textNo: "Cancel"})) return;
 
@@ -772,7 +772,7 @@ class Builder extends ProxyBase {
 	static $getBtnRemoveRow (doUpdateState, rowArr, row, $wrpRow, title, opts) {
 		opts = opts || {};
 
-		return $(`<button class="btn ${opts.isExtraSmall ? "btn-xxs" : "btn-xs"} btn-danger ${opts.isProtectLast ? "mkbru__btn-rm-row" : ""}" title="Remove ${title}"><span class="glyphicon glyphicon-trash"/></button>`)
+		return $(`<button class="btn ${opts.isExtraSmall ? "btn-xxs" : "btn-xs"} btn-danger ${opts.isProtectLast ? "mkbru__btn-rm-row" : ""}" title="Remove ${title}"><span class="glyphicon glyphicon-trash"></span></button>`)
 			.click(() => {
 				rowArr.splice(rowArr.indexOf(row), 1);
 				$wrpRow.empty().remove();
@@ -806,12 +806,12 @@ class Builder extends ProxyBase {
 			doUpdateState();
 		};
 
-		const $wrpRowsOuter = $(`<div class="relative"/>`);
-		const $wrpRows = $(`<div class="ve-flex-col"/>`).appendTo($wrpRowsOuter);
+		const $wrpRowsOuter = $(`<div class="relative"></div>`);
+		const $wrpRows = $(`<div class="ve-flex-col"></div>`).appendTo($wrpRowsOuter);
 
 		const rowOptions = {$wrpRowsOuter};
 
-		const $iptEntries = $(`<textarea class="form-control form-control--minimal resize-vertical mb-2"/>`)
+		const $iptEntries = $(`<textarea class="form-control form-control--minimal resize-vertical mb-2"></textarea>`)
 			.change(() => doUpdateState());
 
 		const $btnAddImage = $(`<button class="btn btn-xs btn-default">Add Image</button>`)
@@ -854,7 +854,7 @@ class Builder extends ProxyBase {
 			}
 		}
 
-		const $btnPreview = $(`<button class="btn btn-xs btn-default mr-2" title="Preview Image"><span class="glyphicon glyphicon-fullscreen"/></button>`)
+		const $btnPreview = $(`<button class="btn btn-xs btn-default mr-2" title="Preview Image"><span class="glyphicon glyphicon-fullscreen"></span></button>`)
 			.click((evt) => {
 				const toRender = getState();
 				if (!toRender) return JqueryUtil.doToast({content: "Please enter an image URL", type: "warning"});
@@ -871,7 +871,7 @@ class Builder extends ProxyBase {
 				);
 			});
 
-		const $btnRemove = $(`<button class="btn btn-xs btn-danger" title="Remove Image"><span class="glyphicon glyphicon-trash"/></button>`)
+		const $btnRemove = $(`<button class="btn btn-xs btn-danger" title="Remove Image"><span class="glyphicon glyphicon-trash"></span></button>`)
 			.click(() => {
 				imageRows.splice(imageRows.indexOf(out), 1);
 				out.$ele.empty().remove();
@@ -978,8 +978,8 @@ class BuilderUi {
 
 		const eleType = options.eleType || "div";
 
-		const $rowInner = $(`<div class="${options.isRow ? "ve-flex" : "ve-flex-col"} w-100"/>`);
-		const $row = $$`<div class="mb-2 mkbru__row stripe-even"><${eleType} class="mkbru__wrp-row ve-flex-v-center"><span class="mr-2 mkbru__row-name ve-shrink-10 ${options.isMarked ? `mkbru__row-name--marked` : ""} ${options.title ? "help" : ""}" ${options.title ? `title="${options.title}"` : ""}>${name}</span>${options.isMarked ? `<div class="mkbru__row-mark mr-2"/>` : ""}${$rowInner}</${eleType}></div>`;
+		const $rowInner = $(`<div class="${options.isRow ? "ve-flex" : "ve-flex-col"} w-100"></div>`);
+		const $row = $$`<div class="mb-2 mkbru__row stripe-even"><${eleType} class="mkbru__wrp-row ve-flex-v-center"><span class="mr-2 mkbru__row-name ve-shrink-10 ${options.isMarked ? `mkbru__row-name--marked` : ""} ${options.title ? "help" : ""}" ${options.title ? `title="${options.title}"` : ""}>${name}</span>${options.isMarked ? `<div class="mkbru__row-mark mr-2"></div>` : ""}${$rowInner}</${eleType}></div>`;
 		return [$row, $rowInner];
 	}
 
@@ -1067,10 +1067,10 @@ class BuilderUi {
 			fnRender();
 		};
 
-		const $wrpRows = $(`<div/>`).appendTo($rowInner);
+		const $wrpRows = $(`<div></div>`).appendTo($rowInner);
 		initialState.forEach(string => BuilderUi._$getStateIptStringArray_getRow(doUpdateState, stringRows, string).$wrp.appendTo($wrpRows));
 
-		const $wrpBtnAdd = $(`<div/>`).appendTo($rowInner);
+		const $wrpBtnAdd = $(`<div></div>`).appendTo($rowInner);
 		$(`<button class="btn btn-xs btn-default">Add ${options.shortName}</button>`)
 			.appendTo($wrpBtnAdd)
 			.click(() => {
@@ -1095,7 +1095,7 @@ class BuilderUi {
 			.change(() => doUpdateState());
 		if (initialString && initialString.trim()) $iptString.val(initialString);
 
-		const $btnRemove = $(`<button class="btn btn-xs btn-danger" title="Remove Row"><span class="glyphicon glyphicon-trash"/></button>`)
+		const $btnRemove = $(`<button class="btn btn-xs btn-danger" title="Remove Row"><span class="glyphicon glyphicon-trash"></span></button>`)
 			.click(() => {
 				stringRows.splice(stringRows.indexOf(out), 1);
 				$wrp.empty().remove();
@@ -1183,7 +1183,7 @@ class BuilderUi {
 		const [$row, $rowInner] = BuilderUi.getLabelledRowTuple(name, {isMarked: true});
 
 		const initialState = MiscUtil.get(state, ...path) || [];
-		const $wrpIpts = $(`<div class="ve-flex-col w-100 mr-2"/>`).appendTo($rowInner);
+		const $wrpIpts = $(`<div class="ve-flex-col w-100 mr-2"></div>`).appendTo($rowInner);
 		const inputs = [];
 		options.vals.forEach(val => {
 			const $cb = $(`<input class="mkbru__ipt-cb" type="checkbox">`)
@@ -1239,7 +1239,7 @@ class BuilderUi {
 	}
 
 	static $getUpButton (cbUpdate, rows, myRow) {
-		return $(`<button class="btn btn-xs btn-default mkbru__btn-up-row ml-2" title="Move Up"><span class="glyphicon glyphicon-arrow-up"/></button>`)
+		return $(`<button class="btn btn-xs btn-default mkbru__btn-up-row ml-2" title="Move Up"><span class="glyphicon glyphicon-arrow-up"></span></button>`)
 			.click(() => {
 				const ix = rows.indexOf(myRow);
 				const cache = rows[ix - 1];
@@ -1250,7 +1250,7 @@ class BuilderUi {
 	}
 
 	static $getDownButton (cbUpdate, rows, myRow) {
-		return $(`<button class="btn btn-xs btn-default mkbru__btn-down-row ml-2" title="Move Down"><span class="glyphicon glyphicon-arrow-down"/></button>`)
+		return $(`<button class="btn btn-xs btn-default mkbru__btn-down-row ml-2" title="Move Down"><span class="glyphicon glyphicon-arrow-down"></span></button>`)
 			.click(() => {
 				const ix = rows.indexOf(myRow);
 				const cache = rows[ix + 1];
@@ -1278,14 +1278,14 @@ class BuilderUi {
 			});
 
 			dragMeta.on = true;
-			dragMeta.$wrap = $(`<div class="ve-flex-col ui-drag__wrp-drag-block"/>`).appendTo(options.$wrpRowsOuter);
+			dragMeta.$wrap = $(`<div class="ve-flex-col ui-drag__wrp-drag-block"></div>`).appendTo(options.$wrpRowsOuter);
 			dragMeta.$dummies = [];
 
 			const ixRow = rows.indexOf(myRow);
 
 			rows.forEach((row, i) => {
 				const dimensions = {w: row.$ele.outerWidth(true), h: row.$ele.outerHeight(true)};
-				const $dummy = $(`<div class="${i === ixRow ? "ui-drag__wrp-drag-dummy--highlight" : "ui-drag__wrp-drag-dummy--lowlight"}"/>`)
+				const $dummy = $(`<div class="${i === ixRow ? "ui-drag__wrp-drag-dummy--highlight" : "ui-drag__wrp-drag-dummy--lowlight"}"></div>`)
 					.width(dimensions.w).height(dimensions.h)
 					.mouseup(() => {
 						if (dragMeta.on) {

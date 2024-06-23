@@ -260,7 +260,7 @@ class BookUtil {
 
 	static _showBookContent_renderNavButtons ({isTop, ixChapter, bookId, data}) {
 		const tdStyle = `padding-${isTop ? "top" : "bottom"}: 6px; padding-left: 9px; padding-right: 9px;`;
-		const $wrpControls = $(`<div class="split"/>`).appendTo($(`<td colspan="6" style="${tdStyle}"/>`).appendTo($(`<tr/>`).appendTo(BookUtil.$dispBook)));
+		const $wrpControls = $(`<div class="split"></div>`).appendTo($(`<td colspan="6" style="${tdStyle}"></td>`).appendTo($(`<tr></tr>`).appendTo(BookUtil.$dispBook)));
 
 		const showPrev = ~ixChapter && ixChapter > 0;
 		BookUtil.curRender.controls.$btnsPrv = BookUtil.curRender.controls.$btnsPrv || [];
@@ -310,10 +310,10 @@ class BookUtil {
 
 			let $btnPrev;
 			if (BookUtil.referenceId) {
-				$btnPrev = $(`<button class="btn btn-xxs btn-default"><span class="glyphicon glyphicon-chevron-left"/></button>`)
+				$btnPrev = $(`<button class="btn btn-xxs btn-default"><span class="glyphicon glyphicon-chevron-left"></span></button>`)
 					.click(() => this._showBookContent_goToPage({mod: -1, bookId, ixChapter}));
 			} else {
-				$btnPrev = $(`<a href="#${this._showBookContent_goToPage({mod: -1, isGetHref: true, bookId, ixChapter})}" class="btn btn-xxs btn-default"><span class="glyphicon glyphicon-chevron-left"/></a>`)
+				$btnPrev = $(`<a href="#${this._showBookContent_goToPage({mod: -1, isGetHref: true, bookId, ixChapter})}" class="btn btn-xxs btn-default"><span class="glyphicon glyphicon-chevron-left"></span></a>`)
 					.click(() => MiscUtil.scrollPageTop());
 			}
 			$btnPrev
@@ -324,10 +324,10 @@ class BookUtil {
 
 			let $btnNext;
 			if (BookUtil.referenceId) {
-				$btnNext = $(`<button class="btn btn-xxs btn-default"><span class="glyphicon glyphicon-chevron-right"/></button>`)
+				$btnNext = $(`<button class="btn btn-xxs btn-default"><span class="glyphicon glyphicon-chevron-right"></span></button>`)
 					.click(() => this._showBookContent_goToPage({mod: 1, bookId, ixChapter}));
 			} else {
-				$btnNext = $(`<a href="#${this._showBookContent_goToPage({mod: 1, isGetHref: true, bookId, ixChapter})}" class="btn btn-xxs btn-default"><span class="glyphicon glyphicon-chevron-right"/></a>`)
+				$btnNext = $(`<a href="#${this._showBookContent_goToPage({mod: 1, isGetHref: true, bookId, ixChapter})}" class="btn btn-xxs btn-default"><span class="glyphicon glyphicon-chevron-right"></span></a>`)
 					.click(() => MiscUtil.scrollPageTop());
 			}
 			$btnNext
@@ -359,7 +359,7 @@ class BookUtil {
 			$btnToggleNarrow.toggleClass("active", this._isNarrow);
 			$(`#pagecontent`).toggleClass(`bk__stats--narrow`, this._isNarrow);
 		};
-		const $btnToggleNarrow = $(`<button class="btn btn-xs btn-default" title="Toggle Narrow Reading Width"><span class="glyphicon glyphicon-resize-small"/></button>`)
+		const $btnToggleNarrow = $(`<button class="btn btn-xs btn-default" title="Toggle Narrow Reading Width"><span class="glyphicon glyphicon-resize-small"></span></button>`)
 			.click(() => {
 				this._isNarrow = !this._isNarrow;
 				hdlNarrowUpdate();
@@ -399,7 +399,7 @@ class BookUtil {
 			]);
 		}
 
-		const $btnMenu = $(`<button class="btn btn-xs btn-default" title="Other Options"><span class="glyphicon glyphicon-option-vertical"/></button>`)
+		const $btnMenu = $(`<button class="btn btn-xs btn-default" title="Other Options"><span class="glyphicon glyphicon-option-vertical"></span></button>`)
 			.click(evt => ContextUtil.pOpenMenu(evt, this._TOP_MENU));
 
 		$$`<div class="no-print ve-flex-v-center btn-group">${$btnEntireBook}${$btnToggleNarrow}${$btnMenu}</div>`.appendTo($wrpControls);
@@ -494,7 +494,7 @@ class BookUtil {
 
 	static initScrollTopFloat () {
 		const $wrpScrollTop = Omnisearch.addScrollTopFloat();
-		BookUtil.$wrpFloatControls = $(`<div class="ve-flex-vh-center w-100 mb-2 btn-group"/>`).prependTo($wrpScrollTop);
+		BookUtil.$wrpFloatControls = $(`<div class="ve-flex-vh-center w-100 mb-2 btn-group"></div>`).prependTo($wrpScrollTop);
 	}
 
 	// custom loading to serve multiple sources
@@ -605,8 +605,8 @@ class BookUtil {
 
 	static async _booksHashChange_pHandleFound ({fromIndex, homebrewData, bookId, hashParts, $contents, isNewBook}) {
 		document.title = `${fromIndex.name} - 5etools`;
-		$(`.book-head-header`).html(this._booksHashChange_getCleanName(fromIndex));
-		$(`.book-head-message`).html("Browse content. Press F to find, and G to go to page.");
+		$(`#page__title`).html(this._booksHashChange_getCleanName(fromIndex));
+		$(`#page__subtitle`).html("Browse content. Press F to find, and G to go to page.");
 		await this._pLoadChapter(fromIndex, bookId, hashParts, homebrewData, $contents);
 		NavBar.highlightCurrentPage();
 		if (isNewBook) MiscUtil.scrollPageTop();
@@ -723,7 +723,7 @@ class BookUtil {
 		$(`span.temp`).contents().unwrap();
 		BookUtil._lastHighlight = null;
 		if (BookUtil._$findAll) BookUtil._$findAll.remove();
-		BookUtil._$findAll = $(`<div class="f-all-wrapper"/>`)
+		BookUtil._$findAll = $(`<div class="f-all-wrapper"></div>`)
 			.on("click", (e) => {
 				e.stopPropagation();
 			});
@@ -751,8 +751,8 @@ class BookUtil {
 					if (found.length) {
 						$results.show();
 						found.forEach(f => {
-							const $row = $(`<p class="f-result"/>`);
-							const $ptLink = $(`<span/>`);
+							const $row = $(`<p class="f-result"></p>`);
+							const $ptLink = $(`<span></span>`);
 							const isLitTitle = f.headerMatches && !f.page;
 							const $link = $(
 								`<a href="#${BookUtil.Search.getResultHash(bookId, f)}">
@@ -763,7 +763,7 @@ class BookUtil {
 							$row.append($ptLink);
 
 							if (!isPageMode && f.previews) {
-								const $ptPreviews = $(`<a href="#${BookUtil.Search.getResultHash(bookId, f)}"/>`);
+								const $ptPreviews = $(`<a href="#${BookUtil.Search.getResultHash(bookId, f)}"></a>`);
 								const re = new RegExp(f.term.escapeRegexp(), "gi");
 
 								$ptPreviews.on("click", evt => {
@@ -861,7 +861,7 @@ class BookUtil {
 				</a>
 				<div class="ve-flex-v-center">
 					<a href="${this._getHrefShowAll(book.id)}" class="bk__contents_show_all px-2 py-1p ve-flex-v-center lst__wrp-cells lst__row-inner" title="View Entire ${BookUtil.contentType.uppercaseFirst()} (Warning: Slow)">
-						<span class="glyphicon glyphicon glyphicon-book" style="top: 0;"/>
+						<span class="glyphicon glyphicon glyphicon-book" style="top: 0;"></span>
 					</a>
 					${BookUtil.curRender.$btnToggleExpandAll}
 				</div>

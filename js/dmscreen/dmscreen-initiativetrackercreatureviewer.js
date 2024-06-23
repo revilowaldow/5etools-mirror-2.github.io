@@ -85,7 +85,7 @@ export class InitiativeTrackerCreatureViewer extends BaseComponent {
 					title: "Select Tracker",
 				});
 
-				const $selTracker = $(`<select class="form-control input-xs mr-1">
+				const $selTracker = $(`<select class="form-control input-xs mb-2">
 					<option value="-1" disabled>Select tracker</option>
 					${$elesData.map(($e, i) => `<option value="${i}">${$e.data("getSummary")()}</option>`).join("")}
 				</select>`)
@@ -107,8 +107,8 @@ export class InitiativeTrackerCreatureViewer extends BaseComponent {
 					${$btnSubmit}
 				`;
 
-				const ixSel = await pGetResolved();
-				if (ixSel == null) return;
+				const [isDataEntered, ixSel] = await pGetResolved();
+				if (!isDataEntered || ixSel == null) return;
 
 				this._setLinkedTrackerFromEle({$eleData: $elesData[ixSel]});
 			});

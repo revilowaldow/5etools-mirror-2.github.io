@@ -4974,12 +4974,8 @@
 			"wis": 15,
 			"cha": 16,
 			"save": {
-				"str": "+3",
-				"dex": "+5",
-				"con": "+4",
-				"int": "+12",
-				"wis": "+8",
-				"cha": "+6"
+				"int": "+11",
+				"wis": "+7"
 			},
 			"skill": {
 				"arcana": "+12",
@@ -5003,7 +4999,7 @@
 					"name": "Spellcasting",
 					"type": "spellcasting",
 					"headerEntries": [
-						"Manshoon is an 18th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 21}, {@hit 15} to hit with spell attacks). He has the following wizard spells prepared:"
+						"Manshoon is an 18th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 19}, {@hit 11} to hit with spell attacks). He has the following wizard spells prepared:"
 					],
 					"spells": {
 						"0": {

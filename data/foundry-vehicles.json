@@ -9,7 +9,7 @@
 					"transfer": true,
 					"changes": [
 						{
-							"key": "system.attributes.hp.bonuses.overall",
+							"key": "system.attributes.hp.max",
 							"mode": "MULTIPLY",
 							"value": "2"
 						},

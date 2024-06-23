@@ -119,7 +119,7 @@ class LanguagesPage extends ListPage {
 				fnPopulate: () => {
 					this._$pgContent.empty().append(Renderer.utils.getBorderTr());
 					this._$pgContent.append(Renderer.utils.getNameTr(ent));
-					const $td = $(`<td colspan="6" class="text"/>`);
+					const $td = $(`<td colspan="6" class="text"></td>`);
 					$$`<tr class="text">${$td}</tr>`.appendTo(this._$pgContent);
 					this._$pgContent.append(Renderer.utils.getBorderTr());
 
@@ -130,7 +130,7 @@ class LanguagesPage extends ListPage {
 						return;
 					}
 
-					const $styleFont = $(`<style/>`);
+					const $styleFont = $(`<style></style>`);
 
 					let lastStyleIndex = null;
 					let lastStyleClass = null;

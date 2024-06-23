@@ -601,30 +601,6 @@
 			]
 		},
 		{
-			"name": "Demodand, Farastu",
-			"source": "MaBJoV",
-			"_copy": {
-				"name": "Demodand",
-				"source": "MaBJoV"
-			}
-		},
-		{
-			"name": "Demodand, Kelubar",
-			"source": "MaBJoV",
-			"_copy": {
-				"name": "Demodand",
-				"source": "MaBJoV"
-			}
-		},
-		{
-			"name": "Demodand, Shator",
-			"source": "MaBJoV",
-			"_copy": {
-				"name": "Demodand",
-				"source": "MaBJoV"
-			}
-		},
-		{
 			"name": "Dread Doppelganger",
 			"source": "MaBJoV",
 			"entries": [
@@ -797,6 +773,14 @@
 					}
 				}
 			]
+		},
+		{
+			"name": "Farastu Stalker",
+			"source": "MaBJoV",
+			"_copy": {
+				"name": "Demodand",
+				"source": "MaBJoV"
+			}
 		},
 		{
 			"name": "Flimp Shagglecran",
@@ -1235,6 +1219,14 @@
 					}
 				}
 			]
+		},
+		{
+			"name": "Kelubar Consul",
+			"source": "MaBJoV",
+			"_copy": {
+				"name": "Demodand",
+				"source": "MaBJoV"
+			}
 		},
 		{
 			"name": "Kivan",
@@ -1884,6 +1876,14 @@
 					}
 				}
 			]
+		},
+		{
+			"name": "Shator Warden",
+			"source": "MaBJoV",
+			"_copy": {
+				"name": "Demodand",
+				"source": "MaBJoV"
+			}
 		},
 		{
 			"name": "Sirene",

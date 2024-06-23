@@ -5076,7 +5076,8 @@
 											},
 											"mapParent": {
 												"id": "071"
-											}
+											},
+											"id": "082"
 										}
 									]
 								},
@@ -6372,7 +6373,8 @@
 												"offsetX": 80,
 												"offsetY": 77,
 												"scale": 3
-											}
+											},
+											"id": "083"
 										}
 									]
 								},
@@ -7267,7 +7269,8 @@
 														"offsetX": 50,
 														"offsetY": 40,
 														"scale": 2
-													}
+													},
+													"id": "084"
 												}
 											]
 										},
@@ -8608,7 +8611,8 @@
 												"offsetX": 28,
 												"offsetY": 47,
 												"scale": 4
-											}
+											},
+											"id": "085"
 										}
 									]
 								},
@@ -9584,7 +9588,8 @@
 									},
 									"grid": {
 										"type": "none"
-									}
+									},
+									"id": "086"
 								}
 							]
 						},
@@ -11335,7 +11340,8 @@
 												"offsetX": 1,
 												"offsetY": 40,
 												"scale": 5
-											}
+											},
+											"id": "087"
 										}
 									]
 								},
@@ -12248,7 +12254,8 @@
 									},
 									"grid": {
 										"type": "none"
-									}
+									},
+									"id": "088"
 								}
 							]
 						},
@@ -12494,7 +12501,8 @@
 												"offsetX": -9,
 												"offsetY": -6,
 												"scale": 6
-											}
+											},
+											"id": "08b"
 										}
 									]
 								},
@@ -12564,7 +12572,8 @@
 									"height": 2391,
 									"grid": {
 										"type": "none"
-									}
+									},
+									"id": "08c"
 								},
 								"A character with a {@item Deck of Many Things} can deduce the Donjon Sphere's location by spending 8 hours studying the night sky and using the cards as a divination tool. Afterward, the character must succeed on a DC 22 Intelligence ({@skill Arcana}) check to determine the sphere's coordinates in the Astral Sea. On a failed check, the character fails to calculate the sphere's location but can try again the next day, reducing the DC of the check by 1 for each consecutive attempt. Other methods of finding the sphere are detailed in the \"Adventure Hooks\" section below.",
 								"Once the sphere is located in the Astral Sea, the characters must reach it, probably using teleportation magic or a spelljamming vessel.",
@@ -15204,7 +15213,8 @@
 										"offsetX": -51,
 										"offsetY": 52,
 										"scale": 8
-									}
+									},
+									"id": "08d"
 								}
 							]
 						},
@@ -18885,7 +18895,8 @@
 												"offsetX": -4,
 												"offsetY": 62,
 												"scale": 5
-											}
+											},
+											"id": "08e"
 										}
 									]
 								},
@@ -20184,7 +20195,8 @@
 											},
 											"grid": {
 												"type": "none"
-											}
+											},
+											"id": "097"
 										}
 									]
 								},
@@ -20922,7 +20934,8 @@
 											},
 											"grid": {
 												"type": "none"
-											}
+											},
+											"id": "098"
 										}
 									]
 								},
@@ -22355,7 +22368,8 @@
 												"offsetX": -41,
 												"offsetY": -36,
 												"scale": 4
-											}
+											},
+											"id": "099"
 										}
 									]
 								},

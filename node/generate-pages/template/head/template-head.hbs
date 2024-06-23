@@ -3,12 +3,12 @@
 	<!--5ETOOLS_ANALYTICS-->
 	<!--5ETOOLS_ADCODE-->
 	<meta charset="utf-8">
-	<meta name="description" content="">
+	<meta name="description" content="{{pageDescription}}">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 
-	<title>{{titlePage}} - 5etools</title>
+	<title>{{#if pageTitle}}{{pageTitle}} - 5etools{{else}}5etools{{/if}}</title>
 
 	<link rel="stylesheet" href="css/bootstrap.css">
 {{#if isFontAwesome}}	<link rel="stylesheet" href="css/fontawesome.css">
@@ -53,6 +53,11 @@
 	<script type="text/javascript" src="sw-injector.js"></script>
 
 	<script type="text/javascript" src="js/styleswitch.js"></script>
+{{#if redirectHref}}
+
+	<meta http-equiv="refresh" content="0; URL={{redirectHref}}"/>
+{{else}}
 	<script type="text/javascript" src="js/navigation.js"></script>
 	<script type="text/javascript" src="js/browsercheck.js"></script>
+{{/if}}
 </head>

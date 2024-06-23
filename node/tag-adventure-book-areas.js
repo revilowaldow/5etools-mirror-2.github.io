@@ -40,7 +40,7 @@ class AreaTagger {
 					});
 
 				if (obj.id) return obj;
-				if (obj.type === "image" && !obj.id && obj.mapRegions) obj.id = this._getNewTag();
+				if (obj.type === "image" && !obj.id && (obj.mapRegions || obj.imageType === "map")) obj.id = this._getNewTag();
 
 				return obj;
 			},

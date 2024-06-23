@@ -73,7 +73,7 @@ class BaseConverter extends BaseComponent {
 	/* -------------------------------------------- */
 
 	renderSidebar (parent, $parent) {
-		const $wrpSidebar = $(`<div class="w-100 ve-flex-col"/>`).appendTo($parent);
+		const $wrpSidebar = $(`<div class="w-100 ve-flex-col"></div>`).appendTo($parent);
 		const hkShowSidebar = () => $wrpSidebar.toggleClass("hidden", parent.get("converter") !== this._converterId);
 		parent.addHook("converter", hkShowSidebar);
 		hkShowSidebar();
@@ -158,7 +158,7 @@ class BaseConverter extends BaseComponent {
 	_renderSidebarSourcePart (parent, $wrpSidebar) {
 		if (!this._hasSource) return;
 
-		const $wrpSourceOverlay = $(`<div class="h-100 w-100"/>`);
+		const $wrpSourceOverlay = $(`<div class="h-100 w-100"></div>`);
 		let modalMeta = null;
 
 		const rebuildStageSource = (options) => {
@@ -191,10 +191,10 @@ class BaseConverter extends BaseComponent {
 			<select class="form-control input-xs"><option value="">(None)</option></select>`
 			.change(() => this._state.source = $selSource.val());
 
-		$(`<option/>`, {val: "5e_divider", text: `\u2014`, disabled: true}).appendTo($selSource);
+		$(`<option></option>`, {val: "5e_divider", text: `\u2014`, disabled: true}).appendTo($selSource);
 
 		Object.keys(Parser.SOURCE_JSON_TO_FULL)
-			.forEach(src => $(`<option/>`, {val: src, text: Parser.sourceJsonToFull(src)}).appendTo($selSource));
+			.forEach(src => $(`<option></option>`, {val: src, text: Parser.sourceJsonToFull(src)}).appendTo($selSource));
 
 		const hkAvailSources = () => {
 			const curSources = new Set($selSource.find(`option`).map((i, e) => $(e).val()));
@@ -217,7 +217,7 @@ class BaseConverter extends BaseComponent {
 				const $optBrewLast = $selSource.find(`option[disabled]`).prev();
 				optionsToAdd.forEach(source => {
 					const fullSource = BrewUtil2.sourceJsonToSource(source);
-					$(`<option/>`, {val: fullSource.json, text: fullSource.full}).insertAfter($optBrewLast);
+					$(`<option></option>`, {val: fullSource.json, text: fullSource.full}).insertAfter($optBrewLast);
 				});
 			}
 
@@ -1367,7 +1367,7 @@ class ConverterUi extends BaseComponent {
 		ConverterUiUtil.renderSideMenuDivider($mnu);
 		// endregion
 
-		const $wrpConverters = $(`<div class="w-100 ve-flex-col"/>`).appendTo($mnu);
+		const $wrpConverters = $(`<div class="w-100 ve-flex-col"></div>`).appendTo($mnu);
 		Object
 			.keys(this._converters)
 			.sort(SortUtil.ascSortLower)

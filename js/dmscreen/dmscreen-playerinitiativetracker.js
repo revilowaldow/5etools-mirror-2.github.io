@@ -10,8 +10,8 @@ import {DmScreenUtil} from "./dmscreen-util.js";
 // region v1
 export class InitiativeTrackerPlayerV1 {
 	static $getPanelElement (board, state) {
-		const $meta = $(`<div class="initp__meta"/>`).hide();
-		const $head = $(`<div class="initp__header"/>`).hide();
+		const $meta = $(`<div class="initp__meta"></div>`).hide();
+		const $head = $(`<div class="initp__header"></div>`).hide();
 		const $rows = $(`<div class="ve-flex-col"></div>`).hide();
 
 		const $wrpTracker = $$`<div class="initp__wrp_active">
@@ -184,8 +184,8 @@ class InitiativeTrackerPlayerMessageHandlerScreenV1 extends InitiativeTrackerPla
 // region v0
 export class InitiativeTrackerPlayerV0 {
 	static $getPanelElement (board, state) {
-		const $meta = $(`<div class="initp__meta"/>`).hide();
-		const $head = $(`<div class="initp__header"/>`).hide();
+		const $meta = $(`<div class="initp__meta"></div>`).hide();
+		const $head = $(`<div class="initp__header"></div>`).hide();
 		const $rows = $(`<div class="ve-flex-col"></div>`).hide();
 
 		const $wrpTracker = $$`<div class="initp__wrp_active">

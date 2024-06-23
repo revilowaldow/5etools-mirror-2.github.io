@@ -61,7 +61,7 @@ class LangDemoUi {
 				.change(() => saveContext())
 				.val(value);
 
-			const $btnDel = $(`<button class="btn btn-xs btn-danger" tabindex="-1"><span class="glyphicon glyphicon-trash"/></button>`)
+			const $btnDel = $(`<button class="btn btn-xs btn-danger" tabindex="-1"><span class="glyphicon glyphicon-trash"></span></button>`)
 				.click(() => {
 					const ix = LangDemoUi._metasContext.indexOf(out);
 					if (~ix) {

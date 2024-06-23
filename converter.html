@@ -58,6 +58,9 @@
 </head>
 
 <body>
+
+<div class="overlay-noise"></div>
+
 <div class="viewport-wrapper">
 	<div class="sidemenu__toggle">
 		<div class="sidemenu__hotzone"></div>
@@ -71,13 +74,13 @@
 
 	<header class="hidden-xs hidden-sm page__header">
 		<div class="container ve-flex-v-baseline">
-			<h1 class="page__title no-wrap my-0">Text Converter</h1>
+			<h1 class="page__title no-wrap my-0" id="page__title">Text Converter</h1>
 			<p class="page__subtitle no-wrap my-0" id="page__subtitle">Input text on left, hit parse, copy JSON from right.</p>
 		</div>
 	</header>
+
 	<nav class="container page__nav" id="navigation">
-		<ul class="nav nav-pills page__nav-inner" id="navbar">
-		</ul>
+		<ul class="nav nav-pills page__nav-inner" id="navbar"></ul>
 	</nav>
 
 	<div class="view-col-wrapper">
@@ -120,17 +123,20 @@
 
 <!--5ETOOLS_SCRIPT_ANCHOR-->
 <!--5ETOOLS_AD_ADHESION-->
-<!--5ETOOLS_SCRIPT_ANCHOR__ACE-JS-->
+
+<script type="text/javascript" src="lib/jquery.js"></script>
+<script type="text/javascript" src="lib/ace.js"></script>
 <script type="text/javascript" src="js/parser.js"></script>
 <script type="text/javascript" src="js/utils.js"></script>
 <script type="text/javascript" src="js/utils-ui.js"></script>
-<script type="text/javascript" src="js/utils-proporder.js"></script>
 <script type="text/javascript" src="lib/localforage.js"></script>
 <script type="text/javascript" src="js/omnidexer.js"></script>
 <script type="text/javascript" src="js/omnisearch.js"></script>
 <script type="text/javascript" src="js/filter.js"></script>
 <script type="text/javascript" src="js/utils-dataloader.js"></script>
 <script type="text/javascript" src="js/utils-brew.js"></script>
+<script type="module" src="js/utils-config.js"></script>
+<script type="text/javascript" src="js/utils-proporder.js"></script>
 <script type="text/javascript" src="js/render.js"></script>
 <script type="text/javascript" src="js/render-dice.js"></script>
 <script type="text/javascript" src="js/render-markdown.js"></script>
@@ -154,8 +160,7 @@
 <script type="text/javascript" src="js/converter-race.js"></script>
 <script type="text/javascript" src="js/converter-background.js"></script>
 <script type="text/javascript" src="js/list2.js"></script>
-<script type="text/javascript" src="lib/jquery.js"></script>
 <script type="text/javascript" src="lib/elasticlunr.js"></script>
-<script type="text/javascript" src="lib/ace.js"></script>
+
 </body>
 </html>

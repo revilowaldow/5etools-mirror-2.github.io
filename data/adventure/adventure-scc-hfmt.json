@@ -2609,7 +2609,8 @@
 											"title": "Map 4.3: Scriptoria Collections",
 											"width": 3000,
 											"height": 2226,
-											"credit": "Sean MacDonald"
+											"credit": "Sean MacDonald",
+											"id": "006"
 										},
 										{
 											"type": "list",

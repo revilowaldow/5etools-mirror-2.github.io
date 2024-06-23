@@ -666,7 +666,7 @@
 				{
 					"name": "Pounce",
 					"entries": [
-						"If the serpopard moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the serpopard can make one bite attack against it as a bonus action."
+						"If the serpopard moves at least 20 feet straight toward a creature and then hits it with a bite attack on the same turn, that target must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the serpopard can make one bite attack against it as a bonus action."
 					]
 				}
 			],

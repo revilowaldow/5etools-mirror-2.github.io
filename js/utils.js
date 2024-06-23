@@ -2,7 +2,7 @@
 
 // in deployment, `IS_DEPLOYED = "<version number>";` should be set below.
 globalThis.IS_DEPLOYED = undefined;
-globalThis.VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"1.207.2"/* 5ETOOLS_VERSION__CLOSE */;
+globalThis.VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"1.208.0"/* 5ETOOLS_VERSION__CLOSE */;
 globalThis.DEPLOYED_IMG_ROOT = undefined;
 // for the roll20 script to set
 globalThis.IS_VTT = false;
@@ -731,6 +731,108 @@ Math.seed = Math.seed || function (s) {
 	};
 };
 
+class TemplateUtil {
+	static initJquery () {
+		/**
+		 * Template strings which can contain jQuery objects.
+		 * Usage: $$`<div>Press this button: ${$btn}</div>`
+		 * or:    $$($ele)`<div>Press this button: ${$btn}</div>`
+		 * @return {jQuery}
+		 */
+		globalThis.$$ = (parts, ...args) => {
+			if (parts instanceof jQuery || parts instanceof Node) {
+				return (...passed) => {
+					const parts2 = [...passed[0]];
+					const args2 = passed.slice(1);
+					parts2[0] = `<div>${parts2[0]}`;
+					parts2.last(`${parts2.last()}</div>`);
+
+					const eleParts = parts instanceof jQuery ? parts[0] : parts;
+					const $temp = $$(parts2, ...args2);
+					$temp.children().each((i, e) => eleParts.appendChild(e));
+					return $(eleParts);
+				};
+			}
+
+			// Note that passing in a jQuery collection of multiple elements is not supported
+			const partsNxt = parts instanceof jQuery ? parts[0] : parts;
+			const argsNxt = args
+				.map(arg => {
+					if (arg instanceof Array) return arg.flatMap(argSub => argSub instanceof jQuery ? argSub.get() : argSub);
+					return arg instanceof jQuery ? arg.get() : arg;
+				});
+			return $(ee(partsNxt, ...argsNxt));
+		};
+	}
+
+	/* -------------------------------------------- */
+
+	static initVanilla () {
+		/**
+		 * Template strings which can contain DOM elements.
+		 * Usage: ee`<div>Press this button: ${btn}</div>`
+		 * or:    ee(ele)`<div>Press this button: ${btn}</div>`
+		 * @return {HTMLElementModified}
+		 */
+		globalThis.ee = (parts, ...args) => {
+			if (parts instanceof Node) {
+				return (...passed) => {
+					const parts2 = [...passed[0]];
+					const args2 = passed.slice(1);
+					parts2[0] = `<div>${parts2[0]}`;
+					parts2.last(`${parts2.last()}</div>`);
+
+					const eleTmp = ee(parts2, ...args2);
+					Array.from(eleTmp.childNodes).forEach(node => parts.appendChild(node));
+
+					return e_({ele: parts});
+				};
+			}
+
+			const eles = [];
+			let ixArg = 0;
+
+			const raw = parts
+				.reduce((html, p) => {
+					const myIxArg = ixArg++;
+					if (args[myIxArg] == null) return `${html}${p}`;
+					if (args[myIxArg] instanceof Array) return `${html}${args[myIxArg].map(arg => TemplateUtil._ee_handleArg(eles, arg)).join("")}${p}`;
+					else return `${html}${TemplateUtil._ee_handleArg(eles, args[myIxArg])}${p}`;
+				});
+
+			const eleTmpTemplate = document.createElement("template");
+			eleTmpTemplate.innerHTML = raw;
+			const {content: eleTmp} = eleTmpTemplate;
+
+			// debugger
+
+			Array.from(eleTmp.querySelectorAll(`[data-r="true"]`))
+				.forEach((node, i) => node.replaceWith(eles[i]));
+
+			const childNodes = Array.from(eleTmp.childNodes);
+			childNodes.forEach(node => document.adoptNode(node));
+
+			// If the caller has passed in a single element, return it
+			if (childNodes.length === 1) return e_({ele: childNodes[0]});
+
+			// If the caller has passed in multiple elements with no wrapper, return an array
+			return childNodes
+				.map(childNode => e_({ele: childNode}));
+		};
+	}
+
+	static _ee_handleArg (eles, arg) {
+		if (arg instanceof Node) {
+			eles.push(arg);
+			return `<${arg.tagName} data-r="true"></${arg.tagName}>`;
+		}
+
+		return arg;
+	}
+}
+
+globalThis.TemplateUtil = TemplateUtil;
+
 globalThis.JqueryUtil = {
 	_isEnhancementsInit: false,
 	initEnhancements () {
@@ -739,58 +841,8 @@ globalThis.JqueryUtil = {
 
 		JqueryUtil.addSelectors();
 
-		/**
-		 * Template strings which can contain jQuery objects.
-		 * Usage: $$`<div>Press this button: ${$btn}</div>`
-		 * @return jQuery
-		 */
-		window.$$ = function (parts, ...args) {
-			if (parts instanceof jQuery || parts instanceof HTMLElement) {
-				return (...passed) => {
-					const parts2 = [...passed[0]];
-					const args2 = passed.slice(1);
-					parts2[0] = `<div>${parts2[0]}`;
-					parts2.last(`${parts2.last()}</div>`);
-
-					const $temp = $$(parts2, ...args2);
-					$temp.children().each((i, e) => $(e).appendTo(parts));
-					return parts;
-				};
-			} else {
-				const $eles = [];
-				let ixArg = 0;
-
-				const handleArg = (arg) => {
-					if (arg instanceof $) {
-						$eles.push(arg);
-						return `<${arg.tag()} data-r="true"></${arg.tag()}>`;
-					} else if (arg instanceof HTMLElement) {
-						return handleArg($(arg));
-					} else return arg;
-				};
-
-				const raw = parts.reduce((html, p) => {
-					const myIxArg = ixArg++;
-					if (args[myIxArg] == null) return `${html}${p}`;
-					if (args[myIxArg] instanceof Array) return `${html}${args[myIxArg].map(arg => handleArg(arg)).join("")}${p}`;
-					else return `${html}${handleArg(args[myIxArg])}${p}`;
-				});
-				const $res = $(raw);
-
-				if ($res.length === 1) {
-					if ($res.attr("data-r") === "true") return $eles[0];
-					else $res.find(`[data-r=true]`).replaceWith(i => $eles[i]);
-				} else {
-					// Handle case where user has passed in a bunch of elements with no outer wrapper
-					const $tmp = $(`<div></div>`);
-					$tmp.append($res);
-					$tmp.find(`[data-r=true]`).replaceWith(i => $eles[i]);
-					return $tmp.children();
-				}
-
-				return $res;
-			}
-		};
+		TemplateUtil.initVanilla();
+		TemplateUtil.initJquery();
 
 		$.fn.extend({
 			// avoid setting input type to "search" as it visually offsets the contents of the input
@@ -1023,6 +1075,44 @@ globalThis.ElementUtil = {
 		"disabled",
 	]),
 
+	/**
+	 * @typedef {HTMLElement} HTMLElementModified
+	 * @extends {HTMLElement}
+	 *
+	 * @property {function(HTMLElement): HTMLElementModified} appends
+	 * @property {function(HTMLElement): HTMLElementModified} appendTo
+	 * @property {function(HTMLElement): HTMLElementModified} prependTo
+	 * @property {function(HTMLElement): HTMLElementModified} insertAfter
+	 *
+	 * @property {function(string): HTMLElementModified} addClass
+	 * @property {function(string): HTMLElementModified} removeClass
+	 * @property {function(string, ?boolean): HTMLElementModified} toggleClass
+	 *
+	 * @property {function(): HTMLElementModified} showVe
+	 * @property {function(): HTMLElementModified} hideVe
+	 * @property {function(?boolean): HTMLElementModified} toggleVe
+	 *
+	 * @property {function(): HTMLElementModified} empty
+	 * @property {function(): HTMLElementModified} detach
+	 *
+	 * @property {function(string, string): HTMLElementModified} attr
+	 * @property {function(*=): *} val
+	 *
+	 * @property {function(?string): (HTMLElementModified|string)} html
+	 * @property {function(?string): (HTMLElementModified|string)} txt
+	 *
+	 * @property {function(string): HTMLElementModified} tooltip
+	 * @property {function(): HTMLElementModified} disableSpellcheck
+	 *
+	 * @property {function(string, function): HTMLElementModified} onn
+	 * @property {function(function): HTMLElementModified} onClick
+	 * @property {function(function): HTMLElementModified} onContextmenu
+	 * @property {function(function): HTMLElementModified} onChange
+	 * @property {function(function): HTMLElementModified} onKeydown
+	 * @property {function(function): HTMLElementModified} onKeyup
+	 *
+	 * @return {HTMLElementModified}
+	 */
 	getOrModify ({
 		tag,
 		clazz,
@@ -1110,7 +1200,7 @@ globalThis.ElementUtil = {
 		ele.txt = ele.txt || ElementUtil._txt.bind(ele);
 		ele.tooltip = ele.tooltip || ElementUtil._tooltip.bind(ele);
 		ele.disableSpellcheck = ele.disableSpellcheck || ElementUtil._disableSpellcheck.bind(ele);
-		ele.on = ele.on || ElementUtil._onX.bind(ele);
+		ele.onn = ele.onn || ElementUtil._onX.bind(ele);
 		ele.onClick = ele.onClick || ElementUtil._onX.bind(ele, "click");
 		ele.onContextmenu = ele.onContextmenu || ElementUtil._onX.bind(ele, "contextmenu");
 		ele.onChange = ele.onChange || ElementUtil._onX.bind(ele, "change");
@@ -3664,13 +3754,28 @@ globalThis.DataUtil = {
 	},
 
 	_mutAddProps (data) {
-		if (data && typeof data === "object") {
-			for (const k in data) {
-				if (data[k] instanceof Array) {
-					for (const it of data[k]) {
-						if (typeof it !== "object") continue;
-						it.__prop = k;
-					}
+		if (!data || typeof data !== "object") return;
+
+		for (const k in data) {
+			if (!(data[k] instanceof Array)) continue;
+
+			for (const it of data[k]) {
+				if (typeof it !== "object") continue;
+				it.__prop = k;
+			}
+		}
+	},
+
+	_verifyMerged (data) {
+		if (!data || typeof data !== "object") return;
+
+		for (const k in data) {
+			if (!(data[k] instanceof Array)) continue;
+
+			for (const it of data[k]) {
+				if (typeof it !== "object") continue;
+				if (it._copy) {
+					setTimeout(() => { throw new Error(`Unresolved "_copy" in entity: ${JSON.stringify(it)}`); });
 				}
 			}
 		}
@@ -3706,7 +3811,10 @@ globalThis.DataUtil = {
 
 	async pDoMetaMerge (ident, data, options) {
 		DataUtil._mutAddProps(data);
-		DataUtil._merging[ident] = DataUtil._merging[ident] || DataUtil._pDoMetaMerge(ident, data, options);
+
+		const isFresh = !DataUtil._merging[ident];
+
+		DataUtil._merging[ident] ||= DataUtil._pDoMetaMerge(ident, data, options);
 		await DataUtil._merging[ident];
 		const out = DataUtil._merged[ident];
 
@@ -3716,6 +3824,8 @@ globalThis.DataUtil = {
 			delete DataUtil._merging[ident];
 			delete DataUtil._merged[ident];
 		}
+
+		if (isFresh) DataUtil._verifyMerged(out);
 
 		return out;
 	},
@@ -3957,6 +4067,8 @@ globalThis.DataUtil = {
 				return DataUtil._pLoadByMeta_pGetPrereleaseBrew(source);
 			}
 			case "race": {
+				// FIXME(Future) this should really `loadRawJSON`, but this breaks existing brew.
+				//   Consider a large-scale migration in future.
 				const data = await DataUtil.race.loadJSON({isAddBaseRaces: true});
 				if (data[prop] && data[prop].some(it => it.source === source)) return data;
 				return DataUtil._pLoadByMeta_pGetPrereleaseBrew(source);
@@ -4093,8 +4205,7 @@ globalThis.DataUtil = {
 
 			if (!it) {
 				if (options.isErrorOnMissing) {
-					// In development/script mode, throw an exception
-					if (!IS_DEPLOYED && !IS_VTT) throw new Error(`Could not find "${page}" entity "${entry._copy.name}" ("${entry._copy.source}") to copy in copier "${entry.name}" ("${entry.source}")`);
+					throw new Error(`Could not find "${page}" entity "${entry._copy.name}" ("${entry._copy.source}") to copy in copier "${entry.name}" ("${entry.source}")`);
 				}
 				return;
 			}
@@ -4113,9 +4224,10 @@ globalThis.DataUtil = {
 
 		_pMergeCopy_search (impl, page, entryList, entry, options) {
 			const entryHash = UrlUtil.URL_TO_HASH_BUILDER[page](entry._copy);
-			return entryList.find(it => {
-				const hash = UrlUtil.URL_TO_HASH_BUILDER[page](it);
-				impl._mergeCache[hash] = it;
+			return entryList.find(ent => {
+				const hash = UrlUtil.URL_TO_HASH_BUILDER[page](ent);
+				// Avoid clobbering existing caches, as we assume "earlier = better"
+				impl._mergeCache[hash] ||= ent;
 				return hash === entryHash;
 			});
 		},
@@ -4268,6 +4380,26 @@ globalThis.DataUtil = {
 						else throw new Error(`${msgPtFailed} Could not find "${prop}" item "${itemToRemove}" to remove`);
 					});
 				} else throw new Error(`${msgPtFailed} One of "names" or "items" must be provided!`);
+			}
+
+			static _doMod_renameArr ({copyTo, copyFrom, modInfo, msgPtFailed, prop, isThrow = true}) {
+				this._doEnsureArray({obj: modInfo, prop: "renames"});
+
+				if (!copyTo[prop]) {
+					if (isThrow) throw new Error(`${msgPtFailed} Could not find "${prop}" array`);
+					return;
+				}
+
+				modInfo.renames
+					.forEach(rename => {
+						const ent = copyTo[prop].find(ent => ent?.name === rename.rename);
+						if (!ent) {
+							if (isThrow) throw new Error(`${msgPtFailed} Could not find "${prop}" item with name "${rename.rename}" to rename`);
+							return;
+						}
+
+						ent.name = rename.with;
+					});
 			}
 
 			static _doMod_calculateProp ({copyTo, copyFrom, modInfo, msgPtFailed, prop}) {
@@ -4576,7 +4708,7 @@ globalThis.DataUtil = {
 
 			static _doMod_setProp ({copyTo, copyFrom, modInfo, msgPtFailed, prop}) {
 				const propPath = modInfo.prop.split(".");
-				if (prop !== "*") propPath.unshift(prop);
+				if (prop != null && prop !== "*") propPath.unshift(prop);
 				MiscUtil.set(copyTo, ...propPath, MiscUtil.copyFast(modInfo.value));
 			}
 
@@ -4599,6 +4731,7 @@ globalThis.DataUtil = {
 							case "appendIfNotExistsArr": return this._doMod_appendIfNotExistsArr({copyTo, copyFrom, modInfo, msgPtFailed, prop});
 							case "insertArr": return this._doMod_insertArr({copyTo, copyFrom, modInfo, msgPtFailed, prop});
 							case "removeArr": return this._doMod_removeArr({copyTo, copyFrom, modInfo, msgPtFailed, prop});
+							case "renameArr": return this._doMod_renameArr({copyTo, copyFrom, modInfo, msgPtFailed, prop});
 							case "calculateProp": return this._doMod_calculateProp({copyTo, copyFrom, modInfo, msgPtFailed, prop});
 							case "scalarAddProp": return this._doMod_scalarAddProp({copyTo, copyFrom, modInfo, msgPtFailed, prop});
 							case "scalarMultProp": return this._doMod_scalarMultProp({copyTo, copyFrom, modInfo, msgPtFailed, prop});
@@ -5535,19 +5668,17 @@ globalThis.DataUtil = {
 		static _PAGE = UrlUtil.PG_RACES;
 		static _FILENAME = "races.json";
 
-		static _loadCache = {};
-		static _pIsLoadings = {};
+		static _psLoadJson = {};
+
 		static async loadJSON ({isAddBaseRaces = false} = {}) {
-			if (!DataUtil.race._pIsLoadings[isAddBaseRaces]) {
-				DataUtil.race._pIsLoadings[isAddBaseRaces] = (async () => {
-					DataUtil.race._loadCache[isAddBaseRaces] = DataUtil.race.getPostProcessedSiteJson(
-						await this.loadRawJSON(),
-						{isAddBaseRaces},
-					);
-				})();
-			}
-			await DataUtil.race._pIsLoadings[isAddBaseRaces];
-			return DataUtil.race._loadCache[isAddBaseRaces];
+			const cacheKey = `site-${isAddBaseRaces}`;
+			DataUtil.race._psLoadJson[cacheKey] ||= (async () => {
+				return DataUtil.race.getPostProcessedSiteJson(
+					await this.loadRawJSON(),
+					{isAddBaseRaces},
+				);
+			})();
+			return DataUtil.race._psLoadJson[cacheKey];
 		}
 
 		static getPostProcessedSiteJson (rawRaceData, {isAddBaseRaces = false} = {}) {
@@ -5567,11 +5698,15 @@ globalThis.DataUtil = {
 		}
 
 		static async loadPrerelease ({isAddBaseRaces = true} = {}) {
-			return DataUtil.race._loadPrereleaseBrew({isAddBaseRaces, brewUtil: typeof PrereleaseUtil !== "undefined" ? PrereleaseUtil : null});
+			const cacheKey = `prerelease-${isAddBaseRaces}`;
+			this._psLoadJson[cacheKey] ||= DataUtil.race._loadPrereleaseBrew({isAddBaseRaces, brewUtil: typeof PrereleaseUtil !== "undefined" ? PrereleaseUtil : null});
+			return this._psLoadJson[cacheKey];
 		}
 
 		static async loadBrew ({isAddBaseRaces = true} = {}) {
-			return DataUtil.race._loadPrereleaseBrew({isAddBaseRaces, brewUtil: typeof BrewUtil2 !== "undefined" ? BrewUtil2 : null});
+			const cacheKey = `brew-${isAddBaseRaces}`;
+			this._psLoadJson[cacheKey] ||= DataUtil.race._loadPrereleaseBrew({isAddBaseRaces, brewUtil: typeof BrewUtil2 !== "undefined" ? BrewUtil2 : null});
+			return this._psLoadJson[cacheKey];
 		}
 
 		static async _loadPrereleaseBrew ({isAddBaseRaces = true, brewUtil} = {}) {
@@ -5653,60 +5788,22 @@ globalThis.DataUtil = {
 		static _FILENAME = "recipes.json";
 
 		static async loadJSON () {
-			const rawData = await super.loadJSON();
-			return {recipe: await DataUtil.recipe.pGetPostProcessedRecipes(rawData.recipe)};
-		}
-
-		static async pGetPostProcessedRecipes (recipes) {
-			if (!recipes?.length) return;
-
-			recipes = MiscUtil.copyFast(recipes);
-
-			// Apply ingredient properties
-			recipes.forEach(r => Renderer.recipe.populateFullIngredients(r));
-
-			const out = [];
-
-			// region Merge together main data and fluff, as we render the fluff in the main tab
-			for (const r of recipes) {
-				const fluff = await Renderer.utils.pGetFluff({
-					entity: r,
-					fluffProp: "recipeFluff",
-				});
-
-				if (!fluff) {
-					out.push(r);
-					continue;
-				}
-
-				const cpyR = MiscUtil.copyFast(r);
-				cpyR.fluff = MiscUtil.copyFast(fluff);
-				delete cpyR.fluff.name;
-				delete cpyR.fluff.source;
-				out.push(cpyR);
-			}
-			//
-
-			return out;
+			return DataUtil.recipe._pLoadJson = DataUtil.recipe._pLoadJson || (async () => {
+				return {
+					recipe: await DataLoader.pCacheAndGetAllSite("recipe"),
+				};
+			})();
 		}
 
 		static async loadPrerelease () {
-			return this._loadPrereleaseBrew({brewUtil: typeof PrereleaseUtil !== "undefined" ? PrereleaseUtil : null});
+			return {
+				recipe: await DataLoader.pCacheAndGetAllPrerelease("recipe"),
+			};
 		}
 
 		static async loadBrew () {
-			return this._loadPrereleaseBrew({brewUtil: typeof BrewUtil2 !== "undefined" ? BrewUtil2 : null});
-		}
-
-		static async _loadPrereleaseBrew ({brewUtil}) {
-			if (!brewUtil) return {};
-
-			const brew = await brewUtil.pGetBrewProcessed();
-			if (!brew?.recipe?.length) return brew;
-
 			return {
-				...brew,
-				recipe: await DataUtil.recipe.pGetPostProcessedRecipes(brew.recipe),
+				recipe: await DataLoader.pCacheAndGetAllBrew("recipe"),
 			};
 		}
 	},

@@ -22,8 +22,15 @@
 							],
 							"id": "002"
 						},
-						"The River Styx This river bubbles with foul water, and along its banks are the remains of thousands of battles. There are captains who are skilled enough to command a ship through the unpredictable currents of the river. For a price, these pilots are willing to carry passengers into the lower depths of the Nine Hells. They're the only ones who know how to avoid the dangers of the River Styx, including the warships that patrol it.",
-						"These warships are built from infernal iron (bristling with spikes, blades, and chains) and can travel the waters of the River Styx. Weapons used by the infernal warships include flamethrowers, acid spewed from bronze tubes, and launchers that fire a dozen ballista bolts at once."
+						{
+							"type": "entries",
+							"name": "The River Styx",
+							"entries": [
+								"This river bubbles with foul water, and along its banks are the remains of thousands of battles. There are captains who are skilled enough to command a ship through the unpredictable currents of the river. For a price, these pilots are willing to carry passengers into the lower depths of the Nine Hells. They're the only ones who know how to avoid the dangers of the River Styx, including the warships that patrol it.",
+								"These warships are built from infernal iron (bristling with spikes, blades, and chains) and can travel the waters of the River Styx. Weapons used by the infernal warships include flamethrowers, acid spewed from bronze tubes, and launchers that fire a dozen ballista bolts at once."
+							],
+							"id": "37b"
+						}
 					],
 					"id": "001"
 				},
@@ -19774,7 +19781,8 @@
 										"size": 75,
 										"distance": 0.5,
 										"units": "miles"
-									}
+									},
+									"id": "37c"
 								},
 								{
 									"type": "image",
@@ -19792,7 +19800,8 @@
 										"size": 75,
 										"distance": 0.5,
 										"units": "miles"
-									}
+									},
+									"id": "37d"
 								},
 								{
 									"type": "image",
@@ -19810,7 +19819,8 @@
 										"scale": 2,
 										"distance": 1,
 										"units": "miles"
-									}
+									},
+									"id": "37e"
 								},
 								{
 									"type": "image",
@@ -19827,7 +19837,8 @@
 										"type": "none",
 										"size": 91,
 										"distance": 50
-									}
+									},
+									"id": "37f"
 								}
 							]
 						}
@@ -19858,7 +19869,8 @@
 										"type": "none",
 										"size": 83,
 										"distance": 50
-									}
+									},
+									"id": "380"
 								},
 								{
 									"type": "image",
@@ -19875,7 +19887,8 @@
 										"type": "none",
 										"size": 57,
 										"distance": 25
-									}
+									},
+									"id": "381"
 								}
 							]
 						}

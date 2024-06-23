@@ -1,8 +1,9 @@
 "use strict";
 
 class UtilsTableview {
-	static _State = class {
+	static _RenderState = class {
 		constructor () {
+			this.comp = null;
 			this.rows = [];
 			this.metasCbs = [];
 		}
@@ -17,63 +18,92 @@ class UtilsTableview {
 			isEmpty: true,
 		});
 
-		const state = new UtilsTableview._State();
+		const rdState = new UtilsTableview._RenderState();
 
-		state.metasCbs = Object.values(colTransforms)
-			.map((c, i) => {
-				const $cb = $(`<input type="checkbox" class="mr-2" checked>`)
-					.click(() => {
-						const $eles = $modal.find(`[data-col="${i}"]`);
-						$eles.toggleVe($cb.prop("checked"));
-					});
+		rdState.comp = BaseComponent.fromObject(
+			Object.keys(colTransforms).mergeMap(k => ({[k]: true})),
+		);
+
+		const $cbAll = $(`<input type="checkbox" title="Select All" checked>`)
+			.on("click", () => {
+				const val = $cbAll.prop("indeterminate") ? false : $cbAll.prop("checked");
+
+				rdState.comp._proxyAssignSimple(
+					"state",
+					Object.keys(colTransforms).mergeMap(k => ({[k]: val})),
+				);
+			});
+
+		rdState.metasCbs = Object.entries(colTransforms)
+			.map(([prop, meta]) => {
+				const $cb = ComponentUiUtil.$getCbBool(rdState.comp, prop);
 
 				const $wrp = $$`<label class="px-2 py-1 no-wrap ve-flex-inline-v-center">
 					${$cb}
-					<span>${c.name}</span>
+					<span>${meta.name}</span>
 				</label>`;
 
-				return {$wrp, $cb, name: c.name};
+				return {$wrp, name: meta.name};
+			});
+
+		Object.keys(colTransforms)
+			.forEach((prop, i) => {
+				rdState.comp._addHookBase(prop, () => {
+					const propsSelected = Object.keys(colTransforms).map(prop => rdState.comp._state[prop]);
+					if (propsSelected.every(Boolean)) $cbAll.prop("checked", true);
+					else if (propsSelected.every(it => !it)) $cbAll.prop("checked", false);
+					else $cbAll.prop("indeterminate", true).prop("checked", true);
+
+					const $eles = $modal.find(`[data-col="${i}"]`);
+					$eles.toggleVe(rdState.comp._state[prop]);
+				});
 			});
 
 		const $btnCsv = $(`<button class="btn btn-primary">Download CSV</button>`).click(() => {
-			DataUtil.userDownloadText(`${title}.csv`, this._getAsCsv({state}));
+			DataUtil.userDownloadText(`${title}.csv`, this._getAsCsv({colTransforms, rdState}));
 		});
 
 		const $btnCopy = $(`<button class="btn btn-primary">Copy CSV to Clipboard</button>`).click(async () => {
-			await MiscUtil.pCopyTextToClipboard(this._getAsCsv({state}));
+			await MiscUtil.pCopyTextToClipboard(this._getAsCsv({colTransforms, rdState}));
 			JqueryUtil.showCopiedEffect($btnCopy);
 		});
 
-		$$($modal)`<div class="split-v-center my-3">
-			<div class="ve-flex-v-center ve-flex-wrap">${state.metasCbs.map(({$wrp}) => $wrp)}</div>
+		const $wrpRows = $(`<div class="ve-overflow-y-auto w-100 h-100 ve-flex-col ve-overflow-x-auto"></div>`);
+
+		$$($modal)`<div class="ve-flex-v-center my-3">
+			<label class="ve-flex-vh-center pl-2 pr-3 h-100">${$cbAll}</label>
+			<div class="vr-2 ml-0 h-100"></div>
+			<div class="ve-flex-v-center ve-flex-wrap w-100 min-w-0">${rdState.metasCbs.map(({$wrp}) => $wrp)}</div>
+			<div class="vr-2 h-100"></div>
 			<div class="btn-group no-shrink ve-flex-v-center ml-3">
 				${$btnCsv}
 				${$btnCopy}
 			</div>
 		</div>
-		<hr class="hr-1">`;
+		<hr class="hr-1">
+		${$wrpRows}
+		`;
 
-		const tableHtml = this._getTableHtml({state, entities, colTransforms, sorter});
-		$modal.append(tableHtml);
+		const tableHtml = this._getTableHtml({rdState, entities, colTransforms, sorter});
+		$wrpRows.fastSetHtml(tableHtml);
 	}
 
-	static _getAsCsv ({state}) {
-		const headersActive = state.metasCbs.map(({$cb, name}, i) => {
-			if (!$cb.prop("checked")) return null;
-			return {name, ix: i};
-		}).filter(Boolean);
+	static _getAsCsv ({colTransforms, rdState}) {
+		const headersActive = Object.entries(colTransforms)
+			.map(([prop, meta], ix) => ({name: meta.name, ix, isSelected: rdState.comp._state[prop]}))
+			.filter(({isSelected}) => isSelected);
+
 		const parser = new DOMParser();
-		const rows = state.rows.map(row => headersActive.map(({ix}) => parser.parseFromString(`<div>${row[ix]}</div>`, "text/html").documentElement.textContent));
+		const rows = rdState.rows.map(row => headersActive.map(({ix}) => parser.parseFromString(`<div>${row[ix]}</div>`, "text/html").documentElement.textContent));
 		return DataUtil.getCsv(headersActive.map(({name}) => name), rows);
 	}
 
-	static _getTableHtml ({state, entities, colTransforms, sorter}) {
-		let stack = `<div class="ve-overflow-y-auto w-100 h-100 ve-flex-col ve-overflow-x-auto">
-			<table class="w-100 table-striped stats stats--book stats--book-large min-w-100 w-initial">
-				<thead>
-					<tr>${Object.values(colTransforms).map((c, i) => `<th data-col="${i}" class="px-2" colspan="${c.flex || 1}">${c.name}</th>`).join("")}</tr>
-				</thead>
-				<tbody>`;
+	static _getTableHtml ({rdState, entities, colTransforms, sorter}) {
+		let stack = `<table class="w-100 table-striped stats stats--book stats--book-large min-w-100 w-initial">
+			<thead>
+				<tr>${Object.values(colTransforms).map((c, i) => `<th data-col="${i}" class="px-2" colspan="${c.flex || 1}">${c.name}</th>`).join("")}</tr>
+			</thead>
+			<tbody>`;
 
 		const listCopy = [...entities];
 		if (sorter) listCopy.sort(sorter);
@@ -86,13 +116,11 @@ class UtilsTableview {
 				row.push(val);
 				return `<td data-col="${i}" class="px-2" colspan="${c.flex || 1}">${val || ""}</td>`;
 			}).join("");
-			state.rows.push(row);
+			rdState.rows.push(row);
 			stack += `</tr>`;
 		});
 
-		stack += `</tbody>
-			</table>
-		</div>`;
+		stack += `</tbody></table>`;
 
 		return stack;
 	}

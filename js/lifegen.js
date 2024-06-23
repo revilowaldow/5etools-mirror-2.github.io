@@ -800,7 +800,7 @@ function sectFamily () {
 	let famIndex = 1;
 	const $btnSuppFam = $(`<button class="btn btn-xs btn-default btn-supp-fam no-print"></button>`).on("click", async () => {
 		const supDetails = await getPersonDetails();
-		const $wrpRes = $(`<div class="life__output-wrp-border p-3 my-2"/>`);
+		const $wrpRes = $(`<div class="life__output-wrp-border p-3 my-2"></div>`);
 		$wrpRes.append(`<h5 class="mt-0">Family Member Roll ${famIndex++}</h5>`);
 		$wrpRes.append(joinParaList(supDetails));
 		$btnSuppFam.css("margin-bottom", 5);

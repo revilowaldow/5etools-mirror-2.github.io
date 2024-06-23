@@ -696,7 +696,8 @@
 					"title": "Map of Ixalan",
 					"grid": {
 						"type": "none"
-					}
+					},
+					"id": "034"
 				}
 			],
 			"id": "030"

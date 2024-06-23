@@ -245,7 +245,16 @@
 					"href": {
 						"type": "internal",
 						"path": "bestiary/DoDk/Delerium Dreg.webp"
-					}
+					},
+					"title": "Delerium Dreg"
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/DoDk/Delerium Mind Dreg.webp"
+					},
+					"title": "Delerium Mind Dreg"
 				}
 			]
 		},

@@ -6503,7 +6503,8 @@
 													},
 													"title": "Dock Ward",
 													"width": 574,
-													"height": 500
+													"height": 500,
+													"id": "53f"
 												},
 												{
 													"type": "image",
@@ -6517,7 +6518,8 @@
 														"type": "none"
 													},
 													"width": 512,
-													"height": 800
+													"height": 800,
+													"id": "540"
 												},
 												{
 													"type": "image",
@@ -6531,7 +6533,8 @@
 													},
 													"title": "Trades Ward Map",
 													"width": 600,
-													"height": 900
+													"height": 900,
+													"id": "541"
 												},
 												{
 													"type": "image",
@@ -6545,7 +6548,8 @@
 													},
 													"title": "Field Ward Map",
 													"width": 600,
-													"height": 600
+													"height": 600,
+													"id": "542"
 												}
 											]
 										}
@@ -9446,7 +9450,8 @@
 											},
 											"title": "Tower",
 											"width": 1000,
-											"height": 691
+											"height": 691,
+											"id": "543"
 										},
 										{
 											"type": "image",
@@ -9505,7 +9510,8 @@
 											},
 											"title": "Tower, View",
 											"width": 556,
-											"height": 800
+											"height": 800,
+											"id": "544"
 										}
 									]
 								},

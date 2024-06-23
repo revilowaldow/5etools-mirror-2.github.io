@@ -945,6 +945,34 @@ class CultsBoonsDataCheck extends GenericDataCheck {
 	}
 }
 
+class FoundrySpellsDataCheck extends GenericDataCheck {
+	static _RE_CUSTOM_ID = /^@(?<tag>[a-z][a-zA-Z]+)\[(?<text>[^\]]+)]$/;
+
+	static async _pHandleEntity (file, ent) {
+		const summonProfiles = MiscUtil.get(ent, "system", "summons", "profiles");
+		if (!summonProfiles?.length) return;
+
+		await summonProfiles
+			.pSerialAwaitMap(async profile => {
+				const {tag, text} = this._RE_CUSTOM_ID.exec(profile.uuid).groups;
+				const {name, page, source, hash} = Renderer.utils.getTagMeta(`@${tag}`, text);
+				const ent = await DataLoader.pCacheAndGet(page, source, hash);
+				if (ent) return;
+
+				const url = getEncoded(text, tag);
+				this._addMessage(`Missing link: ${name} in file ${file} "system.summons.profiles" (evaluates to "${url}")\nSimilar URLs were:\n${getSimilar(url)}\n`);
+			});
+	}
+
+	static async pRun () {
+		const file = `data/spells/foundry.json`;
+		const json = ut.readJson(`./${file}`);
+
+		await json.spell
+			.pSerialAwaitMap(ent => this._pHandleEntity(file, ent));
+	}
+}
+
 class DuplicateEntityCheck extends DataTesterBase {
 	static registerParsedFileCheckers (parsedJsonChecker) {
 		parsedJsonChecker.registerFileHandler(this);
@@ -1191,6 +1219,7 @@ class HasFluffCheck extends GenericDataCheck {
 						hasFluffImages: !!flf.images,
 					},
 				}));
+			const fluffLookupUsed = {};
 
 			// Tag parent fluff, so we can ignore e.g. "unused" fluff which is only used by `_copy`s
 			(dataFluffUnmerged[propFluff] || []).forEach(flfUm => {
@@ -1205,8 +1234,14 @@ class HasFluffCheck extends GenericDataCheck {
 				if (!ent.hasFluff && !ent.hasFluffImages) return;
 
 				const hash = UrlUtil.URL_TO_HASH_BUILDER[page](ent);
+				// Replacement hashes, to be used instead of the main hash
+				const hashesAlt = this._getHashesAlt({page, ent});
+				const hashUsed = [hash, ...hashesAlt].find(h => fluffLookup[h] || fluffLookupUsed[h]) || hash;
 
-				const fromLookup = fluffLookup[hash];
+				// This fluff has already been completely marked as "used"
+				if (fluffLookupUsed[hashUsed]) return;
+
+				const fromLookup = fluffLookup[hashUsed];
 				if (!fromLookup) {
 					this._addMessage(`${prop} hash ${`"${hash}"`.padEnd(this._LEN_PAD_HASH, " ")} not found in corresponding "${propFluff}" fluff!\n`);
 					return;
@@ -1217,20 +1252,23 @@ class HasFluffCheck extends GenericDataCheck {
 				if (!!ent.hasFluff !== fromLookup.hasFluff) {
 					ptsMessage.push(`hasFluff mismatch (entity ${ent.hasFluff} | fluff ${fromLookup.hasFluff})`);
 				} else if (ent.hasFluff) {
-					delete fluffLookup[hash].hasFluff;
+					delete fluffLookup[hashUsed]?.hasFluff;
 				}
 
 				if (!!ent.hasFluffImages !== fromLookup.hasFluffImages) {
 					ptsMessage.push(`hasFluffImages mismatch (entity ${ent.hasFluffImages} | fluff ${fromLookup.hasFluffImages})`);
 				} else if (ent.hasFluffImages) {
-					delete fluffLookup[hash].hasFluffImages;
+					delete fluffLookup[hashUsed]?.hasFluffImages;
 				}
 
-				if (!fluffLookup[hash].hasFluff && !fluffLookup[hash].hasFluffImages) delete fluffLookup[hash];
+				if (!fluffLookup[hashUsed].hasFluff && !fluffLookup[hashUsed].hasFluffImages) {
+					delete fluffLookup[hashUsed];
+					fluffLookupUsed[hashUsed] = true;
+				}
 
 				if (!ptsMessage.length) return;
 
-				this._addMessage(`${prop} hash ${`"${hash}"`.padEnd(this._LEN_PAD_HASH, " ")} fluff did not match fluff file: ${ptsMessage.join("; ")}\n`);
+				this._addMessage(`${prop} hash ${`"${hashUsed}"`.padEnd(this._LEN_PAD_HASH, " ")} fluff did not match fluff file: ${ptsMessage.join("; ")}\n`);
 			});
 
 			const unusedFluff = Object.entries(fluffLookup)
@@ -1242,6 +1280,11 @@ class HasFluffCheck extends GenericDataCheck {
 				this._addMessage(`Extra ${propFluff} fluff found!\n${errors.map(it => `\t${it}`).join("\n")}\n`);
 			}
 		}
+	}
+
+	static _getHashesAlt ({page, ent}) {
+		if (ent.__prop === "item" && ent._variantName) return [UrlUtil.URL_TO_HASH_BUILDER[page]({name: ent._variantName, source: ent.source})];
+		return [];
 	}
 }
 
@@ -1322,6 +1365,7 @@ async function main () {
 		BestiaryDataCheck,
 		DeckDataCheck,
 		CultsBoonsDataCheck,
+		FoundrySpellsDataCheck,
 	];
 	DataTester.register({ClazzDataTesters});
 

@@ -57,8 +57,8 @@ function addMonsterFeatures (mfData) {
 	});
 
 	// when clicking a row in the "Monster Statistics by Challenge Rating" table
-	$("#msbcr tr").not(":has(th)").click(function () {
-		if (!confirm("This will reset the calculator. Are you sure?")) return;
+	$("#msbcr tr").not(":has(th)").click(async function () {
+		if (!await InputUiUtil.pGetUserBoolean({title: "Reset", htmlDescription: "This will reset the calculator. Are you sure?", textYes: "Yes", textNo: "Cancel"})) return;
 		$("#expectedcr").val($(this).children("td:eq(0)").html());
 		const [minHp, maxHp] = $(this).children("td:eq(4)").html().split("-").map(it => parseInt(it));
 		$("#hp").val(minHp + (maxHp - minHp) / 2);
@@ -156,11 +156,10 @@ function addMonsterFeatures (mfData) {
 
 	$("#monsterfeatures .crc__wrp_mon_features input").change(calculateCr);
 
-	$("#crcalc_reset").click(() => {
-		confirm("Are you sure?") && (() => {
-			window.location = "";
-			parseUrl();
-		})();
+	$("#crcalc_reset").click(async () => {
+		if (!await InputUiUtil.pGetUserBoolean({title: "Reset", htmlDescription: "Are you sure?", textYes: "Yes", textNo: "Cancel"})) return;
+		window.location = "";
+		parseUrl();
 	});
 
 	parseUrl();

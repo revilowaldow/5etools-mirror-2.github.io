@@ -11,7 +11,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 
-	<title>Lootgen - 5etools</title>
+	<title>Loot Generator - 5etools</title>
 
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -58,6 +58,9 @@
 </head>
 
 <body>
+
+<div class="overlay-noise"></div>
+
 <div class="cancer__wrp-sidebar-rhs cancer__anchor"><div class="cancer__disp-cancer"></div><div class="cancer__sidebar-rhs-inner cancer__sidebar-rhs-inner--top"><!--5ETOOLS_AD_RIGHT_1--></div><div class="cancer__sidebar-rhs-inner cancer__sidebar-rhs-inner--bottom"><!--5ETOOLS_AD_RIGHT_2--></div></div>
 
 <div class="viewport-wrapper">
@@ -65,7 +68,7 @@
 
 	<header class="hidden-xs hidden-sm page__header">
 		<div class="container ve-flex-v-baseline">
-			<h1 class="page__title no-wrap my-0">Loot Generator</h1>
+			<h1 class="page__title no-wrap my-0" id="page__title">Loot Generator</h1>
 			<p class="page__subtitle no-wrap my-0" id="page__subtitle">Configure the generator, then Roll Loot!</p>
 		</div>
 	</header>
@@ -78,37 +81,40 @@
 		<div class="py-2 ve-flex-vh-center initial-message initial-message--large h-100" id="wrp-loading">Loading...</div>
 
 		<div class="container view-col-wrapper view-col-wrapper--cancer ve-hidden" id="wrp-content">
-			<div class="view-col" id="lootgen-lhs" style="flex: 4;"></div>
+			<div class="view-col ve-flex-4 mb-0" id="lootgen-lhs"></div>
 
 			<div class="cancer__wrp-mobile-1 cancer__anchor"><div class="cancer__disp-cancer"></div><!--5ETOOLS_AD_MOB_PLAYER_1--></div>
 
-			<div class="view-col" id="lootgen-rhs" style="flex: 6;"></div>
+			<div class="view-col ve-flex-6" id="lootgen-rhs"></div>
 		</div>
 	</div>
 </div>
+
 <!--5ETOOLS_SCRIPT_ANCHOR-->
 <!--5ETOOLS_AD_ADHESION-->
+
 <script type="text/javascript" src="lib/jquery.js"></script>
-<script type="text/javascript" src="lib/elasticlunr.js"></script>
 <script type="text/javascript" src="js/parser.js"></script>
 <script type="text/javascript" src="js/utils.js"></script>
 <script type="text/javascript" src="js/utils-ui.js"></script>
 <script type="text/javascript" src="lib/localforage.js"></script>
-<script type="text/javascript" src="js/genutils.js"></script>
 <script type="text/javascript" src="js/omnidexer.js"></script>
 <script type="text/javascript" src="js/omnisearch.js"></script>
-<script type="text/javascript" src="js/hist.js"></script>
 <script type="text/javascript" src="js/filter.js"></script>
 <script type="text/javascript" src="js/utils-dataloader.js"></script>
 <script type="text/javascript" src="js/utils-brew.js"></script>
+<script type="module" src="js/utils-config.js"></script>
+<script type="text/javascript" src="js/utils-generate.js"></script>
 <script type="text/javascript" src="js/filter-items.js"></script>
 <script type="text/javascript" src="js/filter-spells.js"></script>
 <script type="text/javascript" src="js/render.js"></script>
 <script type="text/javascript" src="js/render-dice.js"></script>
 <script type="text/javascript" src="js/scalecreature.js"></script>
+<script type="text/javascript" src="js/hist.js"></script>
 <script type="text/javascript" src="js/lootgen.js"></script>
 <script type="text/javascript" src="js/lootgen-ui.js"></script>
 <script type="text/javascript" src="js/list2.js"></script>
+<script type="text/javascript" src="lib/elasticlunr.js"></script>
 
 </body>
 </html>

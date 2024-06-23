@@ -58,14 +58,18 @@
 </head>
 
 <body>
+
+<div class="overlay-noise"></div>
+
 <div class="cancer__wrp-leaderboard cancer__anchor"><div class="cancer__disp-cancer"></div><div class="cancer__wrp-leaderboard-inner"><!--5ETOOLS_AD_LEADERBOARD--></div></div>
 
 <header class="hidden-xs hidden-sm page__header">
 	<div class="container ve-flex-v-baseline">
-		<h1 class="page__title no-wrap my-0">CR Calculator</h1>
+		<h1 class="page__title no-wrap my-0" id="page__title">CR Calculator</h1>
 		<p class="page__subtitle no-wrap my-0" id="page__subtitle">Easily build custom creatures.</p>
 	</div>
 </header>
+
 <nav class="container page__nav" id="navigation">
 	<ul class="nav nav-pills page__nav-inner" id="navbar"></ul>
 </nav>
@@ -113,12 +117,12 @@
 					<tr>
 						<th>CR</th>
 						<th>XP</th>
-						<th>Prof.<br/>Bonus</th>
-						<th>Armor<br/>Class</th>
-						<th>Hit<br/>Points</th>
-						<th>Attack<br/>Bonus</th>
-						<th>Damage/<br/>Round</th>
-						<th>Save<br/>DC</th>
+						<th>Prof.<br>Bonus</th>
+						<th>Armor<br>Class</th>
+						<th>Hit<br>Points</th>
+						<th>Attack<br>Bonus</th>
+						<th>Damage/<br>Round</th>
+						<th>Save<br>DC</th>
 					</tr>
 				</table>
 			</div>
@@ -307,8 +311,11 @@
 		</div>
 	</div>
 </main>
+
 <!--5ETOOLS_SCRIPT_ANCHOR-->
 <!--5ETOOLS_AD_ADHESION-->
+
+<script type="text/javascript" src="lib/jquery.js"></script>
 <script type="text/javascript" src="js/parser.js"></script>
 <script type="text/javascript" src="js/utils.js"></script>
 <script type="text/javascript" src="js/utils-ui.js"></script>
@@ -318,14 +325,14 @@
 <script type="text/javascript" src="js/filter.js"></script>
 <script type="text/javascript" src="js/utils-dataloader.js"></script>
 <script type="text/javascript" src="js/utils-brew.js"></script>
+<script type="module" src="js/utils-config.js"></script>
 <script type="text/javascript" src="js/render.js"></script>
 <script type="text/javascript" src="js/render-dice.js"></script>
 <script type="text/javascript" src="js/scalecreature.js"></script>
 <script type="text/javascript" src="js/hist.js"></script>
 <script type="text/javascript" src="js/crcalculator.js"></script>
 <script type="text/javascript" src="js/list2.js"></script>
-<script type="text/javascript" src="lib/jquery.js"></script>
 <script type="text/javascript" src="lib/elasticlunr.js"></script>
-</body>
 
+</body>
 </html>

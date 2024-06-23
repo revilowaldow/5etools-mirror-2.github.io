@@ -540,11 +540,11 @@
 								],
 								[
 									"5",
-									"A patch of brown mold, green slime, or yellow mold lies nearby. "
+									"A patch of {@hazard brown mold}, {@hazard green slime}, or {@hazard yellow mold} lies nearby. "
 								],
 								[
 									"6",
-									"A group of friendly explorers crosses the player characters' path. The explorers have 2d4 goods for sale that cost 1 gp or less, which you can select from the Adventuring Gear table in the Player's Handbook."
+									"A group of friendly explorers crosses the player characters' path. The explorers have {@dice 2d4} goods for sale that cost 1 gp or less, which you can select from the {@table Adventuring Gear|PHB} table in the Player's Handbook."
 								]
 							]
 						}
@@ -1377,7 +1377,8 @@
 										"offsetY": 24,
 										"scale": 2
 									},
-									"title": "Geomorph Card 1"
+									"title": "Geomorph Card 1",
+									"id": "00e"
 								},
 								{
 									"type": "image",
@@ -1395,7 +1396,8 @@
 										"offsetY": 24,
 										"scale": 2
 									},
-									"title": "Geomorph Card 2"
+									"title": "Geomorph Card 2",
+									"id": "00f"
 								},
 								{
 									"type": "image",
@@ -1413,7 +1415,8 @@
 										"offsetY": 17,
 										"scale": 2
 									},
-									"title": "Geomorph Card 3"
+									"title": "Geomorph Card 3",
+									"id": "010"
 								},
 								{
 									"type": "image",
@@ -1431,7 +1434,8 @@
 										"offsetY": -23,
 										"scale": 2
 									},
-									"title": "Geomorph Card 4"
+									"title": "Geomorph Card 4",
+									"id": "011"
 								},
 								{
 									"type": "image",
@@ -1449,7 +1453,8 @@
 										"offsetY": -28,
 										"scale": 2
 									},
-									"title": "Geomorph Card 5"
+									"title": "Geomorph Card 5",
+									"id": "012"
 								},
 								{
 									"type": "image",
@@ -1467,7 +1472,8 @@
 										"offsetY": 25,
 										"scale": 2
 									},
-									"title": "Geomorph Card 6"
+									"title": "Geomorph Card 6",
+									"id": "013"
 								},
 								{
 									"type": "image",
@@ -1485,7 +1491,8 @@
 										"offsetY": -15,
 										"scale": 2
 									},
-									"title": "Geomorph Card 7"
+									"title": "Geomorph Card 7",
+									"id": "014"
 								},
 								{
 									"type": "image",
@@ -1503,7 +1510,8 @@
 										"offsetY": -17,
 										"scale": 2
 									},
-									"title": "Geomorph Card 8"
+									"title": "Geomorph Card 8",
+									"id": "015"
 								},
 								{
 									"type": "image",
@@ -1521,7 +1529,8 @@
 										"offsetY": -16,
 										"scale": 2
 									},
-									"title": "Geomorph Card 9"
+									"title": "Geomorph Card 9",
+									"id": "016"
 								},
 								{
 									"type": "image",
@@ -1539,7 +1548,8 @@
 										"offsetY": -23,
 										"scale": 2
 									},
-									"title": "Geomorph Card 10"
+									"title": "Geomorph Card 10",
+									"id": "017"
 								},
 								{
 									"type": "image",
@@ -1557,7 +1567,8 @@
 										"offsetY": -24,
 										"scale": 2
 									},
-									"title": "Geomorph Card 11"
+									"title": "Geomorph Card 11",
+									"id": "018"
 								},
 								{
 									"type": "image",
@@ -1575,7 +1586,8 @@
 										"offsetY": -31,
 										"scale": 2
 									},
-									"title": "Geomorph Card 12"
+									"title": "Geomorph Card 12",
+									"id": "019"
 								},
 								{
 									"type": "image",
@@ -1593,7 +1605,8 @@
 										"offsetY": -18,
 										"scale": 2
 									},
-									"title": "Geomorph Card 13"
+									"title": "Geomorph Card 13",
+									"id": "01a"
 								},
 								{
 									"type": "image",
@@ -1611,7 +1624,8 @@
 										"offsetY": -24,
 										"scale": 2
 									},
-									"title": "Geomorph Card 14"
+									"title": "Geomorph Card 14",
+									"id": "01b"
 								},
 								{
 									"type": "image",
@@ -1629,7 +1643,8 @@
 										"offsetY": -30,
 										"scale": 2
 									},
-									"title": "Geomorph Card 15"
+									"title": "Geomorph Card 15",
+									"id": "01c"
 								},
 								{
 									"type": "image",
@@ -1647,7 +1662,8 @@
 										"offsetY": -16,
 										"scale": 2
 									},
-									"title": "Geomorph Card 16"
+									"title": "Geomorph Card 16",
+									"id": "01d"
 								},
 								{
 									"type": "image",
@@ -1664,7 +1680,8 @@
 										"offsetY": -15,
 										"scale": 2
 									},
-									"title": "Geomorph Card 17"
+									"title": "Geomorph Card 17",
+									"id": "01e"
 								},
 								{
 									"type": "image",
@@ -1682,7 +1699,8 @@
 										"offsetY": -18,
 										"scale": 2
 									},
-									"title": "Geomorph Card 18"
+									"title": "Geomorph Card 18",
+									"id": "01f"
 								},
 								{
 									"type": "image",
@@ -1700,7 +1718,8 @@
 										"offsetY": -31,
 										"scale": 2
 									},
-									"title": "Geomorph Card 19"
+									"title": "Geomorph Card 19",
+									"id": "020"
 								},
 								{
 									"type": "image",
@@ -1718,7 +1737,8 @@
 										"offsetY": 18,
 										"scale": 2
 									},
-									"title": "Geomorph Card 20"
+									"title": "Geomorph Card 20",
+									"id": "021"
 								},
 								{
 									"type": "image",
@@ -1736,7 +1756,8 @@
 										"offsetY": 11,
 										"scale": 2
 									},
-									"title": "Geomorph Card 21"
+									"title": "Geomorph Card 21",
+									"id": "022"
 								},
 								{
 									"type": "image",
@@ -1754,7 +1775,8 @@
 										"offsetY": -25,
 										"scale": 2
 									},
-									"title": "Geomorph Card 22"
+									"title": "Geomorph Card 22",
+									"id": "023"
 								},
 								{
 									"type": "image",
@@ -1772,7 +1794,8 @@
 										"offsetY": 20,
 										"scale": 2
 									},
-									"title": "Geomorph Card 23"
+									"title": "Geomorph Card 23",
+									"id": "024"
 								},
 								{
 									"type": "image",
@@ -1790,7 +1813,8 @@
 										"offsetY": 18,
 										"scale": 2
 									},
-									"title": "Geomorph Card 24"
+									"title": "Geomorph Card 24",
+									"id": "025"
 								},
 								{
 									"type": "image",
@@ -1808,7 +1832,8 @@
 										"offsetY": -22,
 										"scale": 2
 									},
-									"title": "Geomorph Card 25"
+									"title": "Geomorph Card 25",
+									"id": "026"
 								},
 								{
 									"type": "image",
@@ -1826,7 +1851,8 @@
 										"offsetY": -22,
 										"scale": 2
 									},
-									"title": "Geomorph Card 26"
+									"title": "Geomorph Card 26",
+									"id": "027"
 								},
 								{
 									"type": "image",
@@ -1844,7 +1870,8 @@
 										"offsetY": -27,
 										"scale": 2
 									},
-									"title": "Geomorph Card 27"
+									"title": "Geomorph Card 27",
+									"id": "028"
 								},
 								{
 									"type": "image",
@@ -1862,7 +1889,8 @@
 										"offsetY": 19,
 										"scale": 2
 									},
-									"title": "Geomorph Card 28"
+									"title": "Geomorph Card 28",
+									"id": "029"
 								},
 								{
 									"type": "image",
@@ -1880,7 +1908,8 @@
 										"offsetY": 14,
 										"scale": 2
 									},
-									"title": "Geomorph Card 29"
+									"title": "Geomorph Card 29",
+									"id": "02a"
 								},
 								{
 									"type": "image",
@@ -1898,7 +1927,8 @@
 										"offsetY": 10,
 										"scale": 2
 									},
-									"title": "Geomorph Card 30"
+									"title": "Geomorph Card 30",
+									"id": "02b"
 								},
 								{
 									"type": "image",
@@ -1916,7 +1946,8 @@
 										"offsetY": 22,
 										"scale": 2
 									},
-									"title": "Geomorph Card 31"
+									"title": "Geomorph Card 31",
+									"id": "02c"
 								},
 								{
 									"type": "image",
@@ -1934,7 +1965,8 @@
 										"offsetY": 21,
 										"scale": 2
 									},
-									"title": "Geomorph Card 32"
+									"title": "Geomorph Card 32",
+									"id": "02d"
 								},
 								{
 									"type": "image",
@@ -1952,7 +1984,8 @@
 										"offsetY": 17,
 										"scale": 2
 									},
-									"title": "Geomorph Card 33"
+									"title": "Geomorph Card 33",
+									"id": "02e"
 								},
 								{
 									"type": "image",
@@ -1970,7 +2003,8 @@
 										"offsetY": 27,
 										"scale": 2
 									},
-									"title": "Geomorph Card 34"
+									"title": "Geomorph Card 34",
+									"id": "02f"
 								},
 								{
 									"type": "image",
@@ -1988,7 +2022,8 @@
 										"offsetY": -28,
 										"scale": 2
 									},
-									"title": "Geomorph Card 35"
+									"title": "Geomorph Card 35",
+									"id": "030"
 								},
 								{
 									"type": "image",
@@ -2006,7 +2041,8 @@
 										"offsetY": -30,
 										"scale": 2
 									},
-									"title": "Geomorph Card 36"
+									"title": "Geomorph Card 36",
+									"id": "031"
 								},
 								{
 									"type": "image",
@@ -2039,7 +2075,8 @@
 										"offsetY": -38,
 										"scale": 2
 									},
-									"title": "Geomorph Page 1"
+									"title": "Geomorph Page 1",
+									"id": "032"
 								},
 								{
 									"type": "image",
@@ -2057,7 +2094,8 @@
 										"offsetY": -30,
 										"scale": 2
 									},
-									"title": "Geomorph Page 2"
+									"title": "Geomorph Page 2",
+									"id": "033"
 								},
 								{
 									"type": "image",
@@ -2075,7 +2113,8 @@
 										"offsetY": -41,
 										"scale": 2
 									},
-									"title": "Geomorph Page 3"
+									"title": "Geomorph Page 3",
+									"id": "034"
 								},
 								{
 									"type": "image",
@@ -2093,7 +2132,8 @@
 										"offsetY": 15,
 										"scale": 2
 									},
-									"title": "Geomorph Page 4"
+									"title": "Geomorph Page 4",
+									"id": "035"
 								},
 								{
 									"type": "image",

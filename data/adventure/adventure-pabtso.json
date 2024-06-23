@@ -7053,7 +7053,8 @@
 								"offsetX": 74,
 								"offsetY": 53,
 								"scale": 3
-							}
+							},
+							"id": "4ba"
 						},
 						"Twelve {@creature Zombie||zombies} lurk inside the crumbled shell of the old watchtower and can't be seen from outside. However, any character who succeeds on a DC 15 Wisdom ({@skill Perception}) check smells a deathly odor wafting from the tower's direction.",
 						"When characters approach the tower or the tent, the zombies shamble from the tower. If a battle breaks out, Hamun Kost, a human {@creature mage}, emerges from his tent and asks, \"What is the meaning of this?\"",
@@ -8058,7 +8059,8 @@
 										"offsetX": 95,
 										"offsetY": 76,
 										"scale": 3
-									}
+									},
+									"id": "4bb"
 								},
 								"The camp is depicted on map 3.3. When the characters find the camp, read the following:",
 								{
@@ -15018,7 +15020,8 @@
 												"offsetX": -62,
 												"offsetY": 33,
 												"scale": 3
-											}
+											},
+											"id": "4bc"
 										},
 										"The makeshift camp, shown on map 5.2, consists of a few tents and a small fire. The camp is situated in the center of a small clearing. As the characters approach the camp, they overhear one of the goblins complaining about their leader in Common:",
 										{
@@ -18927,7 +18930,8 @@
 									"imageType": "map",
 									"grid": {
 										"type": "none"
-									}
+									},
+									"id": "4bd"
 								},
 								"The characters learned in {@adventure chapter 5|PaBTSO|5} about four obelisk shards around Phandalin that the Sawplee goblins gathered. The mind flayer fanatics possess these shards now, but the fanatics need as many obelisk fragments as possible to ensure their ritual will succeed.",
 								"The Sawplees' map reveals the locations of three other fragments: an abandoned dwarven temple called Talhundereth, the crypt beneath it, and a subterranean trading nexus called Gibbet Crossing. These locations are in the Starmetal Hills, several days northeast of Phandalin.",
@@ -19290,7 +19294,8 @@
 														"offsetX": 82,
 														"offsetY": 80,
 														"scale": 3
-													}
+													},
+													"id": "4be"
 												},
 												{
 													"type": "insetReadaloud",
@@ -42766,7 +42771,8 @@
 										"offsetX": -28,
 										"offsetY": -15,
 										"scale": 3
-									}
+									},
+									"id": "4bf"
 								},
 								{
 									"type": "insetReadaloud",
@@ -42858,7 +42864,8 @@
 										"offsetX": -15,
 										"offsetY": -17,
 										"scale": 3
-									}
+									},
+									"id": "4c0"
 								},
 								{
 									"type": "insetReadaloud",
@@ -44022,7 +44029,8 @@
 										"offsetX": 37,
 										"offsetY": 49,
 										"scale": 4
-									}
+									},
+									"id": "4c1"
 								},
 								{
 									"type": "insetReadaloud",
@@ -44075,7 +44083,8 @@
 										"offsetX": 16,
 										"offsetY": 14,
 										"scale": 4
-									}
+									},
+									"id": "4c2"
 								},
 								{
 									"type": "insetReadaloud",

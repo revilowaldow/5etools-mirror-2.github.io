@@ -182,7 +182,8 @@
 								"units": "miles"
 							},
 							"imageType": "map",
-							"credit": "Deven Rue"
+							"credit": "Deven Rue",
+							"id": "02c"
 						}
 					]
 				},
@@ -2738,7 +2739,8 @@
 								"units": "miles"
 							},
 							"imageType": "map",
-							"credit": "Deven Rue"
+							"credit": "Deven Rue",
+							"id": "02d"
 						},
 						{
 							"type": "section",
@@ -4153,7 +4155,8 @@
 																"units": "miles"
 															},
 															"imageType": "map",
-															"credit": "Deven Rue"
+															"credit": "Deven Rue",
+															"id": "02e"
 														}
 													]
 												}
@@ -4599,7 +4602,8 @@
 								"units": "miles"
 							},
 							"imageType": "map",
-							"credit": "Deven Rue"
+							"credit": "Deven Rue",
+							"id": "02f"
 						},
 						{
 							"type": "section",
@@ -6486,7 +6490,8 @@
 								"units": "miles"
 							},
 							"imageType": "map",
-							"credit": "Deven Rue"
+							"credit": "Deven Rue",
+							"id": "032"
 						},
 						{
 							"type": "section",
@@ -7474,7 +7479,8 @@
 																"units": "miles"
 															},
 															"imageType": "map",
-															"credit": "Deven Rue"
+															"credit": "Deven Rue",
+															"id": "050"
 														}
 													]
 												}
@@ -8062,7 +8068,8 @@
 								"units": "miles"
 							},
 							"imageType": "map",
-							"credit": "Deven Rue"
+							"credit": "Deven Rue",
+							"id": "051"
 						},
 						{
 							"type": "section",
@@ -8930,7 +8937,8 @@
 								"units": "miles"
 							},
 							"imageType": "map",
-							"credit": "Deven Rue"
+							"credit": "Deven Rue",
+							"id": "052"
 						},
 						{
 							"type": "section",
@@ -10156,7 +10164,8 @@
 								"units": "miles"
 							},
 							"imageType": "map",
-							"credit": "Deven Rue"
+							"credit": "Deven Rue",
+							"id": "053"
 						},
 						{
 							"type": "section",
@@ -11146,7 +11155,8 @@
 																"units": "miles"
 															},
 															"imageType": "map",
-															"credit": "Deven Rue"
+															"credit": "Deven Rue",
+															"id": "054"
 														}
 													]
 												}
@@ -11755,7 +11765,8 @@
 								"units": "miles"
 							},
 							"imageType": "map",
-							"credit": "Deven Rue"
+							"credit": "Deven Rue",
+							"id": "055"
 						},
 						{
 							"type": "entries",

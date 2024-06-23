@@ -57,14 +57,18 @@
 </head>
 
 <body>
+
+<div class="overlay-noise"></div>
+
 <div class="cancer__wrp-leaderboard cancer__anchor"><div class="cancer__disp-cancer"></div><div class="cancer__wrp-leaderboard-inner"><!--5ETOOLS_AD_LEADERBOARD--></div></div>
 
 <header class="hidden-xs hidden-sm page__header">
 	<div class="container ve-flex-v-baseline">
-		<h1 class="page__title no-wrap my-0 book-head-header">Adventure Details</h1>
-		<p class="book-head-message page__subtitle no-wrap my-0">Loading...</p>
+		<h1 class="page__title no-wrap my-0" id="page__title">Adventure Details</h1>
+		<p class="page__subtitle no-wrap my-0" id="page__subtitle">Loading...</p>
 	</div>
 </header>
+
 <nav class="container page__nav" id="navigation">
 	<ul class="nav nav-pills page__nav-inner" id="navbar"></ul>
 </nav>
@@ -77,13 +81,13 @@
 			<!-- populate with JS -->
 		</div>
 	</div>
+
 	<div class="view-col linked-titles book-view">
 		<table id="pagecontent" class="w-100 stats stats--book stats--book-large">
-			<!-- populate with JS -->
 			<tr><th class="border" colspan="6"></th></tr>
 			<tr><td colspan="6" class="initial-message book-loading-message">Loading...</td></tr>
 			<!-- (Placeholder text until page loads) -->
-			<tr><td colspan="6" class="text-muted">Did you ever hear the tragedy of Darth Plagueis The Wise? I thought not. It's not a story the Jedi would tell you. It's a Sith legend. Darth Plagueis was a Dark Lord of the Sith, so powerful and so wise he could use the Force to influence the midichlorians to create life… He had such a knowledge of the dark side that he could even keep the ones he cared about from dying. The dark side of the Force is a pathway to many abilities some consider to be unnatural. He became so powerful… the only thing he was afraid of was losing his power, which eventually, of course, he did. Unfortunately, he taught his apprentice everything he knew, then his apprentice killed him in his sleep. Ironic. He could save others from death, but not himself.</td></tr>
+			<tr><td colspan="6" class="text-muted">Did you ever hear the tragedy of Darth Plagueis The Wise? I thought not. It&#x27;s not a story the Jedi would tell you. It&#x27;s a Sith legend. Darth Plagueis was a Dark Lord of the Sith, so powerful and so wise he could use the Force to influence the midichlorians to create life… He had such a knowledge of the dark side that he could even keep the ones he cared about from dying. The dark side of the Force is a pathway to many abilities some consider to be unnatural. He became so powerful… the only thing he was afraid of was losing his power, which eventually, of course, he did. Unfortunately, he taught his apprentice everything he knew, then his apprentice killed him in his sleep. Ironic. He could save others from death, but not himself.</td></tr>
 			<tr><th class="border" colspan="6"></th></tr>
 		</table>
 
@@ -97,6 +101,8 @@
 
 <!--5ETOOLS_SCRIPT_ANCHOR-->
 <!--5ETOOLS_AD_ADHESION-->
+
+<script type="text/javascript" src="lib/jquery.js"></script>
 <script type="text/javascript" src="js/parser.js"></script>
 <script type="text/javascript" src="js/utils.js"></script>
 <script type="text/javascript" src="js/utils-ui.js"></script>
@@ -106,6 +112,7 @@
 <script type="text/javascript" src="js/filter.js"></script>
 <script type="text/javascript" src="js/utils-dataloader.js"></script>
 <script type="text/javascript" src="js/utils-brew.js"></script>
+<script type="module" src="js/utils-config.js"></script>
 <script type="text/javascript" src="js/render.js"></script>
 <script type="text/javascript" src="js/render-dice.js"></script>
 <script type="text/javascript" src="js/render-markdown.js"></script>
@@ -115,8 +122,7 @@
 <script type="text/javascript" src="js/bookutils.js"></script>
 <script type="text/javascript" src="js/adventure.js"></script>
 <script type="text/javascript" src="js/list2.js"></script>
-<script type="text/javascript" src="lib/jquery.js"></script>
 <script type="text/javascript" src="lib/elasticlunr.js"></script>
-</body>
 
+</body>
 </html>

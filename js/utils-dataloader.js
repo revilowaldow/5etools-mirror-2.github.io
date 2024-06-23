@@ -988,13 +988,6 @@ class _DataTypeLoaderLanguage extends _DataTypeLoaderPredefined {
 	_loader = "language";
 }
 
-class _DataTypeLoaderRecipe extends _DataTypeLoaderPredefined {
-	static PROPS = ["recipe"];
-	static PAGE = UrlUtil.PG_RECIPES;
-
-	_loader = "recipe";
-}
-
 class _DataTypeLoaderMultiSource extends _DataTypeLoader {
 	_prop;
 
@@ -1441,6 +1434,59 @@ class _DataTypeLoaderCustomDeck extends _DataTypeLoaderCustomRawable {
 		this._pGetDereferencedData_doNotifyFailed({ent: deck, uids: notFoundUids, prop: "card"});
 
 		return out;
+	}
+
+	async pGetPostCacheData ({siteData = null, prereleaseData = null, brewData = null, lockToken2}) {
+		return {
+			siteDataPostCache: await this._pGetPostCacheData_obj_withCache({obj: siteData, lockToken2, propCache: "site"}),
+			prereleaseDataPostCache: await this._pGetPostCacheData_obj({obj: prereleaseData, lockToken2}),
+			brewDataPostCache: await this._pGetPostCacheData_obj({obj: brewData, lockToken2}),
+		};
+	}
+}
+
+class _DataTypeLoaderRecipe extends _DataTypeLoaderCustomRawable {
+	static PROPS = ["raw_recipe", "recipe"];
+	static PAGE = UrlUtil.PG_RECIPES;
+
+	static _PROPS_RAWABLE = ["recipe"];
+
+	async _pGetRawSiteData () { return DataUtil.recipe.loadRawJSON(); }
+
+	async _pGetPostCacheData_obj ({obj, lockToken2}) {
+		if (!obj) return null;
+
+		const out = {};
+
+		if (obj.raw_recipe?.length) out.recipe = await obj.raw_recipe.pSerialAwaitMap(ent => this.constructor._pGetDereferencedRecipeData(ent, {lockToken2}));
+
+		return out;
+	}
+
+	static async _pGetDereferencedRecipeData (recipe, {lockToken2}) {
+		recipe = MiscUtil.copyFast(recipe);
+
+		Renderer.recipe.populateFullIngredients(recipe);
+
+		const fluff = await this._pGetDereferencedFluffData(recipe, {lockToken2});
+		if (fluff) recipe.fluff = fluff;
+
+		return recipe;
+	}
+
+	static async _pGetDereferencedFluffData (recipe, {lockToken2}) {
+		const fluff = await Renderer.utils.pGetFluff({
+			entity: recipe,
+			fluffProp: "recipeFluff",
+			lockToken2,
+		});
+		if (!fluff) return null;
+
+		const cpyFluff = MiscUtil.copyFast(fluff);
+		delete cpyFluff.name;
+		delete cpyFluff.source;
+
+		return cpyFluff;
 	}
 
 	async pGetPostCacheData ({siteData = null, prereleaseData = null, brewData = null, lockToken2}) {

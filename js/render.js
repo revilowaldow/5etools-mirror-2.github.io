@@ -3143,21 +3143,29 @@ Renderer.utils = class {
 		return fluff;
 	}
 
-	static async _pGetFluff ({entity, fluffProp} = {}) {
-		const fluffEntity = await DataLoader.pCacheAndGet(fluffProp, entity.source, UrlUtil.URL_TO_HASH_BUILDER[fluffProp](entity));
+	static async _pGetFluff ({entity, fluffProp, lockToken2} = {}) {
+		const fluffEntity = await DataLoader.pCacheAndGet(fluffProp, entity.source, UrlUtil.URL_TO_HASH_BUILDER[fluffProp](entity), {lockToken2});
 		if (fluffEntity) return fluffEntity;
 
 		if (entity._versionBase_name && entity._versionBase_source) {
-			return DataLoader.pCacheAndGet(fluffProp, entity.source, UrlUtil.URL_TO_HASH_BUILDER[fluffProp]({
-				name: entity._versionBase_name,
-				source: entity._versionBase_source,
-			}));
+			return DataLoader.pCacheAndGet(
+				fluffProp,
+				entity.source,
+				UrlUtil.URL_TO_HASH_BUILDER[fluffProp]({
+					name: entity._versionBase_name,
+					source: entity._versionBase_source,
+				}),
+				{
+					lockToken2,
+				},
+			);
 		}
 
 		return null;
 	}
 
-	static async pGetFluff ({entity, pFnPostProcess, fluffProp} = {}) {
+	// TODO(Future) move into `DataLoader`; cleanup `lockToken2` usage
+	static async pGetFluff ({entity, pFnPostProcess, fluffProp, lockToken2 = null} = {}) {
 		const predefinedFluff = await Renderer.utils.pGetPredefinedFluff(entity, fluffProp);
 		if (predefinedFluff) {
 			if (pFnPostProcess) return pFnPostProcess(predefinedFluff);
@@ -6430,16 +6438,16 @@ Renderer.race = class {
 		opts = opts || {};
 
 		const out = [];
-		races.forEach(r => {
+		races.forEach(race => {
 			// FIXME(Deprecated) Backwards compatibility for old race data; remove at some point
-			if (r.size && typeof r.size === "string") r.size = [r.size];
+			if (race.size && typeof race.size === "string") race.size = [race.size];
 
 			// Ignore `"lineage": true`, as it is only used for filters
-			if (r.lineage && r.lineage !== true) {
-				r = MiscUtil.copyFast(r);
+			if (race.lineage && race.lineage !== true) {
+				race = MiscUtil.copyFast(race);
 
-				if (r.lineage === "VRGR") {
-					r.ability = r.ability || [
+				if (race.lineage === "VRGR") {
+					race.ability = race.ability || [
 						{
 							choose: {
 								weighted: {
@@ -6457,8 +6465,8 @@ Renderer.race = class {
 							},
 						},
 					];
-				} else if (r.lineage === "UA1") {
-					r.ability = r.ability || [
+				} else if (race.lineage === "UA1") {
+					race.ability = race.ability || [
 						{
 							choose: {
 								weighted: {
@@ -6470,60 +6478,60 @@ Renderer.race = class {
 					];
 				}
 
-				r.entries = r.entries || [];
-				r.entries.push({
+				race.entries = race.entries || [];
+				race.entries.push({
 					type: "entries",
 					name: "Languages",
 					entries: ["You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."],
 				});
 
-				r.languageProficiencies = r.languageProficiencies || [{"common": true, "anyStandard": 1}];
+				race.languageProficiencies = race.languageProficiencies || [{"common": true, "anyStandard": 1}];
 			}
 
-			if (r.subraces && !r.subraces.length) delete r.subraces;
+			if (race.subraces && !race.subraces.length) delete race.subraces;
 
-			if (r.subraces) {
-				r.subraces.forEach(sr => {
-					sr.source = sr.source || r.source;
+			if (race.subraces) {
+				race.subraces.forEach(sr => {
+					sr.source = sr.source || race.source;
 					sr._isSubRace = true;
 				});
 
-				r.subraces.sort((a, b) => SortUtil.ascSortLower(a.name || "_", b.name || "_") || SortUtil.ascSortLower(Parser.sourceJsonToAbv(a.source), Parser.sourceJsonToAbv(b.source)));
+				race.subraces.sort((a, b) => SortUtil.ascSortLower(a.name || "_", b.name || "_") || SortUtil.ascSortLower(Parser.sourceJsonToAbv(a.source), Parser.sourceJsonToAbv(b.source)));
 			}
 
-			if (opts.isAddBaseRaces && r.subraces) {
-				const baseRace = MiscUtil.copyFast(r);
+			if (opts.isAddBaseRaces && race.subraces) {
+				const baseRace = MiscUtil.copyFast(race);
 
 				baseRace._isBaseRace = true;
 
-				const isAnyNoName = r.subraces.some(it => !it.name);
+				const isAnyNoName = race.subraces.some(it => !it.name);
 				if (isAnyNoName) {
 					baseRace._rawName = baseRace.name;
 					baseRace.name = `${baseRace.name} (Base)`;
 				}
 
 				const nameCounts = {};
-				r.subraces.filter(sr => sr.name).forEach(sr => nameCounts[sr.name.toLowerCase()] = (nameCounts[sr.name.toLowerCase()] || 0) + 1);
-				nameCounts._ = r.subraces.filter(sr => !sr.name).length;
+				race.subraces.filter(sr => sr.name).forEach(sr => nameCounts[sr.name.toLowerCase()] = (nameCounts[sr.name.toLowerCase()] || 0) + 1);
+				nameCounts._ = race.subraces.filter(sr => !sr.name).length;
 
 				const lst = {
 					type: "list",
-					items: r.subraces.map(sr => {
+					items: race.subraces.map(sr => {
 						const count = nameCounts[(sr.name || "_").toLowerCase()];
-						const idName = Renderer.race.getSubraceName(r.name, sr.name);
+						const idName = Renderer.race.getSubraceName(race.name, sr.name);
 						return `{@race ${idName}|${sr.source}${count > 1 ? `|${idName} (<span title="${Parser.sourceJsonToFull(sr.source).escapeQuotes()}">${Parser.sourceJsonToAbv(sr.source)}</span>)` : ""}}`;
 					}),
 				};
 
 				Renderer.race._mutBaseRaceEntries(baseRace, lst);
-				baseRace._subraces = r.subraces.map(sr => ({name: Renderer.race.getSubraceName(r.name, sr.name), source: sr.source}));
+				baseRace._subraces = race.subraces.map(sr => ({name: Renderer.race.getSubraceName(race.name, sr.name), source: sr.source}));
 
 				delete baseRace.subraces;
 
 				out.push(baseRace);
 			}
 
-			out.push(...Renderer.race._mergeSubraces(r));
+			out.push(...Renderer.race._mergeSubraces(race));
 		});
 
 		return out;
@@ -8954,6 +8962,10 @@ Renderer.item = class {
 
 		Renderer.item._createSpecificVariants_mergeVulnerableResistImmune({specificVariant, inherits});
 
+		// Inherit fluff
+		if (genericVariant.hasFluff) specificVariant.hasFluff = genericVariant.hasFluff;
+		if (genericVariant.hasFluffImages) specificVariant.hasFluffImages = genericVariant.hasFluffImages;
+
 		// track the specific variant on the parent generic, to later render as part of the stats
 		genericVariant.variants = genericVariant.variants || [];
 		if (!genericVariant.variants.some(it => it.base?.name === baseItem.name && it.base?.source === baseItem.source)) genericVariant.variants.push({base: baseItem, specificVariant});
@@ -9460,9 +9472,18 @@ Renderer.item = class {
 		return false;
 	}
 
-	static pGetFluff (item) {
-		return Renderer.utils.pGetFluff({
+	static async pGetFluff (item) {
+		const fluffItem = await Renderer.utils.pGetFluff({
 			entity: item,
+			fluffProp: "itemFluff",
+		});
+		if (fluffItem) return fluffItem;
+
+		if (!item._variantName) return null;
+
+		// Inherit generic variant fluff
+		return Renderer.utils.pGetFluff({
+			entity: {name: item._variantName, source: item.source},
 			fluffProp: "itemFluff",
 		});
 	}
@@ -10981,6 +11002,7 @@ Renderer.generic = class {
 			skillToolLanguageProfs,
 			setValid: new Set(this.FEATURE__SKILLS_ALL),
 			setValidAny: this._SKILL_TOOL_LANGUAGE_KEYS__SKILL_ANY,
+			anyAlt: "anySkill",
 			isShort,
 			hoverTag: "skill",
 		});
@@ -10992,6 +11014,7 @@ Renderer.generic = class {
 			skillToolLanguageProfs,
 			setValid: new Set(this.FEATURE__TOOLS_ALL),
 			setValidAny: this._SKILL_TOOL_LANGUAGE_KEYS__TOOL_ANY,
+			anyAlt: "anyTool",
 			isShort,
 		});
 	}
@@ -11002,11 +11025,12 @@ Renderer.generic = class {
 			skillToolLanguageProfs,
 			setValid: new Set(this.FEATURE__LANGUAGES_ALL),
 			setValidAny: this._SKILL_TOOL_LANGUAGE_KEYS__LANGAUGE_ANY,
+			anyAlt: "anyLanguage",
 			isShort,
 		});
 	}
 
-	static _summariseProfs ({profGroupArr, skillToolLanguageProfs, setValid, setValidAny, isShort, hoverTag}) {
+	static _summariseProfs ({profGroupArr, skillToolLanguageProfs, setValid, setValidAny, anyAlt, isShort, hoverTag}) {
 		if (!profGroupArr?.length && !skillToolLanguageProfs?.length) return {summary: "", collection: []};
 
 		const collectionSet = new Set();
@@ -11026,13 +11050,13 @@ Renderer.generic = class {
 						const chooseProfs = vMapped.from
 							.filter(s => !isValidate || setValid.has(s))
 							.map(s => {
-								collectionSet.add(s);
+								collectionSet.add(this._summariseProfs_getCollectionKey(s, anyAlt));
 								return this._summariseProfs_getEntry({str: s, isShort, hoverTag});
 							});
 						return `${isShort ? `${i === 0 ? "C" : "c"}hoose ` : ""}${v.count || 1} ${isShort ? `of` : `from`} ${chooseProfs.joinConjunct(", ", " or ")}`;
 					}
 
-					collectionSet.add(k);
+					collectionSet.add(this._summariseProfs_getCollectionKey(k, anyAlt));
 					return this._summariseProfs_getEntry({str: k, isShort, hoverTag});
 				});
 
@@ -11050,6 +11074,10 @@ Renderer.generic = class {
 			.join(` <i>or</i> `);
 
 		return {summary, collection: [...collectionSet].sort(SortUtil.ascSortLower)};
+	}
+
+	static _summariseProfs_getCollectionKey (k, anyAlt) {
+		return k === anyAlt ? "any" : k;
 	}
 
 	static _summariseProfs_sortKeys (a, b, {setValidAny = null} = {}) {

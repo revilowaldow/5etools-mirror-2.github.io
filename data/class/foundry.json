@@ -72,6 +72,62 @@
 					"title": "Sorcery Points"
 				}
 			]
+		},
+		{
+			"name": "Artificer",
+			"source": "TCE",
+			"advancement": [
+				{
+					"type": "ScaleValue",
+					"configuration": {
+						"identifier": "infused",
+						"type": "number",
+						"scale": {
+							"2": {
+								"value": 2
+							},
+							"6": {
+								"value": 3
+							},
+							"10": {
+								"value": 4
+							},
+							"14": {
+								"value": 5
+							},
+							"18": {
+								"value": 6
+							}
+						}
+					},
+					"title": "Infused Items"
+				},
+				{
+					"type": "ScaleValue",
+					"configuration": {
+						"identifier": "infusions",
+						"type": "number",
+						"scale": {
+							"2": {
+								"value": 4
+							},
+							"6": {
+								"value": 6
+							},
+							"10": {
+								"value": 8
+							},
+							"14": {
+								"value": 10
+							},
+							"18": {
+								"value": 12
+							}
+						}
+					},
+					"title": "Infusions Known"
+				}
+			]
 		}
 	],
 	"subclass": [
@@ -210,6 +266,33 @@
 						}
 					},
 					"title": "Divine Strike"
+				}
+			]
+		},
+		{
+			"name": "Alchemist",
+			"source": "TCE",
+			"className": "Artificer",
+			"classSource": "TCE",
+			"advancement": [
+				{
+					"type": "ScaleValue",
+					"configuration": {
+						"identifier": "elixir",
+						"type": "string",
+						"scale": {
+							"3": {
+								"value": "1"
+							},
+							"6": {
+								"value": "2"
+							},
+							"15": {
+								"value": "3"
+							}
+						}
+					},
+					"title": "Max Elixir Creations"
 				}
 			]
 		},
@@ -851,6 +934,21 @@
 			"classSource": "PHB",
 			"level": 3,
 			"isIgnored": true
+		},
+		{
+			"name": "Infuse Item",
+			"source": "TCE",
+			"className": "Artificer",
+			"classSource": "TCE",
+			"level": 2,
+			"system": {
+				"target.value": "1",
+				"target.type": "object",
+				"range.units": "touch",
+				"uses.value": 0,
+				"uses.max": "@scale.artificer.infused",
+				"uses.per": "charges"
+			}
 		},
 		{
 			"name": "Infusions Known",
@@ -3107,9 +3205,9 @@
 						"source": "XGE",
 						"page": 35,
 						"type": "R",
-						"range": "30",
 						"rarity": "none",
 						"weaponCategory": "simple",
+						"range": "30",
 						"entries": [
 							"This special attack is a ranged spell attack with a range of 30 feet. You are proficient with it, and you add your Dexterity modifier to its attack and damage rolls.",
 							"When you take the {@action Attack} action on your turn and use this special attack as part of it, you can spend 1 ki point to make this special attack twice as a bonus action. When you gain the Extra Attack feature, this special attack can be used for any of the attacks you make as part of the {@action Attack} action."
@@ -4550,9 +4648,9 @@
 						"type": "R",
 						"rarity": "none",
 						"weaponCategory": "simple",
+						"range": "90/300",
 						"dmg1": "1d6",
 						"dmgType": "L",
-						"range": "90/300",
 						"entries": [
 							"This weapon is part of the Infiltrator armor model. When you attack with that weapon, you can add your Intelligence modifier, instead of Strength or Dexterity, to the attack and damage rolls.",
 							"Once on each of your turns when you hit a creature with the launcher, you can deal an extra {@damage 1d6} lightning damage to that target."

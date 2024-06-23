@@ -43,6 +43,16 @@
 		url("../fonts/hpphumblescratch-webfont.woff2") format("woff2");
 }
 
+@keyframes kf-fade-in {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
 @keyframes kf-fade-out {
 	from {
 		opacity: 1;
@@ -180,7 +190,7 @@ $h-ipt-xs: 22px;
 // endregion
 
 // region Fonts
-$font-line-height: 1.4286;
+$font-line-height: 1.42857143;
 // endregion
 
 @mixin mix-shadow-1() {

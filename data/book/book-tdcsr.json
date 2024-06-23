@@ -2972,7 +2972,8 @@
 							},
 							"mapName": "The Lucidian Coast",
 							"width": 850,
-							"height": 914
+							"height": 914,
+							"id": "2cd"
 						},
 						{
 							"type": "insetReadaloud",
@@ -3406,7 +3407,8 @@
 							},
 							"mapName": "The Alabaster Sierras",
 							"width": 1700,
-							"height": 1315
+							"height": 1315,
+							"id": "2ce"
 						},
 						{
 							"type": "insetReadaloud",
@@ -3599,7 +3601,8 @@
 									},
 									"mapName": "The Shearing Channel",
 									"width": 850,
-									"height": 1121
+									"height": 1121,
+									"id": "2cf"
 								},
 								{
 									"type": "entries",
@@ -4458,7 +4461,8 @@
 							},
 							"mapName": "The Dividing Plains",
 							"width": 1700,
-							"height": 1181
+							"height": 1181,
+							"id": "2d0"
 						},
 						{
 							"type": "insetReadaloud",
@@ -5454,7 +5458,8 @@
 							},
 							"mapName": "The Cliffkeep Mountains",
 							"width": 1700,
-							"height": 994
+							"height": 994,
+							"id": "2d1"
 						},
 						{
 							"type": "insetReadaloud",
@@ -5663,7 +5668,8 @@
 									},
 									"mapName": "The City of Kraghammer",
 									"width": 850,
-									"height": 2307
+									"height": 2307,
+									"id": "2d2"
 								},
 								{
 									"type": "entries",
@@ -6398,7 +6404,8 @@
 							},
 							"mapName": "The Stormcrest Mountains",
 							"width": 1700,
-							"height": 889
+							"height": 889,
+							"id": "2d3"
 						},
 						{
 							"type": "insetReadaloud",
@@ -6744,7 +6751,8 @@
 							},
 							"mapName": "The Rifenmist Peninsula",
 							"width": 1700,
-							"height": 794
+							"height": 794,
+							"id": "2d4"
 						},
 						{
 							"type": "insetReadaloud",
@@ -7253,7 +7261,8 @@
 							},
 							"mapName": "The Verdant Expanse",
 							"width": 1700,
-							"height": 823
+							"height": 823,
+							"id": "2d5"
 						},
 						{
 							"type": "insetReadaloud",
@@ -7572,7 +7581,8 @@
 											},
 											"mapName": "The City of Syngorn",
 											"width": 1700,
-											"height": 1153
+											"height": 1153,
+											"id": "2d6"
 										},
 										{
 											"type": "entries",
@@ -7766,7 +7776,8 @@
 							},
 							"mapName": "The Bladeshimmer Shoreline",
 							"width": 850,
-							"height": 2289
+							"height": 2289,
+							"id": "2d7"
 						},
 						{
 							"type": "insetReadaloud",
@@ -8172,7 +8183,8 @@
 											},
 											"mapName": "Emon, The City of Fellowship",
 											"width": 1700,
-											"height": 2307
+											"height": 2307,
+											"id": "2d8"
 										},
 										{
 											"type": "entries",
@@ -11288,7 +11300,8 @@
 					},
 					"mapName": "Realm of Tal'Dorei",
 					"width": 1280,
-					"height": 1651
+					"height": 1651,
+					"id": "2d9"
 				},
 				{
 					"type": "image",
@@ -11305,7 +11318,8 @@
 					},
 					"mapName": "Realm of Tal'Dorei\u2014Large Watermarked",
 					"width": 2000,
-					"height": 2556
+					"height": 2556,
+					"id": "2da"
 				}
 			],
 			"id": "2c6"

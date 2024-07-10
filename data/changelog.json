@@ -2731,5 +2731,10 @@
 		"date": "2024-07-10",
 		"title": "Mind the Step",
 		"txt": "- Added Quests from the Infinite Staircase content\n- Overhauled partnered _[as in, \"partnered on D&D Beyond\"]_ content handling:\n  - Added search indexing for partnered homebrew content. When the \"Include Homebrew\" option is enabled in Omnisearch, available partnered homebrew content will be included in the results.\n  - Replaced \"Manage Homebrew\" with \"Manage Content\" button set, which includes options to \"Manage Prerelease Content\", \"Manage Homebrew\", and \"Load All Partnered Content\"\n  - Added \"Load All Partnered Content\" button to navbar Utilities dropdown, along with an inline \"Export Prerelease Content/Homebrew List as URL\" button _[the latter was previously only accessible via the Prerelease Content Manager/Homebrew Manager UIs]_\n- Added \"Inflicts Curse\" and \"Inflicts Disease\" Bestiary \"Miscellaneous\" filters; added \"Mimicry\" to \"Traits\" filter\n- Added \"Consumable\" Items page \"Miscellaneous\" filter\n- Reworked Deities page `stats: ...` search functionality to search all available information\n- Added \"Download Markdown Data\" right-click option to pinned lists\n- Added middle-click to flip card in Decks page card viewer\n- Added page numbers to Tome of Beasts 1 (2023 Edition); The Book of Many Things\n- Fixed clicking a non-link navbar item resetting the URL hash\n- (Brew) When navigating to the list page link for a homebrew entity which is not yet loaded, that homebrew is _[mostly]_ transparently loaded and displayed\n- (Brew) Added warning when copying a Prerelease Content/Homebrew list URL if \"editable\" Prerelease Content/Homebrew is active\n- (Brew) Fixed Homebrew Builder failing to update/apply \"Source\" selectors\n- (Brew) Fixed crash on specific shared feat prerequisite sets\n- (Fixed typos/added tags)"
+	},
+	{
+		"ver": "1.209.1",
+		"date": "2024-07-10",
+		"txt": "- Improved mobile footer layout on Bestiary, Items, Spells, and Psionics pages"
 	}
 ]

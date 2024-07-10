@@ -407,7 +407,7 @@
 					"type": "list",
 					"items": [
 						"You gain a +5 bonus to initiative.",
-						"You can't be {@quickref Surprise|PHB|3|0|surprised} while you are conscious.",
+						"You can't be {@status surprised} while you are conscious.",
 						"Other creatures don't gain advantage on attack rolls against you as a result of being unseen by you."
 					]
 				}

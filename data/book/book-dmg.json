@@ -7025,7 +7025,7 @@
 								{
 									"type": "list",
 									"items": [
-										"The whole party is {@quickref Surprise|PHB|3|0|surprised}, and the enemy isn't.",
+										"The whole party is {@status surprised}, and the enemy isn't.",
 										"The enemy has cover, and the party doesn't.",
 										"The characters are unable to see the enemy.",
 										"The characters are taking damage every round from some environmental effect or magical source, and the enemy isn't.",
@@ -21892,7 +21892,7 @@
 								{
 									"type": "list",
 									"items": [
-										"The creature is {@quickref Surprise|PHB|3|0|surprised}.",
+										"The creature is {@status surprised}.",
 										"The creature is reduced to half its hit points or fewer for the first time in the battle.",
 										"The creature has no way to harm the opposing side on its turn."
 									]
@@ -21901,7 +21901,7 @@
 								{
 									"type": "list",
 									"items": [
-										"All the creatures in the group are {@quickref Surprise|PHB|3|0|surprised}.",
+										"All the creatures in the group are {@status surprised}.",
 										"The group's leader is reduced to 0 hit points, {@condition incapacitated}, taken prisoner, or removed from battle.",
 										"The group is reduced to half its original size with no losses on the opposing side."
 									]

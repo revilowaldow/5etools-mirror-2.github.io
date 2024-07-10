@@ -846,7 +846,7 @@
 							"entries": [
 								"In this room are ten {@creature skeleton||skeletons}, all in matching coveralls with a logo on the back that reads, \"{@creature Mr. Greystone|NRH-AT}'s Garden Care.\" The skeletons are standing around gardening equipment\u2014two wheelbarrows, a scythe, rakes, hoes, a pickaxe, and some pruning shears.",
 								"The skeletons are dormant until they are attacked or until something makes a noise to alert them. The party can sneak past or sneak up to the skeletons with a successful DC 13 group Dexterity ({@skill Stealth}) check.",
-								"If the party attacks the dormant skeletons, the skeletons are {@quickref Surprise|PHB|3|0|surprised} (see the rules for Surprise in the D&D Basic Rules) and the party has advantage on their attacks during the first round of combat.",
+								"If the party attacks the dormant skeletons, the skeletons are {@status surprised} (see the rules for Surprise in the D&D Basic Rules) and the party has advantage on their attacks during the first round of combat.",
 								"Other than the gardening equipment, there's nothing of value in the room."
 							],
 							"id": "01b"

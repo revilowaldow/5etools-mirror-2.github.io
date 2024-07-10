@@ -1,6 +1,6 @@
 "use strict";
 
-class PageFilterFeats extends PageFilter {
+class PageFilterFeats extends PageFilterBase {
 	// region static
 	static _PREREQ_KEYs_OTHER_IGNORED = new Set(["level"]);
 	// endregion
@@ -147,7 +147,7 @@ class PageFilterFeats extends PageFilter {
 
 globalThis.PageFilterFeats = PageFilterFeats;
 
-class ModalFilterFeats extends ModalFilter {
+class ModalFilterFeats extends ModalFilterBase {
 	/**
 	 * @param opts
 	 * @param opts.namespace
@@ -170,7 +170,7 @@ class ModalFilterFeats extends ModalFilter {
 			{sort: "prerequisite", text: "Prerequisite", width: "3"},
 			{sort: "source", text: "Source", width: "1"},
 		];
-		return ModalFilter._$getFilterColumnHeaders(btnMeta);
+		return ModalFilterBase._$getFilterColumnHeaders(btnMeta);
 	}
 
 	async _pLoadAllData () {
@@ -198,7 +198,7 @@ class ModalFilterFeats extends ModalFilter {
 			<div class="ve-col-4 ${feat._versionBase_isVersion ? "italic" : ""} ${this._getNameStyle()}">${feat._versionBase_isVersion ? `<span class="px-3"></span>` : ""}${feat.name}</div>
 			<span class="ve-col-3 ${feat._slAbility === VeCt.STR_NONE ? "italic" : ""}">${feat._slAbility}</span>
 				<span class="ve-col-3 ${feat._slPrereq === VeCt.STR_NONE ? "italic" : ""}">${feat._slPrereq}</span>
-			<div class="ve-col-1 pr-0 ve-flex-h-center ${Parser.sourceJsonToColor(feat.source)}" title="${Parser.sourceJsonToFull(feat.source)}" ${Parser.sourceJsonToStyle(feat.source)}>${source}${Parser.sourceJsonToMarkerHtml(feat.source)}</div>
+			<div class="ve-col-1 pr-0 ve-flex-h-center ${Parser.sourceJsonToSourceClassname(feat.source)}" title="${Parser.sourceJsonToFull(feat.source)}" ${Parser.sourceJsonToStyle(feat.source)}>${source}${Parser.sourceJsonToMarkerHtml(feat.source)}</div>
 		</div>`;
 
 		const btnShowHidePreview = eleRow.firstElementChild.children[1].firstElementChild;

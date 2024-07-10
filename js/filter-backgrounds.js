@@ -1,6 +1,6 @@
 "use strict";
 
-class PageFilterBackgrounds extends PageFilter {
+class PageFilterBackgrounds extends PageFilterBase {
 	// TODO(Future) expand/move to `Renderer.generic`
 	static _getToolDisplayText (tool) {
 		if (tool === "anyTool") return "Any Tool";
@@ -106,7 +106,7 @@ class PageFilterBackgrounds extends PageFilter {
 
 globalThis.PageFilterBackgrounds = PageFilterBackgrounds;
 
-class ModalFilterBackgrounds extends ModalFilter {
+class ModalFilterBackgrounds extends ModalFilterBase {
 	/**
 	 * @param opts
 	 * @param opts.namespace
@@ -128,7 +128,7 @@ class ModalFilterBackgrounds extends ModalFilter {
 			{sort: "skills", text: "Skills", width: "6"},
 			{sort: "source", text: "Source", width: "1"},
 		];
-		return ModalFilter._$getFilterColumnHeaders(btnMeta);
+		return ModalFilterBase._$getFilterColumnHeaders(btnMeta);
 	}
 
 	async _pLoadAllData () {
@@ -155,7 +155,7 @@ class ModalFilterBackgrounds extends ModalFilter {
 
 			<div class="ve-col-4 ${bg._versionBase_isVersion ? "italic" : ""} ${this._getNameStyle()}">${bg._versionBase_isVersion ? `<span class="px-3"></span>` : ""}${bg.name}</div>
 			<div class="ve-col-6">${bg._skillDisplay}</div>
-			<div class="ve-col-1 pr-0 ve-flex-h-center ${Parser.sourceJsonToColor(bg.source)}" title="${Parser.sourceJsonToFull(bg.source)}" ${Parser.sourceJsonToStyle(bg.source)}>${source}${Parser.sourceJsonToMarkerHtml(bg.source)}</div>
+			<div class="ve-col-1 pr-0 ve-flex-h-center ${Parser.sourceJsonToSourceClassname(bg.source)}" title="${Parser.sourceJsonToFull(bg.source)}" ${Parser.sourceJsonToStyle(bg.source)}>${source}${Parser.sourceJsonToMarkerHtml(bg.source)}</div>
 		</div>`;
 
 		const btnShowHidePreview = eleRow.firstElementChild.children[1].firstElementChild;

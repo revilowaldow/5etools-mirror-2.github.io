@@ -186,7 +186,7 @@
 				{
 					"name": "Mount",
 					"entries": [
-						"If the archon isn't mounted, it can use a bonus action to magically teleport onto the creature serving as its mount, provided the archon and its mount are on the same plane of existence. When it teleports, the archon appears astride the mount along with any equipment it is wearing or carrying. While mounted and not {@condition incapacitated}, the archon can't be {@quickref Surprise|PHB|3|0|surprised}, and both it and its mount gain advantage on Dexterity saving throws. If the archon is reduced to 0 hit points while riding its mount, the mount is reduced to 0 hit points as well."
+						"If the archon isn't mounted, it can use a bonus action to magically teleport onto the creature serving as its mount, provided the archon and its mount are on the same plane of existence. When it teleports, the archon appears astride the mount along with any equipment it is wearing or carrying. While mounted and not {@condition incapacitated}, the archon can't be {@status surprised}, and both it and its mount gain advantage on Dexterity saving throws. If the archon is reduced to 0 hit points while riding its mount, the mount is reduced to 0 hit points as well."
 					]
 				}
 			],
@@ -1312,6 +1312,7 @@
 				"I"
 			],
 			"miscTags": [
+				"CUR",
 				"MLW",
 				"MW"
 			],
@@ -1706,6 +1707,9 @@
 						"{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."
 					]
 				}
+			],
+			"traitTags": [
+				"Mimicry"
 			],
 			"senseTags": [
 				"SD"
@@ -4563,7 +4567,7 @@
 				{
 					"name": "Vigilant",
 					"entries": [
-						"The giant can't be {@quickref Surprise|PHB|3|0|surprised}."
+						"The giant can't be {@status surprised}."
 					]
 				}
 			],
@@ -4956,7 +4960,7 @@
 				{
 					"name": "Assassinate",
 					"entries": [
-						"During its first turn, the hybrid poisoner has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the hybrid scores against a {@quickref Surprise|PHB|3|0|surprised} creature is a critical hit."
+						"During its first turn, the hybrid poisoner has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the hybrid scores against a {@status surprised} creature is a critical hit."
 					]
 				},
 				{
@@ -7032,7 +7036,7 @@
 				{
 					"name": "Mount",
 					"entries": [
-						"If the specter isn't mounted, it can use a bonus action to magically teleport onto its gloamwing mount, provided the specter and the gloamwing are on the same plane of existence. When it teleports, the specter appears astride the gloamwing along with any equipment it is wearing or carrying. While mounted and not {@condition incapacitated}, the specter can't be {@quickref Surprise|PHB|3|0|surprised}, and both it and its mount gain advantage on Dexterity saving throws."
+						"If the specter isn't mounted, it can use a bonus action to magically teleport onto its gloamwing mount, provided the specter and the gloamwing are on the same plane of existence. When it teleports, the specter appears astride the gloamwing along with any equipment it is wearing or carrying. While mounted and not {@condition incapacitated}, the specter can't be {@status surprised}, and both it and its mount gain advantage on Dexterity saving throws."
 					]
 				}
 			],
@@ -10352,7 +10356,7 @@
 				{
 					"name": "Surprise Attack",
 					"entries": [
-						"During the first round of combat, the medusa has advantage on attack rolls against any creature that is {@quickref Surprise|PHB|3|0|surprised}, and it deals an extra 10 ({@dice 3d6}) damage each time it hits such a creature with an attack."
+						"During the first round of combat, the medusa has advantage on attack rolls against any creature that is {@status surprised}, and it deals an extra 10 ({@dice 3d6}) damage each time it hits such a creature with an attack."
 					]
 				}
 			],

@@ -643,8 +643,15 @@ Parser.sourceJsonToDate = function (source) {
 	if (typeof BrewUtil2 !== "undefined" && BrewUtil2.hasSourceJson(source)) return BrewUtil2.sourceJsonToDate(source);
 	return Parser._parse_aToB(Parser.SOURCE_JSON_TO_DATE, source, null);
 };
-
 Parser.sourceJsonToColor = function (source) {
+	source = Parser._getSourceStringFromSource(source);
+	if (Parser.hasSourceAbv(source)) return "";
+	if (typeof PrereleaseUtil !== "undefined" && PrereleaseUtil.hasSourceJson(source)) return PrereleaseUtil.sourceJsonToColor(source);
+	if (typeof BrewUtil2 !== "undefined" && BrewUtil2.hasSourceJson(source)) return BrewUtil2.sourceJsonToColor(source);
+	return "";
+};
+
+Parser.sourceJsonToSourceClassname = function (source) {
 	const sourceCased = Parser.sourceJsonToJson(source);
 	return `source__${sourceCased}`;
 };
@@ -872,6 +879,7 @@ Parser.itemRechargeToFull = function (recharge) {
 
 Parser.ITEM_MISC_TAG_TO_FULL = {
 	"CF/W": "Creates Food/Water",
+	"CNS": "Consumable",
 	"TT": "Trinket Table",
 };
 Parser.itemMiscTagToFull = function (type) {
@@ -991,7 +999,7 @@ Parser._spSchoolAbvToStylePart_prereleaseBrew = function ({school, brewUtil}) {
 	const rawColor = brewUtil.getMetaLookup("spellSchools")?.[school]?.color;
 	if (!rawColor || !rawColor.trim()) return "";
 	const validColor = BrewUtilShared.getValidColor(rawColor);
-	if (validColor.length) return `color: #${validColor};`;
+	if (validColor.length) return MiscUtil.getColorStylePart(validColor);
 };
 
 Parser.getOrdinalForm = function (i) {

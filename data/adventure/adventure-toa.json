@@ -11827,7 +11827,7 @@
 									"id": "0e8",
 									"entries": [
 										"A ladder clinging to the south face of the spire ends at this level, which is 60 feet above ground.",
-										"The pterafolk don't use this cave, the most prominent feature of which is a 10-foot-deep pit. The shortest distance across the pit where characters can use a long jump is 15 feet. Climbing into or out of the pit is easy and requires a successful DC 5 Strength ({@skill Athletics}) check. However, the first character who enters the pit disturbs four {@creature Giant Wolf Spider||giant wolf spiders} that nest in crevices along the pit walls. Only a character with a passive Wisdom ({@skill Perception}) score of 17 or higher is not {@quickref Surprise|PHB|3|0|surprised} when the spiders attack.",
+										"The pterafolk don't use this cave, the most prominent feature of which is a 10-foot-deep pit. The shortest distance across the pit where characters can use a long jump is 15 feet. Climbing into or out of the pit is easy and requires a successful DC 5 Strength ({@skill Athletics}) check. However, the first character who enters the pit disturbs four {@creature Giant Wolf Spider||giant wolf spiders} that nest in crevices along the pit walls. Only a character with a passive Wisdom ({@skill Perception}) score of 17 or higher is not {@status surprised} when the spiders attack.",
 										{
 											"type": "entries",
 											"name": "Reaching Level 2",
@@ -17171,7 +17171,7 @@
 											]
 										},
 										"The hammering sound comes from the east.",
-										"Eight {@creature Firenewt Warrior|VGM|firenewt warriors} (see {@adventure appendix D|ToA|9}) work here. They're involved in their tasks and not expecting intruders, and the chamber is noisy, so the firenewts are {@quickref Surprise|PHB|3|0|surprised} unless characters move around openly or otherwise draw attention to themselves.",
+										"Eight {@creature Firenewt Warrior|VGM|firenewt warriors} (see {@adventure appendix D|ToA|9}) work here. They're involved in their tasks and not expecting intruders, and the chamber is noisy, so the firenewts are {@status surprised} unless characters move around openly or otherwise draw attention to themselves.",
 										"The central pit contains molten iron. The smaller pool contains molten adamantine, not silver. A creature that falls into either pit or starts its turn there takes 55 ({@dice 10d10}) fire damage.",
 										"The crane to the south (overhanging {@area area 1|118|x}) is used to lower a crucible of ore into the magma river until the ore is liquid. Liquified ore is rolled along the tracks into area 2, where it's dumped into the appropriate cauldron."
 									]
@@ -20963,7 +20963,7 @@
 										},
 										"These terraces overlooking the main concourse are home to myriad creatures, many of them dangerous.",
 										"A {@creature mantrap|ToA} (see {@adventure appendix D|ToA|9}) grows on the eastern terrace between two of the partially collapsed tunnels. When it senses movement within 30 feet of it, the mantrap releases its attractive pollen.",
-										"Characters who explore the western terrace encounter six {@creature Yellow Musk Zombie|ToA|yellow musk zombies} (see {@adventure appendix D|ToA|9}) lurking among the trees and plants. The zombies blend in with their surroundings, and any character with a passive Wisdom ({@skill Perception}) score lower than 12 is automatically {@quickref Surprise|PHB|3|0|surprised} by them. Coiled around the northernmost tree on the western terrace is a {@creature yellow musk creeper|ToA} (see {@adventure appendix D|ToA|9}) that uses its musk when one or more characters come within 30 feet of it.",
+										"Characters who explore the western terrace encounter six {@creature Yellow Musk Zombie|ToA|yellow musk zombies} (see {@adventure appendix D|ToA|9}) lurking among the trees and plants. The zombies blend in with their surroundings, and any character with a passive Wisdom ({@skill Perception}) score lower than 12 is automatically {@status surprised} by them. Coiled around the northernmost tree on the western terrace is a {@creature yellow musk creeper|ToA} (see {@adventure appendix D|ToA|9}) that uses its musk when one or more characters come within 30 feet of it.",
 										"At the north end of the garden, two arched doorways open into the southwest and southeast flower gardens ({@area area 5|177|x}). Steps still climb up to the doorway on the east, but the western steps collapsed and fell into the walkway below. A character can reach the western doorway with an easy jump and a successful DC 10 Dexterity ({@skill Acrobatics}) check to catch the ledge.",
 										{
 											"type": "entries",
@@ -24665,7 +24665,7 @@
 									"page": 89,
 									"id": "1cc",
 									"entries": [
-										"Tzindelor, a female {@creature young red dragon} better known as Tinder, spends most of her time here, dozing atop her treasure hoard. Otherwise, she's out hunting and terrorizing her neighbors. Characters have improved chances to sneak up on her from {@area area 12|1c7|x}, thanks to the loud waterfall there (either they have advantage on {@skill Stealth} checks or Tinder has disadvantage on {@skill Perception} checks, whichever is more appropriate to the situation). The dragon can't be {@quickref Surprise|PHB|3|0|surprised} if kobolds triggered the boulder trap in {@area area 10|1c3|x}, and she can't miss the sound of an ore cart rolling down the tracks or a loud spell going off anywhere in the complex.",
+										"Tzindelor, a female {@creature young red dragon} better known as Tinder, spends most of her time here, dozing atop her treasure hoard. Otherwise, she's out hunting and terrorizing her neighbors. Characters have improved chances to sneak up on her from {@area area 12|1c7|x}, thanks to the loud waterfall there (either they have advantage on {@skill Stealth} checks or Tinder has disadvantage on {@skill Perception} checks, whichever is more appropriate to the situation). The dragon can't be {@status surprised} if kobolds triggered the boulder trap in {@area area 10|1c3|x}, and she can't miss the sound of an ore cart rolling down the tracks or a loud spell going off anywhere in the complex.",
 										"The dragon is inclined to kill anyone she doesn't recognize but might converse with adventurers who have something interesting to say. Being young, she still has much to learn about the world. If flattered and offered a sufficient bribe (offerings worth at least 500 gp), she can even provide basic directions to any landmark within 100 miles of Wyrmheart Mine.",
 										"The dragon doesn't hold back when it comes to using her breath weapon; she loves watching her prey scream and burn in the flames. In a desperate situation, she's confident she can fly up the mine shaft and escape faster than any intruders can pursue.",
 										{
@@ -35367,7 +35367,7 @@
 									"Shrewd and conniving",
 									"\"I bow before no one and expect others to do as I command.\"",
 									"Kubazan",
-									"The host can't be {@quickref Surprise|PHB|3|0|surprised}, gains advantage on all Wisdom checks, and never takes damage from falling."
+									"The host can't be {@status surprised}, gains advantage on all Wisdom checks, and never takes damage from falling."
 								],
 								[
 									"Shagambi (female)",
@@ -49185,7 +49185,7 @@
 									"page": 196,
 									"id": "5a0",
 									"entries": [
-										"The characters are ambushed by 1d4+3 {@creature albino dwarf warrior|ToA|albino dwarf warriors} that attack from hidden burrows. Any character with a passive Wisdom (Perception) score of 13 or higher spots the dwarves, but all others are {@quickref Surprise|PHB|3|0|surprised}. The dwarves knock characters out rather than killing them, stealing food, water, and gear from those rendered unconscious. They break off their attack if any character speaks Dwarvish to them or demonstrates peaceful intentions."
+										"The characters are ambushed by 1d4+3 {@creature albino dwarf warrior|ToA|albino dwarf warriors} that attack from hidden burrows. Any character with a passive Wisdom (Perception) score of 13 or higher spots the dwarves, but all others are {@status surprised}. The dwarves knock characters out rather than killing them, stealing food, water, and gear from those rendered unconscious. They break off their attack if any character speaks Dwarvish to them or demonstrates peaceful intentions."
 									]
 								},
 								{
@@ -49380,7 +49380,7 @@
 									"page": 197,
 									"id": "5ab",
 									"entries": [
-										"Any character with a passive Wisdom (Perception) score of 12 or higher sees and hears 1d4+1 {@creature crocodile||crocodiles} moments before they attack; all other characters are {@quickref Surprise|PHB|3|0|surprised}. A crocodile can capsize a canoe and throw its occupants into the water by using its action and succeeding on a DC 15 Strength (Athletics) check."
+										"Any character with a passive Wisdom (Perception) score of 12 or higher sees and hears 1d4+1 {@creature crocodile||crocodiles} moments before they attack; all other characters are {@status surprised}. A crocodile can capsize a canoe and throw its occupants into the water by using its action and succeeding on a DC 15 Strength (Athletics) check."
 									]
 								},
 								{
@@ -49633,7 +49633,7 @@
 											"page": 198,
 											"id": "5ba",
 											"entries": [
-												" A pack of 3d6 {@creature velociraptor|VGM|velociraptors} burst out from behind cover and attack. Make a single Dexterity (Stealth) check for the dinosaurs, with advantage. Any character whose passive Wisdom (Perception) score equals or exceeds the velociraptors' check result is not {@quickref Surprise|PHB|3|0|surprised}."
+												" A pack of 3d6 {@creature velociraptor|VGM|velociraptors} burst out from behind cover and attack. Make a single Dexterity (Stealth) check for the dinosaurs, with advantage. Any character whose passive Wisdom (Perception) score equals or exceeds the velociraptors' check result is not {@status surprised}."
 											]
 										}
 									]
@@ -49910,7 +49910,7 @@
 									"page": 200,
 									"id": "5ca",
 									"entries": [
-										"Before it rises out of the water, make a Dexterity (Stealth) check for the {@creature giant crocodile}. Any character with a passive Wisdom (Perception) score less than the check result is {@quickref Surprise|PHB|3|0|surprised} when the monstrous creature attacks."
+										"Before it rises out of the water, make a Dexterity (Stealth) check for the {@creature giant crocodile}. Any character with a passive Wisdom (Perception) score less than the check result is {@status surprised} when the monstrous creature attacks."
 									]
 								},
 								{
@@ -49975,7 +49975,7 @@
 									"id": "5d1",
 									"entries": [
 										"A typical Batiri patrol or hunting party consists of a {@creature goblin boss} leading 2d6+3 {@creature goblin||goblins}, all wearing painted wooden masks. They move quietly through familiar areas and seldom range outside their home territory. Batiri prefer to hunt at night and lay low in ambush positions during the day.",
-										"A night encounter with Batiri goblins involves an attack on the characters' camp. Each party member standing watch must attempt a DC 16 Wisdom (Perception) check, made with disadvantage because of the noise of the jungle at night. On a success, a character detects the goblins moving into attack positions and can rouse the rest of the party. If no one on watch succeeds on the check, all the characters are {@quickref Surprise|PHB|3|0|surprised}.",
+										"A night encounter with Batiri goblins involves an attack on the characters' camp. Each party member standing watch must attempt a DC 16 Wisdom (Perception) check, made with disadvantage because of the noise of the jungle at night. On a success, a character detects the goblins moving into attack positions and can rouse the rest of the party. If no one on watch succeeds on the check, all the characters are {@status surprised}.",
 										"If this encounter occurs while the characters are traveling during the day, have each party member make a DC 16 Wisdom (Perception or Survival) check to spot the telltale signs of an ambush: disadvantageous terrain coupled with an eerie silence not normal for the jungle.",
 										"Goblins bargain for their lives if captured. If the characters can force or coerce a vow of cooperation from goblin prisoners, the Batiri will serve as guides. They have the following additional skill: Survival +1."
 									]
@@ -49986,8 +49986,8 @@
 									"page": 201,
 									"id": "5d2",
 									"entries": [
-										"A grung hunting party consists of 2d6 {@creature grung|VGM|grungs} led by a {@creature grung elite warrior|VGM} (see appendix D for both). If this encounter occurs while the characters are traveling, the grungs have set up an ambush in the trees. Any character with a passive Wisdom (Perception) score of 14 or higher spots them just in time. All other characters are {@quickref Surprise|PHB|3|0|surprised}.",
-										"If this encounter occurs while the party is camped, the grungs spotted the characters earlier in the day and have shadowed them unseen. Each character standing watch must succeed on a DC 14 Wisdom (Perception) check, made with disadvantage because of the noise of the jungle at night. On a success, a character detects the encroaching grungs and can rouse the rest of the party. If no one on watch succeeds on the check, all the characters are {@quickref Surprise|PHB|3|0|surprised}.",
+										"A grung hunting party consists of 2d6 {@creature grung|VGM|grungs} led by a {@creature grung elite warrior|VGM} (see appendix D for both). If this encounter occurs while the characters are traveling, the grungs have set up an ambush in the trees. Any character with a passive Wisdom (Perception) score of 14 or higher spots them just in time. All other characters are {@status surprised}.",
+										"If this encounter occurs while the party is camped, the grungs spotted the characters earlier in the day and have shadowed them unseen. Each character standing watch must succeed on a DC 14 Wisdom (Perception) check, made with disadvantage because of the noise of the jungle at night. On a success, a character detects the encroaching grungs and can rouse the rest of the party. If no one on watch succeeds on the check, all the characters are {@status surprised}.",
 										"If the characters capture one or more grungs, the frogfolk offer to lead the characters to treasure in exchange for a promise of freedom. The \"treasure\" is a half-mile away from the party's present location and consists of a cache, which you can randomly determine by rolling on the Caches table."
 									]
 								},
@@ -49997,7 +49997,7 @@
 									"page": 201,
 									"id": "5d3",
 									"entries": [
-										"Without warning, 1d6 {@creature jaculi|ToA|jaculis} launch themselves at the party from the trees. Any character with a passive Wisdom (Perception) score of 14 or higher is able to react, but all others are {@quickref Surprise|PHB|3|0|surprised}."
+										"Without warning, 1d6 {@creature jaculi|ToA|jaculis} launch themselves at the party from the trees. Any character with a passive Wisdom (Perception) score of 14 or higher is able to react, but all others are {@status surprised}."
 									]
 								},
 								{
@@ -50006,7 +50006,7 @@
 									"page": 201,
 									"id": "5d4",
 									"entries": [
-										"The party is ambushed by 1d2 {@creature kamadan|ToA|kamadans}. Any character with a passive Wisdom (Perception) score of 16 or higher gets a warning of the attack, but all others are {@quickref Surprise|PHB|3|0|surprised}. Characters who prevail against the kamadans can search the area for their lair, finding it with a successful DC 15 Wisdom (Survival) check.",
+										"The party is ambushed by 1d2 {@creature kamadan|ToA|kamadans}. Any character with a passive Wisdom (Perception) score of 16 or higher gets a warning of the attack, but all others are {@status surprised}. Characters who prevail against the kamadans can search the area for their lair, finding it with a successful DC 15 Wisdom (Survival) check.",
 										"A kamadan lair has a {@chance 25|25 percent} chance of containing 1d3 noncombatant young the size of house cats. With their snakes not yet grown out, they look like leopard cubs. {@creature Ifan Talro'a|ToA} in Port Nyanzaru will pay 150 gp for a live kamadan cub, but a successful DC 15 Charisma (Persuasion) check talks him up to 300 gp.",
 										{
 											"type": "table",
@@ -50185,7 +50185,7 @@
 									"page": 202,
 									"id": "5e1",
 									"entries": [
-										"A {@creature constrictor snake} attacks a random party member from hiding. The character targeted by the snake is {@quickref Surprise|PHB|3|0|surprised} unless he or she has a passive Wisdom (Perception) score of 12 or higher."
+										"A {@creature constrictor snake} attacks a random party member from hiding. The character targeted by the snake is {@status surprised} unless he or she has a passive Wisdom (Perception) score of 12 or higher."
 									]
 								},
 								{
@@ -50203,7 +50203,7 @@
 									"page": 202,
 									"id": "5e3",
 									"entries": [
-										"A {@creature giant poisonous snake} shoots out from the undergrowth to attack a random character. The character targeted by the snake is {@quickref Surprise|PHB|3|0|surprised} unless he or she has a passive Wisdom (Perception) score of 14 or higher."
+										"A {@creature giant poisonous snake} shoots out from the undergrowth to attack a random character. The character targeted by the snake is {@status surprised} unless he or she has a passive Wisdom (Perception) score of 14 or higher."
 									]
 								},
 								{

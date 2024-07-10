@@ -2,7 +2,7 @@ import "../js/parser.js";
 import "../js/utils.js";
 import "../js/render.js";
 import * as ut from "../node/util.js";
-import * as fs from "fs";
+import fs from "fs";
 
 const _IS_FIX = false;
 

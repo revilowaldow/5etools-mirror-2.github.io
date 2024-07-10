@@ -263,8 +263,6 @@ class SpellsPage extends ListPageMultiSource {
 				},
 			},
 
-			isMarkdownPopout: true,
-
 			propLoader: "spell",
 
 			listSyntax: new ListSyntaxSpells({fnGetDataList: () => this._dataList, pFnGetFluff}),
@@ -336,7 +334,7 @@ class SpellsPage extends ListPageMultiSource {
 						e_({tag: "span", clazz: `ve-col-2-4 text-right`, text: range}),
 						e_({
 							tag: "span",
-							clazz: `ve-col-1-7 ve-text-center ${Parser.sourceJsonToColor(spell.source)} pr-0`,
+							clazz: `ve-col-1-7 ve-text-center ${Parser.sourceJsonToSourceClassname(spell.source)} pr-0`,
 							style: Parser.sourceJsonToStylePart(spell.source),
 							title: `${Parser.sourceJsonToFull(spell.source)}${Renderer.utils.getSourceSubText(spell)}`,
 							text: source,
@@ -394,15 +392,6 @@ class SpellsPage extends ListPageMultiSource {
 		const loadTotal = toLoad.length;
 		if (loadTotal) {
 			await Promise.all(toLoad.map(src => this._pLoadSource(src, "yes")));
-		}
-	}
-
-	async pHandleUnknownHash (link, sub) {
-		const src = Object.keys(this._loadedSources)
-			.find(src => src.toLowerCase() === (UrlUtil.decodeHash(link)[1] || "").toLowerCase());
-		if (src) {
-			await this._pLoadSource(src, "yes");
-			Hist.hashChange();
 		}
 	}
 }

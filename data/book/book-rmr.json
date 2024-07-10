@@ -1442,7 +1442,7 @@
 							"page": 17,
 							"id": "05c",
 							"entries": [
-								"{@b 1. Determine surprise}. The DM determines whether anyone involved in the combat encounter is {@quickref Surprise|PHB|3|0|surprised}.",
+								"{@b 1. Determine surprise}. The DM determines whether anyone involved in the combat encounter is {@status surprised}.",
 								"{@b 2. Establish positions}. The DM decides where all the characters and monsters are located. Given the adventurers' marching order or their stated positions in the room or other location, the DM figures out where the adversaries are\u2014how far away and in what direction.",
 								"{@b 3. Roll initiative}. Everyone involved rolls initiative, determining the order of combatants' turns.",
 								"{@b 4. Take turns}. Each participant in the battle takes a turn in initiative order.",
@@ -1465,8 +1465,8 @@
 									"height": 505,
 									"credit": "Troy Little"
 								},
-								"The DM determines who might be {@quickref Surprise|PHB|3|0|surprised}. If neither side tries to be stealthy, they automatically notice each other. Otherwise, the DM compares the Dexterity ({@skill Stealth}) checks of anyone hiding with the passive Wisdom ({@skill Perception}) score of each creature on the opposing side. Any character or monster that doesn't notice a threat is {@quickref Surprise|PHB|3|0|surprised} at the start of the encounter.",
-								"If you're {@quickref Surprise|PHB|3|0|surprised}, you can't move or take an action on your first turn of the combat, and you can't take a reaction until that turn ends. A member of a group can be {@quickref Surprise|PHB|3|0|surprised} even if the other members aren't.",
+								"The DM determines who might be {@status surprised}. If neither side tries to be stealthy, they automatically notice each other. Otherwise, the DM compares the Dexterity ({@skill Stealth}) checks of anyone hiding with the passive Wisdom ({@skill Perception}) score of each creature on the opposing side. Any character or monster that doesn't notice a threat is {@status surprised} at the start of the encounter.",
+								"If you're {@status surprised}, you can't move or take an action on your first turn of the combat, and you can't take a reaction until that turn ends. A member of a group can be {@status surprised} even if the other members aren't.",
 								{
 									"type": "inset",
 									"id": "05e",

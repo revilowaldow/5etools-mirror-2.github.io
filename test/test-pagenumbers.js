@@ -1,6 +1,6 @@
 import * as ut from "../node/util.js";
 import * as rl from "readline-sync";
-import * as fs from "fs";
+import fs from "fs";
 import "../js/parser.js";
 import "../js/utils.js";
 import {BLOCKLIST_SOURCES_PAGES} from "./util-test.js";
@@ -20,6 +20,7 @@ const BLOCKLIST_FILE_PREFIXES = [
 
 const BLOCKLIST_KEYS = new Set([
 	"_meta",
+	"_test",
 	"data",
 	"itemProperty",
 	"itemEntry",

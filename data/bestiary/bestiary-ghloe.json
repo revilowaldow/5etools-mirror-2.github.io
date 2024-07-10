@@ -151,6 +151,7 @@
 				"R"
 			],
 			"miscTags": [
+				"CUR",
 				"HPR",
 				"MW"
 			],
@@ -1748,6 +1749,7 @@
 				"R"
 			],
 			"miscTags": [
+				"CUR",
 				"HPR",
 				"MW"
 			],
@@ -3322,6 +3324,7 @@
 				}
 			],
 			"traitTags": [
+				"Mimicry",
 				"Pack Tactics"
 			],
 			"damageTags": [
@@ -6633,6 +6636,7 @@
 				"I"
 			],
 			"miscTags": [
+				"CUR",
 				"MW"
 			],
 			"conditionInflictSpell": [
@@ -7596,7 +7600,7 @@
 				{
 					"name": "Infection",
 					"entries": [
-						"A creature that touches the morbus kobold or anything it has touched in the past 24 hours is exposed to a disease, usually sewer plague."
+						"A creature that touches the morbus kobold or anything it has touched in the past 24 hours is exposed to a disease, usually {@disease sewer plague}."
 					]
 				},
 				{
@@ -7653,6 +7657,7 @@
 			],
 			"miscTags": [
 				"AOE",
+				"DIS",
 				"MLW",
 				"MW",
 				"RW",
@@ -8313,6 +8318,7 @@
 				"S"
 			],
 			"miscTags": [
+				"CUR",
 				"MW",
 				"RCH"
 			],
@@ -8574,7 +8580,8 @@
 				}
 			],
 			"traitTags": [
-				"Incorporeal Movement"
+				"Incorporeal Movement",
+				"Mimicry"
 			],
 			"senseTags": [
 				"D"
@@ -9089,6 +9096,7 @@
 				"I"
 			],
 			"miscTags": [
+				"CUR",
 				"MW"
 			],
 			"savingThrowForcedSpell": [
@@ -9201,6 +9209,7 @@
 				"S"
 			],
 			"miscTags": [
+				"CUR",
 				"MW"
 			],
 			"hasToken": true,
@@ -9457,6 +9466,7 @@
 				"S"
 			],
 			"miscTags": [
+				"DIS",
 				"MW"
 			],
 			"savingThrowForced": [
@@ -11218,6 +11228,7 @@
 				"CD"
 			],
 			"miscTags": [
+				"CUR",
 				"MW"
 			],
 			"conditionInflictSpell": [
@@ -11383,6 +11394,7 @@
 				"S"
 			],
 			"miscTags": [
+				"CUR",
 				"MW"
 			],
 			"conditionInflict": [
@@ -11632,6 +11644,7 @@
 			],
 			"miscTags": [
 				"AOE",
+				"CUR",
 				"HPR",
 				"MW",
 				"RCH"

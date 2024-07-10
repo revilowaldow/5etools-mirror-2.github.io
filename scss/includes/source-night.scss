@@ -14,6 +14,7 @@
 	$rgb-source-category-prerelease--local: #60c52f;
 	$rgb-source-category-homebrew: vars-night.$rgb-class-brew--night;
 	$rgb-source-category-homebrew--local: #514bff;
+	$rgb-source-category-homebrew--partnered: #b44051;
 
 	$rgb-source-PHB: vars-night.$rgb-subclass--night;
 	$rgb-source-DMG: #ba1eba;
@@ -34,6 +35,10 @@
 		&homebrew {
 			@include mix-source-color($rgb-source-category-homebrew);
 
+			&--partnered {
+				@include mix-source-color($rgb-source-category-homebrew--partnered);
+			}
+
 			&--local {
 				@include mix-source-color($rgb-source-category-homebrew--local);
 			}
@@ -41,6 +46,10 @@
 
 		&spicy {
 			@include mix-source-color($rgb-source-category-prerelease);
+
+			&--partnered {
+				@include mix-source-color(#ff00ff); // (Should never occur)
+			}
 
 			&--local {
 				@include mix-source-color($rgb-source-category-prerelease--local);

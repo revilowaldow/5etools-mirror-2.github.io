@@ -61,8 +61,6 @@ class VehiclesPage extends ListPage {
 
 			dataProps: ["vehicle", "vehicleUpgrade"],
 
-			isMarkdownPopout: true,
-
 			listSyntax: new ListSyntaxVehicles({fnGetDataList: () => this._dataList, pFnGetFluff}),
 		});
 	}
@@ -80,7 +78,7 @@ class VehiclesPage extends ListPage {
 		eleLi.innerHTML = `<a href="#${UrlUtil.autoEncodeHash(it)}" class="lst--border lst__row-inner">
 			<span class="ve-col-6 pl-0 ve-text-center">${displayType}</span>
 			<span class="bold ve-col-4">${it.name}</span>
-			<span class="ve-col-2 ve-text-center ${Parser.sourceJsonToColor(it.source)} pr-0" title="${Parser.sourceJsonToFull(it.source)}" ${Parser.sourceJsonToStyle(it.source)}>${source}</span>
+			<span class="ve-col-2 ve-text-center ${Parser.sourceJsonToSourceClassname(it.source)} pr-0" title="${Parser.sourceJsonToFull(it.source)}" ${Parser.sourceJsonToStyle(it.source)}>${source}</span>
 		</a>`;
 
 		const listItem = new ListItem(

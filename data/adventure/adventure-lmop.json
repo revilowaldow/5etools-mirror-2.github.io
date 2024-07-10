@@ -348,7 +348,7 @@
 							"type": "list",
 							"items": [
 								"Review the goblin stat block in appendix B. Since the goblins are hiding, you'll need to know their {@skill Stealth} skill modifier: +6.",
-								"Check to see who, if anyone, is {@quickref Surprise|PHB|3|0|surprised}. The party cannot surprise the goblins, but the goblins might surprise some or all the characters. Make a Dexterity ({@skill Stealth}) check for the goblins, rolling once for all of them. Roll a {@dice d20}, add the goblins' {@skill Stealth} skill modifier (+6) to the roll, and compare the result to the characters' passive Wisdom ({@skill Perception}) scores. Any character whose score is lower than the goblins' check result is {@quickref Surprise|PHB|3|0|surprised} and loses his or her turn during the first round of combat (see \"Surprise\" in the rulebook).",
+								"Check to see who, if anyone, is {@status surprised}. The party cannot surprise the goblins, but the goblins might surprise some or all the characters. Make a Dexterity ({@skill Stealth}) check for the goblins, rolling once for all of them. Roll a {@dice d20}, add the goblins' {@skill Stealth} skill modifier (+6) to the roll, and compare the result to the characters' passive Wisdom ({@skill Perception}) scores. Any character whose score is lower than the goblins' check result is {@status surprised} and loses his or her turn during the first round of combat (see \"Surprise\" in the rulebook).",
 								"Use the initiative rules in the rulebook to determine who acts first, second, third, and so on. Keep track of everyone's initiative count in the margins of this book or on a separate piece of paper.",
 								"When the time comes for the goblins to act, two of them rush forward and make melee attacks while two goblins stand 30 feet away from the party and make ranged attacks. The goblins' stat block contains the information you need to resolve these attacks. For more information on what the goblins can do on their turn, see chapter 2, \"Combat,\" in the rulebook.",
 								"When three goblins are defeated, the last goblin attempts to flee, heading for the goblin trail."
@@ -1041,8 +1041,8 @@
 										"On the east side of the stream flowing from the cave mouth, a small area in the briar thickets has been hollowed out to form a lookout post or blind. Wooden planks flatten out the briars and provide room for guards to lie hidden and watch the area\u2014including a pair of goblins lurking there right now!"
 									]
 								},
-								"Two {@creature goblin||goblins} are stationed here. If the goblins notice intruders in {@area 1|01b}, they open fire with their bows, shooting through the thickets and probably catching the characters by surprise. If the goblins don't notice the adventurers in {@area 1|01b}, they spot them when they splash across the stream, and neither side is {@quickref Surprise|PHB|3|0|surprised}.",
-								"Characters moving carefully or scouting ahead might be able to surprise the goblin lookouts. Have each character who moves ahead make a Dexterity ({@skill Stealth}) check contested by the goblins' passive Wisdom ({@skill Perception}) score to avoid being {@quickref Surprise|PHB|3|0|surprised}. See the rulebook for more information on ability check contests.",
+								"Two {@creature goblin||goblins} are stationed here. If the goblins notice intruders in {@area 1|01b}, they open fire with their bows, shooting through the thickets and probably catching the characters by surprise. If the goblins don't notice the adventurers in {@area 1|01b}, they spot them when they splash across the stream, and neither side is {@status surprised}.",
+								"Characters moving carefully or scouting ahead might be able to surprise the goblin lookouts. Have each character who moves ahead make a Dexterity ({@skill Stealth}) check contested by the goblins' passive Wisdom ({@skill Perception}) score to avoid being {@status surprised}. See the rulebook for more information on ability check contests.",
 								{
 									"type": "entries",
 									"name": "Thickets",
@@ -2259,7 +2259,7 @@
 										"\"Time for you to move on, strangers. Give us your stuff, and be on your way.\""
 									]
 								},
-								"Continue the insults and baiting as long as you like. The Redbrands attack in a round or two if the characters don't. Neither side is {@quickref Surprise|PHB|3|0|surprised}, because it's obvious that a fight is brewing.",
+								"Continue the insults and baiting as long as you like. The Redbrands attack in a round or two if the characters don't. Neither side is {@status surprised}, because it's obvious that a fight is brewing.",
 								"The group consists of four {@creature Redbrand Ruffian|lmop|Redbrand ruffians}. If three of them are defeated, the last one flees toward Tresendar Manor."
 							]
 						},
@@ -3238,7 +3238,7 @@
 								"The walls of this bedchamber are covered with drapes of scarlet cloth. The furnishings include a small writing desk with matching chair, a comfortable-looking bed, and a wooden chest at the foot of the bed."
 							]
 						},
-						"If Iarno is {@quickref Surprise|PHB|3|0|surprised}, add the following paragraph:",
+						"If Iarno is {@status surprised}, add the following paragraph:",
 						{
 							"type": "insetReadaloud",
 							"id": "0af",
@@ -4565,7 +4565,7 @@
 								"Heaps of wreckage litter the interior of this ruin. In one corner stands a broken loom."
 							]
 						},
-						"Six {@creature twig blight||twig blights} lurk in the thicket south of this ruin. Allow each character to attempt a Wisdom ({@skill Perception}) check contested by the blights' Dexterity ({@skill Stealth}) check to avoid being {@quickref Surprise|PHB|3|0|surprised} by them.",
+						"Six {@creature twig blight||twig blights} lurk in the thicket south of this ruin. Allow each character to attempt a Wisdom ({@skill Perception}) check contested by the blights' Dexterity ({@skill Stealth}) check to avoid being {@status surprised} by them.",
 						{
 							"type": "entries",
 							"name": "Developments",
@@ -5591,7 +5591,7 @@
 								"This high, narrow hall looks as if it might have been part of a chapel or shrine at one time. Angelic figures are sculpted along the room's upper reaches, looking down on the floor below. To the north, heavy curtains block a matching pair of archways. Between the archways is a cracked but ornately carved stone brazier."
 							]
 						},
-						"This chamber contains a {@creature grick}, the special pet of the goblin Lhupo ({@area 9|12f}). The grick like to climb up to a ledge hidden in the shadows of the statuary in the higher reaches of the room. It quietly observes intruders that enter the area before dropping down to strike. Compare the grick's Dexterity ({@skill Stealth}) check to the characters' Wisdom ({@skill Perception}) checks (or their passive scores) to determine who among them is {@quickref Surprise|PHB|3|0|surprised}. The grick knows that goblins are not to be eaten unless Lhupo says so. The rest of the Cragmaws are terrified of Lhupo's pet and hurry through this room, preferably in twos or threes.",
+						"This chamber contains a {@creature grick}, the special pet of the goblin Lhupo ({@area 9|12f}). The grick like to climb up to a ledge hidden in the shadows of the statuary in the higher reaches of the room. It quietly observes intruders that enter the area before dropping down to strike. Compare the grick's Dexterity ({@skill Stealth}) check to the characters' Wisdom ({@skill Perception}) checks (or their passive scores) to determine who among them is {@status surprised}. The grick knows that goblins are not to be eaten unless Lhupo says so. The rest of the Cragmaws are terrified of Lhupo's pet and hurry through this room, preferably in twos or threes.",
 						"Any cleric who examines the chapel's decor can attempt a DC 10 Intelligence ({@skill Religion}) check to identify the deities that were once revered here: Oghma (god of knowledge), Mystra (goddess of magic), Lathander (god of dawn), and Tymora (goddess of luck). This is an obvious sign that the builders of the castle were human.",
 						{
 							"type": "entries",
@@ -5599,7 +5599,7 @@
 							"page": 38,
 							"id": "12c",
 							"entries": [
-								"If combat erupts here, the goblins in {@area 9|12f} cannot be {@quickref Surprise|PHB|3|0|surprised}."
+								"If combat erupts here, the goblins in {@area 9|12f} cannot be {@status surprised}."
 							]
 						},
 						{
@@ -7183,7 +7183,7 @@
 								"Many tunnels intersect at this natural, thirty-foot-high cavern. The walls are carved with simple reliefs showing dwarf and gnome miners hard at work. Below them, nearly two dozen skeletons in rusted scraps of armor are scattered across the cavern floor. Some are dwarf skeletons, while others are orc remains. Half a dozen large brass lanterns stand in niches or on ledges around the cavern, but none are lit."
 							]
 						},
-						"Clinging to the ceiling like bats are ten {@creature stirge||stirges}. The monsters find scant living prey in the mines, and they are ravenous. If the characters are looking down at the skeletons on the floor, the stirges are likely get the drop on them. Any character who isn't watching the ceiling is {@quickref Surprise|PHB|3|0|surprised} unless his or her passive Wisdom ({@skill Perception}) score is higher than the stirges' Dexterity ({@skill Stealth}) check total (roll once for all of them). Characters who aren't {@quickref Surprise|PHB|3|0|surprised} hear a flapping noise as the stirges descend to attack.",
+						"Clinging to the ceiling like bats are ten {@creature stirge||stirges}. The monsters find scant living prey in the mines, and they are ravenous. If the characters are looking down at the skeletons on the floor, the stirges are likely get the drop on them. Any character who isn't watching the ceiling is {@status surprised} unless his or her passive Wisdom ({@skill Perception}) score is higher than the stirges' Dexterity ({@skill Stealth}) check total (roll once for all of them). Characters who aren't {@status surprised} hear a flapping noise as the stirges descend to attack.",
 						"The lanterns and the carvings of miners at work were meant as a welcome to newcomers."
 					]
 				},

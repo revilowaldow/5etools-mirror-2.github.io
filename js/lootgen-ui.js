@@ -163,11 +163,11 @@ class LootGenUi extends BaseComponent {
 			});
 
 		const hkFilterChangeSpells = () => this._handleFilterChangeSpells();
-		this._modalFilterSpells.pageFilter.filterBox.on(FilterBox.EVNT_VALCHANGE, hkFilterChangeSpells);
+		this._modalFilterSpells.pageFilter.filterBox.on(FILTER_BOX_EVNT_VALCHANGE, hkFilterChangeSpells);
 		hkFilterChangeSpells();
 
 		const hkFilterChangeItems = () => this._handleFilterChangeItems({tablesMagicItems});
-		this._modalFilterItems.pageFilter.filterBox.on(FilterBox.EVNT_VALCHANGE, hkFilterChangeItems);
+		this._modalFilterItems.pageFilter.filterBox.on(FILTER_BOX_EVNT_VALCHANGE, hkFilterChangeItems);
 		hkFilterChangeItems();
 	}
 
@@ -1125,7 +1125,7 @@ class LootGenUi extends BaseComponent {
 						JqueryUtil.doToast(`Reset${evt.shiftKey ? " all" : ""}!`);
 					},
 					textAlt: `<span class="glyphicon glyphicon-refresh"></span>`,
-					titleAlt: FilterBox.TITLE_BTN_RESET,
+					titleAlt: FILTER_BOX_TITLE_BTN_RESET,
 				},
 			),
 			new ContextUtil.Action(
@@ -1140,7 +1140,7 @@ class LootGenUi extends BaseComponent {
 						JqueryUtil.doToast(`Reset${evt.shiftKey ? " all" : ""}!`);
 					},
 					textAlt: `<span class="glyphicon glyphicon-refresh"></span>`,
-					titleAlt: FilterBox.TITLE_BTN_RESET,
+					titleAlt: FILTER_BOX_TITLE_BTN_RESET,
 				},
 			),
 			null,

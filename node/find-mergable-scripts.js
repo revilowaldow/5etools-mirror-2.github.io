@@ -2,7 +2,7 @@
  * Can be used to inspect which HTML files depend on which scripts.
  */
 
-import * as fs from "fs";
+import fs from "fs";
 import * as ut from "./util.js";
 import "../js/utils.js";
 

@@ -3,6 +3,7 @@
 class BlocklistUtil {
 	static _IGNORED_CATEGORIES = new Set([
 		"_meta",
+		"_test",
 		"linkedLootTables",
 
 		// `items-base.json`

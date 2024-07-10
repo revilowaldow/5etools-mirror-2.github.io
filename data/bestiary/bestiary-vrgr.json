@@ -486,6 +486,7 @@
 			],
 			"miscTags": [
 				"AOE",
+				"DIS",
 				"MW"
 			],
 			"conditionInflict": [
@@ -578,6 +579,7 @@
 				"P"
 			],
 			"miscTags": [
+				"CUR",
 				"MW"
 			],
 			"conditionInflict": [
@@ -2408,6 +2410,7 @@
 				"S"
 			],
 			"miscTags": [
+				"CUR",
 				"MLW",
 				"MW"
 			],
@@ -3705,6 +3708,7 @@
 				"P"
 			],
 			"miscTags": [
+				"DIS",
 				"MW"
 			],
 			"conditionInflict": [
@@ -4536,6 +4540,7 @@
 				"shortsword|phb"
 			],
 			"traitTags": [
+				"Mimicry",
 				"Regeneration",
 				"Shapechanger"
 			],
@@ -4550,6 +4555,7 @@
 				"P"
 			],
 			"miscTags": [
+				"CUR",
 				"MLW",
 				"MW",
 				"RNG",

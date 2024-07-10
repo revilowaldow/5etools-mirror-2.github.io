@@ -59,8 +59,6 @@ class CultsBoonsPage extends ListPage {
 			pageFilter,
 
 			dataProps: ["cult", "boon"],
-
-			isMarkdownPopout: true,
 		});
 	}
 
@@ -80,7 +78,7 @@ class CultsBoonsPage extends ListPage {
 			<span class="ve-col-2 ve-text-center pl-0">${it._lType}</span>
 			<span class="ve-col-2 ve-text-center">${it._lSubType}</span>
 			<span class="bold ve-col-6">${it.name}</span>
-			<span class="ve-col-2 ve-text-center ${Parser.sourceJsonToColor(it.source)} pr-0" title="${Parser.sourceJsonToFull(it.source)}" ${Parser.sourceJsonToStyle(it.source)}>${source}</span>
+			<span class="ve-col-2 ve-text-center ${Parser.sourceJsonToSourceClassname(it.source)} pr-0" title="${Parser.sourceJsonToFull(it.source)}" ${Parser.sourceJsonToStyle(it.source)}>${source}</span>
 		</a>`;
 
 		const listItem = new ListItem(

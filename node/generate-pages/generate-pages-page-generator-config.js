@@ -406,7 +406,7 @@ class _PageGeneratorSearch extends PageGeneratorGeneric {
 		"search",
 	];
 
-	_scripts = [
+	_scriptsModules = [
 		"search.js",
 	];
 }

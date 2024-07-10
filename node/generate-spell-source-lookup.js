@@ -1,7 +1,7 @@
 // TODO this replaces `generate-subclass-lookup.js` in effect
 // TODO make a system for generating the same data on homebrew docs
 
-import * as fs from "fs";
+import fs from "fs";
 import * as ut from "./util.js";
 import "../js/parser.js";
 import "../js/utils.js";

@@ -3707,7 +3707,7 @@
 								},
 								"Nestled into the cracks of the coral throughout this chamber are four {@creature Sahuagin Hatchling Swarm|GoS|sahuagin hatchling swarms}. Characters with a passive Wisdom ({@skill Perception}) of 15 or higher spot tiny movements hidden deep within the walls.",
 								"Likewise, characters who succeed on an active DC 15 Wisdom ({@skill Perception}) check as they enter the chamber will also spot the movements. Let the players make this check if they wish, but don't prompt them to do so.",
-								"Otherwise, the characters are {@quickref Surprise|PHB|3|0|surprised} as the sahuagin hatchling swarms attack when they enter the chamber."
+								"Otherwise, the characters are {@status surprised} as the sahuagin hatchling swarms attack when they enter the chamber."
 							]
 						},
 						{

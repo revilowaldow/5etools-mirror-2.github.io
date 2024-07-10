@@ -1395,6 +1395,7 @@
 				"CW"
 			],
 			"miscTags": [
+				"CUR",
 				"MLW",
 				"MW",
 				"RW",
@@ -2366,6 +2367,7 @@
 				"CC"
 			],
 			"miscTags": [
+				"CUR",
 				"MLW",
 				"MW"
 			],
@@ -2607,6 +2609,9 @@
 			],
 			"attachedItems": [
 				"dagger|phb"
+			],
+			"traitTags": [
+				"Mimicry"
 			],
 			"actionTags": [
 				"Multiattack"

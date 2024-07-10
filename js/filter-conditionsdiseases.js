@@ -1,6 +1,6 @@
 "use strict";
 
-class PageFilterConditionsDiseases extends PageFilter {
+class PageFilterConditionsDiseases extends PageFilterBase {
 	// region static
 	static getDisplayProp (prop) {
 		return prop === "status" ? "Other" : Parser.getPropDisplayName(prop);

@@ -403,7 +403,10 @@
 			"type": "AF",
 			"rarity": "none",
 			"weight": 0.3125,
-			"age": "futuristic"
+			"age": "futuristic",
+			"miscTags": [
+				"CNS"
+			]
 		},
 		{
 			"name": "Flail",
@@ -1027,7 +1030,10 @@
 			"type": "AF",
 			"rarity": "none",
 			"weight": 0.1,
-			"age": "modern"
+			"age": "modern",
+			"miscTags": [
+				"CNS"
+			]
 		},
 		{
 			"name": "Modern Bullets (10)",
@@ -1042,6 +1048,9 @@
 					"item": "modern bullet",
 					"quantity": 10
 				}
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -1255,7 +1264,10 @@
 			"rarity": "none",
 			"weight": 0.2,
 			"value": 30,
-			"age": "renaissance"
+			"age": "renaissance",
+			"miscTags": [
+				"CNS"
+			]
 		},
 		{
 			"name": "Renaissance Bullets (10)",
@@ -1271,6 +1283,9 @@
 					"item": "renaissance bullet",
 					"quantity": 10
 				}
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -2326,6 +2341,13 @@
 				"While this rose is held, it {{item.detail1}} as a harmless visual effect.",
 				"While holding the rose by its stem, you gain resistance to {{item.resist}} damage. If you would take more than 10 {{item.resist}} damage from a single source (after applying the resistance), the rose disintegrates, and you take no damage instead.",
 				"As an action, you can blow the petals from the rose to produce a 20-foot cone of {{item.resist}}. Each creature in the cone must make a DC 15 Constitution saving throw, taking {@damage 3d10} {{item.resist}} damage on a failed save, or half as much damage on a successful one. Using this property destroys the rose."
+			]
+		},
+		{
+			"name": "Grenade",
+			"source": "DMG",
+			"entriesTemplate": [
+				"As an action, a character can throw a grenade at a point up to 60 feet away. With a grenade launcher, the character can propel the grenade up to 120 feet away."
 			]
 		}
 	]

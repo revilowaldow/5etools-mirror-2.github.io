@@ -57,8 +57,6 @@ class RewardsPage extends ListPage {
 			dataProps: ["reward"],
 
 			isPreviewable: true,
-
-			isMarkdownPopout: true,
 		});
 	}
 
@@ -75,7 +73,7 @@ class RewardsPage extends ListPage {
 			<span class="ve-col-0-3 px-0 ve-flex-vh-center lst__btn-toggle-expand ve-self-flex-stretch">[+]</span>
 			<span class="ve-col-2 ve-text-center px-1">${reward.type}</span>
 			<span class="bold ve-col-7-7">${reward.name}</span>
-			<span class="ve-col-2 ve-text-center ${Parser.sourceJsonToColor(reward.source)} pr-0" title="${Parser.sourceJsonToFull(reward.source)}" ${Parser.sourceJsonToStyle(reward.source)}>${source}</span>
+			<span class="ve-col-2 ve-text-center ${Parser.sourceJsonToSourceClassname(reward.source)} pr-0" title="${Parser.sourceJsonToFull(reward.source)}" ${Parser.sourceJsonToStyle(reward.source)}>${source}</span>
 		</a>
 		<div class="ve-flex ve-hidden relative lst__wrp-preview">
 			<div class="vr-0 absolute lst__vr-preview"></div>

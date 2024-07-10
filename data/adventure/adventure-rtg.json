@@ -5378,7 +5378,7 @@
 									"page": 27,
 									"entries": [
 										"Upon entering the cavern, the stream's flow widens to the trickle of a shallow pool before narrowing again on the other side. Several boulders lie scattered around the chamber, though the floor looks remarkably smooth and bare between them.",
-										"Two {@creature galeb duhr} hide among the boulders, making the most of their False Appearance and {@sense tremorsense|MM}. Once the party is entirely within the chamber, they spring an attack. The galeb duhr can't be identified except by magical means, so the players will likely be {@quickref Surprise|PHB|3|0|surprised} during the first round of combat."
+										"Two {@creature galeb duhr} hide among the boulders, making the most of their False Appearance and {@sense tremorsense|MM}. Once the party is entirely within the chamber, they spring an attack. The galeb duhr can't be identified except by magical means, so the players will likely be {@status surprised} during the first round of combat."
 									],
 									"id": "131"
 								}

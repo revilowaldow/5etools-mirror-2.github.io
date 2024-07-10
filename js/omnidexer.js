@@ -6,14 +6,18 @@ class Omnidexer {
 		 * Produces index of the form:
 		 * {
 		 *   n: "Display Name",
-		 *   b: "Base Name" // Optional; name is used if not specified
+		 *   [b: "Base Name"] // name is used if not specified
 		 *   s: "PHB", // source
+		 *   [sA: "PHB"], // source abbreviation
+		 *   [sF: "Player's Handbook"], // source full
+		 *   [sC: "ff00ff"], // source color
 		 *   u: "spell name_phb, // hash
 		 *   uh: "spell name_phb, // Optional; hash for href if the link should be different from the hover lookup hash.
 		 *   p: 110, // page number
 		 *   [q: "bestiary.html", // page; synthetic property only used by search widget]
 		 *   h: 1 // if isHover enabled, otherwise undefined
 		 *   r: 1 // if SRD
+		 *   [dP: 1] // if partnered
 		 *   c: 10, // category ID
 		 *   id: 123, // index ID
 		 *   [t: "spell"], // tag
@@ -46,13 +50,16 @@ class Omnidexer {
 			Object.entries(metadata[k]).forEach(([kk, vv]) => (lookup[k] = lookup[k] || {})[vv] = kk);
 		});
 
-		index.forEach(it => Object.keys(it).filter(k => props.has(k))
-			.forEach(k => it[k] = lookup[k][it[k]] ?? it[k]));
+		index.forEach(it => {
+			Object.keys(it).filter(k => props.has(k))
+				.forEach(k => it[k] = lookup[k][it[k]] ?? it[k]);
+		});
+
 		return index;
 	}
 
 	static getProperty (obj, withDots) {
-		return withDots.split(".").reduce((o, i) => o[i], obj);
+		return MiscUtil.get(obj, ...withDots.split("."));
 	}
 
 	/**
@@ -65,6 +72,7 @@ class Omnidexer {
 	 * @param [options.isIncludeTag]
 	 * @param [options.isIncludeUid]
 	 * @param [options.isIncludeImg]
+	 * @param [options.isIncludeExtendedSourceInfo]
 	 */
 	async pAddToIndex (arbiter, json, options) {
 		options = options || {};
@@ -140,6 +148,8 @@ class Omnidexer {
 		if (ent.srd) indexDoc.r = 1;
 
 		if (src) {
+			if (SourceUtil.isPartneredSourceWotc(src)) indexDoc.dP = 1;
+
 			if (options.isIncludeTag) {
 				indexDoc.t = this.getMetaId("t", Parser.getPropTag(arbiter.listProp));
 			}
@@ -166,6 +176,15 @@ class Omnidexer {
 				if (indexDoc.m) {
 					indexDoc.m = indexDoc.m.replace(/^img\//, "");
 				}
+			}
+
+			if (options.isIncludeExtendedSourceInfo) {
+				indexDoc.sA = this.getMetaId("sA", Parser.sourceJsonToAbv(src));
+
+				indexDoc.sF = this.getMetaId("sF", Parser.sourceJsonToFull(src));
+
+				const color = Parser.sourceJsonToColor(src);
+				if (color) indexDoc.sC = this.getMetaId("sC", color);
 			}
 		}
 
@@ -862,7 +881,6 @@ class IndexableFileAdventures extends IndexableFile {
 		super({
 			category: Parser.CAT_ID_ADVENTURE,
 			file: "adventures.json",
-			source: "id",
 			listProp: "adventure",
 			baseUrl: "adventure.html",
 		});
@@ -874,7 +892,6 @@ class IndexableFileBooks extends IndexableFile {
 		super({
 			category: Parser.CAT_ID_BOOK,
 			file: "books.json",
-			source: "id",
 			listProp: "book",
 			baseUrl: "book.html",
 		});

@@ -1091,6 +1091,12 @@ ___
 		}
 		meta.depth = cacheDepth;
 
+		const fromClassList = Renderer.spell.getCombinedClasses(sp, "fromClassList");
+		if (fromClassList.length) {
+			const [current] = Parser.spClassesToCurrentAndLegacy(fromClassList);
+			subStack[0] = `${subStack[0].trimEnd()}\n\n**Classes:** ${Parser.spMainClassesToFull(current, {isTextOnly: true})}`;
+		}
+
 		const spellRender = subStack.join("").trim();
 		return `\n${spellRender}\n\n`;
 	}

@@ -1,4 +1,4 @@
-"use strict";
+import {ManageBrewUi} from "./utils-brew/utils-brew-ui-manage.js";
 
 class ManageBrew {
 	static async pInitialise () {

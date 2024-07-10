@@ -16611,7 +16611,7 @@
 											]
 										},
 										"This chamber was once the captain's cabin. Now it's a shrine to Lolth, the demon queen of spiders. The skulls are cracked, weathered, and obviously old.",
-										"Lurking under the garbage and debris is a host of vermin held sacred by the cultists of Lolth\u2014spiders of every size and type. If anyone other than the druid Krell spends more than a few moments in this room, one {@creature giant spider} bursts from the webs on the port side, while an {@creature ettercap} emerges from the starboard side of the room. At the same time, four {@creature Swarm of Spiders||swarms of insects (spiders)} crawl through the deck from below. Any character who has a passive Perception score of 14 or lower is {@quickref Surprise|PHB|3|0|surprised}. (In tight quarters, remember that a swarm can occupy the same space as another creature.)",
+										"Lurking under the garbage and debris is a host of vermin held sacred by the cultists of Lolth\u2014spiders of every size and type. If anyone other than the druid Krell spends more than a few moments in this room, one {@creature giant spider} bursts from the webs on the port side, while an {@creature ettercap} emerges from the starboard side of the room. At the same time, four {@creature Swarm of Spiders||swarms of insects (spiders)} crawl through the deck from below. Any character who has a passive Perception score of 14 or lower is {@status surprised}. (In tight quarters, remember that a swarm can occupy the same space as another creature.)",
 										{
 											"type": "entries",
 											"name": "Captain's Log",
@@ -16875,7 +16875,7 @@
 										},
 										"The water that fills this area is {@quickref difficult terrain||3} for Medium characters. Small characters must swim while in the cargo hold.",
 										"This deck is a prison for four {@creature Ghast||ghasts}\u2014formerly a group of thieves who stowed away in the hold before the {@i Emperor} last left port. When the ship was waylaid by the storm, they could not escape from the hold and eventually starved to death. The cultists found the undead when they took control of the ship but viewed them as emissaries of their dark god and fed them with offerings of living sacrifices.",
-										"The ghasts currently hide in the bow of the hold, beneath the water. They won't reveal themselves until characters enter this area and approach their position, whereupon the undead surge out of the water. Any character whose passive {@skill Perception} score is 11 or lower is {@quickref Surprise|PHB|3|0|surprised} by the ghasts when they attack. A creature {@condition paralyzed} by a ghast's claws holds its breath automatically if it collapses into the water, but is at risk of drowning unless it is pulled out again. See \"{@book Suffocating|PHB|8|Suffocating}\" in chapter 8 of the {@book Player's Handbook|PHB}.",
+										"The ghasts currently hide in the bow of the hold, beneath the water. They won't reveal themselves until characters enter this area and approach their position, whereupon the undead surge out of the water. Any character whose passive {@skill Perception} score is 11 or lower is {@status surprised} by the ghasts when they attack. A creature {@condition paralyzed} by a ghast's claws holds its breath automatically if it collapses into the water, but is at risk of drowning unless it is pulled out again. See \"{@book Suffocating|PHB|8|Suffocating}\" in chapter 8 of the {@book Player's Handbook|PHB}.",
 										{
 											"type": "entries",
 											"name": "Treasure",
@@ -29944,7 +29944,7 @@
 										},
 										"This area is {@quickref difficult terrain||3} because of the moisture and slime everywhere.",
 										"The bottom of the pool is open to the ship's flooded bilge, allowing all the water in the ship to be heated from this area. That opening can't be seen from above through the smoke, steam, and dirty water. A creature can swim from this pool through the bilge directly into areas {@dice D8} and {@dice D9}, and vice versa.",
-										"The cloudy water conceals three {@creature skum|GoS} (see {@adventure appendix C|GoS|10} and the \"Skum\" sidebar). If they were alerted by the skum guarding the crane or by a noisy opening of the grate above, they're prepared for trouble and can't be {@quickref Surprise|PHB|3|0|surprised}. Otherwise, they're napping or loafing in the water, so they're automatically {@quickref Surprise|PHB|3|0|surprised} by enemies who approach stealthily.",
+										"The cloudy water conceals three {@creature skum|GoS} (see {@adventure appendix C|GoS|10} and the \"Skum\" sidebar). If they were alerted by the skum guarding the crane or by a noisy opening of the grate above, they're prepared for trouble and can't be {@status surprised}. Otherwise, they're napping or loafing in the water, so they're automatically {@status surprised} by enemies who approach stealthily.",
 										{
 											"type": "inset",
 											"name": "Water Hazard",

@@ -55,8 +55,6 @@ class ActionsPage extends ListPage {
 
 			dataProps: ["action"],
 
-			isMarkdownPopout: true,
-
 			isPreviewable: true,
 		});
 	}
@@ -75,7 +73,7 @@ class ActionsPage extends ListPage {
 			<span class="ve-col-0-3 px-0 ve-flex-vh-center lst__btn-toggle-expand ve-self-flex-stretch">[+]</span>
 			<span class="ve-col-5-7 px-1 bold">${it.name}</span>
 			<span class="ve-col-4 ve-text-center">${time}</span>
-			<span class="ve-col-2 ve-text-center ${Parser.sourceJsonToColor(it.source)} pr-0" title="${Parser.sourceJsonToFull(it.source)}" ${Parser.sourceJsonToStyle(it.source)}>${source}</span>
+			<span class="ve-col-2 ve-text-center ${Parser.sourceJsonToSourceClassname(it.source)} pr-0" title="${Parser.sourceJsonToFull(it.source)}" ${Parser.sourceJsonToStyle(it.source)}>${source}</span>
 		</a>
 		<div class="ve-flex ve-hidden relative lst__wrp-preview">
 			<div class="vr-0 absolute lst__vr-preview"></div>

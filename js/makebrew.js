@@ -220,7 +220,7 @@ class PageUi {
 		this._$selSource = $$`
 			<select class="form-control input-xs">
 				<option disabled>Select</option>
-				${this._allSources.map(s => `<option value="${s.escapeQuotes()}">${Parser.sourceJsonToFull(s).escapeQuotes()}</option>`)}
+				${this._allSources.map(s => `<option value="${s.qq()}">${Parser.sourceJsonToFull(s).qq()}</option>`)}
 			</select>`
 			.appendTo($wrpSource)
 			.change(async () => {

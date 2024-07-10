@@ -13,6 +13,7 @@
 	$rgb-source-category-prerelease--local: #54ce19;
 	$rgb-source-category-homebrew: vars.$rgb-class-brew;
 	$rgb-source-category-homebrew--local: #4b40ed;
+	$rgb-source-category-homebrew--partnered: #963b4f;
 
 	$rgb-source-PHB: #4a6898;
 	$rgb-source-DMG: #800080;
@@ -106,6 +107,10 @@
 		&homebrew {
 			@include mix-source-color($rgb-source-category-homebrew);
 
+			&--partnered {
+				@include mix-source-color($rgb-source-category-homebrew--partnered);
+			}
+
 			&--local {
 				@include mix-source-color($rgb-source-category-homebrew--local);
 			}
@@ -113,6 +118,10 @@
 
 		&spicy {
 			@include mix-source-color($rgb-source-category-prerelease);
+
+			&--partnered {
+				@include mix-source-color(#ff00ff); // (Should never occur)
+			}
 
 			&--local {
 				@include mix-source-color($rgb-source-category-prerelease--local);

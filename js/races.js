@@ -68,8 +68,6 @@ class RacesPage extends ListPage {
 
 			dataProps: ["race"],
 
-			isMarkdownPopout: true,
-
 			bookViewOptions: {
 				namePlural: "races",
 				pageTitle: "Races Book View",
@@ -106,7 +104,7 @@ class RacesPage extends ListPage {
 			<span class="bold ve-col-4 pl-0">${race.name}</span>
 			<span class="ve-col-4 ${race._slAbility === "Lineage (choose)" ? "italic" : ""}">${race._slAbility}</span>
 			<span class="ve-col-2 ve-text-center">${size}</span>
-			<span class="ve-col-2 ve-text-center ${Parser.sourceJsonToColor(race.source)} pr-0" title="${Parser.sourceJsonToFull(race.source)}" ${Parser.sourceJsonToStyle(race.source)}>${source}</span>
+			<span class="ve-col-2 ve-text-center ${Parser.sourceJsonToSourceClassname(race.source)} pr-0" title="${Parser.sourceJsonToFull(race.source)}" ${Parser.sourceJsonToStyle(race.source)}>${source}</span>
 		</a>`;
 
 		const listItem = new ListItem(

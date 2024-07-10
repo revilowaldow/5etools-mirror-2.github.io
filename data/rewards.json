@@ -2341,7 +2341,7 @@
 						{
 							"type": "item",
 							"name": "Power:",
-							"entry": "The host can't be {@quickref Surprise|PHB|3|0|surprised}, gains advantage on all Wisdom checks, and never takes damage from falling."
+							"entry": "The host can't be {@status surprised}, gains advantage on all Wisdom checks, and never takes damage from falling."
 						}
 					]
 				}

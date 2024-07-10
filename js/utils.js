@@ -2,7 +2,7 @@
 
 // in deployment, `IS_DEPLOYED = "<version number>";` should be set below.
 globalThis.IS_DEPLOYED = undefined;
-globalThis.VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"1.208.0"/* 5ETOOLS_VERSION__CLOSE */;
+globalThis.VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"1.209.0"/* 5ETOOLS_VERSION__CLOSE */;
 globalThis.DEPLOYED_IMG_ROOT = undefined;
 // for the roll20 script to set
 globalThis.IS_VTT = false;
@@ -503,7 +503,10 @@ globalThis.SourceUtil = class {
 
 	static isPartneredSourceWotc (source) {
 		if (source == null) return false;
-		return Parser.SOURCES_PARTNERED_WOTC.has(source);
+		if (Parser.SOURCES_PARTNERED_WOTC.has(source)) return true;
+		if (typeof PrereleaseUtil !== "undefined" && PrereleaseUtil.hasSourceJson(source)) return !!PrereleaseUtil.sourceJsonToSource(source).partnered;
+		if (typeof BrewUtil2 !== "undefined" && BrewUtil2.hasSourceJson(source)) return !!BrewUtil2.sourceJsonToSource(source).partnered;
+		return false;
 	}
 
 	static isLegacySourceWotc (source) {
@@ -531,22 +534,22 @@ globalThis.SourceUtil = class {
 	static FILTER_GROUP_STANDARD = 0;
 	static FILTER_GROUP_PARTNERED = 1;
 	static FILTER_GROUP_NON_STANDARD = 2;
-	static FILTER_GROUP_HOMEBREW = 3;
+	static FILTER_GROUP_PRERELEASE = 3;
+	static FILTER_GROUP_HOMEBREW = 4;
 
 	static getFilterGroup (source) {
 		if (source instanceof FilterItem) source = source.item;
-		if (
-			(typeof PrereleaseUtil !== "undefined" && PrereleaseUtil.hasSourceJson(source))
-			|| SourceUtil.isNonstandardSource(source)
-		) return SourceUtil.FILTER_GROUP_NON_STANDARD;
-		if (typeof BrewUtil2 !== "undefined" && BrewUtil2.hasSourceJson(source)) return SourceUtil.FILTER_GROUP_HOMEBREW;
 		if (SourceUtil.isPartneredSourceWotc(source)) return SourceUtil.FILTER_GROUP_PARTNERED;
+		if (typeof PrereleaseUtil !== "undefined" && PrereleaseUtil.hasSourceJson(source)) return SourceUtil.FILTER_GROUP_PRERELEASE;
+		if (typeof BrewUtil2 !== "undefined" && BrewUtil2.hasSourceJson(source)) return SourceUtil.FILTER_GROUP_HOMEBREW;
+		if (SourceUtil.isNonstandardSourceWotc(source)) return SourceUtil.FILTER_GROUP_NON_STANDARD;
 		return SourceUtil.FILTER_GROUP_STANDARD;
 	}
 
 	static getFilterGroupName (group) {
 		switch (group) {
-			case SourceUtil.FILTER_GROUP_NON_STANDARD: return "Other/Prerelease";
+			case SourceUtil.FILTER_GROUP_NON_STANDARD: return "Other";
+			case SourceUtil.FILTER_GROUP_PRERELEASE: return "Prerelease";
 			case SourceUtil.FILTER_GROUP_HOMEBREW: return "Homebrew";
 			case SourceUtil.FILTER_GROUP_PARTNERED: return "Partnered";
 			case SourceUtil.FILTER_GROUP_STANDARD: return null;
@@ -792,9 +795,13 @@ class TemplateUtil {
 
 			const eles = [];
 			let ixArg = 0;
+			const ixEnd = parts.length - 1;
 
 			const raw = parts
-				.reduce((html, p) => {
+				.reduce((html, p, ix) => {
+					if (ix === 0) html = html.trimStart();
+					if (ix === ixEnd) html = html.trimEnd();
+
 					const myIxArg = ixArg++;
 					if (args[myIxArg] == null) return `${html}${p}`;
 					if (args[myIxArg] instanceof Array) return `${html}${args[myIxArg].map(arg => TemplateUtil._ee_handleArg(eles, arg)).join("")}${p}`;
@@ -802,7 +809,7 @@ class TemplateUtil {
 				});
 
 			const eleTmpTemplate = document.createElement("template");
-			eleTmpTemplate.innerHTML = raw;
+			eleTmpTemplate.innerHTML = raw.trim();
 			const {content: eleTmp} = eleTmpTemplate;
 
 			// debugger
@@ -1112,6 +1119,8 @@ globalThis.ElementUtil = {
 	 * @property {function(function): HTMLElementModified} onKeydown
 	 * @property {function(function): HTMLElementModified} onKeyup
 	 *
+	 * @property {function(string): HTMLElementModified} first
+	 *
 	 * @return {HTMLElementModified}
 	 */
 	getOrModify ({
@@ -1146,7 +1155,13 @@ globalThis.ElementUtil = {
 		attrs,
 		data,
 	}) {
-		ele = ele || (outer ? (new DOMParser()).parseFromString(outer, "text/html").body.childNodes[0] : document.createElement(tag));
+		const metaEle = ElementUtil._getOrModify_getEle({
+			ele,
+			outer,
+			tag,
+			id,
+		});
+		ele = metaEle.ele;
 
 		if (clazz) ele.className = clazz;
 		if (style) ele.setAttribute("style", style);
@@ -1161,7 +1176,7 @@ globalThis.ElementUtil = {
 		if (keydown) ele.addEventListener("keydown", keydown);
 		if (html != null) ele.innerHTML = html;
 		if (text != null || txt != null) ele.textContent = text;
-		if (id != null) ele.setAttribute("id", id);
+		if (id != null && metaEle.isSetId) ele.setAttribute("id", id);
 		if (name != null) ele.setAttribute("name", name);
 		if (title != null) ele.setAttribute("title", title);
 		if (href != null) ele.setAttribute("href", href);
@@ -1207,8 +1222,28 @@ globalThis.ElementUtil = {
 		ele.onChange = ele.onChange || ElementUtil._onX.bind(ele, "change");
 		ele.onKeydown = ele.onKeydown || ElementUtil._onX.bind(ele, "keydown");
 		ele.onKeyup = ele.onKeyup || ElementUtil._onX.bind(ele, "keyup");
+		ele.first = ele.first || ElementUtil._first.bind(ele);
 
 		return ele;
+	},
+
+	_getOrModify_getEle (
+		{
+			ele,
+			outer,
+			tag,
+			id,
+		},
+	) {
+		if (ele) return {ele, isSetId: true};
+		if (outer) return {ele: (new DOMParser()).parseFromString(outer, "text/html").body.childNodes[0], isSetId: true};
+		if (tag) return {ele: document.createElement(tag), isSetId: true};
+		if (id) {
+			const eleId = document.getElementById(id);
+			if (!eleId) throw new Error(`Could not find element with ID "${id}"`);
+			return {ele: eleId, isSetId: false};
+		}
+		throw new Error(`Could not find or create element!`);
 	},
 
 	_appends (child) {
@@ -1331,6 +1366,12 @@ globalThis.ElementUtil = {
 
 			default: return this.value;
 		}
+	},
+
+	_first (selector) {
+		const child = this.querySelector(selector);
+		if (!child) return child;
+		return e_({ele: child});
 	},
 
 	// region "Static"
@@ -1683,6 +1724,8 @@ globalThis.MiscUtil = class {
 	}
 
 	static findCommonPrefix (strArr, {isRespectWordBoundaries} = {}) {
+		if (!strArr?.length) return "";
+
 		if (isRespectWordBoundaries) {
 			return MiscUtil._findCommonPrefixSuffixWords({strArr});
 		}
@@ -1709,6 +1752,8 @@ globalThis.MiscUtil = class {
 
 	static findCommonSuffix (strArr, {isRespectWordBoundaries} = {}) {
 		if (!isRespectWordBoundaries) throw new Error(`Unimplemented!`);
+
+		if (!strArr?.length) return "";
 
 		return MiscUtil._findCommonPrefixSuffixWords({strArr, isSuffix: true});
 	}
@@ -2193,6 +2238,10 @@ globalThis.MiscUtil = class {
 			reader.readAsDataURL(blob);
 		});
 	}
+
+	static getColorStylePart (color) {
+		return `color: #${color} !important; border-color: #${color} !important; text-decoration-color: #${color} !important;`;
+	}
 };
 
 // EVENT HANDLERS ======================================================================================================
@@ -2265,6 +2314,8 @@ globalThis.EventUtil = class {
 		if (!isUpperCase && !isLowerCase) return evt.key;
 		return isUpperCase ? evt.key.toLowerCase() : evt.key.toUpperCase();
 	}
+
+	static isMiddleMouse (evt) { return evt.button === 1; }
 
 	/* -------------------------------------------- */
 
@@ -2760,6 +2811,20 @@ globalThis.UrlUtil = {
 
 	decodeHash (hash) {
 		return hash.split(HASH_LIST_SEP).map(it => decodeURIComponent(it));
+	},
+
+	// TODO(Future) expand
+	autoDecodeHash (hash, {page = null} = {}) {
+		page ||= UrlUtil.getCurrentPage();
+		const parts = UrlUtil.decodeHash(hash.toLowerCase().trim());
+
+		if (page === UrlUtil.PG_DEITIES) {
+			const [name, pantheon, source] = parts;
+			return {name, pantheon, source};
+		}
+
+		const [name, source] = parts;
+		return {name, source};
 	},
 
 	getSluggedHash (hash) {
@@ -3697,6 +3762,16 @@ class _DataUtilBrewHelper {
 	getFileUrl (path, urlRoot) {
 		urlRoot = this._getCleanUrlRoot(urlRoot);
 		return `${urlRoot}${path}`;
+	}
+
+	/* -------------------------------------------- */
+
+	isUrlUnderDefaultRoot (url) {
+		return url.startsWith(this._defaultUrlRoot);
+	}
+
+	getUrlRelativeToDefaultRoot (url) {
+		return url.slice(this._defaultUrlRoot.length).replace(/^\/+/, "");
 	}
 }
 

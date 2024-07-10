@@ -1,6 +1,6 @@
 "use strict";
 
-class PageFilterRecipes extends PageFilter {
+class PageFilterRecipes extends PageFilterBase {
 	static _DIET_TO_FULL = {
 		"V": "Vegan",
 		"C": "Vegetarian",

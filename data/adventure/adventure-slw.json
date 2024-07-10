@@ -5776,7 +5776,7 @@
 							"name": "2. Unhappy Cultists",
 							"id": "0de",
 							"entries": [
-								"If the characters are able to approach without tripping the alarm, they might hear some disgruntled cultists talking while they work. If the alarm was tripped, the cultists wait with weapons drawn and cannot be {@quickref Surprise|PHB|3|0|surprised}.",
+								"If the characters are able to approach without tripping the alarm, they might hear some disgruntled cultists talking while they work. If the alarm was tripped, the cultists wait with weapons drawn and cannot be {@status surprised}.",
 								"If the adventurers get a chance to hear the cultists talking, use the following read-aloud text to portray that conversation:",
 								{
 									"type": "insetReadaloud",

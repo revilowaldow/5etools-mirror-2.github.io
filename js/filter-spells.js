@@ -73,7 +73,7 @@ MultiFilterClasses._DEFAULT_META = {
 	isVariantSplit: false,
 };
 
-class PageFilterSpells extends PageFilter {
+class PageFilterSpells extends PageFilterBase {
 	// toss these into the "Tags" section to save screen space
 	static _META_ADD_CONC = "Concentration";
 	static _META_ADD_V = "Verbal";
@@ -612,7 +612,7 @@ class PageFilterSpells extends PageFilter {
 
 globalThis.PageFilterSpells = PageFilterSpells;
 
-class ModalFilterSpells extends ModalFilter {
+class ModalFilterSpells extends ModalFilterBase {
 	/**
 	 * @param opts
 	 * @param opts.namespace
@@ -639,7 +639,7 @@ class ModalFilterSpells extends ModalFilter {
 			{sort: "range", text: "Range", width: "2"},
 			{sort: "source", text: "Source", width: "1"},
 		];
-		return ModalFilter._$getFilterColumnHeaders(btnMeta);
+		return ModalFilterBase._$getFilterColumnHeaders(btnMeta);
 	}
 
 	async _pInit () {
@@ -680,7 +680,7 @@ class ModalFilterSpells extends ModalFilter {
 			<div class="ve-col-1 sp__school-${spell.school} ve-text-center" title="${Parser.spSchoolAndSubschoolsAbvsToFull(spell.school, spell.subschools)}" ${Parser.spSchoolAbvToStyle(spell.school)}>${school}</div>
 			<div class="ve-col-0-5 ve-text-center" title="Concentration">${concentration}</div>
 			<div class="ve-col-2 text-right">${range}</div>
-			<div class="ve-col-1 pr-0 ve-flex-h-center ${Parser.sourceJsonToColor(spell.source)}" title="${Parser.sourceJsonToFull(spell.source)}" ${Parser.sourceJsonToStyle(spell.source)}>${source}${Parser.sourceJsonToMarkerHtml(spell.source)}</div>
+			<div class="ve-col-1 pr-0 ve-flex-h-center ${Parser.sourceJsonToSourceClassname(spell.source)}" title="${Parser.sourceJsonToFull(spell.source)}" ${Parser.sourceJsonToStyle(spell.source)}>${source}${Parser.sourceJsonToMarkerHtml(spell.source)}</div>
 		</div>`;
 
 		const btnShowHidePreview = eleRow.firstElementChild.children[1].firstElementChild;

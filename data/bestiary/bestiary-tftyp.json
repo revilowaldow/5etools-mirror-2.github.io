@@ -605,6 +605,7 @@
 				"P"
 			],
 			"miscTags": [
+				"CUR",
 				"MLW",
 				"MW",
 				"RCH"
@@ -2576,6 +2577,7 @@
 				"P"
 			],
 			"miscTags": [
+				"DIS",
 				"MW"
 			],
 			"savingThrowForced": [
@@ -3808,7 +3810,7 @@
 				{
 					"name": "Ambusher",
 					"entries": [
-						"In the first round of a combat, the doppelganger has advantage on attack rolls against any creature it has {@quickref Surprise|PHB|3|0|surprised}."
+						"In the first round of a combat, the doppelganger has advantage on attack rolls against any creature it has {@status surprised}."
 					]
 				},
 				{
@@ -5694,6 +5696,7 @@
 				"CW"
 			],
 			"miscTags": [
+				"CUR",
 				"MLW",
 				"MW",
 				"RW",

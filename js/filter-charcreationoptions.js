@@ -1,6 +1,6 @@
 "use strict";
 
-class PageFilterCharCreationOptions extends PageFilter {
+class PageFilterCharCreationOptions extends PageFilterBase {
 	static _filterFeatureTypeSort (a, b) {
 		return SortUtil.ascSort(Parser.charCreationOptionTypeToFull(a.item), Parser.charCreationOptionTypeToFull(b.item));
 	}

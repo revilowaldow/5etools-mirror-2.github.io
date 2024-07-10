@@ -216,11 +216,15 @@ class RenderDecks {
 		const $wrpCardOuter = $$`<div class="ve-flex-col no-select relative">
 			${metasSparkles.map(it => it.wrpSparkleSway)}
 			${$wrpCardSway}
-		</div>`;
+		</div>`
+			.on("mouseup", evt => {
+				if (!EventUtil.isMiddleMouse(evt) || !imgBack) return;
+				wrpCardFlip.classList.toggle("decks-draw__wrp-card-flip--flipped");
+			});
 
 		const ptText = RenderDecks.getCardTextHtml({card, deck});
 
-		const $wrpInfo = $$`<div class="stats stats--book decks-draw__wrp-desc mobile__hidden px-2 ve-text-center mb-4">${ptText}</div>`
+		const $wrpInfo = $$`<div class="stats stats--book decks-draw__wrp-desc mobile__hidden px-2 ve-text-center mb-4 ve-overflow-y-auto">${ptText}</div>`
 			.click(evt => evt.stopPropagation());
 
 		Renderer.dice.bindOnclickListener($wrpInfo[0]);

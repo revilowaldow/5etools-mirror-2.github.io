@@ -2343,7 +2343,8 @@
 			"conditionImmune": [
 				"charmed",
 				"frightened",
-				"poisoned"
+				"poisoned",
+				"disease"
 			],
 			"languages": [
 				"all spoken languages"
@@ -7179,6 +7180,7 @@
 				"P"
 			],
 			"miscTags": [
+				"CUR",
 				"MLW",
 				"MW",
 				"RNG",
@@ -8444,7 +8446,7 @@
 				{
 					"name": "Assassinate",
 					"entries": [
-						"During its first turn, Urstul has advantage on attack rolls against any creature that hasn't taken a turn. Any hit Urstul scores against a {@quickref Surprise|PHB|3|0|surprised} creature is a critical hit."
+						"During its first turn, Urstul has advantage on attack rolls against any creature that hasn't taken a turn. Any hit Urstul scores against a {@status surprised} creature is a critical hit."
 					]
 				},
 				{

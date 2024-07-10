@@ -295,6 +295,10 @@ class SublistManager {
 				"Download JSON Data",
 				() => this._pHandleJsonDownload(),
 			),
+			new ContextUtil.Action(
+				"Download Markdown Data",
+				() => this._pHandleMarkdownDownload(),
+			),
 			null,
 			new ContextUtil.Action(
 				"Copy as Markdown Table",
@@ -461,6 +465,27 @@ class SublistManager {
 		const entities = await this.getPinnedEntities();
 		entities.forEach(ent => DataUtil.cleanJson(MiscUtil.copyFast(ent)));
 		DataUtil.userDownload(`${this._getDownloadName()}-data`, entities);
+	}
+
+	async _pHandleMarkdownDownload () {
+		const entities = await this.getPinnedEntities();
+
+		const markdown = entities
+			.map(ent => {
+				return RendererMarkdown.get().render({
+					entries: [
+						{
+							type: "statblockInline",
+							dataType: ent.__prop,
+							data: ent,
+						},
+					],
+				})
+					.trim();
+			})
+			.join("\n\n---\n\n");
+
+		DataUtil.userDownloadText(`${this._getDownloadName()}.md`, markdown);
 	}
 
 	async _pHandleCopyAsMarkdownTable () {
@@ -978,7 +1003,7 @@ class ListPage {
 	 * @param [opts.prereleaseDataSource] Function to fetch prerelease data.
 	 * @param [opts.brewDataSource] Function to fetch brew data.
 	 * @param [opts.pFnGetFluff] Function to fetch fluff for a given entity.
-	 * @param [opts.pageFilter] PageFilter implementation for this page. (Either `filters` and `filterSource` or
+	 * @param [opts.pageFilter] PageFilterBase implementation for this page. (Either `filters` and `filterSource` or
 	 * `pageFilter` must be specified.)
 	 * @param opts.listOptions Other list options.
 	 * @param opts.dataProps JSON data propert(y/ies).
@@ -994,8 +1019,6 @@ class ListPage {
 	 * @param [opts.hasAudio] True if the entities have pronunciation audio.
 	 * @param [opts.isPreviewable] True if the entities can be previewed in-line as part of the list.
 	 * @param [opts.isLoadDataAfterFilterInit] If the order of data loading and filter-state loading should be flipped.
-	 * @param [opts.isBindHashHandlerUnknown] If the "unknown hash" handler function should be bound.
-	 * @param [opts.isMarkdownPopout] If the sublist Popout button supports Markdown on CTRL.
 	 * @param [opts.propEntryData]
 	 * @param [opts.listSyntax]
 	 * @param [opts.compSettings]
@@ -1012,9 +1035,7 @@ class ListPage {
 		this._tableViewOptions = opts.tableViewOptions;
 		this._hasAudio = opts.hasAudio;
 		this._isPreviewable = opts.isPreviewable;
-		this._isMarkdownPopout = !!opts.isMarkdownPopout;
 		this._isLoadDataAfterFilterInit = !!opts.isLoadDataAfterFilterInit;
-		this._isBindHashHandlerUnknown = !!opts.isBindHashHandlerUnknown;
 		this._propEntryData = opts.propEntryData;
 		this._listSyntax = opts.listSyntax || new ListUiUtil.ListSyntax({fnGetDataList: () => this._dataList, pFnGetFluff: opts.pFnGetFluff});
 		this._compSettings = opts.compSettings ? opts.compSettings : null;
@@ -1076,7 +1097,7 @@ class ListPage {
 
 		this._pOnLoad_initVisibleItemsDisplay();
 
-		if (this._filterBox) this._filterBox.on(FilterBox.EVNT_VALCHANGE, this.handleFilterChange.bind(this));
+		if (this._filterBox) this._filterBox.on(FILTER_BOX_EVNT_VALCHANGE, this.handleFilterChange.bind(this));
 
 		if (this._sublistManager) {
 			if (this._sublistManager.isSublistItemsCountable) {
@@ -1103,10 +1124,9 @@ class ListPage {
 		this._pOnLoad_bookView();
 		this._pOnLoad_tableView();
 
-		// bind hash-change functions for hist.js to use
-		window.loadHash = this.pDoLoadHash.bind(this);
-		window.loadSubHash = this.pDoLoadSubHash.bind(this);
-		if (this._isBindHashHandlerUnknown) window.pHandleUnknownHash = this.pHandleUnknownHash.bind(this);
+		Hist.setFnLoadHash(this.pDoLoadHash.bind(this));
+		Hist.setFnLoadSubhash(this.pDoLoadSubHash.bind(this));
+		Hist.setFnHandleUnknownHash(this.pHandleUnknownHash.bind(this));
 
 		this.primaryLists.forEach(list => list.init());
 		if (this._sublistManager) this._sublistManager.init();
@@ -1170,7 +1190,11 @@ class ListPage {
 
 	_pOnLoad_bindMiscButtons () {
 		const $btnReset = $("#reset");
-		ManageBrewUi.bindBtnOpen($(`#manage-brew`));
+		// TODO(MODULES) refactor
+		import("./utils-brew/utils-brew-ui-manage.js")
+			.then(({ManageBrewUi}) => {
+				ManageBrewUi.bindBtngroupManager(e_({id: "btngroup-manager"}));
+			});
 		this._renderListFeelingLucky({$btnReset});
 		this._renderListShowHide({
 			$wrpList: $(`#listcontainer`),
@@ -1406,13 +1430,13 @@ class ListPage {
 	_bindPopoutButton () {
 		this._getOrTabRightButton(`popout`, `new-window`)
 			.off("click")
-			.title(`Popout Window (SHIFT for Source Data${this._isMarkdownPopout ? `; CTRL for Markdown Render` : ""})`)
+			.title(`Popout Window (SHIFT for Source Data; CTRL for Markdown Render)`)
 			.on(
 				"click",
 				(evt) => {
 					if (Hist.lastLoadedId === null) return;
 
-					if (this._isMarkdownPopout && (EventUtil.isCtrlMetaKey(evt))) return this._bindPopoutButton_doShowMarkdown(evt);
+					if (EventUtil.isCtrlMetaKey(evt)) return this._bindPopoutButton_doShowMarkdown(evt);
 					return this._bindPopoutButton_doShowStatblock(evt);
 				},
 			);
@@ -1861,7 +1885,41 @@ class ListPage {
 	}
 
 	getListItem () { throw new Error(`Unimplemented!`); }
-	pHandleUnknownHash () { throw new Error(`Unimplemented!`); }
+
+	async pHandleUnknownHash (link, sub) {
+		const locStart = window.location.hash;
+
+		const {source} = UrlUtil.autoDecodeHash(link);
+
+		// If the source is from prerelease/homebrew which has been loaded in the background but is
+		//   not yet displayed, reload to refresh the list.
+		if (this._pHandleUnknownHash_doSourceReload({source})) return true;
+
+		// Otherwise, try to find the source in prerelease/homebrew, load it, and reload
+		const loaded = await DataLoader.pCacheAndGetHash(UrlUtil.getCurrentPage(), link, {isSilent: true});
+		if (!loaded) return false;
+
+		// If navigation has occurred while we were loading the hash, bail out
+		if (locStart !== window.location.hash) return false;
+
+		return this._pHandleUnknownHash_doSourceReload({source});
+	}
+
+	_pHandleUnknownHash_doSourceReload ({source}) {
+		return [
+			PrereleaseUtil,
+			BrewUtil2,
+		]
+			.some(brewUtil => {
+				if (
+					brewUtil.hasSourceJson(source)
+					&& brewUtil.isReloadRequired()
+				) {
+					brewUtil.doLocationReload();
+					return true;
+				}
+			});
+	}
 
 	async pDoLoadSubHash (sub, {lockToken} = {}) {
 		try {

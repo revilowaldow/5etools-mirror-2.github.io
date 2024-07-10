@@ -1,6 +1,6 @@
 "use strict";
 
-class PageFilterTables extends PageFilter {
+class PageFilterTables extends PageFilterBase {
 	// region static
 	static _sourceSelFn (val) {
 		return !SourceUtil.isNonstandardSource(val) && !SourceUtil.isAdventure(val);

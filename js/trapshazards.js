@@ -58,8 +58,6 @@ class TrapsHazardsPage extends ListPage {
 
 			dataProps: ["trap", "hazard"],
 
-			isMarkdownPopout: true,
-
 			listSyntax: new ListSyntaxTrapsHazards({fnGetDataList: () => this._dataList}),
 		});
 	}
@@ -77,7 +75,7 @@ class TrapsHazardsPage extends ListPage {
 		eleLi.innerHTML = `<a href="#${hash}" class="lst--border lst__row-inner">
 			<span class="ve-col-3 pl-0 ve-text-center">${trapType}</span>
 			<span class="bold ve-col-7">${it.name}</span>
-			<span class="ve-col-2 ve-text-center ${Parser.sourceJsonToColor(it.source)} pr-0" title="${Parser.sourceJsonToFull(it.source)}" ${Parser.sourceJsonToStyle(it.source)}>${source}</span>
+			<span class="ve-col-2 ve-text-center ${Parser.sourceJsonToSourceClassname(it.source)} pr-0" title="${Parser.sourceJsonToFull(it.source)}" ${Parser.sourceJsonToStyle(it.source)}>${source}</span>
 		</a>`;
 
 		const listItem = new ListItem(

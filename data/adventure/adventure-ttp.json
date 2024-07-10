@@ -697,7 +697,7 @@
 							"id": "016",
 							"page": 6,
 							"entries": [
-								"Without warning, {@dice 1d6} {@creature jaculi|toa|jaculis} (see {@adventure Tomb of Annihilation|ToA}) launch themselves at the party from trees or mountain ledges. Any character with a passive Wisdom ({@skill Perception}) score of 14 or higher spots the jaculis before they strike, but all others are {@quickref Surprise|PHB|3|0|surprised}."
+								"Without warning, {@dice 1d6} {@creature jaculi|toa|jaculis} (see {@adventure Tomb of Annihilation|ToA}) launch themselves at the party from trees or mountain ledges. Any character with a passive Wisdom ({@skill Perception}) score of 14 or higher spots the jaculis before they strike, but all others are {@status surprised}."
 							]
 						},
 						{

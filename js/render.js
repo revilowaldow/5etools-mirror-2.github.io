@@ -2861,7 +2861,7 @@ Renderer.utils = class {
 						${!IS_VTT && ExtensionUtil.ACTIVE && opts.page ? Renderer.utils.getBtnSendToFoundryHtml() : ""}
 					</div>
 					<div class="stats-source ve-flex-v-baseline">
-						${tagPartSourceStart} class="help-subtle stats-source-abbreviation ${it.source ? `${Parser.sourceJsonToColor(it.source)}" title="${Parser.sourceJsonToFull(it.source)}${Renderer.utils.getSourceSubText(it)}` : ""}" ${Parser.sourceJsonToStyle(it.source)}>${it.source ? Parser.sourceJsonToAbv(it.source) : ""}${tagPartSourceEnd}
+						${tagPartSourceStart} class="help-subtle stats-source-abbreviation ${it.source ? `${Parser.sourceJsonToSourceClassname(it.source)}" title="${Parser.sourceJsonToFull(it.source)}${Renderer.utils.getSourceSubText(it)}` : ""}" ${Parser.sourceJsonToStyle(it.source)}>${it.source ? Parser.sourceJsonToAbv(it.source) : ""}${tagPartSourceEnd}
 
 						${Renderer.utils.isDisplayPage(it.page) ? ` ${tagPartSourceStart} class="rd__stats-name-page ml-1" title="Page ${it.page}">p${it.page}${tagPartSourceEnd}` : ""}
 
@@ -12109,9 +12109,9 @@ Renderer.hover = class {
 					</style>
 				</head><body class="rd__body-popout">
 				<div class="hwin hoverbox--popout hwin--popout"></div>
-				<script type="text/javascript" src="js/parser.js"></script>
-				<script type="text/javascript" src="js/utils.js"></script>
-				<script type="text/javascript" src="lib/jquery.js"></script>
+				<script type="text/javascript" defer src="js/parser.js"></script>
+				<script type="text/javascript" defer src="js/utils.js"></script>
+				<script type="text/javascript" defer src="lib/jquery.js"></script>
 				</body></html>
 			`);
 

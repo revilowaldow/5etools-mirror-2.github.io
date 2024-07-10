@@ -6965,7 +6965,7 @@
 				{
 					"name": "Ambusher",
 					"entries": [
-						"In the first round of a combat, you have advantage on attack rolls against any creature who is {@quickref Surprise|PHB|3|0|surprised}."
+						"In the first round of a combat, you have advantage on attack rolls against any creature who is {@status surprised}."
 					],
 					"type": "entries"
 				},

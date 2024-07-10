@@ -494,23 +494,62 @@ class BasicTextClean {
 
 globalThis.BasicTextClean = BasicTextClean;
 
-class ItemMiscTag {
+class ItemOtherTagsTag {
 	static tryRun (it, opts) {
 		if (!(it.entries || (it.inherits && it.inherits.entries))) return;
 
-		const isInherits = !it.entries && it.inherits.entries;
 		const tgt = it.entries ? it : it.inherits;
 
 		const strEntries = JSON.stringify(it.entries || it.inherits.entries);
 
-		strEntries.replace(/"Sentience"/, (...m) => tgt.sentient = true);
-		strEntries.replace(/"Curse"/, (...m) => tgt.curse = true);
+		strEntries.replace(/"Sentience"/, () => tgt.sentient = true);
+		strEntries.replace(/"Curse"/, () => tgt.curse = true);
 
-		strEntries.replace(/you[^.]* (gain|have)? proficiency/gi, (...m) => tgt.grantsProficiency = true);
-		strEntries.replace(/you gain[^.]* following proficiencies/gi, (...m) => tgt.grantsProficiency = true);
-		strEntries.replace(/you are[^.]* considered proficient/gi, (...m) => tgt.grantsProficiency = true);
+		strEntries.replace(/you[^.]* (gain|have)? proficiency/gi, () => tgt.grantsProficiency = true);
+		strEntries.replace(/you gain[^.]* following proficiencies/gi, () => tgt.grantsProficiency = true);
+		strEntries.replace(/you are[^.]* considered proficient/gi, () => tgt.grantsProficiency = true);
 
-		strEntries.replace(/[Yy]ou can speak( and understand)? [A-Z]/g, (...m) => tgt.grantsLanguage = true);
+		strEntries.replace(/[Yy]ou can speak( and understand)? [A-Z]/g, () => tgt.grantsLanguage = true);
+	}
+}
+
+globalThis.ItemOtherTagsTag = ItemOtherTagsTag;
+
+class ItemMiscTag {
+	/** @return empty string for easy use in `.replace` */
+	static _addTag ({tagSet, allowlistTags, tag}) {
+		if (allowlistTags != null && !allowlistTags.has(tag)) return "";
+		tagSet.add(tag);
+		return "";
+	}
+
+	static tryRun (ent, {isAdditiveOnly = false, allowlistTags = null} = {}) {
+		const tagSet = new Set(isAdditiveOnly ? ent.miscTags || [] : []);
+		const tgt = ent.inherits || ent;
+		this._tryRun_consumable({tagSet, allowlistTags, tgt});
+		if (tagSet.size) ent.miscTags = [...tagSet].sort(SortUtil.ascSortLower);
+		else if (!isAdditiveOnly) delete ent.miscTags;
+	}
+
+	static _tryRun_consumable ({tagSet, allowlistTags, tgt}) {
+		if (
+			[
+				"AF", // Futuristic Ammo
+				"EXP", // Explosive
+				"FD", // Food and Drink
+				"IDG", // Illegal Drug
+				"P", // Potion
+				"SC", // Scroll
+			]
+				.includes(tgt.type)
+		) {
+			this._addTag({tagSet, allowlistTags, tag: "CNS"});
+			return;
+		}
+
+		if (tgt.poison) {
+			this._addTag({tagSet, allowlistTags, tag: "CNS"});
+		}
 	}
 }
 

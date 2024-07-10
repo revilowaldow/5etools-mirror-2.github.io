@@ -213,8 +213,6 @@ class ItemsPage extends ListPage {
 					_entries: {name: "Text", transform: (it) => Renderer.item.getRenderedEntries(it, {isCompact: true}), flex: 3},
 				},
 			},
-
-			isMarkdownPopout: true,
 			propEntryData: "item",
 
 			listSyntax: new ListSyntaxItems({fnGetDataList: () => this._dataList, pFnGetFluff}),
@@ -264,7 +262,7 @@ class ItemsPage extends ListPage {
 							e_({tag: "span", clazz: `ve-col-1-5 ve-text-center`, text: Parser.itemWeightToFull(item, true) || "\u2014"}),
 							e_({
 								tag: "span",
-								clazz: `ve-col-1 ve-text-center ${Parser.sourceJsonToColor(item.source)} pr-0`,
+								clazz: `ve-col-1 ve-text-center ${Parser.sourceJsonToSourceClassname(item.source)} pr-0`,
 								style: Parser.sourceJsonToStylePart(item.source),
 								title: `${Parser.sourceJsonToFull(item.source)}${Renderer.utils.getSourceSubText(item)}`,
 								text: source,
@@ -310,7 +308,7 @@ class ItemsPage extends ListPage {
 							e_({tag: "span", clazz: `ve-col-1-4 ve-text-center`, text: (item.rarity || "").toTitleCase()}),
 							e_({
 								tag: "span",
-								clazz: `ve-col-1 ve-text-center ${Parser.sourceJsonToColor(item.source)} pr-0`,
+								clazz: `ve-col-1 ve-text-center ${Parser.sourceJsonToSourceClassname(item.source)} pr-0`,
 								style: Parser.sourceJsonToStylePart(item.source),
 								title: `${Parser.sourceJsonToFull(item.source)}${Renderer.utils.getSourceSubText(item)}`,
 								text: source,

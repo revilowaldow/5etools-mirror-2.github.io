@@ -1,4 +1,4 @@
-import * as fs from "fs";
+import fs from "fs";
 import * as ut from "../node/util.js";
 
 async function main () {

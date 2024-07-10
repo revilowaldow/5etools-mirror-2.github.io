@@ -4779,7 +4779,7 @@
 							"id": "0f9",
 							"entries": [
 								"This chamber is a high vaulted dome with a deep inset ledge circling the room, 10 feet wide and 15 feet up. The floor here is set with a beautiful tile mosaic showing a knight in plate armor wielding a glowing sword against a chimera. The word \"SAFE\" is written in chalk on the door leading to area 5, marking that chamber as a resting place used by the cultists.",
-								"When the first character enters this room, the tile chimera begins to slowly shift. With a successful DC 14 Wisdom ({@skill Perception}) check, a character notices this movement and is not {@quickref Surprise|PHB|3|0|surprised} as the tiles shoot up and the chimera seemingly claws its way out of the mosaic.",
+								"When the first character enters this room, the tile chimera begins to slowly shift. With a successful DC 14 Wisdom ({@skill Perception}) check, a character notices this movement and is not {@status surprised} as the tiles shoot up and the chimera seemingly claws its way out of the mosaic.",
 								"The {@creature Animated Tile Chimera|RoT|tile chimera} acts as a normal {@creature chimera} magically animated and customized per the sidebar. It makes a clacking noise as it moves, and when injured, it sprays tiles instead of bleeding. It is thin in one dimension and can use that fact to its advantage in combat. The creature flies up to the ledge to use its fire breath at range, flying down to attack in melee until it can breathe again.",
 								{
 									"type": "inset",

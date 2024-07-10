@@ -6,7 +6,6 @@ class ListPageMultiSource extends ListPage {
 		super({
 			...rest,
 			isLoadDataAfterFilterInit: true,
-			isBindHashHandlerUnknown: true,
 		});
 
 		this._propLoader = propLoader;
@@ -36,7 +35,7 @@ class ListPageMultiSource extends ListPage {
 
 	async _pForceLoadDefaultSources () {
 		const defaultSources = Object.keys(this._loadedSources)
-			.filter(s => PageFilter.defaultSourceSelFn(s));
+			.filter(s => PageFilterBase.defaultSourceSelFn(s));
 		await Promise.all(defaultSources.map(src => this._pLoadSource(src, "yes")));
 	}
 
@@ -97,7 +96,7 @@ class ListPageMultiSource extends ListPage {
 			.forEach(src => this._loadedSources[src] = {source: src, loaded: false});
 
 		// collect a list of sources to load
-		const defaultSel = [...siteSourcesAvail].filter(s => PageFilter.defaultSourceSelFn(s));
+		const defaultSel = [...siteSourcesAvail].filter(s => PageFilterBase.defaultSourceSelFn(s));
 
 		const userSel = [
 			// Selected in filter
@@ -173,5 +172,20 @@ class ListPageMultiSource extends ListPage {
 		return hashSourceRaw
 			? [...siteSourcesAvail].find(it => it.toLowerCase() === hashSourceRaw.toLowerCase())
 			: null;
+	}
+
+	async pHandleUnknownHash (link, sub) {
+		const {source: srcLink} = UrlUtil.autoDecodeHash(link);
+
+		const src = Object.keys(this._loadedSources)
+			.find(src => src.toLowerCase() === srcLink);
+
+		if (src) {
+			await this._pLoadSource(src, "yes");
+			Hist.hashChange();
+			return;
+		}
+
+		await super.pHandleUnknownHash(link, sub);
 	}
 }

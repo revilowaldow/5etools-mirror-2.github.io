@@ -57,8 +57,6 @@ class ConditionsDiseasesPage extends ListPage {
 
 			dataProps: ["condition", "disease", "status"],
 
-			isMarkdownPopout: true,
-
 			isPreviewable: true,
 		});
 	}
@@ -76,7 +74,7 @@ class ConditionsDiseasesPage extends ListPage {
 			<span class="ve-col-0-3 px-0 ve-flex-vh-center lst__btn-toggle-expand ve-self-flex-stretch">[+]</span>
 			<span class="ve-col-3 ve-text-center">${PageFilterConditionsDiseases.getDisplayProp(it.__prop)}</span>
 			<span class="bold ve-col-6-7 px-1">${it.name}</span>
-			<span class="ve-col-2 ve-text-center ${Parser.sourceJsonToColor(it.source)} pr-0" title="${Parser.sourceJsonToFull(it.source)}" ${Parser.sourceJsonToStyle(it.source)}>${source}</span>
+			<span class="ve-col-2 ve-text-center ${Parser.sourceJsonToSourceClassname(it.source)} pr-0" title="${Parser.sourceJsonToFull(it.source)}" ${Parser.sourceJsonToStyle(it.source)}>${source}</span>
 		</a>
 		<div class="ve-flex ve-hidden relative lst__wrp-preview">
 			<div class="vr-0 absolute lst__vr-preview"></div>

@@ -2302,7 +2302,7 @@
 										],
 										[
 											"15",
-											"A {@creature knucklehead trout|IDRotF} (see {@adventure appendix C|IDRotF|21}) leaps out of the lake, makes a tail attack against one random character in the boat, and dives back into the frigid water. A character with a passive Wisdom ({@skill Perception}) score of 13 or higher is not {@quickref Surprise|PHB|3|0|surprised} by the fish and can use its reaction to make an opportunity attack against it or try to grapple the fish as it dives back into the water."
+											"A {@creature knucklehead trout|IDRotF} (see {@adventure appendix C|IDRotF|21}) leaps out of the lake, makes a tail attack against one random character in the boat, and dives back into the frigid water. A character with a passive Wisdom ({@skill Perception}) score of 13 or higher is not {@status surprised} by the fish and can use its reaction to make an opportunity attack against it or try to grapple the fish as it dives back into the water."
 										],
 										[
 											"16\u201320",
@@ -18991,7 +18991,7 @@
 											"page": 90,
 											"id": "230",
 											"entries": [
-												"As the characters tend to Garret, two {@creature Crag Cat|SKT|crag cats} (see {@adventure appendix C|IDRotF|21}) move to within 20 feet of the party and attack, each one pouncing on a randomly determined party member. Known to Ten-Towners as \"Hunters of Men,\" the crag cats caught Garret's scent but failed to reach him before the characters showed up. Characters with passive Wisdom ({@skill Perception}) scores of 17 or higher are not {@quickref Surprise|PHB|3|0|surprised} by the crag cats. If one crag cat dies, the other one disengages from melee combat and tries to flee down the mountain on its next turn."
+												"As the characters tend to Garret, two {@creature Crag Cat|SKT|crag cats} (see {@adventure appendix C|IDRotF|21}) move to within 20 feet of the party and attack, each one pouncing on a randomly determined party member. Known to Ten-Towners as \"Hunters of Men,\" the crag cats caught Garret's scent but failed to reach him before the characters showed up. Characters with passive Wisdom ({@skill Perception}) scores of 17 or higher are not {@status surprised} by the crag cats. If one crag cat dies, the other one disengages from melee combat and tries to flee down the mountain on its next turn."
 											]
 										},
 										{
@@ -23449,7 +23449,7 @@
 											"page": 108,
 											"id": "29d",
 											"entries": [
-												"Make one Dexterity ({@skill Stealth}) check for all the crag cats involved in the encounter and compare the result to the passive (Wisdom) {@skill Perception} scores of the party. Any character whose score equals or exceeds the crag cats' check result is not {@quickref Surprise|PHB|3|0|surprised} when the cats attack.",
+												"Make one Dexterity ({@skill Stealth}) check for all the crag cats involved in the encounter and compare the result to the passive (Wisdom) {@skill Perception} scores of the party. Any character whose score equals or exceeds the crag cats' check result is not {@status surprised} when the cats attack.",
 												"If one or two crag cats are encountered, they stalk the characters but keep their distance, hoping to pick off individuals who becomes separated from the rest of the party. These crag cats aren't brave or foolish enough to attack a group that outnumbers them.",
 												"If three or four crag cats are encountered, their numbers embolden them. They attack the adventuring party like a well-coordinated pack, focusing their attacks on the party member who looks the weakest and least armored. If two or more crag cats die, the others retreat."
 											]
@@ -23868,7 +23868,7 @@
 											"page": 112,
 											"id": "2b6",
 											"entries": [
-												"The perytons' keen eyesight enables them to spot prey from great heights, while the dark sky makes them harder to see. Characters who have a passive Wisdom ({@skill Perception}) score of 13 or lower are {@quickref Surprise|PHB|3|0|surprised} when the perytons attack.",
+												"The perytons' keen eyesight enables them to spot prey from great heights, while the dark sky makes them harder to see. Characters who have a passive Wisdom ({@skill Perception}) score of 13 or lower are {@status surprised} when the perytons attack.",
 												"As an action, a peryton can rip out the heart of a dead humanoid within 5 feet of it. Once they obtain such a prize, the perytons disengage from battle and return to their nest. The perytons won't break off their attack until they get a heart.",
 												{
 													"type": "image",
@@ -23949,7 +23949,7 @@
 											"page": 113,
 											"id": "2ba",
 											"entries": [
-												"To determine which party members are {@quickref Surprise|PHB|3|0|surprised}, have each character make a Wisdom ({@skill Perception}) check contested by the yetis' Dexterity ({@skill Stealth}) check. Characters can use their passive Wisdom ({@skill Perception}) scores instead of making the check. If multiple yetis are present, make one check\u2014with advantage\u2014for all of them.",
+												"To determine which party members are {@status surprised}, have each character make a Wisdom ({@skill Perception}) check contested by the yetis' Dexterity ({@skill Stealth}) check. Characters can use their passive Wisdom ({@skill Perception}) scores instead of making the check. If multiple yetis are present, make one check\u2014with advantage\u2014for all of them.",
 												"After gorging themselves on the humanoids they kill, adult yetis and abominable yetis like to bite off the victims' heads and keep them as trophies."
 											]
 										}
@@ -30580,7 +30580,7 @@
 														"As you trudge deeper into a mountain valley, an eerie glow betrays the monstrous outline of something stupendous and ominous. It looks like a cephalopod with slimy, ropey tentacles as thick as tree trunks that has tried and failed to bury its immense bulk in the snow."
 													]
 												},
-												"Two {@creature Carrion Crawler||carrion crawlers}, Vorryn's trained pets, scuttle through the snow near the ship. Characters who have passive Wisdom ({@skill Perception}) scores of 11 or higher are not {@quickref Surprise|PHB|3|0|surprised} when the creatures attack.",
+												"Two {@creature Carrion Crawler||carrion crawlers}, Vorryn's trained pets, scuttle through the snow near the ship. Characters who have passive Wisdom ({@skill Perception}) scores of 11 or higher are not {@status surprised} when the creatures attack.",
 												"Characters {@condition paralyzed} by the crawlers' tentacles are dragged toward the nautiloid. The crawlers' intent is not to eat the characters, but to deliver them to Vorryn for questioning."
 											]
 										},
@@ -47817,7 +47817,7 @@
 												"Suddenly, nearly two dozen figures burst out of the snow sixty feet away from you. They are spaced roughly ten feet apart and begin advancing in a line."
 											]
 										},
-										"Characters who have a passive Wisdom ({@skill Perception}) score of 15 or higher are not {@quickref Surprise|PHB|3|0|surprised} by the ambush, nor are members of the Elk Tribe who are traveling with the party.",
+										"Characters who have a passive Wisdom ({@skill Perception}) score of 15 or higher are not {@status surprised} by the ambush, nor are members of the Elk Tribe who are traveling with the party.",
 										{
 											"type": "entries",
 											"name": "Ambushers",

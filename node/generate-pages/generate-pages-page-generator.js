@@ -25,8 +25,6 @@ export class PageGeneratorBase {
 	}
 
 	_registerPartials () {
-		this._registerPartial({ident: "overlayNoise", filename: "misc/template-overlay-noise.hbs"});
-
 		this._registerPartial({ident: "head", filename: "head/template-head.hbs"});
 
 		this._registerPartial({ident: "adRhs", filename: "ad/template-ad-rhs.hbs"});
@@ -40,6 +38,8 @@ export class PageGeneratorBase {
 		this._registerPartial({ident: "scripts", filename: "scripts/template-scripts.hbs"});
 
 		this._registerPartial({ident: "blank", filename: "misc/template-blank.hbs"});
+		this._registerPartial({ident: "btngroupManager", filename: "misc/template-btngroup-manager.hbs"});
+		this._registerPartial({ident: "overlayNoise", filename: "misc/template-overlay-noise.hbs"});
 	}
 
 	getPage () { return this._page; }
@@ -291,9 +291,5 @@ export class PageGeneratorManagerBase extends PageGeneratorGeneric {
 
 	_scriptsUtilsAdditional = [
 		"utils-list.js",
-	];
-
-	_scriptsModules = [
-		"manageexternal/manageexternal-utils.js",
 	];
 }

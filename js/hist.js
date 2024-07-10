@@ -1,44 +1,56 @@
 "use strict";
 
 class Hist {
+	static lastLoadedLink = null;
+	static _lastUnknownLink = null;
+	static lastLoadedId = null;
+	static initialLoad = true;
+	static isHistorySuppressed = false;
+	static _pLoadingUnknownHash = null;
+
+	static _pHandleUnknownHash = null;
+	static _pLoadHash = null;
+	static _pLoadSubHash = null;
+
+	static setFnHandleUnknownHash (fn) { this._pHandleUnknownHash = fn; }
+	static setFnLoadHash (fn) { this._pLoadHash = fn; }
+	static setFnLoadSubhash (fn) { this._pLoadSubHash = fn; }
+
 	static hashChange ({isForceLoad, isBlankFilterLoad = false} = {}) {
-		if (Hist.isHistorySuppressed) {
-			Hist.setSuppressHistory(false);
-			return;
-		}
+		if (this.isHistorySuppressed) return this.setSuppressHistory(false);
 
-		const [link, ...sub] = Hist.getHashParts();
+		const [link, ...sub] = this.getHashParts();
 
-		if (link !== Hist.lastLoadedLink || sub.length === 0 || isForceLoad) {
-			Hist.lastLoadedLink = link;
+		if (link !== this.lastLoadedLink || sub.length === 0 || isForceLoad) {
+			this.lastLoadedLink = link;
 			if (link === HASH_BLANK) {
 				isBlankFilterLoad = true;
 			} else {
-				const listItem = Hist.getActiveListItem(link);
+				const listItem = this.getActiveListItem(link);
 
 				if (listItem == null) {
-					if (typeof pHandleUnknownHash === "function" && window.location.hash.length && Hist._lastUnknownLink !== link) {
-						Hist._lastUnknownLink = link;
-						pHandleUnknownHash(link, sub);
+					if (typeof this._pHandleUnknownHash === "function" && window.location.hash.length && this._lastUnknownLink !== link) {
+						this._lastUnknownLink = link;
+						this._pLoadingUnknownHash = this._pHandleUnknownHash(link, sub);
 						return;
 					} else {
-						Hist._freshLoad();
+						this._freshLoad();
 						return;
 					}
 				}
 
 				const toLoad = listItem.ix;
-				if (toLoad === undefined) Hist._freshLoad();
+				if (toLoad === undefined) this._freshLoad();
 				else {
-					Hist.lastLoadedId = listItem.ix;
-					loadHash(listItem.ix);
+					this.lastLoadedId = listItem.ix;
+					this._pLoadHash(listItem.ix);
 					document.title = `${listItem.name ? `${listItem.name} - ` : ""}5etools`;
 				}
 			}
 		}
 
-		if (typeof loadSubHash === "function" && (sub.length > 0 || isForceLoad)) loadSubHash(sub);
-		if (isBlankFilterLoad) Hist._freshLoad();
+		if (typeof this._pLoadSubHash === "function" && (sub.length > 0 || isForceLoad)) this._pLoadSubHash(sub);
+		if (isBlankFilterLoad) this._freshLoad();
 	}
 
 	static init (initialLoadComplete) {
@@ -93,15 +105,48 @@ class Hist {
 	}
 
 	static _freshLoad () {
-		// defer this, in case the list needs to filter first
-		setTimeout(() => {
-			const goTo = $("#listcontainer").find(".list a").attr("href");
-			if (goTo) {
-				const parts = location.hash.split(HASH_PART_SEP);
-				const fullHash = `${goTo}${parts.length > 1 ? `${HASH_PART_SEP}${parts.slice(1).join(HASH_PART_SEP)}` : ""}`;
-				location.replace(fullHash);
-			}
-		}, 1);
+		// Wait for any unknown hash handling to resolve. This avoids the case where an async homebrew load
+		//   fails to reload the page, as the hash was over-eagerly reset while the load took place.
+		(this._pLoadingUnknownHash || Promise.resolve())
+			.then(() => {
+				// defer this, in case the list needs to filter first
+				setTimeout(() => {
+					const goTo = $("#listcontainer").find(".list a").attr("href");
+					if (goTo) {
+						const parts = location.hash.split(HASH_PART_SEP);
+						const fullHash = `${goTo}${parts.length > 1 ? `${HASH_PART_SEP}${parts.slice(1).join(HASH_PART_SEP)}` : ""}`;
+						location.replace(fullHash);
+					}
+				}, 1);
+			});
+	}
+
+	/**
+	 * Avoid "stuck brew" loops which can occur via:
+	 *  - user is viewing a homebrew statblock; hash has homebrew source
+	 *  - user deletes that homebrew; page reloads
+	 *  - "unknown hash" flow triggers for that hash; deleted homebrew is re-loaded by source; page reloads
+	 *  - user is presented with the same statblock, from the source they just tried to delete.
+	 */
+	static doPreLocationReload () {
+		const [link] = this.getHashParts();
+		if (link === HASH_BLANK) return;
+
+		const {source} = UrlUtil.autoDecodeHash(link);
+		if (!source) return;
+
+		// If the hash has a site source, do nothing; site data is always present...
+		if (Parser.hasSourceJson(source)) return;
+
+		// ...if the hash has a prerelease/homebrew source, and that source exists, do nothing...
+		if (
+			[PrereleaseUtil, BrewUtil2]
+				.some(brewUtil => brewUtil.hasSourceJson(source))
+		) return;
+
+		// ...otherwise, the hash must be from a prerelease/homebrew source which does not exist (i.e. the user just deleted it); wipe the hash.
+		// If the source does not exist for some other reason, this is still fine, as we assume that the hash is un-loadable anyway.
+		window.location.hash = "";
 	}
 
 	static cleanSetHash (toSet) {
@@ -141,11 +186,6 @@ class Hist {
 		);
 	}
 }
-Hist.lastLoadedLink = null;
-Hist._lastUnknownLink = null;
-Hist.lastLoadedId = null;
-Hist.initialLoad = true;
-Hist.isHistorySuppressed = false;
 
 Hist.util = class {
 	static getCleanHash (hash) {

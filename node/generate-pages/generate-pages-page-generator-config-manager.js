@@ -6,7 +6,8 @@ class _PageGeneratorManagebrew extends PageGeneratorManagerBase {
 	_pageTitle = "Manage Homebrew";
 	_navbarDescription = "View, Add, and Delete Homebrew.";
 
-	_scripts = [
+	_scriptsModules = [
+		"manageexternal/manageexternal-utils.js",
 		"managebrew.js",
 	];
 }
@@ -17,7 +18,8 @@ class _PageGeneratorManageprerelease extends PageGeneratorManagerBase {
 	_pageTitle = "Manage Prerelease Content";
 	_navbarDescription = "View, Add, and Delete Prerelease Content.";
 
-	_scripts = [
+	_scriptsModules = [
+		"manageexternal/manageexternal-utils.js",
 		"manageprerelease.js",
 	];
 }

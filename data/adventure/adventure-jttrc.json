@@ -8821,7 +8821,7 @@
 											"page": 74,
 											"id": "193",
 											"entries": [
-												"Azra uses the {@creature acolyte} stat block and is {@quickref Surprise|PHB|3|0|surprised} during the first round of combat. He seeks only to escape the chaos."
+												"Azra uses the {@creature acolyte} stat block and is {@status surprised} during the first round of combat. He seeks only to escape the chaos."
 											]
 										},
 										{
@@ -13600,7 +13600,7 @@
 												"Just in front of a massive mine track turntable that fills the junction, a body lies splayed on the rocky ground. Even at a distance, it's clear this miner died not from falling rubble, but from terrible slashing wounds."
 											]
 										},
-										"As the party approaches the turntable, characters who have a passive Wisdom ({@skill Perception}) score of 14 or higher hear skittering emanating from a nearby tunnel. Characters who have lower scores are {@quickref Surprise|PHB|3|0|surprised} when several many-legged creatures hurtle out of the northwest passage. These five {@creature Aurumvorax|JttRC|aurumvoraxes} (detailed in the \"{@area Aurumvoraxes|245|x}\" section at the end of this adventure) are hostile and rush to attack.",
+										"As the party approaches the turntable, characters who have a passive Wisdom ({@skill Perception}) score of 14 or higher hear skittering emanating from a nearby tunnel. Characters who have lower scores are {@status surprised} when several many-legged creatures hurtle out of the northwest passage. These five {@creature Aurumvorax|JttRC|aurumvoraxes} (detailed in the \"{@area Aurumvoraxes|245|x}\" section at the end of this adventure) are hostile and rush to attack.",
 										{
 											"type": "entries",
 											"name": "Track Turntable",
@@ -13705,7 +13705,7 @@
 									"page": 100,
 									"id": "22b",
 									"entries": [
-										"A tunnel dug by claws, not pick and shovel, extends from the easternmost of the newly dug caverns. As the characters approach, they hear sounds of movement from the large cavern beyond. This is the nest of the aurumvorax pack, including five {@creature Aurumvorax|JttRC|aurumvoraxes} and an {@creature aurumvorax den leader|JttRC} (detailed in the \"{@area Aurumvorax|246|x}\" section at the end of this adventure). Characters who want to sneak up on the aurumvoraxes can attempt a group DC 13 Dexterity ({@skill Stealth}) check. (Assume one prince succeeds at the check and the other fails, canceling each other out.) With a successful group check, the aurumvoraxes are {@quickref Surprise|PHB|3|0|surprised}.",
+										"A tunnel dug by claws, not pick and shovel, extends from the easternmost of the newly dug caverns. As the characters approach, they hear sounds of movement from the large cavern beyond. This is the nest of the aurumvorax pack, including five {@creature Aurumvorax|JttRC|aurumvoraxes} and an {@creature aurumvorax den leader|JttRC} (detailed in the \"{@area Aurumvorax|246|x}\" section at the end of this adventure). Characters who want to sneak up on the aurumvoraxes can attempt a group DC 13 Dexterity ({@skill Stealth}) check. (Assume one prince succeeds at the check and the other fails, canceling each other out.) With a successful group check, the aurumvoraxes are {@status surprised}.",
 										"When the characters enter the chamber, read the following description:",
 										{
 											"type": "insetReadaloud",

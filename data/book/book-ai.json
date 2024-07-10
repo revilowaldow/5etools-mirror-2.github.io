@@ -7139,7 +7139,7 @@
 											"name": "Ready to Fight",
 											"page": 214,
 											"entries": [
-												"This creature has advantage on attack rolls against any creature that is {@quickref Surprise|PHB|3|0|surprised}."
+												"This creature has advantage on attack rolls against any creature that is {@status surprised}."
 											],
 											"id": "189"
 										},

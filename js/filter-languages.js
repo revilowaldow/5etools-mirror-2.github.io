@@ -1,6 +1,6 @@
 "use strict";
 
-class PageFilterLanguages extends PageFilter {
+class PageFilterLanguages extends PageFilterBase {
 	constructor () {
 		super();
 

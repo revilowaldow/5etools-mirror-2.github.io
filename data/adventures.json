@@ -35624,7 +35624,1522 @@
 			},
 			"contents": [
 				{
-					"name": "Introduction"
+					"name": "Introduction: Ascend to Adventure",
+					"headers": [
+						"Using This Book"
+					]
+				},
+				{
+					"name": "The Infinite Staircase",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 1
+					},
+					"headers": [
+						"Staircase Features",
+						"The Iron Shadow",
+						"Traversing the Staircase",
+						"Nafas",
+						"Censer of Dreams",
+						"Staircase Adventures"
+					]
+				},
+				{
+					"name": "The Lost City",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 2
+					},
+					"headers": [
+						"Background",
+						"Adventure Summary",
+						"The Cynidiceans",
+						"Buried Ziggurat",
+						{
+							"depth": 1,
+							"header": "B1: Statue Room"
+						},
+						{
+							"depth": 1,
+							"header": "B2: Machinery Storeroom"
+						},
+						{
+							"depth": 1,
+							"header": "B3: Secret Room"
+						},
+						{
+							"depth": 1,
+							"header": "B4: Abandoned Priest's Quarters"
+						},
+						{
+							"depth": 1,
+							"header": "B5: Treasure Room of Gorm"
+						},
+						{
+							"depth": 1,
+							"header": "B6: Storage Room"
+						},
+						{
+							"depth": 1,
+							"header": "B7: Fireworks Storeroom"
+						},
+						{
+							"depth": 1,
+							"header": "B8: Abandoned Room"
+						},
+						{
+							"depth": 1,
+							"header": "B9: Abandoned Priest's Quarters"
+						},
+						{
+							"depth": 1,
+							"header": "B10: Abandoned Priest's Quarters"
+						},
+						{
+							"depth": 1,
+							"header": "B11: Barracks of Gorm"
+						},
+						{
+							"depth": 1,
+							"header": "B12: Grand Master of Gorm"
+						},
+						{
+							"depth": 1,
+							"header": "B13: Revolving Passage"
+						},
+						{
+							"depth": 1,
+							"header": "B14: Abandoned Ceremonial Chamber"
+						},
+						{
+							"depth": 1,
+							"header": "B15: Abandoned Storeroom"
+						},
+						{
+							"depth": 1,
+							"header": "B16: Secret Room"
+						},
+						{
+							"depth": 1,
+							"header": "B17: Abandoned Ceremonial Chamber"
+						},
+						{
+							"depth": 1,
+							"header": "B18: Chamber of Usamigaras"
+						},
+						{
+							"depth": 1,
+							"header": "B19: Mages' Quarters"
+						},
+						{
+							"depth": 1,
+							"header": "B20: Chief Mage's Quarters"
+						},
+						{
+							"depth": 1,
+							"header": "B21: Shifting Wall"
+						},
+						{
+							"depth": 1,
+							"header": "B22: Storeroom"
+						},
+						{
+							"depth": 1,
+							"header": "B23: Ceremonial Chamber of Madarua"
+						},
+						{
+							"depth": 1,
+							"header": "B24: Treasure Room of Madarua"
+						},
+						{
+							"depth": 1,
+							"header": "B25: Gymnasium of Madarua"
+						},
+						{
+							"depth": 1,
+							"header": "B26: Ceremonial Chamber of Gorm"
+						},
+						{
+							"depth": 1,
+							"header": "B27: Jester's Burial Room"
+						},
+						{
+							"depth": 1,
+							"header": "B28: High Priest's Burial Room"
+						},
+						{
+							"depth": 1,
+							"header": "B29: Ghostly Haunt"
+						},
+						{
+							"depth": 1,
+							"header": "B30: Guard Captain's Burial Room"
+						},
+						{
+							"depth": 1,
+							"header": "B31: Noble's Burial Room"
+						},
+						{
+							"depth": 1,
+							"header": "B32: Ankheg Den"
+						},
+						{
+							"depth": 1,
+							"header": "B33: Astrologer's Burial Room"
+						},
+						{
+							"depth": 1,
+							"header": "B34: Master Thief's Burial Room"
+						},
+						{
+							"depth": 1,
+							"header": "B35: Chamberlain's Burial Room"
+						},
+						{
+							"depth": 1,
+							"header": "B36: Slime Fountain"
+						},
+						{
+							"depth": 1,
+							"header": "B37: Embalming Room"
+						},
+						{
+							"depth": 1,
+							"header": "B38: Lady-in-Waiting's Burial Room"
+						},
+						{
+							"depth": 1,
+							"header": "B39: Councilor's Burial Room"
+						},
+						{
+							"depth": 1,
+							"header": "B40: Southwest Corridor"
+						},
+						{
+							"depth": 1,
+							"header": "B41: Tomb Annex"
+						},
+						{
+							"depth": 1,
+							"header": "B42: False Tomb"
+						},
+						{
+							"depth": 1,
+							"header": "B43: Queen Zanobis's Tomb"
+						},
+						{
+							"depth": 1,
+							"header": "B44: King Alendria's Tomb"
+						},
+						{
+							"depth": 1,
+							"header": "B45: Secret Room"
+						},
+						{
+							"depth": 1,
+							"header": "B46: Demetrius's Bedroom"
+						},
+						{
+							"depth": 1,
+							"header": "B47: Treasure Room"
+						},
+						{
+							"depth": 1,
+							"header": "B48: Kitchen and Dining Room"
+						},
+						{
+							"depth": 1,
+							"header": "B49: Living Room"
+						},
+						{
+							"depth": 1,
+							"header": "B50: Consultation Room"
+						},
+						{
+							"depth": 1,
+							"header": "B51: Pit Trap"
+						},
+						{
+							"depth": 1,
+							"header": "B52: Abandoned Clerical Quarters"
+						},
+						{
+							"depth": 1,
+							"header": "B53: Priests' Quarters"
+						},
+						{
+							"depth": 1,
+							"header": "B54: Storage Room"
+						},
+						{
+							"depth": 1,
+							"header": "B55: Hidden Guardroom"
+						},
+						{
+							"depth": 1,
+							"header": "B56: Temple"
+						},
+						{
+							"depth": 1,
+							"header": "B57: Entrance Hall"
+						},
+						{
+							"depth": 1,
+							"header": "B58: Acid Pit"
+						},
+						{
+							"depth": 1,
+							"header": "B59: Storage Room"
+						},
+						{
+							"depth": 1,
+							"header": "B60: Lobby"
+						},
+						{
+							"depth": 1,
+							"header": "B61: Party Room"
+						},
+						{
+							"depth": 1,
+							"header": "B62: Gambling Room"
+						},
+						{
+							"depth": 1,
+							"header": "B63: Darius's Office"
+						},
+						"Conclusion",
+						"Extending the Adventure",
+						{
+							"depth": 1,
+							"header": "B64: Mouth of Zargon"
+						},
+						{
+							"depth": 1,
+							"header": "B65: Ritual Chamber"
+						},
+						{
+							"depth": 1,
+							"header": "B66: Cultists' Quarters"
+						},
+						{
+							"depth": 1,
+							"header": "B67: Belly of the Beast"
+						},
+						{
+							"depth": 1,
+							"header": "B68: Spawning Chamber"
+						},
+						{
+							"depth": 1,
+							"header": "B69: Foul Chapel"
+						},
+						{
+							"depth": 1,
+							"header": "B70: Lair of Zargon"
+						}
+					]
+				},
+				{
+					"name": "When a Star Falls",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 3
+					},
+					"headers": [
+						"Background",
+						"Adventure Summary",
+						"Tegefed Mountains",
+						"Death on the Moors",
+						"Piyarz's Shadow",
+						"Cernant Valley",
+						{
+							"depth": 1,
+							"header": "H1: Yard"
+						},
+						{
+							"depth": 1,
+							"header": "H2: Antechamber"
+						},
+						{
+							"depth": 1,
+							"header": "H3: Hall"
+						},
+						{
+							"depth": 1,
+							"header": "H4: Derwyth's Room"
+						},
+						{
+							"depth": 1,
+							"header": "H5: Library and Workshop"
+						},
+						{
+							"depth": 1,
+							"header": "H6: Goat Barn"
+						},
+						{
+							"depth": 1,
+							"header": "H7: Food Storage"
+						},
+						"Derro Lair",
+						{
+							"depth": 1,
+							"header": "D1: Guardroom"
+						},
+						{
+							"depth": 1,
+							"header": "D2: Outer Cave"
+						},
+						{
+							"depth": 1,
+							"header": "D3: Inner Cave"
+						},
+						{
+							"depth": 1,
+							"header": "D4: Temple"
+						},
+						{
+							"depth": 1,
+							"header": "D5: Collapsed Tunnel"
+						},
+						{
+							"depth": 1,
+							"header": "D6: Stolen Goods"
+						},
+						{
+							"depth": 1,
+							"header": "D7: Overseer's Room"
+						},
+						{
+							"depth": 1,
+							"header": "D8: Ruins of the Great Hall"
+						},
+						{
+							"depth": 1,
+							"header": "D9: Hungry Lamia"
+						},
+						{
+							"depth": 1,
+							"header": "D10. Eastern Tunnel"
+						},
+						"Therno Lake",
+						{
+							"depth": 1,
+							"header": "L1: Beaver Dam"
+						},
+						{
+							"depth": 1,
+							"header": "L2: Lake"
+						},
+						{
+							"depth": 1,
+							"header": "L3: Beavers' Lodge"
+						},
+						{
+							"depth": 1,
+							"header": "L4: Hunters' Camp"
+						},
+						"Tower of the Heavens",
+						{
+							"depth": 1,
+							"header": "T1: Outpost"
+						},
+						{
+							"depth": 1,
+							"header": "T2: Hostel"
+						},
+						{
+							"depth": 1,
+							"header": "T3: Entrance Chamber"
+						},
+						{
+							"depth": 1,
+							"header": "T4: Questioner's Hall"
+						},
+						{
+							"depth": 1,
+							"header": "T5: Mimic Door"
+						},
+						{
+							"depth": 1,
+							"header": "T6: Mercenaries' Hall"
+						},
+						{
+							"depth": 1,
+							"header": "T7: Barrack"
+						},
+						{
+							"depth": 1,
+							"header": "T8: Storeroom"
+						},
+						{
+							"depth": 1,
+							"header": "T9: Kitchen"
+						},
+						{
+							"depth": 1,
+							"header": "T10: Trapped Hallway"
+						},
+						{
+							"depth": 1,
+							"header": "T11: Watchtowers"
+						},
+						{
+							"depth": 1,
+							"header": "T12: Lesser Library"
+						},
+						{
+							"depth": 1,
+							"header": "T13: Dormitory"
+						},
+						{
+							"depth": 1,
+							"header": "T14: Lurg's Room"
+						},
+						{
+							"depth": 1,
+							"header": "T15: Porro's Room"
+						},
+						{
+							"depth": 1,
+							"header": "T16: Cipolla's Room"
+						},
+						{
+							"depth": 1,
+							"header": "T17: Scholars' Hall"
+						},
+						{
+							"depth": 1,
+							"header": "T18: Piyarz's Room"
+						},
+						{
+							"depth": 1,
+							"header": "T19: Bridge of Faith"
+						},
+						{
+							"depth": 1,
+							"header": "T20: Greater Library"
+						},
+						{
+							"depth": 1,
+							"header": "T21: Labyrinth"
+						},
+						{
+							"depth": 1,
+							"header": "T22: Observatory"
+						},
+						"Forge of the Kagu-Svirfneblin",
+						{
+							"depth": 1,
+							"header": "F1: Misty Gulch"
+						},
+						{
+							"depth": 1,
+							"header": "F2: Lizard Pens"
+						},
+						{
+							"depth": 1,
+							"header": "F3: Outer Hall"
+						},
+						{
+							"depth": 1,
+							"header": "F4: Storerooms"
+						},
+						{
+							"depth": 1,
+							"header": "F5: Inner Hall"
+						},
+						{
+							"depth": 1,
+							"header": "F6: Dormitory"
+						},
+						{
+							"depth": 1,
+							"header": "F7: Treasury"
+						},
+						{
+							"depth": 1,
+							"header": "F8: Workshop"
+						},
+						{
+							"depth": 1,
+							"header": "F9: Shimmering Dome"
+						},
+						{
+							"depth": 1,
+							"header": "F10: Tunnel to the Underdark"
+						},
+						"Conclusion"
+					]
+				},
+				{
+					"name": "Beyond the Crystal Cave",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 4
+					},
+					"headers": [
+						"Background",
+						"Adventure Summary",
+						"Sybar",
+						"Cave of Echoes",
+						{
+							"depth": 1,
+							"header": "C1: Empty Cavern"
+						},
+						{
+							"depth": 1,
+							"header": "C2: Cavern of Echoes"
+						},
+						{
+							"depth": 1,
+							"header": "C3: Haunted Cavern"
+						},
+						{
+							"depth": 1,
+							"header": "C4: Living Mud Cavern"
+						},
+						{
+							"depth": 1,
+							"header": "C5: Stream Tunnel"
+						},
+						{
+							"depth": 1,
+							"header": "C6: Crystal Cave"
+						},
+						{
+							"depth": 1,
+							"header": "C7: Observation Parlor"
+						},
+						"Eternal Garden",
+						{
+							"depth": 1,
+							"header": "G1: Fairy Ring"
+						},
+						{
+							"depth": 1,
+							"header": "G2: Leprechaun Woods"
+						},
+						{
+							"depth": 1,
+							"header": "G3: Great Oak Tree"
+						},
+						{
+							"depth": 1,
+							"header": "G4: Endless River"
+						},
+						{
+							"depth": 1,
+							"header": "G5: Dryads' Woods"
+						},
+						{
+							"depth": 1,
+							"header": "G6: Satyrs' Forest"
+						},
+						{
+							"depth": 1,
+							"header": "G7: Chimera's Crag"
+						},
+						{
+							"depth": 1,
+							"header": "G8: Bears' Range"
+						},
+						{
+							"depth": 1,
+							"header": "G9: Fountain All Heal"
+						},
+						{
+							"depth": 1,
+							"header": "G10: Fairy Forest"
+						},
+						{
+							"depth": 1,
+							"header": "G11: Barkburrs' Grove"
+						},
+						{
+							"depth": 1,
+							"header": "G12: Treant's Stand"
+						},
+						{
+							"depth": 1,
+							"header": "G13: Cave of the Toads"
+						},
+						{
+							"depth": 1,
+							"header": "G14: Centaurs' Meadow"
+						},
+						{
+							"depth": 1,
+							"header": "G15: Unicorns' Meadow"
+						},
+						{
+							"depth": 1,
+							"header": "G16: Yellow Rose Arbor"
+						},
+						{
+							"depth": 1,
+							"header": "G17: Red Rose Arbor"
+						},
+						{
+							"depth": 1,
+							"header": "G18: Lake"
+						},
+						{
+							"depth": 1,
+							"header": "G19: Water Palace"
+						},
+						{
+							"depth": 1,
+							"header": "G20: The Gardener's Rest"
+						},
+						{
+							"depth": 1,
+							"header": "G21: Hedge Maze"
+						},
+						"Palace of Spires",
+						{
+							"depth": 1,
+							"header": "P1: Gatehouse"
+						},
+						{
+							"depth": 1,
+							"header": "P2: Walled Garden"
+						},
+						{
+							"depth": 1,
+							"header": "P3: Corner Bowers"
+						},
+						{
+							"depth": 1,
+							"header": "P4: Entrance Porch"
+						},
+						{
+							"depth": 1,
+							"header": "P5: Entrance Hall"
+						},
+						{
+							"depth": 1,
+							"header": "P6: Juliana and Orlando's Room"
+						},
+						{
+							"depth": 1,
+							"header": "P7: Argus and Hamish's Room"
+						},
+						{
+							"depth": 1,
+							"header": "P8: Gallery"
+						},
+						{
+							"depth": 1,
+							"header": "P9: Roof Gardens"
+						},
+						{
+							"depth": 1,
+							"header": "P10: Crystal Bridges"
+						},
+						{
+							"depth": 1,
+							"header": "P11: Upper Roof Garden"
+						},
+						{
+							"depth": 1,
+							"header": "P12: Tomb of Caerwyn and Porphura"
+						},
+						"Conclusion"
+					]
+				},
+				{
+					"name": "Pharaoh",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 5
+					},
+					"headers": [
+						"Background",
+						"Adventure Summary",
+						"Desert of Desolation",
+						"Pyramid of Amun Sa",
+						{
+							"depth": 1,
+							"header": "P1: Tomb Entrance"
+						},
+						{
+							"depth": 1,
+							"header": "P2: Main Worship Hall"
+						},
+						{
+							"depth": 1,
+							"header": "P3: West Offering Temple"
+						},
+						{
+							"depth": 1,
+							"header": "P4: East Offering Temple"
+						},
+						{
+							"depth": 1,
+							"header": "P5: West Storage Silo"
+						},
+						{
+							"depth": 1,
+							"header": "P6: East Storage Silo"
+						},
+						{
+							"depth": 1,
+							"header": "P7: Worship Room"
+						},
+						{
+							"depth": 1,
+							"header": "P8: Descending Corridor"
+						},
+						{
+							"depth": 1,
+							"header": "P9: Great Worship Room"
+						},
+						{
+							"depth": 1,
+							"header": "P10: Grand Hallway"
+						},
+						{
+							"depth": 1,
+							"header": "P11: Treasure Room"
+						},
+						{
+							"depth": 1,
+							"header": "P12: Tomb"
+						},
+						{
+							"depth": 1,
+							"header": "P13: Welcome Room"
+						},
+						{
+							"depth": 1,
+							"header": "P14: Mists and Corridors"
+						},
+						{
+							"depth": 1,
+							"header": "P15: Grieving Elves"
+						},
+						{
+							"depth": 1,
+							"header": "P16: Knock, Knock"
+						},
+						{
+							"depth": 1,
+							"header": "P17: Rug Room"
+						},
+						{
+							"depth": 1,
+							"header": "P18: Well of Questions"
+						},
+						{
+							"depth": 1,
+							"header": "P19: Spear Room"
+						},
+						{
+							"depth": 1,
+							"header": "P20: X-Room"
+						},
+						{
+							"depth": 1,
+							"header": "P21: Pendulum Room"
+						},
+						{
+							"depth": 1,
+							"header": "P22: Minotaur Lair"
+						},
+						{
+							"depth": 1,
+							"header": "P23: Darkness Room"
+						},
+						{
+							"depth": 1,
+							"header": "P24: Robber Press"
+						},
+						{
+							"depth": 1,
+							"header": "P25: Suspiciously Empty Room"
+						},
+						{
+							"depth": 1,
+							"header": "P26: Pole Forest"
+						},
+						{
+							"depth": 1,
+							"header": "P27: Flameskull Room"
+						},
+						{
+							"depth": 1,
+							"header": "P28: Loose Ceiling"
+						},
+						{
+							"depth": 1,
+							"header": "P29: Waterway"
+						},
+						{
+							"depth": 1,
+							"header": "P30: North Entry"
+						},
+						{
+							"depth": 1,
+							"header": "P31: Long Hall"
+						},
+						{
+							"depth": 1,
+							"header": "P32: Garden Hall"
+						},
+						{
+							"depth": 1,
+							"header": "P33: Dome of Flight"
+						},
+						{
+							"depth": 1,
+							"header": "P34: Gazelle-Headed Statue"
+						},
+						{
+							"depth": 1,
+							"header": "P35: Tortoise-Headed Statue"
+						},
+						{
+							"depth": 1,
+							"header": "P36: West Chamber"
+						},
+						{
+							"depth": 1,
+							"header": "P37: East Chamber"
+						},
+						{
+							"depth": 1,
+							"header": "P38: West Hall"
+						},
+						{
+							"depth": 1,
+							"header": "P39: East Hall"
+						},
+						{
+							"depth": 1,
+							"header": "P40: West Kitchen"
+						},
+						{
+							"depth": 1,
+							"header": "P41: West Pantry"
+						},
+						{
+							"depth": 1,
+							"header": "P42: East Kitchen"
+						},
+						{
+							"depth": 1,
+							"header": "P43: East Pantry"
+						},
+						{
+							"depth": 1,
+							"header": "P44: March of the True Faith"
+						},
+						{
+							"depth": 1,
+							"header": "P45: North Priesthood Cells"
+						},
+						{
+							"depth": 1,
+							"header": "P46: West Closet"
+						},
+						{
+							"depth": 1,
+							"header": "P47: West Cell of the High Priest"
+						},
+						{
+							"depth": 1,
+							"header": "P48: Priest Catacombs"
+						},
+						{
+							"depth": 1,
+							"header": "P49: East Closet"
+						},
+						{
+							"depth": 1,
+							"header": "P50: East Cell of the High Priest"
+						},
+						{
+							"depth": 1,
+							"header": "P51: South Priesthood Cells"
+						},
+						{
+							"depth": 1,
+							"header": "P52: Prayer Temple of the Priesthood"
+						},
+						{
+							"depth": 1,
+							"header": "P53: Observation Domes"
+						},
+						{
+							"depth": 1,
+							"header": "P54: Prit's Tunnel"
+						},
+						{
+							"depth": 1,
+							"header": "P55: Entry Corridor"
+						},
+						{
+							"depth": 1,
+							"header": "P56: Gauntlet of the True Way"
+						},
+						{
+							"depth": 1,
+							"header": "P57: Pillar of Athis"
+						},
+						{
+							"depth": 1,
+							"header": "P58: Reading Room"
+						},
+						{
+							"depth": 1,
+							"header": "P59: Stagnant Pool"
+						},
+						{
+							"depth": 1,
+							"header": "P60: Sitting Room"
+						},
+						{
+							"depth": 1,
+							"header": "P61: Dining Room"
+						},
+						{
+							"depth": 1,
+							"header": "P62: Storage Room"
+						},
+						{
+							"depth": 1,
+							"header": "P63: Burial Chamber"
+						},
+						{
+							"depth": 1,
+							"header": "P64: Heart's Lair"
+						},
+						{
+							"depth": 1,
+							"header": "P65: The Pharaoh's True Way"
+						},
+						{
+							"depth": 1,
+							"header": "P66: Treasury of the Pharaohs"
+						},
+						{
+							"depth": 1,
+							"header": "P67: Floating Boat"
+						},
+						{
+							"depth": 1,
+							"header": "P68: The Pharaoh's Tomb"
+						},
+						"Conclusion"
+					]
+				},
+				{
+					"name": "The Lost Caverns of Tsojcanth",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 6
+					},
+					"headers": [
+						"Background",
+						"Adventure Summary",
+						"Starting the Adventure",
+						"Yatil Mountains",
+						"Lost Caverns",
+						{
+							"depth": 1,
+							"header": "L1: Entry Caverns"
+						},
+						{
+							"depth": 1,
+							"header": "L2: Streaked Cave"
+						},
+						{
+							"depth": 1,
+							"header": "L3: Slate Chamber"
+						},
+						{
+							"depth": 1,
+							"header": "L4: Guano-Covered Cave"
+						},
+						{
+							"depth": 1,
+							"header": "L5: Littered Cave"
+						},
+						{
+							"depth": 1,
+							"header": "L6: Grotto"
+						},
+						{
+							"depth": 1,
+							"header": "L7: Fungal Cavern"
+						},
+						{
+							"depth": 1,
+							"header": "L8: Slimy Cavern"
+						},
+						{
+							"depth": 1,
+							"header": "L9: Stinking Cave"
+						},
+						{
+							"depth": 1,
+							"header": "L10: Bat Corridor"
+						},
+						{
+							"depth": 1,
+							"header": "L11: Long Gallery"
+						},
+						{
+							"depth": 1,
+							"header": "L12: Fomorian Cave"
+						},
+						{
+							"depth": 1,
+							"header": "L13: River Ledge"
+						},
+						{
+							"depth": 1,
+							"header": "L14: Underground Lake"
+						},
+						{
+							"depth": 1,
+							"header": "L15: Basilisk Den"
+						},
+						{
+							"depth": 1,
+							"header": "L16: Rainbow Cavern"
+						},
+						{
+							"depth": 1,
+							"header": "L17: Boulder Heap"
+						},
+						{
+							"depth": 1,
+							"header": "L18: Lavish Parlor"
+						},
+						{
+							"depth": 1,
+							"header": "L19: Black-Water Lake"
+						},
+						{
+							"depth": 1,
+							"header": "L20: Cave of Crystals"
+						},
+						{
+							"depth": 1,
+							"header": "L21: Pool Cavern"
+						},
+						{
+							"depth": 1,
+							"header": "G1: Warren Tunnels"
+						},
+						{
+							"depth": 1,
+							"header": "G2: Cavern of Corpses"
+						},
+						{
+							"depth": 1,
+							"header": "G3: Great Gallery"
+						},
+						{
+							"depth": 1,
+							"header": "G4: Rolling Gallery"
+						},
+						{
+							"depth": 1,
+							"header": "G5: Tilted Cavern"
+						},
+						{
+							"depth": 1,
+							"header": "G6: Small Gallery"
+						},
+						{
+							"depth": 1,
+							"header": "G7: Smooth Cavern"
+						},
+						{
+							"depth": 1,
+							"header": "G8: Cavern of Stalagmites"
+						},
+						{
+							"depth": 1,
+							"header": "G9: Glowing Grotto"
+						},
+						{
+							"depth": 1,
+							"header": "G10: Jagged Cavern"
+						},
+						{
+							"depth": 1,
+							"header": "G11: Cave of the Skull"
+						},
+						{
+							"depth": 1,
+							"header": "G12: Pillared Cavern"
+						},
+						{
+							"depth": 1,
+							"header": "G13: Rotting Fungus Cavern"
+						},
+						{
+							"depth": 1,
+							"header": "G14: Giant Lair"
+						},
+						{
+							"depth": 1,
+							"header": "G15: Fungus Garden"
+						},
+						{
+							"depth": 1,
+							"header": "G16: Lofty Cavern"
+						},
+						{
+							"depth": 1,
+							"header": "G17: Sanctuary Cavern"
+						},
+						{
+							"depth": 1,
+							"header": "G18: Grotto of the Idol"
+						},
+						{
+							"depth": 1,
+							"header": "G19: Vestibules"
+						},
+						{
+							"depth": 1,
+							"header": "G20: Vestibule Destinations"
+						},
+						{
+							"depth": 1,
+							"header": "G21: Inner Sphere"
+						},
+						"Conclusion"
+					]
+				},
+				{
+					"name": "Expedition to the Barrier Peaks",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 7
+					},
+					"headers": [
+						"Background",
+						"Adventure Summary",
+						"Artificial Antagonist",
+						"The Spaceship",
+						{
+							"depth": 1,
+							"header": "S1: Entrance"
+						},
+						{
+							"depth": 1,
+							"header": "S2: Drop Tubes (Blue)"
+						},
+						{
+							"depth": 1,
+							"header": "S3: Battered Repair Bot"
+						},
+						{
+							"depth": 1,
+							"header": "S4: Dining Rooms"
+						},
+						{
+							"depth": 1,
+							"header": "S5: Kitchens"
+						},
+						{
+							"depth": 1,
+							"header": "S6: Security Checkpoint"
+						},
+						{
+							"depth": 1,
+							"header": "S7: Berserk Android"
+						},
+						{
+							"depth": 1,
+							"header": "S8: Lounges"
+						},
+						{
+							"depth": 1,
+							"header": "S9: Meeting Rooms"
+						},
+						{
+							"depth": 1,
+							"header": "S10: Art Workshop"
+						},
+						{
+							"depth": 1,
+							"header": "S11: Treatment Room (Yellow)"
+						},
+						{
+							"depth": 1,
+							"header": "S12: Recreation Areas"
+						},
+						{
+							"depth": 1,
+							"header": "S13: Irradiated Rooms"
+						},
+						{
+							"depth": 1,
+							"header": "S14: Game Room"
+						},
+						{
+							"depth": 1,
+							"header": "S15: Fungal Corridor"
+						},
+						{
+							"depth": 1,
+							"header": "S16: Northern Vegepygmy Colony (Blue)"
+						},
+						{
+							"depth": 1,
+							"header": "S17: Will-o'-Wisps (Violet)"
+						},
+						{
+							"depth": 1,
+							"header": "S18: Operating Theater (Yellow)"
+						},
+						{
+							"depth": 1,
+							"header": "S19: Commander's Quarters (Platinum)"
+						},
+						{
+							"depth": 1,
+							"header": "S20: Security Chief's Quarters (Red)"
+						},
+						{
+							"depth": 1,
+							"header": "S21: Junk Pile"
+						},
+						{
+							"depth": 1,
+							"header": "S22: Southern Vegepygmy Colony (Violet)"
+						},
+						{
+							"depth": 1,
+							"header": "S23: Medical Clinic"
+						},
+						{
+							"depth": 1,
+							"header": "S24: Laboratories (Yellow)"
+						},
+						{
+							"depth": 1,
+							"header": "S25: Library"
+						},
+						{
+							"depth": 1,
+							"header": "S26: Security HQ (Red)"
+						},
+						{
+							"depth": 1,
+							"header": "S27: Chief Security Office (Red)"
+						},
+						{
+							"depth": 1,
+							"header": "S28: Armory (Platinum)"
+						},
+						{
+							"depth": 1,
+							"header": "S29: Storage (Red)"
+						},
+						{
+							"depth": 1,
+							"header": "S30: Computer Room (Platinum)"
+						},
+						{
+							"depth": 1,
+							"header": "S31: Drop Tubes (Violet)"
+						},
+						{
+							"depth": 1,
+							"header": "S32: Robot Stations (Violet)"
+						},
+						{
+							"depth": 1,
+							"header": "S33: Cargo Holds (Violet)"
+						},
+						{
+							"depth": 1,
+							"header": "S34: Viewers"
+						},
+						{
+							"depth": 1,
+							"header": "S35: Theater"
+						},
+						{
+							"depth": 1,
+							"header": "S36: Kitchens"
+						},
+						{
+							"depth": 1,
+							"header": "S37: Lounge"
+						},
+						{
+							"depth": 1,
+							"header": "S38: Invasive Plants"
+						},
+						{
+							"depth": 1,
+							"header": "S39: Irradiated Rooms"
+						},
+						{
+							"depth": 1,
+							"header": "S40: Gymnasium"
+						},
+						{
+							"depth": 1,
+							"header": "S41: Workout Room"
+						},
+						{
+							"depth": 1,
+							"header": "S42: Medical Storage (Yellow)"
+						},
+						{
+							"depth": 1,
+							"header": "S43: Whirlpools"
+						},
+						{
+							"depth": 1,
+							"header": "S44: Swimming Pool"
+						},
+						{
+							"depth": 1,
+							"header": "S45: Dance Club"
+						},
+						{
+							"depth": 1,
+							"header": "S46: Cocktail Lounge"
+						},
+						{
+							"depth": 1,
+							"header": "S47: Drop Tubes (Green)"
+						},
+						{
+							"depth": 1,
+							"header": "S48: Feed Storage (Green)"
+						},
+						{
+							"depth": 1,
+							"header": "S49: Dangerous Animals Exhibit (Violet)"
+						},
+						{
+							"depth": 1,
+							"header": "S50: Crew Room (Green)"
+						},
+						{
+							"depth": 1,
+							"header": "S51: Astral View Lounge"
+						},
+						{
+							"depth": 1,
+							"header": "S52: Garden Maintenance (Green)"
+						},
+						{
+							"depth": 1,
+							"header": "S53: Deadly Plants Exhibit (Violet)"
+						},
+						{
+							"depth": 1,
+							"header": "S54: Climate Control Room (Green)"
+						},
+						{
+							"depth": 1,
+							"header": "S55: Deadly Reptiles Exhibit (Violet)"
+						},
+						{
+							"depth": 1,
+							"header": "S56: Outer Garden (Green)"
+						},
+						{
+							"depth": 1,
+							"header": "S57: Inner Garden (Green)"
+						},
+						{
+							"depth": 1,
+							"header": "S58: Swamp"
+						},
+						{
+							"depth": 1,
+							"header": "S59: Lake"
+						},
+						{
+							"depth": 1,
+							"header": "S60: Islet Enclosure (Green)"
+						},
+						{
+							"depth": 1,
+							"header": "S61: Server Room (Green)"
+						},
+						{
+							"depth": 1,
+							"header": "S62: Commander's Bones"
+						},
+						{
+							"depth": 1,
+							"header": "S63: Wheelie Sleds"
+						},
+						{
+							"depth": 1,
+							"header": "S64: Stasis Chamber (Green)"
+						},
+						{
+							"depth": 1,
+							"header": "S65: Irradiated Rooms"
+						},
+						{
+							"depth": 1,
+							"header": "S66: Hull Breach"
+						},
+						"Conclusion"
+					]
+				},
+				{
+					"name": "Magic Items and Technology",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": "A"
+					},
+					"headers": [
+						"Magic Items",
+						"Technology"
+					]
+				},
+				{
+					"name": "Creatures",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": "B"
+					},
+					"headers": [
+						"Android",
+						"Barkburr",
+						"Derro",
+						"Drelnza",
+						"Froghemoth Elder",
+						"The Gardener",
+						"Gibberling",
+						"Guardians of Gorm",
+						"Horrid Plant",
+						"Leprechaun",
+						"Mages of Usamigaras",
+						"Maschin-i-Bozorg",
+						"Memory Web",
+						"Nafas",
+						"Nafik",
+						"Pech",
+						"Robots",
+						"Sion",
+						"Tower Stewards",
+						"Vegepygmies",
+						"Warriors of Madarua",
+						"Wolf-in-Sheep's-Clothing",
+						"Zargon the Returner",
+						"Index of Stat Blocks"
+					]
+				},
+				{
+					"name": "Credits"
 				}
 			]
 		}

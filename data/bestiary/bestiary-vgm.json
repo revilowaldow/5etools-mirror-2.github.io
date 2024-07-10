@@ -3522,7 +3522,7 @@
 					"name": "Death Gaze",
 					"entries": [
 						"When a creature that can see the bodak's eyes starts its turn within 30 feet of the bodak, the bodak can force it to make a {@dc 13} Constitution saving throw if the bodak isn't {@condition incapacitated} and can see the creature. If the saving throw fails by 5 or more, the creature is reduced to 0 hit points, unless it is immune to the {@condition frightened} condition. Otherwise, a creature takes 16 ({@damage 3d10}) psychic damage on a failed save.",
-						"Unless {@quickref Surprise|PHB|3|0|surprised}, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it has disadvantage on attack rolls against the bodak until the start of its next turn. If the creature looks at the bodak in the meantime, it must immediately make the saving throw."
+						"Unless {@status surprised}, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it has disadvantage on attack rolls against the bodak until the start of its next turn. If the creature looks at the bodak in the meantime, it must immediately make the saving throw."
 					]
 				},
 				{
@@ -8460,7 +8460,8 @@
 				"path": "bestiary/gazer.mp3"
 			},
 			"traitTags": [
-				"Aggressive"
+				"Aggressive",
+				"Mimicry"
 			],
 			"senseTags": [
 				"D"
@@ -12265,6 +12266,7 @@
 			},
 			"traitTags": [
 				"Keen Senses",
+				"Mimicry",
 				"Rampage"
 			],
 			"senseTags": [
@@ -15107,7 +15109,7 @@
 				{
 					"name": "Slayer",
 					"entries": [
-						"In the first round of a combat, the orc has advantage on attack rolls against any creature that hasn't taken a turn yet. If the orc hits a creature that round who was {@quickref Surprise|PHB|3|0|surprised}, the hit is automatically a critical hit."
+						"In the first round of a combat, the orc has advantage on attack rolls against any creature that hasn't taken a turn yet. If the orc hits a creature that round who was {@status surprised}, the hit is automatically a critical hit."
 					]
 				}
 			],
@@ -16323,7 +16325,7 @@
 				{
 					"name": "Ambusher",
 					"entries": [
-						"In the first round of a combat, the slithering tracker has advantage on attack rolls against any creature it {@quickref Surprise|PHB|3|0|surprised}."
+						"In the first round of a combat, the slithering tracker has advantage on attack rolls against any creature it {@status surprised}."
 					]
 				},
 				{
@@ -16525,6 +16527,7 @@
 				"S"
 			],
 			"miscTags": [
+				"DIS",
 				"MW"
 			],
 			"savingThrowForced": [
@@ -17244,6 +17247,7 @@
 				"P"
 			],
 			"miscTags": [
+				"DIS",
 				"MW"
 			],
 			"hasToken": true,
@@ -18318,6 +18322,7 @@
 				"P"
 			],
 			"miscTags": [
+				"CUR",
 				"MW"
 			],
 			"conditionInflict": [

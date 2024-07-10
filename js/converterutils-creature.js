@@ -299,7 +299,7 @@ class AcConvert {
 			case "half-plate": return "{@item half plate armor|phb}";
 
 			case "scale armor": return "{@item scale mail|phb}";
-			case "splint armor": return "{@item splint mail|phb}";
+			case "splint armor": return "{@item splint armor|phb}";
 			case "chain shirt": return "{@item chain shirt|phb}";
 			case "shields": return "{@item shield|phb|shields}";
 
@@ -741,6 +741,8 @@ class TraitActionTag {
 			"tunneler": "Tunneler",
 
 			"beast of burden": "Beast of Burden",
+
+			"mimicry": "Mimicry",
 		},
 		action: {
 			"multiattack": "Multiattack",
@@ -1271,10 +1273,13 @@ class MiscTag {
 	static _THROWN_WEAPON_MATCHERS = null;
 
 	static _IS_INIT = false;
+	static _WALKER = null;
 
 	static init ({items}) {
 		if (this._IS_INIT) return;
 		this._IS_INIT = true;
+
+		this._WALKER = MiscUtil.getWalker({isNoModification: true, keyBlocklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLOCKLIST});
 
 		const weaponsBase = items
 			.filter(it => it._category === "Basic" && (it.type === "M" || it.type === "W"));
@@ -1292,6 +1297,8 @@ class MiscTag {
 			.map(it => new RegExp(`(^|\\W)(${it.name.escapeRegexp()})(\\W|$)`, "gi"));
 	}
 
+	/* -------------------------------------------- */
+
 	/** @return empty string for easy use in `.replace` */
 	static _addTag ({tagSet, allowlistTags, tag}) {
 		if (allowlistTags != null && !allowlistTags.has(tag)) return "";
@@ -1299,67 +1306,190 @@ class MiscTag {
 		return "";
 	}
 
+	/* -------------------------------------------- */
+
 	static _handleProp ({m, prop, tagSet, allowlistTags}) {
 		if (!m[prop]) return;
 
-		m[prop].forEach(it => {
-			let hasRangedAttack = false;
-
-			const strEntries = it.entries ? JSON.stringify(it.entries, null, "\t") : null;
-
-			if (strEntries) {
-				// Weapon attacks
-				// - any melee/ranged attack
-				strEntries.replace(/{@atk ([^}]+)}/g, (...mx) => {
-					const spl = mx[1].split(",");
-					if (spl.includes("rw")) {
-						this._addTag({tagSet, allowlistTags, tag: "RW"});
-						hasRangedAttack = true;
-					}
-					if (spl.includes("mw")) this._addTag({tagSet, allowlistTags, tag: "MW"});
-				});
-
-				// - reach
-				strEntries.replace(/reach (\d+) ft\./g, (...m) => {
-					if (Number(m[1]) > 5) this._addTag({tagSet, allowlistTags, tag: "RCH"});
-				});
-
-				// AoE effects
-				strEntries.replace(/\d+-foot[- ](line|cube|cone|radius|sphere|hemisphere|cylinder)/g, () => this._addTag({tagSet, allowlistTags, tag: "AOE"}));
-				strEntries.replace(/each creature within \d+ feet/gi, () => this._addTag({tagSet, allowlistTags, tag: "AOE"}));
-
-				strEntries.replace(/\bhit point maximum is reduced\b/gi, () => this._addTag({tagSet, allowlistTags, tag: "HPR"}));
-			}
-
-			if (it.name) {
-				// Melee weapons
-				// Ranged weapon
-				[
-					{res: this._MELEE_WEAPON_MATCHERS, tag: "MLW"},
-					{res: this._RANGED_WEAPON_MATCHERS, tag: "RNG"},
-				]
-					.forEach(({res, tag}) => {
-						res
-							.forEach(re => {
-								it.name
-									.replace(re, () => {
-										const mAtk = /{@atk ([^}]+)}/.exec(strEntries || "");
-										if (mAtk) {
-											const spl = mAtk[1].split(",");
-											// Avoid adding the "ranged attack" tag for spell attacks
-											if (spl.includes("rs")) return "";
-										}
-										this._addTag({tagSet, allowlistTags, tag});
-										return "";
-									});
-							});
-					});
-
-				// Thrown weapon
-				if (hasRangedAttack) this._THROWN_WEAPON_MATCHERS.forEach(r => it.name.replace(r, () => this._addTag({tagSet, allowlistTags, tag: "THW"})));
-			}
+		m[prop].forEach(subEntry => {
+			this._handleProp_attacks({subEntry, tagSet, allowlistTags});
+			this._handleProp_curse({subEntry, tagSet, allowlistTags});
+			this._handleProp_disease({subEntry, tagSet, allowlistTags});
+			this._handleProp_other({subEntry, tagSet, allowlistTags});
 		});
 	}
+
+	/* --------------------- */
+
+	static _handleProp_attacks (
+		{
+			subEntry,
+			tagSet,
+			allowlistTags,
+		},
+	) {
+		let hasRangedAttack = false;
+
+		// Weapon attacks
+		this._WALKER.walk(
+			subEntry.entries,
+			{
+				string: (str) => {
+					// - any melee/ranged attack
+					str
+						.replace(/{@atk ([^}]+)}/g, (...mx) => {
+							const spl = mx[1].split(",");
+
+							if (spl.includes("rw")) {
+								this._addTag({tagSet, allowlistTags, tag: "RW"});
+								hasRangedAttack = true;
+							}
+
+							if (spl.includes("mw")) this._addTag({tagSet, allowlistTags, tag: "MW"});
+						});
+
+					// - reach
+					str
+						.replace(/reach (\d+) ft\./g, (...m) => {
+							if (Number(m[1]) > 5) this._addTag({tagSet, allowlistTags, tag: "RCH"});
+						});
+				},
+			},
+		);
+
+		if (!subEntry.name) return;
+
+		// Melee weapons
+		// Ranged weapon
+		[
+			{res: this._MELEE_WEAPON_MATCHERS, tag: "MLW"},
+			{res: this._RANGED_WEAPON_MATCHERS, tag: "RNG"},
+		]
+			.forEach(({res, tag}) => {
+				res
+					.forEach(re => {
+						if (!re.test(subEntry.name)) return;
+
+						this._WALKER.walk(
+							subEntry.entries,
+							{
+								string: (str) => {
+									const mAtk = /{@atk ([^}]+)}/.exec(str || "");
+									if (mAtk) {
+										const spl = mAtk[1].split(",");
+										// Avoid adding the "ranged attack" tag for spell attacks
+										if (spl.includes("rs")) return "";
+									}
+									this._addTag({tagSet, allowlistTags, tag});
+									return "";
+								},
+							},
+						);
+					});
+			});
+
+		// Thrown weapon
+		if (hasRangedAttack) this._THROWN_WEAPON_MATCHERS.forEach(r => subEntry.name.replace(r, () => this._addTag({tagSet, allowlistTags, tag: "THW"})));
+	}
+
+	/* --------------------- */
+
+	static _handleProp_curse (
+		{
+			subEntry,
+			tagSet,
+			allowlistTags,
+		},
+	) {
+		this._WALKER.walk(
+			subEntry.entries,
+			{
+				string: (str) => {
+					const strClean = str
+						.replace(/{@spell bestow curse[^}]+}/gi, " - ") // Ignore the spell; it already has a dedicated filter
+					;
+
+					const isCurseLine = /\bbe(?:comes)? cursed\b/.test(strClean)
+						|| /\bis cursed\b/.test(strClean)
+					;
+
+					if (!isCurseLine) return;
+
+					// Treat "curses" with limited durations as generic combat effects, rather than real curses
+					const isLimitedDuration = /\bfor \d+ (turn|round|minute)s?\b/i.test(strClean)
+						|| /\bfor 1 hour\b/i.test(strClean) // Consider e.g. "24 hours" sufficient time
+						|| /\bnext turn\b/i.test(strClean)
+					;
+
+					if (isLimitedDuration) return false;
+
+					this._addTag({tagSet, allowlistTags, tag: "CUR"});
+				},
+			},
+		);
+	}
+
+	/* --------------------- */
+
+	static _RES_DISEASE = [
+		/\bbecome diseased\b/i,
+		/\binfected with a disease\b/i,
+
+		/\binfected with the [^.!?]+ disease\b/i,
+
+		/\bsuffer the [^.!?]+ disease\b/i,
+
+		/\bcontract a disease\b/i,
+		/\bcontract the [^.!?]+ disease\b/i,
+
+		/\bsaving throw against disease\b/i,
+
+		/\bany effect that cures disease\b/i,
+		/\buntil the disease is cured\b/i,
+	];
+
+	static _handleProp_disease (
+		{
+			subEntry,
+			tagSet,
+			allowlistTags,
+		},
+	) {
+		this._WALKER.walk(
+			subEntry.entries,
+			{
+				string: (str) => {
+					if (this._RES_DISEASE.some(re => re.test(str))) this._addTag({tagSet, allowlistTags, tag: "DIS"});
+				},
+			},
+		);
+	}
+
+	/* --------------------- */
+
+	static _handleProp_other (
+		{
+			subEntry,
+			tagSet,
+			allowlistTags,
+		},
+	) {
+		this._WALKER.walk(
+			subEntry.entries,
+			{
+				string: (str) => {
+					// AoE effects
+					str.replace(/\d+-foot[- ](line|cube|cone|radius|sphere|hemisphere|cylinder)/g, () => this._addTag({tagSet, allowlistTags, tag: "AOE"}));
+					str.replace(/each creature within \d+ feet/gi, () => this._addTag({tagSet, allowlistTags, tag: "AOE"}));
+
+					// Hit point max reduction
+					str.replace(/\bhit point maximum is reduced\b/gi, () => this._addTag({tagSet, allowlistTags, tag: "HPR"}));
+				},
+			},
+		);
+	}
+
+	/* -------------------------------------------- */
 
 	static tryRun (m, {isAdditiveOnly = false, allowlistTags = null} = {}) {
 		const tagSet = new Set(isAdditiveOnly ? m.miscTags || [] : []);

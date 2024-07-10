@@ -2955,7 +2955,7 @@
 														"Ineptly painted portraits of {@creature Murgaxor|SCC} hang on the walls of this shadowy cave. Stairs cut into the north wall lead down to a lower level."
 													]
 												},
-												"Four {@creature Shadow Demon||shadow demons} hide in the shadows of this cave. They attack visitors who aren't accompanied by {@creature Murgaxor|SCC} or {@creature Y'demi|SCC}. Characters who have a passive Wisdom ({@skill Perception}) score of 17 or higher spot the shadow demons before they attack and aren't {@quickref Surprise|PHB|3|0|surprised} by them.",
+												"Four {@creature Shadow Demon||shadow demons} hide in the shadows of this cave. They attack visitors who aren't accompanied by {@creature Murgaxor|SCC} or {@creature Y'demi|SCC}. Characters who have a passive Wisdom ({@skill Perception}) score of 17 or higher spot the shadow demons before they attack and aren't {@status surprised} by them.",
 												"The stairs in the north wall lead down to areas U1 through U4, detailed later in the \"{@adventure Underground Cave|SCC-ARiR|0|Underground Cave}\" section."
 											]
 										},
@@ -3082,7 +3082,7 @@
 													"page": 171,
 													"id": "3f2",
 													"entries": [
-														"A character who searches the north wall of the cave and succeeds on a DC 15 Wisdom ({@skill Perception}) check finds a door disguised to blend with the surrounding stone. This 5-foot-wide, 10-foot-tall stone door pulls open to reveal an unlit room containing a pair of hostile {@creature Black Pudding||black puddings}. The puddings spill out and attack as soon as the secret door is opened. Unless the characters were able to see into the room (with the aid of a {@spell clairvoyance} spell or similar magic) before opening the door, they are {@quickref Surprise|PHB|3|0|surprised} at the start of this encounter."
+														"A character who searches the north wall of the cave and succeeds on a DC 15 Wisdom ({@skill Perception}) check finds a door disguised to blend with the surrounding stone. This 5-foot-wide, 10-foot-tall stone door pulls open to reveal an unlit room containing a pair of hostile {@creature Black Pudding||black puddings}. The puddings spill out and attack as soon as the secret door is opened. Unless the characters were able to see into the room (with the aid of a {@spell clairvoyance} spell or similar magic) before opening the door, they are {@status surprised} at the start of this encounter."
 													]
 												}
 											]

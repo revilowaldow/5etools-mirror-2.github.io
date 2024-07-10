@@ -56,8 +56,6 @@ class CharCreationOptionsPage extends ListPage {
 			pageFilter,
 
 			dataProps: ["charoption"],
-
-			isMarkdownPopout: true,
 		});
 	}
 
@@ -73,7 +71,7 @@ class CharCreationOptionsPage extends ListPage {
 		eleLi.innerHTML = `<a href="#${hash}" class="lst--border lst__row-inner">
 			<span class="ve-col-5 ve-text-center pl-0">${it._fOptionType}</span>
 			<span class="bold ve-col-5">${it.name}</span>
-			<span class="ve-col-2 ve-text-center ${Parser.sourceJsonToColor(it.source)}" title="${Parser.sourceJsonToFull(it.source)} pr-0" ${Parser.sourceJsonToStyle(it.source)}>${source}</span>
+			<span class="ve-col-2 ve-text-center ${Parser.sourceJsonToSourceClassname(it.source)}" title="${Parser.sourceJsonToFull(it.source)} pr-0" ${Parser.sourceJsonToStyle(it.source)}>${source}</span>
 		</a>`;
 
 		const listItem = new ListItem(

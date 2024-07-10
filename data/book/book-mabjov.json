@@ -515,8 +515,8 @@
 										"type": "internal",
 										"path": "book/MaBJoV/033.webp"
 									},
-									"width": 1844,
-									"height": 2387,
+									"width": 1774,
+									"height": 2295,
 									"grid": {
 										"type": "none"
 									},
@@ -535,8 +535,8 @@
 										"type": "none"
 									},
 									"title": "Player Version",
-									"width": 2400,
-									"height": 3256,
+									"width": 1661,
+									"height": 2150,
 									"mapParent": {
 										"id": "017",
 										"autoScale": true
@@ -1246,8 +1246,8 @@
 												"type": "internal",
 												"path": "book/MaBJoV/035.webp"
 											},
-											"width": 1844,
-											"height": 2387,
+											"width": 1773,
+											"height": 2296,
 											"grid": {
 												"type": "none"
 											},
@@ -1266,8 +1266,8 @@
 												"type": "none"
 											},
 											"title": "Player Version",
-											"width": 2400,
-											"height": 3256,
+											"width": 1663,
+											"height": 2153,
 											"mapParent": {
 												"id": "040",
 												"autoScale": true
@@ -1987,8 +1987,8 @@
 										"type": "internal",
 										"path": "book/MaBJoV/034.webp"
 									},
-									"width": 1844,
-									"height": 2387,
+									"width": 1773,
+									"height": 2294,
 									"grid": {
 										"type": "none"
 									},
@@ -2007,8 +2007,8 @@
 										"type": "none"
 									},
 									"title": "Player Version",
-									"width": 2400,
-									"height": 3256,
+									"width": 1663,
+									"height": 2152,
 									"mapParent": {
 										"id": "067",
 										"autoScale": true
@@ -2846,8 +2846,8 @@
 												"type": "internal",
 												"path": "book/MaBJoV/036.webp"
 											},
-											"width": 1844,
-											"height": 2387,
+											"width": 1773,
+											"height": 2294,
 											"grid": {
 												"type": "none"
 											},
@@ -2866,8 +2866,8 @@
 												"type": "none"
 											},
 											"title": "Player Version",
-											"width": 2400,
-											"height": 3256,
+											"width": 1661,
+											"height": 2151,
 											"mapParent": {
 												"id": "082",
 												"autoScale": true

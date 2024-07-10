@@ -1,6 +1,6 @@
 "use strict";
 
-class PageFilterRewards extends PageFilter {
+class PageFilterRewards extends PageFilterBase {
 	constructor () {
 		super();
 

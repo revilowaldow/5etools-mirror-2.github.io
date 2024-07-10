@@ -81,6 +81,3 @@ export class ManageExternalUtils {
 		return `${location.origin}/index.html#${hash}`;
 	}
 }
-
-// TODO(Future) refactor usage to module
-globalThis.ManageExternalUtils = ManageExternalUtils;

@@ -1350,13 +1350,15 @@
 					]
 				}
 			],
-			"reaction": [
+			"bonus": [
 				{
 					"name": "Nimble Escape",
 					"entries": [
 						"The goblin takes the Disengage or Hide action."
 					]
-				},
+				}
+			],
+			"reaction": [
 				{
 					"name": "Psionic Shield",
 					"entries": [

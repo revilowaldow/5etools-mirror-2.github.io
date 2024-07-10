@@ -1,4 +1,4 @@
-import * as fs from "fs";
+import fs from "fs";
 import "../js/parser.js";
 import * as utB from "./util-book-reference.js";
 

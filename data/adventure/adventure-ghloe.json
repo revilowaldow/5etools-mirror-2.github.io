@@ -6981,7 +6981,7 @@
 										"The expansive cave is obscured by omnipresent webbing: walls, ceiling, and floor are all coated in the tendrils of pale web. Large cocoons, some intact and some ripped open, hint at the hungry nature of the cavern's inhabitants."
 									]
 								},
-								"The webs are tacky, making the floor (and walls and ceiling) here {@book difficult terrain|PHB|8|Difficult Terrain}. One {@creature spythronar swarm|GHLoE}* is concealed in normal webs on the ceiling at the northwest end of the chamber. A successful DC 17 Wisdom ({@skill Perception}) check is required to see them before they {@quickref surprise|PHB|3|0|surprised} any creature passing through their territory. At the southeast end of the chamber is a {@creature spythronar web|GHLoE}*.",
+								"The webs are tacky, making the floor (and walls and ceiling) here {@book difficult terrain|PHB|8|Difficult Terrain}. One {@creature spythronar swarm|GHLoE}* is concealed in normal webs on the ceiling at the northwest end of the chamber. A successful DC 17 Wisdom ({@skill Perception}) check is required to see them before they {@status surprised} any creature passing through their territory. At the southeast end of the chamber is a {@creature spythronar web|GHLoE}*.",
 								{
 									"type": "entries",
 									"id": "085",
@@ -15631,7 +15631,7 @@
 										"A simple wooden pagoda, elegantly constructed, dominates the landscape here. Two rows of wooden benches, little more than felled trees, face the pagoda. Tall vertical wooden walls capped with sharpened tops flank the area to the north and east."
 									]
 								},
-								"Six {@creature Panjaian Ilharan|GHLoE|panjaian ilharans}* await the stormborn ithjar's hatchlings here. One stands in the pagoda, giving what amounts to a sermon to her peers about the glories of the storm and the power of the plane of air. Her name is Arial (CN, desires all sentient life to acknowledge the superiority of Ilhara over the other Primordials). The other five are sitting and listening or inattentively daydreaming. Characters have advantage on checks to {@quickref surprise|PHB|3|0|surprised} these creatures.",
+								"Six {@creature Panjaian Ilharan|GHLoE|panjaian ilharans}* await the stormborn ithjar's hatchlings here. One stands in the pagoda, giving what amounts to a sermon to her peers about the glories of the storm and the power of the plane of air. Her name is Arial (CN, desires all sentient life to acknowledge the superiority of Ilhara over the other Primordials). The other five are sitting and listening or inattentively daydreaming. Characters have advantage on checks to {@status surprised} these creatures.",
 								{
 									"type": "image",
 									"href": {

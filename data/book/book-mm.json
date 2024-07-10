@@ -963,7 +963,7 @@
 							"name": "Legendary Actions",
 							"page": 11,
 							"entries": [
-								"A legendary creature can take a certain number of special actions-called legendary actions-outside its turn. Only one legendary action option can be used at a time and only at the end of another creature's turn. A legendary creature regains spent legendary actions at the start of its turn. It can forgo using them, and it can't use them while {@condition incapacitated} or otherwise unable to take actions. If {@quickref Surprise|PHB|3|0|surprised}, it can't use them until after its first turn in the combat."
+								"A legendary creature can take a certain number of special actions-called legendary actions-outside its turn. Only one legendary action option can be used at a time and only at the end of another creature's turn. A legendary creature regains spent legendary actions at the start of its turn. It can forgo using them, and it can't use them while {@condition incapacitated} or otherwise unable to take actions. If {@status surprised}, it can't use them until after its first turn in the combat."
 							],
 							"id": "03a"
 						},
@@ -978,7 +978,7 @@
 									"name": "Lair Actions",
 									"page": 11,
 									"entries": [
-										"If a legendary creature has lair actions, it can use them to harness the ambient magic in its lair. On initiative count 20 (losing all initiative ties), it can use one of its lair action options. It can't do so while {@condition incapacitated} or otherwise unable to take actions. If {@quickref Surprise|PHB|3|0|surprised}, it can't use one until after its first turn in the combat."
+										"If a legendary creature has lair actions, it can use them to harness the ambient magic in its lair. On initiative count 20 (losing all initiative ties), it can use one of its lair action options. It can't do so while {@condition incapacitated} or otherwise unable to take actions. If {@status surprised}, it can't use one until after its first turn in the combat."
 									],
 									"id": "03c"
 								},

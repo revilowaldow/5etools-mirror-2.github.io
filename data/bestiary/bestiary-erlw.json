@@ -1026,6 +1026,7 @@
 				"I"
 			],
 			"miscTags": [
+				"CUR",
 				"MW"
 			],
 			"conditionInflictSpell": [
@@ -1706,7 +1707,7 @@
 									"type": "entries",
 									"name": "All Around Vision",
 									"entries": [
-										"The Inspired can't be {@quickref Surprise|PHB|3|0|surprised}."
+										"The Inspired can't be {@status surprised}."
 									]
 								},
 								{
@@ -1799,7 +1800,7 @@
 							"items": {
 								"name": "All Around Vision",
 								"entries": [
-									"The Inspired can't be {@quickref Surprise|PHB|3|0|surprised}."
+									"The Inspired can't be {@status surprised}."
 								]
 							}
 						}
@@ -2035,7 +2036,7 @@
 				{
 					"name": "All-Around Vision",
 					"entries": [
-						"The quori can't be {@quickref Surprise|PHB|3|0|surprised} while it isn't {@condition incapacitated}."
+						"The quori can't be {@status surprised} while it isn't {@condition incapacitated}."
 					]
 				},
 				{
@@ -2118,7 +2119,8 @@
 				"P"
 			],
 			"miscTags": [
-				"AOE"
+				"AOE",
+				"CUR"
 			],
 			"conditionInflict": [
 				"blinded",
@@ -4258,7 +4260,8 @@
 			"conditionImmune": [
 				"charmed",
 				"exhaustion",
-				"frightened"
+				"frightened",
+				"disease"
 			],
 			"languages": [
 				"Common",
@@ -5434,6 +5437,9 @@
 			"passive": 14,
 			"resist": [
 				"poison"
+			],
+			"conditionImmune": [
+				"disease"
 			],
 			"languages": [
 				"Common"

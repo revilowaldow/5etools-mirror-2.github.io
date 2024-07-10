@@ -1,6 +1,6 @@
 "use strict";
 
-class PageFilterVariantRules extends PageFilter {
+class PageFilterVariantRules extends PageFilterBase {
 	// region static
 	// endregion
 

@@ -1,6 +1,6 @@
 "use strict";
 
-class PageFilterTrapsHazards extends PageFilter {
+class PageFilterTrapsHazards extends PageFilterBase {
 	// region static
 	static sortFilterType (a, b) {
 		return SortUtil.ascSortLower(Parser.trapHazTypeToFull(a.item), Parser.trapHazTypeToFull(b.item));

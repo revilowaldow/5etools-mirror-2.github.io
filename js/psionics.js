@@ -61,8 +61,6 @@ class PsionicsPage extends ListPage {
 
 			dataProps: ["psionic"],
 
-			isMarkdownPopout: true,
-
 			bookViewOptions: {
 				namePlural: "psionics",
 				pageTitle: "Psionics Book View",

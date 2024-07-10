@@ -69,13 +69,10 @@ class RenderBestiary {
 		<tr><td colspan="6"><strong>Senses</strong> ${Renderer.monster.getSensesPart(mon)}</td></tr>
 		<tr><td colspan="6"><strong>Languages</strong> ${Renderer.monster.getRenderedLanguages(mon.languages)}</td></tr>
 
-		<tr class="relative">${Parser.crToNumber(mon.cr) < VeCt.CR_UNKNOWN ? $$`
-		<td colspan="3"><strong>Challenge</strong>
-			<span>${Parser.monCrToFull(mon.cr, {isMythic: !!mon.mythic})}</span>
-			${options.$btnScaleCr || ""}
-			${options.$btnResetScaleCr || ""}
-		</td>
-		` : `<td colspan="3"><strong>Challenge</strong> <span>\u2014</span></td>`}${mon.pbNote || Parser.crToNumber(mon.cr) < VeCt.CR_CUSTOM ? `<td colspan="3" class="text-right"><strong>Proficiency Bonus</strong> ${mon.pbNote ?? UiUtil.intToBonus(Parser.crToPb(mon.cr), {isPretty: true})}</td>` : ""}</tr>
+		<tr class="relative">
+			${this._$getRenderedCreature_$getTdChallenge(mon, options)}
+			${this._$getRenderedCreature_getTdPb(mon, options)}
+		</tr>
 
 		<tr>${options.selSummonSpellLevel ? $$`<td colspan="6"><strong>Spell Level</strong> ${options.selSummonSpellLevel}</td>` : ""}</tr>
 		<tr>${options.selSummonClassLevel ? $$`<td colspan="6"><strong>Class Level</strong> ${options.selSummonClassLevel}</td>` : ""}</tr>
@@ -158,6 +155,24 @@ class RenderBestiary {
 			   <source src="${Renderer.utils.getEntryMediaUrl(mon, "soundClip", "audio")}" type="audio/mpeg">
 			</audio>
 		</button>`;
+	}
+
+	static _$getRenderedCreature_$getTdChallenge (mon, options) {
+		if (Parser.crToNumber(mon.cr) >= VeCt.CR_UNKNOWN) return `<td colspan="3"><strong>Challenge</strong> <span>\u2014</span></td>`;
+
+		return $$`<td colspan="3"><strong>Challenge</strong>
+			<span>${Parser.monCrToFull(mon.cr, {isMythic: !!mon.mythic})}</span>
+			${options.$btnScaleCr || ""}
+			${options.$btnResetScaleCr || ""}
+		</td>`;
+	}
+
+	static _$getRenderedCreature_getTdPb (mon, options) {
+		if (!mon.pbNote && Parser.crToNumber(mon.cr) >= VeCt.CR_CUSTOM) {
+			return `<td colspan="3"></td>`;
+		}
+
+		return `<td colspan="3" class="text-right"><strong>Proficiency Bonus</strong> ${mon.pbNote ?? UiUtil.intToBonus(Parser.crToPb(mon.cr), {isPretty: true})}</td>`;
 	}
 
 	static _$getRenderedCreature_getHtmlSourceAndEnvironment (mon, legGroup) {

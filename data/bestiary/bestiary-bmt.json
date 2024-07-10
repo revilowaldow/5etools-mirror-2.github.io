@@ -12,8 +12,7 @@
 				"DoSI": "BMT",
 				"MPMM": "BMT",
 				"WBtW": "BMT",
-				"BAM": "BMT",
-				"MOT": "BMT"
+				"BAM": "BMT"
 			}
 		}
 	},
@@ -870,6 +869,7 @@
 				"S"
 			],
 			"miscTags": [
+				"CUR",
 				"MLW",
 				"MW"
 			],
@@ -1015,6 +1015,7 @@
 				"P"
 			],
 			"miscTags": [
+				"CUR",
 				"MLW",
 				"MW",
 				"RW"
@@ -5876,6 +5877,7 @@
 				"S"
 			],
 			"miscTags": [
+				"CUR",
 				"MW",
 				"RW"
 			],

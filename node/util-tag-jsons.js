@@ -1,4 +1,4 @@
-import * as fs from "fs";
+import fs from "fs";
 import "../js/utils.js";
 import "../js/render.js";
 import "../js/render-dice.js";

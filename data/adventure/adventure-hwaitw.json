@@ -616,9 +616,14 @@
 									]
 								}
 							],
+							"title": "Fig. 1.1: Winnowing Reach",
 							"hrefThumbnail": {
 								"type": "internal",
 								"path": "adventure/HWAitW/thumbnail/Winnowing-Reach.webp"
+							},
+							"grid": {
+								"type": "none",
+								"scale": 2
 							}
 						},
 						{
@@ -875,31 +880,46 @@
 								},
 								"The center of the cave is a 60-foot-wide clearing with tunnels branching off in different directions. Refer to Fig. 1.2 for a map of the Mokkden Caverns.",
 								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "adventure/HWAitW/Mokkden-Caverns-DM.webp"
-									},
-									"width": 1261,
-									"height": 944,
-									"imageType": "map",
-									"id": "15c"
-								},
-								{
 									"type": "gallery",
 									"images": [
 										{
 											"type": "image",
 											"href": {
 												"type": "internal",
+												"path": "adventure/HWAitW/Mokkden-Caverns-DM.webp"
+											},
+											"width": 1261,
+											"height": 944,
+											"imageType": "map",
+											"id": "15c",
+											"title": "Fig. 1.2: Mokkden Caverns",
+											"grid": {
+												"type": "square",
+												"size": 108,
+												"offsetX": -50,
+												"offsetY": -56,
+												"scale": 2
+											}
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
 												"path": "adventure/HWAitW/Mokkden-Caverns.webp"
 											},
-											"title": "Mokkden Caverns battlemap",
+											"title": "Player Version",
 											"width": 1275,
 											"height": 1275,
 											"imageType": "mapPlayer",
 											"mapParent": {
 												"id": "15c"
+											},
+											"grid": {
+												"type": "square",
+												"size": 159,
+												"offsetX": 4,
+												"offsetY": 5,
+												"scale": 3
 											}
 										}
 									]
@@ -1113,31 +1133,45 @@
 								},
 								"Refer to Fig. 1.3 for a map of Susan's Hut.",
 								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "adventure/HWAitW/Susans-Hut-DM.webp"
-									},
-									"width": 832,
-									"height": 668,
-									"imageType": "map",
-									"id": "15d"
-								},
-								{
 									"type": "gallery",
 									"images": [
 										{
 											"type": "image",
 											"href": {
 												"type": "internal",
+												"path": "adventure/HWAitW/Susans-Hut-DM.webp"
+											},
+											"width": 832,
+											"height": 668,
+											"imageType": "map",
+											"id": "15d",
+											"title": "Fig. 1.3: Susan's Hut",
+											"grid": {
+												"type": "square",
+												"size": 213,
+												"offsetX": -80,
+												"offsetY": 21,
+												"scale": 4
+											}
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
 												"path": "adventure/HWAitW/Susans-Hut.webp"
 											},
-											"title": "Susan's Hut battlemap",
+											"title": "Player Version",
 											"width": 793,
 											"height": 793,
 											"imageType": "mapPlayer",
 											"mapParent": {
 												"id": "15d"
+											},
+											"grid": {
+												"type": "square",
+												"size": 198,
+												"offsetY": 2,
+												"scale": 4
 											}
 										}
 									]
@@ -1962,6 +1996,11 @@
 							"hrefThumbnail": {
 								"type": "internal",
 								"path": "adventure/HWAitW/thumbnail/Alderheart.webp"
+							},
+							"title": "Fig. 2.1: Alderheart",
+							"grid": {
+								"type": "none",
+								"scale": 2
 							}
 						},
 						{
@@ -2052,7 +2091,15 @@
 							},
 							"width": 793,
 							"height": 793,
-							"imageType": "mapPlayer"
+							"imageType": "mapPlayer",
+							"title": "Fig. 2.2: Eliza's Emporium",
+							"grid": {
+								"type": "square",
+								"size": 199,
+								"offsetX": -8,
+								"offsetY": -5,
+								"scale": 4
+							}
 						},
 						{
 							"type": "inset",
@@ -2307,31 +2354,44 @@
 					"page": 110,
 					"entries": [
 						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/HWAitW/Bandit-Camp-DM.webp"
-							},
-							"width": 831,
-							"height": 831,
-							"imageType": "map",
-							"id": "15f"
-						},
-						{
 							"type": "gallery",
 							"images": [
 								{
 									"type": "image",
 									"href": {
 										"type": "internal",
+										"path": "adventure/HWAitW/Bandit-Camp-DM.webp"
+									},
+									"width": 831,
+									"height": 831,
+									"imageType": "map",
+									"id": "15f",
+									"title": "Fig. 2.3: Bandit Camp",
+									"grid": {
+										"type": "square",
+										"size": 214,
+										"offsetX": -97,
+										"offsetY": -97,
+										"scale": 4
+									}
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
 										"path": "adventure/HWAitW/Bandit-Camp.webp"
 									},
-									"title": "Bandit Camp battlemap",
+									"title": "Player Version",
 									"width": 793,
 									"height": 793,
 									"imageType": "mapPlayer",
 									"mapParent": {
 										"id": "15f"
+									},
+									"grid": {
+										"type": "square",
+										"size": 149,
+										"scale": 3
 									}
 								}
 							]
@@ -2812,284 +2872,299 @@
 					"entries": [
 						"Refer to Fig. 2.4 for a map of the Inner Keep.",
 						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/HWAitW/Inner-Keep-DM.webp"
-							},
-							"width": 832,
-							"height": 849,
-							"imageType": "map",
-							"id": "160",
-							"mapRegions": [
-								{
-									"area": "09d",
-									"points": [
-										[
-											472,
-											346
-										],
-										[
-											580,
-											346
-										],
-										[
-											580,
-											290
-										],
-										[
-											697,
-											290
-										],
-										[
-											697,
-											350
-										],
-										[
-											754,
-											350
-										],
-										[
-											754,
-											515
-										],
-										[
-											632,
-											515
-										],
-										[
-											632,
-											463
-										],
-										[
-											472,
-											463
-										]
-									]
-								},
-								{
-									"area": "09f",
-									"points": [
-										[
-											101,
-											561
-										],
-										[
-											101,
-											729
-										],
-										[
-											328,
-											729
-										],
-										[
-											328,
-											561
-										]
-									]
-								},
-								{
-									"area": "0a1",
-									"points": [
-										[
-											210,
-											506
-										],
-										[
-											217,
-											466
-										],
-										[
-											176,
-											457
-										],
-										[
-											133,
-											451
-										],
-										[
-											106,
-											430
-										],
-										[
-											106,
-											397
-										],
-										[
-											102,
-											337
-										],
-										[
-											74,
-											307
-										],
-										[
-											66,
-											257
-										],
-										[
-											66,
-											183
-										],
-										[
-											84,
-											144
-										],
-										[
-											123,
-											107
-										],
-										[
-											149,
-											77
-										],
-										[
-											201,
-											67
-										],
-										[
-											251,
-											79
-										],
-										[
-											306,
-											90
-										],
-										[
-											347,
-											68
-										],
-										[
-											379,
-											90
-										],
-										[
-											379,
-											130
-										],
-										[
-											410,
-											137
-										],
-										[
-											420,
-											111
-										],
-										[
-											432,
-											83
-										],
-										[
-											473,
-											74
-										],
-										[
-											524,
-											66
-										],
-										[
-											560,
-											86
-										],
-										[
-											552,
-											130
-										],
-										[
-											564,
-											168
-										],
-										[
-											539,
-											210
-										],
-										[
-											537,
-											252
-										],
-										[
-											502,
-											274
-										],
-										[
-											450,
-											270
-										],
-										[
-											418,
-											248
-										],
-										[
-											410,
-											203
-										],
-										[
-											382,
-											204
-										],
-										[
-											364,
-											222
-										],
-										[
-											374,
-											268
-										],
-										[
-											397,
-											324
-										],
-										[
-											418,
-											349
-										],
-										[
-											427,
-											384
-										],
-										[
-											407,
-											421
-										],
-										[
-											368,
-											448
-										],
-										[
-											318,
-											455
-										],
-										[
-											289,
-											460
-										],
-										[
-											277,
-											506
-										]
-									]
-								}
-							],
-							"hrefThumbnail": {
-								"type": "internal",
-								"path": "adventure/HWAitW/thumbnail/Inner-Keep-DM.webp"
-							}
-						},
-						{
 							"type": "gallery",
 							"images": [
 								{
 									"type": "image",
 									"href": {
 										"type": "internal",
+										"path": "adventure/HWAitW/Inner-Keep-DM.webp"
+									},
+									"width": 832,
+									"height": 849,
+									"imageType": "map",
+									"id": "160",
+									"mapRegions": [
+										{
+											"area": "09d",
+											"points": [
+												[
+													472,
+													346
+												],
+												[
+													580,
+													346
+												],
+												[
+													580,
+													290
+												],
+												[
+													697,
+													290
+												],
+												[
+													697,
+													350
+												],
+												[
+													754,
+													350
+												],
+												[
+													754,
+													515
+												],
+												[
+													632,
+													515
+												],
+												[
+													632,
+													463
+												],
+												[
+													472,
+													463
+												]
+											]
+										},
+										{
+											"area": "09f",
+											"points": [
+												[
+													101,
+													561
+												],
+												[
+													101,
+													729
+												],
+												[
+													328,
+													729
+												],
+												[
+													328,
+													561
+												]
+											]
+										},
+										{
+											"area": "0a1",
+											"points": [
+												[
+													210,
+													506
+												],
+												[
+													217,
+													466
+												],
+												[
+													176,
+													457
+												],
+												[
+													133,
+													451
+												],
+												[
+													106,
+													430
+												],
+												[
+													106,
+													397
+												],
+												[
+													102,
+													337
+												],
+												[
+													74,
+													307
+												],
+												[
+													66,
+													257
+												],
+												[
+													66,
+													183
+												],
+												[
+													84,
+													144
+												],
+												[
+													123,
+													107
+												],
+												[
+													149,
+													77
+												],
+												[
+													201,
+													67
+												],
+												[
+													251,
+													79
+												],
+												[
+													306,
+													90
+												],
+												[
+													347,
+													68
+												],
+												[
+													379,
+													90
+												],
+												[
+													379,
+													130
+												],
+												[
+													410,
+													137
+												],
+												[
+													420,
+													111
+												],
+												[
+													432,
+													83
+												],
+												[
+													473,
+													74
+												],
+												[
+													524,
+													66
+												],
+												[
+													560,
+													86
+												],
+												[
+													552,
+													130
+												],
+												[
+													564,
+													168
+												],
+												[
+													539,
+													210
+												],
+												[
+													537,
+													252
+												],
+												[
+													502,
+													274
+												],
+												[
+													450,
+													270
+												],
+												[
+													418,
+													248
+												],
+												[
+													410,
+													203
+												],
+												[
+													382,
+													204
+												],
+												[
+													364,
+													222
+												],
+												[
+													374,
+													268
+												],
+												[
+													397,
+													324
+												],
+												[
+													418,
+													349
+												],
+												[
+													427,
+													384
+												],
+												[
+													407,
+													421
+												],
+												[
+													368,
+													448
+												],
+												[
+													318,
+													455
+												],
+												[
+													289,
+													460
+												],
+												[
+													277,
+													506
+												]
+											]
+										}
+									],
+									"hrefThumbnail": {
+										"type": "internal",
+										"path": "adventure/HWAitW/thumbnail/Inner-Keep-DM.webp"
+									},
+									"title": "Fig. 2.4: Inner Keep",
+									"grid": {
+										"type": "square",
+										"size": 212,
+										"offsetX": 11,
+										"offsetY": -82,
+										"scale": 4
+									}
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
 										"path": "adventure/HWAitW/Inner-Keep.webp"
 									},
-									"title": "The Inner Keep battlemap",
+									"title": "Player Version",
 									"width": 793,
 									"height": 793,
 									"imageType": "mapPlayer",
 									"mapParent": {
 										"id": "160"
+									},
+									"grid": {
+										"type": "square",
+										"size": 199,
+										"offsetX": -5,
+										"offsetY": -5,
+										"scale": 4
 									}
 								}
 							]
@@ -4638,6 +4713,11 @@
 							"hrefThumbnail": {
 								"type": "internal",
 								"path": "adventure/HWAitW/thumbnail/The-Avium.webp"
+							},
+							"title": "Fig. 4.1: Avium",
+							"grid": {
+								"type": "none",
+								"scale": 3
 							}
 						},
 						"At the heart of the Avium is the central building, made from the trunk of a petrified tree. It is orbited by four terrariums and a dozen or so smaller towers. Each structure which orbits the trunk does so at varying heights and speeds, between one rotation every 10 minutes, and one rotation every half hour.",
@@ -5185,31 +5265,46 @@
 						"The stairway that Odwald fled through leads from {@adventure The Old Classroom|HWAitW|4|The Old Classroom}) down to his laboratory. If the party follows Odwald immediately after the previous encounter, they will be able to engage him there, though they may be surprised to find that he isn't alone. the {@creature cobblefright|HWCS} he created lurks in the darkness.",
 						"Refer to Fig. 4.2 for a map of the Secret Laboratory.",
 						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/HWAitW/Secret-Laboratory-DM.webp"
-							},
-							"width": 832,
-							"height": 879,
-							"imageType": "map",
-							"id": "162"
-						},
-						{
 							"type": "gallery",
 							"images": [
 								{
 									"type": "image",
 									"href": {
 										"type": "internal",
+										"path": "adventure/HWAitW/Secret-Laboratory-DM.webp"
+									},
+									"width": 832,
+									"height": 879,
+									"imageType": "map",
+									"id": "162",
+									"title": "Fig. 4.2: Secret Laboratory",
+									"grid": {
+										"type": "square",
+										"size": 201,
+										"offsetX": -73,
+										"offsetY": -25,
+										"scale": 4
+									}
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
 										"path": "adventure/HWAitW/Secret-Laboratory.webp"
 									},
-									"title": "The Secret Laboratory battlemap",
+									"title": "Player Version",
 									"width": 793,
 									"height": 793,
 									"imageType": "mapPlayer",
 									"mapParent": {
 										"id": "162"
+									},
+									"grid": {
+										"type": "square",
+										"size": 199,
+										"offsetX": -7,
+										"offsetY": -5,
+										"scale": 4
 									}
 								}
 							]
@@ -5989,31 +6084,46 @@
 							"id": "14e"
 						},
 						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/HWAitW/Scorched-Grove-DM.webp"
-							},
-							"width": 832,
-							"height": 831,
-							"imageType": "map",
-							"id": "163"
-						},
-						{
 							"type": "gallery",
 							"images": [
 								{
 									"type": "image",
 									"href": {
 										"type": "internal",
+										"path": "adventure/HWAitW/Scorched-Grove-DM.webp"
+									},
+									"width": 832,
+									"height": 831,
+									"imageType": "map",
+									"id": "163",
+									"title": "Fig. 5.1: Final Battle with the Aspect",
+									"grid": {
+										"type": "square",
+										"size": 138,
+										"offsetX": 8,
+										"offsetY": 12,
+										"scale": 4
+									}
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
 										"path": "adventure/HWAitW/Scorched-Grove.webp"
 									},
-									"title": "The Final Battle battlemap",
+									"title": "Player Version",
 									"width": 793,
 									"height": 793,
 									"imageType": "mapPlayer",
 									"mapParent": {
 										"id": "163"
+									},
+									"grid": {
+										"type": "square",
+										"size": 132,
+										"offsetX": -1,
+										"offsetY": 1,
+										"scale": 4
 									}
 								}
 							]

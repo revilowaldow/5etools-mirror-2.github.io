@@ -4055,7 +4055,7 @@
 												"After swimming through a small patch of sea grass, you emerge into a long cavern. The water here doesn't quite reach the ceiling, leaving a small pocket of air near the top. A slight crack in the ceiling allows moonlight to filter through. At the center of the cavern is a pit whose floor is thirty feet deeper than the rest of the cavern\u2014and you catch the faint glint of metal at the bottom."
 											]
 										},
-										"A {@creature giant octopus} dwells at the bottom of the pit and attacks anyone who enters it. A character who enters the pit and succeeds on a DC 17 Wisdom ({@skill Perception}) check notices the octopus at the bottom and is not {@quickref Surprise|PHB|3|0|surprised} when it attacks. If reduced to 13 hit points or fewer, it uses Ink Cloud and moves 10 feet away, hoping the characters leave it alone.",
+										"A {@creature giant octopus} dwells at the bottom of the pit and attacks anyone who enters it. A character who enters the pit and succeeds on a DC 17 Wisdom ({@skill Perception}) check notices the octopus at the bottom and is not {@status surprised} when it attacks. If reduced to 13 hit points or fewer, it uses Ink Cloud and moves 10 feet away, hoping the characters leave it alone.",
 										{
 											"type": "entries",
 											"name": "Treasure",
@@ -10989,7 +10989,7 @@
 									"page": 108,
 									"id": "222",
 									"entries": [
-										"As the characters travel to the storehouse where the elephant figurine is being kept, they are watched from the rooftops by two lawful evil, human {@creature Assassin||assassins} who have been hired by the Sentinels of Memory to grab the figurine from the storehouse and return it to the faction's headquarters. After watching the characters interact with Jor Raashid, the assassins follow them to the storehouse. When the characters arrive, the assassins attack. Characters who have a passive Wisdom ({@skill Perception}) score of 19 or higher spot the assassins before they attack and are not {@quickref Surprise|PHB|3|0|surprised} during the first round of combat.",
+										"As the characters travel to the storehouse where the elephant figurine is being kept, they are watched from the rooftops by two lawful evil, human {@creature Assassin||assassins} who have been hired by the Sentinels of Memory to grab the figurine from the storehouse and return it to the faction's headquarters. After watching the characters interact with Jor Raashid, the assassins follow them to the storehouse. When the characters arrive, the assassins attack. Characters who have a passive Wisdom ({@skill Perception}) score of 19 or higher spot the assassins before they attack and are not {@status surprised} during the first round of combat.",
 										{
 											"type": "entries",
 											"name": "Long Hands of the Law",
@@ -14376,7 +14376,7 @@
 												"The walls are covered in faded murals that depict orcs and drow working together to build a city in the heart of a verdant jungle. Dozens of clay tablets are scattered across the floor."
 											]
 										},
-										"Four {@creature Scuttling Serpentmaw|CRCotN|scuttling serpentmaws} (see {@adventure appendix A|CRCotN|8}) lurk amid the rubble and scuttle across the floor to attack characters who investigate the room. Characters who have a passive Wisdom ({@skill Perception}) score of 18 or higher notice the serpentmaws and aren't {@quickref Surprise|PHB|3|0|surprised} when they attack.",
+										"Four {@creature Scuttling Serpentmaw|CRCotN|scuttling serpentmaws} (see {@adventure appendix A|CRCotN|8}) lurk amid the rubble and scuttle across the floor to attack characters who investigate the room. Characters who have a passive Wisdom ({@skill Perception}) score of 18 or higher notice the serpentmaws and aren't {@status surprised} when they attack.",
 										{
 											"type": "entries",
 											"name": "Clay Tablets",
@@ -19947,7 +19947,7 @@
 											]
 										},
 										"The statues in the cavern depict warriors who served with Alyxian. All are carved to look like they've been gravely wounded, and a few are missing limbs or their heads.",
-										"Three {@creature Scuttling Serpentmaw|CRCotN|scuttling serpentmaws} (see {@adventure appendix A|CRCotN|8}) hide behind the statues and ruidium spikes in the middle of the area. A character who tries to cross the cavern must succeed on a DC 19 Wisdom ({@skill Perception}) check to avoid being {@quickref Surprise|PHB|3|0|surprised} when the serpentmaws attack.",
+										"Three {@creature Scuttling Serpentmaw|CRCotN|scuttling serpentmaws} (see {@adventure appendix A|CRCotN|8}) hide behind the statues and ruidium spikes in the middle of the area. A character who tries to cross the cavern must succeed on a DC 19 Wisdom ({@skill Perception}) check to avoid being {@status surprised} when the serpentmaws attack.",
 										{
 											"type": "entries",
 											"name": "Apotheon's Fury",

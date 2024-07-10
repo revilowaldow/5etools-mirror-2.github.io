@@ -362,8 +362,6 @@ class BestiaryPage extends ListPageMultiSource {
 					environment: {name: "Environment", transform: it => Renderer.monster.getRenderedEnvironment(it)},
 				},
 			},
-
-			isMarkdownPopout: true,
 			propEntryData: "monster",
 
 			propLoader: "monster",
@@ -436,7 +434,7 @@ class BestiaryPage extends ListPageMultiSource {
 						e_({tag: "span", clazz: `ve-col-1-7 ve-text-center`, text: cr}),
 						e_({
 							tag: "span",
-							clazz: `ve-col-2 ve-text-center ${Parser.sourceJsonToColor(mon.source)} pr-0`,
+							clazz: `ve-col-2 ve-text-center ${Parser.sourceJsonToSourceClassname(mon.source)} pr-0`,
 							style: Parser.sourceJsonToStylePart(mon.source),
 							title: `${Parser.sourceJsonToFull(mon.source)}${Renderer.utils.getSourceSubText(mon)}`,
 							text: source,
@@ -943,15 +941,6 @@ class BestiaryPage extends ListPageMultiSource {
 		const loadTotal = toLoad.length;
 		if (loadTotal) {
 			await Promise.all(toLoad.map(src => this._pLoadSource(src, "yes")));
-		}
-	}
-
-	async pHandleUnknownHash (link, sub) {
-		const src = Object.keys(this._loadedSources)
-			.find(src => src.toLowerCase() === (UrlUtil.decodeHash(link)[1] || "").toLowerCase());
-		if (src) {
-			await this._pLoadSource(src, "yes");
-			Hist.hashChange();
 		}
 	}
 

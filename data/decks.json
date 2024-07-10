@@ -3412,7 +3412,7 @@
 							"type": "item",
 							"name": "Determine surprise",
 							"entries": [
-								"The DM determines whether anyone involved in the combat encounter is {@quickref Surprise|PHB|3|0|surprised}."
+								"The DM determines whether anyone involved in the combat encounter is {@status surprised}."
 							]
 						},
 						{

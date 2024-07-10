@@ -5998,7 +5998,7 @@
 												"A crack of thunder shakes the castle, stirring the dust and cobwebs. You hear a voice: \"Good evening.\""
 											]
 										},
-										"Any character who has a passive Wisdom ({@skill Perception}) score lower than 19 is {@quickref Surprise|PHB|3|0|surprised} as Strahd appears seemingly out of nowhere. The vampire prefers to attack a {@quickref Surprise|PHB|3|0|surprised} character, choosing the one closest to him. Otherwise, see {@area appendix D|7c1|x} for the vampire's tactics."
+										"Any character who has a passive Wisdom ({@skill Perception}) score lower than 19 is {@status surprised} as Strahd appears seemingly out of nowhere. The vampire prefers to attack a {@status surprised} character, choosing the one closest to him. Otherwise, see {@area appendix D|7c1|x} for the vampire's tactics."
 									]
 								},
 								{
@@ -6093,7 +6093,7 @@
 									"page": 52,
 									"id": "196",
 									"entries": [
-										"If any character has a passive Wisdom ({@skill Perception}) score of 16 or higher, the party isn't {@quickref Surprise|PHB|3|0|surprised}. In that case, read:",
+										"If any character has a passive Wisdom ({@skill Perception}) score of 16 or higher, the party isn't {@status surprised}. In that case, read:",
 										{
 											"type": "insetReadaloud",
 											"id": "197",
@@ -11941,7 +11941,7 @@
 										"This staircase is made of old wood that strains underfoot, creaking and groaning."
 									]
 								},
-								"The staircase climbs from {@area area K16|1c9|x} to {@area area K28|1eb|x}. It seems unstable but is sturdy. The creatures in area K28 can't be {@quickref Surprise|PHB|3|0|surprised} by anyone climbing the creaky steps."
+								"The staircase climbs from {@area area K16|1c9|x} to {@area area K28|1eb|x}. It seems unstable but is sturdy. The creatures in area K28 can't be {@status surprised} by anyone climbing the creaky steps."
 							]
 						},
 						{
@@ -35490,7 +35490,7 @@
 									]
 								},
 								"The ceiling here is 20 feet high, and the rubble is {@quickref difficult terrain||3}.",
-								"{@creature Vladimir Horngaard|CoS} (see {@area area Q36|47e|x}) can hear visitors climbing over the rubble and can't be {@quickref Surprise|PHB|3|0|surprised} by them."
+								"{@creature Vladimir Horngaard|CoS} (see {@area area Q36|47e|x}) can hear visitors climbing over the rubble and can't be {@status surprised} by them."
 							]
 						},
 						{
@@ -38884,7 +38884,7 @@
 										"The road ahead is cut out of the mountainside, rising steeply to one side and falling away on the other. Mist and snow greatly reduce visibility, and the howling wind cuts through you like a knife."
 									]
 								},
-								"If no character has a passive Wisdom ({@skill Perception}) score of 16 or higher, the party is {@quickref Surprise|PHB|3|0|surprised}. Otherwise, read:",
+								"If no character has a passive Wisdom ({@skill Perception}) score of 16 or higher, the party is {@status surprised}. Otherwise, read:",
 								{
 									"type": "insetReadaloud",
 									"id": "54a",
@@ -49331,7 +49331,7 @@
 							"page": 218,
 							"id": "712",
 							"entries": [
-								"This alcove contains a {@creature grick} that slithers out to attack the first character it sees within 5 feet of it. Any character with a passive Wisdom ({@skill Perception}) score under 12 is {@quickref Surprise|PHB|3|0|surprised} by it. The alcove is otherwise empty."
+								"This alcove contains a {@creature grick} that slithers out to attack the first character it sees within 5 feet of it. Any character with a passive Wisdom ({@skill Perception}) score under 12 is {@status surprised} by it. The alcove is otherwise empty."
 							]
 						},
 						{

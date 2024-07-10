@@ -1006,7 +1006,7 @@ class StatGenUi extends BaseComponent {
 				});
 			};
 
-			this._parent[this._propModalFilter].pageFilter.filterBox.on(FilterBox.EVNT_VALCHANGE, () => doApplyFilterToSelEntity());
+			this._parent[this._propModalFilter].pageFilter.filterBox.on(FILTER_BOX_EVNT_VALCHANGE, () => doApplyFilterToSelEntity());
 			doApplyFilterToSelEntity();
 
 			const $btnFilterForEntity = $(`<button class="btn btn-xs btn-default br-0 pr-2" title="Filter for ${this._title}"><span class="glyphicon glyphicon-filter"></span> Filter</button>`)

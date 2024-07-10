@@ -1,6 +1,19 @@
-"use strict";
+import {UtilsOmnisearch} from "./utils-omnisearch.js";
 
 class Omnisearch {
+	static _PLACEHOLDER_TEXT = "Search everywhere...";
+	static _searchIndex = null;
+	static _adventureBookLookup = null; // A map of `<sourceLower>: (adventureCatId|bookCatId)`
+	static _pLoadSearch = null;
+	static _CATEGORY_COUNTS = {};
+
+	static _clickFirst = false;
+	static _MAX_RESULTS = 15;
+
+	static _STORAGE_NAME = "search";
+
+	/* -------------------------------------------- */
+
 	static _sortResults (a, b) {
 		const byScore = SortUtil.ascSort(b.score, a.score);
 		if (byScore) return byScore;
@@ -278,7 +291,7 @@ class Omnisearch {
 		}
 
 		if (!this._state.isShowBrew) {
-			results = results.filter(r => !r.doc.s || !BrewUtil2.hasSourceJson(r.doc.s));
+			results = results.filter(r => !r.doc.s || (!BrewUtil2.hasSourceJson(r.doc.s) && !r.doc.dP));
 		}
 
 		if (!this._state.isShowUa) {
@@ -389,21 +402,21 @@ class Omnisearch {
 			propState: "isShowBrew",
 			propBtn: "_btnToggleBrew",
 			title: "Include homebrew content results",
-			text: "Include Homebrew",
+			text: "Homebrew",
 		});
 
 		this._doInitBtnToggleFilter({
 			propState: "isShowUa",
 			propBtn: "_btnToggleUa",
 			title: "Include Unearthed Arcana and other unofficial source results",
-			text: "Include UA/etc.",
+			text: "UA/etc.",
 		});
 
 		this._doInitBtnToggleFilter({
 			propState: "isShowBlocklisted",
 			propBtn: "_btnToggleBlocklisted",
 			title: "Include blocklisted content results",
-			text: "Include Blocklisted",
+			text: "Blocklisted",
 		});
 
 		this._doInitBtnToggleFilter({
@@ -415,31 +428,24 @@ class Omnisearch {
 
 		this._dispSearchOutput.empty();
 
-		this._dispSearchOutput.appends(
-			e_({
-				tag: "div",
-				clazz: "ve-flex-h-right ve-flex-v-center mb-2",
-				children: [
-					e_({
-						tag: "div",
-						clazz: "btn-group ve-flex-v-center",
-						children: [
-							this._btnToggleBrew,
-							this._btnToggleUa,
-							this._btnToggleBlocklisted,
-							this._btnToggleSrd,
-						],
-					}),
-					e_({
-						tag: "button",
-						clazz: "btn btn-default btn-xs ml-2",
-						title: "Help",
-						html: `<span class="glyphicon glyphicon-info-sign"></span>`,
-						click: () => this.doShowHelp(),
-					}),
-				],
-			}),
-		);
+		const btnHelp = e_({
+			tag: "button",
+			clazz: "btn btn-default btn-xs ml-2",
+			title: "Help",
+			html: `<span class="glyphicon glyphicon-info-sign"></span>`,
+			click: () => this.doShowHelp(),
+		});
+
+		ee(this._dispSearchOutput)`<div class="ve-flex-h-right ve-flex-v-center mb-2">
+			<span class="mr-2 italic relative top-1p">Include</span>
+			<div class="btn-group ve-flex-v-center mr-2">
+				${this._btnToggleBrew}
+				${this._btnToggleUa}
+				${this._btnToggleBlocklisted}
+			</div>
+			${this._btnToggleSrd}
+			${btnHelp}
+		</div>`;
 
 		const base = page * this._MAX_RESULTS;
 		for (let i = base; i < Math.max(Math.min(results.length, this._MAX_RESULTS + base), base); ++i) {
@@ -448,7 +454,16 @@ class Omnisearch {
 			const $link = this.$getResultLink(r)
 				.keydown(evt => this.handleLinkKeyDown(evt, $link));
 
-			const {s: source, p: page, r: isSrd} = r;
+			const {
+				source,
+				page,
+				isSrd,
+
+				ptStyle,
+				sourceAbv,
+				sourceFull,
+			} = UtilsOmnisearch.getUnpackedSearchResult(r);
+
 			const ptPageInner = page ? `p${page}` : "";
 			const adventureBookSourceHref = SourceUtil.getAdventureBookSourceHref(source, page);
 			const ptPage = ptPageInner && adventureBookSourceHref
@@ -456,7 +471,7 @@ class Omnisearch {
 				: ptPageInner;
 
 			const ptSourceInner = source
-				? `<span class="${Parser.sourceJsonToColor(source)}" ${Parser.sourceJsonToStyle(source)} title="${Parser.sourceJsonToFull(source)}">${Parser.sourceJsonToAbv(source)}</span>`
+				? `<span class="${Parser.sourceJsonToSourceClassname(source)}" ${ptStyle} title="${sourceFull.qq()}">${sourceAbv.qq()}</span>`
 				: `<span></span>`;
 			const ptSource = ptPage || !adventureBookSourceHref
 				? ptSourceInner
@@ -558,8 +573,6 @@ class Omnisearch {
 	static get isSrdOnly () { return this._state.isSrdOnly; }
 
 	static async _pDoSearchLoad () {
-		const data = Omnidexer.decompressIndex(await DataUtil.loadJSON(`${Renderer.get().baseUrl}search/index.json`));
-
 		elasticlunr.clearStopWords();
 		this._searchIndex = elasticlunr(function () {
 			this.addField("n");
@@ -569,7 +582,8 @@ class Omnisearch {
 		});
 		SearchUtil.removeStemmer(this._searchIndex);
 
-		data.forEach(it => this._addToIndex(it));
+		const siteIndex = Omnidexer.decompressIndex(await DataUtil.loadJSON(`${Renderer.get().baseUrl}search/index.json`));
+		siteIndex.forEach(it => this._addToIndex(it));
 
 		const prereleaseIndex = await PrereleaseUtil.pGetSearchIndex({id: this._maxId + 1});
 		prereleaseIndex.forEach(it => this._addToIndex(it));
@@ -577,8 +591,26 @@ class Omnisearch {
 		const brewIndex = await BrewUtil2.pGetSearchIndex({id: this._maxId + 1});
 		brewIndex.forEach(it => this._addToIndex(it));
 
+		// region Partnered homebrew
+		//   Note that we filter out anything which is already in the user's homebrew, to avoid double-indexing
+		const sourcesBrew = new Set(
+			BrewUtil2.getSources()
+				.map(src => src.json),
+		);
+
+		const partneredIndexRaw = Omnidexer.decompressIndex(await DataUtil.loadJSON(`${Renderer.get().baseUrl}search/index-partnered.json`));
+		const partneredIndex = partneredIndexRaw
+			.filter(it => !sourcesBrew.has(it.s));
+		// Re-ID, to:
+		//   - override the base partnered index IDs (which has statically-generated IDs starting at 0)
+		//   - avoid any holes
+		partneredIndex
+			.forEach((it, i) => it.id = this._maxId + 1 + i);
+		partneredIndex.forEach(it => this._addToIndex(it));
+		// endregion
+
 		this._adventureBookLookup = {};
-		[brewIndex, data].forEach(index => {
+		[prereleaseIndex, brewIndex, siteIndex, partneredIndex].forEach(index => {
 			index.forEach(it => {
 				if (it.c === Parser.CAT_ID_ADVENTURE || it.c === Parser.CAT_ID_BOOK) this._adventureBookLookup[it.s.toLowerCase()] = it.c;
 			});
@@ -675,17 +707,7 @@ class Omnisearch {
 		`);
 	}
 }
-Omnisearch._PLACEHOLDER_TEXT = "Search everywhere...";
-Omnisearch._searchIndex = null;
-Omnisearch._adventureBookLookup = null; // A map of `<sourceLower>: (adventureCatId|bookCatId)`
-Omnisearch._pLoadSearch = null;
-Omnisearch._CATEGORY_COUNTS = {};
-
-Omnisearch._clickFirst = false;
-Omnisearch._MAX_RESULTS = 15;
-Omnisearch._showUaEtc = false;
-Omnisearch._hideBlocklisted = false;
-
-Omnisearch._STORAGE_NAME = "search";
 
 window.addEventListener("load", () => Omnisearch.init());
+
+globalThis.Omnisearch = Omnisearch;

@@ -127,7 +127,7 @@ class UtilsTableview {
 
 	// region Default/generic transforms
 	static COL_TRANSFORM_NAME = {name: "Name"};
-	static COL_TRANSFORM_SOURCE = {name: "Source", transform: (it) => `<span class="${Parser.sourceJsonToColor(it)}" title="${Parser.sourceJsonToFull(it)}" ${Parser.sourceJsonToStyle(it)}>${Parser.sourceJsonToAbv(it)}</span>`};
+	static COL_TRANSFORM_SOURCE = {name: "Source", transform: (it) => `<span class="${Parser.sourceJsonToSourceClassname(it)}" title="${Parser.sourceJsonToFull(it)}" ${Parser.sourceJsonToStyle(it)}>${Parser.sourceJsonToAbv(it)}</span>`};
 	static COL_TRANSFORM_PAGE = {name: "Page"};
 	// endregion
 }

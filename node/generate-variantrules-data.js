@@ -1,4 +1,4 @@
-import * as fs from "fs";
+import fs from "fs";
 import "../js/utils.js";
 import * as ut from "./util.js";
 

@@ -1166,7 +1166,10 @@
 							"title": "Humblewood",
 							"id": "10e",
 							"width": 4000,
-							"height": 2361
+							"height": 2361,
+							"grid": {
+								"type": "none"
+							}
 						},
 						{
 							"type": "image",
@@ -1175,12 +1178,15 @@
 								"path": "book/HWCS/Humblewood-Player-Version.webp"
 							},
 							"imageType": "mapPlayer",
-							"title": "(Player Version)",
+							"title": "Player Version",
 							"mapParent": {
 								"id": "10e"
 							},
 							"width": 4000,
-							"height": 2361
+							"height": 2361,
+							"grid": {
+								"type": "none"
+							}
 						}
 					]
 				},

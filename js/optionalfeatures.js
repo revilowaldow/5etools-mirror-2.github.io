@@ -94,8 +94,6 @@ class OptionalFeaturesPage extends ListPage {
 			},
 
 			isPreviewable: true,
-
-			isMarkdownPopout: true,
 		});
 	}
 
@@ -116,7 +114,7 @@ class OptionalFeaturesPage extends ListPage {
 			<span class="ve-col-1-5 ve-text-center" title="${it._dFeatureType}">${it._lFeatureType}</span>
 			<span class="ve-col-4-7">${prerequisite}</span>
 			<span class="ve-col-1 ve-text-center">${level}</span>
-			<span class="ve-col-1-5 ${Parser.sourceJsonToColor(it.source)} ve-text-center pr-0" title="${Parser.sourceJsonToFull(it.source)}" ${Parser.sourceJsonToStyle(it.source)}>${source}</span>
+			<span class="ve-col-1-5 ${Parser.sourceJsonToSourceClassname(it.source)} ve-text-center pr-0" title="${Parser.sourceJsonToFull(it.source)}" ${Parser.sourceJsonToStyle(it.source)}>${source}</span>
 		</a>
 		<div class="ve-flex ve-hidden relative lst__wrp-preview">
 			<div class="vr-0 absolute lst__vr-preview"></div>

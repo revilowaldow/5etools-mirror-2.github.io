@@ -4334,6 +4334,7 @@
 			],
 			"miscTags": [
 				"AOE",
+				"DIS",
 				"MW"
 			],
 			"conditionInflict": [
@@ -5322,6 +5323,7 @@
 				"P"
 			],
 			"miscTags": [
+				"DIS",
 				"MW",
 				"RCH"
 			],
@@ -8481,6 +8483,7 @@
 				"S"
 			],
 			"miscTags": [
+				"DIS",
 				"MW"
 			],
 			"savingThrowForced": [
@@ -8824,6 +8827,7 @@
 			],
 			"miscTags": [
 				"AOE",
+				"DIS",
 				"MW"
 			],
 			"conditionInflict": [
@@ -14129,6 +14133,7 @@
 				"S"
 			],
 			"miscTags": [
+				"DIS",
 				"MLW",
 				"MW"
 			],
@@ -16181,6 +16186,7 @@
 			],
 			"miscTags": [
 				"AOE",
+				"DIS",
 				"MW",
 				"RCH"
 			],
@@ -17741,6 +17747,7 @@
 				"P"
 			],
 			"miscTags": [
+				"DIS",
 				"MW"
 			],
 			"conditionInflict": [
@@ -24958,6 +24965,7 @@
 				"O"
 			],
 			"miscTags": [
+				"CUR",
 				"MLW",
 				"MW"
 			],
@@ -28356,6 +28364,7 @@
 				"S"
 			],
 			"miscTags": [
+				"DIS",
 				"MW",
 				"RW"
 			],
@@ -28682,6 +28691,7 @@
 				"S"
 			],
 			"miscTags": [
+				"DIS",
 				"MLW",
 				"MW",
 				"RCH",
@@ -31264,6 +31274,9 @@
 			"attachedItems": [
 				"club|phb"
 			],
+			"traitTags": [
+				"Mimicry"
+			],
 			"senseTags": [
 				"D"
 			],
@@ -31811,6 +31824,7 @@
 				"S"
 			],
 			"miscTags": [
+				"DIS",
 				"MW",
 				"RCH"
 			],
@@ -34440,6 +34454,7 @@
 			],
 			"miscTags": [
 				"AOE",
+				"DIS",
 				"MW"
 			],
 			"savingThrowForced": [
@@ -34887,6 +34902,7 @@
 				"O"
 			],
 			"miscTags": [
+				"CUR",
 				"MW"
 			],
 			"conditionInflict": [
@@ -37263,6 +37279,7 @@
 				"Y"
 			],
 			"miscTags": [
+				"DIS",
 				"MW",
 				"RCH"
 			],
@@ -41027,6 +41044,7 @@
 				"P"
 			],
 			"miscTags": [
+				"DIS",
 				"MW"
 			],
 			"savingThrowForced": [
@@ -41704,7 +41722,8 @@
 				"arctic"
 			],
 			"traitTags": [
-				"Magic Resistance"
+				"Magic Resistance",
+				"Mimicry"
 			],
 			"senseTags": [
 				"SD"
@@ -41830,6 +41849,9 @@
 			"attachedItems": [
 				"longbow|phb",
 				"rapier|phb"
+			],
+			"traitTags": [
+				"Mimicry"
 			],
 			"senseTags": [
 				"SD"
@@ -41972,6 +41994,9 @@
 			],
 			"attachedItems": [
 				"longbow|phb"
+			],
+			"traitTags": [
+				"Mimicry"
 			],
 			"senseTags": [
 				"SD"
@@ -43508,6 +43533,7 @@
 				"N"
 			],
 			"miscTags": [
+				"DIS",
 				"MW"
 			],
 			"conditionInflict": [
@@ -43965,6 +43991,7 @@
 			],
 			"miscTags": [
 				"AOE",
+				"DIS",
 				"MW"
 			],
 			"conditionInflict": [
@@ -44413,7 +44440,8 @@
 				"desert"
 			],
 			"traitTags": [
-				"Magic Resistance"
+				"Magic Resistance",
+				"Mimicry"
 			],
 			"senseTags": [
 				"SD"
@@ -44847,6 +44875,7 @@
 			],
 			"miscTags": [
 				"AOE",
+				"CUR",
 				"MW"
 			],
 			"conditionInflict": [
@@ -50797,6 +50826,9 @@
 				"planar",
 				"urban"
 			],
+			"traitTags": [
+				"Mimicry"
+			],
 			"senseTags": [
 				"D"
 			],
@@ -53347,6 +53379,7 @@
 				"S"
 			],
 			"miscTags": [
+				"DIS",
 				"MLW",
 				"MW"
 			],
@@ -53545,7 +53578,8 @@
 				"urban"
 			],
 			"traitTags": [
-				"Amorphous"
+				"Amorphous",
+				"Mimicry"
 			],
 			"senseTags": [
 				"B"
@@ -54449,6 +54483,7 @@
 				"N"
 			],
 			"miscTags": [
+				"CUR",
 				"MW"
 			],
 			"conditionInflict": [
@@ -55116,6 +55151,7 @@
 			],
 			"miscTags": [
 				"AOE",
+				"CUR",
 				"MW"
 			],
 			"conditionInflict": [
@@ -55687,6 +55723,7 @@
 				"S"
 			],
 			"miscTags": [
+				"DIS",
 				"MW",
 				"RCH"
 			],
@@ -57078,6 +57115,7 @@
 			],
 			"miscTags": [
 				"AOE",
+				"DIS",
 				"MW"
 			],
 			"savingThrowForced": [
@@ -57591,6 +57629,7 @@
 				"N"
 			],
 			"miscTags": [
+				"DIS",
 				"MW"
 			],
 			"conditionInflict": [

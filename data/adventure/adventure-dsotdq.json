@@ -4797,7 +4797,7 @@
 										},
 										"Thornwall Keep sits directly across from the Dragon Army soldiers' clifftop vantage. Atop Thornwall Keep sits the creation of the tinker gnome Than: a people-launching device called a gnomeflinger (described in {@adventure appendix A|DSotDQ|8}). If using the gnomeflinger comes up, Becklin or Darrett suggests consulting with Than first.",
 										"Than is overjoyed to let the characters use the gnomeflinger. They're so delighted that they forget they also have several safety devices called {@item Narycrash|DSotDQ|narycrashes} (see {@adventure appendix A|DSotDQ|8}). Than mentions the narycrashes only if a character raises concerns about landing after using the gnomeflinger. Than has enough narycrashes for each character to get one.",
-										"Should the characters use the gnomeflinger, it proves surprisingly effective and quiet, allowing the characters to {@quickref surprise|PHB|3|0|surprised} the four {@creature Dragon Army Soldier|DSotDQ|Dragon Army soldiers} (see {@adventure appendix B|DSotDQ|9}) atop the cliffs."
+										"Should the characters use the gnomeflinger, it proves surprisingly effective and quiet, allowing the characters to {@status surprised} the four {@creature Dragon Army Soldier|DSotDQ|Dragon Army soldiers} (see {@adventure appendix B|DSotDQ|9}) atop the cliffs."
 									]
 								}
 							]

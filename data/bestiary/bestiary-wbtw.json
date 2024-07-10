@@ -148,6 +148,7 @@
 				"P"
 			],
 			"miscTags": [
+				"CUR",
 				"MLW",
 				"MW",
 				"RW",
@@ -866,6 +867,9 @@
 					]
 				}
 			],
+			"traitTags": [
+				"Mimicry"
+			],
 			"senseTags": [
 				"T"
 			],
@@ -1334,7 +1338,7 @@
 				{
 					"name": "Uncanny Awareness",
 					"entries": [
-						"Endelyn can't be {@quickref Surprise|PHB|3|0|surprised}."
+						"Endelyn can't be {@status surprised}."
 					]
 				}
 			],
@@ -3069,6 +3073,9 @@
 			],
 			"attachedItems": [
 				"dagger|phb"
+			],
+			"traitTags": [
+				"Mimicry"
 			],
 			"actionTags": [
 				"Multiattack"
@@ -5166,6 +5173,9 @@
 						"A 20-foot radius of spores extends from the swarm. These spores can go around corners, and they have no effect on Constructs, Elementals, Plants, or Undead. Each other creature in the area must make a {@dc 10} Wisdom saving throw. On a failed save, the creature is {@condition incapacitated} and its speed is halved, both for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
 					]
 				}
+			],
+			"traitTags": [
+				"Mimicry"
 			],
 			"senseTags": [
 				"T"

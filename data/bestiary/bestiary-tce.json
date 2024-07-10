@@ -2426,7 +2426,7 @@
 				{
 					"name": "Vigilant",
 					"entries": [
-						"The defender can't be {@quickref Surprise|PHB|3|0|surprised}."
+						"The defender can't be {@status surprised}."
 					]
 				}
 			],

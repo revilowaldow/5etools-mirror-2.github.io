@@ -4340,7 +4340,7 @@
 							"page": 50,
 							"id": "0fb",
 							"entries": [
-								"High above, two {@creature Peryton||perytons} are watching the road for fresh hearts they can consume before laying their eggs. They circle at an altitude where they are easily mistaken for eagles. Each character can make a DC 15 Intelligence ({@skill Nature}) check upon seeing the creatures. Success means they recognize the perytons for what they are before the first dive attack. Failure means the character is {@quickref Surprise|PHB|3|0|surprised}."
+								"High above, two {@creature Peryton||perytons} are watching the road for fresh hearts they can consume before laying their eggs. They circle at an altitude where they are easily mistaken for eagles. Each character can make a DC 15 Intelligence ({@skill Nature}) check upon seeing the creatures. Success means they recognize the perytons for what they are before the first dive attack. Failure means the character is {@status surprised}."
 							]
 						},
 						{
@@ -5410,7 +5410,7 @@
 											]
 										},
 										"Each canoe has three paddles and is large enough to hold five humans without much gear, or two or three with packs and other gear. Inside the lean-tos are a few baskets containing smoked fish (edible) along with some lizards and birds that have been smashed flat and dried in the sun (very unappetizing to humans but edible).",
-										"If characters arrive before dusk, the camp is empty and they can explore it safely. No random encounters bother characters while they're in the campsite. As the sun begins to set, nine {@creature lizardfolk} paddle up in three canoes. They are traveling from Castle Naerytar to the roadhouse to pick up a load of contraband. The lizardfolk expect no trouble near their camp, so if characters posted a watch, then those characters who are actively on watch notice the approaching lizardfolk automatically and the lizardfolk are {@quickref Surprise|PHB|3|0|surprised}. If characters lit a fire, however, then the lizardfolk smell the smoke from quite a distance away and know someone is in the camp. They assume it's more of their own kind returning from the work camp with treasure bound for Castle Naerytar, but the mere is filled with potential enemies and one never knows for sure, so their approach is more cautious if they smell smoke. In that case, characters with passive Wisdom ({@skill Perception}) scores of 10 or higher notice the approaching lizardfolk canoes before the lizardfolk spot the strangers in their camp.",
+										"If characters arrive before dusk, the camp is empty and they can explore it safely. No random encounters bother characters while they're in the campsite. As the sun begins to set, nine {@creature lizardfolk} paddle up in three canoes. They are traveling from Castle Naerytar to the roadhouse to pick up a load of contraband. The lizardfolk expect no trouble near their camp, so if characters posted a watch, then those characters who are actively on watch notice the approaching lizardfolk automatically and the lizardfolk are {@status surprised}. If characters lit a fire, however, then the lizardfolk smell the smoke from quite a distance away and know someone is in the camp. They assume it's more of their own kind returning from the work camp with treasure bound for Castle Naerytar, but the mere is filled with potential enemies and one never knows for sure, so their approach is more cautious if they smell smoke. In that case, characters with passive Wisdom ({@skill Perception}) scores of 10 or higher notice the approaching lizardfolk canoes before the lizardfolk spot the strangers in their camp.",
 										"These lizardfolk won't negotiate or converse with characters. They've been told by the elf who commands operations at Castle Naerytar that strangers in the mere are to be killed or captured but never engaged in conversation. If they are captured and tied up, a successful DC 10 Charisma ({@skill Intimidation}) or DC 15 Charisma ({@skill Persuasion}) check loosens their tongues. If the lizardfolk aren't tied up, characters have disadvantage on these rolls because the lizardfolk think them soft-hearted.",
 										"Lizardfolk know that they're transporting treasure to the castle. The \"dragon kneelers\" take it into the castle, and the lizardfolk never see it again. They are paid in steel blades (they have no ability to manufacture with metal) and magic talismans. All the lizardfolk wear necklaces and bracelets made of bone, teeth, feathers, carved soft stone, and leather. On close inspection, characters see mixed in among these things traces of civilization: glass beads, coins, costume jewelry, tiny mirrors, and stamped copper and tin amulets of the sort that can be bought for a few pennies at any trinket shop or souvenir stand. None of it is magical.",
 										"During the questioning, have every character make a Charisma check. Whichever character scores highest makes a strong impression on a lizardfolk captive. This lizardfolk, whose name is Snapjaw, is unhappy about the situation in the mere, and he develops the notion that these strangers could be the key to driving out the cultists and to slaughtering their cruel bullywug allies. Snapjaw tries to communicate with the chosen character, but he doesn't want any of his comrades to know. He speaks enough pidgin Common to converse in simple terms, in case no one in the party speaks Draconic.",
@@ -9480,7 +9480,7 @@
 							"page": 79,
 							"id": "1a5",
 							"entries": [
-								"If the party lingers outside the lodge or explores the woods nearby, it finds company. Those with a passive Wisdom ({@skill Perception}) score of 12 or higher are not {@quickref Surprise|PHB|3|0|surprised} by the rush of a group of two {@creature Troll||trolls} and three {@creature Ambush Drake|HotDQ|ambush drakes} (see {@adventure appendix D|HotDQ|12} for Statistics) that has been wandering the area. The combat alerts Talis that she has company. The trolls serve as the lodge's bouncers, and anyone who is not expected is eaten."
+								"If the party lingers outside the lodge or explores the woods nearby, it finds company. Those with a passive Wisdom ({@skill Perception}) score of 12 or higher are not {@status surprised} by the rush of a group of two {@creature Troll||trolls} and three {@creature Ambush Drake|HotDQ|ambush drakes} (see {@adventure appendix D|HotDQ|12} for Statistics) that has been wandering the area. The combat alerts Talis that she has company. The trolls serve as the lodge's bouncers, and anyone who is not expected is eaten."
 							]
 						},
 						{
@@ -12968,7 +12968,7 @@
 									"page": 100,
 									"id": "264",
 									"entries": [
-										"If the ogres above or below him sound the alarm, {@creature Blagothkus|HotDQ} cannot be {@quickref Surprise|PHB|3|0|surprised}.",
+										"If the ogres above or below him sound the alarm, {@creature Blagothkus|HotDQ} cannot be {@status surprised}.",
 										{
 											"type": "insetReadaloud",
 											"id": "265",

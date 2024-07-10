@@ -2284,7 +2284,7 @@
 					},
 					"name": "Danger Sense",
 					"entries": [
-						"As an action, you create a psychic model of reality in your mind and set it to show you a few seconds into the future. Until your {@status concentration} ends, you can't be {@quickref Surprise|PHB|3|0|surprised}, attack rolls against you can't gain advantage, and you gain a +10 bonus to initiative."
+						"As an action, you create a psychic model of reality in your mind and set it to show you a few seconds into the future. Until your {@status concentration} ends, you can't be {@status surprised}, attack rolls against you can't gain advantage, and you gain a +10 bonus to initiative."
 					]
 				},
 				{

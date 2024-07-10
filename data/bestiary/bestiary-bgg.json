@@ -2867,6 +2867,7 @@
 			],
 			"miscTags": [
 				"AOE",
+				"CUR",
 				"MW",
 				"RCH",
 				"RW"
@@ -3566,6 +3567,7 @@
 			],
 			"miscTags": [
 				"AOE",
+				"CUR",
 				"MW",
 				"RCH"
 			],
@@ -4080,6 +4082,7 @@
 				"Y"
 			],
 			"miscTags": [
+				"CUR",
 				"MW",
 				"RCH"
 			],
@@ -4399,6 +4402,7 @@
 			],
 			"miscTags": [
 				"AOE",
+				"CUR",
 				"MLW",
 				"MW",
 				"RCH"

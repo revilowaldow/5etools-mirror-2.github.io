@@ -437,6 +437,7 @@
 				"S"
 			],
 			"miscTags": [
+				"DIS",
 				"MW",
 				"RCH"
 			],
@@ -5834,7 +5835,7 @@
 				{
 					"name": "Amnesia",
 					"entries": [
-						"Levistus selects a {@condition stunned} creature that he can see. The creature must succeed on a {@dc 23} Charisma saving throw or Levistus erases a specific memory from the target. The memory must be one that the target experienced in the last 24 hours and that lasted no more than 10 minutes. The memory can only be restored with a Remove Curse or a {@spell Greater Restoration} spell."
+						"Levistus selects a {@condition stunned} creature that he can see. The creature must succeed on a {@dc 23} Charisma saving throw or Levistus erases a specific memory from the target. The memory must be one that the target experienced in the last 24 hours and that lasted no more than 10 minutes. The memory can only be restored with a {@spell Remove Curse} or a {@spell Greater Restoration} spell."
 					]
 				},
 				{
@@ -5885,7 +5886,8 @@
 				"O"
 			],
 			"miscTags": [
-				"AOE"
+				"AOE",
+				"CUR"
 			],
 			"conditionInflict": [
 				"stunned"
@@ -7557,6 +7559,7 @@
 				"O"
 			],
 			"miscTags": [
+				"CUR",
 				"MLW",
 				"MW"
 			],
@@ -7995,6 +7998,7 @@
 				"P"
 			],
 			"miscTags": [
+				"DIS",
 				"MW",
 				"RCH"
 			],

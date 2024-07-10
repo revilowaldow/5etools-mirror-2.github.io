@@ -58,7 +58,7 @@
 		{
 			"name": "Ambusher",
 			"entries": [
-				"<$title_short_name$> has advantage on attack rolls against any creature it has {@quickref Surprise|PHB|3|0|surprised}."
+				"<$title_short_name$> has advantage on attack rolls against any creature it has {@status surprised}."
 			]
 		},
 		{
@@ -76,7 +76,7 @@
 		{
 			"name": "Assassinate",
 			"entries": [
-				"During its first turn, <$short_name$> has advantage on attack rolls against any creature that hasn't taken a turn. Any hit <$short_name$> scores against a {@quickref Surprise|PHB|3|0|surprised} creature is a critical hit."
+				"During its first turn, <$short_name$> has advantage on attack rolls against any creature that hasn't taken a turn. Any hit <$short_name$> scores against a {@status surprised} creature is a critical hit."
 			]
 		},
 		{
@@ -578,7 +578,7 @@
 			"name": "Horrific Appearance (Sea Hag)",
 			"entries": [
 				"Any humanoid that starts its turn within 30 feet of <$short_name$> and can see <$short_name$>'s true form must make a DC 11 Wisdom saving throw. On a failed save, the creature is {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, with disadvantage if <$short_name$> is within line of sight, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to <$short_name$>'s Horrific Appearance for the next 24 hours.",
-				"Unless the target is {@quickref Surprise|PHB|3|0|surprised} or the revelation of <$short_name$>'s true form is sudden, the target can avert its eyes and avoid making the initial saving throw. Until the start of its next turn, a creature that averts its eyes has disadvantage on attack rolls against <$short_name$>."
+				"Unless the target is {@status surprised} or the revelation of <$short_name$>'s true form is sudden, the target can avert its eyes and avoid making the initial saving throw. Until the start of its next turn, a creature that averts its eyes has disadvantage on attack rolls against <$short_name$>."
 			]
 		},
 		{
@@ -819,7 +819,7 @@
 			"name": "Petrifying Gaze (Basilisk)",
 			"entries": [
 				"If a creature starts its turn within 30 feet of <$short_name$> and the two of them can see each other, <$short_name$> can force the creature to make a DC 12 Constitution saving throw if <$short_name$> isn't {@condition incapacitated}. On a failed save, the creature magically begins to turn to stone and is {@condition restrained}. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is {@condition petrified} until freed by the greater restoration spell or other magic.",
-				"A creature that isn't {@quickref Surprise|PHB|3|0|surprised} can avert its eyes to avoid the saving throw at the start of its turn. If it does so, it can't see <$short_name$> until the start of its next turn, when it can avert its eyes again. If it looks at <$short_name$> in the meantime, it must immediately make the save.",
+				"A creature that isn't {@status surprised} can avert its eyes to avoid the saving throw at the start of its turn. If it does so, it can't see <$short_name$> until the start of its next turn, when it can avert its eyes again. If it looks at <$short_name$> in the meantime, it must immediately make the save.",
 				"If <$short_name$> sees its reflection within 30 feet of it in bright light, it mistakes itself for a rival and targets itself with its gaze."
 			]
 		},
@@ -1294,7 +1294,7 @@
 		{
 			"name": "Transparent (Gelatinous Cube)",
 			"entries": [
-				"Even when <$short_name$> is in plain sight, it takes a successful DC 15 Wisdom ({@skill Perception}) check to spot a <$short_name$> that has neither moved nor attacked. A creature that tries to enter <$short_name$>'s space while unaware of <$short_name$> is {@quickref Surprise|PHB|3|0|surprised} by <$short_name$>."
+				"Even when <$short_name$> is in plain sight, it takes a successful DC 15 Wisdom ({@skill Perception}) check to spot a <$short_name$> that has neither moved nor attacked. A creature that tries to enter <$short_name$>'s space while unaware of <$short_name$> is {@status surprised} by <$short_name$>."
 			]
 		},
 		{

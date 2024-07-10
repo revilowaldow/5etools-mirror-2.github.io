@@ -343,6 +343,9 @@ PropOrder._META = [
 	"dateLastModified",
 	"_dateLastModifiedHash",
 ];
+PropOrder._TEST = [
+	"additionalImageSources",
+];
 PropOrder._FOUNDRY_GENERIC = [
 	"name",
 	"source",
@@ -2274,6 +2277,7 @@ PropOrder._FOUNDRY_MAP = [
 
 PropOrder._PROP_TO_LIST = {
 	"_meta": PropOrder._META,
+	"_test": PropOrder._TEST,
 	"monster": PropOrder._MONSTER,
 	"foundryMonster": PropOrder._FOUNDRY_MONSTER,
 	"monsterFluff": PropOrder._GENERIC_FLUFF,
@@ -2369,6 +2373,9 @@ PropOrder._ROOT = [
 
 	new PropOrder._ObjectKey("_meta", {
 		fnGetOrder: () => PropOrder._META,
+	}),
+	new PropOrder._ObjectKey("_test", {
+		fnGetOrder: () => PropOrder._TEST,
 	}),
 
 	// region Player options

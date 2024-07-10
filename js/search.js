@@ -1,4 +1,4 @@
-"use strict";
+import {UtilsOmnisearch} from "./utils-omnisearch.js";
 
 class SearchPage {
 	static async pInit () {
@@ -76,7 +76,7 @@ class SearchPage {
 			propOmnisearch: "isShowBrew",
 			fnAddHookOmnisearch: "addHookBrew",
 			fnDoToggleOmnisearch: "doToggleBrew",
-			title: "Filter Homebrew",
+			title: "Include Homebrew",
 			text: "Include Homebrew",
 		});
 
@@ -84,7 +84,7 @@ class SearchPage {
 			propOmnisearch: "isShowUa",
 			fnAddHookOmnisearch: "addHookUa",
 			fnDoToggleOmnisearch: "doToggleUa",
-			title: "Filter Unearthed Arcana and other unofficial source results",
+			title: "Include Unearthed Arcana and other unofficial source results",
 			text: "Include UA",
 		});
 
@@ -92,7 +92,7 @@ class SearchPage {
 			propOmnisearch: "isShowBlocklisted",
 			fnAddHookOmnisearch: "addHookBlocklisted",
 			fnDoToggleOmnisearch: "doToggleBlocklisted",
-			title: "Filter blocklisted content results",
+			title: "Include blocklisted content results",
 			text: "Include Blocklisted",
 		});
 
@@ -100,7 +100,7 @@ class SearchPage {
 			propOmnisearch: "isSrdOnly",
 			fnAddHookOmnisearch: "addHookSrdOnly",
 			fnDoToggleOmnisearch: "doToggleSrdOnly",
-			title: "Filter non- Systems Reference Document results",
+			title: "Exclude non- Systems Reference Document results",
 			text: "SRD Only",
 		});
 
@@ -197,7 +197,19 @@ class SearchPage {
 
 					const $link = Omnisearch.$getResultLink(r);
 
-					const {s: source, p: page, h: isHoverable, c: category, u: hash, r: isSrd} = r;
+					const {
+						source,
+						page,
+						isHoverable,
+						category,
+						hash,
+						isSrd,
+
+						ptStyle,
+						sourceAbv,
+						sourceFull,
+					} = UtilsOmnisearch.getUnpackedSearchResult(r);
+
 					const ptPageInner = page ? `page ${page}` : "";
 					const adventureBookSourceHref = SourceUtil.getAdventureBookSourceHref(source, page);
 					const ptPage = ptPageInner && adventureBookSourceHref
@@ -205,7 +217,7 @@ class SearchPage {
 						: ptPageInner;
 
 					const ptSourceInner = source
-						? `<i>${Parser.sourceJsonToFull(source)}</i> (<span class="${Parser.sourceJsonToColor(source)}" ${Parser.sourceJsonToStyle(source)}>${Parser.sourceJsonToAbv(source)}</span>)${isSrd ? `<span class="ve-muted relative help-subtle pg-search__disp-srd" title="Available in the Systems Reference Document">[SRD]</span>` : ""}${Parser.sourceJsonToMarkerHtml(source, {isList: false, additionalStyles: "pg-search__disp-source-marker"})}`
+						? `<i>${sourceFull}</i> (<span class="${Parser.sourceJsonToSourceClassname(source)}" ${ptStyle}>${sourceAbv}</span>)${isSrd ? `<span class="ve-muted relative help-subtle pg-search__disp-srd" title="Available in the Systems Reference Document">[SRD]</span>` : ""}${Parser.sourceJsonToMarkerHtml(source, {isList: false, additionalStyles: "pg-search__disp-source-marker"})}`
 						: `<span></span>`;
 					const ptSource = ptPage || !adventureBookSourceHref
 						? ptSourceInner

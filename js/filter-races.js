@@ -1,6 +1,6 @@
 "use strict";
 
-class PageFilterRaces extends PageFilter {
+class PageFilterRaces extends PageFilterBase {
 	// region static
 	static getLanguageProficiencyTags (lProfs) {
 		if (!lProfs) return [];
@@ -233,7 +233,7 @@ class PageFilterRaces extends PageFilter {
 
 globalThis.PageFilterRaces = PageFilterRaces;
 
-class ModalFilterRaces extends ModalFilter {
+class ModalFilterRaces extends ModalFilterBase {
 	/**
 	 * @param opts
 	 * @param opts.namespace
@@ -256,7 +256,7 @@ class ModalFilterRaces extends ModalFilter {
 			{sort: "size", text: "Size", width: "2"},
 			{sort: "source", text: "Source", width: "1"},
 		];
-		return ModalFilter._$getFilterColumnHeaders(btnMeta);
+		return ModalFilterBase._$getFilterColumnHeaders(btnMeta);
 	}
 
 	async _pLoadAllData () {
@@ -286,7 +286,7 @@ class ModalFilterRaces extends ModalFilter {
 			<div class="ve-col-4 ${race._versionBase_isVersion ? "italic" : ""} ${this._getNameStyle()}">${race._versionBase_isVersion ? `<span class="px-3"></span>` : ""}${race.name}</div>
 			<div class="ve-col-4">${ability.asTextShort}</div>
 			<div class="ve-col-2 ve-text-center">${size}</div>
-			<div class="ve-col-1 pr-0 ve-flex-h-center ${Parser.sourceJsonToColor(race.source)}" title="${Parser.sourceJsonToFull(race.source)}" ${Parser.sourceJsonToStyle(race.source)}>${source}${Parser.sourceJsonToMarkerHtml(race.source)}</div>
+			<div class="ve-col-1 pr-0 ve-flex-h-center ${Parser.sourceJsonToSourceClassname(race.source)}" title="${Parser.sourceJsonToFull(race.source)}" ${Parser.sourceJsonToStyle(race.source)}>${source}${Parser.sourceJsonToMarkerHtml(race.source)}</div>
 		</div>`;
 
 		const btnShowHidePreview = eleRow.firstElementChild.children[1].firstElementChild;

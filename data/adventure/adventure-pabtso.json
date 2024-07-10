@@ -6190,7 +6190,7 @@
 											"page": 37,
 											"id": "096",
 											"entries": [
-												"The bandits in area R2 notice if the characters make a lot of noise here. They burst into the room, gaining {@quickref surprise|PHB|3|0|surprised} if the characters don't know they're coming.",
+												"The bandits in area R2 notice if the characters make a lot of noise here. They burst into the room, gaining {@status surprised} if the characters don't know they're coming.",
 												"If the bandits fight in this area and two are defeated, the last bandit might reveal the secret door by fleeing in that direction."
 											]
 										},
@@ -8070,7 +8070,7 @@
 										"The faint smell of smoke hangs in the air as you ascend a rugged ridge on the lower slopes of the hill. Fifty yards away, a cave mouth opens up at the bottom of a ravine. Hunkered down by a boulder twenty yards outside the cave, evidently keeping watch, is a single bugbear."
 									]
 								},
-								"If the characters quietly take out the lone {@creature bugbear}, they have a chance to {@quickref surprise|PHB|3|0|surprised} the raiders in the cave. If the sentry spots the characters sneaking up, or if an attack fails to take the sentry out, the sentry shouts a warning and retreats back to the cave, joining the rest of the marauders there.",
+								"If the characters quietly take out the lone {@creature bugbear}, they have a chance to {@status surprised} the raiders in the cave. If the sentry spots the characters sneaking up, or if an attack fails to take the sentry out, the sentry shouts a warning and retreats back to the cave, joining the rest of the marauders there.",
 								"The marauders in the cave include Brughor Axe-Biter, an {@creature orc} with 18 hit points; four {@creature Bugbear||bugbears}; and an {@creature ogre} named Gog. Gog fights until slain, while the rest flee if Brughor is killed.",
 								"If the characters examine the cave walls, they find a strange, scrawled drawing on the northwest wall. The drawing crudely depicts a lanky goblin with a crystal jutting from its skull. The characters can tell this isn't a Cragmaw goblin, but they can't learn anything more just yet. Psionic goblins who were off task in their search for obelisk fragments made this drawing. It attempts to depict their leader, Ruxithid, who is described more in {@adventure chapter 5|PaBTSO|5}.",
 								{

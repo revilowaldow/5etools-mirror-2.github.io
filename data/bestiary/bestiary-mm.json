@@ -25,6 +25,9 @@
 				},
 				{
 					"source": "LoX"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -154,6 +157,9 @@
 				},
 				{
 					"source": "DoDk"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -305,6 +311,7 @@
 				"Y"
 			],
 			"miscTags": [
+				"DIS",
 				"MW",
 				"RCH"
 			],
@@ -543,6 +550,9 @@
 				},
 				{
 					"source": "DoDk"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -680,6 +690,9 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -4025,6 +4038,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -7615,6 +7631,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -7745,6 +7764,9 @@
 				},
 				{
 					"source": "BMT"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -8389,6 +8411,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -8774,7 +8799,7 @@
 				{
 					"name": "Assassinate",
 					"entries": [
-						"During its first turn, the assassin has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the assassin scores against a {@quickref Surprise|PHB|3|0|surprised} creature is a critical hit."
+						"During its first turn, the assassin has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the assassin scores against a {@status surprised} creature is a critical hit."
 					]
 				},
 				{
@@ -8878,6 +8903,9 @@
 				},
 				{
 					"source": "DoDk"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -8988,6 +9016,9 @@
 				},
 				{
 					"source": "PSI"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -9353,6 +9384,9 @@
 			"otherSources": [
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -9713,6 +9747,9 @@
 				},
 				{
 					"source": "DoDk"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -9892,6 +9929,9 @@
 				},
 				{
 					"source": "DoDk"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -10055,6 +10095,9 @@
 				},
 				{
 					"source": "BMT"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -10435,6 +10478,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -10636,6 +10682,9 @@
 				},
 				{
 					"source": "PaBTSO"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -10676,7 +10725,7 @@
 					"name": "Petrifying Gaze",
 					"entries": [
 						"If a creature starts its turn within 30 feet of the basilisk and the two of them can see each other, the basilisk can force the creature to make a {@dc 12} Constitution saving throw if the basilisk isn't {@condition incapacitated}. On a failed save, the creature magically begins to turn to stone and is {@condition restrained}. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is {@condition petrified} until freed by the  {@spell greater restoration} spell or other magic.",
-						"A creature that isn't {@quickref Surprise|PHB|3|0|surprised} can avert its eyes to avoid the saving throw at the start of its turn. If it does so, it can't see the basilisk until the start of its next turn, when it can avert its eyes again. If it looks at the basilisk in the meantime, it must immediately make the save.",
+						"A creature that isn't {@status surprised} can avert its eyes to avoid the saving throw at the start of its turn. If it does so, it can't see the basilisk until the start of its next turn, when it can avert its eyes again. If it looks at the basilisk in the meantime, it must immediately make the save.",
 						"If the basilisk sees its reflection within 30 feet of it in bright light, it mistakes itself for a rival and targets itself with its gaze."
 					]
 				}
@@ -10849,6 +10898,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -11045,6 +11097,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -11862,6 +11917,9 @@
 				},
 				{
 					"source": "ToFW"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -12198,6 +12256,9 @@
 				},
 				{
 					"source": "DoDk"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -12740,6 +12801,9 @@
 				},
 				{
 					"source": "SatO"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -12864,6 +12928,7 @@
 				"Y"
 			],
 			"miscTags": [
+				"DIS",
 				"HPR",
 				"MW"
 			],
@@ -12900,6 +12965,9 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -13965,6 +14033,9 @@
 				},
 				{
 					"source": "BMT"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -14113,6 +14184,9 @@
 				},
 				{
 					"source": "DoDk"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -14390,6 +14464,9 @@
 				},
 				{
 					"source": "DSotDQ"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -14957,6 +15034,9 @@
 				},
 				{
 					"source": "CM"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -15035,6 +15115,9 @@
 				},
 				{
 					"source": "BMT"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -15384,6 +15467,9 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -15675,6 +15761,9 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -15847,6 +15936,9 @@
 				},
 				{
 					"source": "DoDk"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -15986,6 +16078,9 @@
 				},
 				{
 					"source": "DoDk"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -16141,6 +16236,9 @@
 				},
 				{
 					"source": "BMT"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -16317,6 +16415,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -16879,6 +16980,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -17885,6 +17989,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -18133,6 +18240,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -18397,6 +18507,9 @@
 				},
 				{
 					"source": "SatO"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -18848,6 +18961,7 @@
 				"P"
 			],
 			"miscTags": [
+				"DIS",
 				"MW"
 			],
 			"conditionInflict": [
@@ -19610,6 +19724,9 @@
 				},
 				{
 					"source": "PaBTSO"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -20037,6 +20154,7 @@
 				"N"
 			],
 			"miscTags": [
+				"CUR",
 				"HPR"
 			],
 			"conditionInflict": [
@@ -20119,6 +20237,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -20311,6 +20432,9 @@
 				},
 				{
 					"source": "ToFW"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -20427,6 +20551,9 @@
 				},
 				{
 					"source": "BMT"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -20546,6 +20673,9 @@
 				},
 				{
 					"source": "DoDk"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -20851,6 +20981,9 @@
 				},
 				{
 					"source": "DoDk"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -20906,7 +21039,7 @@
 				{
 					"name": "Ambusher",
 					"entries": [
-						"In the first round of a combat, the doppelganger has advantage on attack rolls against any creature it {@quickref Surprise|PHB|3|0|surprised}."
+						"In the first round of a combat, the doppelganger has advantage on attack rolls against any creature it {@status surprised}."
 					]
 				},
 				{
@@ -20994,6 +21127,9 @@
 				},
 				{
 					"source": "DoDk"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -22680,6 +22816,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -22875,6 +23014,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -23054,6 +23196,9 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -23193,6 +23338,9 @@
 				},
 				{
 					"source": "ToFW"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -23342,6 +23490,9 @@
 				},
 				{
 					"source": "DoDk"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -23606,6 +23757,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -23767,6 +23921,9 @@
 				},
 				{
 					"source": "DoDk"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -24102,6 +24259,9 @@
 				},
 				{
 					"source": "IDRotF"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -24202,6 +24362,9 @@
 				},
 				{
 					"source": "BMT"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -24686,6 +24849,9 @@
 				},
 				{
 					"source": "BMT"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -26324,6 +26490,9 @@
 				},
 				{
 					"source": "HFStCM"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -26655,6 +26824,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -27081,7 +27253,7 @@
 				{
 					"name": "Advanced Telepathy",
 					"entries": [
-						"The flumph can perceive the content of any telepathic communication used within 60 feet of it, and it can't be {@quickref Surprise|PHB|3|0|surprised} by creatures with any form of telepathy."
+						"The flumph can perceive the content of any telepathic communication used within 60 feet of it, and it can't be {@status surprised} by creatures with any form of telepathy."
 					]
 				},
 				{
@@ -27433,6 +27605,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -27529,6 +27704,7 @@
 				"Y"
 			],
 			"miscTags": [
+				"CUR",
 				"MLW",
 				"MW",
 				"RCH"
@@ -27561,6 +27737,9 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -27801,6 +27980,9 @@
 				},
 				{
 					"source": "PaBTSO"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -27976,6 +28158,9 @@
 				},
 				{
 					"source": "DoDk"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -28107,6 +28292,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -28193,6 +28381,7 @@
 				"I"
 			],
 			"miscTags": [
+				"DIS",
 				"MW"
 			],
 			"conditionInflict": [
@@ -28234,6 +28423,9 @@
 				},
 				{
 					"source": "DoDk"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -28285,7 +28477,7 @@
 				{
 					"name": "Transparent",
 					"entries": [
-						"Even when the cube is in plain sight, it takes a successful {@dc 15} Wisdom ({@skill Perception}) check to spot a cube that has neither moved nor attacked. A creature that tries to enter the cube's space while unaware of the cube is {@quickref Surprise|PHB|3|0|surprised} by the cube."
+						"Even when the cube is in plain sight, it takes a successful {@dc 15} Wisdom ({@skill Perception}) check to spot a cube that has neither moved nor attacked. A creature that tries to enter the cube's space while unaware of the cube is {@status surprised} by the cube."
 					]
 				}
 			],
@@ -28373,6 +28565,9 @@
 				},
 				{
 					"source": "PSI"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -28584,6 +28779,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -28820,6 +29018,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -29013,6 +29214,9 @@
 				},
 				{
 					"source": "PaBTSO"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -29119,6 +29323,9 @@
 				},
 				{
 					"source": "PSX"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -29328,6 +29535,9 @@
 				},
 				{
 					"source": "PSA"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -29426,6 +29636,9 @@
 				},
 				{
 					"source": "PaBTSO"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -29763,6 +29976,9 @@
 				},
 				{
 					"source": "ToFW"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -29984,6 +30200,9 @@
 				},
 				{
 					"source": "PSX"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -30089,6 +30308,9 @@
 				},
 				{
 					"source": "PSA"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -30205,6 +30427,9 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -30403,6 +30628,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -30803,6 +31031,9 @@
 				},
 				{
 					"source": "PaBTSO"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -30918,6 +31149,9 @@
 				},
 				{
 					"source": "DoDk"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -31007,6 +31241,7 @@
 				"P"
 			],
 			"miscTags": [
+				"DIS",
 				"MW"
 			],
 			"savingThrowForced": [
@@ -31439,6 +31674,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -31577,6 +31815,9 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -31888,6 +32129,9 @@
 				},
 				{
 					"source": "GoS"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -32130,6 +32374,9 @@
 				},
 				{
 					"source": "DoDk"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -32256,6 +32503,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -32395,6 +32645,9 @@
 				},
 				{
 					"source": "BMT"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -33032,6 +33285,9 @@
 				},
 				{
 					"source": "DoDk"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -34311,6 +34567,9 @@
 				},
 				{
 					"source": "DoDk"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -34426,6 +34685,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -34779,6 +35041,9 @@
 				},
 				{
 					"source": "BMT"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -35414,7 +35679,8 @@
 				"path": "bestiary/green-hag.mp3"
 			},
 			"traitTags": [
-				"Amphibious"
+				"Amphibious",
+				"Mimicry"
 			],
 			"senseTags": [
 				"D"
@@ -35780,6 +36046,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -35921,6 +36190,9 @@
 				},
 				{
 					"source": "PaBTSO"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -36192,6 +36464,9 @@
 				},
 				{
 					"source": "DoDk"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -36486,6 +36761,9 @@
 				},
 				{
 					"source": "DoDk"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -36792,6 +37070,9 @@
 				},
 				{
 					"source": "JttRC"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -37429,6 +37710,9 @@
 				},
 				{
 					"source": "JttRC"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -37712,6 +37996,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -37872,6 +38159,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -38055,6 +38345,9 @@
 				},
 				{
 					"source": "SatO"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -38323,6 +38616,9 @@
 				},
 				{
 					"source": "PaBTSO"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -38586,6 +38882,9 @@
 				},
 				{
 					"source": "SatO"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -38875,6 +39174,9 @@
 				},
 				{
 					"source": "PaBTSO"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -39955,6 +40257,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -40314,6 +40619,9 @@
 				},
 				{
 					"source": "PaBTSO"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -40496,6 +40804,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -40908,6 +41219,9 @@
 				},
 				{
 					"source": "JttRC"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -41111,7 +41425,7 @@
 				{
 					"name": "Ambusher",
 					"entries": [
-						"In the first round of a combat, the kenku has advantage on attack rolls against any creature it {@quickref Surprise|PHB|3|0|surprised}."
+						"In the first round of a combat, the kenku has advantage on attack rolls against any creature it {@status surprised}."
 					]
 				},
 				{
@@ -41148,7 +41462,8 @@
 				"shortsword|phb"
 			],
 			"traitTags": [
-				"Ambusher"
+				"Ambusher",
+				"Mimicry"
 			],
 			"languageTags": [
 				"AU",
@@ -41357,6 +41672,9 @@
 				},
 				{
 					"source": "DoDk"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -42588,6 +42906,9 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -42715,6 +43036,7 @@
 				"I"
 			],
 			"miscTags": [
+				"CUR",
 				"MLW",
 				"MW"
 			],
@@ -42868,6 +43190,9 @@
 				},
 				{
 					"source": "BMT"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -44090,6 +44415,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -44590,6 +44918,9 @@
 				},
 				{
 					"source": "CRCotN"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -44979,6 +45310,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -45477,6 +45811,9 @@
 				},
 				{
 					"source": "BMT"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -45575,6 +45912,15 @@
 				},
 				{
 					"source": "CM"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -45625,7 +45971,7 @@
 					"name": "Petrifying Gaze",
 					"entries": [
 						"When a creature that can see the medusa's eyes starts its turn within 30 feet of the medusa, the medusa can force it to make a {@dc 14} Constitution saving throw if the medusa isn't {@condition incapacitated} and can see the creature. If the saving throw fails by 5 or more, the creature is instantly {@condition petrified}. Otherwise, a creature that fails the save begins to turn to stone and is {@condition restrained}. The {@condition restrained} creature must repeat the saving throw at the end of its next turn, becoming {@condition petrified} on a failure or ending the effect on a success. The petrification lasts until the creature is freed by the  {@spell greater restoration} spell or other magic.",
-						"Unless {@quickref Surprise|PHB|3|0|surprised}, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see the medusa until the start of its next turn, when it can avert its eyes again. If the creature looks at the medusa in the meantime, it must immediately make the save.",
+						"Unless {@status surprised}, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see the medusa until the start of its next turn, when it can avert its eyes again. If the creature looks at the medusa in the meantime, it must immediately make the save.",
 						"If the medusa sees itself reflected on a polished surface within 30 feet of it and in an area of bright light, the medusa is, due to its curse, affected by its own gaze."
 					]
 				}
@@ -45837,6 +46183,9 @@
 				},
 				{
 					"source": "DoDk"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -46225,6 +46574,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -46393,6 +46745,9 @@
 				},
 				{
 					"source": "BMT"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -46818,6 +47173,9 @@
 				},
 				{
 					"source": "SatO"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -47515,6 +47873,9 @@
 				},
 				{
 					"source": "DoDk"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -47623,6 +47984,7 @@
 				"N"
 			],
 			"miscTags": [
+				"CUR",
 				"MW"
 			],
 			"conditionInflict": [
@@ -47900,6 +48262,7 @@
 				"CC"
 			],
 			"miscTags": [
+				"CUR",
 				"MW"
 			],
 			"conditionInflict": [
@@ -48074,6 +48437,7 @@
 			],
 			"miscTags": [
 				"AOE",
+				"DIS",
 				"MW"
 			],
 			"conditionInflict": [
@@ -48108,6 +48472,9 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -48252,6 +48619,7 @@
 			],
 			"miscTags": [
 				"AOE",
+				"DIS",
 				"MW"
 			],
 			"conditionInflict": [
@@ -48391,6 +48759,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -49258,6 +49629,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -49790,6 +50164,9 @@
 				},
 				{
 					"source": "DoDk"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -50087,6 +50464,9 @@
 				},
 				{
 					"source": "DoDk"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -51294,6 +51674,7 @@
 				"P"
 			],
 			"miscTags": [
+				"DIS",
 				"MW",
 				"RCH"
 			],
@@ -51478,6 +51859,9 @@
 				},
 				{
 					"source": "BMT"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -52111,6 +52495,9 @@
 				},
 				{
 					"source": "DoDk"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -52596,6 +52983,9 @@
 				},
 				{
 					"source": "BMT"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -53032,6 +53422,9 @@
 				},
 				{
 					"source": "IMR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -53232,6 +53625,9 @@
 				},
 				{
 					"source": "ToFW"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -53528,6 +53924,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -55056,6 +55455,7 @@
 				"I"
 			],
 			"miscTags": [
+				"CUR",
 				"MW"
 			],
 			"savingThrowForcedSpell": [
@@ -55099,6 +55499,9 @@
 				},
 				{
 					"source": "DoDk"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -55250,6 +55653,9 @@
 				"type": "internal",
 				"path": "bestiary/raven.mp3"
 			},
+			"traitTags": [
+				"Mimicry"
+			],
 			"damageTags": [
 				"P"
 			],
@@ -55612,6 +56018,7 @@
 				"Y"
 			],
 			"miscTags": [
+				"DIS",
 				"MW"
 			],
 			"savingThrowForced": [
@@ -56074,6 +56481,9 @@
 				},
 				{
 					"source": "ToFW"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -56188,6 +56598,9 @@
 				},
 				{
 					"source": "DoDk"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -56422,6 +56835,9 @@
 				},
 				{
 					"source": "DoDk"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -56591,6 +57007,9 @@
 				},
 				{
 					"source": "DoDk"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -56717,6 +57136,9 @@
 				},
 				{
 					"source": "SatO"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -56832,6 +57254,9 @@
 				},
 				{
 					"source": "ToFW"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -57602,6 +58027,9 @@
 				},
 				{
 					"source": "BMT"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -58052,6 +58480,9 @@
 				},
 				{
 					"source": "DoDk"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -58265,7 +58696,7 @@
 					"name": "Horrific Appearance",
 					"entries": [
 						"Any humanoid that starts its turn within 30 feet of the hag and can see the hag's true form must make a {@dc 11} Wisdom saving throw. On a failed save, the creature is {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, with disadvantage if the hag is within line of sight, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the hag's Horrific Appearance for the next 24 hours.",
-						"Unless the target is {@quickref Surprise|PHB|3|0|surprised} or the revelation of the hag's true form is sudden, the target can avert its eyes and avoid making the initial saving throw. Until the start of its next turn, a creature that averts its eyes has disadvantage on attack rolls against the hag."
+						"Unless the target is {@status surprised} or the revelation of the hag's true form is sudden, the target can avert its eyes and avoid making the initial saving throw. Until the start of its next turn, a creature that averts its eyes has disadvantage on attack rolls against the hag."
 					]
 				}
 			],
@@ -58595,6 +59026,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -58960,6 +59394,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -59266,6 +59703,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -59643,6 +60083,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -60295,6 +60738,9 @@
 				},
 				{
 					"source": "ToFW"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -60538,6 +60984,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -61173,6 +61622,9 @@
 				},
 				{
 					"source": "BMT"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -61361,6 +61813,9 @@
 				},
 				{
 					"source": "DoDk"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -61687,6 +62142,9 @@
 				},
 				{
 					"source": "PaBTSO"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -61783,6 +62241,9 @@
 				},
 				{
 					"source": "DoDk"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -62008,6 +62469,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -62573,6 +63037,9 @@
 				},
 				{
 					"source": "AATM"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -63044,6 +63511,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -63181,6 +63651,9 @@
 				},
 				{
 					"source": "GHLoE"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -63555,6 +64028,9 @@
 				},
 				{
 					"source": "BMT"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -63686,6 +64162,9 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -64014,6 +64493,9 @@
 				},
 				{
 					"source": "LoX"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -64607,6 +65089,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -64957,6 +65442,9 @@
 				},
 				{
 					"source": "BMT"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -65117,6 +65605,9 @@
 				},
 				{
 					"source": "BMT"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -65298,6 +65789,9 @@
 				},
 				{
 					"source": "DoDk"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -65716,6 +66210,9 @@
 				},
 				{
 					"source": "DoDk"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -66069,6 +66566,9 @@
 				},
 				{
 					"source": "BMT"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -66116,7 +66616,7 @@
 					"entries": [
 						"When a creature starts its turn within 30 feet of the umber hulk and is able to see the umber hulk's eyes, the umber hulk can magically force it to make a {@dc 15} Charisma saving throw, unless the umber hulk is {@condition incapacitated}.",
 						"On a failed saving throw, the creature can't take reactions until the start of its next turn and rolls a {@dice d8} to determine what it does during that turn. On a 1 to 4, the creature does nothing. On a 5 or 6, the creature takes no action but uses all its movement to move in a random direction. On a 7 or 8, the creature makes one melee attack against a random creature, or it does nothing if no creature is within reach.",
-						"Unless {@quickref Surprise|PHB|3|0|surprised}, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see the umber hulk until the start of its next turn, when it can avert its eyes again. If the creature looks at the umber hulk in the meantime, it must immediately make the save."
+						"Unless {@status surprised}, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see the umber hulk until the start of its next turn, when it can avert its eyes again. If the creature looks at the umber hulk in the meantime, it must immediately make the save."
 					]
 				},
 				{
@@ -66211,6 +66711,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -66718,6 +67221,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -67468,6 +67974,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -68504,6 +69013,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -68678,6 +69190,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -68803,6 +69318,9 @@
 				},
 				{
 					"source": "PaBTSO"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -69024,6 +69542,7 @@
 				"S"
 			],
 			"miscTags": [
+				"CUR",
 				"MLW",
 				"MW"
 			],
@@ -69210,6 +69729,7 @@
 				"S"
 			],
 			"miscTags": [
+				"CUR",
 				"MLW",
 				"MW"
 			],
@@ -69265,6 +69785,9 @@
 				},
 				{
 					"source": "BMT"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -69399,6 +69922,7 @@
 				"P"
 			],
 			"miscTags": [
+				"CUR",
 				"MLW",
 				"MW",
 				"RNG",
@@ -69582,6 +70106,7 @@
 				"S"
 			],
 			"miscTags": [
+				"CUR",
 				"MLW",
 				"MW",
 				"RNG",
@@ -69787,6 +70312,7 @@
 				"S"
 			],
 			"miscTags": [
+				"CUR",
 				"MLW",
 				"MW",
 				"RW",
@@ -70071,6 +70597,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -70281,6 +70810,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -70749,6 +71281,9 @@
 				},
 				{
 					"source": "GHLoE"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -71045,6 +71580,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -71213,6 +71751,9 @@
 				},
 				{
 					"source": "BMT"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -71325,6 +71866,9 @@
 				},
 				{
 					"source": "SatO"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -72085,6 +72629,9 @@
 				},
 				{
 					"source": "LK"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -72553,6 +73100,9 @@
 				},
 				{
 					"source": "DoDk"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -73568,6 +74118,9 @@
 				},
 				{
 					"source": "BMT"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -73780,6 +74333,9 @@
 			"otherSources": [
 				{
 					"source": "AATM"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -75677,6 +76233,9 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [

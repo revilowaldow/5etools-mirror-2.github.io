@@ -60,8 +60,6 @@ class TablesPage extends ListPage {
 
 			dataProps: ["table", "tableGroup"],
 
-			isMarkdownPopout: true,
-
 			listSyntax: new ListSyntaxTables({fnGetDataList: () => this._dataList}),
 		});
 	}
@@ -118,7 +116,7 @@ class TablesPage extends ListPage {
 
 		eleLi.innerHTML = `<a href="#${hash}" class="lst--border lst__row-inner">
 			<span class="bold ve-col-10 pl-0">${it.name}</span>
-			<span class="ve-col-2 ve-text-center ${Parser.sourceJsonToColor(it.source)} pr-0" title="${Parser.sourceJsonToFull(it.source)}" ${Parser.sourceJsonToStyle(it.source)}>${source}</span>
+			<span class="ve-col-2 ve-text-center ${Parser.sourceJsonToSourceClassname(it.source)} pr-0" title="${Parser.sourceJsonToFull(it.source)}" ${Parser.sourceJsonToStyle(it.source)}>${source}</span>
 		</a>`;
 
 		const listItem = new ListItem(

@@ -1122,7 +1122,7 @@
 				"page": 66,
 				"rarity": "very rare",
 				"entries": [
-					"Ranged attack rolls made with this ammunition have advantage against any creature doesn't have all its hit points."
+					"Ranged attack rolls made with this ammunition have advantage against any creature that doesn't have all its hit points."
 				]
 			}
 		},
@@ -3779,7 +3779,7 @@
 				"rarity": "uncommon",
 				"reqAttune": true,
 				"entries": [
-					"This magic weapon warns you of danger. While the weapon is on your person, you have advantage on initiative rolls. In addition, you and any of your companions within 30 feet of you can't be {@quickref Surprise|PHB|3|0|surprised}, except when {@condition incapacitated} by something other than nonmagical sleep. The weapon magically awakens you and your companions within range if any of you are sleeping naturally when combat begins."
+					"This magic weapon warns you of danger. While the weapon is on your person, you have advantage on initiative rolls. In addition, you and any of your companions within 30 feet of you can't be {@status surprised}, except when {@condition incapacitated} by something other than nonmagical sleep. The weapon magically awakens you and your companions within range if any of you are sleeping naturally when combat begins."
 				],
 				"lootTables": [
 					"Magic Item Table F"

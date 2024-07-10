@@ -1075,13 +1075,17 @@ class ListUiUtil {
 		_getSearchCache_handleEntryProp (entity, prop, ptrOut) {
 			if (!entity[prop]) return;
 
+			this._getSearchCache_handleEntry(entity[prop], ptrOut);
+		}
+
+		_getSearchCache_handleEntry (entry, ptrOut) {
 			this.constructor._READONLY_WALKER = this.constructor._READONLY_WALKER || MiscUtil.getWalker({
 				keyBlocklist: new Set(["type", "colStyles", "style"]),
 				isNoModification: true,
 			});
 
 			this.constructor._READONLY_WALKER.walk(
-				entity[prop],
+				entry,
 				{
 					string: (str) => this._getSearchCache_handleString(ptrOut, str),
 				},
@@ -1935,7 +1939,8 @@ class SearchWidget {
 			fnTransform: doc => {
 				const cpy = MiscUtil.copyFast(doc);
 				Object.assign(cpy, SearchWidget.docToPageSourceHash(cpy));
-				const hashName = UrlUtil.decodeHash(cpy.u)[0].toTitleCase();
+				const {name: hashNameRaw} = UrlUtil.autoDecodeHash(cpy.u);
+				const hashName = hashNameRaw.toTitleCase();
 				const isRename = hashName.toLowerCase() !== cpy.n.toLowerCase();
 				const pts = [
 					isRename ? hashName : cpy.n.toSpellCase(),

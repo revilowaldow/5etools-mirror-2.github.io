@@ -702,7 +702,7 @@
 											"page": 88,
 											"id": "02c",
 											"entries": [
-												"After the first character has been at the bottom of the fissure for 2 rounds, a group of six {@creature Giant Rat||giant rats} notices the potential feast. Any character at the bottom of the fissure who succeeds on a DC 12 Wisdom ({@skill Perception}) check can hear the approaching rats, and isn't {@quickref Surprise|PHB|3|0|surprised} when three rats emerge from cracks in the walls and attack. Three more rats arrive and attack 1 round later. All the rats are dyed a bright green from trap C in {@area area 3|03a|x}."
+												"After the first character has been at the bottom of the fissure for 2 rounds, a group of six {@creature Giant Rat||giant rats} notices the potential feast. Any character at the bottom of the fissure who succeeds on a DC 12 Wisdom ({@skill Perception}) check can hear the approaching rats, and isn't {@status surprised} when three rats emerge from cracks in the walls and attack. Three more rats arrive and attack 1 round later. All the rats are dyed a bright green from trap C in {@area area 3|03a|x}."
 											]
 										},
 										{
@@ -997,7 +997,7 @@
 											"page": 91,
 											"id": "04b",
 											"entries": [
-												"The {@creature giant spider} hides in a dust-filled depression in the floor. A successful DC 17 Wisdom ({@skill Perception}) check spots the arachnid before it springs from its hiding place to attack. Any characters who are focused on the webs above them have disadvantage on the check. Those who fail the check are {@quickref Surprise|PHB|3|0|surprised}.",
+												"The {@creature giant spider} hides in a dust-filled depression in the floor. A successful DC 17 Wisdom ({@skill Perception}) check spots the arachnid before it springs from its hiding place to attack. Any characters who are focused on the webs above them have disadvantage on the check. Those who fail the check are {@status surprised}.",
 												"The giant spider initially favors its web attack, hoping to restrain a couple of characters before it starts biting. If reduced to 10 hit points or fewer, the spider retreats into a nearby narrow fissure. However, it attacks again when the characters come back through this area."
 											]
 										},
@@ -1888,7 +1888,7 @@
 											"page": 101,
 											"id": "08a",
 											"entries": [
-												"The two dead horses are {@creature Warhorse Skeleton||warhorse skeletons} whose remaining flesh sloughs off as they fight. When any character comes within 20 feet of the fallen horses, these undead lurch to their feet and attack. When this happens, each character must succeed on a DC 15 Wisdom ({@skill Perception}) check or be {@quickref Surprise|PHB|3|0|surprised}."
+												"The two dead horses are {@creature Warhorse Skeleton||warhorse skeletons} whose remaining flesh sloughs off as they fight. When any character comes within 20 feet of the fallen horses, these undead lurch to their feet and attack. When this happens, each character must succeed on a DC 15 Wisdom ({@skill Perception}) check or be {@status surprised}."
 											]
 										},
 										{
@@ -8521,7 +8521,7 @@
 								"Dropping out from behind a dark cloud is an airship held aloft by a large balloon\u2014emblazoned with the sigil of the Six! A crew of hobgoblins and goblins can be seen swarming the deck, and a ballista and three harpoon guns are trained on your vessel. To arms!"
 							]
 						},
-						"If the {@vehicle battle balloon|AI} took more than 20 damage, the chaos of the storm has distracted the characters and crew. In that event, all creatures on the characters' battle balloon are {@quickref Surprise|PHB|3|0|surprised} by the airship sent by the Six to engage the franchise\u2014and to steal the franchise's orrery components. Use the battle balloon stat block from {@book appendix C|AI|6} for the Six's airship, but substitute the following Blowout Ballista attack for the Green Flame Arbalester attack:",
+						"If the {@vehicle battle balloon|AI} took more than 20 damage, the chaos of the storm has distracted the characters and crew. In that event, all creatures on the characters' battle balloon are {@status surprised} by the airship sent by the Six to engage the franchise\u2014and to steal the franchise's orrery components. Use the battle balloon stat block from {@book appendix C|AI|6} for the Six's airship, but substitute the following Blowout Ballista attack for the Green Flame Arbalester attack:",
 						"{@i Ranged Weapon Attack}: +8 to hit, range 200/800 ft. (can't hit targets within 60 ft. of it), one target. {@i Hit}: 16 ({@dice 3d10}) piercing damage and 22 ({@dice 4d10}) fire damage.",
 						"The airship's crew is made up of a female {@creature hobgoblin captain} named Garla, six {@creature Hobgoblin||hobgoblins}, six {@creature Goblin||goblins}, six {@creature Smoke Mephit||smoke mephits}, and a {@creature hippogriff} (serving as the captain's mount). All these creatures are recent mercenary hires, so none of them have the iconic affiliate of the Six features. They employ the following strategy, hoping to distract the characters while they steal the orrery housing and as many of its components as they can.",
 						{

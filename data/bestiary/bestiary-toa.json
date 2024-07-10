@@ -304,6 +304,7 @@
 				"CW"
 			],
 			"miscTags": [
+				"CUR",
 				"MLW",
 				"MW"
 			],
@@ -1461,7 +1462,7 @@
 				{
 					"name": "Assassinate",
 					"entries": [
-						"During his first turn, Bag of Nails has advantage on attack rolls against any creature that hasn't taken a turn. Any hit Bag of Nails scores against a {@quickref Surprise|PHB|3|0|surprised} creature is a critical hit."
+						"During his first turn, Bag of Nails has advantage on attack rolls against any creature that hasn't taken a turn. Any hit Bag of Nails scores against a {@status surprised} creature is a critical hit."
 					]
 				},
 				{
@@ -1883,6 +1884,9 @@
 				"medicine": "+6"
 			},
 			"passive": 13,
+			"conditionImmune": [
+				"disease"
+			],
 			"languages": [
 				"understands Common but can't speak"
 			],

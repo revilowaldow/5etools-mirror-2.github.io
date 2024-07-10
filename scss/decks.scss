@@ -333,6 +333,7 @@
 		}
 
 		&wrp-desc {
+			max-height: 75vh;
 			border-top: 3px solid vars.$rgb-name-red;
 			border-bottom: 3px solid vars.$rgb-name-red;
 			background-color: #e5c4ba;
@@ -343,6 +344,10 @@
 
 			.rd__h {
 				justify-content: center;
+			}
+
+			&::-webkit-scrollbar-thumb {
+				background: vars.$rgb-name-red;
 			}
 		}
 	}
@@ -370,6 +375,10 @@
 			border-color: vars-night.$rgb-name-red--night;
 			background-color: #574930;
 			box-shadow: 0 0 10px 0 #000;
+
+			&::-webkit-scrollbar-thumb {
+				background: vars-night.$rgb-name-red--night;
+			}
 		}
 	}
 }

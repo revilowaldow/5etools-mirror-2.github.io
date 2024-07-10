@@ -1,4 +1,4 @@
-import * as fs from "fs";
+import fs from "fs";
 import {simpleGit} from "simple-git";
 import "../js/parser.js";
 import "../js/utils.js";

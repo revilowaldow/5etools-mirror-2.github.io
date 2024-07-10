@@ -1591,7 +1591,7 @@
 												"Cabinets hang on the north wall of this large room, which is hazy with the smell of tobacco. Near the east wall stands an overstuffed couch. An rectangular table turned on its side blocks a closed door on the south wall."
 											]
 										},
-										"Four {@creature kenku} cutpurses working for Daask hide in two groups of two: one group behind the couch, the other behind the table. A character with a passive Wisdom ({@skill Perception}) score of 13 or higher is not {@quickref Surprise|PHB|3|0|surprised} by the kenku, which prefer to attack from behind the furniture. When using the couch and table for protection, a creature gains half cover. The cabinets are empty."
+										"Four {@creature kenku} cutpurses working for Daask hide in two groups of two: one group behind the couch, the other behind the table. A character with a passive Wisdom ({@skill Perception}) score of 13 or higher is not {@status surprised} by the kenku, which prefer to attack from behind the furniture. When using the couch and table for protection, a creature gains half cover. The cabinets are empty."
 									]
 								},
 								{

@@ -4,7 +4,7 @@ import "../js/render.js";
 import "../js/omnidexer.js";
 import * as ut from "./util.js";
 
-class UtilSearchIndex {
+export class UtilSearchIndex {
 	/**
 	 * Prefer "core" sources, then official sources, then others.
 	 */
@@ -123,6 +123,23 @@ class UtilSearchIndex {
 		ut.unpatchLoadJson();
 		return out;
 	}
-}
 
-export {UtilSearchIndex};
+	static async pGetIndexPartnered () {
+		ut.patchLoadJson();
+
+		await Promise.all([
+			PrereleaseUtil.pAddBrewsPartnered({isSilent: true}),
+			BrewUtil2.pAddBrewsPartnered({isSilent: true}),
+		]);
+
+		// TODO(Future) add `PrereleaseUtil` index as required
+		const out = await BrewUtil2.pGetSearchIndex({
+			isDecompress: false,
+			isIncludeExtendedSourceInfo: true,
+		});
+
+		ut.unpatchLoadJson();
+
+		return out;
+	}
+}

@@ -1307,6 +1307,11 @@
 					]
 				}
 			},
+			"miscTags": [
+				"DIS",
+				"MLW",
+				"MW"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true

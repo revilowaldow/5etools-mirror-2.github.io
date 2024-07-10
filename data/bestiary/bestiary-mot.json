@@ -985,7 +985,7 @@
 				{
 					"name": "Mount",
 					"entries": [
-						"If the archon isn't mounted, it can use a bonus action to magically teleport onto the creature serving as its mount, provided the archon and its mount are on the same plane of existence. When it teleports, the archon appears astride the mount, along with any equipment it is wearing or carrying. While mounted and not {@condition incapacitated}, the archon can't be {@quickref Surprise|PHB|3|0|surprised}, and both it and its mount have advantage on Dexterity saving throws. If the archon is reduced to 0 hit points while riding its mount, the mount is reduced to 0 hit points as well."
+						"If the archon isn't mounted, it can use a bonus action to magically teleport onto the creature serving as its mount, provided the archon and its mount are on the same plane of existence. When it teleports, the archon appears astride the mount, along with any equipment it is wearing or carrying. While mounted and not {@condition incapacitated}, the archon can't be {@status surprised}, and both it and its mount have advantage on Dexterity saving throws. If the archon is reduced to 0 hit points while riding its mount, the mount is reduced to 0 hit points as well."
 					]
 				},
 				{
@@ -1165,7 +1165,7 @@
 					"name": "Mount",
 					"entries": [
 						"If the ashen rider isn't mounted, it can use a bonus action to magically teleport onto the creature serving as its mount, provided the ashen rider and its mount are on the same plane of existence. When it teleports, the ashen rider appears astride the mount along with any equipment it is wearing or carrying.",
-						"While mounted and not {@condition incapacitated}, the ashen rider can't be {@quickref Surprise|PHB|3|0|surprised}, and both it and its mount have advantage on Dexterity saving throws. If the ashen rider is reduced to 0 hit points while riding its mount, the mount is reduced to 0 hit points as well."
+						"While mounted and not {@condition incapacitated}, the ashen rider can't be {@status surprised}, and both it and its mount have advantage on Dexterity saving throws. If the ashen rider is reduced to 0 hit points while riding its mount, the mount is reduced to 0 hit points as well."
 					]
 				}
 			],
@@ -2766,7 +2766,7 @@
 				{
 					"name": "Vigilant",
 					"entries": [
-						"The giant can't be {@quickref Surprise|PHB|3|0|surprised}."
+						"The giant can't be {@status surprised}."
 					]
 				}
 			],
@@ -2918,7 +2918,7 @@
 				{
 					"name": "Petrifying Gaze",
 					"entries": [
-						"When a creature that can see Hythonia's eyes starts its turn within 30 feet of her, Hythonia can force it to make a {@dc 18} Constitution saving throw if she isn't {@condition incapacitated} and can see the creature. If the saving throw fails by 5 or more, the creature is instantly {@condition petrified}. Otherwise, on a failed save the creature begins to turn to stone and is {@condition restrained}. The {@condition restrained} creature must repeat the saving throw at the end of its next turn, becoming {@condition petrified} on a failure or ending the effect on a success. The petrification lasts until the creature is freed by the {@spell greater restoration} spell or other magic. Unless {@quickref Surprise|PHB|3|0|surprised}, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see Hythonia until the start of its next turn, when it can avert its eyes again. If the creature looks at Hythonia in the meantime, it must immediately make the save. If Hythonia sees herself reflected on a polished surface within 30 feet of her and in an area of bright light, she is affected by her own gaze."
+						"When a creature that can see Hythonia's eyes starts its turn within 30 feet of her, Hythonia can force it to make a {@dc 18} Constitution saving throw if she isn't {@condition incapacitated} and can see the creature. If the saving throw fails by 5 or more, the creature is instantly {@condition petrified}. Otherwise, on a failed save the creature begins to turn to stone and is {@condition restrained}. The {@condition restrained} creature must repeat the saving throw at the end of its next turn, becoming {@condition petrified} on a failure or ending the effect on a success. The petrification lasts until the creature is freed by the {@spell greater restoration} spell or other magic. Unless {@status surprised}, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see Hythonia until the start of its next turn, when it can avert its eyes again. If the creature looks at Hythonia in the meantime, it must immediately make the save. If Hythonia sees herself reflected on a polished surface within 30 feet of her and in an area of bright light, she is affected by her own gaze."
 					]
 				},
 				{
@@ -3434,17 +3434,6 @@
 			"name": "Medusa",
 			"source": "MOT",
 			"page": 206,
-			"otherSources": [
-				{
-					"source": "SatO"
-				},
-				{
-					"source": "BMT"
-				},
-				{
-					"source": "DoDk"
-				}
-			],
 			"_copy": {
 				"name": "Medusa",
 				"source": "MM",
@@ -4379,7 +4368,7 @@
 				{
 					"name": "Vigilant",
 					"entries": [
-						"The phylaskia can't be {@quickref Surprise|PHB|3|0|surprised}."
+						"The phylaskia can't be {@status surprised}."
 					]
 				}
 			],
@@ -6034,7 +6023,7 @@
 				{
 					"name": "Multiheaded",
 					"entries": [
-						"The cerberus can't be {@quickref Surprise|PHB|3|0|surprised}, and it has advantage on saving throws against being knocked {@condition unconscious}."
+						"The cerberus can't be {@status surprised}, and it has advantage on saving throws against being knocked {@condition unconscious}."
 					]
 				},
 				{
@@ -6279,7 +6268,7 @@
 				{
 					"name": "Multiheaded",
 					"entries": [
-						"The cerberus can't be {@quickref Surprise|PHB|3|0|surprised}, and it has advantage on saving throws against being knocked {@condition unconscious}."
+						"The cerberus can't be {@status surprised}, and it has advantage on saving throws against being knocked {@condition unconscious}."
 					]
 				},
 				{

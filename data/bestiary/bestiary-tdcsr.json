@@ -3741,6 +3741,9 @@
 			"resist": [
 				"poison"
 			],
+			"conditionImmune": [
+				"disease"
+			],
 			"languages": [
 				"Common",
 				"Dwarvish"

@@ -1,6 +1,6 @@
 "use strict";
 
-class PageFilterActions extends PageFilter {
+class PageFilterActions extends PageFilterBase {
 	static getTimeText (time) {
 		return typeof time === "string" ? time : Parser.getTimeToFull(time);
 	}

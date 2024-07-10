@@ -1,6 +1,6 @@
 "use strict";
 
-class PageFilterDeities extends PageFilter {
+class PageFilterDeities extends PageFilterBase {
 	static unpackAlignment (ent) {
 		ent.alignment.sort(SortUtil.alignmentSort);
 		if (ent.alignment.length === 2 && ent.alignment.includes("N")) {
@@ -85,3 +85,22 @@ class PageFilterDeities extends PageFilter {
 }
 
 globalThis.PageFilterDeities = PageFilterDeities;
+
+class ListSyntaxDeities extends ListUiUtil.ListSyntax {
+	_getSearchCacheStats (entity) {
+		const ptrOut = {_: ""};
+
+		const entriesMeta = Renderer.deity.getDeityRenderableEntriesMeta(entity);
+		Object.entries(entriesMeta.entriesAttributes)
+			.forEach(entry => this._getSearchCache_handleEntry(entry, ptrOut));
+
+		return ptrOut._;
+	}
+
+	/** Treat entries on the deity as "fluff" */
+	async _pGetSearchCacheFluff (entity) {
+		return this._getSearchCache_entries(entity, {indexableProps: ["entries"]});
+	}
+}
+
+globalThis.ListSyntaxDeities = ListSyntaxDeities;

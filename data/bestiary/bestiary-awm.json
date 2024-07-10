@@ -348,7 +348,8 @@
 				}
 			],
 			"traitTags": [
-				"Amphibious"
+				"Amphibious",
+				"Mimicry"
 			],
 			"damageTags": [
 				"S"

@@ -1405,7 +1405,7 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Starting at 3rd level, you are at your deadliest when you get the drop on your enemies. You have advantage on attack rolls against any creature that hasn't taken a turn in the combat yet. In addition, any hit you score against a creature that is {@quickref Surprise|PHB|3|0|surprised} is a critical hit."
+				"Starting at 3rd level, you are at your deadliest when you get the drop on your enemies. You have advantage on attack rolls against any creature that hasn't taken a turn in the combat yet. In addition, any hit you score against a creature that is {@status surprised} is a critical hit."
 			]
 		},
 		{
@@ -1463,7 +1463,7 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"Starting at 17th level, you become a master of instant death. When you attack and hit a creature that is {@quickref Surprise|PHB|3|0|surprised}, it must make a Constitution saving throw (DC 8 + your Dexterity modifier + your proficiency bonus). On a failed save, double the damage of your attack against the creature."
+				"Starting at 17th level, you become a master of instant death. When you attack and hit a creature that is {@status surprised}, it must make a Constitution saving throw (DC 8 + your Dexterity modifier + your proficiency bonus). On a failed save, double the damage of your attack against the creature."
 			]
 		},
 		{
@@ -1567,7 +1567,7 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"When you reach 17th level, you have become adept at laying ambushes and quickly escaping danger. You can take two turns during the first round of any combat. You take your first turn at your normal initiative and your second turn at your initiative minus 10. You can't use this feature when you are {@quickref Surprise|PHB|3|0|surprised}."
+				"When you reach 17th level, you have become adept at laying ambushes and quickly escaping danger. You can take two turns during the first round of any combat. You take your first turn at your normal initiative and your second turn at your initiative minus 10. You can't use this feature when you are {@status surprised}."
 			]
 		},
 		{

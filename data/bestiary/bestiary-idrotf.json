@@ -142,7 +142,7 @@
 				{
 					"name": "Divine Being",
 					"entries": [
-						"Auril can't be {@quickref Surprise|PHB|3|0|surprised} and can't be changed into another form against her will."
+						"Auril can't be {@status surprised} and can't be changed into another form against her will."
 					]
 				},
 				{
@@ -334,7 +334,7 @@
 				{
 					"name": "Divine Being",
 					"entries": [
-						"Auril can't be {@quickref Surprise|PHB|3|0|surprised} and can't be changed into another form against her will."
+						"Auril can't be {@status surprised} and can't be changed into another form against her will."
 					]
 				},
 				{
@@ -537,7 +537,7 @@
 				{
 					"name": "Divine Being",
 					"entries": [
-						"Auril can't be {@quickref Surprise|PHB|3|0|surprised} and can't be changed into another form against her will."
+						"Auril can't be {@status surprised} and can't be changed into another form against her will."
 					]
 				},
 				{
@@ -3342,6 +3342,7 @@
 				"S"
 			],
 			"miscTags": [
+				"CUR",
 				"MLW",
 				"MW"
 			],

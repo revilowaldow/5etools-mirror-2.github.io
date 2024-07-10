@@ -4785,7 +4785,7 @@
 									"id": "0ad",
 									"entries": [
 										"Lanterns hang from the rafters of this drafty hall. The staircase to the north descends 15 feet to area V10.",
-										"Five lawful evil human {@creature Guard||guards} stand watch here\u2014one by each door. They attack anyone not accompanied by a Vanthampur family member. If they hear trouble elsewhere, the guards can't be {@quickref Surprise|PHB|3|0|surprised}, but they stay put unless ordered to move by a member of the family. Combat here alerts {@creature Thurstwell Vanthampur|BGDIA} in {@area area V13|0af|x}."
+										"Five lawful evil human {@creature Guard||guards} stand watch here\u2014one by each door. They attack anyone not accompanied by a Vanthampur family member. If they hear trouble elsewhere, the guards can't be {@status surprised}, but they stay put unless ordered to move by a member of the family. Combat here alerts {@creature Thurstwell Vanthampur|BGDIA} in {@area area V13|0af|x}."
 									]
 								},
 								{

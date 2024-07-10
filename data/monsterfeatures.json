@@ -9,7 +9,7 @@
 		{
 			"name": "Ambusher",
 			"example": "Doppelganger",
-			"effect": "The creature has advantage on attack rolls against any creature it has {@quickref Surprise|PHB|3|0|surprised}.",
+			"effect": "The creature has advantage on attack rolls against any creature it has {@status surprised}.",
 			"attackBonus": "1"
 		},
 		{
@@ -42,7 +42,7 @@
 			"example": "Cloaker",
 			"effect": "While attached or grappling a creature, the creature takes only half damage dealt to it (rounded down), and the other creature takes the other half.",
 			"hp": "hp",
-			"dpr": "hp * 0.33"
+			"dpr": "hpActual * 0.33"
 		},
 		{
 			"name": "Enlarge",

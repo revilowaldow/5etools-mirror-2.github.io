@@ -12,6 +12,9 @@ export const BLOCKLIST_SOURCES_PAGES = new Set([
 	Parser.SRC_LK,
 	Parser.SRC_AATM,
 	Parser.SRC_HFStCM,
+	Parser.SRC_SjA,
+	Parser.SRC_GotSF,
+	Parser.SRC_DitLCoT,
 	Parser.SRC_VNotEE,
 
 	// N.b.: other MCV source creatures mysteriously have page numbers on Beyond

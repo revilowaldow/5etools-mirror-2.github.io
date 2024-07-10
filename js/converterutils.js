@@ -402,7 +402,7 @@ class TagCondition {
 		"unconscious",
 	];
 
-	static _STATUS_MATCHER = new RegExp(`\\b(concentration)\\b`, "g");
+	static _STATUS_MATCHER = new RegExp(`\\b(concentration|surprised)\\b`, "g");
 
 	static _STATUS_MATCHER_ALT = new RegExp(`\\b(concentrating)\\b`, "g");
 

@@ -1,6 +1,6 @@
 "use strict";
 
-class PageFilterOptionalFeatures extends PageFilter {
+class PageFilterOptionalFeatures extends PageFilterBase {
 	// region static
 	static _filterFeatureTypeSort (a, b) {
 		return SortUtil.ascSort(Parser.optFeatureTypeToFull(a.item), Parser.optFeatureTypeToFull(b.item));
@@ -170,7 +170,7 @@ class PageFilterOptionalFeatures extends PageFilter {
 
 globalThis.PageFilterOptionalFeatures = PageFilterOptionalFeatures;
 
-class ModalFilterOptionalFeatures extends ModalFilter {
+class ModalFilterOptionalFeatures extends ModalFilterBase {
 	/**
 	 * @param opts
 	 * @param opts.namespace
@@ -194,7 +194,7 @@ class ModalFilterOptionalFeatures extends ModalFilter {
 			{sort: "level", text: "Level", width: "1"},
 			{sort: "source", text: "Source", width: "1"},
 		];
-		return ModalFilter._$getFilterColumnHeaders(btnMeta);
+		return ModalFilterBase._$getFilterColumnHeaders(btnMeta);
 	}
 
 	async _pLoadAllData () {
@@ -225,7 +225,7 @@ class ModalFilterOptionalFeatures extends ModalFilter {
 			<span class="ve-col-2 ve-text-center" title="${optfeat._dFeatureType}">${optfeat._lFeatureType}</span>
 			<span class="ve-col-4 ve-text-center">${prerequisite}</span>
 			<span class="ve-col-1 ve-text-center">${level}</span>
-			<div class="ve-col-1 pr-0 ve-flex-h-center ${Parser.sourceJsonToColor(optfeat.source)}" title="${Parser.sourceJsonToFull(optfeat.source)}" ${Parser.sourceJsonToStyle(optfeat.source)}>${source}${Parser.sourceJsonToMarkerHtml(optfeat.source)}</div>
+			<div class="ve-col-1 pr-0 ve-flex-h-center ${Parser.sourceJsonToSourceClassname(optfeat.source)}" title="${Parser.sourceJsonToFull(optfeat.source)}" ${Parser.sourceJsonToStyle(optfeat.source)}>${source}${Parser.sourceJsonToMarkerHtml(optfeat.source)}</div>
 		</div>`;
 
 		const btnShowHidePreview = eleRow.firstElementChild.children[1].firstElementChild;

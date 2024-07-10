@@ -4914,6 +4914,9 @@
 			"attachedItems": [
 				"greataxe|phb"
 			],
+			"traitTags": [
+				"Mimicry"
+			],
 			"senseTags": [
 				"D"
 			],
@@ -4936,6 +4939,7 @@
 				"O"
 			],
 			"miscTags": [
+				"CUR",
 				"MLW",
 				"MW"
 			],
@@ -6480,6 +6484,7 @@
 				"O"
 			],
 			"miscTags": [
+				"DIS",
 				"MW",
 				"RCH"
 			],
@@ -6864,6 +6869,7 @@
 				"O"
 			],
 			"miscTags": [
+				"CUR",
 				"MLW",
 				"MW"
 			],

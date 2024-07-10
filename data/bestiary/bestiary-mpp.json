@@ -574,6 +574,7 @@
 				"O"
 			],
 			"miscTags": [
+				"CUR",
 				"MW",
 				"RCH"
 			],
@@ -5217,6 +5218,7 @@
 				"S"
 			],
 			"miscTags": [
+				"CUR",
 				"MW"
 			],
 			"savingThrowForced": [
@@ -7499,6 +7501,7 @@
 				"Y"
 			],
 			"miscTags": [
+				"CUR",
 				"MW"
 			],
 			"conditionInflict": [

@@ -2643,7 +2643,7 @@
 							"id": "084",
 							"entries": [
 								"Ask the players which character has the {@item Wildspace orrery|AAG}. If none of the characters want to carry it, Krux takes it. With the item in their possession, Krux and the characters can hop aboard their jolly boat and return to the {@i Second Wind}.",
-								"Have Krux and each character make a DC 21 Wisdom ({@skill Perception}) check. Those who fail the check are {@quickref Surprise|PHB|3|0|surprised} when {@creature Big Momma|LoX} attacks:",
+								"Have Krux and each character make a DC 21 Wisdom ({@skill Perception}) check. Those who fail the check are {@status surprised} when {@creature Big Momma|LoX} attacks:",
 								{
 									"type": "insetReadaloud",
 									"id": "085",
@@ -2662,7 +2662,7 @@
 									"height": 1079,
 									"credit": "Ralph Horsley"
 								},
-								"{@creature Big Momma|LoX}, a {@creature void scavver|BAM} (see {@book Boo's Astral Menagerie|BAM}), starts the encounter 40 feet from the characters' jolly boat, which is 50 feet from the end of {@creature Topolah|LoX}'s dock and the same distance away from the {@i Second Wind}. On its first turn, the void scavver swims up to the jolly boat and attacks a random character. Characters who were {@quickref Surprise|PHB|3|0|surprised} can't act until the next round.",
+								"{@creature Big Momma|LoX}, a {@creature void scavver|BAM} (see {@book Boo's Astral Menagerie|BAM}), starts the encounter 40 feet from the characters' jolly boat, which is 50 feet from the end of {@creature Topolah|LoX}'s dock and the same distance away from the {@i Second Wind}. On its first turn, the void scavver swims up to the jolly boat and attacks a random character. Characters who were {@status surprised} can't act until the next round.",
 								"A character can use an action and a pair of oars to row the jolly boat 10 feet horizontally in any direction along the gravity plane shared by {@creature Topolah|LoX}'s asteroid and the {@i Second Wind}. Unlike the jolly boat, {@creature Big Momma|LoX} flies through space like a fish through water and can move in any direction.",
 								{
 									"type": "entries",
@@ -5502,7 +5502,7 @@
 										"An armada of crystal-winged ships patrols the region between your fleet and the citadel. The closest enemy ship is about a thousand feet away."
 									]
 								},
-								"The Xaryxian armada is not expecting an attack. Allow the characters to decide whether they want to open the engagement at range or close to boarding distance. In either case, the Xaryxian ships are {@quickref Surprise|PHB|3|0|surprised} at the beginning of combat.",
+								"The Xaryxian armada is not expecting an attack. Allow the characters to decide whether they want to open the engagement at range or close to boarding distance. In either case, the Xaryxian ships are {@status surprised} at the beginning of combat.",
 								{
 									"type": "entries",
 									"name": "The Xaryxian Armada",

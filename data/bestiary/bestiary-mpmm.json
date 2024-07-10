@@ -4894,7 +4894,7 @@
 					"name": "Death Gaze",
 					"entries": [
 						"When a creature that can see the bodak's eyes starts its turn within 30 feet of the bodak, the bodak can force it to make a {@dc 13} Constitution saving throw if the bodak isn't {@condition incapacitated} and can see the creature. If the saving throw fails by 5 or more, the creature is reduced to 0 hit points unless it is immune to the {@condition frightened} condition. Otherwise, a creature takes 16 ({@damage 3d10}) psychic damage on a failed save.",
-						"Unless {@quickref Surprise|PHB|3|0|surprised}, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it has disadvantage on attack rolls against the bodak until the start of its next turn. If the creature looks at the bodak in the meantime, that creature must immediately make the saving throw."
+						"Unless {@status surprised}, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it has disadvantage on attack rolls against the bodak until the start of its next turn. If the creature looks at the bodak in the meantime, that creature must immediately make the saving throw."
 					]
 				},
 				{
@@ -5481,6 +5481,7 @@
 				"P"
 			],
 			"miscTags": [
+				"DIS",
 				"HPR",
 				"MW"
 			],
@@ -5748,7 +5749,7 @@
 				{
 					"name": "Uncanny Senses",
 					"entries": [
-						"The canoloth can't be {@quickref Surprise|PHB|3|0|surprised} unless it's {@condition incapacitated}."
+						"The canoloth can't be {@status surprised} unless it's {@condition incapacitated}."
 					]
 				}
 			],
@@ -9251,6 +9252,9 @@
 				{
 					"source": "MTF",
 					"page": 158
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -15614,6 +15618,9 @@
 				{
 					"source": "VGM",
 					"page": 145
+				},
+				{
+					"source": "QftIS"
 				}
 			],
 			"size": [
@@ -16096,7 +16103,7 @@
 					"name": "Stunning Gaze",
 					"entries": [
 						"When a creature that can see the gauth's central eye starts its turn within 30 feet of the gauth, the gauth can force it to make a {@dc 14} Wisdom saving throw if the gauth isn't {@condition incapacitated} and can see the creature. A creature that fails the save is {@condition stunned} until the start of its next turn.",
-						"Unless {@quickref Surprise|PHB|3|0|surprised}, a creature can avert its eyes at the start of its turn to avoid the saving throw. If the creature does so, it can't see the gauth until the start of its next turn, when it can avert its eyes again. If the creature looks at the gauth in the meantime, it must immediately make the save."
+						"Unless {@status surprised}, a creature can avert its eyes at the start of its turn to avoid the saving throw. If the creature does so, it can't see the gauth until the start of its next turn, when it can avert its eyes again. If the creature looks at the gauth in the meantime, it must immediately make the save."
 					]
 				},
 				{
@@ -16364,6 +16371,9 @@
 				"type": "internal",
 				"path": "bestiary/gazer.mp3"
 			},
+			"traitTags": [
+				"Mimicry"
+			],
 			"senseTags": [
 				"D"
 			],
@@ -21154,6 +21164,7 @@
 				"O"
 			],
 			"miscTags": [
+				"CUR",
 				"MW"
 			],
 			"conditionInflictSpell": [
@@ -22813,6 +22824,9 @@
 				"type": "internal",
 				"path": "bestiary/leucrotta.mp3"
 			},
+			"traitTags": [
+				"Mimicry"
+			],
 			"senseTags": [
 				"D"
 			],
@@ -29757,6 +29771,7 @@
 				"P"
 			],
 			"miscTags": [
+				"DIS",
 				"MW"
 			],
 			"conditionInflict": [
@@ -31947,6 +31962,7 @@
 				"S"
 			],
 			"miscTags": [
+				"DIS",
 				"MW"
 			],
 			"savingThrowForced": [
@@ -36254,6 +36270,7 @@
 				"P"
 			],
 			"miscTags": [
+				"CUR",
 				"MW"
 			],
 			"conditionInflict": [
@@ -37019,7 +37036,7 @@
 				{
 					"name": "Rapier",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage plus 7 ({@damage 2d6}) piercing damage."
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage plus 7 ({@damage 2d6}) force damage."
 					]
 				},
 				{
@@ -37059,6 +37076,7 @@
 				"X"
 			],
 			"damageTags": [
+				"O",
 				"P",
 				"Y"
 			],
@@ -41069,6 +41087,7 @@
 			],
 			"miscTags": [
 				"AOE",
+				"DIS",
 				"MW",
 				"RCH"
 			],

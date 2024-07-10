@@ -103,6 +103,33 @@ class NavBar {
 		this._addElement_li(NavBar._CAT_UTILITIES, "manageprerelease.html", "Prerelease Content Manager");
 		this._addElement_li(NavBar._CAT_UTILITIES, "makebrew.html", "Homebrew Builder");
 		this._addElement_li(NavBar._CAT_UTILITIES, "managebrew.html", "Homebrew Manager");
+		this._addElement_buttonSplit(
+			NavBar._CAT_UTILITIES,
+			{
+				metas: [
+					{
+						html: "Load All Partnered Content",
+						click: async evt => {
+							evt.stopPropagation();
+							evt.preventDefault();
+							const {ManageBrewUi} = await import("./utils-brew/utils-brew-ui-manage.js");
+							await ManageBrewUi.pOnClickBtnLoadAllPartnered();
+						},
+					},
+					{
+						html: `<span class="glyphicon glyphicon-link"></span>`,
+						title: `Export Prerelease Content/Homebrew List as URL`,
+						click: async evt => {
+							evt.stopPropagation();
+							evt.preventDefault();
+							const ele = evt.currentTarget;
+							const {ManageBrewUi} = await import("./utils-brew/utils-brew-ui-manage.js");
+							await ManageBrewUi.pOnClickBtnExportListAsUrl({ele});
+						},
+					},
+				],
+			},
+		);
 		this._addElement_divider(NavBar._CAT_UTILITIES);
 		this._addElement_li(NavBar._CAT_UTILITIES, "inittrackerplayerview.html", "Initiative Tracker Player View");
 		this._addElement_divider(NavBar._CAT_UTILITIES);
@@ -455,7 +482,7 @@ class NavBar {
 	}
 
 	static _addElement_getDatePrefix ({date, isAddDateSpacer}) { return `${(date != null || isAddDateSpacer) ? `<div class="ve-small mr-2 page__nav-date inline-block text-right inline-block">${date || ""}</div>` : ""}`; }
-	static _addElement_getSourcePrefix ({source}) { return `${source != null ? `<div class="nav2-list__disp-source ${Parser.sourceJsonToColor(source)}" ${Parser.sourceJsonToStyle(source)}></div>` : ""}`; }
+	static _addElement_getSourcePrefix ({source}) { return `${source != null ? `<div class="nav2-list__disp-source ${Parser.sourceJsonToSourceClassname(source)}" ${Parser.sourceJsonToStyle(source)}></div>` : ""}`; }
 
 	static _addElement_divider (parentCategory) {
 		const parentNode = this._getNode(parentCategory);
@@ -539,17 +566,53 @@ class NavBar {
 		const li = document.createElement("li");
 		li.setAttribute("role", "presentation");
 
-		const a = document.createElement("a");
-		a.href = "#";
-		if (options.className) a.className = options.className;
-		a.onclick = options.click;
-		a.innerHTML = options.html;
+		const eleSpan = document.createElement("span");
+		if (options.className) eleSpan.className = options.className;
+		eleSpan.onclick = options.click;
+		eleSpan.innerHTML = options.html;
 
-		if (options.context) a.oncontextmenu = options.context;
+		if (options.context) eleSpan.oncontextmenu = options.context;
 
 		if (options.title) li.setAttribute("title", options.title);
 
-		li.appendChild(a);
+		li.appendChild(eleSpan);
+		parentNode.body.appendChild(li);
+	}
+
+	/**
+	 * Special LI for button
+	 * @param parentCategory The element to append to.
+	 * @param options Options.
+	 * @param options.html
+	 * @param options.metas
+	 */
+	static _addElement_buttonSplit (parentCategory, options) {
+		const parentNode = this._getNode(parentCategory);
+
+		const li = document.createElement("li");
+		li.setAttribute("role", "presentation");
+		li.className = "ve-flex-v-center";
+
+		options.metas
+			.forEach(({className, click, html, title}, i) => {
+				const eleSpan = document.createElement("span");
+
+				eleSpan.className = [
+					className,
+					"inline-block",
+					i ? null : "w-100 min-w-0",
+				]
+					.filter(Boolean)
+					.join(" ");
+
+				eleSpan.onclick = click;
+				eleSpan.innerHTML = html;
+
+				if (title) eleSpan.setAttribute("title", title);
+
+				li.appendChild(eleSpan);
+			});
+
 		parentNode.body.appendChild(li);
 	}
 

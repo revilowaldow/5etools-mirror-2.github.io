@@ -198,6 +198,14 @@
 			]
 		},
 		{
+			"name": "Antigravity Belt",
+			"source": "QftIS",
+			"_copy": {
+				"name": "Technology",
+				"source": "QftIS"
+			}
+		},
+		{
 			"name": "Apparatus of Kwalish",
 			"source": "DMG",
 			"images": [
@@ -1200,6 +1208,14 @@
 			]
 		},
 		{
+			"name": "Concussion Grenade",
+			"source": "QftIS",
+			"_copy": {
+				"name": "Technology",
+				"source": "QftIS"
+			}
+		},
+		{
 			"name": "Condemner",
 			"source": "TDCSR",
 			"images": [
@@ -1437,6 +1453,19 @@
 				"name": "Danoth's Visor",
 				"source": "EGW"
 			}
+		},
+		{
+			"name": "Daoud's Wondrous Lanthorn",
+			"source": "QftIS",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/QftIS/Daouds Wondrous Lanthorn.webp"
+					}
+				}
+			]
 		},
 		{
 			"name": "Dawnbringer",
@@ -4253,6 +4282,14 @@
 			]
 		},
 		{
+			"name": "Needler Pistol",
+			"source": "QftIS",
+			"_copy": {
+				"name": "Technology",
+				"source": "QftIS"
+			}
+		},
+		{
 			"name": "Nepenthe",
 			"source": "VRGR",
 			"images": [
@@ -4440,6 +4477,14 @@
 					}
 				}
 			]
+		},
+		{
+			"name": "Paralysis Pistol",
+			"source": "QftIS",
+			"_copy": {
+				"name": "Technology",
+				"source": "QftIS"
+			}
 		},
 		{
 			"name": "Pariah's Shield",
@@ -5299,6 +5344,14 @@
 			]
 		},
 		{
+			"name": "Robot Controller",
+			"source": "QftIS",
+			"_copy": {
+				"name": "Technology",
+				"source": "QftIS"
+			}
+		},
+		{
 			"name": "Rod of Absorption",
 			"source": "DMG",
 			"images": [
@@ -5875,6 +5928,14 @@
 			]
 		},
 		{
+			"name": "Sleep Grenade",
+			"source": "QftIS",
+			"_copy": {
+				"name": "Technology",
+				"source": "QftIS"
+			}
+		},
+		{
 			"name": "Slippers of Spider Climbing",
 			"source": "DMG",
 			"images": [
@@ -6105,6 +6166,19 @@
 					"href": {
 						"type": "internal",
 						"path": "items/DMG/Staff of Power.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Staff of Ruling",
+			"source": "QftIS",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/QftIS/Staff of Ruling.webp"
 					}
 				}
 			]
@@ -6545,6 +6619,21 @@
 						"type": "internal",
 						"path": "items/DitLCoT/Tashas Creeping Keelboat.webp"
 					}
+				}
+			]
+		},
+		{
+			"name": "Technology",
+			"source": "QftIS",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/QftIS/Technology.webp"
+					},
+					"title": "Left (Top to Bottom): Needler Pistol, Paralysis Pistol, Bandolier of Grenades. Middle: Antigravity Belt. Right (Top to Bottom): Laser Pistol, Robot Controller, Laser Rifle",
+					"credit": "Dave Melvin"
 				}
 			]
 		},

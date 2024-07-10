@@ -1591,7 +1591,10 @@
 			"basicRules": true,
 			"type": "FD",
 			"rarity": "none",
-			"value": 20
+			"value": 20,
+			"miscTags": [
+				"CNS"
+			]
 		},
 		{
 			"name": "Ale (Mug)",
@@ -1601,7 +1604,10 @@
 			"basicRules": true,
 			"type": "FD",
 			"rarity": "none",
-			"value": 4
+			"value": 4,
+			"miscTags": [
+				"CNS"
+			]
 		},
 		{
 			"name": "Alexandrite",
@@ -1997,6 +2003,32 @@
 			"hasFluffImages": true
 		},
 		{
+			"name": "Antigravity Belt",
+			"source": "QftIS",
+			"type": "G",
+			"rarity": "none",
+			"charges": 10,
+			"entries": [
+				"Metal tubes ring the lower edge of this wide belt. It is powered by an {@item energy cell} stored in a metal case near the buckle. Placing a full {@item energy cell} in the belt gives the belt 10 charges.",
+				{
+					"name": "Activating the Belt",
+					"type": "entries",
+					"entries": [
+						"As a bonus action, you can expend any number of the belt's charges to activate it; the belt remains active for 1 minute per charge expended. You can use a bonus action to deactivate the belt early, but doing so doesn't recover any expended charges.",
+						"When you activate the belt, and as a bonus action while it remains active, you can rise or descend vertically up to 20 feet. You remain floating in place while the property is active, and you can move yourself horizontally by being pushed or towed or by scooting yourself along a surface, such as a wall or ceiling, at half your walking speed. If you are still levitating when the belt deactivates, you fall."
+					]
+				},
+				{
+					"name": "Replacing the Energy Cell",
+					"type": "entries",
+					"entries": [
+						"While the belt has charges remaining, its {@item energy cell} can't be removed. Once the belt has 0 charges, you can replace the {@item energy cell} with a new cell by using an action or a bonus action."
+					]
+				}
+			],
+			"hasFluffImages": true
+		},
+		{
 			"name": "Antitoxin (vial)",
 			"source": "PHB",
 			"page": 151,
@@ -2138,6 +2170,9 @@
 				"If you consume more than one dose of aqua delerium before finishing your next long rest, you take ({@dice 1d12}) necrotic damage for each spell level regained, and your hit point maximum is reduced by an amount equal to the damage taken until you finish a long rest. This damage can't be reduced or prevented in any way.",
 				"When a creature who cannot cast spells using spell slots drinks aqua delerium, it takes 10 ({@damage 3d6}) necrotic damage and gains one {@adventure level of contamination|DoDk|12}."
 			],
+			"miscTags": [
+				"CNS"
+			],
 			"hasFluffImages": true
 		},
 		{
@@ -2150,6 +2185,9 @@
 				"This bright orange fluid is stored in a syringe and charged with arcane magic. You can use an action to administer the shot directly to the heart of yourself or another willing creature.",
 				"You are protected against {@adventure contamination|DoDk|12} for six hours after receiving a dose of aqua expurgo. During this time, whenever you fail a saving throw against an effect that would cause you to gain one or more {@adventure contamination levels|DoDk|12}, you can choose to succeed instead. You can use this ability three times, after which the effects of aqua expurgo expire.",
 				"If the effects of aqua expurgo expire in this manner, you immediately take 10 ({@damage 3d6}) necrotic damage and become incapacitated for 1 minute while you violently retch corrupt bile. Your hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until you finish a long rest. You die if this effect reduces your hit point maximum to 0. The necrotic damage can't be reduced or prevented by any means."
+			],
+			"miscTags": [
+				"CNS"
 			],
 			"hasFluffImages": true
 		},
@@ -2232,6 +2270,9 @@
 				"This substance is created by distilling the jelly that encases the brain of a {@creature xakalonus|GHLoE}. As an action, you can coat one weapon or 20 pieces of ammunition with the substance.",
 				"If the coated objects are not magical, for the next minute, your attacks with the coated weapon or ammunition gain a +2 bonus to attack and damage rolls.",
 				"If the coated objects are magical, the oil does not affect attack or damage rolls with them. However, your attacks against the {@creature hraptnon|GHLoE} can fully damage that creature for one minute."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -2655,6 +2696,9 @@
 			],
 			"poisonTypes": [
 				"ingested"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -2982,6 +3026,9 @@
 			"entries": [
 				"The ruins of this sprawling city are now known as the Crystalfen Caverns. These caves are home to scattered veins of {@item azuremite|TDCSR}, a gorgeous blue crystal that formed from millennia of psychic energies existing near element deposits. Curious explorers who discovered the veins found that, when mined and refined into a fine dust, the {@item azuremite|TDCSR} powder is a strong mind-altering agent and induces temporary visions and other psychic phenomena.",
 				"While a number of small, isolated entrances to this labyrinth of tunnels have been discovered and adventuring parties have attempted to chart the mines, the caverns are so vast and deep that either they gave up for fear of becoming lost, or they were assailed by the terrible denizens of the caverns, never to return. Most who now brave the caverns are foolish treasure hunters or criminals seeking to mine more {@item azuremite|TDCSR} to sell on the black market."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -4013,6 +4060,9 @@
 			"poison": true,
 			"entries": [
 				"You can use the poison in this vial to coat one slashing or piercing weapon or up to three pieces of ammunition. Applying the poison takes an action. A creature hit by the poisoned weapon or ammunition must make a DC 10 Constitution saving throw or take {@damage 1d4} poison damage. Once applied, the poison retains potency for 1 minute before drying."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -4082,6 +4132,9 @@
 			],
 			"lootTables": [
 				"Magic Item Table C"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -4095,7 +4148,8 @@
 				"This spongy, flavorless, gelatinous bead dissolves on your tongue and provides as much nourishment as 1 day of rations."
 			],
 			"miscTags": [
-				"CF/W"
+				"CF/W",
+				"CNS"
 			]
 		},
 		{
@@ -4107,6 +4161,9 @@
 			"wondrous": true,
 			"entries": [
 				"This spongy, flavorless, gelatinous bead dissolves in liquid, transforming up to a pint of the liquid into fresh, cold drinking water. The bead has no effect on magical liquids or harmful substances such as poison."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -4474,6 +4531,9 @@
 			],
 			"poisonTypes": [
 				"inhaled"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -4611,6 +4671,9 @@
 			"rarity": "none",
 			"entries": [
 				"Every few years, a ghost orchid colony grows a black pod as thick as a human fist that holds three soft, black seeds. A creature that consumes one of these black seeds is affected by the spell {@spell feign death}. If the creature is unaware of the pod's effects or does not wish to be affected, it can resist the effect by succeeding on a DC 16 Constitution saving throw. Otherwise, it is considered to be a willing recipient of the spell."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -4645,6 +4708,9 @@
 			"entries": [
 				"This tarry substance harvested from the dark boughs of the death's head willow is a powerful intoxicant. It can be smoked as a concentrate or injected directly into the bloodstream. A creature subjected to a dose of black sap cannot be {@condition charmed} or {@condition frightened} for {@dice 1d6} hours.",
 				"For each dose of black sap consumed, a creature must succeed on a DC 15 Constitution saving throw or become {@condition poisoned} for {@dice 2d4} hours\u2014an effect that is cumulative with multiple doses."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -5158,6 +5224,9 @@
 			"value": 20000,
 			"entries": [
 				"This bitter chartreuse concoction is distilled from a fungus native to the Blightshore badlands. The sickly green liqueur harbors potent psychedelic properties. Provided it is neither a construct nor undead, a creature subjected to a dose of blight ichor gains advantage on Intelligence and Wisdom checks, as well as vulnerability to psychic damage, for 1 hour. For each dose of blight ichor consumed, the creature must succeed on a DC 15 Constitution saving throw or become {@condition poisoned} for {@dice 1d6} hours and suffer the effects of a {@spell confusion} spell for 1 minute. An undead creature subjected to a dose of blight ichor gains advantage on all Dexterity checks and is immune to the {@condition frightened} condition for 1 hour."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -5260,6 +5329,9 @@
 			],
 			"poisonTypes": [
 				"injury"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -5270,6 +5342,9 @@
 			"rarity": "uncommon",
 			"entries": [
 				"This clear potion has dark red flecks within, resembling clotted blood. When you drink this potion, it removes the curse of lycanthropy from you if that curse was imposed by a lycanthrope's bite or similar effect."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -5527,6 +5602,9 @@
 			"age": "renaissance",
 			"entries": [
 				"As an action, a character can light this bomb and throw it at a point up to 60 feet away. Each creature within 5 feet of that point must succeed on a DC 12 Dexterity saving throw or take {@damage 3d6} fire damage."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -6148,6 +6226,9 @@
 			],
 			"attachedSpells": [
 				"gust of wind"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -6729,6 +6810,9 @@
 			],
 			"poisonTypes": [
 				"inhaled"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -7081,6 +7165,9 @@
 			],
 			"lootTables": [
 				"Magic Item Table H"
+			],
+			"miscTags": [
+				"CNS"
 			],
 			"hasFluffImages": true
 		},
@@ -7442,6 +7529,9 @@
 			],
 			"poisonTypes": [
 				"contact"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -8094,7 +8184,10 @@
 			"basicRules": true,
 			"type": "FD",
 			"rarity": "none",
-			"value": 30
+			"value": 30,
+			"miscTags": [
+				"CNS"
+			]
 		},
 		{
 			"name": "Cinnamon",
@@ -8885,7 +8978,10 @@
 			"basicRules": true,
 			"type": "FD",
 			"rarity": "none",
-			"value": 20
+			"value": 20,
+			"miscTags": [
+				"CNS"
+			]
 		},
 		{
 			"name": "Component Pouch",
@@ -8938,6 +9034,18 @@
 			],
 			"attachedSpells": [
 				"teleport"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Concussion Grenade",
+			"source": "QftIS",
+			"type": "EXP",
+			"rarity": "none",
+			"hasRefs": true,
+			"entries": [
+				"{#itemEntry Grenade|DMG}",
+				"This grenade explodes in a concussive blast that fills a 20-foot-radius sphere. Each creature in that area must make a DC 15 Dexterity saving throw, taking ({@dice 6d6}) force damage on a failed save or half as much damage on a successful one."
 			],
 			"hasFluffImages": true
 		},
@@ -10296,6 +10404,131 @@
 			},
 			"attachedSpells": [
 				"antimagic field"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Daoud's Wondrous Lanthorn",
+			"source": "QftIS",
+			"page": 190,
+			"rarity": "artifact",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"This artifact destroys wealth to provide light and protection. Wrought from the finest yellow gold, the lantern has four faces, and an unwavering amber flame burns within it. The faces of the lantern are fitted with faceted gemstone lenses.",
+				"The lantern is a symbol of the teachings of Daoud, who was once a priest of Istus, a god of fate. When Daoud was stripped of his possessions, he developed a radical new philosophy in his quest to understand fate. He urged followers of his ideology to eschew wealth and seek out all fortunes, good and ill, to unravel the cloth of destiny.",
+				{
+					"type": "entries",
+					"name": "Random Properties",
+					"entries": [
+						"The lantern has the following random properties:",
+						{
+							"type": "list",
+							"items": [
+								"2 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial} properties",
+								"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial} property",
+								"1 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental} property"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Precious Fuel",
+					"entries": [
+						"The lantern burns only one source of fuel: powdered gemstones placed in the lantern's base. The lantern can hold a maximum of 10,000 gp worth of powdered gems, and it contains 9,000 gp of fuel when found. Thereafter it attempts to burn 100 gp of fuel after each year passes, keeping the lantern burning for another year. If no fuel is available, the lantern's flame goes out. You can add more fuel to the lantern as part of a short or long rest. Once added, fuel can't be removed from the lantern's base.",
+						"The lantern's flame can't be extinguished by any means other than running out of fuel. If the lantern's flame goes out, the creature attuned to it immediately dies. One exception to this rule exists (see the \"Destroying the Lantern\" section)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Revealing Light",
+					"entries": [
+						"The lantern sheds {@quickref Vision and Light||2||bright light} in a 60-foot radius and {@quickref Vision and Light||2||dim light} for an additional 60 feet. Invisible creatures and objects are visible while in the lantern's {@quickref Vision and Light||2||bright light}.",
+						"While attuned to the lantern, you can use a bonus action to dim the lantern, reducing the light to {@quickref Vision and Light||2||dim light} in a 5-foot radius, or brighten the lantern back to its normal {@quickref Vision and Light||2||bright light} radius."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Lenses",
+					"entries": [
+						"When found, the lantern's faces display the following gem lenses: diamond, emerald, ruby, and sapphire. As part of a short or long rest, you can magically change any of these gem lenses to a different type of gem shown in the Lenses table. The gem lenses can't be removed from the lantern.",
+						"As an action while holding the lantern, you can burn some of the lantern's fuel to cast a spell (save DC 20) through one or more of its current gem lenses, as noted in the Lenses table. The spell's target or point of origin must be in the lantern's area of {@quickref Vision and Light||2||bright light}. If there isn't enough fuel left to cast the spell, the last of the remaining fuel is expended, and the flame goes out."
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Lenses",
+					"colStyles": [
+						"col-4",
+						"col-4",
+						"col-4"
+					],
+					"colLabels": [
+						"Lens Color",
+						"Spell",
+						"Fuel Cost"
+					],
+					"rows": [
+						[
+							"Amethyst",
+							"{@spell Reverse Gravity}",
+							"3,000 gp"
+						],
+						[
+							"Diamond",
+							"{@spell Disintegrate}",
+							"2,000 gp"
+						],
+						[
+							"Emerald",
+							"{@spell Haste}",
+							"500 gp"
+						],
+						[
+							"Jacinth",
+							"{@spell Flame Strike}",
+							"1,000 gp"
+						],
+						[
+							"Ruby",
+							"{@spell Hold Monster}",
+							"1,000 gp"
+						],
+						[
+							"Sapphire",
+							"{@spell Fear}",
+							"500 gp"
+						],
+						[
+							"Topaz",
+							"{@spell Slow}",
+							"500 gp"
+						],
+						[
+							"Any four colors",
+							"{@spell Prismatic Wall}",
+							"5,000 gp"
+						]
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Destroying the Lantern",
+					"entries": [
+						"To destroy the lantern, the creature attuned to it must forsake all material possessions except for the lantern and common clothes. Then the creature must willingly snuff the lantern's flame with the intention to destroy the artifact. When its flame is snuffed in this way, the lantern's gold corrodes, the lenses and remaining gemstone fuel turn to worthless sand, and the creature attuned to it is spared."
+					]
+				}
+			],
+			"attachedSpells": [
+				"reverse gravity",
+				"disintegrate",
+				"haste",
+				"flame strike",
+				"hold monster",
+				"fear",
+				"slow",
+				"prismatic wall"
 			],
 			"hasFluffImages": true
 		},
@@ -13607,6 +13840,9 @@
 						"When this orb detonates, it creates a powerful windstorm that lasts for 1 hour. Whenever a creature ends its turn exposed to the wind, the creature must succeed on a DC 18 Constitution saving throw or take {@damage 1d4} bludgeoning damage, as the wind and debris batter it. The wind is strong enough to uproot weak trees and destroy light structures after at least 10 minutes of exposure. Otherwise, the rules for {@hazard strong wind} apply, as detailed in chapter 5 of the Dungeon Master's Guide."
 					]
 				}
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -13627,6 +13863,9 @@
 						"When this orb detonates, it subjects the area to the effects of the {@spell earthquake} spell for 1 minute (spell save DC 18). For the purpose of the spell's effects, the spell is cast on the turn that the orb explodes."
 					]
 				}
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -13647,6 +13886,9 @@
 						"When this orb detonates, it creates a dry heat wave that lasts for 24 hours. Within the area of effect, the rules for {@hazard extreme heat} apply, as detailed in chapter 5 of the Dungeon Master's Guide. At the end of each hour, there is a ten percent chance that the heat wave starts a wildfire in a random location within the area of effect. The wildfire covers a 10-foot-square area initially but expands to fill another 10-foot square each round until the fire is extinguished or burns itself out. A creature that comes within 10 feet of a wildfire for the first time on a turn or starts its turn there takes {@damage 3d6} fire damage."
 					]
 				}
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -13667,6 +13909,9 @@
 						"When this orb detonates, it creates a torrential rainstorm that lasts for 24 hours. Within the area of effect, the rules for {@hazard heavy precipitation} apply, as detailed in chapter 5 of the Dungeon Master's Guide. If there is a substantial body of water in the area, it floods after {@dice 2d10} hours of heavy rain, rising 10 feet above its banks and inundating the surrounding area. The flood advances at a rate of 100 feet per round, moving away from the body of water where it began until it reaches the edge of the area of effect: at that point, the water flows downhill (and possibly recedes back to its origin). Light structures collapse and wash away. Any Large or smaller creature caught in the flood's path is swept away. The flooding destroys crops and might trigger mudslides, depending on the terrain."
 					]
 				}
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -14487,6 +14732,9 @@
 			"rarity": "none",
 			"entries": [
 				"A psychoactive liquid that smells and tastes like your favorite beverage, essence of dreamlily is a Sarlonan opiate. First imported to help manage pain during the Last War, it's now the most commonly abused substance in Sharn. Though dreamlily isn't illegal if used for medicinal purposes, it's heavily taxed, and thus most dreamlily is smuggled in and sold on the black market. Dreamlily dens can be found across the lower wards. Consuming dreamlily causes disorienting euphoria and brings about remarkable resistance to pain. A creature under the effects of dreamlily is {@condition poisoned} for 1 hour. While {@condition poisoned} in this way, the creature is immune to fear, and the first time it drops to 0 hit points without being killed outright, it drops to 1 hit point instead. A dose of dreamlily costs around 1 gp, or up to ten times that if purchased through legal channels. There are many varieties of the drug, however, and the duration or the price might vary accordingly."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -14525,6 +14773,9 @@
 			],
 			"poisonTypes": [
 				"injury"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -14740,6 +14991,9 @@
 			"lootTables": [
 				"Magic Item Table B"
 			],
+			"miscTags": [
+				"CNS"
+			],
 			"hasFluffImages": true
 		},
 		{
@@ -14787,6 +15041,9 @@
 			],
 			"poisonTypes": [
 				"inhaled"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -14857,6 +15114,9 @@
 			"dmgType": "F",
 			"entries": [
 				"This bundle of explosives can be lit and thrown up to 30 feet as an action. It explodes at the start of your next turn. Creatures and objects within 20 feet of it must make a {@dc 12} Dexterity {@quickref saving throws|PHB|2|1|saving throw}, taking {@damage 6d6} fire damage on a failed save, or half as much damage on a successful one."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -14871,6 +15131,9 @@
 				"As an action, a creature can light a stick of dynamite and throw it at a point up to 60 feet away. Each creature within 5 feet of that point must make a DC 12 Dexterity saving throw, taking {@damage 3d6} bludgeoning damage on a failed save, or half as much damage on a successful one.",
 				"A character can bind sticks of dynamite together so they explode at the same time. Each additional stick increases the damage by {@damage 1d6} (to a maximum of {@damage 10d6}) and the burst radius by 5 feet (to a maximum of 20 feet).",
 				"Dynamite can be rigged with a longer fuse to explode after a set amount of time, usually 1 to 6 rounds. Roll initiative for the dynamite. After the set number of rounds goes by, the dynamite explodes on that initiative."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -15452,6 +15715,9 @@
 			],
 			"lootTables": [
 				"Magic Item Table C"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -15823,6 +16089,9 @@
 			],
 			"poisonTypes": [
 				"inhaled"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -16051,7 +16320,7 @@
 							"items": [
 								"You are immune to disease and poison.",
 								"Using the eye's X-ray vision never causes you to suffer {@condition exhaustion}.",
-								"You experience premonitions of danger and, unless you are {@condition incapacitated}, can't be {@quickref Surprise|PHB|3|0|surprised}.",
+								"You experience premonitions of danger and, unless you are {@condition incapacitated}, can't be {@status surprised}.",
 								"If you start your turn with at least 1 hit point, you regain {@dice 1d10} hit points.",
 								"If a creature has a skeleton, you can attempt to turn its bones to jelly with a touch of the {@item Hand of Vecna}. You can do so by using an action to make a melee attack against a creature you can reach, using your choice of your melee attack bonus for weapons or spells. On a hit, the target must succeed on a DC 18 Constitution saving throw or drop to 0 hit points.",
 								"You can use an action to cast {@spell wish}. This property can't be used again until 30 days have passed."
@@ -17407,7 +17676,10 @@
 			"basicRules": true,
 			"type": "FD",
 			"rarity": "none",
-			"value": 1000
+			"value": 1000,
+			"miscTags": [
+				"CNS"
+			]
 		},
 		{
 			"name": "Finely articulated jade glove (River Heralds)",
@@ -17943,9 +18215,13 @@
 			"rarity": "none",
 			"weight": 1,
 			"age": "modern",
+			"hasRefs": true,
 			"entries": [
-				"As an action, a character can throw a grenade at a point up to 60 feet away. With a grenade launcher, the character can propel the grenade up to 120 feet away.",
+				"{#itemEntry Grenade|DMG}",
 				"Each creature within 20 feet of an exploding fragmentation grenade must make a DC 15 Dexterity saving throw, taking {@damage 5d6} piercing damage on a failed save, or half as much damage on a successful one."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -18573,6 +18849,9 @@
 			"range": "30",
 			"entries": [
 				"This unique explosive can be primed and thrown up to 30 feet as an action. It explodes on impact. Creatures within 20 feet of it must make a {@dc 12} Dexterity {@quickref saving throws|PHB|2|1|saving throw} or be {@condition restrained} for 1 minute. A {@condition restrained} creature can make a {@dc 12} Strength check as an action, escaping on a success."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -19216,8 +19495,9 @@
 			"rarity": "none",
 			"weight": 7,
 			"age": "modern",
+			"hasRefs": true,
 			"entries": [
-				"As an action, a character can throw a grenade at a point up to 60 feet away. With a grenade launcher, the character can propel the grenade up to 120 feet away."
+				"{#itemEntry Grenade|DMG}"
 			]
 		},
 		{
@@ -19569,6 +19849,9 @@
 			"entries": [
 				"Gunpowder is chiefly used to propel a bullet out of the barrel of a pistol or rifle, or it is formed into a bomb. Gunpowder is sold in small wooden kegs or in water-resistant powder horns.",
 				"Setting fire to a container full of gunpowder can cause it to explode, dealing fire damage to creatures within 10 feet of it ({@damage 3d6} for a powder horn). A successful DC 12 Dexterity saving throw halves the damage. Setting fire to an ounce of gunpowder causes it to flare for 1 round, shedding bright light in a 30-foot radius and dim light for an additional 30 feet."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -19583,6 +19866,9 @@
 			"entries": [
 				"Gunpowder is chiefly used to propel a bullet out of the barrel of a pistol or rifle, or it is formed into a bomb. Gunpowder is sold in small wooden kegs or in water-resistant powder horns.",
 				"Setting fire to a container full of gunpowder can cause it to explode, dealing fire damage to creatures within 10 feet of it ({@damage 7d6} for a keg). A successful DC 12 Dexterity saving throw halves the damage. Setting fire to an ounce of gunpowder causes it to flare for 1 round, shedding bright light in a 30-foot radius and dim light for an additional 30 feet."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -19798,7 +20084,7 @@
 							"items": [
 								"You are immune to disease and poison.",
 								"Using the eye's X-ray vision never causes you to suffer {@condition exhaustion}.",
-								"You experience premonitions of danger and, unless you are {@condition incapacitated}, can't be {@quickref Surprise|PHB|3|0|surprised}.",
+								"You experience premonitions of danger and, unless you are {@condition incapacitated}, can't be {@status surprised}.",
 								"If you start your turn with at least 1 hit point, you regain {@dice 1d10} hit points.",
 								"If a creature has a skeleton, you can attempt to turn its bones to jelly with a touch of the Hand of Vecna. You can do so by using an action to make a melee attack against a creature you can reach, using your choice of your melee attack bonus for weapons or spells. On a hit, the target must succeed on a DC 18 Constitution saving throw or drop to 0 hit points.",
 								"You can use an action to cast {@spell wish}. This property can't be used again until 30 days have passed."
@@ -20698,6 +20984,73 @@
 						]
 					]
 				}
+			]
+		},
+		{
+			"name": "Heretic",
+			"source": "QftIS",
+			"page": 191,
+			"baseItem": "longsword|PHB",
+			"type": "M",
+			"rarity": "legendary",
+			"reqAttune": "by a non-good creature",
+			"reqAttuneTags": [
+				{
+					"alignment": [
+						"G"
+					]
+				}
+			],
+			"sentient": true,
+			"weight": 3,
+			"weaponCategory": "martial",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"bonusWeapon": "+3",
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d4 + 1}",
+			"charges": 6,
+			"entries": [
+				"The blasphemous weapon Heretic was created by a cult to steal power from good-aligned gods. The blade hungers to strike down servants of the Upper Planes and weaken the forces of good.",
+				"You gain a +3 bonus to attack and damage rolls made with this magic weapon. Heretic has 6 charges for the following properties; the sword regains {@dice 1d4 + 1} charges daily at dawn:",
+				{
+					"type": "entries",
+					"name": "Destroy Devotion",
+					"entries": [
+						"Once per turn when you hit a creature with this weapon, you can expend 1 of its charges to attempt to render the target powerless. The target must succeed on a DC 17 Constitution saving throw or have the {@condition paralyzed} condition until the start of your next turn. Celestials have disadvantage on the save."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Faith Hunter",
+					"entries": [
+						"While holding the sword, you can use an action to expend 1 or more of its charges to cast one of the following spells from it: {@spell Detect Evil and Good} (1 charge), {@spell Fly} (2 charges), or {@spell True Seeing} (3 charges)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Sentience",
+					"entries": [
+						"Heretic is a sentient, chaotic evil weapon with an Intelligence of 17, a Wisdom of 17, and a Charisma of 15. It has hearing and {@sense darkvision} out to a range of 120 feet.",
+						"The weapon can speak, read, and understand Common and Giant, and it can communicate with its wielder telepathically. Its voice is soft and deep but rises in a wild furor when it's aware Celestials or worshipers of good-aligned deities are present. While you are attuned to it, Heretic also understands every language you know."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Personality",
+					"entries": [
+						"Heretic craves the destruction of good-aligned gods and their supporters. The blade is condescending and snobby, especially in the company of priests and other pious folk, at whom it often directs sneering comments. When Heretic identifies its quarry, it erupts in a frenzied need for violence."
+					]
+				}
+			],
+			"attachedSpells": [
+				"detect evil and good",
+				"fly",
+				"true seeing"
 			]
 		},
 		{
@@ -21845,7 +22198,10 @@
 			"basicRules": true,
 			"type": "FD",
 			"rarity": "none",
-			"value": 10
+			"value": 10,
+			"miscTags": [
+				"CNS"
+			]
 		},
 		{
 			"name": "Hunter's Coat",
@@ -23066,7 +23422,7 @@
 				"An {@italic Ioun stone} is named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of {@italic Ioun stone} exist, each type a distinct combination of shape and color.",
 				"When you use an action to toss one of these stones into the air, the stone orbits your head at a distance of {@dice 1d3} feet and confers a benefit to you. Thereafter, another creature must use an action to grasp or net the stone to separate it from you, either by making a successful attack roll against AC 24 or a successful DC 24 Dexterity ({@skill Acrobatics}) check. You can use an action to seize and stow the stone, ending its effect.",
 				"A stone has AC 24, 10 hit points, and resistance to all damage. It is considered to be an object that is being worn while it orbits your head.",
-				"You can't be {@quickref Surprise|PHB|3|0|surprised} while this dark blue rhomboid orbits your head."
+				"You can't be {@status surprised} while this dark blue rhomboid orbits your head."
 			],
 			"lootTables": [
 				"Magic Item Table G"
@@ -23714,6 +24070,9 @@
 			],
 			"attachedSpells": [
 				"dream"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -25497,6 +25856,9 @@
 			"rarity": "very rare",
 			"entries": [
 				"This terrible venom is extracted and distilled from the deadly {@creature lindwyrm|GHLoE}. It can be delivered via ingestion or a wound. A creature exposed to the venom must succeed on a DC 18 Constitution saving throw or take 36 ({@damage 8d8}) poison damage and be poisoned for 1 minute. While poisoned, the creature has disadvantage on Strength and Dexterity skill checks and saving throws."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -25690,7 +26052,10 @@
 			"basicRules": true,
 			"type": "FD",
 			"rarity": "none",
-			"value": 2
+			"value": 2,
+			"miscTags": [
+				"CNS"
+			]
 		},
 		{
 			"name": "Lock",
@@ -26188,6 +26553,9 @@
 			"rarity": "rare",
 			"entries": [
 				"This silvery potion, made with {@creature fzeg|GHLoE} blood, is dotted with flecks of red. Drinking this liquid removes the curse of werewolf lycanthropy."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -26522,6 +26890,9 @@
 			],
 			"poisonTypes": [
 				"inhaled"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -27169,6 +27540,9 @@
 			],
 			"poisonTypes": [
 				"ingested"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -28140,6 +28514,9 @@
 			"rarity": "uncommon",
 			"entries": [
 				"White dust swirls constantly within this pale gray potion. When you drink the potion, it cures you of mummy rot."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -28789,6 +29166,25 @@
 			]
 		},
 		{
+			"name": "Needler Pistol",
+			"source": "QftIS",
+			"type": "G",
+			"rarity": "none",
+			"charges": 10,
+			"entries": [
+				"This strange pistol resembles a flask with a honeycomb of tubes sticking out its front. The weapon is powered by an {@item energy cell} stored at the base of the flask. Placing a full {@item energy cell} in the pistol gives the pistol 10 charges.",
+				"As an action while holding this pistol, you can expend 1 of its charges to fire a burst of glowing, needlelike darts from the pistol in a 15-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw, taking {@damage 8d4} piercing damage on a failed save or half as much damage on a successful one.",
+				{
+					"name": "Replacing the Energy Cell",
+					"type": "entries",
+					"entries": [
+						"While the pistol has charges remaining, its {@item energy cell} can't be removed. Once the pistol has 0 charges, you can replace the {@item energy cell} with a new cell by using an action or a bonus action."
+					]
+				}
+			],
+			"hasFluffImages": true
+		},
+		{
 			"name": "Nepenthe",
 			"source": "VRGR",
 			"page": 86,
@@ -29254,6 +29650,9 @@
 			],
 			"lootTables": [
 				"Magic Item Table C"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -29270,6 +29669,9 @@
 			],
 			"lootTables": [
 				"Magic Item Table D"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -29289,6 +29691,9 @@
 			],
 			"lootTables": [
 				"Magic Item Table B"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -29305,6 +29710,9 @@
 			],
 			"poisonTypes": [
 				"contact"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -29339,6 +29747,9 @@
 			],
 			"attachedSpells": [
 				"scrying"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -29708,7 +30119,7 @@
 					"items": [
 						"You gain a +2 bonus to attack and damage rolls made with it.",
 						"When you roll a 20 on an attack roll with this weapon against an {@creature orc}, that {@creature orc} must succeed on a DC 17 Constitution saving throw or drop to 0 hit points.",
-						"You can't be {@quickref Surprise|PHB|3|0|surprised} by {@creature orc||orcs} while you're not {@condition incapacitated}. You are also aware when {@creature orc||orcs} are within 120 feet of you and aren't behind total cover, although you don't know their location.",
+						"You can't be {@status surprised} by {@creature orc||orcs} while you're not {@condition incapacitated}. You are also aware when {@creature orc||orcs} are within 120 feet of you and aren't behind total cover, although you don't know their location.",
 						"You and any of your friends within 30 feet of you can't be {@condition frightened} while you're not {@condition incapacitated}."
 					]
 				},
@@ -30205,6 +30616,9 @@
 			],
 			"poisonTypes": [
 				"ingested"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -30234,6 +30648,25 @@
 				"The bird is an object that has 1 hit point, an Armor Class of 13, a flying speed of 60 feet, a Dexterity of 16 (+3), and a score of 1 (\u22125) in all other abilities, and it is immune to poison and psychic damage.",
 				"It travels to within 5 feet of its intended recipient by the most direct route, whereupon it turns into a nonmagical and inanimate sheet of parchment that can be unfolded only by the intended recipient. If the bird's hit points or speed is reduced to 0 or if it is otherwise immobilized, it turns into ash.",
 				"Paper birds usually come in small, flat boxes containing {@dice 1d6 + 3} sheets of the parchment."
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Paralysis Pistol",
+			"source": "QftIS",
+			"type": "G",
+			"rarity": "none",
+			"charges": 6,
+			"entries": [
+				"This curious-looking pistol is shaped like a large, glass bulb with a handle on the bottom and brass prongs protruding from its front. The weapon is powered by an {@item energy cell} stored in its grip. Placing a full {@item energy cell} in the pistol gives the pistol 6 charges.",
+				"As an action while holding this pistol, you can expend 1 of its charges to fire a ray of crackling energy at a creature you can see within 60 feet of yourself. The target must succeed on a DC 15 Constitution saving throw or have the {@condition paralyzed} condition for 1 minute. At the end of each of the target's turns, it can repeat the saving throw, ending the effect on itself on a success.",
+				{
+					"name": "Replacing the Energy Cell",
+					"type": "entries",
+					"entries": [
+						"While the pistol has charges remaining, its {@item energy cell} can't be removed. Once the pistol has 0 charges, you can replace the {@item energy cell} with a new cell by using an action or a bonus action."
+					]
+				}
 			],
 			"hasFluffImages": true
 		},
@@ -30560,6 +30993,9 @@
 			],
 			"lootTables": [
 				"Magic Item Table B"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -31411,6 +31847,9 @@
 			"hasRefs": true,
 			"entries": [
 				"{#itemEntry Potion of Resistance}"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -31422,6 +31861,9 @@
 			"entries": [
 				"When you drink this potion, you gain advantage on one ability check, attack roll, or saving throw of your choice that you make within the next hour.",
 				"This potion takes the form of a sparkling, golden mist that moves and pours like water."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -31440,6 +31882,9 @@
 			],
 			"lootTables": [
 				"Magic Item Table B"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -31477,6 +31922,9 @@
 						}
 					]
 				}
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -31495,6 +31943,9 @@
 			],
 			"lootTables": [
 				"Magic Item Table C"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -31515,6 +31966,9 @@
 			],
 			"lootTables": [
 				"Magic Item Table A"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -31536,6 +31990,9 @@
 			],
 			"lootTables": [
 				"Magic Item Table D"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -31552,6 +32009,9 @@
 			"hasRefs": true,
 			"entries": [
 				"{#itemEntry Potion of Resistance}"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -31562,6 +32022,9 @@
 			"rarity": "common",
 			"entries": [
 				"When you drink this potion, you gain the effect of a {@spell comprehend languages} spell for 1 hour. This liquid is a clear concoction with bits of salt and soot swirling in it."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -31580,6 +32043,9 @@
 			],
 			"lootTables": [
 				"Magic Item Table C"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -31590,6 +32056,9 @@
 			"rarity": "legendary",
 			"entries": [
 				"This potion looks like liquid gold, with a single scale from a {@filter chromatic|bestiary|search=chromatic dragon}, {@filter gem|bestiary|search=gem dragon}, or {@filter metallic|bestiary|search=metallic dragon} dragon suspended in it. When you drink this potion, you transform into an adult dragon of the same kind as the dragon the scale came from. The transformation lasts for 1 hour. Any equipment you are wearing or carrying melds into your new form or falls to the ground (your choice). For the duration, you use the game statistics of the adult dragon instead of your own, but you retain your languages, personality, and memories. You can't use a dragon's Change Shape or its legendary or lair actions."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -31604,6 +32073,9 @@
 			],
 			"lootTables": [
 				"Magic Item Table B"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -31625,6 +32097,9 @@
 			],
 			"lootTables": [
 				"Magic Item Table C"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -31641,6 +32116,9 @@
 			"hasRefs": true,
 			"entries": [
 				"{#itemEntry Potion of Resistance}"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -31662,6 +32140,9 @@
 			],
 			"lootTables": [
 				"Magic Item Table D"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -31678,6 +32159,9 @@
 			"hasRefs": true,
 			"entries": [
 				"{#itemEntry Potion of Resistance}"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -31699,6 +32183,9 @@
 			],
 			"lootTables": [
 				"Magic Item Table C"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -31717,6 +32204,9 @@
 			],
 			"lootTables": [
 				"Magic Item Table C"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -31729,6 +32219,9 @@
 				"When you drink this potion, you become Huge for 24 hours if you are Medium or smaller, otherwise the potion does nothing. For that duration, your Strength becomes 25, if it isn't already higher, and your hit point maximum is doubled (your current hit points are doubled when you drink the potion). In addition, the reach of your melee attacks increases by 5 feet.",
 				"Everything you are carrying and wearing also increases in size for the duration. When rolling damage for weapons enlarged in this manner, roll three times the normal number of dice; for example, an enlarged longsword would deal {@damage 3d8} slashing damage (instead of {@dice 1d8}), or {@damage 3d10} slashing damage (instead of {@dice 1d10}) when used with two hands.",
 				"When the effect ends, any hit points you have above your hit point maximum become temporary hit points. This potion is a pale white liquid made from the tongue of a giant clam, with a pungent aroma akin to that of rotting algae. It tastes sweet, however, when consumed."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -31745,6 +32238,9 @@
 			"lootTables": [
 				"Magic Item Table A",
 				"Magic Item Table B"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -31763,6 +32259,9 @@
 			],
 			"lootTables": [
 				"Magic Item Table B"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -31786,6 +32285,9 @@
 			],
 			"lootTables": [
 				"Magic Item Table A"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -31804,6 +32306,9 @@
 			],
 			"lootTables": [
 				"Magic Item Table C"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -31825,6 +32330,9 @@
 			],
 			"lootTables": [
 				"Magic Item Table B"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -31841,6 +32349,9 @@
 			],
 			"lootTables": [
 				"Magic Item Table D"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -31870,6 +32381,9 @@
 			],
 			"lootTables": [
 				"Magic Item Table C"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -31886,6 +32400,9 @@
 			"hasRefs": true,
 			"entries": [
 				"{#itemEntry Potion of Resistance}"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -31900,6 +32417,9 @@
 			],
 			"lootTables": [
 				"Magic Item Table D"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -31911,6 +32431,9 @@
 			"entries": [
 				"The first time you cast a damage-dealing spell of 4th level or lower within 1 minute after drinking the potion, instead of rolling dice to determine the damage dealt, you can instead use the highest number possible for each die.",
 				"This glowing purple liquid smells of sugar and plum, but it has a muddy taste."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -31925,6 +32448,9 @@
 			],
 			"attachedSpells": [
 				"dominate beast"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -31939,6 +32465,9 @@
 			],
 			"attachedSpells": [
 				"dominate person"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -31953,6 +32482,9 @@
 			],
 			"attachedSpells": [
 				"dominate monster"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -31971,6 +32503,9 @@
 			],
 			"lootTables": [
 				"Magic Item Table C"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -31987,6 +32522,9 @@
 			"hasRefs": true,
 			"entries": [
 				"{#itemEntry Potion of Resistance}"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -32003,6 +32541,9 @@
 			],
 			"lootTables": [
 				"Magic Item Table B"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -32019,6 +32560,9 @@
 			"hasRefs": true,
 			"entries": [
 				"{#itemEntry Potion of Resistance}"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -32030,6 +32574,9 @@
 			"entries": [
 				"When you drink this potion, you and everything you are wearing or carrying take on a rainbow-hued appearance for 1 hour. During that time, you can use a bonus action to turn any color or combination of colors you choose. If you mimic the colors of your surroundings, your hues continually shift to match your surroundings, and you have advantage on Dexterity ({@skill Stealth}) checks until you change your colors again or the potion wears off.",
 				"The potion is separated into seven brightly colored bands of immiscible liquids and has a syrupy taste."
+			],
+			"miscTags": [
+				"CNS"
 			],
 			"hasFluffImages": true
 		},
@@ -32044,6 +32591,9 @@
 				"When you make an attack roll, an ability check, or a saving throw, you can expend your fragment to roll an additional {@dice d20} and choose which of the {@dice d20}s to use. Alternatively, when an attack roll is made against you, you can expend your fragment to roll a {@dice d20} and choose which of the {@dice d20}s to use, the one you rolled or the one the attacker rolled.",
 				"If the original {@dice d20} roll has advantage or disadvantage, you roll your {@dice d20} after advantage or disadvantage has been applied to the original roll.",
 				"While you have one or more Fragments of Possibility from this potion, you can't gain another Fragment of Possibility from any source."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -32055,6 +32605,9 @@
 			"entries": [
 				"When you drink this potion, you have advantage for 1 hour on saving throws you make to avoid or end the charmed or stunned condition on yourself.",
 				"This black potion swirls with shimmering flecks of pink and purple."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -32071,6 +32624,9 @@
 			"hasRefs": true,
 			"entries": [
 				"{#itemEntry Potion of Resistance}"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -32087,6 +32643,9 @@
 			"hasRefs": true,
 			"entries": [
 				"{#itemEntry Potion of Resistance}"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -32105,6 +32664,9 @@
 			],
 			"lootTables": [
 				"Magic Item Table D"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -32126,6 +32688,9 @@
 			],
 			"lootTables": [
 				"Magic Item Table C"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -32147,6 +32712,9 @@
 			],
 			"lootTables": [
 				"Magic Item Table E"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -32162,6 +32730,9 @@
 			],
 			"lootTables": [
 				"Magic Item Table C"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -32178,6 +32749,9 @@
 			"lootTables": [
 				"Magic Item Table D",
 				"Magic Item Table E"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -32194,6 +32768,9 @@
 			"hasRefs": true,
 			"entries": [
 				"{#itemEntry Potion of Resistance}"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -32209,6 +32786,9 @@
 			],
 			"lootTables": [
 				"Magic Item Table D"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -32219,6 +32799,9 @@
 			"rarity": "common",
 			"entries": [
 				"When you drink this potion, you gain the following benefits for the next 8 hours: magic can't put you to sleep, and you can remain awake during a long rest and still gain its benefits. This sweet, amber-colored brew has no effect on creatures that don't require sleep, such as elves."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -32234,6 +32817,9 @@
 			],
 			"lootTables": [
 				"Magic Item Table B"
+			],
+			"miscTags": [
+				"CNS"
 			],
 			"hasFluffImages": true
 		},
@@ -32415,6 +33001,60 @@
 			]
 		},
 		{
+			"name": "Powered Armor",
+			"source": "QftIS",
+			"type": "HA",
+			"rarity": "none",
+			"charges": 24,
+			"entries": [
+				"This suit of technologically advanced plate armor includes an under-suit that can fully seal, a helmet with a full face mask and crystal lenses in the eyeholes, and a set of gauntlets. The armor is powered by an {@item energy cell} stored in a compartment on the thigh plate.",
+				"Placing a full {@item energy cell} in the armor gives the armor 24 charges. A suit of powered armor functions as a suit of normal plate armor, even when it has 0 charges remaining.",
+				{
+					"type": "entries",
+					"name": "Activating the Armor",
+					"entries": [
+						"As an action, you can expend any number of the armor's charges to activate it; the armor remains active for 1 hour per charge expended. You can use a bonus action to deactivate the armor early, but doing so doesn't recover any expended charges.",
+						"While the armor is active, you gain the following benefits:"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Augmented Physicality",
+					"entries": [
+						"You have advantage on Strength checks, and your carrying capacity is doubled."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Environmental Adaptation",
+					"entries": [
+						"The armor seals airtight and provides its own atmosphere. You can breathe normally in any environment and withstand extreme temperatures, and you're unaffected by harmful gases, as well as contact and inhaled poisons."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Force Field",
+					"entries": [
+						"When you would take damage, you can use your reaction to expend 1 of the armor's charges to deploy a defensive force field. Roll {@dice 3d10} and reduce the damage taken by the total rolled."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Propulsion",
+					"entries": [
+						"As a bonus action, you can expend 1 of the armor's charges to gain a flying speed equal to your walking speed for 1 minute. If you're airborne when this duration ends, you fall."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Replacing the Energy Cell",
+					"entries": [
+						"While the armor has charges remaining, its {@item energy cell} can't be removed. Once the armor has 0 charges, you can replace the {@item energy cell} with a new cell by using an action or a bonus action."
+					]
+				}
+			]
+		},
+		{
 			"name": "Prehistoric Figurine of Wondrous Power, Carnelian Triceratops",
 			"source": "BGG",
 			"page": 114,
@@ -32511,6 +33151,9 @@
 			"wondrous": true,
 			"entries": [
 				"This small capsule is made of beeswax blended with sand and a variety of enchanted water plants. A creature who consumes a pressure capsule ignores the effects of swimming at depths greater than 100 feet (see \"{@book Unusual Environments|dmg|5|Unusual Environments}\" in chapter 5 of the Dungeon Master's Guide)."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -32861,6 +33504,9 @@
 			],
 			"poisonTypes": [
 				"injury"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -33679,6 +34325,9 @@
 				"This pouch contains an ounce of purified and magically charged delerium dust. It may be ingested as an action. When you consume a full pouch, you gain advantage on spell attack rolls and saving throws against spells for one minute.",
 				"You gain one {@adventure level of contamination|DoDk|12} when you consume refined delerium dust."
 			],
+			"miscTags": [
+				"CNS"
+			],
 			"hasFluffImages": true
 		},
 		{
@@ -33718,6 +34367,9 @@
 				"The sheer amount of leftover arcane power within the {@item whitestone|TDCSR} of the mountains is incredibly receptive to enchantment. Magic items that incorporate at least an ounce of {@item whitestone|TDCSR} into their construction require only one-quarter the creation time of other magic items. Some alchemists in {@book Emon|TDCSR|3|Emon, the City of Fellowship} have discovered that dissolving {@item whitestone|TDCSR} with specific acids can leave behind pure residuum, which can substitute for expensive spell components when such materials are not readily available.",
 				"If a spell has a component cost that consumes the component, its caster can substitute the required component for an amount of residuum of an equal value. One pound of pure residuum is worth approximately 500 gp in most markets, though it becomes extremely expensive and difficult to find outside of {@book Emon|TDCSR|3|Emon, the City of Fellowship} or the city of {@book Whitestone|TDCSR|3|Whitestone} itself.",
 				"Residuum can also be heated and blown into glass, forming a shimmering, greenish surface. Residuum slates or orbs can be used in stationary enchanting tables. Archmages willing to pay exorbitant rates\u2014easily 20,000 gp or more\u2014may acquire an {@item Residuum enchanting slate|TDCSR|enchanting slate} that can be used to expedite the creation of all magic items. Using such a table allows anyone crafting a magic item to do so in one-quarter of the usual time."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -35110,6 +35762,40 @@
 			"value": 100
 		},
 		{
+			"name": "Robot Controller",
+			"source": "QftIS",
+			"type": "G",
+			"rarity": "none",
+			"charges": 3,
+			"entries": [
+				"This small handheld device features a glass pane with a glowing display that responds to your touch.",
+				"The controller is powered by an {@item energy cell} stored in the device. Placing a full {@item energy cell} in the device gives the device 3 charges.",
+				"As an action while holding this device, you can expend 1 of its charges to cause one of the following effects:",
+				{
+					"name": "Control",
+					"type": "entries",
+					"entries": [
+						"One Construct of your choice within 60 feet of you must succeed on a DC 15 Wisdom saving throw or have the {@condition charmed} condition for 1 minute. While {@condition charmed} in this way, the Construct obeys your verbal commands, and you and the Construct can communicate remotely with each other through the device. Whenever the {@condition charmed} Construct takes damage, it can repeat the saving throw, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Disrupt",
+					"type": "entries",
+					"entries": [
+						"Constructs of your choice within 30 feet of you must succeed on a DC 15 Wisdom saving throw or have the {@condition incapacitated} condition for 1 minute. An {@condition incapacitated} Construct can repeat the saving throw at the end of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Replacing the Energy Cell",
+					"type": "entries",
+					"entries": [
+						"While the device has charges remaining, its {@item energy cell} can't be removed. Once the device has 0 charges, you can replace the {@item energy cell} with a new cell by using an action or a bonus action."
+					]
+				}
+			],
+			"hasFluffImages": true
+		},
+		{
 			"name": "Rod of Absorption",
 			"source": "DMG",
 			"page": 195,
@@ -36123,6 +36809,9 @@
 			"value": 5000,
 			"entries": [
 				"Any creature that ingests a ryath root gains {@dice 2d4} temporary hit points. A creature that consumes more than one ryath root in a 24-hour period must succeed on a DC 13 Constitution saving throw or suffer the {@condition poisoned} condition for 1 hour."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -36532,6 +37221,9 @@
 			"lootTables": [
 				"Magic Item Table I"
 			],
+			"miscTags": [
+				"CNS"
+			],
 			"hasFluffImages": true
 		},
 		{
@@ -36817,6 +37509,9 @@
 			"rarity": "rare",
 			"entries": [
 				"Using an action to read the scroll encloses you in an {@condition invisible} barrier that extends from you to form a 5-foot-radius, 10-foot-high cylinder. For 5 minutes, this barrier prevents aberrations from entering or affecting anything within the cylinder. The cylinder moves with you and remains centered on you. However, if you move in such a way that an aberration would be inside the cylinder, the effect ends. A creature can attempt to overcome the barrier by using an action to make a DC 15 Charisma check. On a success, the creature ceases to be affected by the barrier."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -36828,6 +37523,9 @@
 			"rarity": "rare",
 			"entries": [
 				"Using an action to read the scroll encloses you in an {@condition invisible} barrier that extends from you to form a 5-foot-radius, 10-foot-high cylinder. For 5 minutes, this barrier prevents beasts from entering or affecting anything within the cylinder. The cylinder moves with you and remains centered on you. However, if you move in such a way that a beast would be inside the cylinder, the effect ends. A creature can attempt to overcome the barrier by using an action to make a DC 15 Charisma check. On a success, the creature ceases to be affected by the barrier."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -36839,6 +37537,9 @@
 			"rarity": "rare",
 			"entries": [
 				"Using an action to read the scroll encloses you in an {@condition invisible} barrier that extends from you to form a 5-foot-radius, 10-foot-high cylinder. For 5 minutes, this barrier prevents celestials from entering or affecting anything within the cylinder. The cylinder moves with you and remains centered on you. However, if you move in such a way that a celestial would be inside the cylinder, the effect ends. A creature can attempt to overcome the barrier by using an action to make a DC 15 Charisma check. On a success, the creature ceases to be affected by the barrier."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -36850,6 +37551,9 @@
 			"rarity": "rare",
 			"entries": [
 				"Using an action to read the scroll encloses you in an {@condition invisible} barrier that extends from you to form a 5-foot-radius, 10-foot-high cylinder. For 5 minutes, this barrier prevents elementals from entering or affecting anything within the cylinder. The cylinder moves with you and remains centered on you. However, if you move in such a way that an elemental would be inside the cylinder, the effect ends. A creature can attempt to overcome the barrier by using an action to make a DC 15 Charisma check. On a success, the creature ceases to be affected by the barrier."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -36861,6 +37565,9 @@
 			"rarity": "rare",
 			"entries": [
 				"Using an action to read the scroll encloses you in an {@condition invisible} barrier that extends from you to form a 5-foot-radius, 10-foot-high cylinder. For 5 minutes, this barrier prevents fey from entering or affecting anything within the cylinder. The cylinder moves with you and remains centered on you. However, if you move in such a way that a fey would be inside the cylinder, the effect ends. A creature can attempt to overcome the barrier by using an action to make a DC 15 Charisma check. On a success, the creature ceases to be affected by the barrier."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -36872,6 +37579,9 @@
 			"rarity": "rare",
 			"entries": [
 				"Using an action to read the scroll encloses you in an {@condition invisible} barrier that extends from you to form a 5-foot-radius, 10-foot-high cylinder. For 5 minutes, this barrier prevents fiends from entering or affecting anything within the cylinder. The cylinder moves with you and remains centered on you. However, if you move in such a way that a fiend would be inside the cylinder, the effect ends. A creature can attempt to overcome the barrier by using an action to make a DC 15 Charisma check. On a success, the creature ceases to be affected by the barrier."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -36883,6 +37593,9 @@
 			"rarity": "rare",
 			"entries": [
 				"Using an action to read the scroll encloses you in an {@condition invisible} barrier that extends from you to form a 5-foot-radius, 10-foot-high cylinder. For 5 minutes, this barrier prevents plants from entering or affecting anything within the cylinder. The cylinder moves with you and remains centered on you. However, if you move in such a way that a plant would be inside the cylinder, the effect ends. A creature can attempt to overcome the barrier by using an action to make a DC 15 Charisma check. On a success, the creature ceases to be affected by the barrier."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -36894,6 +37607,9 @@
 			"rarity": "rare",
 			"entries": [
 				"Using an action to read the scroll encloses you in an {@condition invisible} barrier that extends from you to form a 5-foot-radius, 10-foot-high cylinder. For 5 minutes, this barrier prevents undead from entering or affecting anything within the cylinder. The cylinder moves with you and remains centered on you. However, if you move in such a way that an undead would be inside the cylinder, the effect ends. A creature can attempt to overcome the barrier by using an action to make a DC 15 Charisma check. On a success, the creature ceases to be affected by the barrier."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -36904,6 +37620,9 @@
 			"rarity": "legendary",
 			"entries": [
 				"Using an action to read the scroll causes the {@creature tarrasque} (see the creature's entry in the Monster Manual) to appear in an unoccupied space you can see within 1 mile of you. The tarrasque disappears when it drops to 0 hit points and is hostile toward all creatures other than itself."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -36915,6 +37634,9 @@
 			"entries": [
 				"By using an action to read the scroll, you cause a comet to fall from the sky and crash to the ground at a point you can see up to 1 mile away from you. You must be outdoors when you use the scroll, or nothing happens and the scroll is wasted.",
 				"The comet creates a 50-foot-deep, 500-foot-radius crater on impact. Any creature in that radius must make a DC 20 Dexterity saving throw, taking {@damage 30d10} force damage on a failed saving throw, or half as much damage on a successful one. All structures in the crater are destroyed, as are all nonmagical objects that aren't being worn or held."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -37161,6 +37883,9 @@
 			],
 			"poisonTypes": [
 				"injury"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -38374,6 +39099,9 @@
 			"entries": [
 				"These berries are dark brown and bitter. A full-grown sinda berry bush has {@dice 4d6} berries growing on it. A bush plucked of all its berries grows new berries in {@dice 1d4} months. Picked berries lose their freshness and efficacy after 24 hours.",
 				"Fresh sinda berries can be eaten raw or crushed and added to a drink to dull the bitterness. A creature that consumes at least ten fresh sinda berries gains advantage on saving throws against disease and poison for the next 24 hours."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -38603,6 +39331,18 @@
 			"rarity": "none",
 			"weight": 10,
 			"value": 200
+		},
+		{
+			"name": "Sleep Grenade",
+			"source": "QftIS",
+			"type": "EXP",
+			"rarity": "none",
+			"hasRefs": true,
+			"entries": [
+				"{#itemEntry Grenade|DMG}",
+				"This grenade releases a cloud of soporific mist that fills a 20-foot-radius sphere, then dissipates. Each creature in that area must succeed on a DC 15 Constitution saving throw or have the {@condition unconscious} condition for 1 hour. The condition ends on a creature early if the creature takes damage or if another creature uses an action to shake it awake."
+			],
+			"hasFluffImages": true
 		},
 		{
 			"name": "Sling Bullets of Althemone",
@@ -38856,9 +39596,13 @@
 			"rarity": "none",
 			"weight": 2,
 			"age": "modern",
+			"hasRefs": true,
 			"entries": [
-				"As an action, a character can throw a grenade at a point up to 60 feet away. With a grenade launcher, the character can propel the grenade up to 120 feet away.",
+				"{#itemEntry Grenade|DMG}",
 				"One round after a smoke grenade lands, it emits a cloud of smoke that creates a heavily obscured area in a 20-foot radius. A moderate wind (at least 10 miles per hour) disperses the smoke in 4 rounds; a strong wind (20 or more miles per hour) disperses it in 1 round."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -38949,6 +39693,9 @@
 			"entries": [
 				"Soothsalts are derived from a naturally occurring crystalline substance discovered throughout the wilds of the Miskath Strand. The crimson crystals have been mined from cavernous veins like those in the mouth of the Miskath Pit and found within smaller geode formations near sites ravaged by the Calamity. Soothsalts are consumed orally in lozenge-sized doses, and frequent users can be identified by the telltale crimson stain around their mouths. A creature subjected to a dose of soothsalts gains advantage on all Intelligence checks for {@dice 1d4} hours.",
 				"For each dose of soothsalts consumed, the creature must succeed on a DC 15 Constitution saving throw or gain one level of {@condition exhaustion}\u2014an effect which is cumulative with multiple doses."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -39127,6 +39874,232 @@
 			],
 			"seeAlsoVehicle": [
 				"Space Galleon|AAG"
+			]
+		},
+		{
+			"name": "Spaceship Trinket",
+			"source": "QftIS",
+			"type": "G",
+			"rarity": "none",
+			"entries": [
+				"The Spaceship Trinkets table below offers a selection of trinkets appropriate for adventures with sci-fi themes. The adventure includes encounters that ask you to roll on the table to determine what random trinkets the characters find in certain locations on the spaceship. None of the trinkets requires an energy cell.",
+				{
+					"type": "table",
+					"caption": "Spaceship Trinkets",
+					"colLabels": [
+						"d100",
+						"Trinket"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"01\u201302",
+							"Disembodied robot arm with a mind of its own"
+						],
+						[
+							"03\u201304",
+							"Wearable blanket with sleeves and a hood"
+						],
+						[
+							"05\u201306",
+							"Small, rectangular device that can record and play back audio of up to 1 minute in length"
+						],
+						[
+							"07\u201308",
+							"Glow-in-the-dark ink pen"
+						],
+						[
+							"09\u201310",
+							"Fashionable jumpsuit"
+						],
+						[
+							"11\u201312",
+							"Compact scanner that reports whether an object is recyclable in a cheery tone"
+						],
+						[
+							"13\u201314",
+							"Wristwatch programmed to beep at a specific time"
+						],
+						[
+							"15\u201316",
+							"Handheld cylinder that produces a 15-foot cone of bright light for up to 1 hour every 24 hours"
+						],
+						[
+							"17\u201318",
+							"Colorful toy ray gun with lights and sounds"
+						],
+						[
+							"19\u201320",
+							"Bottle of fizzy, sweet-tasting liquid"
+						],
+						[
+							"21\u201322",
+							"Map of an unexplored star system"
+						],
+						[
+							"23\u201324",
+							"Motorized toothbrush that might have been used"
+						],
+						[
+							"25\u201326",
+							"Tiny robot that shines boots and shoes"
+						],
+						[
+							"27\u201328",
+							"Pressurized red canister with a flexible hose that, when squeezed as an action, sprays a 15-foot cone of foam. The foam extinguishes all nonmagical flames in the cone. The canister can perform this action only once."
+						],
+						[
+							"29\u201330",
+							"Loaf of space bread covered in blue-green mold"
+						],
+						[
+							"31\u201332",
+							"Handheld screen that plays a children's story about a friendly, three-eyed frog named Swampy"
+						],
+						[
+							"33\u201334",
+							"Compact device that displays the current weather"
+						],
+						[
+							"35\u201336",
+							"Empty metal bottle that maintains the temperature of liquids stored in it for {@dice 1d4} hours"
+						],
+						[
+							"37\u201338",
+							"Tiny disc that emits a high-pitched noise in the presence of smoke or mild cooking fumes"
+						],
+						[
+							"39\u201340",
+							"Aerosolized can of metal polish"
+						],
+						[
+							"41\u201342",
+							"Identification badge of a deceased crew member"
+						],
+						[
+							"43\u201344",
+							"Depleted energy cell"
+						],
+						[
+							"45\u201346",
+							"Pocket-sized instrument that clicks rapidly within 10 feet of radiation (see the \"{@area Spaceship Features|4ae|x}\" section later in this adventure)"
+						],
+						[
+							"47\u201348",
+							"Vacuum-sealed package of shriveled frankfurters"
+						],
+						[
+							"49\u201350",
+							"Tin hat that telepathically broadcasts the wearer's surface thoughts to creatures within 10 feet of it"
+						],
+						[
+							"51\u201352",
+							"Chalky moon rock"
+						],
+						[
+							"53\u201354",
+							"Collar that, when placed on a Medium or smaller Beast, translates its cries into Common"
+						],
+						[
+							"55\u201356",
+							"Bottle of expired medicine for treating dizziness"
+						],
+						[
+							"57\u201358",
+							"Tiny speaker that plays a catchy tune in an unknown language"
+						],
+						[
+							"59\u201360",
+							"Handheld tool for removing bolts and screws"
+						],
+						[
+							"61\u201362",
+							"Cautionary pamphlet about the dangers of space"
+						],
+						[
+							"63\u201364",
+							"Miniature flying saucer"
+						],
+						[
+							"65\u201366",
+							"Tiny, animatronic bunny that hops after the creature that activates it"
+						],
+						[
+							"67\u201368",
+							"Stick of deodorant with a surprising scent"
+						],
+						[
+							"69\u201370",
+							"Countertop appliance that can transform any fruit into a pulpy juice"
+						],
+						[
+							"71\u201372",
+							"Glass pendant filled with stardust"
+						],
+						[
+							"73\u201374",
+							"Pot containing an artificially dwarfed tree"
+						],
+						[
+							"75\u201376",
+							"Otherworldly insect preserved in amber"
+						],
+						[
+							"77\u201378",
+							"Syringe filled with a viscous, yellow serum"
+						],
+						[
+							"79\u201380",
+							"Tiny brass orrery"
+						],
+						[
+							"81\u201382",
+							"Log of passenger names"
+						],
+						[
+							"83\u201384",
+							"Gas mask with a hole in it"
+						],
+						[
+							"85\u201386",
+							"Small glass terrarium with an empty cocoon"
+						],
+						[
+							"87\u201388",
+							"Dongle that never plugs in correctly on the first try"
+						],
+						[
+							"89\u201390",
+							"Holster fashioned from an unknown reptile's hide"
+						],
+						[
+							"91\u201392",
+							"Severed bundle of important-looking wires"
+						],
+						[
+							"93\u201394",
+							"Prosthetic limb with magnetic attachments"
+						],
+						[
+							"95\u201396",
+							"Set of polyhedral dice that buzz and flash when they land on their highest result"
+						],
+						[
+							"97\u201398",
+							"Musical instrument that plays electronic tones"
+						],
+						[
+							"99\u201300",
+							"Trading card of a beloved fictional hero from a far-off world"
+						]
+					]
+				}
+			],
+			"miscTags": [
+				"TT"
 			]
 		},
 		{
@@ -39429,6 +40402,9 @@
 			"spellScrollLevel": 1,
 			"lootTables": [
 				"Magic Item Table A"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -39451,6 +40427,9 @@
 			"lootTables": [
 				"Magic Item Table A",
 				"Magic Item Table B"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -39472,6 +40451,9 @@
 			"spellScrollLevel": 3,
 			"lootTables": [
 				"Magic Item Table B"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -39493,6 +40475,9 @@
 			"spellScrollLevel": 4,
 			"lootTables": [
 				"Magic Item Table C"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -39514,6 +40499,9 @@
 			"spellScrollLevel": 5,
 			"lootTables": [
 				"Magic Item Table C"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -39535,6 +40523,9 @@
 			"spellScrollLevel": 6,
 			"lootTables": [
 				"Magic Item Table D"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -39556,6 +40547,9 @@
 			"spellScrollLevel": 7,
 			"lootTables": [
 				"Magic Item Table D"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -39578,6 +40572,9 @@
 			"lootTables": [
 				"Magic Item Table D",
 				"Magic Item Table E"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -39599,6 +40596,9 @@
 			"spellScrollLevel": 9,
 			"lootTables": [
 				"Magic Item Table E"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -39619,6 +40619,9 @@
 			"spellScrollLevel": 0,
 			"lootTables": [
 				"Magic Item Table A"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -39734,6 +40737,9 @@
 			"entries": [
 				"Produced by a special needle, this magic tattoo contains a single {@filter 1st level spell|spells|level=1}, wrought on your skin by a magic needle. To use the tattoo, you must hold the needle against your skin and speak the command word. The needle turns into ink that becomes the tattoo, which appears on the skin in whatever design you like. Once the tattoo is there, you can cast its spell, requiring no material components. The tattoo glows faintly while you cast the spell and for the spell's duration. Once the spell ends, the tattoo vanishes from your skin.",
 				"The Ability modifier for this spell is +3; the Save DC is 13 and the attack bonus is +5."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -39746,6 +40752,9 @@
 			"entries": [
 				"Produced by a special needle, this magic tattoo contains a single {@filter 2nd level spell|spells|level=2}, wrought on your skin by a magic needle. To use the tattoo, you must hold the needle against your skin and speak the command word. The needle turns into ink that becomes the tattoo, which appears on the skin in whatever design you like. Once the tattoo is there, you can cast its spell, requiring no material components. The tattoo glows faintly while you cast the spell and for the spell's duration. Once the spell ends, the tattoo vanishes from your skin.",
 				"The Ability modifier for this spell is +3; the Save DC is 13 and the attack bonus is +5."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -39758,6 +40767,9 @@
 			"entries": [
 				"Produced by a special needle, this magic tattoo contains a single {@filter 3rd level spell|spells|level=3}, wrought on your skin by a magic needle. To use the tattoo, you must hold the needle against your skin and speak the command word. The needle turns into ink that becomes the tattoo, which appears on the skin in whatever design you like. Once the tattoo is there, you can cast its spell, requiring no material components. The tattoo glows faintly while you cast the spell and for the spell's duration. Once the spell ends, the tattoo vanishes from your skin.",
 				"The Ability modifier for this spell is +4; the Save DC is 15 and the attack bonus is +7."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -39770,6 +40782,9 @@
 			"entries": [
 				"Produced by a special needle, this magic tattoo contains a single {@filter 4th level spell|spells|level=4}, wrought on your skin by a magic needle. To use the tattoo, you must hold the needle against your skin and speak the command word. The needle turns into ink that becomes the tattoo, which appears on the skin in whatever design you like. Once the tattoo is there, you can cast its spell, requiring no material components. The tattoo glows faintly while you cast the spell and for the spell's duration. Once the spell ends, the tattoo vanishes from your skin.",
 				"The Ability modifier for this spell is +4; the Save DC is 15 and the attack bonus is +7."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -39782,6 +40797,9 @@
 			"entries": [
 				"Produced by a special needle, this magic tattoo contains a single {@filter 5th level spell|spells|level=5}, wrought on your skin by a magic needle. To use the tattoo, you must hold the needle against your skin and speak the command word. The needle turns into ink that becomes the tattoo, which appears on the skin in whatever design you like. Once the tattoo is there, you can cast its spell, requiring no material components. The tattoo glows faintly while you cast the spell and for the spell's duration. Once the spell ends, the tattoo vanishes from your skin.",
 				"The Ability modifier for this spell is +5; the Save DC is 17 and the attack bonus is +9."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -39794,6 +40812,9 @@
 			"entries": [
 				"Produced by a special needle, this magic tattoo contains a single {@filter cantrip|spells|level=0}, wrought on your skin by a magic needle. To use the tattoo, you must hold the needle against your skin and speak the command word. The needle turns into ink that becomes the tattoo, which appears on the skin in whatever design you like. Once the tattoo is there, you can cast its spell, requiring no material components. The tattoo glows faintly while you cast the spell and for the spell's duration. Once the spell ends, the tattoo vanishes from your skin.",
 				"The Ability modifier for this spell is +3; the Save DC is 13 and the attack bonus is +5."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -39838,6 +40859,9 @@
 			],
 			"lootTables": [
 				"Magic Item Table I"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -40811,6 +41835,51 @@
 			"hasFluffImages": true
 		},
 		{
+			"name": "Staff of Ruling",
+			"source": "QftIS",
+			"page": 191,
+			"type": "M",
+			"rarity": "rare",
+			"reqAttune": true,
+			"weight": 4,
+			"weaponCategory": "simple",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"dmg2": "1d8",
+			"staff": true,
+			"entries": [
+				"An ornate carving of a serpent adorned with a coursing river spirals down the length of this redand-gold staff. While you're holding it, you can use an action to produce one of the following effects. Once the staff has produced an effect, it can't produce that effect again until the next dawn.",
+				{
+					"type": "entries",
+					"name": "Orb of Lightning",
+					"entries": [
+						"You create a Small orb of lightning in an unoccupied space you can see within 60 feet of yourself. You concentrate on this orb as if {@status concentration||concentrating} on a spell. As a bonus action, you can move the orb up to 20 feet in any direction.",
+						"When your {@status concentration} ends, or when a creature enters the orb's space or starts its turn there, the orb detonates in a 20-foot-radius sphere. Each creature in that area must make a DC 15 Dexterity saving throw, taking lightning damage equal to the total accumulated damage on a failed save, or half as much damage on a successful one; the orb's base damage is {@dice 6d6}, and if at the end of your turn the orb hasn't detonated, its damage increases by {@dice 2d6}, to a maximum of {@dice 10d6}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Staff to Snake",
+					"entries": [
+						"You throw the staff to an unoccupied space within 10 feet of you, and the staff becomes a {@creature giant poisonous snake}. The snake is under your control and shares your initiative count, but it takes its turn immediately after yours.",
+						"On your turn, you can mentally command the snake if it is within 60 feet of you and you don't have the {@condition incapacitated} condition. You decide what action the snake takes and where it moves during its turn, or you can issue it a general command, such as to attack your enemies or guard a location.",
+						"If you use a bonus action to speak the command word again, or if the snake is reduced to 0 hit points, the snake reverts to staff form in its current space."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Thunderclap",
+					"entries": [
+						"You point the staff skyward, producing a fearsome thunderclap. Each creature of your choice in a 30-foot-radius sphere centered on you must succeed on a DC 15 Constitution saving throw or have the {@condition deafened} and {@condition frightened} conditions until the end of your next turn."
+					]
+				}
+			],
+			"hasFluffImages": true
+		},
+		{
 			"name": "Staff of Striking",
 			"source": "DMG",
 			"page": 203,
@@ -41707,6 +42776,9 @@
 			"range": "30",
 			"entries": [
 				"This smelly explosive can be primed and thrown up to 30 feet as an action. It explodes at the start of your next turn. Creatures within 20 feet of it must make a {@dc 12} Constitution {@quickref saving throws|PHB|2|1|saving throw} or be {@condition poisoned} for 1 minute. A creature can repeat this save at the end of each of its turns, ending the effect on itself on a success."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -42501,6 +43573,9 @@
 				"After burning {@item suude|TDCSR} within a vessel and inhaling its fumes as an action, you take 22 ({@damage 4d10}) psychic damage and must make a {@dc 10} Constitution {@quickref saving throws|PHB|2|1|saving throw}. On a failure, you become {@condition poisoned} for 1 hour and fall {@condition unconscious} for 1 minute, or until you are shaken awake as an action. During this time, the world seems to move in slow motion, and your vision is twisted in kaleidoscopic colors\u2014yet your focus is never distorted. If one dose of {@item suude|TDCSR}, or more, is used within 1 hour of another, the DC of the Constitution {@quickref saving throws|PHB|2|1|saving throw} is increased by 5 per additional dose. If you fail this save by 10 or more, you instantly drop to 0 hit points.",
 				"On a success, you gain the ability to use one of the following Metamagic options as a sorcerer for the next minute, requiring no sorcery points. The type of Metamagic you gain access to depends on the type of {@item suude|TDCSR}, and once you use it, you can't use it again until you inhale {@item suude|TDCSR} again.",
 				"Blue suude allows you to use the {@optfeature Twinned Spell|PHB} Metamagic option."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -42514,6 +43589,9 @@
 				"After burning {@item suude|TDCSR} within a vessel and inhaling its fumes as an action, you take 22 ({@damage 4d10}) psychic damage and must make a {@dc 10} Constitution {@quickref saving throws|PHB|2|1|saving throw}. On a failure, you become {@condition poisoned} for 1 hour and fall {@condition unconscious} for 1 minute, or until you are shaken awake as an action. During this time, the world seems to move in slow motion, and your vision is twisted in kaleidoscopic colors\u2014yet your focus is never distorted. If one dose of {@item suude|TDCSR}, or more, is used within 1 hour of another, the DC of the Constitution {@quickref saving throws|PHB|2|1|saving throw} is increased by 5 per additional dose. If you fail this save by 10 or more, you instantly drop to 0 hit points.",
 				"On a success, you gain the ability to use one of the following Metamagic options as a sorcerer for the next minute, requiring no sorcery points. The type of Metamagic you gain access to depends on the type of {@item suude|TDCSR}, and once you use it, you can't use it again until you inhale {@item suude|TDCSR} again.",
 				"Brown suude allows you to use the {@optfeature Extended Spell|PHB} Metamagic option."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -42527,6 +43605,9 @@
 				"After burning {@item suude|TDCSR} within a vessel and inhaling its fumes as an action, you take 22 ({@damage 4d10}) psychic damage and must make a {@dc 10} Constitution {@quickref saving throws|PHB|2|1|saving throw}. On a failure, you become {@condition poisoned} for 1 hour and fall {@condition unconscious} for 1 minute, or until you are shaken awake as an action. During this time, the world seems to move in slow motion, and your vision is twisted in kaleidoscopic colors\u2014yet your focus is never distorted. If one dose of {@item suude|TDCSR}, or more, is used within 1 hour of another, the DC of the Constitution {@quickref saving throws|PHB|2|1|saving throw} is increased by 5 per additional dose. If you fail this save by 10 or more, you instantly drop to 0 hit points.",
 				"On a success, you gain the ability to use one of the following Metamagic options as a sorcerer for the next minute, requiring no sorcery points. The type of Metamagic you gain access to depends on the type of {@item suude|TDCSR}, and once you use it, you can't use it again until you inhale {@item suude|TDCSR} again.",
 				"Red suude allows you to use the {@optfeature Distant Spell|PHB} Metamagic option."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -43222,6 +44303,9 @@
 			"attachedSpells": [
 				"true resurrection"
 			],
+			"miscTags": [
+				"CNS"
+			],
 			"hasFluffImages": true
 		},
 		{
@@ -43262,6 +44346,9 @@
 			],
 			"lootTables": [
 				"Magic Item Table I"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -43308,6 +44395,9 @@
 			],
 			"lootTables": [
 				"Magic Item Table I"
+			],
+			"miscTags": [
+				"CNS"
 			],
 			"hasFluffImages": true
 		},
@@ -43680,6 +44770,9 @@
 			"weight": 5,
 			"entries": [
 				"Tej is an amber-colored, fermented drink made from honey. It's more common and popular in Chult than beer or ale. A mug of tej costs 4 cp in Port Nyanzaru or 6 cp in Fort Beluarian. A 1-gallon cask costs 2 sp in the city or 3 sp at the fort."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -44601,6 +45694,9 @@
 			"value": 300,
 			"entries": [
 				"This thick marsh root tastes bitter but is thought to aid digestive health. When you use an action to consume a dose, you gain advantage on saving throws against the effects of poisonous or toxic substances for 8 hours."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -44628,6 +45724,9 @@
 			],
 			"attachedSpells": [
 				"polymorph"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -44638,6 +45737,9 @@
 			"rarity": "uncommon",
 			"entries": [
 				"This potion appears to change color and texture each time you look at it. When you drink the potion, it ends the {@spell polymorph} effect imposed by thessaltoxin."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -45335,6 +46437,9 @@
 			],
 			"poisonTypes": [
 				"ingested"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -47114,6 +48219,9 @@
 			],
 			"attachedSpells": [
 				"zone of truth"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -47467,6 +48575,9 @@
 					]
 				},
 				"You may have more than one kind of resource in the vial, up to the limits expressed above. You can use a bonus action to consume one day of food (or alcohol) or activate one scroll or magic potion. If activating a magic scroll, the effects of that scroll must end before you can activate another scroll from the Vial of Greed."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -49282,6 +50393,9 @@
 			"rarity": "none",
 			"entries": [
 				"More rarely, the orchids produce a smaller pod holding a single white seed. Among its various magical properties, if a white seed is ground and scattered over a dead body, the body is affected by the {@spell resurrection} spell. A white ghost orchid seed has no effect if consumed."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -50315,6 +51429,9 @@
 			],
 			"poisonTypes": [
 				"injury"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -50430,6 +51547,9 @@
 			"entries": [
 				"Distilled from the ichor of demons, {@item zeal|TDCSR} was originally used by Tal'Dorei's ancient berserkers to grant them incredible strength and courage before battles. These days, it's most commonly used by criminal bruisers before a brawl. Most modern warriors stay well away from {@item zeal|TDCSR}, due both to its addictive nature and to the mental and physical degeneration it can cause over long periods of time. When prepared properly, {@item zeal|TDCSR} is a purple, ashy-tasting gel that typically costs 150 gp per dose.",
 				"After slathering {@item zeal|TDCSR} across your exposed skin as an action, you must make a {@dc 12} Constitution {@quickref saving throws|PHB|2|1|saving throw}. On a failure, you become {@condition paralyzed} for {@dice 1d4} rounds as your muscles lock up. On a success, your weapon attacks deal an additional {@damage 1d6} damage for the next minute. After this effect ends, you gain one level of {@condition exhaustion}."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -51114,6 +52234,9 @@
 				"Devastation Orb of Earth|PotA",
 				"Devastation Orb of Fire|PotA",
 				"Devastation Orb of Water|PotA"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -51324,7 +52447,7 @@
 							"items": [
 								"You are immune to disease and poison.",
 								"Using the eye's X-ray vision never causes you to suffer {@condition exhaustion}.",
-								"You experience premonitions of danger and, unless you are {@condition incapacitated}, can't be {@quickref Surprise|PHB|3|0|surprised}.",
+								"You experience premonitions of danger and, unless you are {@condition incapacitated}, can't be {@status surprised}.",
 								"If you start your turn with at least 1 hit point, you regain {@dice 1d10} hit points.",
 								"If a creature has a skeleton, you can attempt to turn its bones to jelly with a touch of the {@item Hand of Vecna}. You can do so by using an action to make a melee attack against a creature you can reach, using your choice of your melee attack bonus for weapons or spells. On a hit, the target must succeed on a DC 18 Constitution saving throw or drop to 0 hit points.",
 								"You can use an action to cast {@spell wish}. This property can't be used again until 30 days have passed."
@@ -52149,6 +53272,9 @@
 				"Potion of Hill Giant Strength",
 				"Potion of Stone Giant Strength",
 				"Potion of Storm Giant Strength"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -52166,6 +53292,9 @@
 				"Potion of Greater Healing",
 				"Potion of Superior Healing",
 				"Potion of Supreme Healing"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -52178,6 +53307,9 @@
 				"Potion of Mind Control (beast)|TftYP",
 				"Potion of Mind Control (humanoid)|TftYP",
 				"Potion of Mind Control (monster)|TftYP"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -52201,6 +53333,9 @@
 			],
 			"lootTables": [
 				"Magic Item Table B"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -52563,6 +53698,9 @@
 			],
 			"lootTables": [
 				"Magic Item Table C"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -52717,6 +53855,9 @@
 				"Spell Scroll (7th Level)",
 				"Spell Scroll (8th Level)",
 				"Spell Scroll (9th Level)"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -52733,6 +53874,9 @@
 				"Spellwrought Tattoo (3rd Level)|TCE",
 				"Spellwrought Tattoo (4th Level)|TCE",
 				"Spellwrought Tattoo (5th Level)|TCE"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -52863,6 +54007,9 @@
 				"Suude (Brown)|TDCSR",
 				"Suude (Blue)|TDCSR",
 				"Suude (Red)|TDCSR"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{

@@ -1,6 +1,6 @@
 "use strict";
 
-class PageFilterCultsBoons extends PageFilter {
+class PageFilterCultsBoons extends PageFilterBase {
 	constructor () {
 		super();
 

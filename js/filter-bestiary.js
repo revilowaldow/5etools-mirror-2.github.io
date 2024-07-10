@@ -1,6 +1,6 @@
 "use strict";
 
-class PageFilterBestiary extends PageFilter {
+class PageFilterBestiary extends PageFilterBase {
 	static _NEUT_ALIGNS = ["NX", "NY"];
 	static MISC_FILTER_SPELLCASTER = "Spellcaster, ";
 	static _RE_SPELL_TAG = /{@spell ([^}]+)}/g;
@@ -622,7 +622,7 @@ class PageFilterBestiary extends PageFilter {
 
 globalThis.PageFilterBestiary = PageFilterBestiary;
 
-class ModalFilterBestiary extends ModalFilter {
+class ModalFilterBestiary extends ModalFilterBase {
 	/**
 	 * @param opts
 	 * @param opts.namespace
@@ -646,7 +646,7 @@ class ModalFilterBestiary extends ModalFilter {
 			{sort: "cr", text: "CR", width: "2"},
 			{sort: "source", text: "Source", width: "1"},
 		];
-		return ModalFilter._$getFilterColumnHeaders(btnMeta);
+		return ModalFilterBase._$getFilterColumnHeaders(btnMeta);
 	}
 
 	async _pLoadAllData () {
@@ -679,7 +679,7 @@ class ModalFilterBestiary extends ModalFilter {
 			<div class="ve-col-4 ${mon._versionBase_isVersion ? "italic" : ""} ${this._getNameStyle()}">${mon._versionBase_isVersion ? `<span class="px-3"></span>` : ""}${mon.name}</div>
 			<div class="ve-col-4">${type}</div>
 			<div class="ve-col-2 ve-text-center">${cr}</div>
-			<div class="ve-col-1 ve-flex-h-center ${Parser.sourceJsonToColor(mon.source)} pr-0" title="${Parser.sourceJsonToFull(mon.source)}" ${Parser.sourceJsonToStyle(mon.source)}>${source}${Parser.sourceJsonToMarkerHtml(mon.source)}</div>
+			<div class="ve-col-1 ve-flex-h-center ${Parser.sourceJsonToSourceClassname(mon.source)} pr-0" title="${Parser.sourceJsonToFull(mon.source)}" ${Parser.sourceJsonToStyle(mon.source)}>${source}${Parser.sourceJsonToMarkerHtml(mon.source)}</div>
 		</div>`;
 
 		const btnShowHidePreview = eleRow.firstElementChild.children[1].firstElementChild;

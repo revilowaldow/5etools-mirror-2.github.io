@@ -1,6 +1,6 @@
 "use strict";
 
-class PageFilterPsionics extends PageFilter {
+class PageFilterPsionics extends PageFilterBase {
 	// region static
 	static _sortFilterTypes (a, b) {
 		a = a.item; b = b.item;

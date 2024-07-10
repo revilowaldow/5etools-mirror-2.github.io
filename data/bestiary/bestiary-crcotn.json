@@ -449,7 +449,7 @@
 				{
 					"name": "Divinely Blessed",
 					"entries": [
-						"Alyxian can't be {@quickref Surprise|PHB|3|0|surprised} and can't be changed into another form against his will."
+						"Alyxian can't be {@status surprised} and can't be changed into another form against his will."
 					]
 				},
 				{
@@ -635,7 +635,7 @@
 				{
 					"name": "Divinely Blessed",
 					"entries": [
-						"Alyxian can't be {@quickref Surprise|PHB|3|0|surprised} and can't be changed into another form against his will."
+						"Alyxian can't be {@status surprised} and can't be changed into another form against his will."
 					]
 				},
 				{
@@ -806,7 +806,7 @@
 				{
 					"name": "Divinely Blessed",
 					"entries": [
-						"Alyxian can't be {@quickref Surprise|PHB|3|0|surprised} and can't be changed into another form against his will."
+						"Alyxian can't be {@status surprised} and can't be changed into another form against his will."
 					]
 				},
 				{
@@ -1142,7 +1142,7 @@
 				{
 					"name": "Divinely Blessed",
 					"entries": [
-						"Alyxian can't be {@quickref Surprise|PHB|3|0|surprised} and can't be changed into another form against his will."
+						"Alyxian can't be {@status surprised} and can't be changed into another form against his will."
 					]
 				},
 				{

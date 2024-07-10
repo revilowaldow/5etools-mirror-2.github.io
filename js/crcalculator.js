@@ -168,7 +168,11 @@ function addMonsterFeatures (mfData) {
 function calculateCr () {
 	const expectedCr = parseInt($("#expectedcr").val());
 
+	// Effective HP
 	let hp = parseInt($("#crcalc #hp").val());
+
+	// Used in e.g. "Damage Transfer"
+	const hpActual = hp;
 
 	if ($("#vulnerabilities").prop("checked")) hp *= 0.5;
 	if ($("#resistances").val() === "res") {

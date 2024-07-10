@@ -3248,6 +3248,7 @@
 				"P"
 			],
 			"miscTags": [
+				"DIS",
 				"HPR",
 				"MW"
 			],
@@ -3499,7 +3500,7 @@
 				{
 					"name": "Uncanny Senses",
 					"entries": [
-						"The canoloth can't be {@quickref Surprise|PHB|3|0|surprised} while it isn't {@condition incapacitated}."
+						"The canoloth can't be {@status surprised} while it isn't {@condition incapacitated}."
 					]
 				}
 			],
@@ -12573,6 +12574,7 @@
 				"I"
 			],
 			"miscTags": [
+				"CUR",
 				"MW"
 			],
 			"savingThrowForced": [
@@ -17595,6 +17597,7 @@
 				"P"
 			],
 			"miscTags": [
+				"DIS",
 				"MW"
 			],
 			"conditionInflict": [
@@ -24089,6 +24092,7 @@
 			],
 			"miscTags": [
 				"AOE",
+				"DIS",
 				"MW",
 				"RCH"
 			],

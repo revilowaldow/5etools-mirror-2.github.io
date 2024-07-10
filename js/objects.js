@@ -60,8 +60,6 @@ class ObjectsPage extends ListPage {
 			dataProps: ["object"],
 
 			listSyntax: new ListSyntaxObjects({fnGetDataList: () => this._dataList, pFnGetFluff}),
-
-			isMarkdownPopout: true,
 		});
 
 		this._$dispToken = null;
@@ -80,7 +78,7 @@ class ObjectsPage extends ListPage {
 		eleLi.innerHTML = `<a href="#${hash}" class="lst--border lst__row-inner">
 			<span class="bold ve-col-8 pl-0">${obj.name}</span>
 			<span class="ve-col-2 ve-text-center">${size}</span>
-			<span class="ve-col-2 ve-text-center ${Parser.sourceJsonToColor(obj.source)} pr-0" title="${Parser.sourceJsonToFull(obj.source)}" ${Parser.sourceJsonToStyle(obj.source)}>${source}</span>
+			<span class="ve-col-2 ve-text-center ${Parser.sourceJsonToSourceClassname(obj.source)} pr-0" title="${Parser.sourceJsonToFull(obj.source)}" ${Parser.sourceJsonToStyle(obj.source)}>${source}</span>
 		</a>`;
 
 		const listItem = new ListItem(

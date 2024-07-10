@@ -302,17 +302,21 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 
 		this._pageFilter.trimState();
 
-		ManageBrewUi.bindBtnOpen($(`#manage-brew`));
+		// TODO(MODULES) refactor
+		import("./utils-brew/utils-brew-ui-manage.js")
+			.then(({ManageBrewUi}) => {
+				ManageBrewUi.bindBtngroupManager(e_({id: "btngroup-manager"}));
+			});
 		this._renderListFeelingLucky({isCompact: true, $btnReset});
 
-		window.onhashchange = this._handleHashChange.bind(this);
+		window.onhashchange = this._pHandleHashChange.bind(this);
 
 		this._list.init();
 
 		$(`.initial-message`).text(`Select a class from the list to view it here`);
 
 		// Silently prepare our initial state
-		this._setClassFromHash(Hist.initialLoad);
+		await this._pSetClassFromHash(Hist.initialLoad);
 		this._setStateFromHash(Hist.initialLoad);
 
 		await this._pInitAndRunRender();
@@ -467,21 +471,23 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 		const rawLocation = window.location.hash;
 		const location = rawLocation[0] === "#" ? rawLocation.slice(1) : rawLocation;
 		if (nxtHash !== location) {
-			if (isSuppressHistory) Hist.replaceHistoryHash(nxtHash);
-			else window.location.hash = nxtHash;
+			if (isSuppressHistory) {
+				Hist.replaceHistoryHash(nxtHash);
+				this._updateSelected();
+			} else window.location.hash = nxtHash;
 		}
 	}
 
-	_handleHashChange () {
+	async _pHandleHashChange () {
 		// Parity with the implementation in hist.js
 		if (Hist.isHistorySuppressed) return Hist.setSuppressHistory(false);
 
-		this._setClassFromHash();
+		await this._pSetClassFromHash();
 		this._setStateFromHash();
 	}
 
-	_setClassFromHash (isInitialLoad) {
-		const [link] = Hist.getHashParts();
+	async _pSetClassFromHash (isInitialLoad) {
+		const [link, ...sub] = Hist.getHashParts();
 
 		let ixToLoad;
 
@@ -489,8 +495,10 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 		else {
 			const listItem = Hist.getActiveListItem(link);
 
-			if (listItem == null) ixToLoad = -1;
-			else {
+			if (listItem == null) {
+				ixToLoad = -1;
+				if (link && await this.pHandleUnknownHash(link, sub)) return;
+			} else {
 				const toLoad = listItem.ix;
 				if (toLoad == null) ixToLoad = -1;
 				else ixToLoad = listItem.ix;
@@ -507,6 +515,8 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 				document.title = `${cls ? cls.name : "Classes"} - 5etools`;
 				this._updateSelected();
 				target._ = ixToLoad;
+			} else {
+				this._updateSelected();
 			}
 		} else {
 			// This should never occur (failed loads should pick the first list item), but attempt to handle it semi-gracefully
@@ -516,7 +526,7 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 	}
 
 	_setStateFromHash (isInitialLoad) {
-		let [_, ...subs] = Hist.getHashParts();
+		let [, ...subs] = Hist.getHashParts();
 		subs = this.filterBox.setFromSubHashes(subs);
 
 		const target = isInitialLoad ? this.__state : this._state;
@@ -673,7 +683,7 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 
 		const $lnk = $(`<a href="#${hash}" class="lst--border lst__row-inner">
 			<span class="bold ve-col-8 pl-0">${cls.name}</span>
-			<span class="ve-col-4 ve-text-center ${Parser.sourceJsonToColor(cls.source)} pr-0" title="${Parser.sourceJsonToFull(cls.source)}" ${Parser.sourceJsonToStyle(cls.source)}>${source}</span>
+			<span class="ve-col-4 ve-text-center ${Parser.sourceJsonToSourceClassname(cls.source)} pr-0" title="${Parser.sourceJsonToFull(cls.source)}" ${Parser.sourceJsonToStyle(cls.source)}>${source}</span>
 		</a>`);
 
 		const $ele = $$`<li class="lst__row ve-flex-col ${isExcluded ? "row--blocklisted" : ""}">${$lnk}</li>`;
@@ -777,8 +787,8 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 		// reset all hooks in preparation for rendering
 		this._initHashAndStateSync();
 		this.filterBox
-			.off(FilterBox.EVNT_VALCHANGE)
-			.on(FilterBox.EVNT_VALCHANGE, () => this._handleFilterChange(true));
+			.off(FILTER_BOX_EVNT_VALCHANGE)
+			.on(FILTER_BOX_EVNT_VALCHANGE, () => this._handleFilterChange(true));
 
 		// region bind list updates
 		const hkSetHref = () => {
@@ -1463,7 +1473,7 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 			const isClassFeatureVariantsDisplayed = f[this._pageFilter.optionsFilter.header].isClassFeatureVariant;
 			$btnToggleFeatureVariants.toggleClass("active", isClassFeatureVariantsDisplayed);
 		};
-		this.filterBox.on(FilterBox.EVNT_VALCHANGE, () => hkUpdateBtnFeatureVariants());
+		this.filterBox.on(FILTER_BOX_EVNT_VALCHANGE, () => hkUpdateBtnFeatureVariants());
 		hkUpdateBtnFeatureVariants();
 
 		const $btnToggleFluff = ComponentUiUtil.$getBtnBool(this, "isShowFluff", {text: "Info"}).title("Toggle Class Info");
@@ -1565,6 +1575,7 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 					SourceUtil.FILTER_GROUP_STANDARD,
 					SourceUtil.FILTER_GROUP_PARTNERED,
 					SourceUtil.FILTER_GROUP_NON_STANDARD,
+					SourceUtil.FILTER_GROUP_PRERELEASE,
 					SourceUtil.FILTER_GROUP_HOMEBREW,
 				].filter(it => !toInclude.includes(it));
 
@@ -1613,7 +1624,7 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 				this._proxyAssign("state", "_state", "__state", cls.subclasses.mergeMap(sc => ({[UrlUtil.getStateKeySubclass(sc)]: false})));
 			});
 
-		this.filterBox.on(FilterBox.EVNT_VALCHANGE, this._handleSubclassFilterChange.bind(this));
+		this.filterBox.on(FILTER_BOX_EVNT_VALCHANGE, this._handleSubclassFilterChange.bind(this));
 		this._handleSubclassFilterChange();
 		// Remove the temporary "hidden" class used to prevent popping
 		this._listSubclass.items.forEach(it => it.ele.showVe());

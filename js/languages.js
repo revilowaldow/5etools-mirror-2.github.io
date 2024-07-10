@@ -65,8 +65,6 @@ class LanguagesPage extends ListPage {
 			pageFilter,
 
 			dataProps: ["language"],
-
-			isMarkdownPopout: true,
 		});
 	}
 
@@ -83,7 +81,7 @@ class LanguagesPage extends ListPage {
 			<span class="ve-col-6 bold pl-0">${it.name}</span>
 			<span class="ve-col-2 ve-text-center">${(it.type || "\u2014").uppercaseFirst()}</span>
 			<span class="ve-col-2 ve-text-center">${(it.script || "\u2014").toTitleCase()}</span>
-			<span class="ve-col-2 ve-text-center ${Parser.sourceJsonToColor(it.source)} pr-0" title="${Parser.sourceJsonToFull(it.source)}" ${Parser.sourceJsonToStyle(it.source)}>${source}</span>
+			<span class="ve-col-2 ve-text-center ${Parser.sourceJsonToSourceClassname(it.source)} pr-0" title="${Parser.sourceJsonToFull(it.source)}" ${Parser.sourceJsonToStyle(it.source)}>${source}</span>
 		</a>`;
 
 		const listItem = new ListItem(

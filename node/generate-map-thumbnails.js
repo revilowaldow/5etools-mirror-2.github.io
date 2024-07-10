@@ -1,4 +1,4 @@
-import * as fs from "fs";
+import fs from "fs";
 import sharp from "sharp";
 import * as ut from "./util.js";
 import "../js/parser.js";

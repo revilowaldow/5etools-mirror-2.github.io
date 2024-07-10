@@ -418,7 +418,7 @@
 												],
 												[
 													"2",
-													"While passing through a copse of blackened mangrove trees, the characters are ambushed by {@dice 1d4} {@creature Vine Blight||vine blights} that emerge from the trees' tangled roots. Any character with a passive Wisdom ({@skill Perception}) score of 13 or higher spots the blights, but all others are {@quickref Surprise|PHB|3|0|surprised}."
+													"While passing through a copse of blackened mangrove trees, the characters are ambushed by {@dice 1d4} {@creature Vine Blight||vine blights} that emerge from the trees' tangled roots. Any character with a passive Wisdom ({@skill Perception}) score of 13 or higher spots the blights, but all others are {@status surprised}."
 												],
 												[
 													"3",
@@ -442,7 +442,7 @@
 												],
 												[
 													"8",
-													"The characters are ambushed by a {@creature giant constrictor snake} while wading through the murky swamp. Any character with a passive Wisdom ({@skill Perception}) score of 16 or higher spots the snake, but all others are {@quickref Surprise|PHB|3|0|surprised} by it."
+													"The characters are ambushed by a {@creature giant constrictor snake} while wading through the murky swamp. Any character with a passive Wisdom ({@skill Perception}) score of 16 or higher spots the snake, but all others are {@status surprised} by it."
 												],
 												[
 													"9",
@@ -454,7 +454,7 @@
 												],
 												[
 													"11",
-													"Any character with a passive Wisdom ({@skill Perception}) score of 12 or higher sees and hears {@dice 1d3 + 1} {@creature Crocodile||crocodiles} moments before they attack. All other characters are {@quickref Surprise|PHB|3|0|surprised} by the reptiles."
+													"Any character with a passive Wisdom ({@skill Perception}) score of 12 or higher sees and hears {@dice 1d3 + 1} {@creature Crocodile||crocodiles} moments before they attack. All other characters are {@status surprised} by the reptiles."
 												],
 												[
 													"12",
@@ -490,7 +490,7 @@
 										"You spy a shaded thicket of withered mangrove trees draped in a sickly veil of rotted kudzu and creeper vines. A moldering wooden raft topped with a single withered post floats near the center of this dark and lonely copse. A gaunt form clings lifelessly to the bottom of the post, recognizable as the weathered skeletal remains of a Dwendalian soldier."
 									]
 								},
-								"Two {@creature Swarm of Poisonous Snakes||swarms of poisonous snakes} dwell within the knotted root system of the trees, attacking any creatures that tread or swim through the area. Any character with a passive Wisdom ({@skill Perception}) score of 14 or higher spots the swarms, but all others are {@quickref Surprise|PHB|3|0|surprised}. After the fight, a character who succeeds on a DC 10 Wisdom ({@skill Insight}) check can deduce that the Dwendalian soldier starved to death while waiting out the relentless snakes.",
+								"Two {@creature Swarm of Poisonous Snakes||swarms of poisonous snakes} dwell within the knotted root system of the trees, attacking any creatures that tread or swim through the area. Any character with a passive Wisdom ({@skill Perception}) score of 14 or higher spots the swarms, but all others are {@status surprised}. After the fight, a character who succeeds on a DC 10 Wisdom ({@skill Insight}) check can deduce that the Dwendalian soldier starved to death while waiting out the relentless snakes.",
 								{
 									"type": "entries",
 									"name": "Treasure",

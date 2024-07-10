@@ -2144,7 +2144,7 @@
 									"page": 20,
 									"id": "059",
 									"entries": [
-										"When an encounter occurs, determine if the adventurers or their foes are {@quickref Surprise|PHB|3|0|surprised}, as normal. The adventurers can achieve surprise only if all the following conditions are met:",
+										"When an encounter occurs, determine if the adventurers or their foes are {@status surprised}, as normal. The adventurers can achieve surprise only if all the following conditions are met:",
 										{
 											"type": "list",
 											"items": [
@@ -3771,12 +3771,12 @@
 									"items": [
 										"Both goblins are neutral.",
 										"Add {@skill Acrobatics} +6 and {@skill Athletics} +3 to the goblins' list of skills.",
-										"The goblins have advantage on checks made to avoid being {@quickref Surprise|PHB|3|0|surprised}."
+										"The goblins have advantage on checks made to avoid being {@status surprised}."
 									]
 								},
 								"The goblins notice the adventurers as they approach the Silken Paths and are willing to act as guides and helpers\u2014for a fee, of course. They'll settle for 2 gp per day each, but {@creature Yuk Yuk|OotA} (who does all the negotiating) is just as likely to ask for something flashy belonging to one of the characters. He might also ask for some unspecified favor, to be paid when the goblins and the adventurers get to wherever they're going and part ways. He might ask for first pick of any loot the party uncovers in the Silken Paths, and will expect and ask for a share of the treasure regardless.",
 								"{@creature Yuk Yuk|OotA} and {@creature Spiderbait|OotA} each carry a gourd of grease, which they apply to their feet so that they can \"surf the webs.\" While sliding down webs, they move at twice their normal walking speed.",
-								"The Web Runners are as good as their word when it comes to their services, and they can teach the characters a thing or two. While they travel with the two goblins, the characters have advantage on checks made to avoid being {@quickref Surprise|PHB|3|0|surprised}. The goblins know the Silken Paths well enough not to become lost in them.",
+								"The Web Runners are as good as their word when it comes to their services, and they can teach the characters a thing or two. While they travel with the two goblins, the characters have advantage on checks made to avoid being {@status surprised}. The goblins know the Silken Paths well enough not to become lost in them.",
 								"If the adventurers make a good impression on the Web Runners and if the party's goals appear to offer interesting opportunities to do new and dangerous things, the goblins offer to stay on after crossing the Silken Paths, and to help guide the characters through the Underdark. The two won't leave the Underdark, however. {@creature Yuk Yuk|OotA} will try to negotiate a suitable fee, but the goblins might simply tag along, content to earn any fair share of whatever the party acquires.",
 								{
 									"type": "inset",
@@ -6935,7 +6935,7 @@
 					"entries": [
 						"Kuo-toa parade around the altar in a wide circle as they chant. Part of their path sends them splashing and wading through the shallows of the Darklake. The characters quickly can't tell one faction of fish-folk from the other, but they see the archpriest of the Sea Mother and his whip moving toward the altar.",
 						"Bloppblippodd calls for the sacrifices to be brought forth, and one {@creature kuo-toa} per character jumps to do her bidding. They prod the characters with their spears to herd them toward a slight depression 20 feet from the altar, with a large grate at its center. The characters can see that the stonework of the depression is stained with the blood of innumerable sacrifices, and they can hear the gentle lapping of the Darklake coming up through the grate. The chanting grows louder.",
-						"When the sacrifices are brought forward, Bloppblippodd gestures toward the altar, whereupon her father suddenly attacks, striking her with his scepter. Kuo-toa loyal to him surge forward to attack, while the guards that brought the characters forward stand in shock. They are {@quickref Surprise|PHB|3|0|surprised} and can't move or take an action on their first turn of the combat, and they can't take reactions until that first turn ends.",
+						"When the sacrifices are brought forward, Bloppblippodd gestures toward the altar, whereupon her father suddenly attacks, striking her with his scepter. Kuo-toa loyal to him surge forward to attack, while the guards that brought the characters forward stand in shock. They are {@status surprised} and can't move or take an action on their first turn of the combat, and they can't take reactions until that first turn ends.",
 						"As the two {@creature Kuo-toa Archpriest||archpriests} and their followers fight, the characters can intervene on either side or attempt to slip away during the melee.",
 						"On round 3 of the fight, characters notice kuo-toa crying out and flailing in the shallows of the Darklake. Several are pulled under or strike at unseen foes beneath the surface. The water foams red with blood.",
 						"Dozens of {@creature ixitxachitl|OotA} (see {@adventure appendix C|OotA|19}) are responsible for the attacks in the water. They have been drawn by the kuo-toa ritual and feast on any creatures they can reach, including party members in the water. The sudden frenzy sets a wave of panic through the kuo-toa. The young archpriest calls out \"Leemooggoogoon!\" just as her father strikes a final, fatal blow, dropping her before the profane altar. (If any character is also engaging the archpriest of the Deep Father, allow that character to strike the final blow.)"
@@ -12155,7 +12155,7 @@
 										"Because of its two heads, the {@creature Spider King|OotA} has advantage on Wisdom ({@skill Perception}) checks and on saving throws against being {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition stunned}, and knocked {@condition unconscious}."
 									]
 								},
-								"The {@creature Spider King|OotA} senses when intruders enter its domain and can't be {@quickref Surprise|PHB|3|0|surprised} by them. Along with two normal {@creature Giant Spider||giant spiders} (its attendants), the {@creature Spider King|OotA} waits in ambush. It moves to the entrance of its chamber in an attempt to keep the characters bottled up, while the two giant spiders approach along the walls and ceiling, getting into position above creatures on the floor. The {@creature Spider King|OotA} and the giant spiders fight to the death, but they don't follow prey that flees.",
+								"The {@creature Spider King|OotA} senses when intruders enter its domain and can't be {@status surprised} by them. Along with two normal {@creature Giant Spider||giant spiders} (its attendants), the {@creature Spider King|OotA} waits in ambush. It moves to the entrance of its chamber in an attempt to keep the characters bottled up, while the two giant spiders approach along the walls and ceiling, getting into position above creatures on the floor. The {@creature Spider King|OotA} and the giant spiders fight to the death, but they don't follow prey that flees.",
 								{
 									"type": "entries",
 									"name": "Development",
@@ -12520,7 +12520,7 @@
 									]
 								},
 								"Four {@creature Quasit||quasits} are wrestling each other farther along in the tunnel. If they notice the characters, they attack.",
-								"When two quasits are reduced to 0 hit points, the two remaining ones turn {@condition invisible} and flee. However, they make enough noise in doing so for the characters to follow them by sound. If any quasit escapes, the cultists in area 12 can't be {@quickref Surprise|PHB|3|0|surprised} and prepare an ambush.",
+								"When two quasits are reduced to 0 hit points, the two remaining ones turn {@condition invisible} and flee. However, they make enough noise in doing so for the characters to follow them by sound. If any quasit escapes, the cultists in area 12 can't be {@status surprised} and prepare an ambush.",
 								{
 									"type": "entries",
 									"name": "Development",
@@ -23248,7 +23248,7 @@
 									"page": 110,
 									"id": "2df",
 									"entries": [
-										"Sounds of battle here alert every other wererat in the warrens. Thereafter, the wererats can't be {@quickref Surprise|PHB|3|0|surprised}."
+										"Sounds of battle here alert every other wererat in the warrens. Thereafter, the wererats can't be {@status surprised}."
 									]
 								}
 							]
@@ -29463,7 +29463,7 @@
 											]
 										},
 										"Khalessa urges the characters to turn back. If they don't, she fears that the drow force will overwhelm them. Having blown her cover to warn the characters, she asks to stay with them until they reach Gauntlgrym or an alliance settlement.",
-										"The leaders of the drow force are a female {@creature drow elite warrior} named Ryzliir Symryvvin and her consort, a male {@creature drow mage} named Velgor Zolond. They are joined by a prisoner in manacles\u2014an unarmed and unarmored male human {@creature knight} of the Order of the Gauntlet named {@creature Aljanor Keenblade|OotA}. Sir Aljanor was captured during a surface raid months ago, and the drow have beaten him such that he has only 3 hit points remaining. Members of the order traveling in the party's expeditionary force recognize Sir Aljanor instantly and are {@quickref Surprise|PHB|3|0|surprised}; they assumed he had been killed.",
+										"The leaders of the drow force are a female {@creature drow elite warrior} named Ryzliir Symryvvin and her consort, a male {@creature drow mage} named Velgor Zolond. They are joined by a prisoner in manacles\u2014an unarmed and unarmored male human {@creature knight} of the Order of the Gauntlet named {@creature Aljanor Keenblade|OotA}. Sir Aljanor was captured during a surface raid months ago, and the drow have beaten him such that he has only 3 hit points remaining. Members of the order traveling in the party's expeditionary force recognize Sir Aljanor instantly and are {@status surprised}; they assumed he had been killed.",
 										{
 											"type": "image",
 											"href": {
@@ -33918,7 +33918,7 @@
 									"items": [
 										"H'slaat orders his fellow troglodytes in area 2 to rush across the stream while the troglodytes in area 3 rain javelins down on the chieftain's forces. Meanwhile, H'Slaat grabs H'hoort from area 3.",
 										"H'slaat crosses the stream, dragging her behind him. He threatens to kill her unless the chieftain meets him in battle.",
-										"The troglodytes in areas 5 and 7 try to make their way through the side caverns to attack the chieftain's forces in area 4 from the rear. However, if the ropers and piercers in area 8 have not already been killed by the adventurers, the troglodytes are {@quickref Surprise|PHB|3|0|surprised} and massacred.",
+										"The troglodytes in areas 5 and 7 try to make their way through the side caverns to attack the chieftain's forces in area 4 from the rear. However, if the ropers and piercers in area 8 have not already been killed by the adventurers, the troglodytes are {@status surprised} and massacred.",
 										"S'slaar's cavalry in area 14 makes its way through the western side caves and attack H'slaat's forces from behind."
 									]
 								},
@@ -39761,7 +39761,7 @@
 									"page": 195,
 									"id": "50b",
 									"entries": [
-										"These {@creature Giant Wolf Spider||spiders} lurk in burrows under the spongy ground, leaping out to attack the party as it passes by. Party members with a passive Wisdom ({@skill Perception}) score of 17 or higher aren't {@quickref Surprise|PHB|3|0|surprised} by the spiders."
+										"These {@creature Giant Wolf Spider||spiders} lurk in burrows under the spongy ground, leaping out to attack the party as it passes by. Party members with a passive Wisdom ({@skill Perception}) score of 17 or higher aren't {@status surprised} by the spiders."
 									]
 								},
 								{
@@ -40622,7 +40622,7 @@
 									"page": 200,
 									"id": "53e",
 									"entries": [
-										"These {@creature Giant Wolf Spider||spiders} lurk in burrows beneath the gardens, leaping out to attack the party as it passes by. Party members with a passive Wisdom ({@skill Perception}) score of 17 or higher aren't {@quickref Surprise|PHB|3|0|surprised} by the spiders."
+										"These {@creature Giant Wolf Spider||spiders} lurk in burrows beneath the gardens, leaping out to attack the party as it passes by. Party members with a passive Wisdom ({@skill Perception}) score of 17 or higher aren't {@status surprised} by the spiders."
 									]
 								},
 								{
@@ -41592,7 +41592,7 @@
 									"page": 210,
 									"id": "585",
 									"entries": [
-										"A hunting pack consisting of one {@creature gnoll pack lord} and {@dice 3d6} {@creature Gnoll||gnolls} has been driven into a frenzy by the presence of Yeenoghu in the Underdark. The characters can't be {@quickref Surprise|PHB|3|0|surprised} by the gnolls, whose incessant cackling gives them away."
+										"A hunting pack consisting of one {@creature gnoll pack lord} and {@dice 3d6} {@creature Gnoll||gnolls} has been driven into a frenzy by the presence of Yeenoghu in the Underdark. The characters can't be {@status surprised} by the gnolls, whose incessant cackling gives them away."
 									]
 								},
 								{

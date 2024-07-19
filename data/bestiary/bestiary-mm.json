@@ -7281,6 +7281,9 @@
 		},
 		{
 			"name": "Androsphinx",
+			"group": [
+				"Sphinxes"
+			],
 			"source": "MM",
 			"page": 281,
 			"srd": true,
@@ -19833,6 +19836,12 @@
 				"type": "internal",
 				"path": "bestiary/svirfneblin.mp3"
 			},
+			"altArt": [
+				{
+					"name": "Svirfneblin",
+					"source": "QftIS"
+				}
+			],
 			"attachedItems": [
 				"war pick|phb"
 			],
@@ -37055,6 +37064,9 @@
 		},
 		{
 			"name": "Gynosphinx",
+			"group": [
+				"Sphinxes"
+			],
 			"source": "MM",
 			"page": 282,
 			"srd": true,

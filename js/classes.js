@@ -88,41 +88,42 @@ class UtilClassesPage {
 		Renderer.get().setFirstSection(true);
 
 		if (hasEntries) {
-			const renderer = Renderer.get();
+			Renderer.get().withDepthTracker(
+				depthArr || [],
+				({renderer}) => {
+					entFluff.entries.filter(f => f.source === ent.source).forEach(f => f._isStandardSource = true);
 
-			if (depthArr) renderer.setDepthTracker(depthArr, {additionalPropsInherited: ["_isStandardSource"]});
-			else renderer.setDepthTracker([]);
+					entFluff.entries.forEach((f, i) => {
+						const cpy = MiscUtil.copyFast(f);
 
-			entFluff.entries.filter(f => f.source === ent.source).forEach(f => f._isStandardSource = true);
+						// Remove the name from the first section if it is a copy of the class/subclass name
+						if (
+							isRemoveRootName
+							&& i === 0
+							&& cpy.name
+							&& (
+								cpy.name.toLowerCase() === ent.name.toLowerCase()
+								|| cpy.name.toLowerCase() === `the ${ent.name.toLowerCase()}`
+							)
+						) {
+							delete cpy.name;
+						}
 
-			entFluff.entries.forEach((f, i) => {
-				const cpy = MiscUtil.copyFast(f);
+						if (
+							isAddSourceNote
+							&& typeof cpy !== "string"
+							&& cpy.source
+							&& cpy.source !== ent.source
+							&& cpy.entries
+						) {
+							cpy.entries.unshift(`{@note The following information is from ${Parser.sourceJsonToFull(cpy.source)}${Renderer.utils.isDisplayPage(cpy.page) ? `, page ${cpy.page}` : ""}.}`);
+						}
 
-				// Remove the name from the first section if it is a copy of the class/subclass name
-				if (
-					isRemoveRootName
-					&& i === 0
-					&& cpy.name
-					&& (
-						cpy.name.toLowerCase() === ent.name.toLowerCase()
-						|| cpy.name.toLowerCase() === `the ${ent.name.toLowerCase()}`
-					)
-				) {
-					delete cpy.name;
-				}
-
-				if (
-					isAddSourceNote
-					&& typeof cpy !== "string"
-					&& cpy.source
-					&& cpy.source !== ent.source
-					&& cpy.entries
-				) {
-					cpy.entries.unshift(`{@note The following information is from ${Parser.sourceJsonToFull(cpy.source)}${Renderer.utils.isDisplayPage(cpy.page) ? `, page ${cpy.page}` : ""}.}`);
-				}
-
-				stack += renderer.render(cpy);
-			});
+						stack += renderer.render(cpy);
+					});
+				},
+				{additionalPropsInherited: ["_isStandardSource"]},
+			);
 		}
 
 		if (hasImages) {
@@ -2158,9 +2159,15 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 				if (source === cls.source) return {isSkip: true};
 			},
 			fn: () => {
-				return $(`<tr data-scroll-id="${ixLvl}-${ixFeature}" data-feature-type="class" class="cls-main__linked-titles"><td colspan="6"></td></tr>`)
-					.fastSetHtml(Renderer.get().setDepthTracker(depthArr, {additionalProps: ["isReprinted"], additionalPropsInherited: ["_isStandardSource", "isClassFeatureVariant"]}).render(feature))
-					.appendTo($content);
+				return Renderer.get().withDepthTracker(
+					depthArr,
+					({renderer}) => {
+						return $(`<tr data-scroll-id="${ixLvl}-${ixFeature}" data-feature-type="class" class="cls-main__linked-titles"><td colspan="6"></td></tr>`)
+							.fastSetHtml(renderer.render(feature))
+							.appendTo($content);
+					},
+					{additionalProps: ["isReprinted"], additionalPropsInherited: ["_isStandardSource", "isClassFeatureVariant"]},
+				);
 			},
 		});
 		this._trackOutlineCfData(ixLvl, ixFeature, depthArr);
@@ -2173,7 +2180,7 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 
 		// Add a placeholder feature to display when no subclasses are active
 		const $trSubclassFeature = $(`<tr class="cls-main__sc-feature" data-subclass-none-message="true"><td colspan="6"></td></tr>`)
-			.fastSetHtml(Renderer.get().setDepthTracker([]).render({type: "entries", entries: [{name: `{@note No Subclass Selected}`, type: "entries", entries: [`{@note <span class="clickable roller" data-jump-select-a-subclass="true">Select a subclass</span> to view its feature(s) here.}`]}]}))
+			.fastSetHtml(Renderer.get().withDepthTracker([], ({renderer}) => renderer.render({type: "entries", entries: [{name: `{@note No Subclass Selected}`, type: "entries", entries: [`{@note <span class="clickable roller" data-jump-select-a-subclass="true">Select a subclass</span> to view its feature(s) here.}`]}]})))
 			.appendTo($content);
 
 		await cls.subclasses.pSerialAwaitMap(async sc => {
@@ -2224,7 +2231,9 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 					},
 					fn: () => {
 						const $trSubclassFeature = $(`<tr class="cls-main__sc-feature" data-subclass-id="${UrlUtil.getStateKeySubclass(sc)}"><td colspan="6"></td></tr>`)
-							.fastSetHtml(Renderer.get().setDepthTracker(depthArr, {additionalProps: ["isReprinted"], additionalPropsInherited: ["_isStandardSource", "isClassFeatureVariant"]}).render(toRender))
+							.fastSetHtml(
+								Renderer.get().withDepthTracker(depthArr, ({renderer}) => renderer.render(toRender), {additionalProps: ["isReprinted"], additionalPropsInherited: ["_isStandardSource", "isClassFeatureVariant"]}),
+							)
 							.appendTo($content);
 					},
 				});

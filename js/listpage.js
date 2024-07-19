@@ -422,11 +422,11 @@ class SublistManager {
 		await this.pDoSublistRemove({entity, doFinalize: true});
 	}
 
-	getTitleBtnAdd () { return `Add (SHIFT for ${this._shiftCountAddSubtract})`; }
-	getTitleBtnSubtract () { return `Subtract (SHIFT for ${this._shiftCountAddSubtract})`; }
+	getTitleBtnAdd () { return `Add (SHIFT for ${this._shiftCountAddSubtract}) (Hotkey: p)`; }
+	getTitleBtnSubtract () { return `Subtract (SHIFT for ${this._shiftCountAddSubtract}) (Hotkey: P)`; }
 
-	async pHandleClick_btnAdd ({evt, entity}) {
-		const addCount = evt.shiftKey ? this._shiftCountAddSubtract : 1;
+	async pHandleClick_btnAdd ({entity, isMultiple = false}) {
+		const addCount = isMultiple ? this._shiftCountAddSubtract : 1;
 		return this.pDoSublistAdd({
 			index: Hist.lastLoadedId,
 			entity,
@@ -435,8 +435,8 @@ class SublistManager {
 		});
 	}
 
-	async pHandleClick_btnSubtract ({evt, entity}) {
-		const subtractCount = evt.shiftKey ? this._shiftCountAddSubtract : 1;
+	async pHandleClick_btnSubtract ({entity, isMultiple = false}) {
+		const subtractCount = isMultiple ? this._shiftCountAddSubtract : 1;
 		return this.pDoSublistSubtract({
 			index: Hist.lastLoadedId,
 			entity,
@@ -1567,7 +1567,7 @@ class ListPage {
 
 			const key = EventUtil.getKeyIgnoreCapsLock(evt);
 			switch (key) {
-				// K up; J down
+				// k up; j down
 				case "k":
 				case "j": {
 					// don't switch if the user is typing somewhere else
@@ -1576,6 +1576,24 @@ class ListPage {
 					return;
 				}
 
+				// p: toggle pinned/add 1 to sublist
+				case "p": {
+					if (EventUtil.isInInput(evt)) return;
+					if (!this._sublistManager) return;
+					if (this._sublistManager.isSublistItemsCountable) this._sublistManager.pHandleClick_btnAdd({entity: this._lastRender.entity}).then(null);
+					else this._sublistManager.pHandleClick_btnPin({entity: this._lastRender.entity}).then(null);
+					return;
+				}
+				// P: toggle pinned/remove 1 from sublist
+				case "P": {
+					if (EventUtil.isInInput(evt)) return;
+					if (!this._sublistManager) return;
+					if (this._sublistManager.isSublistItemsCountable) this._sublistManager.pHandleClick_btnSubtract({entity: this._lastRender.entity}).then(null);
+					else this._sublistManager.pHandleClick_btnPin({entity: this._lastRender.entity}).then(null);
+					return;
+				}
+
+				// m: expand/collapse current selection
 				case "m": {
 					if (EventUtil.isInInput(evt)) return;
 					const it = Hist.getSelectedListElementWithLocation();
@@ -1735,21 +1753,21 @@ class ListPage {
 		this._getOrTabRightButton(`pin`, `pushpin`)
 			.off("click")
 			.on("click", () => this._sublistManager.pHandleClick_btnPin({entity: this._lastRender.entity}))
-			.title("Pin (Toggle)");
+			.title("Pin (Toggle) (Hotkey: p/P)");
 	}
 
 	_bindAddButton () {
 		this._getOrTabRightButton(`sublist-add`, `plus`)
 			.off("click")
 			.title(this._sublistManager.getTitleBtnAdd())
-			.on("click", evt => this._sublistManager.pHandleClick_btnAdd({evt, entity: this._lastRender.entity}));
+			.on("click", evt => this._sublistManager.pHandleClick_btnAdd({entity: this._lastRender.entity, isMultiple: !!evt.shiftKey}));
 	}
 
 	_bindSubtractButton () {
 		this._getOrTabRightButton(`sublist-subtract`, `minus`)
 			.off("click")
 			.title(this._sublistManager.getTitleBtnSubtract())
-			.on("click", evt => this._sublistManager.pHandleClick_btnSubtract({evt, entity: this._lastRender.entity}));
+			.on("click", evt => this._sublistManager.pHandleClick_btnSubtract({entity: this._lastRender.entity, isMultiple: !!evt.shiftKey}));
 	}
 
 	/**

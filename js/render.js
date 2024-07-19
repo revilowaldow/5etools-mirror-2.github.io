@@ -243,6 +243,50 @@ globalThis.Renderer = function () {
 		});
 	};
 
+	/**
+	 * Specify an array where the renderer will record rendered header depths.
+	 * Items added to the array are of the form: `{name: "Header Name", depth: 1, type: "entries", source: "PHB"}`
+	 * @param arr
+	 * @param additionalProps Additional data props which should be tracked per-entry.
+	 * @param additionalPropsInherited As per additionalProps, but if a parent entry has the prop, it should be passed
+	 * to its children.
+	 */
+	this.setDepthTracker = function (arr, {additionalProps, additionalPropsInherited} = {}) {
+		this._depthTracker = arr;
+		this._depthTrackerAdditionalProps = additionalProps || [];
+		this._depthTrackerAdditionalPropsInherited = additionalPropsInherited || [];
+		return this;
+	};
+
+	this.withDepthTracker = function (arr, fn, {additionalProps, additionalPropsInherited} = {}) {
+		const depthTrackerPrev = this._depthTracker;
+		const depthTrackerAdditionalPropsPrev = this._depthTrackerAdditionalProps;
+		const depthTrackerAdditionalPropsInheritedPrev = this._depthTrackerAdditionalPropsInherited;
+
+		let out;
+		try {
+			this.setDepthTracker(
+				arr,
+				{
+					additionalProps,
+					additionalPropsInherited,
+				},
+			);
+			out = fn({renderer: this});
+		} finally {
+			this.setDepthTracker(
+				depthTrackerPrev,
+				{
+					additionalProps: depthTrackerAdditionalPropsPrev,
+					additionalPropsInherited: depthTrackerAdditionalPropsInheritedPrev,
+				},
+			);
+		}
+		return out;
+	};
+
+	/* -------------------------------------------- */
+
 	// region Plugins
 	this.addPlugin = function (pluginType, fnPlugin) {
 		MiscUtil.getOrSet(this._plugins, pluginType, []).push(fnPlugin);
@@ -308,21 +352,6 @@ globalThis.Renderer = function () {
 		}
 	};
 	// endregion
-
-	/**
-	 * Specify an array where the renderer will record rendered header depths.
-	 * Items added to the array are of the form: `{name: "Header Name", depth: 1, type: "entries", source: "PHB"}`
-	 * @param arr
-	 * @param additionalProps Additional data props which should be tracked per-entry.
-	 * @param additionalPropsInherited As per additionalProps, but if a parent entry has the prop, it should be passed
-	 * to its children.
-	 */
-	this.setDepthTracker = function (arr, {additionalProps, additionalPropsInherited} = {}) {
-		this._depthTracker = arr;
-		this._depthTrackerAdditionalProps = additionalProps || [];
-		this._depthTrackerAdditionalPropsInherited = additionalPropsInherited || [];
-		return this;
-	};
 
 	this.getLineBreak = function () { return "<br>"; };
 
@@ -1431,19 +1460,26 @@ globalThis.Renderer = function () {
 	};
 
 	this._renderStatblock = function (entry, textStack, meta, options) {
-		this._renderPrefix(entry, textStack, meta, options);
-
 		const page = entry.prop || Renderer.tag.getPage(entry.tag);
 		const source = Parser.getTagSource(entry.tag, entry.source);
 		const hash = entry.hash || (UrlUtil.URL_TO_HASH_BUILDER[page] ? UrlUtil.URL_TO_HASH_BUILDER[page]({...entry, name: entry.name, source}) : null);
+		const tag = entry.tag || Parser.getPropTag(entry.prop);
 
-		const asTag = `{@${entry.tag} ${entry.name}|${source}${entry.displayName ? `|${entry.displayName}` : ""}}`;
+		const asTag = `{@${tag} ${entry.name}|${source}${entry.displayName ? `|${entry.displayName}` : ""}}`;
+
+		const fromPlugins = this._applyPlugins_useFirst(
+			"statblock_render",
+			{textStack, meta, options},
+			{input: {entry, page, source, hash, tag, asTag}},
+		);
+		if (fromPlugins) return void (textStack[0] += fromPlugins);
 
 		if (!page || !source || !hash) {
+			this._renderPrefix(entry, textStack, meta, options);
 			this._renderDataHeader(textStack, entry.name, entry.style);
 			textStack[0] += `<tr>
 				<td colspan="6">
-					<i class="text-danger">Cannot load ${entry.tag ? `&quot;${asTag}&quot;` : entry.displayName || entry.name}! An unknown tag/prop, source, or hash was provided.</i>
+					<i class="text-danger">Cannot load ${tag ? `&quot;${asTag}&quot;` : entry.displayName || entry.name}! An unknown tag/prop, source, or hash was provided.</i>
 				</td>
 			</tr>`;
 			this._renderDataFooter(textStack);
@@ -1452,10 +1488,11 @@ globalThis.Renderer = function () {
 			return;
 		}
 
+		this._renderPrefix(entry, textStack, meta, options);
 		this._renderDataHeader(textStack, entry.displayName || entry.name, entry.style, {isCollapsed: entry.collapsed});
 		textStack[0] += `<tr>
-			<td colspan="6" data-rd-tag="${(entry.tag || "").qq()}" data-rd-page="${(page || "").qq()}" data-rd-source="${(source || "").qq()}" data-rd-hash="${(hash || "").qq()}" data-rd-name="${(entry.name || "").qq()}" data-rd-display-name="${(entry.displayName || "").qq()}" data-rd-style="${(entry.style || "").qq()}">
-				<i>Loading ${entry.tag ? `${Renderer.get().render(asTag)}` : entry.displayName || entry.name}...</i>
+			<td colspan="6" data-rd-tag="${(tag || "").qq()}" data-rd-page="${(page || "").qq()}" data-rd-source="${(source || "").qq()}" data-rd-hash="${(hash || "").qq()}" data-rd-name="${(entry.name || "").qq()}" data-rd-display-name="${(entry.displayName || "").qq()}" data-rd-style="${(entry.style || "").qq()}">
+				<i>Loading ${tag ? `${Renderer.get().render(asTag)}` : entry.displayName || entry.name}...</i>
 				<style onload="Renderer.events.handleLoad_inlineStatblock(this)"></style>
 			</td>
 		</tr>`;
@@ -10494,7 +10531,7 @@ Renderer.recipe = class {
 				? `{@b {@style Makes|small-caps}} ${ent._scaleFactor ? `${ent._scaleFactor}× ` : ""}${ent.makes}`
 				: null,
 			entryServes: ent.serves
-				? `{@b {@style Serves|small-caps}} ${ent.serves.min ?? ent.serves.exact}${ent.serves.min != null ? " to " : ""}${ent.serves.max ?? ""}`
+				? `{@b {@style Serves|small-caps}} ${ent.serves.min ?? ent.serves.exact}${ent.serves.min != null ? " to " : ""}${ent.serves.max ?? ""}${ent.serves.note ? ` ${ent.serves.note}` : ""}`
 				: null,
 			entryMetasTime: Renderer.recipe._getEntryMetasTime(ent),
 			entryIngredients: {entries: ent._fullIngredients},
@@ -10680,6 +10717,7 @@ Renderer.recipe = class {
 		"tablespoon",
 		"teaspoon",
 		"wedge",
+		"fist",
 	];
 	static _UNITS_SINGLE_TO_PLURAL_ES = [
 		"dash",

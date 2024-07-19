@@ -3707,8 +3707,7 @@
 									"grid": {
 										"type": "square",
 										"size": 66,
-										"offsetX": 17,
-										"offsetY": 9,
+										"offsetX": -18,
 										"scale": 2
 									},
 									"width": 1127,

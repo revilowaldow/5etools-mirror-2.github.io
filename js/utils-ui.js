@@ -965,7 +965,7 @@ class ListUiUtil {
 		let elePreviewWrp;
 		if (item.ele.children.length === 1) {
 			elePreviewWrp = e_({
-				ag: "div",
+				tag: "div",
 				clazz: "ve-hidden ve-flex",
 				children: [
 					e_({tag: "div", clazz: "ve-col-0-5"}),

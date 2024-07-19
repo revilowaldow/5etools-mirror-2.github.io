@@ -214,7 +214,7 @@
 			"additionalSources": [
 				{
 					"source": "TCE",
-					"page": 32
+					"page": 33
 				}
 			],
 			"pantheon": "Elven",
@@ -239,7 +239,7 @@
 			"additionalSources": [
 				{
 					"source": "TCE",
-					"page": 32
+					"page": 33
 				}
 			],
 			"pantheon": "Elven",
@@ -1686,7 +1686,7 @@
 			"additionalSources": [
 				{
 					"source": "TCE",
-					"page": 32
+					"page": 33
 				}
 			],
 			"pantheon": "Dwarven",
@@ -1715,7 +1715,7 @@
 			"additionalSources": [
 				{
 					"source": "TCE",
-					"page": 32
+					"page": 33
 				}
 			],
 			"pantheon": "Dwarven",
@@ -1904,7 +1904,7 @@
 			"additionalSources": [
 				{
 					"source": "TCE",
-					"page": 32
+					"page": 33
 				},
 				{
 					"source": "TCE",
@@ -1939,7 +1939,7 @@
 			"additionalSources": [
 				{
 					"source": "TCE",
-					"page": 32
+					"page": 33
 				},
 				{
 					"source": "TCE",
@@ -2663,7 +2663,7 @@
 			"additionalSources": [
 				{
 					"source": "TCE",
-					"page": 32
+					"page": 33
 				}
 			],
 			"pantheon": "Halfling",
@@ -2691,7 +2691,7 @@
 			"additionalSources": [
 				{
 					"source": "TCE",
-					"page": 32
+					"page": 33
 				}
 			],
 			"pantheon": "Halfling",
@@ -3214,7 +3214,7 @@
 			"additionalSources": [
 				{
 					"source": "TCE",
-					"page": 32
+					"page": 33
 				}
 			],
 			"pantheon": "Forgotten Realms",
@@ -3242,7 +3242,7 @@
 			"additionalSources": [
 				{
 					"source": "TCE",
-					"page": 32
+					"page": 33
 				}
 			],
 			"pantheon": "Faerûnian",
@@ -4161,7 +4161,7 @@
 			"additionalSources": [
 				{
 					"source": "TCE",
-					"page": 32
+					"page": 33
 				}
 			],
 			"pantheon": "Gnome",
@@ -4188,7 +4188,7 @@
 			"additionalSources": [
 				{
 					"source": "TCE",
-					"page": 32
+					"page": 33
 				}
 			],
 			"pantheon": "Gnomish",
@@ -10321,7 +10321,7 @@
 			"additionalSources": [
 				{
 					"source": "TCE",
-					"page": 32
+					"page": 33
 				}
 			],
 			"pantheon": "Dragonlance",
@@ -11482,7 +11482,7 @@
 			"additionalSources": [
 				{
 					"source": "TCE",
-					"page": 32
+					"page": 33
 				}
 			],
 			"pantheon": "Greyhawk",
@@ -16677,6 +16677,10 @@
 				{
 					"source": "SCAG",
 					"page": 125
+				},
+				{
+					"source": "TCE",
+					"page": 31
 				}
 			],
 			"pantheon": "Greyhawk",

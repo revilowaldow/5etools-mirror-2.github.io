@@ -113,9 +113,11 @@ export class BrewUtil2Base {
 
 	isReloadRequired () { return this._isDirty; }
 
-	doLocationReload () {
-		if (typeof Hist !== "undefined") Hist.doPreLocationReload();
-		else window.location.hash = "";
+	doLocationReload ({isRetainHash = false} = {}) {
+		if (!isRetainHash) {
+			if (typeof Hist !== "undefined") Hist.doPreLocationReload();
+			else window.location.hash = "";
+		}
 
 		location.reload();
 	}
@@ -513,6 +515,8 @@ export class BrewUtil2Base {
 	pLoadPropIndex (urlRoot) { throw new Error("Unimplemented!"); }
 	/** @abstract */
 	pLoadMetaIndex (urlRoot) { throw new Error("Unimplemented!"); }
+	/** @abstract */
+	pLoadAdventureBookIdsIndex (urlRoot) { throw new Error("Unimplemented!"); }
 
 	async pGetCombinedIndexes () {
 		const urlRoot = await this.pGetCustomUrl();

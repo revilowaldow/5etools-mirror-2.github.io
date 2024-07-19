@@ -1,5 +1,13 @@
 {
 	"_meta": {
+		"dependencies": {
+			"monster": [
+				"MM"
+			]
+		},
+		"internalCopies": [
+			"monster"
+		],
 		"otherSources": {
 			"monster": {
 				"MM": "QftIS",
@@ -9,6 +17,25 @@
 		}
 	},
 	"monster": [
+		{
+			"name": "Amun Sa",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "QftIS",
+			"_copy": {
+				"name": "Ghost",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the ghost",
+						"with": "Amun",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true
+		},
 		{
 			"name": "Android",
 			"source": "QftIS",
@@ -160,8 +187,169 @@
 				"constitution",
 				"strength"
 			],
+			"hasToken": true,
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"_versions": [
+				{
+					"name": "Android Aerialist",
+					"source": "QftIS",
+					"_mod": {
+						"trait": {
+							"mode": "removeArr",
+							"names": "Design Specialization"
+						}
+					},
+					"speed": {
+						"walk": 30,
+						"fly": {
+							"number": 30,
+							"condition": "(hover)"
+						},
+						"canHover": true
+					},
+					"senses": [
+						"darkvision 60 ft."
+					],
+					"spellcasting": null,
+					"reaction": null,
+					"hasToken": true
+				},
+				{
+					"name": "Android Diplomat",
+					"source": "QftIS",
+					"_mod": {
+						"trait": {
+							"mode": "removeArr",
+							"names": "Design Specialization"
+						}
+					},
+					"speed": {
+						"walk": 30
+					},
+					"senses": [
+						"darkvision 60 ft."
+					],
+					"spellcasting": [
+						{
+							"name": "Spellcasting",
+							"type": "spellcasting",
+							"headerEntries": [
+								"The android casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability:"
+							],
+							"daily": {
+								"2e": [
+									"{@spell Identify}",
+									"{@spell Tongues}"
+								]
+							},
+							"ability": "int",
+							"displayAs": "action"
+						}
+					],
+					"reaction": null,
+					"hasToken": true
+				},
+				{
+					"name": "Android Diver",
+					"source": "QftIS",
+					"_mod": {
+						"trait": {
+							"mode": "removeArr",
+							"names": "Design Specialization"
+						}
+					},
+					"speed": {
+						"walk": 30,
+						"swim": 30
+					},
+					"senses": [
+						"darkvision 60 ft."
+					],
+					"spellcasting": null,
+					"reaction": null
+				},
+				{
+					"name": "Android Duelist",
+					"source": "QftIS",
+					"_mod": {
+						"trait": {
+							"mode": "removeArr",
+							"names": "Design Specialization"
+						},
+						"reaction": {
+							"mode": "renameArr",
+							"renames": {
+								"rename": "Parry (Duelist Only)",
+								"with": "Parry"
+							}
+						}
+					},
+					"speed": {
+						"walk": 30
+					},
+					"senses": [
+						"darkvision 60 ft."
+					],
+					"spellcasting": null,
+					"hasToken": true
+				},
+				{
+					"name": "Android Medic",
+					"source": "QftIS",
+					"_mod": {
+						"trait": {
+							"mode": "removeArr",
+							"names": "Design Specialization"
+						}
+					},
+					"speed": {
+						"walk": 30
+					},
+					"senses": [
+						"darkvision 60 ft."
+					],
+					"spellcasting": [
+						{
+							"name": "Spellcasting",
+							"type": "spellcasting",
+							"headerEntries": [
+								"The android casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability:"
+							],
+							"daily": {
+								"2e": [
+									"{@spell Cure Wounds} (as a 3rd-level spell)",
+									"{@spell Identify}"
+								]
+							},
+							"ability": "int",
+							"displayAs": "action"
+						}
+					],
+					"reaction": null,
+					"hasToken": true
+				},
+				{
+					"name": "Android Sentry",
+					"source": "QftIS",
+					"_mod": {
+						"trait": {
+							"mode": "removeArr",
+							"names": "Design Specialization"
+						}
+					},
+					"speed": {
+						"walk": 30
+					},
+					"senses": [
+						"blindsight 60 ft.",
+						"darkvision 60 ft."
+					],
+					"spellcasting": null,
+					"reaction": null,
+					"hasToken": true
+				}
+			]
 		},
 		{
 			"name": "Barkburr",
@@ -270,6 +458,7 @@
 			"savingThrowForced": [
 				"constitution"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -379,6 +568,7 @@
 				"RW",
 				"THW"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -476,6 +666,7 @@
 				"MLW",
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -602,7 +793,37 @@
 				"dexterity",
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true
+		},
+		{
+			"name": "Cipolla",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "QftIS",
+			"_copy": {
+				"name": "Tower Sage",
+				"source": "QftIS",
+				"_templates": [
+					{
+						"name": "Dragonborn (Silver)",
+						"source": "PHB"
+					}
+				],
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the tower sage",
+						"with": "Cipolla",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"hasToken": true
 		},
 		{
 			"name": "Combat Robot",
@@ -746,6 +967,7 @@
 				"constitution",
 				"dexterity"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -875,6 +1097,7 @@
 			"savingThrowForcedSpell": [
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -973,6 +1196,7 @@
 				"MW",
 				"RW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -1112,6 +1336,7 @@
 				"constitution",
 				"strength"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -1291,6 +1516,7 @@
 				"constitution",
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -1441,6 +1667,7 @@
 				"intelligence",
 				"strength"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -1520,8 +1747,28 @@
 			"miscTags": [
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
+		},
+		{
+			"name": "Grisdelfawr",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "QftIS",
+			"_copy": {
+				"name": "Young Red Dragon",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the dragon",
+						"with": "Grisdelfawr",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true
 		},
 		{
 			"name": "Guardian of Gorm",
@@ -1606,6 +1853,7 @@
 				"RW",
 				"THW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -1717,8 +1965,180 @@
 				"constitution",
 				"dexterity"
 			],
+			"hasToken": true,
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"_versions": [
+				{
+					"name": "Horrid Plant Dew Drinker",
+					"source": "QftIS",
+					"_mod": {
+						"trait": {
+							"mode": "removeArr",
+							"names": "Horrid Plant Varieties"
+						},
+						"bonus": [
+							{
+								"mode": "removeArr",
+								"names": [
+									"Sap Squirt (Purple Blossom Only)",
+									"Spiked Leaves (Snapper Saw Only)"
+								]
+							},
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Vampiric Tendril (Dew Drinker Only)",
+									"with": "Vampiric Tendril"
+								}
+							}
+						]
+					}
+				},
+				{
+					"name": "Horrid Plant Purple Blossom",
+					"source": "QftIS",
+					"_mod": {
+						"trait": {
+							"mode": "removeArr",
+							"names": "Horrid Plant Varieties"
+						},
+						"bonus": [
+							{
+								"mode": "removeArr",
+								"names": [
+									"Spiked Leaves (Snapper Saw Only)",
+									"Vampiric Tendril (Dew Drinker Only)"
+								]
+							},
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Sap Squirt (Purple Blossom Only)",
+									"with": "Sap Squirt"
+								}
+							}
+						]
+					}
+				},
+				{
+					"name": "Horrid Plant Snapper Saw",
+					"source": "QftIS",
+					"_mod": {
+						"trait": {
+							"mode": "removeArr",
+							"names": "Horrid Plant Varieties"
+						},
+						"bonus": [
+							{
+								"mode": "removeArr",
+								"names": [
+									"Sap Squirt (Purple Blossom Only)",
+									"Vampiric Tendril (Dew Drinker Only)"
+								]
+							},
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Spiked Leaves (Snapper Saw Only)",
+									"with": "Spiked Leaves"
+								}
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Iaseda",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "QftIS",
+			"_copy": {
+				"name": "Acolyte",
+				"source": "MM",
+				"_templates": [
+					{
+						"name": "Human",
+						"source": "PHB"
+					}
+				],
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the acolyte",
+						"with": "Iaseda",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Isabela Folcarae",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "QftIS",
+			"_copy": {
+				"name": "Bandit Captain",
+				"source": "MM",
+				"_templates": [
+					{
+						"name": "Human",
+						"source": "PHB"
+					}
+				],
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the captain",
+						"with": "Isabela",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Juliana",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "QftIS",
+			"_copy": {
+				"name": "Noble",
+				"source": "MM",
+				"_templates": [
+					{
+						"name": "Human",
+						"source": "PHB"
+					}
+				],
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the noble",
+						"with": "Juliana",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				11
+			],
+			"action": null,
+			"hasToken": true
 		},
 		{
 			"name": "Leprechaun",
@@ -1875,6 +2295,7 @@
 			"savingThrowForcedSpell": [
 				"intelligence"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -1964,6 +2385,7 @@
 				"dexterity",
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -2085,6 +2507,7 @@
 				"constitution",
 				"dexterity"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -2187,6 +2610,7 @@
 			"savingThrowForced": [
 				"intelligence"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -2418,6 +2842,7 @@
 			"savingThrowForced": [
 				"strength"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -2609,8 +3034,42 @@
 				"constitution",
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
+		},
+		{
+			"name": "Orlando",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "QftIS",
+			"_copy": {
+				"name": "Noble",
+				"source": "MM",
+				"_templates": [
+					{
+						"name": "Human",
+						"source": "PHB"
+					}
+				],
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the noble",
+						"with": "Orlando",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				11
+			],
+			"action": null,
+			"hasToken": true
 		},
 		{
 			"name": "Pech",
@@ -2756,8 +3215,168 @@
 			"savingThrowForcedSpell": [
 				"dexterity"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
+		},
+		{
+			"name": "Piyarz",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "QftIS",
+			"_copy": {
+				"name": "Tower Sage",
+				"source": "QftIS",
+				"_templates": [
+					{
+						"name": "Human",
+						"source": "PHB"
+					}
+				],
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the tower sage",
+						"with": "Piyarz",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"name": "Special Equipment",
+							"entries": [
+								"Piyarz wears a {@item Ring of Fire Resistance}, granting him resistance to fire damage."
+							]
+						}
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"resist": [
+				"fire"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Porro",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "QftIS",
+			"_copy": {
+				"name": "Tower Sage",
+				"source": "QftIS",
+				"_templates": [
+					{
+						"name": "Stout Halfling",
+						"source": "PHB"
+					}
+				],
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the tower sage",
+						"with": "Porro",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Queen Zanobis",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "QftIS",
+			"_copy": {
+				"name": "Wight",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the wight",
+						"with": "Queen Zanobis",
+						"flags": "i"
+					},
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "Multiattack",
+							"items": {
+								"name": "Multiattack",
+								"entries": [
+									"The wight makes two scepter attacks or two longbow attacks. It can use its Life Drain in place of one scepter attack."
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Longsword",
+							"items": {
+								"name": "Longsword",
+								"entries": [
+									"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) bludgeoning damage, or 7 ({@damage 1d10 + 2}) bludgeoning damage if used with two hands."
+								]
+							}
+						}
+					]
+				}
+			},
+			"hasToken": true
+		},
+		{
+			"name": "Shalfey",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "QftIS",
+			"_copy": {
+				"name": "Tower Sage",
+				"source": "QftIS",
+				"_templates": [
+					{
+						"name": "Human",
+						"source": "PHB"
+					}
+				],
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the tower sage",
+						"with": "Shalfey",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Silverlily",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "QftIS",
+			"_copy": {
+				"name": "Unicorn",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the unicorn",
+						"with": "Silverlily",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true
 		},
 		{
 			"name": "Sion",
@@ -2918,8 +3537,47 @@
 			"savingThrowForced": [
 				"charisma"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
+		},
+		{
+			"name": "Spirit of Hunger",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "QftIS",
+			"_copy": {
+				"name": "Wraith",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the wraith",
+						"with": "Spirit of Hunger",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true
+		},
+		{
+			"name": "Stargleam",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "QftIS",
+			"_copy": {
+				"name": "Unicorn",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the unicorn",
+						"with": "Stargleam",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true
 		},
 		{
 			"name": "Swarm of Gibberlings",
@@ -3022,6 +3680,7 @@
 			"miscTags": [
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -3226,6 +3885,7 @@
 			"savingThrowForced": [
 				"constitution"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -3322,6 +3982,7 @@
 				"MW",
 				"RW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -3439,8 +4100,34 @@
 				"constitution",
 				"dexterity"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
+		},
+		{
+			"name": "Uma",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "QftIS",
+			"_copy": {
+				"name": "Knight",
+				"source": "MM",
+				"_templates": [
+					{
+						"name": "Human",
+						"source": "PHB"
+					}
+				],
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the knight",
+						"with": "Uma",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true
 		},
 		{
 			"name": "Vegepygmy Moldmaker",
@@ -3556,6 +4243,7 @@
 			"savingThrowForced": [
 				"constitution"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -3665,6 +4353,7 @@
 				"MW",
 				"RW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -3764,8 +4453,28 @@
 			"savingThrowForced": [
 				"strength"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
+		},
+		{
+			"name": "Vuuthramis",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "QftIS",
+			"_copy": {
+				"name": "Young Bronze Dragon",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the dragon",
+						"with": "Vuuthramis",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true
 		},
 		{
 			"name": "Warrior of Madarua",
@@ -3844,6 +4553,7 @@
 				"RW",
 				"THW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -3946,6 +4656,7 @@
 				"MW",
 				"RCH"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -4053,6 +4764,7 @@
 			"savingThrowForced": [
 				"constitution"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -4243,6 +4955,7 @@
 				"constitution",
 				"dexterity"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		}

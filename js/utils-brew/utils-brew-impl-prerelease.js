@@ -41,6 +41,8 @@ export class PrereleaseUtil_ extends BrewUtil2Base {
 
 	pLoadMetaIndex (urlRoot) { return DataUtil.prerelease.pLoadMetaIndex(urlRoot); }
 
+	pLoadAdventureBookIdsIndex (urlRoot) { return DataUtil.prerelease.pLoadAdventureBookIdsIndex(urlRoot); }
+
 	/* -------------------------------------------- */
 
 	// region Editable

@@ -1223,6 +1223,14 @@
 											"width": 3165,
 											"height": 4096,
 											"id": "4ab",
+											"grid": {
+												"type": "square",
+												"size": 165,
+												"offsetX": 25,
+												"offsetY": 48,
+												"scale": 2,
+												"distance": 10
+											},
 											"mapRegions": [
 												{
 													"area": "03f",
@@ -1873,6 +1881,14 @@
 											"credit": "Mike Schley",
 											"mapParent": {
 												"id": "4ab"
+											},
+											"grid": {
+												"type": "square",
+												"size": 165,
+												"offsetX": 25,
+												"offsetY": 48,
+												"scale": 2,
+												"distance": 10
 											}
 										}
 									]
@@ -3262,6 +3278,14 @@
 											"hrefThumbnail": {
 												"type": "internal",
 												"path": "adventure/QftIS/thumbnail/018-map-2.02-buried-ziggurat-4.webp"
+											},
+											"grid": {
+												"type": "square",
+												"size": 193,
+												"offsetX": 85,
+												"offsetY": -16,
+												"scale": 2,
+												"distance": 10
 											}
 										},
 										{
@@ -3277,6 +3301,14 @@
 											"credit": "Mike Schley",
 											"mapParent": {
 												"id": "59a"
+											},
+											"grid": {
+												"type": "square",
+												"size": 193,
+												"offsetX": 85,
+												"offsetY": -16,
+												"scale": 2,
+												"distance": 10
 											}
 										}
 									]
@@ -4153,6 +4185,14 @@
 											"hrefThumbnail": {
 												"type": "internal",
 												"path": "adventure/QftIS/thumbnail/021-map-2.03-buried-ziggurat-5.webp"
+											},
+											"grid": {
+												"type": "square",
+												"size": 147,
+												"offsetX": 34,
+												"offsetY": 6,
+												"scale": 2,
+												"distance": 10
 											}
 										},
 										{
@@ -4168,6 +4208,14 @@
 											"credit": "Mike Schley",
 											"mapParent": {
 												"id": "59b"
+											},
+											"grid": {
+												"type": "square",
+												"size": 147,
+												"offsetX": 34,
+												"offsetY": 6,
+												"scale": 2,
+												"distance": 10
 											}
 										}
 									]
@@ -6033,6 +6081,13 @@
 													"hrefThumbnail": {
 														"type": "internal",
 														"path": "adventure/QftIS/thumbnail/025-map-2.04-expanded-ziggurat.webp"
+													},
+													"grid": {
+														"type": "square",
+														"size": 114,
+														"offsetX": -6,
+														"offsetY": 19,
+														"distance": 10
 													}
 												},
 												{
@@ -6048,6 +6103,13 @@
 													"credit": "Mike Schley",
 													"mapParent": {
 														"id": "59c"
+													},
+													"grid": {
+														"type": "square",
+														"size": 114,
+														"offsetX": -6,
+														"offsetY": 19,
+														"distance": 10
 													}
 												}
 											]
@@ -6559,6 +6621,11 @@
 											"hrefThumbnail": {
 												"type": "internal",
 												"path": "adventure/QftIS/thumbnail/028-map-2.05-underground-city.webp"
+											},
+											"grid": {
+												"type": "none",
+												"size": 148,
+												"distance": 200
 											}
 										},
 										{
@@ -6574,6 +6641,11 @@
 											"credit": "Marco Bernardini",
 											"mapParent": {
 												"id": "59d"
+											},
+											"grid": {
+												"type": "none",
+												"size": 148,
+												"distance": 200
 											}
 										}
 									]
@@ -7228,6 +7300,14 @@
 									"hrefThumbnail": {
 										"type": "internal",
 										"path": "adventure/QftIS/thumbnail/033-map-3.01-tegefed-mountains.webp"
+									},
+									"grid": {
+										"type": "hexColsOdd",
+										"size": 181,
+										"offsetX": -67,
+										"offsetY": 46,
+										"distance": 4,
+										"units": "miles"
 									}
 								},
 								{
@@ -7243,6 +7323,14 @@
 									"credit": "Marco Bernardini",
 									"mapParent": {
 										"id": "59e"
+									},
+									"grid": {
+										"type": "hexColsOdd",
+										"size": 181,
+										"offsetX": -67,
+										"offsetY": 46,
+										"distance": 4,
+										"units": "miles"
 									}
 								}
 							]
@@ -7994,6 +8082,13 @@
 											"hrefThumbnail": {
 												"type": "internal",
 												"path": "adventure/QftIS/thumbnail/036-map-3.02-derwyths-homestead.webp"
+											},
+											"grid": {
+												"type": "square",
+												"size": 167,
+												"offsetX": -42,
+												"offsetY": -47,
+												"distance": 10
 											}
 										},
 										{
@@ -8009,6 +8104,13 @@
 											"credit": "Sean Macdonald",
 											"mapParent": {
 												"id": "59f"
+											},
+											"grid": {
+												"type": "square",
+												"size": 167,
+												"offsetX": -42,
+												"offsetY": -47,
+												"distance": 10
 											}
 										}
 									]
@@ -9463,6 +9565,14 @@
 											"hrefThumbnail": {
 												"type": "internal",
 												"path": "adventure/QftIS/thumbnail/039-map-3.03-derro-lair.webp"
+											},
+											"grid": {
+												"type": "square",
+												"size": 226,
+												"offsetX": 140,
+												"offsetY": 123,
+												"scale": 2,
+												"distance": 10
 											}
 										},
 										{
@@ -9478,6 +9588,14 @@
 											"credit": "Jason A. Engle",
 											"mapParent": {
 												"id": "5a0"
+											},
+											"grid": {
+												"type": "square",
+												"size": 226,
+												"offsetX": 140,
+												"offsetY": 123,
+												"scale": 2,
+												"distance": 10
 											}
 										}
 									]
@@ -9871,6 +9989,13 @@
 											"hrefThumbnail": {
 												"type": "internal",
 												"path": "adventure/QftIS/thumbnail/043-map-3.04-therno-lake.webp"
+											},
+											"grid": {
+												"type": "square",
+												"size": 306,
+												"offsetX": 111,
+												"offsetY": -89,
+												"distance": 50
 											}
 										},
 										{
@@ -9886,6 +10011,13 @@
 											"credit": "Marco Bernardini",
 											"mapParent": {
 												"id": "5a1"
+											},
+											"grid": {
+												"type": "square",
+												"size": 306,
+												"offsetX": 111,
+												"offsetY": -89,
+												"distance": 50
 											}
 										}
 									]
@@ -11298,6 +11430,14 @@
 											"hrefThumbnail": {
 												"type": "internal",
 												"path": "adventure/QftIS/thumbnail/046-map-3.05-tower-of-the-heavens.webp"
+											},
+											"grid": {
+												"type": "square",
+												"size": 160,
+												"offsetX": -44,
+												"offsetY": 64,
+												"scale": 3,
+												"distance": 10
 											}
 										},
 										{
@@ -11313,6 +11453,14 @@
 											"credit": "Sean Macdonald",
 											"mapParent": {
 												"id": "5a2"
+											},
+											"grid": {
+												"type": "square",
+												"size": 160,
+												"offsetX": -44,
+												"offsetY": 64,
+												"scale": 3,
+												"distance": 10
 											}
 										}
 									]
@@ -13562,6 +13710,14 @@
 											"hrefThumbnail": {
 												"type": "internal",
 												"path": "adventure/QftIS/thumbnail/050-map-3.06-forge-of-the-kagu-svirfneblin.webp"
+											},
+											"grid": {
+												"type": "square",
+												"size": 209,
+												"offsetX": 27,
+												"offsetY": 28,
+												"scale": 2,
+												"distance": 10
 											}
 										},
 										{
@@ -13577,6 +13733,14 @@
 											"credit": "Damien Mammoliti",
 											"mapParent": {
 												"id": "5a3"
+											},
+											"grid": {
+												"type": "square",
+												"size": 209,
+												"offsetX": 27,
+												"offsetY": 28,
+												"scale": 2,
+												"distance": 10
 											}
 										}
 									]
@@ -15123,6 +15287,14 @@
 											"hrefThumbnail": {
 												"type": "internal",
 												"path": "adventure/QftIS/thumbnail/058-map-4.01-cave-of-echoes.webp"
+											},
+											"grid": {
+												"type": "square",
+												"size": 201,
+												"offsetX": -21,
+												"offsetY": 21,
+												"scale": 2,
+												"distance": 10
 											}
 										},
 										{
@@ -15138,6 +15310,14 @@
 											"credit": "Marc Moureau",
 											"mapParent": {
 												"id": "5a4"
+											},
+											"grid": {
+												"type": "square",
+												"size": 201,
+												"offsetX": -21,
+												"offsetY": 21,
+												"scale": 2,
+												"distance": 10
 											}
 										}
 									]
@@ -16017,6 +16197,13 @@
 											"hrefThumbnail": {
 												"type": "internal",
 												"path": "adventure/QftIS/thumbnail/061-map-4.02-eternal-garden.webp"
+											},
+											"grid": {
+												"type": "square",
+												"size": 81,
+												"offsetX": 24,
+												"offsetY": 29,
+												"distance": 50
 											}
 										},
 										{
@@ -16032,6 +16219,13 @@
 											"credit": "Marc Moureau",
 											"mapParent": {
 												"id": "5a5"
+											},
+											"grid": {
+												"type": "square",
+												"size": 81,
+												"offsetX": 24,
+												"offsetY": 29,
+												"distance": 50
 											}
 										}
 									]
@@ -17631,6 +17825,14 @@
 											"hrefThumbnail": {
 												"type": "internal",
 												"path": "adventure/QftIS/thumbnail/069-map-4.03-palace-of-spires.webp"
+											},
+											"grid": {
+												"type": "square",
+												"size": 209,
+												"offsetX": 95,
+												"offsetY": -18,
+												"scale": 3,
+												"distance": 10
 											}
 										},
 										{
@@ -17646,6 +17848,14 @@
 											"credit": "Marc Moureau",
 											"mapParent": {
 												"id": "5a6"
+											},
+											"grid": {
+												"type": "square",
+												"size": 209,
+												"offsetX": 95,
+												"offsetY": -18,
+												"scale": 3,
+												"distance": 10
 											}
 										}
 									]
@@ -18914,6 +19124,14 @@
 											"hrefThumbnail": {
 												"type": "internal",
 												"path": "adventure/QftIS/thumbnail/076-map-5.01-false-tomb.webp"
+											},
+											"grid": {
+												"type": "square",
+												"size": 206,
+												"offsetX": 68,
+												"offsetY": -61,
+												"scale": 3,
+												"distance": 10
 											}
 										},
 										{
@@ -18929,6 +19147,14 @@
 											"credit": "Stacey Allan & William Doyle",
 											"mapParent": {
 												"id": "5a7"
+											},
+											"grid": {
+												"type": "square",
+												"size": 206,
+												"offsetX": 68,
+												"offsetY": -61,
+												"scale": 3,
+												"distance": 10
 											}
 										}
 									]
@@ -19953,6 +20179,14 @@
 											"hrefThumbnail": {
 												"type": "internal",
 												"path": "adventure/QftIS/thumbnail/079-map-5.02-maze-of-mists-map.webp"
+											},
+											"grid": {
+												"type": "square",
+												"size": 191,
+												"offsetX": -89,
+												"offsetY": -52,
+												"scale": 3,
+												"distance": 10
 											}
 										},
 										{
@@ -19968,6 +20202,14 @@
 											"credit": "Stacey Allan & William Doyle",
 											"mapParent": {
 												"id": "5a8"
+											},
+											"grid": {
+												"type": "square",
+												"size": 191,
+												"offsetX": -89,
+												"offsetY": -52,
+												"scale": 3,
+												"distance": 10
 											}
 										}
 									]
@@ -21724,6 +21966,14 @@
 											"hrefThumbnail": {
 												"type": "internal",
 												"path": "adventure/QftIS/thumbnail/082-map-5.04-halls-of-the-upper-priesthood-map.webp"
+											},
+											"grid": {
+												"type": "square",
+												"size": 190,
+												"offsetX": -67,
+												"offsetY": -56,
+												"scale": 3,
+												"distance": 10
 											}
 										},
 										{
@@ -21739,6 +21989,14 @@
 											"credit": "Stacey Allan & William Doyle",
 											"mapParent": {
 												"id": "5a9"
+											},
+											"grid": {
+												"type": "square",
+												"size": 190,
+												"offsetX": -67,
+												"offsetY": -56,
+												"scale": 3,
+												"distance": 10
 											}
 										}
 									]
@@ -22207,6 +22465,9 @@
 													"hrefThumbnail": {
 														"type": "internal",
 														"path": "adventure/QftIS/thumbnail/084-map-5.05-dome-of-flight-map.webp"
+													},
+													"grid": {
+														"type": "none"
 													}
 												},
 												{
@@ -22222,6 +22483,9 @@
 													"credit": "Marc Moureau",
 													"mapParent": {
 														"id": "5ab"
+													},
+													"grid": {
+														"type": "none"
 													}
 												}
 											]
@@ -22470,7 +22734,10 @@
 															"credit": "Marc Moureau",
 															"width": 2400,
 															"height": 3000,
-															"id": "5ac"
+															"id": "5ac",
+															"grid": {
+																"type": "none"
+															}
 														},
 														{
 															"type": "image",
@@ -22485,6 +22752,9 @@
 															"credit": "Marc Moureau",
 															"mapParent": {
 																"id": "5ac"
+															},
+															"grid": {
+																"type": "none"
 															}
 														}
 													]
@@ -23518,6 +23788,14 @@
 											"hrefThumbnail": {
 												"type": "internal",
 												"path": "adventure/QftIS/thumbnail/089-map-5.07-gauntlet.webp"
+											},
+											"grid": {
+												"type": "square",
+												"size": 225,
+												"offsetX": 36,
+												"offsetY": -55,
+												"scale": 2,
+												"distance": 10
 											}
 										},
 										{
@@ -23533,6 +23811,14 @@
 											"credit": "Stacey Allan & William Doyle",
 											"mapParent": {
 												"id": "5ad"
+											},
+											"grid": {
+												"type": "square",
+												"size": 225,
+												"offsetX": 36,
+												"offsetY": -55,
+												"scale": 2,
+												"distance": 10
 											}
 										}
 									]
@@ -23969,6 +24255,13 @@
 											"hrefThumbnail": {
 												"type": "internal",
 												"path": "adventure/QftIS/thumbnail/092-map-5.08-tomb-of-amun-sa-map.webp"
+											},
+											"grid": {
+												"type": "square",
+												"size": 87,
+												"offsetX": -10,
+												"offsetY": -36,
+												"distance": 10
 											}
 										},
 										{
@@ -23984,6 +24277,13 @@
 											"credit": "Stacey Allan & William Doyle",
 											"mapParent": {
 												"id": "5ae"
+											},
+											"grid": {
+												"type": "square",
+												"size": 87,
+												"offsetX": -10,
+												"offsetY": -36,
+												"distance": 10
 											}
 										}
 									]
@@ -24426,7 +24726,16 @@
 									"credit": "Marc Moureau",
 									"width": 2550,
 									"height": 3300,
-									"id": "5af"
+									"id": "5af",
+									"grid": {
+										"type": "hexRowsOdd",
+										"size": 240,
+										"offsetX": 142,
+										"offsetY": 98,
+										"scale": 3,
+										"distance": 4,
+										"units": "miles"
+									}
 								},
 								{
 									"type": "image",
@@ -24441,6 +24750,15 @@
 									"credit": "Marc Moureau",
 									"mapParent": {
 										"id": "5af"
+									},
+									"grid": {
+										"type": "hexRowsOdd",
+										"size": 240,
+										"offsetX": 142,
+										"offsetY": 98,
+										"scale": 3,
+										"distance": 4,
+										"units": "miles"
 									}
 								}
 							]
@@ -29141,6 +29459,14 @@
 											"hrefThumbnail": {
 												"type": "internal",
 												"path": "adventure/QftIS/thumbnail/102-map-6.02-lesser-caverns-map.webp"
+											},
+											"grid": {
+												"type": "square",
+												"size": 211,
+												"offsetX": 34,
+												"offsetY": -42,
+												"scale": 3,
+												"distance": 10
 											}
 										},
 										{
@@ -29156,6 +29482,14 @@
 											"credit": "Mike Schley",
 											"mapParent": {
 												"id": "5b0"
+											},
+											"grid": {
+												"type": "square",
+												"size": 211,
+												"offsetX": 34,
+												"offsetY": -42,
+												"scale": 3,
+												"distance": 10
 											}
 										}
 									]
@@ -35175,6 +35509,14 @@
 											"hrefThumbnail": {
 												"type": "internal",
 												"path": "adventure/QftIS/thumbnail/106-map-6.03-greater-caverns-map.webp"
+											},
+											"grid": {
+												"type": "square",
+												"size": 193,
+												"offsetX": -40,
+												"offsetY": 95,
+												"scale": 3,
+												"distance": 10
 											}
 										},
 										{
@@ -35190,6 +35532,14 @@
 											"credit": "Mike Schley",
 											"mapParent": {
 												"id": "5b1"
+											},
+											"grid": {
+												"type": "square",
+												"size": 193,
+												"offsetX": -40,
+												"offsetY": 95,
+												"scale": 3,
+												"distance": 10
 											}
 										}
 									]
@@ -38883,6 +39233,14 @@
 											"hrefThumbnail": {
 												"type": "internal",
 												"path": "adventure/QftIS/thumbnail/117-map-7.01-spaceship-level-1-map.webp"
+											},
+											"grid": {
+												"type": "square",
+												"size": 218,
+												"offsetX": -76,
+												"offsetY": 26,
+												"scale": 3,
+												"distance": 10
 											}
 										},
 										{
@@ -38898,6 +39256,14 @@
 											"credit": "Damien Mammoliti",
 											"mapParent": {
 												"id": "5b2"
+											},
+											"grid": {
+												"type": "square",
+												"size": 218,
+												"offsetX": -76,
+												"offsetY": 26,
+												"scale": 3,
+												"distance": 10
 											}
 										}
 									]
@@ -41203,6 +41569,14 @@
 											"hrefThumbnail": {
 												"type": "internal",
 												"path": "adventure/QftIS/thumbnail/121-map-7.02-spaceship-level-2-map.webp"
+											},
+											"grid": {
+												"type": "square",
+												"size": 218,
+												"offsetX": -76,
+												"offsetY": 26,
+												"scale": 3,
+												"distance": 10
 											}
 										},
 										{
@@ -41218,6 +41592,14 @@
 											"credit": "Damien Mammoliti",
 											"mapParent": {
 												"id": "5b3"
+											},
+											"grid": {
+												"type": "square",
+												"size": 218,
+												"offsetX": -76,
+												"offsetY": 26,
+												"scale": 3,
+												"distance": 10
 											}
 										}
 									]
@@ -43782,6 +44164,14 @@
 											"hrefThumbnail": {
 												"type": "internal",
 												"path": "adventure/QftIS/thumbnail/125-map-7.03-spaceship-level-3-map.webp"
+											},
+											"grid": {
+												"type": "square",
+												"size": 218,
+												"offsetX": -76,
+												"offsetY": 26,
+												"scale": 3,
+												"distance": 10
 											}
 										},
 										{
@@ -43797,6 +44187,14 @@
 											"credit": "Damien Mammoliti",
 											"mapParent": {
 												"id": "5b4"
+											},
+											"grid": {
+												"type": "square",
+												"size": 218,
+												"offsetX": -76,
+												"offsetY": 26,
+												"scale": 3,
+												"distance": 10
 											}
 										}
 									]
@@ -44507,6 +44905,14 @@
 											"hrefThumbnail": {
 												"type": "internal",
 												"path": "adventure/QftIS/thumbnail/129-map-7.04-spaceship-level-4-map.webp"
+											},
+											"grid": {
+												"type": "square",
+												"size": 218,
+												"offsetX": -76,
+												"offsetY": 26,
+												"scale": 3,
+												"distance": 10
 											}
 										},
 										{
@@ -44522,6 +44928,14 @@
 											"credit": "Damien Mammoliti",
 											"mapParent": {
 												"id": "5b5"
+											},
+											"grid": {
+												"type": "square",
+												"size": 218,
+												"offsetX": -76,
+												"offsetY": 26,
+												"scale": 3,
+												"distance": 10
 											}
 										}
 									]

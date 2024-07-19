@@ -1907,6 +1907,8 @@ PropOrder._VARIANTRULE = [
 
 	"type",
 	"entries",
+
+	"foundryImg",
 ];
 PropOrder._RACE_SUBRACE = [
 	"page",

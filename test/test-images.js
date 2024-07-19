@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import "../js/parser.js";
 import "../js/utils.js";
+import "../js/render.js";
 import * as ut from "../node/util.js";
 import {listFiles} from "../node/util.js";
 
@@ -41,6 +42,8 @@ class _TestTokenImages {
 			.forEach(file => {
 				ut.readJson(`./data/bestiary/${file}`).monster
 					.forEach(m => {
+						m.__prop = "monster";
+
 						const implicitTokenPath = `${this._PATH_BASE}/${m.source}/${Parser.nameToTokenName(m.name)}.${this._EXT}`;
 
 						if (m.hasToken) this._expectedFromHashToken[implicitTokenPath] = true;
@@ -58,6 +61,14 @@ class _TestTokenImages {
 								.filter(it => it.token)
 								.forEach(entry => this._expected.add(`${this._PATH_BASE}/${entry.token.source}/${Parser.nameToTokenName(entry.token.name)}.${this._EXT}`));
 						}
+
+						// add tokens specified as part of versions
+						const versions = DataUtil.proxy.getVersions(m.__prop, m, {isExternalApplicationIdentityOnly: true});
+						versions
+							.forEach(mVer => {
+								if (!Renderer.monster.hasToken(mVer)) return;
+								this._expected.add(`${this._PATH_BASE}/${mVer.source}/${Parser.nameToTokenName(mVer.name)}.${this._EXT}`);
+							});
 
 						// add tokens specified as alt art
 						if (m.altArt) {

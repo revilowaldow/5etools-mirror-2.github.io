@@ -1987,7 +1987,7 @@ class DataLoader {
 	}
 
 	static async pCacheAndGetHash (page, hash, opts) {
-		const {source} = UrlUtil.autoDecodeHash(hash, {page});
+		const {source} = await UrlUtil.pAutoDecodeHash(hash, {page});
 		if (!source) {
 			if (opts.isRequired) throw new Error(`Could not find entity for page "${page}" with hash "${hash}"`);
 			return null;

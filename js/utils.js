@@ -2,7 +2,7 @@
 
 // in deployment, `IS_DEPLOYED = "<version number>";` should be set below.
 globalThis.IS_DEPLOYED = undefined;
-globalThis.VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"1.209.1"/* 5ETOOLS_VERSION__CLOSE */;
+globalThis.VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"1.209.2"/* 5ETOOLS_VERSION__CLOSE */;
 globalThis.DEPLOYED_IMG_ROOT = undefined;
 // for the roll20 script to set
 globalThis.IS_VTT = false;
@@ -2812,7 +2812,24 @@ globalThis.UrlUtil = {
 		return hash.split(HASH_LIST_SEP).map(it => decodeURIComponent(it));
 	},
 
+	/* -------------------------------------------- */
+
+	/**
+	 * @param hash
+	 * @param {?string} page
+	 */
+	async pAutoDecodeHash (hash, {page = null} = {}) {
+		page ||= UrlUtil.getCurrentPage();
+
+		if ([UrlUtil.PG_ADVENTURE, UrlUtil.PG_BOOK].includes(page)) return UrlUtil._pAutoDecodeHashAdventureBookHash(hash, {page});
+		return UrlUtil.autoDecodeHash(hash, {page});
+	},
+
 	// TODO(Future) expand
+	/**
+	 * @param hash
+	 * @param {?string} page
+	 */
 	autoDecodeHash (hash, {page = null} = {}) {
 		page ||= UrlUtil.getCurrentPage();
 		const parts = UrlUtil.decodeHash(hash.toLowerCase().trim());
@@ -2822,9 +2839,56 @@ globalThis.UrlUtil = {
 			return {name, pantheon, source};
 		}
 
+		// TODO(Future) this is broken for docs where the id != the source
+		//   consider indexing
+		//   + homebrew
+		if (page === UrlUtil.PG_ADVENTURE || page === UrlUtil.PG_BOOK) {
+			const [source] = parts;
+			return {source};
+		}
+
 		const [name, source] = parts;
 		return {name, source};
 	},
+
+	/**
+	 * @param hash
+	 * @param {?string} page
+	 */
+	async _pAutoDecodeHashAdventureBookHash (hash, {page = null} = {}) {
+		page ||= UrlUtil.getCurrentPage();
+		const parts = UrlUtil.decodeHash(hash.toLowerCase().trim());
+
+		if (![UrlUtil.PG_ADVENTURE, UrlUtil.PG_BOOK].includes(page)) throw new Error(`Unhandled page "${page}"!`);
+
+		const [id] = parts;
+
+		for (const {prop, contentsUrl} of [
+			{
+				prop: "adventure",
+				contentsUrl: `${Renderer.get().baseUrl}data/adventures.json`,
+			},
+			{
+				prop: "book",
+				contentsUrl: `${Renderer.get().baseUrl}data/books.json`,
+			},
+		]) {
+			const contents = await DataUtil.loadJSON(contentsUrl);
+
+			const ent = contents[prop].find(it => it.id.toLowerCase() === id);
+			if (ent) return {name: ent.name, source: ent.source, id: ent.id};
+		}
+
+		for (const brewUtil of [PrereleaseUtil, BrewUtil2]) {
+			const urlRoot = await brewUtil.pGetCustomUrl();
+			const idsIndex = await brewUtil.pLoadAdventureBookIdsIndex(urlRoot);
+			if (idsIndex[id]) return idsIndex[id];
+		}
+
+		return {};
+	},
+
+	/* -------------------------------------------- */
 
 	getSluggedHash (hash) {
 		return Parser.stringToSlug(decodeURIComponent(hash)).replace(/_/g, "-");
@@ -3756,6 +3820,11 @@ class _DataUtilBrewHelper {
 	async pLoadSourceIndex (urlRoot) {
 		urlRoot = this._getCleanUrlRoot(urlRoot);
 		return DataUtil.loadJSON(`${urlRoot}_generated/index-sources.json`);
+	}
+
+	async pLoadAdventureBookIdsIndex (urlRoot) {
+		urlRoot = this._getCleanUrlRoot(urlRoot);
+		return DataUtil.loadJSON(`${urlRoot}_generated/index-adventure-book-ids.json`);
 	}
 
 	getFileUrl (path, urlRoot) {

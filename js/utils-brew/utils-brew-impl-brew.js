@@ -89,6 +89,8 @@ export class BrewUtil2_ extends BrewUtil2Base {
 
 	pLoadMetaIndex (urlRoot) { return DataUtil.brew.pLoadMetaIndex(urlRoot); }
 
+	pLoadAdventureBookIdsIndex (urlRoot) { return DataUtil.brew.pLoadAdventureBookIdsIndex(urlRoot); }
+
 	/* -------------------------------------------- */
 
 	// region Editable

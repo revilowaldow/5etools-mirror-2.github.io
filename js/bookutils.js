@@ -565,6 +565,9 @@ class BookUtil {
 		if (await this._booksHashChange_pDoLoadPrerelease({bookId, $contents, hashParts, isNewBook})) return;
 		if (await this._booksHashChange_pDoLoadBrew({bookId, $contents, hashParts, isNewBook})) return;
 
+		// if it's prerelease/homebrew but hasn't been loaded
+		if (await this._booksHashChange_pDoFetchPrereleaseBrew({bookId, $contents, hashParts, isNewBook})) return;
+
 		return this._booksHashChange_handleNotFound({$contents, bookId});
 	}
 
@@ -593,6 +596,27 @@ class BookUtil {
 
 		await this._booksHashChange_pHandleFound({fromIndex: fromIndexBrew, homebrewData: bookData, bookId, hashParts, $contents, isNewBook});
 		return true;
+	}
+
+	static async _booksHashChange_pDoFetchPrereleaseBrew ({bookId, $contents, hashParts, isNewBook}) {
+		const {source} = await UrlUtil.pAutoDecodeHash(bookId);
+
+		const loaded = await DataLoader.pCacheAndGetHash(UrlUtil.getCurrentPage(), bookId, {isSilent: true});
+		if (!loaded) return false;
+
+		return [
+			PrereleaseUtil,
+			BrewUtil2,
+		]
+			.some(brewUtil => {
+				if (
+					brewUtil.hasSourceJson(source)
+					&& brewUtil.isReloadRequired()
+				) {
+					brewUtil.doLocationReload({isRetainHash: true});
+					return true;
+				}
+			});
 	}
 
 	static _booksHashChange_getCleanName (fromIndex) {

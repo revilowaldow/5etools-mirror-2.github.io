@@ -915,8 +915,7 @@ class IndexableFileQuickReference extends IndexableFile {
 
 	static getChapterNameMetas (it, {isRequireQuickrefFlag = true} = {}) {
 		const trackedNames = [];
-		const renderer = Renderer.get().setDepthTracker(trackedNames);
-		renderer.render(it);
+		Renderer.get().withDepthTracker(trackedNames, ({renderer}) => renderer.render(it));
 
 		const nameCounts = {};
 		trackedNames.forEach(meta => {

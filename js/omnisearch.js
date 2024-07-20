@@ -52,7 +52,7 @@ class Omnisearch {
 			switch (evt.key) {
 				case "Enter":
 					if (EventUtil.isCtrlMetaKey(evt)) {
-						window.location = `${Renderer.get().baseUrl}${UrlUtil.PG_SEARCH}?${this._iptSearch.val()}`;
+						window.location = `${Renderer.get().baseUrl}${UrlUtil.PG_SEARCH}?q=${this._iptSearch.val()}`;
 						break;
 					}
 

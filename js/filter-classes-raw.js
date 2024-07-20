@@ -177,7 +177,7 @@ class PageFilterClassesRaw extends PageFilterClassesBase {
 		classFeature.level = level;
 		classFeature.source = source;
 
-		const entityRoot = await DataLoader.pCacheAndGet("raw_classFeature", classFeature.source, classFeature.hash, {isCopy: true});
+		const entityRoot = await DataLoader.pCacheAndGet("raw_classFeature", classFeature.source, classFeature.hash, {isCopy: true, isRequired: true});
 		const loadedRoot = {
 			type: "classFeature",
 			entity: entityRoot,
@@ -221,7 +221,7 @@ class PageFilterClassesRaw extends PageFilterClassesBase {
 		subclassFeature.level = level;
 		subclassFeature.source = source;
 
-		const entityRoot = await DataLoader.pCacheAndGet("raw_subclassFeature", subclassFeature.source, subclassFeature.hash, {isCopy: true});
+		const entityRoot = await DataLoader.pCacheAndGet("raw_subclassFeature", subclassFeature.source, subclassFeature.hash, {isCopy: true, isRequired: true});
 		const loadedRoot = {
 			type: "subclassFeature",
 			entity: entityRoot,
@@ -325,7 +325,7 @@ class PageFilterClassesRaw extends PageFilterClassesBase {
 		ent.name = name;
 		ent.source = source;
 
-		const entityRoot = raw != null ? MiscUtil.copyFast(raw) : await DataLoader.pCacheAndGet(`raw_${prop}`, ent.source, ent.hash, {isCopy: true});
+		const entityRoot = raw != null ? MiscUtil.copyFast(raw) : await DataLoader.pCacheAndGet(`raw_${prop}`, ent.source, ent.hash, {isCopy: true, isRequired: true});
 		const loadedRoot = {
 			type: prop,
 			entity: entityRoot,

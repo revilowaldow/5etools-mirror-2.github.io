@@ -1983,7 +1983,7 @@ class DataLoader {
 		const {siteData = null, prereleaseData = null, brewData = null} = await this._pCacheAndGet_getCacheMeta({pageClean, sourceClean, dataLoader});
 		await this._pCacheAndGet_processCacheMeta({dataLoader, siteData, prereleaseData, brewData, lockToken2});
 
-		return this.getFromCache(page, source, hash, {isCopy, _isInsertSentinelOnMiss: true});
+		return this.getFromCache(page, source, hash, {isCopy, isRequired, _isInsertSentinelOnMiss: true});
 	}
 
 	static async pCacheAndGetHash (page, hash, opts) {

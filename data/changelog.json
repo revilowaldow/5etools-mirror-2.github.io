@@ -2741,5 +2741,10 @@
 		"ver": "1.209.2",
 		"date": "2024-07-19",
 		"txt": "- Added Quests from the Infinite Staircase tokens; NPCs/other creatures\n- Added `p`/`P` hotkeys to pin/unpin sublist items\n- Fixed Classes Page outline filling up with junk items after hovering other content\n- (Homebrew) Fixed Adventure/Book pages failing to load un-loaded but repo-available homebrew on navigation\n- (Fixed typos/added tags)"
+	},
+	{
+		"ver": "1.209.3",
+		"date": "2024-07-20",
+		"txt": "- Fixed Omnisearch CTRL+ENTER using incorrect query params\n- (Brew) Fixed crash when rendering \"subclass\" `\"statblock\"` entries\n- (Fixed typos/added tags)"
 	}
 ]

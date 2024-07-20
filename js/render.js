@@ -3016,9 +3016,16 @@ Renderer.utils = class {
 		return Renderer.get().render(Renderer.utils.getAbilityRollerEntry(statblock, ability));
 	}
 
-	static getEmbeddedDataHeader (name, style, {isCollapsed = false} = {}) {
+	static getEmbeddedDataHeader (name, style, {isCollapsed = false, isStatic = false} = {}) {
 		return `<table class="rd__b-special rd__b-data ${style ? `rd__b-data--${style}` : ""}">
-		<thead><tr><th class="rd__data-embed-header" colspan="6" data-rd-data-embed-header="true"><span class="rd__data-embed-name ${isCollapsed ? "" : `ve-hidden`}">${name}</span><span class="rd__data-embed-toggle">[${isCollapsed ? "+" : "\u2013"}]</span></th></tr></thead><tbody class="${isCollapsed ? `ve-hidden` : ""}" data-rd-embedded-data-render-target="true">`;
+		<thead>
+			<tr>
+				<th class="rd__data-embed-header" colspan="6" data-rd-data-embed-header="true">
+					<span class="rd__data-embed-name ${!isStatic && isCollapsed ? "" : `ve-hidden`}">${name}</span>
+					${isStatic ? `<span></span>` : `<span class="rd__data-embed-toggle">[${isCollapsed ? "+" : "\u2013"}]</span>`}
+				</th>
+			</tr>
+		</thead><tbody class="${!isStatic && isCollapsed ? `ve-hidden` : ""}" data-rd-embedded-data-render-target="true">`;
 	}
 
 	static getEmbeddedDataFooter () {
